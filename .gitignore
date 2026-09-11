@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+
+# Local working notes; never publish
+.context/
+PR_DESCRIPTION.md
