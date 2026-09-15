@@ -1,0 +1,13 @@
+{
+  "name": "gethamster-skills-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-catalog.mjs && node scripts/generate-catalog-manifest.mjs --check",
+    "generate": "node scripts/generate-catalog-manifest.mjs",
+    "test": "node --test scripts/validate-catalog.test.mjs"
+  },
+  "devDependencies": {
+    "js-yaml": "^5.4.1"
+  }
+}
