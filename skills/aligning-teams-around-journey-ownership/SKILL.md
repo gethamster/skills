@@ -2,6 +2,7 @@
 name: aligning-teams-around-journey-ownership
 description: "This skill teaches you how to assign clear, cross-functional ownership of customer journeys at every hierarchy level and build governance structures that keep journey management alive as an ongoing operating discipline rather than a one-time mapping exercise."
 metadata:
+  homepage: https://tryhamster.com
   method: ecosystem-journey-framework
 ---
 
@@ -160,7 +161,3 @@ Trying to govern everything at once overwhelms the organization and dilutes atte
 - [Structuring Journey Hierarchy Levels (L0-L3)](../structuring-journey-hierarchy-levels/SKILL.md)
 - [Identifying Cross-Journey Insights and Patterns](../identifying-cross-journey-insights/SKILL.md)
 - [Mapping Touchpoint Interconnections Across Journeys](../mapping-touchpoint-interconnections/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

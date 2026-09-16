@@ -2,6 +2,7 @@
 name: measuring-kanban-flow-metrics
 description: "This skill teaches you how to collect, calculate, and interpret the four core flow metrics in a kanban system so you can diagnose bottlenecks, forecast delivery dates, and drive continuous improvement with data instead of gut feel."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -175,7 +176,3 @@ Flag any item that exceeds your 85th percentile cycle time while still in progre
 - [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
 - [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
 - [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

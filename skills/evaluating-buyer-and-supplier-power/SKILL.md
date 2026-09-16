@@ -2,6 +2,7 @@
 name: evaluating-buyer-and-supplier-power
 description: "This skill teaches you how to gather and structure primary market research alongside secondary data to produce scored assessments of buyer bargaining power and supplier bargaining power, two distinct forces that shape industry profitability in the Six Forces Model."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -166,7 +167,3 @@ The power they hold as a buyer of your products is independent of the power they
 - [Synthesizing Six Forces into Strategic Recommendations](../synthesizing-six-forces-into-strategic-recommendations/SKILL.md)
 - [Conducting an Industry Rivalry Assessment](../conducting-industry-rivalry-assessment/SKILL.md)
 - [Assessing Threats of New Entrants and Substitutes](../assessing-threat-of-new-entrants-and-substitutes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

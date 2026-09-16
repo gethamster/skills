@@ -2,6 +2,7 @@
 name: resolving-stakeholder-disputes-with-moscow
 description: "This skill teaches you how to handle stakeholder disagreements during MoSCoW prioritization—especially when everyone insists their requirements are Must-haves—using timeboxing, trade-off analysis, and objective decision criteria."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -130,7 +131,3 @@ Share the decision log within 24 hours of the session. Include a clear summary o
 - [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
 - [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
 - [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

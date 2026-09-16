@@ -2,6 +2,7 @@
 name: enforcing-typography-and-spacing-standards
 description: "This skill teaches you to write and apply portable SKILL.md instruction files that govern font sizing, line height, letter spacing, whitespace, and visual density so AI coding agents stop producing generic-looking layouts and start generating typographically intentional interfaces."
 metadata:
+  homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework
 ---
 
@@ -168,7 +169,3 @@ If you only test with placeholder text like 'Welcome to Our Platform,' your rule
 - [Auditing AI-Generated Frontends for Design Quality](../auditing-ai-generated-frontends-for-design-quality/SKILL.md)
 - [Installing SKILL.md Files in AI Coding Agents](../installing-skill-files-in-ai-coding-agents/SKILL.md)
 - [Authoring Portable SKILL.md Files for Design Systems](../authoring-portable-skill-files-for-design-systems/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

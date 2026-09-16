@@ -2,6 +2,7 @@
 name: choosing-between-scrum-and-kanban
 description: "This skill teaches you how to evaluate your team's workflow characteristics, work arrival patterns, and organizational constraints to select the right kanban agile framework, whether that is Scrum, Kanban, Scrumban, or a custom hybrid."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -157,7 +158,3 @@ If you cannot explain why a ceremony exists in terms of your scored dimensions, 
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

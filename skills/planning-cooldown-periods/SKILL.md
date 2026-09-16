@@ -2,6 +2,7 @@
 name: planning-cooldown-periods
 description: "Teaches you how to structure the cool-down period between Shape Up build cycles so teams can fix bugs, pay down technical debt, explore new ideas, and prepare shaped work for the next betting table."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -148,7 +149,3 @@ When a VP asks 'what did the team do during that two-week break,' you can show t
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

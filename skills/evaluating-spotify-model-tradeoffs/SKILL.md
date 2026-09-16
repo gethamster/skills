@@ -2,6 +2,7 @@
 name: evaluating-spotify-model-tradeoffs
 description: "This skill teaches you how to systematically assess the spotify model pros cons for your specific organization so you can adopt the right elements, skip the wrong ones, and avoid the cargo-culting that has derailed dozens of Spotify Model implementations."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -169,7 +170,3 @@ Go back and find three to five specific failure mode scenarios for each element,
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

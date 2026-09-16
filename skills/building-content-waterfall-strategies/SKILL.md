@@ -2,6 +2,7 @@
 name: building-content-waterfall-strategies
 description: "This skill teaches you how to apply the Waterfall methodology to content production by cascading a single pillar asset into multiple formats and channels through a planned, sequential workflow."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -146,7 +147,3 @@ Document what worked and what didn't. Which derivative formats drove the most va
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

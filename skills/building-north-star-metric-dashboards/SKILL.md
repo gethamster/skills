@@ -2,6 +2,7 @@
 name: building-north-star-metric-dashboards
 description: "This skill teaches you how to design and implement real-time dashboards that visualize your North Star Metric alongside its supporting input metrics, giving your team a single source of truth for product health and growth."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-framework
 ---
 
@@ -118,7 +119,3 @@ A dashboard nobody looks at is worthless. Introduce the dashboard at a team all-
 - [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
 - [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
 - [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

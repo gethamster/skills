@@ -2,6 +2,7 @@
 name: mapping-scopes-for-building
 description: "This skill teaches you to organize building-phase work into scopes, which are integrated slices of design, front-end, and back-end work that can be completed and verified independently, replacing traditional task lists with a structure that reveals real progress."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -150,7 +151,3 @@ Any team member should be able to pick up the next scope when they finish one. T
 - [Tracking Progress with Hill Charts](../tracking-progress-with-hill-charts/SKILL.md)
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

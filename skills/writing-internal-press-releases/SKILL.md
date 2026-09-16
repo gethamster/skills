@@ -2,6 +2,7 @@
 name: writing-internal-press-releases
 description: "This skill teaches you how to draft a concise, customer-centric internal press release that forces clarity about who the customer is, what problem they face, and why your proposed solution matters, all before any code is written or design work begins."
 metadata:
+  homepage: https://tryhamster.com
   method: working-backwards
 ---
 
@@ -163,7 +164,3 @@ If you find yourself writing "The market for X is projected to reach $Y billion 
 - [Identifying Minimum Requirements by Working Backwards from Launch](../identifying-minimum-lovable-requirements/SKILL.md)
 - [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
 - [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

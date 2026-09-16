@@ -2,6 +2,7 @@
 name: comparing-v2mom-with-okrs-and-other-frameworks
 description: "This skill teaches you how to systematically evaluate V2MOM against OKRs, balanced scorecards, and other strategic planning frameworks so you can select the right system for your organization's size, culture, and strategic needs."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -154,7 +155,3 @@ Watch for the early signal of V2MOM documents being copied and slightly modified
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

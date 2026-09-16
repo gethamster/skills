@@ -2,6 +2,7 @@
 name: using-breadboards-and-fat-marker-sketches
 description: "Teaches you how to use breadboard notation for flow-based solutions and fat-marker sketches for visual concepts, so you define solutions at the right level of abstraction during shaping without accidentally handing builders a pixel-perfect spec or a vague wish."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -162,7 +163,3 @@ It is the interpretive layer that ensures everyone reads the artifact the same w
 - [Tracking Progress with Hill Charts](../tracking-progress-with-hill-charts/SKILL.md)
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

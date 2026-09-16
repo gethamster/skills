@@ -2,6 +2,7 @@
 name: running-build-measure-learn-cycles
 description: "This skill teaches you how to execute rapid, disciplined iterations through the build-measure-learn loop so that every cycle produces a concrete validated or invalidated hypothesis rather than just shipping features into the void."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -150,7 +151,3 @@ Catch it in Step 2: if your required sample size means a four-week experiment, e
 - [Making Pivot-or-Persevere Decisions](../defining-pivot-or-persevere-decisions/SKILL.md)
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

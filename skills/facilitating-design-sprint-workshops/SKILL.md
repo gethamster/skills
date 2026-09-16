@@ -2,6 +2,7 @@
 name: facilitating-design-sprint-workshops
 description: "This skill teaches you how to serve as the design sprint facilitator who guides a cross-functional team through every phase of a Google Design Sprint, from mapping the challenge through user testing, while managing group dynamics, enforcing time constraints, and keeping exercises on track."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -160,7 +161,3 @@ The facilitator must enforce the rule: observations only, no conclusions, until 
 - [Planning and Customizing Your Design Sprint Agenda](../planning-design-sprint-agendas/SKILL.md)
 - [Running Design Sprints Remotely with Distributed Teams](../running-remote-design-sprints/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

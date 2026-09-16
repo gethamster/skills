@@ -2,6 +2,7 @@
 name: managing-change-requests-in-waterfall
 description: "This skill teaches you how to evaluate, document, and process scope change requests through a formal change control board so you can handle inevitable changes without derailing your sequential waterfall model project plan."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -131,7 +132,3 @@ Periodically audit closed change requests to identify patterns. Are most changes
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

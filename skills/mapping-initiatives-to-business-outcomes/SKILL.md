@@ -2,6 +2,7 @@
 name: mapping-initiatives-to-business-outcomes
 description: "This skill teaches you how to draw explicit, evidence-based connections between every proposed feature, experiment, or initiative and the specific business outcome it is designed to drive, so nothing lands on your roadmap without a clear strategic rationale."
 metadata:
+  homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr
 ---
 
@@ -118,7 +119,3 @@ Set a recurring review to update your initiative-to-outcome map. Monthly is idea
 - [Prioritizing Competing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
 - [Transitioning from Feature-Based to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

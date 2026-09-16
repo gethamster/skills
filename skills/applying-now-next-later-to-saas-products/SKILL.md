@@ -2,6 +2,7 @@
 name: applying-now-next-later-to-saas-products
 description: "This skill teaches you how to reshape the Now-Next-Later roadmap for the specific demands of SaaS, including continuous deployment, recurring customer feedback loops, and subscription-revenue pressures that make traditional timeline roadmaps brittle."
 metadata:
+  homepage: https://tryhamster.com
   method: now-next-later-framework
 ---
 
@@ -151,7 +152,3 @@ The roadmap review feeds sprint planning by updating what is in Now, but they ar
 - [Building Now-Next-Later Roadmap Templates](../building-now-next-later-roadmap-templates/SKILL.md)
 - [Reprioritizing and Moving Items Across Horizons](../reprioritizing-across-horizons/SKILL.md)
 - [Communicating Now-Next-Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

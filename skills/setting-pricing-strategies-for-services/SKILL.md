@@ -2,6 +2,7 @@
 name: setting-pricing-strategies-for-services
 description: "This skill teaches you how to select, implement, and optimize pricing models—such as value-based, competitive, penetration, and tiered pricing—so your prices reinforce your overall pricing strategy marketing mix positioning."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -173,7 +174,3 @@ Document each alignment check and address any gaps before communicating the new 
 - [Mapping Place and Distribution Channels](../mapping-place-and-distribution-channels/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
 - [Optimizing People Touchpoints in Service Delivery](../optimizing-people-touchpoints/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

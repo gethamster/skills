@@ -2,6 +2,7 @@
 name: setting-appetites-and-managing-scope
 description: "This skill teaches you how to declare a fixed time appetite for a project and then deliberately cut scope by separating must-haves from nice-to-haves, so your team ships meaningful work every cycle without schedule overruns."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -171,7 +172,3 @@ If no, cut scope to fit a smaller appetite and staff normally.
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

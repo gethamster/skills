@@ -2,6 +2,7 @@
 name: interpreting-bayesian-and-frequentist-experiment-results
 description: "Teaches you how to read PostHog's experiment results dashboard, understand the difference between Bayesian credible intervals and frequentist p-values, and make confident ship-or-kill decisions based on the statistical output."
 metadata:
+  homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method
 ---
 
@@ -155,7 +156,3 @@ The framework choice should be documented before any data is collected.
 - [Designing Experiment Hypotheses and Success Metrics for Onboarding](../designing-onboarding-experiment-hypotheses-and-metrics/SKILL.md)
 - [Segmenting New User Cohorts for Onboarding Experiments](../segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md)
 - [Integrating PostHog A/B Tests with Webflow and Marketing Pages](../integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

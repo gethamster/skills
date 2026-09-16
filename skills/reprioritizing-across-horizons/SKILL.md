@@ -2,6 +2,7 @@
 name: reprioritizing-across-horizons
 description: "This skill teaches you how to run regular, disciplined reviews that promote, demote, or remove items between the Now, Next, and Later horizons so your roadmap stays aligned with reality instead of decaying into a stale wish list."
 metadata:
+  homepage: https://tryhamster.com
   method: now-next-later-framework
 ---
 
@@ -160,7 +161,3 @@ Between full reviews, only revisit a horizon if a significant event triggers it,
 - [Building Now-Next-Later Roadmap Templates](../building-now-next-later-roadmap-templates/SKILL.md)
 - [Applying Now-Next-Later Roadmaps to SaaS Products](../applying-now-next-later-to-saas-products/SKILL.md)
 - [Communicating Now-Next-Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

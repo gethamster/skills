@@ -2,6 +2,7 @@
 name: recruiting-developer-advisory-members
 description: "This skill teaches you how to identify, qualify, and recruit a rotating panel of 20–50 developers who represent your target personas and will provide candid, actionable feedback for your devtools product."
 metadata:
+  homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework
 ---
 
@@ -151,7 +152,3 @@ This audit becomes a recurring practice as you manage your board over time, conn
 - [Conducting Non-Pitch Discovery Calls with Developers](../conducting-non-pitch-discovery-calls/SKILL.md)
 - [Designing Pain-Focused Interview Guides for Developer Calls](../designing-developer-pain-interview-guides/SKILL.md)
 - [Rotating and Managing Board Membership Over Time](../rotating-and-managing-board-membership/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

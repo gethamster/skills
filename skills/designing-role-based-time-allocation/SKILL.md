@@ -2,6 +2,7 @@
 name: designing-role-based-time-allocation
 description: "This skill teaches you how to structure your weekly schedule so you intentionally divide hours between doing the work (technician), building systems and managing people (manager), and thinking about vision and growth (entrepreneur), instead of letting urgency decide for you."
 metadata:
+  homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework
 ---
 
@@ -168,7 +169,3 @@ The cost of skipping it is months of invisible drift back toward technician domi
 - [Developing Your Entrepreneurial Vision](../developing-your-entrepreneurial-vision/SKILL.md)
 - [Transitioning from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
 - [Applying the E-Myth Framework to Agencies and Service Businesses](../applying-the-e-myth-framework-to-agencies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

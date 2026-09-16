@@ -2,6 +2,7 @@
 name: managing-scrum-boards-in-jira
 description: "This skill teaches you how to set up and manage Jira scrum boards, configure custom workflows, track team velocity, and generate burndown charts to maintain full sprint visibility."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -149,7 +150,3 @@ After completing the sprint, review the Sprint Report under **Reports > Sprint R
 - [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
 - [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
 - [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

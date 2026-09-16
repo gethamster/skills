@@ -2,6 +2,7 @@
 name: planning-design-sprint-agendas
 description: "This skill teaches you how to structure a complete multi-day sprint agenda, adapt the classic five-day format into compressed design sprint 2.0 or four-day variations, and prepare all logistics so your team can focus entirely on the work."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -164,7 +165,3 @@ Once the team has completed one full sprint and understands the rhythm, they hav
 - [Facilitating a Design Sprint as the Sprint Master](../facilitating-design-sprint-workshops/SKILL.md)
 - [Running Design Sprints Remotely with Distributed Teams](../running-remote-design-sprints/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

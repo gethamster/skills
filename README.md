@@ -88,7 +88,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Attribution
 
-Every method opens with a `> Created by` line directly under its title, naming its originator and linking the original work where one is known. Every curated skill closes with a link back to Hamster.
+Every method opens with a `> Created by` line directly under its title, naming its originator and linking the original work where one is known. Every curated skill carries a link back to Hamster in its frontmatter `metadata.homepage` field.
 
 ## License
 

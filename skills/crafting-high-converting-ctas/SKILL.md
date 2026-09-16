@@ -2,6 +2,7 @@
 name: crafting-high-converting-ctas
 description: "This skill teaches you how to write CTAs using value-driven formulas that emphasize outcomes over actions, with specific patterns for buttons, forms, and different page contexts so every click opportunity maximizes conversion."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -199,7 +200,3 @@ A high CTR with low downstream conversion is often a sign that the CTA oversold 
 - [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
 - [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: decomposing-activities-into-user-tasks
 description: "This skill teaches you how to take high-level user activities from your story map backbone and systematically break them into specific tasks and vertically prioritized user stories, producing the detailed body of your map that drives sprint planning and release slicing."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -154,7 +155,3 @@ After every major user research insight, demo, or sprint retrospective, spend 15
 - [Facilitating Collaborative Story Mapping Workshops](../facilitating-story-mapping-workshops/SKILL.md)
 - [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
 - [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

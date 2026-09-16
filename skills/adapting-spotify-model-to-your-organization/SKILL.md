@@ -2,6 +2,7 @@
 name: adapting-spotify-model-to-your-organization
 description: "This skill teaches you how to translate the Spotify squad, tribe, chapter, and guild structure into an operating model that fits your company's specific size, culture, technical landscape, and existing processes, rather than blindly copying another company's org chart."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -177,7 +178,3 @@ The correct approach is to draw squad boundaries based on product ownership and 
 - [Balancing Squad Autonomy with Organizational Alignment](../balancing-autonomy-and-alignment/SKILL.md)
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

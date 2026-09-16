@@ -2,6 +2,7 @@
 name: migrating-from-flat-to-usage-based-pricing
 description: "This skill teaches you how to systematically transition an existing customer base from fixed subscription pricing models to usage-based or hybrid AI pricing, managing the financial, operational, and relationship risks at each phase of the migration."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-pricing-playbook
 ---
 
@@ -131,7 +132,3 @@ After all cohorts are migrated and parallel billing periods have ended, run a co
 - [Managing Gross Margins on AI-Powered Features](../managing-gross-margins-on-ai-features/SKILL.md)
 - [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
 - [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

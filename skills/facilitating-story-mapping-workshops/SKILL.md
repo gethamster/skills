@@ -2,6 +2,7 @@
 name: facilitating-story-mapping-workshops
 description: "This skill teaches you how to plan, timebox, and facilitate a story mapping workshop that produces a shared visual backlog and aligned release plan from a cross-functional group of stakeholders."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -163,7 +164,3 @@ If the PM must facilitate, they should explicitly delegate final call authority 
 - [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
 - [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
 - [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

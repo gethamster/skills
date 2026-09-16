@@ -2,6 +2,7 @@
 name: building-topical-authority-through-content-clustering
 description: "This skill teaches you how to organize content into interconnected pillar-and-cluster structures that signal deep subject-matter expertise to search engines, improving rankings across an entire topic rather than one keyword at a time."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -167,7 +168,3 @@ Check for this during the outlining phase (Step 5), not after publication.
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

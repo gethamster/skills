@@ -2,6 +2,7 @@
 name: synthesizing-six-forces-into-strategic-recommendations
 description: "This skill teaches you how to combine individual assessments of all six competitive forces into a single strategic positioning map that drives concrete decisions about where to invest, whom to partner with, and how to compete."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -160,7 +161,3 @@ You do not need to redo the full analysis each quarter. A focused 60-90 minute s
 - [Conducting an Industry Rivalry Assessment](../conducting-industry-rivalry-assessment/SKILL.md)
 - [Evaluating Buyer and Supplier Bargaining Power](../evaluating-buyer-and-supplier-power/SKILL.md)
 - [Assessing Threats of New Entrants and Substitutes](../assessing-threat-of-new-entrants-and-substitutes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

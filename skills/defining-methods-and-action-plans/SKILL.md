@@ -2,6 +2,7 @@
 name: defining-methods-and-action-plans
 description: "This skill teaches you how to translate the vision and values components of a V2MOM into specific, prioritized methods and granular action plans that teams can execute against, producing a concrete roadmap from strategic intent to daily work."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -149,7 +150,3 @@ If a method is no longer relevant, mark it as deprioritized with a one-sentence 
 - [Cascading V2MOMs from Leadership to Individual Contributors](../cascading-v2moms-across-teams/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: setting-go-roadmap-metrics
 description: "This skill teaches you how to attach measurable KPIs and clear success criteria to every goal on a GO Product Roadmap, so progress is objective and stakeholder conversations stay grounded in evidence rather than opinion."
 metadata:
+  homepage: https://tryhamster.com
   method: go-product-roadmap
 ---
 
@@ -163,7 +164,3 @@ When you update a target, document the old target, the new target, and the reaso
 - [Reviewing and Adapting GO Roadmap Goals Each Quarter](../reviewing-and-adapting-roadmap-goals/SKILL.md)
 - [Structuring Timeframes on a GO Product Roadmap](../structuring-roadmap-timeframes/SKILL.md)
 - [Defining Goal-Oriented Product Goals for Your Roadmap](../defining-goal-oriented-product-goals/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: setting-kpis-across-race-stages
 description: "This skill teaches you how to define measurable objectives and key performance indicators for each RACE stage—Reach, Act, Convert, and Engage—so you can quantify performance across the entire customer journey."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -133,7 +134,3 @@ When a KPI consistently exceeds its target, raise the bar. When a KPI consistent
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

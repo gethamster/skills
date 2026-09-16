@@ -2,6 +2,7 @@
 name: selecting-digital-channels-per-growth-quadrant
 description: "This skill teaches you how to map specific digital marketing channels — including content marketing, email marketing, SEO, paid media, and inbound tactics — to each of the four Ansoff Matrix growth strategies so you allocate budget and effort where they'll drive the most impact."
 metadata:
+  homepage: https://tryhamster.com
   method: ansoff-matrix
 ---
 
@@ -162,7 +163,3 @@ Rebalance your channel mix based on this data. A channel that's underperforming 
 - [Defining Target Markets for Expansion Strategies](../defining-target-markets-for-expansion-strategies/SKILL.md)
 - [Designing Product Development Growth Paths](../designing-product-development-growth-paths/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

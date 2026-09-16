@@ -2,6 +2,7 @@
 name: structuring-opportunity-spaces-hierarchically
 description: "This skill teaches you how to decompose broad customer opportunity areas into smaller, specific sub-opportunities arranged in a navigable tree structure, enabling clearer prioritization and more targeted solution generation within the Opportunity Solution Tree."
 metadata:
+  homepage: https://tryhamster.com
   method: opportunity-solution-tree
 ---
 
@@ -143,7 +144,3 @@ This ongoing maintenance is covered in depth in [maintaining a living Opportunit
 - [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
 - [Identifying Customer Opportunities from Continuous Research](../identifying-customer-opportunities-from-research/SKILL.md)
 - [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

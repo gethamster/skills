@@ -2,6 +2,7 @@
 name: writing-benefit-driven-headlines
 description: "This skill teaches you how to transform feature-focused headlines into customer-centric benefit statements that immediately communicate value and compel readers to keep reading or take action."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -182,7 +183,3 @@ Document your results and the patterns you observe. Over time, you'll build an i
 - [Writing Email Copy Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
 - [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
 - [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

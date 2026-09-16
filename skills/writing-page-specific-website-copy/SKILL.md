@@ -2,6 +2,7 @@
 name: writing-page-specific-website-copy
 description: "This skill teaches you how to tailor your copy structure, messaging hierarchy, and persuasion techniques to the distinct conversion goals of homepages, landing pages, pricing pages, and feature pages — so every page on your site does exactly one job well."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -182,7 +183,3 @@ Finally, read your copy aloud using [customer language](https://tryhamster.com/s
 - [Writing Email Copy Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
 - [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

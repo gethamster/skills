@@ -2,6 +2,7 @@
 name: prioritizing-ideas-with-ice-scoring
 description: "ICE scoring teaches you to evaluate and rank competing product ideas by systematically scoring each on Impact, Confidence, and Ease, producing a prioritized list that tells your team which hypotheses to test first."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -173,7 +174,3 @@ Then use a strategic discussion (not the ICE math) to decide how to allocate res
 - [Replacing Traditional Product Roadmaps with GIST Planning](../replacing-traditional-roadmaps-with-gist/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: segmenting-customers-by-unmet-needs
 description: "This skill teaches you how to group customers into segments based on shared patterns of underserved outcomes rather than demographics, so you can target product strategy, positioning, and roadmap decisions at the clusters of people who actually want the same things."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -158,7 +159,3 @@ Merge them and simplify.
 - [Defining the Customer's Core Functional Job](../defining-core-functional-jobs/SKILL.md)
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
 - [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

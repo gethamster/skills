@@ -2,6 +2,7 @@
 name: identifying-obstacles-and-mitigation-strategies
 description: "This skill teaches you how to systematically surface the risks, blockers, and dependencies hiding inside your V2MOM and convert each one into a concrete contingency plan with clear owners, triggers, and countermeasures."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -157,7 +158,3 @@ Frame internal obstacles as planning intelligence, not blame.
 - [Cascading V2MOMs from Leadership to Individual Contributors](../cascading-v2moms-across-teams/SKILL.md)
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

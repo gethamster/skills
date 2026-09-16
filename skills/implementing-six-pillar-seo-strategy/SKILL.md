@@ -2,6 +2,7 @@
 name: implementing-six-pillar-seo-strategy
 description: "This skill teaches you how to plan, sequence, and execute all six pillars of a comprehensive SEO strategy so that technical health, content depth, on-page optimization, off-page authority, user experience, and analytics work as a single integrated system rather than disconnected initiatives."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -174,7 +175,3 @@ It is a structural practice that catches drift before it becomes a crisis. Block
 - [Mapping Current Reality Using the Six Pillars Framework](../mapping-current-reality-with-pillar-one/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

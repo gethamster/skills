@@ -2,6 +2,7 @@
 name: shipping-production-systems-inside-client-infrastructure
 description: "Teaches the practical workflows a forward deployed software engineer uses to deploy, integrate, and harden production-grade software within a customer's existing tech stack, security policies, and operational constraints."
 metadata:
+  homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
 ---
 
@@ -166,7 +167,3 @@ Get preliminary approval on your approach before investing engineering time. Tre
 - [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
 - [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
 - [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

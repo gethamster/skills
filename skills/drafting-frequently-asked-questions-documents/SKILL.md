@@ -2,6 +2,7 @@
 name: drafting-frequently-asked-questions-documents
 description: "This skill teaches you to write external and internal FAQ sections that systematically stress-test every assumption in your PR/FAQ document, surfacing the hardest questions before a single line of code is written."
 metadata:
+  homepage: https://tryhamster.com
   method: working-backwards
 ---
 
@@ -136,7 +137,3 @@ If the external questions do not sound like something you have heard in a user i
 - [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
 - [Writing Internal Press Releases for Product Concepts](../writing-internal-press-releases/SKILL.md)
 - [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

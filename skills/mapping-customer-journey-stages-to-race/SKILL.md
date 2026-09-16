@@ -2,6 +2,7 @@
 name: mapping-customer-journey-stages-to-race
 description: "This skill teaches you how to systematically align each customer journey stage—from initial awareness through post-purchase loyalty—with the four RACE funnel phases (Reach, Act, Convert, Engage) so every touchpoint is planned and no gap exists in your marketing coverage."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -146,7 +147,3 @@ This is not a one-time exercise. Markets change, products evolve, and customer e
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

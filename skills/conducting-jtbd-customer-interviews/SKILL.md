@@ -2,6 +2,7 @@
 name: conducting-jtbd-customer-interviews
 description: "This skill teaches you how to run switch interviews and timeline interviews that uncover the real jobs, hiring criteria, and switching triggers behind customer decisions, giving you the raw material for every other activity in the JTBD framework."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -173,7 +174,3 @@ After the interview, spend 10 minutes debriefing with the observer about what th
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
 - [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
 - [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

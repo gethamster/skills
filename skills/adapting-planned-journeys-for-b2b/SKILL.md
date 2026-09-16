@@ -2,6 +2,7 @@
 name: adapting-planned-journeys-for-b2b
 description: "This skill teaches you how to reshape the Planned Journey Framework's latent, evaluation, and buying stages so they accurately model B2B customer journeys involving buying committees, extended timelines, and multi-stakeholder consensus."
 metadata:
+  homepage: https://tryhamster.com
   method: planned-journey-framework
 ---
 
@@ -152,7 +153,3 @@ For instance, you might discover that 60% of lost deals had a technical evaluato
 - [Connecting Insights Across Journey Stages](../connecting-cross-stage-insights/SKILL.md)
 - [Building Planned Journey Funnel Visualizations](../building-planned-journey-funnel-visualizations/SKILL.md)
 - [Mapping High-Involvement Purchase Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

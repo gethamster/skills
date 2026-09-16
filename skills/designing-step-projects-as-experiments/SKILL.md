@@ -2,6 +2,7 @@
 name: designing-step-projects-as-experiments
 description: "This skill teaches you to decompose product ideas into small, time-boxed experiments (step-projects) of no more than 10 weeks that test your riskiest assumptions with measurable outcomes, so you build evidence iteratively instead of betting everything on a big launch."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -151,7 +152,3 @@ Without it, step-projects become busywork.
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

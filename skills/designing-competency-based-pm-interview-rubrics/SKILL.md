@@ -2,6 +2,7 @@
 name: designing-competency-based-pm-interview-rubrics
 description: "This skill teaches you how to build structured product manager interview questions and scoring rubrics that map directly to the four quadrants of a PM competency framework, ensuring every interview loop evaluates candidates consistently and comprehensively."
 metadata:
+  homepage: https://tryhamster.com
   method: product-team-competencies-framework
 ---
 
@@ -151,7 +152,3 @@ During the debrief, start each competency discussion by reading the evidence, no
 - [Differentiating PM Role Types Using the Competency Framework](../differentiating-product-manager-role-types/SKILL.md)
 - [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
 - [Writing Competency-Based Product Manager Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

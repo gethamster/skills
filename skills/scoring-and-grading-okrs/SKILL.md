@@ -2,6 +2,7 @@
 name: scoring-and-grading-okrs
 description: "This skill teaches you how to evaluate OKR progress using the 0.0-1.0 scoring scale, distinguish between committed and aspirational target expectations, and translate scores into organizational learning rather than performance judgment."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -156,7 +157,3 @@ Does the target need to be adjusted? Is the underlying objective still the right
 - [Writing Effective OKR Objectives](../writing-effective-objectives/SKILL.md)
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

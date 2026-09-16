@@ -2,6 +2,7 @@
 name: tracking-ai-search-visibility
 description: "This skill teaches you how to monitor, measure, and benchmark your brand's appearances across AI-generated search results, chatbots, and answer engines using the best AI SEO tools alongside manual auditing methods."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-seo-optimization
 ---
 
@@ -130,7 +131,3 @@ Over time, you'll build a feedback loop: track → analyze → optimize → re-t
 - [Auditing How LLMs Represent Your Brand and Content](../auditing-llm-knowledge-of-your-brand/SKILL.md)
 - [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
 - [Implementing Schema Markup for Answer Engine Optimization](../implementing-schema-markup-for-aeo/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

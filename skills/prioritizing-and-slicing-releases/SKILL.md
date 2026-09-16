@@ -2,6 +2,7 @@
 name: prioritizing-and-slicing-releases
 description: "This skill teaches you how to draw horizontal swim lanes across a story map to carve the backlog into an MVP and sequenced release increments, so every release delivers a coherent, end-to-end slice of user value rather than a grab bag of features."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -156,7 +157,3 @@ Everything beyond the third release belongs in a loosely defined 'future' bucket
 - [Facilitating Collaborative Story Mapping Workshops](../facilitating-story-mapping-workshops/SKILL.md)
 - [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
 - [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

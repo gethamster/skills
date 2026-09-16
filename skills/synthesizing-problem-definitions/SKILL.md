@@ -2,6 +2,7 @@
 name: synthesizing-problem-definitions
 description: "This skill teaches you how to apply convergent thinking in the Define phase of the double diamond framework — analyzing discovery findings, clustering themes, and crafting a precise problem statement that focuses your team on the right challenge."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -133,7 +134,3 @@ If validation reveals misalignment, iterate. The Define phase is not a one-shot 
 - [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
 - [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

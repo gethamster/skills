@@ -2,6 +2,7 @@
 name: showcasing-pm-competencies-in-portfolios-and-resumes
 description: "Teaches you how to use the four-quadrant competency framework to structure a product manager resume or portfolio that clearly demonstrates breadth and depth across strategic, tactical, internal, and external skills."
 metadata:
+  homepage: https://tryhamster.com
   method: product-team-competencies-framework
 ---
 
@@ -155,7 +156,3 @@ Hiring managers care about how you think, not your employer's product roadmap. I
 - [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
 - [Writing Competency-Based Product Manager Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
 - [Designing PM Interview Rubrics Aligned to Competency Quadrants](../designing-competency-based-pm-interview-rubrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

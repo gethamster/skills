@@ -2,6 +2,7 @@
 name: estimating-work-with-story-points
 description: "This skill teaches you how to use relative estimation techniques—story points and planning poker—to size work items, forecast sprint capacity, and improve your Scrum team's predictability over time."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -127,7 +128,3 @@ Recalibration doesn't mean retroactively changing old estimates. It means acknow
 - [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
 - [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
 - [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: evaluating-market-product-fit
 description: "This skill teaches you how to systematically assess whether your product satisfies the core needs of your target market by analyzing market category, audience hypotheses, and value propositions—the foundational first fit in the Four Fits Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -140,7 +141,3 @@ Document your assessment with the evidence behind each rating. This becomes a li
 - [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
 - [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
 - [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

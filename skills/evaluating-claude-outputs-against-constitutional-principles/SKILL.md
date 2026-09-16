@@ -2,6 +2,7 @@
 name: evaluating-claude-outputs-against-constitutional-principles
 description: "This skill teaches you how to build and apply a structured evaluation rubric that measures whether Claude's generated content meets constitutional standards for honesty, accuracy, and balanced perspective, turning subjective quality review into a repeatable, scorable process for SEO content."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -149,7 +150,3 @@ Fluency is not balance. Combat this by training reviewers to score each dimensio
 - [Applying Contextual Judgment in Claude AI Workflows](../applying-contextual-judgment-in-claude-ai-workflows/SKILL.md)
 - [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
 - [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

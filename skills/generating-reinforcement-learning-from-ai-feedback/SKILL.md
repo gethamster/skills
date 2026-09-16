@@ -2,6 +2,7 @@
 name: generating-reinforcement-learning-from-ai-feedback
 description: "This skill teaches you how to replace costly human preference annotations with AI-generated preference labels, creating scalable training signals for reinforcement learning alignment within the Constitutional AI framework."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -157,7 +158,3 @@ Document what worked and what didn't. RLAIF is inherently iterative — most tea
 - [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
 - [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

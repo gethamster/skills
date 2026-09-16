@@ -2,6 +2,7 @@
 name: running-waterfall-testing-phases
 description: "This skill teaches you how to plan, structure, and execute the dedicated testing phase in a waterfall model project — covering unit, integration, system, and acceptance testing to validate that every requirement is met before deployment."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -145,7 +146,3 @@ Present this report to the phase gate review board. A conditional pass means dep
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

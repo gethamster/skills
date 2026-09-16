@@ -2,6 +2,7 @@
 name: managing-projects-with-kanban
 description: "This skill teaches you how to plan, execute, and deliver entire projects using Kanban's pull-based system, replacing fixed sprint cycles with continuous flow, explicit policies, and data-driven forecasting."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -167,7 +168,3 @@ If the data shows no bottleneck, merge them back.
 - [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
 - [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
 - [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

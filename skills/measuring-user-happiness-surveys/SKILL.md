@@ -2,6 +2,7 @@
 name: measuring-user-happiness-surveys
 description: "This skill teaches you how to design, deploy, and analyze user satisfaction surveys, NPS, and sentiment scores to quantify the Happiness dimension of the HEART Framework and turn subjective user feelings into actionable product metrics."
 metadata:
+  homepage: https://tryhamster.com
   method: heart-framework
 ---
 
@@ -186,7 +187,3 @@ Finally, communicate results back to the broader team. When a team sees that the
 - [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
 - [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

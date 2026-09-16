@@ -2,6 +2,7 @@
 name: conducting-sprint-user-tests
 description: "This skill teaches you how to recruit five target-profile participants, run moderated usability interviews against your sprint prototype, capture structured observations as a team, and identify patterns that validate or invalidate the hypothesis you set at the start of the sprint."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -147,7 +148,3 @@ Never skip it, even if the outcome seems obvious.
 - [Facilitating a Design Sprint as the Sprint Master](../facilitating-design-sprint-workshops/SKILL.md)
 - [Running Design Sprints Remotely with Distributed Teams](../running-remote-design-sprints/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

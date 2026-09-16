@@ -2,6 +2,7 @@
 name: designing-content-cluster-architectures
 description: "This skill teaches you how to structure pillar pages, supporting articles, and internal linking patterns into cohesive content clusters that signal topical depth to search engines and improve rankings across entire keyword families."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -161,7 +162,3 @@ Treat each cluster as a product that requires maintenance, not a project with a 
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: communicating-roadmaps-to-stakeholders
 description: "This skill teaches you how to present a timeline-free, horizon-based product roadmap to executives, customers, and cross-functional teams so they understand priorities and sequence without latching onto false delivery dates."
 metadata:
+  homepage: https://tryhamster.com
   method: now-next-later-framework
 ---
 
@@ -149,7 +150,3 @@ Follow up with the document as a reference artifact, not as the primary communic
 - [Building Now-Next-Later Roadmap Templates](../building-now-next-later-roadmap-templates/SKILL.md)
 - [Reprioritizing and Moving Items Across Horizons](../reprioritizing-across-horizons/SKILL.md)
 - [Applying Now-Next-Later Roadmaps to SaaS Products](../applying-now-next-later-to-saas-products/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

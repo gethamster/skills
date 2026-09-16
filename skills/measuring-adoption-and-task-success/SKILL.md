@@ -2,6 +2,7 @@
 name: measuring-adoption-and-task-success
 description: "This skill teaches you how to track new user onboarding funnels, feature adoption curves, and task-completion rates to evaluate the Adoption and Task Success dimensions of the HEART Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: heart-framework
 ---
 
@@ -154,7 +155,3 @@ For interview or review contexts, see [Presenting HEART Metrics in Product Manag
 - [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
 - [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

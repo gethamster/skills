@@ -2,6 +2,7 @@
 name: balancing-autonomy-and-alignment
 description: "This skill teaches you how to set guardrails, write mission briefs, and use OKRs so squads can move fast on their own while staying strategically coherent with the rest of the organization."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -162,7 +163,3 @@ If a squad abandoned its original approach but hit its key results through a bet
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

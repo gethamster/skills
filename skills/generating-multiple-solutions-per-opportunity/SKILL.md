@@ -2,6 +2,7 @@
 name: generating-multiple-solutions-per-opportunity
 description: "This skill teaches you how to apply divergent thinking techniques to brainstorm at least three distinct solution ideas per customer opportunity, preventing premature commitment to a single approach in your Opportunity Solution Tree."
 metadata:
+  homepage: https://tryhamster.com
   method: opportunity-solution-tree
 ---
 
@@ -149,7 +150,3 @@ At this point — and only at this point — you can begin convergent thinking. 
 - [Structuring and Grouping Opportunities into a Hierarchy](../structuring-opportunity-spaces-hierarchically/SKILL.md)
 - [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
 - [Identifying Customer Opportunities from Continuous Research](../identifying-customer-opportunities-from-research/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

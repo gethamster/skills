@@ -2,6 +2,7 @@
 name: managing-six-week-cycles
 description: "This skill teaches you how to structure fixed six-week build cycles where teams commit to shaped work, manage their own scope, and ship on time, using the circuit breaker to kill projects that fail to converge rather than letting them drag on."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -149,7 +150,3 @@ Establish a firm rule: new ideas that come up during a cycle go into a list for 
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

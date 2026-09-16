@@ -2,6 +2,7 @@
 name: operating-autonomously-in-customer-environments
 description: "This skill teaches forward deployed engineers how to make fast, independent technical decisions inside customer deployments while maintaining clear alignment with their home organization's product roadmap and engineering standards."
 metadata:
+  homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
 ---
 
@@ -147,7 +148,3 @@ Discuss this with your manager and deliberately move low-risk decisions down to 
 - [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
 - [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
 - [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

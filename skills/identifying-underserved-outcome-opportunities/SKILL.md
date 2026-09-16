@@ -2,6 +2,7 @@
 name: identifying-underserved-outcome-opportunities
 description: "This skill teaches you how to use opportunity scoring, combining importance and satisfaction ratings, to quantify which desired outcomes are most underserved by current solutions and represent the strongest targets for product innovation."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -161,7 +162,3 @@ The three-column view preserves this distinction.
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
 - [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
 - [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: evaluating-market-penetration-strategies
 description: "This skill teaches you how to systematically analyze, compare, and select tactics — from pricing changes to lead generation campaigns — that increase market share for your existing products in your current markets."
 metadata:
+  homepage: https://tryhamster.com
   method: ansoff-matrix
 ---
 
@@ -165,7 +166,3 @@ Document everything — the evaluation matrix, pilot design, results, and decisi
 - [Designing Product Development Growth Paths](../designing-product-development-growth-paths/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
 - [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

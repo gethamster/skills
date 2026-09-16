@@ -2,6 +2,7 @@
 name: defining-goal-oriented-product-goals
 description: "This skill teaches you how to identify, articulate, and validate outcome-based product goals that anchor your strategic product roadmap around business value instead of feature requests."
 metadata:
+  homepage: https://tryhamster.com
   method: go-product-roadmap
 ---
 
@@ -139,7 +140,3 @@ The 60 minutes you spend aligning stakeholders upfront saves dozens of hours of 
 - [Mapping Features and Capabilities to Strategic Goals](../mapping-features-to-roadmap-goals/SKILL.md)
 - [Reviewing and Adapting GO Roadmap Goals Each Quarter](../reviewing-and-adapting-roadmap-goals/SKILL.md)
 - [Structuring Timeframes on a GO Product Roadmap](../structuring-roadmap-timeframes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

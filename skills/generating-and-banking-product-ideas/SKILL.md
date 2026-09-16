@@ -2,6 +2,7 @@
 name: generating-and-banking-product-ideas
 description: "This skill teaches you how to create, populate, and maintain an always-open idea bank that continuously captures hypothetical solutions mapped to strategic goals, so your team never runs out of validated candidates when planning step-project experiments."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -151,7 +152,3 @@ A bank with 200 entries and good filters is more valuable than a bank with 20 en
 - [Replacing Traditional Product Roadmaps with GIST Planning](../replacing-traditional-roadmaps-with-gist/SKILL.md)
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

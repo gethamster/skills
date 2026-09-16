@@ -2,6 +2,7 @@
 name: integrating-impact-maps-with-roadmaps
 description: "This skill teaches you how to translate a completed impact map into a prioritized, outcome-driven product manager roadmap that clearly communicates strategic intent to leadership and engineering teams."
 metadata:
+  homepage: https://tryhamster.com
   method: impact-mapping
 ---
 
@@ -134,7 +135,3 @@ This review cadence is what keeps the roadmap connected to the impact map over t
 - [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
 - [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

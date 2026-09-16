@@ -2,6 +2,7 @@
 name: validating-assumptions-with-experiments
 description: "This skill teaches you how to treat every branch of an impact map as a hypothesis, design lightweight experiments to test those hypotheses, and use the results to iterate on your map — ensuring your team builds only what evidence supports."
 metadata:
+  homepage: https://tryhamster.com
   method: impact-mapping
 ---
 
@@ -148,7 +149,3 @@ Return to Step 2 and pick the next highest-risk assumption. This cycle continues
 - [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
 - [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

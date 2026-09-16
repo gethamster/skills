@@ -2,6 +2,7 @@
 name: tracking-engagement-and-retention-metrics
 description: "This skill teaches you how to instrument, collect, and analyze behavioral product data—session frequency, feature usage, and cohort retention—to quantify the Engagement and Retention dimensions of the HEART Framework at scale."
 metadata:
+  homepage: https://tryhamster.com
   method: heart-framework
 ---
 
@@ -169,7 +170,3 @@ Revisit and recalibrate targets quarterly. As your product matures, the levers f
 - [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
 - [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

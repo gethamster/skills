@@ -2,6 +2,7 @@
 name: benchmarking-ai-product-pricing
 description: "This skill teaches you how to systematically research, normalize, and compare AI product pricing across competitors so you can position your own pricing with confidence and data instead of guesswork."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-pricing-playbook
 ---
 
@@ -130,7 +131,3 @@ Build a lightweight process for updating your benchmark quarterly. Create a chec
 - [Managing Gross Margins on AI-Powered Features](../managing-gross-margins-on-ai-features/SKILL.md)
 - [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
 - [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

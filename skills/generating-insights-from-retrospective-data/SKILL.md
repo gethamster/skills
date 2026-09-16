@@ -2,6 +2,7 @@
 name: generating-insights-from-retrospective-data
 description: "This skill teaches you how to facilitate the analysis phase of an agile retrospective, guiding teams to move past surface-level complaints and uncover the root causes, systemic patterns, and meaningful insights that lead to lasting improvements."
 metadata:
+  homepage: https://tryhamster.com
   method: five-step-retrospective-framework
 ---
 
@@ -131,7 +132,3 @@ Protecting this time is one of the facilitator's most important responsibilities
 - [Tracking Retrospective Action Items Across Sprints](../tracking-retrospective-action-items-across-sprints/SKILL.md)
 - [Setting the Stage for Effective Retrospectives](../setting-the-stage-for-retrospectives/SKILL.md)
 - [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

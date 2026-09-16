@@ -2,6 +2,7 @@
 name: choosing-kanban-tools-and-software
 description: "This skill teaches you how to systematically evaluate and select the best kanban boards by matching tool capabilities to your team's workflow complexity, integration ecosystem, and scaling needs, so you avoid costly migrations later."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -156,7 +157,3 @@ If you need historical metrics, export them to a spreadsheet before deactivating
 - [Measuring Kanban Flow Metrics](../measuring-kanban-flow-metrics/SKILL.md)
 - [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
 - [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

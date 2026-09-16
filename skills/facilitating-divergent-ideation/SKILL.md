@@ -2,6 +2,7 @@
 name: facilitating-divergent-ideation
 description: "This skill teaches you how to run structured brainstorming, co-design workshops, and rapid prototyping sessions that generate a wide range of potential solutions during the second diamond's divergent phase."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -153,7 +154,3 @@ Close the session by reading back the cluster names and celebrating the volume. 
 - [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
 - [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: writing-vision-and-values-statements
 description: "This skill teaches you to craft a clear, time-bound vision statement and a prioritized set of values that together form the foundation of the V2MOM framework, giving every person on your team a shared definition of where you are headed and how you will make decisions along the way."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -160,7 +161,3 @@ If the strategic context shifts materially, revisit the vision and values within
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

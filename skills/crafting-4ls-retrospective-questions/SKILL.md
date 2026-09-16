@@ -2,6 +2,7 @@
 name: crafting-4ls-retrospective-questions
 description: "This skill teaches you how to design targeted prompts for each of the four 4Ls categories—Liked, Learned, Lacked, and Longed For—so your team produces specific, constructive, and actionable feedback during sprint retrospectives."
 metadata:
+  homepage: https://tryhamster.com
   method: 4ls-retrospective
 ---
 
@@ -153,7 +154,3 @@ Finally, test each question by imagining the range of answers it might generate.
 - [Categorizing and Sorting Team Feedback into the 4Ls](../categorizing-feedback-into-4ls/SKILL.md)
 - [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
 - [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

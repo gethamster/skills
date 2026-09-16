@@ -2,6 +2,7 @@
 name: running-betting-tables
 description: "This skill teaches you how to facilitate the betting table meeting where senior stakeholders review shaped pitches, weigh strategic fit and risk, and commit specific teams to specific projects for the upcoming cycle."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -159,7 +160,3 @@ You can revisit after all pitches have been heard, which often resolves debates 
 - [Tracking Progress with Hill Charts](../tracking-progress-with-hill-charts/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

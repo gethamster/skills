@@ -2,6 +2,7 @@
 name: creating-circular-journey-maps
 description: "This skill teaches you how to build a circular customer journey map based on McKinsey's Consumer Decision Journey model, replacing the outdated linear funnel with a loop that reflects how real consumers research, evaluate, buy, and return."
 metadata:
+  homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey
 ---
 
@@ -209,7 +210,3 @@ Connect your circular journey map work to the broader McKinsey Consumer Decision
 - [Building Post-Purchase Loyalty Loops](../building-post-purchase-loyalty-loops/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

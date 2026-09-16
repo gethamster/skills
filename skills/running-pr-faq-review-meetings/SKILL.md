@@ -2,6 +2,7 @@
 name: running-pr-faq-review-meetings
 description: "This skill teaches you how to facilitate the Amazon-style narrative review meeting where stakeholders silently read a PR/FAQ document and then deliver structured, rigorous critique that sharpens the product concept before any code is written."
 metadata:
+  homepage: https://tryhamster.com
   method: working-backwards
 ---
 
@@ -146,7 +147,3 @@ A late log is far better than no log.
 - [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
 - [Writing Internal Press Releases for Product Concepts](../writing-internal-press-releases/SKILL.md)
 - [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

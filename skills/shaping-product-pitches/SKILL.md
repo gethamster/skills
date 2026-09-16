@@ -2,6 +2,7 @@
 name: shaping-product-pitches
 description: "This skill teaches you to define problems, set time appetites, and produce shaped pitch documents complete with fat-marker sketches and breadboarding, so engineering teams receive well-framed work instead of vague feature requests."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -162,7 +163,3 @@ Then explicitly exclude them.
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

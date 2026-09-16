@@ -2,6 +2,7 @@
 name: designing-product-strategy-with-7ps
 description: "This skill teaches you how to define, refine, and position your product or service offering by systematically analyzing features, benefits, branding, and lifecycle stages as the foundational 'P' of the 7 Ps marketing mix."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -169,7 +170,3 @@ Document any misalignments and create action items to resolve them. A beautifull
 - [Mapping Place and Distribution Channels](../mapping-place-and-distribution-channels/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
 - [Optimizing People Touchpoints in Service Delivery](../optimizing-people-touchpoints/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

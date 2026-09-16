@@ -2,6 +2,7 @@
 name: structuring-content-for-ai-answers
 description: "This skill teaches you how to format and organize web content using concise definitions, FAQ schemas, and direct-answer patterns so that LLMs and AI search engines select your content for generated responses."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-seo-optimization
 ---
 
@@ -147,7 +148,3 @@ This connects to the sibling skill [Tracking and Measuring Your Visibility in AI
 - [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
 - [Tracking and Measuring Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
 - [Implementing Schema Markup for Answer Engine Optimization](../implementing-schema-markup-for-aeo/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

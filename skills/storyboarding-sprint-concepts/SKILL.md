@@ -2,6 +2,7 @@
 name: storyboarding-sprint-concepts
 description: "This skill teaches you how to translate a winning solution sketch into a frame-by-frame storyboard that serves as the exact blueprint your team follows when building the prototype on the next day of the sprint."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -146,7 +147,3 @@ If someone starts discussing column widths or icon styles, redirect them: "That 
 - [Facilitating a Design Sprint as the Sprint Master](../facilitating-design-sprint-workshops/SKILL.md)
 - [Running Design Sprints Remotely with Distributed Teams](../running-remote-design-sprints/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: creating-waterfall-project-plans
 description: "This skill teaches you how to build detailed waterfall chart project schedules using work breakdown structures, Gantt charts, milestones, dependencies, and resource allocations for linear, phase-based projects."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -171,7 +172,3 @@ Remember that the plan is a living document. When changes are approved through y
 - [Managing Change Requests in Waterfall Projects](../managing-change-requests-in-waterfall/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

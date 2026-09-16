@@ -2,6 +2,7 @@
 name: evaluating-ai-alignment-with-preference-models
 description: "This skill teaches you how to build, calibrate, and validate preference models that score AI-generated outputs for adherence to constitutional principles, enabling systematic evaluation across helpfulness, harmlessness, and honesty dimensions."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -140,7 +141,3 @@ Establish a preference model refresh cadence. As the policy model improves throu
 - [Implementing Self-Critique and Revision in AI Outputs](../implementing-ai-self-critique-and-revision/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
 - [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

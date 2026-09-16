@@ -2,6 +2,7 @@
 name: prioritizing-outcomes-across-product-teams
 description: "This skill teaches you how to evaluate, score, and rank multiple desired business outcomes across product teams when resources are limited, using impact estimation, confidence scoring, and strategic alignment criteria to produce a defensible priority stack."
 metadata:
+  homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr
 ---
 
@@ -118,7 +119,3 @@ Priorities shift as market conditions change, new data arrives, or outcomes are 
 - [Mapping Product Initiatives to Business Outcomes](../mapping-initiatives-to-business-outcomes/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
 - [Transitioning from Feature-Based to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

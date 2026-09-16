@@ -2,6 +2,7 @@
 name: building-v2mom-templates-and-worksheets
 description: "This skill teaches you how to design, test, and deploy reusable V2MOM templates that give every team and individual a consistent structure for strategic planning, reducing ambiguity and making the entire V2MOM process faster to execute."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -156,7 +157,3 @@ The table format makes it physically impossible to write a Measure without ancho
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: auditing-llm-knowledge-of-your-brand
 description: "This skill teaches you a systematic process for prompting major LLMs to discover how they describe your brand, identify factual inaccuracies or outdated information, and build a correction strategy that improves how AI systems represent you."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-seo-optimization
 ---
 
@@ -153,7 +154,3 @@ Over time, you'll develop an intuition for how quickly different LLMs incorporat
 - [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
 - [Tracking and Measuring Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
 - [Implementing Schema Markup for Answer Engine Optimization](../implementing-schema-markup-for-aeo/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

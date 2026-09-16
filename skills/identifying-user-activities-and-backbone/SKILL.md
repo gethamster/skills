@@ -2,6 +2,7 @@
 name: identifying-user-activities-and-backbone
 description: "This skill teaches you how to define the top-level user activities for a story map and arrange them in chronological order to create the horizontal backbone that structures all subsequent decomposition and prioritization."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -152,7 +153,3 @@ Schedule this validation before you invest time decomposing activities into task
 - [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
 - [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
 - [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

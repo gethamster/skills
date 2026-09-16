@@ -2,6 +2,7 @@
 name: categorizing-requirements-into-moscow-buckets
 description: "This skill teaches you how to evaluate each requirement or feature against clear criteria and assign it to the correct MoSCoW category — must have, should have, could have, or won't have — so your team ships what matters most."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -163,7 +164,3 @@ This categorized output directly feeds into [defining your MVP scope](https://tr
 - [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
 - [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
 - [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

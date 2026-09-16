@@ -2,6 +2,7 @@
 name: conducting-7ps-marketing-audits
 description: "This skill teaches you how to systematically evaluate all seven elements of your marketing mix — Product, Price, Place, Promotion, People, Process, and Physical Evidence — to identify gaps, misalignments, and strategic improvement opportunities."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -161,7 +162,3 @@ Store each audit's findings in a consistent format so you can track trends over 
 - [Mapping Place and Distribution Channels](../mapping-place-and-distribution-channels/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
 - [Optimizing People Touchpoints in Service Delivery](../optimizing-people-touchpoints/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: synthesizing-advisory-insights-into-themes
 description: "This skill teaches you how to code, cluster, and prioritize qualitative feedback from dozens of developer conversations into clear problem themes that inform product direction and devtools technical SEO strategy."
 metadata:
+  homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework
 ---
 
@@ -158,7 +159,3 @@ This document also becomes the input for sibling skills like [Translating TAB Fi
 - [Conducting Non-Pitch Discovery Calls with Developers](../conducting-non-pitch-discovery-calls/SKILL.md)
 - [Designing Pain-Focused Interview Guides for Developer Calls](../designing-developer-pain-interview-guides/SKILL.md)
 - [Rotating and Managing Board Membership Over Time](../rotating-and-managing-board-membership/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

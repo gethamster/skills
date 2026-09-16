@@ -2,6 +2,7 @@
 name: facilitating-impact-mapping-workshops
 description: "Learn how to prepare, facilitate, and drive alignment in cross-functional impact mapping sessions—a collaborative planning technique frequently explored in product manager interview questions about strategic thinking and stakeholder management."
 metadata:
+  homepage: https://tryhamster.com
   method: impact-mapping
 ---
 
@@ -154,7 +155,3 @@ Connect the workshop output to your product roadmap using the techniques describ
 - [Validating Impact Map Assumptions with Experiments](../validating-assumptions-with-experiments/SKILL.md)
 - [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

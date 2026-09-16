@@ -2,6 +2,7 @@
 name: defining-pivot-or-persevere-decisions
 description: "This skill teaches you how to use experiment data and innovation accounting metrics to make a structured, evidence-based decision about whether to pivot your startup strategy or persevere with the current direction."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -143,7 +144,3 @@ Only after individual assessments are visible does the group discussion start. T
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

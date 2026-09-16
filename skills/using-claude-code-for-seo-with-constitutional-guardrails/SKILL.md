@@ -2,6 +2,7 @@
 name: using-claude-code-for-seo-with-constitutional-guardrails
 description: "This skill teaches you how to build reliable SEO automation scripts using Claude Code while understanding the constitutional boundaries that shape its coding behavior, error handling, and ethical output constraints."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -144,7 +145,3 @@ Review it after every run. Track the validation pass rate over time. A declining
 - [Evaluating Claude Outputs Against Constitutional Principles](../evaluating-claude-outputs-against-constitutional-principles/SKILL.md)
 - [Applying Contextual Judgment in Claude AI Workflows](../applying-contextual-judgment-in-claude-ai-workflows/SKILL.md)
 - [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*
