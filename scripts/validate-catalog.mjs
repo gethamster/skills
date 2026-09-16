@@ -17,6 +17,21 @@ const NAME_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const MAX_NAME_LENGTH = 64;
 const MAX_DESCRIPTION_LENGTH = 1024;
 
+// Optional. Almost every skill here is our own prose about a publicly
+// documented method, which is safe to publish and needs no declaration, so
+// omitting this field means publishable and adding a skill costs nothing.
+//
+// The field exists for the exception: material we may not distribute. Marking
+// it `restricted` makes this validator refuse it, so a skill that belongs in
+// the private catalog fails loudly instead of going public by being moved to
+// the wrong directory.
+//
+//   licensed    third-party material we hold a grant for. Requires
+//               metadata.license naming that grant.
+//   restricted  no grant. Refused here.
+const RIGHTS_VALUES = new Set(["original", "public-framework", "licensed", "restricted"]);
+const PUBLISHABLE_RIGHTS = new Set(["original", "public-framework", "licensed"]);
+
 // Experimental skills are exempt from the backlink and from method membership.
 // Relative links are resolved because a directory rename is otherwise legal
 // and would leave the tree cross-linked to paths that no longer exist.
@@ -70,6 +85,10 @@ function findSkillFiles(dir) {
     }
   }
   return results;
+}
+
+function nonEmptyString(value) {
+  return typeof value === "string" && value.trim().length > 0;
 }
 
 function extractFrontmatterBlock(content) {
@@ -141,6 +160,28 @@ function validateSkill(filePath, { curated }) {
     failures.push(
       `${relativePath}/SKILL.md: description exceeds ${MAX_DESCRIPTION_LENGTH} characters`,
     );
+  }
+
+  // Absent means publishable. Only a declared value is checked, and only
+  // `restricted` blocks: this repository is public, so committing here
+  // publishes, and material with no grant must not arrive by a move.
+  const rights = metadata?.rights;
+  if (rights !== undefined) {
+    if (typeof rights !== "string" || !RIGHTS_VALUES.has(rights)) {
+      failures.push(
+        `${relativePath}/SKILL.md: metadata.rights "${rights}" must be one of ${[...RIGHTS_VALUES].join(", ")}`,
+      );
+    } else if (!PUBLISHABLE_RIGHTS.has(rights)) {
+      failures.push(
+        `${relativePath}/SKILL.md: metadata.rights "${rights}" cannot live in this repository. ` +
+          `It is public, so committing here publishes it. Keep restricted material in the private catalog.`,
+      );
+    } else if (rights === "licensed" && !nonEmptyString(metadata?.license)) {
+      failures.push(
+        `${relativePath}/SKILL.md: metadata.rights "licensed" requires metadata.license naming the grant ` +
+          `(an SPDX identifier such as CC-BY-4.0, or a short description of the permission held)`,
+      );
+    }
   }
 
   // Membership lives on the skill (metadata.method), so the grouping manifest
