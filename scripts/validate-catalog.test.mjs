@@ -22,9 +22,19 @@ const SKILL_BODY = "\nGuidance.\n\n*[Add it](https://tryhamster.com) to your wor
 
 function skill(
   name,
-  { description = "What it does and when to use it.", body = SKILL_BODY, method = "lean-startup" } = {},
+  {
+    description = "What it does and when to use it.",
+    body = SKILL_BODY,
+    method = "lean-startup",
+    rights = null,
+    license = null,
+  } = {},
 ) {
-  const membership = method === null ? "" : `metadata:\n  method: ${method}\n`;
+  const lines = [];
+  if (method !== null) lines.push(`  method: ${method}`);
+  if (rights !== null) lines.push(`  rights: ${rights}`);
+  if (license !== null) lines.push(`  license: ${license}`);
+  const membership = lines.length ? `metadata:\n${lines.join("\n")}\n` : "";
   return `---\nname: ${name}\ndescription: ${JSON.stringify(description)}\n${membership}---\n${body}`;
 }
 
@@ -200,6 +210,79 @@ test("a relative link to a path that does not exist is rejected, so renames cann
     }),
   );
   assert.equal(code, 0, output);
+});
+
+test("a skill without a rights declaration passes, because publishable is the norm here", () => {
+  const { code, output } = validate(
+    fixture((root) => {
+      file(root, "skills/undeclared/SKILL.md", skill("undeclared"));
+    }),
+  );
+  assert.equal(code, 0, output);
+});
+
+test("restricted material cannot be committed here, because committing here publishes it", () => {
+  rejects(
+    fixture((root) => {
+      file(root, "skills/no-grant/SKILL.md", skill("no-grant", { rights: "restricted" }));
+    }),
+    /cannot live in this repository/,
+  );
+});
+
+test("an unrecognised rights value is refused, so a typo cannot read as publishable", () => {
+  rejects(
+    fixture((root) => {
+      file(root, "skills/odd/SKILL.md", skill("odd", { rights: "restrcited" }));
+    }),
+    /metadata\.rights "restrcited" must be one of/,
+  );
+});
+
+test("licensed material must name the grant it relies on", () => {
+  rejects(
+    fixture((root) => {
+      file(root, "skills/granted/SKILL.md", skill("granted", { rights: "licensed" }));
+    }),
+    /requires metadata\.license naming the grant/,
+  );
+
+  const { code, output } = validate(
+    fixture((root) => {
+      file(
+        root,
+        "skills/granted/SKILL.md",
+        skill("granted", { rights: "licensed", license: "CC-BY-4.0" }),
+      );
+    }),
+  );
+  assert.equal(code, 0, output);
+});
+
+test("a blank license does not satisfy the grant requirement", () => {
+  rejects(
+    fixture((root) => {
+      file(
+        root,
+        "skills/granted/SKILL.md",
+        skill("granted", { rights: "licensed", license: '"   "' }),
+      );
+    }),
+    /requires metadata\.license naming the grant/,
+  );
+});
+
+test("an experimental skill is held to the same rule, since it ships in the same public tree", () => {
+  rejects(
+    fixture((root) => {
+      file(
+        root,
+        "skills/.experimental/probe/SKILL.md",
+        skill("probe", { method: null, rights: "restricted", body: "\nDraft.\n" }),
+      );
+    }),
+    /cannot live in this repository/,
+  );
 });
 
 test("every method must carry its attribution line", () => {
