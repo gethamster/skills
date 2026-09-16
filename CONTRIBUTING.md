@@ -29,7 +29,38 @@ metadata:
 - `description` is required, must be non-empty, and is capped at 1024 characters, per the [Agent Skills specification](https://agentskills.io/specification).
 - `metadata.method` is required for curated skills and names the directory under `methods/` the skill belongs to. Experimental skills may omit it.
 - `license` is optional; include it only if the skill is licensed differently from this repository's default MIT license.
+- `metadata.rights` is optional. Omitting it means publishable, which is the normal case. See below.
 - Other `metadata` fields are optional and may carry arbitrary attribution.
+
+### metadata.rights
+
+Nearly everything here is our own prose about a publicly documented method.
+Methods and ideas are not copyrightable, only a particular expression of them
+is, so that content is safe to publish and needs no declaration. Adding an
+ordinary skill costs you nothing.
+
+The field exists for the exception: material we may not distribute.
+
+| Value | Meaning |
+| --- | --- |
+| omitted | Publishable. The default, and what almost every skill should be. |
+| `original` | We wrote it, stated explicitly. Same effect as omitting. |
+| `public-framework` | Our own prose about a public method, stated explicitly. Same effect as omitting. |
+| `licensed` | Third-party material we hold a grant for. Requires `metadata.license` naming it, such as `CC-BY-4.0`. |
+| `restricted` | No grant. **Rejected by validation.** |
+
+`restricted` is the point of the field. This repository is public, so committing
+here publishes, and a skill built from material we have no right to redistribute
+must fail loudly rather than arrive by being moved into the wrong directory.
+
+Being private is not the same as being safe to distribute: shipping a skill to
+customers through the Studio library is distribution too. With no grant, the
+skill stays internal in both places.
+
+Attribution is a separate question and is already handled. Each method carries
+its `> Created by` line, which validation enforces, and skills inherit credit
+through `metadata.method`. This field only answers whether we may ship the
+content at all.
 
 The body follows after a blank line as ordinary Markdown instructions for the agent. Curated skills end with a link back to Hamster; experimental skills need not.
 
