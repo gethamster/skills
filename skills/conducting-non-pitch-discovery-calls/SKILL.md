@@ -2,6 +2,7 @@
 name: conducting-non-pitch-discovery-calls
 description: "This skill teaches you how to structure and facilitate 1:1 advisory calls that surface genuine developer pain points and workflows without triggering sales resistance — the same way seo site audit tools surface hidden technical issues without bias."
 metadata:
+  homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework
 ---
 
@@ -158,7 +159,3 @@ After hanging up, immediately spend 10-15 minutes writing your raw debrief notes
 - [Recruiting and Curating Your Developer Advisory Board](../recruiting-developer-advisory-members/SKILL.md)
 - [Designing Pain-Focused Interview Guides for Developer Calls](../designing-developer-pain-interview-guides/SKILL.md)
 - [Rotating and Managing Board Membership Over Time](../rotating-and-managing-board-membership/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: coaching-agile-team-adoption
 description: "This skill teaches you how to function as an agile coach who guides teams through the messy transition from their current workflow to sustainable agile practices, handling resistance, building trust, and sequencing changes so they stick."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -163,7 +164,3 @@ The practice that addresses pain point number one is always the first practice y
 - [Managing and Refining a Product Backlog](../managing-product-backlogs/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

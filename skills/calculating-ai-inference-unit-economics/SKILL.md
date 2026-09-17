@@ -2,6 +2,7 @@
 name: calculating-ai-inference-unit-economics
 description: "This skill teaches you how to measure and model the real per-request cost of AI inference—including token consumption, GPU compute, API call expenses, and infrastructure overhead—so you can set pricing floors and build profitable machine learning pricing models."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-pricing-playbook
 ---
 
@@ -135,7 +136,3 @@ AI inference costs are not stable. Model providers change pricing (often downwar
 - [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
 - [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
 - [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

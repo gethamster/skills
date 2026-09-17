@@ -2,6 +2,7 @@
 name: defining-measurable-product-goals
 description: "This skill teaches you to write strategic, outcome-based product goals using a metric, target, and timeframe structure that anchors the entire GIST hierarchy and replaces vague themes on a traditional product manager roadmap."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -160,7 +161,3 @@ Widen it until at least three different types of ideas become relevant.
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

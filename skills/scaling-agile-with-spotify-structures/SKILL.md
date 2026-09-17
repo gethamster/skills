@@ -2,6 +2,7 @@
 name: scaling-agile-with-spotify-structures
 description: "This skill teaches you how to use the Spotify organizational model as a scaling framework, giving you concrete triggers for when to split tribes, spawn new squads, and evolve governance structures as headcount and product complexity grow."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -161,7 +162,3 @@ If it does not, adjust incrementally rather than waiting for another big-bang re
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

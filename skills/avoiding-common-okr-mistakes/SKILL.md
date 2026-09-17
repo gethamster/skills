@@ -2,6 +2,7 @@
 name: avoiding-common-okr-mistakes
 description: "This skill teaches you to recognize and prevent the most damaging OKR pitfalls, including sandbagging goals, confusing outputs with outcomes, overloading teams with too many objectives, and creating perverse incentives by linking OKR scores to compensation."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -151,7 +152,3 @@ Leadership sets the strategic direction (objectives), and teams propose how they
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

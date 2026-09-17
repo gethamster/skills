@@ -2,6 +2,7 @@
 name: defining-core-functional-jobs
 description: "This skill teaches you how to identify and articulate the single functional job your customer is trying to get done, using precise job statement syntax that separates the task from any product or solution."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -138,7 +139,3 @@ You can build separate job maps for each later, but they should never be crammed
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
 - [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
 - [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

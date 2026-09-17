@@ -2,6 +2,7 @@
 name: mapping-complementary-products-force
 description: "This skill teaches you how to systematically identify, score, and analyze the complementary products force, the sixth force that makes the Six Forces Model a more complete strategic lens than Porter's original five."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -160,7 +161,3 @@ Focus the review on your top 5-8 critical complements: have any scores changed b
 - [Conducting an Industry Rivalry Assessment](../conducting-industry-rivalry-assessment/SKILL.md)
 - [Evaluating Buyer and Supplier Bargaining Power](../evaluating-buyer-and-supplier-power/SKILL.md)
 - [Assessing Threats of New Entrants and Substitutes](../assessing-threat-of-new-entrants-and-substitutes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

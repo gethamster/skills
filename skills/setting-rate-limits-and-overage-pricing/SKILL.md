@@ -2,6 +2,7 @@
 name: setting-rate-limits-and-overage-pricing
 description: "This skill teaches you how to design usage caps, throttling policies, and overage charges for AI-powered APIs that protect your gross margins while keeping customers happy and predictable revenue flowing."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-pricing-playbook
 ---
 
@@ -134,7 +135,3 @@ Before rolling the policy into production, replay your historical usage data aga
 - [Managing Gross Margins on AI-Powered Features](../managing-gross-margins-on-ai-features/SKILL.md)
 - [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
 - [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

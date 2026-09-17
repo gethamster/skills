@@ -2,6 +2,7 @@
 name: writing-anti-slop-design-review-rules
 description: "This skill teaches you how to author concrete, testable checklist rules inside SKILL.md files that catch the most common AI-generated UI anti-patterns, such as oversized padding, default border-radius, and bland color choices, before code ships to production."
 metadata:
+  homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework
 ---
 
@@ -153,7 +154,3 @@ The incremental approach surfaces conflicts early, when they are cheap to resolv
 - [Auditing AI-Generated Frontends for Design Quality](../auditing-ai-generated-frontends-for-design-quality/SKILL.md)
 - [Installing SKILL.md Files in AI Coding Agents](../installing-skill-files-in-ai-coding-agents/SKILL.md)
 - [Authoring Portable SKILL.md Files for Design Systems](../authoring-portable-skill-files-for-design-systems/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

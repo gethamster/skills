@@ -2,6 +2,7 @@
 name: comparing-posthog-experiments-with-alternative-platforms
 description: "This skill teaches you how to systematically evaluate eppo vs posthog experiments and other A/B testing platforms by scoring them across analysis methods, integrations, pricing, and team workflow fit so you pick the right tool for your experimentation program."
 metadata:
+  homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method
 ---
 
@@ -159,7 +160,3 @@ Update the scores based on new features, changed pricing, and your own evolving 
 - [Segmenting New User Cohorts for Onboarding Experiments](../segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md)
 - [Interpreting Bayesian and Frequentist Results in PostHog](../interpreting-bayesian-and-frequentist-experiment-results/SKILL.md)
 - [Integrating PostHog A/B Tests with Webflow and Marketing Pages](../integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

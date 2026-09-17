@@ -2,6 +2,7 @@
 name: building-realistic-sprint-prototypes
 description: "This skill teaches you how to translate a sprint storyboard into a clickable, high-fidelity prototype in roughly seven hours, producing a testable artifact that looks and feels like a real product without writing a single line of production code."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -143,7 +144,3 @@ A tight 15-screen prototype that covers one flow completely will always outperfo
 - [Facilitating a Design Sprint as the Sprint Master](../facilitating-design-sprint-workshops/SKILL.md)
 - [Running Design Sprints Remotely with Distributed Teams](../running-remote-design-sprints/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

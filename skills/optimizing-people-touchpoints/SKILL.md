@@ -2,6 +2,7 @@
 name: optimizing-people-touchpoints
 description: "This skill teaches you how to train, align, and empower customer-facing and back-office staff so that every human interaction in your service delivery chain reinforces a consistent, loyalty-building brand experience."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -139,7 +140,3 @@ Public recognition of brand-aligned behavior — sharing specific stories in tea
 - [Designing Product Strategy Within the 7 P's Framework](../designing-product-strategy-with-7ps/SKILL.md)
 - [Mapping Place and Distribution Channels](../mapping-place-and-distribution-channels/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

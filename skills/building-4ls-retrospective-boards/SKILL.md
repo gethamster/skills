@@ -2,6 +2,7 @@
 name: building-4ls-retrospective-boards
 description: "This skill teaches you how to design and set up physical or digital sprint retrospective templates using the 4Ls quadrant layout, so your team can efficiently capture, organize, and act on feedback in tools like Miro, FigJam, and Confluence."
 metadata:
+  homepage: https://tryhamster.com
   method: 4ls-retrospective
 ---
 
@@ -142,7 +143,3 @@ Before using the template in a real retrospective, do a dry run: open a fresh co
 - [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
 - [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
 - [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

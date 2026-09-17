@@ -2,6 +2,7 @@
 name: writing-desired-outcome-statements
 description: "This skill teaches you how to craft precisely structured outcome statements that capture what customers want to achieve at each step of their job, using a repeatable four-part formula that keeps statements measurable, solution-free, and directly actionable for product prioritization."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -167,7 +168,3 @@ Inconsistency is easiest to catch during the cross-step review in Step 8, but it
 - [Defining the Customer's Core Functional Job](../defining-core-functional-jobs/SKILL.md)
 - [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
 - [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

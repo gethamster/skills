@@ -2,6 +2,7 @@
 name: defining-measurable-business-goals
 description: "This skill teaches you how to formulate clear, quantifiable business objectives that serve as the root of an impact map, ensuring every item on your product manager roadmap traces back to a measurable strategic outcome."
 metadata:
+  homepage: https://tryhamster.com
   method: impact-mapping
 ---
 
@@ -126,7 +127,3 @@ Finally, set up a tracking mechanism for the metric. Create a dashboard, a weekl
 - [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
 - [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

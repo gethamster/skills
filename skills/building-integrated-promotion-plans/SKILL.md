@@ -2,6 +2,7 @@
 name: building-integrated-promotion-plans
 description: "This skill teaches you how to design a cohesive promotion strategy marketing mix that coordinates advertising, content marketing, PR, social media, and sales promotions into a unified plan reinforcing your brand positioning."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -167,7 +168,3 @@ After the campaign concludes, conduct a thorough post-mortem. Document what work
 - [Mapping Place and Distribution Channels](../mapping-place-and-distribution-channels/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
 - [Optimizing People Touchpoints in Service Delivery](../optimizing-people-touchpoints/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

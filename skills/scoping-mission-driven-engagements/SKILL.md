@@ -2,6 +2,7 @@
 name: scoping-mission-driven-engagements
 description: "This skill teaches you how to define clear, outcome-bound missions for forward deployed engineering work so that every forward deployed engineer responsibility stays anchored to shipping production results rather than drifting into open-ended advisory work."
 metadata:
+  homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
 ---
 
@@ -137,7 +138,3 @@ The mistake is not updating the brief. The mistake is updating it silently, with
 - [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
 - [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
 - [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

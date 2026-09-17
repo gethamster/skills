@@ -2,6 +2,7 @@
 name: drafting-ai-constitution-principles
 description: "This skill teaches you how to define, structure, and prioritize a set of clear, actionable ethical principles—a 'constitution'—that guides an AI model's behavior during both training and inference, as used in Anthropic's Constitutional AI approach."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -170,7 +171,3 @@ Finally, define the constitution's scope: what kinds of interactions it governs,
 - [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
 - [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

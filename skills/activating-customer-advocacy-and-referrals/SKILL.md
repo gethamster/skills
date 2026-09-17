@@ -2,6 +2,7 @@
 name: activating-customer-advocacy-and-referrals
 description: "This skill teaches you how to systematically identify loyal customers and convert them into measurable brand advocates through referral programs, review generation, testimonial workflows, and community-building tactics."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -163,7 +164,3 @@ If the thread goes silent, your advocates may prefer one-on-one relationships wi
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

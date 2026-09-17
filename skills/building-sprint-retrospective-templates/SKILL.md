@@ -2,6 +2,7 @@
 name: building-sprint-retrospective-templates
 description: "This skill teaches you how to design reusable sprint retrospective templates that assign specific activities to each of the five retrospective phases, enabling consistent and time-efficient facilitation across sprints."
 metadata:
+  homepage: https://tryhamster.com
   method: five-step-retrospective-framework
 ---
 
@@ -152,7 +153,3 @@ This iterative approach is essential. Your first draft of a sprint retrospective
 - [Setting the Stage for Effective Retrospectives](../setting-the-stage-for-retrospectives/SKILL.md)
 - [Generating Insights from Retrospective Data](../generating-insights-from-retrospective-data/SKILL.md)
 - [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

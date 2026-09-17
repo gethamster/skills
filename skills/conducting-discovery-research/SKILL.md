@@ -2,6 +2,7 @@
 name: conducting-discovery-research
 description: "This skill teaches you how to use divergent research methods—user interviews, desk research, and observation—to broadly explore the problem space in the first diamond of the double diamond design process."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -141,7 +142,3 @@ End the Discover phase with a research share-out: a 30-60 minute session where t
 - [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
 - [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

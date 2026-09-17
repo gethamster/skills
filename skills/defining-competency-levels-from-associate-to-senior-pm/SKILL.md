@@ -2,6 +2,7 @@
 name: defining-competency-levels-from-associate-to-senior-pm
 description: "This skill teaches you how to build a calibrated competency matrix that specifies the expected proficiency level for every core PM competency at associate, mid-level, and senior product manager tiers, so promotions and hiring decisions become defensible and transparent."
 metadata:
+  homepage: https://tryhamster.com
   method: product-team-competencies-framework
 ---
 
@@ -149,7 +150,3 @@ Use the matrix to inform your job descriptions (see [writing competency-based PM
 - [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
 - [Writing Competency-Based Product Manager Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
 - [Designing PM Interview Rubrics Aligned to Competency Quadrants](../designing-competency-based-pm-interview-rubrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

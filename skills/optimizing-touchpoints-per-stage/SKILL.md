@@ -2,6 +2,7 @@
 name: optimizing-touchpoints-per-stage
 description: "This skill teaches you how to systematically identify, score, and improve individual customer touchpoints within each planned journey stage, so you can reduce friction and increase conversion rates across long, high-involvement purchase cycles."
 metadata:
+  homepage: https://tryhamster.com
   method: planned-journey-framework
 ---
 
@@ -152,7 +153,3 @@ Your optimization actions for these will be indirect, such as responding to revi
 - [Connecting Insights Across Journey Stages](../connecting-cross-stage-insights/SKILL.md)
 - [Building Planned Journey Funnel Visualizations](../building-planned-journey-funnel-visualizations/SKILL.md)
 - [Mapping High-Involvement Purchase Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

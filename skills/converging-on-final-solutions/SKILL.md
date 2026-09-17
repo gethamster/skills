@@ -2,6 +2,7 @@
 name: converging-on-final-solutions
 description: "This skill teaches you how to systematically evaluate, test, and iterate on design concepts so you can select and refine the strongest solution for implementation in the Deliver phase of the double diamond model."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -163,7 +164,3 @@ The handoff is not a wall — stay involved during implementation to answer ques
 - [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
 - [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

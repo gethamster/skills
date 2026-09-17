@@ -2,6 +2,7 @@
 name: comparing-agile-and-waterfall
 description: "This skill teaches you how to systematically evaluate project characteristics, organizational constraints, and risk profiles to decide whether agile or waterfall will deliver better outcomes for a specific initiative."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -148,7 +149,3 @@ Set explicit review triggers at the start, and schedule at least one midpoint re
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

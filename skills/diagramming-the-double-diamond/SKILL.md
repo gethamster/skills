@@ -2,6 +2,7 @@
 name: diagramming-the-double-diamond
 description: "This skill teaches you how to visually map your design process onto the Double Diamond diagram so you can communicate project phases, activities, and progress clearly to stakeholders and team members."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -143,7 +144,3 @@ Version your diagrams (save snapshots at key milestones) so you can tell the sto
 - [Conducting Discovery Research in the Discover Phase](../conducting-discovery-research/SKILL.md)
 - [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

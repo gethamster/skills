@@ -2,6 +2,7 @@
 name: scaling-constitutional-training-without-human-labels
 description: "This skill teaches you how to reduce dependence on costly human feedback by leveraging AI-generated critiques, chain-of-thought reasoning, and RLAIF to scale alignment training efficiently within Constitutional AI pipelines."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -152,7 +153,3 @@ For SaaS teams running saas seo claude optimization workflows, this validation l
 - [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
 - [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

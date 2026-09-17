@@ -2,6 +2,7 @@
 name: shipping-winning-variants-and-cleaning-up-experiments
 description: "This skill teaches you how to graduate a winning A/B test variant from experiment to production default, remove the losing variant's code paths, and archive the associated feature flag so your codebase and PostHog workspace stay clean."
 metadata:
+  homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method
 ---
 
@@ -146,7 +147,3 @@ If your team has anxiety about this, add a commit message that explains the expe
 - [Segmenting New User Cohorts for Onboarding Experiments](../segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md)
 - [Interpreting Bayesian and Frequentist Results in PostHog](../interpreting-bayesian-and-frequentist-experiment-results/SKILL.md)
 - [Integrating PostHog A/B Tests with Webflow and Marketing Pages](../integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

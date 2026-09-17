@@ -2,6 +2,7 @@
 name: facilitating-moscow-prioritization-workshops
 description: "This skill teaches you how to run a structured MoSCoW analysis session that drives stakeholder alignment, manages conflicting opinions, and produces a consensus-based priority list ready for roadmap planning."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -136,7 +137,3 @@ Close by reading aloud the final list, category by category. Ask each stakeholde
 - [Categorizing Requirements into Must, Should, Could, and Won't Have](../categorizing-requirements-into-moscow-buckets/SKILL.md)
 - [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
 - [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

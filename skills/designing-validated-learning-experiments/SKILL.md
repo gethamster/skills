@@ -2,6 +2,7 @@
 name: designing-validated-learning-experiments
 description: "This skill teaches you how to structure low-cost experiments that produce reliable evidence about customer behavior, so you can make informed build, pivot, or kill decisions instead of guessing."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -159,7 +160,3 @@ Track not just conversions but also drop-off points, time spent, and any qualita
 - [Making Pivot-or-Persevere Decisions](../defining-pivot-or-persevere-decisions/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

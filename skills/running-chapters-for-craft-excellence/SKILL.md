@@ -2,6 +2,7 @@
 name: running-chapters-for-craft-excellence
 description: "This skill teaches you how to establish and facilitate chapters, the discipline-specific groups that connect specialists across squads within a tribe, so you can standardize craft practices, run effective mentoring, and own career growth paths for your people."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -143,7 +144,3 @@ Assign specific sections to members for update proposals, and treat the framewor
 - [Balancing Squad Autonomy with Organizational Alignment](../balancing-autonomy-and-alignment/SKILL.md)
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

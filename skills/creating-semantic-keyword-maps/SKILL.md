@@ -2,6 +2,7 @@
 name: creating-semantic-keyword-maps
 description: "This skill teaches you how to research, cluster, and assign semantically related keywords to pillar topics so that every content piece in your cluster addresses a distinct user intent without overlap or gaps."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -158,7 +159,3 @@ Mark clusters as "create," "optimize," or "consolidate" based on what already ex
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

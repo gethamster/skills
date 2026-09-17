@@ -2,6 +2,7 @@
 name: building-planned-journey-funnel-visualizations
 description: "This skill teaches you to translate the latent, evaluation, and buying stage model into funnel diagrams and journey maps that communicate drop-off rates, conversion opportunities, and stage-specific insights to stakeholders and decision-makers."
 metadata:
+  homepage: https://tryhamster.com
   method: planned-journey-framework
 ---
 
@@ -162,7 +163,3 @@ Store the funnel file and its data sources in a shared location with a version h
 - [Tracking Brand Consideration Shifts Across Stages](../tracking-brand-consideration-shifts/SKILL.md)
 - [Connecting Insights Across Journey Stages](../connecting-cross-stage-insights/SKILL.md)
 - [Mapping High-Involvement Purchase Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

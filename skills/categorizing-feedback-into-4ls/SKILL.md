@@ -2,6 +2,7 @@
 name: categorizing-feedback-into-4ls
 description: "This skill teaches you how to accurately distinguish between Liked, Learned, Lacked, and Longed For items during a 4Ls retrospective, and how to resolve the overlapping or ambiguous feedback that inevitably arises."
 metadata:
+  homepage: https://tryhamster.com
   method: 4ls-retrospective
 ---
 
@@ -125,7 +126,3 @@ At this point, your board should have clearly sorted, de-duplicated items in eac
 - [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
 - [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
 - [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

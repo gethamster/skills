@@ -2,6 +2,7 @@
 name: applying-contextual-judgment-in-claude-ai-workflows
 description: "This skill teaches you how to structure prompts and workflows that leverage Claude AI's preference for contextual moral reasoning, producing outputs that handle ambiguity and competing priorities with genuine nuance rather than mechanical rule-following."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -150,7 +151,3 @@ The client timeline and team capacity do not align. ' Naming the conflict gives 
 - [Evaluating Claude Outputs Against Constitutional Principles](../evaluating-claude-outputs-against-constitutional-principles/SKILL.md)
 - [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
 - [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

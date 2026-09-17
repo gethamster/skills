@@ -2,6 +2,7 @@
 name: conducting-industry-rivalry-assessment
 description: "This skill teaches you how to systematically evaluate the intensity of competitive rivalry within an industry by combining quantitative market data with qualitative market research methods, producing a scored assessment that feeds directly into a Six Forces strategic analysis."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -157,7 +158,3 @@ What are the 2-3 most important drivers? What specific strategic actions does th
 - [Synthesizing Six Forces into Strategic Recommendations](../synthesizing-six-forces-into-strategic-recommendations/SKILL.md)
 - [Evaluating Buyer and Supplier Bargaining Power](../evaluating-buyer-and-supplier-power/SKILL.md)
 - [Assessing Threats of New Entrants and Substitutes](../assessing-threat-of-new-entrants-and-substitutes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

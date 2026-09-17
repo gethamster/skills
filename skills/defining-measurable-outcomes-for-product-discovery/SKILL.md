@@ -2,6 +2,7 @@
 name: defining-measurable-outcomes-for-product-discovery
 description: "This skill teaches you how to select and articulate a clear, measurable business outcome that sits at the top of your Opportunity Solution Tree, ensuring every downstream discovery effort—from identifying opportunities to testing solutions—stays aligned with real business impact."
 metadata:
+  homepage: https://tryhamster.com
   method: opportunity-solution-tree
 ---
 
@@ -139,7 +140,3 @@ This outcome now serves as the filter for all subsequent discovery work. When yo
 - [Structuring and Grouping Opportunities into a Hierarchy](../structuring-opportunity-spaces-hierarchically/SKILL.md)
 - [Identifying Customer Opportunities from Continuous Research](../identifying-customer-opportunities-from-research/SKILL.md)
 - [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: comparing-gstack-to-other-ai-coding-frameworks
 description: "This skill teaches you how to systematically evaluate gstack's opinionated multi-agent approach against alternatives like Cursor rules, Aider conventions, and custom system prompts, so you pick the AI coding workflow that actually fits your team."
 metadata:
+  homepage: https://tryhamster.com
   method: gstack-framework
 ---
 
@@ -166,7 +167,3 @@ The 90-day revisit checkpoint in Step 9 exists precisely to prevent this. Set th
 - [Installing and Configuring the gstack Skill Pack](../installing-and-configuring-gstack-skill-pack/SKILL.md)
 - [Structuring AI Coding Sessions from Decision-Making to Execution](../structuring-ai-coding-sessions-with-gstack-phases/SKILL.md)
 - [Navigating gstack's 23 Specialist Skills via Slash Commands](../navigating-gstack-slash-commands-and-specialist-skills/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

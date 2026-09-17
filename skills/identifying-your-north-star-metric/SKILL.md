@@ -2,6 +2,7 @@
 name: identifying-your-north-star-metric
 description: "This skill teaches you how to discover and define the single metric that best captures the core value your product delivers to customers, forming the foundation of the North Star Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-framework
 ---
 
@@ -118,7 +119,3 @@ Present your recommended NSM to key stakeholders—executive team, product leads
 - [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
 - [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
 - [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

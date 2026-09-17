@@ -2,6 +2,7 @@
 name: using-working-backwards-in-product-interviews
 description: "This skill teaches you how to structure your answers to product sense, strategy, and prioritization interview questions using the Working Backwards framework, starting from the customer outcome and reasoning back to what to build and why."
 metadata:
+  homepage: https://tryhamster.com
   method: working-backwards
 ---
 
@@ -152,7 +153,3 @@ Customer framing should take 90 to 120 seconds for a product sense question. If 
 - [Identifying Minimum Requirements by Working Backwards from Launch](../identifying-minimum-lovable-requirements/SKILL.md)
 - [Writing Internal Press Releases for Product Concepts](../writing-internal-press-releases/SKILL.md)
 - [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

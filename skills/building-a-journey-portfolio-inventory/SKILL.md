@@ -2,6 +2,7 @@
 name: building-a-journey-portfolio-inventory
 description: "This skill teaches you how to systematically catalog every customer journey in your organization into a single, structured portfolio that becomes the foundation for ecosystem-level analysis, prioritization, and cross-journey optimization."
 metadata:
+  homepage: https://tryhamster.com
   method: ecosystem-journey-framework
 ---
 
@@ -166,7 +167,3 @@ Add hierarchy after you have a complete, deduplicated list. This ensures you cap
 - [Structuring Journey Hierarchy Levels (L0-L3)](../structuring-journey-hierarchy-levels/SKILL.md)
 - [Identifying Cross-Journey Insights and Patterns](../identifying-cross-journey-insights/SKILL.md)
 - [Mapping Touchpoint Interconnections Across Journeys](../mapping-touchpoint-interconnections/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

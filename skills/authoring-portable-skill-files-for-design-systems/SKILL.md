@@ -2,6 +2,7 @@
 name: authoring-portable-skill-files-for-design-systems
 description: "This skill teaches you to create framework-agnostic SKILL.md instruction files that encode your team's design tokens, component conventions, and aesthetic judgment so any AI coding agent produces on-brand UI without manual correction."
 metadata:
+  homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework
 ---
 
@@ -159,7 +160,3 @@ md updates to design-token changes in version control and reviewing the anti-pat
 - [Configuring Layout and Visual Density Constraints for AI Agents](../configuring-layout-and-visual-density-constraints/SKILL.md)
 - [Auditing AI-Generated Frontends for Design Quality](../auditing-ai-generated-frontends-for-design-quality/SKILL.md)
 - [Installing SKILL.md Files in AI Coding Agents](../installing-skill-files-in-ai-coding-agents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

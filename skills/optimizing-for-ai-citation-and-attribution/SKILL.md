@@ -2,6 +2,7 @@
 name: optimizing-for-ai-citation-and-attribution
 description: "This skill teaches you how to format, structure, and position your content so that AI tools like ChatGPT, Perplexity, and Google AI Overviews are more likely to cite and link back to it as an authoritative source."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-seo-optimization
 ---
 
@@ -138,7 +139,3 @@ When you find content that gets cited, analyze what made it citation-worthy and 
 - [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
 - [Tracking and Measuring Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
 - [Implementing Schema Markup for Answer Engine Optimization](../implementing-schema-markup-for-aeo/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

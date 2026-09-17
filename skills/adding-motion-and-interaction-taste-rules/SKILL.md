@@ -2,6 +2,7 @@
 name: adding-motion-and-interaction-taste-rules
 description: "Teaches you how to specify animation timing, easing curves, hover states, and transition guidelines inside SKILL.md files so AI coding agents produce interfaces that feel polished and intentional rather than static or gratuitously animated."
 metadata:
+  homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework
 ---
 
@@ -138,7 +139,3 @@ The most common cause of agent non-compliance is ambiguous phrasing. " Run the r
 - [Auditing AI-Generated Frontends for Design Quality](../auditing-ai-generated-frontends-for-design-quality/SKILL.md)
 - [Installing SKILL.md Files in AI Coding Agents](../installing-skill-files-in-ai-coding-agents/SKILL.md)
 - [Authoring Portable SKILL.md Files for Design Systems](../authoring-portable-skill-files-for-design-systems/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

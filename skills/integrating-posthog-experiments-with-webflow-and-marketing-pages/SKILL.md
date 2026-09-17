@@ -2,6 +2,7 @@
 name: integrating-posthog-experiments-with-webflow-and-marketing-pages
 description: "Teaches you how to wire PostHog experiments into Webflow and other no-code marketing pages so you can run A/B tests on headlines, CTAs, pricing layouts, and onboarding flows without a full development cycle."
 metadata:
+  homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method
 ---
 
@@ -171,7 +172,3 @@ Alternatively, add a simple validation in your script that logs a warning if a t
 - [Designing Experiment Hypotheses and Success Metrics for Onboarding](../designing-onboarding-experiment-hypotheses-and-metrics/SKILL.md)
 - [Segmenting New User Cohorts for Onboarding Experiments](../segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md)
 - [Interpreting Bayesian and Frequentist Results in PostHog](../interpreting-bayesian-and-frequentist-experiment-results/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: shifting-from-working-in-to-working-on-your-business
 description: "This skill teaches you how to diagnose where your time actually goes, extract yourself from day-to-day execution tasks, and redirect that capacity toward strategic planning, systems design, and business growth."
 metadata:
+  homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework
 ---
 
@@ -164,7 +165,3 @@ Set a calendar reminder for the logging step itself, and treat it as non-negotia
 - [Developing Your Entrepreneurial Vision](../developing-your-entrepreneurial-vision/SKILL.md)
 - [Transitioning from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
 - [Applying the E-Myth Framework to Agencies and Service Businesses](../applying-the-e-myth-framework-to-agencies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: defining-target-markets-for-expansion-strategies
 description: "This skill teaches you how to systematically research, evaluate, and validate new target market opportunities when pursuing market development or diversification strategies within the Ansoff Matrix framework."
 metadata:
+  homepage: https://tryhamster.com
   method: ansoff-matrix
 ---
 
@@ -154,7 +155,3 @@ Present your recommendation as a phased roadmap: 'Enter Market A in Q1, use lear
 - [Designing Product Development Growth Paths](../designing-product-development-growth-paths/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
 - [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

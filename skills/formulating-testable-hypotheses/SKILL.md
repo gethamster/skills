@@ -2,6 +2,7 @@
 name: formulating-testable-hypotheses
 description: "This skill teaches you to translate vague business assumptions into precisely worded, falsifiable hypotheses with measurable success criteria, so every experiment produces a clear yes-or-no learning signal."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -150,7 +151,3 @@ Before launching any experiment, run a final quality check on each hypothesis. A
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

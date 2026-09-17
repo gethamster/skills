@@ -2,6 +2,7 @@
 name: auditing-ai-generated-frontends-for-design-quality
 description: "This skill teaches a repeatable review workflow for evaluating AI-produced React and Next.js interfaces against Taste Skill criteria, so you can catch generic-looking UI before it ships and feed structured corrections back to the agent."
 metadata:
+  homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework
 ---
 
@@ -156,7 +157,3 @@ Mark genuine exceptions as 'noted, intentional' so the report stays credible.
 - [Configuring Layout and Visual Density Constraints for AI Agents](../configuring-layout-and-visual-density-constraints/SKILL.md)
 - [Installing SKILL.md Files in AI Coding Agents](../installing-skill-files-in-ai-coding-agents/SKILL.md)
 - [Authoring Portable SKILL.md Files for Design Systems](../authoring-portable-skill-files-for-design-systems/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

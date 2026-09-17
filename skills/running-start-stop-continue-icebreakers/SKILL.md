@@ -2,6 +2,7 @@
 name: running-start-stop-continue-icebreakers
 description: "This skill teaches you how to adapt the Start Stop Continue framework into a lightweight icebreaker that builds psychological safety and gets new or forming teams comfortable giving and receiving feedback."
 metadata:
+  homepage: https://tryhamster.com
   method: start-stop-continue
 ---
 
@@ -122,7 +123,3 @@ This debrief is essential. Without it, the icebreaker feels like a throwaway gam
 - [Building Start Stop Continue Templates and Worksheets](../building-start-stop-continue-templates/SKILL.md)
 - [Writing Effective Start Stop Continue Feedback](../writing-effective-start-stop-continue-feedback/SKILL.md)
 - [Crafting Actionable Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

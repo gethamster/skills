@@ -2,6 +2,7 @@
 name: mining-customer-language-for-copy
 description: "This skill teaches you how to extract the exact words, phrases, and emotional triggers your customers already use—then weave them into copy that converts because it sounds like their own inner monologue."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -167,7 +168,3 @@ Over time, your swipe file becomes a living asset that makes every new piece of 
 - [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
 - [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: presenting-gist-plans-to-stakeholders
 description: "This skill teaches you how to communicate the four-layer GIST hierarchy, from Goals through Tasks, to executives, cross-functional teams, and interviewers so your strategic thinking is visible and persuasive."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -157,7 +158,3 @@ Spend 70% of your preparation time practicing the spoken walk-through and 30% on
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

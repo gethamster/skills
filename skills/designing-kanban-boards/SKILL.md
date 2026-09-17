@@ -2,6 +2,7 @@
 name: designing-kanban-boards
 description: "This skill teaches you how to structure columns, swimlanes, and card layouts on a kanban board so the board becomes an accurate, real-time map of how work actually flows through your team."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -163,7 +164,3 @@ During the review, look for columns that are always empty, columns that are alwa
 - [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
 - [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
 - [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

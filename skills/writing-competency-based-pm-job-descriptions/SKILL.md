@@ -2,6 +2,7 @@
 name: writing-competency-based-pm-job-descriptions
 description: "This skill teaches you how to translate the four competency quadrants into structured, measurable product manager job descriptions that attract candidates whose strengths match your team's actual needs."
 metadata:
+  homepage: https://tryhamster.com
   method: product-team-competencies-framework
 ---
 
@@ -134,7 +135,3 @@ If the role genuinely needs breadth, lower the proficiency levels to acknowledge
 - [Differentiating PM Role Types Using the Competency Framework](../differentiating-product-manager-role-types/SKILL.md)
 - [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
 - [Designing PM Interview Rubrics Aligned to Competency Quadrants](../designing-competency-based-pm-interview-rubrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

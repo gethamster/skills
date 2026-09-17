@@ -2,6 +2,7 @@
 name: building-pm-career-development-plans
 description: "This skill teaches you how to translate raw competency assessment scores into a structured, time-bound career development plan that tells a product manager exactly what to work on, how to work on it, and how to measure progress toward their next role."
 metadata:
+  homepage: https://tryhamster.com
   method: product-team-competencies-framework
 ---
 
@@ -160,7 +161,3 @@ Treat skipped reviews as seriously as skipped sprint ceremonies.
 - [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
 - [Writing Competency-Based Product Manager Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
 - [Designing PM Interview Rubrics Aligned to Competency Quadrants](../designing-competency-based-pm-interview-rubrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

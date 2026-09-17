@@ -2,6 +2,7 @@
 name: mapping-and-defining-sprint-challenges
 description: "This skill teaches you how to run Day 1 of a design sprint: creating a shared problem map, extracting expert knowledge through structured interviews, and selecting the single focused target that the rest of the sprint will solve."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -163,7 +164,3 @@ Discussion happens after votes are placed, when the pattern is visible and the d
 - [Facilitating a Design Sprint as the Sprint Master](../facilitating-design-sprint-workshops/SKILL.md)
 - [Running Design Sprints Remotely with Distributed Teams](../running-remote-design-sprints/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

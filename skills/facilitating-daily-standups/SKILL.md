@@ -2,6 +2,7 @@
 name: facilitating-daily-standups
 description: "This skill teaches you how to run daily standup agile ceremonies that surface blockers early, keep the team aligned on sprint goals, and finish in 15 minutes or less without drifting into status reports or problem-solving sessions."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -166,7 +167,3 @@ If there is a genuine calendar conflict for a team member, they post a written u
 - [Managing and Refining a Product Backlog](../managing-product-backlogs/SKILL.md)
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

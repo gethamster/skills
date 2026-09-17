@@ -2,6 +2,7 @@
 name: calculating-rice-scores
 description: "Apply the RICE formula to a product backlog and produce a numerically ranked priority list."
 metadata:
+  homepage: https://tryhamster.com
   method: rice-framework
 ---
 
@@ -36,5 +37,3 @@ RICE = (30,000 x 2 x 0.8) / 3 = **16,000**
 - Using revenue instead of user counts for Reach
 - Inflating Confidence to 100% without supporting data
 - Comparing scores across different time periods
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

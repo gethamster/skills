@@ -2,6 +2,7 @@
 name: crafting-actionable-feedback-prompts
 description: "This skill teaches you how to write and select targeted start stop continue questions for each feedback category so participants provide specific, constructive, and actionable responses instead of vague or unhelpful commentary."
 metadata:
+  homepage: https://tryhamster.com
   method: start-stop-continue
 ---
 
@@ -159,7 +160,3 @@ Finally, review the full set for tone consistency. All questions should feel equ
 - [Categorizing and Prioritizing Feedback Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
 - [Building Start Stop Continue Templates and Worksheets](../building-start-stop-continue-templates/SKILL.md)
 - [Writing Effective Start Stop Continue Feedback](../writing-effective-start-stop-continue-feedback/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

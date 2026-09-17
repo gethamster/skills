@@ -2,6 +2,7 @@
 name: optimizing-conversions-in-the-convert-stage
 description: "This skill teaches you how to apply conversion rate optimization, retargeting campaigns, and persuasion psychology to turn engaged prospects into paying customers at the decision stage of the RACE Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -179,7 +180,3 @@ Connect your Convert-stage results back to the broader RACE Framework. Improved 
 - [Driving Interactions in the Act (Consideration) Stage](../driving-interactions-in-the-act-stage/SKILL.md)
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

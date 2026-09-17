@@ -2,6 +2,7 @@
 name: aligning-content-and-channels-to-journey-stages
 description: "This skill teaches you how to systematically match marketing content types, messaging angles, and distribution channels to each of the five customer journey stages, so every piece of content serves a clear purpose in moving people toward purchase and beyond."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -162,7 +163,3 @@ Schedule the quarterly review from Step 9 as a recurring calendar event with pre
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: orchestrating-power-tools-in-gstack-workflows
 description: "This skill teaches you how to sequence and combine gstack's 8 power tools to manage end-to-end development workflows like feature buildout, codebase migration, and large refactors without losing context between phases."
 metadata:
+  homepage: https://tryhamster.com
   method: gstack-framework
 ---
 
@@ -153,7 +154,3 @@ When QA asks about failure modes, think about failure modes, not about why the f
 - [Installing and Configuring the gstack Skill Pack](../installing-and-configuring-gstack-skill-pack/SKILL.md)
 - [Structuring AI Coding Sessions from Decision-Making to Execution](../structuring-ai-coding-sessions-with-gstack-phases/SKILL.md)
 - [Navigating gstack's 23 Specialist Skills via Slash Commands](../navigating-gstack-slash-commands-and-specialist-skills/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

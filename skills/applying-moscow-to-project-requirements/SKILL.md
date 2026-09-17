@@ -2,6 +2,7 @@
 name: applying-moscow-to-project-requirements
 description: "This skill teaches you how to embed MoSCoW prioritization directly into your requirements gathering and management workflows, so every requirement in a project or software backlog carries a clear priority classification from discovery through delivery."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -152,7 +153,3 @@ When the team sees that MoSCoW classifications have real downstream consequences
 - [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
 - [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
 - [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

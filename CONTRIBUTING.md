@@ -8,7 +8,7 @@ New standalone skills belong under `skills/.experimental/<skill-key>/SKILL.md`. 
 
 `skills/` and `methods/` are curated by Hamster maintainers: `methods/<method>/METHOD.md` is each method write-up, and `skills/<skill>/SKILL.md` is a skill that belongs to one of them. Corrections and improvements there are welcome — open a pull request against the file you want changed and say what is wrong with the current text.
 
-Once an experimental skill proves useful and clearly belongs to one of the methods, maintainers move it into `skills/` and give it a `metadata.method`.
+Once an experimental skill proves useful and clearly belongs to one of the methods, maintainers move it into `skills/` and give it a `metadata.method` and `metadata.homepage`.
 
 ## SKILL.md frontmatter contract
 
@@ -20,6 +20,7 @@ name: your-skill-key
 description: One or two sentences describing what the skill does and when it applies.
 metadata:
   method: lean-startup
+  homepage: https://tryhamster.com
   author: your-name
 ---
 ```
@@ -28,6 +29,7 @@ metadata:
 - `name` is capped at 64 characters.
 - `description` is required, must be non-empty, and is capped at 1024 characters, per the [Agent Skills specification](https://agentskills.io/specification).
 - `metadata.method` is required for curated skills and names the directory under `methods/` the skill belongs to. Experimental skills may omit it.
+- `metadata.homepage` is required for curated skills and must be `https://tryhamster.com`. Experimental skills may omit it.
 - `license` is optional; include it only if the skill is licensed differently from this repository's default MIT license.
 - `metadata.rights` is optional. Omitting it means publishable, which is the normal case. See below.
 - Other `metadata` fields are optional and may carry arbitrary attribution.
@@ -62,7 +64,8 @@ its `> Created by` line, which validation enforces, and skills inherit credit
 through `metadata.method`. This field only answers whether we may ship the
 content at all.
 
-The body follows after a blank line as ordinary Markdown instructions for the agent. Curated skills end with a link back to Hamster; experimental skills need not.
+The body follows after a blank line as ordinary Markdown instructions for the agent. The curated skill's backlink to Hamster lives in `metadata.homepage`, not in a closing paragraph.
+
 
 ## Generated files
 

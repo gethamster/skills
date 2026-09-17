@@ -2,6 +2,7 @@
 name: mapping-current-reality-with-pillar-one
 description: "This skill teaches you to systematically audit and document the present state of your SEO domain across six dimensions, producing a structured baseline that feeds every downstream decision in the Six Pillars Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -151,7 +152,3 @@ You can refine formatting in subsequent quarterly iterations when the process is
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

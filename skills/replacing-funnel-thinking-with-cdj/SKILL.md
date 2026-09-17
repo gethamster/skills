@@ -2,6 +2,7 @@
 name: replacing-funnel-thinking-with-cdj
 description: "This skill teaches you how to transition your marketing strategy from a linear customer journey funnel to the non-linear McKinsey Consumer Decision Journey, including how to remap touchpoints, reallocate budgets, and restructure team workflows around circular consumer behavior."
 metadata:
+  homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey
 ---
 
@@ -144,7 +145,3 @@ Run a 2-hour workshop with your marketing team where you walk through a real cus
 - [Building Post-Purchase Loyalty Loops](../building-post-purchase-loyalty-loops/SKILL.md)
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

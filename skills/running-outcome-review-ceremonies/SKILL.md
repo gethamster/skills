@@ -2,6 +2,7 @@
 name: running-outcome-review-ceremonies
 description: "This skill teaches you how to facilitate regular cadence meetings where cross-functional teams assess outcome progress against targets, decide whether to pivot or persevere on initiatives, and update the roadmap based on real data rather than intuition."
 metadata:
+  homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr
 ---
 
@@ -118,7 +119,3 @@ Every quarter, spend 15 minutes at the end of a ceremony evaluating the process 
 - [Prioritizing Competing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
 - [Transitioning from Feature-Based to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

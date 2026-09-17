@@ -2,6 +2,7 @@
 name: structuring-journey-hierarchy-levels
 description: "This skill teaches you how to decompose the full customer experience into four nested hierarchy levels, from a single macro lifecycle (L0) down to granular touchpoint interactions (L3), so your organization can manage journeys at every scale without losing strategic context."
 metadata:
+  homepage: https://tryhamster.com
   method: ecosystem-journey-framework
 ---
 
@@ -155,7 +156,3 @@ The signal is recurring confusion about which team owns specific customer moment
 - [Building a Journey Portfolio Inventory](../building-a-journey-portfolio-inventory/SKILL.md)
 - [Identifying Cross-Journey Insights and Patterns](../identifying-cross-journey-insights/SKILL.md)
 - [Mapping Touchpoint Interconnections Across Journeys](../mapping-touchpoint-interconnections/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

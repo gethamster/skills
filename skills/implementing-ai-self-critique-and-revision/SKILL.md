@@ -2,6 +2,7 @@
 name: implementing-ai-self-critique-and-revision
 description: "This skill teaches you how to prompt or train a language model to evaluate its own responses against constitutional principles and iteratively revise harmful or unhelpful content, a core technique in Anthropic's Constitutional AI framework."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -169,7 +170,3 @@ For many practitioners, a hybrid approach works well: use the runtime pipeline d
 - [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
 - [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

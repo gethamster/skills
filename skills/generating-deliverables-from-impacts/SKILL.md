@@ -2,6 +2,7 @@
 name: generating-deliverables-from-impacts
 description: "This skill teaches you how to brainstorm candidate features, content, and activities for each impact on your impact map, then prioritize them based on their assumed contribution to measurable business goals—turning strategic intent into an actionable product manager roadmap."
 metadata:
+  homepage: https://tryhamster.com
   method: impact-mapping
 ---
 
@@ -140,7 +141,3 @@ This integration step is where Impact Mapping pays off for ongoing planning. Whe
 - [Validating Impact Map Assumptions with Experiments](../validating-assumptions-with-experiments/SKILL.md)
 - [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

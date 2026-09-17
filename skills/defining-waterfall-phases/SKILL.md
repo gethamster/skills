@@ -2,6 +2,7 @@
 name: defining-waterfall-phases
 description: "This skill teaches you how to structure the core waterfall model phases — requirements, design, implementation, verification, and maintenance — with clear entry criteria, deliverables, and exit criteria so each phase completes fully before the next begins."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -145,7 +146,3 @@ Store the PDD in a location accessible to all team members and reference it in y
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

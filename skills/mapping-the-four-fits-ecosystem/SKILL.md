@@ -2,6 +2,7 @@
 name: mapping-the-four-fits-ecosystem
 description: "This skill teaches you how to diagram and audit the dependencies across all four fits in Brian Balfour's framework so you can pinpoint exactly where a misalignment in one fit is constraining growth across the entire system."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -157,7 +158,3 @@ Schedule a quarterly re-mapping session where you update scores, re-draw cascade
 - [Sequencing the Four Fits for Early-Stage Growth](../sequencing-fits-for-early-stage-growth/SKILL.md)
 - [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
 - [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

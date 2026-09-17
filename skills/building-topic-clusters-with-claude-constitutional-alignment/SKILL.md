@@ -2,6 +2,7 @@
 name: building-topic-clusters-with-claude-constitutional-alignment
 description: "This skill teaches you to use Claude's value-driven reasoning framework to generate, evaluate, and organize topic clusters that produce semantically coherent content hierarchies satisfying both search engines and editorial standards."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -142,7 +143,3 @@ The goal is spokes that pass both filters.
 - [Applying Contextual Judgment in Claude AI Workflows](../applying-contextual-judgment-in-claude-ai-workflows/SKILL.md)
 - [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
 - [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

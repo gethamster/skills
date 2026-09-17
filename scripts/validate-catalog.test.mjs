@@ -18,7 +18,7 @@ const workspace = mkdtempSync(join(tmpdir(), "catalog-validator-"));
 
 after(() => rmSync(workspace, { recursive: true, force: true }));
 
-const SKILL_BODY = "\nGuidance.\n\n*[Add it](https://tryhamster.com) to your workspace.*\n";
+const SKILL_BODY = "\nGuidance.\n";
 
 function skill(
   name,
@@ -26,16 +26,18 @@ function skill(
     description = "What it does and when to use it.",
     body = SKILL_BODY,
     method = "lean-startup",
+    homepage = "https://tryhamster.com",
     rights = null,
     license = null,
   } = {},
 ) {
   const lines = [];
   if (method !== null) lines.push(`  method: ${method}`);
+  if (homepage !== null) lines.push(`  homepage: ${JSON.stringify(homepage)}`);
   if (rights !== null) lines.push(`  rights: ${rights}`);
   if (license !== null) lines.push(`  license: ${license}`);
-  const membership = lines.length ? `metadata:\n${lines.join("\n")}\n` : "";
-  return `---\nname: ${name}\ndescription: ${JSON.stringify(description)}\n${membership}---\n${body}`;
+  const metadata = lines.length ? `metadata:\n${lines.join("\n")}\n` : "";
+  return `---\nname: ${name}\ndescription: ${JSON.stringify(description)}\n${metadata}---\n${body}`;
 }
 
 function file(root, relativePath, contents) {
@@ -88,7 +90,7 @@ test("a well-formed catalog passes", () => {
 
 test("an experimental skill passes without a backlink or a method", () => {
   const root = fixture((r) =>
-    file(r, "skills/.experimental/naming-things/SKILL.md", skill("naming-things", { body: "\nNo backlink here.\n", method: null })),
+    file(r, "skills/.experimental/naming-things/SKILL.md", skill("naming-things", { method: null, homepage: null })),
   );
   const { code, output } = validate(root);
   assert.equal(code, 0, output);
@@ -308,23 +310,25 @@ test("every method must carry its attribution line", () => {
   );
 });
 
-test("every curated skill must close with a link back to Hamster", () => {
-  rejects(
-    fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { body: "\nNo footer.\n" }))),
-    /missing the closing link back to Hamster/,
-  );
+test("every curated skill must carry the Hamster homepage in metadata", () => {
+  for (const homepage of [null, "https://example.com", "https://tryhamster.com/skills", true]) {
+    rejects(
+      fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { homepage }))),
+      /metadata\.homepage must be "https:\/\/tryhamster\.com"/,
+    );
+  }
 });
 
-test("a body link to the site does not satisfy the closing backlink", () => {
+test("a closing body link does not replace metadata.homepage", () => {
   rejects(
     fixture((r) =>
       file(
         r,
         "skills/running-experiments/SKILL.md",
-        skill("running-experiments", { body: "\nSee [the catalog](https://tryhamster.com/methods).\n" + "filler\n".repeat(10) }),
+        skill("running-experiments", { homepage: null, body: "\n*[Add it](https://tryhamster.com) to your workspace.*\n" }),
       ),
     ),
-    /missing the closing link back to Hamster/,
+    /metadata\.homepage must be "https:\/\/tryhamster\.com"/,
   );
 });
 
@@ -395,7 +399,7 @@ test("failures accumulate instead of stopping at the first", () => {
   const { code, output } = validate(
     fixture((r) => {
       file(r, "methods/lean-startup/METHOD.md", "# Lean Startup\n");
-      file(r, "skills/running-experiments/SKILL.md", skill("Wrong_Name", { body: "\nno footer\n" }));
+      file(r, "skills/running-experiments/SKILL.md", skill("Wrong_Name", { homepage: null }));
     }),
   );
   assert.equal(code, 1);

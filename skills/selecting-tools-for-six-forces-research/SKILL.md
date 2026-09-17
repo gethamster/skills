@@ -2,6 +2,7 @@
 name: selecting-tools-for-six-forces-research
 description: "This skill teaches you how to assemble a lean, repeatable toolkit of market research tools, scoring templates, and visualization formats that standardize your Six Forces analysis so every force is evaluated with consistent rigor and the output is immediately usable for strategic decisions."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -144,7 +145,3 @@ The template's source citation column will make the imbalance visible early if y
 - [Conducting an Industry Rivalry Assessment](../conducting-industry-rivalry-assessment/SKILL.md)
 - [Evaluating Buyer and Supplier Bargaining Power](../evaluating-buyer-and-supplier-power/SKILL.md)
 - [Assessing Threats of New Entrants and Substitutes](../assessing-threat-of-new-entrants-and-substitutes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

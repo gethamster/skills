@@ -2,6 +2,7 @@
 name: creating-story-mapping-templates
 description: "This skill teaches you how to design, configure, and maintain reusable story map templates in physical or digital formats so your team can start any mapping session with a consistent, ready-to-use structure instead of a blank canvas."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -164,7 +165,3 @@ Document the customization rules alongside the template.
 - [Facilitating Collaborative Story Mapping Workshops](../facilitating-story-mapping-workshops/SKILL.md)
 - [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
 - [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: setting-okr-cadence-and-cycles
 description: "This skill teaches you how to select the right OKR cycle length, layer quarterly execution rhythms under annual strategic objectives, and coordinate planning timing so that every team starts each cycle aligned and ready to execute."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -151,7 +152,3 @@ If a scheduling conflict arises, move the conflicting event, not the OKR event. 
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

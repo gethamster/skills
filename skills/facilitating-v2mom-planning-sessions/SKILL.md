@@ -2,6 +2,7 @@
 name: facilitating-v2mom-planning-sessions
 description: "Teaches you how to design and run workshops that produce high-quality V2MOMs through structured collaboration, so leadership teams and cross-functional stakeholders leave aligned on vision, priorities, and success criteria."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -153,7 +154,3 @@ Put the deadline in a calendar invitation sent before the session ends.
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

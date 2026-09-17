@@ -2,6 +2,7 @@
 name: iterating-and-evolving-north-star-metric
 description: "This skill teaches you when and how to revisit, validate, or replace your North Star Metric as your product matures, your market shifts, or your strategy evolves—so the metric always reflects real customer value rather than becoming a stale artifact."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-framework
 ---
 
@@ -118,7 +119,3 @@ After the transition stabilizes (typically 1-2 months post-full-switch), run a b
 - [Running a North Star Framework Workshop with Stakeholders](../running-north-star-workshops/SKILL.md)
 - [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
 - [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

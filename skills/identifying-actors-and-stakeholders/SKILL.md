@@ -2,6 +2,7 @@
 name: identifying-actors-and-stakeholders
 description: "This skill teaches you how to systematically discover, categorize, and prioritize the users, customers, and internal stakeholders whose behavior changes will drive your business goal within an impact map."
 metadata:
+  homepage: https://tryhamster.com
   method: impact-mapping
 ---
 
@@ -139,7 +140,3 @@ Adjust your list based on what you find. This step often surfaces 1-2 critical a
 - [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
 - [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

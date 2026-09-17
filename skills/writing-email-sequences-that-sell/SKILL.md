@@ -2,6 +2,7 @@
 name: writing-email-sequences-that-sell
 description: "This skill teaches you how to apply clarity-first, benefit-driven copywriting principles to email subject lines, body copy, and CTAs across nurture and sales sequences so every send moves readers toward a specific action."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -160,7 +161,3 @@ Finally, preview every email on mobile. More than half your readers will see it 
 - [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
 - [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

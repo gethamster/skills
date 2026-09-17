@@ -2,6 +2,7 @@
 name: creating-kanban-pull-policies
 description: "This skill teaches you how to define clear entry and exit criteria for each Kanban column so work flows forward predictably, reducing confusion about when items are ready to move and who is responsible for pulling them."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -161,7 +162,3 @@ Write separate pull policies for every column boundary. Your Definition of Done 
 - [Measuring Kanban Flow Metrics](../measuring-kanban-flow-metrics/SKILL.md)
 - [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
 - [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

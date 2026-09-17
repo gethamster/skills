@@ -2,6 +2,7 @@
 name: assessing-threat-of-new-entrants-and-substitutes
 description: "This skill teaches you how to systematically identify, score, and prioritize the threats posed by new market entrants and substitute products using consumer market research data, producing a scored threat matrix that informs strategic decisions within the Six Forces Model."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -151,7 +152,3 @@ Increase weights on the factors that most often predicted outcomes and decrease 
 - [Synthesizing Six Forces into Strategic Recommendations](../synthesizing-six-forces-into-strategic-recommendations/SKILL.md)
 - [Conducting an Industry Rivalry Assessment](../conducting-industry-rivalry-assessment/SKILL.md)
 - [Evaluating Buyer and Supplier Bargaining Power](../evaluating-buyer-and-supplier-power/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: defining-measurable-key-results
 description: "This skill teaches you how to write specific, quantifiable key results with clear metrics and numeric targets that accurately measure progress toward an objective, turning aspirational goals into trackable outcomes."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -174,7 +175,3 @@ At the team level, use the confidence calibration in Step 5: if the team is more
 - [Writing Effective OKR Objectives](../writing-effective-objectives/SKILL.md)
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

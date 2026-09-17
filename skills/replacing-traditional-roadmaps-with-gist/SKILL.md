@@ -2,6 +2,7 @@
 name: replacing-traditional-roadmaps-with-gist
 description: "This skill teaches product managers how to systematically transition their teams from feature-based roadmaps to the GIST Planning Framework, converting committed feature lists into a layered system of goals, ideas, step-projects, and tasks while preserving stakeholder trust and executive alignment."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -168,7 +169,3 @@ Negative results are GIST's primary value proposition, not a failure mode.
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

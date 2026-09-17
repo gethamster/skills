@@ -2,6 +2,7 @@
 name: assessing-your-technician-manager-entrepreneur-balance
 description: "This skill teaches you to diagnose which of the three E-Myth business personalities currently dominates your work, quantify the imbalance, and identify the specific shifts needed to unlock your next stage of growth."
 metadata:
+  homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework
 ---
 
@@ -158,7 +159,3 @@ You can always shift toward Manager and Entrepreneur as you build capacity, but 
 - [Developing Your Entrepreneurial Vision](../developing-your-entrepreneurial-vision/SKILL.md)
 - [Transitioning from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
 - [Applying the E-Myth Framework to Agencies and Service Businesses](../applying-the-e-myth-framework-to-agencies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

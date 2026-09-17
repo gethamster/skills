@@ -2,6 +2,7 @@
 name: comparing-moscow-with-other-prioritization-frameworks
 description: "This skill teaches you when to choose MoSCoW over quantitative scoring frameworks like RICE, ICE, and WSJF, and how to combine multiple prioritization methods for stronger, more defensible prioritization outcomes."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -172,7 +173,3 @@ This prevents framework drift—where teams unconsciously switch methods each qu
 - [Categorizing Requirements into Must, Should, Could, and Won't Have](../categorizing-requirements-into-moscow-buckets/SKILL.md)
 - [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
 - [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

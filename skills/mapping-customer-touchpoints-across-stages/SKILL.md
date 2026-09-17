@@ -2,6 +2,7 @@
 name: mapping-customer-touchpoints-across-stages
 description: "This skill teaches you how to systematically identify, catalog, and organize every customer interaction point within each of the five journey stages, producing a structured touchpoint inventory that becomes the foundation for journey optimization."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -159,7 +160,3 @@ Listing each of your 300 blog posts individually is not. If your inventory excee
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

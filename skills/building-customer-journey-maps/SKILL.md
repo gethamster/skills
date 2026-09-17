@@ -2,6 +2,7 @@
 name: building-customer-journey-maps
 description: "This skill teaches you how to create a customer journey map that visually represents the five stages of the customer lifecycle, including how to choose the right format, run a collaborative mapping session, and produce an artifact your team will reference and update."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -169,7 +170,3 @@ The visual design should serve readability, not aesthetics.
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

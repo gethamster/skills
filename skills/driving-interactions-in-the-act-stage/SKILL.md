@@ -2,6 +2,7 @@
 name: driving-interactions-in-the-act-stage
 description: "This skill teaches you how to design content, landing pages, and engagement tactics that move prospects through the consideration stage buyer journey — from passive awareness to active interaction with your brand."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -141,7 +142,3 @@ Run each test for statistical significance (typically 2-4 weeks depending on tra
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

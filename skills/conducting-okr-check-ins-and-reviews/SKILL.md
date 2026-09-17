@@ -2,6 +2,7 @@
 name: conducting-okr-check-ins-and-reviews
 description: "This skill teaches you how to run structured OKR check-in meetings at weekly, bi-weekly, and quarterly intervals so your team stays accountable, surfaces problems early, and adjusts course before it is too late."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -153,7 +154,3 @@ If ICs are uncomfortable presenting, start with written updates in a shared docu
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

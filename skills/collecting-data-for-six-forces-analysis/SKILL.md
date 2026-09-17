@@ -2,6 +2,7 @@
 name: collecting-data-for-six-forces-analysis
 description: "This skill teaches you a repeatable market research process for sourcing, validating, and organizing the specific data points needed to score each of the six forces with confidence rather than guesswork."
 metadata:
+  homepage: https://tryhamster.com
   method: six-forces-model
 ---
 
@@ -140,7 +141,3 @@ If rivalry has 15 data points and supplier power has 2, you have fallen into thi
 - [Conducting an Industry Rivalry Assessment](../conducting-industry-rivalry-assessment/SKILL.md)
 - [Evaluating Buyer and Supplier Bargaining Power](../evaluating-buyer-and-supplier-power/SKILL.md)
 - [Assessing Threats of New Entrants and Substitutes](../assessing-threat-of-new-entrants-and-substitutes/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

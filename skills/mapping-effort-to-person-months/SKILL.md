@@ -2,6 +2,7 @@
 name: mapping-effort-to-person-months
 description: "Convert engineering, design, and QA estimates into consistent person-months so the RICE denominator stays comparable across initiatives."
 metadata:
+  homepage: https://tryhamster.com
   method: rice-framework
 ---
 
@@ -38,5 +39,3 @@ Effort = (0.5 × 1) + (2 × 2) + (0.5 × 1) = **5 person-months**.
 - Excluding design or QA when "they don't usually count"
 - Estimating in story points without converting through team velocity
 - Letting Effort definitions drift between quarters
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

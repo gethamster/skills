@@ -2,6 +2,7 @@
 name: organizing-tribes-for-alignment
 description: "This skill teaches you how to group related squads into tribes with clear boundaries, the right size constraints, and effective tribe leadership so that autonomous squads stay aligned on shared strategic outcomes."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -168,7 +169,3 @@ Test your missions with real examples. List five recent product decisions and as
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

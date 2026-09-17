@@ -2,6 +2,7 @@
 name: timing-content-interventions-strategically
 description: "This skill teaches you how to identify optimal windows for publishing new pillar content, refreshing existing pages, and retiring underperforming assets based on trend analysis, seasonality, and competitive signals."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -162,7 +163,3 @@ If your impression data shows a peak two months later than Trends suggests, trus
 - [Mapping Current Reality Using the Six Pillars Framework](../mapping-current-reality-with-pillar-one/SKILL.md)
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

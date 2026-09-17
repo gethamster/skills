@@ -2,6 +2,7 @@
 name: calibrating-confidence
 description: "Make confidence reflect evidence, not enthusiasm—so weak assumptions cannot outrank validated opportunities in RICE scoring."
 metadata:
+  homepage: https://tryhamster.com
   method: rice-framework
 ---
 
@@ -36,5 +37,3 @@ A pricing change forecast:
 - Confusing team excitement with evidence
 - Increasing Confidence to "promote" a pet project
 - Updating Confidence only after launch instead of when new data arrives mid-quarter
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

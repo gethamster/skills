@@ -2,6 +2,7 @@
 name: translating-tab-findings-to-product-roadmap
 description: "This skill teaches you how to systematically convert raw developer feedback from TAB discovery calls into prioritized product roadmap items and go-to-market positioning, ensuring every feature decision traces back to validated pain points."
 metadata:
+  homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework
 ---
 
@@ -144,7 +145,3 @@ Document which TAB members' feedback directly influenced which roadmap items. Yo
 - [Conducting Non-Pitch Discovery Calls with Developers](../conducting-non-pitch-discovery-calls/SKILL.md)
 - [Designing Pain-Focused Interview Guides for Developer Calls](../designing-developer-pain-interview-guides/SKILL.md)
 - [Rotating and Managing Board Membership Over Time](../rotating-and-managing-board-membership/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

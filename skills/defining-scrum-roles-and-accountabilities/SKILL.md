@@ -2,6 +2,7 @@
 name: defining-scrum-roles-and-accountabilities
 description: "This skill teaches you how to clearly establish and operate within the Product Owner, Scrum Master, and Development Team roles so your Scrum implementation has the structural clarity needed for effective self-organization and delivery."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -127,7 +128,3 @@ This isn't a one-time setup—it's an ongoing practice. The best Scrum teams rev
 - [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
 - [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
 - [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

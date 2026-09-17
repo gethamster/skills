@@ -2,6 +2,7 @@
 name: defining-the-customer-experience-backwards
 description: "This skill teaches you to articulate the ideal end-state customer experience as a concrete narrative, then systematically decompose it into the features, services, and technology required to deliver that experience, so you build only what matters."
 metadata:
+  homepage: https://tryhamster.com
   method: working-backwards
 ---
 
@@ -158,7 +159,3 @@ Keep them as separate artifacts. " Both feed into the Working Backwards process,
 - [Identifying Minimum Requirements by Working Backwards from Launch](../identifying-minimum-lovable-requirements/SKILL.md)
 - [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
 - [Writing Internal Press Releases for Product Concepts](../writing-internal-press-releases/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

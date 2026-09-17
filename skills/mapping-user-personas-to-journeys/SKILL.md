@@ -2,6 +2,7 @@
 name: mapping-user-personas-to-journeys
 description: "This skill teaches you how to anchor your story map around specific user personas and their end-to-end journey narratives, ensuring the map reflects real user goals rather than internal assumptions about features."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -148,7 +149,3 @@ If you cannot get specific, you need more research before proceeding.
 - [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
 - [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
 - [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

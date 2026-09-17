@@ -2,6 +2,7 @@
 name: building-post-purchase-loyalty-loops
 description: "This skill teaches you how to design post-purchase experiences that transform one-time buyers into automatic repurchasers by creating loyalty loops—the phase in customer journey stages where consumers skip re-evaluation and buy again directly."
 metadata:
+  homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey
 ---
 
@@ -128,7 +129,3 @@ Run monthly loop health reviews. Identify where customers are dropping out of th
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

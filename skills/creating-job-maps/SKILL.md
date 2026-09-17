@@ -2,6 +2,7 @@
 name: creating-job-maps
 description: "This skill teaches you to decompose a customer's core functional job into eight universal process steps, producing a visual map that anchors your product manager roadmap in the actual structure of what customers are trying to accomplish."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -162,7 +163,3 @@ Return to solution-agnostic language and you will find the steps converge. Segme
 - [Defining the Customer's Core Functional Job](../defining-core-functional-jobs/SKILL.md)
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
 - [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: optimizing-moment-of-purchase-triggers
 description: "This skill teaches you how to identify and influence the critical decision stage touchpoints that tip active evaluators into buyers, using the McKinsey Consumer Decision Journey's moment-of-purchase framework."
 metadata:
+  homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey
 ---
 
@@ -154,7 +155,3 @@ Revisit your full touchpoint audit quarterly. Purchase experiences decay—new f
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

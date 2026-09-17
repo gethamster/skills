@@ -2,6 +2,7 @@
 name: running-continuous-learning-loops-from-field-data
 description: "This skill teaches you how to build a repeatable system for capturing deployment insights, failure patterns, and feature requests from customer environments and translating them into structured, prioritized product feedback that core engineering teams can actually act on."
 metadata:
+  homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
 ---
 
@@ -169,7 +170,3 @@ If you are not sure of the exact hours, estimate a range. Product teams can work
 - [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
 - [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
 - [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*
