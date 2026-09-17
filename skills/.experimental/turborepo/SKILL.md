@@ -1,6 +1,6 @@
 ---
 name: turborepo
-description: "|-"
+description: "Build system for JavaScript/TypeScript monorepos. Turborepo caches task outputs and runs tasks in parallel based on dependency graph."
 version: "1.1.0"
 ---
 

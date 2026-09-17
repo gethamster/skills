@@ -1,6 +1,6 @@
 ---
 name: authoring-blueprints-from-scratch
-description: "1. Establish narrative intent:"
+description: "Write the current-state blueprint for a feature or system from a brief or decision artifact, capturing narrative intent, trade-offs, and consequences. Use when you need to document why something was built, how it works, and what constraints it creates."
 version: "1.0.0"
 category: "Ops"
 ---
