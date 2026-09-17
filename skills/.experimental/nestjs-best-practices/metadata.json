@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "organization": "Hamster Studio",
+  "date": "2026-02-20",
+  "abstract": "A comprehensive, stack-aligned guide for building production-ready NestJS applications with nestjs-zod, Supabase, Vitest, and BullMQ. Contains 35 rules across 9 categories, prioritized by impact. Each rule provides rationale, anti-patterns, and correct implementations based on real codebase patterns. Complements the hamster-nest-api skill which provides project-specific templates.",
+  "references": [
+    "[NestJS Documentation](https://docs.nestjs.com)",
+    "[nestjs-zod](https://github.com/risen228/nestjs-zod)",
+    "[Supabase Documentation](https://supabase.com/docs)",
+    "[BullMQ Documentation](https://docs.bullmq.io)",
+    "[Vitest Documentation](https://vitest.dev)"
+  ]
+}
