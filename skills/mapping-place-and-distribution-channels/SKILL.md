@@ -2,6 +2,7 @@
 name: mapping-place-and-distribution-channels
 description: "This skill teaches you how to systematically evaluate and select the optimal mix of physical, digital, direct, and indirect distribution channels—the 'Place' element—to ensure your product or service reaches target customers where, when, and how they prefer to buy."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -149,7 +150,3 @@ After the pilot, make a clear go/no-go decision based on your predefined criteri
 - [Designing Product Strategy Within the 7 P's Framework](../designing-product-strategy-with-7ps/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
 - [Optimizing People Touchpoints in Service Delivery](../optimizing-people-touchpoints/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

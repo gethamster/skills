@@ -2,6 +2,7 @@
 name: running-retrospectives
 description: "This skill teaches you how to facilitate retrospectives that surface honest team feedback and convert it into prioritized, owned action items that actually get implemented between sprints."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -138,7 +139,3 @@ End by thanking the team for their candor and confirming where the action items 
 - [Managing and Refining a Product Backlog](../managing-product-backlogs/SKILL.md)
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

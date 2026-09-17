@@ -2,6 +2,7 @@
 name: comparing-kanban-and-scrum
 description: "This skill teaches you how to systematically evaluate kanban vs scrum across concrete dimensions of your team's work, then make a defensible choice, blend, or migration plan rather than picking a method based on trend or habit."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -160,7 +161,3 @@ The worksheet forces this, but only if you fill in the evidence column honestly.
 - [Measuring Kanban Flow Metrics](../measuring-kanban-flow-metrics/SKILL.md)
 - [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
 - [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: adapting-six-pillars-for-b2b-seo
 description: "This skill teaches you how to reshape a pillar-based content strategy so it aligns with B2B buying cycles, multi-stakeholder decision committees, and niche industry search behavior for maximum organic impact."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -147,7 +148,3 @@ The diagnostic signal is that cluster pages outrank the pillar page for the pill
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Scenario Planning for Alternative SEO and Content Futures](../scenario-planning-for-alternative-futures/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

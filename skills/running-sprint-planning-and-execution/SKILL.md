@@ -2,6 +2,7 @@
 name: running-sprint-planning-and-execution
 description: "This skill teaches you how to define a focused sprint goal, select the right backlog items, size commitments against your team's actual capacity, and manage execution so the team delivers working increments reliably every sprint."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -162,7 +163,3 @@ Fix this by enforcing a binary rule: done or not done, counted or not counted. I
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

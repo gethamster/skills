@@ -2,6 +2,7 @@
 name: applying-jtbd-to-product-strategy
 description: "This skill teaches you how to convert job maps, outcome scores, and opportunity landscapes into a prioritized product manager roadmap, feature definitions, and positioning statements grounded in real customer evidence."
 metadata:
+  homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework
 ---
 
@@ -162,7 +163,3 @@ The fix is to show the requester the data: importance is 9, satisfaction is 8, o
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
 - [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
 - [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

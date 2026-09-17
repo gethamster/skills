@@ -2,6 +2,7 @@
 name: aligning-cross-functional-teams-around-north-star
 description: "This skill teaches you how to communicate, cascade, and embed a North Star Metric across engineering, design, marketing, and other cross functional teams so that every function shares accountability for a single outcome."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-metric
 ---
 
@@ -154,7 +155,3 @@ This retrospective feeds into two sibling practices: [Validating Your North Star
 - [Selecting the Right North Star Metric for Your Product](../selecting-your-north-star-metric/SKILL.md)
 - [Evolving Your North Star Metric Across Product Growth Stages](../evolving-north-star-across-growth-stages/SKILL.md)
 - [Identifying and Mapping Input Metrics to Your North Star](../identifying-input-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

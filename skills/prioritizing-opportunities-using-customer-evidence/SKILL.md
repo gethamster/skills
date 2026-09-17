@@ -2,6 +2,7 @@
 name: prioritizing-opportunities-using-customer-evidence
 description: "This skill teaches you how to systematically assess and compare opportunity nodes in an Opportunity Solution Tree by evaluating the frequency, severity, and breadth of customer evidence so you can confidently decide where to focus solution ideation."
 metadata:
+  homepage: https://tryhamster.com
   method: opportunity-solution-tree
 ---
 
@@ -144,7 +145,3 @@ This documentation is invaluable in two contexts: first, when stakeholders ask w
 - [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
 - [Identifying Customer Opportunities from Continuous Research](../identifying-customer-opportunities-from-research/SKILL.md)
 - [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

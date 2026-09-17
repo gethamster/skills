@@ -2,6 +2,7 @@
 name: designing-usage-based-pricing-tiers
 description: "This skill teaches you how to structure tiered pricing plans around AI usage metrics—API calls, tokens, seats, or compute—so that what customers pay scales proportionally with the value they extract and the costs you incur."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-pricing-playbook
 ---
 
@@ -134,7 +135,3 @@ Compile everything into a single pricing tier specification document that serves
 - [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
 - [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
 - [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

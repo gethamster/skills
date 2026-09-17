@@ -2,6 +2,7 @@
 name: structuring-roadmap-timeframes
 description: "This skill teaches you how to divide a goal-oriented product roadmap into time horizons that communicate the right level of certainty to stakeholders while preserving the team's ability to adapt as new information arrives."
 metadata:
+  homepage: https://tryhamster.com
   method: go-product-roadmap
 ---
 
@@ -161,7 +162,3 @@ During that session, advance horizons, archive shipped items, and add new far-te
 - [Mapping Features and Capabilities to Strategic Goals](../mapping-features-to-roadmap-goals/SKILL.md)
 - [Reviewing and Adapting GO Roadmap Goals Each Quarter](../reviewing-and-adapting-roadmap-goals/SKILL.md)
 - [Defining Goal-Oriented Product Goals for Your Roadmap](../defining-goal-oriented-product-goals/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

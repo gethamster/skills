@@ -2,6 +2,7 @@
 name: identifying-customer-opportunities-from-research
 description: "This skill teaches you how to synthesize customer interviews, surveys, and behavioral data into distinct opportunity nodes—unmet needs, pain points, or desires—that feed directly into your Opportunity Solution Tree."
 metadata:
+  homepage: https://tryhamster.com
   method: opportunity-solution-tree
 ---
 
@@ -153,7 +154,3 @@ Share the updated tree with your team in your next discovery sync. Walk through 
 - [Structuring and Grouping Opportunities into a Hierarchy](../structuring-opportunity-spaces-hierarchically/SKILL.md)
 - [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
 - [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

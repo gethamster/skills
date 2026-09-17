@@ -2,6 +2,7 @@
 name: selecting-mvp-types-and-formats
 description: "This skill teaches you how to evaluate different types of MVP and select the format that best matches your riskiest assumption, available resources, and learning goal so you build the smallest thing that answers the most important question."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -157,7 +158,3 @@ Enforce the scope boundary from Step 6 ruthlessly.
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

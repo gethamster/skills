@@ -2,6 +2,7 @@
 name: categorizing-and-prioritizing-feedback-items
 description: "This skill teaches you how to sort, cluster, and dot-vote on collected Start, Stop, and Continue feedback items so your team commits to the highest-impact actions instead of drowning in a long, undifferentiated list."
 metadata:
+  homepage: https://tryhamster.com
   method: start-stop-continue
 ---
 
@@ -126,7 +127,3 @@ Write these commitments in a shared, visible place: the team wiki, the sprint bo
 - [Building Start Stop Continue Templates and Worksheets](../building-start-stop-continue-templates/SKILL.md)
 - [Writing Effective Start Stop Continue Feedback](../writing-effective-start-stop-continue-feedback/SKILL.md)
 - [Crafting Actionable Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

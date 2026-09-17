@@ -2,6 +2,7 @@
 name: evolving-north-star-across-growth-stages
 description: "This skill teaches when and how to revisit, refine, or replace your North Star Metric as your product matures — ensuring the metric that guides your entire organization always reflects the core value customers actually derive from your product."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-metric
 ---
 
@@ -166,7 +167,3 @@ Also update your [product roadmap connection](https://tryhamster.com/skills/conn
 - [Selecting the Right North Star Metric for Your Product](../selecting-your-north-star-metric/SKILL.md)
 - [Aligning Cross-Functional Teams Around a Shared North Star](../aligning-cross-functional-teams-around-north-star/SKILL.md)
 - [Identifying and Mapping Input Metrics to Your North Star](../identifying-input-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

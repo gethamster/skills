@@ -2,6 +2,7 @@
 name: creating-physical-evidence-and-proof-points
 description: "This skill teaches you how to design tangible cues—branded environments, packaging, testimonials, case studies, and service guarantees—that build customer trust and signal quality within the physical evidence marketing mix."
 metadata:
+  homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix
 ---
 
@@ -172,7 +173,3 @@ The goal is a living system of evidence that evolves as your business, customers
 - [Mapping Place and Distribution Channels](../mapping-place-and-distribution-channels/SKILL.md)
 - [Streamlining Service Delivery Processes](../streamlining-service-delivery-processes/SKILL.md)
 - [Optimizing People Touchpoints in Service Delivery](../optimizing-people-touchpoints/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

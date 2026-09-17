@@ -2,6 +2,7 @@
 name: matching-channel-to-business-model
 description: "This skill teaches you how to evaluate whether your customer acquisition channels can economically sustain your business model by analyzing the relationship between CAC, LTV, and channel cost structures within the Four Fits Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -177,7 +178,3 @@ Revisit this scorecard quarterly as part of your [Four Fits audit process](https
 - [Sequencing the Four Fits for Early-Stage Growth](../sequencing-fits-for-early-stage-growth/SKILL.md)
 - [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
 - [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

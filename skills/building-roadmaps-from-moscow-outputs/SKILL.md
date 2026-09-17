@@ -2,6 +2,7 @@
 name: building-roadmaps-from-moscow-outputs
 description: "This skill teaches you how to translate a completed MoSCoW prioritization into a phased product or project roadmap with sequenced releases, clear milestones, and realistic timelines."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -143,7 +144,3 @@ Share the roadmap with all stakeholders and walk them through the logic: why ite
 - [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
 - [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
 - [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

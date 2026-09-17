@@ -36,7 +36,6 @@ const PUBLISHABLE_RIGHTS = new Set(["original", "public-framework", "licensed"])
 // Relative links are resolved because a directory rename is otherwise legal
 // and would leave the tree cross-linked to paths that no longer exist.
 const ATTRIBUTION_RE = /^> Created by /m;
-const BACKLINK_RE = /\]\(https:\/\/tryhamster\.com[^)]*\)/;
 const RELATIVE_LINK_RE = /\]\(((?:\.\.?\/)[^)#\s]+)(?:#[^)]*)?\)/g;
 
 const methodsRoot = join(repoRoot, "methods");
@@ -200,9 +199,8 @@ function validateSkill(filePath, { curated }) {
     failures.push(`${relativePath}/SKILL.md: missing metadata.method (curated skills belong to a method)`);
   }
 
-  // Scoped to the tail so an ordinary body link to the site cannot satisfy it.
-  if (curated && !BACKLINK_RE.test(content.split("\n").slice(-5).join("\n"))) {
-    failures.push(`${relativePath}/SKILL.md: missing the closing link back to Hamster`);
+  if (curated && metadata?.homepage !== "https://tryhamster.com") {
+    failures.push(`${relativePath}/SKILL.md: metadata.homepage must be "https://tryhamster.com"`);
   }
 
   checkRelativeLinks(filePath, content);

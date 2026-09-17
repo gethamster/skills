@@ -2,6 +2,7 @@
 name: measuring-journey-stage-kpis
 description: "This skill teaches you to select, define, and track the right performance metrics for each of the five customer journey stages so you can pinpoint where growth is happening and where customers are dropping off."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -169,7 +170,3 @@ Rebalance by ensuring equal rigor across all five stages.
 - [Activating Customer Advocacy and Referral Programs](../activating-customer-advocacy-and-referrals/SKILL.md)
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

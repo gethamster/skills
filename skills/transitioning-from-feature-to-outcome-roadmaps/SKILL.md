@@ -2,6 +2,7 @@
 name: transitioning-from-feature-to-outcome-roadmaps
 description: "This skill teaches product managers a structured workflow for converting an existing feature-delivery roadmap into an outcome-driven format, preserving stakeholder confidence while shifting the team's focus from outputs to measurable business impact."
 metadata:
+  homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr
 ---
 
@@ -116,7 +117,3 @@ After your first review cycle, retrospect on the transition itself. What worked?
 - [Mapping Product Initiatives to Business Outcomes](../mapping-initiatives-to-business-outcomes/SKILL.md)
 - [Prioritizing Competing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

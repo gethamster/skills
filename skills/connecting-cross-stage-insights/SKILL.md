@@ -2,6 +2,7 @@
 name: connecting-cross-stage-insights
 description: "This skill teaches you how to synthesize research findings from the latent, evaluation, and buying stages into a unified analysis that reveals hidden patterns, contradictions, and optimization opportunities spanning the full customer experience journey."
 metadata:
+  homepage: https://tryhamster.com
   method: planned-journey-framework
 ---
 
@@ -160,7 +161,3 @@ Their presence during theme coding and contradiction identification catches misi
 - [Tracking Brand Consideration Shifts Across Stages](../tracking-brand-consideration-shifts/SKILL.md)
 - [Building Planned Journey Funnel Visualizations](../building-planned-journey-funnel-visualizations/SKILL.md)
 - [Mapping High-Involvement Purchase Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

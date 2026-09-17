@@ -2,6 +2,7 @@
 name: identifying-input-metrics
 description: "This skill teaches you how to break down your North Star Metric into a set of actionable, team-level input metrics that collectively drive your core product outcome — turning a single guiding number into a practical system of levers your organization can pull every day."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-metric
 ---
 
@@ -133,7 +134,3 @@ Establish a regular review cadence — typically weekly for input metrics, month
 - [Selecting the Right North Star Metric for Your Product](../selecting-your-north-star-metric/SKILL.md)
 - [Evolving Your North Star Metric Across Product Growth Stages](../evolving-north-star-across-growth-stages/SKILL.md)
 - [Aligning Cross-Functional Teams Around a Shared North Star](../aligning-cross-functional-teams-around-north-star/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

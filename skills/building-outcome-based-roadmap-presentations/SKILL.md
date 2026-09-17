@@ -2,6 +2,7 @@
 name: building-outcome-based-roadmap-presentations
 description: "This skill teaches you how to structure and deliver roadmap presentations organized around measurable business outcomes rather than feature lists, so every stakeholder group — from executives to engineers — understands and supports the strategic reasoning behind planned work."
 metadata:
+  homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr
 ---
 
@@ -116,7 +117,3 @@ End every roadmap presentation by stating exactly how and when you'll report bac
 - [Prioritizing Competing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
 - [Transitioning from Feature-Based to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

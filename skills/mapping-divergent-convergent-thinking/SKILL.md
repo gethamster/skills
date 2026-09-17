@@ -2,6 +2,7 @@
 name: mapping-divergent-convergent-thinking
 description: "This skill teaches you how to deliberately switch between expansive exploration and focused decision-making at each stage of the Double Diamond, ensuring your team knows when to broaden possibilities and when to narrow toward action."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -156,7 +157,3 @@ This retrospective should be separate from your general project retro to give it
 - [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
 - [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

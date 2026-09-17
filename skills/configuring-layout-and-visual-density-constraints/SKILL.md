@@ -2,6 +2,7 @@
 name: configuring-layout-and-visual-density-constraints
 description: "Teaches you how to write grid, container, and density rules inside SKILL.md files so AI coding agents produce tighter, more intentional page compositions instead of the loosely spaced, single-column defaults they gravitate toward."
 metadata:
+  homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework
 ---
 
@@ -169,7 +170,3 @@ The tell is cards that look correct in terms of grid placement but feel hollow o
 - [Auditing AI-Generated Frontends for Design Quality](../auditing-ai-generated-frontends-for-design-quality/SKILL.md)
 - [Installing SKILL.md Files in AI Coding Agents](../installing-skill-files-in-ai-coding-agents/SKILL.md)
 - [Authoring Portable SKILL.md Files for Design Systems](../authoring-portable-skill-files-for-design-systems/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

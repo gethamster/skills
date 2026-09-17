@@ -2,6 +2,7 @@
 name: facilitating-4ls-retrospective-sessions
 description: "This skill teaches you how to plan, timebox, and facilitate each phase of a 4Ls retrospective session so every team member contributes and the meeting produces concrete, assignable action items."
 metadata:
+  homepage: https://tryhamster.com
   method: 4ls-retrospective
 ---
 
@@ -130,7 +131,3 @@ Immediately after the meeting (within 30 minutes), document the action items in 
 - [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
 - [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
 - [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

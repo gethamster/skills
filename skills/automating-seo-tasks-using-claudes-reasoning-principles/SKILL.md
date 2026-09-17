@@ -2,6 +2,7 @@
 name: automating-seo-tasks-using-claudes-reasoning-principles
 description: "This skill teaches you how to automate SEO with Claude by structuring research, auditing, and keyword analysis workflows around constitutional reasoning principles that keep outputs accurate, helpful, and free of fabrication."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -136,7 +137,3 @@ Check those specific keywords or pages first, because Claude has already told yo
 - [Applying Contextual Judgment in Claude AI Workflows](../applying-contextual-judgment-in-claude-ai-workflows/SKILL.md)
 - [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
 - [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

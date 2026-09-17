@@ -2,6 +2,7 @@
 name: installing-and-configuring-gstack-skill-pack
 description: "This skill teaches you how to clone gstack from GitHub, wire it into your AI coding agent's command system, and configure it so all 23 specialist skills and 8 power tools are available via slash commands."
 metadata:
+  homepage: https://tryhamster.com
   method: gstack-framework
 ---
 
@@ -146,7 +147,3 @@ Testing against one agent does not guarantee compatibility with another. If your
 - [Using Multi-Agent Perspectives (CEO, Engineer, QA) in Development](../using-multi-agent-perspectives-for-development/SKILL.md)
 - [Structuring AI Coding Sessions from Decision-Making to Execution](../structuring-ai-coding-sessions-with-gstack-phases/SKILL.md)
 - [Navigating gstack's 23 Specialist Skills via Slash Commands](../navigating-gstack-slash-commands-and-specialist-skills/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

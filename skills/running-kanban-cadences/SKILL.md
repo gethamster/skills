@@ -2,6 +2,7 @@
 name: running-kanban-cadences
 description: "This skill teaches you how to facilitate the seven Kanban cadences, from daily standups to quarterly strategy reviews, so your team has the right feedback loops at the right frequency to continuously improve flow and delivery outcomes."
 metadata:
+  homepage: https://tryhamster.com
   method: kanban
 ---
 
@@ -166,7 +167,3 @@ The service delivery review should be data-focused and structured around metrics
 - [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
 - [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
 - [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

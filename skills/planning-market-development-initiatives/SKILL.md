@@ -2,6 +2,7 @@
 name: planning-market-development-initiatives
 description: "This skill teaches you how to systematically identify, evaluate, and prioritize new target markets, geographies, or customer segments for your existing products using market segmentation analysis within the Ansoff Matrix's market development quadrant."
 metadata:
+  homepage: https://tryhamster.com
   method: ansoff-matrix
 ---
 
@@ -177,7 +178,3 @@ Position this within the broader Ansoff Matrix context — market development is
 - [Designing Product Development Growth Paths](../designing-product-development-growth-paths/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
 - [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

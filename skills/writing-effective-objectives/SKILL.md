@@ -2,6 +2,7 @@
 name: writing-effective-objectives
 description: "This skill teaches you how to craft qualitative, inspirational OKR objectives that give teams a clear sense of direction and purpose, turning vague strategic ambitions into concrete statements worth rallying around."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -159,7 +160,3 @@ The fix is painful but simple: force-rank all candidates and cut everything belo
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

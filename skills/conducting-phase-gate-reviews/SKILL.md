@@ -2,6 +2,7 @@
 name: conducting-phase-gate-reviews
 description: "This skill teaches you how to run formal gate reviews at the end of each Waterfall phase to validate deliverables, secure stakeholder sign-off, and make go/no-go decisions that authorize progression to the next phase."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -131,7 +132,3 @@ Update the [project plan and Gantt chart](https://tryhamster.com/skills/creating
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

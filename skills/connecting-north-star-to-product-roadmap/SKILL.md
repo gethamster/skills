@@ -2,6 +2,7 @@
 name: connecting-north-star-to-product-roadmap
 description: "This skill teaches you how to translate your North Star Metric and its input metrics into a concrete prioritization framework for your product roadmap, so every initiative on the roadmap has a clear, defensible link to the value your product delivers."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-metric
 ---
 
@@ -144,7 +145,3 @@ Review these outcomes in quarterly roadmap retrospectives. Adjust your input met
 - [Evolving Your North Star Metric Across Product Growth Stages](../evolving-north-star-across-growth-stages/SKILL.md)
 - [Aligning Cross-Functional Teams Around a Shared North Star](../aligning-cross-functional-teams-around-north-star/SKILL.md)
 - [Identifying and Mapping Input Metrics to Your North Star](../identifying-input-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

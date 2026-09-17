@@ -2,6 +2,7 @@
 name: categorizing-items-into-now-next-later-horizons
 description: "This skill teaches you how to evaluate product initiatives against certainty, urgency, and strategic alignment, then sort them into the three Now-Next-Later horizons so your roadmap reflects what your team should actually work on and in what sequence."
 metadata:
+  homepage: https://tryhamster.com
   method: now-next-later-framework
 ---
 
@@ -168,7 +169,3 @@ Items graduating from Later to Next is a sign of healthy discovery work, not a s
 - [Reprioritizing and Moving Items Across Horizons](../reprioritizing-across-horizons/SKILL.md)
 - [Applying Now-Next-Later Roadmaps to SaaS Products](../applying-now-next-later-to-saas-products/SKILL.md)
 - [Communicating Now-Next-Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: assessing-pm-team-strengths-and-gaps
 description: "This skill teaches you how to run a structured competency assessment across your product team, producing a scored heatmap that reveals individual proficiency levels, shared blind spots, and the highest-impact areas for development investment."
 metadata:
+  homepage: https://tryhamster.com
   method: product-team-competencies-framework
 ---
 
@@ -160,7 +161,3 @@ Team patterns drive different interventions: hiring, training programs, or restr
 - [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
 - [Writing Competency-Based Product Manager Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
 - [Designing PM Interview Rubrics Aligned to Competency Quadrants](../designing-competency-based-pm-interview-rubrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

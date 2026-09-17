@@ -2,6 +2,7 @@
 name: optimizing-the-full-funnel-customer-journey
 description: "This skill teaches you how to analyze cross-stage performance data within the RACE Framework to pinpoint drop-off points, redistribute resources, and continuously improve the end-to-end customer journey for maximum marketing ROI."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -147,7 +148,3 @@ Aim to run this full cycle monthly for the first quarter, then quarterly once yo
 - [Driving Interactions in the Act (Consideration) Stage](../driving-interactions-in-the-act-stage/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

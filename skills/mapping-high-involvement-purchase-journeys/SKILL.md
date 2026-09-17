@@ -2,6 +2,7 @@
 name: mapping-high-involvement-purchase-journeys
 description: "This skill teaches you how to build a detailed customer journey map for deliberate, research-intensive purchases where buyers spend weeks or months comparing options before committing."
 metadata:
+  homepage: https://tryhamster.com
   method: planned-journey-framework
 ---
 
@@ -156,7 +157,3 @@ If you cannot generate at least three concrete actions from the map, the map is 
 - [Tracking Brand Consideration Shifts Across Stages](../tracking-brand-consideration-shifts/SKILL.md)
 - [Connecting Insights Across Journey Stages](../connecting-cross-stage-insights/SKILL.md)
 - [Building Planned Journey Funnel Visualizations](../building-planned-journey-funnel-visualizations/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

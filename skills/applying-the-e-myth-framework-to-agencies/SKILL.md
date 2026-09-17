@@ -2,6 +2,7 @@
 name: applying-the-e-myth-framework-to-agencies
 description: "This skill teaches you how to adapt the Technician, Manager, Entrepreneur model to the specific dynamics of agencies, consultancies, and professional service firms, where founder-as-craftsperson dependency is the most common growth bottleneck."
 metadata:
+  homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework
 ---
 
@@ -158,7 +159,3 @@ What happens when the assigned team member leaves mid-project? Documenting 3-5 c
 - [Assessing Your Technician, Manager, and Entrepreneur Balance](../assessing-your-technician-manager-entrepreneur-balance/SKILL.md)
 - [Developing Your Entrepreneurial Vision](../developing-your-entrepreneurial-vision/SKILL.md)
 - [Transitioning from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

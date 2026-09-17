@@ -2,6 +2,7 @@
 name: validating-north-star-with-user-research
 description: "This skill teaches you how to use qualitative user research and customer insights to confirm that your chosen North Star Metric genuinely reflects the core value customers derive from your product, preventing misalignment before it compounds across teams."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-metric
 ---
 
@@ -146,7 +147,3 @@ If you need to iterate on the metric, involve stakeholders in the revision proce
 - [Evolving Your North Star Metric Across Product Growth Stages](../evolving-north-star-across-growth-stages/SKILL.md)
 - [Aligning Cross-Functional Teams Around a Shared North Star](../aligning-cross-functional-teams-around-north-star/SKILL.md)
 - [Identifying and Mapping Input Metrics to Your North Star](../identifying-input-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

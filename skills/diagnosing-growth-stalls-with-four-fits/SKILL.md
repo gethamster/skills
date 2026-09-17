@@ -2,6 +2,7 @@
 name: diagnosing-growth-stalls-with-four-fits
 description: "This skill teaches you how to use Brian Balfour's Four Fits Framework to systematically pinpoint which specific fit has broken down when growth plateaus or declines, so you can prioritize the highest-leverage corrective actions instead of guessing."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -149,7 +150,3 @@ If the expected recovery doesn't materialize within your time-bound check-in, re
 - [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
 - [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
 - [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

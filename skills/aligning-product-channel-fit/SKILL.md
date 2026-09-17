@@ -2,6 +2,7 @@
 name: aligning-product-channel-fit
 description: "This skill teaches you how to identify and validate that your product's design and user experience naturally suits the acquisition channels you plan to use, ensuring distribution and product work together rather than against each other."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -165,7 +166,3 @@ The goal is to treat product channel fit as a living system, not a one-time anal
 - [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
 - [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
 - [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

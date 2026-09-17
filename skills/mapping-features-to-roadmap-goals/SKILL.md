@@ -2,6 +2,7 @@
 name: mapping-features-to-roadmap-goals
 description: "This skill teaches you how to group and align specific product features, epics, or capabilities under high-level strategic goals so that every item on your roadmap ties back to a measurable outcome, eliminating orphan work that consumes resources without delivering value."
 metadata:
+  homepage: https://tryhamster.com
   method: go-product-roadmap
 ---
 
@@ -151,7 +152,3 @@ The time investment is small relative to the cost of mid-quarter re-litigation.
 - [Reviewing and Adapting GO Roadmap Goals Each Quarter](../reviewing-and-adapting-roadmap-goals/SKILL.md)
 - [Structuring Timeframes on a GO Product Roadmap](../structuring-roadmap-timeframes/SKILL.md)
 - [Defining Goal-Oriented Product Goals for Your Roadmap](../defining-goal-oriented-product-goals/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

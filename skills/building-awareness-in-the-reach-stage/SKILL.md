@@ -2,6 +2,7 @@
 name: building-awareness-in-the-reach-stage
 description: "This skill teaches you how to select, prioritize, and optimize top-of-funnel channels and tactics—SEO, paid media, and social—to maximize audience reach at the awareness stage customer journey within the RACE Framework."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -172,7 +173,3 @@ The ultimate measure of a successful Reach stage isn't just traffic—it's the q
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

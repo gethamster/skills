@@ -2,6 +2,7 @@
 name: translating-features-into-benefits
 description: "This skill teaches a systematic technique for converting technical product features and internal jargon into clear, specific benefit statements written in your customer's own language — the single most important conversion lever in sales copywriting."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -158,7 +159,3 @@ Feature pages pair the full feature-to-benefit story. Pricing pages emphasize RO
 - [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
 - [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

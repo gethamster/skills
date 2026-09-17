@@ -2,6 +2,7 @@
 name: adapting-4ls-for-remote-and-hybrid-teams
 description: "This skill teaches you how to run engaging, equitable 4Ls retrospective sessions with distributed teams by combining async collaboration tools, timeboxed video calls, and anonymous input methods to capture honest feedback across time zones."
 metadata:
+  homepage: https://tryhamster.com
   method: 4ls-retrospective
 ---
 
@@ -139,7 +140,3 @@ Post this in your team's shared workspace (Confluence, Notion, a shared drive, o
 - [Categorizing and Sorting Team Feedback into the 4Ls](../categorizing-feedback-into-4ls/SKILL.md)
 - [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
 - [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

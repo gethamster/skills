@@ -2,6 +2,7 @@
 name: deciding-what-to-do-in-retrospectives
 description: "This skill teaches you how to help your team select, prioritize, and commit to specific, actionable improvements from a retrospective so they actually get implemented in the next sprint."
 metadata:
+  homepage: https://tryhamster.com
   method: five-step-retrospective-framework
 ---
 
@@ -138,7 +139,3 @@ Document the commitments in a visible, shared location immediately — on the te
 - [Setting the Stage for Effective Retrospectives](../setting-the-stage-for-retrospectives/SKILL.md)
 - [Generating Insights from Retrospective Data](../generating-insights-from-retrospective-data/SKILL.md)
 - [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

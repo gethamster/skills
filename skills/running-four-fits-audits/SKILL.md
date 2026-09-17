@@ -2,6 +2,7 @@
 name: running-four-fits-audits
 description: "This skill teaches you how to facilitate a structured, recurring team review that scores and stress-tests each of the four fits in the reforge four fits framework using a combination of qualitative insights and quantitative data."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -146,7 +147,3 @@ Create a simple trend visualization (a line chart with four lines, one per fit, 
 - [Sequencing the Four Fits for Early-Stage Growth](../sequencing-fits-for-early-stage-growth/SKILL.md)
 - [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
 - [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

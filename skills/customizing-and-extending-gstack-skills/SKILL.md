@@ -2,6 +2,7 @@
 name: customizing-and-extending-gstack-skills
 description: "This skill teaches you how to fork the gstack open-source framework, modify existing specialist skills, and author entirely new skills and power tools that encode your team's specific conventions, tech stack preferences, and quality standards into reusable AI agent instructions."
 metadata:
+  homepage: https://tryhamster.com
   method: gstack-framework
 ---
 
@@ -164,7 +165,3 @@ Always fork first, customize in your fork, and use `git remote add upstream` to 
 - [Installing and Configuring the gstack Skill Pack](../installing-and-configuring-gstack-skill-pack/SKILL.md)
 - [Structuring AI Coding Sessions from Decision-Making to Execution](../structuring-ai-coding-sessions-with-gstack-phases/SKILL.md)
 - [Navigating gstack's 23 Specialist Skills via Slash Commands](../navigating-gstack-slash-commands-and-specialist-skills/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

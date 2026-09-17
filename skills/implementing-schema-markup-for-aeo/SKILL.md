@@ -2,6 +2,7 @@
 name: implementing-schema-markup-for-aeo
 description: "This skill teaches you how to apply structured data—including FAQPage, HowTo, Speakable, and other schema types—so that AI answer engines can reliably parse, understand, and cite your content in generated responses."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-seo-optimization
 ---
 
@@ -185,7 +186,3 @@ Consider building schema templates for your most common content types so that ne
 - [Auditing How LLMs Represent Your Brand and Content](../auditing-llm-knowledge-of-your-brand/SKILL.md)
 - [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
 - [Tracking and Measuring Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: tracking-brand-consideration-shifts
 description: "This skill teaches you how to measure, record, and visualize changes in the set of brands a customer considers as they progress from latent awareness through active evaluation to a final purchase decision."
 metadata:
+  homepage: https://tryhamster.com
   method: planned-journey-framework
 ---
 
@@ -156,7 +157,3 @@ Even a rough mid-journey intercept survey is better than nothing. Look for behav
 - [Connecting Insights Across Journey Stages](../connecting-cross-stage-insights/SKILL.md)
 - [Building Planned Journey Funnel Visualizations](../building-planned-journey-funnel-visualizations/SKILL.md)
 - [Mapping High-Involvement Purchase Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

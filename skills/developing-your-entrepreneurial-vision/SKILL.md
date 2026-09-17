@@ -2,6 +2,7 @@
 name: developing-your-entrepreneurial-vision
 description: "This skill teaches you how to step into the entrepreneur role in business by crafting a future-focused vision, identifying market opportunities before competitors do, and translating that vision into a strategic narrative your team and systems can execute against."
 metadata:
+  homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework
 ---
 
@@ -149,7 +150,3 @@ Every team member should be able to evaluate at least basic decisions, like whic
 - [Assessing Your Technician, Manager, and Entrepreneur Balance](../assessing-your-technician-manager-entrepreneur-balance/SKILL.md)
 - [Transitioning from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
 - [Applying the E-Myth Framework to Agencies and Service Businesses](../applying-the-e-myth-framework-to-agencies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

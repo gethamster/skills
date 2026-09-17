@@ -2,6 +2,7 @@
 name: generating-long-tail-keywords-with-claudes-value-framework
 description: "This skill teaches you how to prompt Claude for long-tail keyword research by tapping into its constitutional alignment toward helpfulness, producing keyword lists grounded in genuine user intent rather than volume-chasing or keyword manipulation."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -158,7 +159,3 @@ Monitor these quarterly. Some will gain measurable volume as the topic grows. Ot
 - [Evaluating Claude Outputs Against Constitutional Principles](../evaluating-claude-outputs-against-constitutional-principles/SKILL.md)
 - [Applying Contextual Judgment in Claude AI Workflows](../applying-contextual-judgment-in-claude-ai-workflows/SKILL.md)
 - [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

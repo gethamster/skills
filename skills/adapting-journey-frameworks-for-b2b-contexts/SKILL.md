@@ -2,6 +2,7 @@
 name: adapting-journey-frameworks-for-b2b-contexts
 description: "This skill teaches you how to modify the standard five-stage customer journey model so it accurately reflects B2B realities: multiple decision-makers, longer sales cycles, and layered approval processes that collapse single-buyer assumptions."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -157,7 +158,3 @@ If Awareness has three times the touchpoints of Decision, redirect effort toward
 - [Activating Customer Advocacy and Referral Programs](../activating-customer-advocacy-and-referrals/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

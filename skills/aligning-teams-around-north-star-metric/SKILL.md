@@ -2,6 +2,7 @@
 name: aligning-teams-around-north-star-metric
 description: "This skill teaches you how to communicate, cascade, and embed your North Star Metric across product, engineering, marketing, and leadership so every team row in the organization directly understands how their work drives the one metric that matters most."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-framework
 ---
 
@@ -118,7 +119,3 @@ Every quarter, revisit the full cascade. Ask each team: Is your input metric sti
 - [Running a North Star Framework Workshop with Stakeholders](../running-north-star-workshops/SKILL.md)
 - [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
 - [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: structuring-ai-coding-sessions-with-gstack-phases
 description: "This skill teaches you how to follow gstack's opinionated phased workflow, moving from problem framing and architecture decisions through implementation and verification, so that AI-assisted development sessions produce reliable, well-reasoned code instead of fast but fragile output."
 metadata:
+  homepage: https://tryhamster.com
   method: gstack-framework
 ---
 
@@ -154,7 +155,3 @@ The fix is to spend 5-10 minutes at the end of each session writing a brief summ
 - [Using Multi-Agent Perspectives (CEO, Engineer, QA) in Development](../using-multi-agent-perspectives-for-development/SKILL.md)
 - [Installing and Configuring the gstack Skill Pack](../installing-and-configuring-gstack-skill-pack/SKILL.md)
 - [Navigating gstack's 23 Specialist Skills via Slash Commands](../navigating-gstack-slash-commands-and-specialist-skills/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

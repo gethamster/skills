@@ -2,6 +2,7 @@
 name: writing-effective-start-stop-continue-feedback
 description: "This skill teaches you how to craft clear, specific, and constructive feedback items across the Start, Stop, and Continue categories—making each one behavior-focused, blame-free, and immediately actionable."
 metadata:
+  homepage: https://tryhamster.com
   method: start-stop-continue
 ---
 
@@ -140,7 +141,3 @@ If you're writing for an anonymous retrospective, ensure your items don't accide
 - [Categorizing and Prioritizing Feedback Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
 - [Building Start Stop Continue Templates and Worksheets](../building-start-stop-continue-templates/SKILL.md)
 - [Crafting Actionable Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

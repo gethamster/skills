@@ -2,6 +2,7 @@
 name: designing-assumption-tests-for-solutions
 description: "This skill teaches you how to surface the riskiest assumptions behind each proposed solution on your Opportunity Solution Tree and design lightweight experiments—prototypes, fake doors, or concierge tests—to validate them quickly before committing engineering effort."
 metadata:
+  homepage: https://tryhamster.com
   method: opportunity-solution-tree
 ---
 
@@ -151,7 +152,3 @@ Update your Opportunity Solution Tree with the results. Each experiment node sho
 - [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
 - [Identifying Customer Opportunities from Continuous Research](../identifying-customer-opportunities-from-research/SKILL.md)
 - [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

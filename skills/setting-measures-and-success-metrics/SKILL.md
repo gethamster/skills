@@ -2,6 +2,7 @@
 name: setting-measures-and-success-metrics
 description: "This skill teaches you how to translate the Methods section of a V2MOM into quantifiable measures and key metrics, so every stakeholder can objectively determine whether goals are on track, at risk, or missed."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -170,7 +171,3 @@ If not, retire the stale measure and replace it with a documented rationale. Cha
 - [Cascading V2MOMs from Leadership to Individual Contributors](../cascading-v2moms-across-teams/SKILL.md)
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

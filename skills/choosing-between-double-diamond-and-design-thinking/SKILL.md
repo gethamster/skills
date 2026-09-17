@@ -2,6 +2,7 @@
 name: choosing-between-double-diamond-and-design-thinking
 description: "Learn how to compare the Double Diamond with Stanford d.school Design Thinking and Lean UX so you can select—or combine—the right design framework for your project's goals, team maturity, and constraints."
 metadata:
+  homepage: https://tryhamster.com
   method: double-diamond
 ---
 
@@ -125,7 +126,3 @@ If the framework isn't working, pivot. You might discover that what started as a
 - [Conducting Discovery Research in the Discover Phase](../conducting-discovery-research/SKILL.md)
 - [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
 - [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

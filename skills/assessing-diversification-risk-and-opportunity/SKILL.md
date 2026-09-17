@@ -2,6 +2,7 @@
 name: assessing-diversification-risk-and-opportunity
 description: "This skill teaches you how to systematically evaluate diversification options—the highest-risk quadrant of the Ansoff Matrix—by distinguishing related from unrelated diversification and analyzing strategic fit, so you can make informed go/no-go decisions in marketing management."
 metadata:
+  homepage: https://tryhamster.com
   method: ansoff-matrix
 ---
 
@@ -160,7 +161,3 @@ Document these criteria before the emotional investment begins, and secure execu
 - [Designing Product Development Growth Paths](../designing-product-development-growth-paths/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
 - [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

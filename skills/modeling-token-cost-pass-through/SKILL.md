@@ -2,6 +2,7 @@
 name: modeling-token-cost-pass-through
 description: "Teaches you to build a financial model that translates raw LLM token costs into customer-facing prices with sustainable markups, and to forecast how margin shifts when token prices or usage volumes change."
 metadata:
+  homepage: https://tryhamster.com
   method: ai-pricing-playbook
 ---
 
@@ -134,7 +135,3 @@ Lock in a quarterly review cadence by scheduling four recurring meetings for the
 - [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
 - [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
 - [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: rotating-and-managing-board-membership
 description: "This skill teaches you how to schedule rotation cadences, gracefully cycle advisory board members in and out, and maintain long-term engagement so your Technical Advisory Board stays fresh, representative, and valuable without exhausting participants."
 metadata:
+  homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework
 ---
 
@@ -132,7 +133,3 @@ Document audit findings and share them with your team. The audit output directly
 - [Recruiting and Curating Your Developer Advisory Board](../recruiting-developer-advisory-members/SKILL.md)
 - [Conducting Non-Pitch Discovery Calls with Developers](../conducting-non-pitch-discovery-calls/SKILL.md)
 - [Designing Pain-Focused Interview Guides for Developer Calls](../designing-developer-pain-interview-guides/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

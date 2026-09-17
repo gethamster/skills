@@ -2,6 +2,7 @@
 name: analyzing-seo-waterfall-charts
 description: "This skill teaches you how to read browser waterfall charts to identify resource loading bottlenecks, diagnose render-blocking issues, and optimize page load sequences that directly impact Core Web Vitals and SEO rankings."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -162,7 +163,3 @@ Share these findings with your development team as part of a structured phase ga
 - [Managing Change Requests in Waterfall Projects](../managing-change-requests-in-waterfall/SKILL.md)
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

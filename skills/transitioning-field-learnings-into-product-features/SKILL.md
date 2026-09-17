@@ -2,6 +2,7 @@
 name: transitioning-field-learnings-into-product-features
 description: "This skill teaches a customer facing engineer how to evaluate which bespoke field solutions deserve generalization, write persuasive internal proposals backed by field evidence, and partner with product teams to fold proven patterns into the core platform."
 metadata:
+  homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
 ---
 
@@ -163,7 +164,3 @@ The muscle of translating field learnings into product language improves with pr
 - [Running Continuous Learning Loops from Field Deployments](../running-continuous-learning-loops-from-field-data/SKILL.md)
 - [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
 - [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

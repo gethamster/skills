@@ -2,6 +2,7 @@
 name: building-interdisciplinary-fde-skillsets
 description: "This skill teaches you how to audit, develop, and maintain the hybrid blend of forward deployed engineer skills spanning software engineering, data analytics, solution architecture, and client communication so you can operate independently inside customer environments."
 metadata:
+  homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
 ---
 
@@ -150,7 +151,3 @@ If the peer cannot tell a difference, your practice approach needs adjustment re
 - [Running Continuous Learning Loops from Field Deployments](../running-continuous-learning-loops-from-field-data/SKILL.md)
 - [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
 - [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

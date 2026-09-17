@@ -2,6 +2,7 @@
 name: designing-product-development-growth-paths
 description: "This skill teaches you how to plan, evaluate, and prioritize new product or service offerings for existing markets, ensuring your innovation pipeline directly supports your marketing strategy and growth goals."
 metadata:
+  homepage: https://tryhamster.com
   method: ansoff-matrix
 ---
 
@@ -149,7 +150,3 @@ Schedule quarterly reviews where product, marketing, and commercial teams assess
 - [Defining Target Markets for Expansion Strategies](../defining-target-markets-for-expansion-strategies/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
 - [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

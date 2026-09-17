@@ -2,6 +2,7 @@
 name: sequencing-fits-for-early-stage-growth
 description: "This skill teaches you the precise order in which to establish Market-Product Fit, Product-Channel Fit, Channel-Business Model Fit, and Business Model-Market Fit when building a new product—so you avoid wasting cycles optimizing the wrong fit at the wrong time."
 metadata:
+  homepage: https://tryhamster.com
   method: four-fits-framework
 ---
 
@@ -133,7 +134,3 @@ When you detect weakening in an earlier fit, address it before continuing to opt
 - [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
 - [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
 - [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

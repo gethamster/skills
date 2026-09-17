@@ -2,6 +2,7 @@
 name: setting-the-stage-for-retrospectives
 description: "This skill teaches you how to open a sprint retrospective by creating psychological safety, establishing working agreements, and defining the session's focus so the rest of the meeting is productive and inclusive."
 metadata:
+  homepage: https://tryhamster.com
   method: five-step-retrospective-framework
 ---
 
@@ -118,7 +119,3 @@ Then make a clean transition: "Now that we're aligned on how we'll work together
 - [Tracking Retrospective Action Items Across Sprints](../tracking-retrospective-action-items-across-sprints/SKILL.md)
 - [Generating Insights from Retrospective Data](../generating-insights-from-retrospective-data/SKILL.md)
 - [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

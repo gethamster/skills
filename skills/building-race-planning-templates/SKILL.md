@@ -2,6 +2,7 @@
 name: building-race-planning-templates
 description: "Learn how to create structured, actionable customer journey templates and planning spreadsheets that map objectives, tactics, channels, and KPIs across all four RACE stages — Reach, Act, Convert, and Engage."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -169,7 +170,3 @@ Document decisions directly in the template (a "Change Log" tab works well) so y
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: scenario-planning-for-alternative-futures
 description: "This skill teaches you to develop multiple plausible future scenarios for SEO and content, then build adaptive strategies that perform well regardless of which future materializes."
 metadata:
+  homepage: https://tryhamster.com
   method: six-pillars-framework
 ---
 
@@ -160,7 +161,3 @@ If your AI Flood scenario does not have a playbook item for building third-party
 - [Mapping Current Reality Using the Six Pillars Framework](../mapping-current-reality-with-pillar-one/SKILL.md)
 - [Implementing a Six Pillar SEO Strategy End to End](../implementing-six-pillar-seo-strategy/SKILL.md)
 - [Timing Content Interventions and Publication Strategically](../timing-content-interventions-strategically/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

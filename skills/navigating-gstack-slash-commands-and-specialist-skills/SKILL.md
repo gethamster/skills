@@ -2,6 +2,7 @@
 name: navigating-gstack-slash-commands-and-specialist-skills
 description: "This skill teaches you to discover, invoke, and chain gstack's 23 specialist slash commands so you can route discrete tasks like planning, scaffolding, refactoring, and debugging to purpose-built AI skills instead of relying on generic prompts."
 metadata:
+  homepage: https://tryhamster.com
   method: gstack-framework
 ---
 
@@ -151,7 +152,3 @@ This also makes it easier to teach teammates, because you explain the purpose ra
 - [Using Multi-Agent Perspectives (CEO, Engineer, QA) in Development](../using-multi-agent-perspectives-for-development/SKILL.md)
 - [Installing and Configuring the gstack Skill Pack](../installing-and-configuring-gstack-skill-pack/SKILL.md)
 - [Structuring AI Coding Sessions from Decision-Making to Execution](../structuring-ai-coding-sessions-with-gstack-phases/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

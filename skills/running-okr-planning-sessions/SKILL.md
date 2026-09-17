@@ -2,6 +2,7 @@
 name: running-okr-planning-sessions
 description: "This skill teaches you how to facilitate collaborative quarterly OKR planning sessions that produce well-structured, ambitious goal sets with genuine team buy-in, not top-down mandates disguised as participation."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -164,7 +165,3 @@ Instead, go around the room by name and ask each person for a clear yes or a spe
 - [Aligning OKRs Across Teams and Organization Levels](../aligning-okrs-across-teams/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

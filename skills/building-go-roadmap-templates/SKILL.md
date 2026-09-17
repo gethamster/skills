@@ -2,6 +2,7 @@
 name: building-go-roadmap-templates
 description: "This skill teaches you how to construct a reusable product roadmap template organized around goals, timeframes, features, and metrics, so every planning cycle starts from a proven structure rather than a blank page."
 metadata:
+  homepage: https://tryhamster.com
   method: go-product-roadmap
 ---
 
@@ -162,7 +163,3 @@ In a spreadsheet, create filter views for each audience. In slides, create a sum
 - [Reviewing and Adapting GO Roadmap Goals Each Quarter](../reviewing-and-adapting-roadmap-goals/SKILL.md)
 - [Structuring Timeframes on a GO Product Roadmap](../structuring-roadmap-timeframes/SKILL.md)
 - [Defining Goal-Oriented Product Goals for Your Roadmap](../defining-goal-oriented-product-goals/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: crafting-claude-ai-prompts-with-constitutional-values
 description: "This skill teaches you how to write prompts that activate Claude's constitutional principles of helpfulness, honesty, and harmlessness, producing SEO content that is more accurate, more nuanced, and less likely to require heavy editing or fact-checking."
 metadata:
+  homepage: https://tryhamster.com
   method: claude-s-constitution
 ---
 
@@ -158,7 +159,3 @@ The check takes under five minutes and catches issues that would require reader 
 - [Applying Contextual Judgment in Claude AI Workflows](../applying-contextual-judgment-in-claude-ai-workflows/SKILL.md)
 - [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
 - [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

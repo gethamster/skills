@@ -2,6 +2,7 @@
 name: managing-product-backlogs
 description: "This skill teaches you how to build, prioritize, groom, and maintain a living product backlog so your agile team always has a clear, ordered queue of work ready for sprint planning."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -157,7 +158,3 @@ The cost of one hour of refinement is far less than the cost of a sprint spent b
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

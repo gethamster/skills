@@ -2,6 +2,7 @@
 name: defining-measurable-outcomes-for-roadmaps
 description: "This skill teaches product managers how to translate high-level business objectives into specific, measurable outcome statements that replace feature-based milestones and become the organizing units of an outcome-driven roadmap."
 metadata:
+  homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr
 ---
 
@@ -118,7 +119,3 @@ Share your draft outcome statements with key stakeholders — engineering leads,
 - [Prioritizing Competing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
 - [Transitioning from Feature-Based to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

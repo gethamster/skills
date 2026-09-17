@@ -2,6 +2,7 @@
 name: running-remote-design-sprints
 description: "This skill teaches you how to adapt the Google Design Sprint framework for remote and hybrid teams, covering tool setup, async exercise design, facilitation adjustments, and strategies to maintain the energy and focus that make in-person sprints effective."
 metadata:
+  homepage: https://tryhamster.com
   method: google-design-sprint
 ---
 
@@ -168,7 +169,3 @@ Was the tool effective? Were the synchronous blocks the right length? Was the da
 - [Planning and Customizing Your Design Sprint Agenda](../planning-design-sprint-agendas/SKILL.md)
 - [Facilitating a Design Sprint as the Sprint Master](../facilitating-design-sprint-workshops/SKILL.md)
 - [Sketching Solutions and Running Structured Voting](../sketching-and-voting-on-solutions/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

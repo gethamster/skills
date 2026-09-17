@@ -2,6 +2,7 @@
 name: refining-story-maps-across-sprints
 description: "This skill teaches you how to treat a story map as a living artifact that evolves with your product, rather than a one-time workshop output that gathers dust after Sprint 1."
 metadata:
+  homepage: https://tryhamster.com
   method: story-mapping
 ---
 
@@ -152,7 +153,3 @@ Watch for team members referencing activities or journeys that are not on the ma
 - [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
 - [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
 - [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

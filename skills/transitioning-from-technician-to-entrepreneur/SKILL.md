@@ -2,6 +2,7 @@
 name: transitioning-from-technician-to-entrepreneur
 description: "This skill teaches craft-focused founders how to systematically release technical responsibilities, develop leadership capacity, and step into the entrepreneurial role where they focus on vision, growth, and strategic opportunity rather than daily execution."
 metadata:
+  homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework
 ---
 
@@ -165,7 +166,3 @@ If your team has never worked without your direct involvement, expect the first 
 - [Assessing Your Technician, Manager, and Entrepreneur Balance](../assessing-your-technician-manager-entrepreneur-balance/SKILL.md)
 - [Developing Your Entrepreneurial Vision](../developing-your-entrepreneurial-vision/SKILL.md)
 - [Applying the E-Myth Framework to Agencies and Service Businesses](../applying-the-e-myth-framework-to-agencies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

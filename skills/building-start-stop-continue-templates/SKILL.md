@@ -2,6 +2,7 @@
 name: building-start-stop-continue-templates
 description: "This skill teaches you how to design reusable start stop continue templates, worksheets, and digital boards in tools like Miro, Google Docs, and Notion so your feedback sessions are structured, efficient, and consistently produce actionable outcomes."
 metadata:
+  homepage: https://tryhamster.com
   method: start-stop-continue
 ---
 
@@ -156,7 +157,3 @@ Once refined, save it as a proper template: in Miro, publish it to your team's t
 - [Categorizing and Prioritizing Feedback Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
 - [Writing Effective Start Stop Continue Feedback](../writing-effective-start-stop-continue-feedback/SKILL.md)
 - [Crafting Actionable Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: iterating-pr-faq-documents-through-feedback
 description: "This skill teaches you how to revise and strengthen a PR/FAQ document through successive rounds of leadership and cross-functional feedback, and how to recognize when the document is sharp enough to greenlight development."
 metadata:
+  homepage: https://tryhamster.com
   method: working-backwards
 ---
 
@@ -155,7 +156,3 @@ If you have completed four rounds and the last round produced only editorial com
 - [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
 - [Writing Internal Press Releases for Product Concepts](../writing-internal-press-releases/SKILL.md)
 - [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

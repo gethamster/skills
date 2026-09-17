@@ -2,6 +2,7 @@
 name: reviewing-and-adapting-roadmap-goals
 description: "This skill teaches you how to run structured quarterly roadmap reviews that score goal progress against success criteria, retire completed objectives, reprioritize based on fresh data, and keep your GO Product Roadmap a living, trustworthy document."
 metadata:
+  homepage: https://tryhamster.com
   method: go-product-roadmap
 ---
 
@@ -154,7 +155,3 @@ It is the mechanism that propagates the updated roadmap across the organization.
 - [Mapping Features and Capabilities to Strategic Goals](../mapping-features-to-roadmap-goals/SKILL.md)
 - [Structuring Timeframes on a GO Product Roadmap](../structuring-roadmap-timeframes/SKILL.md)
 - [Defining Goal-Oriented Product Goals for Your Roadmap](../defining-goal-oriented-product-goals/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

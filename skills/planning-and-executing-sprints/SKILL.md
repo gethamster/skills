@@ -2,6 +2,7 @@
 name: planning-and-executing-sprints
 description: "This skill teaches you how to scope, plan, and run time-boxed scrum sprints — including backlog selection, capacity planning, sprint goal setting, and in-sprint execution practices that deliver a potentially shippable increment."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -143,7 +144,3 @@ Toward the end of the sprint, focus shifts to finishing and polishing. Any items
 - [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
 - [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
 - [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

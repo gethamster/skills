@@ -2,6 +2,7 @@
 name: writing-waterfall-requirements-documents
 description: "This skill teaches you how to gather, structure, and freeze detailed requirements specifications before design begins in the waterfall model, ensuring every requirement is traceable and verifiable throughout the project lifecycle."
 metadata:
+  homepage: https://tryhamster.com
   method: waterfall
 ---
 
@@ -183,7 +184,3 @@ Communicate clearly to all stakeholders that the requirements are now frozen. Th
 - [Managing Change Requests in Waterfall Projects](../managing-change-requests-in-waterfall/SKILL.md)
 - [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
 - [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

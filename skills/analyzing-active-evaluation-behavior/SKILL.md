@@ -2,6 +2,7 @@
 name: analyzing-active-evaluation-behavior
 description: "This skill teaches you how to track and interpret consumer behavior during the active evaluation phase of the McKinsey Consumer Decision Journey—specifically how people research, compare, and progressively narrow or expand their brand consideration set before buying."
 metadata:
+  homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey
 ---
 
@@ -150,7 +151,3 @@ Iterate your intervention points quarterly. Test different approaches to the sam
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

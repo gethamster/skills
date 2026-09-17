@@ -2,6 +2,7 @@
 name: presenting-heart-metrics-in-interviews
 description: "This skill teaches you how to articulate UX measurement strategies using the HEART framework when answering product manager interview questions about metrics, impact, and success criteria."
 metadata:
+  homepage: https://tryhamster.com
   method: heart-framework
 ---
 
@@ -147,7 +148,3 @@ Having prepared responses for these follow-ups turns a good answer into an excep
 - [Defining Goals, Signals, and Metrics with the HEART Framework](../defining-heart-goals-signals-metrics/SKILL.md)
 - [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

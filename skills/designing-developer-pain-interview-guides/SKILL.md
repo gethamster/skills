@@ -2,6 +2,7 @@
 name: designing-developer-pain-interview-guides
 description: "This skill teaches you how to craft structured, open-ended question frameworks and conversation scripts that reliably surface technical frustrations, workarounds, and unmet needs during developer advisory calls — without leading witnesses or pitching solutions."
 metadata:
+  homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework
 ---
 
@@ -142,7 +143,3 @@ Share your guide with co-founders or teammates who run TAB calls. Calibrate toge
 - [Recruiting and Curating Your Developer Advisory Board](../recruiting-developer-advisory-members/SKILL.md)
 - [Conducting Non-Pitch Discovery Calls with Developers](../conducting-non-pitch-discovery-calls/SKILL.md)
 - [Rotating and Managing Board Membership Over Time](../rotating-and-managing-board-membership/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

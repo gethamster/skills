@@ -2,6 +2,7 @@
 name: building-minimum-viable-products
 description: "This skill teaches you how to design and ship the smallest functional version of a product that tests your riskiest business assumption with real customers, so you learn what works before investing in full-scale development."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -164,7 +165,3 @@ Build a lightweight qualitative channel into the MVP from the start. ", provides
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

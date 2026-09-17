@@ -2,6 +2,7 @@
 name: facilitating-sprint-retrospectives
 description: "This skill teaches you how to lead scrum retrospective meetings that surface honest feedback, uncover root causes, and produce concrete action items that measurably improve team performance sprint over sprint."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -150,7 +151,3 @@ Summarize the action items aloud, confirm owners, and share a written record in 
 - [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
 - [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
 - [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: forming-autonomous-squads
 description: "This skill teaches you how to define, staff, and launch cross-functional squads that own a clear product mission and can deliver value end-to-end without depending on other teams for day-to-day execution."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -160,7 +161,3 @@ If not, remove it. Default to trusting the squad and add guardrails only in resp
 - [Balancing Squad Autonomy with Organizational Alignment](../balancing-autonomy-and-alignment/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

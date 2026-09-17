@@ -2,6 +2,7 @@
 name: defining-graduation-criteria-between-horizons
 description: "This skill teaches you how to establish clear, measurable criteria and confidence thresholds that determine when a product initiative is ready to graduate from Later to Next, or from Next to Now, removing ambiguity from promotion decisions."
 metadata:
+  homepage: https://tryhamster.com
   method: now-next-later-framework
 ---
 
@@ -149,7 +150,3 @@ Track promotion success rates as the signal that triggers threshold adjustments.
 - [Reprioritizing and Moving Items Across Horizons](../reprioritizing-across-horizons/SKILL.md)
 - [Applying Now-Next-Later Roadmaps to SaaS Products](../applying-now-next-later-to-saas-products/SKILL.md)
 - [Communicating Now-Next-Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: transitioning-from-journey-mapping-to-journey-management
 description: "This skill teaches you how to evolve static, point-in-time journey maps into a dynamic journey management practice where journeys are continuously monitored, owned, measured, and improved across teams."
 metadata:
+  homepage: https://tryhamster.com
   method: ecosystem-journey-framework
 ---
 
@@ -161,7 +162,3 @@ Build map accuracy checks into every review meeting as a standing agenda item. "
 - [Structuring Journey Hierarchy Levels (L0-L3)](../structuring-journey-hierarchy-levels/SKILL.md)
 - [Identifying Cross-Journey Insights and Patterns](../identifying-cross-journey-insights/SKILL.md)
 - [Mapping Touchpoint Interconnections Across Journeys](../mapping-touchpoint-interconnections/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

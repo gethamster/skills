@@ -2,6 +2,7 @@
 name: identifying-cross-journey-insights
 description: "This skill teaches you how to analyze a portfolio of interconnected customer journeys to surface systemic pain points, hidden redundancies, and high-leverage optimization opportunities that remain invisible when journeys are examined in isolation."
 metadata:
+  homepage: https://tryhamster.com
   method: ecosystem-journey-framework
 ---
 
@@ -164,7 +165,3 @@ Present the top five prominently, the next ten as a second tier, and reference t
 - [Building a Journey Portfolio Inventory](../building-a-journey-portfolio-inventory/SKILL.md)
 - [Structuring Journey Hierarchy Levels (L0-L3)](../structuring-journey-hierarchy-levels/SKILL.md)
 - [Mapping Touchpoint Interconnections Across Journeys](../mapping-touchpoint-interconnections/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

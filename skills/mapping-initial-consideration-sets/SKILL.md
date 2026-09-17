@@ -2,6 +2,7 @@
 name: mapping-initial-consideration-sets
 description: "This skill teaches you how to identify and analyze the small set of brands consumers already have in mind at the consideration stage—before they begin any active research—so you can ensure your brand earns a spot on that critical mental shortlist."
 metadata:
+  homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey
 ---
 
@@ -144,7 +145,3 @@ This longitudinal data becomes your most powerful argument for brand investment.
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

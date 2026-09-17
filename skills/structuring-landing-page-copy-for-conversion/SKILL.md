@@ -2,6 +2,7 @@
 name: structuring-landing-page-copy-for-conversion
 description: "This skill teaches you how to sequence landing page copy sections — from headline through social proof, objection handling, and CTA — using a proven conversion copywriting framework that guides visitors toward a single action."
 metadata:
+  homepage: https://tryhamster.com
   method: copywriting-framework
 ---
 
@@ -139,7 +140,3 @@ For high-commitment offers (purchases, demos, annual subscriptions), add a risk-
 - [Writing Email Copy Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
 - [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

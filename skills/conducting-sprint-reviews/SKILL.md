@@ -2,6 +2,7 @@
 name: conducting-sprint-reviews
 description: "This skill teaches you how to run a scrum sprint review meeting that effectively demonstrates working increments to stakeholders and captures actionable feedback that shapes the product backlog."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -139,7 +140,3 @@ Finally, the Scrum Master should note any process observations for the upcoming 
 - [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
 - [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
 - [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

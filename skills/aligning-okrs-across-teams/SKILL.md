@@ -2,6 +2,7 @@
 name: aligning-okrs-across-teams
 description: "This skill teaches you how to cascade and connect OKRs from company-level strategy through departments and individual contributors so that every team's work reinforces the same strategic priorities without creating rigid top-down mandates."
 metadata:
+  homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs
 ---
 
@@ -151,7 +152,3 @@ If you find a team with three or more shared key results, that team likely doesn
 - [Writing Effective OKR Objectives](../writing-effective-objectives/SKILL.md)
 - [Defining Measurable Key Results](../defining-measurable-key-results/SKILL.md)
 - [Scoring and Grading OKRs at End of Cycle](../scoring-and-grading-okrs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

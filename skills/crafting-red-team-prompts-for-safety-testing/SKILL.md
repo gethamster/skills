@@ -2,6 +2,7 @@
 name: crafting-red-team-prompts-for-safety-testing
 description: "This skill teaches you how to systematically design adversarial prompts—including claude seo prompts for testing—that probe AI models for harmful, biased, or policy-violating outputs, enabling you to harden alignment before and after constitutional training."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -146,7 +147,3 @@ Schedule regular red-team evaluation cycles (monthly or per-training-run) to con
 - [Implementing Self-Critique and Revision in AI Outputs](../implementing-ai-self-critique-and-revision/SKILL.md)
 - [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

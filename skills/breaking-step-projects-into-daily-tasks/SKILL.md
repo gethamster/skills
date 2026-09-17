@@ -2,6 +2,7 @@
 name: breaking-step-projects-into-daily-tasks
 description: "This skill teaches you how to decompose a validated step-project into granular, developer-ready tasks that fit on a Kanban board or sprint backlog, so your team can ship experimental work in predictable daily increments."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -161,7 +162,3 @@ Catch this by reading the validation goal aloud after decomposition and asking e
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Managing Different Planning Cadences Across GIST Layers](../managing-multi-cadence-planning-cycles/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

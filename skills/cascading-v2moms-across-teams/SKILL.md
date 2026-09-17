@@ -2,6 +2,7 @@
 name: cascading-v2moms-across-teams
 description: "This skill teaches you how to decompose a single company V2MOM into aligned department, team, and individual contributor V2MOMs so every person in the organization can trace their daily work back to the company's strategic vision."
 metadata:
+  homepage: https://tryhamster.com
   method: v2mom-framework
 ---
 
@@ -163,7 +164,3 @@ Fix this by matching cascade depth to organizational complexity: one level per m
 - [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
 - [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
 - [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

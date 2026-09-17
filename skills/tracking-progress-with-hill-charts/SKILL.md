@@ -2,6 +2,7 @@
 name: tracking-progress-with-hill-charts
 description: "Hill charts teach you to visualize whether each scope in a build cycle is still being figured out (uphill) or being executed on known ground (downhill), replacing misleading percentage-complete metrics with honest progress signals."
 metadata:
+  homepage: https://tryhamster.com
   method: shape-up
 ---
 
@@ -151,7 +152,3 @@ Reserve synchronous time exclusively for scopes that are stuck and need collabor
 - [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
 - [Mapping Scopes Instead of Tasks](../mapping-scopes-for-building/SKILL.md)
 - [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

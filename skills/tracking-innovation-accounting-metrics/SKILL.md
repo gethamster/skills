@@ -2,6 +2,7 @@
 name: tracking-innovation-accounting-metrics
 description: "This skill teaches you how to select, instrument, and interpret actionable metrics that reveal whether a startup is actually learning and progressing toward product-market fit, replacing gut feelings and vanity numbers with evidence-based decision making."
 metadata:
+  homepage: https://tryhamster.com
   method: lean-startup
 ---
 
@@ -165,7 +166,3 @@ The warning sign is metrics that improve but you cannot explain why through the 
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

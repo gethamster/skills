@@ -2,6 +2,7 @@
 name: estimating-reach
 description: "Quantify how many users or events an initiative will affect within a given time period."
 metadata:
+  homepage: https://tryhamster.com
   method: rice-framework
 ---
 
@@ -32,5 +33,3 @@ Quantify how many users or events an initiative will affect within a given time 
 ## Example
 
 CSV export timeout fix: 47 support tickets x 20x multiplier = ~1,000 affected users/quarter. Confidence: 50%.
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

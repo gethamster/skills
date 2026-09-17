@@ -2,6 +2,7 @@
 name: scaling-agile-across-teams
 description: "This skill teaches you how to coordinate agile practices across multiple teams using SAFe agile frameworks, shared cadences, and dependency management while preserving the autonomy and speed that make individual teams effective."
 metadata:
+  homepage: https://tryhamster.com
   method: agile
 ---
 
@@ -178,7 +179,3 @@ Invest in modular architecture, well-defined API contracts between team-owned se
 - [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
 - [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

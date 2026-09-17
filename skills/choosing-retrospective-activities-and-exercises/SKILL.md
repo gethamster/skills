@@ -2,6 +2,7 @@
 name: choosing-retrospective-activities-and-exercises
 description: "Learn how to select and facilitate the right sprint retrospective ideas — like Sailboat, Mad/Sad/Glad, or Timeline — for each phase of the five-step retrospective so your team stays engaged and produces actionable outcomes."
 metadata:
+  homepage: https://tryhamster.com
   method: five-step-retrospective-framework
 ---
 
@@ -171,7 +172,3 @@ Record your reflections alongside your activity log from Step 1. Over 3-4 sprint
 - [Setting the Stage for Effective Retrospectives](../setting-the-stage-for-retrospectives/SKILL.md)
 - [Generating Insights from Retrospective Data](../generating-insights-from-retrospective-data/SKILL.md)
 - [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

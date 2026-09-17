@@ -2,6 +2,7 @@
 name: identifying-pain-points-and-drop-off-moments
 description: "This skill teaches you to diagnose exactly where customers experience friction, frustration, or abandonment across the five journey stages using a structured combination of behavioral data, qualitative feedback, and cross-stage funnel analysis."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -162,7 +163,3 @@ Instead, translate every feature request back to the friction it implies. ' This
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
 - [Designing Retention and Loyalty Strategies Post-Purchase](../designing-retention-and-loyalty-strategies/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

@@ -2,6 +2,7 @@
 name: designing-retention-and-loyalty-strategies
 description: "This skill teaches you how to build structured post-purchase engagement programs, loyalty loops, and churn-reduction tactics that systematically increase customer lifetime value and reduce attrition within the retention stage of the customer journey."
 metadata:
+  homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework
 ---
 
@@ -159,7 +160,3 @@ Use those inputs to design mechanics that fit your customers' actual motivations
 - [Activating Customer Advocacy and Referral Programs](../activating-customer-advocacy-and-referrals/SKILL.md)
 - [Adapting the Five-Stage Journey Framework for B2B Contexts](../adapting-journey-frameworks-for-b2b-contexts/SKILL.md)
 - [Measuring KPIs and Metrics for Each Journey Stage](../measuring-journey-stage-kpis/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

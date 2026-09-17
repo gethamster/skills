@@ -2,6 +2,7 @@
 name: running-daily-standups
 description: "This skill teaches you how to facilitate a scrum daily standup that stays time-boxed to 15 minutes, surfaces impediments quickly, and keeps the entire team aligned on sprint goals without drifting into status reporting or problem-solving."
 metadata:
+  homepage: https://tryhamster.com
   method: scrum
 ---
 
@@ -129,7 +130,3 @@ The standup format is not sacred. Some teams rotate facilitators. Others use asy
 - [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
 - [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
 - [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

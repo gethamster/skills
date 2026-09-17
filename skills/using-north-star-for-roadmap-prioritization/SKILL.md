@@ -2,6 +2,7 @@
 name: using-north-star-for-roadmap-prioritization
 description: "This skill teaches you how to evaluate and rank every initiative on your product manager roadmap by scoring its expected impact on your North Star Metric and input metrics, replacing opinion-driven prioritization with a repeatable, data-informed process."
 metadata:
+  homepage: https://tryhamster.com
   method: north-star-framework
 ---
 
@@ -118,7 +119,3 @@ Present the scored and ranked product manager roadmap to stakeholders, walking t
 - [Running a North Star Framework Workshop with Stakeholders](../running-north-star-workshops/SKILL.md)
 - [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
 - [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

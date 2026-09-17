@@ -2,6 +2,7 @@
 name: creating-race-customer-journey-maps
 description: "This skill teaches you how to build a visual customer journey map organized by the four RACE stages, documenting touchpoints, channels, content, and buyer intent at each phase to reveal gaps and optimization opportunities across your full marketing funnel."
 metadata:
+  homepage: https://tryhamster.com
   method: race-framework
 ---
 
@@ -206,7 +207,3 @@ Link this review cadence to your broader RACE planning process using insights fr
 - [Driving Interactions in the Act (Consideration) Stage](../driving-interactions-in-the-act-stage/SKILL.md)
 - [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
 - [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

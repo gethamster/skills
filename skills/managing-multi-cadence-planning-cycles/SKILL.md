@@ -2,6 +2,7 @@
 name: managing-multi-cadence-planning-cycles
 description: "This skill teaches you how to operate each GIST layer on its own natural planning rhythm, so goals stay stable while ideas, step-projects, and tasks remain agile and responsive to new information."
 metadata:
+  homepage: https://tryhamster.com
   method: gist-planning-framework
 ---
 
@@ -157,7 +158,3 @@ The fix is to make cascade checks a required part of each ceremony. At every ste
 - [Replacing Traditional Product Roadmaps with GIST Planning](../replacing-traditional-roadmaps-with-gist/SKILL.md)
 - [Prioritizing Product Ideas Using ICE Confidence Scoring](../prioritizing-ideas-with-ice-scoring/SKILL.md)
 - [Building and Managing an Idea Bank for Product Development](../generating-and-banking-product-ideas/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

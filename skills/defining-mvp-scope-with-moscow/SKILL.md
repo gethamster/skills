@@ -2,6 +2,7 @@
 name: defining-mvp-scope-with-moscow
 description: "This skill teaches you how to leverage the Must-have bucket in MoSCoW prioritization to draw a defensible MVP boundary and negotiate scope trade-offs with product and engineering teams."
 metadata:
+  homepage: https://tryhamster.com
   method: moscow
 ---
 
@@ -143,7 +144,3 @@ Connect the MVP scope to your broader product roadmap using the approach from [b
 - [Categorizing Requirements into Must, Should, Could, and Won't Have](../categorizing-requirements-into-moscow-buckets/SKILL.md)
 - [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
 - [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

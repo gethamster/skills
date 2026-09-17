@@ -2,6 +2,7 @@
 name: running-heart-framework-workshops
 description: "This skill teaches you how to facilitate collaborative HEART Framework sessions where designers, engineers, and PMs align on user-experience goals, signals, and success metrics—a core competency for anyone learning how to become a product manager."
 metadata:
+  homepage: https://tryhamster.com
   method: heart-framework
 ---
 
@@ -150,7 +151,3 @@ For anyone studying how to become a product manager, the ability to turn a works
 - [Defining Goals, Signals, and Metrics with the HEART Framework](../defining-heart-goals-signals-metrics/SKILL.md)
 - [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

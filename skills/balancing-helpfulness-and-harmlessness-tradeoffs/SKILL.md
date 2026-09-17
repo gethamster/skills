@@ -2,6 +2,7 @@
 name: balancing-helpfulness-and-harmlessness-tradeoffs
 description: "This skill teaches you how to tune constitutional principles and reward models so that an AI assistant like Claude remains maximally useful to users without producing unsafe, misleading, or excessively evasive outputs — a core challenge in claude ai seo and alignment work."
 metadata:
+  homepage: https://tryhamster.com
   method: constitutional-ai
 ---
 
@@ -141,7 +142,3 @@ This iterative process mirrors the broader [Constitutional AI](https://tryhamste
 - [Implementing Self-Critique and Revision in AI Outputs](../implementing-ai-self-critique-and-revision/SKILL.md)
 - [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*

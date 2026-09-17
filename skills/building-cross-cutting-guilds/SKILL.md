@@ -2,6 +2,7 @@
 name: building-cross-cutting-guilds
 description: "This skill teaches you how to launch, structure, and sustain voluntary, company-wide guilds that move knowledge, tooling decisions, and best practices across tribe boundaries so that autonomous squads do not reinvent the wheel in isolation."
 metadata:
+  homepage: https://tryhamster.com
   method: spotify-squad-model
 ---
 
@@ -162,7 +163,3 @@ Low attendance is diagnostic data, not a character flaw.
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
 - [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
-
----
-
-*[Add this skill to your Hamster workspace](https://tryhamster.com) to version it, share it with your team, and let AI agents use it automatically.*
