@@ -1,6 +1,7 @@
 ---
 name: create-skill-article
 description: "Write a longform X article launching or covering a skill (a Hamster library skill, one of our own, or a popular third-party skill like show-me or /teach), in the proven format that opens with real posts proving the pain, announces the skill, tours what's inside with a visual per component, and closes with exact invocations to try. Use this skill whenever Eyal wants an article, longform post, or launch piece about a skill, says \\\"write the article for [skill]\\\", wants to cover someone else's skill and position Hamster as where you run it, or asks to turn a skill into content. Requires a source pack from find-source-material; if none exists, run that skill first."
+version: "1.0.0"
 ---
 
 # Create Skill Article

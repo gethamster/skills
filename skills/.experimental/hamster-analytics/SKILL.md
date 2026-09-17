@@ -1,6 +1,7 @@
 ---
 name: hamster-analytics
 description: "Analytics tracking patterns for Segment, Mixpanel, and user engagement metrics. Use when implementing event tracking, user properties, or engagement counters."
+version: "1.1.0"
 ---
 
 # Hamster Analytics Patterns

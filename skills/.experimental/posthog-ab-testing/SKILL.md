@@ -1,6 +1,7 @@
 ---
 name: posthog-ab-testing
 description: "Guides users through designing, launching, and reading A/B tests via PostHog from Hamster. Covers experiment setup, feature flag wiring, metrics, cohorts, and results analysis."
+version: "1.0.0"
 ---
 
 This skill governs how to create and manage A/B tests through PostHog's API from within Hamster. It assumes the PostHog connection is active. Use this skill whenever the user wants to design, launch, duplicate, check, or interpret an experiment — not just when they say "A/B test" but also when they say "try two variants," "test this change," or "which version performs better."

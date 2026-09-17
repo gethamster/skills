@@ -1,6 +1,7 @@
 ---
 name: pr-walkthrough
 description: "Produce a reviewer's orientation guide for a large or foundational pull request — a structured walkthrough that explains the mental model, traces the data/code flow, recommends a reading order, and tells the reviewer how to see and test the change locally. NOT a code review and does NOT produce inline review comments. Use when the user says things like \\\"explain this PR to me\\\", \\\"walk me through this PR\\\", \\\"I was asked to review this huge PR\\\", \\\"help me understand this PR\\\", \\\"where do I start with this PR\\\", \\\"this PR is a 20k LOC boulder\\\", or otherwise asks for orientation rather than judgment on a large/architectural/foundational change. Do NOT use for small PRs (where the diff speaks for itself), for \\\"review this PR\\\" requests asking for issue-finding (use the pr-review skill instead), or for \\\"what does this code do\\\" queries scoped to a single file."
+version: "1.0.0"
 ---
 
 # PR Walkthrough

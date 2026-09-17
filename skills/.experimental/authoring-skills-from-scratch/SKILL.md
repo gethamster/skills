@@ -1,6 +1,7 @@
 ---
 name: authoring-skills-from-scratch
 description: "Guides users through writing a strong skill: trigger conditions, core guidance, examples, anti-patterns."
+version: "1.0.0"
 metadata:
   category: "Ops"
 ---

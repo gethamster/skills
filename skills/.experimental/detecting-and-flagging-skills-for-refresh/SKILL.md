@@ -1,6 +1,7 @@
 ---
 name: detecting-and-flagging-skills-for-refresh
 description: "Routine trigger that flags skills for review when conventions change or on a quarterly cadence."
+version: "1.0.0"
 metadata:
   category: "Ops"
 ---

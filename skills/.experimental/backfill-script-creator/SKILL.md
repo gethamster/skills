@@ -1,6 +1,7 @@
 ---
 name: backfill-script-creator
 description: "Create a new Supabase data backfill, dedup, or one-off data correction script for Hamster Studio in apps/web/supabase/scripts/. Use whenever the user asks for a backfill script, data migration script, dedup script, one-off data fix, repair job, or anything that needs to mutate production data outside of a regular schema migration. Provides a battle-tested template with dry-run-by-default safety, paginated reads, chunked writes, append-only audit logging, and auto-generated rollback SQL. Trigger even if the user only says 'I need to fix some bad rows in production' or 'we need to fill in this column for all existing accounts' — those are exactly the situations this skill exists for."
+version: "1.0.0"
 ---
 
 # Backfill Script Creator

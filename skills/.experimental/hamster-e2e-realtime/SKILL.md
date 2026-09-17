@@ -1,6 +1,7 @@
 ---
 name: hamster-e2e-realtime
 description: "Deterministic realtime E2E testing patterns for Supabase postgres_changes. Use when writing E2E tests that seed data via DB and expect it to appear in the browser via Supabase Realtime."
+version: "1.0.0"
 ---
 
 # Hamster E2E Realtime Testing Patterns

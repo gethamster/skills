@@ -1,6 +1,7 @@
 ---
 name: eighty-twenty
 description: "Get most of the value for a small fraction of the time, deliberately and with the blind spot named. Use before any expensive repeated activity — slow validation or build cycles, broad searches, large agent fan-outs, exhaustive captures, big sampling runs, reading a whole codebase — or whenever someone says this is too slow, speed it up, we need to go faster, or just give me the gist.c"
+version: "1.0.0"
 metadata:
   category: "Experience"
 ---

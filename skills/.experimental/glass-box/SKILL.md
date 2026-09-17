@@ -1,6 +1,7 @@
 ---
 name: glass-box
 description: "Python evaluation framework for Hamster Studio. Use when working in packages/glass-box/ — running replay experiments, monitoring Sentry data, training classifiers, or writing tests for any glass-box module."
+version: "1.1.0"
 ---
 
 # Glass-Box

@@ -1,6 +1,7 @@
 ---
 name: hamster-database-testing
 description: "Database testing patterns for Hamster Studio. Covers both Vitest (RLS policies, constraints via Supabase client) and pgTAP (triggers, functions, schema assertions via SQL). Use when writing, reviewing, or debugging any database test — this skill helps you pick the right tool."
+version: "1.1.0"
 ---
 
 # Hamster Database Testing

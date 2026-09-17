@@ -1,6 +1,7 @@
 ---
 name: detecting-and-flagging-blueprints-for-refresh
 description: "On brief.status = \"approved\":"
+version: "1.0.0"
 metadata:
   category: "Ops"
 ---

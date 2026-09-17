@@ -1,6 +1,7 @@
 ---
 name: vault-credentials
 description: "Store and retrieve encrypted credentials using Supabase Vault. Use when implementing features that need secure credential storage such as API keys, OAuth tokens, or sensitive configuration. Triggers when adding credential storage to a feature, implementing OAuth flows, or storing user-provided secrets."
+version: "1.0.0"
 ---
 
 # Supabase Vault Credentials

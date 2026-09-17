@@ -1,6 +1,7 @@
 ---
 name: grill-me
 description: "Thoroughly flesh out an idea by exploring, then asking several questions to resolve ambiguous concepts"
+version: "1.0.0"
 metadata:
   category: "Experience"
 ---

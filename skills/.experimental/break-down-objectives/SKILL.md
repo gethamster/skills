@@ -1,6 +1,7 @@
 ---
 name: break-down-objectives
 description: "Decompose a compressed goal, one-liner strategy, or multi-clause mandate into a goal-framework-agnostic hierarchy: goals with measurement stories, strategies as bets, measures with leading/lagging tags, and initiatives/briefs born on a need-to-make basis. Produces testable success criteria, option matrices, a chosen solve path, sequencing, and hard constraints — without implementing unless asked."
+version: "1.0.0"
 metadata:
   category: "Workflows"
 ---

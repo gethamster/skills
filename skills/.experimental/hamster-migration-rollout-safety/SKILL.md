@@ -1,6 +1,7 @@
 ---
 name: hamster-migration-rollout-safety
 description: "Rollout safety rules for every change under apps/web/supabase/migrations/**. Use whenever you write, review, rename, or recover a Supabase migration — especially in pre-PR review or when a deploy broke an environment. Migrations install schema and fail closed; production data repair, backfill, reconciliation, and CREATE INDEX CONCURRENTLY belong in explicit audited scripts run before/after deployment. Trigger even if the user only says 'add a column', 'fix these legacy rows in the migration', 'add an index', 'drop this old table', or 'just edit the migration that already shipped' — those are exactly the cases that corrupt data or wedge a deploy."
+version: "1.0.0"
 ---
 
 # Migration Rollout Safety

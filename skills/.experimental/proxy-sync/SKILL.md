@@ -1,6 +1,7 @@
 ---
 name: proxy-sync
 description: "Keeps the Cloudflare Worker (worker.js) and Node.js dev proxy (dev-proxy.mjs) in sync. MUST activate when editing either proxy file."
+version: "1.1.0"
 ---
 
 # Proxy Sync

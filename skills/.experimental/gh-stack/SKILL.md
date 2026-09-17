@@ -1,6 +1,7 @@
 ---
 name: gh-stack
 description: "Stacked pull requests with GitHub's native gh-stack CLI: when to stack, how to build/submit/sync a stack, responding to mid-stack review feedback, and Hamster-specific rules (dev base, one migration per PR, merge commits). Use when a change is too big for one reviewable PR or when planning multi-wave delivery."
+version: "1.0.0"
 metadata:
   category: "Development"
 ---

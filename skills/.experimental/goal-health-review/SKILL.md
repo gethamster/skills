@@ -1,6 +1,7 @@
 ---
 name: goal-health-review
 description: "Guides the weekly goal review meeting: compare goals vs initiatives, prioritize newly unblocked work, assign owners. Enforces the 'one weekly meeting' principle — 30 minutes of decisions, not 45 minutes of status. Use when running a weekly goal review, planning meeting, or direction review."
+version: "1.0.0"
 metadata:
   category: "Ops"
 ---

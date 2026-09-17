@@ -1,6 +1,7 @@
 ---
 name: hamster-posthog-dashboards
 description: "Use this skill whenever the user asks to review, analyse, investigate, duplicate, or build a PostHog dashboard for Hamster Studio. Drives the workflow that turns a dashboard ID (or a request to build one) into a snapshot, an analysis report, and prioritised follow-ups. Captures the doc structure (`posthog-reports/`, `posthog-snapshots/`, `posthog-insights-scope.md`, `posthog-insights-progress.md`, `posthog-events-inventory.md`) and the scripts in `packages/glass-box/scripts/`."
+version: "1.0.0"
 ---
 
 # hamster-posthog-dashboards

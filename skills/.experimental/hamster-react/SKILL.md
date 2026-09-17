@@ -1,6 +1,7 @@
 ---
 name: hamster-react
 description: "Hamster-specific React and Next.js patterns. Use when creating pages, components, forms, server actions, or data fetching in apps/web. Complements the react-best-practices skill."
+version: "1.1.0"
 ---
 
 # Hamster React Patterns

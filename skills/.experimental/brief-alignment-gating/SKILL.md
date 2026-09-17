@@ -1,6 +1,7 @@
 ---
 name: brief-alignment-gating
 description: "Governs the alignment voting gate between direction and delivery. Enforces that no brief enters delivery without explicit team alignment. Use when calling for alignment, interpreting vote results, or deciding if a brief is ready for delivery."
+version: "1.0.0"
 metadata:
   category: "Workflows"
 ---

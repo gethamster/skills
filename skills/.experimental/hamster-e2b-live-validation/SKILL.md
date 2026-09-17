@@ -1,6 +1,7 @@
 ---
 name: hamster-e2b-live-validation
 description: "Prove a claim about sandbox-side behavior by running it in a real E2B sandbox instead of reading comments. Use when a delivery or environment boot fails inside the sandbox, when a probe/health-check times out or hangs, when you need to know what is actually installed in a snapshot and at what version, when a comment asserts how a third-party CLI behaves, or when someone proposes raising a timeout. Covers the throw-shapes E2B uses for exit-vs-timeout, cold snapshot-resume timing, deliberate break-state testing, hang bisection via stdin, and offline npm lineage checks."
+version: "1.0.0"
 ---
 
 # Live E2B Validation

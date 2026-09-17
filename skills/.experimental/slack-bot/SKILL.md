@@ -1,6 +1,7 @@
 ---
 name: slack-bot
 description: "Slack bot integration patterns using the Chat SDK. Use when working with Slack webhook handling, message processing, slash commands, OAuth installation, identity verification, or markdown-to-Slack conversion. Triggers on files in apps/ai/src/modules/slack-bot/."
+version: "1.1.0"
 ---
 
 # Slack Bot Integration

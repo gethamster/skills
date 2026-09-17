@@ -1,6 +1,7 @@
 ---
 name: skill-package-upgrader
 description: "Meta-skill that orchestrates upgrading a cluster of related skills into a complete method package: inventories skills, creates/identifies a method, synthesizes the method body, ideates and creates routines, and links skills to the method. Trigger when the user says \\\"upgrade these skills into a method package\\\", \\\"create a method from these skills\\\", \\\"package these skills into a method\\\", \\\"upgrade the skills package\\\", \\\"create routines for this method\\\", or any request involving taking a group of existing skills and creating/populating a method + routines from them."
+version: "1.0.0"
 metadata:
   category: "Workflows"
 ---

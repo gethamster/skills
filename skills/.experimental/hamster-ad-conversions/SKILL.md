@@ -1,6 +1,7 @@
 ---
 name: hamster-ad-conversions
 description: "Ad platform pixel and conversion tracking for LinkedIn and Reddit. Use when adding conversion events, modifying tracking pixels, or working with ad platform integrations."
+version: "1.0.0"
 ---
 
 # Ad Platform Conversion Tracking

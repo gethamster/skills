@@ -1,6 +1,7 @@
 ---
 name: create-method-article
 description: "Write a longform X article announcing a method, a group of skills and routines packaged as a single approach in Hamster, such as a workflow methodology, a framework with its skills, or a bundle upgrading popular third-party skills with routines. Use this skill whenever Eyal wants an article about a method, a methodology piece, a \\\"here's our whole approach to X\\\" article, or the umbrella piece that ties existing skill and routine articles together. Requires a source pack from find-source-material; component skill/routine articles are the ideal supporting material when they exist."
+version: "1.0.0"
 ---
 
 # Create Method Article

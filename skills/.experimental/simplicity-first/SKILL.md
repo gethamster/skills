@@ -1,6 +1,7 @@
 ---
 name: simplicity-first
 description: "Anti over-engineering design framework. Use PROACTIVELY when designing new features, adding services, creating abstractions, planning architecture, or reviewing code. Also use when the user mentions 'over-engineering,' 'too complex,' 'simplify,' 'do I need this layer,' or when you notice unnecessary HTTP intermediaries, premature module splits, or abstractions without multiple callers. Complements karpathy-guidelines (per-line simplicity) with per-system architectural simplicity."
+version: "1.0.0"
 ---
 
 # Simplicity First

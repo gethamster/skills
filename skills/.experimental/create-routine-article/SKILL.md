@@ -1,6 +1,7 @@
 ---
 name: create-routine-article
 description: "Write a longform X article announcing a routine, a skill running on autopilot in Hamster, whether it automates one of our skills or upgrades a popular third-party skill with automation. Use this skill whenever Eyal wants an article about a routine, about automating a skill, about \\\"running [skill] on a schedule\\\", or wants the follow-up piece after a skill article that introduces the automated version. Requires a source pack from find-source-material and a routine spec from create-routine-from-skill; if either is missing, run those first."
+version: "1.0.0"
 ---
 
 # Create Routine Article

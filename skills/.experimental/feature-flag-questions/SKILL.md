@@ -1,6 +1,7 @@
 ---
 name: feature-flag-questions
 description: "Use whenever creating a brief for a NEW feature. This will add feature flag requirements into the brief"
+version: "1.0.0"
 metadata:
   category: "Experience"
 ---

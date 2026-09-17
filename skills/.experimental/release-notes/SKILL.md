@@ -1,6 +1,7 @@
 ---
 name: release-notes
 description: "Generate user-facing release notes for Hamster Studio. Analyzes commits and code changes between versions to produce clear, technical release notes."
+version: "1.1.0"
 ---
 
 # Release Notes Generation

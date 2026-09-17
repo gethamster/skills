@@ -1,6 +1,7 @@
 ---
 name: hamster-context-graph-perf
 description: "Context graph performance validation for Hamster Studio. Use when changing context graph RPCs, indexes, RLS/security modes, live-docs search, code search / search_code_with_neighbors behavior, or SQL migrations that can affect query plans."
+version: "1.0.0"
 ---
 
 # Hamster Context Graph Perf

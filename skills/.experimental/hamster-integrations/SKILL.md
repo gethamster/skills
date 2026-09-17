@@ -1,6 +1,7 @@
 ---
 name: hamster-integrations
 description: "External integration patterns including Airweave context connectors, OAuth flows, and third-party service connections. Use when implementing new integrations or working with context connections."
+version: "1.1.0"
 ---
 
 # Hamster Integrations

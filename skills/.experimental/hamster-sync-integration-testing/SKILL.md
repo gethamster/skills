@@ -1,6 +1,7 @@
 ---
 name: hamster-sync-integration-testing
 description: "Deterministic integration testing patterns for `apps/sync`. Use this whenever you need to add, modify, review, or debug sync integration tests, especially if the work involves MSW mocks, Linear webhooks, queue consumers, reconciliation, connection lifecycle HTTP flows, or bidirectional task/brief/initiative sync. This skill should win over generic testing advice whenever the user mentions `apps/sync`, `.integration.spec.ts`, Linear mocking, webhook tests, or sync runtime canaries."
+version: "1.0.0"
 ---
 
 # Hamster Sync Integration Testing

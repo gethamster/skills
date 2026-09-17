@@ -1,6 +1,7 @@
 ---
 name: share-dont-pair
 description: "Search-first DRY and consistency for any code unit. Use when about to write something that resembles existing code, duplicate a component / function / type / schema / style / config / query / client, or make one place match another ('match it to X', 'same as Y', 'keep them consistent', 'looks inconsistent'). Enforces: find the existing definition before writing, and merge things that must change together into one source of truth instead of maintaining look-alike copies."
+version: "1.0.0"
 ---
 
 # Share, Don't Pair

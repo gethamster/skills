@@ -1,6 +1,7 @@
 ---
 name: hamster-core
 description: "Core Hamster Studio conventions for TypeScript, security, and project structure. Always-on essentials that apply across all development tasks. Reference when writing any code in the monorepo."
+version: "1.1.0"
 ---
 
 # Hamster Core Conventions

@@ -1,6 +1,7 @@
 ---
 name: gitnexus-debugging
 description: "Use when the user is debugging a bug, tracing an error, or asking why something fails. Examples: \\\"Why is X failing?\\\", \\\"Where does this error come from?\\\", \\\"Trace this bug\\\""
+version: "1.1.0"
 ---
 
 # Debugging with GitNexus

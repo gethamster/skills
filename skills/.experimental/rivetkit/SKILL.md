@@ -1,6 +1,7 @@
 ---
 name: rivetkit
 description: "RivetKit backend and Rivet Actor runtime guidance. Use for building, modifying, debugging, or testing Rivet Actors, registries, serverless/runner modes, deployment, or actor-based workflows."
+version: "1.0.0"
 ---
 
 # Rivet Actors

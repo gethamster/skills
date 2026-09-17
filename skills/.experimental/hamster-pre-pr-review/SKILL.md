@@ -1,6 +1,7 @@
 ---
 name: hamster-pre-pr-review
 description: "Self-review checklist run before opening a PR. Validates skill compliance, Supabase admin client usage, migration discipline, dead code, DRY, HA suitability, and NestJS DI hygiene. Apply right before `gh pr create`, after staging the final diff."
+version: "1.0.0"
 ---
 
 # Hamster Pre-PR Review

@@ -1,6 +1,7 @@
 ---
 name: redis-specialist
 description: "Redis expert for caching, pub/sub, data structures, and distributed systems patternsUse when \\\"redis, caching strategy, cache invalidation, pub/sub, rate limiting, distributed lock, session storage, leaderboard, message queue, upstash, redis, caching, pub-sub, session, rate-limiting, distributed-lock, upstash, elasticache, memorystore\\\" mentioned."
+version: "1.1.0"
 ---
 
 # Redis Specialist

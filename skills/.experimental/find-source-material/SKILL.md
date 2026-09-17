@@ -1,6 +1,7 @@
 ---
 name: find-source-material
 description: "Research X and Reddit for real posts, complaints, prior art, and credits to power a Hamster launch article about a skill, routine, or method. Use this skill whenever Eyal is starting an article about a skill/routine/method, asks to \\\"find posts about X pain,\\\" wants social proof for a problem, needs prior art to credit, or invokes any of the create-*-article skills (this skill is their required first phase). Also use it when evaluating whether a third-party skill is worth writing about, since the source pack reveals how much real conversation exists around it."
+version: "1.0.0"
 ---
 
 # Find Source Material

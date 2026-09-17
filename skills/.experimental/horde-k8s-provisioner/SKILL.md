@@ -1,6 +1,7 @@
 ---
 name: horde-k8s-provisioner
 description: "Horde provisioner patterns for Helm SDK rendering, multi-tenant K8s deployment, per-org isolation, and Skaffold integration"
+version: "1.1.0"
 ---
 
 # Horde K8s Provisioner Skill

@@ -1,6 +1,7 @@
 ---
 name: hamster-testing
 description: "Testing patterns for unit tests (Jest), integration tests, E2E tests (Playwright). Use when writing app-level tests, setting up test infrastructure, or implementing TDD workflows. For database testing (RLS, constraints, triggers, schema), use hamster-database-testing instead."
+version: "1.1.0"
 ---
 
 # Hamster Testing Patterns

@@ -1,6 +1,7 @@
 ---
 name: detecting-and-flagging-methods-for-refresh
 description: "Routine trigger that flags methods for review when workflows change or on a quarterly cadence."
+version: "1.0.0"
 metadata:
   category: "Ops"
 ---

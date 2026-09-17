@@ -1,6 +1,7 @@
 ---
 name: create-routine-from-skill
 description: "Take a skill (ours or a popular third-party one) and design the routine that runs it automatically in Hamster, producing a complete routine spec with trigger, autonomous prompt, guardrails, and success criteria. Use this skill whenever Eyal wants to automate a skill, put a skill on a schedule, \\\"turn [skill] into a routine\\\", upgrade a popular skill with automation, or needs the routine spec that a routine article will be written about. Also use it when someone asks what a skill would look like running unattended."
+version: "1.0.0"
 ---
 
 # Create Routine From Skill

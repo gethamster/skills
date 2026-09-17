@@ -1,6 +1,7 @@
 ---
 name: hamster-database
 description: "Supabase database patterns for Hamster Studio. Use when working with schemas, migrations, RLS policies, SQL functions, or database queries. Essential for any database-related work."
+version: "1.1.0"
 ---
 
 # Hamster Database Patterns

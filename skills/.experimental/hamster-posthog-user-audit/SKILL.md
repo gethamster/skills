@@ -1,6 +1,7 @@
 ---
 name: hamster-posthog-user-audit
 description: "Per-user PostHog event audit for Hamster Studio. Use when the user asks to \\\"review my events in posthog\\\", \\\"audit attribution for <user>\\\", \\\"tell me the story of what user <X> did\\\", \\\"verify $ai_generation events for <user>\\\", or \\\"did event Y fire when I clicked Z\\\". Two modes — guided (ask the user to perform a sequence of actions, then audit that exact window) and free (audit whatever happened in a recent window and reconstruct the story). Sister to `hamster-posthog-dashboards`; this one is single-user-scoped."
+version: "1.0.0"
 ---
 
 # hamster-posthog-user-audit

@@ -1,6 +1,7 @@
 ---
 name: authoring-blueprints-from-scratch
 description: "1. Establish narrative intent:"
+version: "1.0.0"
 metadata:
   category: "Ops"
 ---

@@ -1,6 +1,7 @@
 ---
 name: analytics-instrumentation-check
 description: "Audit a feature, branch, or PR diff for analytics instrumentation coverage. Verifies that every state-changing action (server action, BullMQ processor, domain entity create/update/delete, paywall/billing transition) fires a typed `trackServerEvent` or `tracker.track*` call. Use proactively before opening a PR, during code review, or whenever a new feature is added under apps/web/app, apps/ai/src/modules, or apps/sync/src/modules. The CI gate (typed event names) prevents untyped events from shipping but does NOT prevent uninstrumented actions from shipping — this skill closes that gap. Trigger phrases: 'is this tracked', 'audit instrumentation', 'check analytics coverage', 'are we tracking X', 'instrumentation review'."
+version: "1.0.0"
 ---
 
 # Analytics Instrumentation Check

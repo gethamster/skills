@@ -1,6 +1,7 @@
 ---
 name: hamster-cpu-profiling
 description: "Investigate main-thread freezes / slow pages with a real CPU profile instead of guessing. Use when a page locks up, the sidebar/cards go unresponsive, requests hang pending, a 'freeze' or 'jank' is reported, or you need to prove a perf fix worked (before/after). Drives a real browser via agent-browser, captures a Chrome DevTools profile, and parses it for the dominant hot frame — separating real app cost from profiler/dev-mode artifacts."
+version: "1.0.0"
 ---
 
 # Hamster CPU profiling — find the freeze before theorizing

@@ -1,6 +1,7 @@
 ---
 name: hamster-nextjs-api
 description: "Next.js API route handlers in apps/web. Use when building CRUD endpoints, data-serving API routes (app/api/), webhooks, or OAuth callbacks in the Next.js frontend. NOT for background jobs or AI pipelines (use hamster-nest-api instead)."
+version: "1.1.0"
 metadata:
   category: "Development"
 ---

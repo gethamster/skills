@@ -1,6 +1,7 @@
 ---
 name: hamster-sync-local-testing
 description: "Local testing runbook for validating Linear, Jira, and Confluence sync against the local dev stack. MUST USE this skill whenever testing sync behavior locally, debugging sync issues, verifying sync after code changes, running sync test scenarios, checking sync connections/webhooks/mappings, triggering resync, testing team switches, or verifying provider-to-Hamster state agreement. Also use when inspecting tmux logs for sync, querying sync_entity_mappings, diagnosing initiative/brief/task/blueprint sync problems, validating the Jira personal data reporting cycle (report-accounts cadence, 429 handling, PII scrubbing on closed/updated actions, reserved \\\"unknown\\\" accountId), or testing the Confluence reconciliation-only inbound path, root-page bootstrap, OAuth scope drift / reauth_required flagging, space-picker scope, page ancestry under root, hamster label scope, storage-format ↔ markdown conversion, or retained `cloud_id + space_id` identity across reconnect."
+version: "1.0.0"
 ---
 
 # Sync Service Local Testing

@@ -1,6 +1,7 @@
 ---
 name: hamster-thread-diagnostics
 description: "Diagnose chat thread issues from a thread_id and a user-provided symptom. Use when the user reports a misbehaving thread (missing diff preview, duplicate spawns, hallucinated failures, child threads not opening, missing Accept buttons, etc.). Walks the parent + child threads, tool_calls, participants, and relevant code paths to produce a root-cause summary and a concrete fix plan."
+version: "1.0.0"
 ---
 
 # Hamster Thread Diagnostics

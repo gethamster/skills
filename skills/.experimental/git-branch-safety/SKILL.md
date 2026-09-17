@@ -1,6 +1,7 @@
 ---
 name: git-branch-safety
 description: "Create and publish safe feature branches and pull requests, including Hamster brief-aware branch names and PR links. Use for branch creation, any git commit/push, PR creation, workflow dispatch, or CI debugging."
+version: "1.0.0"
 ---
 
 # Git Branch and Pull Request Safety

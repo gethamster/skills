@@ -1,6 +1,7 @@
 ---
 name: thermo-nuclear-review-pass-on-every-plan
 description: "Enforces a mandatory thermonuclear code quality review task as the last parent task in every plan. Activate during plan generation — the Plan agent must load this skill before creating any tasks. Ensures every plan ends with an agent-executed review task referencing the thermo-nuclear-code-quality-review skill, ordered after all implementation tasks with full dependency coverage."
+version: "1.0.0"
 metadata:
   category: "Development"
 ---

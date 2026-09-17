@@ -1,6 +1,7 @@
 ---
 name: posthog-measurements-for-goal-bindings
 description: "Standardizes creating and debugging PostHog insights for Hamster goal measure bindings. Covers TrendsQuery vs HogQL, the measure binding contract (aggregated_value), math types, formulas, HogQL pitfalls, and the Composio API actions needed. Use when binding a PostHog metric to a goal, debugging a measure showing 0/null, or converting HogQL to TrendsQuery."
+version: "1.0.0"
 metadata:
   category: "Workflows"
 ---

@@ -1,6 +1,7 @@
 ---
 name: hamster-feature-flags
 description: "Add and manage feature flags for gating features in Hamster Studio across environments and integrations."
+version: "1.1.0"
 ---
 
 # Feature Flags Skill

@@ -1,6 +1,7 @@
 ---
 name: hamster-instrumentation
 description: "Plan-time observability for new features in Hamster Studio. Use PROACTIVELY during plan/brief generation, feature scoping, architectural design, or anytime a new endpoint, server action, BullMQ job, page route, or user-facing surface is being designed. Forces every plan to declare PostHog events, user/account properties, group context, feature flags, session-replay/PII posture, and trace correlation BEFORE code is written. Complements `hamster-analytics` (the implementation API) by making instrumentation a first-class output of planning."
+version: "1.0.0"
 ---
 
 # Hamster Instrumentation Planning

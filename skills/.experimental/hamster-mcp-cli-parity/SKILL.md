@@ -1,6 +1,7 @@
 ---
 name: hamster-mcp-cli-parity
 description: "Keep MCP (apps/mcp) and CLI (apps/cli) in sync with web when a new Studio artifact/entity or agent-facing operation is added. Use when web (apps/web) gains an entity/table/capability agents should reach, or when editing packages/go/ops, apps/mcp, apps/cli, or parity_manifest.json. Triggers: 'new entity/artifact in web', 'expose X to agents/MCP/CLI', 'add an MCP tool', 'add a CLI command', 'parity_manifest', 'parity test failing'."
+version: "1.0.0"
 ---
 
 # MCP ↔ CLI ↔ Web Parity

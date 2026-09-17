@@ -1,6 +1,7 @@
 ---
 name: composio
 description: "Use 1000+ external apps via Composio - either directly through the CLI or by building AI agents and apps with the SDK"
+version: "1.0.0"
 ---
 
 ## When to Apply

@@ -1,6 +1,7 @@
 ---
 name: reference-driven-graphics
 description: "Build custom branded animated graphics (three.js/canvas/particle effects, hero animations, generative visuals) from visual references or Figma sketches — the reference → prompt → exact-geometry → screenshot-iterate → parameterize → embed workflow. Use when the user wants an animation \\\"like X's site\\\" (Stripe, Linear, etc.), wants to turn a Figma sketch or SVG into an animated graphic, needs to embed generated animation code into Webflow/React/Vue, or wants to scale one effect across many cards/sections."
+version: "1.0.0"
 metadata:
   category: "Marketing"
 ---

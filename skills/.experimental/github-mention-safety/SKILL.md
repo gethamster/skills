@@ -1,6 +1,7 @@
 ---
 name: github-mention-safety
 description: "Prevent tagging wrong GitHub users by always resolving usernames from git log or team membership before @-mentioning anyone in GitHub comments, PRs, or issues."
+version: "1.0.0"
 ---
 
 # GitHub Mention Safety
