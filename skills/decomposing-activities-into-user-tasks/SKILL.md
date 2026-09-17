@@ -1,6 +1,7 @@
 ---
 name: decomposing-activities-into-user-tasks
 description: "This skill teaches you how to take high-level user activities from your story map backbone and systematically break them into specific tasks and vertically prioritized user stories, producing the detailed body of your map that drives sprint planning and release slicing."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

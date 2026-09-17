@@ -1,6 +1,7 @@
 ---
 name: facilitating-sprint-retrospectives
 description: "This skill teaches you how to lead scrum retrospective meetings that surface honest feedback, uncover root causes, and produce concrete action items that measurably improve team performance sprint over sprint."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

@@ -1,6 +1,7 @@
 ---
 name: categorizing-feedback-into-4ls
 description: "This skill teaches you how to accurately distinguish between Liked, Learned, Lacked, and Longed For items during a 4Ls retrospective, and how to resolve the overlapping or ambiguous feedback that inevitably arises."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: 4ls-retrospective

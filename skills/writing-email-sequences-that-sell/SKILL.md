@@ -1,6 +1,7 @@
 ---
 name: writing-email-sequences-that-sell
 description: "This skill teaches you how to apply clarity-first, benefit-driven copywriting principles to email subject lines, body copy, and CTAs across nurture and sales sequences so every send moves readers toward a specific action."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

@@ -1,6 +1,7 @@
 ---
 name: scaling-agile-with-spotify-structures
 description: "This skill teaches you how to use the Spotify organizational model as a scaling framework, giving you concrete triggers for when to split tribes, spawn new squads, and evolve governance structures as headcount and product complexity grow."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

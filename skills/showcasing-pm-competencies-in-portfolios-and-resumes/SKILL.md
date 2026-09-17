@@ -1,6 +1,7 @@
 ---
 name: showcasing-pm-competencies-in-portfolios-and-resumes
 description: "Teaches you how to use the four-quadrant competency framework to structure a product manager resume or portfolio that clearly demonstrates breadth and depth across strategic, tactical, internal, and external skills."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

@@ -1,6 +1,7 @@
 ---
 name: building-cross-cutting-guilds
 description: "This skill teaches you how to launch, structure, and sustain voluntary, company-wide guilds that move knowledge, tooling decisions, and best practices across tribe boundaries so that autonomous squads do not reinvent the wheel in isolation."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

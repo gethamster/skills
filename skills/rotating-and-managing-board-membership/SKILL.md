@@ -1,6 +1,7 @@
 ---
 name: rotating-and-managing-board-membership
 description: "This skill teaches you how to schedule rotation cadences, gracefully cycle advisory board members in and out, and maintain long-term engagement so your Technical Advisory Board stays fresh, representative, and valuable without exhausting participants."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework

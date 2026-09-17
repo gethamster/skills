@@ -1,6 +1,7 @@
 ---
 name: automating-seo-tasks-using-claudes-reasoning-principles
 description: "This skill teaches you how to automate SEO with Claude by structuring research, auditing, and keyword analysis workflows around constitutional reasoning principles that keep outputs accurate, helpful, and free of fabrication."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

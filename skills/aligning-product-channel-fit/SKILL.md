@@ -1,6 +1,7 @@
 ---
 name: aligning-product-channel-fit
 description: "This skill teaches you how to identify and validate that your product's design and user experience naturally suits the acquisition channels you plan to use, ensuring distribution and product work together rather than against each other."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

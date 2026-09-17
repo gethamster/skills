@@ -1,6 +1,7 @@
 ---
 name: using-start-stop-continue-in-one-on-ones
 description: "This skill teaches you how to adapt the Start Stop Continue framework for individual performance conversations, manager check-ins, and self-reflection—turning vague feedback into structured, actionable dialogue outside of team retrospectives."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

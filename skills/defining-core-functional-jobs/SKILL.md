@@ -1,6 +1,7 @@
 ---
 name: defining-core-functional-jobs
 description: "This skill teaches you how to identify and articulate the single functional job your customer is trying to get done, using precise job statement syntax that separates the task from any product or solution."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

@@ -1,6 +1,7 @@
 ---
 name: optimizing-the-full-funnel-customer-journey
 description: "This skill teaches you how to analyze cross-stage performance data within the RACE Framework to pinpoint drop-off points, redistribute resources, and continuously improve the end-to-end customer journey for maximum marketing ROI."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

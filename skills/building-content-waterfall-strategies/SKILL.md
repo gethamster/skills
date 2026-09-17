@@ -1,6 +1,7 @@
 ---
 name: building-content-waterfall-strategies
 description: "This skill teaches you how to apply the Waterfall methodology to content production by cascading a single pillar asset into multiple formats and channels through a planned, sequential workflow."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

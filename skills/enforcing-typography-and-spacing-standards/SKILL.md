@@ -1,6 +1,7 @@
 ---
 name: enforcing-typography-and-spacing-standards
 description: "This skill teaches you to write and apply portable SKILL.md instruction files that govern font sizing, line height, letter spacing, whitespace, and visual density so AI coding agents stop producing generic-looking layouts and start generating typographically intentional interfaces."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

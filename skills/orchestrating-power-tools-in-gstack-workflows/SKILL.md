@@ -1,6 +1,7 @@
 ---
 name: orchestrating-power-tools-in-gstack-workflows
 description: "This skill teaches you how to sequence and combine gstack's 8 power tools to manage end-to-end development workflows like feature buildout, codebase migration, and large refactors without losing context between phases."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

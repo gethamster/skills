@@ -1,6 +1,7 @@
 ---
 name: estimating-reach
 description: "Quantify how many users or events an initiative will affect within a given time period."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: rice-framework

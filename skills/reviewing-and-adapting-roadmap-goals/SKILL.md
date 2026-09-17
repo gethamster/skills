@@ -1,6 +1,7 @@
 ---
 name: reviewing-and-adapting-roadmap-goals
 description: "This skill teaches you how to run structured quarterly roadmap reviews that score goal progress against success criteria, retire completed objectives, reprioritize based on fresh data, and keep your GO Product Roadmap a living, trustworthy document."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

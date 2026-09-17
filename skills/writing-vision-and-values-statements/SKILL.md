@@ -1,6 +1,7 @@
 ---
 name: writing-vision-and-values-statements
 description: "This skill teaches you to craft a clear, time-bound vision statement and a prioritized set of values that together form the foundation of the V2MOM framework, giving every person on your team a shared definition of where you are headed and how you will make decisions along the way."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: v2mom-framework

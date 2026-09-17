@@ -2,7 +2,7 @@
 // Generates the two derived views of the catalog from its source files:
 // skills.sh.json (the grouping manifest skills.sh renders as sections) and the
 // README catalog table. Membership comes from each skill's `metadata.method`,
-// titles and descriptions from each METHOD.md. `--check` fails on drift so the
+// titles from each METHOD.md. `--check` fails on drift so the
 // generated files can never disagree with the tree they describe.
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -14,10 +14,20 @@ const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
 
 const MANIFEST_PATH = join(repoRoot, "skills.sh.json");
+// The same six Studio groups skills carry as `category`, in the order the page
+// shows them.
+const CATEGORIES = ["Product", "Development", "Experience", "Marketing", "Ops", "Workflows"];
+const CATEGORY_DESCRIPTIONS = {
+  Product: "Discovery, prioritisation, roadmapping and the metrics a product is steered by.",
+  Development: "Engineering practice and the methods for working alongside AI agents.",
+  Experience: "Customer journeys, design process and measuring what people actually experience.",
+  Marketing: "Positioning, pricing, search and the frameworks that take a product to market.",
+  Ops: "How a team is organised, aligned and held to its objectives.",
+  Workflows: "How the work itself runs: iterations, boards, ceremonies and retrospectives.",
+};
 const README_PATH = join(repoRoot, "README.md");
 const CATALOG_START = "<!-- catalog:start -->";
 const CATALOG_END = "<!-- catalog:end -->";
-const MAX_GROUP_DESCRIPTION = 500;
 
 function subdirectories(dir) {
   return readdirSync(dir, { withFileTypes: true })
@@ -37,36 +47,41 @@ function frontmatter(path) {
   return parsed;
 }
 
-// Most H1s read "Name: What it is"; the part before the first colon is the
-// group title and the subtitle is its description — the schema wants "a short
-// sentence". Without a subtitle, the first sentence of the body stands in,
-// where a sentence does not end at an initial like "Michael E. Gerber".
-const SENTENCE_END_RE = /(?<!\b[A-Z])[.!?](?=\s|$)/;
+// A METHOD.md opens with frontmatter carrying its category, then the H1 the
+// title is read from.
+function splitFrontmatter(content) {
+  if (!content.startsWith("---")) return { frontmatter: null, body: content };
+  const end = content.indexOf("\n---", 3);
+  if (end === -1) return { frontmatter: null, body: content };
+  const parsed = loadYaml(content.slice(content.indexOf("\n") + 1, end));
+  const body = content.slice(end + 4).replace(/^\n+/, "");
+  return { frontmatter: parsed && typeof parsed === "object" ? parsed : null, body };
+}
 
+// The README table names each method by the part of its H1 before the first
+// colon, and credits it from the "> Created by" line under that heading. The
+// H1's subtitle used to double as a skills.sh group description; sections are
+// per category now, and those carry their own copy.
 function describeMethod(content) {
   const lines = content.split("\n");
   const heading = lines[0].replace(/^#\s+/, "").trim();
   const colon = heading.search(/:\s/);
   const title = colon === -1 ? heading : heading.slice(0, colon);
-  const subtitle = colon === -1 ? null : heading.slice(colon + 1).trim();
   const attribution = lines.slice(0, 5).find((line) => line.startsWith("> Created by ")) ?? "";
   const createdBy = attribution.replace(/^> Created by /, "").trim();
-  const body = lines
-    .slice(1)
-    .filter((line) => line.trim() && !line.startsWith(">") && !line.startsWith("#"));
-  const paragraph = body[0] ?? "";
-  const sentenceEnd = paragraph.search(SENTENCE_END_RE);
-  const firstSentence = sentenceEnd === -1 ? paragraph : paragraph.slice(0, sentenceEnd + 1);
-  const plain = (subtitle ?? firstSentence)
-    .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1")
-    .replace(/[*_`]/g, "");
-  return { title, createdBy, description: plain.slice(0, MAX_GROUP_DESCRIPTION) };
+  return { title, createdBy };
 }
 
 const methods = new Map();
 for (const slug of subdirectories(join(repoRoot, "methods"))) {
-  const content = readFileSync(join(repoRoot, "methods", slug, "METHOD.md"), "utf8");
-  methods.set(slug, { slug, ...describeMethod(content), skills: [] });
+  const path = join(repoRoot, "methods", slug, "METHOD.md");
+  const { frontmatter: methodFrontmatter, body } = splitFrontmatter(readFileSync(path, "utf8"));
+  const category = methodFrontmatter?.category;
+  if (!CATEGORIES.includes(category)) {
+    console.error(`methods/${slug}/METHOD.md: category "${category}" must be one of ${CATEGORIES.join(", ")} — run npm run validate`);
+    process.exit(1);
+  }
+  methods.set(slug, { slug, category, ...describeMethod(body), skills: [] });
 }
 
 for (const slug of subdirectories(join(repoRoot, "skills"))) {
@@ -79,17 +94,17 @@ for (const slug of subdirectories(join(repoRoot, "skills"))) {
   method.skills.push(slug);
 }
 
-// Limits from the skills.sh schema the manifest declares. Exceeding them would
-// emit a file that fails its own $schema while --check still passes.
-const MAX_GROUPINGS = 50;
-const MAX_GROUP_TITLE = 120;
-if (methods.size > MAX_GROUPINGS) {
-  console.error(`skills.sh.json allows at most ${MAX_GROUPINGS} groupings; the catalog has ${methods.size} methods`);
-  process.exit(1);
-}
-for (const { slug, title } of methods.values()) {
-  if (title.length > MAX_GROUP_TITLE) {
-    console.error(`methods/${slug}/METHOD.md: title exceeds ${MAX_GROUP_TITLE} characters (${title.length})`);
+// The page shows one section per category, not per method. skills.sh uses at
+// most 50 groupings and 500 skills in each, and a section per method hit the
+// first limit at method 51. Categories are a fixed set of six, so the catalog
+// can grow without the page silently dropping whatever came last.
+const MAX_GROUP_SKILLS = 500;
+for (const category of CATEGORIES) {
+  const count = [...methods.values()]
+    .filter((method) => method.category === category)
+    .reduce((total, method) => total + method.skills.length, 0);
+  if (count > MAX_GROUP_SKILLS) {
+    console.error(`skills.sh.json allows at most ${MAX_GROUP_SKILLS} skills per grouping; ${category} has ${count}`);
     process.exit(1);
   }
 }
@@ -97,17 +112,20 @@ for (const { slug, title } of methods.values()) {
 const manifest = {
   $schema: "https://skills.sh/schemas/skills.sh.schema.json",
   notGrouped: "bottom",
-  groupings: [...methods.values()].map(({ title, description, skills }) => ({
-    title,
-    description,
-    skills,
-  })),
+  groupings: CATEGORIES.map((category) => {
+    const inCategory = [...methods.values()].filter((method) => method.category === category);
+    return {
+      title: category,
+      description: CATEGORY_DESCRIPTIONS[category],
+      skills: inCategory.flatMap((method) => method.skills).sort((a, b) => a.localeCompare(b)),
+    };
+  }).filter((grouping) => grouping.skills.length > 0),
 };
 const manifestText = `${JSON.stringify(manifest, null, 2)}\n`;
 
 const rows = [...methods.values()].map(
-  ({ slug, title, createdBy, skills }) =>
-    `| [${title}](methods/${slug}/METHOD.md) | ${createdBy} | ${skills
+  ({ slug, title, category, createdBy, skills }) =>
+    `| [${title}](methods/${slug}/METHOD.md) | ${category} | ${createdBy} | ${skills
       .map((skill) => `[\`${skill}\`](skills/${skill})`)
       .join(", ")} |`,
 );
@@ -115,8 +133,8 @@ const table = [
   CATALOG_START,
   `${methods.size} methods, ${[...methods.values()].reduce((n, m) => n + m.skills.length, 0)} skills. Generated by \`scripts/generate-catalog-manifest.mjs\`; edit the source files, not this table.`,
   "",
-  "| Method | Created by | Skills |",
-  "|---|---|---|",
+  "| Method | Category | Created by | Skills |",
+  "|---|---|---|---|",
   ...rows,
   CATALOG_END,
 ].join("\n");
@@ -152,5 +170,7 @@ if (check) {
   console.log("Generated files are up to date.");
 } else {
   for (const [path, text] of outputs) writeFileSync(path, text);
-  console.log(`Wrote skills.sh.json (${methods.size} groupings) and the README catalog table.`);
+  console.log(
+    `Wrote skills.sh.json (${manifest.groupings.length} groupings over ${methods.size} methods) and the README catalog table.`,
+  );
 }

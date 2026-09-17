@@ -1,6 +1,7 @@
 ---
 name: estimating-work-with-story-points
 description: "This skill teaches you how to use relative estimation techniques—story points and planning poker—to size work items, forecast sprint capacity, and improve your Scrum team's predictability over time."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

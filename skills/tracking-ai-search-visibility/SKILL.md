@@ -1,6 +1,7 @@
 ---
 name: tracking-ai-search-visibility
 description: "This skill teaches you how to monitor, measure, and benchmark your brand's appearances across AI-generated search results, chatbots, and answer engines using the best AI SEO tools alongside manual auditing methods."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-seo-optimization

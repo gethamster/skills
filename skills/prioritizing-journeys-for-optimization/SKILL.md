@@ -1,6 +1,7 @@
 ---
 name: prioritizing-journeys-for-optimization
 description: "This skill teaches you how to score and rank customer journeys by business impact, customer friction, and strategic alignment so you can decide exactly where to focus improvement efforts instead of guessing or defaulting to the loudest stakeholder's request."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

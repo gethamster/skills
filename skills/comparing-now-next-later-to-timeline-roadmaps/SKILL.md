@@ -1,6 +1,7 @@
 ---
 name: comparing-now-next-later-to-timeline-roadmaps
 description: "This skill teaches you how to evaluate when a Now-Next-Later roadmap outperforms traditional date-based or quarterly roadmaps, and how to transition between formats without losing alignment or stakeholder confidence."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: now-next-later-framework

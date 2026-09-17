@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # AI SEO Optimization: How to Rank in AI-Generated Answers
 
 > Created by **Hamster** — [https://tryhamster.com](https://tryhamster.com)

@@ -1,6 +1,7 @@
 ---
 name: auditing-llm-knowledge-of-your-brand
 description: "This skill teaches you a systematic process for prompting major LLMs to discover how they describe your brand, identify factual inaccuracies or outdated information, and build a correction strategy that improves how AI systems represent you."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-seo-optimization

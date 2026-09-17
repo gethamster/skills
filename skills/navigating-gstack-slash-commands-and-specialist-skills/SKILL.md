@@ -1,6 +1,7 @@
 ---
 name: navigating-gstack-slash-commands-and-specialist-skills
 description: "This skill teaches you to discover, invoke, and chain gstack's 23 specialist slash commands so you can route discrete tasks like planning, scaffolding, refactoring, and debugging to purpose-built AI skills instead of relying on generic prompts."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

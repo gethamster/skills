@@ -1,6 +1,7 @@
 ---
 name: defining-goal-oriented-product-goals
 description: "This skill teaches you how to identify, articulate, and validate outcome-based product goals that anchor your strategic product roadmap around business value instead of feature requests."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

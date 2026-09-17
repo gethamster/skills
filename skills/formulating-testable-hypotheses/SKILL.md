@@ -1,6 +1,7 @@
 ---
 name: formulating-testable-hypotheses
 description: "This skill teaches you to translate vague business assumptions into precisely worded, falsifiable hypotheses with measurable success criteria, so every experiment produces a clear yes-or-no learning signal."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

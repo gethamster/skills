@@ -1,6 +1,7 @@
 ---
 name: setting-the-stage-for-retrospectives
 description: "This skill teaches you how to open a sprint retrospective by creating psychological safety, establishing working agreements, and defining the session's focus so the rest of the meeting is productive and inclusive."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

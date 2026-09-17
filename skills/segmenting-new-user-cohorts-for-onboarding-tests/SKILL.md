@@ -1,6 +1,7 @@
 ---
 name: segmenting-new-user-cohorts-for-onboarding-tests
 description: "Teaches you how to use PostHog's person properties and cohort filters to restrict onboarding experiments exclusively to new sign-ups, preventing existing users from contaminating your A/B test results."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

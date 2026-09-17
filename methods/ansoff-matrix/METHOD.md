@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # The Ansoff Matrix: A Complete Guide to Strategic Growth Planning
 
 > Created by **H. Igor Ansoff** — [https://en.wikipedia.org/wiki/Ansoff_matrix](https://en.wikipedia.org/wiki/Ansoff_matrix)

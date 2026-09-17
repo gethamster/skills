@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # User Story Mapping: Building Products from the User's Perspective
 
 > Created by **Jeff Patton** — [https://jpattonassociates.com/](https://jpattonassociates.com/)

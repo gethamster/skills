@@ -1,6 +1,7 @@
 ---
 name: applying-moscow-to-project-requirements
 description: "This skill teaches you how to embed MoSCoW prioritization directly into your requirements gathering and management workflows, so every requirement in a project or software backlog carries a clear priority classification from discovery through delivery."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

@@ -1,6 +1,7 @@
 ---
 name: setting-up-posthog-feature-flags-for-experiments
 description: "This skill teaches you how to create and configure multivariate feature flags in PostHog so that users are deterministically assigned to control or test variants in an A/B experiment, with the right targeting rules and rollout percentages."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

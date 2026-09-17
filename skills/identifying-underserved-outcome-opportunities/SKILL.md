@@ -1,6 +1,7 @@
 ---
 name: identifying-underserved-outcome-opportunities
 description: "This skill teaches you how to use opportunity scoring, combining importance and satisfaction ratings, to quantify which desired outcomes are most underserved by current solutions and represent the strongest targets for product innovation."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

@@ -1,6 +1,7 @@
 ---
 name: planning-market-development-initiatives
 description: "This skill teaches you how to systematically identify, evaluate, and prioritize new target markets, geographies, or customer segments for your existing products using market segmentation analysis within the Ansoff Matrix's market development quadrant."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

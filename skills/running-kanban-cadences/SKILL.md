@@ -1,6 +1,7 @@
 ---
 name: running-kanban-cadences
 description: "This skill teaches you how to facilitate the seven Kanban cadences, from daily standups to quarterly strategy reviews, so your team has the right feedback loops at the right frequency to continuously improve flow and delivery outcomes."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

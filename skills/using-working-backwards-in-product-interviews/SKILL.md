@@ -1,6 +1,7 @@
 ---
 name: using-working-backwards-in-product-interviews
 description: "This skill teaches you how to structure your answers to product sense, strategy, and prioritization interview questions using the Working Backwards framework, starting from the customer outcome and reasoning back to what to build and why."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

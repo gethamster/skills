@@ -1,6 +1,7 @@
 ---
 name: building-outcome-based-roadmap-presentations
 description: "This skill teaches you how to structure and deliver roadmap presentations organized around measurable business outcomes rather than feature lists, so every stakeholder group — from executives to engineers — understands and supports the strategic reasoning behind planned work."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

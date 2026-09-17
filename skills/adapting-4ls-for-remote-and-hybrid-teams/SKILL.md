@@ -1,6 +1,7 @@
 ---
 name: adapting-4ls-for-remote-and-hybrid-teams
 description: "This skill teaches you how to run engaging, equitable 4Ls retrospective sessions with distributed teams by combining async collaboration tools, timeboxed video calls, and anonymous input methods to capture honest feedback across time zones."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: 4ls-retrospective

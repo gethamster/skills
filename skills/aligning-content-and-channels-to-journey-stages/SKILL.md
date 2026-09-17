@@ -1,6 +1,7 @@
 ---
 name: aligning-content-and-channels-to-journey-stages
 description: "This skill teaches you how to systematically match marketing content types, messaging angles, and distribution channels to each of the five customer journey stages, so every piece of content serves a clear purpose in moving people toward purchase and beyond."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

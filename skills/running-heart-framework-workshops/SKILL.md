@@ -1,6 +1,7 @@
 ---
 name: running-heart-framework-workshops
 description: "This skill teaches you how to facilitate collaborative HEART Framework sessions where designers, engineers, and PMs align on user-experience goals, signals, and success metrics—a core competency for anyone learning how to become a product manager."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework

@@ -1,6 +1,7 @@
 ---
 name: shipping-production-systems-inside-client-infrastructure
 description: "Teaches the practical workflows a forward deployed software engineer uses to deploy, integrate, and harden production-grade software within a customer's existing tech stack, security policies, and operational constraints."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

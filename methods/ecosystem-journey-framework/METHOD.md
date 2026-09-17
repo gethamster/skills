@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # The Ecosystem Journey Framework: Managing the Customer Journey as a Living System
 
 > Created by **TheyDo Team** — [https://www.theydo.com/blog/articles/simplify-journey-mapping-with-the-journey-framework](https://www.theydo.com/blog/articles/simplify-journey-mapping-with-the-journey-framework)

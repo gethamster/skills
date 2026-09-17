@@ -1,6 +1,7 @@
 ---
 name: conducting-sprint-reviews
 description: "This skill teaches you how to run a scrum sprint review meeting that effectively demonstrates working increments to stakeholders and captures actionable feedback that shapes the product backlog."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

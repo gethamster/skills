@@ -1,6 +1,7 @@
 ---
 name: building-roadmaps-from-moscow-outputs
 description: "This skill teaches you how to translate a completed MoSCoW prioritization into a phased product or project roadmap with sequenced releases, clear milestones, and realistic timelines."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

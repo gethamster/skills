@@ -1,6 +1,7 @@
 ---
 name: running-okr-planning-sessions
 description: "This skill teaches you how to facilitate collaborative quarterly OKR planning sessions that produce well-structured, ambitious goal sets with genuine team buy-in, not top-down mandates disguised as participation."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

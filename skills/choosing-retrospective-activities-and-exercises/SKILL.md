@@ -1,6 +1,7 @@
 ---
 name: choosing-retrospective-activities-and-exercises
 description: "Learn how to select and facilitate the right sprint retrospective ideas — like Sailboat, Mad/Sad/Glad, or Timeline — for each phase of the five-step retrospective so your team stays engaged and produces actionable outcomes."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

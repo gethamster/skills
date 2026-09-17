@@ -1,3 +1,7 @@
+---
+category: Ops
+---
+
 # The Forward Deployed Engineer Five-Lens Framework
 
 > Created by **Vishwanathan Chandran** — [https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7)

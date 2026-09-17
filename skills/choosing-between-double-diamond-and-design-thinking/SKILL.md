@@ -1,6 +1,7 @@
 ---
 name: choosing-between-double-diamond-and-design-thinking
 description: "Learn how to compare the Double Diamond with Stanford d.school Design Thinking and Lean UX so you can select—or combine—the right design framework for your project's goals, team maturity, and constraints."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

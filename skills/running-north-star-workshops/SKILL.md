@@ -1,6 +1,7 @@
 ---
 name: running-north-star-workshops
 description: "This skill teaches you how to facilitate a structured, collaborative workshop where cross-functional teams define or refine their North Star Metric and supporting input metrics—one of the most common product manager interview questions about strategic alignment."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-framework

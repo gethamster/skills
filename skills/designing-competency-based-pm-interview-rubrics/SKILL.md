@@ -1,6 +1,7 @@
 ---
 name: designing-competency-based-pm-interview-rubrics
 description: "This skill teaches you how to build structured product manager interview questions and scoring rubrics that map directly to the four quadrants of a PM competency framework, ensuring every interview loop evaluates candidates consistently and comprehensively."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

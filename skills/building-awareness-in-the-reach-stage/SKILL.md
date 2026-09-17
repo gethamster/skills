@@ -1,6 +1,7 @@
 ---
 name: building-awareness-in-the-reach-stage
 description: "This skill teaches you how to select, prioritize, and optimize top-of-funnel channels and tactics—SEO, paid media, and social—to maximize audience reach at the awareness stage customer journey within the RACE Framework."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

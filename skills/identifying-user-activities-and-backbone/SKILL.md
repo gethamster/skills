@@ -1,6 +1,7 @@
 ---
 name: identifying-user-activities-and-backbone
 description: "This skill teaches you how to define the top-level user activities for a story map and arrange them in chronological order to create the horizontal backbone that structures all subsequent decomposition and prioritization."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

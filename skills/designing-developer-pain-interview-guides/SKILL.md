@@ -1,6 +1,7 @@
 ---
 name: designing-developer-pain-interview-guides
 description: "This skill teaches you how to craft structured, open-ended question frameworks and conversation scripts that reliably surface technical frustrations, workarounds, and unmet needs during developer advisory calls — without leading witnesses or pitching solutions."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework

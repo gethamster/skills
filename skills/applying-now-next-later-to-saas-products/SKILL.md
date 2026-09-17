@@ -1,6 +1,7 @@
 ---
 name: applying-now-next-later-to-saas-products
 description: "This skill teaches you how to reshape the Now-Next-Later roadmap for the specific demands of SaaS, including continuous deployment, recurring customer feedback loops, and subscription-revenue pressures that make traditional timeline roadmaps brittle."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: now-next-later-framework

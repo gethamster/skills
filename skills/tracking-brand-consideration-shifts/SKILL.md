@@ -1,6 +1,7 @@
 ---
 name: tracking-brand-consideration-shifts
 description: "This skill teaches you how to measure, record, and visualize changes in the set of brands a customer considers as they progress from latent awareness through active evaluation to a final purchase decision."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

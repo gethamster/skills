@@ -1,6 +1,7 @@
 ---
 name: evolving-north-star-across-growth-stages
 description: "This skill teaches when and how to revisit, refine, or replace your North Star Metric as your product matures — ensuring the metric that guides your entire organization always reflects the core value customers actually derive from your product."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-metric

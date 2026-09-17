@@ -1,6 +1,7 @@
 ---
 name: comparing-posthog-experiments-with-alternative-platforms
 description: "This skill teaches you how to systematically evaluate eppo vs posthog experiments and other A/B testing platforms by scoring them across analysis methods, integrations, pricing, and team workflow fit so you pick the right tool for your experimentation program."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

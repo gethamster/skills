@@ -1,6 +1,7 @@
 ---
 name: running-continuous-learning-loops-from-field-data
 description: "This skill teaches you how to build a repeatable system for capturing deployment insights, failure patterns, and feature requests from customer environments and translating them into structured, prioritized product feedback that core engineering teams can actually act on."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

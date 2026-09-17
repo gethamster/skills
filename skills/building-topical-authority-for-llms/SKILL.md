@@ -1,6 +1,7 @@
 ---
 name: building-topical-authority-for-llms
 description: "This skill teaches you how to create comprehensive, interlinked content clusters that establish the domain expertise signals LLMs use when selecting trusted sources for AI-generated answers."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-seo-optimization

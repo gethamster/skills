@@ -1,6 +1,7 @@
 ---
 name: tracking-progress-with-hill-charts
 description: "Hill charts teach you to visualize whether each scope in a build cycle is still being figured out (uphill) or being executed on known ground (downhill), replacing misleading percentage-complete metrics with honest progress signals."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

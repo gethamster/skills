@@ -1,6 +1,7 @@
 ---
 name: tracking-engagement-and-retention-metrics
 description: "This skill teaches you how to instrument, collect, and analyze behavioral product data—session frequency, feature usage, and cohort retention—to quantify the Engagement and Retention dimensions of the HEART Framework at scale."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework

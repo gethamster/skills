@@ -1,6 +1,7 @@
 ---
 name: comparing-gstack-to-other-ai-coding-frameworks
 description: "This skill teaches you how to systematically evaluate gstack's opinionated multi-agent approach against alternatives like Cursor rules, Aider conventions, and custom system prompts, so you pick the AI coding workflow that actually fits your team."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

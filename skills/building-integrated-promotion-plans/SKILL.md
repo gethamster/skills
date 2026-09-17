@@ -1,6 +1,7 @@
 ---
 name: building-integrated-promotion-plans
 description: "This skill teaches you how to design a cohesive promotion strategy marketing mix that coordinates advertising, content marketing, PR, social media, and sales promotions into a unified plan reinforcing your brand positioning."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

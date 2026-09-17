@@ -1,6 +1,7 @@
 ---
 name: building-start-stop-continue-templates
 description: "This skill teaches you how to design reusable start stop continue templates, worksheets, and digital boards in tools like Miro, Google Docs, and Notion so your feedback sessions are structured, efficient, and consistently produce actionable outcomes."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

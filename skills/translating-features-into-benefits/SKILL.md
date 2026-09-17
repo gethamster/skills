@@ -1,6 +1,7 @@
 ---
 name: translating-features-into-benefits
 description: "This skill teaches a systematic technique for converting technical product features and internal jargon into clear, specific benefit statements written in your customer's own language — the single most important conversion lever in sales copywriting."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

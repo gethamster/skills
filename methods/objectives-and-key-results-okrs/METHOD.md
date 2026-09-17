@@ -1,3 +1,7 @@
+---
+category: Ops
+---
+
 # OKR: The Definitive Guide to Objectives and Key Results
 
 > Created by **Andrew Grove** — [https://en.wikipedia.org/wiki/Andrew_Grove](https://en.wikipedia.org/wiki/Andrew_Grove)

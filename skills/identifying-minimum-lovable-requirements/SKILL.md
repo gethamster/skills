@@ -1,6 +1,7 @@
 ---
 name: identifying-minimum-lovable-requirements
 description: "This skill teaches you how to decompose a finished press release's customer promises into the smallest possible set of technology, infrastructure, and features needed to deliver on those promises at launch, giving your product manager roadmap clarity and defensibility."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

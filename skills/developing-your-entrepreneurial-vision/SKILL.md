@@ -1,6 +1,7 @@
 ---
 name: developing-your-entrepreneurial-vision
 description: "This skill teaches you how to step into the entrepreneur role in business by crafting a future-focused vision, identifying market opportunities before competitors do, and translating that vision into a strategic narrative your team and systems can execute against."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

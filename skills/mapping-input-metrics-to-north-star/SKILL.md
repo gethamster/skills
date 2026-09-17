@@ -1,6 +1,7 @@
 ---
 name: mapping-input-metrics-to-north-star
 description: "This skill teaches you how to identify, define, and validate the 3-5 input metrics that causally drive your North Star Metric, turning an abstract guiding star into a concrete product manager roadmap of measurable levers your teams can actually move."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-framework

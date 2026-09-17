@@ -1,6 +1,7 @@
 ---
 name: applying-contextual-judgment-in-claude-ai-workflows
 description: "This skill teaches you how to structure prompts and workflows that leverage Claude AI's preference for contextual moral reasoning, producing outputs that handle ambiguity and competing priorities with genuine nuance rather than mechanical rule-following."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

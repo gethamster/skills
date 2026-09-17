@@ -1,6 +1,7 @@
 ---
 name: creating-job-maps
 description: "This skill teaches you to decompose a customer's core functional job into eight universal process steps, producing a visual map that anchors your product manager roadmap in the actual structure of what customers are trying to accomplish."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

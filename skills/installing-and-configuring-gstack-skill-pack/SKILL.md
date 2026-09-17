@@ -1,6 +1,7 @@
 ---
 name: installing-and-configuring-gstack-skill-pack
 description: "This skill teaches you how to clone gstack from GitHub, wire it into your AI coding agent's command system, and configure it so all 23 specialist skills and 8 power tools are available via slash commands."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

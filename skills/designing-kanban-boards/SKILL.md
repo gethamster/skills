@@ -1,6 +1,7 @@
 ---
 name: designing-kanban-boards
 description: "This skill teaches you how to structure columns, swimlanes, and card layouts on a kanban board so the board becomes an accurate, real-time map of how work actually flows through your team."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

@@ -1,6 +1,7 @@
 ---
 name: measuring-adoption-and-task-success
 description: "This skill teaches you how to track new user onboarding funnels, feature adoption curves, and task-completion rates to evaluate the Adoption and Task Success dimensions of the HEART Framework."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework

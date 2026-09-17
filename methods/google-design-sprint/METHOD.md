@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # The Design Sprint: A Practitioner's Guide to Five Days That Replace Months of Debate
 
 > Created by **Jake Knapp** — [https://www.gv.com/sprint/](https://www.gv.com/sprint/)

@@ -1,6 +1,7 @@
 ---
 name: generating-and-banking-product-ideas
 description: "This skill teaches you how to create, populate, and maintain an always-open idea bank that continuously captures hypothetical solutions mapped to strategic goals, so your team never runs out of validated candidates when planning step-project experiments."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

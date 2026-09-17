@@ -1,6 +1,7 @@
 ---
 name: identifying-input-metrics
 description: "This skill teaches you how to break down your North Star Metric into a set of actionable, team-level input metrics that collectively drive your core product outcome — turning a single guiding number into a practical system of levers your organization can pull every day."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-metric

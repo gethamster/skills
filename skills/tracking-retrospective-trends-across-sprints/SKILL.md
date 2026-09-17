@@ -1,6 +1,7 @@
 ---
 name: tracking-retrospective-trends-across-sprints
 description: "This skill teaches you how to aggregate, tag, and analyze feedback from multiple 4Ls retrospectives over time so you can identify systemic patterns and quantify your team's continuous improvement trajectory."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: 4ls-retrospective

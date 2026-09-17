@@ -1,6 +1,7 @@
 ---
 name: running-ab-tests-in-posthog-experiments-tab
 description: "This skill teaches you how to run experiments in PostHog from start to finish, covering experiment creation, variant allocation via feature flags, goal metric configuration, launch, and result monitoring inside the Experiments UI."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

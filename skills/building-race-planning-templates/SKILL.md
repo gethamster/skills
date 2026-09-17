@@ -1,6 +1,7 @@
 ---
 name: building-race-planning-templates
 description: "Learn how to create structured, actionable customer journey templates and planning spreadsheets that map objectives, tactics, channels, and KPIs across all four RACE stages — Reach, Act, Convert, and Engage."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

@@ -1,6 +1,7 @@
 ---
 name: validating-business-model-market-fit
 description: "This skill teaches you how to confirm that your pricing, revenue model, and monetization strategy genuinely align with the willingness-to-pay and purchasing behavior of your target market—the final and often most neglected fit in the Four Fits Framework."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

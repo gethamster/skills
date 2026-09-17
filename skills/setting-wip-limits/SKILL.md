@@ -1,6 +1,7 @@
 ---
 name: setting-wip-limits
 description: "This skill teaches you how to calculate, set, and enforce WIP limits for each stage of your kanban board so work flows smoothly, bottlenecks surface early, and your team stops context-switching between too many items at once."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

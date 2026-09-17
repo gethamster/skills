@@ -1,6 +1,7 @@
 ---
 name: designing-role-based-time-allocation
 description: "This skill teaches you how to structure your weekly schedule so you intentionally divide hours between doing the work (technician), building systems and managing people (manager), and thinking about vision and growth (entrepreneur), instead of letting urgency decide for you."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

@@ -1,6 +1,7 @@
 ---
 name: categorizing-and-prioritizing-feedback-items
 description: "This skill teaches you how to sort, cluster, and dot-vote on collected Start, Stop, and Continue feedback items so your team commits to the highest-impact actions instead of drowning in a long, undifferentiated list."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

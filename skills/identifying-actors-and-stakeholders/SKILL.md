@@ -1,6 +1,7 @@
 ---
 name: identifying-actors-and-stakeholders
 description: "This skill teaches you how to systematically discover, categorize, and prioritize the users, customers, and internal stakeholders whose behavior changes will drive your business goal within an impact map."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

@@ -1,6 +1,7 @@
 ---
 name: translating-tab-findings-to-product-roadmap
 description: "This skill teaches you how to systematically convert raw developer feedback from TAB discovery calls into prioritized product roadmap items and go-to-market positioning, ensuring every feature decision traces back to validated pain points."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework

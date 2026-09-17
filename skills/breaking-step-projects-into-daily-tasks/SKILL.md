@@ -1,6 +1,7 @@
 ---
 name: breaking-step-projects-into-daily-tasks
 description: "This skill teaches you how to decompose a validated step-project into granular, developer-ready tasks that fit on a Kanban board or sprint backlog, so your team can ship experimental work in predictable daily increments."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

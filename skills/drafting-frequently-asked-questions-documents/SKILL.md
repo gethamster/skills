@@ -1,6 +1,7 @@
 ---
 name: drafting-frequently-asked-questions-documents
 description: "This skill teaches you to write external and internal FAQ sections that systematically stress-test every assumption in your PR/FAQ document, surfacing the hardest questions before a single line of code is written."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

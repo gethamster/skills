@@ -1,6 +1,7 @@
 ---
 name: categorizing-requirements-into-moscow-buckets
 description: "This skill teaches you how to evaluate each requirement or feature against clear criteria and assign it to the correct MoSCoW category — must have, should have, could have, or won't have — so your team ships what matters most."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

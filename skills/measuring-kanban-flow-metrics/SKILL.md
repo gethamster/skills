@@ -1,6 +1,7 @@
 ---
 name: measuring-kanban-flow-metrics
 description: "This skill teaches you how to collect, calculate, and interpret the four core flow metrics in a kanban system so you can diagnose bottlenecks, forecast delivery dates, and drive continuous improvement with data instead of gut feel."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

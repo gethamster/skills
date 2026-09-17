@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # North Star Framework: How Every Product Manager Aligns Teams Around One Metric
 
 > Created by **Sean Ellis** — [https://www.seanellis.me/](https://www.seanellis.me/)

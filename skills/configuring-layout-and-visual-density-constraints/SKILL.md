@@ -1,6 +1,7 @@
 ---
 name: configuring-layout-and-visual-density-constraints
 description: "Teaches you how to write grid, container, and density rules inside SKILL.md files so AI coding agents produce tighter, more intentional page compositions instead of the loosely spaced, single-column defaults they gravitate toward."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

@@ -1,6 +1,7 @@
 ---
 name: prioritizing-ideas-with-ice-scoring
 description: "ICE scoring teaches you to evaluate and rank competing product ideas by systematically scoring each on Impact, Confidence, and Ease, producing a prioritized list that tells your team which hypotheses to test first."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

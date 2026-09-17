@@ -1,6 +1,7 @@
 ---
 name: calculating-rice-scores
 description: "Apply the RICE formula to a product backlog and produce a numerically ranked priority list."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: rice-framework

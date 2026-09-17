@@ -1,6 +1,7 @@
 ---
 name: building-pm-career-development-plans
 description: "This skill teaches you how to translate raw competency assessment scores into a structured, time-bound career development plan that tells a product manager exactly what to work on, how to work on it, and how to measure progress toward their next role."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

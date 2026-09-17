@@ -1,6 +1,7 @@
 ---
 name: defining-measurable-key-results
 description: "This skill teaches you how to write specific, quantifiable key results with clear metrics and numeric targets that accurately measure progress toward an objective, turning aspirational goals into trackable outcomes."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

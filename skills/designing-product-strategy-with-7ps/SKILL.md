@@ -1,6 +1,7 @@
 ---
 name: designing-product-strategy-with-7ps
 description: "This skill teaches you how to define, refine, and position your product or service offering by systematically analyzing features, benefits, branding, and lifecycle stages as the foundational 'P' of the 7 Ps marketing mix."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

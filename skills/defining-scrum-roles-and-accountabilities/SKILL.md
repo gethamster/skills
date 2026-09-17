@@ -1,6 +1,7 @@
 ---
 name: defining-scrum-roles-and-accountabilities
 description: "This skill teaches you how to clearly establish and operate within the Product Owner, Scrum Master, and Development Team roles so your Scrum implementation has the structural clarity needed for effective self-organization and delivery."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

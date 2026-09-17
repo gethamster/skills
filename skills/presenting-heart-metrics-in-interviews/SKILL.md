@@ -1,6 +1,7 @@
 ---
 name: presenting-heart-metrics-in-interviews
 description: "This skill teaches you how to articulate UX measurement strategies using the HEART framework when answering product manager interview questions about metrics, impact, and success criteria."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework

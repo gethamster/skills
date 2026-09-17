@@ -1,6 +1,7 @@
 ---
 name: communicating-roadmaps-to-stakeholders
 description: "This skill teaches you how to present a timeline-free, horizon-based product roadmap to executives, customers, and cross-functional teams so they understand priorities and sequence without latching onto false delivery dates."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: now-next-later-framework

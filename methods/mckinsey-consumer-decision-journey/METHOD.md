@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # McKinsey Consumer Decision Journey: Rethinking the Customer Journey as a Circular Loop
 
 > Created by **McKinsey & Company** — [https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)

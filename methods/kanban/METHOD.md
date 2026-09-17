@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # Kanban: The Visual Workflow Method for Continuous Delivery
 
 > Created by **Taiichi Ohno**

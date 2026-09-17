@@ -1,6 +1,7 @@
 ---
 name: building-a-journey-portfolio-inventory
 description: "This skill teaches you how to systematically catalog every customer journey in your organization into a single, structured portfolio that becomes the foundation for ecosystem-level analysis, prioritization, and cross-journey optimization."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

@@ -1,6 +1,7 @@
 ---
 name: choosing-ai-pricing-models
 description: "This skill teaches you a structured decision framework for selecting the right AI pricing model—per-seat, per-token/usage, per-outcome, or hybrid—by evaluating your product's cost structure, value delivery pattern, and market context."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

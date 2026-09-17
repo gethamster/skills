@@ -1,6 +1,7 @@
 ---
 name: mapping-initiatives-to-business-outcomes
 description: "This skill teaches you how to draw explicit, evidence-based connections between every proposed feature, experiment, or initiative and the specific business outcome it is designed to drive, so nothing lands on your roadmap without a clear strategic rationale."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

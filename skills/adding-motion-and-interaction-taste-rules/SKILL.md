@@ -1,6 +1,7 @@
 ---
 name: adding-motion-and-interaction-taste-rules
 description: "Teaches you how to specify animation timing, easing curves, hover states, and transition guidelines inside SKILL.md files so AI coding agents produce interfaces that feel polished and intentional rather than static or gratuitously animated."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

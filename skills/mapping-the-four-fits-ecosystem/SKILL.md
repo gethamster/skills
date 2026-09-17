@@ -1,6 +1,7 @@
 ---
 name: mapping-the-four-fits-ecosystem
 description: "This skill teaches you how to diagram and audit the dependencies across all four fits in Brian Balfour's framework so you can pinpoint exactly where a misalignment in one fit is constraining growth across the entire system."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

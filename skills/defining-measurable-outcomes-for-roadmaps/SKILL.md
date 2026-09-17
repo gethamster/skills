@@ -1,6 +1,7 @@
 ---
 name: defining-measurable-outcomes-for-roadmaps
 description: "This skill teaches product managers how to translate high-level business objectives into specific, measurable outcome statements that replace feature-based milestones and become the organizing units of an outcome-driven roadmap."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

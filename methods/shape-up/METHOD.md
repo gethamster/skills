@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # Shape Up: The Product Manager's Guide to Fixed-Time, Variable-Scope Development
 
 > Created by **Basecamp (formerly 37Signals)** — [https://basecamp.com](https://basecamp.com)

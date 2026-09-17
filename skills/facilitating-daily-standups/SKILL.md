@@ -1,6 +1,7 @@
 ---
 name: facilitating-daily-standups
 description: "This skill teaches you how to run daily standup agile ceremonies that surface blockers early, keep the team aligned on sprint goals, and finish in 15 minutes or less without drifting into status reports or problem-solving sessions."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

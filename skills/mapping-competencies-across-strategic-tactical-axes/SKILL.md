@@ -1,6 +1,7 @@
 ---
 name: mapping-competencies-across-strategic-tactical-axes
 description: "This skill teaches you to classify and plot every core product management competency onto a two-dimensional grid, giving you a visual map of where each capability sits along strategic-tactical and internal-external dimensions so you can diagnose gaps, shape roles, and guide development."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

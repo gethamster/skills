@@ -1,6 +1,7 @@
 ---
 name: grooming-the-product-backlog
 description: "This skill teaches you how to continuously prioritize, estimate, and detail backlog items so your Scrum team always has a pipeline of sprint-ready work with clear acceptance criteria."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

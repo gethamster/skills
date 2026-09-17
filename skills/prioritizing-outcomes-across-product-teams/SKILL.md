@@ -1,6 +1,7 @@
 ---
 name: prioritizing-outcomes-across-product-teams
 description: "This skill teaches you how to evaluate, score, and rank multiple desired business outcomes across product teams when resources are limited, using impact estimation, confidence scoring, and strategic alignment criteria to produce a defensible priority stack."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

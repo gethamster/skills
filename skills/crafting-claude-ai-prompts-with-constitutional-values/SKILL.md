@@ -1,6 +1,7 @@
 ---
 name: crafting-claude-ai-prompts-with-constitutional-values
 description: "This skill teaches you how to write prompts that activate Claude's constitutional principles of helpfulness, honesty, and harmlessness, producing SEO content that is more accurate, more nuanced, and less likely to require heavy editing or fact-checking."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

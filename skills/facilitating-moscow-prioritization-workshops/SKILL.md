@@ -1,6 +1,7 @@
 ---
 name: facilitating-moscow-prioritization-workshops
 description: "This skill teaches you how to run a structured MoSCoW analysis session that drives stakeholder alignment, manages conflicting opinions, and produces a consensus-based priority list ready for roadmap planning."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

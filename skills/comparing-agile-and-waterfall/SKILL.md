@@ -1,6 +1,7 @@
 ---
 name: comparing-agile-and-waterfall
 description: "This skill teaches you how to systematically evaluate project characteristics, organizational constraints, and risk profiles to decide whether agile or waterfall will deliver better outcomes for a specific initiative."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

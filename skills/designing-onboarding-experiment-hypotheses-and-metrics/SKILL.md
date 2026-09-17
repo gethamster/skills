@@ -1,6 +1,7 @@
 ---
 name: designing-onboarding-experiment-hypotheses-and-metrics
 description: "This skill teaches you how to formulate a testable hypothesis, select the right primary and secondary conversion metrics, and define what winning looks like before launching an onboarding A/B test in PostHog or any experimentation platform."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

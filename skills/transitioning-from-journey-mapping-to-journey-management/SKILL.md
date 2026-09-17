@@ -1,6 +1,7 @@
 ---
 name: transitioning-from-journey-mapping-to-journey-management
 description: "This skill teaches you how to evolve static, point-in-time journey maps into a dynamic journey management practice where journeys are continuously monitored, owned, measured, and improved across teams."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

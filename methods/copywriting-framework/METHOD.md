@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # The Copywriting Framework: A Conversion-Focused Methodology for Every Page
 
 > Created by **Hamster** — [https://tryhamster.com](https://tryhamster.com)

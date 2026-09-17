@@ -1,6 +1,7 @@
 ---
 name: benchmarking-ai-product-pricing
 description: "This skill teaches you how to systematically research, normalize, and compare AI product pricing across competitors so you can position your own pricing with confidence and data instead of guesswork."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

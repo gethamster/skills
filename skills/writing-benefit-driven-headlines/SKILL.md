@@ -1,6 +1,7 @@
 ---
 name: writing-benefit-driven-headlines
 description: "This skill teaches you how to transform feature-focused headlines into customer-centric benefit statements that immediately communicate value and compel readers to keep reading or take action."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

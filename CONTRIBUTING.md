@@ -8,7 +8,19 @@ New standalone skills belong under `skills/.experimental/<skill-key>/SKILL.md`. 
 
 `skills/` and `methods/` are curated by Hamster maintainers: `methods/<method>/METHOD.md` is each method write-up, and `skills/<skill>/SKILL.md` is a skill that belongs to one of them. Corrections and improvements there are welcome — open a pull request against the file you want changed and say what is wrong with the current text.
 
-Once an experimental skill proves useful and clearly belongs to one of the methods, maintainers move it into `skills/` and give it a `metadata.method` and `metadata.homepage`.
+Once an experimental skill proves useful and clearly belongs to one of the methods, maintainers move it into `skills/` and give it a `metadata.method`, a `metadata.homepage` and the `category` of that method.
+
+## METHOD.md frontmatter contract
+
+Every `methods/<method>/METHOD.md` starts with a frontmatter block naming its category, followed by the H1 and the `> Created by` attribution line:
+
+```yaml
+---
+category: Product
+---
+```
+
+The category is one of the six above. It is the source of truth: every skill in the method repeats it, validation refuses a skill that disagrees, and the skills.sh page shows one section per category. Sections used to be one per method, which stopped working at 50 methods because that is all the skills.sh manifest takes.
 
 ## SKILL.md frontmatter contract
 
@@ -18,6 +30,7 @@ Every `SKILL.md` starts with a `---`-delimited YAML frontmatter block:
 ---
 name: your-skill-key
 description: One or two sentences describing what the skill does and when it applies.
+category: "Product"
 metadata:
   method: lean-startup
   homepage: https://tryhamster.com
@@ -29,6 +42,7 @@ metadata:
 - `name` is capped at 64 characters.
 - `description` is required, must be non-empty, and is capped at 1024 characters, per the [Agent Skills specification](https://agentskills.io/specification).
 - `metadata.method` is required for curated skills and names the directory under `methods/` the skill belongs to. Experimental skills may omit it.
+- `category` is required for curated skills and must equal the category of the method they belong to. It is one of `Product`, `Development`, `Experience`, `Marketing`, `Ops`, `Workflows`, the same set Hamster organises skills by, so a skill keeps its category when it is imported into a workspace. Experimental skills may omit it, and a value outside the set is refused either way.
 - `metadata.homepage` is required for curated skills and must be `https://tryhamster.com`. Experimental skills may omit it.
 - `license` is optional; include it only if the skill is licensed differently from this repository's default MIT license.
 - `metadata.rights` is optional. Omitting it means publishable, which is the normal case. See below.

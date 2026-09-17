@@ -1,6 +1,7 @@
 ---
 name: diagramming-the-double-diamond
 description: "This skill teaches you how to visually map your design process onto the Double Diamond diagram so you can communicate project phases, activities, and progress clearly to stakeholders and team members."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

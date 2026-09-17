@@ -1,6 +1,7 @@
 ---
 name: deciding-what-to-do-in-retrospectives
 description: "This skill teaches you how to help your team select, prioritize, and commit to specific, actionable improvements from a retrospective so they actually get implemented in the next sprint."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

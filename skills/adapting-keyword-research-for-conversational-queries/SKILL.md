@@ -1,6 +1,7 @@
 ---
 name: adapting-keyword-research-for-conversational-queries
 description: "This skill teaches you how to identify and target the natural-language, question-based, and long-tail conversational queries that users actually type into AI search tools and chatbots, so your content gets surfaced in AI-generated answers rather than just traditional SERPs."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-seo-optimization

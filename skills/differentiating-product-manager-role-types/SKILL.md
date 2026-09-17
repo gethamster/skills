@@ -1,6 +1,7 @@
 ---
 name: differentiating-product-manager-role-types
 description: "This skill teaches you to use the two-axis competency quadrant model to create distinct, defensible profiles for technical product manager roles, growth PMs, platform PMs, and generalist PMs based on where their required competencies cluster."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

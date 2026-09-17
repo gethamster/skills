@@ -1,6 +1,7 @@
 ---
 name: running-start-stop-continue-icebreakers
 description: "This skill teaches you how to adapt the Start Stop Continue framework into a lightweight icebreaker that builds psychological safety and gets new or forming teams comfortable giving and receiving feedback."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

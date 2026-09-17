@@ -1,6 +1,7 @@
 ---
 name: customizing-and-extending-gstack-skills
 description: "This skill teaches you how to fork the gstack open-source framework, modify existing specialist skills, and author entirely new skills and power tools that encode your team's specific conventions, tech stack preferences, and quality standards into reusable AI agent instructions."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

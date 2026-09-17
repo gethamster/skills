@@ -1,6 +1,7 @@
 ---
 name: coaching-agile-team-adoption
 description: "This skill teaches you how to function as an agile coach who guides teams through the messy transition from their current workflow to sustainable agile practices, handling resistance, building trust, and sequencing changes so they stick."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

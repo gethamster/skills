@@ -1,6 +1,7 @@
 ---
 name: designing-content-cluster-architectures
 description: "This skill teaches you how to structure pillar pages, supporting articles, and internal linking patterns into cohesive content clusters that signal topical depth to search engines and improve rankings across entire keyword families."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

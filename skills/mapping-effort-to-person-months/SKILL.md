@@ -1,6 +1,7 @@
 ---
 name: mapping-effort-to-person-months
 description: "Convert engineering, design, and QA estimates into consistent person-months so the RICE denominator stays comparable across initiatives."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: rice-framework

@@ -1,6 +1,7 @@
 ---
 name: evaluating-ai-alignment-with-preference-models
 description: "This skill teaches you how to build, calibrate, and validate preference models that score AI-generated outputs for adherence to constitutional principles, enabling systematic evaluation across helpfulness, harmlessness, and honesty dimensions."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: constitutional-ai

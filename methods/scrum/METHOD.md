@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # Scrum: A Complete Guide to Agile's Most Popular Framework
 
 > Created by **Ken Schwaber and Jeff Sutherland** — [https://scrumguides.org/](https://scrumguides.org/)

@@ -1,6 +1,7 @@
 ---
 name: setting-kpis-across-race-stages
 description: "This skill teaches you how to define measurable objectives and key performance indicators for each RACE stage—Reach, Act, Convert, and Engage—so you can quantify performance across the entire customer journey."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

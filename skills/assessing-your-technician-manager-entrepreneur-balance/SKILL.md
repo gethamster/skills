@@ -1,6 +1,7 @@
 ---
 name: assessing-your-technician-manager-entrepreneur-balance
 description: "This skill teaches you to diagnose which of the three E-Myth business personalities currently dominates your work, quantify the imbalance, and identify the specific shifts needed to unlock your next stage of growth."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # The 4Ls Sprint Retrospective: A Complete Guide to Structured Team Reflection
 
 > Created by **Mary Gorman and Ellen Gottesdiener**

@@ -1,6 +1,7 @@
 ---
 name: defining-heart-goals-signals-metrics
 description: "This skill teaches you how to use the Goals-Signals-Metrics (GSM) process to translate each HEART dimension into measurable, actionable product metrics that directly connect user experience outcomes to data you can track."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework

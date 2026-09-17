@@ -1,6 +1,7 @@
 ---
 name: mapping-high-involvement-purchase-journeys
 description: "This skill teaches you how to build a detailed customer journey map for deliberate, research-intensive purchases where buyers spend weeks or months comparing options before committing."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

@@ -1,6 +1,7 @@
 ---
 name: mapping-and-defining-sprint-challenges
 description: "This skill teaches you how to run Day 1 of a design sprint: creating a shared problem map, extracting expert knowledge through structured interviews, and selecting the single focused target that the rest of the sprint will solve."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

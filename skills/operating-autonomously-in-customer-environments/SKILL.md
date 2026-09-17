@@ -1,6 +1,7 @@
 ---
 name: operating-autonomously-in-customer-environments
 description: "This skill teaches forward deployed engineers how to make fast, independent technical decisions inside customer deployments while maintaining clear alignment with their home organization's product roadmap and engineering standards."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

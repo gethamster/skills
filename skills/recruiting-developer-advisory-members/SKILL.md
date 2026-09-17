@@ -1,6 +1,7 @@
 ---
 name: recruiting-developer-advisory-members
 description: "This skill teaches you how to identify, qualify, and recruit a rotating panel of 20–50 developers who represent your target personas and will provide candid, actionable feedback for your devtools product."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework

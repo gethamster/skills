@@ -1,6 +1,7 @@
 ---
 name: planning-and-executing-sprints
 description: "This skill teaches you how to scope, plan, and run time-boxed scrum sprints — including backlog selection, capacity planning, sprint goal setting, and in-sprint execution practices that deliver a potentially shippable increment."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

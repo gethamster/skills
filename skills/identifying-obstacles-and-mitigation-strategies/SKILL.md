@@ -1,6 +1,7 @@
 ---
 name: identifying-obstacles-and-mitigation-strategies
 description: "This skill teaches you how to systematically surface the risks, blockers, and dependencies hiding inside your V2MOM and convert each one into a concrete contingency plan with clear owners, triggers, and countermeasures."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: v2mom-framework

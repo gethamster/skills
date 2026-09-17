@@ -1,6 +1,7 @@
 ---
 name: facilitating-impact-mapping-workshops
 description: "Learn how to prepare, facilitate, and drive alignment in cross-functional impact mapping sessions—a collaborative planning technique frequently explored in product manager interview questions about strategic thinking and stakeholder management."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

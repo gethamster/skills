@@ -1,6 +1,7 @@
 ---
 name: optimizing-moment-of-purchase-triggers
 description: "This skill teaches you how to identify and influence the critical decision stage touchpoints that tip active evaluators into buyers, using the McKinsey Consumer Decision Journey's moment-of-purchase framework."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey

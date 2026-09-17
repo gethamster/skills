@@ -1,6 +1,7 @@
 ---
 name: conducting-sprint-user-tests
 description: "This skill teaches you how to recruit five target-profile participants, run moderated usability interviews against your sprint prototype, capture structured observations as a team, and identify patterns that validate or invalidate the hypothesis you set at the start of the sprint."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

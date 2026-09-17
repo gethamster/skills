@@ -1,6 +1,7 @@
 ---
 name: timing-content-interventions-strategically
 description: "This skill teaches you how to identify optimal windows for publishing new pillar content, refreshing existing pages, and retiring underperforming assets based on trend analysis, seasonality, and competitive signals."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

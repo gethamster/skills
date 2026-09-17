@@ -1,6 +1,7 @@
 ---
 name: diagnosing-growth-stalls-with-four-fits
 description: "This skill teaches you how to use Brian Balfour's Four Fits Framework to systematically pinpoint which specific fit has broken down when growth plateaus or declines, so you can prioritize the highest-leverage corrective actions instead of guessing."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

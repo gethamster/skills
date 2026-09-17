@@ -1,6 +1,7 @@
 ---
 name: closing-retrospectives-effectively
 description: "This skill teaches you how to wrap up a retrospective meeting by summarizing decisions, acknowledging participants, and collecting feedback on the retrospective process itself so that outcomes stick and future sessions improve."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

@@ -1,6 +1,7 @@
 ---
 name: collecting-data-for-six-forces-analysis
 description: "This skill teaches you a repeatable market research process for sourcing, validating, and organizing the specific data points needed to score each of the six forces with confidence rather than guesswork."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-forces-model

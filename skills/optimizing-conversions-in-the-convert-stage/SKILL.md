@@ -1,6 +1,7 @@
 ---
 name: optimizing-conversions-in-the-convert-stage
 description: "This skill teaches you how to apply conversion rate optimization, retargeting campaigns, and persuasion psychology to turn engaged prospects into paying customers at the decision stage of the RACE Framework."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

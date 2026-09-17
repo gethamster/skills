@@ -1,6 +1,7 @@
 ---
 name: interpreting-bayesian-and-frequentist-experiment-results
 description: "Teaches you how to read PostHog's experiment results dashboard, understand the difference between Bayesian credible intervals and frequentist p-values, and make confident ship-or-kill decisions based on the statistical output."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

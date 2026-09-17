@@ -1,6 +1,7 @@
 ---
 name: running-waterfall-testing-phases
 description: "This skill teaches you how to plan, structure, and execute the dedicated testing phase in a waterfall model project — covering unit, integration, system, and acceptance testing to validate that every requirement is met before deployment."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

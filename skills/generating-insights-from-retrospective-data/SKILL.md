@@ -1,6 +1,7 @@
 ---
 name: generating-insights-from-retrospective-data
 description: "This skill teaches you how to facilitate the analysis phase of an agile retrospective, guiding teams to move past surface-level complaints and uncover the root causes, systemic patterns, and meaningful insights that lead to lasting improvements."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

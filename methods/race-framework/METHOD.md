@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # RACE Framework: A Full-Funnel Approach to the Customer Journey
 
 > Created by **Dr. Dave Chaffey** — [https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)

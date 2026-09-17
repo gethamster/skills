@@ -1,6 +1,7 @@
 ---
 name: building-systems-as-the-manager-role
 description: "This skill teaches you how to design, document, and implement operational systems and processes that create order, consistency, and scalability, fulfilling the Manager function within the E-Myth's three essential business roles."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

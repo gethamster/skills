@@ -1,6 +1,7 @@
 ---
 name: using-multi-agent-perspectives-for-development
 description: "This skill teaches you how to structure AI-assisted development sessions by rotating between CEO, engineer, and QA perspectives, so each phase of your workflow gets the right kind of judgment applied to decisions, implementation, and verification."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # The MoSCoW Method: A Complete Guide to Prioritization
 
 > Created by **Dai Clegg**

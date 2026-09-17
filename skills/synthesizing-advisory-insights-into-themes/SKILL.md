@@ -1,6 +1,7 @@
 ---
 name: synthesizing-advisory-insights-into-themes
 description: "This skill teaches you how to code, cluster, and prioritize qualitative feedback from dozens of developer conversations into clear problem themes that inform product direction and devtools technical SEO strategy."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework

@@ -38,6 +38,20 @@ const PUBLISHABLE_RIGHTS = new Set(["original", "public-framework", "licensed"])
 const ATTRIBUTION_RE = /^> Created by /m;
 const RELATIVE_LINK_RE = /\]\(((?:\.\.?\/)[^)#\s]+)(?:#[^)]*)?\)/g;
 
+// The six groups Studio organises skills by. The skills.sh page shows one
+// section per category rather than one per method, because that manifest takes
+// at most 50 sections and the catalog passed 50 methods. Studio reads
+// `category` as a top-level frontmatter field and refuses anything outside
+// this set, so a value that is not here cannot round-trip through a workspace.
+const CATEGORIES = new Set([
+  "Product",
+  "Development",
+  "Experience",
+  "Marketing",
+  "Ops",
+  "Workflows",
+]);
+
 const methodsRoot = join(repoRoot, "methods");
 const skillsRoot = join(repoRoot, "skills");
 const EXPERIMENTAL = ".experimental";
@@ -50,6 +64,7 @@ const failures = [];
 // installers flatten both into a single skill directory.
 const skillNames = new Map();
 const methodSkillCounts = new Map();
+const methodCategories = new Map();
 let skillCount = 0;
 
 // Symlinks are rejected outright rather than followed: readFileSync resolves
@@ -162,6 +177,25 @@ function validateSkill(filePath, { curated }) {
     );
   }
 
+  // Studio stores this on the skill and the library page groups by it, so a
+  // curated skill carries the category of the method it belongs to. The
+  // generator builds the skills.sh sections from the method's own category;
+  // this check keeps the two from drifting.
+  const category = frontmatter.category;
+  if (curated) {
+    if (category === undefined) {
+      failures.push(`${relativePath}/SKILL.md: missing "category" (curated skills carry their method's category)`);
+    } else if (typeof category !== "string" || !CATEGORIES.has(category)) {
+      failures.push(
+        `${relativePath}/SKILL.md: category "${category}" must be one of ${[...CATEGORIES].join(", ")}`,
+      );
+    }
+  } else if (category !== undefined && (typeof category !== "string" || !CATEGORIES.has(category))) {
+    failures.push(
+      `${relativePath}/SKILL.md: category "${category}" must be one of ${[...CATEGORIES].join(", ")}`,
+    );
+  }
+
   // Absent means publishable. Only a declared value is checked, and only
   // `restricted` blocks: this repository is public, so committing here
   // publishes, and material with no grant must not arrive by a move.
@@ -194,6 +228,12 @@ function validateSkill(filePath, { curated }) {
       );
     } else {
       methodSkillCounts.set(method, methodSkillCounts.get(method) + 1);
+      const methodCategory = methodCategories.get(method);
+      if (curated && methodCategory !== undefined && category !== methodCategory) {
+        failures.push(
+          `${relativePath}/SKILL.md: category "${category}" does not match method "${method}" (${methodCategory})`,
+        );
+      }
     }
   } else if (curated) {
     failures.push(`${relativePath}/SKILL.md: missing metadata.method (curated skills belong to a method)`);
@@ -231,9 +271,30 @@ for (const methodName of listSubdirectories(methodsRoot)) {
     failures.push(`${relativeMethod}: missing METHOD.md`);
     continue;
   }
-  // Attribution must sit in the head, directly under the title.
   const content = readFileSync(methodFile, "utf8");
-  if (!ATTRIBUTION_RE.test(content.split("\n").slice(0, 5).join("\n"))) {
+  const methodBlock = extractFrontmatterBlock(content);
+  let methodFrontmatter = null;
+  if (methodBlock === null) {
+    failures.push(`${relativeMethod}/METHOD.md: missing or malformed --- frontmatter block`);
+  } else {
+    try {
+      methodFrontmatter = loadYaml(methodBlock);
+    } catch (err) {
+      failures.push(`${relativeMethod}/METHOD.md: failed to parse frontmatter YAML: ${err.message}`);
+    }
+  }
+  const methodCategory = methodFrontmatter?.category;
+  if (typeof methodCategory === "string" && CATEGORIES.has(methodCategory)) {
+    methodCategories.set(methodName, methodCategory);
+  } else if (methodBlock !== null) {
+    failures.push(
+      `${relativeMethod}/METHOD.md: category "${methodCategory}" must be one of ${[...CATEGORIES].join(", ")}`,
+    );
+  }
+
+  // Attribution must sit in the head, directly under the title.
+  const body = methodBlock === null ? content : content.slice(content.indexOf("\n---", 3) + 4);
+  if (!ATTRIBUTION_RE.test(body.split("\n").slice(0, 6).join("\n"))) {
     failures.push(`${relativeMethod}/METHOD.md: missing a "> Created by" attribution line`);
   }
   checkRelativeLinks(methodFile, content);

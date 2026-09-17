@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # The Planned Journey Framework: Mapping the Customer Journey for High-Stakes Purchases
 
 > Created by **SKIM Group** — [https://www.skimgroup.com/](https://www.skimgroup.com/)

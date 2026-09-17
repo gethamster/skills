@@ -1,6 +1,7 @@
 ---
 name: integrating-impact-maps-with-roadmaps
 description: "This skill teaches you how to translate a completed impact map into a prioritized, outcome-driven product manager roadmap that clearly communicates strategic intent to leadership and engineering teams."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

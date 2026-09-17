@@ -1,6 +1,7 @@
 ---
 name: installing-skill-files-in-ai-coding-agents
 description: "This skill teaches you how to set up and configure Taste Skill SKILL.md instruction files inside AI coding agents like Cursor, Claude Code, Codex, Gemini CLI, and v0 so that every frontend generation follows design-quality rules instead of producing generic, sloppy UI."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

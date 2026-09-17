@@ -1,6 +1,7 @@
 ---
 name: mapping-features-to-roadmap-goals
 description: "This skill teaches you how to group and align specific product features, epics, or capabilities under high-level strategic goals so that every item on your roadmap ties back to a measurable outcome, eliminating orphan work that consumes resources without delivering value."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

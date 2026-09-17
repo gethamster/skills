@@ -1,6 +1,7 @@
 ---
 name: comparing-kanban-and-scrum
 description: "This skill teaches you how to systematically evaluate kanban vs scrum across concrete dimensions of your team's work, then make a defensible choice, blend, or migration plan rather than picking a method based on trend or habit."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

@@ -1,6 +1,7 @@
 ---
 name: managing-scrum-boards-in-jira
 description: "This skill teaches you how to set up and manage Jira scrum boards, configure custom workflows, track team velocity, and generate burndown charts to maintain full sprint visibility."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

@@ -1,6 +1,7 @@
 ---
 name: authoring-portable-skill-files-for-design-systems
 description: "This skill teaches you to create framework-agnostic SKILL.md instruction files that encode your team's design tokens, component conventions, and aesthetic judgment so any AI coding agent produces on-brand UI without manual correction."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

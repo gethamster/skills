@@ -1,6 +1,7 @@
 ---
 name: designing-retention-and-loyalty-strategies
 description: "This skill teaches you how to build structured post-purchase engagement programs, loyalty loops, and churn-reduction tactics that systematically increase customer lifetime value and reduce attrition within the retention stage of the customer journey."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

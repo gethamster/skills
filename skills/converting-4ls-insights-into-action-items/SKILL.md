@@ -1,6 +1,7 @@
 ---
 name: converting-4ls-insights-into-action-items
 description: "This skill teaches you how to synthesize raw feedback from a 4Ls Retrospective into prioritized, concrete action items with clear ownership that carry forward into the next sprint."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: 4ls-retrospective

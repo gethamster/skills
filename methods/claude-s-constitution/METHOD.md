@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # Claude's Constitution: How Anthropic's Alignment Framework Shapes AI-Driven SEO
 
 > Created by **Anthropic** — [https://www.anthropic.com](https://www.anthropic.com)

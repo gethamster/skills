@@ -1,6 +1,7 @@
 ---
 name: managing-change-requests-in-waterfall
 description: "This skill teaches you how to evaluate, document, and process scope change requests through a formal change control board so you can handle inevitable changes without derailing your sequential waterfall model project plan."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

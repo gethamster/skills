@@ -1,6 +1,7 @@
 ---
 name: writing-anti-slop-design-review-rules
 description: "This skill teaches you how to author concrete, testable checklist rules inside SKILL.md files that catch the most common AI-generated UI anti-patterns, such as oversized padding, default border-radius, and bland color choices, before code ships to production."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

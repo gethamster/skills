@@ -1,6 +1,7 @@
 ---
 name: validating-north-star-with-user-research
 description: "This skill teaches you how to use qualitative user research and customer insights to confirm that your chosen North Star Metric genuinely reflects the core value customers derive from your product, preventing misalignment before it compounds across teams."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-metric

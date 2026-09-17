@@ -1,6 +1,7 @@
 ---
 name: conducting-industry-rivalry-assessment
 description: "This skill teaches you how to systematically evaluate the intensity of competitive rivalry within an industry by combining quantitative market data with qualitative market research methods, producing a scored assessment that feeds directly into a Six Forces strategic analysis."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-forces-model

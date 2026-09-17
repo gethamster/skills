@@ -1,6 +1,7 @@
 ---
 name: structuring-roadmap-timeframes
 description: "This skill teaches you how to divide a goal-oriented product roadmap into time horizons that communicate the right level of certainty to stakeholders while preserving the team's ability to adapt as new information arrives."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

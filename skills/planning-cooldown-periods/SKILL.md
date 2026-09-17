@@ -1,6 +1,7 @@
 ---
 name: planning-cooldown-periods
 description: "Teaches you how to structure the cool-down period between Shape Up build cycles so teams can fix bugs, pay down technical debt, explore new ideas, and prepare shaped work for the next betting table."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

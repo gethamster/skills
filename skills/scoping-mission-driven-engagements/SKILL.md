@@ -1,6 +1,7 @@
 ---
 name: scoping-mission-driven-engagements
 description: "This skill teaches you how to define clear, outcome-bound missions for forward deployed engineering work so that every forward deployed engineer responsibility stays anchored to shipping production results rather than drifting into open-ended advisory work."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

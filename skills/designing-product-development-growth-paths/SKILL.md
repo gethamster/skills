@@ -1,6 +1,7 @@
 ---
 name: designing-product-development-growth-paths
 description: "This skill teaches you how to plan, evaluate, and prioritize new product or service offerings for existing markets, ensuring your innovation pipeline directly supports your marketing strategy and growth goals."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

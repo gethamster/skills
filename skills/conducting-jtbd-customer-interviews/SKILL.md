@@ -1,6 +1,7 @@
 ---
 name: conducting-jtbd-customer-interviews
 description: "This skill teaches you how to run switch interviews and timeline interviews that uncover the real jobs, hiring criteria, and switching triggers behind customer decisions, giving you the raw material for every other activity in the JTBD framework."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

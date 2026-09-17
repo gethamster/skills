@@ -1,6 +1,7 @@
 ---
 name: aligning-okrs-across-teams
 description: "This skill teaches you how to cascade and connect OKRs from company-level strategy through departments and individual contributors so that every team's work reinforces the same strategic priorities without creating rigid top-down mandates."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

@@ -1,6 +1,7 @@
 ---
 name: integrating-posthog-experiments-with-webflow-and-marketing-pages
 description: "Teaches you how to wire PostHog experiments into Webflow and other no-code marketing pages so you can run A/B tests on headlines, CTAs, pricing layouts, and onboarding flows without a full development cycle."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: posthog-experiments-onboarding-a-b-test-method

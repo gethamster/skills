@@ -1,6 +1,7 @@
 ---
 name: presenting-gist-plans-to-stakeholders
 description: "This skill teaches you how to communicate the four-layer GIST hierarchy, from Goals through Tasks, to executives, cross-functional teams, and interviewers so your strategic thinking is visible and persuasive."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

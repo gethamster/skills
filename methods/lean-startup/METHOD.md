@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # The Lean Startup: A Complete Guide to Validated Product Development
 
 > Created by **Eric Ries** — [https://theleanstartup.com/](https://theleanstartup.com/)

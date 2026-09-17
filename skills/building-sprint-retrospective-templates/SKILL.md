@@ -1,6 +1,7 @@
 ---
 name: building-sprint-retrospective-templates
 description: "This skill teaches you how to design reusable sprint retrospective templates that assign specific activities to each of the five retrospective phases, enabling consistent and time-efficient facilitation across sprints."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

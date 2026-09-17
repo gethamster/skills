@@ -1,6 +1,7 @@
 ---
 name: defining-measurable-business-goals
 description: "This skill teaches you how to formulate clear, quantifiable business objectives that serve as the root of an impact map, ensuring every item on your product manager roadmap traces back to a measurable strategic outcome."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

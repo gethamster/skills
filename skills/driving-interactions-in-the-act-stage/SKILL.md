@@ -1,6 +1,7 @@
 ---
 name: driving-interactions-in-the-act-stage
 description: "This skill teaches you how to design content, landing pages, and engagement tactics that move prospects through the consideration stage buyer journey — from passive awareness to active interaction with your brand."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

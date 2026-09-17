@@ -1,6 +1,7 @@
 ---
 name: prioritizing-opportunities-using-customer-evidence
 description: "This skill teaches you how to systematically assess and compare opportunity nodes in an Opportunity Solution Tree by evaluating the frequency, severity, and breadth of customer evidence so you can confidently decide where to focus solution ideation."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

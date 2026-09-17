@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # AI Product Pricing Models: Unit Economics, Tiering & the Playbook That Works
 
 > Created by **Stripe** — [https://stripe.com](https://stripe.com)

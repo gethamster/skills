@@ -1,6 +1,7 @@
 ---
 name: evaluating-market-penetration-strategies
 description: "This skill teaches you how to systematically analyze, compare, and select tactics — from pricing changes to lead generation campaigns — that increase market share for your existing products in your current markets."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

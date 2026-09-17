@@ -1,6 +1,7 @@
 ---
 name: building-planned-journey-funnel-visualizations
 description: "This skill teaches you to translate the latent, evaluation, and buying stage model into funnel diagrams and journey maps that communicate drop-off rates, conversion opportunities, and stage-specific insights to stakeholders and decision-makers."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

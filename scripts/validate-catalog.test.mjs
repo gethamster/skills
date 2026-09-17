@@ -26,6 +26,7 @@ function skill(
     description = "What it does and when to use it.",
     body = SKILL_BODY,
     method = "lean-startup",
+    category = "Product",
     homepage = "https://tryhamster.com",
     rights = null,
     license = null,
@@ -37,7 +38,8 @@ function skill(
   if (rights !== null) lines.push(`  rights: ${rights}`);
   if (license !== null) lines.push(`  license: ${license}`);
   const metadata = lines.length ? `metadata:\n${lines.join("\n")}\n` : "";
-  return `---\nname: ${name}\ndescription: ${JSON.stringify(description)}\n${metadata}---\n${body}`;
+  const categoryLine = category === null ? "" : `category: ${JSON.stringify(category)}\n`;
+  return `---\nname: ${name}\ndescription: ${JSON.stringify(description)}\n${categoryLine}${metadata}---\n${body}`;
 }
 
 function file(root, relativePath, contents) {
@@ -57,7 +59,7 @@ function fixture(build) {
   file(root, "README.md", "# Fixture\n\n<!-- catalog:start -->\n<!-- catalog:end -->\n");
   symlinkSync(join(repoRoot, "node_modules"), join(root, "node_modules"), "dir");
 
-  file(root, "methods/lean-startup/METHOD.md", "# Lean Startup\n\n> Created by **Eric Ries** — [link](https://theleanstartup.com)\n");
+  file(root, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n\n> Created by **Eric Ries** — [link](https://theleanstartup.com)\n");
   file(root, "skills/running-experiments/SKILL.md", skill("running-experiments"));
   build?.(root);
   return root;
@@ -150,7 +152,7 @@ test("a curated skill must name an existing method, and every method must own a 
     /metadata\.method "no-such-method" does not name a directory under methods\//,
   );
   rejects(
-    fixture((r) => file(r, "methods/kanban/METHOD.md", "# Kanban\n\n> Created by **Taiichi Ohno**\n")),
+    fixture((r) => file(r, "methods/kanban/METHOD.md", "---\ncategory: Product\n---\n\n# Kanban\n\n> Created by **Taiichi Ohno**\n")),
     /methods\/kanban: no skill names it in metadata\.method/,
   );
   // An experimental skill may point at a method, but only a real one.
@@ -201,7 +203,7 @@ test("a relative link to a path that does not exist is rejected, so renames cann
   );
   rejects(
     fixture((r) =>
-      file(r, "methods/lean-startup/METHOD.md", "# Lean Startup\n\n> Created by **Eric Ries**\n\n[x](../../skills/missing/SKILL.md)\n"),
+      file(r, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n\n> Created by **Eric Ries**\n\n[x](../../skills/missing/SKILL.md)\n"),
     ),
     /METHOD\.md: link target "\.\.\/\.\.\/skills\/missing\/SKILL\.md" does not exist/,
   );
@@ -289,12 +291,12 @@ test("an experimental skill is held to the same rule, since it ships in the same
 
 test("every method must carry its attribution line", () => {
   rejects(
-    fixture((r) => file(r, "methods/lean-startup/METHOD.md", "# Lean Startup\n\nNo attribution.\n")),
+    fixture((r) => file(r, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n\nNo attribution.\n")),
     /missing a "> Created by" attribution line/,
   );
   // The line has to be the blockquote, not the words appearing in prose.
   rejects(
-    fixture((r) => file(r, "methods/lean-startup/METHOD.md", "# Lean Startup\n\nThis was Created by a practitioner.\n")),
+    fixture((r) => file(r, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n\nThis was Created by a practitioner.\n")),
     /missing a "> Created by" attribution line/,
   );
   // README promises it sits directly under the title, so a late one is not it.
@@ -398,7 +400,7 @@ test("an empty or missing catalog is refused rather than reported as a pass", ()
 test("failures accumulate instead of stopping at the first", () => {
   const { code, output } = validate(
     fixture((r) => {
-      file(r, "methods/lean-startup/METHOD.md", "# Lean Startup\n");
+      file(r, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n");
       file(r, "skills/running-experiments/SKILL.md", skill("Wrong_Name", { homepage: null }));
     }),
   );
@@ -423,23 +425,51 @@ test("the manifest drift check fails on stale generated files and passes once re
   assert.equal(run().code, 0);
   assert.equal(run("--check").code, 0, "freshly generated files are up to date");
 
+  // Sections are per category, not per method: skills.sh takes at most 50 of
+  // them and the catalog has more methods than that.
   const manifest = JSON.parse(readFileSync(join(root, "skills.sh.json"), "utf8"));
-  assert.deepEqual(manifest.groupings, [
-    { title: "Lean Startup", description: "", skills: ["running-experiments"] },
-  ]);
-  assert.match(readFileSync(join(root, "README.md"), "utf8"), /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| \*\*Eric Ries\*\*/);
+  assert.deepEqual(
+    manifest.groupings.map(({ title, skills }) => ({ title, skills })),
+    [{ title: "Product", skills: ["running-experiments"] }],
+  );
+  assert.match(
+    readFileSync(join(root, "README.md"), "utf8"),
+    /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \| \*\*Eric Ries\*\*/,
+  );
 
-  // Group descriptions are published copy: the subtitle wins, and the body
-  // fallback must not stop at an initial.
-  file(root, "methods/lean-startup/METHOD.md", "# Lean Startup: Build, Measure, Learn\n\n> Created by **Eric Ries**\n\nIn 2011, Eric E. Ries wrote it. More.\n");
-  file(root, "methods/kanban/METHOD.md", "# Kanban\n\n> Created by **Taiichi Ohno**\n\nIn 1953, Taiichi E. Ohno started **Kanban** at Toyota. More.\n");
-  file(root, "skills/limiting-wip/SKILL.md", skill("limiting-wip", { method: "kanban" }));
+  // Two methods in different categories become two sections, each holding the
+  // skills of its own methods, sorted and independent of method order.
+  file(root, "methods/kanban/METHOD.md", "---\ncategory: Workflows\n---\n\n# Kanban\n\n> Created by **Taiichi Ohno**\n");
+  file(
+    root,
+    "skills/limiting-wip/SKILL.md",
+    skill("limiting-wip", { method: "kanban", category: "Workflows" }),
+  );
   assert.equal(run().code, 0);
   const regenerated = JSON.parse(readFileSync(join(root, "skills.sh.json"), "utf8"));
-  assert.deepEqual(regenerated.groupings.map(({ title, description }) => ({ title, description })), [
-    { title: "Kanban", description: "In 1953, Taiichi E. Ohno started Kanban at Toyota." },
-    { title: "Lean Startup", description: "Build, Measure, Learn" },
-  ]);
+  assert.deepEqual(
+    regenerated.groupings.map(({ title, skills }) => ({ title, skills })),
+    [
+      { title: "Product", skills: ["running-experiments"] },
+      { title: "Workflows", skills: ["limiting-wip"] },
+    ],
+  );
+  // A skill whose category contradicts its method is refused, so the two can
+  // never drift.
+  file(
+    root,
+    "skills/limiting-wip/SKILL.md",
+    skill("limiting-wip", { method: "kanban", category: "Product" }),
+  );
+  const mismatch = validate(root);
+  assert.equal(mismatch.code, 1);
+  assert.match(mismatch.output, /does not match method "kanban" \(Workflows\)/);
+  file(
+    root,
+    "skills/limiting-wip/SKILL.md",
+    skill("limiting-wip", { method: "kanban", category: "Workflows" }),
+  );
+  assert.equal(run().code, 0);
 
   file(root, "skills/naming-things/SKILL.md", skill("naming-things"));
   const stale = run("--check");

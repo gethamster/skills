@@ -1,6 +1,7 @@
 ---
 name: tracking-developer-sentiment-across-sessions
 description: "This skill teaches you how to build a lightweight CRM and tagging system that tracks how developer pain points, tool preferences, and sentiment shift over multiple advisory cycles — cross-referencing qualitative insights with google search console devtools data to validate problem evolution."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: technical-advisory-board-tab-framework

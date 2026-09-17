@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # Now Next Later Framework: How to Build Roadmaps Without False Deadlines
 
 > Created by **Janna Bastow** — [https://www.prodpad.com/blog/invented-now-next-later-roadmap/](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)

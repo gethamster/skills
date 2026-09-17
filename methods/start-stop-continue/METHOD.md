@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # Start Stop Continue: A Simple Framework for Actionable Team Feedback
 
 > Created by **Unknown**

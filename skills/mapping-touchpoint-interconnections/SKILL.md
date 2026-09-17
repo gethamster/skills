@@ -1,6 +1,7 @@
 ---
 name: mapping-touchpoint-interconnections
 description: "This skill teaches you how to visualize and document the relationships between touchpoints, channels, and journeys so you can see how your entire customer experience ecosystem connects, identify hidden dependencies, and prevent siloed optimization from breaking adjacent experiences."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

@@ -1,6 +1,7 @@
 ---
 name: applying-jtbd-to-product-strategy
 description: "This skill teaches you how to convert job maps, outcome scores, and opportunity landscapes into a prioritized product manager roadmap, feature definitions, and positioning statements grounded in real customer evidence."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

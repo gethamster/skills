@@ -1,6 +1,7 @@
 ---
 name: conducting-7ps-marketing-audits
 description: "This skill teaches you how to systematically evaluate all seven elements of your marketing mix — Product, Price, Place, Promotion, People, Process, and Physical Evidence — to identify gaps, misalignments, and strategic improvement opportunities."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

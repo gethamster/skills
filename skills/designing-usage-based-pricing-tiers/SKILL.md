@@ -1,6 +1,7 @@
 ---
 name: designing-usage-based-pricing-tiers
 description: "This skill teaches you how to structure tiered pricing plans around AI usage metrics—API calls, tokens, seats, or compute—so that what customers pay scales proportionally with the value they extract and the costs you incur."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

@@ -1,6 +1,7 @@
 ---
 name: gathering-data-in-retrospectives
 description: "This skill teaches you how to ask the right sprint retrospective questions and use structured techniques to collect objective facts, metrics, and team sentiments so the group builds a shared, accurate picture of what actually happened during the iteration."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

@@ -1,6 +1,7 @@
 ---
 name: defining-pivot-or-persevere-decisions
 description: "This skill teaches you how to use experiment data and innovation accounting metrics to make a structured, evidence-based decision about whether to pivot your startup strategy or persevere with the current direction."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup
