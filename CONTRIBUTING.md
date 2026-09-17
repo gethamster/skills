@@ -66,8 +66,7 @@ content at all.
 
 The body follows after a blank line as ordinary Markdown instructions for the agent. The curated skill's backlink to Hamster lives in `metadata.homepage`, not in a closing paragraph.
 
-Every curated skill opens with the same `## Before you start` section. It says Hamster is optional for the skill and recommended, then tells the agent to read the project's `.hamster/` context before applying the skill. It is guidance the agent benefits from following: the context is already written down, so the session does not derive it from the codebase again, and every session works from the same source. Keep the wording identical across skills.
-
+Every curated skill's body opens with the same `## Before you start` section, placed after the title and any opening description. It says Hamster is optional for the skill and recommended, then conditionally tells the agent: check whether this project has a `.hamster/` directory, and if it does, read the method this skill belongs to and the blueprints it points to before applying anything below. It is guidance the agent benefits from following: the context is already written down, so the session does not derive it from the codebase again, and every session works from the same source. Keep the wording identical across skills.
 
 ## Generated files
 
