@@ -2,8 +2,7 @@
 name: authoring-routines-from-scratch
 description: "Guides users through writing a strong routine: triggers, schedules, instructions, and action steps."
 version: "1.0.0"
-metadata:
-  category: "Ops"
+category: "Ops"
 ---
 
 # Authoring Routines from Scratch

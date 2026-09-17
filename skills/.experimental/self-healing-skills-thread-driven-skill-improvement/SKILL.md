@@ -2,8 +2,7 @@
 name: self-healing-skills-thread-driven-skill-improvement
 description: "Analyze any conversation thread for skill gaps and improvement opportunities. When a thread involves friction, trial-and-error, or discovery that could have been avoided with better skill documentation, this skill provides the protocol to identify whether to UPDATE an existing skill, CREATE a new one, or take NO ACTION. Makes the self-improving organizational harness systematic: every conversation with friction becomes a captured knowledge opportunity."
 version: "1.0.0"
-metadata:
-  category: "Workflows"
+category: "Workflows"
 ---
 
 # Self-Healing Skills: Thread-Driven Skill Improvement

@@ -2,8 +2,7 @@
 name: market-signal-intake
 description: "Turn market signals (competitive moves, customer churn, support patterns, search console data, product analytics) into structured direction inputs. Enforces signal-noise separation, confidence levels, and routing through discovery — not delivery. Produces a ranked signal log that feeds Phase 3 (Run Discovery) of the Hamster Direction workflow."
 version: "1.0.0"
-metadata:
-  category: "Product"
+category: "Product"
 ---
 
 # Market Signal Intake

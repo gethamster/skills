@@ -2,8 +2,7 @@
 name: direction-routines
 description: "Guide creating goal-linked routines that monitor health, nudge owners, and create briefs when goals drift. Enforces the closed loop: goals → routines monitor → nudges inform discovery → work informs direction. Routines nudge — they never decide. Use when creating or configuring a routine that monitors goal health or initiative status, or when a user asks to automate goal monitoring or set up alerts for drifting goals."
 version: "1.0.0"
-metadata:
-  category: "Workflows"
+category: "Workflows"
 ---
 
 # Direction Routines

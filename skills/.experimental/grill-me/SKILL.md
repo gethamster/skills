@@ -2,8 +2,7 @@
 name: grill-me
 description: "Thoroughly flesh out an idea by exploring, then asking several questions to resolve ambiguous concepts"
 version: "1.0.0"
-metadata:
-  category: "Experience"
+category: "Experience"
 ---
 
 Interview me relentlessly about every aspect of this plan until we reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.

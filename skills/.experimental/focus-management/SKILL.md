@@ -2,8 +2,7 @@
 name: focus-management
 description: "Guides the now/next/later focus system for initiatives. Focus is a third dimension independent of state and health. Now must stay small (5-7 max). The routine suggests, the team decides. Use when setting or changing an initiative's focus, when the focus routine detects overcrowding or misplacement, or when reviewing focus alignment in the weekly meeting."
 version: "1.0.0"
-metadata:
-  category: "Workflows"
+category: "Workflows"
 ---
 
 # Focus Management

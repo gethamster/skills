@@ -2,8 +2,7 @@
 name: goal-stewardship
 description: "Guides the construction of OGSM goals — choosing units, direction, aggregation, baseline, and target. Enforces that every measurable goal has a metric with all 5 components. Validates that the measurement story is honest (not vanity). Flags goals with no linked initiatives (unanchored goals are wishes). Use when creating or editing a goal in the OGSM framework, setting up goals or OKRs, or reviewing whether a goal is well-formed."
 version: "1.0.0"
-metadata:
-  category: "Workflows"
+category: "Workflows"
 ---
 
 # Goal Stewardship

@@ -2,8 +2,7 @@
 name: measure-binding
 description: "Guides binding OGSM measures to external platforms (PostHog, Google Search Console). Enforces leading vs lagging tagging, validates the bound event/property exists before claiming live sync, and prevents stale bindings from producing stale numbers. Use when binding a measure to PostHog or Google Search Console, setting up live sync for a measure, or connecting a goal metric to an external platform."
 version: "1.0.0"
-metadata:
-  category: "Ops"
+category: "Ops"
 ---
 
 # Measure Binding

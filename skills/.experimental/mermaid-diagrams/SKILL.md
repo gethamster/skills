@@ -2,8 +2,7 @@
 name: mermaid-diagrams
 description: "Best practices for when to create Mermaid diagrams and how to write good ones — layout direction, readability, shape choice, and anti-patterns. Use when writing or reviewing blueprints, initiatives, or briefs that need visual structure, when deciding whether a diagram is the right format, or when a Mermaid diagram is already in a doc and needs review."
 version: "1.0.0"
-metadata:
-  category: "Development"
+category: "Development"
 ---
 
 # Mermaid Diagrams

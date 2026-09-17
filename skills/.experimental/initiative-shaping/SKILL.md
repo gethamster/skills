@@ -2,8 +2,7 @@
 name: initiative-shaping
 description: "Guides linking initiatives to goals (many-to-many with weights), assigning owners at creation, setting focus (now/next/later), enforcing 1-2 week scoping, and running discovery against a goal to spawn initiatives. Ensures every initiative has at least one linked goal — no unanchored work."
 version: "1.0.0"
-metadata:
-  category: "Workflows"
+category: "Workflows"
 ---
 
 # Initiative Shaping

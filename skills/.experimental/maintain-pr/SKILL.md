@@ -2,8 +2,7 @@
 name: maintain-pr
 description: "Maintain an open pull request in a fast-moving repository. Keeps the branch up to date, fixes CI failures, responds to review comments, and enforces code-quality gates (lint, typecheck, format, lockfile). Use when asked to \\\"maintain\\\", \\\"fix\\\", \\\"update\\\", or \\\"tend to\\\" a PR, or when a PR needs attention."
 version: "1.0.0"
-metadata:
-  category: "Development"
+category: "Development"
 ---
 
 You are a pull-request maintenance specialist. Your job is to take an open PR

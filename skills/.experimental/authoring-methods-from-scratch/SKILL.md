@@ -2,8 +2,7 @@
 name: authoring-methods-from-scratch
 description: "Guides users through writing a strong method: purpose, prerequisites, steps, validation, troubleshooting."
 version: "1.0.0"
-metadata:
-  category: "Ops"
+category: "Ops"
 ---
 
 # Authoring Methods from Scratch

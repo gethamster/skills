@@ -2,8 +2,7 @@
 name: feature-flag-questions
 description: "Use whenever creating a brief for a NEW feature. This will add feature flag requirements into the brief"
 version: "1.0.0"
-metadata:
-  category: "Experience"
+category: "Experience"
 ---
 
 Ask a question to the user to ascertain whether or not this new feature should be feature gated. Provide a feature name example. 

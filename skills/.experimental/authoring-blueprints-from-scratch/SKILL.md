@@ -2,8 +2,7 @@
 name: authoring-blueprints-from-scratch
 description: "1. Establish narrative intent:"
 version: "1.0.0"
-metadata:
-  category: "Ops"
+category: "Ops"
 ---
 
 **Starting point:** You have a feature brief or decision artifact, and you need to write the current-state blueprint for the system or feature it describes.

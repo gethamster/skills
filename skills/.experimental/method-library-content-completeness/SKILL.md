@@ -2,8 +2,7 @@
 name: method-library-content-completeness
 description: "For goal-based routines that keep the Hamster method/skill/routine content library complete. Verifies the tracking table in the Longform Skills, Methods & Routine Content blueprint is current, adds missing rows, and processes gaps."
 version: "1.0.0"
-metadata:
-  category: "Workflows"
+category: "Workflows"
 ---
 
 # Method Library Content Completeness

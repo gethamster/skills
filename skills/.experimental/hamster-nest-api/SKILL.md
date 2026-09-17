@@ -2,8 +2,7 @@
 name: hamster-nest-api
 description: "NestJS backend patterns for apps/ai and apps/sync. Use when building background jobs, AI pipelines, sync processing, queues, or working with the shared @kit/api-core package."
 version: "1.1.0"
-metadata:
-  category: "Development"
+category: "Development"
 ---
 
 # Hamster NestJS API Patterns

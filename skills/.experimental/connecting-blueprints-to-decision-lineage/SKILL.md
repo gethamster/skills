@@ -2,8 +2,7 @@
 name: connecting-blueprints-to-decision-lineage
 description: "1. Direct decision links: When a brief, initiative, or goal directly caused current state, link inline with context about what changed."
 version: "1.0.0"
-metadata:
-  category: "Ops"
+category: "Ops"
 ---
 
 **Objective:** Make decision lineage explicit by linking product-state blueprints to decision records and marking which decisions shaped which parts of the product.
