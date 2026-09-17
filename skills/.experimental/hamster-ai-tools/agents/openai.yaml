@@ -1,0 +1,4 @@
+interface:
+  display_name: "Hamster AI Tools"
+  short_description: "Build reliable AI SDK tool contracts"
+  default_prompt: "Use $hamster-ai-tools to design or repair a model-facing AI SDK tool contract."

@@ -1,0 +1,467 @@
+{
+  "type": "doc",
+  "content": [
+    {
+      "type": "heading",
+      "attrs": { "level": 1 },
+      "content": [
+        { "type": "text", "text": "Hamster Demo — All Supported Elements" }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "This brief exercises every node and mark type the editor supports, end to end."
+        }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Text formatting & marks" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Plain, " },
+        { "type": "text", "text": "bold", "marks": [{ "type": "bold" }] },
+        { "type": "text", "text": ", " },
+        { "type": "text", "text": "italic", "marks": [{ "type": "italic" }] },
+        { "type": "text", "text": ", " },
+        {
+          "type": "text",
+          "text": "underline",
+          "marks": [{ "type": "underline" }]
+        },
+        { "type": "text", "text": ", " },
+        {
+          "type": "text",
+          "text": "strikethrough",
+          "marks": [{ "type": "strike" }]
+        },
+        { "type": "text", "text": ", " },
+        {
+          "type": "text",
+          "text": "inline code",
+          "marks": [{ "type": "code" }]
+        },
+        { "type": "text", "text": ", " },
+        {
+          "type": "text",
+          "text": "a link",
+          "marks": [
+            { "type": "link", "attrs": { "href": "https://tryhamster.com" } }
+          ]
+        },
+        { "type": "text", "text": ", H" },
+        { "type": "text", "text": "2", "marks": [{ "type": "subscript" }] },
+        { "type": "text", "text": "O, x" },
+        { "type": "text", "text": "2", "marks": [{ "type": "superscript" }] },
+        { "type": "text", "text": ", " },
+        {
+          "type": "text",
+          "text": "highlighted",
+          "marks": [{ "type": "highlight", "attrs": { "color": "#ffec99" } }]
+        },
+        { "type": "text", "text": ", " },
+        {
+          "type": "text",
+          "text": "colored text",
+          "marks": [{ "type": "textStyle", "attrs": { "color": "#e8590c" } }]
+        },
+        { "type": "text", "text": "." }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 3 },
+      "content": [{ "type": "text", "text": "Heading level 3" }]
+    },
+    {
+      "type": "heading",
+      "attrs": { "level": 4 },
+      "content": [{ "type": "text", "text": "Heading level 4" }]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Alignment" }]
+    },
+    {
+      "type": "paragraph",
+      "attrs": { "textAlign": "left" },
+      "content": [{ "type": "text", "text": "This paragraph is left-aligned." }]
+    },
+    {
+      "type": "paragraph",
+      "attrs": { "textAlign": "center" },
+      "content": [{ "type": "text", "text": "This paragraph is centered." }]
+    },
+    {
+      "type": "paragraph",
+      "attrs": { "textAlign": "right" },
+      "content": [
+        { "type": "text", "text": "This paragraph is right-aligned." }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Mentions, emoji & math" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Hello " },
+        {
+          "type": "mention",
+          "attrs": {
+            "id": "00000000-0000-4000-8000-000000000001",
+            "label": "creator",
+            "mentionSuggestionChar": "@"
+          }
+        },
+        { "type": "text", "text": " " },
+        { "type": "emoji", "attrs": { "name": "rocket" } },
+        { "type": "text", "text": " — inline math " },
+        { "type": "inlineMath", "attrs": { "latex": "a^2 + b^2 = c^2" } },
+        { "type": "text", "text": " done." }
+      ]
+    },
+    {
+      "type": "blockMath",
+      "attrs": { "latex": "\\int_0^1 x^2\\,dx = \\tfrac13" }
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Lists" }]
+    },
+    {
+      "type": "bulletList",
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "First bullet" }]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Second bullet with a nested list" }
+              ]
+            },
+            {
+              "type": "bulletList",
+              "content": [
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [{ "type": "text", "text": "Nested bullet" }]
+                    }
+                  ]
+                },
+                {
+                  "type": "listItem",
+                  "content": [
+                    {
+                      "type": "paragraph",
+                      "content": [{ "type": "text", "text": "another" }]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "orderedList",
+      "attrs": { "start": 3 },
+      "content": [
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                { "type": "text", "text": "Third item (list starts at 3)" }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "listItem",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Fourth item" }]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "taskList",
+      "content": [
+        {
+          "type": "taskItem",
+          "attrs": { "checked": true },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Completed task" }]
+            }
+          ]
+        },
+        {
+          "type": "taskItem",
+          "attrs": { "checked": false },
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [{ "type": "text", "text": "Pending task" }]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Blockquote & code" }]
+    },
+    {
+      "type": "blockquote",
+      "content": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "type": "text",
+              "text": "Everything should be made as simple as possible, but not simpler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "codeBlock",
+      "attrs": { "language": "typescript" },
+      "content": [
+        {
+          "type": "text",
+          "text": "const res = await fetch('https://api.tryhamster.com/briefs/1');\nconst brief = await res.json();"
+        }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Table" }]
+    },
+    {
+      "type": "table",
+      "content": [
+        {
+          "type": "tableRow",
+          "content": [
+            {
+              "type": "tableHeader",
+              "attrs": { "nodeTextAlign": "left" },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [{ "type": "text", "text": "Feature" }]
+                }
+              ]
+            },
+            {
+              "type": "tableHeader",
+              "attrs": { "nodeTextAlign": "center" },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [{ "type": "text", "text": "Status" }]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "tableRow",
+          "content": [
+            {
+              "type": "tableCell",
+              "attrs": { "backgroundColor": "#d3f9d8" },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [{ "type": "text", "text": "Colored cell" }]
+                }
+              ]
+            },
+            {
+              "type": "tableCell",
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [{ "type": "text", "text": "OK" }]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "tableRow",
+          "content": [
+            {
+              "type": "tableCell",
+              "attrs": { "colspan": 2 },
+              "content": [
+                {
+                  "type": "paragraph",
+                  "content": [
+                    { "type": "text", "text": "Spanned across two columns" }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Image" }]
+    },
+    {
+      "type": "image",
+      "attrs": {
+        "src": "https://placehold.co/600x300/e7f5ff/1c7ed6/png?text=Hamster+Demo",
+        "alt": "A placeholder demo image"
+      }
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Line breaks" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "First line" },
+        { "type": "hardBreak" },
+        { "type": "text", "text": "Second line after a hard break." }
+      ]
+    },
+
+    {
+      "type": "heading",
+      "attrs": { "level": 2 },
+      "content": [{ "type": "text", "text": "Special characters & Unicode" }]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "HTML-sensitive: if (a < b && c > 0) return a & b; — apostrophes it's, O'Brien's, and \"straight quotes\" must stay literal (never surface as &#39; / &quot;)."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Typography: “curly” ‘quotes’, en–dash, em—dash, ellipsis…, primes 5′30″, symbols © ® ™ ° § ¶ † ‡ • · ‰ № ★ ✓ ✗."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Math: ± × ÷ ≈ ≠ ≤ ≥ ∑ ∏ √ ∞ π θ ∫ ∂ ∇ ∈ ∉ ⊆ → ⇒ ∴ ½ ¾ x² H₂O. Currency: $ ¢ £ ¤ ¥ € ₹ ₽ ₩ ₪ ₦ ฿ ₱ ₴ ₺ ₫."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Diacritics: José Björk Zoë Zürich São Paulo Łódź Ångström café naïve résumé. Scripts: Ω λ Δ Привет · 日本語 中文简体 한국어 · مرحبا · שלום · नमस्ते · สวัสดี."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        {
+          "type": "text",
+          "text": "Emoji: 🚀 ✨ 🎉 ✅ ⚡ 🐹 ❤️ ⭐ 👍🏽 👨‍👩‍👧‍👦 🇺🇸 1️⃣ 🏳️‍🌈. Astral non-emoji: 𝐇𝐚𝐦 𝔸𝔹ℂ 𝓮𝓵𝓮𝓰𝓪𝓷𝓽 𝄞 𠀀 🜍."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "content": [
+        { "type": "text", "text": "Special chars inside marks — inline code " },
+        {
+          "type": "text",
+          "text": "if (a < b && c > 0) { return \"it's ok\"; }",
+          "marks": [{ "type": "code" }]
+        },
+        { "type": "text", "text": " and a " },
+        {
+          "type": "text",
+          "text": "query link",
+          "marks": [
+            {
+              "type": "link",
+              "attrs": { "href": "https://example.com/search?q=a&b=c&utm=x" }
+            }
+          ]
+        },
+        { "type": "text", "text": " (the & in the href must survive)." }
+      ]
+    },
+    {
+      "type": "codeBlock",
+      "attrs": { "language": "typescript" },
+      "content": [
+        {
+          "type": "text",
+          "text": "const s = \"a'b\"; if (x < y && z > 0) return a & b; // ± × ÷ ≈ π ∑ € £ ¥ — José 日本語 🚀"
+        }
+      ]
+    },
+
+    { "type": "horizontalRule" }
+  ]
+}

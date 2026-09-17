@@ -1,0 +1,182 @@
+# Kubernetes
+
+> Source: `src/content/docs/self-hosting/kubernetes.mdx`
+> Canonical URL: https://rivet.dev/docs/self-hosting/kubernetes
+> Description: Deploy production-ready Rivet Engine to Kubernetes with PostgreSQL storage.
+
+---
+PostgreSQL is the recommended backend for multi-node self-hosted deployments today, but it remains experimental. For a production-ready single-node Rivet deployment, use the file system backend (RocksDB-based). Enterprise teams can contact [enterprise support](https://rivet.dev/sales) about FoundationDB for the most scalable production-ready deployment.
+
+## Prerequisites
+
+- Kubernetes cluster
+- `kubectl` configured
+- [Metrics server](https://github.com/kubernetes-sigs/metrics-server) (required for HPA) — included by default in most distributions (k3d, GKE, EKS, AKS)
+
+## Deploy Rivet Engine
+
+### Download Manifests
+
+    Download the `self-host/k8s/engine` directory from the Rivet repository:
+
+```bash
+npx giget@latest gh:rivet-dev/rivet/self-host/k8s/engine rivet-k8s
+    cd rivet-k8s
+```
+
+### Configure Engine
+
+    In `02-engine-configmap.yaml`, set `public_url` to your engine's external URL.
+
+### Configure PostgreSQL
+
+    In `11-postgres-secret.yaml`, update the PostgreSQL password. See [Using a Managed PostgreSQL Service](#using-a-managed-postgresql-service) for external databases.
+
+### Configure Admin Token
+
+    Generate a secure admin token and save it somewhere safe:
+
+```bash
+openssl rand -hex 32
+```
+
+    Create the namespace and store the token as a Kubernetes secret:
+
+```bash
+kubectl create namespace rivet-engine
+    kubectl -n rivet-engine create secret generic rivet-secrets --from-literal=admin-token=YOUR_TOKEN_HERE
+```
+
+### Deploy
+
+```bash
+# Apply all manifests
+    kubectl apply -f .
+
+    # Wait for all pods to be ready
+    kubectl -n rivet-engine wait --for=condition=ready pod -l app=nats --timeout=300s
+    kubectl -n rivet-engine wait --for=condition=ready pod -l app=postgres --timeout=300s
+    kubectl -n rivet-engine wait --for=condition=ready pod -l app=rivet-engine --timeout=300s
+
+    # Verify all pods are running
+    kubectl -n rivet-engine get pods
+```
+
+### Access the Engine
+
+    Visit `/ui` on your `public_url` to access the dashboard.
+
+## Deploy RivetKit App
+
+### Create Kubernetes Manifests
+
+    Create these two manifest files:
+
+    ```yaml deployment.yaml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: rivetkit-app
+      namespace: your-namespace
+    spec:
+      replicas: 1
+      selector:
+        matchLabels:
+          app: rivetkit-app
+      template:
+        metadata:
+          labels:
+            app: rivetkit-app
+        spec:
+          # Allow enough time for actors to gracefully stop on SIGTERM.
+          # The runner waits up to 120s for actors to finish; 130s provides buffer.
+          # See: /docs/actors/versions#graceful-shutdown-sigterm
+          terminationGracePeriodSeconds: 130
+          containers:
+
+- name: rivetkit-app
+  image: registry.example.com/your-team/rivetkit-app:latest
+  envFrom:
+- secretRef:
+  name: rivetkit-secrets
+
+```
+```yaml service.yaml
+    apiVersion: v1
+    kind: Service
+    metadata:
+      name: rivetkit-app
+      namespace: your-namespace
+    spec:
+      selector:
+        app: rivetkit-app
+      ports:
+        - name: http
+          port: 8080
+          targetPort: 8080
+```
+
+### Setup Environment
+
+    Put the following in `rivetkit-secrets.yaml`:
+
+```yaml
+apiVersion: v1
+    kind: Secret
+    metadata:
+      name: rivetkit-secrets
+      namespace: your-namespace
+    type: Opaque
+    stringData:
+      RIVET_ENDPOINT: http://my-app:your-admin-token@your-engine.example.com
+      RIVET_PUBLIC_ENDPOINT: http://my-app@your-engine.example.com
+```
+
+### Apply Manifests
+
+```bash
+kubectl apply -f rivetkit-secrets.yaml
+    kubectl apply -f deployment.yaml
+    kubectl apply -f service.yaml
+```
+
+### Configure RivetKit URL in Dashboard
+
+    After the service is deployed and reachable from the public internet:
+
+1. Open the Rivet Engine dashboard in your browser.
+2. Enter your admin token when prompted.
+3. Create a namespace (or select an existing namespace) that matches your endpoint namespace (for example, `my-app`).
+4. In the namespace sidebar, click **Overview**.
+5. Click **Add Provider**, then choose **Custom**.
+6. In the connect modal, select **Serverless** and click **Next**.
+7. Go to **Confirm Connection**, enter your app endpoint (`.../api/rivet`), then click **Add**.
+
+## Advanced
+
+### Using a Managed PostgreSQL Service
+
+If you prefer to use a managed PostgreSQL service (e.g. Amazon RDS, Cloud SQL, Azure Database) instead of the bundled Postgres deployment:
+
+- Update the `postgres.url` connection string in `02-engine-configmap.yaml` to point to your managed instance
+- Delete the bundled PostgreSQL manifests:
+- `10-postgres-configmap.yaml`
+- `11-postgres-secret.yaml`
+- `12-postgres-statefulset.yaml`
+- `13-postgres-service.yaml`
+
+### Applying Configuration Updates
+
+When making subsequent changes to `02-engine-configmap.yaml`, restart the engine pods to pick up the new configuration:
+
+```bash
+kubectl apply -f 02-engine-configmap.yaml
+kubectl -n rivet-engine rollout restart deployment/rivet-engine
+```
+
+## Next Steps
+
+- Review the [Production Checklist](/docs/self-hosting/production-checklist) before going live
+- See [Configuration](/docs/self-hosting/configuration) for all engine config options
+
+_Source doc path: /docs/self-hosting/kubernetes_

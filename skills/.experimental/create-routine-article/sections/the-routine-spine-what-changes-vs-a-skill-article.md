@@ -1,0 +1,6 @@
+## The routine spine (what changes vs. a skill article)
+
+- **The pain is repetition, not capability.** The pain-proof posts show people describing manual rhythm: "every morning I...", "I keep forgetting to...", "third time this week I've...". Point `find-source-material` at that flavor of complaint.
+- **The prior-art beat is the manual version.** Often that's our own skill article ("we shipped [skill]; people loved it; then we noticed everyone was invoking it by hand every Monday"). For a third-party skill, it's the skill itself plus its creator, credited and embedded. Either way, the routine is presented as the natural next floor, never as a fix for something broken.
+- **The tour is a run, not a feature list.** "what's inside" walks the trigger, the prompt, and a real run: what fired, what it did, where the output landed. The reader should be able to predict run #2 from the article.
+- **Before/after replaces the demo pair.** The strongest visual contrast is the manual invocation next to the run history showing it happening on its own.
