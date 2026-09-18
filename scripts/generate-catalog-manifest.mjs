@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 // Generates the two derived views of the catalog from its source files:
 // skills.sh.json (the grouping manifest skills.sh renders as sections) and the
-// README catalog table. Membership comes from each skill's `metadata.method`,
-// titles from each METHOD.md. `--check` fails on drift so the
-// generated files can never disagree with the tree they describe.
+// README catalog table. Sections are one per category: their titles and copy
+// are the constants below, each method declares which one it belongs to in its
+// METHOD.md frontmatter, and membership comes from each skill's
+// `metadata.method`. The README table takes a method's title and attribution
+// from its METHOD.md. `--check` fails on drift so the generated files can
+// never disagree with the tree they describe.
 
 import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
@@ -15,8 +18,9 @@ const check = process.argv.includes("--check");
 
 const MANIFEST_PATH = join(repoRoot, "skills.sh.json");
 // The same six Studio groups skills carry as `category`, in the order the page
-// shows them.
-const CATEGORIES = ["Product", "Development", "Experience", "Marketing", "Ops", "Workflows"];
+// shows them. Each one needs its copy, so the enum is derived from the
+// descriptions rather than declared twice: Object.keys keeps insertion order,
+// which is the page's section order.
 const CATEGORY_DESCRIPTIONS = {
   Product: "Discovery, prioritisation, roadmapping and the metrics a product is steered by.",
   Development: "Engineering practice and the methods for working alongside AI agents.",
@@ -25,6 +29,7 @@ const CATEGORY_DESCRIPTIONS = {
   Ops: "How a team is organised, aligned and held to its objectives.",
   Workflows: "How the work itself runs: iterations, boards, ceremonies and retrospectives.",
 };
+const CATEGORIES = Object.keys(CATEGORY_DESCRIPTIONS);
 const README_PATH = join(repoRoot, "README.md");
 const CATALOG_START = "<!-- catalog:start -->";
 const CATALOG_END = "<!-- catalog:end -->";
@@ -49,11 +54,18 @@ function frontmatter(path) {
 
 // A METHOD.md opens with frontmatter carrying its category, then the H1 the
 // title is read from.
-function splitFrontmatter(content) {
+function splitFrontmatter(path) {
+  const content = readFileSync(path, "utf8");
   if (!content.startsWith("---")) return { frontmatter: null, body: content };
   const end = content.indexOf("\n---", 3);
   if (end === -1) return { frontmatter: null, body: content };
-  const parsed = loadYaml(content.slice(content.indexOf("\n") + 1, end));
+  let parsed;
+  try {
+    parsed = loadYaml(content.slice(content.indexOf("\n") + 1, end));
+  } catch (err) {
+    console.error(`${relative(repoRoot, path)}: failed to parse frontmatter YAML: ${err.message} — run npm run validate`);
+    process.exit(1);
+  }
   const body = content.slice(end + 4).replace(/^\n+/, "");
   return { frontmatter: parsed && typeof parsed === "object" ? parsed : null, body };
 }
@@ -64,7 +76,9 @@ function splitFrontmatter(content) {
 // per category now, and those carry their own copy.
 function describeMethod(content) {
   const lines = content.split("\n");
-  const heading = lines[0].replace(/^#\s+/, "").trim();
+  // Searched for rather than indexed: CRLF endings or a fence written `--- `
+  // leave a stray line ahead of the H1, and an empty title publishes silently.
+  const heading = (lines.find((line) => line.startsWith("# ")) ?? "").replace(/^#\s+/, "").trim();
   const colon = heading.search(/:\s/);
   const title = colon === -1 ? heading : heading.slice(0, colon);
   const attribution = lines.slice(0, 5).find((line) => line.startsWith("> Created by ")) ?? "";
@@ -75,7 +89,7 @@ function describeMethod(content) {
 const methods = new Map();
 for (const slug of subdirectories(join(repoRoot, "methods"))) {
   const path = join(repoRoot, "methods", slug, "METHOD.md");
-  const { frontmatter: methodFrontmatter, body } = splitFrontmatter(readFileSync(path, "utf8"));
+  const { frontmatter: methodFrontmatter, body } = splitFrontmatter(path);
   const category = methodFrontmatter?.category;
   if (!CATEGORIES.includes(category)) {
     console.error(`methods/${slug}/METHOD.md: category "${category}" must be one of ${CATEGORIES.join(", ")} — run npm run validate`);
