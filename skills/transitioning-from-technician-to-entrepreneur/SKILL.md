@@ -1,6 +1,7 @@
 ---
 name: transitioning-from-technician-to-entrepreneur
 description: "This skill teaches craft-focused founders how to systematically release technical responsibilities, develop leadership capacity, and step into the entrepreneurial role where they focus on vision, growth, and strategic opportunity rather than daily execution."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

@@ -1,6 +1,7 @@
 ---
 name: scoring-and-grading-okrs
 description: "This skill teaches you how to evaluate OKR progress using the 0.0-1.0 scoring scale, distinguish between committed and aspirational target expectations, and translate scores into organizational learning rather than performance judgment."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

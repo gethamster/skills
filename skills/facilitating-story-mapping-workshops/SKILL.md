@@ -1,6 +1,7 @@
 ---
 name: facilitating-story-mapping-workshops
 description: "This skill teaches you how to plan, timebox, and facilitate a story mapping workshop that produces a shared visual backlog and aligned release plan from a cross-functional group of stakeholders."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

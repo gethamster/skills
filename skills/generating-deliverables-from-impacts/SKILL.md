@@ -1,6 +1,7 @@
 ---
 name: generating-deliverables-from-impacts
 description: "This skill teaches you how to brainstorm candidate features, content, and activities for each impact on your impact map, then prioritize them based on their assumed contribution to measurable business goals—turning strategic intent into an actionable product manager roadmap."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

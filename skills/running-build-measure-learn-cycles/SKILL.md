@@ -1,6 +1,7 @@
 ---
 name: running-build-measure-learn-cycles
 description: "This skill teaches you how to execute rapid, disciplined iterations through the build-measure-learn loop so that every cycle produces a concrete validated or invalidated hypothesis rather than just shipping features into the void."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

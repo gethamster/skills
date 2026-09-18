@@ -1,6 +1,7 @@
 ---
 name: running-outcome-review-ceremonies
 description: "This skill teaches you how to facilitate regular cadence meetings where cross-functional teams assess outcome progress against targets, decide whether to pivot or persevere on initiatives, and update the roadmap based on real data rather than intuition."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

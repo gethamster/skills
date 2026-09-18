@@ -1,3 +1,7 @@
+---
+category: Development
+---
+
 # PostHog Experiments: A Practical Method for Onboarding A/B Tests
 
 > Created by **PostHog growth team, demonstrated by Joshua** — [https://www.youtube.com/watch?v=WyYPPSyKmXo](https://www.youtube.com/watch?v=WyYPPSyKmXo)

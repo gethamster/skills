@@ -1,6 +1,7 @@
 ---
 name: managing-projects-with-kanban
 description: "This skill teaches you how to plan, execute, and deliver entire projects using Kanban's pull-based system, replacing fixed sprint cycles with continuous flow, explicit policies, and data-driven forecasting."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

@@ -1,6 +1,7 @@
 ---
 name: assessing-pm-team-strengths-and-gaps
 description: "This skill teaches you how to run a structured competency assessment across your product team, producing a scored heatmap that reveals individual proficiency levels, shared blind spots, and the highest-impact areas for development investment."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

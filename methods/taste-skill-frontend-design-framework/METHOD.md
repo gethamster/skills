@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # Taste Skill Frontend Framework: Teaching AI Agents Design Judgment
 
 > Created by **Leonxlnx** — [https://github.com/leonxlnx](https://github.com/leonxlnx)

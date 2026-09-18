@@ -1,6 +1,7 @@
 ---
 name: creating-circular-journey-maps
 description: "This skill teaches you how to build a circular customer journey map based on McKinsey's Consumer Decision Journey model, replacing the outdated linear funnel with a loop that reflects how real consumers research, evaluate, buy, and return."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey

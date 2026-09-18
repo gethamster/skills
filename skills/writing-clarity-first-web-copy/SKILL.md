@@ -1,6 +1,7 @@
 ---
 name: writing-clarity-first-web-copy
 description: "This skill teaches you how to audit and rewrite vague, clever, or jargon-heavy web copy into specific, scannable messaging that prospects instantly understand — the single most impactful improvement you can make to B2B website conversion."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

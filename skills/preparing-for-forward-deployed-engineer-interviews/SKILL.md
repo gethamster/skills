@@ -1,6 +1,7 @@
 ---
 name: preparing-for-forward-deployed-engineer-interviews
 description: "This skill teaches you how to study for and excel in FDE interview processes, covering system design in ambiguous customer scenarios, live coding under real-world constraint, and client-communication role plays that test your ability to translate technical decisions into business language."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

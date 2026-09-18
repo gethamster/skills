@@ -1,6 +1,7 @@
 ---
 name: running-chapters-for-craft-excellence
 description: "This skill teaches you how to establish and facilitate chapters, the discipline-specific groups that connect specialists across squads within a tribe, so you can standardize craft practices, run effective mentoring, and own career growth paths for your people."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

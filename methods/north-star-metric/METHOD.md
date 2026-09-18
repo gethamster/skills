@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # North Star Metric: The Product Manager's Guide to Company-Wide Alignment
 
 > Created by **Sean Ellis** — [https://www.seancreates.com/](https://www.seancreates.com/)

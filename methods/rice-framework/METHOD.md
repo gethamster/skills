@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # RICE Framework
 
 > Created by **Intercom** — [https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers)

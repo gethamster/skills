@@ -1,6 +1,7 @@
 ---
 name: migrating-from-flat-to-usage-based-pricing
 description: "This skill teaches you how to systematically transition an existing customer base from fixed subscription pricing models to usage-based or hybrid AI pricing, managing the financial, operational, and relationship risks at each phase of the migration."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

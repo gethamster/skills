@@ -1,6 +1,7 @@
 ---
 name: building-v2mom-templates-and-worksheets
 description: "This skill teaches you how to design, test, and deploy reusable V2MOM templates that give every team and individual a consistent structure for strategic planning, reducing ambiguity and making the entire V2MOM process faster to execute."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: v2mom-framework

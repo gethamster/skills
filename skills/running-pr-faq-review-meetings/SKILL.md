@@ -1,6 +1,7 @@
 ---
 name: running-pr-faq-review-meetings
 description: "This skill teaches you how to facilitate the Amazon-style narrative review meeting where stakeholders silently read a PR/FAQ document and then deliver structured, rigorous critique that sharpens the product concept before any code is written."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

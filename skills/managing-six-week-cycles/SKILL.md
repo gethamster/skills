@@ -1,6 +1,7 @@
 ---
 name: managing-six-week-cycles
 description: "This skill teaches you how to structure fixed six-week build cycles where teams commit to shaped work, manage their own scope, and ship on time, using the circuit breaker to kill projects that fail to converge rather than letting them drag on."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

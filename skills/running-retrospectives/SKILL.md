@@ -1,6 +1,7 @@
 ---
 name: running-retrospectives
 description: "This skill teaches you how to facilitate retrospectives that surface honest team feedback and convert it into prioritized, owned action items that actually get implemented between sprints."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

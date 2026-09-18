@@ -1,6 +1,7 @@
 ---
 name: structuring-content-for-ai-answers
 description: "This skill teaches you how to format and organize web content using concise definitions, FAQ schemas, and direct-answer patterns so that LLMs and AI search engines select your content for generated responses."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-seo-optimization

@@ -1,6 +1,7 @@
 ---
 name: generating-multiple-solutions-per-opportunity
 description: "This skill teaches you how to apply divergent thinking techniques to brainstorm at least three distinct solution ideas per customer opportunity, preventing premature commitment to a single approach in your Opportunity Solution Tree."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

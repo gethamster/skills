@@ -1,6 +1,7 @@
 ---
 name: scenario-planning-for-alternative-futures
 description: "This skill teaches you to develop multiple plausible future scenarios for SEO and content, then build adaptive strategies that perform well regardless of which future materializes."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

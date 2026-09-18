@@ -1,6 +1,7 @@
 ---
 name: building-topic-clusters-with-claude-constitutional-alignment
 description: "This skill teaches you to use Claude's value-driven reasoning framework to generate, evaluate, and organize topic clusters that produce semantically coherent content hierarchies satisfying both search engines and editorial standards."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

@@ -1,6 +1,7 @@
 ---
 name: selecting-tools-for-six-forces-research
 description: "This skill teaches you how to assemble a lean, repeatable toolkit of market research tools, scoring templates, and visualization formats that standardize your Six Forces analysis so every force is evaluated with consistent rigor and the output is immediately usable for strategic decisions."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-forces-model

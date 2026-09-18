@@ -1,6 +1,7 @@
 ---
 name: segmenting-customers-by-unmet-needs
 description: "This skill teaches you how to group customers into segments based on shared patterns of underserved outcomes rather than demographics, so you can target product strategy, positioning, and roadmap decisions at the clusters of people who actually want the same things."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

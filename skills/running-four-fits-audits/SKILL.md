@@ -1,6 +1,7 @@
 ---
 name: running-four-fits-audits
 description: "This skill teaches you how to facilitate a structured, recurring team review that scores and stress-tests each of the four fits in the reforge four fits framework using a combination of qualitative insights and quantitative data."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

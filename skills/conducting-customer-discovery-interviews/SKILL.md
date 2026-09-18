@@ -1,6 +1,7 @@
 ---
 name: conducting-customer-discovery-interviews
 description: "This skill teaches you how to plan, run, and synthesize structured customer discovery interviews that surface genuine pain points, using customer discovery interview questions designed to avoid leading the respondent and to produce evidence you can act on."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

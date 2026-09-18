@@ -1,6 +1,7 @@
 ---
 name: streamlining-service-delivery-processes
 description: "This skill teaches you how to map, audit, and optimize the end-to-end processes customers experience—the 'Process' P in the 7 P's Marketing Mix—to reduce friction, eliminate waste, and deliver consistently excellent service."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

@@ -1,6 +1,7 @@
 ---
 name: measuring-fde-success-by-business-outcomes
 description: "This skill teaches you how to define, instrument, track, and report on business-outcome metrics that prove the value of forward deployed engineering engagements, replacing vanity technical metrics with measures that matter to the customer's P&L."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

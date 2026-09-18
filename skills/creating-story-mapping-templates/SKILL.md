@@ -1,6 +1,7 @@
 ---
 name: creating-story-mapping-templates
 description: "This skill teaches you how to design, configure, and maintain reusable story map templates in physical or digital formats so your team can start any mapping session with a consistent, ready-to-use structure instead of a blank canvas."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

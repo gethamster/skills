@@ -1,6 +1,7 @@
 ---
 name: converging-on-final-solutions
 description: "This skill teaches you how to systematically evaluate, test, and iterate on design concepts so you can select and refine the strongest solution for implementation in the Deliver phase of the double diamond model."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

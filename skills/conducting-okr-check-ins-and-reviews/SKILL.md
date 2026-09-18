@@ -1,6 +1,7 @@
 ---
 name: conducting-okr-check-ins-and-reviews
 description: "This skill teaches you how to run structured OKR check-in meetings at weekly, bi-weekly, and quarterly intervals so your team stays accountable, surfaces problems early, and adjusts course before it is too late."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

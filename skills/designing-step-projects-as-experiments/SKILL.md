@@ -1,6 +1,7 @@
 ---
 name: designing-step-projects-as-experiments
 description: "This skill teaches you to decompose product ideas into small, time-boxed experiments (step-projects) of no more than 10 weeks that test your riskiest assumptions with measurable outcomes, so you build evidence iteratively instead of betting everything on a big launch."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

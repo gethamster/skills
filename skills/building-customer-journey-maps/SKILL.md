@@ -1,6 +1,7 @@
 ---
 name: building-customer-journey-maps
 description: "This skill teaches you how to create a customer journey map that visually represents the five stages of the customer lifecycle, including how to choose the right format, run a collaborative mapping session, and produce an artifact your team will reference and update."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

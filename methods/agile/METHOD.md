@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # Agile: The Iterative Approach to Product Development
 
 > Created by **The Agile Manifesto Authors (2001)** — [https://agilemanifesto.org](https://agilemanifesto.org)

@@ -1,6 +1,7 @@
 ---
 name: sequencing-fits-for-early-stage-growth
 description: "This skill teaches you the precise order in which to establish Market-Product Fit, Product-Channel Fit, Channel-Business Model Fit, and Business Model-Market Fit when building a new product—so you avoid wasting cycles optimizing the wrong fit at the wrong time."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

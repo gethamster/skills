@@ -1,6 +1,7 @@
 ---
 name: facilitating-start-stop-continue-retrospectives
 description: "This skill teaches you how to plan, run, and timebox an effective start stop continue retrospective session—from setting ground rules through silent brainstorming, voting, and closing with owned action items."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

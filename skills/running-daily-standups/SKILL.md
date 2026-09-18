@@ -1,6 +1,7 @@
 ---
 name: running-daily-standups
 description: "This skill teaches you how to facilitate a scrum daily standup that stays time-boxed to 15 minutes, surfaces impediments quickly, and keeps the entire team aligned on sprint goals without drifting into status reporting or problem-solving."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: scrum

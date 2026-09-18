@@ -1,6 +1,7 @@
 ---
 name: synthesizing-six-forces-into-strategic-recommendations
 description: "This skill teaches you how to combine individual assessments of all six competitive forces into a single strategic positioning map that drives concrete decisions about where to invest, whom to partner with, and how to compete."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-forces-model

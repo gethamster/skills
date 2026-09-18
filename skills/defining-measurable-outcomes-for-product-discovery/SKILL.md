@@ -1,6 +1,7 @@
 ---
 name: defining-measurable-outcomes-for-product-discovery
 description: "This skill teaches you how to select and articulate a clear, measurable business outcome that sits at the top of your Opportunity Solution Tree, ensuring every downstream discovery effort—from identifying opportunities to testing solutions—stays aligned with real business impact."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

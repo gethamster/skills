@@ -1,6 +1,7 @@
 ---
 name: identifying-customer-opportunities-from-research
 description: "This skill teaches you how to synthesize customer interviews, surveys, and behavioral data into distinct opportunity nodes—unmet needs, pain points, or desires—that feed directly into your Opportunity Solution Tree."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

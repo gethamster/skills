@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # The Six Forces Model: Market Analysis Beyond Porter's Five Forces
 
 > Created by **Michael E. Porter** — [https://en.wikipedia.org/wiki/Michael_Porter](https://en.wikipedia.org/wiki/Michael_Porter)

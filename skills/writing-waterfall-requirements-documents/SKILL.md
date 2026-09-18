@@ -1,6 +1,7 @@
 ---
 name: writing-waterfall-requirements-documents
 description: "This skill teaches you how to gather, structure, and freeze detailed requirements specifications before design begins in the waterfall model, ensuring every requirement is traceable and verifiable throughout the project lifecycle."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

@@ -1,6 +1,7 @@
 ---
 name: structuring-landing-page-copy-for-conversion
 description: "This skill teaches you how to sequence landing page copy sections — from headline through social proof, objection handling, and CTA — using a proven conversion copywriting framework that guides visitors toward a single action."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

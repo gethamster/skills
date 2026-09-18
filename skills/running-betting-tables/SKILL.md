@@ -1,6 +1,7 @@
 ---
 name: running-betting-tables
 description: "This skill teaches you how to facilitate the betting table meeting where senior stakeholders review shaped pitches, weigh strategic fit and risk, and commit specific teams to specific projects for the upcoming cycle."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

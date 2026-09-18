@@ -1,6 +1,7 @@
 ---
 name: creating-semantic-keyword-maps
 description: "This skill teaches you how to research, cluster, and assign semantically related keywords to pillar topics so that every content piece in your cluster addresses a distinct user intent without overlap or gaps."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

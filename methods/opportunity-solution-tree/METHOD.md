@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # Opportunity Solution Tree: The Product Manager's Framework for Structured Discovery
 
 > Created by **Teresa Torres** — [https://www.producttalk.org/](https://www.producttalk.org/)

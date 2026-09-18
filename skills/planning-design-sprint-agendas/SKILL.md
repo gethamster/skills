@@ -1,6 +1,7 @@
 ---
 name: planning-design-sprint-agendas
 description: "This skill teaches you how to structure a complete multi-day sprint agenda, adapt the classic five-day format into compressed design sprint 2.0 or four-day variations, and prepare all logistics so your team can focus entirely on the work."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

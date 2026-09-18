@@ -1,6 +1,7 @@
 ---
 name: facilitating-v2mom-planning-sessions
 description: "Teaches you how to design and run workshops that produce high-quality V2MOMs through structured collaboration, so leadership teams and cross-functional stakeholders leave aligned on vision, priorities, and success criteria."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: v2mom-framework

@@ -1,6 +1,7 @@
 ---
 name: creating-kanban-pull-policies
 description: "This skill teaches you how to define clear entry and exit criteria for each Kanban column so work flows forward predictably, reducing confusion about when items are ready to move and who is responsible for pulling them."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

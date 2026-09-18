@@ -1,6 +1,7 @@
 ---
 name: defining-mvp-scope-with-moscow
 description: "This skill teaches you how to leverage the Must-have bucket in MoSCoW prioritization to draw a defensible MVP boundary and negotiate scope trade-offs with product and engineering teams."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

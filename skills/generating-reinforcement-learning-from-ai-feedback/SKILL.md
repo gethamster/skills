@@ -1,6 +1,7 @@
 ---
 name: generating-reinforcement-learning-from-ai-feedback
 description: "This skill teaches you how to replace costly human preference annotations with AI-generated preference labels, creating scalable training signals for reinforcement learning alignment within the Constitutional AI framework."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: constitutional-ai

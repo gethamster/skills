@@ -1,6 +1,7 @@
 ---
 name: managing-multi-cadence-planning-cycles
 description: "This skill teaches you how to operate each GIST layer on its own natural planning rhythm, so goals stay stable while ideas, step-projects, and tasks remain agile and responsive to new information."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

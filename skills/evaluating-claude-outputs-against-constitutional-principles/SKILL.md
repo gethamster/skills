@@ -1,6 +1,7 @@
 ---
 name: evaluating-claude-outputs-against-constitutional-principles
 description: "This skill teaches you how to build and apply a structured evaluation rubric that measures whether Claude's generated content meets constitutional standards for honesty, accuracy, and balanced perspective, turning subjective quality review into a repeatable, scorable process for SEO content."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

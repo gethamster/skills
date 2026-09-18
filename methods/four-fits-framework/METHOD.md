@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # The Four Fits Framework: A Complete Guide to Scalable Growth
 
 > Created by **Brian Balfour** — [https://brianbalfour.com](https://brianbalfour.com)

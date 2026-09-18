@@ -1,6 +1,7 @@
 ---
 name: measuring-journey-stage-kpis
 description: "This skill teaches you to select, define, and track the right performance metrics for each of the five customer journey stages so you can pinpoint where growth is happening and where customers are dropping off."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

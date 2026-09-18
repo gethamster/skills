@@ -1,6 +1,7 @@
 ---
 name: crafting-4ls-retrospective-questions
 description: "This skill teaches you how to design targeted prompts for each of the four 4Ls categories—Liked, Learned, Lacked, and Longed For—so your team produces specific, constructive, and actionable feedback during sprint retrospectives."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: 4ls-retrospective

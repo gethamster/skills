@@ -1,6 +1,7 @@
 ---
 name: writing-competency-based-pm-job-descriptions
 description: "This skill teaches you how to translate the four competency quadrants into structured, measurable product manager job descriptions that attract candidates whose strengths match your team's actual needs."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: product-team-competencies-framework

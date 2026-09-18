@@ -1,6 +1,7 @@
 ---
 name: creating-waterfall-project-plans
 description: "This skill teaches you how to build detailed waterfall chart project schedules using work breakdown structures, Gantt charts, milestones, dependencies, and resource allocations for linear, phase-based projects."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

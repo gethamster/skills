@@ -1,6 +1,7 @@
 ---
 name: calculating-ai-inference-unit-economics
 description: "This skill teaches you how to measure and model the real per-request cost of AI inference—including token consumption, GPU compute, API call expenses, and infrastructure overhead—so you can set pricing floors and build profitable machine learning pricing models."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

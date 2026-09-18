@@ -1,3 +1,7 @@
+---
+category: Ops
+---
+
 # Product Team Competencies Framework for Every Product Manager
 
 > Created by **Neal Cabage** — [https://nealcabage.com/framework/product-team-competencies/](https://nealcabage.com/framework/product-team-competencies/)

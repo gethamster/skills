@@ -1,6 +1,7 @@
 ---
 name: defining-target-markets-for-expansion-strategies
 description: "This skill teaches you how to systematically research, evaluate, and validate new target market opportunities when pursuing market development or diversification strategies within the Ansoff Matrix framework."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

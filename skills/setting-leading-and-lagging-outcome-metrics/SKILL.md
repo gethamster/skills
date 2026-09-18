@@ -1,6 +1,7 @@
 ---
 name: setting-leading-and-lagging-outcome-metrics
 description: "This skill teaches you how to define paired leading indicators (early progress signals) and lagging indicators (final results) so you can continuously monitor whether shipped product work is achieving desired outcomes—without waiting months for confirmation."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

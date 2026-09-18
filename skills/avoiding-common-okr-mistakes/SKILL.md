@@ -1,6 +1,7 @@
 ---
 name: avoiding-common-okr-mistakes
 description: "This skill teaches you to recognize and prevent the most damaging OKR pitfalls, including sandbagging goals, confusing outputs with outcomes, overloading teams with too many objectives, and creating perverse incentives by linking OKR scores to compensation."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

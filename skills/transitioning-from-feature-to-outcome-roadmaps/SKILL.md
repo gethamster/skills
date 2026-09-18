@@ -1,6 +1,7 @@
 ---
 name: transitioning-from-feature-to-outcome-roadmaps
 description: "This skill teaches product managers a structured workflow for converting an existing feature-delivery roadmap into an outcome-driven format, preserving stakeholder confidence while shifting the team's focus from outputs to measurable business impact."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: outcome-driven-roadmapping-odr

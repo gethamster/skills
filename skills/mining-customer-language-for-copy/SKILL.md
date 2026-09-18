@@ -1,6 +1,7 @@
 ---
 name: mining-customer-language-for-copy
 description: "This skill teaches you how to extract the exact words, phrases, and emotional triggers your customers already use—then weave them into copy that converts because it sounds like their own inner monologue."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

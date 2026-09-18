@@ -1,6 +1,7 @@
 ---
 name: building-realistic-sprint-prototypes
 description: "This skill teaches you how to translate a sprint storyboard into a clickable, high-fidelity prototype in roughly seven hours, producing a testable artifact that looks and feels like a real product without writing a single line of production code."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

@@ -1,6 +1,7 @@
 ---
 name: refining-story-maps-across-sprints
 description: "This skill teaches you how to treat a story map as a living artifact that evolves with your product, rather than a one-time workshop output that gathers dust after Sprint 1."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # Working Backwards: How Every Product Manager Can Start from the Customer
 
 > Created by **Amazon (pioneered by Jeff Bezos and early Amazon teams)** — [https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)

@@ -1,6 +1,7 @@
 ---
 name: selecting-mvp-types-and-formats
 description: "This skill teaches you how to evaluate different types of MVP and select the format that best matches your riskiest assumption, available resources, and learning goal so you build the smallest thing that answers the most important question."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

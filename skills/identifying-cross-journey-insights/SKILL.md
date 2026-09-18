@@ -1,6 +1,7 @@
 ---
 name: identifying-cross-journey-insights
 description: "This skill teaches you how to analyze a portfolio of interconnected customer journeys to surface systemic pain points, hidden redundancies, and high-leverage optimization opportunities that remain invisible when journeys are examined in isolation."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

@@ -1,6 +1,7 @@
 ---
 name: structuring-ai-coding-sessions-with-gstack-phases
 description: "This skill teaches you how to follow gstack's opinionated phased workflow, moving from problem framing and architecture decisions through implementation and verification, so that AI-assisted development sessions produce reliable, well-reasoned code instead of fast but fragile output."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: gstack-framework

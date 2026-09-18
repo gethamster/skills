@@ -1,6 +1,7 @@
 ---
 name: optimizing-touchpoints-per-stage
 description: "This skill teaches you how to systematically identify, score, and improve individual customer touchpoints within each planned journey stage, so you can reduce friction and increase conversion rates across long, high-involvement purchase cycles."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

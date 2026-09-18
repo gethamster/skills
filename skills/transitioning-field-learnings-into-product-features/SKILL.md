@@ -1,6 +1,7 @@
 ---
 name: transitioning-field-learnings-into-product-features
 description: "This skill teaches a customer facing engineer how to evaluate which bespoke field solutions deserve generalization, write persuasive internal proposals backed by field evidence, and partner with product teams to fold proven patterns into the core platform."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

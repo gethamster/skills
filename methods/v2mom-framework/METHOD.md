@@ -1,3 +1,7 @@
+---
+category: Ops
+---
+
 # The V2MOM Framework: Aligning Strategy from Top to Bottom
 
 > Created by **Marc Benioff** — [https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/](https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/)

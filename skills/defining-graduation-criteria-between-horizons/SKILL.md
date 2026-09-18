@@ -1,6 +1,7 @@
 ---
 name: defining-graduation-criteria-between-horizons
 description: "This skill teaches you how to establish clear, measurable criteria and confidence thresholds that determine when a product initiative is ready to graduate from Later to Next, or from Next to Now, removing ambiguity from promotion decisions."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: now-next-later-framework

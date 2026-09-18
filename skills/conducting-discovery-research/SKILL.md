@@ -1,6 +1,7 @@
 ---
 name: conducting-discovery-research
 description: "This skill teaches you how to use divergent research methods—user interviews, desk research, and observation—to broadly explore the problem space in the first diamond of the double diamond design process."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

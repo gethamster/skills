@@ -1,6 +1,7 @@
 ---
 name: adapting-six-pillars-for-b2b-seo
 description: "This skill teaches you how to reshape a pillar-based content strategy so it aligns with B2B buying cycles, multi-stakeholder decision committees, and niche industry search behavior for maximum organic impact."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

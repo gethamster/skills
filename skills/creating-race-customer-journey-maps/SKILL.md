@@ -1,6 +1,7 @@
 ---
 name: creating-race-customer-journey-maps
 description: "This skill teaches you how to build a visual customer journey map organized by the four RACE stages, documenting touchpoints, channels, content, and buyer intent at each phase to reveal gaps and optimization opportunities across your full marketing funnel."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: race-framework

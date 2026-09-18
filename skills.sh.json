@@ -3,120 +3,285 @@
   "notGrouped": "bottom",
   "groupings": [
     {
-      "title": "The 4Ls Sprint Retrospective",
-      "description": "A Complete Guide to Structured Team Reflection",
+      "title": "Product",
+      "description": "Discovery, prioritization, roadmapping and the metrics a product is steered by.",
       "skills": [
-        "adapting-4ls-for-remote-and-hybrid-teams",
-        "building-4ls-retrospective-boards",
-        "categorizing-feedback-into-4ls",
-        "converting-4ls-insights-into-action-items",
-        "crafting-4ls-retrospective-questions",
-        "facilitating-4ls-retrospective-sessions",
-        "tracking-retrospective-trends-across-sprints"
+        "aligning-cross-functional-teams-around-north-star",
+        "aligning-product-channel-fit",
+        "aligning-teams-around-north-star-metric",
+        "applying-jtbd-to-product-strategy",
+        "applying-moscow-to-project-requirements",
+        "applying-now-next-later-to-saas-products",
+        "breaking-step-projects-into-daily-tasks",
+        "building-go-roadmap-templates",
+        "building-minimum-viable-products",
+        "building-north-star-dashboards",
+        "building-north-star-metric-dashboards",
+        "building-now-next-later-roadmap-templates",
+        "building-outcome-based-roadmap-presentations",
+        "building-roadmaps-from-moscow-outputs",
+        "calculating-rice-scores",
+        "calibrating-confidence",
+        "categorizing-items-into-now-next-later-horizons",
+        "categorizing-requirements-into-moscow-buckets",
+        "communicating-roadmaps-to-stakeholders",
+        "comparing-moscow-with-other-prioritization-frameworks",
+        "comparing-now-next-later-to-timeline-roadmaps",
+        "conducting-customer-discovery-interviews",
+        "conducting-jtbd-customer-interviews",
+        "connecting-north-star-to-product-roadmap",
+        "creating-job-maps",
+        "defining-core-functional-jobs",
+        "defining-goal-oriented-product-goals",
+        "defining-graduation-criteria-between-horizons",
+        "defining-measurable-business-goals",
+        "defining-measurable-outcomes-for-product-discovery",
+        "defining-measurable-outcomes-for-roadmaps",
+        "defining-measurable-product-goals",
+        "defining-mvp-scope-with-moscow",
+        "defining-pivot-or-persevere-decisions",
+        "defining-the-customer-experience-backwards",
+        "designing-assumption-tests-for-solutions",
+        "designing-step-projects-as-experiments",
+        "designing-validated-learning-experiments",
+        "diagnosing-growth-stalls-with-four-fits",
+        "drafting-frequently-asked-questions-documents",
+        "estimating-reach",
+        "evaluating-market-product-fit",
+        "evolving-north-star-across-growth-stages",
+        "facilitating-impact-mapping-workshops",
+        "facilitating-moscow-prioritization-workshops",
+        "facilitating-ost-workshops-with-stakeholders",
+        "facilitating-stakeholder-alignment-with-roadmaps",
+        "formulating-testable-hypotheses",
+        "generating-and-banking-product-ideas",
+        "generating-deliverables-from-impacts",
+        "generating-multiple-solutions-per-opportunity",
+        "identifying-actors-and-stakeholders",
+        "identifying-customer-opportunities-from-research",
+        "identifying-input-metrics",
+        "identifying-minimum-lovable-requirements",
+        "identifying-underserved-outcome-opportunities",
+        "identifying-your-north-star-metric",
+        "integrating-impact-maps-with-roadmaps",
+        "iterating-and-evolving-north-star-metric",
+        "iterating-pr-faq-documents-through-feedback",
+        "maintaining-a-living-opportunity-solution-tree",
+        "managing-multi-cadence-planning-cycles",
+        "mapping-desired-behavior-impacts",
+        "mapping-effort-to-person-months",
+        "mapping-features-to-roadmap-goals",
+        "mapping-initiatives-to-business-outcomes",
+        "mapping-input-metrics-to-north-star",
+        "mapping-the-four-fits-ecosystem",
+        "matching-channel-to-business-model",
+        "presenting-gist-plans-to-stakeholders",
+        "prioritizing-ideas-with-ice-scoring",
+        "prioritizing-opportunities-using-customer-evidence",
+        "prioritizing-outcomes-across-product-teams",
+        "replacing-traditional-roadmaps-with-gist",
+        "reprioritizing-across-horizons",
+        "resolving-stakeholder-disputes-with-moscow",
+        "reviewing-and-adapting-roadmap-goals",
+        "running-build-measure-learn-cycles",
+        "running-four-fits-audits",
+        "running-north-star-workshops",
+        "running-outcome-review-ceremonies",
+        "running-pr-faq-review-meetings",
+        "segmenting-customers-by-unmet-needs",
+        "selecting-mvp-types-and-formats",
+        "selecting-your-north-star-metric",
+        "sequencing-fits-for-early-stage-growth",
+        "setting-go-roadmap-metrics",
+        "setting-leading-and-lagging-outcome-metrics",
+        "structuring-opportunity-spaces-hierarchically",
+        "structuring-roadmap-timeframes",
+        "tracking-innovation-accounting-metrics",
+        "transitioning-from-feature-to-outcome-roadmaps",
+        "using-north-star-for-roadmap-prioritization",
+        "using-working-backwards-in-product-interviews",
+        "validating-assumptions-with-experiments",
+        "validating-business-model-market-fit",
+        "validating-north-star-with-user-research",
+        "writing-desired-outcome-statements",
+        "writing-internal-press-releases"
       ]
     },
     {
-      "title": "7 P's Marketing Mix",
-      "description": "The Complete Market Analysis Framework for Modern Teams",
-      "skills": [
-        "building-integrated-promotion-plans",
-        "conducting-7ps-marketing-audits",
-        "creating-physical-evidence-and-proof-points",
-        "designing-product-strategy-with-7ps",
-        "mapping-place-and-distribution-channels",
-        "optimizing-people-touchpoints",
-        "setting-pricing-strategies-for-services",
-        "streamlining-service-delivery-processes"
-      ]
-    },
-    {
-      "title": "Agile",
-      "description": "The Iterative Approach to Product Development",
-      "skills": [
-        "choosing-between-scrum-and-kanban",
-        "coaching-agile-team-adoption",
-        "comparing-agile-and-waterfall",
-        "facilitating-daily-standups",
-        "managing-product-backlogs",
-        "running-retrospectives",
-        "running-sprint-planning-and-execution",
-        "scaling-agile-across-teams"
-      ]
-    },
-    {
-      "title": "AI Product Pricing Models",
-      "description": "Unit Economics, Tiering & the Playbook That Works",
-      "skills": [
-        "benchmarking-ai-product-pricing",
-        "calculating-ai-inference-unit-economics",
-        "choosing-ai-pricing-models",
-        "designing-usage-based-pricing-tiers",
-        "managing-gross-margins-on-ai-features",
-        "migrating-from-flat-to-usage-based-pricing",
-        "modeling-token-cost-pass-through",
-        "setting-rate-limits-and-overage-pricing"
-      ]
-    },
-    {
-      "title": "AI SEO Optimization",
-      "description": "How to Rank in AI-Generated Answers",
-      "skills": [
-        "adapting-keyword-research-for-conversational-queries",
-        "auditing-llm-knowledge-of-your-brand",
-        "building-topical-authority-for-llms",
-        "implementing-schema-markup-for-aeo",
-        "optimizing-for-ai-citation-and-attribution",
-        "structuring-content-for-ai-answers",
-        "tracking-ai-search-visibility"
-      ]
-    },
-    {
-      "title": "The Ansoff Matrix",
-      "description": "A Complete Guide to Strategic Growth Planning",
-      "skills": [
-        "assessing-diversification-risk-and-opportunity",
-        "defining-target-markets-for-expansion-strategies",
-        "designing-product-development-growth-paths",
-        "evaluating-market-penetration-strategies",
-        "mapping-growth-options-to-the-ansoff-grid",
-        "planning-market-development-initiatives",
-        "selecting-digital-channels-per-growth-quadrant"
-      ]
-    },
-    {
-      "title": "Claude's Constitution",
-      "description": "How Anthropic's Alignment Framework Shapes AI-Driven SEO",
-      "skills": [
-        "applying-contextual-judgment-in-claude-ai-workflows",
-        "automating-seo-tasks-using-claudes-reasoning-principles",
-        "building-topic-clusters-with-claude-constitutional-alignment",
-        "crafting-claude-ai-prompts-with-constitutional-values",
-        "evaluating-claude-outputs-against-constitutional-principles",
-        "generating-long-tail-keywords-with-claudes-value-framework",
-        "using-claude-code-for-seo-with-constitutional-guardrails"
-      ]
-    },
-    {
-      "title": "Constitutional AI",
-      "description": "The Method Behind Claude's Ethical Alignment",
+      "title": "Development",
+      "description": "Engineering practice and the methods for working alongside AI agents.",
       "skills": [
         "balancing-helpfulness-and-harmlessness-tradeoffs",
+        "comparing-gstack-to-other-ai-coding-frameworks",
+        "comparing-posthog-experiments-with-alternative-platforms",
         "crafting-red-team-prompts-for-safety-testing",
+        "customizing-and-extending-gstack-skills",
+        "designing-onboarding-experiment-hypotheses-and-metrics",
         "drafting-ai-constitution-principles",
         "evaluating-ai-alignment-with-preference-models",
         "generating-reinforcement-learning-from-ai-feedback",
         "implementing-ai-self-critique-and-revision",
-        "scaling-constitutional-training-without-human-labels"
+        "installing-and-configuring-gstack-skill-pack",
+        "integrating-posthog-experiments-with-webflow-and-marketing-pages",
+        "interpreting-bayesian-and-frequentist-experiment-results",
+        "navigating-gstack-slash-commands-and-specialist-skills",
+        "orchestrating-power-tools-in-gstack-workflows",
+        "running-ab-tests-in-posthog-experiments-tab",
+        "scaling-constitutional-training-without-human-labels",
+        "segmenting-new-user-cohorts-for-onboarding-tests",
+        "setting-up-posthog-feature-flags-for-experiments",
+        "shipping-winning-variants-and-cleaning-up-experiments",
+        "structuring-ai-coding-sessions-with-gstack-phases",
+        "using-multi-agent-perspectives-for-development"
       ]
     },
     {
-      "title": "The Copywriting Framework",
-      "description": "A Conversion-Focused Methodology for Every Page",
+      "title": "Experience",
+      "description": "Customer journeys, design process and measuring what people actually experience.",
       "skills": [
+        "activating-customer-advocacy-and-referrals",
+        "adapting-double-diamond-for-ux-projects",
+        "adapting-journey-frameworks-for-b2b-contexts",
+        "adapting-planned-journeys-for-b2b",
+        "adding-motion-and-interaction-taste-rules",
+        "aligning-content-and-channels-to-journey-stages",
+        "aligning-teams-around-journey-ownership",
+        "analyzing-active-evaluation-behavior",
+        "auditing-ai-generated-frontends-for-design-quality",
+        "authoring-portable-skill-files-for-design-systems",
+        "building-a-journey-portfolio-inventory",
+        "building-customer-journey-maps",
+        "building-heart-dashboards",
+        "building-planned-journey-funnel-visualizations",
+        "building-post-purchase-loyalty-loops",
+        "building-realistic-sprint-prototypes",
+        "choosing-between-double-diamond-and-design-thinking",
+        "conducting-discovery-research",
+        "conducting-sprint-user-tests",
+        "configuring-layout-and-visual-density-constraints",
+        "connecting-cross-stage-insights",
+        "converging-on-final-solutions",
+        "creating-circular-journey-maps",
+        "creating-story-mapping-templates",
+        "decomposing-activities-into-user-tasks",
+        "defining-heart-goals-signals-metrics",
+        "defining-latent-evaluation-buying-stages",
+        "designing-retention-and-loyalty-strategies",
+        "diagramming-the-double-diamond",
+        "enforcing-typography-and-spacing-standards",
+        "facilitating-design-sprint-workshops",
+        "facilitating-divergent-ideation",
+        "facilitating-story-mapping-workshops",
+        "identifying-cross-journey-insights",
+        "identifying-pain-points-and-drop-off-moments",
+        "identifying-touchpoints-across-cdj-stages",
+        "identifying-user-activities-and-backbone",
+        "installing-skill-files-in-ai-coding-agents",
+        "mapping-and-defining-sprint-challenges",
+        "mapping-customer-touchpoints-across-stages",
+        "mapping-divergent-convergent-thinking",
+        "mapping-high-involvement-purchase-journeys",
+        "mapping-initial-consideration-sets",
+        "mapping-touchpoint-interconnections",
+        "mapping-user-personas-to-journeys",
+        "measuring-adoption-and-task-success",
+        "measuring-journey-stage-kpis",
+        "measuring-user-happiness-surveys",
+        "optimizing-moment-of-purchase-triggers",
+        "optimizing-touchpoints-per-stage",
+        "planning-design-sprint-agendas",
+        "presenting-heart-metrics-in-interviews",
+        "prioritizing-and-slicing-releases",
+        "prioritizing-journeys-for-optimization",
+        "refining-story-maps-across-sprints",
+        "replacing-funnel-thinking-with-cdj",
+        "running-heart-framework-workshops",
+        "running-remote-design-sprints",
+        "sketching-and-voting-on-solutions",
+        "storyboarding-sprint-concepts",
+        "structuring-journey-hierarchy-levels",
+        "synthesizing-problem-definitions",
+        "tracking-brand-consideration-shifts",
+        "tracking-engagement-and-retention-metrics",
+        "transitioning-from-journey-mapping-to-journey-management",
+        "writing-anti-slop-design-review-rules"
+      ]
+    },
+    {
+      "title": "Marketing",
+      "description": "Positioning, pricing, search and the frameworks that take a product to market.",
+      "skills": [
+        "adapting-keyword-research-for-conversational-queries",
+        "adapting-six-pillars-for-b2b-seo",
+        "applying-contextual-judgment-in-claude-ai-workflows",
+        "assessing-diversification-risk-and-opportunity",
+        "assessing-threat-of-new-entrants-and-substitutes",
+        "auditing-llm-knowledge-of-your-brand",
+        "automating-seo-tasks-using-claudes-reasoning-principles",
+        "benchmarking-ai-product-pricing",
+        "building-awareness-in-the-reach-stage",
+        "building-integrated-promotion-plans",
+        "building-race-planning-templates",
+        "building-topic-clusters-with-claude-constitutional-alignment",
+        "building-topical-authority-for-llms",
+        "building-topical-authority-through-content-clustering",
+        "calculating-ai-inference-unit-economics",
+        "choosing-ai-pricing-models",
+        "collecting-data-for-six-forces-analysis",
+        "conducting-7ps-marketing-audits",
+        "conducting-industry-rivalry-assessment",
+        "conducting-non-pitch-discovery-calls",
+        "crafting-claude-ai-prompts-with-constitutional-values",
         "crafting-high-converting-ctas",
+        "creating-physical-evidence-and-proof-points",
+        "creating-race-customer-journey-maps",
+        "creating-semantic-keyword-maps",
+        "defining-target-markets-for-expansion-strategies",
+        "designing-content-cluster-architectures",
+        "designing-developer-pain-interview-guides",
+        "designing-product-development-growth-paths",
+        "designing-product-strategy-with-7ps",
+        "designing-usage-based-pricing-tiers",
+        "driving-interactions-in-the-act-stage",
+        "evaluating-buyer-and-supplier-power",
+        "evaluating-claude-outputs-against-constitutional-principles",
+        "evaluating-market-penetration-strategies",
+        "generating-long-tail-keywords-with-claudes-value-framework",
+        "implementing-schema-markup-for-aeo",
+        "implementing-six-pillar-seo-strategy",
+        "managing-gross-margins-on-ai-features",
+        "mapping-complementary-products-force",
+        "mapping-current-reality-with-pillar-one",
+        "mapping-customer-journey-stages-to-race",
+        "mapping-growth-options-to-the-ansoff-grid",
+        "mapping-place-and-distribution-channels",
+        "migrating-from-flat-to-usage-based-pricing",
         "mining-customer-language-for-copy",
+        "modeling-token-cost-pass-through",
+        "optimizing-conversions-in-the-convert-stage",
+        "optimizing-for-ai-citation-and-attribution",
+        "optimizing-people-touchpoints",
+        "optimizing-the-full-funnel-customer-journey",
+        "planning-market-development-initiatives",
+        "recruiting-developer-advisory-members",
+        "rotating-and-managing-board-membership",
+        "scenario-planning-for-alternative-futures",
+        "selecting-digital-channels-per-growth-quadrant",
+        "selecting-tools-for-six-forces-research",
+        "setting-kpis-across-race-stages",
+        "setting-pricing-strategies-for-services",
+        "setting-rate-limits-and-overage-pricing",
+        "streamlining-service-delivery-processes",
+        "structuring-content-for-ai-answers",
         "structuring-landing-page-copy-for-conversion",
+        "synthesizing-advisory-insights-into-themes",
+        "synthesizing-six-forces-into-strategic-recommendations",
+        "timing-content-interventions-strategically",
+        "tracking-ai-search-visibility",
+        "tracking-developer-sentiment-across-sessions",
         "translating-features-into-benefits",
+        "translating-tab-findings-to-product-roadmap",
+        "using-claude-code-for-seo-with-constitutional-guardrails",
         "writing-benefit-driven-headlines",
         "writing-clarity-first-web-copy",
         "writing-email-sequences-that-sell",
@@ -124,553 +289,124 @@
       ]
     },
     {
-      "title": "The Double Diamond",
-      "description": "A Proven Framework for Design and Innovation",
-      "skills": [
-        "adapting-double-diamond-for-ux-projects",
-        "choosing-between-double-diamond-and-design-thinking",
-        "conducting-discovery-research",
-        "converging-on-final-solutions",
-        "diagramming-the-double-diamond",
-        "facilitating-divergent-ideation",
-        "mapping-divergent-convergent-thinking",
-        "synthesizing-problem-definitions"
-      ]
-    },
-    {
-      "title": "The Ecosystem Journey Framework",
-      "description": "Managing the Customer Journey as a Living System",
-      "skills": [
-        "aligning-teams-around-journey-ownership",
-        "building-a-journey-portfolio-inventory",
-        "identifying-cross-journey-insights",
-        "mapping-touchpoint-interconnections",
-        "prioritizing-journeys-for-optimization",
-        "structuring-journey-hierarchy-levels",
-        "transitioning-from-journey-mapping-to-journey-management"
-      ]
-    },
-    {
-      "title": "The Five-Stage Customer Journey Framework",
-      "description": "The customer journey is one of those concepts that seems obvious until you try to act on it.",
-      "skills": [
-        "activating-customer-advocacy-and-referrals",
-        "adapting-journey-frameworks-for-b2b-contexts",
-        "aligning-content-and-channels-to-journey-stages",
-        "building-customer-journey-maps",
-        "designing-retention-and-loyalty-strategies",
-        "identifying-pain-points-and-drop-off-moments",
-        "mapping-customer-touchpoints-across-stages",
-        "measuring-journey-stage-kpis"
-      ]
-    },
-    {
-      "title": "The Five-Step Sprint Retrospective Framework for Agile Teams",
-      "description": "The Five-Step Retrospective Framework is the definitive structure for running an effective sprint retrospective.",
-      "skills": [
-        "building-sprint-retrospective-templates",
-        "choosing-retrospective-activities-and-exercises",
-        "closing-retrospectives-effectively",
-        "deciding-what-to-do-in-retrospectives",
-        "gathering-data-in-retrospectives",
-        "generating-insights-from-retrospective-data",
-        "setting-the-stage-for-retrospectives",
-        "tracking-retrospective-action-items-across-sprints"
-      ]
-    },
-    {
-      "title": "The Forward Deployed Engineer Five-Lens Framework",
-      "description": "The forward deployed engineer role emerged at Palantir Technologies in the early 2010s as a response to a specific failure mode in enterprise software.",
-      "skills": [
-        "building-interdisciplinary-fde-skillsets",
-        "measuring-fde-success-by-business-outcomes",
-        "operating-autonomously-in-customer-environments",
-        "preparing-for-forward-deployed-engineer-interviews",
-        "running-continuous-learning-loops-from-field-data",
-        "scoping-mission-driven-engagements",
-        "shipping-production-systems-inside-client-infrastructure",
-        "transitioning-field-learnings-into-product-features"
-      ]
-    },
-    {
-      "title": "The Four Fits Framework",
-      "description": "A Complete Guide to Scalable Growth",
-      "skills": [
-        "aligning-product-channel-fit",
-        "diagnosing-growth-stalls-with-four-fits",
-        "evaluating-market-product-fit",
-        "mapping-the-four-fits-ecosystem",
-        "matching-channel-to-business-model",
-        "running-four-fits-audits",
-        "sequencing-fits-for-early-stage-growth",
-        "validating-business-model-market-fit"
-      ]
-    },
-    {
-      "title": "GIST Planning Framework",
-      "description": "How Every Product Manager Can Plan with Evidence Over Opinions",
-      "skills": [
-        "breaking-step-projects-into-daily-tasks",
-        "defining-measurable-product-goals",
-        "designing-step-projects-as-experiments",
-        "generating-and-banking-product-ideas",
-        "managing-multi-cadence-planning-cycles",
-        "presenting-gist-plans-to-stakeholders",
-        "prioritizing-ideas-with-ice-scoring",
-        "replacing-traditional-roadmaps-with-gist"
-      ]
-    },
-    {
-      "title": "What Is a Product Roadmap? The GO Product Roadmap Framework",
-      "description": "If you have ever asked \"what is a product roadmap,\" you have likely encountered two very different answers.",
-      "skills": [
-        "building-go-roadmap-templates",
-        "defining-goal-oriented-product-goals",
-        "facilitating-stakeholder-alignment-with-roadmaps",
-        "mapping-features-to-roadmap-goals",
-        "reviewing-and-adapting-roadmap-goals",
-        "setting-go-roadmap-metrics",
-        "structuring-roadmap-timeframes"
-      ]
-    },
-    {
-      "title": "The Design Sprint",
-      "description": "A Practitioner's Guide to Five Days That Replace Months of Debate",
-      "skills": [
-        "building-realistic-sprint-prototypes",
-        "conducting-sprint-user-tests",
-        "facilitating-design-sprint-workshops",
-        "mapping-and-defining-sprint-challenges",
-        "planning-design-sprint-agendas",
-        "running-remote-design-sprints",
-        "sketching-and-voting-on-solutions",
-        "storyboarding-sprint-concepts"
-      ]
-    },
-    {
-      "title": "The gstack Framework",
-      "description": "Structured AI Coding with Specialist Skills and Multi-Agent Perspectives",
-      "skills": [
-        "comparing-gstack-to-other-ai-coding-frameworks",
-        "customizing-and-extending-gstack-skills",
-        "installing-and-configuring-gstack-skill-pack",
-        "navigating-gstack-slash-commands-and-specialist-skills",
-        "orchestrating-power-tools-in-gstack-workflows",
-        "structuring-ai-coding-sessions-with-gstack-phases",
-        "using-multi-agent-perspectives-for-development"
-      ]
-    },
-    {
-      "title": "HEART Framework",
-      "description": "How Every Product Manager Can Measure UX at Scale",
-      "skills": [
-        "building-heart-dashboards",
-        "defining-heart-goals-signals-metrics",
-        "measuring-adoption-and-task-success",
-        "measuring-user-happiness-surveys",
-        "presenting-heart-metrics-in-interviews",
-        "running-heart-framework-workshops",
-        "tracking-engagement-and-retention-metrics"
-      ]
-    },
-    {
-      "title": "Impact Mapping",
-      "description": "A Product Manager's Guide to Goal-Driven Delivery",
-      "skills": [
-        "defining-measurable-business-goals",
-        "facilitating-impact-mapping-workshops",
-        "generating-deliverables-from-impacts",
-        "identifying-actors-and-stakeholders",
-        "integrating-impact-maps-with-roadmaps",
-        "mapping-desired-behavior-impacts",
-        "validating-assumptions-with-experiments"
-      ]
-    },
-    {
-      "title": "Jobs-to-be-Done (JTBD) Framework",
-      "description": "A Product Manager's Complete Guide",
-      "skills": [
-        "applying-jtbd-to-product-strategy",
-        "conducting-jtbd-customer-interviews",
-        "creating-job-maps",
-        "defining-core-functional-jobs",
-        "identifying-underserved-outcome-opportunities",
-        "segmenting-customers-by-unmet-needs",
-        "writing-desired-outcome-statements"
-      ]
-    },
-    {
-      "title": "Kanban",
-      "description": "The Visual Workflow Method for Continuous Delivery",
-      "skills": [
-        "choosing-kanban-tools-and-software",
-        "comparing-kanban-and-scrum",
-        "creating-kanban-pull-policies",
-        "designing-kanban-boards",
-        "managing-projects-with-kanban",
-        "measuring-kanban-flow-metrics",
-        "running-kanban-cadences",
-        "setting-wip-limits"
-      ]
-    },
-    {
-      "title": "The Lean Startup",
-      "description": "A Complete Guide to Validated Product Development",
-      "skills": [
-        "building-minimum-viable-products",
-        "conducting-customer-discovery-interviews",
-        "defining-pivot-or-persevere-decisions",
-        "designing-validated-learning-experiments",
-        "formulating-testable-hypotheses",
-        "running-build-measure-learn-cycles",
-        "selecting-mvp-types-and-formats",
-        "tracking-innovation-accounting-metrics"
-      ]
-    },
-    {
-      "title": "McKinsey Consumer Decision Journey",
-      "description": "Rethinking the Customer Journey as a Circular Loop",
-      "skills": [
-        "analyzing-active-evaluation-behavior",
-        "building-post-purchase-loyalty-loops",
-        "creating-circular-journey-maps",
-        "identifying-touchpoints-across-cdj-stages",
-        "mapping-initial-consideration-sets",
-        "optimizing-moment-of-purchase-triggers",
-        "replacing-funnel-thinking-with-cdj"
-      ]
-    },
-    {
-      "title": "The MoSCoW Method",
-      "description": "A Complete Guide to Prioritization",
-      "skills": [
-        "applying-moscow-to-project-requirements",
-        "building-roadmaps-from-moscow-outputs",
-        "categorizing-requirements-into-moscow-buckets",
-        "comparing-moscow-with-other-prioritization-frameworks",
-        "defining-mvp-scope-with-moscow",
-        "facilitating-moscow-prioritization-workshops",
-        "resolving-stakeholder-disputes-with-moscow"
-      ]
-    },
-    {
-      "title": "North Star Framework",
-      "description": "How Every Product Manager Aligns Teams Around One Metric",
-      "skills": [
-        "aligning-teams-around-north-star-metric",
-        "building-north-star-metric-dashboards",
-        "identifying-your-north-star-metric",
-        "iterating-and-evolving-north-star-metric",
-        "mapping-input-metrics-to-north-star",
-        "running-north-star-workshops",
-        "using-north-star-for-roadmap-prioritization"
-      ]
-    },
-    {
-      "title": "North Star Metric",
-      "description": "The Product Manager's Guide to Company-Wide Alignment",
-      "skills": [
-        "aligning-cross-functional-teams-around-north-star",
-        "building-north-star-dashboards",
-        "connecting-north-star-to-product-roadmap",
-        "evolving-north-star-across-growth-stages",
-        "identifying-input-metrics",
-        "selecting-your-north-star-metric",
-        "validating-north-star-with-user-research"
-      ]
-    },
-    {
-      "title": "Now Next Later Framework",
-      "description": "How to Build Roadmaps Without False Deadlines",
-      "skills": [
-        "applying-now-next-later-to-saas-products",
-        "building-now-next-later-roadmap-templates",
-        "categorizing-items-into-now-next-later-horizons",
-        "communicating-roadmaps-to-stakeholders",
-        "comparing-now-next-later-to-timeline-roadmaps",
-        "defining-graduation-criteria-between-horizons",
-        "reprioritizing-across-horizons"
-      ]
-    },
-    {
-      "title": "OKR",
-      "description": "The Definitive Guide to Objectives and Key Results",
-      "skills": [
-        "aligning-okrs-across-teams",
-        "avoiding-common-okr-mistakes",
-        "conducting-okr-check-ins-and-reviews",
-        "defining-measurable-key-results",
-        "running-okr-planning-sessions",
-        "scoring-and-grading-okrs",
-        "setting-okr-cadence-and-cycles",
-        "writing-effective-objectives"
-      ]
-    },
-    {
-      "title": "Opportunity Solution Tree",
-      "description": "The Product Manager's Framework for Structured Discovery",
-      "skills": [
-        "defining-measurable-outcomes-for-product-discovery",
-        "designing-assumption-tests-for-solutions",
-        "facilitating-ost-workshops-with-stakeholders",
-        "generating-multiple-solutions-per-opportunity",
-        "identifying-customer-opportunities-from-research",
-        "maintaining-a-living-opportunity-solution-tree",
-        "prioritizing-opportunities-using-customer-evidence",
-        "structuring-opportunity-spaces-hierarchically"
-      ]
-    },
-    {
-      "title": "Outcome-Driven Roadmapping",
-      "description": "How a Product Manager Plans Around Results, Not Features",
-      "skills": [
-        "building-outcome-based-roadmap-presentations",
-        "defining-measurable-outcomes-for-roadmaps",
-        "mapping-initiatives-to-business-outcomes",
-        "prioritizing-outcomes-across-product-teams",
-        "running-outcome-review-ceremonies",
-        "setting-leading-and-lagging-outcome-metrics",
-        "transitioning-from-feature-to-outcome-roadmaps"
-      ]
-    },
-    {
-      "title": "The Planned Journey Framework",
-      "description": "Mapping the Customer Journey for High-Stakes Purchases",
-      "skills": [
-        "adapting-planned-journeys-for-b2b",
-        "building-planned-journey-funnel-visualizations",
-        "connecting-cross-stage-insights",
-        "defining-latent-evaluation-buying-stages",
-        "mapping-high-involvement-purchase-journeys",
-        "optimizing-touchpoints-per-stage",
-        "tracking-brand-consideration-shifts"
-      ]
-    },
-    {
-      "title": "PostHog Experiments",
-      "description": "A Practical Method for Onboarding A/B Tests",
-      "skills": [
-        "comparing-posthog-experiments-with-alternative-platforms",
-        "designing-onboarding-experiment-hypotheses-and-metrics",
-        "integrating-posthog-experiments-with-webflow-and-marketing-pages",
-        "interpreting-bayesian-and-frequentist-experiment-results",
-        "running-ab-tests-in-posthog-experiments-tab",
-        "segmenting-new-user-cohorts-for-onboarding-tests",
-        "setting-up-posthog-feature-flags-for-experiments",
-        "shipping-winning-variants-and-cleaning-up-experiments"
-      ]
-    },
-    {
-      "title": "Product Team Competencies Framework for Every Product Manager",
-      "description": "Most organizations know they need strong product managers but struggle to define what \"strong\" actually means.",
-      "skills": [
-        "assessing-pm-team-strengths-and-gaps",
-        "building-pm-career-development-plans",
-        "defining-competency-levels-from-associate-to-senior-pm",
-        "designing-competency-based-pm-interview-rubrics",
-        "differentiating-product-manager-role-types",
-        "mapping-competencies-across-strategic-tactical-axes",
-        "showcasing-pm-competencies-in-portfolios-and-resumes",
-        "writing-competency-based-pm-job-descriptions"
-      ]
-    },
-    {
-      "title": "RACE Framework",
-      "description": "A Full-Funnel Approach to the Customer Journey",
-      "skills": [
-        "building-awareness-in-the-reach-stage",
-        "building-race-planning-templates",
-        "creating-race-customer-journey-maps",
-        "driving-interactions-in-the-act-stage",
-        "mapping-customer-journey-stages-to-race",
-        "optimizing-conversions-in-the-convert-stage",
-        "optimizing-the-full-funnel-customer-journey",
-        "setting-kpis-across-race-stages"
-      ]
-    },
-    {
-      "title": "RICE Framework",
-      "description": "The RICE framework is a product prioritization model developed at Intercom.",
-      "skills": [
-        "calculating-rice-scores",
-        "calibrating-confidence",
-        "estimating-reach",
-        "mapping-effort-to-person-months"
-      ]
-    },
-    {
-      "title": "Scrum",
-      "description": "A Complete Guide to Agile's Most Popular Framework",
-      "skills": [
-        "conducting-sprint-reviews",
-        "defining-scrum-roles-and-accountabilities",
-        "estimating-work-with-story-points",
-        "facilitating-sprint-retrospectives",
-        "grooming-the-product-backlog",
-        "managing-scrum-boards-in-jira",
-        "planning-and-executing-sprints",
-        "running-daily-standups"
-      ]
-    },
-    {
-      "title": "Shape Up",
-      "description": "The Product Manager's Guide to Fixed-Time, Variable-Scope Development",
-      "skills": [
-        "managing-six-week-cycles",
-        "mapping-scopes-for-building",
-        "planning-cooldown-periods",
-        "running-betting-tables",
-        "setting-appetites-and-managing-scope",
-        "shaping-product-pitches",
-        "tracking-progress-with-hill-charts",
-        "using-breadboards-and-fat-marker-sketches"
-      ]
-    },
-    {
-      "title": "The Six Forces Model",
-      "description": "Market Analysis Beyond Porter's Five Forces",
-      "skills": [
-        "assessing-threat-of-new-entrants-and-substitutes",
-        "collecting-data-for-six-forces-analysis",
-        "conducting-industry-rivalry-assessment",
-        "evaluating-buyer-and-supplier-power",
-        "mapping-complementary-products-force",
-        "selecting-tools-for-six-forces-research",
-        "synthesizing-six-forces-into-strategic-recommendations"
-      ]
-    },
-    {
-      "title": "The Six Pillars Framework",
-      "description": "From Futures Thinking to Strategic Content Architecture",
-      "skills": [
-        "adapting-six-pillars-for-b2b-seo",
-        "building-topical-authority-through-content-clustering",
-        "creating-semantic-keyword-maps",
-        "designing-content-cluster-architectures",
-        "implementing-six-pillar-seo-strategy",
-        "mapping-current-reality-with-pillar-one",
-        "scenario-planning-for-alternative-futures",
-        "timing-content-interventions-strategically"
-      ]
-    },
-    {
-      "title": "The Spotify Model",
-      "description": "An Organizational Framework for Scaling Agile",
+      "title": "Ops",
+      "description": "How a team is organized, aligned and held to its objectives.",
       "skills": [
         "adapting-spotify-model-to-your-organization",
+        "aligning-okrs-across-teams",
+        "applying-the-e-myth-framework-to-agencies",
+        "assessing-pm-team-strengths-and-gaps",
+        "assessing-your-technician-manager-entrepreneur-balance",
+        "avoiding-common-okr-mistakes",
         "balancing-autonomy-and-alignment",
         "building-cross-cutting-guilds",
-        "evaluating-spotify-model-tradeoffs",
-        "forming-autonomous-squads",
-        "organizing-tribes-for-alignment",
-        "running-chapters-for-craft-excellence",
-        "scaling-agile-with-spotify-structures"
-      ]
-    },
-    {
-      "title": "Start Stop Continue",
-      "description": "A Simple Framework for Actionable Team Feedback",
-      "skills": [
-        "building-start-stop-continue-templates",
-        "categorizing-and-prioritizing-feedback-items",
-        "crafting-actionable-feedback-prompts",
-        "facilitating-start-stop-continue-retrospectives",
-        "running-start-stop-continue-icebreakers",
-        "using-start-stop-continue-in-one-on-ones",
-        "writing-effective-start-stop-continue-feedback"
-      ]
-    },
-    {
-      "title": "User Story Mapping",
-      "description": "Building Products from the User's Perspective",
-      "skills": [
-        "creating-story-mapping-templates",
-        "decomposing-activities-into-user-tasks",
-        "facilitating-story-mapping-workshops",
-        "identifying-user-activities-and-backbone",
-        "mapping-user-personas-to-journeys",
-        "prioritizing-and-slicing-releases",
-        "refining-story-maps-across-sprints"
-      ]
-    },
-    {
-      "title": "Taste Skill Frontend Framework",
-      "description": "Teaching AI Agents Design Judgment",
-      "skills": [
-        "adding-motion-and-interaction-taste-rules",
-        "auditing-ai-generated-frontends-for-design-quality",
-        "authoring-portable-skill-files-for-design-systems",
-        "configuring-layout-and-visual-density-constraints",
-        "enforcing-typography-and-spacing-standards",
-        "installing-skill-files-in-ai-coding-agents",
-        "writing-anti-slop-design-review-rules"
-      ]
-    },
-    {
-      "title": "Technical Advisory Board (TAB) Framework for Technical SEO Devtools",
-      "description": "The Technical Advisory Board (TAB) Framework, popularized by Adam Frankl in his work on developer-facing startups, is a disciplined approach to continuous customer discovery.",
-      "skills": [
-        "conducting-non-pitch-discovery-calls",
-        "designing-developer-pain-interview-guides",
-        "recruiting-developer-advisory-members",
-        "rotating-and-managing-board-membership",
-        "synthesizing-advisory-insights-into-themes",
-        "tracking-developer-sentiment-across-sessions",
-        "translating-tab-findings-to-product-roadmap"
-      ]
-    },
-    {
-      "title": "The Technician Manager Entrepreneur Framework",
-      "description": "In 1986, Michael E. Gerber published The E-Myth, later expanded as The E-Myth Revisited in 1995.",
-      "skills": [
-        "applying-the-e-myth-framework-to-agencies",
-        "assessing-your-technician-manager-entrepreneur-balance",
+        "building-interdisciplinary-fde-skillsets",
+        "building-pm-career-development-plans",
         "building-systems-as-the-manager-role",
-        "designing-role-based-time-allocation",
-        "developing-your-entrepreneurial-vision",
-        "shifting-from-working-in-to-working-on-your-business",
-        "transitioning-from-technician-to-entrepreneur"
-      ]
-    },
-    {
-      "title": "The V2MOM Framework",
-      "description": "Aligning Strategy from Top to Bottom",
-      "skills": [
         "building-v2mom-templates-and-worksheets",
         "cascading-v2moms-across-teams",
         "comparing-v2mom-with-okrs-and-other-frameworks",
+        "conducting-okr-check-ins-and-reviews",
+        "defining-competency-levels-from-associate-to-senior-pm",
+        "defining-measurable-key-results",
         "defining-methods-and-action-plans",
+        "designing-competency-based-pm-interview-rubrics",
+        "designing-role-based-time-allocation",
+        "developing-your-entrepreneurial-vision",
+        "differentiating-product-manager-role-types",
+        "evaluating-spotify-model-tradeoffs",
         "facilitating-v2mom-planning-sessions",
+        "forming-autonomous-squads",
         "identifying-obstacles-and-mitigation-strategies",
+        "mapping-competencies-across-strategic-tactical-axes",
+        "measuring-fde-success-by-business-outcomes",
+        "operating-autonomously-in-customer-environments",
+        "organizing-tribes-for-alignment",
+        "preparing-for-forward-deployed-engineer-interviews",
+        "running-chapters-for-craft-excellence",
+        "running-continuous-learning-loops-from-field-data",
+        "running-okr-planning-sessions",
+        "scaling-agile-with-spotify-structures",
+        "scoping-mission-driven-engagements",
+        "scoring-and-grading-okrs",
         "setting-measures-and-success-metrics",
+        "setting-okr-cadence-and-cycles",
+        "shifting-from-working-in-to-working-on-your-business",
+        "shipping-production-systems-inside-client-infrastructure",
+        "showcasing-pm-competencies-in-portfolios-and-resumes",
+        "transitioning-field-learnings-into-product-features",
+        "transitioning-from-technician-to-entrepreneur",
+        "writing-competency-based-pm-job-descriptions",
+        "writing-effective-objectives",
         "writing-vision-and-values-statements"
       ]
     },
     {
-      "title": "The Waterfall Methodology",
-      "description": "A Linear Framework for Structured Project Delivery",
+      "title": "Workflows",
+      "description": "How the work itself runs: iterations, boards, ceremonies and retrospectives.",
       "skills": [
+        "adapting-4ls-for-remote-and-hybrid-teams",
         "analyzing-seo-waterfall-charts",
+        "building-4ls-retrospective-boards",
         "building-content-waterfall-strategies",
+        "building-sprint-retrospective-templates",
+        "building-start-stop-continue-templates",
+        "categorizing-and-prioritizing-feedback-items",
+        "categorizing-feedback-into-4ls",
+        "choosing-between-scrum-and-kanban",
+        "choosing-kanban-tools-and-software",
+        "choosing-retrospective-activities-and-exercises",
+        "closing-retrospectives-effectively",
+        "coaching-agile-team-adoption",
+        "comparing-agile-and-waterfall",
+        "comparing-kanban-and-scrum",
         "conducting-phase-gate-reviews",
+        "conducting-sprint-reviews",
+        "converting-4ls-insights-into-action-items",
+        "crafting-4ls-retrospective-questions",
+        "crafting-actionable-feedback-prompts",
+        "creating-kanban-pull-policies",
         "creating-waterfall-project-plans",
+        "deciding-what-to-do-in-retrospectives",
+        "defining-scrum-roles-and-accountabilities",
         "defining-waterfall-phases",
+        "designing-kanban-boards",
+        "estimating-work-with-story-points",
+        "facilitating-4ls-retrospective-sessions",
+        "facilitating-daily-standups",
+        "facilitating-sprint-retrospectives",
+        "facilitating-start-stop-continue-retrospectives",
+        "gathering-data-in-retrospectives",
+        "generating-insights-from-retrospective-data",
+        "grooming-the-product-backlog",
         "managing-change-requests-in-waterfall",
+        "managing-product-backlogs",
+        "managing-projects-with-kanban",
+        "managing-scrum-boards-in-jira",
+        "managing-six-week-cycles",
+        "mapping-scopes-for-building",
+        "measuring-kanban-flow-metrics",
+        "planning-and-executing-sprints",
+        "planning-cooldown-periods",
+        "running-betting-tables",
+        "running-daily-standups",
+        "running-kanban-cadences",
+        "running-retrospectives",
+        "running-sprint-planning-and-execution",
+        "running-start-stop-continue-icebreakers",
         "running-waterfall-testing-phases",
+        "scaling-agile-across-teams",
+        "setting-appetites-and-managing-scope",
+        "setting-the-stage-for-retrospectives",
+        "setting-wip-limits",
+        "shaping-product-pitches",
+        "tracking-progress-with-hill-charts",
+        "tracking-retrospective-action-items-across-sprints",
+        "tracking-retrospective-trends-across-sprints",
+        "using-breadboards-and-fat-marker-sketches",
+        "using-start-stop-continue-in-one-on-ones",
+        "writing-effective-start-stop-continue-feedback",
         "writing-waterfall-requirements-documents"
-      ]
-    },
-    {
-      "title": "Working Backwards",
-      "description": "How Every Product Manager Can Start from the Customer",
-      "skills": [
-        "defining-the-customer-experience-backwards",
-        "drafting-frequently-asked-questions-documents",
-        "identifying-minimum-lovable-requirements",
-        "iterating-pr-faq-documents-through-feedback",
-        "running-pr-faq-review-meetings",
-        "using-working-backwards-in-product-interviews",
-        "writing-internal-press-releases"
       ]
     }
   ]

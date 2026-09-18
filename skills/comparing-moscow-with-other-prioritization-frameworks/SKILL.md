@@ -1,6 +1,7 @@
 ---
 name: comparing-moscow-with-other-prioritization-frameworks
 description: "This skill teaches you when to choose MoSCoW over quantitative scoring frameworks like RICE, ICE, and WSJF, and how to combine multiple prioritization methods for stronger, more defensible prioritization outcomes."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

@@ -1,6 +1,7 @@
 ---
 name: writing-desired-outcome-statements
 description: "This skill teaches you how to craft precisely structured outcome statements that capture what customers want to achieve at each step of their job, using a repeatable four-part formula that keeps statements measurable, solution-free, and directly actionable for product prioritization."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: jobs-to-be-done-jtbd-framework

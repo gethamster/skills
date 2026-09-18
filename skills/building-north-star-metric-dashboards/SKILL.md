@@ -1,6 +1,7 @@
 ---
 name: building-north-star-metric-dashboards
 description: "This skill teaches you how to design and implement real-time dashboards that visualize your North Star Metric alongside its supporting input metrics, giving your team a single source of truth for product health and growth."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-framework

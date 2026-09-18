@@ -1,6 +1,7 @@
 ---
 name: iterating-and-evolving-north-star-metric
 description: "This skill teaches you when and how to revisit, validate, or replace your North Star Metric as your product matures, your market shifts, or your strategy evolves—so the metric always reflects real customer value rather than becoming a stale artifact."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-framework

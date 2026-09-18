@@ -1,6 +1,7 @@
 ---
 name: analyzing-seo-waterfall-charts
 description: "This skill teaches you how to read browser waterfall charts to identify resource loading bottlenecks, diagnose render-blocking issues, and optimize page load sequences that directly impact Core Web Vitals and SEO rankings."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

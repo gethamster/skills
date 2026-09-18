@@ -1,6 +1,7 @@
 ---
 name: iterating-pr-faq-documents-through-feedback
 description: "This skill teaches you how to revise and strengthen a PR/FAQ document through successive rounds of leadership and cross-functional feedback, and how to recognize when the document is sharp enough to greenlight development."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

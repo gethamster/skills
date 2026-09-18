@@ -1,6 +1,7 @@
 ---
 name: evaluating-market-product-fit
 description: "This skill teaches you how to systematically assess whether your product satisfies the core needs of your target market by analyzing market category, audience hypotheses, and value propositions—the foundational first fit in the Four Fits Framework."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: four-fits-framework

@@ -1,6 +1,7 @@
 ---
 name: mapping-growth-options-to-the-ansoff-grid
 description: "This skill teaches you how to systematically classify and plot current and proposed initiatives onto the Ansoff Matrix's four quadrants so you can visualize your growth portfolio and construct a risk-balanced marketing plan."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

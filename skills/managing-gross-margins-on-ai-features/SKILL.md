@@ -1,6 +1,7 @@
 ---
 name: managing-gross-margins-on-ai-features
 description: "This skill teaches you how to monitor, protect, and systematically improve gross margins on AI-powered features where variable inference costs can silently erode profitability as usage scales."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

@@ -1,6 +1,7 @@
 ---
 name: setting-appetites-and-managing-scope
 description: "This skill teaches you how to declare a fixed time appetite for a project and then deliberately cut scope by separating must-haves from nice-to-haves, so your team ships meaningful work every cycle without schedule overruns."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

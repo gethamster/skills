@@ -1,6 +1,7 @@
 ---
 name: scaling-agile-across-teams
 description: "This skill teaches you how to coordinate agile practices across multiple teams using SAFe agile frameworks, shared cadences, and dependency management while preserving the autonomy and speed that make individual teams effective."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

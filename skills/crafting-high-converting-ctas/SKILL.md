@@ -1,6 +1,7 @@
 ---
 name: crafting-high-converting-ctas
 description: "This skill teaches you how to write CTAs using value-driven formulas that emphasize outcomes over actions, with specific patterns for buttons, forms, and different page contexts so every click opportunity maximizes conversion."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

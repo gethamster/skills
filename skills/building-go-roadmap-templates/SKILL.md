@@ -1,6 +1,7 @@
 ---
 name: building-go-roadmap-templates
 description: "This skill teaches you how to construct a reusable product roadmap template organized around goals, timeframes, features, and metrics, so every planning cycle starts from a proven structure rather than a blank page."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

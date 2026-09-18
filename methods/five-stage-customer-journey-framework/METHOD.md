@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # The Five-Stage Customer Journey Framework
 
 > Created by **No specific individual creator identified** — [https://www.smaply.com](https://www.smaply.com)

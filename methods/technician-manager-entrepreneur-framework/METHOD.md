@@ -1,3 +1,7 @@
+---
+category: Ops
+---
+
 # The Technician Manager Entrepreneur Framework
 
 > Created by **Michael E. Gerber** — [https://www.emyth.com/](https://www.emyth.com/)

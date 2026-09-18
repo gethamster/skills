@@ -1,6 +1,7 @@
 ---
 name: auditing-ai-generated-frontends-for-design-quality
 description: "This skill teaches a repeatable review workflow for evaluating AI-produced React and Next.js interfaces against Taste Skill criteria, so you can catch generic-looking UI before it ships and feed structured corrections back to the agent."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: taste-skill-frontend-design-framework

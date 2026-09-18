@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # What Is a Product Roadmap? The GO Product Roadmap Framework
 
 > Created by **Roman Pichler** — [https://www.romanpichler.com/](https://www.romanpichler.com/)

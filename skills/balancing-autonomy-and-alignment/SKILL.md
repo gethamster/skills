@@ -1,6 +1,7 @@
 ---
 name: balancing-autonomy-and-alignment
 description: "This skill teaches you how to set guardrails, write mission briefs, and use OKRs so squads can move fast on their own while staying strategically coherent with the rest of the organization."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

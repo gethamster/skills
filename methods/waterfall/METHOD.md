@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # The Waterfall Methodology: A Linear Framework for Structured Project Delivery
 
 > Created by **Unknown**

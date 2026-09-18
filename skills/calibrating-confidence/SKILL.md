@@ -1,6 +1,7 @@
 ---
 name: calibrating-confidence
 description: "Make confidence reflect evidence, not enthusiasm—so weak assumptions cannot outrank validated opportunities in RICE scoring."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: rice-framework

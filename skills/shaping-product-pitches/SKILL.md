@@ -1,6 +1,7 @@
 ---
 name: shaping-product-pitches
 description: "This skill teaches you to define problems, set time appetites, and produce shaped pitch documents complete with fat-marker sketches and breadboarding, so engineering teams receive well-framed work instead of vague feature requests."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

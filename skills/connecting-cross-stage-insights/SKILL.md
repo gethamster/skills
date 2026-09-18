@@ -1,6 +1,7 @@
 ---
 name: connecting-cross-stage-insights
 description: "This skill teaches you how to synthesize research findings from the latent, evaluation, and buying stages into a unified analysis that reveals hidden patterns, contradictions, and optimization opportunities spanning the full customer experience journey."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

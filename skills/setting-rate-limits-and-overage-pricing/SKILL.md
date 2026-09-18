@@ -1,6 +1,7 @@
 ---
 name: setting-rate-limits-and-overage-pricing
 description: "This skill teaches you how to design usage caps, throttling policies, and overage charges for AI-powered APIs that protect your gross margins while keeping customers happy and predictable revenue flowing."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

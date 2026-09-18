@@ -1,6 +1,7 @@
 ---
 name: using-claude-code-for-seo-with-constitutional-guardrails
 description: "This skill teaches you how to build reliable SEO automation scripts using Claude Code while understanding the constitutional boundaries that shape its coding behavior, error handling, and ethical output constraints."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

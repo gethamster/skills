@@ -1,6 +1,7 @@
 ---
 name: structuring-journey-hierarchy-levels
 description: "This skill teaches you how to decompose the full customer experience into four nested hierarchy levels, from a single macro lifecycle (L0) down to granular touchpoint interactions (L3), so your organization can manage journeys at every scale without losing strategic context."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

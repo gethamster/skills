@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # Technical Advisory Board (TAB) Framework for Technical SEO Devtools
 
 > Created by **Adam Frankl** — [https://www.amazon.com/Developer-Facing-Startup-market-developer-facing/dp/B0D4KGHQML](https://www.amazon.com/Developer-Facing-Startup-market-developer-facing/dp/B0D4KGHQML)

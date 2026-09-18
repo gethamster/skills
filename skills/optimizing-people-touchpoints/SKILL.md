@@ -1,6 +1,7 @@
 ---
 name: optimizing-people-touchpoints
 description: "This skill teaches you how to train, align, and empower customer-facing and back-office staff so that every human interaction in your service delivery chain reinforces a consistent, loyalty-building brand experience."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

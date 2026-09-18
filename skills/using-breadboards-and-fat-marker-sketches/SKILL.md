@@ -1,6 +1,7 @@
 ---
 name: using-breadboards-and-fat-marker-sketches
 description: "Teaches you how to use breadboard notation for flow-based solutions and fat-marker sketches for visual concepts, so you define solutions at the right level of abstraction during shaping without accidentally handing builders a pixel-perfect spec or a vague wish."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

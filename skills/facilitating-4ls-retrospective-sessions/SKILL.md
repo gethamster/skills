@@ -1,6 +1,7 @@
 ---
 name: facilitating-4ls-retrospective-sessions
 description: "This skill teaches you how to plan, timebox, and facilitate each phase of a 4Ls retrospective session so every team member contributes and the meeting produces concrete, assignable action items."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: 4ls-retrospective

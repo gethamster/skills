@@ -1,6 +1,7 @@
 ---
 name: sketching-and-voting-on-solutions
 description: "Teaches you how to facilitate Crazy 8s rapid ideation, detailed solution sketching, silent heat-dot voting, and the Decider's final call so your sprint team converges on the strongest prototype-ready concept without groupthink or design-by-committee."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

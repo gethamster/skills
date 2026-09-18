@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # Impact Mapping: A Product Manager's Guide to Goal-Driven Delivery
 
 > Created by **Gojko Adzic** — [https://gojko.net/](https://gojko.net/)

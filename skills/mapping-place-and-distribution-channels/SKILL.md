@@ -1,6 +1,7 @@
 ---
 name: mapping-place-and-distribution-channels
 description: "This skill teaches you how to systematically evaluate and select the optimal mix of physical, digital, direct, and indirect distribution channels—the 'Place' element—to ensure your product or service reaches target customers where, when, and how they prefer to buy."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

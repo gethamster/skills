@@ -1,6 +1,7 @@
 ---
 name: setting-measures-and-success-metrics
 description: "This skill teaches you how to translate the Methods section of a V2MOM into quantifiable measures and key metrics, so every stakeholder can objectively determine whether goals are on track, at risk, or missed."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: v2mom-framework

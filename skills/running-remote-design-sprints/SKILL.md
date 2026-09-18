@@ -1,6 +1,7 @@
 ---
 name: running-remote-design-sprints
 description: "This skill teaches you how to adapt the Google Design Sprint framework for remote and hybrid teams, covering tool setup, async exercise design, facilitation adjustments, and strategies to maintain the energy and focus that make in-person sprints effective."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

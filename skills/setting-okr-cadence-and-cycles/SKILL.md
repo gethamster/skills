@@ -1,6 +1,7 @@
 ---
 name: setting-okr-cadence-and-cycles
 description: "This skill teaches you how to select the right OKR cycle length, layer quarterly execution rhythms under annual strategic objectives, and coordinate planning timing so that every team starts each cycle aligned and ready to execute."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

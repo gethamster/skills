@@ -1,6 +1,7 @@
 ---
 name: building-now-next-later-roadmap-templates
 description: "This skill teaches you how to design and set up a reusable visual roadmap template that represents the Now, Next, and Later horizons with the right level of detail, making it easy to populate, share, and maintain across tools like Miro, Notion, ProductBoard, or spreadsheets."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: now-next-later-framework

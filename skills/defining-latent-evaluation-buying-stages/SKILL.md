@@ -1,6 +1,7 @@
 ---
 name: defining-latent-evaluation-buying-stages
 description: "This skill teaches you how to identify, structure, and document the three distinct customer journey stages of a planned purchase, giving you a concrete framework for mapping how buyers move from passive need recognition through active research to a final buying decision."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

@@ -1,6 +1,7 @@
 ---
 name: designing-validated-learning-experiments
 description: "This skill teaches you how to structure low-cost experiments that produce reliable evidence about customer behavior, so you can make informed build, pivot, or kill decisions instead of guessing."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

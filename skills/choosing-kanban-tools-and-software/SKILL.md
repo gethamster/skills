@@ -1,6 +1,7 @@
 ---
 name: choosing-kanban-tools-and-software
 description: "This skill teaches you how to systematically evaluate and select the best kanban boards by matching tool capabilities to your team's workflow complexity, integration ecosystem, and scaling needs, so you avoid costly migrations later."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: kanban

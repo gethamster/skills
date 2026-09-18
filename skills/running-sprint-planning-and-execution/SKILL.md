@@ -1,6 +1,7 @@
 ---
 name: running-sprint-planning-and-execution
 description: "This skill teaches you how to define a focused sprint goal, select the right backlog items, size commitments against your team's actual capacity, and manage execution so the team delivers working increments reliably every sprint."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

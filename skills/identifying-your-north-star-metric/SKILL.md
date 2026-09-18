@@ -1,6 +1,7 @@
 ---
 name: identifying-your-north-star-metric
 description: "This skill teaches you how to discover and define the single metric that best captures the core value your product delivers to customers, forming the foundation of the North Star Framework."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-framework

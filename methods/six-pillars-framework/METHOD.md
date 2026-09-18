@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # The Six Pillars Framework: From Futures Thinking to Strategic Content Architecture
 
 > Created by **Sohail Inayatullah** — [https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)

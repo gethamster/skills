@@ -1,6 +1,7 @@
 ---
 name: shifting-from-working-in-to-working-on-your-business
 description: "This skill teaches you how to diagnose where your time actually goes, extract yourself from day-to-day execution tasks, and redirect that capacity toward strategic planning, systems design, and business growth."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

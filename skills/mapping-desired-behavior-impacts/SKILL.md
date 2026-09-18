@@ -1,6 +1,7 @@
 ---
 name: mapping-desired-behavior-impacts
 description: "This skill teaches you how to articulate the specific behavioral changes you want each actor to make, forming the impact layer in Impact Mapping that connects high-level goals to actionable deliverables."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

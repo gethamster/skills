@@ -1,6 +1,7 @@
 ---
 name: building-minimum-viable-products
 description: "This skill teaches you how to design and ship the smallest functional version of a product that tests your riskiest business assumption with real customers, so you learn what works before investing in full-scale development."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

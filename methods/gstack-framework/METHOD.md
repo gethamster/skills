@@ -1,3 +1,7 @@
+---
+category: Development
+---
+
 # The gstack Framework: Structured AI Coding with Specialist Skills and Multi-Agent Perspectives
 
 > Created by **Garry Tan** — [https://www.augmentcode.com/learn/garry-tan-gstack-claude-code](https://www.augmentcode.com/learn/garry-tan-gstack-claude-code)

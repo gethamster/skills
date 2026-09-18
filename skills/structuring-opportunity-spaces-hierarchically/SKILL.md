@@ -1,6 +1,7 @@
 ---
 name: structuring-opportunity-spaces-hierarchically
 description: "This skill teaches you how to decompose broad customer opportunity areas into smaller, specific sub-opportunities arranged in a navigable tree structure, enabling clearer prioritization and more targeted solution generation within the Opportunity Solution Tree."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

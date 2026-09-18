@@ -1,6 +1,7 @@
 ---
 name: evaluating-spotify-model-tradeoffs
 description: "This skill teaches you how to systematically assess the spotify model pros cons for your specific organization so you can adopt the right elements, skip the wrong ones, and avoid the cargo-culting that has derailed dozens of Spotify Model implementations."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

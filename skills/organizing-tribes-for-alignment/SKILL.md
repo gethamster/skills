@@ -1,6 +1,7 @@
 ---
 name: organizing-tribes-for-alignment
 description: "This skill teaches you how to group related squads into tribes with clear boundaries, the right size constraints, and effective tribe leadership so that autonomous squads stay aligned on shared strategic outcomes."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

@@ -1,6 +1,7 @@
 ---
 name: setting-pricing-strategies-for-services
 description: "This skill teaches you how to select, implement, and optimize pricing models—such as value-based, competitive, penetration, and tiered pricing—so your prices reinforce your overall pricing strategy marketing mix positioning."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

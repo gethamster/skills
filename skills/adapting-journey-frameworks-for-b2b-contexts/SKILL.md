@@ -1,6 +1,7 @@
 ---
 name: adapting-journey-frameworks-for-b2b-contexts
 description: "This skill teaches you how to modify the standard five-stage customer journey model so it accurately reflects B2B realities: multiple decision-makers, longer sales cycles, and layered approval processes that collapse single-buyer assumptions."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

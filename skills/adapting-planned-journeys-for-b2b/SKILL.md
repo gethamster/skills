@@ -1,6 +1,7 @@
 ---
 name: adapting-planned-journeys-for-b2b
 description: "This skill teaches you how to reshape the Planned Journey Framework's latent, evaluation, and buying stages so they accurately model B2B customer journeys involving buying committees, extended timelines, and multi-stakeholder consensus."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: planned-journey-framework

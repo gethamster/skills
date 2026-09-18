@@ -1,6 +1,7 @@
 ---
 name: synthesizing-problem-definitions
 description: "This skill teaches you how to apply convergent thinking in the Define phase of the double diamond framework — analyzing discovery findings, clustering themes, and crafting a precise problem statement that focuses your team on the right challenge."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

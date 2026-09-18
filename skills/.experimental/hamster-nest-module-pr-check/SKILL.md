@@ -2,7 +2,7 @@
 name: hamster-nest-module-pr-check
 description: "PR checklist for NestJS module and dependency-injection changes in apps/ai, apps/sync, and packages/api/core. MUST USE when a PR changes *.module.ts, AppModule, module imports/providers/controllers/exports, @Injectable constructor dependencies, custom provider tokens, dynamic modules, or @Global modules."
 version: "1.0.0"
-category: "Review"
+category: "Development"
 ---
 
 # NestJS Module PR Check

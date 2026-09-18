@@ -1,6 +1,7 @@
 ---
 name: replacing-traditional-roadmaps-with-gist
 description: "This skill teaches product managers how to systematically transition their teams from feature-based roadmaps to the GIST Planning Framework, converting committed feature lists into a layered system of goals, ideas, step-projects, and tasks while preserving stakeholder trust and executive alignment."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

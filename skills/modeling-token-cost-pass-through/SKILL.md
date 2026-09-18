@@ -1,6 +1,7 @@
 ---
 name: modeling-token-cost-pass-through
 description: "Teaches you to build a financial model that translates raw LLM token costs into customer-facing prices with sustainable markups, and to forecast how margin shifts when token prices or usage volumes change."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-pricing-playbook

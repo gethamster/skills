@@ -1,6 +1,7 @@
 ---
 name: selecting-your-north-star-metric
 description: "This skill teaches you how to evaluate candidate metrics and choose the single metric that best captures the core value customers get from your product — the foundation of the North Star Metric framework and one of the most consequential kpis product manager decisions you'll make."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: north-star-metric

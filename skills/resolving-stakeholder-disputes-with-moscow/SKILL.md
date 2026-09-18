@@ -1,6 +1,7 @@
 ---
 name: resolving-stakeholder-disputes-with-moscow
 description: "This skill teaches you how to handle stakeholder disagreements during MoSCoW prioritization—especially when everyone insists their requirements are Must-haves—using timeboxing, trade-off analysis, and objective decision criteria."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: moscow

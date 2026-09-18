@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # Outcome-Driven Roadmapping: How a Product Manager Plans Around Results, Not Features
 
 > Created by **Unknown - Framework emerged from collective product management practice**

@@ -1,6 +1,7 @@
 ---
 name: facilitating-divergent-ideation
 description: "This skill teaches you how to run structured brainstorming, co-design workshops, and rapid prototyping sessions that generate a wide range of potential solutions during the second diamond's divergent phase."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

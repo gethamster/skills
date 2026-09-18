@@ -1,6 +1,7 @@
 ---
 name: mapping-customer-touchpoints-across-stages
 description: "This skill teaches you how to systematically identify, catalog, and organize every customer interaction point within each of the five journey stages, producing a structured touchpoint inventory that becomes the foundation for journey optimization."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

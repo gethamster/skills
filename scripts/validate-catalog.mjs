@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-// Validates the catalog: every methods/<method>/METHOD.md carries its
-// `> Created by` attribution line, every skills/<skill>/SKILL.md carries the
-// shared frontmatter contract and names the method it belongs to, and every
+// Validates the catalog: every methods/<method>/METHOD.md opens with a
+// frontmatter block declaring one of the six categories and carries both the
+// H1 the catalog table names it from and its `> Created by` attribution line,
+// every skills/<skill>/SKILL.md carries the shared frontmatter contract, names
+// the method it belongs to and repeats that method's category, and every
 // method has at least one skill. Parsed with js-yaml rather than a line regex
 // so quoted strings, block scalars, and comments survive.
 
@@ -35,8 +37,21 @@ const PUBLISHABLE_RIGHTS = new Set(["original", "public-framework", "licensed"])
 // Experimental skills are exempt from the backlink and from method membership.
 // Relative links are resolved because a directory rename is otherwise legal
 // and would leave the tree cross-linked to paths that no longer exist.
-const ATTRIBUTION_RE = /^> Created by /m;
+const ATTRIBUTION_PREFIX = "> Created by ";
 const RELATIVE_LINK_RE = /\]\(((?:\.\.?\/)[^)#\s]+)(?:#[^)]*)?\)/g;
+
+// The six categories Studio groups skills by — the same list the generator
+// keys CATEGORY_DESCRIPTIONS by, and the enum Studio's own skill-markdown
+// parser (SKILL_CATEGORIES in its shared package) throws on, so a value that
+// is not here cannot round-trip through a workspace.
+const CATEGORIES = new Set([
+  "Product",
+  "Development",
+  "Experience",
+  "Marketing",
+  "Ops",
+  "Workflows",
+]);
 
 const methodsRoot = join(repoRoot, "methods");
 const skillsRoot = join(repoRoot, "skills");
@@ -49,7 +64,9 @@ const failures = [];
 // skill name -> [paths]. Curated and experimental skills share one namespace:
 // installers flatten both into a single skill directory.
 const skillNames = new Map();
-const methodSkillCounts = new Map();
+// method name -> { skills, category }. One record per method: the count is
+// filled in as skills name it, the category as each METHOD.md is read.
+const methods = new Map();
 let skillCount = 0;
 
 // Symlinks are rejected outright rather than followed: readFileSync resolves
@@ -91,13 +108,32 @@ function nonEmptyString(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
 
-function extractFrontmatterBlock(content) {
+// Quoted for the message: a list interpolates to a bare name the enum appears
+// to contain. A self-referential anchor cannot be serialized, so it falls back
+// rather than throwing part-way through collecting the failures.
+function quoted(value) {
+  try {
+    return JSON.stringify(value) ?? String(value);
+  } catch {
+    return String(value);
+  }
+}
+
+// Only whitespace-only lines after the closing fence are stripped, exactly as
+// the generator does: a CRLF file or a fence written `--- ` leaves one, and it
+// would otherwise spend a slot of the attribution window. The indentation of
+// the first content line stays, so a body opening with an indented `# ` cannot
+// be read as the title.
+function splitFrontmatter(content) {
   if (!content.startsWith("---")) return null;
   const firstLineEnd = content.indexOf("\n");
   if (firstLineEnd === -1) return null;
   const closingIndex = content.indexOf("\n---", firstLineEnd);
   if (closingIndex === -1) return null;
-  return content.slice(firstLineEnd + 1, closingIndex);
+  return {
+    block: content.slice(firstLineEnd + 1, closingIndex),
+    body: content.slice(closingIndex + 4).replace(/^(?:[ \t\r]*\n)+/, ""),
+  };
 }
 
 function validateSkill(filePath, { curated }) {
@@ -107,15 +143,15 @@ function validateSkill(filePath, { curated }) {
   skillCount += 1;
 
   const content = readFileSync(filePath, "utf8");
-  const block = extractFrontmatterBlock(content);
-  if (block === null) {
+  const parsedFile = splitFrontmatter(content);
+  if (parsedFile === null) {
     failures.push(`${relativePath}/SKILL.md: missing or malformed --- frontmatter block`);
     return;
   }
 
   let frontmatter;
   try {
-    frontmatter = loadYaml(block);
+    frontmatter = loadYaml(parsedFile.block);
   } catch (err) {
     failures.push(`${relativePath}/SKILL.md: failed to parse frontmatter YAML: ${err.message}`);
     return;
@@ -162,6 +198,24 @@ function validateSkill(filePath, { curated }) {
     );
   }
 
+  // Studio stores this on the skill and the library page groups by it, so a
+  // curated skill carries the category of the method it belongs to. Presence
+  // and membership of the enum are checked here; agreement with the method is
+  // checked below, once metadata.method is known. The value is quoted because
+  // a list interpolates to a bare name the message appears to accept, and an
+  // empty value interpolates to nothing at all.
+  const category = frontmatter.category;
+  const categoryInEnum = typeof category === "string" && CATEGORIES.has(category);
+  if (category === undefined) {
+    if (curated) {
+      failures.push(`${relativePath}/SKILL.md: missing "category" (curated skills carry their method's category)`);
+    }
+  } else if (!categoryInEnum) {
+    failures.push(
+      `${relativePath}/SKILL.md: category ${quoted(category)} must be one of ${[...CATEGORIES].join(", ")}`,
+    );
+  }
+
   // Absent means publishable. Only a declared value is checked, and only
   // `restricted` blocks: this repository is public, so committing here
   // publishes, and material with no grant must not arrive by a move.
@@ -188,12 +242,27 @@ function validateSkill(filePath, { curated }) {
   // and README table can be generated from the tree instead of maintained.
   const method = metadata?.method;
   if (method !== undefined) {
-    if (typeof method !== "string" || !methodSkillCounts.has(method)) {
+    if (typeof method !== "string" || !methods.has(method)) {
       failures.push(
         `${relativePath}/SKILL.md: metadata.method "${method}" does not name a directory under methods/`,
       );
     } else {
-      methodSkillCounts.set(method, methodSkillCounts.get(method) + 1);
+      const record = methods.get(method);
+      record.skills += 1;
+      // The generator builds the skills.sh sections from the method's own
+      // category, so a skill declaring a different one would land in a Studio
+      // group the page never shows it in. Experimental skills may omit the
+      // field, but not contradict their method.
+      //
+      // One cause, one failure: a category that is absent, already rejected
+      // for not being in the enum, or belonging to a method whose own category
+      // was rejected, is not compared again, so a bulk mistake across the
+      // catalog does not report twice per skill.
+      if (categoryInEnum && record.category !== undefined && category !== record.category) {
+        failures.push(
+          `${relativePath}/SKILL.md: category "${category}" does not match method "${method}" (${record.category})`,
+        );
+      }
     }
   } else if (curated) {
     failures.push(`${relativePath}/SKILL.md: missing metadata.method (curated skills belong to a method)`);
@@ -224,16 +293,54 @@ if (!existsSync(skillsRoot)) {
 
 for (const methodName of listSubdirectories(methodsRoot)) {
   const relativeMethod = join("methods", methodName);
-  methodSkillCounts.set(methodName, 0);
+  methods.set(methodName, { skills: 0, category: undefined });
 
   const methodFile = join(methodsRoot, methodName, "METHOD.md");
   if (!existsSync(methodFile)) {
     failures.push(`${relativeMethod}: missing METHOD.md`);
     continue;
   }
-  // Attribution must sit in the head, directly under the title.
   const content = readFileSync(methodFile, "utf8");
-  if (!ATTRIBUTION_RE.test(content.split("\n").slice(0, 5).join("\n"))) {
+  const parsedFile = splitFrontmatter(content);
+  let methodFrontmatter = null;
+  let frontmatterParsed = true;
+  if (parsedFile === null) {
+    failures.push(`${relativeMethod}/METHOD.md: missing or malformed --- frontmatter block`);
+  } else {
+    try {
+      methodFrontmatter = loadYaml(parsedFile.block);
+    } catch (err) {
+      frontmatterParsed = false;
+      failures.push(`${relativeMethod}/METHOD.md: failed to parse frontmatter YAML: ${err.message}`);
+    }
+  }
+  // Reported even when the block is missing, so a contributor learns the whole
+  // contract in one run instead of a second round of knowable failures. A YAML
+  // error is its own cause and says nothing about the category.
+  const methodCategory = methodFrontmatter?.category;
+  if (typeof methodCategory === "string" && CATEGORIES.has(methodCategory)) {
+    methods.get(methodName).category = methodCategory;
+  } else if (frontmatterParsed) {
+    failures.push(
+      methodCategory === undefined
+        ? `${relativeMethod}/METHOD.md: missing "category" (one of ${[...CATEGORIES].join(", ")})`
+        : `${relativeMethod}/METHOD.md: category ${quoted(methodCategory)} must be one of ${[...CATEGORIES].join(", ")}`,
+    );
+  }
+
+  // The generator names each method in the README table from its H1 and
+  // credits it from the attribution line directly under that title. Both are
+  // checked on the values the generator extracts, not on the lines they sit
+  // in, so the two gates agree: an H1 of "# : Subtitle" and a bare
+  // "> Created by " each leave the table with nothing to print.
+  const body = parsedFile === null ? content.replace(/^(?:[ \t\r]*\n)+/, "") : parsedFile.body;
+  const bodyLines = body.split("\n");
+  const heading = bodyLines.find((line) => line.startsWith("# ")) ?? "";
+  if (heading.replace(/^#\s+/, "").trim().split(/:\s/)[0] === "") {
+    failures.push(`${relativeMethod}/METHOD.md: missing the "# " H1 the catalog table names the method from`);
+  }
+  const attribution = bodyLines.slice(0, 5).find((line) => line.startsWith(ATTRIBUTION_PREFIX)) ?? "";
+  if (attribution.slice(ATTRIBUTION_PREFIX.length).trim() === "") {
     failures.push(`${relativeMethod}/METHOD.md: missing a "> Created by" attribution line`);
   }
   checkRelativeLinks(methodFile, content);
@@ -260,8 +367,8 @@ for (const skillName of listSubdirectories(experimentalRoot)) {
   validateSkill(filePath, { curated: false });
 }
 
-for (const [methodName, count] of methodSkillCounts) {
-  if (count === 0) {
+for (const [methodName, { skills }] of methods) {
+  if (skills === 0) {
     failures.push(`methods/${methodName}: no skill names it in metadata.method`);
   }
 }
@@ -299,5 +406,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  `Catalog validation passed: ${skillCount} skill(s) across ${methodSkillCounts.size} method(s).`,
+  `Catalog validation passed: ${skillCount} skill(s) across ${methods.size} method(s).`,
 );

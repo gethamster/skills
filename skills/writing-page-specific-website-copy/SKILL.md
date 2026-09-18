@@ -1,6 +1,7 @@
 ---
 name: writing-page-specific-website-copy
 description: "This skill teaches you how to tailor your copy structure, messaging hierarchy, and persuasion techniques to the distinct conversion goals of homepages, landing pages, pricing pages, and feature pages — so every page on your site does exactly one job well."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: copywriting-framework

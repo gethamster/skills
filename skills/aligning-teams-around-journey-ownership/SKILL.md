@@ -1,6 +1,7 @@
 ---
 name: aligning-teams-around-journey-ownership
 description: "This skill teaches you how to assign clear, cross-functional ownership of customer journeys at every hierarchy level and build governance structures that keep journey management alive as an ongoing operating discipline rather than a one-time mapping exercise."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: ecosystem-journey-framework

@@ -1,6 +1,7 @@
 ---
 name: mapping-user-personas-to-journeys
 description: "This skill teaches you how to anchor your story map around specific user personas and their end-to-end journey narratives, ensuring the map reflects real user goals rather than internal assumptions about features."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

@@ -1,6 +1,7 @@
 ---
 name: creating-physical-evidence-and-proof-points
 description: "This skill teaches you how to design tangible cues—branded environments, packaging, testimonials, case studies, and service guarantees—that build customer trust and signal quality within the physical evidence marketing mix."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: 7-p-s-marketing-mix

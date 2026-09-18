@@ -1,6 +1,7 @@
 ---
 name: building-interdisciplinary-fde-skillsets
 description: "This skill teaches you how to audit, develop, and maintain the hybrid blend of forward deployed engineer skills spanning software engineering, data analytics, solution architecture, and client communication so you can operate independently inside customer environments."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework

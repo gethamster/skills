@@ -1,6 +1,7 @@
 ---
 name: storyboarding-sprint-concepts
 description: "This skill teaches you how to translate a winning solution sketch into a frame-by-frame storyboard that serves as the exact blueprint your team follows when building the prototype on the next day of the sprint."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

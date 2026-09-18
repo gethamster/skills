@@ -1,6 +1,7 @@
 ---
 name: tracking-innovation-accounting-metrics
 description: "This skill teaches you how to select, instrument, and interpret actionable metrics that reveal whether a startup is actually learning and progressing toward product-market fit, replacing gut feelings and vanity numbers with evidence-based decision making."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: lean-startup

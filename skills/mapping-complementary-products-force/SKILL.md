@@ -1,6 +1,7 @@
 ---
 name: mapping-complementary-products-force
 description: "This skill teaches you how to systematically identify, score, and analyze the complementary products force, the sixth force that makes the Six Forces Model a more complete strategic lens than Porter's original five."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-forces-model

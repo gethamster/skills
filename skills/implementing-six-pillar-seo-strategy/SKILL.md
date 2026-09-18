@@ -1,6 +1,7 @@
 ---
 name: implementing-six-pillar-seo-strategy
 description: "This skill teaches you how to plan, sequence, and execute all six pillars of a comprehensive SEO strategy so that technical health, content depth, on-page optimization, off-page authority, user experience, and analytics work as a single integrated system rather than disconnected initiatives."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

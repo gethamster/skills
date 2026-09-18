@@ -1,6 +1,7 @@
 ---
 name: crafting-actionable-feedback-prompts
 description: "This skill teaches you how to write and select targeted start stop continue questions for each feedback category so participants provide specific, constructive, and actionable responses instead of vague or unhelpful commentary."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

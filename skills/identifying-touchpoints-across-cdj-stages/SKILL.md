@@ -1,6 +1,7 @@
 ---
 name: identifying-touchpoints-across-cdj-stages
 description: "This skill teaches you how to systematically audit, catalog, and prioritize every brand touchpoint across the four buyer journey stages of the McKinsey Consumer Decision Journey, revealing gaps and high-impact interaction opportunities."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey

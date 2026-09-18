@@ -1,6 +1,7 @@
 ---
 name: prioritizing-and-slicing-releases
 description: "This skill teaches you how to draw horizontal swim lanes across a story map to carve the backlog into an MVP and sequenced release increments, so every release delivers a coherent, end-to-end slice of user value rather than a grab bag of features."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: story-mapping

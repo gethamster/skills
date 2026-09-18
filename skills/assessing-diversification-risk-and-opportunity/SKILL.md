@@ -1,6 +1,7 @@
 ---
 name: assessing-diversification-risk-and-opportunity
 description: "This skill teaches you how to systematically evaluate diversification options—the highest-risk quadrant of the Ansoff Matrix—by distinguishing related from unrelated diversification and analyzing strategic fit, so you can make informed go/no-go decisions in marketing management."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

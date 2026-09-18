@@ -1,6 +1,7 @@
 ---
 name: setting-go-roadmap-metrics
 description: "This skill teaches you how to attach measurable KPIs and clear success criteria to every goal on a GO Product Roadmap, so progress is objective and stakeholder conversations stay grounded in evidence rather than opinion."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

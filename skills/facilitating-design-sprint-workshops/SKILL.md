@@ -1,6 +1,7 @@
 ---
 name: facilitating-design-sprint-workshops
 description: "This skill teaches you how to serve as the design sprint facilitator who guides a cross-functional team through every phase of a Google Design Sprint, from mapping the challenge through user testing, while managing group dynamics, enforcing time constraints, and keeping exercises on track."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: google-design-sprint

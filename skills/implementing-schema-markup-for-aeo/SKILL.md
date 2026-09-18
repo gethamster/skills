@@ -1,6 +1,7 @@
 ---
 name: implementing-schema-markup-for-aeo
 description: "This skill teaches you how to apply structured data—including FAQPage, HowTo, Speakable, and other schema types—so that AI answer engines can reliably parse, understand, and cite your content in generated responses."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ai-seo-optimization

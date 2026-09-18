@@ -1,6 +1,7 @@
 ---
 name: managing-product-backlogs
 description: "This skill teaches you how to build, prioritize, groom, and maintain a living product backlog so your agile team always has a clear, ordered queue of work ready for sprint planning."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: agile

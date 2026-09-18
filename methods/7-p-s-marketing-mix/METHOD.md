@@ -1,3 +1,7 @@
+---
+category: Marketing
+---
+
 # 7 P's Marketing Mix: The Complete Market Analysis Framework for Modern Teams
 
 > Created by **Bernard H. Booms and Mary J. Bitner**

@@ -1,6 +1,7 @@
 ---
 name: writing-effective-start-stop-continue-feedback
 description: "This skill teaches you how to craft clear, specific, and constructive feedback items across the Start, Stop, and Continue categories—making each one behavior-focused, blame-free, and immediately actionable."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: start-stop-continue

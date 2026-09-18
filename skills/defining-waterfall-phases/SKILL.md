@@ -1,6 +1,7 @@
 ---
 name: defining-waterfall-phases
 description: "This skill teaches you how to structure the core waterfall model phases — requirements, design, implementation, verification, and maintenance — with clear entry criteria, deliverables, and exit criteria so each phase completes fully before the next begins."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: waterfall

@@ -1,6 +1,7 @@
 ---
 name: analyzing-active-evaluation-behavior
 description: "This skill teaches you how to track and interpret consumer behavior during the active evaluation phase of the McKinsey Consumer Decision Journey—specifically how people research, compare, and progressively narrow or expand their brand consideration set before buying."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey

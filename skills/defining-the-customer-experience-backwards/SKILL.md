@@ -1,6 +1,7 @@
 ---
 name: defining-the-customer-experience-backwards
 description: "This skill teaches you to articulate the ideal end-state customer experience as a concrete narrative, then systematically decompose it into the features, services, and technology required to deliver that experience, so you build only what matters."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

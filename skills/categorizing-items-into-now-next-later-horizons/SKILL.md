@@ -1,6 +1,7 @@
 ---
 name: categorizing-items-into-now-next-later-horizons
 description: "This skill teaches you how to evaluate product initiatives against certainty, urgency, and strategic alignment, then sort them into the three Now-Next-Later horizons so your roadmap reflects what your team should actually work on and in what sequence."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: now-next-later-framework

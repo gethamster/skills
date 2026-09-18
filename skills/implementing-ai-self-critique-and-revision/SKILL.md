@@ -1,6 +1,7 @@
 ---
 name: implementing-ai-self-critique-and-revision
 description: "This skill teaches you how to prompt or train a language model to evaluate its own responses against constitutional principles and iteratively revise harmful or unhelpful content, a core technique in Anthropic's Constitutional AI framework."
+category: "Development"
 metadata:
   homepage: https://tryhamster.com
   method: constitutional-ai

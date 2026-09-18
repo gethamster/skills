@@ -1,6 +1,7 @@
 ---
 name: building-heart-dashboards
 description: "This skill teaches you how to create live, structured dashboards that visualize all five HEART Framework dimensions—Happiness, Engagement, Adoption, Retention, and Task Success—so product teams can make data-driven roadmap decisions and run effective stakeholder reviews."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework

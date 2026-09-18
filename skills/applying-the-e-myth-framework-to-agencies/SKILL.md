@@ -1,6 +1,7 @@
 ---
 name: applying-the-e-myth-framework-to-agencies
 description: "This skill teaches you how to adapt the Technician, Manager, Entrepreneur model to the specific dynamics of agencies, consultancies, and professional service firms, where founder-as-craftsperson dependency is the most common growth bottleneck."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: technician-manager-entrepreneur-framework

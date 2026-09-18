@@ -1,6 +1,7 @@
 ---
 name: validating-assumptions-with-experiments
 description: "This skill teaches you how to treat every branch of an impact map as a hypothesis, design lightweight experiments to test those hypotheses, and use the results to iterate on your map — ensuring your team builds only what evidence supports."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: impact-mapping

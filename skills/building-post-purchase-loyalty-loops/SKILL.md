@@ -1,6 +1,7 @@
 ---
 name: building-post-purchase-loyalty-loops
 description: "This skill teaches you how to design post-purchase experiences that transform one-time buyers into automatic repurchasers by creating loyalty loops—the phase in customer journey stages where consumers skip re-evaluation and buy again directly."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: mckinsey-consumer-decision-journey

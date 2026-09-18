@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # Jobs-to-be-Done (JTBD) Framework: A Product Manager's Complete Guide
 
 > Created by **Tony Ulwick** — [https://strategyn.com/jobs-to-be-done/](https://strategyn.com/jobs-to-be-done/)

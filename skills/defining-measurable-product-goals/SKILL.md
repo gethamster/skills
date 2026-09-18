@@ -1,6 +1,7 @@
 ---
 name: defining-measurable-product-goals
 description: "This skill teaches you to write strategic, outcome-based product goals using a metric, target, and timeframe structure that anchors the entire GIST hierarchy and replaces vague themes on a traditional product manager roadmap."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: gist-planning-framework

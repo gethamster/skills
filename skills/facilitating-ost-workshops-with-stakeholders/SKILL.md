@@ -1,6 +1,7 @@
 ---
 name: facilitating-ost-workshops-with-stakeholders
 description: "This skill teaches you how to run collaborative Opportunity Solution Tree mapping sessions with cross-functional teams and stakeholders, building shared understanding and alignment on product discovery direction—a capability frequently explored in product manager interview questions."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

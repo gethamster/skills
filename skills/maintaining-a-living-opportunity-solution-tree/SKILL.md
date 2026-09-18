@@ -1,6 +1,7 @@
 ---
 name: maintaining-a-living-opportunity-solution-tree
 description: "This skill teaches you how to continuously update your Opportunity Solution Tree as new customer insights, experiment results, and strategic shifts emerge—keeping it a living artifact that drives ongoing product discovery rather than a one-time deliverable."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: opportunity-solution-tree

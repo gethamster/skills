@@ -1,6 +1,7 @@
 ---
 name: mapping-divergent-convergent-thinking
 description: "This skill teaches you how to deliberately switch between expansive exploration and focused decision-making at each stage of the Double Diamond, ensuring your team knows when to broaden possibilities and when to narrow toward action."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

@@ -1,3 +1,7 @@
+---
+category: Product
+---
+
 # GIST Planning Framework: How Every Product Manager Can Plan with Evidence Over Opinions
 
 > Created by **Itamar Gilad** — [https://itamargilad.com/](https://itamargilad.com/)

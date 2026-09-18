@@ -1,6 +1,7 @@
 ---
 name: generating-long-tail-keywords-with-claudes-value-framework
 description: "This skill teaches you how to prompt Claude for long-tail keyword research by tapping into its constitutional alignment toward helpfulness, producing keyword lists grounded in genuine user intent rather than volume-chasing or keyword manipulation."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: claude-s-constitution

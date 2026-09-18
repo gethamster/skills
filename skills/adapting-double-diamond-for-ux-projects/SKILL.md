@@ -1,6 +1,7 @@
 ---
 name: adapting-double-diamond-for-ux-projects
 description: "This skill teaches you how to map the Double Diamond's four phases—Discover, Define, Develop, and Deliver—to concrete UX activities like user research, persona synthesis, wireframing, and usability testing so your design process is both structured and user-centered."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: double-diamond

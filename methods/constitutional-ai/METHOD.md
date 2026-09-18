@@ -1,3 +1,7 @@
+---
+category: Development
+---
+
 # Constitutional AI: The Method Behind Claude's Ethical Alignment
 
 > Created by **Anthropic Researchers (led by Yuntao Bai et al.)** — [https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback)

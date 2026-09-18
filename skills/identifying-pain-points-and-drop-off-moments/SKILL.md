@@ -1,6 +1,7 @@
 ---
 name: identifying-pain-points-and-drop-off-moments
 description: "This skill teaches you to diagnose exactly where customers experience friction, frustration, or abandonment across the five journey stages using a structured combination of behavioral data, qualitative feedback, and cross-stage funnel analysis."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

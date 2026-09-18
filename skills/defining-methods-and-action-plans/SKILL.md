@@ -1,6 +1,7 @@
 ---
 name: defining-methods-and-action-plans
 description: "This skill teaches you how to translate the vision and values components of a V2MOM into specific, prioritized methods and granular action plans that teams can execute against, producing a concrete roadmap from strategic intent to daily work."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: v2mom-framework

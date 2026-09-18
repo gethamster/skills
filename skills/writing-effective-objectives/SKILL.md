@@ -1,6 +1,7 @@
 ---
 name: writing-effective-objectives
 description: "This skill teaches you how to craft qualitative, inspirational OKR objectives that give teams a clear sense of direction and purpose, turning vague strategic ambitions into concrete statements worth rallying around."
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: objectives-and-key-results-okrs

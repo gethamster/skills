@@ -1,6 +1,7 @@
 ---
 name: mapping-scopes-for-building
 description: "This skill teaches you to organize building-phase work into scopes, which are integrated slices of design, front-end, and back-end work that can be completed and verified independently, replacing traditional task lists with a structure that reveals real progress."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: shape-up

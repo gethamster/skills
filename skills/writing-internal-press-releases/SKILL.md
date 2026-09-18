@@ -1,6 +1,7 @@
 ---
 name: writing-internal-press-releases
 description: "This skill teaches you how to draft a concise, customer-centric internal press release that forces clarity about who the customer is, what problem they face, and why your proposed solution matters, all before any code is written or design work begins."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: working-backwards

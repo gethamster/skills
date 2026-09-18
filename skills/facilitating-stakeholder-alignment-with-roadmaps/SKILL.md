@@ -1,6 +1,7 @@
 ---
 name: facilitating-stakeholder-alignment-with-roadmaps
 description: "This skill teaches you how to present, discuss, and negotiate a GO Product Roadmap with stakeholders so conversations focus on shared strategic outcomes rather than competing feature requests."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
   method: go-product-roadmap

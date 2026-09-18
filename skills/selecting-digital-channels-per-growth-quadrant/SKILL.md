@@ -1,6 +1,7 @@
 ---
 name: selecting-digital-channels-per-growth-quadrant
 description: "This skill teaches you how to map specific digital marketing channels — including content marketing, email marketing, SEO, paid media, and inbound tactics — to each of the four Ansoff Matrix growth strategies so you allocate budget and effort where they'll drive the most impact."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: ansoff-matrix

@@ -1,3 +1,7 @@
+---
+category: Experience
+---
+
 # The Double Diamond: A Proven Framework for Design and Innovation
 
 > Created by **British Design Council** — [https://www.designcouncil.org.uk/our-resources/the-double-diamond/](https://www.designcouncil.org.uk/our-resources/the-double-diamond/)

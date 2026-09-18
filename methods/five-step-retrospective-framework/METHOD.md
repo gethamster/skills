@@ -1,3 +1,7 @@
+---
+category: Workflows
+---
+
 # The Five-Step Sprint Retrospective Framework for Agile Teams
 
 > Created by **Esther Derby and Diana Larsen**

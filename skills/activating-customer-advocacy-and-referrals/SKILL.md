@@ -1,6 +1,7 @@
 ---
 name: activating-customer-advocacy-and-referrals
 description: "This skill teaches you how to systematically identify loyal customers and convert them into measurable brand advocates through referral programs, review generation, testimonial workflows, and community-building tactics."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: five-stage-customer-journey-framework

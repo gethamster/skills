@@ -1,6 +1,7 @@
 ---
 name: tracking-retrospective-action-items-across-sprints
 description: "This skill teaches you how to follow up on commitments made in sprint retrospective meetings, measure improvement progress, and maintain team accountability across sprint cycles."
+category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
   method: five-step-retrospective-framework

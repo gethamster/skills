@@ -1,6 +1,7 @@
 ---
 name: mapping-current-reality-with-pillar-one
 description: "This skill teaches you to systematically audit and document the present state of your SEO domain across six dimensions, producing a structured baseline that feeds every downstream decision in the Six Pillars Framework."
+category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
   method: six-pillars-framework

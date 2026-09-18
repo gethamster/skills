@@ -1,3 +1,7 @@
+---
+category: Ops
+---
+
 # The Spotify Model: An Organizational Framework for Scaling Agile
 
 > Created by **Spotify Engineering Team** — [https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf)

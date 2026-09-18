@@ -1,6 +1,7 @@
 ---
 name: measuring-user-happiness-surveys
 description: "This skill teaches you how to design, deploy, and analyze user satisfaction surveys, NPS, and sentiment scores to quantify the Happiness dimension of the HEART Framework and turn subjective user feelings into actionable product metrics."
+category: "Experience"
 metadata:
   homepage: https://tryhamster.com
   method: heart-framework
