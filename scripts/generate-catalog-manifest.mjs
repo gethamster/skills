@@ -17,16 +17,17 @@ const repoRoot = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
 
 const MANIFEST_PATH = join(repoRoot, "skills.sh.json");
-// The same six Studio groups skills carry as `category`, in the order the page
-// shows them. Each one needs its copy, so the enum is derived from the
-// descriptions rather than declared twice: Object.keys keeps insertion order,
-// which is the page's section order.
+// The six categories Studio groups skills by (SKILL_CATEGORIES in Studio's
+// shared package); validate-catalog.mjs keeps its own copy of the names, so a
+// seventh has to be added in both. Key order is the section order skills.sh
+// renders, which Object.keys preserves. The copy lives here because Studio has
+// no per-category description to inherit.
 const CATEGORY_DESCRIPTIONS = {
-  Product: "Discovery, prioritisation, roadmapping and the metrics a product is steered by.",
+  Product: "Discovery, prioritization, roadmapping and the metrics a product is steered by.",
   Development: "Engineering practice and the methods for working alongside AI agents.",
   Experience: "Customer journeys, design process and measuring what people actually experience.",
   Marketing: "Positioning, pricing, search and the frameworks that take a product to market.",
-  Ops: "How a team is organised, aligned and held to its objectives.",
+  Ops: "How a team is organized, aligned and held to its objectives.",
   Workflows: "How the work itself runs: iterations, boards, ceremonies and retrospectives.",
 };
 const CATEGORIES = Object.keys(CATEGORY_DESCRIPTIONS);
@@ -41,48 +42,51 @@ function subdirectories(dir) {
     .sort((a, b) => a.localeCompare(b));
 }
 
-function frontmatter(path) {
-  const content = readFileSync(path, "utf8");
-  const end = content.startsWith("---") ? content.indexOf("\n---", 3) : -1;
-  const parsed = end === -1 ? null : loadYaml(content.slice(content.indexOf("\n") + 1, end));
-  if (!parsed || typeof parsed !== "object") {
-    console.error(`${relative(repoRoot, path)}: missing or malformed frontmatter — run npm run validate`);
-    process.exit(1);
-  }
-  return parsed;
+// Every failure here reaches a contributor running this script directly: CI
+// runs the validator first, which reports the same problems all at once.
+function fail(message) {
+  console.error(`${message} — run npm run validate`);
+  process.exit(1);
 }
 
 // A METHOD.md opens with frontmatter carrying its category, then the H1 the
-// title is read from.
+// title is read from. All leading whitespace after the closing fence is
+// stripped, not only newlines: a CRLF file or a fence written `--- ` leaves a
+// blank line that would otherwise spend a slot of the attribution window.
 function splitFrontmatter(path) {
   const content = readFileSync(path, "utf8");
-  if (!content.startsWith("---")) return { frontmatter: null, body: content };
-  const end = content.indexOf("\n---", 3);
+  const end = content.startsWith("---") ? content.indexOf("\n---", 3) : -1;
   if (end === -1) return { frontmatter: null, body: content };
   let parsed;
   try {
     parsed = loadYaml(content.slice(content.indexOf("\n") + 1, end));
   } catch (err) {
-    console.error(`${relative(repoRoot, path)}: failed to parse frontmatter YAML: ${err.message} — run npm run validate`);
-    process.exit(1);
+    fail(`${relative(repoRoot, path)}: failed to parse frontmatter YAML: ${err.message}`);
   }
-  const body = content.slice(end + 4).replace(/^\n+/, "");
+  const body = content.slice(end + 4).replace(/^\s+/, "");
   return { frontmatter: parsed && typeof parsed === "object" ? parsed : null, body };
 }
 
+function frontmatter(path) {
+  const { frontmatter: parsed } = splitFrontmatter(path);
+  if (!parsed) fail(`${relative(repoRoot, path)}: missing or malformed frontmatter`);
+  return parsed;
+}
+
 // The README table names each method by the part of its H1 before the first
-// colon, and credits it from the "> Created by" line under that heading. The
-// H1's subtitle used to double as a skills.sh group description; sections are
-// per category now, and those carry their own copy.
-function describeMethod(content) {
+// colon, and credits it from the "> Created by" line under that heading.
+function describeMethod(path, content) {
   const lines = content.split("\n");
-  // Searched for rather than indexed: CRLF endings or a fence written `--- `
-  // leave a stray line ahead of the H1, and an empty title publishes silently.
-  const heading = (lines.find((line) => line.startsWith("# ")) ?? "").replace(/^#\s+/, "").trim();
-  const colon = heading.search(/:\s/);
-  const title = colon === -1 ? heading : heading.slice(0, colon);
+  // The H1 is searched for rather than indexed so a stray line ahead of it
+  // cannot become the title. Neither value may fall back to empty: that
+  // publishes a README row with no method name or no credit, and --check
+  // compares the file against the same empty output, so every gate stays green.
+  const heading = lines.find((line) => line.startsWith("# ")) ?? "";
+  const title = heading.replace(/^#\s+/, "").trim().split(/:\s/)[0];
+  if (!title) fail(`${relative(repoRoot, path)}: missing the "# " H1 the catalog table names the method from`);
   const attribution = lines.slice(0, 5).find((line) => line.startsWith("> Created by ")) ?? "";
   const createdBy = attribution.replace(/^> Created by /, "").trim();
+  if (!createdBy) fail(`${relative(repoRoot, path)}: missing a "> Created by" attribution line under the title`);
   return { title, createdBy };
 }
 
@@ -90,42 +94,52 @@ const methods = new Map();
 for (const slug of subdirectories(join(repoRoot, "methods"))) {
   const path = join(repoRoot, "methods", slug, "METHOD.md");
   const { frontmatter: methodFrontmatter, body } = splitFrontmatter(path);
-  const category = methodFrontmatter?.category;
+  if (!methodFrontmatter) fail(`methods/${slug}/METHOD.md: missing or malformed --- frontmatter block`);
+  const category = methodFrontmatter.category;
   if (!CATEGORIES.includes(category)) {
-    console.error(`methods/${slug}/METHOD.md: category "${category}" must be one of ${CATEGORIES.join(", ")} — run npm run validate`);
-    process.exit(1);
+    fail(`methods/${slug}/METHOD.md: category ${JSON.stringify(category)} must be one of ${CATEGORIES.join(", ")}`);
   }
-  methods.set(slug, { slug, category, ...describeMethod(body), skills: [] });
+  methods.set(slug, { slug, category, ...describeMethod(path, body), skills: [] });
 }
 
 for (const slug of subdirectories(join(repoRoot, "skills"))) {
-  const fm = frontmatter(join(repoRoot, "skills", slug, "SKILL.md"));
+  const path = join(repoRoot, "skills", slug, "SKILL.md");
+  const fm = frontmatter(path);
   const method = methods.get(fm.metadata?.method);
   if (!method) {
-    console.error(`skills/${slug}: metadata.method "${fm.metadata?.method}" is not a method`);
-    process.exit(1);
+    fail(`skills/${slug}/SKILL.md: metadata.method ${JSON.stringify(fm.metadata?.method)} is not a method`);
+  }
+  // Sections are built from the method's category, so a skill claiming another
+  // one would sit in a skills.sh section Studio does not file it under.
+  if (fm.category !== method.category) {
+    fail(
+      `skills/${slug}/SKILL.md: category ${JSON.stringify(fm.category)} does not match method "${method.slug}" (${method.category})`,
+    );
   }
   method.skills.push(slug);
 }
 
-// The page shows one section per category, not per method. skills.sh uses at
-// most 50 groupings and 500 skills in each, and a section per method hit the
-// first limit at method 51. Categories are a fixed set of six, so the catalog
-// can grow without the page silently dropping whatever came last.
+// The page shows one section per category, not per method. The skills.sh
+// schema caps groupings at 50 and skills per grouping at 500, and one section
+// per method reached the grouping cap at method 51: the manifest would have
+// failed its own $schema while --check still passed. Six fixed categories keep
+// the catalog clear of that cap, so only the per-grouping count still needs a
+// check.
 const MAX_GROUP_SKILLS = 500;
 for (const category of CATEGORIES) {
   const count = [...methods.values()]
     .filter((method) => method.category === category)
     .reduce((total, method) => total + method.skills.length, 0);
   if (count > MAX_GROUP_SKILLS) {
-    console.error(`skills.sh.json allows at most ${MAX_GROUP_SKILLS} skills per grouping; ${category} has ${count}`);
-    process.exit(1);
+    fail(`skills.sh.json allows at most ${MAX_GROUP_SKILLS} skills per grouping; ${category} has ${count}`);
   }
 }
 
 const manifest = {
   $schema: "https://skills.sh/schemas/skills.sh.schema.json",
   notGrouped: "bottom",
+  // An empty grouping fails the schema (skills has minItems 1), so a category
+  // no method belongs to yet is left out rather than published bare.
   groupings: CATEGORIES.map((category) => {
     const inCategory = [...methods.values()].filter((method) => method.category === category);
     return {

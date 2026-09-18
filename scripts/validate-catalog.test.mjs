@@ -59,7 +59,10 @@ function fixture(build) {
   file(root, "README.md", "# Fixture\n\n<!-- catalog:start -->\n<!-- catalog:end -->\n");
   symlinkSync(join(repoRoot, "node_modules"), join(root, "node_modules"), "dir");
 
-  file(root, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n\n> Created by **Eric Ries** — [link](https://theleanstartup.com)\n");
+  // 42 of the 50 shipped METHOD.md files carry a "Title: Subtitle" H1 and the
+  // table takes the part before the colon, so the base fixture has one: every
+  // README assertion below then holds the split in place.
+  file(root, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup: Build, Measure, Learn\n\n> Created by **Eric Ries** — [link](https://theleanstartup.com)\n");
   file(root, "skills/running-experiments/SKILL.md", skill("running-experiments"));
   build?.(root);
   return root;
@@ -76,8 +79,6 @@ function validate(root) {
   }
 }
 
-// The generator is the other half of the same contract, so it is driven the
-// same way: as a child process, over a throwaway tree.
 function generate(root, ...args) {
   try {
     return {
@@ -91,10 +92,11 @@ function generate(root, ...args) {
   }
 }
 
-// Published copy: the manifest is the only place these strings exist, so they
-// are asserted verbatim. A dropped one ships a section with no description.
+// Published copy with no upstream: CATEGORY_DESCRIPTIONS in the generator is
+// its only source, so it is asserted verbatim. A dropped one ships a section
+// with no description.
 const PRODUCT_DESCRIPTION =
-  "Discovery, prioritisation, roadmapping and the metrics a product is steered by.";
+  "Discovery, prioritization, roadmapping and the metrics a product is steered by.";
 const WORKFLOWS_DESCRIPTION =
   "How the work itself runs: iterations, boards, ceremonies and retrospectives.";
 
@@ -334,6 +336,20 @@ test("every method must carry its attribution line", () => {
   );
 });
 
+test("every method must carry the H1 the catalog table names it from", () => {
+  // Each of these leaves the generator with no title. Unguarded it publishes a
+  // link with no text, and --check compares that against the same empty
+  // output, so nothing downstream can notice.
+  for (const heading of ["Lean Startup\n=============", "## Lean Startup", "#Lean Startup", ""]) {
+    const body = `---\ncategory: Product\n---\n\n${heading}\n\n> Created by **Eric Ries**\n`;
+    const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", body));
+    rejects(root, /methods\/lean-startup\/METHOD\.md: missing the "# " H1 the catalog table names the method from/);
+    const generated = generate(root);
+    assert.equal(generated.code, 1, generated.output);
+    assert.match(generated.output, /missing the "# " H1/);
+  }
+});
+
 test("every curated skill must carry the Hamster homepage in metadata", () => {
   for (const homepage of [null, "https://example.com", "https://tryhamster.com/skills", true]) {
     rejects(
@@ -435,20 +451,38 @@ test("a curated skill must carry the category of its method", () => {
     fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { category: null }))),
     /running-experiments\/SKILL\.md: missing "category" \(curated skills carry their method's category\)/,
   );
-  // One cause, one failure: the method comparison stays quiet on an absent
-  // field, so a bulk mistake across the catalog does not double the list.
+  // One cause, one failure: the method comparison stays quiet on a field that
+  // is absent, and on one already rejected for not being in the set, so a bulk
+  // mistake across the catalog does not double the list.
   const absent = validate(
     fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { category: null }))),
   );
   assert.doesNotMatch(absent.output, /does not match method/);
   // The set is case-sensitive: Studio groups on the literal value.
-  rejects(
+  const lowercased = validate(
     fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { category: "product" }))),
+  );
+  assert.equal(lowercased.code, 1, lowercased.output);
+  assert.match(
+    lowercased.output,
     /category "product" must be one of Product, Development, Experience, Marketing, Ops, Workflows/,
   );
+  assert.doesNotMatch(lowercased.output, /does not match method/);
   rejects(
     fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { category: "Strategy" }))),
     /category "Strategy" must be one of/,
+  );
+  // A list reads as a string once interpolated, so the value is quoted: an
+  // unquoted message would name the category it is rejecting as acceptable.
+  rejects(
+    fixture((r) =>
+      file(
+        r,
+        "skills/running-experiments/SKILL.md",
+        `---\nname: running-experiments\ndescription: "What it does."\ncategory:\n  - Product\nmetadata:\n  method: lean-startup\n  homepage: https://tryhamster.com\n---\nBody\n`,
+      ),
+    ),
+    /category \["Product"\] must be one of/,
   );
 });
 
@@ -472,6 +506,18 @@ test("an experimental skill may omit its category but not contradict its method"
       ),
     ),
     /naming-things\/SKILL\.md: category "Marketing" does not match method "lean-startup" \(Product\)/,
+  );
+  // No method to cross-check against, so the enum is the only thing standing
+  // between a typo and the public tree.
+  rejects(
+    fixture((r) =>
+      file(
+        r,
+        "skills/.experimental/naming-things/SKILL.md",
+        skill("naming-things", { category: "Strategy", method: null, homepage: null }),
+      ),
+    ),
+    /naming-things\/SKILL\.md: category "Strategy" must be one of/,
   );
 });
 
@@ -517,10 +563,8 @@ test("the manifest drift check fails on stale generated files and passes once re
   assert.equal(run().code, 0);
   assert.equal(run("--check").code, 0, "freshly generated files are up to date");
 
-  // Sections are per category, not per method: skills.sh takes at most 50 of
-  // them and the catalog sits at exactly 50 methods, so method 51 would have
-  // been the first one it could not show. Groupings are compared whole, so the
-  // published description and the absence of stray keys are both covered.
+  // Groupings are compared whole, so the published description, the skill
+  // membership and the absence of stray keys are all covered at once.
   const manifest = JSON.parse(readFileSync(join(root, "skills.sh.json"), "utf8"));
   assert.deepEqual(manifest.groupings, [
     { title: "Product", description: PRODUCT_DESCRIPTION, skills: ["running-experiments"] },
@@ -563,6 +607,16 @@ test("the manifest drift check fails on stale generated files and passes once re
       skills: ["a-sprint-review", "limiting-wip"],
     },
   ]);
+
+  // Sections follow CATEGORY_DESCRIPTIONS order, which is the order skills.sh
+  // renders them in — not alphabetical, where Development would come first.
+  file(root, "methods/xp/METHOD.md", "---\ncategory: Development\n---\n\n# Extreme Programming\n\n> Created by **Kent Beck**\n");
+  file(root, "skills/pairing/SKILL.md", skill("pairing", { method: "xp", category: "Development" }));
+  assert.equal(run().code, 0);
+  assert.deepEqual(
+    JSON.parse(readFileSync(join(root, "skills.sh.json"), "utf8")).groupings.map(({ title }) => title),
+    ["Product", "Development", "Workflows"],
+  );
   // A skill whose category contradicts its method is refused, so the two can
   // never drift.
   file(
@@ -586,37 +640,40 @@ test("the manifest drift check fails on stale generated files and passes once re
   assert.match(stale.output, /stale: skills\.sh\.json, README\.md/);
 });
 
-test("a METHOD.md with CRLF endings or a padded fence still names its method", () => {
-  for (const content of [
-    "---\r\ncategory: Product\r\n---\r\n\r\n# Lean Startup\r\n\r\n> Created by **Eric Ries**\r\n",
-    "---\ncategory: Product\n--- \n\n# Lean Startup\n\n> Created by **Eric Ries**\n",
-  ]) {
-    const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", content));
-    const validated = validate(root);
-    assert.equal(validated.code, 0, validated.output);
-    const generated = generate(root);
-    assert.equal(generated.code, 0, generated.output);
-    // An H1 read positionally lands on the stray line these files leave and
-    // publishes an empty method name with every gate green.
-    assert.match(
-      readFileSync(join(root, "README.md"), "utf8"),
-      /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \| \*\*Eric Ries\*\* \|/,
-    );
+test("the title and the attribution survive CRLF endings, a padded fence and an intro line", () => {
+  // Each fence style crossed with prose between the H1 and the attribution. A
+  // strip that only removes "\n" leaves the blank line these shapes open with
+  // in place, which spends two of the five body lines: the attribution then
+  // reads as missing and the generator publishes a row with no credit. The H1
+  // read positionally lands on the same stray line and publishes no name.
+  for (const eol of ["\n", "\r\n"]) {
+    for (const closingFence of ["---", "--- "]) {
+      for (const intro of [[], ["What it is.", ""]]) {
+        const content = [
+          "---",
+          "category: Product",
+          closingFence,
+          "",
+          "# Lean Startup: Build, Measure, Learn",
+          "",
+          ...intro,
+          "> Created by **Eric Ries**",
+          "",
+        ].join(eol);
+        const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", content));
+        const validated = validate(root);
+        assert.equal(validated.code, 0, validated.output);
+        const generated = generate(root);
+        assert.equal(generated.code, 0, generated.output);
+        // The README row is the load-bearing assertion: an exit code alone
+        // misses the empty name and empty credit a mis-stripped body writes.
+        assert.match(
+          readFileSync(join(root, "README.md"), "utf8"),
+          /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \| \*\*Eric Ries\*\* \|/,
+        );
+      }
+    }
   }
-});
-
-test("an attribution below an intro line satisfies the validator and the generator alike", () => {
-  const root = fixture((r) =>
-    file(
-      r,
-      "methods/lean-startup/METHOD.md",
-      "---\ncategory: Product\n---\n\n# Lean Startup\n\nWhat it is.\n\n> Created by **Eric Ries**\n",
-    ),
-  );
-  const validated = validate(root);
-  assert.equal(validated.code, 0, validated.output);
-  assert.equal(generate(root).code, 0);
-  assert.match(readFileSync(join(root, "README.md"), "utf8"), /\| Product \| \*\*Eric Ries\*\* \|/);
 });
 
 test("the generator names the METHOD.md it cannot parse instead of dumping a stack trace", () => {
@@ -630,5 +687,21 @@ test("the generator names the METHOD.md it cannot parse instead of dumping a sta
   const { code, output } = generate(root);
   assert.equal(code, 1);
   assert.match(output, /methods\/lean-startup\/METHOD\.md: failed to parse frontmatter YAML/);
+  assert.doesNotMatch(output, /node_modules/);
+});
+
+test("the generator names the SKILL.md it cannot parse instead of dumping a stack trace", () => {
+  // Same standard as the METHOD.md above: both files reach the generator
+  // through one parser, so neither can fail as an anonymous js-yaml throw.
+  const root = fixture((r) =>
+    file(
+      r,
+      "skills/running-experiments/SKILL.md",
+      '---\nname: running-experiments\ndescription: "What it does\ncategory: "Product\nmetadata:\n  method: lean-startup\n---\nBody\n',
+    ),
+  );
+  const { code, output } = generate(root);
+  assert.equal(code, 1);
+  assert.match(output, /skills\/running-experiments\/SKILL\.md: failed to parse frontmatter YAML/);
   assert.doesNotMatch(output, /node_modules/);
 });
