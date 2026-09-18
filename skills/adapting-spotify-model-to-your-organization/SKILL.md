@@ -1,7 +1,7 @@
 ---
 name: adapting-spotify-model-to-your-organization
 description: "This skill teaches you how to translate the Spotify squad, tribe, chapter, and guild structure into an operating model that fits your company's specific size, culture, technical landscape, and existing processes, rather than blindly copying another company's org chart."
-category: "Workflows"
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

@@ -1,7 +1,7 @@
 ---
 name: forming-autonomous-squads
 description: "This skill teaches you how to define, staff, and launch cross-functional squads that own a clear product mission and can deliver value end-to-end without depending on other teams for day-to-day execution."
-category: "Workflows"
+category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: spotify-squad-model

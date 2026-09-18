@@ -1,5 +1,5 @@
 ---
-category: Workflows
+category: Ops
 ---
 
 # The Spotify Model: An Organizational Framework for Scaling Agile
