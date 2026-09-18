@@ -18,10 +18,10 @@ const check = process.argv.includes("--check");
 
 const MANIFEST_PATH = join(repoRoot, "skills.sh.json");
 // The six categories Studio groups skills by (SKILL_CATEGORIES in Studio's
-// shared package); validate-catalog.mjs keeps its own copy of the names, so a
-// seventh has to be added in both. Key order is the section order skills.sh
-// renders, which Object.keys preserves. The copy lives here because Studio has
-// no per-category description to inherit.
+// shared package). A seventh has to be added here, in validate-catalog.mjs,
+// and in the two lists in CONTRIBUTING.md; only the scripts are gated. Key
+// order is the section order skills.sh renders, which Object.keys preserves.
+// The copy lives here because Studio has no per-category description.
 const CATEGORY_DESCRIPTIONS = {
   Product: "Discovery, prioritization, roadmapping and the metrics a product is steered by.",
   Development: "Engineering practice and the methods for working alongside AI agents.",
@@ -42,17 +42,31 @@ function subdirectories(dir) {
     .sort((a, b) => a.localeCompare(b));
 }
 
-// Every failure here reaches a contributor running this script directly: CI
-// runs the validator first, which reports the same problems all at once.
+// Exits on the first problem rather than collecting them: the validator runs
+// first in npm run validate and reports its own rules all at once, so what
+// lands here is either a check stricter than the validator's (an empty title
+// or credit) or one it has no rule for (the per-grouping cap).
 function fail(message) {
   console.error(`${message} — run npm run validate`);
   process.exit(1);
 }
 
-// A METHOD.md opens with frontmatter carrying its category, then the H1 the
-// title is read from. All leading whitespace after the closing fence is
-// stripped, not only newlines: a CRLF file or a fence written `--- ` leaves a
-// blank line that would otherwise spend a slot of the attribution window.
+// Quoted for the message: a list interpolates to a bare name the enum appears
+// to contain. A self-referential anchor cannot be serialized, so it falls back
+// rather than throwing where a named failure is the whole point.
+function quoted(value) {
+  try {
+    return JSON.stringify(value) ?? String(value);
+  } catch {
+    return String(value);
+  }
+}
+
+// Splits the frontmatter of a METHOD.md or a SKILL.md from its body. Only
+// whitespace-only lines after the closing fence are stripped: a CRLF file or a
+// fence written `--- ` leaves one, and it would otherwise spend a slot of the
+// attribution window. The indentation of the first content line stays, so a
+// body opening with an indented `# ` cannot be read as the title.
 function splitFrontmatter(path) {
   const content = readFileSync(path, "utf8");
   const end = content.startsWith("---") ? content.indexOf("\n---", 3) : -1;
@@ -63,8 +77,11 @@ function splitFrontmatter(path) {
   } catch (err) {
     fail(`${relative(repoRoot, path)}: failed to parse frontmatter YAML: ${err.message}`);
   }
-  const body = content.slice(end + 4).replace(/^\s+/, "");
-  return { frontmatter: parsed && typeof parsed === "object" ? parsed : null, body };
+  const body = content.slice(end + 4).replace(/^(?:[ \t\r]*\n)+/, "");
+  return {
+    frontmatter: parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : null,
+    body,
+  };
 }
 
 function frontmatter(path) {
@@ -80,7 +97,9 @@ function describeMethod(path, content) {
   // The H1 is searched for rather than indexed so a stray line ahead of it
   // cannot become the title. Neither value may fall back to empty: that
   // publishes a README row with no method name or no credit, and --check
-  // compares the file against the same empty output, so every gate stays green.
+  // compares the committed file against the same empty output, so the drift
+  // gate cannot notice. The validator rejects a missing H1 and a missing
+  // attribution line; an empty pre-colon title or an empty credit fails here.
   const heading = lines.find((line) => line.startsWith("# ")) ?? "";
   const title = heading.replace(/^#\s+/, "").trim().split(/:\s/)[0];
   if (!title) fail(`${relative(repoRoot, path)}: missing the "# " H1 the catalog table names the method from`);
@@ -97,7 +116,7 @@ for (const slug of subdirectories(join(repoRoot, "methods"))) {
   if (!methodFrontmatter) fail(`methods/${slug}/METHOD.md: missing or malformed --- frontmatter block`);
   const category = methodFrontmatter.category;
   if (!CATEGORIES.includes(category)) {
-    fail(`methods/${slug}/METHOD.md: category ${JSON.stringify(category)} must be one of ${CATEGORIES.join(", ")}`);
+    fail(`methods/${slug}/METHOD.md: category ${quoted(category)} must be one of ${CATEGORIES.join(", ")}`);
   }
   methods.set(slug, { slug, category, ...describeMethod(path, body), skills: [] });
 }
@@ -107,13 +126,13 @@ for (const slug of subdirectories(join(repoRoot, "skills"))) {
   const fm = frontmatter(path);
   const method = methods.get(fm.metadata?.method);
   if (!method) {
-    fail(`skills/${slug}/SKILL.md: metadata.method ${JSON.stringify(fm.metadata?.method)} is not a method`);
+    fail(`skills/${slug}/SKILL.md: metadata.method ${quoted(fm.metadata?.method)} is not a method`);
   }
   // Sections are built from the method's category, so a skill claiming another
   // one would sit in a skills.sh section Studio does not file it under.
   if (fm.category !== method.category) {
     fail(
-      `skills/${slug}/SKILL.md: category ${JSON.stringify(fm.category)} does not match method "${method.slug}" (${method.category})`,
+      `skills/${slug}/SKILL.md: category ${quoted(fm.category)} does not match method "${method.slug}" (${method.category})`,
     );
   }
   method.skills.push(slug);
@@ -121,10 +140,10 @@ for (const slug of subdirectories(join(repoRoot, "skills"))) {
 
 // The page shows one section per category, not per method. The skills.sh
 // schema caps groupings at 50 and skills per grouping at 500, and one section
-// per method reached the grouping cap at method 51: the manifest would have
-// failed its own $schema while --check still passed. Six fixed categories keep
-// the catalog clear of that cap, so only the per-grouping count still needs a
-// check.
+// per method would exceed the grouping cap the moment a 51st method lands.
+// Nothing here validates the manifest against its own $schema, so --check
+// would still pass. Six fixed categories keep the catalog clear of that cap,
+// so only the per-grouping count still needs a check.
 const MAX_GROUP_SKILLS = 500;
 for (const category of CATEGORIES) {
   const count = [...methods.values()]

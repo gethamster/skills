@@ -37,7 +37,7 @@ const PUBLISHABLE_RIGHTS = new Set(["original", "public-framework", "licensed"])
 // Experimental skills are exempt from the backlink and from method membership.
 // Relative links are resolved because a directory rename is otherwise legal
 // and would leave the tree cross-linked to paths that no longer exist.
-const ATTRIBUTION_RE = /^> Created by /m;
+const ATTRIBUTION_PREFIX = "> Created by ";
 const RELATIVE_LINK_RE = /\]\(((?:\.\.?\/)[^)#\s]+)(?:#[^)]*)?\)/g;
 
 // The six categories Studio groups skills by — the same list the generator
@@ -108,9 +108,22 @@ function nonEmptyString(value) {
   return typeof value === "string" && value.trim().length > 0;
 }
 
-// Splits the frontmatter block from the body. All leading whitespace after the
-// closing fence is stripped, exactly as the generator does, so a CRLF file or
-// a fence written `--- ` does not spend a slot of the attribution window.
+// Quoted for the message: a list interpolates to a bare name the enum appears
+// to contain. A self-referential anchor cannot be serialized, so it falls back
+// rather than throwing part-way through collecting the failures.
+function quoted(value) {
+  try {
+    return JSON.stringify(value) ?? String(value);
+  } catch {
+    return String(value);
+  }
+}
+
+// Only whitespace-only lines after the closing fence are stripped, exactly as
+// the generator does: a CRLF file or a fence written `--- ` leaves one, and it
+// would otherwise spend a slot of the attribution window. The indentation of
+// the first content line stays, so a body opening with an indented `# ` cannot
+// be read as the title.
 function splitFrontmatter(content) {
   if (!content.startsWith("---")) return null;
   const firstLineEnd = content.indexOf("\n");
@@ -119,7 +132,7 @@ function splitFrontmatter(content) {
   if (closingIndex === -1) return null;
   return {
     block: content.slice(firstLineEnd + 1, closingIndex),
-    body: content.slice(closingIndex + 4).replace(/^\s+/, ""),
+    body: content.slice(closingIndex + 4).replace(/^(?:[ \t\r]*\n)+/, ""),
   };
 }
 
@@ -188,9 +201,9 @@ function validateSkill(filePath, { curated }) {
   // Studio stores this on the skill and the library page groups by it, so a
   // curated skill carries the category of the method it belongs to. Presence
   // and membership of the enum are checked here; agreement with the method is
-  // checked below, once metadata.method is known. The value is quoted with
-  // JSON.stringify because a list or an empty value would otherwise stringify
-  // to something the enum appears to contain.
+  // checked below, once metadata.method is known. The value is quoted because
+  // a list interpolates to a bare name the message appears to accept, and an
+  // empty value interpolates to nothing at all.
   const category = frontmatter.category;
   const categoryInEnum = typeof category === "string" && CATEGORIES.has(category);
   if (category === undefined) {
@@ -199,7 +212,7 @@ function validateSkill(filePath, { curated }) {
     }
   } else if (!categoryInEnum) {
     failures.push(
-      `${relativePath}/SKILL.md: category ${JSON.stringify(category)} must be one of ${[...CATEGORIES].join(", ")}`,
+      `${relativePath}/SKILL.md: category ${quoted(category)} must be one of ${[...CATEGORIES].join(", ")}`,
     );
   }
 
@@ -241,9 +254,10 @@ function validateSkill(filePath, { curated }) {
       // group the page never shows it in. Experimental skills may omit the
       // field, but not contradict their method.
       //
-      // One cause, one failure: a category that is absent, or already rejected
-      // for not being in the enum, is not compared again, so a bulk mistake
-      // across the catalog does not report twice per skill.
+      // One cause, one failure: a category that is absent, already rejected
+      // for not being in the enum, or belonging to a method whose own category
+      // was rejected, is not compared again, so a bulk mistake across the
+      // catalog does not report twice per skill.
       if (categoryInEnum && record.category !== undefined && category !== record.category) {
         failures.push(
           `${relativePath}/SKILL.md: category "${category}" does not match method "${method}" (${record.category})`,
@@ -310,21 +324,23 @@ for (const methodName of listSubdirectories(methodsRoot)) {
     failures.push(
       methodCategory === undefined
         ? `${relativeMethod}/METHOD.md: missing "category" (one of ${[...CATEGORIES].join(", ")})`
-        : `${relativeMethod}/METHOD.md: category ${JSON.stringify(methodCategory)} must be one of ${[...CATEGORIES].join(", ")}`,
+        : `${relativeMethod}/METHOD.md: category ${quoted(methodCategory)} must be one of ${[...CATEGORIES].join(", ")}`,
     );
   }
 
   // The generator names each method in the README table from its H1 and
   // credits it from the attribution line directly under that title. Both are
-  // required here: the generator has no value to fall back on, and a row with
-  // no method name is a link with no text in the published catalog.
-  const body = parsedFile === null ? content.replace(/^\s+/, "") : parsedFile.body;
+  // checked on the values the generator extracts, not on the lines they sit
+  // in, so the two gates agree: an H1 of "# : Subtitle" and a bare
+  // "> Created by " each leave the table with nothing to print.
+  const body = parsedFile === null ? content.replace(/^(?:[ \t\r]*\n)+/, "") : parsedFile.body;
   const bodyLines = body.split("\n");
   const heading = bodyLines.find((line) => line.startsWith("# ")) ?? "";
-  if (heading.replace(/^#\s+/, "").trim().length === 0) {
+  if (heading.replace(/^#\s+/, "").trim().split(/:\s/)[0] === "") {
     failures.push(`${relativeMethod}/METHOD.md: missing the "# " H1 the catalog table names the method from`);
   }
-  if (!ATTRIBUTION_RE.test(bodyLines.slice(0, 5).join("\n"))) {
+  const attribution = bodyLines.slice(0, 5).find((line) => line.startsWith(ATTRIBUTION_PREFIX)) ?? "";
+  if (attribution.slice(ATTRIBUTION_PREFIX.length).trim() === "") {
     failures.push(`${relativeMethod}/METHOD.md: missing a "> Created by" attribution line`);
   }
   checkRelativeLinks(methodFile, content);

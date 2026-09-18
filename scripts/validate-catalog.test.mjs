@@ -330,6 +330,14 @@ test("every method must carry its attribution line", () => {
     ),
     /missing a "> Created by" attribution line/,
   );
+  // A credit with nothing after the prefix leaves the table with nothing to
+  // print, so it fails on the value both scripts read, not on the line.
+  const empty = fixture((r) =>
+    file(r, "methods/lean-startup/METHOD.md", "---\ncategory: Product\n---\n\n# Lean Startup\n\n> Created by \n"),
+  );
+  rejects(empty, /missing a "> Created by" attribution line/);
+  const generatedEmpty = generate(empty);
+  assert.equal(generatedEmpty.code, 1, generatedEmpty.output);
   rejects(
     fixture((r) => mkdirSync(join(r, "methods/orphan"), { recursive: true })),
     /methods\/orphan: missing METHOD\.md/,
@@ -340,7 +348,9 @@ test("every method must carry the H1 the catalog table names it from", () => {
   // Each of these leaves the generator with no title. Unguarded it publishes a
   // link with no text, and --check compares that against the same empty
   // output, so nothing downstream can notice.
-  for (const heading of ["Lean Startup\n=============", "## Lean Startup", "#Lean Startup", ""]) {
+  // The last is a heading that is nothing but a subtitle: the table takes the
+  // part before the colon, which is empty.
+  for (const heading of ["Lean Startup\n=============", "## Lean Startup", "#Lean Startup", "", "# : Build, Measure, Learn"]) {
     const body = `---\ncategory: Product\n---\n\n${heading}\n\n> Created by **Eric Ries**\n`;
     const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", body));
     rejects(root, /methods\/lean-startup\/METHOD\.md: missing the "# " H1 the catalog table names the method from/);
@@ -642,10 +652,10 @@ test("the manifest drift check fails on stale generated files and passes once re
 
 test("the title and the attribution survive CRLF endings, a padded fence and an intro line", () => {
   // Each fence style crossed with prose between the H1 and the attribution. A
-  // strip that only removes "\n" leaves the blank line these shapes open with
-  // in place, which spends two of the five body lines: the attribution then
-  // reads as missing and the generator publishes a row with no credit. The H1
-  // read positionally lands on the same stray line and publishes no name.
+  // strip that only removes "\n" leaves a stray line ahead of the body, which
+  // spends two of the five attribution slots: with an intro line that is
+  // enough for the attribution to read as missing, and both scripts then
+  // reject a file that carries it.
   for (const eol of ["\n", "\r\n"]) {
     for (const closingFence of ["---", "--- "]) {
       for (const intro of [[], ["What it is.", ""]]) {
@@ -665,8 +675,9 @@ test("the title and the attribution survive CRLF endings, a padded fence and an 
         assert.equal(validated.code, 0, validated.output);
         const generated = generate(root);
         assert.equal(generated.code, 0, generated.output);
-        // The README row is the load-bearing assertion: an exit code alone
-        // misses the empty name and empty credit a mis-stripped body writes.
+        // The row, not just the exit code: a stray CR that survives into the
+        // title or the credit publishes a malformed row with the generator
+        // still exiting 0.
         assert.match(
           readFileSync(join(root, "README.md"), "utf8"),
           /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \| \*\*Eric Ries\*\* \|/,
@@ -674,6 +685,25 @@ test("the title and the attribution survive CRLF endings, a padded fence and an 
       }
     }
   }
+});
+
+test("an indented line that looks like a heading does not become the method name", () => {
+  // Stripping every leading whitespace character, rather than whole blank
+  // lines, would pull this line's indentation off and publish it as the title.
+  const root = fixture((r) =>
+    file(
+      r,
+      "methods/lean-startup/METHOD.md",
+      "---\ncategory: Product\n---\n\n    # Not the title\n\n# Lean Startup: Build, Measure, Learn\n\n> Created by **Eric Ries**\n",
+    ),
+  );
+  const validated = validate(root);
+  assert.equal(validated.code, 0, validated.output);
+  assert.equal(generate(root).code, 0);
+  assert.match(
+    readFileSync(join(root, "README.md"), "utf8"),
+    /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \|/,
+  );
 });
 
 test("the generator names the METHOD.md it cannot parse instead of dumping a stack trace", () => {
