@@ -347,10 +347,11 @@ test("every method must carry its attribution line", () => {
 test("every method must carry the H1 the catalog table names it from", () => {
   // Each of these leaves the generator with no title. Unguarded it publishes a
   // link with no text, and --check compares that against the same empty
-  // output, so nothing downstream can notice.
-  // The last is a heading that is nothing but a subtitle: the table takes the
-  // part before the colon, which is empty.
-  for (const heading of ["Lean Startup\n=============", "## Lean Startup", "#Lean Startup", "", "# : Build, Measure, Learn"]) {
+  // output, so nothing downstream can notice. `#Lean Startup` is the
+  // CommonMark space requirement, which a tolerant `/^#+\s*/` would drop; the
+  // last is a heading that is nothing but a subtitle, where the part before
+  // the colon the table takes is empty.
+  for (const heading of ["Lean Startup\n=============", "## Lean Startup", "#Lean Startup", "# : Build, Measure, Learn"]) {
     const body = `---\ncategory: Product\n---\n\n${heading}\n\n> Created by **Eric Ries**\n`;
     const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", body));
     rejects(root, /methods\/lean-startup\/METHOD\.md: missing the "# " H1 the catalog table names the method from/);
@@ -544,6 +545,14 @@ test("every METHOD.md must declare one of the six categories", () => {
     ),
     /methods\/lean-startup\/METHOD\.md: category "product" must be one of/,
   );
+  // A list interpolates to a bare name, so an unquoted message would name the
+  // rejected value as one the enum accepts.
+  rejects(
+    fixture((r) =>
+      file(r, "methods/lean-startup/METHOD.md", "---\ncategory:\n  - Product\n---\n\n# Lean Startup\n\n> Created by **Eric Ries**\n"),
+    ),
+    /methods\/lean-startup\/METHOD\.md: category \["Product"\] must be one of/,
+  );
   // A file with no frontmatter reports the block and the category contract in
   // one run, rather than sending a contributor back for the second half.
   const bare = validate(
@@ -552,6 +561,9 @@ test("every METHOD.md must declare one of the six categories", () => {
   assert.equal(bare.code, 1, bare.output);
   assert.match(bare.output, /methods\/lean-startup\/METHOD\.md: missing or malformed --- frontmatter block/);
   assert.match(bare.output, /methods\/lean-startup\/METHOD\.md: missing "category" \(one of Product/);
+  // One cause, one failure: the body is still read without its fence, so the
+  // H1 and the attribution it carries are not reported as missing too.
+  assert.doesNotMatch(bare.output, /missing the "# " H1|missing a "> Created by"/);
   // A YAML error is its own cause and says nothing about the category.
   const unparseable = validate(
     fixture((r) =>
@@ -627,8 +639,9 @@ test("the manifest drift check fails on stale generated files and passes once re
     JSON.parse(readFileSync(join(root, "skills.sh.json"), "utf8")).groupings.map(({ title }) => title),
     ["Product", "Development", "Workflows"],
   );
-  // A skill whose category contradicts its method is refused, so the two can
-  // never drift.
+  // A skill whose category contradicts its method is refused by both scripts,
+  // so running the generator alone cannot write a manifest that disagrees with
+  // the file it read.
   file(
     root,
     "skills/limiting-wip/SKILL.md",
@@ -637,6 +650,12 @@ test("the manifest drift check fails on stale generated files and passes once re
   const mismatch = validate(root);
   assert.equal(mismatch.code, 1);
   assert.match(mismatch.output, /does not match method "kanban" \(Workflows\)/);
+  const mismatchGenerated = run();
+  assert.equal(mismatchGenerated.code, 1, mismatchGenerated.output);
+  assert.match(
+    mismatchGenerated.output,
+    /skills\/limiting-wip\/SKILL\.md: category "Product" does not match method "kanban" \(Workflows\)/,
+  );
   file(
     root,
     "skills/limiting-wip/SKILL.md",
@@ -653,36 +672,36 @@ test("the manifest drift check fails on stale generated files and passes once re
 test("the title and the attribution survive CRLF endings, a padded fence and an intro line", () => {
   // Each fence style crossed with prose between the H1 and the attribution. A
   // strip that only removes "\n" leaves a stray line ahead of the body, which
-  // spends two of the five attribution slots: with an intro line that is
-  // enough for the attribution to read as missing, and both scripts then
-  // reject a file that carries it.
+  // spends two of the five attribution slots: that is enough for the
+  // attribution below an intro line to read as missing, and both scripts then
+  // reject a file that carries it. Without the intro line the window absorbs
+  // the stray line, so those shapes pin nothing this does not.
   for (const eol of ["\n", "\r\n"]) {
     for (const closingFence of ["---", "--- "]) {
-      for (const intro of [[], ["What it is.", ""]]) {
-        const content = [
-          "---",
-          "category: Product",
-          closingFence,
-          "",
-          "# Lean Startup: Build, Measure, Learn",
-          "",
-          ...intro,
-          "> Created by **Eric Ries**",
-          "",
-        ].join(eol);
-        const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", content));
-        const validated = validate(root);
-        assert.equal(validated.code, 0, validated.output);
-        const generated = generate(root);
-        assert.equal(generated.code, 0, generated.output);
-        // The row, not just the exit code: a stray CR that survives into the
-        // title or the credit publishes a malformed row with the generator
-        // still exiting 0.
-        assert.match(
-          readFileSync(join(root, "README.md"), "utf8"),
-          /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \| \*\*Eric Ries\*\* \|/,
-        );
-      }
+      const content = [
+        "---",
+        "category: Product",
+        closingFence,
+        "",
+        "# Lean Startup: Build, Measure, Learn",
+        "",
+        "What it is.",
+        "",
+        "> Created by **Eric Ries**",
+        "",
+      ].join(eol);
+      const root = fixture((r) => file(r, "methods/lean-startup/METHOD.md", content));
+      const validated = validate(root);
+      assert.equal(validated.code, 0, validated.output);
+      const generated = generate(root);
+      assert.equal(generated.code, 0, generated.output);
+      // The row, not just the exit code: a stray CR that survives into the
+      // title or the credit publishes a malformed row with the generator still
+      // exiting 0.
+      assert.match(
+        readFileSync(join(root, "README.md"), "utf8"),
+        /\| \[Lean Startup\]\(methods\/lean-startup\/METHOD\.md\) \| Product \| \*\*Eric Ries\*\* \|/,
+      );
     }
   }
 });
@@ -718,6 +737,13 @@ test("the generator names the METHOD.md it cannot parse instead of dumping a sta
   assert.equal(code, 1);
   assert.match(output, /methods\/lean-startup\/METHOD\.md: failed to parse frontmatter YAML/);
   assert.doesNotMatch(output, /node_modules/);
+  // The same standard for a file with no fence at all: unguarded, the null
+  // frontmatter surfaces as a TypeError naming a line of this script.
+  const noFence = generate(
+    fixture((r) => file(r, "methods/lean-startup/METHOD.md", "# Lean Startup\n\n> Created by **Eric Ries**\n")),
+  );
+  assert.equal(noFence.code, 1, noFence.output);
+  assert.match(noFence.output, /methods\/lean-startup\/METHOD\.md: missing or malformed --- frontmatter block/);
 });
 
 test("the generator names the SKILL.md it cannot parse instead of dumping a stack trace", () => {
@@ -734,4 +760,9 @@ test("the generator names the SKILL.md it cannot parse instead of dumping a stac
   assert.equal(code, 1);
   assert.match(output, /skills\/running-experiments\/SKILL\.md: failed to parse frontmatter YAML/);
   assert.doesNotMatch(output, /node_modules/);
+  const noFence = generate(
+    fixture((r) => file(r, "skills/running-experiments/SKILL.md", "no frontmatter at all\n")),
+  );
+  assert.equal(noFence.code, 1, noFence.output);
+  assert.match(noFence.output, /skills\/running-experiments\/SKILL\.md: missing or malformed frontmatter/);
 });
