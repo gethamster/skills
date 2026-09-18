@@ -20,7 +20,7 @@ category: Product
 ---
 ```
 
-The category is one of the six above. It is the source of truth: every skill in the method repeats it, validation refuses a skill that disagrees, and the skills.sh page shows one section per category. Sections used to be one per method, which stopped working at 50 methods because that is all the skills.sh manifest takes.
+The category is one of `Product`, `Development`, `Experience`, `Marketing`, `Ops` or `Workflows`. It is the source of truth: every skill in the method repeats it, validation refuses a skill that disagrees, and the skills.sh page shows one section per category. Sections used to be one per method, and the skills.sh manifest takes at most 50 of them — the catalog sits at exactly 50 methods, so method 51 would have been the first one the page could not show.
 
 ## SKILL.md frontmatter contract
 
