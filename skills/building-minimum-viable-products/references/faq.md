@@ -1,43 +1,21 @@
-# FAQ: Building a Minimum Viable Product (MVP)
+# FAQ: Building Minimum Viable Products \(MVPs\)
 
-## How do I decide when my MVP is 'minimum enough' to ship?
+## How minimal should a minimum viable product be?
 
-Apply a simple test: can a user complete the core flow end-to-end without help from you? If yes, ship it. If a feature removal would make the core flow impossible, keep the feature. If removing it merely makes the experience less polished, cut it.
+Minimal enough that removing anything else would make the result impossible to interpret. The scoping rule in [LeanStartup.co's method](https://leanstartup.co/resources/articles/lean-startup-method) is to include only features that help test the current hypothesis. If a feature would not change how you read the outcome, it does not belong in this MVP. Viable means the customer can experience enough of the value for their behavior to be meaningful.
 
-The discomfort you feel about shipping something rough is normal and usually a good sign that you have genuinely stripped to the minimum. If you feel proud of the MVP, you probably waited too long.
+## What is the difference between an MVP and a prototype?
 
-## How long should an MVP test run before I evaluate results?
+A prototype is a format; an MVP is defined by its purpose. A clickable prototype can serve as an MVP if it tests a specific hypothesis with the target customers and has a pre-set success threshold. A prototype built to explore design ideas internally is not an MVP, because it produces no customer behavior to measure.
 
-It depends on the behavior you are measuring. For one-time actions like signup or purchase, one to two weeks is usually sufficient if you have at least 50-100 users entering the funnel. For repeated behaviors like weekly engagement or retention, you need at least two to three complete cycles, so two to three weeks minimum. Set the duration before launch and do not extend it because the numbers look ambiguous.
+## When should I use a concierge MVP?
 
-Ambiguous results after a fair test period are a result, not a reason to keep testing.
+Use it when your team can deliver the promised value by hand before building software, which is the case [Umbrex describes for concierge MVPs](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). It works best when the open question is whether customers want the outcome, not whether the technology works. It also shows you the real workflow in detail, which makes later automation decisions better informed.
 
-## Should I build an MVP before or after conducting customer discovery interviews?
+## What if my MVP results are inconclusive?
 
-After. Customer discovery interviews help you identify the problem and form hypotheses about solutions. The MVP tests whether your proposed solution actually works. Building an MVP before talking to customers is like writing an answer before reading the question.
+First check whether the MVP failed as an instrument: wrong audience, missing tracking or no agreed threshold. If the instrument was sound, narrow the hypothesis or adjust the MVP so the next run can separate support from rejection more clearly. How to make the persevere or pivot call itself is covered in [Making Pivot-or-Persevere Decisions](https://tryhamster.com/skills/identifying-pivot-or-persevere-decisions).
 
-You might get lucky, but the odds are poor. See the sibling skill on [conducting customer discovery interviews](https://tryhamster.com/skills/conducting-customer-discovery-interviews) for guidance on the pre-MVP research phase.
+## Why do teams find MVPs hard to define?
 
-## How many users do I need for an MVP test to be meaningful?
-
-For most early-stage MVPs, 30-100 users entering the core flow provides enough signal to make a directional decision. You are not running a statistically rigorous A/B test. You are looking for a strong signal: does the conversion rate clearly exceed your threshold, clearly miss it, or land in an ambiguous zone? With 50 users and a 20% threshold, if 2 people convert (4%) or 18 convert (36%), the signal is clear.
-
-If 9 convert (18%), you are in the ambiguous zone and may need a second test.
-
-## What if my MVP results are inconclusive and the data is ambiguous?
-
-Ambiguous results usually mean one of three things: your sample size was too small, your success metric was poorly defined, or the product experience confused users enough that behavior did not reflect true intent. Start by reviewing qualitative feedback to diagnose which factor is most likely. If the sample was too small, recruit more testers and extend the test. If the metric was unclear, redefine it and retest.
-
-If the UX was confusing, fix the specific confusion point and retest. Do not interpret ambiguous data as positive confirmation to proceed.
-
-## Can I use a landing page as an MVP, or do I need a working product?
-
-A landing page MVP is valid when your riskiest assumption is about demand or willingness to pay, not about product usage. ", a landing page with a signup form or payment button is sufficient. ", a landing page cannot answer it because users never experience the product. Match the MVP format to the assumption.
-
-See [selecting the right MVP type](https://tryhamster.com/skills/selecting-mvp-types-and-formats) for a detailed breakdown of when each format applies.
-
-## Why does my MVP scope keep growing during the build phase?
-
-Scope creep during MVP builds almost always stems from insufficient pre-build alignment on the single assumption being tested. " The fix is to return to Step 1 and write a sharper assumption statement. Then review each proposed feature against the question: does removing this feature make the assumption untestable? If the answer is no, the feature is out.
-
-Time-boxing the build to a fixed deadline also helps, because a hard constraint forces the team to prioritize rather than accumulate.
+The hard part is deciding what to leave out, because every stakeholder can argue their feature matters. In [the mobile startup survey covered by Hilaris](https://hilarispublisher.com/open-access/lean-startup-as-an-entrepreneurial-strategy-limitations-outcomes-and-learnings-for-practitioners-52478.html), a large majority of respondents named defining and designing an MVP as a disadvantage of the method. Anchoring scope to one written hypothesis gives the team an objective test for each feature.

@@ -1,176 +1,143 @@
 ---
-name: building-minimum-viable-products
-description: "This skill teaches you how to design and ship the smallest functional version of a product that tests your riskiest business assumption with real customers, so you learn what works before investing in full-scale development."
+name: "building-minimum-viable-products"
+description: "Scope, build and launch the smallest product or service that tests one risky hypothesis with real target customers."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: lean-startup
+  method: "lean-startup-framework"
+  datePublished: "2026-05-18"
+  dateModified: "2026-09-24"
 ---
 
-# How to Build a Minimum Viable Product (MVP)
+# How to build a minimum viable product that tests one bet
 
-> This skill teaches you how to design and ship the smallest functional version of a product that tests your riskiest business assumption with real customers, so you learn what works before investing in full-scale development.
-
-## Before you start
-
-Hamster is optional for this skill and recommended. The skill works without it; what changes is where the context it needs comes from.
-
-Check whether this project has a `.hamster/` directory. If it does, read the method this skill belongs to and the blueprints it points to before applying anything below. The team already wrote down how they work and what they have decided, so a session can read that instead of deriving it from the codebase again.
-
-If there is no `.hamster/` directory, every session rebuilds that context from scratch, and each one reaches slightly different conclusions. [Hamster](https://tryhamster.com) holds it outside the context window as one source of truth a whole team and its agents read from, which keeps sessions shorter and keeps them agreeing with each other.
+> Scope, build and launch the smallest product or service that tests one risky hypothesis with real target customers.
 
 ## At a Glance
 
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 1-4 weeks for design and build, depending on MVP type |
-| Outcome | You produce a working, deployable product version that tests one core assumption, collect real customer behavior data, and generate a clear go/no-go signal for your next development cycle. |
-| Prerequisites | A clearly articulated business hypothesis you want to test (see formulating-testable-hypotheses), Basic understanding of your target customer segment and the problem you aim to solve, Familiarity with the Lean Startup build-measure-learn loop, Access to a small group of potential customers willing to try an early product, Enough technical or design capability to build or assemble a functional prototype |
-| Part of | [Lean Startup](../../methods/lean-startup/METHOD.md) |
+| Time to Learn | Typically a few days to a few weeks per MVP, depending on the type you choose |
+| Outcome | A launched, instrumented MVP with a pre-set success threshold that produces behavioral evidence for or against one riskiest assumption. |
+| Prerequisites | A written list of the business assumptions behind your idea, Access to a reachable group of the customers your idea targets, A way to record customer behavior, such as analytics events or a structured log, Basic familiarity with the Build-Measure-Learn loop |
+| Part of | [Lean Startup Framework](../../methods/lean-startup-framework/METHOD.md) |
 
 ## Overview
 
-Building a minimum viable product is the central execution skill in the [Lean Startup](https://tryhamster.com/methods/lean-startup) methodology. Where hypothesis formulation asks "what do we believe?" and experiment design asks "how will we test it?", building the MVP asks "what is the smallest thing we can ship to get a real answer?" The output of this skill is not a prototype sitting in a demo environment. It is a live product, however rough, that real customers interact with under real conditions. The data those interactions produce is what makes every subsequent decision, from feature investment to full pivot, grounded in evidence rather than intuition.
+A minimum viable product is the smallest usable artifact or service that can test one selected hypothesis with real customers, which is how [LeanStartup.co describes the output of the build stage](https://leanstartup.co/resources/articles/lean-startup-method). It is not version one of your product with a few features removed. Its job is to start learning, and [the official Lean Startup principles](https://theleanstartup.com/principles) frame the MVP as the way to begin the learning process as quickly as possible rather than as a complete product. For background on the wider method, see the [Lean Startup Framework](https://tryhamster.com/methods/lean-startup-framework) page.
 
-The specific artifact you produce is a scoped, functional product paired with a measurement plan. The product has a defined feature set (usually one to three capabilities), a clear user flow, and enough polish that the target customer can complete the core task without hand-holding. The measurement plan specifies the success metric, the sample size, and the decision threshold. Together, these two artifacts let you run a valid test. Without the measurement plan, you have a demo. Without the scoped product, you have a spec.
+This skill covers the practical work: choosing which assumption the MVP tests, cutting every feature that does not help test it, picking the cheapest MVP type that still produces behavioral evidence, instrumenting it, and putting it in front of the customers your hypothesis names. The input is a list of business assumptions plus a falsifiable hypothesis about the riskiest one. The output is a running experiment whose success metric and decision threshold were fixed before launch, as [Umbrex's guide to the Build-Measure-Learn loop](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop) recommends.
 
-The hardest part of this skill is not the building. It is the scoping. Teams consistently over-build MVPs because they conflate "minimum" with "embarrassing" and then add features to avoid embarrassment. A well-scoped MVP feels uncomfortable to ship. It should make you nervous that customers will complain about missing features, because that nervousness is a signal that you have actually cut to the bone. The goal is not to impress customers. The goal is to learn whether the core value proposition works. Everything else is noise at this stage.
+Scoping is where teams get stuck. In [a survey of 272 mobile startups discussed in a Hilaris review](https://hilarispublisher.com/open-access/lean-startup-as-an-entrepreneurial-strategy-limitations-outcomes-and-learnings-for-practitioners-52478.html), 62% of respondents called the MVP a vital concept while 82% ([source](https://hilarispublisher.com/open-access/lean-startup-as-an-entrepreneurial-strategy-limitations-outcomes-and-learnings-for-practitioners-52478.html)) named defining and designing an MVP as one of the method's disadvantages. Agreeing that MVPs matter is easy. Deciding what goes in one, and what stays out, is the hard part, and it is what the steps below are built around.
 
-This skill connects directly to several sibling skills in the Lean Startup workflow. You need a [testable hypothesis](https://tryhamster.com/skills/formulating-testable-hypotheses) before you start building. You need to have [selected the right MVP type](https://tryhamster.com/skills/selecting-mvp-types-and-formats) so you are not building a landing page when you need a concierge test, or vice versa. Once the MVP is live, you move into [running build-measure-learn cycles](https://tryhamster.com/skills/running-build-measure-learn-cycles) and [tracking innovation accounting metrics](https://tryhamster.com/skills/tracking-innovation-accounting-metrics) to interpret the results. The MVP is the hinge between planning and evidence.
+Pick the type by what the hypothesis needs you to observe. The table is a starting reference, not a complete catalog.
+
+| MVP type | Use it when | What it tests |
+|---|---|---|
+| Concierge ([Umbrex](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop)) | You can deliver the value by hand before automating | Whether customers want the outcome enough to use it |
+| Landing page or smoke test | Nothing exists yet and demand is the open question | Whether the segment takes a committing action |
+| Manual back end behind a real interface | The experience matters but automation is costly | Whether customers use the workflow repeatedly |
+| Clickable prototype | The risk is usability or comprehension | Whether customers can finish the core task |
+| Single-feature product | The value only exists in working software | Whether usage and retention hold around one job |
+
+Whatever the type, apply one test before you build: will this artifact generate the learning the hypothesis needs with less effort than any alternative? If a simpler format would answer the same question, build the simpler one. If no format you can afford would produce readable behavior, the hypothesis probably needs to be narrowed first.
 
 ## How It Works
 
-The core logic behind building an MVP is that uncertainty, not engineering capacity, is the binding constraint in early-stage product work. You do not know whether customers want what you plan to build. You do not know whether they will pay for it. You do not know whether they will use it the way you expect. Every week you spend building features before testing these unknowns is a week of compounding risk. The MVP inverts that dynamic by shipping the cheapest possible test and letting customer behavior resolve the uncertainty.
+An MVP works as a filter between an assumption and a decision. Every choice you make while building it should raise the odds that customer behavior will clearly support or reject one hypothesis. Anything that does not do that is cost without learning.
 
-The mental model is a funnel of assumptions ranked by risk. At the top sits the assumption that, if wrong, kills the entire product. For a marketplace, that assumption might be "sellers will list inventory without guaranteed buyers." For a SaaS tool, it might be "managers will enter data weekly without being forced to." The MVP targets that top assumption and ignores everything below it. This is counterintuitive because teams naturally want to build a "complete" experience. But completeness is irrelevant if the foundational assumption fails. You would not furnish a house before confirming the foundation holds weight.
+The chain runs in a fixed order. You start from the assumptions that must be true for the business to work: target customer, customer problem, proposed solution, acquisition channel, pricing and revenue model, the list [Umbrex suggests writing down first](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). You rank them by risk and select the one that is both most uncertain and most damaging if false, which [a Lean Startup method overview](https://tryhamster.com/methods/lean-startup) calls the riskiest assumption, the one thing that must be true for the business to work. You then rewrite it as a falsifiable prediction about what a named customer group will do. Writing that hypothesis well is covered in [Designing Validated Learning Experiments](https://tryhamster.com/skills/designing-validated-learning-experiments).
 
-The [Lean Startup](https://tryhamster.com/methods/lean-startup) framework frames this as maximizing validated learning per unit of time and money spent. An MVP that costs two weeks and answers your riskiest question is more valuable than a polished beta that costs three months and answers the same question, even if the beta produces a better Net Promoter Score. The metric that matters is information gained, not customer satisfaction. Customer satisfaction becomes the focus after you have confirmed you are building the right thing.
+Only then does scope enter. [LeanStartup.co's process](https://leanstartup.co/resources/articles/lean-startup-method) sequences the work as identify assumptions, select the riskiest, design the MVP, formulate the MVP hypothesis, run the test, review results, incorporate the learning and repeat, and it limits the feature set to what helps test the current theory. That constraint is what makes an MVP minimum. Features are excluded not because they are unimportant but because they do not change the answer to this particular question.
 
-The skill works because human behavior is unpredictable in specific, discoverable ways. Surveys and interviews capture what people say they will do. MVPs capture what people actually do. The gap between stated and revealed preference is where most product failures hide. A landing page MVP might show that 40% of visitors click "Sign Up" but only 3% complete onboarding. That gap is invisible without a real product. It tells you the value proposition resonates but the activation flow fails, which is a fundamentally different problem than "nobody wants this."
+Type selection follows from what the hypothesis needs to observe. If people can deliver the value, a concierge MVP lets you [deliver it manually before automating the underlying system](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). If the question is whether anyone will commit, a page that asks for a sign-up or payment may be enough. If the question is whether a workflow gets reused, customers need something they can actually use more than once. Polish, completeness and production-scale automation are not prerequisites when a simpler artifact can generate the learning.
 
-One important nuance: the MVP is not a throwaway. The code or design might be disposable, but the learning is permanent. Structure the MVP so that the data it produces is clean and unambiguous. If your success metric is "percentage of users who complete the core task," make sure the core task is clearly defined, instrumented, and reachable without confusion. Ambiguous data from a poorly structured MVP is worse than no data, because it creates false confidence. You will make a decision either way. The question is whether the decision is informed or not.
+Measurement is designed before launch. You fix a success metric and a decision threshold in advance so the result is compared with the original standard rather than one chosen after seeing the data, and you instrument the MVP with event tracking, funnels or cohorts [to capture customer behavior](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). Choosing the metric itself is covered in [Choosing Actionable Over Vanity Metrics](https://tryhamster.com/skills/choosing-actionable-over-vanity-metrics).
+
+Each stage has a distinct output. Build produces the smallest usable artifact or service able to test the hypothesis with real customers. Measure produces behavioral evidence tied to the predefined metrics and thresholds. Learn produces a decision to persevere, pivot or stop, followed by a revised hypothesis. The full loop mechanics live in [Running Build-Measure-Learn Cycles](https://tryhamster.com/skills/running-build-measure-learn-cycles); this skill concentrates on making the build stage cheap and the measure stage trustworthy.
+
+You can tell the MVP failed as an instrument, as opposed to the idea failing, when the result cannot be read. The usual causes are that the wrong people used it, the key behavior was never tracked, or nobody agreed beforehand what counted as success. Fix the instrument and rerun before drawing conclusions about the idea.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify your riskiest assumption
+### Step 1: List the business assumptions
 
-Review the hypotheses you formulated during the hypothesis stage and rank them by two dimensions: how critical the assumption is to the business model, and how uncertain you are about it. The assumption that scores highest on both dimensions is your MVP target. " If you have multiple high-risk assumptions, pick only one. Testing two assumptions simultaneously with one MVP muddies the data because you cannot attribute outcomes to either assumption cleanly.
+Write down every assumption that must hold for the business to work, grouped by target customer, customer problem, proposed solution, acquisition channel, pricing and revenue model, following [Umbrex's Build-Measure-Learn guide](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). Phrase each as a statement that could turn out false, such as a claim about who has the problem or what they would pay. Keep solution ideas separate from problem claims, because teams tend to jump to testing the solution before confirming the problem. The output is a single list the whole team can see and argue with.
 
-Document the assumption, the metric that will confirm or refute it, and the threshold that constitutes success or failure.
+> **Pro tip:** Ask each person to add the assumption they are least sure about. The uncomfortable ones rarely surface in a group brainstorm.
 
-> **Pro tip:** If your team cannot agree on the riskiest assumption, that disagreement is itself valuable data. Have each person write their top assumption independently, then compare. Misalignment here means you need more customer discovery before building anything.
+### Step 2: Select the riskiest assumption and write the hypothesis
 
-### Step 2: Step 2: Define the core user flow
+Rank the list by two questions: how uncertain is this, and how badly does the business break if it is wrong. The top item is your riskiest assumption, [the one thing that must be true for the business to work](https://tryhamster.com/methods/lean-startup). Convert it into a falsifiable hypothesis that names a customer group, a behavior and an observable result. A hypothesis like customers will love it cannot fail, so it cannot teach you anything.
 
-Map the minimum sequence of actions a user must take to encounter the value your assumption promises. This is not a full user journey. It is the shortest path from entry point to the moment the assumption is tested. For example, if your assumption is about willingness to pay, the flow might be: land on page, view pricing, enter payment info.
+> **Pro tip:** Resist testing the assumption you are most confident about first. Comfortable tests produce comfortable results and little learning.
 
-If your assumption is about engagement, the flow might be: sign up, complete onboarding task, return within 48 hours. Write each step in the flow as a concrete screen or interaction. If a step does not directly serve the assumption test, remove it. Every extra step adds friction and reduces your signal quality because users who drop off at irrelevant steps never reach the test point.
+### Step 3: Cut the feature set to the hypothesis
 
-> **Pro tip:** Draw the flow on paper or a whiteboard before opening any design tool. If the flow has more than five steps, you are almost certainly including steps that do not serve the test.
+Draft the features you think the MVP needs, then strike every one that does not help test the current hypothesis, which is the scoping rule in [LeanStartup.co's method overview](https://leanstartup.co/resources/articles/lean-startup-method). For each remaining feature, ask whether removing it would make the result impossible to read. If the answer is no, it goes on a later list. The output is a short, defensible scope where every item traces back to the hypothesis.
 
-### Step 3: Step 3: Set a feature boundary and enforce it
+> **Pro tip:** Keep a visible parking lot for cut features. People accept cuts more readily when they can see the idea was recorded rather than dismissed.
 
-List every feature you think the MVP needs. " Be ruthless. A feature is required only if removing it would make the core user flow impossible to complete or would invalidate the test results. Everything tagged "nice to have" gets cut.
+### Step 4: Choose the cheapest MVP type that still yields behavior
 
-Write the final feature list in a shared document and get explicit sign-off from every stakeholder. This sign-off matters because scope creep during build is the most common reason MVPs take three times longer than planned. When someone suggests adding a feature mid-build, point to the signed list and ask: does this feature change whether we can test the assumption? If the answer is no, it waits.
+Match the format to what you need to observe, using the reference table above. A concierge MVP fits when the team can [deliver the value manually before automating](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). A landing page fits a pure demand question, while a single-feature product fits when value depends on repeated use of working software. Compare the options on cost to build and on whether the resulting behavior would actually answer the hypothesis.
 
-> **Pro tip:** A useful forcing function is to set a hard time constraint, such as "this ships in two weeks no matter what." The constraint forces trade-offs that pure prioritization discussions often avoid.
+### Step 5: Set the success metric and decision threshold
 
-### Step 4: Step 4: Choose the build approach
+Before anyone builds, agree on the one metric that reflects the hypothesis and the value that counts as support, as [Umbrex recommends](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop). Also agree what result would count as rejection and what falls in between. Write these down with a date, so the standard cannot drift once data arrives. Without them, any outcome can be rationalized as encouraging.
 
-Decide how you will construct the MVP based on the complexity of the core user flow and the fidelity needed to test your assumption. Options range from no-code tools like Webflow or Bubble, to manual concierge service behind a simple interface, to a lightweight coded application. The right choice depends on what your assumption demands. If you are testing willingness to pay, a landing page with a payment form and a Zapier integration may be sufficient.
+> **Pro tip:** Frame the threshold as an example target the team signs off on, for instance a share of trial users who return within a set window, and record who agreed.
 
-If you are testing whether users will repeatedly engage with a workflow, you likely need a functional tool, even if the backend is held together with spreadsheets. Match the build approach to the minimum fidelity required for the data to be valid. Over-engineering the build is a waste. Under-engineering it to the point where users cannot complete the flow is also a waste.
+### Step 6: Instrument the behavior you need
 
-> **Pro tip:** Concierge and Wizard of Oz MVPs, where a human performs the work behind the scenes, are underused. They let you test complex value propositions without writing a line of backend code. See the sibling skill on selecting MVP types for detailed guidance.
+Add event tracking, funnel steps or cohort tags for the exact actions the metric depends on. For a concierge MVP, instrumentation can be a structured log of each request, delivery and repeat order. Test the tracking yourself end to end before launch, because missing events are the most common reason an MVP result cannot be read. The output is a data trail that maps directly to the success metric.
 
-### Step 5: Step 5: Build and instrument the MVP
+> **Pro tip:** Log the date each customer first arrived. It makes cohort comparisons possible later without rebuilding the data.
 
-Execute the build according to your feature boundary and build approach. As you build, add analytics instrumentation at every step of the core user flow. You need to track each transition: how many users enter the flow, how many complete each step, and how many reach the test point. Use a simple analytics tool like Mixpanel, Amplitude, PostHog, or even Google Analytics event tracking.
+### Step 7: Launch to the named customers and read behavior
 
-The key is that every step is instrumented before launch, not after. Retrofitting analytics after launch means you lose data from your earliest and most informative users. Also set up a way to collect qualitative feedback, such as a short in-app survey, a feedback email triggered after the core action, or scheduled calls with early users. Quantitative data tells you what happened.
+Release the MVP to the specific customer group the hypothesis names, not to friends, colleagues or investors, a point the [Lean Startup method overview](https://tryhamster.com/methods/lean-startup) makes about testing with real users. Watch what they do: sign-ups, usage, repeat use, purchases or referrals. Treat enthusiasm in conversations as context, not evidence. When the test window closes, compare the result with your pre-set threshold and decide whether to persevere, pivot or stop.
 
-Qualitative data tells you why.
-
-> **Pro tip:** Create a simple tracking spreadsheet that maps each flow step to an analytics event name. Before you call the build complete, verify that every event fires correctly by walking through the flow yourself at least three times.
-
-### Step 6: Step 6: Recruit your test audience
-
-Identify a small group of real potential customers to use the MVP. The ideal test audience is 30-100 people who match your target customer profile and have the problem your product addresses. Sources include email lists from customer discovery interviews, social media communities, Product Hunt, relevant Slack or Discord groups, or paid acquisition through a small ad spend. Do not recruit friends, family, or colleagues unless they genuinely match the target profile, because polite feedback from non-customers will mislead you.
-
-Frame the invitation honestly: you are building something new, it is rough, and you want their candid experience. Set expectations that the product is incomplete. Users who opt in under these conditions are the right testers because they are motivated by the problem, not by polish.
-
-> **Pro tip:** If you conducted customer discovery interviews earlier, those interviewees are your best first testers. They already articulated the problem and are curious whether you can solve it.
-
-### Step 7: Step 7: Launch to the test audience and observe
-
-Release the MVP to your test audience and resist the urge to intervene. Do not send follow-up emails explaining how to use the product unless those emails are part of the designed flow. Do not offer live walkthroughs unless the MVP is a concierge model. The point is to observe what real users do when left to their own judgment, because that is what will happen at scale.
-
-Monitor your analytics daily but do not make changes to the product during the test period unless you discover a critical bug that prevents flow completion. Changing the product mid-test contaminates your data because early users experienced a different product than late users. Set a test period duration in advance, typically one to three weeks depending on the behavior you are measuring. If you are measuring a one-time action like signup, a week may suffice.
-
-If you are measuring repeat engagement, you need at least two to three weeks.
-
-> **Pro tip:** Keep a daily log of what you observe, including surprises, patterns, and questions that arise. This log becomes invaluable when interpreting results because memory is unreliable and you will forget the nuances by the time the test ends.
-
-### Step 8: Step 8: Collect and analyze results against your success threshold
-
-At the end of the test period, pull your quantitative data and compare it to the success threshold you defined in Step 1. Be honest about the numbers. If your threshold was 20% trial conversion and you achieved 12%, that is a miss, even if 12% feels encouraging. Compare the funnel at each step to identify where users dropped off.
-
-Combine the quantitative data with qualitative feedback to build a complete picture. For example, if conversion was low but qualitative feedback was enthusiastic, the problem may be in the flow design rather than the value proposition. If conversion met the threshold but users expressed confusion about what the product does, you may have a positioning problem that will worsen at scale. Document the results in a structured format: assumption tested, metric observed, threshold, actual result, qualitative themes, and recommended next action.
-
-> **Pro tip:** Share raw data with your team before sharing your interpretation. Let others form their own conclusions independently. This reduces confirmation bias, which is the tendency to interpret ambiguous data as supporting what you hoped to find.
-
-### Step 9: Step 9: Decide and communicate next steps
-
-Based on the results, make one of three decisions: iterate on the current MVP to improve the metric, pivot to a different assumption or approach, or proceed to the next build-measure-learn cycle with expanded scope. This decision should be made in a structured meeting where the data is reviewed, not in a hallway conversation. If iterating, define the specific change you will make and the new test period. If pivoting, document what you learned and why the original assumption failed.
-
-If proceeding, define which assumption you will test next and what the next MVP increment looks like. Communicate the decision and its rationale to all stakeholders in writing. This creates an institutional record of learning that prevents the team from re-testing assumptions that have already been resolved.
-
-> **Pro tip:** The most common failure at this step is the "soft pivot," where the team informally shifts direction without explicitly acknowledging the original assumption failed. Name the decision clearly. If you are pivoting, say so. Ambiguity here leads to months of drift.
+> **Pro tip:** Recruit through the channel you would actually use to acquire customers. It tests reachability as a side effect.
 
 ## Best Practices
 
-- Set your success metric and threshold before building, not after launching. Pre-commitment to a number prevents post-hoc rationalization, where teams unconsciously adjust their criteria to match whatever the data shows. Write it down, share it with the team, and refer back to it when results come in.
-- Limit the MVP to one core assumption per test cycle. Testing multiple assumptions simultaneously makes it impossible to attribute outcomes. If signup conversion is low, you cannot tell whether the problem is the value proposition, the pricing, or the onboarding flow. Isolate one variable and resolve it before moving to the next.
-- Use time-boxing as a scoping tool. Set a hard ship date, such as ten business days from kickoff, and cut features to fit the constraint. Teams that scope by feature list almost always over-build because each individual feature feels essential in isolation. A time constraint forces relative prioritization.
-- Instrument analytics before launch, not after. The first cohort of users provides the cleanest signal because they have no prior exposure and no word-of-mouth expectations. Losing that data because tracking was not set up means your highest-value cohort is invisible.
-- Recruit testers who match your actual target customer profile, not people who are convenient. Testing with the wrong audience produces misleading signals. A product for enterprise procurement managers will get very different feedback from startup founders, even if both groups are technically "professionals."
-- Separate the roles of builder and evaluator. The person who built the MVP will unconsciously interpret ambiguous data favorably. Have someone who was not involved in the build review the results independently and compare interpretations before making decisions.
-- Document every MVP cycle's results in a persistent, searchable format. Teams that rely on memory or Slack conversations lose institutional knowledge within weeks. A simple shared document with assumption, metric, result, and decision is sufficient. This record prevents re-testing resolved questions and accelerates onboarding of new team members.
-- Resist the urge to fix cosmetic issues during the test period. If users can complete the core flow, cosmetic roughness is acceptable. Polishing the MVP mid-test wastes time and changes the product between cohorts, contaminating your data.
+- Tie every feature to the hypothesis in writing. When [LeanStartup.co's process](https://leanstartup.co/resources/articles/lean-startup-method) limits scope to what tests the current theory, a written trace is what lets you enforce that rule in a scoping argument.
+- Test one riskiest assumption per MVP. Bundling several hypotheses into one build means a bad result cannot tell you which assumption failed.
+- Prefer manual delivery when it answers the question. A concierge approach, where you [deliver value by hand before automating](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop), costs little and shows you the real workflow before you code it.
+- Fix the metric and threshold before build starts. Deciding afterward invites the team to pick whichever number looks best, which destroys the test.
+- Instrument before launch and verify the tracking yourself. A launched MVP without working measurement burns customer attention you may not get back.
+- Launch to the customers named in the hypothesis. The [Lean Startup method overview](https://tryhamster.com/methods/lean-startup) warns against relying on friendly audiences, because their behavior does not predict how real customers will act.
+- Budget the MVP in time, not features. Set a time box, for example two weeks, and cut scope to fit it rather than extending the date to fit the scope.
 
 ## Common Mistakes
 
-- **Building a Version 1 product and calling it an MVP** — The most common mistake is building a fully functional first version with multiple features, complete UI polish, and edge case handling, then labeling it an "MVP" because it lacks a few planned features. This happens because teams feel uncomfortable shipping something genuinely minimal. The signal to watch for is a build timeline longer than two to four weeks or a feature list longer than three items. A real MVP tests one assumption.
-
-If your "MVP" tests five, it is a V1 product with a fashionable label. Go back to Step 1 and identify the single riskiest assumption.
-- **No pre-defined success metric or threshold** — Teams launch an MVP, collect data, and then decide what the data means after the fact. This leads to confirmation bias because any result can be interpreted as "promising" if you adjust the criteria retroactively. " instead of a clear pass/fail comparison. Define the metric and threshold in writing before building.
-
-Share it with at least one person outside the team to create accountability.
-- **Testing with the wrong audience** — Teams recruit testers from their personal network, from Twitter followers, or from a general mailing list rather than from the specific customer segment the product targets. This happens because recruiting the right audience is harder and slower than recruiting whoever is available. The diagnostic sign is feedback that is uniformly positive but vague, such as "looks cool" or "I would definitely use this," without specific task-level engagement. Invest the extra effort to find testers who have the actual problem.
-
-Their behavior will be dramatically different from casual observers.
-- **Changing the MVP during the test period** — A team launches, sees early drop-off at a particular step, and immediately pushes a fix. This feels productive but it splits the test into two different products, making the aggregate data meaningless. Users who encountered the original version had a different experience than users who encountered the patched version, and you cannot cleanly separate the two cohorts without significant instrumentation. Unless you discover a bug that completely blocks the core flow, log the issue and wait until the test period ends.
-
-Then address it in the next iteration with a clean test.
-- **Skipping qualitative feedback and relying solely on analytics** — Quantitative data tells you what users did but not why. A 15% trial conversion rate is meaningless without context. Did the other 85% leave because they did not understand the product, because the price was wrong, or because they were not the right audience? Teams skip qualitative feedback because it requires effort, such as scheduling calls, reading survey responses, or reviewing session recordings.
-
-Build a lightweight qualitative channel into the MVP from the start. ", provides context that transforms raw numbers into actionable insight.
-- **Treating the MVP as a one-time event instead of a cycle** — Some teams build one MVP, review the results, and then jump straight to full product development regardless of the outcome. The MVP is meant to be the first iteration in a series of build-measure-learn cycles. If the first test produces ambiguous results, the correct response is a refined second MVP, not a leap to scale. Watch for language like "we tested the MVP, now let's build the real product." That framing suggests the team views the MVP as a checkbox rather than a learning instrument.
+- **Building a broad feature set before naming the hypothesis being tested.** — Write the hypothesis first, then include only features that help test it, as [LeanStartup.co's method](https://leanstartup.co/resources/articles/lean-startup-method) calls for. Everything else waits for evidence.
+- **Treating polish, completeness or production-scale automation as prerequisites for the first test.** — Ask whether a simpler artifact, such as a manual service or a landing page, would generate the same learning. [Umbrex's guidance](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop) favors the smallest thing that can test the hypothesis.
+- **Counting customer enthusiasm or stated preferences as validated demand.** — Measure what the intended customer group does, such as signing up, paying or returning. Compliments in interviews are a reason to test, not a test result.
+- **Launching to friends, colleagues or investors because they are easy to reach.** — Recruit from the segment the hypothesis names. Friendly users forgive gaps real customers would not, so their behavior inflates the result.
+- **Measuring activity without deciding what result supports or rejects the hypothesis.** — Set the success metric and decision threshold before launch, then compare against them. Without criteria, the data produces debate instead of a decision.
 
 ## References
 
 - [Examples](references/examples.md) — Worked examples and scenarios
 - [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/lean-startup/METHOD.md) — Lean Startup
+- [Parent Method](../../methods/lean-startup-framework/METHOD.md) — Lean Startup Framework
 
 ## Related Skills
 
-- [Tracking Innovation Accounting Metrics](../tracking-innovation-accounting-metrics/SKILL.md)
-- [Formulating Testable Business Hypotheses](../formulating-testable-hypotheses/SKILL.md)
-- [Selecting the Right MVP Type for Your Idea](../selecting-mvp-types-and-formats/SKILL.md)
-- [Making Pivot-or-Persevere Decisions](../defining-pivot-or-persevere-decisions/SKILL.md)
-- [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
+- [Making Pivot-or-Persevere Decisions](../identifying-pivot-or-persevere-decisions/SKILL.md)
 - [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
+- [Setting Up Innovation Accounting](../setting-up-innovation-accounting/SKILL.md)
 - [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
+- [Choosing Actionable Over Vanity Metrics](../choosing-actionable-over-vanity-metrics/SKILL.md)
+- [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
+
+## Sources
+
+- [Lean Startup as an Entrepreneurial Strategy: Limitations, Outcomes, and Learnings for Practitioners](https://hilarispublisher.com/open-access/lean-startup-as-an-entrepreneurial-strategy-limitations-outcomes-and-learnings-for-practitioners-52478.html)
+- [The Lean Startup Method 101: The Essential Ideas](https://leanstartup.co/resources/articles/lean-startup-method)
+- [Lean Startup Build–Measure–Learn Loop \| Agile - Umbrex](https://umbrex.com/resources/frameworks/organization-frameworks/lean-startup-build-measure-learn-loop)
+- [The Lean Startup Method: Build, Measure, Learn Faster - Hamster](https://tryhamster.com/methods/lean-startup)
+- [Methodology - The Lean Startup](https://theleanstartup.com/principles)

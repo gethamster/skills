@@ -1,41 +1,21 @@
 # FAQ: Conducting Customer Discovery Interviews
 
-## How many customer discovery interviews do I need to conduct before I can draw conclusions?
+## How many customer discovery interviews should I run?
 
-Five interviews is the minimum for meaningful pattern recognition within a single segment. If your results are split (3 validate, 2 contradict), extend to 8-10 interviews. Beyond 12-15 interviews in one segment, you typically see diminishing returns. The key is not statistical significance but pattern convergence: when new interviews stop producing new information, you have enough.
+There is no fixed number in the research, so size the round by what you learn. A practical approach is to run a small batch per segment, for example eight to twelve, and stop when new interviews stop producing surprises. If conversations keep contradicting each other, you may be mixing segments, and tightening the screener usually helps more than adding interviews.
 
-If you are exploring multiple distinct segments, run 5 interviews per segment.
+## Should I show my product or prototype during a discovery interview?
 
-## Should I conduct customer discovery interviews before or after formulating my business hypotheses?
+Generally no, at least not until the problem has been fully explored. Showing a solution shifts the conversation from the interviewee's experience to their opinion of your idea, and politeness inflates that opinion. If you want reactions to a prototype, run a separate session designed for that, and measure what people do with it rather than what they say about it.
 
-Formulate hypotheses first. Customer discovery interviews without a hypothesis list are just conversations. You need specific assumptions to test, or you will not know what to listen for. Use the [formulating testable hypotheses](https://tryhamster.com/skills/formulating-testable-hypotheses) skill to produce your assumption list, then use interviews to validate or invalidate those assumptions.
+## How do I avoid leading questions?
 
-That said, interviews will often surface unexpected hypotheses you had not considered, which you then carry into your next round.
+Anchor questions on a specific past event and ask open follow-ups such as "What happened next?" or "How did you handle that?" Avoid questions that name the problem you hope to hear about or suggest an answer. A useful check is to read each question aloud and ask whether a person without the problem could answer it honestly without feeling awkward.
 
-## How do I prepare customer discovery interview questions that avoid leading the respondent?
+## Are customer discovery interviews enough to validate an idea?
 
-Start every question with "tell me about," "walk me through," "describe," or "how do you." These prompts invite stories, not yes/no reactions. Avoid any question that contains your proposed solution, implies a correct answer, or uses language like "don't you think" or "wouldn't it be better if." A reliable test: read each question aloud and ask yourself whether you could predict a "favorable" answer. If you can, the question is leading. Rewrite it to be genuinely open-ended. For example, replace "Is reporting a pain point for you?" with "How does your team currently handle reporting?"
+No. Interviews are good for uncovering problems, learning how people cope and forming hypotheses, but they rely on self-report. Studies associate [talking to customers and collecting preorders](https://digitalcommons.sacredheart.edu/cgi/viewcontent.cgi?article=1416&context=neje) with performance, which suggests pairing conversations with behavioral commitments. Follow each interview round with an experiment that measures what people actually do.
 
-## What do I do if respondents give short, unhelpful answers?
+## What do I do if interviewees keep saying the problem matters but will not commit to anything?
 
-Short answers usually mean your question was too closed or too abstract. " The word "specific" and the anchor to a real event force the respondent out of generalities. If they remain terse, try the echo technique: repeat their last phrase as a question. " and then wait.
-
-Silence and repetition are remarkably effective at drawing out detail. If the respondent is simply not engaged, the interview may not be recoverable, and that is fine. Mark it as low-signal and move on.
-
-## Can I conduct customer discovery interviews remotely, or do they need to be in person?
-
-Remote interviews (video call or phone) work well for most B2B and many B2C contexts. The key trade-off is that you lose environmental observation: in person, you might see their messy spreadsheet open on their second monitor or notice physical artifacts of the problem. If observation of the user's physical or digital environment is critical to your hypothesis, push for in-person or screen-sharing. For most problem validation, a 25-minute video call produces ample signal.
-
-Choose the format that maximizes your recruitment success rate, since a remote interview with the right person beats an in-person interview with a convenient but wrong person.
-
-## How long should each customer discovery interview take?
-
-Aim for 20-30 minutes. This is long enough to get past small talk and into real stories, but short enough that busy people will agree to participate. If you consistently run over 30 minutes, your script probably has too many questions or you are not following up deeply enough on the most important threads. If you consistently finish in under 15 minutes, your questions are too surface-level or your respondents are not well-matched to the topic.
-
-The interview should feel slightly too short, which means the respondent had more to say. That is better than dragging through forced questions.
-
-## Why do my customer discovery interview results keep confirming every hypothesis?
-
-Universal confirmation is a red flag, not a green flag. The most common cause is leading questions that signal the "right" answer. Review your script for any question that contains your solution, implies an expected answer, or uses positive framing. The second most common cause is recruiting respondents who are too friendly (friends, colleagues, warm contacts who want to be supportive).
-
-The third cause is confirmation bias in synthesis: you are hearing what you want to hear and filtering out contradictions. Ask a team member who was not in the interviews to independently read the transcripts and categorize the evidence. If their categorization differs from yours, your synthesis is biased.
+Treat the gap as a finding. It usually means the problem is real but not urgent enough to act on, or that you are talking to people adjacent to the one who feels the pain. Revisit the screener to target people with a recent, costly instance of the problem, and look for evidence of workarounds, which show someone has already spent effort on it.

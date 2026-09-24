@@ -1,51 +1,37 @@
 # Examples: Running Build-Measure-Learn Cycles
 
-## Example: Early-Stage B2B SaaS Testing Core Value Proposition
+## Testing willingness to pay for a reporting add-on
 
 **Scenario:**
 
-A three-person team building a workflow automation tool for recruiting agencies has 50 beta users. They believe recruiters will pay for automated candidate follow-up emails, but they have no evidence yet. Engineering capacity is limited to one developer. The team can ship small changes weekly.
+Illustrative scenario: a B2B analytics product wants to sell a premium reporting add-on and assumes existing customers will pay for it. The team has not built anything yet.
 
 **Walkthrough:**
 
-0. Because they only have 50 users, they cannot run a proper A/B test, so they design a concierge MVP: the product manager manually sends follow-up emails on behalf of 10 recruited volunteers for two weeks, simulating what the automated feature would do. The build step takes two days (setting up email templates and a tracking spreadsheet). 1 for the rest.
+The team names willingness to pay as the riskiest assumption, since usage means nothing if nobody buys. The hypothesis: of 200 account admins shown an upgrade button over two weeks, at least 8% will click through and request a trial with pricing visible. Planning backwards, the only metric needed is trial requests with price shown, so the build is a button, a pricing page and a request form, with reports produced manually for anyone who asks. After two weeks, 21 admins (about 10%) request a trial, which clears the threshold.
 
-While the sample is small, the qualitative signal is strong: 8 of 10 participants said they would pay for this feature and three sent unsolicited testimonials. The team marks the hypothesis as validated with a note about sample limitations, decides to build a real (minimal) automated version, and queues a follow-up cycle to test willingness to pay at $49/month.
+The team records a persevere decision and picks the next riskiest assumption: whether trial users keep using the reports after the first month.
 
-## Example: Growth-Stage Consumer App Testing Retention Mechanic
+## Inconclusive onboarding test leads to a retest
 
 **Scenario:**
 
-A fitness app with 200,000 monthly active users has strong acquisition but poor 30-day retention (22%). The product team suspects that a social accountability feature (workout partners) will improve retention. They have a dedicated experimentation platform and can run A/B tests at scale.
+Illustrative scenario: a consumer habit app believes a guided first-week plan will lift the share of new users active in week two. The team ships the plan to half of new signups for ten days.
 
 **Walkthrough:**
 
-' Success metric is 30-day retention rate, threshold is 30%, failure is below 25%. They calculate a required sample of 2,000 users per group to detect this effect with 95% confidence. The build takes one week: a simple partner-matching screen in onboarding that pairs users randomly and sends mutual push notifications on workout days. No chat, no profile pages.
+The hypothesis predicted week-two activity would rise from 30% to at least 38% for the guided cohort. The guided cohort lands at 33%, above the control but below the threshold, and the cohort is small enough that the gap could be noise. In the decision meeting the team classifies the result as inconclusive rather than calling it a win. They revise the test: a longer window, a larger cohort and a sharper version of the plan that removes two optional steps users skipped.
 
-They ship via feature flag to 50% of new users. 1% in the control. The result falls in the inconclusive zone (above baseline but below the 30% threshold). The team marks the hypothesis as partially supported, investigates further, and discovers that users who actually completed a workout with their partner retained at 41%, but only 35% of paired users ever worked out together.
+The record notes what changed and why, and the next cycle is scheduled with a fixed decision date.
 
-The next cycle's hypothesis focuses on increasing partner workout completion rather than the pairing mechanism itself.
-
-## Example: Enterprise SaaS Testing Pricing Model Change
+## Contradicted channel assumption triggers a pivot
 
 **Scenario:**
 
-A project management platform serving mid-market companies (500-2,000 employees) charges per seat at $12/month. The team hypothesizes that switching to per-project pricing would increase expansion revenue because large teams resist adding seats but readily create new projects. They have 400 paying customers and a six-week sales cycle.
+Illustrative scenario: a startup selling scheduling software to small clinics assumes clinic owners will sign up from targeted social ads. The team runs a landing page test with a small ad budget.
 
 **Walkthrough:**
 
-' Given the long sales cycle and small customer count, a full A/B test is impractical. The team designs a painted-door test: they add a 'Switch to per-project pricing' banner to the billing page for 200 randomly selected accounts and track click-through rate as a proxy for interest. The build takes three days (banner, tracking event, a landing page explaining the model that ends with 'Join the waitlist'). After four weeks, 34 of 200 accounts (17%) clicked the banner and 18 (9%) joined the waitlist.
+The hypothesis: at least 3% of ad visitors who are clinic owners will book a demo within the test week. The page gets 900 qualified visitors and 4 demo bookings, well under 1%, which contradicts the hypothesis clearly. Because the pivot criterion was written in advance, the team does not argue for tweaking ad copy indefinitely. They pivot the channel assumption to partnerships with practice-management consultants, keeping the learning that the value message itself drew interest in the few calls held.
 
-More importantly, the team calls all 18 waitlist accounts for [customer discovery interviews](https://tryhamster.com/skills/conducting-customer-discovery-interviews) and learns that the appeal is not about procurement friction but about project-level budget control. They mark the original hypothesis as invalidated (wrong mechanism) but generate a refined hypothesis about project-level billing as a budget management tool. The next cycle tests this refined framing with a concierge pricing offer to 10 willing accounts.
-
-## Example: Small Team Marketplace Testing Supply-Side Hypothesis
-
-**Scenario:**
-
-A two-person team running a freelance design marketplace has 80 active designers (supply) and 300 active clients (demand). Job fill rate is 45%, meaning 55% of posted jobs get no qualified applicants. The team believes the problem is that designers do not see relevant jobs fast enough.
-
-**Walkthrough:**
-
-5. The team cannot build a real-time matching algorithm in one week, so they run a Wizard of Oz experiment: for 40 designers (half the supply), a team member manually scans new jobs each morning and sends personalized email alerts using a template. The build takes one day (email template, tracking spreadsheet, daily 30-minute manual process). 7 in the control group.
-
-Job fill rate for jobs that were sent as alerts was 62%. The team validates the hypothesis, documents the learning, and builds a simple keyword-matching notification system over the following week. The next cycle tests whether the improved fill rate holds as the system scales from manual to automated matching.
+The next cycle tests whether three consultant intros produce demo bookings faster than the ads did.
