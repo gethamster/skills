@@ -1,174 +1,135 @@
 ---
-name: balancing-autonomy-and-alignment
-description: "This skill teaches you how to set guardrails, write mission briefs, and use OKRs so squads can move fast on their own while staying strategically coherent with the rest of the organization."
-category: "Ops"
+name: "balancing-autonomy-and-alignment"
+description: "Set the shared direction, guardrails and decision rights squads need to stay aligned, without approval gates that quietly remove their autonomy."
+category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: spotify-squad-model
+  method: "spotify-squads"
+  datePublished: "2026-05-18"
+  dateModified: "2026-09-24"
 ---
 
-# Balancing Squad Autonomy with Organizational Alignment in Agile at Spotify
+# Autonomy vs Alignment Agile: Aligning Without Approvals
 
-> This skill teaches you how to set guardrails, write mission briefs, and use OKRs so squads can move fast on their own while staying strategically coherent with the rest of the organization.
-
-## Before you start
-
-Hamster is optional for this skill and recommended. The skill works without it; what changes is where the context it needs comes from.
-
-Check whether this project has a `.hamster/` directory. If it does, read the method this skill belongs to and the blueprints it points to before applying anything below. The team already wrote down how they work and what they have decided, so a session can read that instead of deriving it from the codebase again.
-
-If there is no `.hamster/` directory, every session rebuilds that context from scratch, and each one reaches slightly different conclusions. [Hamster](https://tryhamster.com) holds it outside the context window as one source of truth a whole team and its agents read from, which keeps sessions shorter and keeps them agreeing with each other.
+> Set the shared direction, guardrails and decision rights squads need to stay aligned, without approval gates that quietly remove their autonomy.
 
 ## At a Glance
 
 | Field | Value |
 |-------|-------|
 | Difficulty | Advanced |
-| Time to Learn | 3-5 hours for initial framework setup, then 1-2 hours per quarter for recalibration |
-| Outcome | You produce a living alignment system consisting of mission briefs, OKRs, and technical guardrails that lets every squad make independent decisions without drifting from company strategy. |
-| Prerequisites | Understanding of the Spotify Squad Model structure (squads, tribes, chapters, guilds), Familiarity with OKR frameworks and how objectives cascade through an organization, Experience forming or leading at least one autonomous squad, Basic knowledge of system architecture concepts like API boundaries and service ownership |
-| Part of | [Spotify Squad Model](../../methods/spotify-squad-model/METHOD.md) |
+| Time to Learn | Two to four weeks to set up, then a recurring review each quarter |
+| Outcome | A decision rights map, a short set of guardrails and a small number of alignment forums that keep squads pointed in the same direction while they decide how to deliver on their own. |
+| Prerequisites | Squads with defined product areas and missions, Access to tribe or product leadership who can set shared priorities, A list of the approval steps squads currently go through, Familiarity with squads, tribes, chapters and guilds |
+| Part of | [Spotify Squads](../../methods/spotify-squads/METHOD.md) |
 
 ## Overview
 
-The defining tension in any scaled agile organization is the pull between speed and coherence. Give squads total freedom and you get duplicated work, incompatible systems, and teams optimizing for local wins that hurt the whole company. Lock squads into rigid plans and you lose the responsiveness that made small teams effective in the first place. Balancing squad autonomy with organizational alignment is the skill that resolves this tension, and it is the single hardest thing to get right when practicing agile at Spotify or any model inspired by it.
+The tension between autonomy and alignment is built into the model. [One definition of the Spotify Model](https://mooncamp.com/glossary/spotify-model) describes it as grouping work into autonomous squads coordinated through tribes, chapters and guilds, with the explicit goal of balancing team autonomy against company-wide alignment. For background on where the model came from and how it compares with other scaling approaches, see the [Spotify Squads method page](https://tryhamster.com/methods/spotify-squads). This page covers the practical job: deciding what squads decide alone, what they align on, and how to stop the second from swallowing the first.
 
-Inside the [Spotify Squad Model](https://tryhamster.com/methods/spotify-squad-model), alignment is not achieved through top-down command structures or detailed project plans. Instead, it emerges from three interlocking mechanisms: mission briefs that give each squad a clear purpose without dictating tasks, OKRs that express desired outcomes measured quarterly, and technical guardrails that define the boundaries within which squads operate freely. When these three mechanisms work together, squads can ship features, run experiments, and pivot direction without waiting for permission, because the boundaries of acceptable action are already clear.
+Autonomy has a concrete meaning here. In the [2012 Scaling Agile @ Spotify report](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf), a squad is a cross-functional, self-organizing team with end-to-end responsibility for a product area, free to use Scrum, Kanban or a mix of the two. Research on Spotify's squads notes they were initially set up to feel like mini start-ups, able to prototype, test, code, deploy, operate and A/B test features independently of each other. That independence is what lets a squad ship and learn without waiting in someone else's queue. Alignment is what keeps many independent squads from building a product that makes no sense as a whole.
 
-The concrete artifact you produce is an alignment framework document. This document contains the company mission statement, tribe-level mission briefs, squad-level mission briefs, a set of quarterly OKRs at each level, a catalog of technical guardrails (API contracts, shared infrastructure rules, data governance standards), and a calendar of alignment checkpoints. You also produce a dependency map that shows where squads need to coordinate and where they can move independently. Teams that master this skill report fewer cross-squad escalations, faster time to production, and higher scores on squad health checks, particularly in the "mission clarity" and "easy to release" dimensions.
+The difficulty is that the source material says far more about autonomy than about alignment. A [study of Spotify tailoring in cross-functional squads](https://link.springer.com/chapter/10.1007/978-3-030-30126-2_3) observed that, because of the lack of scientific research on the model, there were no guidelines about how to build and maintain alignment between squads. Leaders fill that gap themselves, and the default is usually the tool they already know: approvals. A design review here, a release sign-off there, and within a few quarters the squad is autonomous in name only.
 
-This skill sits at the center of the Spotify Squad Model because every other structural element depends on it. [Forming autonomous squads](https://tryhamster.com/skills/forming-autonomous-squads) creates the units, [organizing tribes](https://tryhamster.com/skills/organizing-tribes-for-alignment) groups them, and [running chapters](https://tryhamster.com/skills/running-chapters-for-craft-excellence) maintains craft quality. But none of those structures deliver value unless squads are both empowered to act and pointed in the same strategic direction. Without this skill, the model degenerates into either chaos (too much autonomy) or bureaucracy (too much alignment).
+The skill is choosing alignment mechanisms that shape what squads aim for and which limits they respect, while leaving how they get there to the squad. Your inputs are company or tribe strategy, the current squad missions, the approval steps squads go through today and the decisions that genuinely affect more than one squad. Your outputs are a decision rights map, a short list of guardrails, a few alignment forums with a stated purpose, and a recurring audit that removes approvals that no longer earn their place.
+
+You can tell the balance has tipped when squads wait days for permission on routine work, when leads describe their job as getting things approved, or, in the other direction, when squads ship features that contradict each other and nobody noticed until customers did.
 
 ## How It Works
 
-The mental model behind this skill is captured in a phrase that Henrik Kniberg, one of the architects of agile at Spotify, popularized: "Be autonomous, but don't sub-optimize." The underlying principle is that alignment and autonomy are not opposites on a slider. They are independent dimensions. You can have high alignment and high autonomy simultaneously, and that is the quadrant you want to occupy. Low alignment plus high autonomy produces every squad running in its own direction. High alignment plus low autonomy produces a traditional command-and-control hierarchy dressed up in squad vocabulary.
+Alignment can be produced in two very different ways. The first is direction and constraint: leadership states the outcomes that matter and the limits nobody may cross, and squads make every other call themselves. The second is permission: someone above the squad reviews individual decisions before they happen. Both produce consistency, but permission does it by moving the decision out of the squad, which is exactly what autonomy was meant to prevent. The [2012 report](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf) frames the goal as squads with direct contact to their stakeholders and as few blocking dependencies as possible, and a team that must seek approval or hand off ordinary product, technical, release or operational decisions is not autonomous regardless of what the org chart says.
 
-The mechanism that makes this work is the separation of the "what" from the "how." Leadership defines the strategic intent: what outcomes matter, what the company needs to be true in six months, where competitive advantage lies. Squads decide the implementation: which features to build, which experiments to run, which technical approaches to use. This separation only works when strategic intent is expressed clearly enough that squads can make daily decisions without checking upward, and broadly enough that squads have genuine room to discover solutions leadership could not have predicted.
+The model's structures each carry a different slice of alignment, and none of them needs to be an approval gate:
 
-OKRs are the primary tool for encoding this separation. A well-written OKR has an objective that describes a qualitative change in the world ("New users find value in their first session") and key results that are measurable and time-bound ("Reduce time-to-first-value from 8 minutes to under 3 minutes by end of Q2"). The objective constrains the direction. The key results make success concrete. Neither tells the squad what to build. When OKRs are poorly written, they collapse into task lists ("Launch onboarding wizard v2"), and the autonomy disappears.
+- **Tribes** group related squads while preserving squad-level delivery autonomy, per the [original scaling material](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf). The tribe is the natural level to set shared priorities and outcomes.
+- **Chapters** let people with the same expertise share experiences and coordinate technologies, tools, processes and methods, as [one practitioner review](https://usu.com/en/blog/the-spotify-model-magic-bullet-or-overrated) describes. They supply technical alignment and capability development, while the squad keeps day-to-day product delivery.
+- **Guilds** are informal, voluntary communities of interest spanning the organization, intended for knowledge sharing, according to an account of the 2012 ([source](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf)) whitepaper. They spread good practice by attraction rather than mandate.
 
-Mission briefs reinforce alignment at a longer time horizon than quarterly OKRs. A squad's mission brief describes the user problem it owns, the business metric it influences, and the boundaries of its domain. A mission brief for a "Search Experience" squad might read: "Make it effortless for users to find the content they need. We own the search index, query processing, and results ranking. We do not own content ingestion or user profile data. Our north star metric is search success rate." This brief changes rarely, perhaps annually. It tells the squad what territory is theirs and what belongs to someone else, which prevents both gaps and overlaps.
+A practical way to apply this is to sort every recurring decision into one of four categories. Some decisions the squad makes alone. Some it makes alone but announces, so others can adapt. Some need a conversation with affected squads first because they change a shared interface or customer journey. A very small set needs escalation because it touches a guardrail such as security, legal exposure or core architecture. The categories are a recommendation, not something the original material prescribes, and the exact boundaries depend on your product and risk profile.
 
-Technical guardrails form the third layer. These are not optional guidelines. They are hard constraints on how squads build and ship. Examples include: all services must expose a versioned REST or gRPC API, all data writes go through the shared event bus, every deployment must pass the CI pipeline including integration tests, squads must not take direct database dependencies on another squad's data store. These guardrails exist because autonomy in feature decisions requires coupling discipline in technical decisions. If squad A reads directly from squad B's database, every schema change becomes a cross-squad coordination nightmare. Guardrails prevent this coupling from forming in the first place.
+Approval creep is the slow drift of decisions from the first two categories into the last two. It rarely happens by design. An incident leads to a new review step, a leader wants visibility and asks to sign off, a chapter lead starts approving designs instead of coaching. Each addition looks reasonable, but together they recreate the hierarchy the model was meant to replace. Added process is a documented risk: a [2023 study of a large-scale agile transformation](https://journals.sagepub.com/doi/full/10.1177/02683962231164428) reported additional bureaucracy and time spent in agile ceremonies among the problems it observed.
 
-The system works because each layer operates at a different cadence and scope. Mission briefs set direction over months or years. OKRs calibrate focus quarterly. Guardrails remain stable unless the architecture fundamentally changes. Squads operate freely within the space these three layers define. When a new situation arises that the existing alignment system does not address, it surfaces as a tension. Leadership then decides whether to update the mission brief, add a guardrail, or leave the decision to the squad. The framework evolves through these moments of tension, not through periodic redesigns.
+The counterweight is a recurring audit. Each cycle you list the approvals in force, check whether a guardrail or a shared outcome already covers the risk, and remove or downgrade any gate that does not justify its cost in waiting time. Alignment is working when squads can explain how their current work serves a tribe priority without being told, and when leaders learn about decisions from announcements rather than approval requests.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Articulate the Company Mission and Strategic Priorities
+### Step 1: Inventory decisions and approval gates
 
-Gather the leadership team and write a single-paragraph company mission that describes the customer problem you exist to solve and the change you want to create in the market. Below that mission, list three to five strategic priorities for the next 12 months. Each priority should be a sentence describing an outcome, not a project name. For example, "Become the default tool for mid-market e-commerce teams" is a strategic priority.
+List every recurring decision a squad makes: what to build next, technical design, releases, operational changes, tooling and hiring input. For each one, record who must approve it today, how long approval usually takes and what risk the gate is supposed to control. The [2012 report](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf) describes squads that can design, develop, test and release on their own, so every gate on ordinary work is a gap between that intent and your reality. The output is a single list of decisions, current approvers and stated reasons.
 
-"Build Shopify integration" is a project. The mission and priorities become the top of your alignment cascade. Every tribe mission and squad mission must trace back to at least one strategic priority. If a squad's work does not connect to any priority, you have either a missing priority or a squad that needs a new mission.
+Gates with no stated reason are your first candidates for removal.
 
-> **Pro tip:** Test your strategic priorities by asking each tribe lead to explain in their own words how their tribe contributes. If their answers diverge wildly from what leadership intended, the priorities are too vague. Rewrite them with more concrete language about who the customer is and what success looks like.
+> **Pro tip:** Collect the list from squad members rather than managers. People doing the work know which approvals actually slow them, while managers tend to remember the ones they intended to create.
 
-### Step 2: Step 2: Write Tribe-Level Mission Briefs
+### Step 2: Set shared direction above the squad
 
-For each tribe, draft a mission brief of three to five sentences. The brief should state the user segment or problem domain the tribe owns, the primary business metric the tribe influences, and what is explicitly outside its scope. Share the draft with tribe leads for feedback and adjust until there is zero ambiguity about domain ownership. Overlap between tribes is the most common source of coordination friction.
+Agree a short set of outcomes at tribe or product-area level that every squad in that area should serve. State each outcome with the reason it matters, so squads can make trade-offs without asking. Keep the list short enough that it can guide daily choices; a long list forces squads back to asking which item wins. Publish the outcomes where every squad can see them and revisit them on a fixed rhythm rather than whenever a leader changes their mind.
 
-If two tribes believe they own the "onboarding experience," you will get conflicting roadmaps. Resolve these overlaps now, during the brief-writing process, by drawing clear lines. A tribe's mission brief should be stable enough that it does not change more than once or twice a year.
+> **Pro tip:** Test the direction by asking a few squad members to name the tribe priorities from memory. If they cannot, there are too many or they are written too abstractly to guide decisions.
 
-> **Pro tip:** Use the "newspaper test": read each tribe brief out loud and ask whether a new hire joining the company would understand what the tribe does and does not own. If the brief requires insider knowledge to parse, it needs rewriting.
+### Step 3: Connect each squad mission to that direction
 
-### Step 3: Step 3: Cascade to Squad-Level Mission Briefs
+Check that every squad mission names the problem or outcome the squad owns and maps clearly to at least one shared outcome. Look for missions that map to nothing, which signals work nobody asked for, and for two squads claiming the same outcome, which signals overlap that will later need coordination. Fix these at the mission level rather than by adding reviews of individual features. The detailed craft of writing missions and drawing ownership boundaries is covered in [Defining Squad Missions and Product Ownership Areas](https://tryhamster.com/skills/defining-squad-missions-and-ownership).
 
-Each squad within a tribe writes its own mission brief that zooms in on a specific slice of the tribe's domain. The squad brief names the user problem the squad owns, the slice of the product or system it operates on, its north star metric, and explicit boundaries with neighboring squads. The squad lead drafts the brief with input from the product owner and at least one engineer. The tribe lead reviews all squad briefs together to verify coverage, looking for gaps (parts of the tribe domain no squad owns) and overlaps (parts two squads claim).
+### Step 4: Draw guardrails and decision rights
 
-Gaps should be assigned. Overlaps should be resolved by splitting responsibility along a clear boundary, often a technical boundary like an API contract or a user journey boundary like pre-purchase vs. post-purchase.
+Sort the decisions from your inventory into categories: decide alone, decide and announce, align with affected squads first, and escalate. Write guardrails for the few things that are genuinely non-negotiable, such as security requirements, data handling rules or core architectural principles. Everything not covered by a guardrail defaults to the squad. The output is a one-page decision rights map that a new squad member could read and act on without asking a manager.
 
-> **Pro tip:** Include a short list of "we do NOT own" items in each squad brief. This negative space is surprisingly powerful for preventing scope creep and reducing ambiguity during planning sessions.
+> **Pro tip:** Write each guardrail as a testable constraint, for example a specific data classification that may never leave a given system, not a vague value like being secure. A squad can check itself against a testable rule without asking permission.
 
-### Step 4: Step 4: Set Quarterly OKRs at Company, Tribe, and Squad Levels
+### Step 5: Route technical alignment through chapters and guilds
 
-Starting from the company strategic priorities, define two to four company-level OKRs for the quarter. Each objective should be qualitative and inspiring. Each key result should be measurable with a current baseline and a target. Tribe leads then draft tribe OKRs that contribute to at least one company OKR.
+Use chapters to converge on shared tools, practices and standards within a discipline, and guilds to spread knowledge across the organization. [One practitioner review](https://usu.com/en/blog/the-spotify-model-magic-bullet-or-overrated) describes chapters as the place where specialists coordinate technologies, tools, processes and methods. Keep the chapter's output in the form of agreed standards and coaching, not sign-off on individual squad decisions. If a chapter lead starts approving designs before squads can proceed, the chapter has turned into a gate.
 
-Squad product owners draft squad OKRs that contribute to at least one tribe OKR. The cascade should feel logical but not mechanical. A squad OKR does not need to be a direct subset of a tribe OKR. It needs to tell a credible story about how achieving the squad's key results will move the tribe's key results.
+### Step 6: Reduce dependencies before coordinating them
 
-Allow one squad OKR per quarter that is purely squad-driven, unconnected to the cascade. This preserves autonomy for locally important improvements like paying down tech debt or improving developer experience.
+Many alignment problems are really dependency problems: two squads must agree because one cannot move without the other. The [2012 report](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf) favours avoiding blocking dependencies wherever possible, while the [Crisp-hosted version](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf) notes that dependencies are not necessarily bad because squads sometimes need to work together. Before adding a coordination forum, ask whether a boundary change, an API or moving a capability into the squad would remove the need. The full inventory and triage process is in [Managing Dependencies Across Squads and Tribes](https://tryhamster.com/skills/managing-dependencies-across-squads).
 
-> **Pro tip:** Cap the total at three objectives and four key results per squad per quarter. More than that dilutes focus and turns OKRs into a task list. If a squad cannot fit their work into three objectives, they are either trying to do too much or their objectives are too narrow.
+> **Pro tip:** When a recurring cross-squad meeting appears, ask what change would make it unnecessary. If the answer is a boundary change, schedule that work instead of the meeting.
 
-### Step 5: Step 5: Define Technical Guardrails
+### Step 7: Audit for approval creep
 
-Convene the chapter leads (the technical discipline leaders across squads) and the architecture team, if you have one, to define a set of non-negotiable technical guardrails. , event-driven messaging vs. synchronous APIs), data ownership (each data entity has exactly one owning squad, and others access it through defined interfaces), deployment standards (CI/CD pipeline requirements, feature flagging, rollback procedures), and quality gates (test coverage minimums, performance budgets, security scanning). Write each guardrail as a rule with a rationale.
-
-For example: "All inter-squad data access must go through a published API. " Publish guardrails in a shared document and review them every six months.
-
-> **Pro tip:** Do not try to define fifty guardrails on your first pass. Start with ten to fifteen that address your most painful coordination problems today. Add new guardrails only when a real incident or conflict reveals the need. Over-specified guardrails feel like bureaucracy and erode trust in the system.
-
-### Step 6: Step 6: Build a Dependency Map
-
-Ask each squad to list the other squads they depend on to deliver their current quarter's OKRs. For each dependency, note what the dependency is (an API, a shared dataset, a design system component, a deployment pipeline), who owns it, and what the expected timeline for delivery is. Compile these into a visual dependency map, using a simple diagram with squads as nodes and dependencies as directed edges. Identify clusters where multiple squads depend on the same squad or component.
-
-These are your bottlenecks and alignment risks. For each high-risk dependency, agree on a coordination mechanism: a shared Slack channel, a weekly sync, or an explicit SLA from the owning squad. The goal is not to eliminate dependencies but to make them visible and managed.
-
-> **Pro tip:** Update the dependency map at the start of each quarter during OKR planning. Dependencies shift as priorities change, and a stale map gives a false sense of safety.
-
-### Step 7: Step 7: Establish Alignment Checkpoints
-
-Schedule recurring checkpoints at three cadences. Weekly: each squad reviews its own progress toward its key results in its regular standup or retro. Bi-weekly or monthly: tribe leads meet to review cross-squad dependencies, surface blockers, and discuss whether any squad's mission or OKRs need adjustment. Quarterly: the company leadership reviews company OKRs, scores the previous quarter's results, and sets new OKRs.
-
-" If market conditions shift mid-quarter, update OKRs rather than pretending the original plan is still valid. Document decisions from each checkpoint so teams not present can understand what changed and why.
-
-> **Pro tip:** Keep tribe-level checkpoints under 45 minutes. If they routinely run over, you likely have too many squads in the tribe or too many unresolved dependencies. Consider restructuring the tribe or elevating a persistent dependency into a platform squad.
-
-### Step 8: Step 8: Run a Squad Health Check for Alignment Indicators
-
-At least once a quarter, run a health check with each squad using the Spotify health check model or a variant. ). Use a traffic-light system: green means good, yellow means warning, red means action needed. Aggregate results across the tribe to spot systemic issues.
-
-A pattern of yellow or red on "mission clarity" across multiple squads signals that mission briefs or OKRs need revision. A pattern on "ease of release" signals that guardrails or the dependency map need attention.
-
-> **Pro tip:** Separate the health check from the performance review. If squads believe red indicators will lead to punishment, they will report green even when things are broken. Frame the health check as a diagnostic tool for the system, not an evaluation of the squad.
-
-### Step 9: Step 9: Iterate the Alignment Framework Based on Signals
-
-After two or three quarters of operating with your alignment framework, review how well it is working. Look at three signals. First, decision speed: are squads able to make product and technical decisions without escalating to leadership? If escalations are frequent, your mission briefs or guardrails may be too vague.
-
-Second, strategic coherence: when you zoom out and look at what all squads shipped last quarter, does it add up to progress on the company strategic priorities? If squads are shipping good work that does not contribute to strategy, your OKR cascade is broken. Third, squad satisfaction: are health check scores trending up or down on alignment indicators? Adjust the framework based on what you find.
-
-Tighten guardrails where coupling problems recur. Loosen mission briefs where squads feel over-constrained. Add or remove OKR layers based on the size of the organization.
-
-> **Pro tip:** Keep a log of alignment framework changes and the signal that triggered each change. Over time, this log becomes your organizational playbook for calibrating autonomy and alignment in your specific context.
+On a fixed cadence, for example once a quarter, rerun the approval inventory and compare it with the last one. For each new gate, check whether an existing guardrail or shared outcome already covers the risk, and remove or downgrade it to announce-only if so. Track the time squads spend waiting for approvals as a rough health signal. Rising wait time with no matching drop in incidents means alignment is being bought with autonomy at a poor rate.
 
 ## Best Practices
 
-- Write mission briefs in user-problem language, not in product-feature language. A brief that says "we own the recommendations engine" invites technical scope debates. A brief that says "we help users discover content they did not know they wanted" invites creative solutions. The observable consequence of ignoring this: squads fight over system ownership instead of collaborating on user outcomes.
-- Express OKR key results as lagging indicators (user behavior, business metrics) rather than leading indicators (features shipped, story points completed). When key results are output-based, squads game the system by shipping low-impact features to hit targets. When key results are outcome-based, squads are forced to think about whether their work actually matters.
-- Limit the number of cross-squad dependencies to two or fewer per squad per quarter. Each dependency is a coordination tax that slows the squad down. If a squad has four or five dependencies, the mission brief or the technical architecture needs restructuring so the squad can operate more independently. Track dependency count as a health metric alongside velocity and cycle time.
-- Publish all mission briefs, OKRs, guardrails, and dependency maps in a single, searchable location that every employee can access. Alignment cannot work if the alignment artifacts are scattered across private documents and individual slide decks. Transparency is not a nice-to-have; it is the mechanism by which squads self-coordinate. When a squad can see another squad's mission and OKRs, they can resolve minor boundary questions without scheduling a meeting.
-- Require every guardrail to have a written rationale that explains the problem it prevents. Guardrails without rationale feel arbitrary and breed resentment. When engineers understand why a guardrail exists, they respect it and can also identify cases where the guardrail should evolve. Review guardrails every six months and retire any whose rationale no longer applies.
-- Run alignment reviews at the tribe level, not only at the squad level. A single squad can be perfectly aligned to its own mission and OKRs while being completely out of sync with sibling squads. Tribe-level reviews catch these gaps by comparing what squads are doing side by side. If tribe-level reviews consistently surface the same friction points, that is a signal to adjust squad boundaries.
-- Protect the squad's right to say "no" to requests that fall outside its mission brief, even when those requests come from senior leadership. If a squad cannot refuse out-of-scope work, the mission brief is decoration. When leadership overrides a mission brief, acknowledge it explicitly, update the brief, and communicate the change to the tribe. Silent scope expansion is the most common way alignment frameworks erode.
-- Calibrate the tightness of alignment to the maturity of the squad. New squads with unclear missions or inexperienced product owners benefit from more structured OKRs with explicit check-ins. Mature squads with strong track records can operate with broader mission briefs and lighter-touch OKRs. One size does not fit all squads, even within the same tribe.
+- Align on outcomes and constraints, not on individual decisions. Outcomes let squads choose their own route, while decision-level review moves the choice out of the squad and slows every piece of work that passes through it.
+- Make the decision rights map explicit and public. Unwritten rules push squads to ask permission defensively, which looks like alignment but is really uncertainty about where autonomy ends.
+- Give every approval gate an owner and an expiry. A gate added after an incident should be reviewed once the underlying fix is in place, otherwise temporary caution becomes permanent process.
+- Keep chapter leads in a coaching and standards role rather than an approving role. Chapters exist to build capability and consistency across squads, and they lose that value once squads start routing delivery decisions through them.
+- Prefer announce-only over approval for decisions that affect others but carry little risk. Announcements give neighbouring squads the information they need to adapt without making anyone wait.
+- Treat recurring coordination as a design smell. If the same squads keep needing to align, the boundary between them is probably wrong, and fixing it removes the alignment cost permanently.
+- Measure waiting, not just output. Delivery metrics can look healthy while squads spend growing amounts of time waiting for sign-off, and that hidden cost is the earliest sign of approval creep.
 
 ## Common Mistakes
 
-- **Treating OKRs as a task list by writing key results like "Launch feature X" or "Complete migration to service Y"** — Output-based key results remove the squad's autonomy to choose the best path to an outcome. This happens because teams default to what is easy to measure (did we ship it?) rather than what matters (did it move the metric?). The signal to watch for: if every key result is fully within the squad's control and requires no user behavior to validate, it is probably an output, not an outcome. Rewrite key results to describe a measurable change in user behavior or business performance, then let the squad figure out what to build.
-- **Writing mission briefs once and never revisiting them, so they drift out of sync with actual squad work** — This happens because mission briefs feel like a setup exercise, something you do at the beginning and then move on from. Over six to twelve months, squads naturally evolve their scope as they learn more about their domain. If the brief does not evolve too, there is a growing gap between what the brief says and what the squad actually does. The signal: new hires read the mission brief and are confused because the squad's backlog does not match.
-
-Schedule a brief review every six months, tied to the company strategy refresh.
-- **Defining too many guardrails upfront, creating a compliance burden that feels like the bureaucracy the model was supposed to eliminate** — Over-specification happens when engineering leadership tries to prevent every possible future problem instead of addressing current ones. Squads spend more time checking compliance than building features, and they start viewing the guardrails as obstacles rather than enabling constraints. The signal: squads begin asking for guardrail exceptions more than once per sprint. Start with the ten guardrails that address your biggest coordination pains.
-
-Add new guardrails only in response to real incidents, and retire guardrails when the underlying problem has been architecturally resolved.
-- **Creating alignment at the OKR level while ignoring technical coupling, so squads have clear goals but cannot ship independently** — Strategic alignment without technical decoupling produces squads that know where they want to go but are stuck in a traffic jam. This happens when the alignment effort is led exclusively by product leadership without involving engineering leadership. The signal: squads consistently miss key results not because of effort or direction but because they are waiting for another squad to finish something. Address this by mapping technical dependencies explicitly and investing in platform capabilities (APIs, event buses, shared infrastructure) that let squads deploy independently.
-- **Cascading OKRs mechanically so that every squad OKR is a direct subset of a tribe OKR, leaving no room for squad-initiated improvement** — Mechanical cascading turns OKRs into a top-down planning tool and strips squads of the autonomy to address problems they see on the ground, like tech debt, developer experience, or emergent user needs. This happens when leadership interprets alignment as perfect traceability. The signal: squads stop proposing their own objectives and wait for tribe OKRs to be handed down. Allow one squad OKR per quarter that is locally motivated, and evaluate it on the same outcome-based criteria as cascaded OKRs.
-- **Measuring alignment by checking whether squads followed the plan, rather than whether outcomes improved** — Plan-adherence measurement is a holdover from waterfall thinking. ", squads are incentivized to stick to the original plan even when new information suggests a better path. The signal: squads resist mid-quarter pivots because changing course makes them look like they failed the original plan. Shift review conversations to outcome progress.
-
-If a squad abandoned its original approach but hit its key results through a better method, that is a success story, not a deviation.
+- **Declaring squads autonomous while keeping every existing approval step in place.** — The [2012 report](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf) treats approvals or handoffs for ordinary product, technical, release or operational decisions as incompatible with autonomy. Inventory the gates first and remove those that cover routine work before announcing the new structure.
+- **Filling the alignment gap with more meetings and reviews because the model gives no alignment recipe.** — The lack of guidance on building alignment between squads is documented in a [study of Spotify tailoring](https://link.springer.com/chapter/10.1007/978-3-030-30126-2_3), but reviews are the most expensive answer. Start with shared outcomes and testable guardrails, and add a forum only when a specific recurring problem needs one.
+- **Letting chapters become an approval layer over squad work.** — Chapters should supply standards, coaching and technical alignment while the squad keeps day-to-day delivery. If squads wait for chapter sign-off before shipping, move the standard into a written guardrail and return the decision to the squad.
+- **Swinging to total independence and dropping shared direction altogether.** — Autonomy without alignment produces squads optimizing locally and shipping conflicting experiences. Keep a small set of tribe-level outcomes that every mission maps to, so independence stays pointed at the same goals.
+- **Adding a new approval after every incident and never removing it.** — Give each post-incident gate an expiry date and review it once the root cause is fixed. If the fix makes the risk unlikely, downgrade the gate to announce-only or remove it.
 
 ## References
 
 - [Examples](references/examples.md) — Worked examples and scenarios
 - [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/spotify-squad-model/METHOD.md) — Spotify Squad Model
+- [Parent Method](../../methods/spotify-squads/METHOD.md) — Spotify Squads
 
 ## Related Skills
 
-- [Organizing Squads into Tribes for Strategic Alignment](../organizing-tribes-for-alignment/SKILL.md)
-- [Scaling Agile Practices Using Spotify Structures](../scaling-agile-with-spotify-structures/SKILL.md)
-- [Evaluating Spotify Model Tradeoffs and Common Pitfalls](../evaluating-spotify-model-tradeoffs/SKILL.md)
-- [Building Guilds for Cross-Tribe Knowledge Sharing](../building-cross-cutting-guilds/SKILL.md)
-- [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
+- [Running Chapters for Discipline-Based Management](../running-chapters-for-discipline-excellence/SKILL.md)
+- [Defining Squad Missions and Product Ownership Areas](../defining-squad-missions-and-ownership/SKILL.md)
+- [Forming Autonomous Cross-Functional Squads](../forming-autonomous-squads/SKILL.md)
+- [Managing Dependencies Across Squads and Tribes](../managing-dependencies-across-squads/SKILL.md)
+- [Organizing Squads into Tribes](../organizing-squads-into-tribes/SKILL.md)
+- [Building Guilds as Cross-Cutting Communities of Practice](../building-guilds-as-communities-of-practice/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
-- [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
+
+## Sources
+
+- [\[PDF\] Scaling Agile @ Spotify - Ghost](https://storage.ghost.io/c/73/a9/73a90ce4-1663-4169-a7cb-efdf906b6b25/content/files/2022/12/Scaling-Agile-@-Spotify-with-Tribes--Squads--Chapters---Guilds-Henrik-Kniberg---Anders-Ivarsson-Oct-2012.pdf)
+- [What is the Spotify Model?](https://mooncamp.com/glossary/spotify-model)
+- [From transformation to normalisation: An exploratory study of a large-scale agile transformation - Noel Carroll, Kieran Conboy, Xiaofeng Wang, 2023](https://journals.sagepub.com/doi/full/10.1177/02683962231164428)
+- [Spotify Tailoring for Promoting Effectiveness in Cross-Functional Autonomous Squads](https://link.springer.com/chapter/10.1007/978-3-030-30126-2_3)
+- [The Spotify Model: Magic Bullet or Overrated?](https://usu.com/en/blog/the-spotify-model-magic-bullet-or-overrated)
+- [Scaling Agile @ Spotify - Crisp's Blog](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf)
