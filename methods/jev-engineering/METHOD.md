@@ -5,12 +5,15 @@ description: "Jev Engineering splits AI agents into an LLM that writes, a decisi
 metadata:
   datePublished: "2026-09-24"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/cliff-swing-colour-light.webp"
 ---
 
 # What Is Jev Engineering? A Guide for Agent Builders
 
-> Created by **Diogo Almeida** — [https://madewithjev.com/jev-engineering](https://madewithjev.com/jev-engineering)
+> Created by **Diogo Almeida** - [https://madewithjev.com/jev-engineering](https://madewithjev.com/jev-engineering)
 
 ## Overview
 
@@ -123,14 +126,14 @@ Questions that do not depend on each other can be asked together. [One engineeri
 
 This method includes the following skills:
 
-- [Benchmarking and Observing Agent Loops](skills/benchmarking-and-observing-agent-loops/SKILL.md) — Learn to evaluate the full State-Questions-Action-Verify protocol end to end, measuring decision accuracy, task completion, latency, cost, fallback rates, and real-world outcomes with shadow-mode evaluation and logging.
-- [Formulating Atomic Decision Questions](skills/formulating-atomic-decision-questions/SKILL.md) — Learn to convert agent decision points into precise, typed questions that return a Choice, Score, or probability judgment with a clearly defined interpretation.
-- [Separating Generation from Decision-Making](skills/separating-generation-from-decision-making/SKILL.md) — Learn to identify which parts of an AI-agent system require open-ended LLM generation, which are bounded judgments delegated to Jev, and which are deterministic actions handled by conventional code.
-- [Designing Routing and Ranking Policies](skills/designing-routing-and-ranking-policies/SKILL.md) — Learn to use Jev at bounded decision points for selecting workers, models, tools, data sources, and candidate results according to explicit options and evaluation criteria.
-- [Batching and Parallelizing Decisions](skills/batching-and-parallelizing-decisions/SKILL.md) — Learn to identify independent judgments within an agent loop, issue them concurrently or in batches, and combine their outputs in deterministic code to reduce latency and cost.
-- [Enforcing Deterministic Execution Boundaries](skills/enforcing-deterministic-execution-boundaries/SKILL.md) — Learn to keep permissions, arithmetic, side effects, rollback logic, and irreversible actions strictly in conventional code rather than allowing probabilistic models to execute them directly.
-- [Calibrating Confidence Thresholds and Escalation Paths](skills/calibrating-confidence-thresholds-and-escalation-paths/SKILL.md) — Learn to translate Jev's confidence and probability outputs into operating thresholds that govern acceptance, rejection, fallback behavior, human review, and escalation policies.
-- [Structuring Shared Agent State](skills/structuring-shared-agent-state/SKILL.md) — Learn to construct compact, typed representations of the situation context that Jev needs for a particular judgment, replacing unstructured conversation history or excessive prompt context.
+- [Benchmarking and Observing Agent Loops](../../skills/benchmarking-and-observing-agent-loops/SKILL.md): Learn to evaluate the full State-Questions-Action-Verify protocol end to end, measuring decision accuracy, task completion, latency, cost, fallback rates, and real-world outcomes with shadow-mode evaluation and logging.
+- [Formulating Atomic Decision Questions](../../skills/formulating-atomic-decision-questions/SKILL.md): Learn to convert agent decision points into precise, typed questions that return a Choice, Score, or probability judgment with a clearly defined interpretation.
+- [Separating Generation from Decision-Making](../../skills/separating-generation-from-decision-making/SKILL.md): Learn to identify which parts of an AI-agent system require open-ended LLM generation, which are bounded judgments delegated to Jev, and which are deterministic actions handled by conventional code.
+- [Designing Routing and Ranking Policies](../../skills/designing-routing-and-ranking-policies/SKILL.md): Learn to use Jev at bounded decision points for selecting workers, models, tools, data sources, and candidate results according to explicit options and evaluation criteria.
+- [Batching and Parallelizing Decisions](../../skills/batching-and-parallelizing-decisions/SKILL.md): Learn to identify independent judgments within an agent loop, issue them concurrently or in batches, and combine their outputs in deterministic code to reduce latency and cost.
+- [Enforcing Deterministic Execution Boundaries](../../skills/enforcing-deterministic-execution-boundaries/SKILL.md): Learn to keep permissions, arithmetic, side effects, rollback logic, and irreversible actions strictly in conventional code rather than allowing probabilistic models to execute them directly.
+- [Calibrating Confidence Thresholds and Escalation Paths](../../skills/calibrating-confidence-thresholds-and-escalation-paths/SKILL.md): Learn to translate Jev's confidence and probability outputs into operating thresholds that govern acceptance, rejection, fallback behavior, human review, and escalation policies.
+- [Structuring Shared Agent State](../../skills/structuring-shared-agent-state/SKILL.md): Learn to construct compact, typed representations of the situation context that Jev needs for a particular judgment, replacing unstructured conversation history or excessive prompt context.
 
 ## FAQ
 
@@ -177,12 +180,12 @@ Shadow mode runs the new decision layer [beside the existing workflow without ch
 - [Jev comparisons \| System One Models](https://systemonemodels.org/compare)
 - [Comparing 6 Open-Source Jev Clones: Architecture, State](https://lilting.ch/en/articles/jev-clones-architecture-comparison)
 - [TypeSafe Jev alternatives \(2026\): 8 typed-decision options](https://eesel.ai/blog/typesafe-jev-alternatives)
-- [Jev's Architecture Unmasked — archerhume](https://archerhume.com/posts/jevs-architecture-unmasked?v=3)
+- [Jev's Architecture Unmasked - archerhume](https://archerhume.com/posts/jevs-architecture-unmasked?v=3)
 - [Benchmarks \& Evaluations](https://github.com/robokrunch/awesome-jev)
-- [GitHub - yibie/awesome-jev: A curated list of public projects, integrations, and discussions built on Jev — TypeSafe AI's System One model for typed decisions.](https://github.com/yibie/awesome-jev)
+- [GitHub - yibie/awesome-jev: A curated list of public projects, integrations, and discussions built on Jev - TypeSafe AI's System One model for typed decisions.](https://github.com/yibie/awesome-jev)
 - [What Is Jev? Inside TypeSafe's Decision-Only AI Model](https://firecrawl.dev/blog/what-is-jev)
 - [Top Jev AI Use Cases and How it Compares With Other](https://kanerika.com/blogs/jev-ai-use-cases)
-- [Jev for engineers — eight minimal working examples - GitHub](https://github.com/Foadsf/jev-for-engineers)
+- [Jev for engineers - eight minimal working examples - GitHub](https://github.com/Foadsf/jev-for-engineers)
 - [Jev 是什麼？價格、限制與Agent 工作流的整合方向 - Wayneh](https://wayneh.tw/posts/tech/jev-system-one-agent-reflex-layer)
 - [Jev Agent engineering: separate decisions from LLM generation](https://jev-tutorial.org/guides/agent-decision-layer)
 - [jev: calibrated decisions for agents - Gist - GitHub](https://gist.github.com/pedramamini/014676fa8684d91bf7000f4623701ada)
