@@ -5,12 +5,15 @@ description: "How the six-pillar context engineering framework for Claude AI wor
 metadata:
   datePublished: "2026-04-25"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/canyon-rim-colour-light.webp"
 ---
 
 # Context Engineering for Claude AI: The 6 Pillars
 
-> Created by **Anthropic \(Claude Code team\)** — [https://www.anthropic.com/](https://www.anthropic.com/)
+> Created by **Anthropic \(Claude Code team\)** - [https://www.anthropic.com/](https://www.anthropic.com/)
 
 ## Overview
 
@@ -119,13 +122,13 @@ Anthropic describes a [trust-then-verify gap](https://code.claude.com/docs/de/be
 
 This method includes the following skills:
 
-- [Writing Effective System Prompts for Claude AI](skills/writing-system-prompts-for-claude/SKILL.md) — How to craft precise, well-structured system prompts that set behavioral guardrails and task framing within Claude's finite context window.
-- [Structuring Retrieval-Augmented Context for Claude](skills/structuring-retrieval-augmented-context/SKILL.md) — How to design and format retrieved documents, knowledge chunks, and external data so Claude can reliably extract and synthesize the most relevant information.
-- [Preventing Context Poisoning, Distraction, and Clashes](skills/preventing-context-poisoning-and-clashes/SKILL.md) — How to identify and resolve conflicting, redundant, or misleading information in your context that causes Claude to produce unreliable outputs.
-- [Engineering Tool Output Context Flows for Claude Agents](skills/engineering-tool-output-context-flows/SKILL.md) — How to design and constrain tool call outputs so they integrate cleanly into Claude's context without overwhelming or displacing critical instructions.
-- [Managing Context Window Token Budgets in Claude](skills/managing-context-window-token-budgets/SKILL.md) — How to audit, allocate, and optimize token usage across instructions, retrieved documents, tool outputs, and conversation history to maximize Claude's output quality.
-- [Layering Instruction Hierarchies in Claude Prompts](skills/layering-instruction-hierarchies-in-prompts/SKILL.md) — How to organize system-level, task-level, and turn-level instructions into clear priority layers so Claude resolves competing directives predictably.
-- [Designing Multi-Turn Conversation Context Strategies](skills/designing-multi-turn-conversation-context/SKILL.md) — How to manage conversation history across long interactions by summarizing, pruning, and prioritizing prior turns to keep Claude focused and accurate.
+- [Writing Effective System Prompts for Claude AI](../../skills/writing-system-prompts-for-claude/SKILL.md): How to craft precise, well-structured system prompts that set behavioral guardrails and task framing within Claude's finite context window.
+- [Structuring Retrieval-Augmented Context for Claude](../../skills/structuring-retrieval-augmented-context/SKILL.md): How to design and format retrieved documents, knowledge chunks, and external data so Claude can reliably extract and synthesize the most relevant information.
+- [Preventing Context Poisoning, Distraction, and Clashes](../../skills/preventing-context-poisoning-and-clashes/SKILL.md): How to identify and resolve conflicting, redundant, or misleading information in your context that causes Claude to produce unreliable outputs.
+- [Engineering Tool Output Context Flows for Claude Agents](../../skills/engineering-tool-output-context-flows/SKILL.md): How to design and constrain tool call outputs so they integrate cleanly into Claude's context without overwhelming or displacing critical instructions.
+- [Managing Context Window Token Budgets in Claude](../../skills/managing-context-window-token-budgets/SKILL.md): How to audit, allocate, and optimize token usage across instructions, retrieved documents, tool outputs, and conversation history to maximize Claude's output quality.
+- [Layering Instruction Hierarchies in Claude Prompts](../../skills/layering-instruction-hierarchies-in-prompts/SKILL.md): How to organize system-level, task-level, and turn-level instructions into clear priority layers so Claude resolves competing directives predictably.
+- [Designing Multi-Turn Conversation Context Strategies](../../skills/designing-multi-turn-conversation-context/SKILL.md): How to manage conversation history across long interactions by summarizing, pruning, and prioritizing prior turns to keep Claude focused and accurate.
 
 ## FAQ
 
@@ -166,7 +169,7 @@ The pillars are general, but most published mappings target Claude Code mechanis
 - [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices)
 - [OpenCode vs Claude Code: The Complete Terminal AI Alternatives Guide \(2026\)](https://pub.towardsai.net/opencode-vs-claude-code-the-complete-terminal-ai-alternatives-guide-2026-4ca00893ce51)
 - [The new rules of context engineering for Claude 5 generation](https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models)
-- [Context Engineering for Claude Code: The Six Pillars Framework — CLAUDE.md, /init, /rewind, Interview Workflow, MCP Servers, Memory Compounding](https://mindpattern.ai/f/10213)
+- [Context Engineering for Claude Code: The Six Pillars Framework - CLAUDE.md, /init, /rewind, Interview Workflow, MCP Servers, Memory Compounding](https://mindpattern.ai/f/10213)
 - [Google Antigravity vs Claude Code: Agent-First](https://augmentcode.com/tools/google-antigravity-vs-claude-code)
 - [Explore the context window - Claude Code Docs](https://code.claude.com/docs/en/context-window)
 
