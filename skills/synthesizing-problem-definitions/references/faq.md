@@ -1,25 +1,21 @@
 # FAQ: Synthesizing Insights to Define the Problem
 
-## How long should the Define phase take in the double diamond framework?
+## What is the difference between a theme and an insight?
 
-The Define phase typically takes 1–2 weeks for a medium-complexity project, including time for affinity mapping (half a day), theme refinement (1–2 days), stakeholder alignment (1–2 sessions), and problem statement validation. Rushing it undermines everything downstream.
+A theme is a group of related observations, such as "People phone to confirm online bookings." An insight explains the theme: why people do it and what tension it reveals. Themes describe what you saw. Insights give the Develop phase something to design against.
 
-## What's the difference between a problem statement and a How Might We question?
+## How long should synthesis take?
 
-A problem statement declares the challenge ('Users abandon checkout because shipping costs surprise them at the final step'). A How Might We question reframes that challenge as an invitation to ideate ('How might we help users understand total costs early in their journey?'). Many teams use both — the statement for alignment, the HMW for brainstorming.
+It depends on how much evidence you have and how contested it is. A small study can be synthesised in a day or two of workshops, while a large multi-site study may need a week or more. Build in a pause before the final choice so the team can reflect, since the first reading of a board is rarely the best.
 
-## How many problem statements should I produce in the Define phase?
+## What if stakeholders reject the problem definition?
 
-Aim for one primary problem statement. You may generate 3–5 candidates during synthesis, but convergent thinking means narrowing to a single focus. If you can't choose, it's a sign you need sharper prioritization criteria or more data.
+Walk them through the evidence behind it, not just the statement. Ask what evidence would change their mind, and check whether they hold information the research missed. If the disagreement is about priorities rather than evidence, make the trade-off explicit and let the decision-maker choose, then record the choice.
 
-## Can I use the double diamond framework Define phase for quantitative data, not just qualitative?
+## Should the problem statement include business goals?
 
-Absolutely. Quantitative data (analytics, survey scores, funnel metrics) strengthens synthesis by validating qualitative themes. The best Define-phase outputs combine 'what is happening' (quantitative) with 'why it's happening' (qualitative) into a unified problem statement.
+It should connect to them, but lead with the people affected. A statement that starts with a business metric tends to skip the user's situation. Describe who is affected and what blocks them, then note how solving it supports the organisation's goals.
 
-## What if stakeholders disagree with the problem statement I've synthesized?
+## How many "How might we" questions should we write?
 
-Present the evidence trail transparently: raw findings → clusters → themes → prioritization → problem statement. If stakeholders still disagree, explore whether the disagreement is about the data interpretation or about business priorities. The latter is a legitimate input to prioritization, not a reason to discard research.
-
-## How does the Define phase in the double diamond framework differ from problem definition in design thinking?
-
-The double diamond framework's Define phase is structurally similar to design thinking's Define stage, but it more explicitly emphasizes convergent thinking as a counterbalance to the preceding divergent Discover phase. The diamond metaphor makes the narrowing process visual and intentional, whereas design thinking frameworks sometimes treat Define as a single step rather than a deliberate convergence.
+Write more than you need, then keep a few. Each should come from an insight, allow several different answers, and contain no built-in solution. Too many questions spread the Develop phase thin, while a single question can narrow it too early.

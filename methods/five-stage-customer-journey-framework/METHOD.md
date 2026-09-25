@@ -1,186 +1,172 @@
 ---
-category: Experience
+name: "five-stage-customer-journey-framework"
+category: "Experience"
+description: "The five-stage customer journey framework splits the lifecycle into awareness, consideration, purchase, retention and advocacy to find the leaks."
+metadata:
+  datePublished: "2026-06-30"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
 # The Five-Stage Customer Journey Framework
 
-> Created by **No specific individual creator identified** — [https://www.smaply.com](https://www.smaply.com)
+> Created by **Philip Kotler, Hermawan Kartajaya and Iwan Setiawan** - [https://www.wiley.com/en-us/Marketing+4.0%3A+Moving+from+Traditional+to+Digital-p-9781119341208](https://www.wiley.com/en-us/Marketing+4.0%3A+Moving+from+Traditional+to+Digital-p-9781119341208)
 
 ## Overview
 
-The customer journey is one of those concepts that seems obvious until you try to act on it. Everyone agrees that a customer moves from not knowing you exist to (hopefully) recommending you to friends and colleagues. But turning that intuition into something a cross-functional team can analyze, measure, and improve requires structure. The five-stage customer journey framework provides that structure by decomposing the entire customer lifecycle into five sequential stages: Awareness, Consideration, Purchase (or Decision), Retention (or Loyalty), and Advocacy.
+The five-stage customer journey framework divides a customer's relationship with a company into awareness, consideration, purchase, retention and advocacy. Each stage gets its own questions, touchpoints, owners and metrics, so a cross-functional team can look at one customer lifecycle and agree on where it leaks. The framework is used by marketing, product, sales and customer success teams that share a customer but measure different slices of the relationship.
 
-The framework doesn't trace back to a single inventor. Its roots sit at the intersection of marketing funnel theory, service design, and customer experience (CX) research. The classic marketing funnel, often attributed to Elias St. Elmo Lewis's AIDA model from 1898, described attention, interest, desire, and action. Over the following century, practitioners realized two things. First, the journey doesn't end at purchase. Retention and word-of-mouth matter as much as acquisition, sometimes more. Second, the funnel metaphor implies a passive filtering process, when in reality customers loop back, skip stages, and re-enter at unexpected points. By the early 2010s, thinkers like McKinsey (with their Consumer Decision Journey, published in 2009) and service design firms like Smaply had pushed the field toward lifecycle models that extend well past the point of sale. The five-stage version became a de facto standard because it's specific enough to be actionable, yet general enough to fit nearly any business.
+The version most teams use today descends from a long line of funnel models. The oldest is AIDA (attention, interest, desire, action), which is [commonly attributed to E. St. Elmo Lewis](https://en.wikipedia.org/wiki/AIDA_(marketing)), while the earliest printed precursor was an anonymous three-step formula in Printers' Ink in 1898 (attract attention, then interest, then convince). AIDA ends at the sale. Later variants such as AIDAS added a satisfaction stage after the action, which was the first move toward treating the time after purchase as part of the journey.
 
-The underlying mental model makes a claim about how value is created and captured. It says that customer experience is not a single moment but a sequence of contexts, each with its own emotional register, information needs, and success criteria. A prospect in the awareness stage has fundamentally different questions than a customer in the retention stage. If you design for one context and ignore the others, you leak value. A company might be brilliant at acquiring attention through content marketing but terrible at onboarding, turning high acquisition into high churn. Or it might have a wonderful product that nobody discovers because awareness-stage touchpoints are absent. The framework forces you to confront the whole chain, not just the links you enjoy working on.
+The most direct published source for a five-stage path that runs from awareness to advocacy is the 5A customer path in Marketing 4.0, the book by Philip Kotler, Hermawan Kartajaya and Iwan Setiawan that [Wiley published in December 2016](https://www.wiley.com/en-us/Marketing+4.0%3A+Moving+from+Traditional+to+Digital-p-9781119341208). Its five stages are Aware, Appeal, Ask, Act and Advocate. MarkPlus, the consultancy [Kartajaya founded](https://www.markplusinc.com/en/about-us), describes the 5A path as the successor to an earlier 4A model of Aware, Attitude, Act and Act Again, and defines Advocate as [cultivating loyalty and advocacy among satisfied customers](https://www.markplusinc.com/en/featured-insights/publications/customer-journey-5a). Practitioners who wanted to retire AIDA have [credited the 5A path as the needed update](https://brandingstrategyinsider.com/brands-must-retire-the-aida-model/), because it accounts for how technology has changed the way people find, research and recommend brands.
 
-Compared to alternatives, the five-stage model sits in a sweet spot of complexity. Simpler funnels (awareness, consideration, decision) ignore everything after the sale. More elaborate models, like Forrester's customer lifecycle with its eight or more stages, can overwhelm teams that lack dedicated CX research functions. McKinsey's Consumer Decision Journey introduced the valuable concept of a "loyalty loop" but was originally oriented toward consumer packaged goods and can feel abstract in SaaS or services contexts. The five-stage framework borrows the post-purchase emphasis from McKinsey while keeping the linear simplicity that makes it easy to workshop across departments. It has evolved in practice to accommodate non-linear movement. Most experienced practitioners now draw it as a loop or spiral rather than a straight line, acknowledging that customers cycle back through consideration after a failed retention experience, or jump from awareness straight to purchase when urgency is high.
+The labels on this page are a practitioner rendering of that lineage rather than Kotler's own wording. Appeal and Ask collapse into consideration and Act becomes purchase. In the 5A path, retention and repurchase sit inside Advocate, which a [review of Marketing 4.0](https://valchanova.me/marketing-4-book-review/) describes as loyalty shown through retention, repurchase and finally advocacy to others. The practitioner version pulls retention out as its own stage, with a dedicated owner and metric, because much of a subscription or repeat-purchase customer's value arrives after the first sale. Treat the five stages as a shared vocabulary built on that source, and cite Marketing 4.0 when someone asks where the idea came from.
 
-The framework benefits product teams, marketing teams, support teams, and leadership, really any group that needs a shared vocabulary for discussing where customers are and what they need. It works best when you treat it not as a fixed truth about human behavior but as a lens: a way to organize observations, prioritize investments, and spot gaps. Small startups use it informally on a whiteboard. Enterprise organizations build multi-year programs around it with dedicated journey managers per stage. Hamster provides a workspace where teams can run customer journey analysis alongside AI agents, keeping research, mapping, and action items in one place. The method's strength is its universality, and its risk is that universality can drift into vagueness if you don't ground each stage in real data about your specific customers.
+The framework is also criticized, and the criticism is useful. Marc Stickdorn of the service design firm Smaply argues that the standard sequence of awareness, consideration, decision, retention and advocacy is [a marketing-funnel convention weighted toward pre-purchase](https://www.smaply.com/blog/customer-journey-stages), and that teams should name stages after what customers actually do, such as getting started or hitting a wall. The two views fit together. Use the five stages as the top-level spine that every team recognizes, then break each stage into customer-named phases when you map it in detail.
+
+The five stages describe a common pattern, and real customers often depart from it. Summaries of Marketing 4.0 point out that customers [may not travel the 5A path in full or in order](https://valchanova.me/marketing-4-book-review/). A referral can take a buyer from awareness to purchase in a day, and a bad renewal can push a long-time customer back into evaluating alternatives. The value of the framework is that it makes every stage visible, including the post-purchase ones that acquisition dashboards tend to ignore.
+
+Journey work also compounds with retention economics. Harvard Business Review summarized research that acquiring a customer costs [five to 25 times as much as retaining one](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers), and Frederick Reichheld's work at Bain found that a 5% gain in retention raised profits by 25% to 95% in the same article. Those figures are a reason to give the last two stages equal attention, not a forecast for any one business. If your team keeps its journey maps and stage definitions in Hamster, agents working on campaigns or onboarding can read the same stage model the team agreed on.
+
+## How the Stages Line Up with Earlier Models
+
+| Practitioner stage | 5A path | AIDA | Source |
+|---|---|---|---|
+| Awareness | Aware | Attention | [MarkPlus on 5A](https://www.markplusinc.com/en/featured-insights/publications/customer-journey-5a) |
+| Consideration | Appeal, Ask | Interest, Desire | [MarkPlus on 5A](https://www.markplusinc.com/en/featured-insights/publications/customer-journey-5a) |
+| Purchase | Act | Action | [AIDA history](https://en.wikipedia.org/wiki/AIDA_(marketing)) |
+| Retention | Part of Advocate (retention, repurchase); Act Again in the older 4A model | Satisfaction in AIDAS | [5A review](https://valchanova.me/marketing-4-book-review/) |
+| Advocacy | Advocate | None | [MarkPlus on 5A](https://www.markplusinc.com/en/featured-insights/publications/customer-journey-5a) |
 
 ## Core Principles
 
-### The journey belongs to the customer, not the org chart
+### Map the journey from the customer's side
 
-Customers don't experience your company through departments. ' They have a continuous experience that happens to touch marketing, sales, product, and support along the way. The five-stage framework only works when you map the journey from the customer's perspective, not from your internal structure. When teams skip this and map their own processes instead, they end up optimizing internal handoffs rather than customer outcomes.
+Customers do not experience your org chart. They experience one continuous relationship that happens to pass through marketing, sales, product and support. Nielsen Norman Group recommends [one actor and one point of view per map](https://www.nngroup.com/articles/journey-mapping-101/) for exactly this reason. When a team maps its own process instead, it optimizes internal handoffs and leaves the customer's gaps untouched.
 
-The tradeoff is that customer-centric mapping requires cross-functional collaboration, which is harder to organize than single-team projects.
+### Each stage has its own job and its own metric
 
-### Each stage has distinct needs, emotions, and success metrics
-
-A customer in the awareness stage needs to understand that a problem exists and that solutions are available. A customer in the retention stage needs to feel that the product continues to deliver value relative to its cost. Conflating these contexts leads to mismatched interventions, like sending a detailed comparison guide to someone who hasn't even recognized their pain yet. When teams treat all stages the same, they default to whatever stage they understand best (usually acquisition) and neglect the rest.
-
-The discipline here is to define specific KPIs for each stage rather than relying on a single end-to-end metric like revenue.
+A prospect in awareness needs to learn that a problem is solvable. A customer in retention needs to keep getting value that justifies the cost. Mixing those contexts produces mismatched work, such as sending a comparison guide to someone who has not yet recognized the problem. Give each stage one primary metric, so a strong stage cannot hide a weak one in a blended revenue number.
 
 ### Touchpoints are the unit of analysis
 
-The framework becomes actionable when you identify the specific touchpoints where customers interact with your brand at each stage: an ad, a landing page, a pricing page, an onboarding email, a support ticket, a review site. Without touchpoint-level detail, the stages remain abstract categories. When teams skip touchpoint mapping, they can't diagnose where breakdowns occur. The tradeoff is that thorough touchpoint inventories take real research, including customer interviews, analytics reviews, and cross-department audits, which is an investment many teams underestimate.
+Stages stay abstract until you list the specific interactions inside them: an ad, a pricing page, a sales call, an onboarding email, a support ticket, a review site. Research on customer experience notes that customers now meet firms through [myriad touch points across channels and media](https://research.rug.nl/en/publications/understanding-customer-experience-throughout-the-customer-journey/), and many of those are owned by someone else. Without a touchpoint inventory you cannot say where a stage breaks.
 
-### Gaps between stages cause the biggest losses
+### The transitions leak more than the stages
 
-The most damaging failures in a customer journey usually happen at the transitions between stages, not within them. The handoff from marketing-generated awareness to sales-driven consideration. The gap between purchase and actual onboarding. The silence between a completed onboarding and the first retention check-in.
+Teams tend to own stages, and nobody owns the gaps between them. The handoff from marketing to sales, the silence between signing and first use, and the quiet months before a renewal are where customers fall through. Name an owner for every transition, not only for every stage, and measure the conversion across it.
 
-These seams are where customers fall through cracks because no team owns the transition. When organizations don't explicitly design these handoffs, each department optimizes its own stage in isolation and the customer experiences jarring inconsistencies.
+### Treat the order as a convention
 
-### Linearity is a useful fiction
+The stages are drawn left to right because that order is useful for planning. Real customers skip, loop and re-enter, which [reviews of the 5A path note as well](https://valchanova.me/marketing-4-book-review/). Design each stage so that a customer arriving from an unexpected direction still finds what they need, for example a referred buyer who lands on the pricing page without having read anything else.
 
-The five stages are presented sequentially, and that sequence is useful for organizing work. But real customer behavior is non-linear. Customers revisit consideration after a bad support experience. They skip from awareness to purchase when a referral from a trusted friend short-circuits evaluation.
+### Advocacy is a result of the earlier stages
 
-They churn and re-enter at awareness months later. Treating the framework as a rigid pipeline leads to broken assumptions, like expecting every lead to pass through the same nurture sequence. The principle is to use the stages as a shared vocabulary while accepting that any individual customer's path will be idiosyncratic.
+Referral programs and review prompts amplify advocacy that already exists, so they work best once customers are already satisfied. Bain's own description of Net Promoter says promoters are the customers who [stay, buy more and generate most referrals](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/), which means advocacy depends on everything before it. Fix retention before you fund an advocacy program.
 
-### Advocacy is earned, not engineered
+### Feed what you learn back to the start
 
-The fifth stage, advocacy, is the most misunderstood. It's tempting to treat it as a feature you build: a referral program, an NPS survey, a review prompt. Those tactics help, but genuine advocacy comes from cumulative positive experiences across all prior stages. If the product is mediocre and support is slow, a referral bonus won't create real advocates.
-
-Teams that skip straight to engineering advocacy programs without ensuring retention and satisfaction are building on a weak foundation. The tradeoff is that advocacy takes longer to develop than any other stage because it depends on everything that came before.
-
-### Data from every stage feeds back into every other stage
-
-What you learn in retention (why customers stay or leave) should change how you approach awareness (who you target) and consideration (what you promise). Advocacy insights (what enthusiastic customers say) should shape the language you use in acquisition. The framework isn't just a forward-moving pipeline; it's a feedback system. When teams treat each stage as an isolated workstream, they miss the compounding benefits of learning loops.
-
-The tradeoff is that building these feedback mechanisms requires organizational discipline and tooling that many teams don't have in place.
+Why customers stay or leave should change who you target in awareness and what you promise in consideration. The words that happy customers use should become the words in your acquisition copy. Run the framework as a loop with a review cadence, and the stages improve each other instead of being optimized in isolation.
 
 ## Steps
 
-1. **Step 1: Define your customer segments and select a priority journey**
-   Before mapping anything, decide whose journey you're mapping. A B2B SaaS company might have an enterprise buyer journey, a self-serve user journey, and a partner-driven journey, each fundamentally different. Trying to map all of them at once produces a generic artifact that helps no one. Pick one segment to start with, ideally the one with the highest revenue impact or the one where you suspect the biggest experience gaps.
+1. **Pick one segment and one journey**
+   Decide whose journey you are mapping before you map anything. A company with self-serve users, enterprise buyers and partner-led deals has three different journeys, and a single map of all of them helps no one. Start with the segment where revenue is concentrated or where you already suspect the largest gap. Describe that segment in specific terms: role, goal, constraints and how they usually find you. If the description reads "all users", narrow it before moving on.
 
-You've done this well when you can describe the segment in specific terms: their role, their goals, their constraints, and roughly how many of them you have. A common mistake is choosing a segment that's too broad ('all users') rather than a specific persona with identifiable behavior patterns. If you're unsure which journey to prioritize, look at where your churn is highest or where customer acquisition cost is disproportionate to lifetime value.
+2. **Inventory touchpoints for every stage**
+   List every place the segment interacts with you or forms an opinion about you, stage by stage. Include touchpoints you do not own, such as review sites, community threads, analyst reports and peers. Pull from analytics, the CRM, support tickets and sales notes, and ask people in each department what they see. A good inventory surprises at least one team with touchpoints they did not know about. The [touchpoint mapping skill](../../skills/mapping-customer-touchpoints-across-stages/SKILL.md) covers the audit in detail.
 
-2. **Step 2: Map the current-state touchpoints for each stage**
-   For your chosen segment, inventory every touchpoint where the customer interacts with your brand across all five stages. Awareness might include blog posts, paid ads, conference talks, and word-of-mouth. Consideration might include pricing pages, demo calls, free trials, and third-party reviews. Purchase includes the checkout or contract signing process.
+3. **Research the experience at each touchpoint**
+   The inventory says where interactions happen. Research says how they feel. Combine behavioral data with interviews, support transcripts and sales call notes, and capture for each touchpoint what the customer is trying to do, what they need to know and where they get stuck. Nielsen Norman Group's standard is that journey maps should be [truthful narratives, not fairy tales](https://www.nngroup.com/articles/customer-journey-mapping/), grounded in qualitative research. Mark any cell that rests on assumption so the team knows what still needs checking.
 
-Retention covers onboarding, product usage, support interactions, and billing. Advocacy encompasses review sites, referral programs, community participation, and case study requests. The goal is completeness, not elegance. Pull data from analytics, CRM, support tickets, and interviews.
+4. **Find gaps, pain points and moments of truth**
+   Read across the research for three things. Gaps are stages or transitions where the customer hears nothing from you, such as the stretch between purchase and first login. Pain points are moments of friction that show up as drop-off, negative feedback or repeat support themes. Moments of truth are the few interactions that shape the whole relationship, such as the first time the product does the job it was bought for. Rank all three by their effect on a stage metric.
 
-You know you've done this well when team members from different departments are surprised by touchpoints they didn't know existed. The most common mistake is mapping only the touchpoints your team controls and ignoring third-party interactions like review sites, comparison articles, or Reddit threads where customers form opinions without your involvement.
+5. **Design interventions for the top few problems**
+   Pick the two or three problems with the largest effect and design a specific change for each: a new onboarding sequence, a comparison page, a check-in call before renewal. Give each change an owner, a date and the metric it should move. Check that a fix for one stage does not damage another, for example an aggressive upsell during onboarding that lifts expansion revenue and hurts retention. Resist the long list; spreading effort across twenty fixes delays all of them.
 
-3. **Step 3: Research the customer's experience at each touchpoint**
-   Touchpoint mapping tells you where interactions happen. This step tells you what those interactions feel like from the customer's side. Use a mix of methods: review analytics for behavioral data (bounce rates, time on page, conversion rates), analyze support tickets and sales call transcripts for qualitative signals, and conduct 5-10 customer interviews focused on their experience at specific moments. For each touchpoint, capture what the customer is trying to do, what emotion they're feeling, what information they need, and what friction they encounter.
+6. **Visualize the journey so others can act on it**
+   Turn the research into a one-page map with the stages as columns and rows for touchpoints, customer actions, emotions, pain points and opportunities. The map is a communication tool, so a new team member should understand the biggest problems without a briefing. Keep it where planning happens, not in a slide deck nobody opens. The [journey map skill](../../skills/building-customer-journey-maps/SKILL.md) covers formats and facilitation.
 
-You've done this well when you can tell a specific story about a real customer's experience rather than a hypothetical one. Watch out for internal bias: teams tend to assume the customer's experience matches the intended design, and it rarely does. The skill of [identifying pain points and drop-off moments](https://tryhamster.com/skills/identifying-pain-points-and-drop-off-moments) goes deep on techniques for surfacing where the journey breaks.
-
-4. **Step 4: Identify gaps, pain points, and moments of truth**
-   With touchpoint research in hand, analyze the journey for three things. First, gaps: stages or transitions where the customer receives no communication, guidance, or support. The silence between purchase and first login is a classic gap. Second, pain points: moments where the customer encounters friction, confusion, or frustration.
-
-These show up as high drop-off rates, negative sentiment in feedback, or recurring support themes. Third, moments of truth: the high-stakes interactions that disproportionately shape the customer's overall perception. A moment of truth might be the first time a user achieves their core goal in your product, or how your team handles a billing dispute. You've done this well when you can rank your findings by business impact, connecting each gap or pain point to a metric like conversion rate, churn rate, or NPS.
-
-A variation: some teams use a red/yellow/green scoring system to visually grade each touchpoint and make patterns immediately visible to stakeholders.
-
-5. **Step 5: Design interventions for priority gaps**
-   This is where analysis becomes action. For each priority gap or pain point, design a specific intervention. An intervention might be a new onboarding email sequence (retention gap), a comparison page on your website (consideration pain point), or a customer success check-in at day 30 (transition from purchase to retention). Prioritize interventions by expected impact and implementation effort.
-
-Not everything needs to be fixed at once. Focus on the two or three changes that address the largest pain points or the transitions with the steepest drop-offs. You've done this well when each intervention has a clear owner, a timeline, and a measurable outcome. The most common mistake is generating a massive list of improvements and trying to tackle all of them simultaneously, which diffuses effort and delays results.
-
-Another pitfall is designing interventions that optimize a single stage at the expense of another, like aggressive upselling during onboarding that hurts retention.
-
-6. **Step 6: Build a visual journey map to communicate findings**
-   The journey map is the communication artifact. It translates your research and analysis into a visual that stakeholders across the organization can understand and act on. A good journey map shows the five stages as columns, with rows for touchpoints, customer actions, emotions, pain points, and opportunities. It should tell a story that anyone in the company can follow without attending a briefing.
-
-Keep it to one page or one screen. You've done this well when a new team member can look at the map and immediately understand where the biggest problems are and what's being done about them. The skill of [building visual customer journey maps](https://tryhamster.com/skills/building-customer-journey-maps) covers format choices, tools, and templates in detail. A common mistake is treating the map as the end goal.
-
-The map is a communication tool. If it sits in a slide deck and nobody references it in planning meetings, it hasn't done its job.
-
-7. **Step 7: Establish stage-level metrics and review cadence**
-   Each stage needs its own KPIs so you can monitor health over time. Awareness might track brand search volume and reach. Consideration might track demo requests, trial signups, or pricing page visits. Purchase tracks conversion rate and average deal size.
-
-Retention tracks churn rate, feature adoption, and support satisfaction. Advocacy tracks NPS, referral rate, and review volume. Define one primary metric per stage and set a quarterly review cadence. You've done this well when your leadership team can look at a dashboard and immediately see which stage is underperforming relative to the others.
-
-The skill of [measuring KPIs for each journey stage](https://tryhamster.com/skills/measuring-journey-stage-kpis) provides detailed guidance on metric selection and benchmarking. The most common mistake is over-indexing on awareness and purchase metrics (because they're easiest to measure) while leaving retention and advocacy unmonitored. Another pitfall is measuring too many things per stage, which dilutes focus and makes it hard to know what's actually improving.
+7. **Set stage metrics and a review cadence**
+   Choose one primary metric per stage and look at them together on a fixed cadence, usually quarterly. Typical choices are branded search or reach for awareness, trial or demo starts for consideration, conversion for purchase, churn or renewal for retention, and referral rate or Net Promoter Score for advocacy. Watch for the common tilt toward awareness and purchase metrics simply because they are easier to collect. The [stage KPI skill](../../skills/measuring-journey-stage-kpis/SKILL.md) covers definitions and instrumentation.
 
 ## When to Use
 
-- When your acquisition numbers look healthy but churn is climbing, and you suspect the problem lives somewhere between purchase and the third month of usage. The framework forces you to examine the post-purchase stages with the same rigor you apply to top-of-funnel marketing, revealing gaps in onboarding, early value delivery, or support responsiveness that your acquisition-focused dashboards don't surface.
-- When multiple teams, marketing, sales, product, and customer success, are all working on 'the customer experience' but using different language, different metrics, and different mental models. The five-stage framework provides a shared vocabulary that lets a marketing manager and a support lead discuss the same customer without talking past each other. It's especially useful during cross-functional planning sessions or quarterly reviews.
-- When you're launching a new product or entering a new market and need to design the end-to-end experience from scratch. Rather than defaulting to 'build the product, then figure out marketing, then figure out support,' the framework prompts you to design all five stages simultaneously, ensuring that the awareness promise aligns with the product reality and that retention and advocacy are considered before launch, not months after.
-- When you have customer data scattered across tools, analytics for awareness, CRM for consideration and purchase, product analytics for retention, and NPS for advocacy, but no unified view of how a single customer moves through the lifecycle. The framework provides the conceptual spine that lets you stitch these data sources into a coherent narrative and spot the points where customers stall or disappear.
-- When you're preparing a business case for investment in a specific part of the experience, like hiring more support staff or building an onboarding sequence, and need to show stakeholders how that investment connects to the larger lifecycle. The framework lets you point to a specific stage, quantify the drop-off, and argue for resources with a systems-level view rather than a departmental wish list.
+- Acquisition looks healthy but churn is rising. The framework forces the post-purchase stages to get the same scrutiny as the top of the funnel, which is usually where the unexplained loss sits.
+- Marketing, sales, product and success all work on "the customer experience" with different words and metrics. Five named stages give them one vocabulary for planning and for arguing about priorities.
+- You are launching a product or entering a market and need to design the whole relationship at once. Designing all five stages together keeps the promise made in awareness consistent with what the product delivers in retention.
+- Customer data is spread across the ad platform, the CRM, product analytics and survey tools. The stages give you a spine to join those sources into one view of how a customer moves.
+- You need a business case for investment in one part of the experience, such as onboarding or support staffing. Pointing to the drop-off at a specific stage makes the case in customer terms rather than as a department's request.
 
 ## When Not to Use
 
-- When you're a very early-stage startup with fewer than 50 customers and your primary challenge is finding product-market fit. At this stage, the five-stage framework can encourage premature optimization of a lifecycle that isn't yet stable. You don't have enough data to meaningfully map touchpoints or measure stage-to-stage conversion, and the framework might give you a false sense of structure when what you actually need is rapid, unstructured customer discovery. Focus on talking to customers directly before formalizing their journey into five boxes.
-- When the customer decision is genuinely instantaneous, like a low-cost impulse purchase with no consideration phase and no meaningful retention dynamic. Convenience store transactions or one-time event tickets don't benefit from five-stage analysis because several stages are either absent or trivially short. The framework assumes a meaningful lifecycle with multiple interactions, and it adds overhead without insight when applied to single-touch transactions.
-- When your real problem is internal process dysfunction rather than customer experience gaps. If engineering can't ship on time, or if sales and marketing have a fundamental misalignment about ideal customer profile, mapping the customer journey won't fix those issues. The framework can actually mask organizational problems by redirecting attention to external touchpoints when the root cause is internal. Fix the organizational dysfunction first, then map the journey.
-- When you're trying to understand a single, specific interaction in deep detail, like optimizing a checkout flow or reducing support ticket resolution time. The five-stage framework is a wide-angle lens. For micro-level optimization, you need tools like usability testing, task analysis, or service blueprints that zoom in on a single touchpoint rather than spanning the entire lifecycle. Using the five-stage model for this level of detail will produce vague recommendations.
-- When the customer's actual behavior involves frequent, rapid switching between stages that the linear model can't capture. Complex B2B enterprise sales with multiple stakeholders, each at different stages simultaneously, can break the framework's assumption that a single entity moves through stages sequentially. In these cases, you may need account-level journey models or stakeholder-specific maps that the basic five-stage model doesn't accommodate without significant adaptation.
+- You are still searching for product-market fit with a handful of customers. The lifecycle is not stable yet, and unstructured customer conversations will teach you more than a formal map.
+- The purchase is a single impulse transaction with no evaluation and no repeat relationship. Several stages are empty, and the framework adds overhead without insight.
+- The real problem is internal, such as sales and marketing disagreeing on the ideal customer. A journey map can hide that disagreement behind customer-facing fixes; resolve it first.
+- You need to optimize one interaction in depth, such as a checkout form. Use usability testing or a [service blueprint](https://www.nngroup.com/articles/service-blueprints-definition/), which shows the frontstage and backstage work behind a single touchpoint.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Identifying Pain Points and Drop-Off Moments in the Journey](../../skills/identifying-pain-points-and-drop-off-moments/SKILL.md) — Techniques for diagnosing where customers experience friction, frustration, or abandonment at each stage of the journey using qualitative and quantitative data.
-- [Building Visual Customer Journey Maps](../../skills/building-customer-journey-maps/SKILL.md) — Step-by-step process for creating visual journey maps that represent the five stages, including selecting formats, tools, and stakeholder collaboration techniques.
-- [Mapping Customer Touchpoints Across Journey Stages](../../skills/mapping-customer-touchpoints-across-stages/SKILL.md) — How to identify, catalog, and organize every customer interaction point within each of the five journey stages from awareness through advocacy.
-- [Aligning Content and Channels to Each Journey Stage](../../skills/aligning-content-and-channels-to-journey-stages/SKILL.md) — How to match the right marketing content types, messaging, and communication channels to awareness, consideration, purchase, retention, and advocacy stages.
-- [Activating Customer Advocacy and Referral Programs](../../skills/activating-customer-advocacy-and-referrals/SKILL.md) — How to systematically convert loyal customers into brand advocates through referral programs, reviews, testimonials, and community-building tactics.
-- [Adapting the Five-Stage Journey Framework for B2B Contexts](../../skills/adapting-journey-frameworks-for-b2b-contexts/SKILL.md) — How to modify the standard five-stage journey model to account for longer sales cycles, multiple stakeholders, and complex decision-making in B2B environments.
-- [Measuring KPIs and Metrics for Each Journey Stage](../../skills/measuring-journey-stage-kpis/SKILL.md) — Defining and tracking the right performance metrics—such as CAC, conversion rate, NPS, and CLV—for each of the five customer journey stages.
-- [Designing Retention and Loyalty Strategies Post-Purchase](../../skills/designing-retention-and-loyalty-strategies/SKILL.md) — Practical methods for building post-purchase engagement programs, loyalty loops, and churn-reduction tactics within the retention stage of the journey.
+- [Identifying Customer Journey Pain Points and Drop-Offs](../../skills/identifying-pain-points-and-drop-off-moments/SKILL.md): Find where customers stall, struggle or leave at each stage using behavioral data and qualitative feedback together.
+- [How to Create a Customer Journey Map That Drives Action](../../skills/building-customer-journey-maps/SKILL.md): Build a research-based, one-page map of the five stages that teams use in planning.
+- [Customer Journey Touchpoints Mapping Across Five Stages](../../skills/mapping-customer-touchpoints-across-stages/SKILL.md): Catalog every interaction in each stage, including ones you do not own, with an owner for each.
+- [Customer Journey Content Strategy by Stage](../../skills/aligning-content-and-channels-to-journey-stages/SKILL.md): Match content, message and channel to what a customer needs at each stage.
+- [Activating Customer Advocacy and Referral Programs](../../skills/activating-customer-advocacy-and-referrals/SKILL.md): Turn satisfied customers into referrals, reviews and references without buying fake enthusiasm.
+- [B2B Customer Journey Mapping: Adapting the Five Stages](../../skills/adapting-journey-frameworks-for-b2b-contexts/SKILL.md): Adjust the stages for buying groups, long cycles and account-level journeys.
+- [Measuring Customer Journey Metrics and KPIs by Stage](../../skills/measuring-journey-stage-kpis/SKILL.md): Choose, define and review one primary metric per stage plus the conversions between them.
+- [Designing Customer Retention Strategies for Loyalty](../../skills/designing-retention-and-loyalty-strategies/SKILL.md): Build onboarding, engagement and renewal programs that keep customers in the retention stage.
 
 ## FAQ
 
-**What is the customer journey in simple terms?**
+**Who created the five-stage customer journey framework?**
 
-The customer journey is the complete set of experiences a person has with your brand, from the first moment they become aware you exist through becoming a loyal advocate who recommends you to others. The five-stage framework breaks this into Awareness, Consideration, Purchase, Retention, and Advocacy. Each stage represents a different mindset, different needs, and different questions the customer is trying to answer. Think of it less as a straight line and more as a map of the territory a customer moves through.
+No one person invented the exact labels awareness, consideration, purchase, retention and advocacy. The closest documented source is the 5A customer path (Aware, Appeal, Ask, Act, Advocate) in Marketing 4.0 by Philip Kotler, Hermawan Kartajaya and Iwan Setiawan, [published by Wiley in 2016](https://www.wiley.com/en-us/Marketing+4.0%3A+Moving+from+Traditional+to+Digital-p-9781119341208). That model extended the much older AIDA funnel past the sale and ended in advocacy. The practitioner version on this page renames the stages and splits retention out as its own step.
 
-**What is the difference between a customer journey map and a sales funnel?**
+**How is it different from the AIDA funnel?**
 
-A sales funnel focuses on the company's perspective: how many prospects enter the top and how many convert at the bottom. It's a filtering model concerned with conversion rates. A customer journey map focuses on the customer's perspective: what they're experiencing, feeling, and needing at each point. The journey also extends past the sale into retention and advocacy, stages the traditional funnel ignores entirely.
+AIDA describes how an advertisement moves someone from attention to action, and it stops at the purchase. The five-stage framework treats the purchase as the middle of the relationship and adds retention and advocacy after it. That shift matters most for subscription and repeat-purchase businesses, where most of a customer's value arrives after the first sale. AIDA remains useful inside the awareness and consideration stages for writing individual campaigns.
 
-In practice, the best teams use both. The funnel shows volume and conversion efficiency. The journey shows why those numbers look the way they do.
+**Do customers really move through the stages in order?**
 
-**Does the five-stage customer journey framework work for B2B companies?**
+Often they do not. A referral can compress awareness, consideration and purchase into one conversation, and a poor support experience can send a loyal customer back to comparing alternatives. Summaries of Marketing 4.0 note that customers [may skip stages](https://valchanova.me/marketing-4-book-review/) of the 5A path. Use the order to organize work and measurement, and design each stage to handle customers who arrive out of sequence.
 
-Yes, but with important adaptations. B2B journeys typically involve multiple stakeholders who may be at different stages simultaneously. The awareness stage often happens through industry events and peer recommendations rather than ads. Consideration cycles are longer and involve formal evaluation criteria, procurement processes, and security reviews.
+**What metrics should each stage have?**
 
-The skill of [adapting the journey framework for B2B contexts](https://tryhamster.com/skills/adapting-journey-frameworks-for-b2b-contexts) covers these differences in detail. The core principle, that each stage has distinct needs, still holds, but B2B teams need to map per-stakeholder journeys in addition to the account-level journey.
+Choose one primary metric per stage and track the conversion between adjacent stages. Common picks are reach or branded search for awareness, trial or demo starts for consideration, conversion for purchase, churn or renewal rate for retention, and referrals or Net Promoter Score for advocacy. Bain defines [Net Promoter Score](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/) as the percentage of promoters minus the percentage of detractors on a zero-to-ten scale. Keep the list short enough that a leadership team can read it in one glance.
 
-**Why do customer journey mapping efforts fail in practice?**
+**How does this relate to a customer journey map?**
 
-The most common failure mode is creating a beautiful map based on assumptions rather than research. Teams sit in a conference room and guess what customers experience instead of interviewing them, reviewing support data, and analyzing behavioral analytics. The second failure mode is treating the map as a one-time project rather than a living document. Customer behavior changes, product features evolve, and competitors shift the landscape.
+The framework supplies the stages, and a journey map fills them with evidence. Nielsen Norman Group defines a journey map as [a visualization of the process a person goes through to accomplish a goal](https://www.nngroup.com/articles/journey-mapping-101/), with the actor, scenario, phases, actions, mindsets and opportunities laid out. The five stages usually become the map's top-level columns. Within each column you can use customer-named phases, which answers the Smaply critique that generic stages hide what customers really do.
 
-A journey map that isn't updated quarterly becomes fiction. The third failure is lack of ownership: the map exists but no one is accountable for acting on what it reveals.
+**Does the framework work for B2B?**
 
-**How does the customer journey framework work alongside OKRs and product roadmaps?**
+It works with adjustments. B2B purchases are usually [made by groups whose members can each veto the deal](https://hbr.org/2015/03/making-the-consensus-sale), so a single account can have people in different stages at once. Map the journey at the account level and add a layer for each buying role, and expect consideration and purchase to take much longer than in consumer journeys. The B2B skill in this method covers those changes.
 
-The customer journey provides the 'where' and 'why' while OKRs and roadmaps provide the 'what' and 'when.' If your journey analysis reveals that the consideration-to-purchase transition has a 60% drop-off, that finding becomes input for an OKR like 'Increase trial-to-paid conversion from 8% to 12% in Q3.' The roadmap then includes the specific features or improvements that address the identified friction. Without the journey framework, OKRs and roadmap items tend to reflect internal priorities (what's easy to build, what executives are excited about) rather than customer priorities.
+**How often should the journey be revisited?**
 
-**How many touchpoints should a customer journey map include?**
+Review the stage metrics on a fixed cadence, usually quarterly, and refresh the underlying map when something structural changes: a new segment, a new pricing model, a new channel or a jump in churn. A map that is never updated turns into a picture of last year's customer. Assign an owner for the map as well as for each stage so that the refresh actually happens.
 
-There's no magic number, but a useful rule of thumb is 5-15 touchpoints per stage for a first pass. Fewer than that and you're too abstract to act on the map. More than that and you risk information overload that makes it hard to prioritize. Start by capturing every touchpoint you can identify, then filter down to the ones that either carry the most traffic or have the strongest emotional impact.
+## Sources
 
-You can always drill into specific touchpoints later. The skill of [mapping customer touchpoints](https://tryhamster.com/skills/mapping-customer-touchpoints-across-stages) covers inventory techniques and prioritization in depth.
-
-**Is the customer journey always linear from awareness to advocacy?**
-
-Almost never, in practice. The five stages are a conceptual model, not a description of how individuals actually behave. A customer might hear about you from a friend (skipping most of awareness), trial your product immediately (compressing consideration), churn after two months, and then come back a year later starting from awareness again. McKinsey's research specifically showed that customers enter loyalty loops that skip consideration entirely on repeat purchases.
-
-The framework's value isn't in predicting the exact sequence. It's in ensuring you've designed for all five contexts, regardless of the order a given customer encounters them.
-
-**What metrics should I track at each stage of the customer journey?**
-
-At a high level: Awareness is measured by reach, impressions, and brand search volume. Consideration uses engagement metrics like time on site, content downloads, demo requests, and free trial signups. Purchase tracks conversion rate, average deal size, and time to close. Retention focuses on churn rate, feature adoption, support satisfaction, and repeat purchase rate.
-
-Advocacy measures NPS, referral rate, review volume, and user-generated content. The key is picking one primary metric per stage rather than drowning in data. The skill of [measuring journey stage KPIs](https://tryhamster.com/skills/measuring-journey-stage-kpis) provides detailed benchmarks and measurement approaches.
+- [Wiley: Marketing 4.0 by Kotler, Kartajaya and Setiawan](https://www.wiley.com/en-us/Marketing+4.0%3A+Moving+from+Traditional+to+Digital-p-9781119341208)
+- [MarkPlus: Learning Customer Journey With 5A](https://www.markplusinc.com/en/featured-insights/publications/customer-journey-5a)
+- [MarkPlus: About us](https://www.markplusinc.com/en/about-us)
+- [Branding Strategy Insider: Brands Must Retire The AIDA Model](https://brandingstrategyinsider.com/brands-must-retire-the-aida-model/)
+- [Valchanova: Marketing 4.0 book notes](https://valchanova.me/marketing-4-book-review/)
+- [Wikipedia: AIDA (marketing)](https://en.wikipedia.org/wiki/AIDA_(marketing))
+- [Smaply: Customer journey stages](https://www.smaply.com/blog/customer-journey-stages)
+- [Nielsen Norman Group: Journey Mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)
+- [Nielsen Norman Group: When and How to Create Customer Journey Maps](https://www.nngroup.com/articles/customer-journey-mapping/)
+- [Nielsen Norman Group: Service Blueprints Definition](https://www.nngroup.com/articles/service-blueprints-definition/)
+- [Lemon and Verhoef: Understanding Customer Experience Throughout the Customer Journey](https://research.rug.nl/en/publications/understanding-customer-experience-throughout-the-customer-journey/)
+- [HBR: The Value of Keeping the Right Customers](https://hbr.org/2014/10/the-value-of-keeping-the-right-customers)
+- [Bain & Company: Measuring your Net Promoter Score](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/)
+- [HBR: Making the Consensus Sale](https://hbr.org/2015/03/making-the-consensus-sale)
 
 ---
 

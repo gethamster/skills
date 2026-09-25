@@ -1,51 +1,37 @@
 # Examples: Defining the Customer's Core Functional Job
 
-## Example: B2C fintech startup defining a personal finance job
+## Household budgeting app
 
 **Scenario:**
 
-A 12-person fintech startup building a budgeting app. The team has conducted 15 customer interviews and has transcripts from onboarding calls. They have 3 weeks before a strategy offsite where the job statement needs to be finalized. The product currently serves young professionals aged 22-35.
+Illustrative scenario: a small team building a personal finance app has notes from ten customer conversations. The team's working definition of the job is "track expenses in the app", and every roadmap discussion starts from the app's screens.
 
 **Walkthrough:**
 
-The team pulled 87 verbatim quotes from interviews and tagged each with a candidate job. ' The first three failed the solution-independence test, because they are tied to specific activities within budgeting products. 'Track monthly spending' is a step, not a job. 'Build an emergency fund' is a desired outcome, not a job.
+The team lists the verbs customers used: "stay on top of", "stop overspending", "know where the money went", "save for a trip". They draft candidates, from "manage personal finances" to "categorize a purchase". The why and how test removes both ends. "Manage personal finances" answers "how?" with a list of separate jobs such as paying bills, investing and filing taxes, so it is too broad. "Categorize a purchase" answers "why?" with a larger task customers care about, so it is too narrow.
 
-'Stop overspending on subscriptions' references a specific solution category. The team consolidated around 'manage personal finances over time,' which passed both altitude tests: they generated 18 distinct outcome statements, and the job clearly existed before any fintech product. Validation with 5 customers produced immediate recognition. The final documented statement included a competitive frame listing spreadsheets, envelope budgeting, financial advisors, bank apps, and non-consumption as alternative solutions.
+They settle on "keep household spending within a monthly plan", with the executor named as the person in the household who pays the bills. Two people they interview recognize the statement at once and describe the last month-end in detail. The team records "feel in control of money" as an emotional job, kept apart from the functional statement.
 
-This statement anchored the strategy offsite and directly fed into a job map with 8 process steps.
-
-## Example: B2B SaaS company defining a project coordination job
+## Field service scheduling for a trades business
 
 **Scenario:**
 
-A mid-stage B2B SaaS company (80 employees) selling project management software to marketing agencies. The product team has access to 200+ support tickets and 30 sales call recordings. They serve teams of 5-50 people working on client deliverables with tight deadlines.
+Illustrative scenario: a company selling scheduling software to plumbing firms wants to define the job before a research study. The buyer is the owner, but the person using the software every day is the office dispatcher.
 
 **Walkthrough:**
 
-The team initially proposed 'manage projects using agile methodology' as the core job. This failed the solution-independence test immediately, because agile is a methodology, not a job. Removing the methodology reference yielded 'manage projects,' which failed the altitude test as too broad (it could describe construction, software development, event planning, or anything else). ' The team tested this against their support tickets and found that 78% of tickets aligned with this job scope.
+The team first writes the job from the owner's point of view, "grow the business", and finds it covers everything from hiring to pricing. They name the dispatcher as the job executor and write the owner's concerns down separately as buyer criteria. Candidate statements such as "book jobs in the calendar" fail the solution test, because the calendar is a tool.
 
-They validated with 4 agency owners who confirmed the statement resonated. The competitive frame expanded beyond other PM tools to include email threads, shared spreadsheets, Slack channels, and whiteboards. The contextual clarifier 'from brief to handoff' was critical because it scoped the job to the lifecycle their product actually supports, excluding pre-sale scoping and post-delivery maintenance, which are related but separate jobs.
+The final statement is "assign each service request to a technician who can complete it on time". Dispatchers confirm it describes their day, and the team notes that emergency calls may be a related job worth its own study.
 
-## Example: Healthcare startup defining a patient monitoring job
+## Internal platform team
 
 **Scenario:**
 
-A 6-person healthcare startup building a remote patient monitoring platform for managing chronic conditions. They have access to transcripts from 10 interviews with patients and 8 interviews with clinicians. Regulatory constraints mean the product can only support specific clinical workflows.
+Illustrative scenario: a platform team supporting about fifty product engineers wants to use JTBD to plan its next half-year. Its current backlog is a list of tooling requests.
 
 **Walkthrough:**
 
-The team started with 'monitor patients remotely,' which is solution-dependent (it assumes remote monitoring technology). Stripping the solution yielded 'monitor patient health indicators,' which felt too narrow because it described one step in a larger job. ' This passed the solution-independence test (patients managed chronic conditions long before remote monitoring existed, using journals, phone calls to nurses, and self-observation). It also passed the altitude test, generating 14 outcome statements across medication adherence, symptom tracking, lifestyle adjustments, and clinician communication.
+The team reviews the requests and sees that most mention a specific tool: faster builds, a new deploy button, better logs. It asks what engineers are trying to achieve when they use those tools. The recurring answer is getting a change into production without breaking anything.
 
-The 'between clinical visits' clarifier was essential because it distinguished this job from the clinician's job during a visit. The competitive frame included paper symptom diaries, phone-a-nurse services, pharmacy consultations, patient portals, and caregiver observation. Both patient and clinician interviewees validated the statement, though clinicians initially tried to reframe it around their own workflow rather than the patient's perspective.
-
-## Example: Large enterprise defining an internal knowledge management job
-
-**Scenario:**
-
-A Fortune 500 company's internal product team is building a knowledge management platform for 15,000 employees across 40 offices. They have data from an internal survey with 2,300 responses and 20 contextual inquiry sessions observing employees searching for information.
-
-**Walkthrough:**
-
-The initial proposal was 'find information in the company wiki,' which is deeply solution-bound. ' The second version failed the altitude test as too broad, since it could describe attending a training session, asking a colleague, or reading a textbook. ' This passed both tests: it generated 16 outcome statements covering discoverability, accuracy, recency, applicability, and time-to-use. It also passed the solution-independence test since employees in the pre-digital era had the same job, using filing cabinets, departmental binders, and hallway conversations.
-
-The competitive frame included asking colleagues directly, calling subject matter experts, searching email archives, recreating knowledge from scratch, and simply guessing. The 'institutional' qualifier was important because it excluded general professional knowledge (which is a different job served by external learning platforms) and focused on company-specific knowledge that only exists inside the organization.
+The team writes "release a code change to production safely" with the product engineer as executor. It deliberately leaves incident response out of scope as a separate job. The statement then becomes the input to a job map built with the engineers themselves.

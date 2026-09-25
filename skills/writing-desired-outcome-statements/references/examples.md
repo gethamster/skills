@@ -1,49 +1,41 @@
 # Examples: Writing Desired Outcome Statements
 
-## Example: B2B SaaS Product for Financial Auditing
+## Confirm step of an invoice-paying job
 
 **Scenario:**
 
-A product team building software for financial auditors has completed 12 JTBD interviews and mapped the core functional job 'Audit a client's financial statements' into 10 steps. The team has two product managers and one UX researcher writing outcomes. They are targeting a survey of 200 auditors to identify opportunities.
+Illustrative scenario: a team has a job map for "pay suppliers the correct amount on time" and interview quotes for the confirm step, "verify the amount and payee details". Quotes include "I'm never sure the bank details are still right" and "I have to check the purchase order by hand".
 
 **Walkthrough:**
 
-' They draft outcomes following the formula. ' They continue through all 14 phrases, producing 11 unique outcomes after merging 3 near-duplicates. They repeat this for all 10 steps, producing 97 total outcomes. During the cross-step review, they standardize 'supporting documentation' versus 'backup documents' to a single term ('supporting documentation') and catch 4 duplicates across steps, bringing the final count to 93.
+The team lists the struggles: uncertainty about bank details, manual matching against orders, and not knowing whether a price changed. It turns each into a statement in the same structure:
 
-They validate with 4 audit managers, revising 18 statements for clarity and adding 6 new outcomes the managers volunteered. The final validated list of 99 outcomes goes into a quantitative survey instrument.
+- Minimize the likelihood of paying to outdated bank details.
+- Minimize the time it takes to confirm that the invoice matches what was ordered.
+- Minimize the likelihood of missing a price change since the last order.
 
-## Example: Consumer Product for Home Cooking
+A draft statement, "have automatic bank detail checks", is struck because it describes a solution. The underlying need is already covered by the first statement.
+
+## Define step of a weeknight cooking job
 
 **Scenario:**
 
-A small team of 2 at a kitchen appliance startup has conducted 8 interviews with home cooks. The core functional job is 'Prepare a weeknight dinner for the family.' The job map has 8 steps. The team needs outcomes to prioritize features for their next appliance.
+Illustrative scenario: a recipe app team is writing outcomes for "decide what to cook given who is eating". Cooks said they struggle with picky eaters, forgotten ingredients and repeating the same meals.
 
 **Walkthrough:**
 
-' Note how the second statement includes both the object ('fresh vegetables') and a tight context ('when preparing a meal under time pressure') that distinguishes it from leisurely weekend cooking. Across all 8 steps, they produce 64 outcomes. Because they had fewer interviews, they find that steps 6 ('Cook the meal') and 7 ('Plate and serve') have only 3 outcomes each. They schedule 2 additional short interviews focused on those steps, which adds 9 more outcomes.
+The team writes statements such as "minimize the time it takes to choose a meal everyone in the household will eat" and "minimize the likelihood of choosing a meal that needs an ingredient not at home". A proposed statement, "maximize variety", is too vague to rate, so it becomes "minimize the likelihood of repeating the same meal too often".
 
-The final list of 73 outcomes is lean but sufficient for a focused survey of 150 home cooks.
+When they test the list with a few cooks, one statement about "dietary constraints" is misread as medical diets only. They rewrite it to name allergies and preferences explicitly.
 
-## Example: Enterprise HR Platform for Employee Onboarding
+## Editing a long list before a survey
 
 **Scenario:**
 
-A product team at a mid-size HR tech company is reworking their onboarding module. They have 15 interviews with HR managers and hiring managers. The core job is 'Onboard a new employee to full productivity.' The job map has 12 steps, and the team expects a large survey of 400 HR professionals across industries.
+Illustrative scenario: a platform team has drafted a long outcome list for "release a code change to production safely" and worries the survey will take too long.
 
 **Walkthrough:**
 
-The team assigns pairs of writers to groups of 3-4 job steps each. ' The second outcome highlights a count-based metric ('number of separate requests') rather than the more common time or likelihood, showing the range of valid metrics. After all pairs complete their steps, the full team meets for a 2-hour cross-step review session. They find that 'minimize the time it takes to communicate expectations to the new hire' appeared under both Step 3 ('Set role expectations') and Step 8 ('Conduct initial performance check-in').
+The team reads the whole list in one pass. It merges near-duplicates such as "minimize the time to find the service owner" and "minimize the time to identify who owns an affected service". It splits "minimize the time and effort to roll back" into separate time and effort statements, then drops the effort one because engineers treated them as the same.
 
-' The final list contains 134 outcomes, which they trim to 118 after a validation round with 5 HR directors, removing 8 outcomes rated as 'not really relevant to my job' and revising 22 for clarity.
-
-## Example: Startup Building a Developer Tool for API Testing
-
-**Scenario:**
-
-A solo product manager at a seed-stage startup has conducted 6 interviews with backend developers. The job is 'Validate API endpoint behavior.' The job map has 7 steps. The PM needs to move fast and plans to survey 100 developers via an online panel.
-
-**Walkthrough:**
-
-Because the PM is working alone, they timebox outcome writing to two 90-minute sessions. In the first session, they cover steps 1-4. ' The PM notices a temptation to write 'Minimize the time it takes to set up Postman collections,' catches the solution reference ('Postman'), and revises to the solution-free version above. Across all 7 steps, they produce 52 outcomes.
-
-' This yields 7 additional outcomes from survey respondents, which the PM adds in a second version of the outcome list for future research.
+It standardizes the metric words so "chance of" and "risk of" both become "likelihood of". The final list is shorter, uses one structure throughout, and every statement has been read back correctly by at least one engineer.
