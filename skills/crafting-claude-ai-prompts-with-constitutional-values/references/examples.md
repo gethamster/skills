@@ -1,51 +1,37 @@
-# Examples: Crafting Claude AI Prompts Aligned with Constitutional Values
+# Examples: Claude AI Prompts Built on Constitutional Values
 
-## Example: B2B SaaS blog post targeting an informational keyword
-
-**Scenario:**
-
-A project management SaaS company wants to create a blog post targeting "what is resource leveling" (1,900 monthly searches, informational intent). The content team has one writer and uses Claude to produce first drafts. Previous AI drafts were generic and required heavy editing for accuracy.
-
-**Walkthrough:**
-
-The writer identifies the audience as mid-level project managers who understand basic scheduling but have not encountered resource leveling formally. The primary constitutional principle is honesty because the reader needs accurate, trustworthy information. The prompt opens with: "You are an experienced project management consultant who has implemented resource leveling on projects ranging from 10 to 500 people. " The task section specifies a 1,000-1,400 word article with the honesty constraint: "Distinguish between situations where resource leveling is essential versus situations where it adds unnecessary complexity.
-
-" The output produces a balanced, expert-toned article that required only 15 minutes of editing for company voice, compared to the previous 90-minute rewrites. The writer saves the prompt as the "Informational Explainer" template.
-
-## Example: Comparison page for a small marketing agency
+## A landing page brief that kept asking for statistics
 
 **Scenario:**
 
-A three-person marketing agency needs to create a comparison page targeting "mailchimp vs convertkit" (4,400 monthly searches, commercial investigation intent). They use one of these tools themselves but want the page to rank and build trust, not just promote their preference.
+Illustrative scenario: a marketing team's prompt for landing pages says "write persuasive copy with strong statistics to build trust." Drafts come back either with vague claims ("many teams report...") or with a note from Claude that it has no data to cite.
 
 **Walkthrough:**
 
-The agency owner identifies the audience as solopreneurs and small business owners choosing their first or second email marketing platform, with basic understanding of email marketing but limited technical knowledge. The primary constitutional principle is harmlessness because the reader needs a fair comparison. " The task specifies a structured comparison with the harmlessness constraint: "Present genuine strengths and weaknesses for both platforms. " The honesty constraint adds: "Use current pricing tiers and feature sets.
+The team realizes the prompt asks for evidence it never supplies. They add a sources block with the two figures they can support, each with its origin, and an instruction to use only those figures and to flag any other claim that would need data. They keep the request for persuasive copy, since that is a normal task.
 
-If a feature has changed recently, note the approximate date of change. " The output produces a comparison table with nuanced commentary that acknowledges tradeoffs rather than declaring a winner. The page earns featured snippet placement for the query within three months because Google's systems reward the balanced, well-structured treatment. The template is saved as "Product Comparison" with a note that harmlessness constraints should always be the strongest layer for vs-style content.
+The next draft uses both figures accurately and flags one sentence about time savings as unsupported. The team either finds a source for it or cuts it. Drafts now arrive ready for review instead of needing a fact-check pass that removes half the claims.
 
-## Example: Enterprise content team scaling how-to guides
+## A help article that read like marketing
 
 **Scenario:**
 
-A 12-person content team at a cybersecurity company needs to produce 20 how-to guides per month targeting implementation keywords like "how to configure SIEM alerts" and "how to set up endpoint detection." Their current AI output is technically shallow and sometimes includes outdated best practices.
+Illustrative scenario: a support team uses the same prompt as marketing to write help articles. The drafts open with benefits and bury the steps readers came for.
 
 **Walkthrough:**
 
-The content lead maps all 20 topics and identifies that helpfulness is the primary principle because readers need to accomplish specific technical tasks. The prompt template assigns Claude the role of a senior security engineer with 10+ years of enterprise experience. The helpfulness layer specifies: "The reader is a mid-level security analyst implementing this for the first time in a production environment. They need precise steps, not conceptual overview.
+The team rewrites the goal and audience: the reader is an existing customer who is stuck on a task and wants the steps in order, with the fix for the most common error. They add a short example of a good help article in example tags and a constraint with a reason: no promotional language, because readers arrive frustrated and want the answer.
 
-" The honesty layer adds: "If a best practice has changed in the last 12 months due to new threat vectors or vendor updates, note the evolution rather than presenting only the current recommendation. " The harmlessness layer specifies: "Do not recommend disabling security features for convenience. " The team tests this template against three different topics and finds that the output is consistently strong on helpfulness and honesty but occasionally too conservative on harmlessness, recommending overly restrictive configurations for non-critical systems. They add: "Calibrate security recommendations to the sensitivity of the system being configured.
+The drafts change immediately. The prompt did not need more rules; it needed the reader and the purpose. The support team saves it as a separate template from the marketing one.
 
-" This refinement produces output that the security reviewers approve with minor edits, reducing the per-article review cycle from four days to one.
-
-## Example: Solo consultant creating cornerstone content
+## A comparison page and a keyword instruction
 
 **Scenario:**
 
-An independent SEO consultant wants to create a 3,000-word cornerstone guide targeting "programmatic SEO strategy" (720 monthly searches). They have deep expertise but limited time, so they need Claude to produce a draft that captures their nuanced perspective rather than a generic overview.
+Illustrative scenario: an SEO lead wants a comparison page to include a target phrase many times and adds "repeat the keyword in every section."
 
 **Walkthrough:**
 
-The consultant identifies the audience as heads of marketing at mid-stage startups (Series A to C) who have heard of programmatic SEO but have not implemented it. The audience is skeptical because they have seen low-quality examples. All three constitutional principles are weighted equally because the content needs to be deeply useful (helpfulness), transparent about risks and failure modes (honesty), and fair about when programmatic SEO is not the right strategy (harmlessness). The prompt includes specific examples of the consultant's perspective: "I believe most programmatic SEO fails because teams prioritize page count over page value.
+Claude's draft uses the phrase in every section, and the result reads awkwardly. The lead replaces the instruction with a reason-based one: use the phrase naturally in the title, the first paragraph and one heading, because that is how readers search, and otherwise write for clarity.
 
-" The honesty constraint specifies: "Include at least three specific failure modes with the observable symptoms that indicate each one. " The output produces a draft that sounds like the consultant's voice, includes their distinctive perspective, and handles the topic with the kind of nuanced, experience-backed authority that both readers and search engines reward. The consultant spends 45 minutes adding personal anecdotes and client examples to the draft, then publishes. The piece becomes their top-performing page for lead generation because it demonstrates genuine expertise rather than regurgitated best practices.
+The revised draft reads well and still uses the phrase where it matters. The lead adds the same wording to the team's template library so other writers do not rediscover the problem.

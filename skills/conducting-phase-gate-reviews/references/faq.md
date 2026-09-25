@@ -1,25 +1,21 @@
-# FAQ: Conducting Phase Gate Reviews
+# FAQ: Conducting Phase Gate Reviews in a Waterfall Project
 
-## How many gate reviews should a waterfall model project have?
+## What is a waterfall gate review?
 
-A typical waterfall model project has one gate review between each sequential phase—usually 4-6 gates total (e.g., after requirements, design, development, testing, and deployment). The exact number depends on how many phases you've defined in your project plan.
+It is the formal review at the end of a waterfall phase that decides whether the next phase may start. The phase's deliverables are checked against exit criteria agreed in advance, and the people who control the next phase's resources record a decision. Typical outcomes are go, conditional go, recycle, and hold or stop.
 
-## Who should attend a phase gate review in a waterfall project?
+## Is a phase gate the same as Stage-Gate?
 
-Required attendees typically include the project sponsor or steering committee (decision authority), the phase lead who produced the deliverables, quality assurance representatives, and key stakeholders who will consume the deliverables in the next phase. Subject matter experts attend as needed based on the phase content.
+They share a structure but come from different contexts. Stage-Gate is Robert G. Cooper's model for new product development, where gates decide whether to keep investing in an idea that is still being shaped. A waterfall phase gate usually sits inside a project with fixed scope and focuses on whether a deliverable is complete and correct enough to build on. Many organizations use the words interchangeably.
 
-## What happens if a gate review results in a No-Go decision?
+## Who should attend a gate review?
 
-The team returns to the current phase to address the specific deficiencies identified. The decision record specifies what needs to be fixed, and a re-review date is scheduled. The project plan is updated to reflect the delay, and stakeholders are notified of the revised timeline.
+The decision-maker or board that controls budget and scope for the next phase, the project manager, the leads who produced the deliverables, and technical reviewers who read them in advance. Where a contract names customer reviews, the customer's representative attends too. Keep the group small enough to decide in one meeting.
 
-## How long should a phase gate review meeting last?
+## What goes on a phase gate checklist?
 
-Most gate reviews take 60-120 minutes depending on project complexity and the number of exit criteria. Simple phases with clear deliverables may need only 45 minutes, while complex phases with regulatory requirements might require a half-day session.
+Each exit criterion for the phase, written so it can be answered yes or no with evidence. Include completeness items, such as whether each required deliverable exists and has been reviewed, and quality items, such as whether requirements are testable and traceable. Add a line for open risks and one for conditions carried from earlier gates.
 
-## Can gate reviews be conducted remotely in a waterfall project?
+## What happens if the gate is not passed?
 
-Yes, gate reviews can be conducted remotely using video conferencing, provided all required attendees can participate, review materials are shared digitally in advance, and digital signatures are accepted for the decision record. The key is maintaining the same rigor and formality as an in-person review.
-
-## What is the difference between a gate review and a peer review in the waterfall model?
-
-A peer review is a technical review of specific deliverables conducted by peers during a phase (e.g., code review or document review). A gate review is a formal management decision point between phases that evaluates whether all exit criteria are met and authorizes the project to proceed. Peer reviews feed into gate reviews but don't replace them.
+The decision-maker chooses between a conditional go, a recycle of specific parts, a hold, or stopping the project. Whatever the choice, it is recorded with owners and dates, and the schedule is updated to reflect it. A recycle is a normal outcome and usually costs far less than carrying a defect into the next phase.

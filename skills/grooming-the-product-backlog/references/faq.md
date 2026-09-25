@@ -1,25 +1,21 @@
-# FAQ: Grooming and Refining the Product Backlog
+# FAQ: Backlog Grooming and Product Backlog Refinement
 
-## What is the difference between backlog grooming and scrum backlog refinement?
+## Is backlog grooming the same as backlog refinement?
 
-They are the same activity. 'Backlog grooming' was the original term used in early Scrum literature, but the Scrum community shifted to 'backlog refinement' because 'grooming' has negative connotations in some cultures. The Scrum Guide uses 'Product Backlog refinement' as the official term.
+Yes. The Scrum Guide used "grooming" when it first added the practice and switched to "refinement" in 2013. Atlassian says there is no difference between the two terms. Atlassian adds that refinement has gained popularity in recent years, and refinement is the term the current Scrum Guide uses.
 
-## How often should scrum backlog refinement sessions happen?
+## Is backlog refinement a Scrum event?
 
-Most teams hold one or two refinement sessions per sprint. For a two-week sprint, a weekly 1-hour session works well. The Scrum Guide recommends investing no more than 10% of the Development Team's capacity in refinement, so adjust frequency based on your team size and backlog complexity.
+No. The Scrum Guide lists five events: the Sprint, Sprint Planning, the Daily Scrum, the Sprint Review and the Sprint Retrospective. Refinement is described as an ongoing activity. Some teams hold a recurring backlog refinement meeting, which is a practice they choose, and refinement also happens informally throughout the Sprint.
 
-## Who should attend backlog refinement meetings?
+## Who attends a backlog refinement meeting?
 
-The Product Owner and the entire Development Team should attend. The Scrum Master facilitates if needed. Stakeholders or subject matter experts can be invited for specific items, but the core participants are always the PO and dev team to ensure both business context and technical feasibility are represented.
+The Product Owner and the Developers who will do the work. The Product Owner brings the items and explains the intent; the Developers ask questions, suggest splits and size the items. The Scrum Master may facilitate or coach. Stakeholders or experts can join when their knowledge is needed for specific items.
 
-## What is a Definition of Ready and do I need one for backlog refinement?
+## What is a Definition of Ready in Scrum?
 
-A Definition of Ready is a team-agreed checklist of criteria a backlog item must meet before it can be pulled into a sprint — such as having acceptance criteria, an estimate, and no unresolved dependencies. While not required by the Scrum Guide, most mature teams find it essential for preventing poorly defined work from entering sprints.
+It is a team-made checklist of what an item needs before it can be selected in Sprint Planning. The current Scrum Guide does not define one; it only says items that can be Done within one Sprint are ready for selection. A short checklist can help teams that often start work on unclear items. Keep it light, so it prompts conversation rather than blocking work.
 
-## How far ahead should I refine the product backlog?
+## How far ahead should we refine?
 
-Refine 1-2 sprints ahead in detail. Items beyond that horizon should remain at the epic level with minimal investment. Refining too far ahead wastes effort on items that may be reprioritized or removed, while not refining far enough creates sprint planning bottlenecks.
-
-## Can scrum backlog refinement replace sprint planning?
-
-No. Refinement prepares items to be sprint-ready, but sprint planning is where the team selects which refined items to commit to and creates a plan for delivering them. Think of refinement as preparation and sprint planning as commitment — both are necessary in the Scrum framework.
+Refine in detail only the items likely to be selected in the next few Sprints. Items further down can stay coarse until they get closer, since priorities and understanding will change. Atlassian suggests grouping the backlog into near-term items, which are fully fleshed out, and longer-term items, which can stay vague.

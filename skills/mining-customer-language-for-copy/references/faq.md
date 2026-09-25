@@ -1,25 +1,25 @@
 # FAQ: Mining Customer Language for Persuasive Copy
 
-## How many customer reviews do I need to read before I have enough language to write copy?
+## What is voice of customer copywriting?
 
-Aim for 50-100 reviews or data points across multiple sources. You'll start seeing repeated phrases after about 30 entries—that's when patterns emerge. If the same pain point or phrase appears 5+ times, you have a high-confidence power phrase ready for your copy.
+Voice of customer copywriting builds copy from the words customers use to describe their problems, goals and doubts. The research gives you the phrases, and the writing arranges them into headlines, benefits and answers to objections. It works because readers recognize their own situation faster in their own words than in a company's product terms.
 
-## Is mining customer language a form of copywriting for beginners or do experts use it too?
+## How much customer language do I need before I start writing?
 
-This technique is ideal for copywriting for beginners because it removes the need to invent persuasive language from scratch. However, it's also the go-to method for expert copywriters—legendary copywriter Eugene Schwartz said he never wrote copy, he just "assembled" it from customer research. The skill scales from beginner to expert.
+There is no fixed number. Keep collecting until new sources mostly repeat themes you already have, and make sure each theme you plan to lead with appears in more than one kind of source. A small, well-sorted file from reviews, tickets and a few interviews is more useful than a large unsorted one.
 
-## Can I use customer language from competitors' reviews legally?
+## Can I use language from competitors' reviews?
 
-Yes, publicly posted reviews are fair game for research and inspiration. You're extracting language patterns and phrases, not copying proprietary content. Just don't fabricate fake testimonials or attribute a competitor's customer quote to your product. Use their language patterns to inform your original copy.
+You can learn from public reviews of competing products, which is how many writers find the words of buyers who have never heard of them. Use what you learn to shape your own copy. Do not present a competitor's customer as your customer, and do not publish anyone's words as a testimonial for you without their agreement.
 
-## What if I don't have customer reviews or support tickets yet because my product is new?
+## What if the product is too new to have reviews or tickets?
 
-Mine your competitors' reviews, search Reddit and forums for discussions about the problem you solve, and conduct 5-10 short interviews with people in your target audience. Even a pre-launch product can build a robust swipe file from these secondary sources.
+Mine reviews of the products your buyers use today, read community threads about the problem, and run a handful of short interviews with people who have it. Ask them to describe the last time the problem happened and what they tried. Those answers are often more concrete than reviews.
 
-## How do I know which customer phrases will actually convert better?
+## How do I know which phrases will work best?
 
-Frequency and emotional intensity are your two best indicators. A phrase that appears repeatedly across multiple sources reflects a widely shared experience. A phrase that contains vivid, emotional language (frustration, relief, excitement) will trigger recognition in readers. A/B test your top phrases in headlines to validate with data.
+Research tells you which phrases are common and strongly felt, and testing tells you which ones move readers. Put the strongest candidates into the elements you can test, such as the headline or the email subject line, and compare them against the current copy. Record the result next to the quote in your file.
 
-## How often should I update my customer language swipe file?
+## How is this different from writing customer personas?
 
-Review and add new phrases monthly, especially after product updates, new feature launches, or market shifts. Customer language evolves as your audience and competitive landscape change. A swipe file that's more than 6 months old without updates will start to feel stale and less accurate.
+Personas summarize who the customer is. Language mining keeps what the customer actually said. The two work together: a persona tells you which segment a page is for, and the quote file gives you the words to use on that page.

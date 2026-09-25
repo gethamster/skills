@@ -1,187 +1,172 @@
 ---
-category: Workflows
+name: "kanban"
+category: "Workflows"
+description: "Kanban is a pull-based way to manage knowledge work with a kanban board, WIP limits and flow metrics, rooted in the Toyota Production System."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Kanban: The Visual Workflow Method for Continuous Delivery
+# Kanban: Boards, WIP Limits and Flow for Knowledge Work
 
-> Created by **Taiichi Ohno**
+> Created by **Taiichi Ohno (Toyota Production System kanban)** - [https://www.toyota-global.com/company/history_of_toyota/75years/text/entering_the_automotive_business/chapter1/section4/item4.html](https://www.toyota-global.com/company/history_of_toyota/75years/text/entering_the_automotive_business/chapter1/section4/item4.html)
 
 ## Overview
 
-Kanban is a method for managing the flow of work by making it visible, limiting how much work happens at once, and continuously improving the system that produces outcomes. At its core, it replaces push-based planning ("here's what you must finish this sprint") with pull-based flow ("take the next item only when you have capacity"). The result is a system that adapts to changing priorities without requiring teams to wait for a planning boundary or renegotiate commitments mid-cycle.
+Kanban is a way of managing work by making it visible, controlling how much of it is in progress, and starting new work only when there is capacity to finish it. The Kanban Guide by John Coleman and Daniel Vacanti defines it as "a strategy for optimizing the flow of value through a process" built on three practices: defining and visualizing a workflow, actively managing the items in it, and improving it ([The Kanban Guide](https://kanbanguides.org/english/)). In daily use, the kanban methodology looks simple: a kanban board with columns for the stages work passes through, a card for each item, a limit on how many cards each stage may hold, and a few measurements of how long items take.
 
-The method originated in Toyota's manufacturing system during the late 1940s and 1950s, where engineer Taiichi Ohno developed a signal-card system (the Japanese word "kanban" translates roughly to "visual signal" or "signboard") to synchronize production with actual demand. Rather than building inventory based on forecasts, factory workers would send a card upstream to request more parts only when their station needed them. This just-in-time approach eliminated overproduction, reduced waste, and exposed inefficiencies that had been hidden by excess inventory.
+The word comes from manufacturing. Kanban is Japanese for "sign" or "signboard," and in the [Lean Enterprise Institute's lexicon](https://www.lean.org/lexicon-terms/kanban/) a kanban is a signaling device that authorizes production or withdrawal of items in a pull system. Toyota's own history says the Just-in-Time idea was not fully realized until the "supermarket method" was proposed in 1954, with later processes taking what they need from earlier ones and the kanban as the tool for doing it ([Toyota, The Origins of Just-in-Time](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter2/section4/item5.html)). Toyota adopted its kanban management system at all plants in 1963, and its history credits Taiichi Ohno (spelled Ono there) with establishing the Toyota Production System around Just-in-Time and jidoka ([Toyota, Development of TPS](https://www.toyota-global.com/company/history_of_toyota/75years/text/entering_the_automotive_business/chapter1/section4/item4.html)).
 
-In 2007, David J. Anderson adapted these manufacturing principles for knowledge work, formalizing what became known as the Kanban Method for software development and, eventually, any kind of project work. Anderson's insight was that the same physics applies: knowledge workers drown in context-switching when they juggle too many tasks, just as a factory floor chokes when overloaded with work-in-progress. His book, "Kanban: Successful Evolutionary Change for Your Technology Business" (2010), codified the method's core practices: visualize work, limit WIP, manage flow, make policies explicit, implement feedback loops, and improve collaboratively.
+Kanban for knowledge work is a later adaptation. The Kanban Guide says the practices now called Kanban "mainly originated on a team at Corbis in 2006" ([The Kanban Guide](https://kanbanguides.org/english/)). The [Agile Alliance timeline](https://www.agilealliance.org/glossary/kanban/) traces the approach to David J. Anderson, who applied a kanban pull system on a Microsoft IT project in 2004 and identified the Kanban Method at Corbis in 2006-2007. Anderson's book, Kanban: Successful Evolutionary Change for Your Technology Business, followed in 2010, and Kanban University's official guide describes the Kanban Method as based on it ([Kanban University](https://kanban.university/kanban-guide/)).
 
-What distinguishes kanban from other agile and lean approaches is its commitment to evolutionary change. Scrum prescribes roles (Scrum Master, Product Owner), ceremonies (sprint planning, retrospectives), and timeboxes (two-week sprints). Kanban prescribes almost nothing about your existing structure. You start with what you do now, visualize it, and then improve incrementally. There are no mandatory role changes, no required meeting cadences, no sprint boundaries. This makes kanban uniquely approachable for teams that cannot or do not want to reorganize around a framework, and it makes kanban a natural complement to other methods rather than a replacement.
+Today two published definitions coexist, and they are worth keeping apart. The Kanban Method from Anderson and Kanban University is a change-management method: it starts from how you work now, adds visualization, WIP limits and feedback loops, and evolves the process through small, safe-to-fail experiments ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). The Kanban Guide is narrower and centered on flow. It requires a written Definition of Workflow, four flow metrics and a service level expectation, and it says plainly that improvements do not have to be small or incremental. Both agree on the mechanics that turn a board into a kanban system.
 
-Over the past fifteen years, kanban has evolved well beyond its software development roots. Marketing teams use it to manage campaign workflows. Operations teams track support tickets through triage and resolution. Hardware teams coordinate design reviews and manufacturing handoffs. The method scales up through portfolio kanban boards that visualize initiatives across departments, and scales down to personal productivity boards for individual contributors. The Kanban University community has formalized maturity models and advanced practices like kanban flight levels, service classes, and Monte Carlo forecasting, but the entry point remains disarmingly simple: a board, some columns, some cards, and an agreement to stop starting and start finishing.
+That distinction matters because the most common misunderstanding of kanban is that it is just a board with columns. A board without WIP limits, agreed policies or measurements shows work but does not manage it. The Kanban Guide requires that system members "explicitly control the number of work items in a workflow from started to finished," which is what turns the board into a pull system. The method lives in those constraints and in the conversations the data provokes.
 
-Kanban benefits teams most when work arrives unpredictably, priorities shift frequently, and the cost of context-switching is high. Support engineering teams, platform teams handling cross-cutting requests, and product teams running continuous discovery all tend to find kanban more natural than iteration-based methods. It also works well for teams that ship continuously (deploying multiple times per day) because the method optimizes for throughput and cycle time rather than batch delivery at sprint boundaries. Hamster provides a workspace where teams can run kanban with AI agents that help track flow metrics and surface bottlenecks automatically.
+Kanban suits work that arrives continuously and unpredictably: support and platform teams, operations, marketing production, and product teams that ship small changes often. Kanban project management applies the same pull system to work with a goal and an end, as described in [managing projects with kanban](../../skills/managing-projects-with-kanban/SKILL.md). It also layers onto other methods. Kanban University describes it as something you add to an existing way of working, and says it does not replace what you already do ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)), and many teams run it inside [Scrum](https://tryhamster.com/methods/scrum). Hamster gives teams a shared place to keep the board's policies and the decisions behind them, so people and AI agents read the same rules.
 
-The most common misunderstanding about kanban is that it is simply "a board with columns." A Trello board with no WIP limits, no flow metrics, and no feedback loops is not kanban. It is a task list with a spatial layout. The board is necessary but not sufficient. The method lives in the constraints you place on the board, the data you collect about how work flows through it, and the conversations you have about what the data reveals.
+How to use kanban well comes down to a short loop. Model the real workflow, put all active work on the board, cap work in progress, write down the rules for moving cards, meet regularly to look at flow, and change one thing at a time based on what the numbers show. The skills below cover each part of that loop in depth, from designing the board to choosing kanban software.
+
+## Three Meanings of Kanban
+
+People use the same word for three related things. Knowing which one a source means avoids a lot of confused debate.
+
+| Meaning | What it is | Core rules | Origin |
+|---|---|---|---|
+| Toyota kanban | A card or signal that authorizes production or withdrawal of parts | Later processes take only what they need; the kanban says which parts, how many, where and when | Adopted at all Toyota plants in 1963 ([Toyota](https://www.toyota-global.com/company/history_of_toyota/75years/text/entering_the_automotive_business/chapter1/section4/item4.html)) |
+| Kanban Method | A method for managing and improving knowledge-work services | Three change management principles, three service delivery principles, six general practices | Anderson's 2010 book ([Kanban University](https://kanban.university/kanban-guide/)) |
+| The Kanban Guide | A minimal definition of Kanban as a flow strategy | Definition of Workflow, WIP control, four flow metrics, SLE | Versions v2020.7 to v2025.5 by Coleman and Vacanti ([Kanban Guides](https://kanbanguides.org/english/)) |
+
+The Toyota system manages physical inventory between processes. The two knowledge-work definitions manage invisible work and add explicit policies and measurement. Where the Kanban Method and the Kanban Guide differ, the difference is mostly about change: the Method stresses evolutionary, collaborative change and a service-oriented view of the organization, while the Guide leaves the size and timing of changes to the team.
 
 ## Core Principles
 
-### Visualize Work
+### Start With What You Do Now
 
-Every piece of work, whether a feature, bug, experiment, or operational task, gets represented as a card on a shared board. The board's columns map to the actual stages work passes through, not an idealized process. Visualization does two things simultaneously: it creates shared awareness of what the team is working on, and it makes systemic problems impossible to ignore. When a column is visibly overflowing, the team cannot pretend the bottleneck doesn't exist.
+The Kanban Method's first change management principle is "Start with what you do now" ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). You model the workflow as it really runs, including the waiting and the rework, instead of the process you wish you had. Existing roles and titles stay in place. This lowers resistance, because nobody's identity is threatened on day one. A board that shows an aspirational process quickly goes stale while the real work happens elsewhere.
 
-Teams that skip visualization, or that let boards go stale, lose the feedback mechanism that makes every other kanban practice functional.
+### Visualize the Work and the Workflow
+
+Every work item gets a card, and the columns match the states work actually passes through. Kanban University notes that much work in organizations is hidden, and that visualizing it and its flow "greatly improves transparency." The board is where the team sees queues, blockers and aging items. It also carries the policies and limits that govern the work, so the board is the system's rulebook as well as its display.
 
 ### Limit Work in Progress
 
-WIP limits cap the number of items allowed in each column (or across the board) at any given time. This is the single most important constraint in kanban, and it is the one teams most often resist. Without WIP limits, a kanban board is just a to-do list. With them, the board becomes a pull system: new work enters only when an existing item moves forward.
-
-WIP limits force teams to finish before starting, reduce context-switching costs, and expose bottlenecks. The tradeoff is real discomfort. Stakeholders who want to see their request "in progress" must wait, and team members must help unblock stuck items rather than picking up new, easier work.
+A WIP limit caps how many items a column, lane, person or whole system may hold. When the count drops below the limit, that gap is the signal to pull new work; the Kanban Guide says members should start work "only when there is a clear signal that there is capacity to do so" ([The Kanban Guide](https://kanbanguides.org/english/)). Limits reduce context switching and make bottlenecks visible, because work piles up in front of the constrained stage. Kanban University's shorthand for the cultural shift is "Stop starting, start finishing."
 
 ### Manage Flow
 
-The goal of kanban is not to keep people busy. It is to keep work moving smoothly through the system. Managing flow means tracking metrics like cycle time (how long one item takes from start to finish), throughput (how many items complete per unit of time), and work item age (how long active items have been in progress). These metrics reveal whether the system is healthy or degrading.
+Managing flow means watching how work moves through the system and paying less attention to how busy each person is. The Kanban Guide names four mandatory flow metrics: WIP, throughput, work item age and cycle time. Kanban University argues that fully utilized systems have no slack and flow poorly, like a highway at rush hour. The practical consequence is that a team sometimes leaves capacity idle so that items already in progress can finish.
 
-Teams that focus on flow rather than utilization discover counterintuitive truths: leaving some people idle at times actually increases total throughput because it prevents the bottleneck columns from clogging.
+### Make Policies Explicit
 
-### Make Process Policies Explicit
-
-Every column transition on a kanban board implies a policy: what does "done" mean for this stage? Who can pull items into the next column? What information must be present before an item enters a given stage? When teams leave these policies implicit, disagreements fester and quality becomes inconsistent.
-
-Making policies explicit, even as simple annotations on the board itself, creates a shared contract the team can inspect and improve. It also makes onboarding faster because new team members can read the rules rather than absorbing them through osmosis over weeks.
+Every column implies rules: what must be true to pull a card in, what "done" means for the stage, how expedited work is handled, and when the board is replenished. Kanban University lists these as examples of policies and says they should be sparse, simple, well-defined, visible, always applied and readily changeable by the people providing the service. Written policies end arguments that come from different unspoken assumptions. They also let a newcomer learn the system by reading it.
 
 ### Implement Feedback Loops
 
-Kanban defines several cadences (regular meetings) designed to create feedback at different time horizons: the daily standup focuses on flow and blockers, the replenishment meeting decides what to pull into the system next, the delivery planning meeting coordinates releases, and the service delivery review examines metrics over time. Unlike Scrum's prescribed ceremonies, kanban cadences are optional and modular. Teams adopt whichever loops address their biggest pain points. The risk of skipping feedback loops entirely is that the board becomes a static display rather than a living system.
-
-Without regular inspection, WIP limits get violated, stale cards accumulate, and improvement stalls.
+Feedback loops are the board itself, the metrics, and a set of regular meetings and reviews called cadences. Anderson describes seven cadences, from a daily Kanban meeting to a strategy review, and expects existing meetings to be adapted or combined rather than seven new ones added ([Anderson, Kanban Cadences](https://djaa.com/kanban-cadences/)). Without regular inspection, limits erode and stale cards accumulate. With it, the data turns into decisions.
 
 ### Improve Collaboratively, Evolve Experimentally
 
-Kanban does not ask teams to adopt a target process on day one. Instead, it encourages teams to start with their current workflow, visualize it honestly, and then run small, safe-to-fail experiments to improve it. Change one WIP limit. Add or merge a column.
-
-Introduce a new policy for expedited items. Measure the result. Keep what works, revert what doesn't. This evolutionary approach reduces organizational resistance because it does not threaten existing roles, titles, or reporting structures.
-
-The tradeoff is that progress feels slower than a big-bang transformation, but the changes that stick tend to be durable because the team owns them.
-
-### Respect the Current Process
-
-Kanban explicitly starts from where you are. It does not prescribe new roles, new team structures, or new planning cycles. This principle exists because organizational change that ignores existing social and political realities tends to fail or create resentment. By respecting the current process, kanban earns trust before asking for change.
-
-Teams that violate this principle, for example by redesigning their board to reflect an aspirational process that nobody actually follows, end up with a board that looks clean and a workflow that operates in the shadows.
+The Kanban Method treats improvement as a series of experiments. You form a hypothesis, change one thing, observe the effect on flow, and keep or roll back the change. Kanban University describes these as safe-to-fail experiments that can be reversed if the results are poor. The Kanban Guide is less prescriptive and says a team that needs a significant change should make it. Both expect the workflow to keep changing as the team learns.
 
 ## Steps
 
-1. **Step 1: Map Your Current Workflow**
-   Before creating any board, observe and document how work actually flows through your team today. Interview team members about what happens after a request arrives: who receives it, what decisions are made, what handoffs occur, and where items tend to wait. Write down the stages as verbs or statuses ("Triaged," "In Design," "In Development," "In Review," "Deployed") rather than departments or people. Be honest about the real process, not the one you wish you had.
+1. **Map the current workflow**
+   Gather the people who do the work and trace what happens to a request from arrival to delivery. Kanban University's STATIK approach starts with sources of dissatisfaction, then analyzes demand and capability before modeling the workflow, and it recommends doing this with a representative group rather than one manager ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). Name the states items pass through and the points where they wait. Identify the commitment point, where the team agrees to deliver, and the delivery point. You are done when anyone on the team could predict an item's path from the map.
 
-A common mistake is designing an aspirational board that nobody follows, which guarantees the board becomes stale within weeks. You know you've done this step well when a new team member could read the map and roughly predict the journey of a work item from arrival to completion.
+2. **Design the kanban board**
+   Turn the map into columns, with an options or backlog area on the left and a finished column on the right. Split stages that include waiting, such as a "Review" stage with "Ready for review" and "In review," so queues become visible. Add swimlanes only for distinctions the team acts on, such as an expedite lane or separate work types. Keep the first version simple, because the board will change. The [kanban board design](../../skills/designing-kanban-boards/SKILL.md) skill covers columns, swimlanes and cards in detail.
 
-2. **Step 2: Design the Board**
-   Translate your workflow map into columns on a physical or digital board. Each column represents a stage in the process. Add a backlog or input queue on the left and a done column on the right. For stages that involve distinct activities (such as "Development" having both active coding and code review), split them into sub-columns to make waiting time visible.
+3. **Put all current work on the board**
+   Add every item already in progress, including half-finished work, items waiting on other teams and favors nobody wrote down. Each card needs a clear title, a requester and any real deadline. This step usually shows far more work in progress than anyone expected. That discomfort is useful, because it explains why little is finishing and gives the team a baseline.
 
-Keep the board as simple as possible at first. Five to seven columns is typical for a team-level board. Resist the urge to model every edge case on day one. The board will evolve as you learn.
+4. **Set initial WIP limits**
+   Choose a limit for each active column or for the board as a whole, and write down what happens when a column is full. Start from how many people work in each stage and adjust from observation; for example, a stage worked by three people might start with a limit of three. The Kanban Guide asks that any acceptable exceptions to WIP control be made explicit. Tighten limits that are never reached and investigate columns that are always full. See [setting WIP limits](../../skills/setting-wip-limits/SKILL.md) for the method of choosing and enforcing them.
 
-For detailed guidance on board design, column structure, and card anatomy, see the [designing kanban boards](https://tryhamster.com/skills/designing-kanban-boards) skill.
+5. **Write pull policies for each column**
+   Agree on entry and exit criteria for each stage: what must be true before a card may enter, and what must be true before it can move on. Add replenishment rules and rules for each class of service, such as expedite and fixed-date items. Post the policies on or next to the board. The [kanban pull policies](../../skills/creating-kanban-pull-policies/SKILL.md) skill shows how to draft and test them.
 
-3. **Step 3: Populate the Board with Current Work**
-   Put every piece of active work on the board, not just the work you want to acknowledge. Include the half-finished tasks, the "I'll get to it next week" items, and the things waiting on external dependencies. Each card should include enough context for any team member to understand what the item is and what stage it is in: a short title, the requester or customer, and any relevant deadline. This step often produces an uncomfortable moment of clarity.
+6. **Establish cadences**
+   Start with a short daily Kanban meeting that walks the board from right to left and asks what is keeping each item from flowing and who can help. Add a replenishment meeting to choose what enters the system next. As the system matures, add a service delivery review that looks at flow data and customer expectations. Fold these into existing meetings where they serve the same purpose. The [kanban cadences](../../skills/running-kanban-cadences/SKILL.md) skill explains each meeting.
 
-Teams routinely discover they have 30 or 40 items "in progress" across 5 people, which immediately explains why nothing seems to finish. That discomfort is the point. It is the starting data for every improvement that follows.
-
-4. **Step 4: Set Initial WIP Limits**
-   Assign a maximum number of items allowed in each active column. A reliable starting heuristic is to set the WIP limit per column to the number of people who work in that stage, then subtract one. So a team of four developers might set the "In Development" WIP limit to three. This feels uncomfortably tight, and that is intentional.
-
-The limit should create a small amount of productive tension that forces the team to finish items before starting new ones. You can adjust limits up or down after a few weeks of observation, but err on the side of too tight rather than too loose. A WIP limit that is never hit is not a limit. For deeper guidance, see [setting WIP limits](https://tryhamster.com/skills/setting-wip-limits).
-
-5. **Step 5: Define Pull Policies and Entry Criteria**
-   Document the rules that govern how items move between columns. When can a developer pull an item from "Ready for Dev" into "In Development"? What information must be present on the card? What does "done" mean for each stage?
-
-Write these policies directly on the board or in an easily accessible team document. Start simple: even a one-sentence definition of done per column is better than nothing. The goal is to eliminate ambiguity that causes rework and disagreement. For example, if "In Review" requires a pull request with passing tests and a reviewer assigned, make that explicit.
-
-Teams that skip this step often discover inconsistent quality and frequent back-and-forth between stages. See [creating pull policies](https://tryhamster.com/skills/creating-kanban-pull-policies) for worked examples.
-
-6. **Step 6: Establish Feedback Cadences**
-   Decide which regular meetings the team will hold and how frequently. ") and a weekly or biweekly replenishment meeting where the team decides which items to pull into the board from the broader backlog. Avoid the common mistake of turning the standup into a status report to management. The standup should be a peer coordination mechanism focused on the board itself: walking the board from right to left, identifying stuck items, and swarming on blockers.
-
-Over time, consider adding a service delivery review (monthly, examining flow metrics and trends) and a retrospective. See [running kanban cadences](https://tryhamster.com/skills/running-kanban-cadences) for a detailed breakdown of each ceremony.
-
-7. **Step 7: Measure Flow and Iterate**
-   Begin tracking cycle time, throughput, and work item age from day one, even if the data feels noisy. Cycle time tells you how long items take from commitment to completion. Throughput tells you how many items the team finishes per week. Work item age flags items that have been in progress too long and may be stuck or blocked.
-
-Review these metrics in your service delivery review and use them to drive experiments: "Our average cycle time spiked last month. We think it is because code reviews are taking three days. " Measure the result, keep it if it works, revert if it doesn't. This step is continuous and never finished.
-
-See [measuring flow metrics](https://tryhamster.com/skills/measuring-kanban-flow-metrics) for guidance on which metrics to track and how to interpret them.
+7. **Measure flow and improve**
+   Record when each item starts and finishes so you can track WIP, throughput, work item age and cycle time. Once you have history, set a service level expectation, which the Kanban Guide defines as a forecast of how long an item should take, stated with a probability. Use the numbers to choose one experiment at a time, such as a lower limit on review, and check whether flow improved. Keep what works and revert what does not. The [kanban flow metrics](../../skills/measuring-kanban-flow-metrics/SKILL.md) skill covers the calculations and charts.
 
 ## When to Use
 
-- When your team handles a continuous stream of incoming requests that vary in size, urgency, and type, such as a support engineering team receiving bug reports, infrastructure requests, and escalations from multiple internal customers simultaneously. Kanban's pull-based model lets the team absorb variability without the overhead of sprint planning and re-planning.
-- When work items arrive unpredictably and priorities shift frequently, making it impractical to commit to a fixed scope two weeks in advance. Product teams running continuous discovery, where learnings from one experiment immediately change what to build next, often find kanban's flow-based approach more natural than timeboxed iterations.
-- When you need to reduce cycle time and get work delivered faster without adding headcount. Kanban's WIP limits and flow metrics systematically expose where work stalls, letting teams address root causes rather than adding more people to an already-overloaded process.
-- When you are introducing process improvement to a team that is skeptical of or exhausted by methodology changes. Because kanban starts with the current process and evolves incrementally, it meets less resistance than frameworks that require role changes, new ceremonies, or restructured teams.
-- When multiple teams or departments need a shared view of how work flows across organizational boundaries. Portfolio-level kanban boards can visualize initiatives from intake through delivery across product, design, engineering, and operations, revealing cross-team dependencies and handoff bottlenecks that per-team tools hide.
-- When your team ships continuously, deploying multiple times per day, and the concept of a two-week sprint boundary feels artificial. Kanban optimizes for continuous delivery by treating every completed item as independently releasable, aligning the process model with the deployment reality.
+- A team handles a continuous stream of requests that vary in size and urgency, such as a platform or support team serving several internal customers. Pulling work as capacity frees up absorbs that variability without re-planning a fixed batch.
+- Priorities change often enough that committing to a fixed scope for several weeks is unrealistic. Kanban lets the team reorder options before the commitment point without disrupting work already started.
+- Work is getting stuck and delivery feels slow, but nobody can say where. Visualizing all work and limiting WIP shows where items wait, which gives the team a concrete place to improve.
+- A team is wary of another process overhaul. Because the Kanban Method starts with the current process and keeps existing roles, it asks for less upfront change than frameworks that introduce new roles and events.
+- Several teams need a shared view of work that crosses their boundaries. Boards at coordination or portfolio level, such as the [Flight Levels](https://www.flightlevels.io/) model's coordination and strategic levels, expose handoffs and dependencies.
+- You already run Scrum or another method and want better flow inside it. Kanban practices such as WIP control and flow metrics can be added without replacing the existing framework.
 
 ## When Not to Use
 
-- When your team is new to any form of structured workflow management and needs guardrails to build discipline. Kanban's permissiveness (no mandatory roles, no mandatory ceremonies, no mandatory timeboxes) can leave inexperienced teams adrift. Scrum's prescriptive structure often serves better as training wheels because it forces teams to plan, review, and retrospect on a fixed cadence until those habits become natural.
-- When stakeholders require predictable, date-based commitments for large batches of scope, such as a regulatory deadline that demands features A through F delivered together by March 15. Kanban excels at optimizing throughput and cycle time for individual items, but it does not natively produce the kind of fixed-scope, fixed-date plan that some business contexts demand. Teams in this situation often need iteration-based planning or a hybrid approach.
-- When the work is genuinely sequential and single-threaded, with only one or two items in flight at any time. A solo freelancer working on one client project at a time gets little value from WIP limits and flow metrics because there is nothing to limit and nothing to measure. The overhead of maintaining a kanban system exceeds the benefit.
-- When the team's biggest problem is not flow but alignment on goals, priorities, or strategy. Kanban optimizes the how of delivery, not the what. If the team is building the wrong things efficiently, adding a kanban board makes the wrong things move faster. In this case, methods focused on prioritization, like [RICE](https://tryhamster.com/methods/rice-framework) or opportunity-solution trees, address the root problem.
-- When deep collaboration on a single deliverable is the primary work mode, such as a three-person design team co-creating one brand identity over six weeks. Kanban's card-per-item model assumes work can be decomposed into discrete, independently movable items. Highly collaborative, entangled work does not decompose cleanly, and forcing it onto a board creates artificial fragmentation.
+- A team needs a fixed rhythm of planning, review and retrospective to build basic habits. Kanban prescribes no timeboxes or roles, so a team with no working discipline may drift; a framework with set events can give more structure at first.
+- The main problem is choosing what to build. Kanban assumes the work on the board is worth doing. It improves how work flows once selected, and if priorities are wrong, faster flow delivers the wrong things sooner.
+- There is only ever one item in progress, such as one person doing one sequential job. With nothing to limit and little to measure, the board adds overhead without much return.
+- The work cannot be split into items that move independently, such as a small group co-creating a single artifact together. Forcing it onto cards creates artificial fragments that do not reflect how the work progresses.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Managing Projects with Kanban](../../skills/managing-projects-with-kanban/SKILL.md) — How to apply Kanban principles to plan, execute, and deliver projects using pull-based scheduling and continuous delivery instead of fixed sprints.
-- [Running Kanban Cadences and Feedback Loops](../../skills/running-kanban-cadences/SKILL.md) — How to facilitate the seven Kanban cadences — including standups, replenishment meetings, delivery planning, and service delivery reviews — to enable continuous improvement.
-- [Setting and Enforcing Work-in-Progress Limits](../../skills/setting-wip-limits/SKILL.md) — How to determine optimal WIP limits for each workflow stage to reduce bottlenecks, improve flow, and prevent team overload.
-- [Designing Effective Kanban Boards](../../skills/designing-kanban-boards/SKILL.md) — How to structure columns, swimlanes, and card layouts on a Kanban board to accurately visualize your team's workflow from intake to completion.
-- [Measuring Kanban Flow Metrics](../../skills/measuring-kanban-flow-metrics/SKILL.md) — How to track and interpret lead time, cycle time, throughput, and cumulative flow diagrams to continuously improve delivery performance.
-- [Creating Explicit Pull Policies and Workflow Rules](../../skills/creating-kanban-pull-policies/SKILL.md) — How to define clear entry and exit criteria for each Kanban column so the team knows exactly when and how to pull work forward through the system.
-- [Comparing Kanban and Scrum for Your Team](../../skills/comparing-kanban-and-scrum/SKILL.md) — How to assess the differences between Kanban's continuous flow and Scrum's sprint-based approach to choose or combine the right method for your context.
-- [Choosing the Right Kanban Tools and Software](../../skills/choosing-kanban-tools-and-software/SKILL.md) — How to evaluate and select digital Kanban tools like Trello, Jira, and Asana based on team size, workflow complexity, and integration needs.
+- [Managing Projects with Kanban](../../skills/managing-projects-with-kanban/SKILL.md): Plan, run and forecast a whole project with a pull-based kanban system instead of fixed sprints.
+- [Running Kanban Cadences](../../skills/running-kanban-cadences/SKILL.md): Facilitate the Kanban meeting, replenishment, delivery planning and review cadences so feedback reaches the right people.
+- [Setting WIP Limits](../../skills/setting-wip-limits/SKILL.md): Choose, enforce and tune work-in-progress limits so bottlenecks surface and work finishes.
+- [Designing Kanban Boards](../../skills/designing-kanban-boards/SKILL.md): Structure columns, swimlanes and cards so the board shows how work really flows.
+- [Measuring Kanban Flow Metrics](../../skills/measuring-kanban-flow-metrics/SKILL.md): Track WIP, throughput, work item age and cycle time, and read a cumulative flow diagram.
+- [Creating Kanban Pull Policies](../../skills/creating-kanban-pull-policies/SKILL.md): Write entry and exit criteria for each column so everyone knows when work may move.
+- [Comparing Kanban and Scrum](../../skills/comparing-kanban-and-scrum/SKILL.md): Decide between Kanban, Scrum or a combination based on how your work actually arrives.
+- [Choosing Kanban Software](../../skills/choosing-kanban-tools-and-software/SKILL.md): Evaluate kanban tools against the practices your team needs to run.
 
 ## FAQ
 
 **What is kanban in simple terms?**
 
-Kanban is a way of managing work by making it visible on a board and limiting how much work happens at the same time. Work items are represented as cards that move through columns (like "To Do," "Doing," "Done"), and the team pulls new work only when they have capacity. The constraint on simultaneous work, called a WIP limit, is what separates kanban from a simple task board and is what drives its benefits: less multitasking, faster delivery, and clearer visibility into bottlenecks.
+Kanban is a way to manage work by showing it on a board and limiting how much is in progress at once. Each piece of work is a card that moves through columns for the stages of your workflow. The team starts a new item only when an existing one finishes and frees capacity. The limit on work in progress is what separates kanban from a plain task board.
 
-**Kanban vs Scrum: which should my team use?**
+**Kanban vs Scrum: what is the difference?**
 
-Scrum works best when your team can commit to a fixed scope for a two-week sprint, benefits from prescribed roles (Scrum Master, Product Owner), and needs the discipline of regular planning and review ceremonies. Kanban works best when work arrives unpredictably, priorities shift frequently, and you want to improve your existing process without overhauling roles or team structure. Many teams use a hybrid: Scrum's sprint cadence for planning and retrospectives combined with kanban's WIP limits and flow metrics for day-to-day execution. For a detailed comparison, see [comparing kanban and scrum](https://tryhamster.com/skills/comparing-kanban-and-scrum).
+Scrum organizes work into Sprints of one month or less with defined accountabilities and events ([The Scrum Guide](https://scrumguides.org/scrum-guide.html)). Kanban has no required timebox or roles; it controls work in progress and manages flow continuously. The Kanban Guide says Kanban "can and should be used to augment" other delivery approaches, so the two are often combined. The [comparing kanban and Scrum](../../skills/comparing-kanban-and-scrum/SKILL.md) skill walks through the decision.
 
-**Does kanban work for small teams of 2-3 people?**
+**Who created kanban?**
 
-Yes, and small teams often get outsized benefits because the coordination overhead is low while the visibility gains are immediate. A three-person team with a shared kanban board can see at a glance who is blocked, what is close to done, and where to swarm. WIP limits on a small team are typically very tight (1-2 per column), which forces focused execution. The one caveat is that if a solo contributor is working on a single stream of sequential tasks, the kanban overhead may not be justified.
+At Toyota, the kanban system grew out of the Just-in-Time "supermarket method," and Toyota credits Taiichi Ohno with establishing the Toyota Production System that it belongs to. The Kanban Method for knowledge work was developed by David J. Anderson and set out in his 2010 book ([Kanban University](https://kanban.university/kanban-guide/)). The Kanban Guide by John Coleman and Daniel Vacanti is a separate, minimal definition. Each source describes a related but distinct thing.
+
+**Does kanban work for small teams?**
+
+Yes, as long as more than one item is in progress at a time. A small team gets quick visibility into who is blocked and what is close to done, and WIP limits keep it from spreading effort across too many items. The coordination overhead is low because the board and a short daily look at it do most of the work. For a single person, [Personal Kanban](https://www.personalkanban.com/) reduces the practice to two rules: visualize your work and limit your work in progress.
 
 **Why does kanban fail in practice?**
 
-The most common failure mode is treating the board as decoration: cards go up but nobody enforces WIP limits, nobody tracks flow metrics, and nobody holds regular feedback cadences. Without WIP limits, the board becomes an infinite to-do list that creates anxiety instead of focus. Without metrics, the team has no data to drive improvement. Without cadences, stale cards accumulate and the board stops reflecting reality.
+The most common failure is treating the board as decoration: cards go up, but no limits are set or respected, nobody measures flow, and nobody reviews the system. Another is managers routinely pushing work past the limits, which teaches the team that the limits are optional. Boards that model an ideal process instead of the real one also decay quickly. Each of these removes the feedback that makes kanban work.
 
-The second most common failure is managerial override, where leaders routinely push items past WIP limits for "emergencies," which destroys trust in the system and teaches the team that limits do not matter.
+**Do I need special kanban software?**
 
-**How does kanban work alongside OKRs and roadmaps?**
+No. A whiteboard and sticky notes are enough for a co-located team, and many digital tools support boards. What matters is that the tool supports the practices: columns that match your workflow, visible limits, policies, and timestamps for flow metrics. Some tools display a WIP limit without enforcing it, so check how a tool behaves when a column is full. See [choosing kanban software](../../skills/choosing-kanban-tools-and-software/SKILL.md) for an evaluation process.
 
-Kanban manages the flow of execution. OKRs define goals and desired outcomes. Roadmaps communicate strategic direction and rough sequencing. They operate at different altitudes and complement each other naturally.
+**Can kanban scale beyond one team?**
 
-OKRs inform what enters the kanban board (which initiatives to prioritize), the roadmap communicates the broader arc to stakeholders, and the kanban board manages day-to-day delivery. Flow metrics from kanban (throughput, cycle time) feed back into roadmap conversations by grounding them in data about how fast the team actually delivers, replacing guesswork with historical evidence.
+Yes. Kanban University describes whole service departments managed by a set of related boards at different levels of granularity, with WIP limited at each level. The [Flight Levels](https://www.flightlevels.io/) model separates operational, coordination and strategic levels. The hard part at scale is keeping upstream commitments in line with downstream capacity.
 
-**Can kanban scale to large organizations with multiple teams?**
+## Sources
 
-Yes, through a concept called portfolio kanban or flight levels. At the team level (Flight Level 1), individual teams manage their own boards. At the coordination level (Flight Level 2), a cross-team board visualizes how work flows between teams and highlights dependencies and handoffs. At the strategy level (Flight Level 3), a portfolio board tracks strategic initiatives from ideation through delivery.
-
-Each level has its own WIP limits, cadences, and flow metrics. The key challenge at scale is keeping boards connected so that upstream decisions are informed by downstream capacity, preventing the common pattern of leadership committing to more initiatives than the organization can absorb.
-
-**Do I need a specific kanban tool or software?**
-
-No. Kanban is tool-agnostic by design. A whiteboard with sticky notes and a marker works for co-located teams. Digital tools (Trello, Jira, Linear, Notion, and many others) work for remote and distributed teams.
-
-The important thing is that whatever tool you use supports the core practices: visible cards, configurable columns, enforceable WIP limits, and flow metric tracking. Many teams start with a physical board to build the habit, then migrate to software once the process is stable. See [choosing kanban tools](https://tryhamster.com/skills/choosing-kanban-tools-and-software) for selection criteria.
-
-**How long does it take to see results from kanban?**
-
-Most teams see immediate clarity in the first week just from visualizing all their work in progress (the "oh, we have 40 things in flight" moment). Meaningful flow improvements typically appear within 4-8 weeks of enforcing WIP limits, as cycle times decrease and the team develops the habit of finishing before starting. Sustained, compounding improvement requires ongoing measurement and experimentation over months. Teams that track metrics consistently for a quarter often see cycle time reductions of 30-50% compared to their starting baseline, because each small improvement builds on the last.
+- [The Kanban Guide (May 2025), John Coleman and Daniel Vacanti](https://kanbanguides.org/english/)
+- [Kanban University: The Official Guide to The Kanban Method](https://kanban.university/kanban-guide/)
+- [The Official Guide to The Kanban Method (PDF)](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)
+- [David J. Anderson: Kanban Cadences](https://djaa.com/kanban-cadences/)
+- [Toyota 75 Years: Development and Deployment of the Toyota Production System](https://www.toyota-global.com/company/history_of_toyota/75years/text/entering_the_automotive_business/chapter1/section4/item4.html)
+- [Toyota 75 Years: The Origins of Just-in-Time](https://www.toyota-global.com/company/history_of_toyota/75years/text/taking_on_the_automotive_business/chapter2/section4/item5.html)
+- [Lean Enterprise Institute Lexicon: Kanban](https://www.lean.org/lexicon-terms/kanban/)
+- [Agile Alliance Glossary: Kanban](https://www.agilealliance.org/glossary/kanban/)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Flight Levels](https://www.flightlevels.io/)
+- [Personal Kanban](https://www.personalkanban.com/)
 
 ---
 

@@ -1,25 +1,21 @@
-# FAQ: Measuring User Happiness Through Surveys and Satisfaction Scores
+# FAQ: Measuring User Happiness Through Satisfaction Surveys
 
-## What is the best survey type for measuring user happiness in the HEART Framework?
+## Should we use NPS or satisfaction for the Happiness category?
 
-There's no single best type—it depends on your goal. Use NPS for overall product sentiment trending, CSAT for satisfaction with specific features or flows, and SUS for usability benchmarking. Most product teams benefit from combining NPS as a quarterly pulse with CSAT deployed at key journey moments.
+Satisfaction is the safer core metric. Google's HaTS method centers on an overall satisfaction question and includes the likelihood to recommend question only as needed, citing skepticism about its reliability and doubt that it measures something distinct from satisfaction. If your company reports NPS, you can include it as a secondary question.
 
-## How many survey responses do I need for statistically reliable happiness data?
+## How many responses do we need?
 
-For NPS, aim for at least 200 responses per measurement period to detect meaningful changes (±5 points). For CSAT on a specific flow, 50-100 responses are often sufficient. Use a sample size calculator with your expected score distribution and desired margin of error to be precise.
+Enough for the precision you need to detect a change. The HaTS authors often aim for about 400 or 1000 responses per period, which they say gives margins of error of about 5 and 3 percentage points at 95% confidence. If you cannot collect that many in a week, report over a longer period.
 
-## How often should I survey users without causing survey fatigue?
+## Why not show the survey in a pop-up?
 
-Enforce a per-user cooldown of at least 60-90 days between surveys. For in-app surveys, sample only 1-5% of eligible sessions. Monitor your response rate trend—a declining response rate is the clearest signal that you're over-surveying.
+Blocking pop-ups interrupt work and irritate people, which can color their answers. The HaTS method uses a visible but non-blocking invitation, such as a link or banner, with neutral wording. That keeps the invitation noticeable without forcing a response.
 
-## How do product manager skills in user happiness measurement differ from UX research skills?
+## How often should the same user be surveyed?
 
-Product manager skills in happiness measurement focus on operationalizing surveys as a recurring, scalable metric system tied to business decisions and roadmap prioritization. UX researchers typically go deeper with qualitative analysis and study design. PMs own the 'what do we do with this data' question, while UX researchers often own the 'how do we collect the richest data' question.
+Rarely. HaTS does not invite the same user again for 12 weeks after an invitation, to avoid survey fatigue. Whatever interval you choose, apply it consistently so that the sample stays comparable from period to period.
 
-## Can I use app store ratings as a happiness metric instead of surveys?
+## Can one survey measure happiness for a single feature?
 
-App store ratings are a useful supplementary signal but shouldn't replace purpose-built surveys. They suffer from extreme selection bias (mostly very happy or very unhappy users rate), can't be segmented by user behavior, and are heavily influenced by rating prompt timing. Use them as a directional indicator alongside proper survey data.
-
-## How do I connect happiness survey results to the other HEART Framework dimensions?
-
-Join survey responses to your analytics data using a shared user identifier. This lets you correlate happiness scores with engagement frequency, retention status, adoption of specific features, and task success rates. Build these cross-dimensional views into your HEART dashboard to identify segments like 'high engagement but low happiness'—users who may be trapped rather than satisfied.
+Yes, with care. Ask about satisfaction with the feature or the task it supports, and show the question only to people who used it recently, so answers reflect real experience. Keep the overall product question as well, so feature results can be read in context.

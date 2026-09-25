@@ -1,36 +1,37 @@
-# Examples: Identifying and Mapping Input Metrics to Your North Star
+# Examples: Identifying and Mapping North Star Input Metrics
 
-## Example: Input Metric Map for a B2B Data Analytics Product
-
-**Scenario:**
-
-A B2B data analytics product has selected 'Weekly Active Analysts' as its North Star Metric. The company has teams responsible for growth, activation, core product experience, and enterprise expansion. They need to decompose the North Star into input metrics that align with their team structure.
-
-**Walkthrough:**
-
-The product team starts by writing the formula: `Weekly Active Analysts = New Activated Analysts (this week) + Returning Analysts (from previous weeks)`. They further decompose:
-
-- **New Activated Analysts** = Signups × Onboarding Completion Rate × First-Value-Moment Rate (defined as creating their first saved query within 48 hours)
-- **Returning Analysts** = Previous Active Analysts × Week-over-Week Retention Rate
-- **Engagement Depth** = Queries Run per Analyst per Week (a quality signal — more queries means more value extracted)
-
-After filtering for influenceability, predictiveness, and measurability, they select four input metrics:
-
-1. **Onboarding Completion Rate** (Growth team owns) — % of signups who connect a data source and run their first query
-2. **First-Value-Moment Rate** (Activation team owns) — % of onboarded users who save their first query or dashboard within 48 hours
-3. **Week-1 Retention Rate** (Core Product team owns) — % of activated users who return in the second week
-4. **Queries per Analyst per Week** (Core Product team co-owns with Enterprise team) — average depth of engagement
-
-They validate with 9 months of data and find these four metrics explain ~78% of weekly variance in the North Star. The missing ~22% is attributed to seasonality and enterprise contract cycles. They set quarterly targets: improve onboarding completion from 45% to 55%, first-value-moment from 30% to 40%, week-1 retention from 60% to 65%, and maintain queries per analyst above 12.
-
-## Example: Discovering a Missing Input Metric Through Backtesting
+## A subscription recipe app decomposes a count
 
 **Scenario:**
 
-A self-service analytics platform initially identified three input metrics for its North Star ('Monthly Insights Shared'): new user activation, dashboard creation rate, and sharing feature adoption. During quarterly review, they noticed a 3-week period where all three input metrics were stable but the North Star dropped 18%.
+Illustrative scenario: a recipe app has chosen "weekly cooks," the number of subscribers who mark at least one recipe as cooked in a week. Leadership asks each team what it will do to grow the number, and every team proposes a feature with no clear link to it.
 
 **Walkthrough:**
 
-The team investigated the anomaly and discovered that a cohort of power users — the top 10% who generated 40% of shared insights — had churned simultaneously. Their three input metrics didn't capture power-user health because they averaged across all users equally.
+The product lead writes the function sentence: weekly cooks is a function of new subscribers reaching their first cooked recipe, existing subscribers cooking again, and lapsed subscribers returning. That gives three inputs: first-cook activation, repeat cooking rate, and reactivation. A fourth input, recipe fit, comes out of the mind map: subscribers cook more when the recipes match their pantry and time.
 
-They added a fourth input metric: **Power User Retention Rate** (% of users sharing 5+ insights/month who remain active). This metric was assigned to a newly formed 'customer success' squad focused on high-value accounts. Backtesting with this fourth metric included, the model's explanatory power jumped from 65% to 82%. The lesson: input metric maps need to account for user segments, not just aggregate behaviors. For any data analytics product with a heavy-user concentration, segment-specific retention metrics are often the most predictive input.
+The Greenfield test shows that recipe fit is too broad; the team generates many vague ideas. They narrow it to "share of suggested recipes saved." The roadmap check finds a social feed project that maps to no input, and the team pauses it until someone can state which input it moves. Each input gets one owning team.
+
+## A B2B analytics product decomposes behaviors
+
+**Scenario:**
+
+Illustrative scenario: an analytics product's North Star counts accounts where at least two people view a shared report each week. There is no simple arithmetic behind it, and the team is unsure where to start.
+
+**Walkthrough:**
+
+The team uses depth, breadth, frequency and efficiency as prompts. Breadth becomes "people per account who view reports." Depth becomes "reports built from more than one data source." Frequency becomes "weeks in a row with a shared report viewed." Efficiency becomes "time from connecting data to the first shared report."
+
+The historical check shows that efficiency moves first: accounts that reach a shared report quickly tend to reach the North Star later. Breadth follows. Depth shows no link in the data, so the team keeps it as a watch item rather than an owned input. The published map has three owned inputs and one flagged hypothesis.
+
+## A marketplace prunes an input that stopped working
+
+**Scenario:**
+
+Illustrative scenario: a services marketplace has used "new providers listed" as an input for its North Star of completed jobs. Listings keep rising, but completed jobs have flattened.
+
+**Walkthrough:**
+
+The team compares the two series and sees that most new listings are in areas with little demand, so they never receive a job. The input is rewarded for volume that customers do not use. The team redefines it as "new providers who complete a first job within a month of listing," which requires both supply and demand to meet.
+
+They record the change and the reason in the map's history, so the old trend is still readable. The supply team's work shifts from recruiting anywhere to recruiting where there is unmet demand, and the next review checks whether completed jobs respond.

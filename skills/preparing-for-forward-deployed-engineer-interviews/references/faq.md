@@ -1,33 +1,21 @@
-# FAQ: Preparing for Forward Deployed Engineer Interviews
+# FAQ: Forward Deployed Engineer Interview Prep
 
-## How do I prepare for forward deployed engineer interview questions if I have never worked in a customer-facing engineering role?
+## What do forward deployed engineer interview questions cover?
 
-Reframe your existing experience through the FDE lenses. Any project where you dealt with ambiguous requirements, integrated with systems you did not own, or had to explain technical decisions to non-technical stakeholders is relevant. Focus your prep time disproportionately on client-communication role plays, since that is likely your weakest area. Run at least eight role plays over two weeks with non-technical practice partners who can simulate realistic customer pushback.
+Companies do not publish a standard format, and the formats vary. Judging from what job postings say the role involves, expect some mix of coding, system design in a customer context, breaking down an ambiguous business problem, and communication with non-technical stakeholders. Read the specific posting closely and weight your preparation toward what it emphasizes.
 
-## How long should FDE interview preparation take?
+## How is a Palantir FDE interview different?
 
-Plan for two to four weeks of structured preparation, dedicating one to two hours per day. The first week focuses on company research and scenario building. The second and third weeks focus on drilling system design, coding with narration, and role plays. The final three to four days are for integrated mock interviews and playbook assembly.
+Palantir does not publish its interview questions. It says its process is designed to understand how your background can further its mission, and its careers page describes what Deltas and Echos do. Use those descriptions to decide where to focus: building working solutions on data and AI for a Delta role, and problem decomposition and stakeholder alignment for an Echo role. Be wary of detailed claims about specific rounds from unofficial sources.
 
-Candidates with prior customer-facing engineering experience can compress this to two weeks. Candidates without that experience should use the full four weeks.
+## How should I approach forward deployed engineer system design questions?
 
-## Should I prepare for forward deployed engineer interview questions before or after studying the FDE Five-Lens Framework?
+Start with questions about the customer's environment: data sources, access, compliance rules, existing tools and who will run the system. Then propose a design that fits those constraints and explain its tradeoffs. Expect the interviewer to add constraints midway and adapt out loud. Designing for someone else's environment is the core difference from a typical product design question.
 
-Study the framework first, even briefly. Understanding the five lenses (mission scoping, interdisciplinary skills, autonomous operation, learning loops, and business-outcome measurement) gives you a mental model that structures your entire preparation. Without the framework, your prep tends to fragment into disconnected drills. With it, every practice session maps to a lens, and you can identify which lens is your weakest and allocate time accordingly.
+## Do I need consulting or customer-facing experience?
 
-## How do FDE system design interviews differ from standard system design interviews?
+It helps but is not required. Strong software engineering is the common baseline, and The Pragmatic Engineer notes that Palantir hires people with as little as a year of post-college work experience and that Ramp hires some exceptional new graduates. What you need is evidence that you can work with users and handle ambiguity, which can come from internal projects, support work or side projects.
 
-Standard system design interviews provide relatively clear requirements and evaluate your architectural knowledge. FDE system design interviews intentionally leave requirements incomplete and evaluate how you handle that ambiguity. You are expected to ask clarifying questions as a customer would need to be asked, make and state assumptions, design for the customer's existing infrastructure rather than a greenfield environment, and scope toward a minimal deployable system rather than an ideal end-state architecture. The evaluation criteria include communication and scoping ability, not just technical design quality.
+## How do I explain why I want an FDE role instead of a product engineering role?
 
-## What programming languages should I use in FDE coding interviews?
-
-Use the language you are most fluent in, because narration quality degrades when you are struggling with syntax. If the company's FDE team primarily uses a specific language and you are competent in it, use that language to signal alignment. If you have a choice, Python is the safest default for FDE roles because of its readability (which helps with narration) and its prevalence in data-heavy FDE deployments. Avoid using a language you are learning just to impress.
-
-## Why do my system design answers keep getting feedback that they are 'too theoretical' or 'not grounded'?
-
-This feedback usually means you are designing ideal architectures without anchoring them in the customer's reality. The fix is to start every design by explicitly stating the customer's constraints: their existing tech stack, their timeline, their team's technical maturity, and the business metric they care about. Design from those constraints upward. If you find yourself adding components the customer did not ask for and would not benefit from in the first deployment, remove them.
-
-Theoretical drift happens when you forget that FDE system design is about shipping inside someone else's world, not designing your dream architecture.
-
-## How many mock interviews should I do before the real FDE interview?
-
-Run at least two full integrated mocks that chain all three rounds (system design, coding, client communication) with breaks matching the real schedule. Beyond the integrated mocks, aim for five to eight individual round practices across the components. The marginal returns diminish after about ten total practice sessions. If you are still getting surprised by questions or freezing during role plays after ten sessions, the issue is usually the quality of your practice (not enough realism or feedback) rather than the quantity.
+Tie your answer to the work: writing code that solves a specific customer's problem, seeing results quickly, and learning a new domain with each engagement. Palantir's FDSE describes choosing the role for the rapid cycle between building solutions and seeing them in action. Be honest about what you would find hard, such as travel or context switching, and how you would handle it.

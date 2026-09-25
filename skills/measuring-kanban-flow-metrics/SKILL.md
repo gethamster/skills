@@ -1,15 +1,20 @@
 ---
-name: measuring-kanban-flow-metrics
-description: "This skill teaches you how to collect, calculate, and interpret the four core flow metrics in a kanban system so you can diagnose bottlenecks, forecast delivery dates, and drive continuous improvement with data instead of gut feel."
+name: "measuring-kanban-flow-metrics"
+description: "Measure kanban flow metrics: WIP, throughput, work item age, cycle time and lead time, and read a cumulative flow diagram to find where work stalls."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: kanban
+  method: "kanban"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Measuring Kanban Flow Metrics for Continuous Improvement
+# Kanban Flow Metrics: Cycle Time, Throughput and CFDs
 
-> This skill teaches you how to collect, calculate, and interpret the four core flow metrics in a kanban system so you can diagnose bottlenecks, forecast delivery dates, and drive continuous improvement with data instead of gut feel.
+> Measure kanban flow metrics: WIP, throughput, work item age, cycle time and lead time, and read a cumulative flow diagram to find where work stalls.
 
 ## Before you start
 
@@ -24,164 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-3 hours for initial setup and first analysis cycle |
-| Outcome | You produce a dashboard of lead time, cycle time, throughput, and a cumulative flow diagram that your team reviews regularly to make evidence-based decisions about process changes, staffing, and delivery commitments. |
-| Prerequisites | A working kanban board with clearly defined workflow stages, Understanding of WIP limits and pull-based flow (see /skills/setting-wip-limits), Access to historical work item data with timestamps, or willingness to start collecting them, Basic comfort with spreadsheets or a kanban tool that tracks dates per column |
+| Time to Learn | A few hours to set up, several weeks of data before trends mean much |
+| Outcome | You record start and finish dates for every item, track the four flow metrics, read a cumulative flow diagram, and set a service level expectation from your own history. |
+| Prerequisites | A kanban board with agreed start and finish points, a way to record dates per item, a spreadsheet or charting tool |
 | Part of | [Kanban](../../methods/kanban/METHOD.md) |
 
 ## Overview
 
-Every team using [kanban methodology](https://tryhamster.com/methods/kanban) eventually faces the same question: how do we know if we are actually improving? Feelings and anecdotes are unreliable. One week the board looks clean and work seems to fly through. The next week everything stalls and nobody can explain why. Flow metrics replace guesswork with observable data. They give you four complementary lenses on how work moves through your system, where it gets stuck, and whether your changes are making things better or worse.
+Kanban flow metrics tell you how work moves through your system: how much is in progress, how fast it finishes, how long it takes, and which items are getting old. The Kanban Guide names four mandatory flow metrics: WIP, "the number of work items started but not finished"; throughput, the number finished per unit of time; work item age, the time since an item started; and cycle time, the time between an item's start and finish ([The Kanban Guide](https://kanbanguides.org/english/)). Measuring them is part of the "Manage Flow" practice described on the [Kanban method page](../../methods/kanban/METHOD.md).
 
-The four core metrics are lead time, cycle time, throughput, and the cumulative flow diagram (CFD). Lead time measures the total elapsed time from when a customer or stakeholder requests something until it is delivered. Cycle time measures the subset of that duration where the team is actively working on the item. Throughput counts how many items the team completes in a given period, usually per week or per two-week window. The cumulative flow diagram visualizes all of these dynamics on a single stacked area chart, making bottlenecks, queues, and flow interruptions visible at a glance. Together, these metrics form the empirical backbone of the kanban methodology's commitment to evolutionary improvement.
+The metrics depend on definitions. Kanban cycle time and kanban lead time are used differently by different sources. The Kanban Guide uses cycle time for the span from started to finished and lets teams rename the metrics if they use them as described. Kanban University's guide uses lead time for "the time it takes for a single work item to pass through the system from the start (commitment point) to completion," and distinguishes customer lead time, from request to delivery, from system lead time ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). Pick your terms, write down the start and finish points, and use them consistently.
 
-The concrete artifact you produce is a living metrics dashboard, whether that is a spreadsheet, a tool-generated report, or a wall chart. It includes a running scatter plot of lead times, a histogram showing cycle time distribution, a throughput trend line, and a CFD. This dashboard feeds directly into your team's [cadences and feedback loops](https://tryhamster.com/skills/running-kanban-cadences), giving every retrospective, replenishment meeting, and delivery planning session a shared factual foundation. Without it, process improvement conversations devolve into opinion wars. With it, you can point to a widening band on the CFD and say, 'Our review queue is growing, and that is adding two days to lead time. Let's talk about why.'
+Each metric answers a different question. WIP shows load. Kanban throughput shows delivery rate, and the Kanban Guide notes it is the exact count of work items. Cycle time, looked at as a distribution, shows how predictable the system is. Work item age is the only one of the four that measures time for items still in progress, which makes it the early warning: an item that is already older than most finished items is at risk.
+
+The cumulative flow diagram brings several of these together in one chart. It plots the count of items in each state over time, so you can see WIP growing, a stage becoming a bottleneck, or delivery stalling. Used with a cycle time scatterplot and an aging view, it gives a team enough to run evidence-based improvement without a large metrics program.
 
 ## How It Works
 
-Flow metrics work because they treat your kanban system as a pipeline and apply queuing theory to understand its behavior. The fundamental insight comes from Little's Law: the average number of items in a stable system equals the average throughput multiplied by the average lead time. If you know any two of these values, you can derive the third. More practically, if your team has a WIP limit of 12 items and delivers 6 items per week, the average lead time is 2 weeks. If lead time is climbing but throughput is flat, WIP is accumulating somewhere, and a CFD will show you exactly where.
+Every metric comes from two timestamps per item: when it started and when it finished, as your Definition of Workflow defines those points. Recording the date an item enters each column adds detail for the cumulative flow diagram and for finding where time goes. Most board tools store these dates; a physical board needs someone to write the dates on cards.
 
-Lead time and cycle time answer different questions. Lead time captures the customer's experience: how long did I wait? Cycle time captures the team's experience: how long did this take us once we picked it up? The gap between them is wait time, the period an item sits in a backlog or queue before anyone touches it. A large gap signals that your intake process, prioritization cadence, or upstream WIP limit needs attention. A small gap means items move quickly from request to active work, but it does not guarantee fast delivery if cycle time itself is long.
+Cycle time is calculated for each finished item as finish date minus start date. Teams usually count in days and decide whether the start and finish days both count. Plotting each finished item as a dot, with finish date on one axis and cycle time on the other, gives a scatterplot that shows spread and trends. Kanban University's guide describes the related run chart and lead time distribution, and notes the aim of narrowing the distribution for predictability and shifting it left for timeliness.
 
-Throughput is the simplest metric, but it is also the most misused. Counting completed items per week tells you the rate of delivery, which is essential for forecasting. However, throughput only means something when the items being counted are roughly comparable in size. If one week you deliver ten small bug fixes and the next week you deliver two large features, the raw throughput numbers are misleading. The fix is not to estimate story points. Instead, right-size your work items so that most of them fall within a similar order of magnitude. When items are consistently decomposed, throughput becomes a reliable forecasting input.
+A service level expectation turns that history into a forecast for a single item. The Kanban Guide defines an SLE as a period of elapsed time plus a probability, such as "85% of work items will be finished in eight days or less," based on historical cycle time ([The Kanban Guide](https://kanbanguides.org/english/)). You find it by reading the cycle time at the chosen percentile of your recent finished items. The Guide also lists keeping items from aging unnecessarily, using the SLE as a reference, as part of actively managing work.
 
-The cumulative flow diagram ties everything together. Each band on the chart represents a workflow stage. The vertical distance between bands at any point in time shows the WIP in that stage. The horizontal distance between the top of the 'Done' band and the top of the 'Requested' band shows the approximate lead time. A healthy CFD has bands that run roughly parallel with a gentle upward slope. Warning signs include bands that widen over time (WIP accumulation), bands that flatten (stalled flow), and sudden staircase jumps in the 'Done' band (batched releases rather than continuous delivery). Reading a CFD is a pattern-recognition skill. You learn to spot the shapes that correspond to specific problems, and each shape points to a different intervention, whether that is lowering a WIP limit, adding a pull policy, or having a conversation with a downstream dependency.
+Throughput is the count of items finished per day or week. It varies naturally, so look at it as a range over several periods. Little's Law links the metrics: the average number of items in a system equals their average arrival rate multiplied by their average time in the system, and in a stable system where arrivals match departures, throughput stands in for the arrival rate ([Little, Little's Law at 50](https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf)). If WIP rises while throughput stays flat, cycle time will rise too.
+
+The cumulative flow diagram stacks a band for each state, with time on the horizontal axis and item count on the vertical. Atlassian's documentation says that an area widening vertically over time generally marks a bottleneck in that column ([Atlassian, cumulative flow diagram](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-cumulative-flow-diagram/)). Kanban University adds that parallel lines indicate inflow consistent with outflow. If the line marking finished work goes flat, nothing is finishing; if the arrivals line climbs faster than the finished line, work is entering faster than it leaves.
+
+Daniel Vacanti's book [Actionable Agile Metrics for Predictability](https://actionableagile.com/books/aamfp/) covers these charts, Little's Law and forecasting with flow metrics in depth and is a good next step once the basics are in place.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define your workflow stages and measurement boundaries
+### Step 1: Define start and finish points
 
-Before you can measure anything, you need explicit agreement on where measurement starts and where it ends. Map your kanban board columns and identify the commitment point (where the team agrees to work on an item) and the delivery point (where the item reaches the customer or stakeholder). Lead time spans from the moment an item enters the system, typically a request column or backlog, to the delivery point. Cycle time spans from the commitment point to the delivery point.
+Agree where an item starts, usually the commitment point, and where it finishes, usually delivery. Write both into your board policies. If you also want customer lead time, record when the request arrived. Changing these points later breaks comparisons, so choose deliberately.
 
-Write these boundaries down and share them with your team so that everyone records timestamps consistently. If your board has sub-columns like 'In Review' or 'Awaiting Deploy,' decide now whether those are separate stages you want to track or part of a larger stage. The more granular your stages, the easier it is to pinpoint bottlenecks later, but also the more data hygiene you need.
+### Step 2: Record dates for every item
 
-> **Pro tip:** If your board has 'waiting' or 'blocked' sub-columns, track them as separate stages. These queues are often invisible time sinks that only show up when you measure them independently.
+Make sure each card captures its start date, its finish date and, ideally, the date it enters each column. Check that your tool records column changes or add a simple log. Include items that were abandoned so they do not quietly disappear from the data.
 
-### Step 2: Step 2: Instrument your board to capture timestamps
+### Step 3: Calculate cycle time for finished items
 
-Every work item needs a recorded date for each stage transition. If you use a digital kanban tool, check whether it logs column-change timestamps automatically. Most mature tools do this, but some only record creation and completion dates, which gives you lead time but not cycle time per stage. If your tool does not capture per-column dates, add a custom date field per stage and ask team members to update it when they move a card.
+For each finished item, subtract the start date from the finish date. Keep the raw list; averages hide the spread that matters. Split by work type if different types follow different paths, because mixing them blurs both.
 
-If you use a physical board, designate a rotation role to log transitions on a shared spreadsheet at the end of each day. The key discipline is completeness: a single missing timestamp on a work item means you cannot calculate its cycle time accurately. Establish the habit now rather than trying to backfill weeks later.
+### Step 4: Plot a cycle time scatterplot
 
-> **Pro tip:** Run a one-week pilot where you audit every card that reaches 'Done' to confirm all timestamps are present. Fix gaps immediately. After one week of clean data, the habit usually sticks.
+Plot each finished item by finish date and cycle time. Draw lines at a few percentiles of the data so the team can see what most items achieve. Look for outliers and ask what happened to them.
 
-### Step 3: Step 3: Calculate lead time and cycle time for completed items
+### Step 5: Track throughput and WIP
 
-Export or collect the timestamps for all items completed in the last 4-8 weeks. For each item, compute lead time as the difference between the delivery date and the date the item entered the system. Compute cycle time as the difference between the delivery date and the commitment point date. Record both values in a spreadsheet or analytics dashboard.
+Count finished items per week and chart the count over time. Record WIP at the same interval. Compare the two: rising WIP with flat throughput predicts longer cycle times.
 
-Do not average these numbers yet. Instead, list every item with its individual lead time and cycle time. You want the raw data because averages hide the distribution, and the distribution is where the insight lives. A team with an average cycle time of 5 days might have 80% of items finishing in 2-3 days and 20% taking 15+ days.
+### Step 6: Build a cumulative flow diagram
 
-Those two populations need different interventions.
+Chart the number of items in each state for each day. Read the bands from the bottom up: finished work, then each stage, then arrivals. Watch for bands that widen, a finished line that goes flat, and a growing gap between arrivals and departures.
 
-> **Pro tip:** Use calendar days, not business days, unless your organization has a strong reason to exclude weekends. Customers experience calendar days, so lead time should reflect their reality.
+### Step 7: Watch work item age every day
 
-### Step 4: Step 4: Visualize cycle time with a scatter plot and percentile lines
+For each item in progress, show how long it has been since it started. Compare it with your cycle time history or SLE. Discuss the oldest items first at the daily meeting and decide what would move them.
 
-Create a scatter plot where the x-axis is the completion date and the y-axis is the cycle time in days. Each dot represents one completed work item. Then overlay percentile lines at the 50th, 85th, and 95th percentiles. The 50th percentile tells you the typical cycle time.
+### Step 8: Set an SLE and review metrics on a cadence
 
-The 85th percentile is a reliable planning target, meaning 85% of items finish at or below this number. The 95th percentile exposes your worst-case outliers. Look at the trend: are the percentile lines rising, falling, or flat? A rising 85th percentile is an early warning that something in your process is degrading.
-
-Dots that sit far above the 95th line are worth investigating individually to understand what caused the delay. ' in a data-backed way.
-
-> **Pro tip:** When stakeholders ask for a delivery estimate, give them the 85th percentile number, not the average. Say 'Based on our last 30 items, 85% of similar work items finish within X days.' This sets realistic expectations and builds trust.
-
-### Step 5: Step 5: Calculate and chart throughput
-
-Count the number of items your team delivers per week (or per whatever cadence makes sense for your delivery rhythm). Plot this as a simple line chart or bar chart over time. Look for the overall trend, the variability, and any seasonal patterns. A stable throughput with low variability means your system is predictable.
-
-High variability means something is disrupting flow, often external dependencies, context switching, or inconsistent item sizing. ' If it is variable, use a range based on your worst and best recent weeks.
-
-> **Pro tip:** If throughput swings wildly from week to week, check whether your work items are consistently sized. A week with one giant epic and a week with twelve small tasks will produce misleading throughput numbers. Decompose work to roughly similar sizes for meaningful throughput data.
-
-### Step 6: Step 6: Build a cumulative flow diagram
-
-A CFD is a stacked area chart where each band represents one workflow stage, plotted over time. The y-axis shows the cumulative count of items that have entered each stage, and the x-axis is time (usually days). To build one, take a daily snapshot of how many items are in each stage. Each day adds a row to your dataset.
-
-Stack the stages from bottom (Done) to top (Backlog/Requested). Most kanban tools generate CFDs automatically if you have clean timestamp data. If you are building one manually in a spreadsheet, create columns for each stage and each day, record the running total of items that have entered each stage, then use a stacked area chart. Read the diagram by looking at band widths (WIP in each stage), the horizontal gap between top and bottom bands (approximate lead time), and the slope of the Done band (throughput).
-
-> **Pro tip:** A healthy CFD has smooth, parallel bands with a steady upward slope. If you see any band widening over time, items are accumulating in that stage faster than they are leaving. That is your bottleneck. Investigate the policies and WIP limits for that stage.
-
-### Step 7: Step 7: Diagnose patterns and identify bottlenecks
-
-With all four metrics in front of you, look for correlated signals. If lead time is rising but cycle time is stable, items are spending more time waiting before work starts, which means your intake or prioritization process is the constraint. If cycle time is rising and the CFD shows a widening band in a specific stage, that stage is the bottleneck, and you should examine its WIP limit, staffing, or upstream quality. If throughput is declining while WIP is constant, items are taking longer to complete, possibly due to increased complexity, technical debt, or external blockers.
-
-Document each pattern you observe along with a hypothesis about its root cause. Bring these hypotheses to your next team retrospective or service delivery review. The goal is not to assign blame but to identify systemic causes that the team can address through policy changes.
-
-> **Pro tip:** Resist the temptation to act on a single week's data. Look for trends over 4-6 weeks. A one-week spike in cycle time might be a holiday week or an outlier item. A four-week upward trend is a real signal.
-
-### Step 8: Step 8: Set baseline targets and improvement goals
-
-Now that you have data, establish your baseline. Record your current 50th, 85th, and 95th percentile cycle times, your average weekly throughput, and your average lead time. These become your reference point. Then set one specific, measurable improvement goal for the next 4-6 weeks.
-
-' Choose the metric that most directly addresses the pain your team is experiencing. If stakeholders complain about unpredictability, target cycle time variability. If the backlog is growing faster than you can deliver, target throughput. Share the goal with the team and identify one process change, such as adjusting a WIP limit or adding a pull policy, that you believe will move the metric.
-
-> **Pro tip:** Pick only one metric to improve at a time. Trying to simultaneously reduce cycle time, increase throughput, and lower WIP creates conflicting incentives and makes it impossible to attribute results to any specific change.
-
-### Step 9: Step 9: Review metrics in regular cadences and iterate
-
-Flow metrics are only valuable if they drive action. Integrate your dashboard into your team's existing [cadences](https://tryhamster.com/skills/running-kanban-cadences). In a weekly team sync, spend 5 minutes reviewing the throughput trend and any cycle time outliers. In a biweekly or monthly service delivery review, walk through the CFD and cycle time scatter plot with stakeholders.
-
-In retrospectives, use the metrics to evaluate whether recent process changes had the intended effect. If you lowered a WIP limit two weeks ago, check whether cycle time dropped. If it did not, investigate why. If it did, decide whether to maintain the change or push further.
-
-This creates a continuous improvement loop grounded in evidence rather than opinion. Over time, the team develops an intuitive understanding of its own flow dynamics and can spot problems before metrics even confirm them.
-
-> **Pro tip:** Post a printed or projected version of the CFD and cycle time scatter plot in a visible location. When metrics are physically present during discussions, teams reference them naturally rather than defaulting to anecdote.
+Once you have a few weeks of finished items, choose a percentile and read off the matching cycle time as your SLE. Share it with stakeholders as a forecast that carries a stated probability. Review the charts in your service delivery review and pick one experiment to improve flow.
 
 ## Best Practices
 
-- Measure lead time from the customer's perspective, not the team's. Lead time starts when a request is submitted or a need is identified, not when the team acknowledges it. This distinction matters because reducing internal cycle time while ignoring a three-week backlog wait delivers no improvement from the customer's point of view. If your lead time is three times your cycle time, the biggest gains are in reducing wait time, not speeding up active work.
-- Use percentiles instead of averages for all time-based metrics. Averages are distorted by outliers and hide bimodal distributions. A team averaging 5-day cycle time might have most items finishing in 2 days with occasional 20-day monsters. Report the 50th, 85th, and 95th percentiles so that planning conversations reflect reality.
-
-Stakeholders can choose their confidence level: the 50th for optimistic estimates, the 85th for commitments.
-- Maintain a consistent definition of 'done' across all items. If some items are counted as done when code is merged and others when the feature is live in production, your metrics will be inconsistent and your throughput numbers meaningless. Write down your definition of done, post it near the board, and audit it quarterly. Any change to the definition requires a noted break in your historical data.
-- Right-size work items so throughput data is meaningful. Throughput counts items, not effort. If your items range from 1-hour tasks to 3-week epics, the count tells you very little. Establish a practice of breaking work into items that most of the team can complete in 1-5 days.
-
-When items are roughly similar in size, throughput becomes a powerful forecasting tool. When they are not, throughput is just a vanity number.
-- Never use flow metrics to evaluate individual performance. The moment you use cycle time or throughput to judge a person, the team will game the metrics. People will cherry-pick small items, avoid difficult work, or stop recording timestamps honestly. Flow metrics measure the system, not the people.
-
-Use them to improve policies, WIP limits, and handoff processes. Individual performance conversations belong in a completely separate context.
-- Update your metrics dashboard weekly and review it in a standing cadence. A dashboard that is updated monthly and reviewed quarterly is too stale to drive action. Weekly updates let you spot emerging problems within one or two data points. If you skip a week, you lose the habit and data gaps appear.
-
-Assign a rotating owner to ensure the dashboard stays current. The five minutes it takes to update are repaid many times over in meeting quality.
-- Track and visualize blocked items separately. Items that are blocked by external dependencies, missing requirements, or technical issues distort your cycle time data because they sit in an active stage without progressing. Tag blocked items and filter them when analyzing flow. Then track the frequency and duration of blocks separately.
-
-A high block rate points to systemic issues like poor upstream refinement or unreliable dependencies that no amount of WIP tuning will fix.
+- Look at distributions. A single average hides the long tail of slow items that stakeholders actually notice.
+- Count finished items. The [Kanban Guide](https://kanbanguides.org/english/) defines throughput as an exact count of work items, which avoids arguments over sizing.
+- Act on age before cycle time. Work item age flags trouble while the item can still be helped; cycle time only describes items already done.
+- Keep definitions fixed. Changing the start or finish point makes old and new data incomparable, so note any change and restart the baseline.
+- Read the cumulative flow diagram for shape. Widening bands point at bottlenecks, as [Atlassian's documentation](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-cumulative-flow-diagram/) explains, and a flat line for finished work means nothing is being delivered.
+- Use metrics to improve the system. Using them to rank individuals invites gaming and hides the problems you need to see.
 
 ## Common Mistakes
 
-- **Using averages as the primary metric and making commitments based on them** — Averages are misleading for flow metrics because cycle time distributions are typically skewed right, with a long tail of outlier items. A team with an average cycle time of 6 days might have a 95th percentile of 22 days, meaning one in twenty items takes almost four times the average. If you commit to 'about 6 days' based on the average, you will miss that commitment 40-50% of the time. Switch to percentile reporting.
-
-Use the 85th percentile for commitments and the 50th for internal planning. Watch for stakeholders who mentally round down to the average anyway, and explicitly label which percentile you are quoting.
-- **Starting measurement before the board's workflow stages are well-defined** — If your board columns are vague or people interpret them differently, your timestamps will be inconsistent. One person moves a card to 'In Progress' when they start thinking about the task, another waits until they write the first line of code. This noise makes cycle time data per stage unreliable. Before turning on metrics, run a brief alignment exercise with the team.
-
-Define what it means for an item to enter and exit each column. Write it down. Use the [explicit pull policies](https://tryhamster.com/skills/creating-kanban-pull-policies) skill to formalize these definitions. Then start measuring.
-
-Two weeks of clean data beats two months of noisy data.
-- **Treating the cumulative flow diagram as a status report instead of a diagnostic tool** — Teams often glance at the CFD, note 'we have 8 items in progress,' and move on. That is reading it as a snapshot, which misses the entire point. The CFD's power is in its shapes over time. A widening band signals accumulating WIP.
-
-A flattening Done band signals stalled throughput. Staircase steps in the Done band mean work is being released in batches rather than continuously. Train your team to read the CFD like a doctor reads an EKG, looking for shape changes and trend breaks over the last 2-4 weeks, not just the current state.
-- **Measuring everything from day one and drowning in data** — Some teams instrument every sub-stage, track aging per item, and build elaborate dashboards before they have a single week of clean data. The result is analysis paralysis and dashboard fatigue, where nobody looks at the metrics because there are too many of them. Start with just two metrics: cycle time scatter plot and weekly throughput. Get comfortable reading those and acting on them.
-
-After 4-6 weeks, add the CFD. After another month, add lead time tracking if you have clean intake timestamps. Layer complexity gradually. Each new metric should answer a specific question the team is already asking.
-- **Comparing flow metrics across different teams without context** — A 3-day average cycle time on one team and a 12-day average on another does not mean the first team is four times better. The teams may have different item sizes, different definitions of done, different domains of complexity, or different dependency profiles. Cross-team metric comparisons invite gaming and demoralize slower teams without actually diagnosing anything. Each team should compare against its own historical baseline and its own improvement targets.
-
-If leadership needs a cross-team view, use normalized metrics like the ratio of cycle time to item size, or focus on whether each team is trending in its intended direction.
-- **Ignoring work item aging and only analyzing completed items** — Flow metrics calculated from completed items tell you about the past. They do not warn you about items currently stuck on the board. A card that has been in 'In Review' for 15 days will not show up in your cycle time data until it is done, by which time the damage is done. Add an aging chart or aging WIP report that shows how long each in-progress item has been in its current stage.
-
-Flag any item that exceeds your 85th percentile cycle time while still in progress. This transforms your metrics from a rearview mirror into a windshield.
+- **Mixing lead time and cycle time**: Teams quote one number while stakeholders hear another. Write down what each term means on your board and which points it measures between.
+- **Reporting only averages**: Averages look stable while a minority of items take far longer. Show percentiles or the full scatterplot.
+- **Ignoring items in progress**: Cycle time only covers finished work, so a stuck item is invisible until it finally closes. Track work item age daily.
+- **Counting the backlog as WIP**: If options sit inside the measured span, WIP and cycle time are inflated. Start the clock at the commitment point.
+- **Collecting data nobody discusses**: Charts that are never reviewed change nothing. Bring them to a regular review and leave with an experiment.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/kanban/METHOD.md) — Kanban
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/kanban/METHOD.md): Kanban
 
 ## Related Skills
 
+- [Setting WIP Limits](../setting-wip-limits/SKILL.md)
+- [Running Kanban Cadences](../running-kanban-cadences/SKILL.md)
 - [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
-- [Running Kanban Cadences and Feedback Loops](../running-kanban-cadences/SKILL.md)
-- [Setting and Enforcing Work-in-Progress Limits](../setting-wip-limits/SKILL.md)
-- [Designing Effective Kanban Boards](../designing-kanban-boards/SKILL.md)
-- [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
-- [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
-- [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
+- [Designing Kanban Boards](../designing-kanban-boards/SKILL.md)
+- [Creating Kanban Pull Policies](../creating-kanban-pull-policies/SKILL.md)
+- [Comparing Kanban and Scrum](../comparing-kanban-and-scrum/SKILL.md)
+- [Choosing Kanban Software](../choosing-kanban-tools-and-software/SKILL.md)
+
+## Sources
+
+- [The Kanban Guide](https://kanbanguides.org/english/)
+- [The Official Guide to The Kanban Method (PDF)](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)
+- [John D. C. Little: Little's Law as Viewed on Its 50th Anniversary](https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf)
+- [Atlassian Support: View and understand the cumulative flow diagram](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-cumulative-flow-diagram/)
+- [Daniel S. Vacanti: Actionable Agile Metrics for Predictability](https://actionableagile.com/books/aamfp/)

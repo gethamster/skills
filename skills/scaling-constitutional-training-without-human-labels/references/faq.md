@@ -1,25 +1,21 @@
-# FAQ: Scaling Constitutional Training Without Human Labels
+# FAQ: Scaling Constitutional AI Training Without Human Labels
 
-## How does scaling constitutional training relate to saas seo claude workflows?
+## Does Constitutional AI need any human labels at all?
 
-SaaS teams using Claude for SEO content generation face a quality-at-scale challenge: every piece of content needs to meet safety and brand standards, but human review of thousands of pages is impractical. Constitutional training lets you encode those standards as principles and have Claude self-enforce them, enabling reliable content generation at scale without proportional human oversight costs.
+The original paper used no human labels for harmlessness, but it kept human labels for helpfulness and used human raters to evaluate its models. The authors expected helpfulness could also be learned without human feedback and left that to future work. Later research used AI labels for helpfulness too, with results comparable to human labels on the tasks tested.
 
-## How many AI-generated preference labels do I need for effective RLAIF training?
+## How much cheaper are AI labels?
 
-For most use cases, 10,000-50,000 AI-generated preference pairs provide a strong training signal. Smaller datasets (5,000-10,000) can work for narrow domains. The key factor isn't just quantity—it's diversity of prompts and quality of the constitutional critique. Always validate a sample against human labels before training.
+Nathan Lambert's RLHF book estimates, as of 2026, that a human preference data point costs on the order of a dollar or more, while an AI label from a frontier model costs under a cent. The real saving is smaller once you add swapped-order labeling, chain-of-thought reasoning, validation and audits. Time also matters: AI labels are limited by inference capacity rather than by recruiting and scheduling labelers.
 
-## Can AI-generated labels match the quality of human labels for alignment training?
+## Which labels should stay with people?
 
-Anthropic's research shows that RLAIF models trained on AI-generated labels perform comparably to RLHF models trained on human labels across most evaluation benchmarks. The quality depends heavily on constitution design and chain-of-thought prompting. AI labels tend to be more consistent but can miss novel failure modes that experienced human annotators would catch.
+Keep people on the judgments that define the objective, on cases where the AI labeler disagrees with humans on your validation set, and on topics needing specialist knowledge. Later work summarized in Lambert's book found the best balance routes a set of challenging items to humans and sends the bulk to AI feedback. Final evaluation before deployment should stay human.
 
-## What happens if my AI-generated labels are systematically biased?
+## Can generated prompts replace human red teamers?
 
-Systematic bias in AI labels (like always preferring longer responses) propagates into your reward model and policy. Mitigate this by randomizing response order in comparisons, requiring chain-of-thought reasoning, and maintaining a human-labeled calibration set. If you detect bias, adjust your critique prompts or add explicit counter-principles to the constitution.
+They can add a great deal of volume, as the Constitutional AI paper did by generating most of its red-team prompts with a model. They can stay close to the seed prompts, though, so keep adding human-written prompts and run fresh human red teaming on finished models.
 
-## How often should I update the constitution when scaling training?
+## What is the biggest risk of scaling this way?
 
-Review your constitution after every training cycle by analyzing failure cases from human evaluation. In practice, most teams update quarterly or when expanding to new domains. Each update should be validated against your gold-standard evaluation set to confirm it improves AI-human label agreement.
-
-## Is constitutional training without human labels suitable for high-stakes applications like healthcare or finance?
-
-For high-stakes domains, constitutional training dramatically reduces but should not fully eliminate human oversight. Use it to handle 90-95% of routine alignment judgments, but maintain domain-expert human review for edge cases, novel scenarios, and regulatory compliance verification. The constitution should be co-authored with domain experts.
+The Constitutional AI paper names it: by reducing the need for human feedback, the method makes it easier to train and deploy models that people have not thoroughly tested. A human evaluation gate before deployment is the direct control for that risk.

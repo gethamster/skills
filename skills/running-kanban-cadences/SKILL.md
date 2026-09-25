@@ -1,15 +1,20 @@
 ---
-name: running-kanban-cadences
-description: "This skill teaches you how to facilitate the seven Kanban cadences, from daily standups to quarterly strategy reviews, so your team has the right feedback loops at the right frequency to continuously improve flow and delivery outcomes."
+name: "running-kanban-cadences"
+description: "Run kanban cadences, from the daily kanban standup to replenishment and the service delivery review, so feedback loops turn board data into decisions."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: kanban
+  method: "kanban"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Running Kanban Cadences and Feedback Loops for Kanban Agile Teams
+# Kanban Cadences: Standups, Replenishment and Reviews
 
-> This skill teaches you how to facilitate the seven Kanban cadences, from daily standups to quarterly strategy reviews, so your team has the right feedback loops at the right frequency to continuously improve flow and delivery outcomes.
+> Run kanban cadences, from the daily kanban standup to replenishment and the service delivery review, so feedback loops turn board data into decisions.
 
 ## Before you start
 
@@ -24,155 +29,114 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours to design and schedule all cadences, then 2-3 weeks to establish the rhythm |
-| Outcome | Your team operates a structured rhythm of meetings and reviews that surface bottlenecks, replenish work at a sustainable pace, and produce measurable improvements in delivery predictability every month. |
-| Prerequisites | A working Kanban board with columns representing your workflow stages, Basic understanding of WIP limits and why they matter (see /skills/setting-wip-limits), Access to flow metrics like cycle time, throughput, and work item age (see /skills/measuring-kanban-flow-metrics), Familiarity with the Kanban method's principles of evolutionary change and respect for current roles |
+| Time to Learn | A week to start the daily meeting, a few months to settle the full set |
+| Outcome | Your team runs a small set of kanban meetings, each with a clear purpose, inputs and outputs, built mostly from meetings you already hold. |
+| Prerequisites | A working kanban board, basic flow data such as start and finish dates, a facilitator |
 | Part of | [Kanban](../../methods/kanban/METHOD.md) |
 
 ## Overview
 
-Kanban cadences are the recurring meetings and review sessions that form the nervous system of any kanban agile implementation. Without them, a Kanban board is just a pretty wall of sticky notes. The board shows the current state, but cadences are what turn that visibility into action. They provide the structured moments where teams inspect their flow, make decisions about what to work on next, identify systemic problems, and commit to specific improvements. If you have a board but no cadences, you have half a system.
+Kanban cadences are the regular meetings and reviews that give a kanban system its feedback loops. "Implement feedback loops" is one of the six general practices of the Kanban Method, and Kanban University's guide names the board, the metrics and "a set of regular meetings and reviews which are referred to as cadences" as the common means ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). Without them, the board is updated but not acted on. The [Kanban method page](../../methods/kanban/METHOD.md) covers where cadences fit in the method as a whole.
 
-The [Kanban](https://tryhamster.com/methods/kanban) method defines seven cadences, each operating at a different altitude and frequency. At the team level you have the daily standup (called the Kanban meeting), the replenishment meeting where new work enters the system, and the delivery planning meeting where finished work is coordinated for release. At the service level you have the service delivery review, which examines flow metrics and fitness for purpose. At the organizational level you have the operations review, the risk review, and the strategy review. Most teams start with just two or three of these and add more as their system matures. The key insight is that each cadence serves a distinct purpose, and collapsing multiple purposes into a single meeting usually means one of them gets neglected.
+David J. Anderson describes seven Kanban cadences ([Anderson, Kanban Cadences](https://djaa.com/kanban-cadences/)): the Kanban meeting, replenishment, delivery planning, the service delivery review, the operations review, the risk review and the strategy review. He is explicit that this does not mean adding seven meetings. He expects existing meetings to be adapted and tuned, and at small scale, combined. One client he mentions merged its service delivery review with replenishment because the audience was the same.
 
-The concrete artifact you produce when applying this skill is a cadence calendar: a documented schedule listing each active cadence, its frequency, its participants, its facilitator, the data inputs required, and the expected output (typically a decision or action item). This calendar becomes a living contract between the team and its stakeholders about when and how decisions get made. Over the first month, you refine the calendar based on what actually produces useful outcomes and what feels like ceremony. The goal is not to run all seven cadences on day one. The goal is to run the right cadences at the right frequency with the right people, and to keep adjusting until every meeting earns its place on the schedule.
+It helps to think of the cadences in two groups. The first coordinates delivery: the daily Kanban meeting keeps work flowing, replenishment decides what enters the system, and delivery planning decides what ships. The second improves the system: the service delivery review checks whether a service meets customer expectations, while the operations, risk and strategy reviews look across services and at the business. A single team usually needs the first group plus a service delivery review or retrospective.
 
-This skill sits at the heart of the Kanban method's commitment to evolutionary change. Where [designing effective boards](https://tryhamster.com/skills/designing-kanban-boards) makes work visible and [setting WIP limits](https://tryhamster.com/skills/setting-wip-limits) controls flow, cadences are where the team learns from the system and takes corrective action. They are the difference between a team that uses Kanban and a team that improves with Kanban.
+This skill is about starting small and growing the set. Kanban University encourages building up cadences gradually and choosing frequency and duration from context, and it notes that "It is the purpose that matters," not the meeting's name. The steps below cover auditing what you already have, adding the core kanban meetings, and connecting them so information flows between them.
 
 ## How It Works
 
-The seven cadences work because they create feedback loops at different time horizons, each matched to the type of decision it supports. A daily standup catches blocked items within hours. A weekly replenishment meeting ensures the team always has the right work queued up. A monthly service delivery review reveals whether systemic improvements are actually working. Without this layering, teams tend to oscillate between two failure modes: either they have no meetings and problems fester until they become crises, or they have one big weekly meeting that tries to cover everything and ends up covering nothing well.
+Each cadence has a purpose, a frequency, an audience and an output. The table lists the seven as summarized by Gerard Chiva of Aktia Solutions, whose suggested frequencies are examples to adapt ([Chiva, Kanban Cadences](https://aktiasolutions.com/kanban-cadences-kanban-feedback-loops/)).
 
-The underlying model is borrowed from systems thinking. Every process has a natural feedback delay, which is the time between taking an action and seeing its effect. Daily decisions about blocked items have short feedback delays, so you review them daily. Decisions about what types of work to accept have longer delays, so you review them weekly or biweekly. Strategic decisions about service offerings or class-of-service policies have the longest delays, so you review them quarterly. Matching cadence frequency to feedback delay is what makes the system responsive without being reactive.
+| Cadence | Example frequency | Purpose |
+|---|---|---|
+| Kanban meeting | Daily | Observe the flow of work and remove blockers |
+| Replenishment | Weekly or on demand | Select options and commit to what enters the system |
+| Delivery planning | Per delivery | Plan what will be delivered downstream |
+| Service delivery review | Every two weeks | Compare delivery against customer expectations |
+| Operations review | Monthly | Look at dependencies and balance across services |
+| Risk review | Monthly | Review risks to delivery capability |
+| Strategy review | Quarterly | Ask whether the business and its capabilities fit the strategy |
 
-Each cadence follows a common structure, even though the content differs. You start by reviewing the current state of the board or the relevant metrics. Then you identify variances: what is different from what we expected? Then you decide on actions: what will we do about it? Finally, you confirm who owns the action and when you will check on it. This inspect-adapt loop is the engine of continuous improvement in kanban agile systems. The board and metrics provide the data. The cadence provides the forum. The action item provides the commitment.
+The daily Kanban meeting, often called the kanban standup, tracks the status and flow of the work itself. Kanban University describes the common approach of walking the board from right to left and asking of each item "what is keeping this item from flowing?" and "who can help?" Starting on the right means the team talks first about items closest to delivery, which reinforces finishing over starting. People who have nothing blocking them do not need to report.
 
-One critical distinction is between team-level and service-level cadences. Team-level cadences (standup, replenishment, delivery planning) focus on the work itself: which items are stuck, what should we pull next, what is ready to ship. Service-level cadences (service delivery review, operations review, risk review, strategy review) focus on the system: are we delivering at the rate customers expect, are there systemic risks building up, is our service mix still aligned with business strategy. Most teams intuitively understand team-level cadences because they resemble daily standups and sprint planning from other methodologies. Service-level cadences are where the real leverage lives, because they address the structural causes of problems rather than just the symptoms.
+The kanban replenishment meeting decides what the team commits to next. It looks at the options on the left of the board, the available capacity shown by the WIP limits, and the priorities of the people requesting work. Anderson stresses that committing to start work is separate from committing to a delivery date, which is why delivery planning is its own cadence ([Anderson, Kanban Cadences](https://djaa.com/kanban-cadences/)).
 
-The practical challenge is not understanding the theory. It is knowing which cadences to start with, how to keep them focused, and how to avoid the gravitational pull that turns every meeting into a status update. The steps below walk through exactly that: designing your cadence calendar from scratch, facilitating each type of meeting effectively, and evolving the system over time.
+The service delivery review in kanban looks at the service from the customer's side. The team reviews flow metrics, such as cycle time against its service level expectation, blockers and failure demand, and decides on improvements. Anderson lists the stand-up meeting, service delivery review, operations review and risk review as the feedback practices used at service delivery level ([Anderson, Principles and General Practices](https://djaa.com/revisiting-the-principles-and-general-practices-of-the-kanban-method/)).
+
+Cadences feed each other. Replenishment decisions show up at the next daily meeting. Patterns seen daily become topics for the service delivery review. Service-level findings go up to the operations and strategy reviews. The Kanban Guide adds that teams need not wait for a formal meeting to change their workflow when the context calls for it ([The Kanban Guide](https://kanbanguides.org/english/)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit Your Current Meetings and Their Purposes
+### Step 1: Audit the meetings you already hold
 
-Before adding any new cadences, list every recurring meeting your team currently attends that touches workflow, planning, or delivery. For each meeting, write down its stated purpose, its actual purpose (often different), who attends, how long it takes, and what output it produces. Flag meetings where no concrete decision or action item is produced, because these are candidates for replacement or restructuring. Also flag meetings that try to serve multiple cadence purposes at once, such as a weekly meeting that mixes status updates with replenishment decisions and retrospective discussions.
+List every recurring meeting the team attends, its purpose, attendees and what it produces. Mark which ones already serve a cadence's purpose, such as a weekly planning meeting that could become replenishment. Note meetings that produce no decisions. Anderson's advice is to adapt existing meetings before adding new ones.
 
-This audit gives you a clear picture of where your feedback loops already exist and where the gaps are. Most teams discover they have decent coverage at the daily level but almost no structured review at the service or organizational level.
+### Step 2: Choose the starting set
 
-> **Pro tip:** If a meeting consistently runs over time, it is usually because it is trying to serve two cadence purposes. Split it rather than extending it.
+Start with the daily Kanban meeting and replenishment, since they keep work flowing and control intake. Add a service delivery review or retrospective once you have a few weeks of flow data. Leave operations, risk and strategy reviews until several teams or services need coordinating.
 
-### Step 2: Step 2: Select Your Starting Cadences Based on Team Maturity
+### Step 3: Define each cadence
 
-Choose which cadences to implement first. For teams new to Kanban, start with three: the daily Kanban meeting (standup), the replenishment meeting, and the delivery planning meeting. These cover the essential feedback loops of unblocking work, feeding the system, and coordinating output. If your team has been running Kanban for a few months and has stable flow metrics, add the service delivery review as your fourth cadence.
+For each chosen cadence, write its purpose, frequency, length, attendees, inputs and outputs on one card. Pick frequency and duration from your context, as Kanban University advises. Post the cadence calendar with the board policies.
 
-Only add the operations review, risk review, or strategy review once you have multiple teams or services running Kanban and need cross-team coordination. Trying to run all seven cadences from day one is a common mistake that creates meeting fatigue and dilutes focus. Document your selection with a brief rationale for each cadence you chose and each one you deferred.
+### Step 4: Prepare the inputs
 
-> **Pro tip:** If you are not sure whether to add a cadence, ask: what decision would this meeting produce that is not being made anywhere else right now? If you cannot name a specific decision, defer the cadence.
+Make sure the board is current before the daily meeting. For replenishment, keep the options list ordered and show available capacity. For the service delivery review, prepare a cycle time chart, work item age and any blocked items since the last review.
 
-### Step 3: Step 3: Design Each Cadence's Format and Frequency
+### Step 5: Run the daily Kanban meeting
 
-For each selected cadence, define five things: frequency, duration, participants, data inputs, and expected output. The daily Kanban meeting runs daily for 15 minutes with the delivery team, uses the board's current state as input, and produces a list of items needing attention today. The replenishment meeting runs weekly or biweekly for 30-60 minutes with the product owner and team leads, uses the backlog and commitment point queue as input, and produces a decision about which items to pull into the committed portion of the board. The delivery planning meeting runs as needed (often weekly) for 30 minutes with whoever coordinates releases, uses the done column and any deployment requirements as input, and produces a release plan.
+Stand at the board, or share it on screen, and walk from right to left. For each item, ask what is keeping it from flowing and who can help. Discuss the oldest items and anything blocked first. End when every column has been covered and move detailed problem-solving to smaller follow-ups.
 
-The service delivery review runs monthly for 60-90 minutes with the team, management, and stakeholders, uses flow metrics (cycle time, throughput, work item age charts) as input, and produces improvement action items. Write all of this into a single cadence calendar document that the team can reference.
+### Step 6: Run replenishment
 
-> **Pro tip:** Keep the daily standup anchored to the board, not to individual status reports. Walk the board right to left, starting with items closest to done, because those are closest to delivering value.
+Review how many slots the WIP limits allow, then choose from the options in priority order with the requesters present or represented. Confirm each selected item meets the entry criteria. Record what was committed and anything deliberately deferred.
 
-### Step 4: Step 4: Prepare the Data Artifacts Each Cadence Needs
+### Step 7: Run the service delivery review
 
-Each cadence depends on specific data being available at meeting time. Before your first cycle, verify that you can produce these artifacts. For the daily standup, you need a current board view with work item ages visible, so everyone can see at a glance which items have been sitting too long. For the replenishment meeting, you need a prioritized list of candidate items ready for commitment, along with the current WIP count per stage so you know whether there is capacity to pull.
+Compare delivery against the SLE and against what customers expect. Look at items that missed the SLE and ask why. Leave with one or two experiments, each with an owner and a date to check the result.
 
-For the service delivery review, you need a cycle time scatterplot, a throughput run chart, and a cumulative flow diagram covering at least the past 30 days. If these metrics do not exist yet, invest time in setting up basic tracking before launching the cadence. Running a service delivery review without data turns it into an opinion session, which destroys credibility for the meeting format.
+### Step 8: Track actions and evolve the calendar
 
-> **Pro tip:** Automate metric generation wherever possible. If your tool cannot produce cycle time charts automatically, a simple spreadsheet with formulas works well enough for the first few months.
-
-### Step 5: Step 5: Facilitate the Daily Kanban Meeting
-
-The daily Kanban meeting is not a status report. It is a flow-focused triage session. The facilitator walks the board from right to left, column by column. ' When an item is blocked, the facilitator captures the blocker and identifies who will resolve it.
-
-When an item has been in a column longer than its typical cycle time for that stage, the facilitator flags it for attention even if no one has explicitly raised a concern. The meeting should end with a clear list of items needing intervention today. Keep it to 15 minutes by deferring deeper discussions to after the meeting. The facilitator's role is to protect the timebox and keep focus on flow, not to manage the team.
-
-> **Pro tip:** Use colored indicators or tags to mark items that have exceeded their expected time in a stage. This makes the daily meeting faster because blockers become visually obvious before anyone has to speak up.
-
-### Step 6: Step 6: Facilitate the Replenishment Meeting
-
-The replenishment meeting decides what work enters the system. Before the meeting, the product owner or equivalent should have a prioritized list of candidate items ready. During the meeting, the team reviews available capacity by checking WIP counts against limits. If there is room to pull new work, the group walks through the top candidates and makes explicit commitment decisions: this item enters the system, or it does not.
-
-The key discipline is to only commit work the team has capacity to start. Overfilling the commitment queue defeats the purpose of WIP limits. Each committed item should have clear acceptance criteria and any dependencies identified. The meeting also reviews the overall mix of work types (features, bugs, maintenance, expedites) to ensure balance aligns with policies.
-
-Document every commitment decision so there is no ambiguity about what was agreed.
-
-> **Pro tip:** If the replenishment meeting consistently takes longer than 60 minutes, your candidate list is too large or your prioritization criteria are too vague. Pre-filter the list before the meeting to the top 10-15 candidates.
-
-### Step 7: Step 7: Facilitate the Service Delivery Review
-
-The service delivery review is where continuous improvement actually happens. It runs monthly and examines whether the system is delivering at the level customers and stakeholders expect. Start by reviewing the key flow metrics: cycle time distribution, throughput trend, and cumulative flow diagram. Identify any shifts, such as cycle time increasing, throughput dropping, or a stage's band widening on the CFD.
-
-For each anomaly, discuss possible causes. Then review any improvement actions from the previous review and check whether they had the intended effect. This is critical: if you set actions but never follow up, the meeting loses credibility quickly. End by selecting one or two new improvement experiments for the coming month.
-
-These should be specific, time-boxed, and measurable.
-
-> **Pro tip:** Invite at least one stakeholder or customer representative to the service delivery review. Their perspective on whether delivery is meeting expectations is data the team cannot generate internally.
-
-### Step 8: Step 8: Capture and Track Action Items Across Cadences
-
-Every cadence should produce at least one action item, and every action item needs an owner and a review date. Create a shared action log visible to all cadence participants. At the start of each cadence, the facilitator reviews outstanding actions from previous sessions before introducing new topics. Actions that are repeatedly deferred or never completed signal one of two problems: either the action was not important enough to warrant the meeting time spent discussing it, or the team lacks capacity to act on improvements alongside delivery work.
-
-Both are worth surfacing explicitly. If your action completion rate drops below 70%, reduce the number of actions per cadence to one. One completed improvement is worth more than five that sit on a list.
-
-> **Pro tip:** Track improvement actions on the Kanban board itself as a distinct work type. This makes improvement work visible alongside delivery work and forces the team to allocate real capacity to it.
-
-### Step 9: Step 9: Review and Evolve Your Cadence Calendar Quarterly
-
-After running your cadences for 8-12 weeks, conduct a meta-review of the cadence system itself. For each cadence, ask: did this meeting consistently produce decisions or actions that would not have happened otherwise? Was attendance and engagement high? Did the data inputs support useful discussion?
-
-Retire or restructure cadences that are not earning their place. Add new cadences if the team has identified gaps, for example, adding a risk review if cross-team dependencies are causing repeated delivery misses. Adjust frequencies if a weekly meeting would work better biweekly, or vice versa. The cadence calendar should evolve alongside the team's maturity.
-
-A team that has been running Kanban for a year should have a different cadence setup than one in its first month. Document every change and the rationale behind it.
-
-> **Pro tip:** Ask team members to anonymously rate each cadence on a 1-5 usefulness scale before the quarterly review. Meetings rated below 3 consistently are candidates for restructuring or elimination.
+Keep one list of improvement actions across all cadences and review it at the start of each service delivery review. Every few months, ask whether each cadence still serves its purpose. Merge, change the frequency or drop cadences that do not.
 
 ## Best Practices
 
-- Anchor every cadence discussion on the board or on metrics, never on individual status reports. When conversations drift to 'what I did yesterday,' the meeting stops producing systemic insights and starts producing performance theater. The observable consequence is that blockers go unmentioned because people focus on appearing productive rather than surfacing problems.
-- Walk the board right to left in the daily standup, starting with items closest to done. Items near completion represent the most invested effort and the closest value delivery. Left-to-right discussion often runs out of time before reaching the items that matter most, leaving nearly-finished work stuck while new work keeps starting.
-- Separate the replenishment decision from the prioritization discussion. Prioritization is a strategic conversation about what matters most. Replenishment is an operational decision about what the system has capacity to accept right now. Mixing them causes teams to debate strategy every week instead of making quick pull decisions based on pre-agreed priorities.
-- Time-box every cadence strictly, and defer detailed discussions to follow-up sessions with only the relevant participants. A 15-minute standup that regularly runs 40 minutes is not a standup, it is an unstructured planning meeting. Enforcing timeboxes teaches the team to communicate concisely and signals that everyone's time is valued.
-- Limit improvement actions from the service delivery review to one or two per cycle. Teams that generate five or six actions per review rarely complete any of them, which erodes trust in the cadence over time. Completing one meaningful improvement and demonstrating its impact builds momentum for the next cycle.
-- Rotate the facilitator role across team members every few weeks. This distributes ownership of the cadence system, builds facilitation skills across the team, and prevents the cadences from becoming one person's meeting that others passively attend. If only one person can run the meeting, the cadence is fragile.
-- Use the cumulative flow diagram as the primary artifact in the service delivery review, not just cycle time averages. The CFD reveals queue buildups, flow inefficiencies, and WIP policy violations that averages obscure. A flat or widening band in the CFD tells you exactly which stage needs attention.
-- Keep a visible record of completed improvements and their measured impact. When the team can see that last month's experiment reduced cycle time by 20%, they develop genuine belief in the improvement process. Without this record, continuous improvement feels like continuous talking.
+- Start with purpose. [Kanban University](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf) says the purpose matters more than the name, so reuse existing meetings where they fit.
+- Walk the board right to left. Talking first about the items nearest delivery keeps attention on finishing.
+- Keep replenishment separate from delivery commitments. [Anderson](https://djaa.com/kanban-cadences/) distinguishes committing to start work from committing to a date.
+- Bring data to reviews. A cycle time chart and the list of aging items keep the service delivery review focused on how the system behaves.
+- Add cadences as the system grows. A single team rarely needs all seven; add coordination reviews when several services depend on each other.
+- Close the loop. Every review should end with an action, and the next review should check what happened.
 
 ## Common Mistakes
 
-- **Turning the daily Kanban meeting into individual status reports** — This happens because teams import standup habits from Scrum without adapting to Kanban's flow focus. The tell is that each person speaks in turn about their work, and nobody references the board. To catch it, notice whether the board is even visible during the meeting. Fix it by making the board the sole agenda: walk it right to left, and only discuss items, not people.
-
-If someone's update does not connect to a specific board item, it belongs in a different conversation.
-- **Skipping the replenishment meeting and letting work enter the system informally** — This typically occurs when a senior stakeholder drops work directly into the 'in progress' column, bypassing the commitment point. The signal is WIP limits being exceeded without a conscious team decision. This undermines the entire pull system because work enters without capacity checks. Fix it by making the replenishment meeting the only sanctioned entry point for non-expedite work, and by making the commitment point visible on the board with a clear policy posted next to it.
-- **Running service delivery reviews without prepared flow metrics** — Teams often schedule the review but fail to prepare the data, so the meeting devolves into anecdotes and opinions. You can spot this pattern when conversations include phrases like 'it feels like things are slower' without any numbers to confirm or deny. The fix is to assign metric preparation as a specific task to a specific person at least two days before the review. If the data is not ready, postpone the meeting rather than running it without evidence.
-
-One skipped meeting with a clear explanation is better than a dozen opinion sessions that train people to ignore the data.
-- **Running all seven cadences from the first week** — This happens when teams read the Kanban guide cover to cover and try to implement everything at once. The result is meeting fatigue, poor attendance, and cadences that lack substance because the team does not yet have the data or organizational context to make them productive. Watch for declining attendance in the third and fourth week. Start with three cadences (daily, replenishment, delivery planning), let them stabilize for 6-8 weeks, then add the service delivery review.
-
-Add organizational cadences only when you have multiple teams or services to coordinate.
-- **Generating action items in the service delivery review but never following up on them** — This is the most corrosive mistake because it teaches the team that the review is performative. It happens because action items are recorded in meeting notes that nobody reopens. The signal is that the same problems appear in consecutive reviews with no progress. Fix it by reviewing the previous meeting's actions as the first agenda item of every service delivery review.
-
-Track actions on the Kanban board itself so they are visible daily, not buried in a document. If actions are not getting done, reduce to one action per review and allocate explicit capacity for it.
-- **Using the same meeting format for every cadence** — Some teams apply a generic agenda template to all cadences: round-the-table updates, discussion, action items. This misses the point that each cadence has a distinct purpose and requires distinct inputs. The daily standup should be board-focused and fast. The replenishment meeting should be decision-focused and structured around capacity.
-
-The service delivery review should be data-focused and structured around metrics. Design each cadence's agenda specifically for its purpose, and resist the urge to standardize across all meeting types.
+- **Turning the daily meeting into status reports**: Going person by person hides blocked items and bores everyone. Walk the board and talk about the work.
+- **Adding seven new meetings**: This creates overhead and resistance. Map cadences onto existing meetings and combine them at small scale.
+- **Replenishing without looking at capacity**: Selecting work while columns are full breaks the WIP limits. Start replenishment by counting open slots.
+- **Reviews without follow-through**: Improvement ideas that are never tracked are soon forgotten. Keep one action list and check it at each review.
+- **Keeping cadences that no longer help**: Meetings outlive their purpose. Review the cadence calendar regularly and cut what does not produce decisions.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/kanban/METHOD.md) — Kanban
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/kanban/METHOD.md): Kanban
 
 ## Related Skills
 
-- [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
-- [Setting and Enforcing Work-in-Progress Limits](../setting-wip-limits/SKILL.md)
-- [Designing Effective Kanban Boards](../designing-kanban-boards/SKILL.md)
 - [Measuring Kanban Flow Metrics](../measuring-kanban-flow-metrics/SKILL.md)
-- [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
-- [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
-- [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
+- [Setting WIP Limits](../setting-wip-limits/SKILL.md)
+- [Creating Kanban Pull Policies](../creating-kanban-pull-policies/SKILL.md)
+- [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
+- [Designing Kanban Boards](../designing-kanban-boards/SKILL.md)
+- [Comparing Kanban and Scrum](../comparing-kanban-and-scrum/SKILL.md)
+- [Choosing Kanban Software](../choosing-kanban-tools-and-software/SKILL.md)
+
+## Sources
+
+- [David J. Anderson: Kanban Cadences](https://djaa.com/kanban-cadences/)
+- [David J. Anderson: Revisiting the Principles and General Practices of the Kanban Method](https://djaa.com/revisiting-the-principles-and-general-practices-of-the-kanban-method/)
+- [Gerard Chiva: Kanban Cadences, Kanban Feedback Loops](https://aktiasolutions.com/kanban-cadences-kanban-feedback-loops/)
+- [The Official Guide to The Kanban Method (PDF)](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)
+- [The Kanban Guide](https://kanbanguides.org/english/)

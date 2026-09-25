@@ -1,43 +1,41 @@
-# Examples: Using Start Stop Continue in Performance Reviews and 1-on-1 Meetings
+# Examples: Start Stop Continue in 1-on-1s and Performance Reviews
 
-## Example: Monthly 1-on-1 between an engineering manager and a mid-level developer
-
-**Scenario:**
-
-Priya is an engineering manager. Her direct report, Marcus, is a solid mid-level developer who has expressed interest in becoming a tech lead. They've been doing weekly 1-on-1s but the conversations tend to be status updates. Priya decides to introduce a monthly start stop continue meeting to add more structure to their development conversations.
-
-**Walkthrough:**
-
-Priya messages Marcus on Monday: 'For our Thursday 1-on-1, I'd like us both to prep a Start/Stop/Continue list focused on your work over the past month. I'll do one for you and one for myself as your manager. Here's a shared doc with the template.'
-
-On Thursday, they compare lists. **Continue overlap:** Both listed 'continue writing detailed PR descriptions'—they celebrate this alignment. **Stop surprise:** Marcus wrote 'stop assigning me to two sprint teams simultaneously' which Priya hadn't realized was a problem. Priya wrote 'stop debugging alone for more than 30 minutes before pairing with someone.' They discuss both candidly. **Start alignment:** Priya wrote 'start leading the Monday architecture review' and Marcus had independently written 'start presenting more in team meetings.' They agree this is the highest-priority action.
-
-They commit to three items: Marcus will lead the next two architecture reviews (start), Priya will assign him to only one sprint team starting next sprint (stop), and Marcus will maintain his PR description quality (continue). They document these with a check-in date two weeks out.
-
-## Example: Quarterly performance review using Start Stop Continue as the conversation framework
+## A regular 1-on-1 with a new engineer
 
 **Scenario:**
 
-A product design lead, Tomoko, is preparing for quarterly reviews with her three direct reports. The company uses a standard review template, but Tomoko finds it produces generic feedback. She adapts Start Stop Continue to structure the review conversation while still completing the required form.
+Illustrative scenario: an engineer has been on the team for two months. The manager wants to move their weekly 1-on-1 beyond status updates and sends the three questions the day before.
 
 **Walkthrough:**
 
-Two weeks before reviews, Tomoko sends each report a prep document: 'Please fill out Start/Stop/Continue for yourself (self-assessment) and for me as your manager. I'll do the same for you. We'll use these to drive our review conversation, and I'll translate the outcomes into the company review form.'
+The engineer brings three items. Start: ask for help sooner when stuck on unfamiliar code. Stop: taking on side requests from other teams without mentioning them. Continue: writing short design notes before larger changes.
 
-During the review with her report Alex, Tomoko maps the conversation to the review form in real time. Alex's 'Start: begin user-testing my prototypes before the design review' maps to the 'Growth Areas' section. Tomoko's 'Continue: keep running those cross-functional design critiques' maps to 'Key Strengths.' Alex's 'Stop: stop approving design changes in Slack DMs instead of the design system channel' maps to 'Process Improvement.'
+The manager agrees with all three and adds a Continue item with a specific situation: the engineer's design note last week caught a data migration problem before review. The engineer then offers a Stop item for the manager: changing priorities in chat without explaining why.
 
-The result is a performance review that feels collaborative rather than top-down, and the documented Start/Stop/Continue items become the goals for the next quarter.
+They agree on two changes. The engineer will raise any blocker lasting more than half a day in the team channel. The manager will explain priority changes in the weekly planning note. Both go into their shared 1-on-1 document, and the next meeting opens with them.
 
-## Example: Self-reflection using Start Stop Continue for personal development
+## A performance review built from 1-on-1 notes
 
 **Scenario:**
 
-Jordan is a freelance consultant without a manager. They want to use Start Stop Continue for structured self-reflection at the end of each month to improve their client work and personal productivity.
+Illustrative scenario: a manager prepares a twice-yearly review for a designer. They have kept start stop continue notes from each 1-on-1 in a shared document.
 
 **Walkthrough:**
 
-Jordan sets a monthly calendar reminder: 'SSC Self-Review.' They open their running journal document and fill out three columns. This month: **Start:** 'Start sending clients a Monday morning priority summary instead of waiting for them to ask for updates.' **Stop:** 'Stop checking email before completing my first deep work block—it derails my mornings every time.' **Continue:** 'Continue the Friday project retrospective notes—three clients have mentioned they appreciate the transparency.'
+The manager reads back through the notes and sees a pattern. Continue items about the designer's research summaries appear in almost every meeting. A Stop item about late handoffs appeared early and disappeared after the designer started sharing work in progress.
 
-Jordan reviews last month's entries: they had committed to 'start time-blocking client calls into two afternoon slots.' Reviewing their calendar, they see they followed through 3 out of 4 weeks. Progress, not perfection. They keep it on the 'continue' list.
+The review uses the same three headings. Continue lists the research summaries with examples. The earlier Stop item is recorded as resolved, with the change that fixed it. The one new Start item is running a short review with engineers before handoff, which came up twice in recent meetings.
 
-Over six months, Jordan's journal becomes a personal development portfolio showing clear patterns: they consistently struggle with boundaries (multiple 'stop' items around overcommitting) and thrive with structured communication (multiple 'continue' items). This self-awareness shapes how they scope their next client engagement.
+Because the examples come from the notes, the designer recognizes each one, and the conversation is about what comes next rather than about whether the examples are fair.
+
+## Self-reflection before a career conversation
+
+**Scenario:**
+
+Illustrative scenario: a product manager wants to prepare for a conversation about a promotion and uses the three questions on their own first.
+
+**Walkthrough:**
+
+They list what they should start doing, such as presenting roadmap trade-offs to leadership directly. They list what they should stop doing, such as rewriting tickets that engineers have already refined. They list what they should continue, such as the weekly customer call summaries.
+
+For each item they write one recent situation that shows it. In the conversation with their manager, they share the list and ask which items the manager sees differently. The manager adds one Start item and agrees with the rest, and they pick one change to work on first.

@@ -1,25 +1,25 @@
-# FAQ: Structuring Landing Page Copy for Maximum Conversion
+# FAQ: Structuring Landing Page Copy for Conversion
 
-## How long should landing page copy be for conversion copywriting?
+## How long should landing page copy be?
 
-Copy length should match the commitment level of your offer. Free trials and lead magnets often convert well with shorter pages (500-800 words). Paid products, especially above $100, typically need 1,500-3,000+ words to build enough trust and handle objections. Test by adding sections, not cutting them — you can always remove what doesn't lift conversions.
+As long as the reader needs to act, and no longer. Readers who arrive knowing the problem and the product need a short page. Readers facing an expensive or unfamiliar decision need more explanation, proof and objection handling. Let the traffic source and the size of the ask set the length.
 
-## What's the best landing page copy structure for SaaS products?
+## What sections does a landing page need?
 
-For SaaS, the proven structure is: benefit-driven headline → problem agitation → 3-5 benefit/feature blocks with visuals → social proof (testimonials + logos) → FAQ-style objection handling → CTA with risk reversal (free trial, no credit card). Adjust length based on whether you're asking for a free signup or a paid commitment.
+A common core is a hero with headline, subhead and button, then social proof, the problem, the solution and its benefits, how it works, objection handling and a final call to action. Not every page needs every section. Drop what your readers do not need and reorder when research shows they ask questions in a different order.
 
-## Should I put the CTA button above the fold on a landing page?
+## Should the call to action be above the fold?
 
-For low-friction offers (free trial, email signup), yes — include a CTA above the fold. For higher-commitment offers, an above-the-fold CTA often underperforms because visitors haven't been persuaded yet. In either case, always include a full CTA section at the bottom of the page after your complete argument.
+Put the primary action in the first screen so readers who are already convinced can act at once. Repeat the same action after the proof and at the end for readers who need the rest of the page. The later buttons are for readers who needed the argument before acting.
 
-## How do I know what order to put sections in on my landing page?
+## How do I decide the order of sections?
 
-Follow the natural decision-making sequence: first confirm relevance (headline), then build emotional engagement (problem), then present the solution (benefits), then prove it works (social proof), then remove barriers (objection handling), then ask for action (CTA). This mirrors how a skilled salesperson structures a conversation.
+Follow the order of the reader's questions: what is this, is it for me, do you get my problem, how does it work, why believe you, what about my doubts. Use research to spot differences. A skeptical audience may need proof right after the hero, while a reader who clicked an ad about a specific problem may need little problem framing.
 
-## How many testimonials should I include on a landing page?
+## How many testimonials should I include?
 
-Quality and relevance matter more than quantity. Two or three specific, results-oriented testimonials that address your key benefits or objections will outperform twenty generic 'great product' quotes. Place your strongest testimonial near the benefits section and add supporting proof points in a dedicated social proof section.
+Enough to support the main claims, placed next to the claims they support. A few specific, attributed testimonials about outcomes carry more weight than a long wall of generic praise. Every testimonial must be real and used with permission.
 
-## What's the difference between a landing page and a homepage in conversion copywriting?
+## What is the difference between a landing page and a homepage?
 
-A homepage serves multiple audiences and goals — it's a navigation hub. A landing page serves one audience with one goal — it's a persuasion funnel. Landing pages remove navigation, focus on a single CTA, and structure copy as a linear argument. For homepage-specific guidance, see Writing Page-Specific Website Copy.
+A homepage serves many visitors with different intents and offers paths for each. A landing page serves one audience from one source and asks for one action. That is why a landing page can drop the navigation and extra options that a homepage needs.
