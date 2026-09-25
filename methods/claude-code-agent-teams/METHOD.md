@@ -5,12 +5,15 @@ description: "Claude Code Agent Teams run parallel Claude sessions under a lead.
 metadata:
   datePublished: "2026-09-24"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/ruined-abbey-colour-light.webp"
 ---
 
 # Claude Code Agent Teams: Lead, Teammates and Limits
 
-> Created by **Anthropic** — [https://www.anthropic.com/](https://www.anthropic.com/)
+> Created by **Anthropic** - [https://www.anthropic.com/](https://www.anthropic.com/)
 
 ## Overview
 
@@ -112,13 +115,13 @@ Anthropic flags diminishing returns: adding teammates does not speed work up pro
 
 This method includes the following skills:
 
-- [Decomposing Tasks for Agent Teams](skills/decomposing-tasks-for-agent-teams/SKILL.md) — Break a large objective into clearly bounded, parallelizable units of work while identifying dependencies and sequencing constraints across multiple Claude Code sessions.
-- [Designing Agent Roles and Scopes](skills/designing-agent-roles-and-scopes/SKILL.md) — Define non-overlapping responsibilities, expertise areas, and operational boundaries for each teammate session so that every Claude Code agent contributes distinct value.
-- [Coordinating Inter-Agent Communication](skills/coordinating-inter-agent-communication/SKILL.md) — Use peer-to-peer messaging between teammate sessions to share findings, clarify assumptions, resolve blockers, and maintain alignment without routing everything through the team lead.
-- [Reviewing and Synthesizing Teammate Outputs](skills/reviewing-and-synthesizing-teammate-outputs/SKILL.md) — Evaluate completed work from teammate sessions, reconcile conflicting results, validate correctness, and combine individual contributions into a coherent final deliverable as the team lead.
-- [Parallelizing Independent Work Across Sessions](skills/parallelizing-independent-work-across-sessions/SKILL.md) — Identify which subtasks can safely run concurrently in separate Claude Code sessions without conflicting file edits or missing intermediate results, maximizing throughput while avoiding unsafe parallelization.
-- [Choosing Agent Teams Versus Subagents](skills/choosing-agent-teams-versus-subagents/SKILL.md) — Decide when to use multi-session Agent Teams with peer-to-peer communication versus lightweight single-session subagents that report only to a parent, based on task complexity and coordination needs.
-- [Managing Shared Task State](skills/managing-shared-task-state/SKILL.md) — Track task ownership, progress, completion status, and dependencies through the shared task list so that parallel work across independent sessions remains organized and conflict-free.
+- [Decomposing Tasks for Agent Teams](../../skills/decomposing-tasks-for-agent-teams/SKILL.md): Break a large objective into clearly bounded, parallelizable units of work while identifying dependencies and sequencing constraints across multiple Claude Code sessions.
+- [Designing Agent Roles and Scopes](../../skills/designing-agent-roles-and-scopes/SKILL.md): Define non-overlapping responsibilities, expertise areas, and operational boundaries for each teammate session so that every Claude Code agent contributes distinct value.
+- [Coordinating Inter-Agent Communication](../../skills/coordinating-inter-agent-communication/SKILL.md): Use peer-to-peer messaging between teammate sessions to share findings, clarify assumptions, resolve blockers, and maintain alignment without routing everything through the team lead.
+- [Reviewing and Synthesizing Teammate Outputs](../../skills/reviewing-and-synthesizing-teammate-outputs/SKILL.md): Evaluate completed work from teammate sessions, reconcile conflicting results, validate correctness, and combine individual contributions into a coherent final deliverable as the team lead.
+- [Parallelizing Independent Work Across Sessions](../../skills/parallelizing-independent-work-across-sessions/SKILL.md): Identify which subtasks can safely run concurrently in separate Claude Code sessions without conflicting file edits or missing intermediate results, maximizing throughput while avoiding unsafe parallelization.
+- [Choosing Agent Teams Versus Subagents](../../skills/choosing-agent-teams-versus-subagents/SKILL.md): Decide when to use multi-session Agent Teams with peer-to-peer communication versus lightweight single-session subagents that report only to a parent, based on task complexity and coordination needs.
+- [Managing Shared Task State](../../skills/managing-shared-task-state/SKILL.md): Track task ownership, progress, completion status, and dependencies through the shared task list so that parallel work across independent sessions remains organized and conflict-free.
 
 ## FAQ
 
