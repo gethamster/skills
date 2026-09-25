@@ -1,61 +1,31 @@
-# Examples: Facilitating a Design Sprint as the Sprint Master
+# Examples: Design Sprint Facilitator: How to Facilitate a Sprint
 
-## Example: B2B SaaS startup running their first design sprint
-
-**Scenario:**
-
-A 12-person SaaS company building project management software wants to redesign their onboarding flow. The sprint team is six people: CEO (Decider), lead designer, two engineers, a customer success manager, and a marketer. Nobody has done a design sprint before. The facilitator is the lead designer's manager, who has participated in two sprints previously but never facilitated.
-
-**Walkthrough:**
-
-The facilitator spends Friday afternoon before the sprint writing a detailed run-of-show document with every exercise, timebox, and transition scripted. ") and briefs the CEO on the Decider role, specifically that he will make three to four binding decisions during the week. On Monday morning, she opens with a 20-minute overview, sets ground rules, and gets explicit buy-in from the CEO first. During the map exercise, the customer success manager dominates with detailed edge cases.
-
-" She writes the edge cases on the parking lot board. By Monday afternoon, the team has a six-step map and the CEO has picked the target: the moment when a new user creates their first task. Tuesday's Crazy 8s produces nervous laughter from the engineers, who claim they cannot draw. " All six participants produce sketches.
-
-" The CEO's super vote lands on a solution sketch from the engineer, which would not have been selected by group discussion because the engineer is the quietest person on the team. The prototype is built Thursday in Figma by the lead designer, and Friday's five user tests reveal that three of five users complete their first task in under eight minutes with the new flow. The sprint produces a clear "iterate and ship" recommendation.
-
-## Example: Enterprise product team with strong opinions and organizational politics
+## A Monday debate handed to the Decider
 
 **Scenario:**
 
-A 200-person enterprise software company is running a sprint to explore a new analytics dashboard. The seven-person sprint team includes a VP of Product (Decider), two senior PMs who each have competing visions, a UX researcher, two front-end developers, and a data scientist. The facilitator is an external consultant hired specifically because internal politics make neutral facilitation impossible.
+Illustrative scenario: on Monday afternoon, two product managers on a sprint team for a fitness app disagree about whether the target customer should be beginners or returning members. The discussion has run well past the time planned for choosing the target.
 
 **Walkthrough:**
 
-The external facilitator conducts a 90-minute pre-sprint call with the VP of Product to understand the political dynamics. She learns that the two PMs have been arguing about the dashboard direction for three months, and the sprint is partly an attempt to break the deadlock. She adjusts her approach: extra emphasis on anonymous sketching and structured voting, minimal group discussion time. On Monday, she keeps the mapping exercise to 45 minutes and uses a strict format where each participant writes journey steps on sticky notes individually before anyone speaks.
+The Facilitator summarises both positions on the whiteboard in one line each, with the How Might We votes that support each side. They then ask the Decider to make the call, reminding the room that the team can weigh in but the Decider decides. The Decider picks returning members, because more of the sprint questions concern them. The Facilitator circles the target on the map, checks it off the list and moves the team to the next item. The product manager whose view lost gets a note on the "later" list for a possible second sprint.
 
-This prevents the PMs from anchoring the map to their preferred direction. During Tuesday's sketching, she enforces absolute silence and collects sketches face-down, shuffles them, and tapes them to the wall with no names visible. Wednesday's voting is entirely dot-based with no verbal debate before the Decider's super vote. One PM's concept wins.
-
-The other PM is visibly frustrated. During the break, the facilitator speaks with the frustrated PM privately: "Your sketch had strong elements, especially the filter pattern. I noticed the Decider incorporated that into the storyboard. " This reframes the outcome as collaborative rather than winner-take-all.
-
-Thursday's prototype combines elements from both PMs' sketches as directed by the storyboard. Friday's user tests validate the core navigation pattern but reveal that three of five users miss the advanced filtering feature. The sprint ends with a clear direction and the three-month argument is resolved in five days.
-
-## Example: Remote distributed team across three time zones
+## Rescuing a quiet Tuesday
 
 **Scenario:**
 
-A fully remote company with team members in Portland, London, and Singapore needs to sprint on a mobile checkout flow. The eight-person team has a four-hour overlap window (8am-12pm Pacific, 4pm-8pm London, 11pm-3am Singapore, so Singapore participates asynchronously for some exercises). The facilitator is in Portland and has run three in-person sprints but never a remote one.
+Illustrative scenario: during the ideas step of the four-step sketch, two participants start talking about their ideas across the table, and others begin to listen instead of writing.
 
 **Walkthrough:**
 
-The facilitator adapts the five-day sprint into a modified schedule: synchronous sessions during the four-hour overlap window for all group exercises (mapping, critique, voting, storyboarding), and asynchronous work for individual exercises (sketching, note-taking). She sets up a Miro board with clearly labeled frames for each exercise, pre-populated with templates and instructions. For the Singapore team members, she records a five-minute video walkthrough of each exercise with specific instructions, and they complete their individual work during their morning hours. On Tuesday, the Singapore designer's Crazy 8s and Solution Sketch are uploaded to Miro before the synchronous session starts, so they are included in Wednesday's Art Museum and voting alongside everyone else's work.
+The Facilitator walks over, quietly reminds them that this step is individual, and points at the timer. They add that everyone will see each other's work on Wednesday. The room goes quiet again. At the next break, the Facilitator explains to the whole group why the sketching is silent: ideas developed alone give the Decider more distinct options than ideas that converge in conversation.
 
-The facilitator uses Zoom breakout rooms for the Lightning Demos (three groups of two, five minutes each, then reconvene), which saves 20 minutes compared to doing all eight demos sequentially. During the synchronous storyboarding session, she shares her Miro screen and draws while the team directs via voice, polling Singapore participants via Slack when they are online. The prototype is built by the Portland and London designers collaboratively in Figma with a handoff at the end of Portland's day. Friday testing is conducted by the UX researcher in London with users in the UK time zone, while Portland and Singapore observe via livestream.
-
-The sprint produces a tested checkout flow and the team identifies that the primary friction point is the address entry step, which three of five users struggled with.
-
-## Example: Non-tech organization using a design sprint for a physical service
+## Managing energy before the storyboard
 
 **Scenario:**
 
-A regional hospital system wants to redesign their patient intake process for the emergency department. The sprint team includes an ER physician (Decider), two nurses, an admissions coordinator, a patient advocate, and an IT systems analyst. None of them have participated in a design sprint, and the facilitator is an internal process improvement specialist who completed a sprint facilitation course.
+Illustrative scenario: the Wednesday morning decision ran long, and the team returns from lunch visibly tired, with the storyboard still ahead.
 
 **Walkthrough:**
 
-The facilitator recognizes that healthcare professionals are not accustomed to rapid ideation exercises and builds in extra demo time for each exercise. During Monday's mapping, the physician tries to map every possible patient scenario. The facilitator redirects: "We are mapping the most common path today, which covers about 70% of patients. " She helps the team create a seven-step map from ambulance arrival to triage completion.
-
-" The facilitator reframes: "You are sketching the steps a patient goes through, not designing a product. " She provides printed templates with blank phone screens and paper forms as canvases. Wednesday's voting reveals that the nurses independently converged on a similar solution: a tablet-based triage questionnaire that patients complete in the waiting room. The physician selects this concept.
-
-Thursday's prototype is not a digital product but a paper-based walkthrough: printed screens taped to a clipboard simulating the tablet experience, combined with a physical layout change in the waiting area marked with tape on the floor. Friday's testing uses five patients in the actual ER waiting room (with IRB approval obtained two weeks before the sprint). The facilitator observes alongside the team and enforces the same note-taking protocol used in software sprints. Results show that four of five patients complete the triage form without assistance, reducing nurse intake time by an estimated 40%.
-
-The hospital greenlights a digital prototype for the next quarter.
+The Facilitator starts the afternoon with a short break and a quick icebreaker instead of going straight to the grid. They set up the storyboard with one person drawing and remind the group to use existing sketches. When a disagreement arises over the order of two screens, they ask the Decider to choose in the moment. When someone raises a new feature idea, they write it on the maybe-later wall. The storyboard is finished before the end of the day with the team's energy intact.

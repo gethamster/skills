@@ -1,35 +1,43 @@
-# Examples: Mapping Divergent and Convergent Thinking Modes
+# Examples: Double Diamond Thinking, Divergent and Convergent Modes
 
-## Example: Mapping Modes for a Mobile Banking App Redesign
-
-**Scenario:**
-
-A fintech product team is redesigning their mobile banking app's bill payment flow. They have 6 weeks and a cross-functional team of 8 (designers, engineers, a product manager, and a researcher). The team has previously struggled with rushed designs that didn't address actual user pain points.
-
-**Walkthrough:**
-
-The team starts by creating a mode map on a shared Miro board. They allocate Week 1-2 to Discover (divergent): conducting 12 user interviews, analyzing support tickets, benchmarking 6 competitor apps, and running a diary study with 5 users. The board header reads 'MODE: DIVERGE — All findings welcome, no filtering yet.'
-
-At the end of Week 2, they hold a transition ritual: a 2-hour synthesis workshop where they cluster all findings into themes. They switch the board header to 'MODE: CONVERGE — Defining the problem.' By end of day, they've committed to a problem statement: 'Users abandon bill payments because they can't verify payee details before committing, leading to anxiety and manual workarounds.'
-
-Week 3-4 opens Diamond 2. The header switches to 'MODE: DIVERGE — All solutions welcome.' The team runs three ideation sessions using different techniques (Crazy 8s, reverse brainstorming, analogous inspiration from gaming UIs). They generate 47 distinct concepts. A mode guardian prevents the engineering lead from dismissing ideas based on technical complexity—those concerns are parked for the convergent phase.
-
-Week 5-6 shifts to Deliver (converge). The team evaluates all 47 concepts against four criteria: user anxiety reduction, implementation complexity, alignment with brand, and measurability. They narrow to 3 concepts, prototype each, test with 5 users, and converge on a solution that combines payee verification with a confidence indicator. The final retrospective reveals that explicitly marking modes prevented at least three instances where the team would have prematurely killed promising ideas.
-
-## Example: Applying Mode Mapping to a Non-Design Context (Policy Development)
+## A kickoff that maps modes onto the plan
 
 **Scenario:**
 
-A government digital services team needs to develop a new accessibility policy for public-facing websites. The team lead has heard about the Double Diamond but isn't sure how thinking modes apply outside traditional product design.
+Illustrative scenario: a team is starting a redesign of a volunteer sign-up process for a charity. The project lead wants the whole group, including trustees, to understand what each stage will feel like.
 
 **Walkthrough:**
 
-The team maps the Double Diamond to their policy process. Discover (diverge): they review accessibility complaints, interview disabled users, audit 20 existing government websites, and study international accessibility standards—casting a wide net without pre-deciding what the policy should cover.
+At kickoff, the lead draws two diamonds and marks each planned session: field visits and interviews (divergent), a synthesis workshop (convergent), two ideation sessions (divergent), and testing and a decision review (convergent).
 
-Define (converge): they synthesize findings into three core problem areas—screen reader compatibility, cognitive load for neurodiverse users, and mobile accessibility for users with motor impairments—and select the most impactful problem to address first.
+For each, the lead writes what behaviour is expected. Divergent sessions: no evaluating, all ideas captured. Convergent sessions: criteria agreed in advance, the programme director decides.
 
-Develop (diverge): they generate multiple policy approaches—prescriptive technical standards, outcome-based requirements, incentive-based compliance, mandatory testing regimes—without initially debating which is 'realistic.' They invite external accessibility experts to add more approaches the team hadn't considered.
+The trustees, who had expected a solution proposal within a fortnight, now see where their input will be sought and when a decision will be made. The map stays on the project wall and is referred to at the start of every session.
 
-Deliver (converge): they evaluate approaches against criteria including enforceability, cost, measurable impact, and political feasibility. They select a hybrid approach, draft the policy, test it with three pilot agencies, and refine based on feedback.
+## Diagnosing a stuck project
 
-The explicit mode mapping helped the team resist their organizational tendency to jump immediately to writing policy text (a convergent activity) before fully understanding the problem space.
+**Scenario:**
+
+Illustrative scenario: a product team has been "in discovery" for two months. Every weekly meeting adds new research questions and nobody can say what the problem is.
+
+**Walkthrough:**
+
+A design lead sits in on two meetings and notes the verbs used. Almost every contribution is "what about," "have we looked at" or "we should also talk to." Nobody asks "which of these matters most."
+
+The lead names the pattern to the team: they are in divergent mode with no end condition. Together they set one, deciding to finish the current interviews and then move into synthesis regardless of remaining questions.
+
+The synthesis session begins with a read-back and loose clustering. The group hits the groan zone, with frustration that the themes feel incomplete. The lead names it and holds the pace. By the second session a problem statement is drafted, with the open questions listed as known gaps.
+
+## Correcting drift inside a single workshop
+
+**Scenario:**
+
+Illustrative scenario: during an ideation session for a new expense approval flow, a finance manager responds to each idea with the reason it would break policy.
+
+**Walkthrough:**
+
+The facilitator pauses and says the session is in divergent mode, then asks the finance manager to write each concern on a separate note in a "constraints" area instead of saying it aloud.
+
+The ideas pick up again. The constraints area fills with useful policy details.
+
+In the convergent step later that afternoon, those notes become part of the evaluation criteria. The finance manager's knowledge shapes the decision instead of stopping the generation.

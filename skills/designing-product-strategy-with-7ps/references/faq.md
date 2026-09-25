@@ -1,25 +1,21 @@
-# FAQ: Designing Product Strategy Within the 7 P's Framework
+# FAQ: 7 Ps Marketing Mix Product Strategy
 
-## What is the product P in the 7 Ps marketing mix?
+## What does Product mean in the 7 Ps?
 
-The product P is the foundational element of the 7 Ps marketing mix, encompassing everything about your offering—its features, benefits, quality, design, branding, packaging, and lifecycle stage. For service businesses, 'product' refers to the service itself, including how it's structured, scoped, and presented to customers.
+Product is everything the customer receives: the core service or good, plus the supplementary elements around it such as advice, onboarding, packaging, warranties and support. For services, the product is best described as a bundle of a core and the facilitating and supporting services that deliver it and add value.
 
-## How do I apply the 7 Ps marketing mix product strategy to a service business?
+## How is product strategy different for services and for goods?
 
-For service businesses, product strategy focuses on defining the core service offering, structuring it into clear tiers or packages, establishing quality standards, and branding the service experience. The key difference is that services are intangible, so 'packaging' means how you describe, scope, and present your service deliverables rather than physical packaging.
+A service cannot be inspected before purchase and is produced as it is consumed. That puts more weight on the elements around the core and on the service Ps: who delivers it, how, and what tangible evidence the customer sees. Product strategy for a service therefore has to be written together with People, Process and Physical Evidence.
 
-## What is the difference between product features and product benefits in marketing?
+## How do I choose what to differentiate on?
 
-Features are factual attributes of your product—what it does or contains. Benefits explain why those features matter to the customer—the problem solved or value gained. Effective product strategy connects every feature to a specific benefit, because customers make purchase decisions based on outcomes, not specifications.
+Compare the offer with the alternatives customers really consider, element by element. Pick one or two elements where you can be clearly better and that matter to the customer's job. Make sure the delivery can show the difference, because a differentiator customers cannot see does not change their choice.
 
-## How often should I update my product strategy within the 7 Ps framework?
+## How often should the product strategy change?
 
-Review your product strategy quarterly with fresh customer data, competitive intelligence, and performance metrics. Major revisions (repositioning, line extensions, product pruning) typically happen annually, but the quarterly check ensures you catch market shifts and emerging opportunities before they become urgent problems.
+The job and the core usually change slowly. The supplementary elements, the line and the lifecycle assessment should be reviewed whenever evidence changes, such as new competitors, slowing growth or new customer needs. A 7 Ps audit is a natural time to review it.
 
-## How does product lifecycle stage affect 7 Ps marketing mix decisions?
+## Does product strategy belong to marketing or to the product team?
 
-Each lifecycle stage demands different strategies across all 7 Ps. Introduction requires education-focused promotion and penetration or skimming pricing. Growth demands distribution expansion and brand building. Maturity calls for differentiation, line extensions, and cost optimization. Decline requires harvest, divestiture, or reinvention decisions.
-
-## Can I use the 7 Ps marketing mix product strategy for a digital product or SaaS?
-
-Absolutely. For digital products and SaaS, product strategy focuses on feature prioritization, user experience design, tier and plan packaging, onboarding flows, and brand positioning. The 'augmented product' layer—including support, documentation, community, and integrations—is often the primary differentiator in competitive SaaS markets.
+Both, which is why the one-page strategy is shared. Product teams usually own what is built. In the 7 Ps, marketing owns how the offer is positioned and how it fits with price, channels and communication. Writing it down together avoids two versions of the product.

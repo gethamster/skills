@@ -1,15 +1,20 @@
 ---
-name: writing-effective-start-stop-continue-feedback
-description: "This skill teaches you how to craft clear, specific, and constructive feedback items across the Start, Stop, and Continue categories—making each one behavior-focused, blame-free, and immediately actionable."
+name: "writing-effective-start-stop-continue-feedback"
+description: "Write start stop continue feedback that works: specific, behavior-focused items with a situation and an effect, each one something a person could act on."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: start-stop-continue
+  method: "start-stop-continue"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
 # Writing Effective Start Stop Continue Feedback
 
-> This skill teaches you how to craft clear, specific, and constructive feedback items across the Start, Stop, and Continue categories—making each one behavior-focused, blame-free, and immediately actionable.
+> Write start stop continue feedback that works: specific, behavior-focused items with a situation and an effect, each one something a person could act on.
 
 ## Before you start
 
@@ -23,130 +28,99 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 30-45 minutes |
-| Outcome | You produce feedback items that recipients understand, accept, and can act on immediately—leading to measurable behavior change rather than defensiveness or confusion. |
-| Prerequisites | Basic understanding of the Start Stop Continue framework, Familiarity with giving and receiving feedback in team or 1-on-1 settings |
+| Difficulty | Beginner |
+| Time to Learn | About an hour |
+| Outcome | You can write Start, Stop and Continue items that name a behavior, its context and its effect, so the reader knows exactly what to change or keep. |
+| Prerequisites | A scope to comment on (a sprint, a project, a person's work), recent examples you observed, the column definitions for the session |
 | Part of | [Start Stop Continue](../../methods/start-stop-continue/METHOD.md) |
 
 ## Overview
 
-The [Start Stop Continue](https://tryhamster.com/methods/start-stop-continue) framework gives teams a clean structure for organizing feedback, but structure alone doesn't guarantee quality. The real power of the method comes from how each individual feedback item is written. Vague, judgmental, or unfocused items get ignored. Specific, behavior-focused, and actionable items drive real change.
+The quality of a [Start Stop Continue](../../methods/start-stop-continue/METHOD.md) session depends on the items people write. A vague item such as "communicate better" gives the team nothing to act on. A specific item such as "start posting a short written summary after each customer call in the team channel" can be adopted the same day and checked at the next session. This skill covers how to write start stop continue feedback that is specific, behavior-focused and actionable, for a team retrospective or for feedback to one person.
 
-Writing effective start stop continue feedback is a distinct skill that sits between knowing the framework and facilitating a full retrospective. It requires you to translate gut feelings and frustrations into precise, constructive language that a colleague can immediately understand and act on. Whether you're preparing for a team retrospective, a performance review, or an async feedback round, the quality of your written items determines whether the exercise produces transformation or just fills a whiteboard.
+The core technique is to write about behavior and its effect. The Center for Creative Leadership's [Situation-Behavior-Impact model](https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/) gives a simple structure: clarify the situation, describe the specific behavior you observed, and explain its impact. CCL's example contrasts a behavior description, "You interrupted me while I was telling the team about the monthly budget," with a judgment, "You were rude." The first can be discussed and changed. The second invites a defensive reply.
 
-This skill covers the principles, patterns, and pitfalls of writing in each of the three categories. You'll learn how to stay behavior-focused, avoid blame traps, calibrate specificity, and test each item for actionability before you share it.
+Structure helps. In higher education, [Hoon and colleagues](https://www.tandfonline.com/doi/full/10.1080/02602938.2014.956282) found that a structured Stop, Start, Continue form was associated with student feedback of greater depth than a free text box. Their example items were short and concrete, such as asking a lecturer to stop speaking so quickly or to start giving out class handouts. The three headings nudge writers to propose a change, and this skill builds on that by making each item precise.
+
+You can tell an item is well written when someone who was not in the room would understand what it asks, when the person or team it concerns could start on it without asking for clarification, and when you could check at the next session whether it happened.
 
 ## How It Works
 
-Effective start stop continue feedback works because it constrains feedback along two dimensions: **category** (start, stop, or continue) and **quality** (specific, behavioral, actionable). The category forces you to commit to a direction—something new, something to eliminate, or something to preserve. The quality criteria force you to move past vague impressions into observable, concrete territory.
+Each column calls for a slightly different kind of sentence. A Start item proposes a new practice and should say what, when and ideally who. A Stop item names a current practice to drop and should describe the practice and its cost. A Continue item names a practice worth protecting and should say why it helps, so the team knows what to keep when things get busy. Retrium's [column definitions](https://www.retrium.com/retrospective-techniques/start-stop-continue) make the same distinction: new things that would help, things that are not helping, and things that worked and should stay.
 
-Psychologically, behavior-focused feedback is easier to receive than identity-focused feedback. Saying "We should stop scheduling meetings without agendas" is about a practice, not a person. It doesn't trigger defensiveness the way "You're disorganized" does. This distinction—between behavior and identity—is the single most important principle in writing feedback that actually gets implemented.
+The SBI structure fits all three. For a Stop item: "In sprint planning (situation), we accept stories without acceptance criteria (behavior), which led to rework on two stories this sprint (impact)." For a Continue item: "In code review (situation), reviewers leave a summary comment first (behavior), which makes the review easy to act on (impact)." For a Start item, describe the situation and the behavior you want, then the effect you expect.
 
-Actionability is the second critical lever. Each item should pass the "Monday morning test": could someone read this item on Monday morning and know exactly what to do differently that week? If the answer is no, the item needs to be rewritten with more specificity. This test applies equally across all three categories—start items need to describe a concrete new behavior, stop items need to pinpoint the exact practice to eliminate, and continue items need to name the specific behavior worth preserving so it doesn't accidentally get dropped.
+Keep items about practices and behaviors, and leave character out of them. "Stop being so negative in meetings" is a judgment. "Stop opening the design review with a list of objections before the designer has presented" is a behavior. In team retrospectives, most items should be about how the team works rather than about one person. Norm Kerth's [Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive) frames a retrospective on the belief that everyone did the best job they could given what they knew at the time, which pushes items toward systems and away from blame.
+
+Scope matters as much as wording. An item should be within the control of the people who will act on it. "Stop getting surprise requests from sales" is outside most engineering teams' control. "Start asking sales to route requests through the weekly intake meeting" is within it. When an item is outside the group's control, rewrite it as a request someone can make.
+
+Finally, test each item before you post it. Read it as the person or team it concerns would. If it could be read as an attack, rewrite the behavior description. If it could mean two different things, add the situation. If nobody could act on it by the next session, make it smaller.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Gather Raw Observations Before Writing
+### Step 1: Collect raw observations
 
-Before you start crafting feedback items, spend 5-10 minutes jotting down raw observations from the period you're reflecting on. These can be messy—frustrations, highlights, things that felt off, moments that went well. Don't censor yourself yet. The goal is to create a pool of raw material you'll refine in later steps.
+Before writing items, list what you noticed during the period under review: events, habits, frustrations, and things that went well. Do not sort or polish yet. Look at the sprint board, calendar and chat history if they help you remember. Aim for concrete moments rather than general impressions.
 
-Review meeting notes, project outcomes, Slack threads, or your own journal entries. Look for patterns: recurring friction, repeated wins, or new experiments that worked. Having concrete reference points prevents you from writing feedback based on recency bias or a single emotional moment.
+### Step 2: Sort observations into Start, Stop and Continue
 
-> **Pro tip:** Set a timer for 5 minutes and write continuously without editing. You'll sort and refine later—quantity of raw observations matters more than polish at this stage.
+For each observation, decide whether it suggests adopting something new, dropping something current, or protecting something that works. If an observation fits two columns, it may be two items. If it fits none, it may be too abstract, so make it more specific or leave it for the free text box.
 
-### Step 2: Step 2: Sort Observations into Start, Stop, and Continue Buckets
+### Step 3: Describe the behavior and its situation
 
-Take your raw observations and assign each to a category. Ask yourself three questions for each observation:
+Rewrite each item so it names a specific behavior in a specific situation. Replace adjectives like "slow" or "unclear" with what actually happens. Name the meeting, process or artifact involved. Keep people's names out of team retrospective items unless the item is praise.
 
-- **Start**: Is there a new behavior, practice, or habit that would address this observation?
-- **Stop**: Is there an existing behavior or practice causing this problem that should be eliminated?
-- **Continue**: Is there something already working well that this observation highlights?
+### Step 4: Add the effect
 
-Some observations might fit multiple categories. A frustration about unclear requirements might generate both a "stop" item (stop starting sprints without acceptance criteria) and a "start" item (start writing user stories with defined done criteria). That's fine—separate them into distinct items.
+For each item, add a short clause saying why it matters: the time lost, the rework caused, the risk created, or the benefit gained. The effect is what persuades the team to act. It also helps the group prioritize later, because items with a clear cost are easier to compare.
 
-> **Pro tip:** If you're struggling to categorize an observation, it's often a sign the observation is too abstract. Try making it more specific—name the meeting, the process, or the interaction—and the right category usually becomes obvious.
+### Step 5: Check the tone
 
-### Step 3: Step 3: Rewrite Each Item Using Behavior-Focused Language
+Read each item as its subject would. Remove words that judge character, such as "lazy," "careless" or "negative." Check that Stop items describe practices rather than people. Ask yourself whether you would be comfortable saying the item aloud to the person it concerns.
 
-Now refine each item so it describes an observable behavior rather than a personality trait, attitude, or vague concept. Use the formula: **[Action verb] + [specific behavior] + [context or frequency]**.
+### Step 6: Make it actionable and small
 
-For example, transform "Be more communicative" into "Start posting daily async standup updates in the #project channel by 10 AM." Transform "Stop being negative" into "Stop raising objections during brainstorming sessions—save critical evaluation for the analysis phase."
+Check that each item describes something the group could do before the next session. Split large items into smaller ones. Rewrite items outside the group's control as requests. For Start items, suggest a first step if the change is big.
 
-Behavior-focused language answers the question "What would a camera see?" If a video camera couldn't record the behavior you're describing, it's too abstract. "Being more proactive" is invisible to a camera. "Flagging blockers within 24 hours of identifying them" is observable and recordable.
+### Step 7: Balance the columns
 
-> **Pro tip:** Read each item aloud and ask: "Could two different people interpret this the same way?" If not, add specificity until the interpretation converges.
-
-### Step 4: Step 4: Remove Blame and Judgment from Each Item
-
-Review every item for hidden blame, sarcasm, or judgment. Blame often sneaks in through adverbs ("finally start..."), absolutes ("always," "never"), and loaded adjectives ("lazy approach," "careless mistakes"). These words make the recipient defensive and undermine the actionability of your feedback.
-
-Replace blame with impact. Instead of "Stop wasting everyone's time with unnecessary meetings," write "Stop scheduling recurring meetings that don't have a clear agenda or decision to make—this would free up approximately 3 hours per week for the team." The second version communicates the same concern but frames it around impact rather than accusation.
-
-For "continue" items, be careful not to backhanded-compliment: "Continue actually showing up on time" implies past failure. Simply write "Continue arriving on time to standup—it keeps us on schedule."
-
-> **Pro tip:** A simple test: would you feel comfortable if the item were projected on a screen with your name attached during an all-hands meeting? If not, revise the tone.
-
-### Step 5: Step 5: Apply the Monday Morning Test for Actionability
-
-Read each item and ask: "If someone received this on Friday afternoon, would they know exactly what to do differently on Monday morning?" This is the actionability litmus test.
-
-Items that fail this test are usually too broad. "Start improving our documentation" fails—it doesn't specify what documentation, what improvement looks like, or where to begin. "Start adding a README with setup instructions to every new repository before requesting code review" passes—it names the artifact, the content, and the trigger.
-
-For "stop" items, actionability means being specific about what replaces the stopped behavior. "Stop using email for urgent requests" is better as "Stop using email for urgent requests—use the #urgent Slack channel instead so the on-call person sees it within 15 minutes."
-
-> **Pro tip:** If an item feels too large for one action, break it into smaller items. Two specific items are always more useful than one ambitious but vague one.
-
-### Step 6: Step 6: Balance Your Feedback Across All Three Categories
-
-Review your complete set of feedback items. A common trap is writing mostly "stop" items (a complaint list) or mostly "start" items (a wish list) while neglecting "continue" items. Aim for balance—not necessarily equal numbers, but genuine representation of all three categories.
-
-"Continue" items are especially important because they reinforce positive behaviors that might otherwise be dropped during change. Teams that only hear about what to fix lose sight of what's already working. Make your continue items just as specific and behavior-focused as your start and stop items—"Continue doing good work" is worthless, while "Continue pairing on complex pull requests before merging—it's caught three significant bugs this sprint" is powerful.
-
-If you genuinely can't think of continue items, you may be writing from a place of frustration rather than balanced reflection. Step back and look for bright spots before finalizing.
-
-> **Pro tip:** A ratio of roughly 2 start/stop items to every 1 continue item works well for most teams. Adjust based on context—a team in crisis may need more stop items, while a high-performing team may need more continue items.
-
-### Step 7: Step 7: Review and Finalize Before Sharing
-
-Before submitting or sharing your feedback, do a final pass with these checks:
-
-1. **Specificity check**: Does each item name a concrete behavior, practice, or process?
-2. **Blame check**: Is each item free of accusatory language, sarcasm, and hidden judgment?
-3. **Actionability check**: Does each item pass the Monday morning test?
-4. **Ownership check**: Is it clear who should act on each item (a specific role, the whole team, or a named individual if appropriate)?
-5. **Overlap check**: Are any items redundant? Merge or eliminate duplicates.
-
-If you're writing for an anonymous retrospective, ensure your items don't accidentally reveal someone else's identity through overly specific scenarios. If you're writing for a 1-on-1 or performance review, consider adding a brief explanation of why each item matters to you—this context helps the recipient prioritize.
+Look at your items across the three columns. If you have only Stop items, look again for practices that should continue, and name them specifically. If you have only Continue items, ask whether you are avoiding a difficult Stop. A balanced set gives the team a fair picture of the period.
 
 ## Best Practices
 
-- Use one feedback item per behavior—don't bundle multiple observations into a single bullet point, as compound items are harder to act on and easier to partially ignore.
-- Ground each item in a specific, recent example whenever possible. "Start documenting decisions in our Confluence space after each architecture review" is stronger than "Start documenting more."
-- Write continue items with the same specificity as start and stop items—vague praise doesn't reinforce behavior as effectively as naming exactly what someone did well.
-- Frame stop items in terms of impact on outcomes ("this delays our release cycle by 2 days") rather than impact on your feelings, which keeps the conversation professional and data-oriented.
-- When writing start items, suggest a concrete first step or trigger point ("at the beginning of each sprint planning" or "before merging any PR") so the new behavior has a natural place in existing workflows.
-- Timebox your writing to 15-20 minutes per session. Feedback written during extended sessions often becomes over-edited or loses its authentic voice.
+- Use the SBI structure for every item. The [CCL model](https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/) of situation, behavior and impact keeps feedback specific and discussable.
+- Write one idea per note. Combining ideas makes grouping harder and hides which part the group agrees with.
+- Keep items within the group's control. Items the team cannot act on belong in a separate list of requests.
+- Make Continue items as specific as Stop items. "Continue the good teamwork" is as vague as "stop the bad meetings" and gives the team nothing to protect.
+- Leave out names in team retrospectives. Describe the practice, and raise individual feedback privately, for example in a 1-on-1.
+- Write for the reader who was not there. If an item needs you in the room to explain it, add the situation.
 
 ## Common Mistakes
 
-- **Writing feedback about personality traits instead of behaviors** — Replace trait-based language ('be more proactive,' 'stop being negative') with observable actions ('start flagging blockers in standup within 24 hours,' 'stop raising objections during the brainstorm phase—save them for the evaluation round'). If a camera can't record it, rewrite it.
-- **Making continue items generic or throwaway** — Treat continue items as seriously as start and stop items. Instead of 'continue the good work,' write 'continue running 15-minute post-incident reviews within 48 hours of each outage—these have cut our repeat incident rate by 40%.' Specific continue items prevent valuable practices from being accidentally dropped.
-- **Writing items that are actually complaints disguised as feedback** — Test each item by asking: 'Does this tell someone what to do, or just what I'm unhappy about?' Transform complaints ('Our standups are too long') into actionable items ('Stop allowing standup discussions to exceed 15 minutes—move detailed conversations to a follow-up thread').
-- **Bundling multiple issues into a single feedback item** — Split compound items into separate, focused pieces. 'Start writing tests and also improve our deployment process and update the wiki' is three separate items. Each one deserves its own line so it can be discussed, prioritized, and tracked independently.
-- **Using start stop continue feedback as an anonymous way to target individuals** — Keep team-level feedback about team-level behaviors and processes. If feedback is genuinely about one person's performance, deliver it in a private 1-on-1 conversation, not through a team retrospective board where it becomes a public callout.
+- **Writing judgments instead of behaviors**: "Stop being disorganized" invites defense. Describe the behavior, such as "stop starting new tickets before the current one is reviewed."
+- **Writing items too big to act on**: "Start improving our architecture" cannot be done by next sprint. Name a first step the team can take.
+- **Leaving out the effect**: Without a reason, an item reads as preference. Add the cost or benefit in a short clause.
+- **Using the Stop column for personal criticism**: Items aimed at a person damage trust and the format. Raise individual issues privately and keep team items about practices.
+- **Only writing Stop items**: A board of complaints discourages the team and hides what is working. Look for specific practices to continue.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/start-stop-continue/METHOD.md) — Start Stop Continue
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/start-stop-continue/METHOD.md): Start Stop Continue
 
 ## Related Skills
 
-- [Facilitating Start Stop Continue Retrospectives](../facilitating-start-stop-continue-retrospectives/SKILL.md)
-- [Using Start Stop Continue in Performance Reviews and 1-on-1 Meetings](../using-start-stop-continue-in-one-on-ones/SKILL.md)
-- [Running Start Stop Continue as a Team Icebreaker Activity](../running-start-stop-continue-icebreakers/SKILL.md)
-- [Categorizing and Prioritizing Feedback Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
-- [Building Start Stop Continue Templates and Worksheets](../building-start-stop-continue-templates/SKILL.md)
-- [Crafting Actionable Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
+- [Writing Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
+- [Start Stop Continue in 1-on-1s and Performance Reviews](../using-start-stop-continue-in-one-on-ones/SKILL.md)
+- [Facilitating a Start Stop Continue Retrospective](../facilitating-start-stop-continue-retrospectives/SKILL.md)
+- [Categorizing and Prioritizing Start Stop Continue Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
+- [Building a Start Stop Continue Retrospective Template](../building-start-stop-continue-templates/SKILL.md)
+- [Running a Start Stop Continue Icebreaker](../running-start-stop-continue-icebreakers/SKILL.md)
+
+## Sources
+
+- [Center for Creative Leadership: Situation-Behavior-Impact-Intent](https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/)
+- [Hoon et al.: Stop, Start, Continue and constructive student feedback](https://www.tandfonline.com/doi/full/10.1080/02602938.2014.956282)
+- [Retrium: Start Stop Continue retrospective technique](https://www.retrium.com/retrospective-techniques/start-stop-continue)
+- [Retrospective Wiki: The Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive)

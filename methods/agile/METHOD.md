@@ -1,183 +1,187 @@
 ---
-category: Workflows
+name: "agile"
+category: "Workflows"
+description: "Agile is the way of building software in short, feedback-driven cycles defined by the Agile Manifesto's four values and twelve principles."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Agile: The Iterative Approach to Product Development
+# Agile Methodology: Manifesto, Principles, and Practice
 
-> Created by **The Agile Manifesto Authors (2001)** — [https://agilemanifesto.org](https://agilemanifesto.org)
+> Created by **The Agile Manifesto Authors (2001)** - [https://agilemanifesto.org](https://agilemanifesto.org)
 
 ## Overview
 
-Agile is not a single methodology. It is a philosophy of work, a set of values and principles that prioritize learning over planning, collaboration over handoffs, and working outcomes over comprehensive documentation. At its core, agile claims something specific about how complex work actually unfolds: that requirements cannot be fully known in advance, that the best designs emerge through iteration, and that teams closest to the work are best positioned to make decisions. This makes agile fundamentally different from plan-driven approaches, which assume you can define success at the start and execute your way there.
+Agile is a way of building products in short cycles, getting feedback on each result, and changing the plan based on what the team learns. The Agile Alliance defines it as "the ability to create and respond to change" and calls it an umbrella term for frameworks and practices based on the Manifesto's values and principles ([Agile Alliance, Agile 101](https://www.agilealliance.org/agile101/)). That distinction matters in practice. The agile methodology people talk about is a set of values and principles, and named frameworks such as Scrum, Kanban and Extreme Programming are concrete ways of acting on them.
 
-The origin story is well-documented. In February 2001, seventeen software developers met at Snowbird ski resort in Utah. Among them were Kent Beck, Martin Fowler, Jeff Sutherland, Ken Schwaber, Alistair Cockburn, and Ward Cunningham. They represented a loose coalition of practitioners who had been independently developing lightweight alternatives to the heavyweight, document-heavy processes that dominated enterprise software in the 1990s. Extreme Programming (XP), Scrum, Crystal, DSDM, Feature-Driven Development, and Adaptive Software Development all predated the meeting. What happened at Snowbird was not the invention of agile, but the naming and codification of shared values into the Agile Manifesto. Four value statements and twelve supporting principles gave a scattered movement a shared identity and vocabulary.
+The name and the shared definition come from one meeting. In February 2001, seventeen people met at The Lodge at Snowbird ski resort in the Wasatch mountains of Utah, according to Jim Highsmith's [history of the Manifesto](https://agilemanifesto.org/history.html). They included representatives of Extreme Programming, Scrum, DSDM, Adaptive Software Development, Crystal, Feature-Driven Development and Pragmatic Programming. The result was the [Manifesto for Agile Software Development](https://agilemanifesto.org/), signed by its seventeen authors, among them Kent Beck, Ward Cunningham, Martin Fowler, Jim Highsmith, Ken Schwaber and Jeff Sutherland. Highsmith notes that before the meeting, [during 2000](https://agilemanifesto.org/history.html), a number of articles had grouped these approaches as "Light" or "Lightweight" processes, and that the group left Snowbird naming itself "The Agile Alliance."
 
-The Manifesto's four values are deceptively simple: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. The critical phrase people often miss is the closing line: "while there is value in the items on the right, we value the items on the left more." Agile does not reject planning, documentation, processes, or contracts. It establishes a hierarchy. When trade-offs arise, lean toward the human, the working product, the customer, and the adaptation. This nuance gets lost in practice constantly, which is why you see teams that claim to be agile but have no documentation at all, or teams that have daily stand-ups and two-week sprints but still build exactly what was specified in a requirements document six months ago without ever talking to a customer.
+The Agile Manifesto states four values. Its authors wrote that they had come to value "Individuals and interactions over processes and tools", "Working software over comprehensive documentation", "Customer collaboration over contract negotiation" and "Responding to change over following a plan." The sentence after the list is easy to skip and changes the meaning: "That is, while there is value in the items on the right, we value the items on the left more." Agile keeps plans, documents, contracts and tools. It ranks them below the people, the working product, the customer and the ability to change course.
 
-Agile sits within a broader landscape of approaches to managing complexity. Waterfall, its most common counterpart, works sequentially: define requirements, design, build, test, deploy. Lean, which emerged from Toyota's manufacturing system and was adapted to software by Mary and Tom Poppendieck, shares agile's emphasis on eliminating waste and optimizing flow but focuses more on the system of work than on team rituals. Kanban, developed by David Anderson drawing from lean principles, provides a flow-based approach that avoids the time-boxed sprints of Scrum. The Cynefin framework, created by Dave Snowden, helps explain when agile makes sense: in the complex domain, where the relationship between cause and effect can only be understood in retrospect, and where the correct approach is to probe, sense, and respond. Agile is fundamentally a probe-sense-respond strategy.
+The twelve [principles behind the Manifesto](https://agilemanifesto.org/principles.html) turn those values into working rules. They ask for "early and continuous delivery of valuable software", for delivering working software "from a couple of weeks to a couple of months, with a preference to the shorter timescale", and they state that "Working software is the primary measure of progress." They also cover daily collaboration between business people and developers, motivated and trusted teams, sustainable pace, technical excellence, simplicity and regular reflection. Most arguments about whether a team is "really agile" can be settled by checking a practice against one of these agile principles.
 
-Since 2001, agile has evolved far beyond its software roots. Marketing teams use it to manage campaigns. HR teams use it to redesign hiring. Hardware companies apply its principles to physical product development, though with longer iteration cycles and harder constraints. The spread has brought both genuine benefit and significant dilution. The Scaled Agile Framework (SAFe), introduced by Dean Leffingwell around 2011, attempted to make agile work across large enterprises with hundreds of teams. Critics argue SAFe re-introduces much of the bureaucratic overhead agile was created to escape. Other scaling frameworks like LeSS (Large-Scale Scrum) and the Spotify model (which Spotify itself has moved away from) take different approaches to the same problem.
+Short, feedback-driven cycles are much older than the word. Craig Larman and Victor Basili's history of [iterative and incremental development](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf) traces the practice back to the mid-1950s and describes NASA's Project Mercury in the early 1960s running half-day, time-boxed iterations. The same paper argues that Winston Royce's 1970 article, usually cited as the origin of waterfall, is widely misread: Royce himself recommended building a pilot version first and doing the job twice. In Larman and Basili's account, the 2001 meeting gave a set of existing lightweight methods a common banner, the Agile Alliance and the phrase "agile methods."
 
-Agile benefits teams working on problems where customer needs are uncertain, technology is evolving, or market conditions are shifting. Product teams building consumer software, startups searching for product-market fit, and cross-functional groups tackling novel challenges tend to gain the most. Teams operating under fixed regulatory requirements, building safety-critical systems with zero tolerance for iteration, or working on well-understood problems with stable requirements may find agile's ceremonies add overhead without proportional value. The honest answer is that agile works brilliantly in some contexts, creates theater in others, and the difference comes down to whether a team genuinely adopts the values or merely adopts the vocabulary.
+Martin Fowler, one of the authors, summarizes the idea in two contrasts: agile development is "adaptive rather than predictive" and "people-oriented rather than process-oriented" ([Fowler, Agile Software Guide](https://martinfowler.com/agile.html)). He also warns that much of what is done under the name is "faux-agile", and names fighting the "Agile Industrial Complex" and its habit of imposing process on teams as one of three main challenges. In his words from a 2018 talk, "The team doing work decides how to do it. That is a fundamental agile principle" ([Fowler, State of Agile Software in 2018](https://martinfowler.com/articles/agile-aus-2018.html)).
+
+Agile project management is therefore less about a specific set of meetings and more about how decisions get made. A team plans in small increments, shows working results to the people who will use them, and adjusts both the product and its own process. The steps below describe a common way to run that loop, and the skills linked from this page cover each part in depth.
 
 ## Core Principles
 
-### Deliver Working Increments Frequently
+### Deliver Working Software Early and Often
 
-The most fundamental agile principle is that working product is the primary measure of progress. Not slide decks, not Jira tickets moved to "done," not lines of code written, but something a customer can actually use and give feedback on. Teams that skip this principle end up building for months before discovering they misunderstood the problem. The trade-off is real: shipping smaller increments means each one delivers less individual impact, and it requires teams to break large features into independently valuable slices, which is a skill many teams underestimate.
+The first principle calls for "early and continuous delivery of valuable software", and the third asks teams to deliver "from a couple of weeks to a couple of months, with a preference to the shorter timescale" ([Agile Manifesto principles](https://agilemanifesto.org/principles.html)). Frequent delivery shortens the time between a decision and the evidence about whether it was right. It also forces work to be split into slices that are useful on their own. A team that reports progress in documents or ticket counts, and cannot show anything usable, has drifted from the principle that "Working software is the primary measure of progress."
 
-But the compounding benefit of frequent feedback loops almost always outweighs the coordination cost.
+### Welcome Changing Requirements
 
-### Embrace Change, Even Late in Development
+The second principle reads: "Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage" ([principles](https://agilemanifesto.org/principles.html)). Agile assumes that requirements will change as the team and its customers learn. The practical consequence is to keep change cheap: short cycles, an ordered backlog that can be reshuffled, and designs that do not lock in decisions early. Highsmith's history puts the same idea as "We plan, but recognize the limits of planning in a turbulent environment" ([history](https://agilemanifesto.org/history.html)).
 
-Agile assumes that requirements will change, and that this is not a failure of planning but a natural consequence of learning. Traditional approaches try to lock down scope early to manage risk. Agile manages risk by making change cheap. This requires specific architectural choices (modular, loosely coupled systems), specific team habits (short iterations, small batch sizes), and specific organizational support (stakeholders who accept shifting priorities).
+### Business and Developers Work Together Daily
 
-When teams say they're agile but panic when priorities change mid-sprint, they have adopted the rituals without the underlying value. The cost of embracing change is that progress feels less linear and harder to report upward.
+The Manifesto asks that "Business people and developers must work together daily throughout the project", and names "face-to-face conversation" as the most efficient and effective way to convey information within a team ([principles](https://agilemanifesto.org/principles.html)). Conversation carries more information per minute than documents do, and questions answered in minutes by the person who knows prevent days of building the wrong thing. Distributed teams keep the principle by favoring live conversation over long written threads when something is ambiguous. A team that learns what the customer wanted only at the end of a cycle has lost this principle.
 
-### Self-Organizing Teams Make Better Decisions
+### Trust Motivated, Self-Organizing Teams
 
-Agile claims that the people doing the work are the best positioned to decide how to do it. This means teams, not managers, determine task breakdown, technical approach, and work distribution. Self-organization does not mean no leadership or no accountability. It means pushing decision authority to the lowest effective level.
+The principles say to "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done", and that "The best architectures, requirements, and designs emerge from self-organizing teams" ([principles](https://agilemanifesto.org/principles.html)). Self-organizing means the team decides how to do its work, while leaders set direction and remove obstacles. Fowler calls the team choosing its own process "a fundamental agile principle" ([Fowler, 2018](https://martinfowler.com/articles/agile-aus-2018.html)). In the same talk he calls methods imposed on people by the Agile Industrial Complex "an absolute travesty."
 
-Teams that skip this principle end up with a project manager assigning tasks and a team that feels no ownership over outcomes. The trade-off is that self-organization requires trust, psychological safety, and a willingness to let teams fail and learn, which is uncomfortable for organizations accustomed to top-down control.
+### Keep a Sustainable Pace
 
-### Inspect and Adapt Through Regular Reflection
+"Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely" ([principles](https://agilemanifesto.org/principles.html)). Short cycles make it tempting to treat every sprint as a deadline, and a team that ends each cycle exhausted will cut quality to keep up. Plan against what the team has actually finished in recent cycles, and treat regular overtime as a planning problem to fix.
 
-Retrospectives are the engine of continuous improvement in agile. At regular intervals, the team examines how they worked, not just what they built, and commits to specific changes. Teams that skip retrospectives (or run them as venting sessions with no action items) lose the main mechanism agile provides for getting better over time. The principle extends beyond formal retrospectives: sprint reviews inspect the product, daily stand-ups inspect progress, and backlog refinement inspects priorities.
+### Pay Attention to Technical Excellence and Simplicity
 
-Each is a feedback loop operating at a different frequency. The trade-off is time. Retrospectives, reviews, and planning ceremonies consume hours every sprint, and if they are not run well, they feel wasteful.
+Two principles work together here: "Continuous attention to technical excellence and good design enhances agility" and "Simplicity--the art of maximizing the amount of work not done--is essential" ([principles](https://agilemanifesto.org/principles.html)). Fowler's "Flaccid Scrum" describes what happens without the first: teams adopt Scrum's practices, and "After a while progress is slow because the code base is a mess" ([Fowler, Flaccid Scrum](https://martinfowler.com/bliki/FlaccidScrum.html)). Simplicity means building what the current goal needs and deferring the rest. Both keep change cheap, which is what the other principles depend on.
 
-### Maintain a Sustainable Pace
+### Reflect and Adjust at Regular Intervals
 
-The Manifesto's authors explicitly stated that agile processes promote sustainable development, meaning sponsors, developers, and users should be able to maintain a constant pace indefinitely. This was a direct response to the "death march" culture of 1990s software projects, where teams burned out to meet arbitrary deadlines. Teams that ignore this principle use sprints as two-week pressure cookers instead of sustainable work cadences. The result is burnout, declining quality, and eventual team attrition.
-
-Sustainable pace also means resisting the temptation to overcommit in sprint planning. Velocity should reflect actual capacity, not aspirational targets.
-
-### Prioritize Face-to-Face Communication
-
-The original manifesto valued individuals and interactions over processes and tools, and listed face-to-face conversation as the most efficient method of conveying information. In 2001, this meant co-located teams. In the 2020s, this principle has been reinterpreted for remote and distributed work: the intent is to favor high-bandwidth communication over low-bandwidth communication. A five-minute conversation resolves ambiguity that a twenty-email thread cannot.
-
-Teams that skip this principle create elaborate documentation systems and ticket workflows that become substitutes for actually talking. The trade-off for distributed teams is that real-time communication requires intentional overlap hours and can interrupt deep work.
-
-### Simplicity Is Essential
-
-The Manifesto defines simplicity as maximizing the amount of work not done. This is not about cutting corners. It is about disciplined focus on what matters most and the courage to say no to everything else. Teams that skip this principle build elaborate features nobody asked for, create complex architectures for hypothetical future needs, and generate comprehensive documentation that nobody reads.
-
-The YAGNI principle (You Aren't Gonna Need It) from Extreme Programming captures this well. The trade-off is that simplicity requires judgment: knowing what to defer versus what to invest in early is genuinely hard, and getting it wrong can create painful rework.
+The last principle: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly" ([principles](https://agilemanifesto.org/principles.html)). This is how an agile team improves its own process instead of waiting for a new one to be imposed. The Scrum Guide builds the same idea into its retrospective, whose purpose is "to plan ways to increase quality and effectiveness" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). A reflection that never changes anything is a sign the team is going through the motions.
 
 ## Steps
 
-1. **Step 1: Build and Prioritize the Product Backlog**
-   Before any sprint begins, the team needs a prioritized list of work items. The product backlog is not a requirements document. It is a living, ordered list of everything the team could build, with the most valuable items at the top. Each item should describe a problem or outcome, not a solution.
+1. **Check that the work suits agile**
+   Agile pays off when the team does not know in advance exactly what to build or how, and can learn by shipping small pieces. List what is uncertain: customer needs, technology, market, regulation. If almost nothing is uncertain and the requirements are fixed, a plan-driven approach may cost less. The output is a short statement of which uncertainties the first few cycles should reduce. The [agile vs waterfall skill](../../skills/comparing-agile-and-waterfall/SKILL.md) gives a structured way to make this call.
 
-User stories ("As a [user], I want [capability] so that [benefit]") are the most common format, but jobs-to-be-done statements, problem briefs, or simple feature descriptions work equally well. The critical discipline is ranking: the team should always be able to point to the single most important thing to work on next. You know this step is done well when stakeholders agree on what is at the top and why, and when items near the top are small enough to complete within a single sprint. A common gotcha is treating the backlog as a dumping ground for every idea anyone has ever had.
+2. **Form a small cross-functional team with one product owner**
+   Put together the people needed to take an idea to working software without waiting on other groups. The Scrum Guide describes a team of "typically 10 or fewer people" and a Product Owner who is "one person, not a committee" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). One accountable owner of priorities prevents the backlog from being pulled in several directions at once. Agree who that person is and which decisions the team can make without escalation.
 
-Backlogs with 500 items are not backlogs. They are graveyards. Regularly prune items that have sat untouched for months.
+3. **Build and order the product backlog**
+   Collect the work into one list, written as outcomes users care about, and order it so the most valuable item is at the top. Keep the items near the top small and clear, and let items further down stay rough. The Agile Alliance describes refinement as reviewing the backlog so that "the items at the top of the backlog are ready for delivery" ([Agile Alliance, Backlog Refinement](https://www.agilealliance.org/glossary/backlog-refinement/)). A backlog nobody can rank is a sign the product goal is unclear.
 
-2. **Step 2: Plan the Sprint**
-   Sprint planning is where the team selects a set of backlog items they will deliver in the upcoming sprint, typically one to four weeks. Two-week sprints are the most common cadence because they balance learning speed with enough time to deliver meaningful work. During planning, the team discusses each candidate item: what needs to happen, what questions remain, and how much effort is involved. The output is a sprint goal (a one-sentence statement of what the sprint will achieve) and a sprint backlog (the specific items committed to).
+4. **Choose a cadence or a flow model**
+   Decide whether the team works in fixed timeboxes or in continuous flow. Scrum uses Sprints that are "fixed length events of one month or less" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). Kanban has no sprints and instead asks the team to "explicitly control the number of work items in a workflow" ([Kanban Guide](https://kanbanguides.org/english/)). Timeboxes suit planned product work, and flow suits work that arrives unpredictably, such as support or operations.
 
-You know planning went well when every team member can articulate the sprint goal and when the committed work feels challenging but achievable based on the team's recent velocity. Watch out for over-commitment. Teams routinely plan more work than they can finish, which leads to carry-over, demoralization, and unreliable forecasting. A useful variation is to leave 20% of capacity unplanned to absorb unexpected work.
+5. **Plan each cycle around a goal**
+   Start each cycle by agreeing on why it is valuable, what can be finished, and how. Those are the three Sprint Planning topics in the Scrum Guide. Pick backlog items that serve the goal and fit the team's recent pace, and leave room for the unexpected. The output is a goal every team member can state and a visible list of the work behind it.
 
-3. **Step 3: Execute with Daily Coordination**
-   During the sprint, the team works to deliver the committed items. Daily stand-ups (typically 15 minutes, often held standing to enforce brevity) serve as the primary coordination mechanism. Each person shares what they accomplished since yesterday, what they plan to work on today, and what is blocking them. The purpose is coordination, not status reporting.
+6. **Coordinate daily and keep work visible**
+   Hold a short daily standup where the team checks progress toward the goal and adjusts its plan. The Scrum Guide sets the Daily Scrum at "a 15-minute event for the Developers" and leaves its structure to the team ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). Keep a board that shows every item in progress so bottlenecks are obvious. If the daily standup in your agile team turns into status reports to a manager, the coordination has stopped.
 
-If stand-ups feel like reporting to a manager, something has gone wrong. The team should be talking to each other, not performing for an audience. Work-in-progress limits help here: if everyone is working on different things and nothing is finishing, the team is busy but not productive. Encourage swarming, where multiple people collaborate to finish one item before starting the next.
+7. **Review the increment with stakeholders**
+   At the end of each cycle, show working software to the people who will use or pay for it and ask what should change. The Scrum Guide calls the Sprint Review "a working session" and says the team "should avoid limiting it to a presentation" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). Show what did not work as well as what did. Leave with changes to the backlog, because feedback that changes nothing was not needed.
 
-A common variation for distributed teams is asynchronous stand-ups posted in a shared channel, though these lose the real-time problem-solving benefit of synchronous conversation.
+8. **Reflect, adjust, and repeat**
+   Close the loop with a retrospective on how the team worked, then pick one or two changes to try in the next cycle. Check at the next retrospective whether the change helped. Over several cycles, adjust the process itself: meeting lengths, cadence, board columns, even the choice between Scrum and Kanban. This is the twelfth principle in practice.
 
-4. **Step 4: Review the Increment with Stakeholders**
-   At the end of each sprint, the team demonstrates what they built to stakeholders, customers, or users. This is the sprint review, and its purpose is feedback, not approval. Show working product, not slides. Let stakeholders interact with the increment if possible.
+## Agile vs Waterfall and Other Approaches
 
-" You know the review went well when you leave with a clear sense of whether the increment moves the needle and what to adjust. A common failure mode is turning the review into a demo theater where the team shows only the happy path and avoids showing rough edges. Honest reviews, where the team says "we tried this approach and it did not work as expected, here is what we learned," are far more valuable. Stakeholders who only see polished demos lose trust when they encounter reality later.
+Agile sits at the level of values. Scrum and Kanban are frameworks that put those values into practice, and scaling frameworks coordinate many agile teams. Waterfall is the plan-driven alternative agile is usually compared with. Hamster's catalog covers [Scrum](https://tryhamster.com/methods/scrum), [Kanban](https://tryhamster.com/methods/kanban) and [Waterfall](https://tryhamster.com/methods/waterfall) as separate methods.
 
-5. **Step 5: Reflect and Improve in the Retrospective**
-   After the review, the team holds a retrospective focused on how they worked, not what they built. The classic format asks three questions: what went well, what did not go well, and what will we change? The most important output is one or two specific, measurable commitments for the next sprint. " You know retrospectives are working when the team's velocity and satisfaction genuinely improve over time, and when previous commitments are visibly followed through.
+| Approach | What it prescribes | Source |
+|---|---|---|
+| Agile | Four values and twelve principles, no fixed process | [Agile Manifesto](https://agilemanifesto.org/) |
+| Scrum | Roles, events and Sprints of one month or less | [Scrum Guide](https://scrumguides.org/scrum-guide.html) |
+| Kanban | Visualized workflow, explicit WIP control, flow measures; the Kanban Guide does not define roles | [Kanban Guide](https://kanbanguides.org/english/) |
+| Waterfall | Sequential phases, which Royce's 1970 paper called "risky" | [Royce](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf) |
+| SAFe | Agile Release Trains of 50-125 people planning in PIs | [SAFe ART](https://framework.scaledagile.com/agile-release-train) |
+| LeSS | Up to eight teams sharing one backlog and one Product Owner | [LeSS](https://less.works/less/framework/index) |
 
-The most common failure mode is running retrospectives as complaint sessions with no follow-up. If the same issues surface sprint after sprint with no resolution, the team will stop believing the retrospective matters and it will degrade into a checkbox ritual. A useful variation is rotating the retrospective format (sailboat, 4Ls, start-stop-continue) to prevent staleness.
-
-6. **Step 6: Refine the Backlog Continuously**
-   Backlog refinement (sometimes called grooming) happens throughout the sprint, not just during planning. The product owner and team review upcoming items, break large items into smaller ones, clarify acceptance criteria, and re-prioritize based on what they learned in the latest sprint. A good rule of thumb is that items in the top quarter of the backlog should be refined enough to pull into a sprint immediately, while items further down can remain as rough ideas. Teams typically spend 5-10% of their sprint capacity on refinement.
-
-You know refinement is working when sprint planning is fast and decisive because most items are already well-understood. The common failure is skipping refinement entirely and trying to do all clarification during sprint planning, which turns a one-hour meeting into a four-hour ordeal and leads to poorly understood commitments.
+Kniberg and Skarin's comparison of Scrum and Kanban makes a point that applies to the whole table: "There is no such thing as a good or bad tool", only decisions about when and how to use one ([Kanban and Scrum](https://www.infoq.com/minibooks/kanban-scrum-minibook/)).
 
 ## When to Use
 
-- When you are building a new product and customer needs are genuinely uncertain. You have hypotheses about what users want, but no validated evidence yet. Waterfall-style upfront planning would lock you into building something based on assumptions that are likely wrong. Agile's short iterations let you ship a thin slice, measure real usage, and redirect before you have invested months in the wrong direction.
-- When your market or competitive landscape is shifting fast enough that a twelve-month roadmap would be outdated within three months. SaaS products competing in crowded categories, startups responding to emerging platforms or regulation, and teams building on rapidly evolving technology (like AI capabilities in 2024-2025) all face this reality. Agile gives you a structured way to re-prioritize without the chaos of no process at all.
-- When you have a cross-functional team of 3-9 people who can own a product or feature area end-to-end. Agile works best when the team has a designer, engineers, and a product person who can make decisions together without waiting on external approvals. If your work requires sign-off from six departments before anything ships, agile's speed advantage collapses.
-- When your organization is willing to fund outcomes rather than outputs. Agile teams need the authority to change what they build based on what they learn. If leadership has already decided exactly what features to ship and in what order, agile becomes a delivery mechanism wearing a collaboration costume. The method is most powerful when the team owns the problem, not just the solution.
-- When you are maintaining and evolving an existing product where customer feedback, bug reports, and feature requests flow in continuously. The backlog becomes a living prioritization tool, and sprints create a predictable rhythm for addressing the highest-value work. Teams handling a mix of planned features, technical debt, and urgent fixes benefit from agile's ability to re-prioritize every one to four weeks.
+- You are building something new and customer needs are uncertain. Short cycles let the team test its assumptions with working software before committing months of effort to them.
+- The market, technology or regulation around the product is changing during the project. An ordered backlog and frequent planning let the team re-prioritize without abandoning its process.
+- You can form a small, stable, cross-functional team with one person who owns priorities. The Manifesto's principles of daily collaboration and self-organization assume such a team exists.
+- You are running and evolving a live product with a steady stream of feedback, bugs and requests. Agile planning cycles give that stream a regular point where it is ranked against planned work.
+- Leadership is willing to fund outcomes and let the team change what it builds. Agile needs room to act on what each review teaches.
 
 ## When Not to Use
 
-- When the requirements are genuinely fixed, well-understood, and unlikely to change. Building a bridge, implementing a payroll calculation engine to match a published tax code, or migrating data from one database schema to another with known mappings are examples where iterative discovery adds overhead without value. Agile's strength is navigating uncertainty. When there is no uncertainty, the iteration cycles become wasted motion.
-- When your team is distributed across many departments with no single empowered group that can make decisions independently. If every design decision requires a committee review, every technical choice needs architecture board approval, and every priority change goes through a governance process, agile's short cycles will constantly stall at approval gates. You will end up with sprints that are mostly waiting, which breeds frustration and cynicism about the method itself.
-- When you are working on safety-critical systems where the cost of iteration is lives or catastrophic failure. Avionics software, medical device firmware, and nuclear control systems require extensive upfront verification and validation by regulation. Agile's assumption that you can ship, learn, and adjust does not apply when a defect in an early increment could be fatal. Modified approaches exist (agile-in-the-small within a V-model-in-the-large), but pure agile is inappropriate here.
-- When your organization treats agile adoption as a top-down mandate without changing incentive structures, approval processes, or management behavior. Teams forced into Scrum ceremonies without the authority to self-organize, the trust to make technical decisions, or the organizational patience to let velocity stabilize will experience agile as overhead rather than enablement. The method will fail, and the failure will be attributed to agile rather than to the organizational dysfunction that prevented it from working.
-- When you are a solo practitioner or a two-person team working on a well-scoped project. The ceremony overhead of sprints, stand-ups, retrospectives, and reviews is designed for coordination across a team. A solo developer with a clear goal and good discipline will move faster with a simple task list than with formal agile process. Lightweight kanban (a personal board with three columns) captures the useful parts without the overhead.
+- Requirements are fixed, well understood and unlikely to change, such as reproducing a published calculation exactly. Iterating to discover requirements adds cost when there is nothing left to discover.
+- Every decision needs sign-off from groups outside the team. Short cycles stall at approval gates, and the team ends up waiting for most of each sprint.
+- Leadership mandates agile ceremonies without giving teams authority over how they work. Fowler's warning about process imposed from outside describes the likely result: rituals without the values.
+- One person is doing well-scoped work alone. A simple task list or personal board captures the useful parts, and the team ceremonies have nobody to coordinate.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Comparing Agile and Waterfall for Project Selection](../../skills/comparing-agile-and-waterfall/SKILL.md) — How to assess project characteristics, risk profiles, and organizational constraints to decide when agile outperforms waterfall and vice versa.
-- [Choosing Between Scrum, Kanban, and Hybrid Approaches](../../skills/choosing-between-scrum-and-kanban/SKILL.md) — How to evaluate your team's context and workflow to select the right agile framework — Scrum, Kanban, Scrumban, or a custom hybrid.
-- [Running Sprint Planning and Execution](../../skills/running-sprint-planning-and-execution/SKILL.md) — How to plan, scope, and execute time-boxed sprints including defining sprint goals, selecting backlog items, and managing sprint commitments.
-- [Scaling Agile Across Multiple Teams and Departments](../../skills/scaling-agile-across-teams/SKILL.md) — How to apply scaling frameworks like SAFe, LeSS, or Nexus to coordinate agile practices across multiple teams while preserving agility.
-- [Managing and Refining a Product Backlog](../../skills/managing-product-backlogs/SKILL.md) — How to create, prioritize, groom, and maintain a product backlog with well-written user stories, acceptance criteria, and effort estimates.
-- [Coaching Teams Through Agile Adoption and Transformation](../../skills/coaching-agile-team-adoption/SKILL.md) — How to guide resistant or inexperienced teams through the agile transition by building trust, teaching agile values, and establishing sustainable practices.
-- [Running Sprint Retrospectives for Continuous Improvement](../../skills/running-retrospectives/SKILL.md) — How to facilitate retrospectives that generate honest feedback and produce actionable improvements the team actually implements.
-- [Facilitating Effective Daily Stand-Up Meetings](../../skills/facilitating-daily-standups/SKILL.md) — How to run focused, time-boxed daily stand-up meetings that surface blockers, align the team, and maintain momentum without wasting time.
+- [Comparing Agile and Waterfall for Project Selection](../../skills/comparing-agile-and-waterfall/SKILL.md): Decide whether a specific project should run agile, waterfall or a hybrid, based on uncertainty, risk and constraints.
+- [Choosing Between Scrum, Kanban, and Scrumban](../../skills/choosing-between-scrum-and-kanban/SKILL.md): Pick the framework that fits how work arrives, then test it with a time-boxed trial.
+- [Running Sprint Planning and Agile Sprint Execution](../../skills/running-sprint-planning-and-execution/SKILL.md): Set a sprint goal, plan against real capacity, and protect the goal during the sprint.
+- [Scaling Agile Across Teams with SAFe, LeSS and More](../../skills/scaling-agile-across-teams/SKILL.md): Coordinate several agile teams on one product without adding a management layer.
+- [Product Backlog Management and Refinement](../../skills/managing-product-backlogs/SKILL.md): Write, order, refine and prune a product backlog so the top is always ready to plan.
+- [Agile Coaching: Guiding a Team Through Adoption](../../skills/coaching-agile-team-adoption/SKILL.md): Introduce agile practices one at a time, with the team's consent, until the team runs them alone.
+- [Running Sprint Retrospectives for Continuous Improvement](../../skills/running-retrospectives/SKILL.md): Facilitate retrospectives that end in a few owned changes the team actually makes.
+- [Facilitating the Daily Standup Meeting](../../skills/facilitating-daily-standups/SKILL.md): Run a short daily standup focused on the sprint goal, the board and blockers.
 
 ## FAQ
 
 **What is agile in simple terms?**
 
-Agile is a way of working where teams build products in small pieces, get feedback after each piece, and adjust their plans based on what they learn. Instead of spending months planning everything upfront and hoping you got it right, you ship something small every one to four weeks, show it to real users or stakeholders, and let their reactions guide what you build next. The core belief is that you cannot predict exactly what customers need, so you build a system for learning quickly and cheaply.
+Agile is a way of working where a team builds a product in small pieces, shows each piece to the people who will use it, and changes its plan based on what it learns. The Agile Alliance defines it as "the ability to create and respond to change" ([Agile 101](https://www.agilealliance.org/agile101/)). It comes from the Manifesto for Agile Software Development, which lists four values and twelve principles. Scrum and Kanban are specific ways of putting those ideas into practice.
+
+**What are the four values of the Agile Manifesto?**
+
+The [Agile Manifesto](https://agilemanifesto.org/) values individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan. It then adds: "That is, while there is value in the items on the right, we value the items on the left more." The values rank priorities for when they conflict. They do not throw out planning, documentation or contracts.
 
 **Agile vs waterfall: which should I use?**
 
-Use agile when your requirements are uncertain and likely to change as you learn, when customer feedback is essential to building the right thing, and when you can organize a small empowered team. Use waterfall when requirements are fixed and well-understood from the start, when regulatory or safety constraints require extensive upfront documentation, or when the cost of iteration is prohibitively high (think construction or hardware manufacturing). Many teams use a hybrid: agile for product discovery and feature development, waterfall-style phase gates for compliance and release management. The choice is not ideological.
+Use agile when requirements are uncertain and feedback from working software will change what you build. Use a plan-driven, waterfall-style approach when requirements are fixed and the cost of changing course late is very high. The history is less of a contrast than it looks: Larman and Basili point out that Royce's 1970 paper, usually cited as the source of waterfall, recommended doing the work twice ([Larman and Basili](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf)). Many organizations run agile delivery inside phase gates for funding or compliance.
 
-It is about matching your process to your level of uncertainty.
+**Is agile the same as Scrum?**
 
-**Does agile work for small teams of two or three people?**
+No. Agile is the set of values and principles, and Scrum is one framework that applies them. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) by Ken Schwaber and Jeff Sutherland prescribes roles, events such as Sprint Planning and the Daily Scrum, and Sprints of one month or less. Kanban, Extreme Programming and others are also agile, and teams often combine practices from several of them.
 
-Agile values absolutely apply to small teams, but formal Scrum ceremonies often add more overhead than they are worth at that scale. A two-person team does not need a 15-minute daily stand-up because they are already talking constantly. Consider lightweight Kanban instead: a simple board with "to do," "doing," and "done" columns, a work-in-progress limit, and a weekly check-in to review priorities and reflect on what is working. Keep the principles (iterate, get feedback, adapt) while shedding the process weight designed for teams of five to nine.
+**What is SAFe agile?**
 
-**Why does agile fail in practice?**
+SAFe, the Scaled Agile Framework, is one way to coordinate many agile teams working on the same solution. It groups teams into Agile Release Trains, generally made up of 50-125 people ([SAFe, Agile Release Train](https://framework.scaledagile.com/agile-release-train)), that plan together in Planning Intervals, typically "8 to 12-week" timeboxes ([SAFe, Planning Interval](https://framework.scaledagile.com/planning-interval)). Lighter alternatives such as [LeSS](https://less.works/less/framework/index) keep one backlog and one Product Owner across several teams. The scaling skill on this page compares them.
 
-The most common failure mode is adopting agile ceremonies without adopting agile values. Teams hold daily stand-ups but report to a manager instead of coordinating with each other. They run sprints but are not empowered to change priorities based on what they learn. They do retrospectives but nothing ever changes.
+**What does an agile coach do?**
 
-Another frequent failure is organizational. Leadership mandates agile for delivery teams but keeps waterfall-style annual planning, fixed-scope contracts, and command-and-control management, which creates a contradiction the team cannot resolve. Agile also fails when applied to problems with genuinely fixed requirements, where its iteration overhead adds cost without benefit.
+An agile coach helps a team and its organization learn to work in an agile way, and then steps back. Lyssa Adkins lists the coach's roles as "teacher, mentor, problem solver, conflict navigator, and performance coach" ([Coaching Agile Teams](https://www.informit.com/store/coaching-agile-teams-a-companion-for-scrummasters-agile-9780321637703)). In Scrum, part of this job belongs to the Scrum Master, who is responsible for "Leading, training, and coaching the organization in its Scrum adoption" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). A good coach leaves the team able to run and change its own process.
 
-**How does agile work alongside OKRs and roadmaps?**
+**Why do agile adoptions fail?**
 
-OKRs define the outcomes a team is pursuing over a quarter or longer. The product roadmap describes the bets the team is making to achieve those outcomes. Agile sprints are the execution mechanism: every one to four weeks, the team delivers increments that move them toward their OKR targets. Roadmap items are not fixed feature specs.
+The most common pattern is adopting the ceremonies without the values: standups that report to a manager, sprints whose content is fixed from outside, and retrospectives that change nothing. Fowler calls much of current practice "faux-agile" and blames process imposed on teams ([Agile Software Guide](https://martinfowler.com/agile.html)). A second pattern is neglecting technical quality until the code slows everything down, which he calls [Flaccid Scrum](https://martinfowler.com/bliki/FlaccidScrum.html). Both are fixed by returning to the principles rather than adding more process.
 
-They are hypotheses. If sprint reviews and customer feedback reveal that a planned feature is not moving the target metric, the team adjusts the roadmap. This is the critical integration point. Organizations that treat roadmaps as commitments and OKRs as scorecards undermine agile's ability to respond to learning.
+**Does agile mean no planning or documentation?**
 
-**What is the difference between Scrum, Kanban, and SAFe?**
+No. Highsmith's history of the meeting says the authors "embrace documentation, but not hundreds of pages of never-maintained and rarely-used tomes" and "plan, but recognize the limits of planning in a turbulent environment" ([history](https://agilemanifesto.org/history.html)). Agile teams plan continuously at several horizons, from the product goal down to the day. They write the documents that someone will read and keep them current.
 
-Scrum is a specific agile framework with defined roles (product owner, scrum master, development team), fixed-length sprints, and prescribed ceremonies (planning, daily stand-up, review, retrospective). Kanban is a flow-based approach with no fixed sprints, focusing instead on visualizing work, limiting work in progress, and optimizing cycle time. SAFe (Scaled Agile Framework) is an enterprise framework for coordinating agile across many teams, adding layers like program increments, release trains, and portfolio management. Scrum works well for teams building products with clear iteration cycles.
+## Sources
 
-Kanban suits teams with continuous flow work like support, DevOps, or maintenance. SAFe addresses the coordination problem of large organizations but is controversial because its overhead can undermine agile values.
-
-**How do I measure if agile is working for my team?**
-
-Look at four categories. First, delivery predictability: is the team consistently completing what they commit to each sprint? Velocity should stabilize over time, not necessarily increase. Second, cycle time: how long does it take from starting work on an item to shipping it?
-
-Shorter is generally better. Third, quality: are defect rates stable or declining? If speed comes at the cost of quality, the team is borrowing from the future. Fourth, and most important, outcome impact: are the increments the team ships actually moving business or customer metrics?
-
-A team with perfect velocity and zero customer impact is efficiently building the wrong thing.
-
-**Can agile be used outside of software development?**
-
-Yes, and it increasingly is. Marketing teams run sprints to plan and execute campaigns, testing messaging variants and reallocating budget based on results. HR teams use agile to redesign hiring pipelines, iterating on process changes with each hiring cohort. Hardware teams apply agile principles with longer iteration cycles, using prototyping and simulation to get feedback before committing to manufacturing.
-
-The key adaptation is adjusting iteration length to match the feedback speed of your domain. Software can iterate in days. Physical products might iterate in weeks or months. The principles (learn early, adapt often, empower the team) transfer.
-
-The specific ceremonies and cadences need tuning.
+- [Manifesto for Agile Software Development](https://agilemanifesto.org/)
+- [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)
+- [Jim Highsmith: History of the Agile Manifesto](https://agilemanifesto.org/history.html)
+- [Agile Alliance: Agile 101](https://www.agilealliance.org/agile101/)
+- [Martin Fowler: Agile Software Guide](https://martinfowler.com/agile.html)
+- [Martin Fowler: The State of Agile Software in 2018](https://martinfowler.com/articles/agile-aus-2018.html)
+- [Martin Fowler: Flaccid Scrum](https://martinfowler.com/bliki/FlaccidScrum.html)
+- [Craig Larman and Victor Basili: Iterative and Incremental Development, A Brief History](https://www.cs.umd.edu/~basili/publications/journals/J90.pdf)
+- [Winston Royce: Managing the Development of Large Software Systems](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf)
+- [Ken Schwaber and Jeff Sutherland: The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [The Kanban Guide](https://kanbanguides.org/english/)
+- [Henrik Kniberg and Mattias Skarin: Kanban and Scrum, Making the Most of Both](https://www.infoq.com/minibooks/kanban-scrum-minibook/)
+- [Scaled Agile Framework: Agile Release Train](https://framework.scaledagile.com/agile-release-train)
+- [Scaled Agile Framework: Planning Interval](https://framework.scaledagile.com/planning-interval)
+- [LeSS: Large-Scale Scrum](https://less.works/less/framework/index)
+- [Agile Alliance: Backlog Refinement](https://www.agilealliance.org/glossary/backlog-refinement/)
+- [Lyssa Adkins: Coaching Agile Teams](https://www.informit.com/store/coaching-agile-teams-a-companion-for-scrummasters-agile-9780321637703)
 
 ---
 

@@ -1,37 +1,37 @@
-# Examples: Creating Waterfall Project Plans and Gantt Charts
+# Examples: Creating Waterfall Project Plans with WBS and Gantt Charts
 
-## Example: Enterprise ERP Implementation Waterfall Chart
-
-**Scenario:**
-
-A manufacturing company is implementing a new ERP system using the Waterfall methodology. The project spans 9 months with 5 phases: Requirements Gathering (6 weeks), System Design (8 weeks), Configuration & Development (12 weeks), Testing & Validation (8 weeks), and Deployment & Training (4 weeks). The team includes 3 business analysts, 4 developers, 2 QA engineers, and 1 project manager.
-
-**Walkthrough:**
-
-**WBS Decomposition:** The project manager starts with the 5 phases and decomposes each. The Requirements phase breaks into: stakeholder interviews (2 weeks), process mapping (2 weeks), requirements document drafting (1 week), and requirements sign-off (1 week). Similar decomposition happens for all phases, resulting in 87 tasks across the project.
-
-**Dependency Mapping:** Phase boundaries are strict finish-to-start gates. Within the Configuration phase, tasks are more nuanced: the finance module and inventory module can be configured in parallel (start-to-start), but integration testing can't begin until both finish (finish-to-start from both).
-
-**Resource Allocation:** The 3 business analysts are fully loaded during Requirements but only needed 25% during Configuration. The 4 developers are idle during Requirements but fully allocated during Configuration. The resource histogram shows a developer conflict in week 14 where one developer is assigned to both module configuration and a data migration task simultaneously. The PM resolves this by shifting the data migration to week 15, adding 1 week to the non-critical path.
-
-**Critical Path:** The critical path runs through Requirements → System Design → Finance Module Configuration → Integration Testing → UAT → Deployment. The inventory module has 3 weeks of float because it's simpler. The waterfall chart clearly shows this path highlighted in red.
-
-**Milestones:** Six milestones are set: Requirements Approved, Design Approved, Configuration Complete, Testing Complete, UAT Sign-off, and Go-Live. Each milestone links to a formal phase gate review with defined entry criteria.
-
-**Baseline:** The final waterfall chart shows a 38-week schedule with a 2-week contingency buffer before go-live, baselined and distributed to all stakeholders.
-
-## Example: Regulatory Compliance Documentation Project
+## Office network upgrade
 
 **Scenario:**
 
-A pharmaceutical company needs to produce FDA submission documentation for a new medical device. The project follows Waterfall because regulatory requirements are fixed and sequential. Duration is 6 months with phases: Regulatory Analysis (3 weeks), Document Planning (2 weeks), Document Authoring (10 weeks), Internal Review (4 weeks), and Submission Preparation (3 weeks).
+Illustrative scenario: an IT team must replace the network equipment in a three-floor office over a fixed period, with work done outside business hours. Scope is fixed by the equipment order and the building layout.
 
 **Walkthrough:**
 
-**WBS Structure:** The Document Authoring phase is the most complex, breaking into 6 parallel document streams: Clinical Evaluation Report, Risk Management File, Design History File, Software Validation Report, Biocompatibility Assessment, and Labeling Package. Each stream has its own sub-tasks for drafting, SME review, and revision.
+The team builds a WBS with phases at the top: survey, design, procurement, installation per floor, testing and handover. Under installation, each floor has the same work packages: cabling checks, equipment mounting, configuration and floor testing. The WBS dictionary notes that facilities must approve out-of-hours access for each floor.
 
-**Key Dependencies:** The Clinical Evaluation Report has a finish-to-start dependency on an external literature review being delivered by a CRO (contract research organization) in week 5. This external dependency is flagged as a risk. The Internal Review phase can begin for early documents before all authoring is complete — a start-to-start relationship with a 6-week lag.
+Dependency mapping shows the critical path runs through procurement, because the equipment has a long lead time. The team adds the supplier's delivery date as an external milestone with a named owner and schedules the design gate early enough to place the order on time. The Gantt chart shows the three floors in sequence after delivery, with a buffer before handover.
 
-**Critical Path Analysis:** The critical path runs through the Clinical Evaluation Report because it has the longest authoring time and depends on the external CRO deliverable. If the CRO is late by even 1 week, the entire submission date slips. The PM adds a mitigation: the CRO contract includes a weekly progress check, and an alternative data source is identified as a backup.
+## Regulatory reporting system for a small insurer
 
-**Waterfall Chart Output:** The Gantt chart uses swimlanes for each document stream, with the critical path highlighted. Milestones include: Regulatory Gap Analysis Complete, Document Plan Approved, All Drafts Complete, Internal Review Complete, and Submission Package Shipped. The plan is baselined and presented to the VP of Regulatory Affairs for approval.
+**Scenario:**
+
+Illustrative scenario: a small insurer must deliver a new regulatory report by a date set by its regulator. Requirements come from the published reporting rules and are unlikely to change.
+
+**Walkthrough:**
+
+The project manager builds the WBS from the deliverables: requirements specification, data mapping, report design, build, test report and submission. Each gate is a milestone. Estimates come from the analysts and developers who will do the work, with ranges for the data mapping, which depends on the quality of old data.
+
+Resource leveling shows that the one analyst who knows the old data is needed in both data mapping and testing at the same time. The team moves test preparation to another analyst and accepts a slightly later test start. The final Gantt chart shows a visible buffer before the submission milestone, and the sponsor approves it as the baseline.
+
+## Event venue fit-out
+
+**Scenario:**
+
+Illustrative scenario: a company is fitting out a rented space for a conference. The contract with the venue fixes the access dates, so the plan must work backwards from them.
+
+**Walkthrough:**
+
+The planner lists phases for design, supplier contracts, build, technical rehearsal and the event itself. The WBS includes the easily forgotten items: permits, insurance, signage approval and removal after the event. Finish-to-start dependencies dominate, but lighting and staging are allowed to overlap with a start-to-start link once the stage frame is up.
+
+The critical path runs through the stage build and the technical rehearsal. The planner watches those tasks closely in weekly reviews and lets the tasks with float, such as signage printing, move within their windows.

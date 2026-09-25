@@ -1,46 +1,37 @@
 # Examples: Building HEART Metric Dashboards for Product Teams
 
-## Example: SaaS Project Management Tool HEART Dashboard
+## Cutting an overloaded dashboard down
 
 **Scenario:**
 
-A product team at a mid-stage SaaS company (project management tool, 50K MAU) needs to build a HEART dashboard to drive their quarterly product manager roadmap planning. They use Amplitude for event tracking, Delighted for NPS surveys, and Looker Studio for dashboards.
+Illustrative scenario: a product team's UX dashboard has grown to dozens of charts over two years. Nobody reads past the first screen, and the weekly review keeps running out of time.
 
 **Walkthrough:**
 
-**GSM Audit Results:**
-- Happiness: NPS score (Delighted, monthly survey) → Available ✅
-- Engagement: Weekly active projects per user (Amplitude) → Available ✅
-- Adoption: Percentage of new signups who create their first project within 7 days (Amplitude) → Available ✅
-- Retention: 30-day retention rate by cohort (Amplitude → BigQuery) → Available ✅
-- Task Success: Percentage of task-creation flows completed without error (Amplitude) → Available ✅
+The team lays its current goals table next to the dashboard and checks each chart against it. Many charts have no matching goal; they were added for one-off questions. Those move to an archive view.
 
-**Dashboard Build:**
-The team creates a Looker Studio dashboard connected to BigQuery (where Amplitude data is exported) and a Google Sheets connector for Delighted NPS data.
+The remaining metrics are sorted into primary and secondary. The summary row ends up with one metric each for Adoption, Task success and Happiness, the three categories the team chose for this year. Retention stays in a secondary section because it changes slowly. The weekly review now covers the summary row in a few minutes and spends the rest of the time on whichever metric moved.
 
-The summary row shows five KPI cards: NPS at 42 (green, threshold >30), Weekly Active Projects at 3.2 (yellow, threshold >4), 7-Day Activation at 61% (green, threshold >55%), 30-Day Retention at 68% (yellow, threshold >70%), Task Completion at 94% (green, threshold >90%).
-
-The Engagement detail panel reveals that the 'yellow' status is driven entirely by the mobile segment—desktop users average 4.8 active projects while mobile users average 1.1. This insight directly influences the product manager roadmap: the team prioritizes mobile project creation UX for the next quarter.
-
-**Review Cadence:** Weekly Slack snapshot to #product-metrics, monthly deep-dive in stakeholder review, quarterly threshold recalibration.
-
-## Example: Consumer App HEART Dashboard for Stakeholder Review
+## A launch dashboard for a new feature
 
 **Scenario:**
 
-A consumer fitness app (200K MAU) is preparing for a board review and needs to present UX health alongside business metrics. The PM builds a HEART dashboard in Tableau to complement the revenue dashboard the finance team already maintains.
+Illustrative scenario: a design tool is about to launch shared component libraries. The feature team wants a dashboard ready on launch day so it can decide within a few weeks whether to invest more.
 
 **Walkthrough:**
 
-The PM maps HEART dimensions to the fitness app context:
-- Happiness: In-app satisfaction rating (1-5 stars after workout completion) → avg 4.1
-- Engagement: Workouts completed per active user per week → avg 2.8
-- Adoption: % of new users who complete their first workout within 48 hours → 38%
-- Retention: Week-4 retention rate → 22%
-- Task Success: % of workout-start flows completed without abandonment → 87%
+The dashboard has three sections. Adoption shows new teams creating a library each week as a share of active teams. Task success shows the share of attempts to publish a library update that succeed, with a failure breakdown by error type. Happiness shows the feature-level satisfaction score from a sampled survey, marked as preliminary until enough responses arrive.
 
-The dashboard summary row immediately highlights two red zones: Adoption at 38% (threshold: >50%) and Retention at 22% (threshold: >30%). The detail panels show that Adoption drops significantly for users who skip the onboarding quiz, and Retention is weakest among users who don't set a recurring workout schedule.
+Each chart carries a one-line description and a baseline where one exists. The launch date and a later bug-fix release are annotated. A data quality check alerts the analyst if the publish events drop sharply, which catches a tracking bug in the first week before anyone mistakes it for a product problem.
 
-During the board review, the PM presents the HEART dashboard alongside the revenue dashboard and draws a direct line: improving Adoption and Retention (the two red metrics) is the highest-leverage product manager roadmap priority because the revenue model depends on sustained engagement. The board approves investment in onboarding redesign and a habit-building notification system.
+## Connecting a HEART dashboard to quarterly goals
 
-This example shows how HEART dashboards translate UX data into strategic roadmap arguments that non-product stakeholders can understand.
+**Scenario:**
+
+Illustrative scenario: a subscription app's leadership sets quarterly objectives, and the product team wants its HEART dashboard to be part of that conversation rather than a separate report.
+
+**Walkthrough:**
+
+The team maps each quarterly objective about the user experience to one HEART goal and puts that goal's primary metric at the top of the dashboard. Business metrics such as revenue stay on the finance dashboard, linked from the header.
+
+At the quarterly review, the team presents the HEART summary row with baselines and trends, then the release annotations that explain the biggest movements. When one objective is missed, the team shows the survey themes and task failure breakdown behind the number, which turns the discussion toward what to fix next.

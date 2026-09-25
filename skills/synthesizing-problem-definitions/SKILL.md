@@ -1,15 +1,20 @@
 ---
-name: synthesizing-problem-definitions
-description: "This skill teaches you how to apply convergent thinking in the Define phase of the double diamond framework — analyzing discovery findings, clustering themes, and crafting a precise problem statement that focuses your team on the right challenge."
+name: "synthesizing-problem-definitions"
+description: "Synthesize discovery findings into themes, insights and one agreed problem statement to define the problem in the Double Diamond Define phase."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: double-diamond
+  method: "double-diamond"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Synthesizing Insights to Define the Problem in the Double Diamond Framework
+# Synthesizing Insights to Define the Problem
 
-> This skill teaches you how to apply convergent thinking in the Define phase of the double diamond framework — analyzing discovery findings, clustering themes, and crafting a precise problem statement that focuses your team on the right challenge.
+> Synthesize discovery findings into themes, insights and one agreed problem statement to define the problem in the Double Diamond Define phase.
 
 ## Before you start
 
@@ -24,122 +29,105 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours per synthesis session |
-| Outcome | You'll be able to transform messy, divergent research data into a single, well-framed problem statement that aligns your team and sets up effective ideation in the Develop phase. |
-| Prerequisites | Completed discovery research with raw findings, Familiarity with the double diamond framework's four phases, Basic understanding of divergent vs. convergent thinking, Affinity mapping or thematic analysis basics |
+| Time to Learn | a few sessions of practice on real research data |
+| Outcome | You can turn a pile of discovery findings into evidence-backed insights and one problem statement the team and sponsor agree to solve. |
+| Prerequisites | Raw findings from a Discover phase, a team that took part in or observed the research, a decision-maker who can sign off the problem |
 | Part of | [Double Diamond](../../methods/double-diamond/METHOD.md) |
 
 ## Overview
 
-The Define phase is the critical convergent moment in the first diamond of the double diamond framework. After the Discover phase has expanded your understanding through broad research, the Define phase demands the opposite: ruthless narrowing. You must take everything you learned — interview transcripts, observation notes, survey data, competitive analysis — and distill it into a single, actionable problem statement that your team will carry into the second diamond.
+Synthesizing insights to define the problem is the work of the Define phase, the convergent half of the first diamond in the [Double Diamond](../../methods/double-diamond/METHOD.md). Discover leaves the team with a large, untidy body of evidence. Define reduces it to a clear statement of which problem the second diamond will work on, for whom, and why.
 
-This skill is where many teams stumble. It's tempting to skip synthesis and jump straight to solutions, or to define the problem too broadly ("improve the user experience") or too narrowly ("add a search bar"). Effective problem definition requires a structured convergent thinking process: clustering raw data into themes, identifying the most significant patterns and tensions, and then framing the challenge in a way that is specific enough to act on but open enough to allow creative solutions.
+The Design Council puts it simply: the insight gathered in discovery "can help you to define the challenge in a different way" ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)). Its earlier study of design in large companies described Define as the stage where user needs are interpreted and aligned with business objectives, with project development, management and sign-off as its key activities and a project brief as its outcome ([Eleven lessons](https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/ElevenLessons_Design_Council%2520%25282%2529.pdf)).
 
-Mastering this skill is essential because the quality of your problem statement directly determines the quality of everything that follows. A well-synthesized problem definition aligns stakeholders, focuses ideation, and provides a clear success metric. Within the double diamond framework, the Define phase output — often called a design brief or problem statement — is the hinge between understanding the problem space and exploring the solution space.
+The inputs are raw findings with their sources, the original challenge, and knowledge of the organisation's constraints and goals. The outputs are a set of themes, a short list of insight statements, one chosen problem statement, a few "How might we" questions to open the Develop phase, and a record of which evidence supports the choice.
+
+Define is where many projects quietly go wrong. Teams under time pressure jump from findings to a feature list, or they write a problem statement that is really a solution in disguise ("users need a dashboard"). Others produce a statement so broad ("improve the customer experience") that it rules nothing out. A good definition is narrow enough to tell the team where to start and open enough to allow several different solutions.
+
+This skill covers how to organise findings, move from observations to insights, choose among competing problems, write the statement, and get it agreed.
 
 ## How It Works
 
-Convergent thinking in the Define phase works by progressively reducing complexity. You start with a large volume of raw research findings — potentially hundreds of data points from the Discover phase — and apply a series of analytical filters to identify what matters most.
+Synthesis moves up a ladder of abstraction in three rungs: observations, themes and insights.
 
-The process follows a funneling logic. First, you organize data spatially (affinity mapping) so that natural clusters emerge. Then you name those clusters as themes — these are the recurring patterns, needs, pain points, or behaviors that showed up across multiple sources. Next, you evaluate these themes through lenses like user impact, business relevance, and feasibility to prioritize which themes represent the most important challenge to solve.
+Observations are what the research recorded: a quote, a behaviour, a data point. Themes are groups of observations that share something. Insights explain a theme: why the pattern exists and what it means for the people involved. An insight is usually a sentence with a tension in it, such as "Patients trust the paper letter more than the portal, so they phone to confirm what the portal already shows."
 
-Finally, you articulate the chosen challenge as a problem statement. The most common formats are "How Might We" (HMW) questions, point-of-view (POV) statements, or design briefs. Each format serves a slightly different purpose: HMW questions open up ideation, POV statements ground the problem in a specific user's experience, and design briefs provide comprehensive context for the team.
+The standard tool for the first climb is affinity diagramming, which the Nielsen Norman Group defines as organising related observations, ideas or findings into distinct clusters, and runs in three steps: write findings on individual notes, cluster and label them, then prioritise clusters and next steps ([NN/g on affinity diagramming](https://www.nngroup.com/articles/affinity-diagram/)). The same article notes that the conversations during clustering matter more than the finished board, because that is where the team builds a shared reading of the evidence.
 
-The key insight is that synthesis is not just summarization. You are not creating a research report — you are making an interpretive leap. You are deciding, based on evidence, what the real problem is. This requires both analytical rigor (what does the data actually say?) and design judgment (which framing will lead to the most impactful solutions?).
+Clustering is a group activity for a reason. Individuals tend to see the themes they expected. A mixed group that argues about where a note belongs surfaces alternative readings, and the arguments are often where insights come from. Expect a stretch where the board feels chaotic and nobody agrees. Facilitators call this the "groan zone," after Sam Kaner's diamond of participation, and it is a normal part of moving from divergent to convergent thinking ([i2Insights on the groan zone](https://i2insights.org/2019/05/28/collaboration-groan-zone/)).
+
+Choosing the problem is a separate decision from finding insights. Several insights may each point to a worthwhile problem. Judge them on how much evidence supports each one, how severe and widespread the problem is for the people affected, whether it is within the organisation's reach, and how it relates to the goals that funded the work. The chosen problem may not be the one in the original brief.
+
+The problem statement is then rewritten as questions that open the next diamond. IDEO.org's Design Kit recommends turning insight statements into "How might we" questions that suggest a solution is possible without prescribing one ([Design Kit on How Might We](https://www.designkit.org/methods/how-might-we.html)). The Nielsen Norman Group warns against questions that embed a solution, target a symptom, or are framed negatively ([NN/g on HMW questions](https://www.nngroup.com/articles/how-might-we-questions/)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Gather and Externalize All Discovery Findings
+### Step 1: Get every finding into one place
 
-Before synthesis can begin, you need all your research outputs visible and accessible. Print transcripts, export survey results, gather observation photos, and write individual findings on sticky notes (physical or digital). Each sticky note should capture one discrete observation, quote, or data point — not an interpretation.
+Collect notes, quotes and observations from all Discover activities into one board or sheet, one finding per note, each with its source and segment. Read through as a team before sorting anything so everyone has seen the whole set. Remove duplicates but keep near-duplicates from different sources, since repetition across sources is evidence. Flag findings that came second-hand so they carry less weight later.
 
-The goal is to get everything out of people's heads and notebooks and onto a shared surface. If you conducted research as a team, have each researcher independently write their findings before the group session. This prevents groupthink and ensures the full breadth of Discover-phase data is represented.
+### Step 2: Cluster findings into themes
 
-Aim for quantity at this stage. A typical synthesis session for a medium-complexity project might start with 80–200 individual data points.
+Sort the notes into groups by similarity, in silence at first, then discuss the groups that are contested. Name each cluster with a sentence that says what the notes have in common, since single-word labels such as "Trust" hide the actual pattern. Split clusters that are really two ideas and merge ones that overlap. The [NN/g affinity diagramming guide](https://www.nngroup.com/articles/affinity-diagram/) describes this generate, cluster and prioritise sequence in detail. Stop when new rearrangements no longer change the story.
 
-> **Pro tip:** Use a consistent format for each note: one finding per note, include the source (e.g., 'P3 interview,' 'analytics'), and stick to observable facts rather than premature interpretations.
+### Step 3: Write insight statements
 
-### Step 2: Step 2: Cluster Findings Using Affinity Mapping
+For each important theme, write one or two sentences that explain why the pattern exists and what tension it creates for people. Test each insight against the evidence: point to the notes that support it and check whether any contradict it. Discard insights that restate the theme without explaining it. Aim for a short list, since a long one usually means the team has not yet converged.
 
-Working as a team, begin grouping related findings together. Move sticky notes that seem to share a common thread into proximity. Don't create categories first — let the clusters emerge organically from the data. This is bottom-up analysis.
+### Step 4: Choose the problem to take forward
 
-As clusters form, you'll notice some findings belong in multiple groups, some don't fit anywhere, and some clusters naturally merge. That's normal. Keep working the wall until you have 5–12 distinct groupings. The outliers — findings that resist categorization — are often the most interesting, so don't discard them.
+List the candidate problems your insights point to. Compare them on strength of evidence, severity and reach for the people affected, fit with organisational goals, and whether the team can act on them. A simple grid with those criteria as columns keeps the discussion concrete. Make the choice explicit and note which problems you are setting aside, so they are not lost.
 
-This step should be done silently at first (each person placing notes independently) and then discussed as a group. Silent sorting prevents dominant voices from driving the structure prematurely.
+### Step 5: Write the problem statement
 
-> **Pro tip:** If you're working remotely, tools like Miro or FigJam replicate the affinity mapping experience well. Set a timer for the silent sorting phase (10–15 minutes) to maintain focus.
+Describe who is affected, what they are trying to do, what gets in the way, and why it matters, in a few sentences with no solution in them. Check it against three tests: it is backed by the evidence, it rules some solutions out, and it leaves more than one solution open. Rewrite until a person who missed the research can understand it.
 
-### Step 3: Step 3: Name Themes and Write Insight Statements
+### Step 6: Turn the statement into "How might we" questions
 
-For each cluster, write a header that captures the underlying theme — not just a topic label, but an insight statement. The difference matters. A topic label is 'Onboarding.' An insight statement is 'New users abandon onboarding because they can't see the value before investing effort.'
+Write several "How might we" questions from the problem statement and the key insights. Keep them at a scope that suggests where to start without prescribing an answer, as [IDEO.org's Design Kit](https://www.designkit.org/methods/how-might-we.html) recommends. Remove any that contain a solution ("How might we build an app that...") or a negative frame. Pick a few to open the Develop phase.
 
-Good insight statements have three qualities: they are grounded in evidence (multiple data points support them), they reveal a tension or unmet need, and they imply a design opportunity without prescribing a solution.
+### Step 7: Get the definition agreed and recorded
 
-Review each theme with the team. Challenge weak themes — if a cluster only has 2-3 notes from a single source, it may not be robust enough to stand alone. Merge or deprioritize thin themes.
-
-> **Pro tip:** Test your insight statement by asking: 'So what?' If the statement doesn't immediately suggest why it matters to users or the business, it needs sharpening.
-
-### Step 4: Step 4: Prioritize Themes by Impact and Feasibility
-
-You'll likely have more themes than you can address in a single project. Use a prioritization exercise to identify which theme represents the most important challenge. Common methods include dot voting, a 2×2 matrix (user impact vs. business value), or a forced ranking.
-
-Be honest about constraints. A theme might represent the biggest user pain point, but if it requires changes outside your team's control, it may not be the right focus for this cycle. The double diamond framework encourages iteration — you can return to other themes later.
-
-Involve stakeholders in this prioritization. Their buy-in at this stage prevents misalignment later when you present solutions. Share the evidence behind each theme so prioritization is data-driven, not opinion-driven.
-
-> **Pro tip:** If stakeholders push for a theme that the research doesn't strongly support, don't just capitulate. Present the data clearly and negotiate — you might agree to address their preferred theme as a secondary focus.
-
-### Step 5: Step 5: Craft Your Problem Statement
-
-Take your top-priority theme and translate it into a formal problem statement. Choose the format that best fits your team's needs:
-
-- **How Might We (HMW):** 'How might we help new users see immediate value before asking them to complete a lengthy setup process?' — Best when you want to open up ideation.
-- **Point of View (POV):** '[User type] needs [need] because [insight].' — Best when you want to ground the problem in a specific persona.
-- **Design Brief:** A one-page document that includes the problem statement, key constraints, success criteria, and relevant context. — Best for larger teams or longer projects.
-
-Regardless of format, a good problem statement is specific (not 'improve the experience'), user-centered (rooted in a real need you observed), and solution-agnostic (it doesn't imply a particular answer).
-
-> **Pro tip:** Write 3–5 variations of your problem statement and compare them. Read each aloud and ask the team: 'Would this inspire a brainstorm that leads to genuinely different solutions?' If they all lead to the same obvious solution, your framing is too narrow.
-
-### Step 6: Step 6: Validate the Problem Statement
-
-Before moving into the Develop phase of the double diamond framework, validate your problem statement with two audiences: the research participants (or representative users) and your project stakeholders.
-
-For users, this can be as simple as sharing the insight and asking: 'Does this resonate with your experience?' You're checking that your synthesis hasn't drifted from reality. For stakeholders, present the problem statement alongside the evidence trail — show how you went from raw data to themes to this specific framing.
-
-If validation reveals misalignment, iterate. The Define phase is not a one-shot exercise. You may need to revisit your themes, adjust prioritization, or reframe the problem statement. This iteration is a feature, not a failure — it's exactly what the convergent phase of the double diamond is designed for.
-
-> **Pro tip:** Keep a 'problem statement changelog' — track how your framing evolved and why. This documentation is invaluable for onboarding new team members and for retrospectives.
+Walk the sponsor and the people who will build the solution through the evidence, the insights and the statement. Ask them to challenge it now. Once agreed, record the statement, the supporting evidence and the rejected alternatives in one place the whole team can find. This is the reference every idea in the second diamond will be judged against.
 
 ## Best Practices
 
-- Always trace your problem statement back to specific research evidence — every claim should be supported by at least 2-3 independent data points from the Discover phase.
-- Involve cross-functional team members in the synthesis session. Engineers, marketers, and customer support reps often notice patterns that designers miss because they bring different domain lenses.
-- Time-box your affinity mapping sessions (90 minutes max per session). Synthesis fatigue leads to sloppy clustering and premature convergence on the most obvious themes.
-- Write problem statements that are broad enough to allow multiple solution directions but narrow enough that you could measure whether you've addressed them. 'Reduce new user time-to-value from 12 minutes to under 3' is better than 'improve onboarding.'
-- Create a 'parking lot' for strong themes you deprioritized. These become your backlog for future double diamond cycles and prevent valuable research from being lost.
-- Separate the synthesis session from the ideation session by at least a day. Cognitive switching between convergent (Define) and divergent (Develop) thinking is hard — give your team a mental break between modes.
+- **Synthesise with the people who did the research.** Notes lose context. The people who ran the sessions remember tone, hesitations and what was not said.
+- **Keep evidence attached to every insight.** Each insight should link back to the notes that support it, which makes it defensible when a stakeholder disagrees.
+- **Write cluster labels as sentences.** "Patients phone to double-check online bookings" carries meaning. "Trust" does not.
+- **Look for contradictions as well as patterns.** A finding that does not fit may point to a segment you missed or a flaw in your reading.
+- **Allow the problem to change.** If the evidence points away from the original brief, say so plainly and show why.
+- **Time-box the discussion but not the thinking.** Fix session lengths, and allow a gap between sessions so the team can reflect before choosing.
 
 ## Common Mistakes
 
-- **Jumping from raw research directly to solutions without a proper synthesis step** — Force yourself to complete the full affinity mapping and theme identification process before writing any problem statement. The Define phase exists in the double diamond framework precisely because unsynthesized research leads to solving the wrong problem.
-- **Writing problem statements that embed a preferred solution (e.g., 'How might we build a chatbot to help users find answers?')** — Strip any solution language from your problem statement. Rewrite it as a user need: 'How might we help users find answers quickly without leaving their current workflow?' This keeps the solution space open for the Develop phase.
-- **Giving equal weight to all research findings regardless of how frequently or strongly they appeared** — Use a weighting system. A pain point mentioned by 8 out of 10 interview participants and confirmed by analytics data deserves more attention than a single offhand comment. Quantity of supporting evidence matters for theme robustness.
-- **Allowing the highest-paid person's opinion (HiPPO) to override research-backed themes during prioritization** — Structure your prioritization with explicit criteria (user impact, evidence strength, business alignment, feasibility) and score each theme before discussing. This makes it harder for any individual to override the data.
-- **Defining the problem too broadly, resulting in a statement so vague it could apply to any project** — Apply the 'newspaper headline test' — if your problem statement could be a headline for a completely different company's product, it's too broad. Add specificity about the user segment, context, and measurable gap until it's uniquely yours.
+- **Writing a solution as the problem**: "Users need a better dashboard" names an output. Rewrite it around what users are trying to do and what blocks them, and leave the dashboard as one possible answer.
+- **Choosing a problem so broad it rules nothing out**: "Improve customer experience" gives the Develop phase no direction. Narrow it to a specific group, situation and obstacle.
+- **Letting one vivid quote drive the definition**: A memorable story can outweigh a pattern across many sessions. Check each insight against the full set of notes.
+- **Synthesising alone**: A single analyst's reading carries a single set of biases. Cluster as a group and argue about contested notes.
+- **Skipping sign-off**: An unagreed problem definition comes back as disputes about solutions. Get explicit agreement before opening the second diamond.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/double-diamond/METHOD.md) — Double Diamond
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/double-diamond/METHOD.md): Double Diamond
 
 ## Related Skills
 
-- [Converging on Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
-- [Facilitating Divergent Ideation in the Develop Phase](../facilitating-divergent-ideation/SKILL.md)
-- [Mapping Divergent and Convergent Thinking Modes](../mapping-divergent-convergent-thinking/SKILL.md)
-- [Conducting Discovery Research in the Discover Phase](../conducting-discovery-research/SKILL.md)
-- [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
-- [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
-- [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+- [Conducting Discovery Research in the Double Diamond](../conducting-discovery-research/SKILL.md)
+- [Facilitating Divergent Ideation in the Double Diamond](../facilitating-divergent-ideation/SKILL.md)
+- [Converging on Final Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Double Diamond Thinking: Divergent and Convergent Modes](../mapping-divergent-convergent-thinking/SKILL.md)
+- [How to Create a Double Diamond Diagram](../diagramming-the-double-diamond/SKILL.md)
+- [Double Diamond vs Design Thinking: Choosing a Framework](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
+- [Adapting the Double Diamond UX Framework for Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+
+## Sources
+
+- [Design Council: Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)
+- [Design Council: Eleven lessons, managing design in eleven global brands](https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/ElevenLessons_Design_Council%2520%25282%2529.pdf)
+- [NN/g: Affinity Diagramming](https://www.nngroup.com/articles/affinity-diagram/)
+- [i2Insights: Collaboration, from groan zone to growth zone](https://i2insights.org/2019/05/28/collaboration-groan-zone/)
+- [IDEO.org Design Kit: How Might We](https://www.designkit.org/methods/how-might-we.html)
+- [NN/g: Using How Might We Questions](https://www.nngroup.com/articles/how-might-we-questions/)

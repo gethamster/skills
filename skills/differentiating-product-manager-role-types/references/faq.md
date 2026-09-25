@@ -1,35 +1,21 @@
-# FAQ: Differentiating PM Role Types Using the Competency Framework
+# FAQ: Differentiating PM Roles with the Competency Framework
 
-## How many PM role types should my organization have?
+## Does Cabage define specific PM role types?
 
-For most organizations, 2-4 distinct role types are sufficient. Teams with fewer than 5 PMs usually need only 1-2 types (generalist plus one specialization). Organizations with 10-20 PMs typically need 3-4 types. Beyond 4 types, you are usually over-segmenting, and the distinctions become so fine that they create more confusion than clarity.
+He describes two readings of the chart: technical PMs on internal tools and platforms toward the right, and PMs on consumer-facing products toward the left, with seniority on the vertical axis. He does not publish named profiles for growth or platform PMs. Those profiles are built by placing each role on his grid.
 
-The competency quadrant model has four quadrants, so four role types is a natural ceiling for most companies.
+## Where does a growth PM sit on the grid?
 
-## Can a single PM change role types over the course of their career?
+Growth work maps mostly to the Market column: Conversion Optimization, A/B Testing and Product-Market Fit on the tactical side, with Opportunity Discovery and Market Positioning above. That puts a growth PM left of center. The exact boxes depend on how your company defines the role.
 
-Yes, and this is expected. A PM might start as a generalist, develop deep technical competencies and shift into a technical product manager role, then later move into a platform PM role as they gain strategic depth. Competency profiles define what a role requires, not what a person is forever. When PMs want to transition, use the [career development planning skill](https://tryhamster.com/skills/building-pm-career-development-plans) to identify the competency gaps between their current profile and the target role's profile, then build a development plan to close those gaps.
+## How is a platform PM different from a technical PM?
 
-## Should I differentiate role types before or after assessing my team's current competencies?
+Both sit on the right side of the chart. A platform PM usually serves other teams building on shared services, so the role includes Technical Partnerships, Build vs Buy and requests from internal users. A technical PM may work on any technically deep product and lean more toward System Analysis and Data Queries.
 
-Differentiate role types first, then assess. The role profiles become the benchmark against which you assess individuals. Without a clear profile for what a technical product manager should look like at your company, assessing whether a PM is 'strong technically' is subjective and inconsistent. Complete this skill, then use the [team assessment skill](https://tryhamster.com/skills/assessing-pm-team-strengths-and-gaps) with the profiles as your standard.
+## Can one PM cover two role types?
 
-## How do I handle a PM whose actual work does not match their role type profile?
+On a small team, often yes. The profiles still help, because they show which boxes the PM is covering for each role and where the gaps are. As the team grows, those boxes become the basis for splitting the role.
 
-First, determine whether the mismatch is a person problem or a role design problem. If the PM is doing different work than their profile specifies because the organization needs them to, your profile is wrong and should be updated. If the PM is doing different work because they prefer it despite the organization needing them to focus differently, that is a management conversation about role expectations. The competency profile makes this conversation objective: 'Your role's primary quadrant is internal-tactical, but your last quarter's work was 60% external-strategic. Let us discuss what needs to change.'
+## Should role types have different pay?
 
-## How do I differentiate a technical product manager from an engineering manager?
-
-The technical product manager owns the 'what' and 'why' of technical product decisions, like which APIs to build, what trade-offs to accept for shipping faster, and how to prioritize technical debt against feature work. The engineering manager owns the 'how' and 'who,' making decisions about system implementation, code quality standards, and team assignments. On the competency framework, the technical PM's competencies are product competencies applied in a technical context (internal-tactical and internal-strategic quadrants), while the EM's competencies are engineering leadership competencies that sit outside the PM framework entirely. If your 'technical PM' is making implementation decisions and managing engineers, they are an EM with the wrong title.
-
-## Why does my technical product manager profile keep looking like a generalist profile?
-
-This usually happens for one of two reasons. Either you are not constraining primary competencies strictly enough (remember: maximum 5 primaries per role, and at least 50% should cluster in one quadrant), or your organization does not actually need a specialized technical PM and is trying to force a distinction that the work does not support. Go back to Step 6 and examine actual work artifacts. If the PM who is supposed to be 'technical' is doing equal amounts of user research, go-to-market planning, and architecture review, they are genuinely a generalist on a technical team, and that is fine.
-
-Not every PM on a technical team needs to be a specialized technical PM.
-
-## How long should the full role differentiation exercise take with a leadership team?
-
-Plan for 2-3 hours for the initial exercise covering 3-5 role types. Steps 1-4 (competency listing, role listing, weight assignment, and quadrant calculation) take about 90 minutes with a group of 3-5 PM leaders. Step 5 (profile card creation) takes 30-45 minutes. Steps 6-8 (validation, boundary rules, and socialization) happen over 1-2 weeks as you collect data and feedback.
-
-Do not try to compress the entire process into a single meeting. The validation step requires real work samples, and the socialization step requires time for people to review and respond thoughtfully.
+The framework does not address pay. One option is to keep level names and pay the same across role types and let the role profile describe the specialism. Treating one side of the chart as higher status makes it harder to staff the other.

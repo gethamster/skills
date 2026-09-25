@@ -1,25 +1,21 @@
 # FAQ: Structuring Content to Appear in AI-Generated Answers
 
-## What is AI SEO optimization and how does it differ from traditional SEO?
+## Do I need to rewrite my content specifically for AI systems?
 
-AI SEO optimization is the practice of formatting and structuring web content so that AI-powered search engines and LLMs can extract, cite, and surface it in generated answers. Unlike traditional SEO, which focuses on ranking links on a results page, AI SEO optimization focuses on making content extractable as direct answers.
+Mostly no. Google says you do not need to write in a specific way for its generative AI features and that its systems understand synonyms and meaning. The structural changes in this skill are ones a good editor would make for human readers anyway: clear headings, direct answers and suitable formats. If a change would make the page worse for a person, do not make it for a machine.
 
-## How long should an answer block be for AI extraction?
+## How long should the opening answer of a section be?
 
-Aim for 40–75 words per answer block. This range is long enough to provide a complete, self-contained answer but short enough for LLMs to extract as a single coherent chunk. Blocks over 80 words are often truncated or skipped in favor of more concise competitors.
+Long enough to answer the heading completely and no longer. Microsoft's guidance describes concise one- or two-sentence answers as the kind of phrasing that gets selected for snippets. There is no reliable word count to aim for, so test by reading the opening alone and checking that it answers the question with its subject named.
 
-## Do I need FAQ schema markup for AI search engines to find my answers?
+## Should every heading be a question?
 
-FAQ schema isn't strictly required — LLMs can extract answers from well-structured HTML alone. However, schema significantly increases extraction confidence by explicitly labeling question-answer pairs. It's especially valuable when your content competes against pages with similar quality but no structured data.
+No. Question headings work well for sections that answer something a reader would ask. Reference material, such as specifications or a changelog, reads better with plain descriptive headings. The rule is that every heading should tell the reader what the section covers.
 
-## Can I optimize the same page for both traditional Google search and AI-generated answers?
+## Does FAQ markup still help?
 
-Yes. The structural techniques for AI SEO optimization — clear headings, concise answer blocks, structured data, and well-organized lists — also improve traditional SEO performance. Pages structured for AI extraction tend to win featured snippets and People Also Ask placements as a bonus.
+Google stopped showing FAQ rich results in May 2026, so FAQPage markup no longer produces a special result on Google. A visible FAQ section can still be useful to readers and is a format Bing names as easy for AI systems to reference. If you keep FAQPage markup, make sure it matches the visible questions and answers exactly.
 
-## How do I know if my content is appearing in AI-generated answers?
+## How do I know if the restructuring worked?
 
-Manually query AI engines (ChatGPT, Perplexity, Google AI Overviews, Bing Copilot) with your target questions and check for citations. For systematic tracking, see the sibling skill on tracking and measuring AI search visibility, which covers dedicated monitoring tools and frameworks.
-
-## Should I write content differently for ChatGPT vs Google AI Overviews vs Perplexity?
-
-Focus on universal structural best practices rather than engine-specific tricks. Self-contained answer blocks, question-aligned headings, and schema markup work across all major AI engines. Test against multiple engines and optimize for the patterns that perform consistently rather than tailoring to one platform's current behavior.
+Compare against the baseline you recorded before the change. Check whether the page is cited for its target questions in the AI systems you track, and look at the Search Console Generative AI performance report and Bing's AI Performance report for impression and citation changes. Change a group of similar pages together and keep another group unchanged, so you can separate the effect of the change from general movement in answers.

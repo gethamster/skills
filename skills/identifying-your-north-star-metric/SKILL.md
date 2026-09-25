@@ -1,15 +1,20 @@
 ---
-name: identifying-your-north-star-metric
-description: "This skill teaches you how to discover and define the single metric that best captures the core value your product delivers to customers, forming the foundation of the North Star Framework."
+name: "identifying-your-north-star-metric"
+description: "How to identify a North Star metric the framework way: surface beliefs, write the North Star statement, then choose the measure that fits it."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: north-star-framework
+  method: "north-star-framework"
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Identifying Your Product's North Star Metric
+# Identifying Your North Star Metric: Words Before Numbers
 
-> This skill teaches you how to discover and define the single metric that best captures the core value your product delivers to customers, forming the foundation of the North Star Framework.
+> How to identify a North Star metric the framework way: surface beliefs, write the North Star statement, then choose the measure that fits it.
 
 ## Before you start
 
@@ -24,107 +29,96 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial identification, plus 1-2 weeks of validation |
-| Outcome | You produce a clearly defined, validated North Star Metric that the entire product organization can use to align decisions, prioritize work, and measure whether your product is delivering increasing value to customers over time. |
-| Prerequisites | Basic understanding of product analytics and how your product is instrumented, Familiarity with your product's business model and revenue drivers, Access to user behavior data or analytics tools (e.g., Amplitude, Mixpanel, or even spreadsheets), Understanding of what is a product manager's role in defining strategy and success metrics |
+| Time to Learn | A few hours of reading, then several short sessions with your team |
+| Outcome | You identify a product North Star metric that starts from a written statement of how your product creates value and ends with a named, defined measure the team can explain in plain words. |
+| Prerequisites | A product with some users, access to product data and customer research, a product vision or strategy draft |
 | Part of | [North Star Framework](../../methods/north-star-framework/METHOD.md) |
 
 ## Overview
 
-Every product team faces a common challenge: dozens of metrics are moving in different directions, stakeholders disagree on what matters most, and teams optimize for local metrics that don't compound into real business outcomes. Identifying your North Star Metric solves this by forcing you to answer a deceptively hard question: what single measurement best represents the value customers get from your product? This is the foundational skill within the [North Star Framework](https://tryhamster.com/methods/north-star-framework), and everything else—mapping input metrics, aligning teams, building dashboards—depends on getting this right.
+How do you identify a North Star metric when every team already has a favorite number? The [North Star Framework](../../methods/north-star-framework/METHOD.md) answers by postponing the numbers. You first write down what the team believes about customers and value, then put the path to sustainable growth into a sentence, and only then look for a measure that matches the sentence. This skill covers that sequence for product teams using the framework in product management.
 
-The North Star Metric (NSM) is not a vanity metric like page views, nor is it a pure business metric like revenue. It sits at the intersection of customer value and business value. For Spotify, it's time spent listening. For Airbnb, it's nights booked. For Slack, it's messages sent within organizations. Each of these metrics captures the core exchange of value: when the number goes up, customers are getting more value, and the business grows sustainably. Understanding what is a product manager's core responsibility helps clarify why this skill matters—product managers are uniquely positioned to bridge customer needs with business outcomes, and the North Star Metric is the instrument that makes that bridge measurable.
+John Cutler, co-author of Amplitude's playbook, explains the order in a post on the [North Star statement exercise](https://cutlefish.substack.com/p/tbm-2853-words-before-numbers-north). Teams often jump straight to metrics and measurement, or copy what they think other companies do, and skip exploring their own ideas, beliefs and assumptions. In the exercise, brainstorming comes first, the group narrows it into a statement, and measurement options come last. The [North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) gives the reason in one line: if someone cannot explain the North Star qualitatively, they will not be able to explain it quantitatively.
 
-This skill matters because choosing the wrong metric can be worse than having no metric at all. A poorly chosen NSM can misalign incentives, encourage short-term gaming, or focus teams on activity rather than outcomes. The process of identification is as valuable as the result—it forces deep thinking about your product's value proposition, your customers' jobs-to-be-done, and the relationship between customer success and business growth.
+Starting with words changes what the team argues about. When two people push different metrics, the disagreement is usually about a belief underneath: what customers value, what causes retention, where the market is going. The playbook's templates for surfacing beliefs make those assumptions explicit, so the group can decide which ones to test instead of debating dashboards.
+
+The framework also expects uncertainty. The playbook describes a "cycle of doubt" teams go through as they converge, and Cutler says in it that the first pass at a North Star is "literally a hypothesis about the levers of growth for their company." The goal is a metric that is directionally right and can be refined, and the playbook adds that "powerful ideas imperfectly measured are better than perfect measures for less powerful ideas."
+
+This page covers the thinking that leads to a product North Star metric. A companion page on [selecting your North Star Metric](https://tryhamster.com/skills/selecting-your-north-star-metric) covers screening and testing finalists in more depth, and [Running a North Star Framework Workshop](../running-north-star-workshops/SKILL.md) covers doing this work with a group.
 
 ## How It Works
 
-The core mental model behind identifying a North Star Metric is the **value exchange loop**: your product delivers value to customers, customers signal that value through their behavior, and that behavior drives sustainable business growth. Your NSM should sit at the heart of this loop—it should go up when customers get more value and, as a consequence, when your business becomes healthier.
+The process has three layers of writing before any measurement. The first is beliefs. The playbook lists the kinds of beliefs that shape a North Star: assumptions about what customers value, assumptions about causation, theories about the market, predictions about technology, conjecture about competitors, and opinions about the value you provide ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). It offers fill-in templates, such as "I think the real reason we win new customers is because" something, for people to complete on their own first.
 
-Think of it as a funnel with three filters. First, the metric must reflect **customer value received**, not just customer activity. There's a critical difference between 'users who logged in' (activity) and 'users who completed a project' (value received). Second, the metric must be **leading**, not lagging—it should predict future revenue and retention, not just report on the past. Third, the metric must be **influenceable** by the product team. If your team can't move it through product decisions, it's not a useful North Star.
+The second layer is the product vision and the value exchanges. The playbook suggests reading the existing vision statement and asking what it says that is distinct or foundational. If there is no usable vision, it points to Geoffrey Moore's template from Crossing the Chasm. Then list the key value exchanges, the moments where a customer's investment of time, attention or money is rewarded. The playbook says most products have a handful, three to six, and that some happen outside the product.
 
-The reason this is an intermediate skill rather than a beginner one is that it requires judgment, not just analysis. You'll find that multiple candidate metrics seem reasonable, and the data alone won't tell you which is right. You need to combine quantitative analysis (which metrics correlate with retention and revenue?) with qualitative understanding (what moment represents real value for your customer?). The best North Star Metrics often feel obvious in hindsight but require significant exploration to surface. They emerge from a deep understanding of your product's value proposition—the kind of understanding that what is a product manager fundamentally responsible for cultivating through continuous customer discovery and strategic thinking.
+The third layer is the North Star statement itself. The worksheet opens with the company's path to medium- to long-term sustainable, defensible or differentiated growth, which it calls "a function of our ability to" do something. The playbook asks for a statement that is ideally customer-centric, stable, oriented to the medium or long term, specific, and not about revenue. Its example for a do-it-yourself project app is "Inspire and equip new DIY-curious customers to finish their projects," with measurement options such as completed projects shared.
 
-One important nuance: a North Star Metric is not permanent. Products evolve, markets shift, and your understanding deepens. But you need to commit to one for long enough to align your team and learn from it—typically 6-12 months minimum. The [iterating and evolving your North Star Metric](https://tryhamster.com/skills/iterating-and-evolving-north-star-metric) skill covers when and how to revisit it.
+Only then do candidates get numbers. The workshop guide offers a bridging template: "I would be more confident that our current product strategy is setting us up for sustainable long-term growth, if I observed an increase in" a customer behavior, which we could measure by a formula ([workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)). Each candidate is then checked against the playbook's seven questions and given a name and a definition.
+
+Netflix's story in the workshop guide shows the payoff. Gibson Biddle's team knew retention was the goal but found it slow to move, so they looked for a leading behavior and settled on the percentage of new members who added at least three DVDs to their queue in their first session. The [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) reports that Netflix raised the metric from 60% to 90%. It adds that, according to Biddle, a gain of two percentage points in first-month retention, from 88% to 90% ([workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)), had a significant influence on business results. The metric described a belief about what made new members stay, and the team could act on it.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Articulate Your Product's Core Value Proposition
+### Step 1: Collect beliefs individually
 
-Before looking at any data, write down in one or two sentences what value your product delivers to customers. Focus on the outcome they achieve, not the features you provide. For a project management tool, the value isn't 'task lists and Gantt charts'—it's 'teams ship projects on time with less coordination overhead.' Interview 5-10 customers and ask them to describe the moment they first felt your product was worth paying for. Look for patterns in their language.
+Ask each person on the core team to spend a few minutes completing the playbook's belief templates on their own. Cover competitors, technology changes, why customers choose you, and which customer need, done extremely well, would buy leeway elsewhere. Collect the answers anonymously if seniority might skew them. Cluster them and mark the beliefs that most affect what the metric should measure.
 
-> **Pro tip:** Use the 'jobs-to-be-done' framing: 'When [situation], customers hire our product to [outcome], so they can [benefit].' This structure forces you past feature-level thinking.
+### Step 2: Read the vision for clues about value
 
-### Step 2: Step 2: Identify the 'Value Moment' in Your Product
+Take the current product vision and list what it says about who the product is for, what makes it different, and what customers really get. The playbook's examples pull out points such as "the product isn't for everyone" and "reliability is critical." If the vision is too broad to help, write one with Moore's template before going further. Note the questions the vision raises; they often point to beliefs that need research.
 
-Map the customer journey and pinpoint the specific action or event that represents value being received. This isn't the signup or first login—it's the moment the customer's problem is actually being solved. For a collaboration tool, it might be 'a team member responds to a shared document.' For an e-commerce platform, it might be 'a buyer receives their order and doesn't return it.' List 3-5 candidate value moments, then rank them by how directly they represent the core value you articulated in Step 1.
+### Step 3: Map the key value exchanges
 
-> **Pro tip:** If you're unsure, look at what churned users did NOT do. The actions that separate retained users from churned users often point directly to your value moment.
+Walk through the main customer journeys and mark the moments where the product solves a problem or helps the customer reach a goal. Include moments outside the product, such as a delivery arriving or a colleague commenting on a shared file. Aim for the handful the [playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) describes. Where the team is guessing about the journey, say so and plan research.
 
-### Step 3: Step 3: Generate Candidate North Star Metrics
+### Step 4: Write the North Star statement
 
-For each value moment, brainstorm metrics that quantify it. A good NSM typically combines three dimensions: breadth (how many customers), depth (how much value per customer), and frequency (how often). For Spotify, 'total hours listened per week' combines all three. For each candidate, write it out as a specific, measurable statement: 'Weekly active teams that complete at least one project milestone.' Aim for 3-6 strong candidates. Don't filter too aggressively at this stage—you want options to compare.
+Complete the worksheet sentence: our path to sustainable growth is a function of our ability to do something for a specific customer. Rewrite it until it is customer-centric, stable and specific, and does not mention revenue. Cutler says in the playbook that teams have spent entire workshops "just chipping away at this statement." Test it by reading it to someone outside the product team and asking what the company's strategy is.
 
-> **Pro tip:** Test each candidate against this template: 'If [metric] goes up, we are confident that customers are getting more value AND the business will grow.' If either clause fails, refine the metric.
+### Step 5: Turn the statement into candidate measures
 
-### Step 4: Step 4: Validate Candidates Against Historical Data
+For the statement, list observable behaviors that would show it coming true. Use the bridging template from the [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) to write each as a candidate: "I would be more confident ... if I observed an increase in" a behavior, measured a certain way. Keep candidates that are hard to measure today if they express the statement well. Drop candidates that measure activity with no link to the value exchanges.
 
-Pull your analytics data and test each candidate metric's correlation with two outcomes: customer retention (do customers who score high on this metric stick around?) and revenue growth (does this metric's movement predict future revenue?). You don't need sophisticated statistical analysis—even plotting the metric against 90-day retention in a spreadsheet will reveal patterns. If a candidate metric has no meaningful correlation with retention or revenue, it's measuring activity, not value. Eliminate those candidates.
+### Step 6: Screen, name and define
 
-> **Pro tip:** Look at cohort data, not just aggregate numbers. A metric might look good in aggregate but fail for specific customer segments. Your NSM should work across your most important segments.
+Check each candidate against the seven questions: customer value, vision and strategy, leading indicator, actionable, understandable to non-technical partners, measurable, and not a vanity metric. For the strongest one, write the name and definition with the template "Our North Star Metric is called X, which we define as Y." Choose thresholds that are aspirational and achievable, and say openly where you are unsure of them. Record which beliefs the metric depends on.
 
-### Step 5: Step 5: Apply the Six Criteria Test
+### Step 7: Try it on and schedule a check
 
-Score each remaining candidate against six criteria: (1) It expresses value—when it moves, customers are getting more value. (2) It represents vision—it points toward where your product is heading. (3) It's a leading indicator—it predicts future success, not just reports on the past. (4) It's actionable—your product team can influence it directly. (5) It's understandable—you can explain it to any team member in one sentence. (6) It's measurable—you can track it reliably with your current instrumentation. Score each criterion 1-5 and compare totals. The highest-scoring candidate is your frontrunner.
-
-> **Pro tip:** The 'understandable' criterion is more important than it seems. If people can't remember the metric or explain it to a new hire, it won't drive alignment—which defeats the entire purpose of having a North Star.
-
-### Step 6: Step 6: Stress-Test with Thought Experiments
-
-Take your top candidate and deliberately try to break it. Ask: 'Could we game this metric in a way that hurts customers?' (If yes, refine it.) 'Would this metric still be relevant if we doubled our user base?' (If no, it may be a growth-stage metric, not a true North Star.) 'If this metric plateaued, would we be worried even if revenue kept growing?' (If no, it might not be fundamental enough.) Run these scenarios with your team—different perspectives will surface blind spots you missed alone.
-
-> **Pro tip:** The most common failure mode is choosing a metric that can be inflated through low-quality activity. If your metric is 'messages sent,' teams might optimize for notification spam. Consider adding a quality qualifier, like 'messages sent that receive a reply within 24 hours.'
-
-### Step 7: Step 7: Define the Metric Precisely
-
-Once you've selected your NSM, write a precise definition document. Include: the exact formula for calculating it, the data sources used, how frequently it's measured (daily, weekly, monthly), any segments or filters applied, and boundary conditions (e.g., 'we count a project as completed only if at least two team members contributed'). This definition prevents future debates about whether the metric went up or down. Circulate it to engineering, data, and product teams for feedback on feasibility.
-
-> **Pro tip:** Include specific examples of what counts and what doesn't count. 'A weekly active project is one where at least one task was completed or one comment was added by a human user (automated actions excluded).' Edge cases will arise—define them upfront.
-
-### Step 8: Step 8: Validate with Stakeholders and Commit
-
-Present your recommended NSM to key stakeholders—executive team, product leads, engineering leaders—along with the evidence from your analysis. Explain why alternatives were rejected. The goal is not unanimous enthusiasm; it's informed commitment. Leadership needs to understand that the NSM is a strategic choice, not a perfect truth. Agree on a review period (typically 6-12 months) where the team commits to this metric before revisiting. This step connects directly to the [aligning teams around a North Star Metric](https://tryhamster.com/skills/aligning-teams-around-north-star-metric) skill.
-
-> **Pro tip:** Anticipate the 'but what about revenue?' objection. Show the correlation between your NSM and revenue. Make it clear: you're not ignoring revenue, you're identifying the leading indicator that drives it.
+Treat the chosen metric as a hypothesis. Look at how it would have moved over past months if you have the data, and compare that with what you know happened to retention and revenue. Share the statement and the metric widely and invite challenges. Set a date to revisit it once the first inputs are mapped, since input work often reveals a flaw in the metric.
 
 ## Best Practices
 
-- Choose a metric that a customer would recognize as valuable—if you told a customer 'we're trying to increase X,' they should nod and say 'yes, that would make the product better for me.' This customer-resonance test eliminates most vanity metrics immediately.
-- Prefer rate or ratio metrics over raw counts for your NSM when possible. 'Weekly active teams completing milestones' is better than 'total milestones completed' because it's harder to game and more reflective of broad-based value delivery rather than power-user activity.
-- Score your candidate metrics independently before discussing them as a group to avoid anchoring bias. Have each team member rank the candidates privately, then reveal and discuss the differences—disagreements often surface the most important insights.
-- Document the 'why not' for rejected candidates as carefully as the 'why' for your chosen NSM. When someone proposes switching to a different metric six months later (and they will), you'll have your reasoning ready.
-- Your North Star Metric should be stable enough to measure over quarters but sensitive enough to respond to product changes within weeks. If it takes six months to move, your team will lose faith. If it fluctuates wildly day-to-day, you'll over-react to noise.
-- Explicitly separate your North Star Metric from your company-level financial KPIs. Your NSM feeds into revenue, but it is not revenue. This distinction is what makes the North Star Framework powerful—it keeps your team focused on the value creation that drives financial outcomes rather than optimizing for short-term extraction.
+- Write alone before discussing. Individual belief templates catch assumptions that a group discussion would bury under the first confident voice.
+- Keep the statement free of revenue. The [playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) lists "not revenue" among the qualities of the North Star statement and calls revenue metrics lagging indicators.
+- Keep measurement last, but not forgotten. Park "how would we measure that" questions on a list and return to them once the statement holds, so good ideas are not dropped early.
+- Use customer words where you have them. A statement built from interviews and support conversations is easier to defend than one built from internal slogans.
+- Be open about thresholds. The playbook says Amplitude's own threshold of two other people consuming a learning was not magic, and that the goal was a combination of behaviors consistent with the strategy.
+- Accept going in circles. Cutler recommends in the playbook trying on a halfway decent North Star, working on inputs, and then iterating.
 
 ## Common Mistakes
 
-- **Choosing revenue or a revenue-adjacent metric as your North Star Metric** — Revenue is a trailing indicator—it tells you what already happened, not whether you're creating the value that will sustain growth. Teams that use revenue as their NSM tend to optimize for short-term monetization tactics (more aggressive upsells, paywalls) at the expense of long-term customer value. Instead, find the metric that predicts revenue. If your NSM goes up and revenue eventually follows, you've found the right leading indicator.
-- **Picking a metric the product team cannot influence through product decisions** — This typically happens when teams choose metrics driven primarily by marketing spend or sales activity, like 'new signups' or 'total registered users.' If your product team ships a great feature and the NSM doesn't move, the metric isn't reflecting product value. Your NSM should be something a product engineer can connect to their sprint work. Test this by asking: 'If we improve onboarding, would this metric go up?' If the answer is unclear, your metric is too far from the product experience.
-- **Selecting a composite index or overly complex formula as the NSM** — Some teams create weighted indices combining multiple metrics into a single score. While intellectually appealing, these metrics fail the understandability test. When you say 'our Health Score is 73,' nobody in the room intuitively knows whether that's good, bad, or what caused it to change. The cognitive overhead kills adoption. Your NSM should be explainable in one sentence to a new team member on their first day. If it requires a footnote or a spreadsheet to understand, simplify it.
-- **Treating the NSM identification process as a one-person exercise** — When a single product manager identifies the NSM in isolation, even if the analysis is excellent, the rest of the organization feels no ownership over it. The NSM becomes 'that metric the PM chose' rather than 'our North Star.' The identification process should involve input from at least 3-5 people across product, engineering, data, and customer-facing teams. Different perspectives catch blind spots: engineers know what's measurable, customer success knows what drives satisfaction, and data teams know what the numbers actually show.
-- **Changing the North Star Metric too frequently based on short-term results** — When the NSM doesn't show immediate improvement after a product change, some teams panic and switch metrics. But value creation is often non-linear—you might need to ship three improvements before the metric meaningfully moves. Commit to your NSM for at least 6 months. If after that period, with genuine effort, the metric doesn't correlate with customer outcomes, revisit it using the [iterating and evolving your North Star Metric](https://tryhamster.com/skills/iterating-and-evolving-north-star-metric) process. Premature switching destroys the alignment benefits the framework is designed to create.
+- **Copying another company's North Star**: A metric borrowed from a famous product encodes that company's beliefs and game. Start from your own beliefs, vision and value exchanges, as [Cutler's post](https://cutlefish.substack.com/p/tbm-2853-words-before-numbers-north) warns.
+- **Jumping to formulas in the first meeting**: Early threshold debates, such as five actions in three days versus seven in four, stall the group before it has a strong concept. Agree the words first.
+- **Discarding ideas because they are hard to measure**: The playbook calls this a common trap, especially for companies with a history of struggling to predict customer success. Light instrumentation often solves it.
+- **Picking a metric nobody outside product understands**: If sales or finance cannot repeat it, it will not guide their decisions. Test the name and definition on non-technical colleagues.
+- **Treating the first answer as final**: The first pass is a hypothesis. Schedule a review once inputs are mapped and data has accumulated.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/north-star-framework/METHOD.md) — North Star Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/north-star-framework/METHOD.md): North Star Framework
 
 ## Related Skills
 
-- [Mapping Input Metrics That Drive Your North Star](../mapping-input-metrics-to-north-star/SKILL.md)
-- [Building Dashboards to Track Your North Star and Inputs](../building-north-star-metric-dashboards/SKILL.md)
-- [Running a North Star Framework Workshop with Stakeholders](../running-north-star-workshops/SKILL.md)
-- [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
-- [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
-- [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
+- [Running a North Star Framework Workshop](../running-north-star-workshops/SKILL.md)
+- [Mapping Input Metrics From the North Star to the Work](../mapping-input-metrics-to-north-star/SKILL.md)
+- [Iterating the North Star Metric and Its Inputs](../iterating-and-evolving-north-star-metric/SKILL.md)
+
+## Sources
+
+- [Amplitude: The North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)
+- [Amplitude: How-to Guide, Running Your North Star Workshop](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)
+- [John Cutler: Words Before Numbers](https://cutlefish.substack.com/p/tbm-2853-words-before-numbers-north)

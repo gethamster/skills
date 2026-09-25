@@ -1,58 +1,37 @@
-# Examples: Structuring and Grouping Opportunities into a Hierarchy
+# Examples: Structuring Opportunity Spaces Hierarchically
 
-## Example: Structuring Opportunities for an Online Learning Platform
-
-**Scenario:**
-
-A product team working on an online learning platform has conducted 30 customer interviews and identified roughly 25 opportunity statements. Their measurable outcome is 'Increase course completion rate from 22% to 35%.' They need to structure these opportunities into a hierarchy to decide where to focus next.
-
-**Walkthrough:**
-
-The team starts by spreading all 25 opportunities on a Miro board. Through silent affinity mapping followed by group discussion, four natural clusters emerge:
-
-**Level 1 (Parent Opportunities):**
-1. 'Learners struggle to find courses that match their actual skill level'
-2. 'Learners lose motivation during long courses'
-3. 'Learners can't fit learning into their unpredictable schedules'
-4. 'Learners don't know if they're actually making progress'
-
-**Level 2 (Sub-Opportunities under #2 — 'Learners lose motivation during long courses'):**
-- 'Learners feel isolated and have no one to discuss material with'
-- 'Course content becomes repetitive and learners feel they already know the material'
-- 'Learners hit difficult sections and don't know how to get unstuck'
-- 'Learners can't see how current lessons connect to their personal goals'
-
-The team then decomposes 'Learners hit difficult sections and don't know how to get unstuck' one level further:
-- 'Learners don't understand the prerequisite concepts needed for advanced lessons'
-- 'Learners need to see the concept applied in a different context to understand it'
-- 'Learners want to ask a question but the forums feel too slow or intimidating'
-
-Each leaf opportunity is now specific enough to generate distinct solution ideas. The team annotates each node with customer evidence counts (e.g., '14/30 customers mentioned motivation loss,' '8/30 specifically described getting stuck on hard sections'). This evidence layer directly feeds into their next step: prioritizing opportunities using customer evidence.
-
-## Example: B2B SaaS Expense Reporting Tool
+## A grocery delivery team finds its top-level branches
 
 **Scenario:**
 
-A PM for a B2B expense reporting tool has an outcome of 'Reduce average time-to-reimbursement from 14 days to 5 days.' Research has surfaced opportunities from both employees submitting expenses and finance teams approving them.
+Illustrative scenario: a trio at a grocery delivery service owns the outcome "more customers place a second order within their first month." After four interviews it has a long list of opportunities on sticky notes.
 
 **Walkthrough:**
 
-The PM recognizes that structuring by user role creates the first level of the hierarchy:
+The trio draws one experience map from the four stories: planning the week's meals, building the cart, waiting for delivery, receiving and unpacking, and cooking. These moments become the top-level opportunities, each written in the customer's voice, such as "I don't know what to buy for the week."
 
-**Level 1:**
-1. 'Employees struggle to submit expenses quickly and accurately'
-2. 'Finance teams struggle to review and approve expenses efficiently'
-3. 'Managers struggle to understand and enforce expense policies'
+Each person silently places the sticky notes under the moment where they happened. "Half my substitutions were things I'd never eat" lands under receiving. "I forgot what I ordered last time" lands under building the cart. Two notes that do not fit any moment go into a holding area to ask about in the next interviews.
 
-**Level 2 (Under #1):**
-- 'Employees forget to submit expenses and receipts pile up'
-- 'Employees don't know which expense category to select'
-- 'Employees find it tedious to manually enter receipt details'
-- 'Employees are unsure which expenses will be approved vs. rejected'
+## Decomposing a big opportunity
 
-**Level 2 (Under #2):**
-- 'Finance teams waste time chasing missing receipts'
-- 'Finance teams can't quickly verify if an expense complies with policy'
-- 'Finance teams process expenses in large batches, creating bottlenecks'
+**Scenario:**
 
-The PM validates by checking: Does every sub-opportunity represent something customers actually said in interviews? Are the parent-child relationships logical from the user's perspective? Is each leaf specific enough to inspire distinct solutions? The answer is yes on all counts, so the tree is ready for prioritization and solution brainstorming.
+Illustrative scenario: under "building the cart," the same team has a large opportunity, "Shopping takes too long," with several notes piled beneath it.
+
+**Walkthrough:**
+
+The trio asks what the different reasons are. The notes split into "I have to search for the same items every week," "I can't tell which size is the better deal," and "I keep getting interrupted and lose my cart." These become siblings under the parent. Each is distinct: fixing repeat searches does nothing for size comparisons.
+
+The first sibling has a child of its own, "I can't find the brand I bought last time," which is one reason repeat searching is slow. The branch now has a small, specific opportunity at the bottom that the team could address in a single release.
+
+## Fixing overlapping branches
+
+**Scenario:**
+
+Illustrative scenario: a team at a home-fitness app first organized its tree by feature area: workouts, nutrition, and community.
+
+**Walkthrough:**
+
+Many opportunities appeared under two branches. "I skip workouts when my friends aren't doing them" could sit under workouts or community. The team realized the branches were its own product areas, not moments in the customer's experience.
+
+It redrew the top level around moments: deciding to work out today, doing the workout, and recovering. The friend-related opportunity now sits clearly under deciding to work out today, alongside other reasons people skip. Fewer items have two parents, and the siblings are comparable.

@@ -1,53 +1,37 @@
-# Examples: Setting Up PostHog Feature Flags for Experiment Variants
+# Examples: PostHog Experiment Variant Configuration with Feature Flags
 
-## Example: Two-Variant Onboarding Wizard Test for a B2B SaaS Product
-
-**Scenario:**
-
-A B2B SaaS tool with 2,000 new sign-ups per month wants to test whether a shorter 3-step onboarding wizard improves activation (defined as completing the first integration) compared to the existing 6-step wizard. The team has 4 weeks to run the experiment. Only free-tier users who signed up after the experiment start date should be included.
-
-**Walkthrough:**
-
-The team creates a flag with key `experiment-onboarding-short-wizard-2024-07` and two variant keys: `control` (6-step wizard) and `test` (3-step wizard). Rollout is set to 50/50. Release conditions filter on `plan equals free` AND `created_at greater than 2024-07-01`. They attach payloads: control gets `{"steps": 6}` and test gets `{"steps": 3}`, which their React wizard component reads to render the correct number of steps.
-
-Before enabling, they test with 5 distinct IDs, confirming 3 land in control and 2 in test. They verify that a user with `plan: pro` is excluded. After enabling, they check `$feature_flag_called` events and see a 48/52 split after the first 200 events, which is within normal variance. They connect the flag to a PostHog experiment with `integration_completed` as the goal metric.
-
-Over 4 weeks, roughly 1,000 users enter each variant. The experiment reaches significance showing the 3-step wizard increases activation by 12%. They proceed to the shipping and cleanup phase.
-
-## Example: Three-Variant Pricing Page Test for an E-Commerce Platform
+## Three variants for a welcome screen
 
 **Scenario:**
 
-An e-commerce platform with high traffic (50,000 visitors per day to the pricing page) wants to test three pricing presentations: the current table layout (control), a card layout with feature highlights, and a comparison slider. The team wants results within one week. All visitors to the pricing page are eligible.
+Illustrative scenario: a note-taking app wants to test two new welcome screens against the current one. One adds a short product tour, the other opens a sample notebook.
 
 **Walkthrough:**
 
-The team creates a flag with key `experiment-pricing-layout-2024-08` and three variants: `control`, `cards`, and `slider`, set to 33/33/34 rollout. No release conditions are needed because all pricing page visitors are eligible, but they add a condition `page_visited equals pricing` as a safety measure to prevent the flag from being accidentally evaluated on other pages. They do not use payloads because each variant renders a completely different React component. In their pricing page component, they evaluate the flag and render `<PricingTable />`, `<PricingCards />`, or `<PricingSlider />` based on the returned variant key.
+The team creates the experiment and lets the wizard create the flag, then adds a second test variant so the flag returns `control`, `tour` or `sample-notebook`, split evenly. They note that three groups need more total traffic than two and accept the longer run the calculator shows.
 
-They handle the `undefined` case by defaulting to the table layout (control). 1% across roughly 2,000 flag evaluations. They connect the flag to an experiment with `plan_selected` as the primary metric and `annual_plan_selected` as a secondary metric. Within 5 days, they have over 200,000 users across variants and reach significance.
+In code, the welcome component checks that the user has not finished onboarding, then reads the flag once and maps each value to a screen, with anything unexpected falling back to control. Each variant also carries a payload with its headline copy, so the product manager can fix a typo without a deploy. Before launch, an engineer overrides his own account into each of the three variants and confirms that exposure events carry the right value.
 
-## Example: Mobile App Onboarding Test with Server-Side Flag Evaluation
+## Exposures with no variant
 
 **Scenario:**
 
-A mobile fitness app with 500 daily new installs wants to test a gamified onboarding flow versus the standard tutorial walkthrough. The app uses PostHog's Python SDK on the backend to evaluate flags, because client-side evaluation in mobile introduces latency on first launch. Only users on iOS 16+ should be included.
+Illustrative scenario: a team's onboarding experiment targets users by a signup date property that the backend sets when the account is created. A day after launch, the exposure count is lower than signups.
 
 **Walkthrough:**
 
-The team creates a flag with key `experiment-gamified-onboarding-2024-09` with variants `control` (tutorial) and `test` (gamified). Rollout is 50/50. They add a release condition filtering on `os_version >= 16` AND `platform equals ios`. platform})`.
+Breaking down the exposure event by the flag's variant shows a large group with no value. The client reads the flag on the first onboarding screen, which often loads before the backend's signup property has been ingested, so the flag cannot be evaluated and those users are dropped. This matches the wrong-variant case in PostHog's troubleshooting guide.
 
-The returned variant key is sent to the mobile app in the registration response payload, so the app knows which onboarding to render without making a separate flag evaluation request. The team verifies the setup by registering test accounts with different OS versions, confirming that iOS 15 users get no variant (default experience, which is the standard tutorial) while iOS 16+ users are split between control and test. They create the experiment in PostHog with `first_workout_completed` as the goal metric. After 3 weeks and 10,500 eligible users, the experiment shows the gamified flow increases first-workout completion by 18%.
+The team moves the flag evaluation to the server, where the signup date is known, and passes the resolved variant to the client through bootstrapping. They reset the analysis, relaunch and see exposures with valid variants for nearly every new signup.
 
-## Example: Small Startup Testing a CTA Change with Limited Traffic
+## A flag reused from a rollout
 
 **Scenario:**
 
-A 3-person startup with 300 weekly sign-ups wants to test whether changing the CTA button text on their landing page from 'Start Free Trial' to 'See It In Action' improves trial starts. They expect the test to take 6-8 weeks to reach significance given their low traffic volume.
+Illustrative scenario: a team already has a boolean flag that gradually rolled out a redesigned setup page to some users. They now want to run it as a proper experiment.
 
 **Walkthrough:**
 
-The team creates a flag with key `experiment-cta-text-2024-10` with variants `control` and `test` at a strict 50/50 split. Because they need every user to count, they set no release conditions, allowing all landing page visitors to be assigned. They use payloads to store the CTA text: control gets `{"cta": "Start Free Trial"}` and test gets `{"cta": "See It In Action"}`. Their landing page fetches the payload and renders the button text dynamically.
+A boolean flag cannot back an experiment, which needs a multivariate flag with `control` as the first variant. The team creates a new experiment with its own flag instead of converting the old one, so the history of the rollout stays separate from the experiment.
 
-This approach means they can test additional CTA text variations in the future by adding new variants and payloads without code changes. onFeatureFlags()` to wait for the flag to load before rendering the button, showing a skeleton placeholder during the brief loading period. After enabling, they check the split weekly rather than daily because their low traffic makes daily variance noisy. At the end of week 2, they see a 49/51 split across 600 users, which is fine.
-
-They connect the flag to an experiment with `trial_started` as the goal metric. The experiment runs for 7 weeks before reaching significance, showing the 'See It In Action' copy improves trial starts by 8%.
+They also enable per-session exposure deduplication in the web SDK, because many users already evaluated the old flag and the new experiment should count them when they return. The old boolean flag is removed from code after the experiment flag takes over.

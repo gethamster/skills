@@ -1,33 +1,43 @@
-# Examples: Optimizing Content for AI Citation and Source Attribution
+# Examples: Optimizing Content for AI Citation and Attribution
 
-## Example: SaaS Company Optimizing Product Category Content for Perplexity Citations
-
-**Scenario:**
-
-A project management SaaS company wants their comparison and methodology content cited when users ask Perplexity questions like "What's the best project management approach for remote teams?" Currently, Perplexity cites competitors and generic publications instead.
-
-**Walkthrough:**
-
-The team starts by searching 20 variations of their target queries in Perplexity, documenting which sources get cited and why. They discover that cited sources consistently include specific statistics, named methodologies, and direct definitions.
-
-They restructure their "Remote Project Management" guide to lead each section with a quotable statement: "Remote teams using asynchronous-first project management complete 23% more sprint goals than those relying on synchronous standup meetings, according to our analysis of 1,200 teams on [Platform] in 2024." This original data point — drawn from their anonymized customer data — gives Perplexity something unique to cite.
-
-They add H2 headings that match common queries ("What is asynchronous project management?" with a clean two-sentence definition), implement Article and FAQPage schema, and add a detailed author bio for their Head of Product who has published research on the topic. They verify that PerplexityBot is allowed in robots.txt and the page renders without JavaScript.
-
-Within six weeks, Perplexity begins citing their guide for three high-value queries, driving 400+ monthly referral visits from a single article.
-
-## Example: B2B Consultancy Getting Cited in Google AI Overviews
+## Publishing product usage data as a citable page
 
 **Scenario:**
 
-A supply chain consultancy publishes thought leadership content but never appears in Google AI Overviews for queries like "how to reduce supply chain lead times." Their content is well-written but formatted as long-form essays without structural optimization.
+Illustrative scenario: a scheduling software company has aggregate, anonymized data on when meetings get booked and cancelled. The findings have only appeared in a conference talk and a social post. When people ask AI assistants about meeting no-show patterns, the answers cite generic listicles.
 
 **Walkthrough:**
 
-They audit their top 10 articles by searching the target queries in Google and examining which sources appear in AI Overviews. They notice that cited sources use numbered lists, bold key terms, and place the direct answer within the first paragraph under a matching H2.
+The team writes the findings up on a page on its own domain. The first paragraph states the main finding in one sentence. A method section explains which accounts were included, the time period, and how cancellations were defined. The key numbers go in an HTML table, with the chart below it.
 
-For their lead time reduction article, they restructure it from a 2,000-word essay into a clearly organized guide. The first H2 is "How to Reduce Supply Chain Lead Times" followed by a direct answer: "Companies reduce supply chain lead times by implementing demand sensing, nearshoring key suppliers, reducing batch sizes, and digitizing purchase order workflows — collectively, these strategies can cut lead times by 30-50% according to McKinsey's 2024 supply chain benchmarks."
+A named data analyst is the author, with an author page describing her role. Every comparison to outside research links the specific study in the same sentence.
 
-Below, they break each strategy into its own H3 with a self-contained explanation, specific metrics from their client engagements (with permission), and a clear table comparing approaches by industry type. They add HowTo and Article schema, ensure the consulting firm's Organization schema is complete, and link the article to five related pieces on their site for topical cluster reinforcement.
+The team checks robots.txt and finds that a security rule added the year before blocked several AI user agents, including search crawlers. It allows OAI-SearchBot and PerplexityBot, keeps its separate decision on training crawlers, and adds the page's target questions to the tracking sheet.
 
-Google AI Overviews begins citing the article within four weeks of re-indexing, attributing the specific lead time reduction statistics to their firm by name.
+## Fixing attribution after a competitor restates your finding
+
+**Scenario:**
+
+Illustrative scenario: an HR consultancy published a survey of its clients' hiring timelines. A larger media site wrote an article summarizing the survey, and AI answers now cite the media site for the finding, not the consultancy.
+
+**Walkthrough:**
+
+The consultancy reviews its own page and finds that the headline finding sits in the fifth paragraph after a long introduction, and that the data is only in a downloadable PDF. The media site's article states the finding in its first sentence.
+
+The consultancy moves the finding to the top of its page, publishes the data in HTML with the method, and adds a byline for the partner who led the survey. It then contacts the media site's editor to ask for a link to the original page, which the editor adds.
+
+The consultancy keeps tracking the question. The aim is for answers to cite either the original or a page that links to it, so that readers who want the method can find it.
+
+## Adding expert commentary to a technical guide
+
+**Scenario:**
+
+Illustrative scenario: a cybersecurity vendor has a long guide to incident response. The guide is accurate but reads like every other guide on the topic, and it is rarely cited in AI answers.
+
+**Walkthrough:**
+
+The content lead asks the vendor's incident response team what they see in real engagements that generic guides miss. Two engineers describe specific, recurring mistakes in the first hours of an incident.
+
+The guide adds a section on those mistakes, attributed by name to the engineers, with their consent and in their own words, alongside anonymized examples approved by legal. Each recommendation that relies on an outside framework links to that framework's own publication.
+
+The guide now contains experience other pages cannot copy easily. The team tracks whether the new section's passages begin to appear in answers about incident response mistakes.

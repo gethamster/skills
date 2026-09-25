@@ -1,37 +1,46 @@
 # Examples: Creating Circular Consumer Journey Maps
 
-## Example: B2B SaaS Project Management Tool
+## A bike shop mapping first-time e-bike buyers
 
 **Scenario:**
 
-A mid-market project management SaaS company wants to understand why they win deals against Asana and Monday.com but have low repeat expansion revenue. They have web analytics, 12 customer interviews, G2 review data, and sales call recordings.
+Illustrative scenario: a regional bike retailer wants to understand first-time e-bike buyers. Its current map is a funnel that ends at the till, and the team suspects it is missing how buyers choose and what happens after.
 
 **Walkthrough:**
 
-**Initial Consideration Set**: Customer interviews reveal that when a team lead recognizes the need for a new PM tool, they typically have 2-3 brands already in mind from peer recommendations and past experience. The company appears in only 35% of initial consideration sets—most customers discover them during active evaluation.
+The team picks one actor, a commuter buying a first e-bike, and interviews 12 recent buyers, including 4 who bought elsewhere. It draws the four phases in a loop and fills each one in.
 
-**Active Evaluation**: The dominant path is Google search → G2 comparison page → company's comparison landing page → free trial signup. The map shows that G2 reviews are the most influential touchpoint, and the company's average rating (4.2) is lower than Monday.com (4.5). A second common path starts from Reddit threads in r/projectmanagement where the brand is rarely mentioned.
+Illustrative scenario: the counts the team adds to the loop look like this.
 
-**Moment of Purchase**: Sales call recordings show the primary purchase trigger is a successful 14-day trial where the team lead gets at least 3 team members actively using the tool. When trial adoption stays below 3 users, the deal dies. The map highlights trial onboarding as the critical conversion bottleneck.
+| Point in the loop | Buyers interviewed |
+|-------------------|--------------------|
+| Named the shop at the start | 5 of 12 |
+| Added the shop during research | 4 of 12 |
+| Bought from the shop | 8 of 12 |
+| Returned for service and would recommend | 5 of 8 |
 
-**Post-Purchase and Loyalty Loop**: Here's the key finding—the loyalty loop is almost nonexistent. When teams need to expand licenses or renew, 68% of decision-makers re-enter full active evaluation rather than auto-renewing. Post-purchase touchpoints are limited to quarterly billing emails and an annual NPS survey. There's no ongoing engagement, no community, no proactive account management for mid-market accounts.
+The map shows that test rides were the moment most buyers added the shop, and that the lowest point in the whole journey was the first service visit, which buyers found hard to book. The team assigns the booking problem to the service manager and makes test rides easier to schedule online. The next version of the map will show whether more buyers return for service and recommend the shop.
 
-**Strategic interventions identified from the map**: (1) Invest in Reddit presence during active evaluation, (2) improve G2 review solicitation to close the rating gap, (3) redesign trial onboarding to drive 3+ user adoption in first week, (4) build a post-purchase engagement program (monthly webinars, in-app tips, quarterly business reviews) to strengthen the loyalty loop and reduce re-evaluation on renewal.
-
-## Example: Direct-to-Consumer Skincare Brand
+## A software company replacing its funnel map
 
 **Scenario:**
 
-A DTC skincare brand sells primarily through their website and Amazon. They notice high first-purchase rates from Instagram ads but poor repeat purchase rates. They have Shopify analytics, Instagram ad data, 200 post-purchase survey responses, and Amazon review data.
+Illustrative scenario: a project software company has a journey map with five funnel stages from awareness to closed deal. Customer success is not on it, and renewals are handled by a separate team with its own documents.
 
 **Walkthrough:**
 
-**Initial Consideration Set**: Survey data shows most first-time customers weren't looking for a skincare product at all—they were triggered by an Instagram ad featuring before/after results. The initial consideration set is essentially created by the ad rather than pre-existing. This means the brand is almost entirely dependent on paid media for entering consideration.
+The team rebuilds the map for one actor: a team lead choosing a tool for their team. Interviews show that most buyers started with two or three familiar tools, added one after asking peers, and that renewal decisions depended heavily on how the first month of use went.
 
-**Active Evaluation**: After seeing the ad, the typical path is: Instagram ad → brand's Instagram profile (checking social proof) → website product page → Google search '[brand name] reviews' → back to website for purchase. The map reveals a critical moment at the Google search step: customers who find genuine third-party reviews convert at 4x the rate of those who only find the brand's own testimonials. The brand has almost no presence on skincare review blogs or YouTube.
+The circular map adds the postpurchase phase with onboarding, early support and the team's first project, and shows the two exits: renewal without re-evaluation, and renewal after comparing competitors. Customer success now owns part of the map, and the opportunity list includes onboarding changes alongside marketing changes.
 
-**Moment of Purchase**: The primary trigger is a first-order discount (15% off) combined with free shipping. Without both, cart abandonment is 78%. The map shows this suggests weak brand conviction at purchase—customers are price-triggered rather than value-convinced.
+## A bank mapping two actors separately
 
-**Post-Purchase Experience**: Product satisfaction is high (NPS 62), but the post-purchase experience consists only of shipping confirmation and a discount code for next purchase. There's no usage guidance, no skincare routine content, no community. 72% of customers don't repurchase within 12 months.
+**Scenario:**
 
-**The circular map reveals the core problem visually**: the brand has strong initial consideration (via paid ads) and reasonable conversion, but the loyalty loop barely exists. Money is being spent to acquire customers who then leak back into the full market. The map drives three interventions: (1) build a post-purchase email sequence with skincare education content to drive engagement, (2) create a subscription/replenishment option timed to product usage cycles, and (3) invest in third-party reviews and YouTube influencer content to strengthen active evaluation for the next generation of customers—many of whom will be influenced by current customers' reviews.
+Illustrative scenario: a bank starts one map for "customers opening a savings account" and finds the interviews contradict each other.
+
+**Walkthrough:**
+
+Looking closer, the team sees two distinct actors: people moving savings from another bank and people opening their first account. The first group compares rates on comparison sites and cares about switching effort. The second group asks family and relies on the bank they already use for a current account.
+
+The team splits the work into two maps. Each has a different set of touchpoints and a different weak point: switching effort at the moment of purchase for the first actor, and awareness of the savings product among current account holders for the second. Each weak point gets its own owner.

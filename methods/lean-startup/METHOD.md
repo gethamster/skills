@@ -1,192 +1,182 @@
 ---
-category: Product
+name: "lean-startup"
+category: "Product"
+description: "The Lean Startup is Eric Ries's method for testing a new product's riskiest assumptions with MVPs and the Build-Measure-Learn loop before scaling."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The Lean Startup: A Complete Guide to Validated Product Development
+# The Lean Startup: Build-Measure-Learn Methodology
 
-> Created by **Eric Ries** — [https://theleanstartup.com/](https://theleanstartup.com/)
+> Created by **Eric Ries** - [https://theleanstartup.com/](https://theleanstartup.com/)
 
 ## Overview
 
-The lean startup is a methodology for building products and companies under conditions of extreme uncertainty. Eric Ries introduced the approach in his 2011 book *The Lean Startup*, drawing on his experience co-founding IMVU and his study of Toyota's lean manufacturing principles. The central claim is deceptively simple: most startups fail not because they can't build their product, but because they build a product nobody wants. The solution is to treat every product idea as an untested hypothesis, then run the cheapest possible experiment to validate or invalidate it before investing further.
+The Lean Startup is Eric Ries's method for building a new product or business when nobody yet knows whether customers want it. Ries defines a startup as "a human institution designed to create a new product or service under conditions of extreme uncertainty" ([The Lean Startup principles](https://theleanstartup.com/principles)), and the definition covers a team inside a large company as much as a founder in a garage. The lean startup methodology treats a business plan as a set of guesses. The team finds the guesses the business most depends on, tests them with real customers as cheaply as possible, and uses what it learns to decide whether to keep going or change course.
 
-The method rests on a feedback loop called Build-Measure-Learn. You start by identifying your riskiest assumption, the one thing that must be true for the business to work. Then you build the smallest possible artifact, a minimum viable product (MVP), designed specifically to test that assumption. You measure how real customers behave when exposed to it, and you learn whether the evidence supports your hypothesis. If it does, you double down. If it doesn't, you pivot: change direction while keeping one foot grounded in what you've already learned. This loop is meant to run continuously and fast, sometimes in days rather than quarters.
+Ries first wrote about the idea on his blog in a [post titled "The lean startup"](http://www.startuplessonslearned.com/2008/09/lean-startup.html) in September 2008, then set it out in his book [The Lean Startup](https://theleanstartup.com/book), published in September 2011 ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)). He built it from his own startups. At IMVU, which he co-founded, investor Steve Blank insisted that the executives audit Blank's entrepreneurship class at UC Berkeley. Ries combined Blank's customer development process with ideas from lean manufacturing and lean software development ([Eric Ries on Wikipedia](https://en.wikipedia.org/wiki/Eric_Ries)). The 2008 post names agile development and "ferocious customer-centric rapid iteration, as exemplified by the Customer Development process" among its ingredients.
 
-What makes the lean startup distinctive is its insistence on validated learning as the fundamental unit of progress. Traditional product development measures progress by features shipped, milestones hit, or lines of code written. Ries argues those are vanity metrics. The only real progress is evidence that you're solving a problem customers care enough about to change their behavior. This reframing is what separates the lean startup from conventional agile development. Agile optimizes how you build. The lean startup asks whether you should be building this thing at all.
+The engine of the method is the Build-Measure-Learn feedback loop. A team turns an idea into a product, measures how customers respond, and decides whether to pivot or persevere ([principles](https://theleanstartup.com/principles)). The product in the loop is usually a minimum viable product, which Ries defines as "that version of a new product which allows a team to collect the maximum amount of validated learning about customers with the least effort" ([Minimum Viable Product guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)). He stresses in the same post that an MVP is "not about creating minimal products" and that choosing one "requires judgment."
 
-The method didn't emerge in a vacuum. Steve Blank's customer development framework, introduced in *The Four Steps to the Epiphany* (2005), laid the intellectual foundation by arguing that startups need a process for finding their business model, not just executing a known one. Ries, who studied under Blank at Berkeley, synthesized customer development with agile engineering practices and Toyota Production System thinking about waste elimination. The result was a framework that spread rapidly from Silicon Valley into corporate innovation labs, government agencies, and nonprofits worldwide.
+Progress is measured in validated learning, which Ries calls "a rigorous method for demonstrating progress when one is embedded in the soil of extreme uncertainty" ([principles](https://theleanstartup.com/principles)). Features shipped, hours worked and total signups can all rise while the business learns nothing. Innovation accounting is the discipline that keeps the team honest: pick actionable metrics, set a baseline, run experiments to move it, and judge each experiment against the baseline. Ries warns against vanity metrics, which he describes as numbers that "look good on paper but aren't action oriented," such as website hits or message volume ([Beware of vanity metrics](http://www.startuplessonslearned.com/2010/02/beware-of-vanity-metrics-for-harvard.html)).
 
-Since its introduction, the lean startup has evolved significantly. Early adopters applied it rigidly, sometimes using "MVP" as an excuse to ship half-baked products or treating pivots as a substitute for conviction. The community has matured. Practitioners now recognize that the framework works best when combined with strong qualitative research, that not every decision needs an A/B test, and that some domains (hardware, regulated industries, deep tech) require adapted versions of the loop. The lean startup canvas, popularized by Ash Maurya's *Running Lean*, gave teams a lightweight planning tool to complement Ries's experimental approach. More recently, Ries himself has extended the method to large organizations in *The Startup Way* (2017), acknowledging that running experiments inside a corporation demands different political and organizational skills than doing so in a garage.
+When the evidence says the current strategy is not working, the team pivots. Ries's definition is a "structured course correction designed to test a new fundamental hypothesis about the product, strategy, and engine of growth" ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)). A pivot keeps what has been learned. In his 2009 post he wrote that successful startups "keep one foot in the past and place one foot in a new possible future," while unsuccessful ones jump to a different vision and throw away the learning ([Pivot, don't jump](http://www.startuplessonslearned.com/2009/06/pivot-dont-jump-to-new-vision.html)).
 
-The lean startup benefits product teams, founders, and innovation groups most when uncertainty is high and resources are limited. If you genuinely don't know whether customers want what you plan to build, this method gives you a structured way to find out before it's too late. It is less useful when the problem and solution are already well understood, or when the cost of experimentation exceeds the cost of just building the thing. Understanding where the lean startup applies, and where it doesn't, is what separates teams that use it effectively from teams that treat it as a religion.
+The method spread well beyond startups. Blank argued in the [Harvard Business Review in May 2013](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything) that it was beginning to replace the write-a-business-plan formula, and in 2012 the US Federal Chief Information Officer described taking a "lean-startup approach to government" ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)). Ries's book [The Startup Way](https://en.wikipedia.org/wiki/Eric_Ries), released in October 2017, applies the same principles inside large companies. Some evidence supports it: a [randomized trial with 116 Italian startups](https://www.insead.edu/faculty-research/publications/journal-articles/a-scientific-approach-entrepreneurial-decision) found that founders taught to form and test hypotheses performed better and were more likely to pivot.
 
-Teams using Hamster can run lean startup workflows end-to-end, using AI agents to structure hypotheses, track experiments, and synthesize customer feedback within a single workspace.
+The method has real limits. A review in [The Conversation](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214) summarizes research showing that market experiments are expensive in fields like biotech, that showing an early product can disclose strategy where intellectual property is weak, that more validation is not always better, and that founders without market knowledge struggle to interpret the feedback. Teams that use it well treat it as one tool for high uncertainty. For teams that keep their method in Hamster, each skill below reads the hypotheses, experiments and decisions from one shared record.
 
 ## Core Principles
 
-### Validated Learning Over Opinions
+### Entrepreneurship Is Management
 
-The lean startup treats learning as the essential measure of progress, not features shipped, revenue projections updated, or meetings held. Validated learning means you have empirical evidence, gathered from real customers, that confirms or disconfirms a specific hypothesis. When teams skip this principle, they fall into the trap of building what the loudest voice in the room demands, then spending months discovering nobody outside the building cares. The tradeoff is speed: running experiments takes time and discipline, and some leaders mistake it for indecision.
+Ries lists "Entrepreneurship Is Management" as a principle because a startup needs a management system of its own ([principles](https://theleanstartup.com/principles)). Plans, forecasts and milestones built for a known business break when the customer and the product are both unknown. The lean startup replaces them with a routine of hypotheses, experiments and scheduled decisions. Without that routine, uncertainty turns into either chaos or false precision.
 
-But the cost of one well-designed experiment is almost always less than the cost of building the wrong thing.
+### Validated Learning Is the Unit of Progress
 
-### Build-Measure-Learn as the Core Engine
+A team makes progress when it has evidence from real customer behavior that a specific assumption is true or false. Ries calls this validated learning and defines it as a rigorous method for demonstrating progress under extreme uncertainty ([principles](https://theleanstartup.com/principles)). Shipping a feature counts only if it taught the team something about customers. This principle is what lets a team call a failed experiment a productive week.
 
-Every product decision should pass through the Build-Measure-Learn loop. You identify an assumption, build the smallest artifact that can test it, measure the results, and decide what to do next. Teams that skip straight to building a full product are essentially placing a large bet with no evidence. The counterintuitive part is that you plan the loop in reverse: start with what you want to learn, then figure out what to measure, then decide what to build.
+### Test the Leap-of-Faith Assumptions First
 
-Teams that run this loop slowly, say once per quarter, lose most of its value. The loop's power comes from speed and repetition.
+Every plan rests on a few assumptions that, if false, sink the business. Ries calls them leap-of-faith assumptions and makes testing them the purpose of an MVP ([The Lean Startup](https://theleanstartup.com/book)). Dropbox's MVP was a short video of the product working, which tested whether people wanted seamless file sync before the hard engineering was finished ([Ries on TechCrunch](https://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/)). Start with the assumption that would hurt most to be wrong about.
 
-### Minimum Viable Product as a Learning Tool
+### Plan the Loop Backward
 
-An MVP is not a stripped-down version of your final product. It is the smallest thing you can put in front of customers to learn whether your hypothesis is correct. This might be a landing page, a concierge service delivered manually, a video demo, or a single feature. 0 but worse," they overinvest in building and underinvest in learning.
+The loop runs Build, Measure, Learn, but Ries plans it in reverse: "we figure out what we need to learn," then what to measure, then what product will produce that measurement ([Ries quote](https://www.goodreads.com/quotes/7179811-although-we-write-the-feedback-loop-as-build-measure-learn-because-the)). Planning backward stops the team from building something and then hunting for a lesson in the data. It also keeps each build as small as the question allows.
 
-The principle forces a hard question: what is the riskiest assumption we're making, and what is the cheapest way to test it? The tradeoff is brand risk, because putting something unfinished in front of customers requires organizational courage.
+### Measure With Actionable Metrics
 
-### Pivot or Persevere Based on Evidence
+Metrics should show cause and effect and lead to a decision. Ries's three A's say metrics must be actionable, accessible and auditable ([Beware of vanity metrics](http://www.startuplessonslearned.com/2010/02/beware-of-vanity-metrics-for-harvard.html)). In practice that means cohort analysis, split tests and per-customer numbers in place of cumulative totals ([Vanity Metrics vs. Actionable Metrics](https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/)). A cumulative chart almost always goes up and to the right, so it cannot tell you whether the last change helped.
 
-At regular intervals, teams must make a deliberate decision: do the data support continuing on the current path, or is it time to change direction? A pivot isn't failure. It's a structured course correction that preserves what you've learned while changing strategy. Teams that skip this discipline tend to zombie-walk, continuing to invest in a direction long after the evidence has turned against them.
+### Pivot or Persevere on a Schedule
 
-The tradeoff is emotional: pivoting requires admitting your original idea was wrong, and that's painful. But persevering without evidence is just stubbornness with a budget.
+The decision to change strategy is emotional, so Ries recommends making it at a regular meeting. He writes that "less than a few weeks between meetings is too often and more than a few months is too infrequent" ([Pivot or Persevere?](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)). The meeting asks one question: is there enough progress to believe the current strategic hypothesis? A startup that never asks can end up in what he calls "the land of the living dead," neither growing nor dying.
 
-### Innovation Accounting Replaces Vanity Metrics
+### Shorten the Time Through the Loop
 
-Traditional metrics like total signups, page views, or gross revenue can make a failing product look healthy. Innovation accounting introduces actionable metrics tied to the specific hypotheses you're testing. Cohort analysis, conversion rates at each funnel step, and per-customer economics tell you whether your product is actually getting better with each iteration. When teams rely on vanity metrics, they lose the ability to detect stagnation until it's too late.
-
-The discipline here is choosing metrics before you run the experiment, not after, which prevents cherry-picking the numbers that tell the story you want to hear.
-
-### Eliminate Waste Ruthlessly
-
-Borrowed from lean manufacturing, this principle defines waste as any effort that doesn't contribute to validated learning. A beautifully designed feature that nobody uses is waste. A three-month planning cycle for a product that hasn't been validated is waste. A meeting to debate hypothetical customer preferences when you could ask actual customers is waste.
-
-Teams that internalize this principle become ruthless editors of their own work, always asking whether the next thing they plan to do is the fastest path to learning. The tension is that some activities, like building organizational alignment or developing team skills, look like waste in the short term but compound over time.
-
-### Small Batches Over Big Bets
-
-Large batches hide problems. When you spend six months building before showing anything to a customer, every assumption is bundled together, and when something goes wrong you can't tell which assumption was the culprit. Small batches, shipping one change at a time and measuring its effect, give you clear signal about what's working. This principle is operationally uncomfortable because it means shipping more often with less polish.
-
-The payoff is that small batches dramatically reduce the cost of being wrong, which is the most important cost a startup or innovation team needs to manage.
+Ries's slides put it plainly: minimize total time through the loop ([RailsConf 2011 slides](https://slideshare.net/startuplessonslearned/eric-ries-the-lean-startup-railsconf-2011/31-Innovation_AccountingThe_Three_Learning_Milestonesbr)). It helps to count runway in learning cycles as well as in months, because each cycle is a chance to find a model that works. Anything that slows a cycle, from big releases to long approval chains, reduces the number of chances. Ries's pivot post makes the same point: faster iteration "increases the runway without additional cash" ([Pivot, don't jump](http://www.startuplessonslearned.com/2009/06/pivot-dont-jump-to-new-vision.html)).
 
 ## Steps
 
-1. **Step 1: Identify Your Riskiest Assumption**
-   Before building anything, articulate what must be true for your product to succeed. This is not a feature list or a product spec. It's the single belief that, if proven wrong, makes everything else irrelevant. ).
+1. **Write down the leap-of-faith assumptions**
+   Turn the vision into a list of statements that must be true for the business to work, covering who the customer is, what problem they have, what they will pay and how they will hear about you. Mark the one or two that are both most important and least supported by evidence. Ries calls these leap-of-faith assumptions and treats them as the first things to test ([The Lean Startup](https://theleanstartup.com/book)). A one-page canvas can help, but the output is a short ranked list. Everything later in the method refers back to it.
 
-" A good assumption is specific enough that you can design an experiment to test it. "People want better productivity tools" is too vague. "Remote engineering managers with 5+ direct reports will pay $20/month for async standup software" is testable. The most common mistake here is listing multiple assumptions and trying to test them all at once.
+2. **Get out of the building**
+   Before building anything, talk to the people you think have the problem. Steve Blank's line is that there are no facts inside the building, and his classes require students to talk to 100 customers in 10 weeks ([Blank on customer discovery](https://steveblank.com/2020/04/07/customer-discovery-in-the-time-of-the-covid-19-virus/)). Ask about what people did the last time they had the problem, and keep your idea out of the conversation until late. The output is evidence that the problem is real, plus the words customers use for it. Assumptions that fail here are cheap to drop.
 
-Rank them by risk and start with the one that would kill the business if wrong. See [formulating testable hypotheses](https://tryhamster.com/skills/formulating-testable-hypotheses) for detailed guidance.
+3. **Turn assumptions into testable hypotheses**
+   Rewrite the riskiest assumption as a statement that a specific result could prove wrong. Strategyzer's Test Card uses four lines: "We believe that," "To verify that, we will," "And measure," and "We are right if" ([Test Card](https://assets.strategyzer.com/assets/resources/the-test-card.pdf)). Write the pass mark before the test runs. If nobody can say which result would count as a failure, the hypothesis is not ready.
 
-2. **Step 2: Design the Minimum Viable Product**
-   Choose the smallest artifact that can generate evidence for or against your riskiest assumption. This is where most teams go wrong: they build too much. An MVP is not a product with fewer features. It is a tool for learning.
+4. **Choose and build the MVP**
+   Pick the cheapest artifact that can produce the evidence the hypothesis needs. That might be a landing page, a video, a service run by hand for a few customers, or one working feature ([CRV on MVP types](https://www.crv.com/content/what-is-an-mvp)). Zappos began by photographing shoes in local stores and buying them at full price only after a sale ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)). Build only what the test needs, and give it a firm timebox.
 
-If your assumption is about demand, a landing page with a signup form may be sufficient. If it's about willingness to pay, a concierge MVP where you deliver the service manually to a handful of customers might work. If it's about usability, a clickable prototype tested with five users will reveal 80% of major problems. The key constraint is that the MVP must produce data you can act on.
+5. **Measure against a baseline**
+   Run the MVP with real customers and record the metrics you chose before the test. Ries's innovation accounting starts by establishing a baseline, then runs experiments to "tune the engine" toward the target ([RailsConf 2011 slides](https://slideshare.net/startuplessonslearned/eric-ries-the-lean-startup-railsconf-2011/31-Innovation_AccountingThe_Three_Learning_Milestonesbr)). Use cohorts and split tests so you can tell whether a change caused the movement. Run split tests in parallel, because a serial test lets outside events change behavior between the two periods ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)).
 
-A beautiful demo that generates only "this is cool" responses teaches you nothing about buying behavior. Define your success metric before you build: what number, at what threshold, would convince you to proceed? Watch out for the trap of perfectionism disguised as quality standards. You're not shipping a product yet.
+6. **Learn and record the result**
+   Compare the result with the pass mark you wrote in step 3 and say plainly whether the hypothesis held. Write down what you learned, what surprised you and which assumption is now the riskiest. Share the record with everyone who works on the product. A result that nobody wrote down tends to be reinterpreted later to fit whatever the team wants to do next.
 
-You're running an experiment. See [building minimum viable products](https://tryhamster.com/skills/building-minimum-viable-products) and [selecting the right MVP type](https://tryhamster.com/skills/selecting-mvp-types-and-formats) for implementation details.
+7. **Decide to pivot or persevere**
+   At a scheduled meeting, look at the trend across experiments. If each round moves the key metrics toward the model's targets, persevere. If the numbers stay near the baseline after several rounds of tuning, pick a pivot that keeps what you learned: Ries's book describes ten types, among them zoom-in, customer segment, customer need and channel pivots ([Bajwa et al.](https://arxiv.org/pdf/1710.04037)). Then return to step 1 with the new assumptions.
 
-3. **Step 3: Expose the MVP to Real Customers**
-   Put your MVP in front of the specific customers you identified in your hypothesis, not friends, not colleagues, not your investors. Real, representative target customers. How you recruit them matters: if your hypothesis is about small business owners, don't test with enterprise executives. Match the channel to the hypothesis.
+## Lean Startup and Its Neighbors
 
-If you're testing demand, drive traffic through the same acquisition channels you'd use at scale (paid ads, organic search, community outreach). If you're testing usability, recruit through screener surveys that filter for your target profile. Resist the urge to explain or sell the MVP. Watch what customers do, not just what they say.
+The lean startup borrows from several older methods and is often confused with them. The table shows what each contributes, with a source per row.
 
-A customer who says "I'd definitely use this" but doesn't sign up when given the chance has given you more data through their action than their words. Document everything systematically. See [conducting customer discovery interviews](https://tryhamster.com/skills/conducting-customer-discovery-interviews) for techniques on gathering honest, actionable feedback.
-
-4. **Step 4: Measure What Matters**
-   Collect the specific metrics you defined before building the MVP. This is where innovation accounting diverges from traditional analytics. You're not looking at total page views or aggregate signups. You're looking at the metric that directly tests your hypothesis.
-
-If your hypothesis was about willingness to pay, measure how many people entered their credit card information. If it was about engagement, measure how many people completed the core action more than once. Use cohort analysis rather than cumulative totals: are customers who signed up this week behaving differently from those who signed up last week? That tells you whether your iterations are improving the product.
-
-The biggest pitfall is changing your success metric after seeing the data. If the results don't match your threshold, that's signal, not noise. See [tracking innovation accounting metrics](https://tryhamster.com/skills/tracking-innovation-accounting-metrics) and [designing validated learning experiments](https://tryhamster.com/skills/designing-validated-learning-experiments) for frameworks on measurement and experiment design.
-
-5. **Step 5: Learn and Decide: Pivot or Persevere**
-   Schedule a regular pivot-or-persevere meeting, typically every 4-8 weeks, where the team reviews accumulated evidence and makes an explicit decision. This is not a casual standup. Bring the data, the original hypothesis, and the success criteria you set in advance. If the evidence supports your hypothesis, persevere: identify the next riskiest assumption and start the loop again.
-
-If the evidence contradicts your hypothesis, consider a pivot. A pivot is not giving up. It's a structured change in strategy while preserving what you've learned. Common pivot types include customer segment pivot (same product, different audience), problem pivot (same audience, different problem), and channel pivot (same product, different distribution method).
-
-The hardest part is emotional: founders and teams develop attachment to their ideas. Build a culture where pivoting based on evidence is celebrated, not penalized. The alternative, persevering without evidence, is the most expensive mistake a startup can make. See [making pivot-or-persevere decisions](https://tryhamster.com/skills/defining-pivot-or-persevere-decisions) for a detailed decision framework.
-
-6. **Step 6: Iterate and Accelerate the Loop**
-   Each pass through the Build-Measure-Learn loop should be faster than the last. As you accumulate validated learning, your hypotheses become sharper, your experiments become more targeted, and your MVPs become more focused. Track your cycle time explicitly: how many days from hypothesis to evidence? Teams that compress this from months to weeks gain a compounding advantage over competitors who plan in annual roadmap cycles.
-
-"). The lean startup doesn't end when you find product-market fit. It transitions into a continuous improvement engine. Watch out for the temptation to abandon the loop once things start working.
-
-Markets change, customers evolve, and competitors adapt. The teams that sustain growth are those that keep running the loop even when they're winning.
+| Method | Core idea | Relation to the lean startup |
+|---|---|---|
+| Customer development | Steve Blank's process for learning about customers and their problems early ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)) | Ries's starting point; customer discovery supplies the evidence for step 2 |
+| Lean manufacturing | Toyota's system that treats anything not creating customer value as waste ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)) | Source of the waste idea; the lean startup counts effort that produces no learning as waste |
+| Agile development | Working software and responding to change over following a plan ([Agile Manifesto](https://agilemanifesto.org/)) | Agile governs how a team builds; the lean startup decides what to build and whether to keep building it |
+| Discovery-driven planning | McGrath and MacMillan's planning for ventures under uncertainty ([HBR](https://hbr.org/1995/07/discovery-driven-planning)) | Blank cites it as another influence on the lean method ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)) |
+| Lean Canvas | Ash Maurya's one-page startup version of the Business Model Canvas ([Wikipedia](https://en.wikipedia.org/wiki/Lean_startup)) | A common way to write down the assumptions in step 1 |
 
 ## When to Use
 
-- When you are launching a new product or entering a new market and genuinely don't know whether customers will pay for what you plan to build. You have strong intuitions, maybe some anecdotal validation, but no systematic evidence. The lean startup gives you a structured way to test your assumptions before committing your full engineering budget.
-- When your team has been building features for months but engagement is flat, retention is declining, and nobody can explain why. The lean startup's emphasis on actionable metrics and validated learning helps you stop shipping into the void and start running targeted experiments to identify what's actually blocking growth.
-- When you are inside a large organization tasked with launching an internal innovation initiative, a new product line, or a venture that operates outside the company's core business model. You have access to resources but not to market certainty, and you need a framework that your executive sponsors can understand and that protects the team from premature scaling.
-- When you have limited runway, whether that's funding, time, or team bandwidth, and the cost of building the wrong thing could be fatal. The lean startup's focus on MVPs and small batches lets you learn the most per dollar or hour invested, which is critical when you can't afford a second attempt.
-- When multiple stakeholders have competing visions for the product and decisions are being made based on authority rather than evidence. The lean startup gives the team a shared vocabulary and a neutral process: instead of debating whose opinion is right, you design an experiment and let the data decide.
-- When you are a technical founder or team that's excellent at building but struggles with product-market fit. You can ship fast, but you keep shipping things customers don't adopt. The lean startup redirects your building energy toward learning, turning your speed into an advantage rather than a way to fail faster.
+- You are starting a new product and do not know whether customers want it. The method exists for this case: it spends small amounts of money to answer the questions that decide whether to spend large amounts.
+- A team inside an established company is launching something new. Ries wrote [The Startup Way](https://en.wikipedia.org/wiki/Eric_Ries) for this situation, and the scheduled pivot-or-persevere meeting gives sponsors a way to fund learning in stages.
+- Your product has users but growth has stalled and the team disagrees about why. Actionable metrics and explicit hypotheses turn the argument into experiments.
+- You can put something in front of customers quickly and cheaply, as with software, services and many consumer products. The shorter the loop, the more of it you get.
+- You are considering a change of direction. The pivot catalog helps the team keep what it learned and change one element at a time.
 
 ## When Not to Use
 
-- When the problem and solution are well understood and the primary challenge is execution quality, not discovery. If you're building a CRUD app for an established workflow with known requirements and paying customers already lined up, the lean startup adds process overhead without corresponding insight. You don't need to validate that accountants want accounting software.
-- When you are working in a highly regulated domain like medical devices, aviation, or nuclear engineering, where shipping an MVP to real users without extensive testing could cause physical harm or legal liability. The lean startup's "ship fast and learn" ethos conflicts with regulatory requirements for safety validation. You can adapt elements of the methodology, such as hypothesis testing and customer interviews, but the core loop of shipping MVPs to production users doesn't translate directly.
-- When the feedback cycle is inherently long and can't be compressed. Deep tech, biotech, and hardware products often require months or years of R&D before you have anything a customer can interact with. Running a two-week Build-Measure-Learn cycle is meaningless if the "build" phase takes 18 months. In these contexts, adapted approaches like milestone-based hypothesis testing are more appropriate than the full lean startup loop.
-- When your customers can't articulate or even recognize the value of what you're building until they experience a polished version. Some products, particularly those involving novel interaction models, new market categories, or significant aesthetic components, get negative MVP feedback not because the idea is wrong but because the MVP can't convey the experience. The original iPhone, for example, was not validated through lean startup principles. Sometimes conviction and craft matter more than incremental testing.
-- When the cost of experimentation exceeds the cost of just building the full product. If your MVP and your finished product cost roughly the same to build, perhaps because the value is in a complex algorithm or integrated system that can't be meaningfully simplified, then running lean experiments is less efficient than simply building and launching.
+- The problem and the solution are already well understood, such as rebuilding a known internal system. Experiments add delay without reducing much uncertainty.
+- Each test is very expensive or slow, as in biotech, where the review in [The Conversation](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214) notes that fixed costs make repeated test iterations unfeasible.
+- Showing an early version would give away a strategy that competitors could copy easily, especially where intellectual property protection is weak.
+- The team has no knowledge of the market yet. The same review cites research finding that founders without it are less able to make sense of experiment feedback, so learn the domain first.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Tracking Innovation Accounting Metrics](../../skills/tracking-innovation-accounting-metrics/SKILL.md) — How to define and measure actionable metrics—rather than vanity metrics—to accurately assess startup progress and learning velocity.
-- [Formulating Testable Business Hypotheses](../../skills/formulating-testable-hypotheses/SKILL.md) — How to translate business assumptions into clearly defined, falsifiable hypotheses with specific success metrics and timeframes.
-- [Selecting the Right MVP Type for Your Idea](../../skills/selecting-mvp-types-and-formats/SKILL.md) — How to choose among MVP formats—landing page MVP, concierge MVP, Wizard of Oz MVP, single-feature MVP, and piecemeal MVP—based on your risk profile and resources.
-- [Building a Minimum Viable Product (MVP)](../../skills/building-minimum-viable-products/SKILL.md) — How to design and build the smallest possible version of your product that allows you to test core assumptions with real customers.
-- [Making Pivot-or-Persevere Decisions](../../skills/defining-pivot-or-persevere-decisions/SKILL.md) — How to use experiment data and innovation accounting to decide whether to pivot your strategy or persevere with the current direction.
-- [Designing Validated Learning Experiments](../../skills/designing-validated-learning-experiments/SKILL.md) — How to structure low-cost experiments—such as landing page tests, concierge MVPs, and Wizard of Oz tests—to generate validated learning about customer behavior.
-- [Running Build-Measure-Learn Cycles](../../skills/running-build-measure-learn-cycles/SKILL.md) — How to execute rapid iterations through the Build-Measure-Learn feedback loop to systematically validate or invalidate product hypotheses.
-- [Conducting Customer Discovery Interviews](../../skills/conducting-customer-discovery-interviews/SKILL.md) — How to plan and run structured customer interviews that uncover real pain points and validate problem-solution fit without leading the respondent.
+- [How to Build a Minimum Viable Product (MVP)](../../skills/building-minimum-viable-products/SKILL.md): Scope, build and launch the smallest product that tests your riskiest assumption.
+- [Customer Discovery Interview Questions and Technique](../../skills/conducting-customer-discovery-interviews/SKILL.md): Plan and run interviews that surface real problems instead of polite compliments.
+- [Pivot or Persevere: When to Pivot a Startup](../../skills/defining-pivot-or-persevere-decisions/SKILL.md): Run a scheduled, evidence-based decision on whether to change strategy.
+- [Designing Validated Learning Experiments](../../skills/designing-validated-learning-experiments/SKILL.md): Design cheap experiments with pass marks set in advance.
+- [Lean Startup Hypothesis Template: Testable Hypotheses](../../skills/formulating-testable-hypotheses/SKILL.md): Turn vague assumptions into falsifiable statements.
+- [Running the Build-Measure-Learn Loop](../../skills/running-build-measure-learn-cycles/SKILL.md): Run fast, planned cycles that end with a recorded lesson.
+- [Types of MVP: How to Choose the Right Format](../../skills/selecting-mvp-types-and-formats/SKILL.md): Match concierge, Wizard of Oz, landing page and other formats to the question.
+- [Innovation Accounting Metrics: Tracking Real Progress](../../skills/tracking-innovation-accounting-metrics/SKILL.md): Set baselines and actionable metrics that show whether the product is improving.
 
 ## FAQ
 
 **What is the lean startup in simple terms?**
 
-The lean startup is a way of building products by testing ideas with real customers before investing heavily in development. Instead of spending months creating a product based on assumptions, you build the smallest possible version, show it to customers, measure their response, and decide whether to continue or change direction. The goal is to learn what customers actually want as quickly and cheaply as possible, rather than betting everything on a plan that might be wrong.
+It is a way to build a new product by testing the plan's riskiest assumptions with real customers before investing heavily. A team builds a small experiment, usually an MVP, measures how customers behave, and decides whether to continue or change direction. Eric Ries described it on his blog and in his book [The Lean Startup](https://theleanstartup.com/book). The goal of each cycle is validated learning about customers.
 
-**How is the lean startup different from agile development?**
+**What is the difference between the lean startup and agile?**
 
-Agile optimizes how you build software: short sprints, working code, iterative delivery. The lean startup asks whether you should be building that software at all. Agile assumes the product backlog contains the right things to build. The lean startup treats every backlog item as a hypothesis that needs validation.
+Agile is a set of values and practices for building software well, such as favoring working software and responding to change ([Agile Manifesto](https://agilemanifesto.org/)). The lean startup asks whether the thing should be built at all and uses experiments with customers to find out. Ries listed agile development as one ingredient of the lean startup in his [original post](http://www.startuplessonslearned.com/2008/09/lean-startup.html). Many teams use both: agile to build, lean startup to decide what to build.
 
-In practice, the two complement each other well. You can use the lean startup to figure out what to build and agile to build it efficiently. Problems arise when teams use agile's velocity metrics as a proxy for progress without ever validating that they're building something customers want.
+**Is an MVP just a first version of the product?**
 
-**Does the lean startup work for large enterprises, not just small startups?**
+No. Ries writes that an MVP is "not about creating minimal products" and that its purpose is maximum validated learning for the least effort ([MVP guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)). An MVP can be a video, a landing page or a service delivered by hand. It is sized to the question you need answered, which may be much smaller than any first release.
 
-Yes, but it requires adaptation. The core principles, hypothesis-driven development, validated learning, and MVPs, apply to any team operating under uncertainty. However, large organizations face unique challenges: political resistance to admitting uncertainty, compliance and brand constraints that limit MVP experimentation, and incentive structures that reward hitting plan targets rather than learning. Eric Ries addressed this in *The Startup Way* (2017), proposing internal "startup teams" with dedicated funding, metered through innovation accounting rather than traditional P&L.
+**What are vanity metrics?**
 
-The enterprises that succeed with it typically create protected spaces for experimentation with executive air cover.
+They are numbers that look good but do not guide a decision, such as total hits or cumulative signups. Ries contrasts them with actionable metrics and says good metrics are actionable, accessible and auditable ([Beware of vanity metrics](http://www.startuplessonslearned.com/2010/02/beware-of-vanity-metrics-for-harvard.html)). The fix is to measure per-customer behavior by cohort and to compare versions with split tests.
 
-**Why does the lean startup fail in practice for some teams?**
+**How often should a team decide whether to pivot?**
 
-The most common failure mode is superficial adoption. Teams relabel their first release as an "MVP" without actually designing it to test a specific hypothesis. They measure vanity metrics instead of actionable ones. They skip pivot-or-persevere meetings because they're uncomfortable with the conclusions.
+Ries recommends a regular pivot-or-persevere meeting and says that less than a few weeks between meetings is too often and more than a few months too infrequent ([Pivot or Persevere?](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)). Each startup sets its own pace inside that range. Scheduling the meeting in advance takes some of the emotion out of the decision.
 
-Another failure mode is overuse: running experiments on decisions that don't need them, creating analysis paralysis where conviction and taste would serve better. " The lean startup requires discipline and intellectual honesty, not just new vocabulary.
+**Does the lean startup work in large companies?**
 
-**The lean startup vs. design thinking: which should I use?**
+Ries argues it does and wrote The Startup Way about applying it inside established companies ([Eric Ries on Wikipedia](https://en.wikipedia.org/wiki/Eric_Ries)). The mechanics stay the same, but the team also needs sponsors who accept staged funding and failed experiments. Blank's [HBR article](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything) frames the problem as launching any new enterprise, including an initiative within a large corporation.
 
-They address different phases of innovation and combine well. Design thinking excels at understanding human needs through empathy, generating creative solutions, and prototyping experiences. The lean startup excels at testing whether those solutions can sustain a viable business. A common pattern is to use design thinking for the initial problem-framing and ideation phase, then switch to the lean startup's Build-Measure-Learn loop when you have a concept to validate in-market. Design thinking asks "is this desirable?" The lean startup asks "is this viable and feasible at scale?"
+**Is there evidence that the lean startup works?**
 
-**How does the lean startup work alongside OKRs and product roadmaps?**
+There is some. In a [randomized trial with 116 Italian startups](https://www.insead.edu/faculty-research/publications/journal-articles/a-scientific-approach-entrepreneurial-decision), founders trained to form and test hypotheses performed better and were more likely to pivot. Other scholars question parts of the method, and a [review in The Conversation](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214) cites research suggesting that more validation is not always better. Treat it as a strong default for high uncertainty rather than a guarantee.
 
-The lean startup and OKRs are natural complements. OKRs set the strategic direction ("increase activation rate from 30% to 50% this quarter"), and the lean startup provides the experimental method for getting there. Instead of a roadmap full of predetermined features, you create a roadmap of hypotheses to test, each designed to move the needle on your key results. The tension comes when leadership expects a fixed feature-date roadmap while the lean startup's whole point is that you don't know what features will work until you test them.
+## Sources
 
-The resolution is to commit to outcomes (OKRs) while keeping the path (specific features) flexible.
-
-**What is innovation accounting and why does it matter?**
-
-Innovation accounting is a framework for measuring progress in a startup or new venture where traditional financial metrics like revenue and profit are meaningless or misleading. It works in three stages. First, establish a baseline by measuring where you are today on the metrics that matter (activation rate, retention, willingness to pay). Second, tune the engine by running experiments designed to improve those metrics from baseline toward the ideal.
-
-Third, evaluate whether the rate of improvement justifies continued investment, or whether it's time to pivot. Without innovation accounting, teams either fly blind or optimize for vanity metrics that mask underlying problems.
-
-**Can I use the lean startup for non-software products or services?**
-
-Absolutely. The lean startup has been applied successfully to physical products, restaurants, nonprofit programs, government services, and even book launches. The principle stays the same: identify your riskiest assumption and test it with the cheapest possible experiment. For physical products, this might mean a 3D-printed prototype, a crowdfunding campaign, or a concierge service where you manually deliver the value before automating it.
-
-The main adaptation is that physical product iterations are slower and more expensive than software, so you front-load as much learning as possible through customer interviews, landing page tests, and pre-orders before committing to manufacturing.
+- [The Lean Startup: Principles](https://theleanstartup.com/principles)
+- [The Lean Startup: The book](https://theleanstartup.com/book)
+- [Eric Ries: The lean startup (2008 blog post)](http://www.startuplessonslearned.com/2008/09/lean-startup.html)
+- [Eric Ries: Minimum Viable Product, a guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)
+- [Eric Ries: Pivot, don't jump to a new vision](http://www.startuplessonslearned.com/2009/06/pivot-dont-jump-to-new-vision.html)
+- [Eric Ries: Beware of vanity metrics](http://www.startuplessonslearned.com/2010/02/beware-of-vanity-metrics-for-harvard.html)
+- [Eric Ries: Vanity Metrics vs. Actionable Metrics](https://tim.blog/2009/05/19/vanity-metrics-vs-actionable-metrics/)
+- [Eric Ries: The Lean Startup, RailsConf 2011 slides](https://slideshare.net/startuplessonslearned/eric-ries-the-lean-startup-railsconf-2011/31-Innovation_AccountingThe_Three_Learning_Milestonesbr)
+- [Eric Ries: Pivot or Persevere?](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)
+- [Eric Ries: How DropBox started as a minimal viable product](https://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/)
+- [Eric Ries quote on planning the loop in reverse](https://www.goodreads.com/quotes/7179811-although-we-write-the-feedback-loop-as-build-measure-learn-because-the)
+- [Steve Blank: Why the Lean Start-Up Changes Everything](https://hbr.org/2013/05/why-the-lean-start-up-changes-everything)
+- [Steve Blank: Customer Discovery in the time of Covid-19](https://steveblank.com/2020/04/07/customer-discovery-in-the-time-of-the-covid-19-virus/)
+- [Strategyzer: The Test Card](https://assets.strategyzer.com/assets/resources/the-test-card.pdf)
+- [CRV: What is an MVP?](https://www.crv.com/content/what-is-an-mvp)
+- [Bajwa et al.: An analysis of major pivots of software startups](https://arxiv.org/pdf/1710.04037)
+- [Camuffo et al.: A Scientific Approach to Entrepreneurial Decision Making](https://www.insead.edu/faculty-research/publications/journal-articles/a-scientific-approach-entrepreneurial-decision)
+- [Ratinho and Bruneel: Is the lean start-up method really universally applicable?](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214)
+- [Manifesto for Agile Software Development](https://agilemanifesto.org/)
+- [McGrath and MacMillan: Discovery-Driven Planning](https://hbr.org/1995/07/discovery-driven-planning)
+- [Wikipedia: Lean startup](https://en.wikipedia.org/wiki/Lean_startup)
+- [Wikipedia: Eric Ries](https://en.wikipedia.org/wiki/Eric_Ries)
 
 ---
 

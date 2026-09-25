@@ -1,15 +1,20 @@
 ---
-name: facilitating-sprint-retrospectives
-description: "This skill teaches you how to lead scrum retrospective meetings that surface honest feedback, uncover root causes, and produce concrete action items that measurably improve team performance sprint over sprint."
+name: "facilitating-sprint-retrospectives"
+description: "Facilitate a scrum retrospective that inspects how the Sprint went and ends with one or two owned improvements the team actually carries out."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: scrum
+  method: "scrum"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Facilitating Sprint Retrospectives: Run a Scrum Retrospective That Drives Real Change
+# Facilitating Sprint Retrospectives for Scrum Teams
 
-> This skill teaches you how to lead scrum retrospective meetings that surface honest feedback, uncover root causes, and produce concrete action items that measurably improve team performance sprint over sprint.
+> Facilitate a scrum retrospective that inspects how the Sprint went and ends with one or two owned improvements the team actually carries out.
 
 ## Before you start
 
@@ -24,139 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes per retrospective |
-| Outcome | You can consistently run retrospectives that produce specific, owned action items and foster a culture of continuous improvement within your Scrum team. |
-| Prerequisites | Understanding of the Scrum framework and sprint cadence, Familiarity with Scrum roles (Scrum Master, Product Owner, Development Team), Experience participating in at least a few sprints, Basic facilitation and active listening skills |
+| Time to Learn | A few retrospectives to get comfortable |
+| Outcome | You facilitate sprint retrospectives that move through a clear structure and end with a small number of specific improvements, each with an owner, that the team follows up. |
+| Prerequisites | A Scrum Team that has finished a Sprint, a facilitator, a shared board or wall, last retrospective's actions |
 | Part of | [Scrum](../../methods/scrum/METHOD.md) |
 
 ## Overview
 
-The scrum retrospective is the most powerful inspect-and-adapt ceremony in the Scrum framework, yet it's also the one most often phoned in. When facilitated well, it transforms a team's working agreements, surfaces hidden friction, and compounds into dramatic improvements over time. When facilitated poorly, it devolves into a venting session—or worse, awkward silence—that teams eventually dread and deprioritize.
+Facilitating sprint retrospectives is how a Scrum Team turns experience into better ways of working. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) states the purpose of the Sprint Retrospective as "to plan ways to increase quality and effectiveness." The team looks back at how the Sprint went for its people and their interactions, its processes and tools, and its Definition of Done. It picks the changes that would help most and tackles the biggest ones quickly, and some can go straight into the next Sprint Backlog.
 
-Facilitating sprint retrospectives is the skill of designing and leading these meetings so that every team member feels safe contributing, the conversation moves from symptoms to root causes, and the session ends with a small number of concrete, owned improvements. It sits at the heart of the [Scrum](https://tryhamster.com/methods/scrum) philosophy: the belief that process improvement is the team's responsibility, not management's.
+The idea predates Scrum's current guide. The [Agile Manifesto principles](https://agilemanifesto.org/principles.html) include: "At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly." Esther Derby and Diana Larsen's book [Agile Retrospectives](https://pragprog.com/titles/dlret/agile-retrospectives/), published in July 2006 with a foreword by Ken Schwaber, argued that retrospectives held only at the end of a project come too late to help, and described how to run them iteratively.
 
-This skill goes beyond knowing a few retrospective formats. It covers how to read the room, adapt your approach to the team's maturity level, handle conflict constructively, and—critically—ensure that action items from previous retrospectives are tracked and completed. Without follow-through, retrospectives become performative, and trust in the process erodes.
+The retrospective concludes the Sprint. The guide caps it at three hours for a month-long Sprint, with shorter Sprints usually needing less. The whole Scrum Team attends: Developers, Product Owner and Scrum Master. The Scrum Master answers for making sure the event takes place and is "positive, productive, and kept within the timebox," though anyone on the team can facilitate.
+
+A scrum retrospective can fail in two opposite ways. It can become a complaint session with no follow-through, or a polite ritual where nothing difficult gets said. This skill covers a structure that avoids both. For the other events, see the [Scrum method page](../../methods/scrum/METHOD.md).
 
 ## How It Works
 
-A well-facilitated scrum retrospective operates on three conceptual layers that build on each other.
+According to [Retromat's summary](https://retromat.org/blog/what-is-a-retrospective/), most retrospectives follow the five phases from Derby and Larsen's book: set the stage, gather data, generate insight, decide what to do, and close the retrospective. Setting the stage states the goal and gets everyone talking early. Gathering data builds a shared picture of what happened, since everyone saw the Sprint differently. Generating insight asks why things happened and looks for patterns. Deciding what to do picks a few issues and makes concrete plans. Closing clarifies follow-up and ends the meeting cleanly.
 
-**Layer 1: Psychological Safety.** Before any productive conversation can happen, participants need to believe they won't be punished for honesty. The facilitator establishes this through ground rules, anonymity techniques when needed, and by modeling vulnerability. Without safety, you only get surface-level observations.
+Safety comes first because people will not name real problems if they expect blame. Some facilitators open by reading Norm Kerth's Prime Directive: "Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand" ([Agile Retrospective Resource Wiki](https://retrospectivewiki.org/index.php?title=The_Prime_Directive)). Reading it aloud sets the expectation that the meeting is about the system of work.
 
-**Layer 2: Structured Divergence and Convergence.** The facilitator uses a chosen format (Start/Stop/Continue, 4Ls, Sailboat, Mad/Sad/Glad, etc.) to first diverge—generating as many observations as possible—and then converge on the most impactful themes. This prevents the loudest voice from dominating and ensures the team examines their process from multiple angles.
+The data-gathering phase is where formats vary. Atlassian lists simple prompts such as Start / Stop / Continue, More / Less, and Glad / Sad / Mad ([Atlassian on retrospectives](https://www.atlassian.com/agile/scrum/retrospectives)). A timeline of the Sprint, with events and how people felt about them, works well after an eventful Sprint. Data from the Sprint itself helps too: the Sprint Goal and whether it was met, items that did not reach Done, and blocked time on the board. Changing the format now and then keeps people thinking, but the five phases stay the same.
 
-**Layer 3: Commitment to Action.** The final layer transforms discussion into change. The team votes on the highest-impact themes, performs root-cause analysis (even a simple '5 Whys'), and commits to one or two specific experiments for the next sprint. Each action item gets an owner and a definition of done. These items should be visible on the team's [Scrum board](https://tryhamster.com/skills/managing-scrum-boards-in-jira) alongside sprint work.
+The output is small by design. Retromat puts it bluntly: retrospectives that do not produce concrete actions, or whose actions nobody carries out, "are a waste of time." One or two changes the team will actually make are better than a long list. Atlassian recommends that each action item have a clear owner and due date. Putting the most impactful improvement into the next Sprint Backlog, as the guide allows, treats it as real work with visible progress.
 
-The reason this three-layer model works is that it mirrors how real behavior change happens: first you feel safe enough to be honest, then you explore the problem space without rushing to solutions, then you commit to a small, specific change you can actually follow through on.
+A retrospective also inspects the Definition of Done. If quality problems kept escaping, the team may need to strengthen the definition. If it is too heavy to meet within a Sprint, the team may need to remove an impediment rather than weaken it.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Review Previous Action Items
+### Step 1: Prepare the data and the room
 
-Start every scrum retrospective by reviewing action items from the last retrospective. Pull up the items, check in with each owner, and mark them as done, in progress, or dropped. This takes 5 minutes but is the single most important trust-building ritual in the ceremony.
+Before the meeting, gather facts from the Sprint: the Sprint Goal and whether it was met, items finished and unfinished, notable incidents, and the actions from the last retrospective with their status. Choose a data-gathering format that suits the Sprint; a timeline suits an eventful one, a simple Start / Stop / Continue suits a calm one. Prepare a board, physical or digital, with space for each phase. Book a slot right after the Sprint Review so the Sprint ends with this event.
 
-If action items are consistently not completed, that itself becomes the topic of discussion. Don't skip this step—it's the mechanism that prevents retrospectives from feeling like wasted time.
+### Step 2: Set the stage
 
-> **Pro tip:** Keep previous retro action items on a dedicated swimlane or label in your sprint board so they stay visible throughout the sprint.
+Open by stating the goal: to find one or two changes that will make the next Sprint better. Read the Prime Directive or a short working agreement about respect and confidentiality. Ask a quick check-in question that everyone answers in a word or two, which gets each voice into the room early. Then review last retrospective's actions: what was done, what changed, what was dropped and why.
 
-### Step 2: Step 2: Set the Stage and Establish Safety
+### Step 3: Gather data
 
-Spend 5 minutes framing the session. Remind the team of the Prime Directive: 'Regardless of what we discover, we understand and truly believe that everyone did the best job they could, given what they knew at the time, their skills and abilities, the resources available, and the situation at hand.'
+Give everyone a few minutes to write observations silently, one per sticky note, under the prompts you chose. Silent writing keeps louder people from shaping what others remember. Then have each person place and briefly read their notes. Group duplicates as you go. Include facts from the Sprint alongside feelings, since both are data.
 
-Choose an opening activity to gauge the room's energy. A simple one is a mood check: ask each person to rate their sprint on a 1-5 scale (anonymously via sticky notes or a tool like EasyRetro, or openly if the team is mature). This gives you a temperature read that shapes how you facilitate the rest of the session.
+### Step 4: Generate insight
 
-If the team is remote, turn cameras on and use a collaborative whiteboard tool. If in person, arrange seating in a circle—not around a conference table with someone at the head.
+Cluster the notes into themes and let the team vote on which themes to explore, for example by giving everyone three dots. Take the top one or two. For each, ask why it happened and keep asking until the team reaches something it can influence. Look for patterns across Sprints; an issue that shows up again is a sign that earlier fixes did not work. Keep the discussion on the system of work and away from individuals.
 
-> **Pro tip:** If you sense tension or low trust, use anonymous input for the data gathering phase. Tools like Retrium or FunRetro make this easy.
+### Step 5: Decide what to do
 
-### Step 3: Step 3: Gather Data Using a Chosen Format
+Turn the top insight into one or two specific actions. A good action says what will change, who owns it, and how the team will know it worked, such as "Pair on every database change this Sprint; owner: Sam; check: no database rework items at the next retro." Add the most important one to the next Sprint Backlog so it gets done during the Sprint. Anything the team cannot fix itself becomes an impediment for the Scrum Master to take to the organization.
 
-Give the team 5-10 minutes of silent writing time to generate observations. Choose a format that matches the team's current needs:
+### Step 6: Close the retrospective
 
-- **Start/Stop/Continue**: Good default for newer teams. Simple and clear.
-- **Mad/Sad/Glad**: Better when you sense emotional undercurrents that need airing.
-- **Sailboat** (Wind = helps, Anchors = hinders, Rocks = risks, Island = goal): Excellent for forward-looking retros.
-- **4Ls** (Liked, Learned, Lacked, Longed For): Great for teams that need to celebrate wins more.
-- **Timeline**: Walk through the sprint chronologically. Best after particularly eventful or chaotic sprints.
+Read back the actions and owners so everyone leaves with the same list. Ask for quick appreciations, which Retromat lists as part of closing. Ask how the retrospective itself could improve, using a one-word or one-number rating. Record the actions where the team will see them next time, and end on time.
 
-Silent writing is critical. If you skip it and go straight to verbal discussion, extroverts and senior team members will dominate. Each person should write one observation per sticky note (physical or digital).
+### Step 7: Follow up during the Sprint
 
-> **Pro tip:** Rotate formats every 3-4 sprints. Format fatigue is a leading cause of retrospective apathy.
-
-### Step 4: Step 4: Group Themes and Dot-Vote
-
-Have team members place their sticky notes on the board. Read them aloud (or have the author read them) and collaboratively cluster similar observations into themes. Name each cluster with a short label.
-
-Then give each team member 2-3 dot votes to place on the themes they believe are most important to address. This democratic prioritization prevents the facilitator or the loudest voice from steering the agenda.
-
-The top 1-2 voted themes become the focus of the deeper discussion. Don't try to address everything—depth beats breadth in retrospectives.
-
-> **Pro tip:** If one theme gets dramatically more votes than others, that's a signal. But also glance at low-vote items—sometimes they indicate a concern only one person feels safe raising.
-
-### Step 5: Step 5: Facilitate Root-Cause Discussion
-
-For each prioritized theme, guide the team past symptoms to underlying causes. Use the '5 Whys' technique: ask 'why does this happen?' repeatedly until you reach a systemic issue rather than a surface-level complaint.
-
-For example, if the theme is 'We keep missing sprint commitments,' the conversation might go:
-- Why? → We underestimate story complexity.
-- Why? → We don't break stories down enough during refinement.
-- Why? → Refinement sessions are rushed because people join late.
-- Why? → The meeting conflicts with another recurring meeting.
-
-Now you have a specific, addressable root cause instead of a vague aspiration to 'estimate better.' This is the phase where the facilitator earns their keep—your job is to keep asking 'why' when the team wants to jump to solutions, and to redirect if the discussion becomes about blaming individuals.
-
-> **Pro tip:** If discussion stalls, try the 'perspective shift': ask 'What would a new team member observe about how we handle this?'
-
-### Step 6: Step 6: Define Specific Action Items
-
-Convert root causes into experiments. An effective action item follows the SMART pattern but adapted for sprint-sized work:
-
-- **Specific**: 'Move refinement to Tuesday at 2pm to avoid the conflict with the design sync' — not 'improve our refinement sessions.'
-- **Owned**: One person is accountable for driving it. Not 'the team will…'
-- **Time-boxed**: It will be tried during the next sprint and reviewed at the next retro.
-- **Measurable**: The team can tell at the next retro whether it happened and whether it helped.
-
-Limit the team to 1-2 action items per retrospective. More than that, and nothing gets done. Write them clearly and add them to the team's [sprint board](https://tryhamster.com/skills/managing-scrum-boards-in-jira) or a visible tracking location.
-
-> **Pro tip:** Frame action items as 'experiments' rather than 'commitments.' This reduces the psychological barrier to trying something new and makes it safe to say 'that experiment failed' at the next retro.
-
-### Step 7: Step 7: Close the Retrospective
-
-End with a quick round of appreciations or a one-word checkout. This takes 2-3 minutes but ends the session on a connective note. Optionally ask 'How was this retro? What would make the next one better?' — a meta-retrospective that helps you improve your facilitation over time.
-
-Summarize the action items aloud, confirm owners, and share a written record in the team's communication channel (Slack, Teams, etc.) within 30 minutes of the meeting ending. Timeliness matters—the longer you wait, the less real the commitments feel.
-
-> **Pro tip:** Keep a private facilitator's journal noting what worked, what didn't, and team dynamics you observed. Review it before planning the next retro.
+The facilitator or Scrum Master checks on actions during the Sprint, at the Daily Scrum or on the board. If an action is stuck, raise it early instead of waiting for the next retrospective. Start the next retrospective with these actions, so the team sees whether its changes worked. Over time, keep a simple log of actions and results to spot recurring themes.
 
 ## Best Practices
 
-- Time-box the retrospective strictly (60 minutes for a 2-week sprint, 90 for a month-long sprint) and use a visible timer for each phase to prevent any single discussion from consuming the session.
-- Never allow managers, stakeholders, or anyone outside the Scrum team to attend unless the team explicitly invites them. Their presence destroys psychological safety even when they mean well.
-- Track action item completion rate as a meta-metric. If your team completes fewer than 70% of retrospective action items, the problem isn't the retrospective—it's the follow-through system.
-- Alternate between retrospective formats deliberately. Use celebratory formats (4Ls, Appreciations) after successful sprints and deeper analytical formats (Timeline, 5 Whys) after difficult ones.
-- As the facilitator, contribute observations but never dominate. If you're the Scrum Master and have strong opinions, write them on sticky notes like everyone else and let the team's voting decide what gets discussed.
-- Schedule the scrum retrospective after the Sprint Review but before Sprint Planning. Insights from the retro should directly inform how the team approaches the next sprint.
+- Keep the action list short. One or two improvements that happen beat a long list that does not, and [Retromat](https://retromat.org/blog/what-is-a-retrospective/) calls retrospectives without follow-through a waste of time.
+- Put the top improvement in the Sprint Backlog. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) allows it, and it makes the improvement visible alongside product work.
+- Rotate the facilitator. Atlassian notes the facilitator can be the Scrum Master, the Product Owner or someone who rotates, and an outside facilitator can help when the team is stuck.
+- Vary the format, keep the phases. New prompts keep people engaged, while the five-phase structure keeps the meeting productive.
+- Start with last time's actions. Reviewing them first shows the team that retrospectives lead to change.
+- Include the Product Owner. The Product Owner is part of the Scrum Team, and many problems, such as unclear items or changing priorities, need their involvement to fix.
 
 ## Common Mistakes
 
-- **Trying to address every issue raised in a single retrospective, resulting in 5-8 vague action items that no one follows through on.** — Ruthlessly prioritize. Use dot-voting to surface the top 1-2 themes and go deep on those. A single completed improvement is worth more than five abandoned ones.
-- **Using the same retrospective format (usually Start/Stop/Continue) every single sprint until the team is bored and just going through the motions.** — Maintain a rotation of 4-6 formats and choose based on context. After a rough sprint, use a Timeline format. After a great one, try a Sailboat to look ahead. Novelty sustains engagement.
-- **Allowing the retrospective to become a blame session where specific individuals are called out for mistakes.** — Redirect person-focused complaints to process-focused analysis. 'The deploy broke because Sam didn't test' becomes 'Our deployment process lacks automated checks before release.' Read the Prime Directive at the start if needed.
-- **Skipping the review of previous action items, so the team loses trust that retrospectives lead to actual change.** — Always start by reviewing last retro's action items. Display them prominently. If they weren't completed, discuss why—this is itself a retro topic. Accountability is the engine of continuous improvement.
-- **The Scrum Master or facilitator talks for more than 30% of the session, effectively turning the retrospective into a status meeting or lecture.** — Your role is to ask questions, manage time, and create space for others. Use silent writing, dot-voting, and small-group breakouts to ensure every team member contributes. Track your own talk time if needed.
+- **Leaving with no owner or date**: Actions without owners rarely happen. Name one person per action and a way to check it at the next retrospective.
+- **Picking problems the team cannot influence**: Long discussions about decisions made elsewhere drain energy. Hand those to the Scrum Master as impediments and focus the team on what it controls.
+- **Letting it become a blame session**: Naming individuals makes people defensive and silent. Keep the Prime Directive visible and steer toward process, tools and interactions.
+- **Skipping it when things go well**: Good Sprints also have lessons, and a skipped retrospective breaks the habit. Keep it short if you like, but hold it.
+- **Running the same format until it goes stale**: When answers become repetitive, change the prompts or the activity while keeping the five phases.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/scrum/METHOD.md) — Scrum
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/scrum/METHOD.md): Scrum
 
 ## Related Skills
 
+- [Conducting Sprint Reviews: Run the Sprint Review Meeting](../conducting-sprint-reviews/SKILL.md)
+- [Running the Scrum Daily Standup (Daily Scrum)](../running-daily-standups/SKILL.md)
+- [Scrum Sprint Planning: Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
 - [Defining Scrum Roles and Accountabilities](../defining-scrum-roles-and-accountabilities/SKILL.md)
-- [Grooming and Refining the Product Backlog](../grooming-the-product-backlog/SKILL.md)
-- [Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
-- [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
-- [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
-- [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
-- [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
+- [Backlog Grooming and Product Backlog Refinement](../grooming-the-product-backlog/SKILL.md)
+- [Scrum Estimation with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
+- [Managing Scrum Boards in Jira: Setup, Sprints, Reports](../managing-scrum-boards-in-jira/SKILL.md)
+
+## Sources
+
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)
+- [Derby and Larsen: Agile Retrospectives](https://pragprog.com/titles/dlret/agile-retrospectives/)
+- [Retromat: What is a retrospective?](https://retromat.org/blog/what-is-a-retrospective/)
+- [Agile Retrospective Resource Wiki: The Prime Directive](https://retrospectivewiki.org/index.php?title=The_Prime_Directive)
+- [Atlassian: What are agile retrospectives?](https://www.atlassian.com/agile/scrum/retrospectives)

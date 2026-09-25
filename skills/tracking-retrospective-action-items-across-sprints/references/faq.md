@@ -1,25 +1,21 @@
 # FAQ: Tracking Retrospective Action Items Across Sprints
 
-## How many action items should a team commit to per sprint retrospective meeting?
+## Where should retrospective action items live?
 
-Limit to 2-3 action items per sprint. Research and practitioner experience consistently show that teams completing fewer, well-defined items achieve more improvement than teams committing to many vague ones. If your team reliably completes 2 items every sprint, that's 26 improvements per quarter—a substantial pace of change.
+Where the team plans and tracks its daily work: the team board or the sprint backlog. The Scrum Guide notes that improvements may be added to the Sprint Backlog for the next Sprint. Keeping them in a separate document or in meeting notes makes them easy to forget.
 
-## What tools should I use to track retrospective action items?
+## How do we follow up on retrospective actions?
 
-Use whatever tool your team already uses for daily work. If you work in Jira, create retro action cards in Jira. If you use Trello, add a 'Retro Actions' list. The best tool is the one your team already looks at every day. Separate tools for improvement tracking almost always get ignored.
+Mention them during the sprint alongside other work, and review every open action at the start of the next retrospective. For each one, ask whether it is done and whether it helped. Decide explicitly to carry forward, reshape or drop anything unfinished. Ben Linders describes starting his retrospectives this way.
 
-## What do I do when the same issue keeps coming up in sprint retrospective meetings?
+## How do we create accountability without blaming people?
 
-Recurring issues signal that previous action items either weren't completed or didn't address the root cause. Review why past actions failed—were they too vague, unowned, or deprioritized? Then reframe the problem: dig deeper into root causes using techniques from generating insights, and commit to a more specific, better-scoped action.
+Ask for volunteer owners, keep actions small, make them visible and review them as a team. Accountability comes from the routine: people finish what they volunteered for when it is on the board and will be discussed. When an action stalls, ask what got in the way before asking who.
 
-## Should retrospective action items be added to the sprint backlog?
+## What if the same problem keeps coming back?
 
-Yes. Treating retrospective action items as first-class sprint backlog items ensures they receive capacity during planning and visibility during standups. Keeping them separate from product work signals that improvement is optional, which guarantees it won't happen under pressure.
+Treat it as a sign the actions are not reaching the cause. The Agile Alliance notes that identical issues at each retrospective without improvement may signal an empty ritual. Give the theme a full insight phase with a root cause technique, and consider whether the cause is outside the team's control.
 
-## How do I get buy-in from the Product Owner to spend sprint capacity on retrospective improvements?
+## How do we measure whether retrospectives are working?
 
-Frame improvement work as an investment in team throughput. Track the cost of problems that improvements would solve—rework time, manual process hours, incident frequency. Show that 10-15% capacity spent on improvements yields higher sustainable velocity over time. Most Product Owners support this when they see the data.
-
-## What's a good completion rate for retrospective action items?
-
-Healthy teams typically complete 70-90% of their committed action items per sprint. Below 50% indicates systemic issues—items may be too vague, too large, or consistently deprioritized. Track your rate over 5-10 sprints to spot trends and adjust your commitment practices accordingly.
+Keep a simple log of actions, whether they were finished, and whether the problem they addressed recurred. Look at it every few sprints. Rising completion and fewer recurring themes suggest the retrospectives are working. The team's closing feedback on each session adds a second view.

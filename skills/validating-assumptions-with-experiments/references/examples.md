@@ -1,31 +1,37 @@
 # Examples: Validating Impact Map Assumptions with Experiments
 
-## Example: SaaS Onboarding Improvement via Impact Map Validation
+## Testing a deliverable with a manual version
 
 **Scenario:**
 
-A B2B SaaS company has an impact map with the goal 'Increase trial-to-paid conversion from 8% to 15%.' One branch identifies 'technical evaluators' as a key actor, with the impact 'complete a successful integration within the first 3 days,' and the deliverable 'interactive API sandbox.' The team wants to validate before building the sandbox.
+Illustrative scenario: an accounting software company's map links the goal of reducing churn among small firms to the impact "firm owners reconcile their accounts every month". The proposed deliverable is an automated reconciliation assistant that would take a quarter to build.
 
 **Walkthrough:**
 
-First, the team inventories assumptions: (A1) technical evaluators are the primary blockers in conversion, (A2) integration speed is the behavior change that matters, (A3) an interactive sandbox will accelerate integration. They prioritize A1 as highest risk because if evaluators aren't the bottleneck, the entire branch is moot.
+The team writes both assumptions. The deliverable assumption is that owners given help with reconciliation will do it monthly. The impact assumption is that owners who reconcile monthly churn less. Existing data already shows that monthly reconcilers renew more often, so the team treats the impact assumption as reasonably supported and focuses on the deliverable.
 
-For A1, they hypothesize: 'We believe that technical evaluators who fail to integrate within 3 days are the primary reason trials don't convert. We'll know this is true when churn analysis shows ≥60% of unconverted trials had zero API calls after day 3.' They pull existing analytics — it takes 2 hours, not 2 weeks. Result: 72% of churned trials had zero integration activity. A1 is reinforced.
+Instead of building the assistant, support staff offer a short monthly reconciliation call to a small group of owners who have not reconciled recently. The agreed threshold is that at least half should reconcile in the following month. Fewer do, and the calls reveal that owners do not know which transactions need attention. The team drops the assistant as designed, and adds a simpler deliverable, a monthly list of unmatched transactions, to test next.
 
-For A2, they run 10 customer interviews with recently churned evaluators, asking what blocked them. They hypothesize ≥7 of 10 will cite integration complexity. Result: 8 of 10 cite it. A2 is reinforced.
-
-For A3, instead of building the full sandbox, they create a Wizard-of-Oz test: a 'Request Sandbox Access' button that, when clicked, triggers a manual concierge call from a solutions engineer who walks the evaluator through integration. They hypothesize that ≥50% of evaluators who receive this help will convert. After 2 weeks and 20 participants, 65% convert. A3 is reinforced with a note: 'Guided experience matters; pure self-service may not be enough.' The team updates the deliverable from 'interactive API sandbox' to 'guided interactive sandbox with contextual help,' and proceeds to build with high confidence.
-
-## Example: Pruning a Branch After a Failed Experiment
+## Finding that a behavior change does not move the goal
 
 **Scenario:**
 
-A mobile fitness app's impact map has 'personal trainers' as an actor, with the impact 'recommend the app to 5+ clients per month,' and the deliverable 'trainer referral dashboard.' The goal is to increase monthly active users by 30%.
+Illustrative scenario: a news subscription service's map says that getting readers to follow topics will increase renewals. A topic-follow feature ships to a portion of readers, and many of them follow topics.
 
 **Walkthrough:**
 
-The team suspects this branch is risky — they've never validated that personal trainers would actually refer clients. They design a concierge experiment: they personally reach out to 30 personal trainers, offer them early access and a referral link with tracking, and hypothesize that ≥30% will refer at least 1 client within 2 weeks.
+The deliverable assumption holds: the behavior changed well above the threshold. The team then checks the impact assumption by comparing renewal rates for readers who followed topics with similar readers who did not, over the renewal period agreed in advance.
 
-After 2 weeks, only 2 of 30 trainers (7%) referred anyone. In follow-up calls, trainers explain they see the app as competition, not a complement. The hypothesis clearly fails.
+Renewals are no different. Following the decision rule, the team marks the branch as refuted at the impact link, notes that following topics did not affect renewals for this audience, and moves effort to the next ranked impact, readers returning several times a week. The feature stays in the product, but it no longer counts as progress toward the renewal goal.
 
-The team prunes the entire 'personal trainers' branch from the impact map. They redirect attention to a different actor branch — 'gym-goers who work out with friends' — which has a higher-confidence impact assumption. The pruning saves an estimated 6 weeks of engineering time that would have gone into the referral dashboard. This learning is documented in the experiment log and informs future actor identification sessions.
+## Choosing a test when releases are slow
+
+**Scenario:**
+
+Illustrative scenario: a medical device maker wants clinicians to record patient readings in the device's companion app instead of on paper. Releases to hospitals take many months, so shipping and measuring is not a practical test.
+
+**Walkthrough:**
+
+The team uses the map to plan research instead. It builds a clickable prototype of the recording flow and tests it with a few clinicians in a simulated ward setting, measuring whether they complete recordings in the app without falling back to paper.
+
+The first round shows clinicians abandoning the app when a reading has to be corrected. The team revises the prototype and tests again, and the second round meets the agreed threshold. Only then does the deliverable go on the release roadmap, with the research results attached to its branch on the map.
