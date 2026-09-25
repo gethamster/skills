@@ -1,15 +1,20 @@
 ---
-name: building-topical-authority-for-llms
-description: "This skill teaches you how to create comprehensive, interlinked content clusters that establish the domain expertise signals LLMs use when selecting trusted sources for AI-generated answers."
+name: "building-topical-authority-for-llms"
+description: "Build topical authority that LLMs recognize: cover a few subjects in depth, link the pages clearly and earn independent coverage that confirms it."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: ai-seo-optimization
+  method: "ai-seo-optimization"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Building Topical Authority That LLMs Recognize: A Core AI SEO Strategy
+# Building Topical Authority That LLMs Recognize
 
-> This skill teaches you how to create comprehensive, interlinked content clusters that establish the domain expertise signals LLMs use when selecting trusted sources for AI-generated answers.
+> Build topical authority that LLMs recognize: cover a few subjects in depth, link the pages clearly and earn independent coverage that confirms it.
 
 ## Before you start
 
@@ -24,139 +29,109 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Advanced |
-| Time to Learn | 2-4 hours to plan; 4-12 weeks to execute |
-| Outcome | Your domain becomes a consistently cited source in LLM-generated answers within your area of expertise, driving organic visibility in both traditional search and AI answer engines. |
-| Prerequisites | Basic understanding of content marketing and SEO fundamentals, Familiarity with how LLMs generate answers (retrieval-augmented generation concepts), Experience with keyword research and content planning, Understanding of internal linking strategy |
-| Part of | [AI-SEO Optimization](../../methods/ai-seo-optimization/METHOD.md) |
+| Time to Learn | a few days, applied over months |
+| Outcome | You can plan and build a focused body of content on a subject, linked and corroborated so AI systems associate your site with that subject. |
+| Prerequisites | Content strategy experience, access to your site's content inventory and analytics, a subject where your team has real expertise |
+| Part of | [AI SEO Optimization](../../methods/ai-seo-optimization/METHOD.md) |
 
 ## Overview
 
-Traditional SEO authority was built through backlinks and domain age. In the era of AI-generated answers, LLMs evaluate authority differently — they look for comprehensive topic coverage, semantic consistency across pages, factual corroboration with other trusted sources, and signals of genuine expertise like original data and specific methodology descriptions.
+Topical authority is a practitioner term for the reputation a site earns when it covers a subject thoroughly and other sources confirm that it knows the subject. No AI platform publishes a "topical authority" score. What the platforms do document are the parts it is made of: expertise and original content, clear site structure and internal links, and what independent sources say about you.
 
-Building topical authority that LLMs recognize is a foundational AI SEO strategy within the broader [AI-SEO Optimization](https://tryhamster.com/methods/ai-seo-optimization) framework. It goes beyond writing individual pages that rank. Instead, you're constructing an interconnected knowledge base that LLMs can traverse and verify, making your domain the go-to reference when these models need to ground their answers in a specific subject area.
+For AI answers, those parts matter in a specific way. An answer engine retrieving sources for a question about your subject can draw on many pages, and it cites the ones that answer well and look trustworthy. A site with one good article competes page by page. A site with complete, linked coverage of a subject gives the engine a strong page for most of the questions it might ask, including the related sub-questions that Google's systems issue through [query fan-out](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide).
 
-This skill matters because LLMs don't just pick the top-ranking Google result — they synthesize information across multiple sources and prefer domains that demonstrate deep, consistent expertise. A single viral article won't cut it. You need a content ecosystem that signals to both retrieval systems and the LLM itself that your site is the authoritative voice on a topic.
+There is a wrong way to do this, and Google names it. Creating many pages for every variation of a query in order to manipulate generative AI responses violates its scaled content abuse policy, and Google calls it an ineffective long-term strategy because a high number of pages does not make a site higher quality ([Google's AI optimization guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)). This skill is about depth on a few subjects, which usually means fewer, better pages.
+
+Authority also has an external half. A comparative study of AI search engines found they lean heavily on earned media, meaning independent third-party sources, over brand-owned content ([Chen et al.](https://arxiv.org/abs/2509.08919)). Your own pages establish what you know; other people's pages confirm it.
+
+This skill sits in the [AI SEO Optimization](https://tryhamster.com/methods/ai-seo-optimization) method alongside citation, structure and measurement.
 
 ## How It Works
 
-LLMs select sources through a combination of retrieval and evaluation. When a user asks a question, retrieval-augmented generation (RAG) systems pull candidate documents from an index. The LLM then evaluates these candidates for relevance, factual consistency, depth, and apparent authority before synthesizing an answer and attributing sources.
+The skill rests on three mechanisms that the platforms and research describe.
 
-Topical authority works in this pipeline at two levels. First, **retrieval-level signals**: comprehensive content clusters with consistent terminology and dense internal linking create more retrieval surface area. When your domain has 30 pages covering every angle of a topic — each using consistent entity names, definitions, and frameworks — retrieval systems are more likely to surface your content for a wider range of related queries.
+The first is coverage across related questions. Google explains that AI Overviews and AI Mode may run a query fan-out, issuing multiple related searches across subtopics to build a response ([Google Search Central](https://developers.google.com/search/docs/appearance/ai-features)). Google's [generative AI guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) gives an example that turns a question about a weedy lawn into sub-queries about herbicides, chemical-free removal and prevention. A site that answers the main question and its natural sub-questions well has more chances to be retrieved for the parts of that fan-out. Bing reflects the same idea in reporting: its AI Performance report now groups grounding queries into [topics](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/), because AI systems reason across themes and concepts rather than isolated keywords.
 
-Second, **evaluation-level signals**: once retrieved, LLMs assess whether a source demonstrates genuine expertise. They look for specificity (concrete numbers, methodologies, examples), internal coherence (do your pages agree with each other?), and external corroboration (do other reputable sources reference your claims or data?). A domain that covers a topic shallowly across a few pages will lose to one that demonstrates exhaustive, consistent, expert-level coverage.
+The second is clear structure between pages. Internal links tell people and crawlers how pages relate, and anchor text tells them what the target page is about. Google asks for anchor text that is descriptive, reasonably concise and relevant, and suggests reading the anchor text out of context to check it still makes sense ([Google link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)). A topic cluster with descriptive links reads as a connected body of knowledge instead of a pile of posts.
 
-The mechanism is analogous to how a human researcher evaluates sources — they trust the author who has written the textbook, not the one who published a single blog post. Your content cluster is that textbook, and each page is a chapter that reinforces the authority of the whole.
+The third is real expertise, confirmed externally. Google's people-first content guidance asks whether the content shows first-hand expertise and depth of knowledge, and it warns against entering a niche topic area without real expertise to chase traffic ([Google Search Central](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)). Consistent naming of your organization and its people helps systems connect what you publish with what others say about you; the schema.org sameAs property exists to point to reference pages that [unambiguously identify](https://schema.org/sameAs) an entity. Independent coverage then supplies the corroboration that answer engines appear to weight heavily.
+
+Put together, the skill works like editorial planning: choose a subject you can cover better than others, cover it completely, connect it clearly, and give independent sources a reason to reference it.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Authority Domain and Map the Topic Space
+### Step 1: Choose the subjects you can own
 
-Start by clearly defining the specific domain where you want to be recognized as an authority. This should be narrow enough to be achievable but broad enough to be meaningful. For example, don't try to own 'marketing' — own 'B2B SaaS email deliverability' or 'sustainable packaging for DTC brands.'
+List the subjects where your team has first-hand expertise, data or experience that most competitors lack, and where buyers ask questions that lead toward your product. Pick a small number to start, because depth on one subject beats thin coverage of many. Write one sentence per subject describing the expertise you bring. If you cannot write that sentence, the subject is not yet yours to own. The output is a short, ranked list of subjects.
 
-Once you've defined your domain, exhaustively map every subtopic, question, and angle within it. Use tools like AlsoAsked, AnswerThePublic, and Google's People Also Ask to find the full question landscape. Study competitors' content to identify gaps. Review academic literature, industry reports, and forum discussions to find subtopics that most content creators miss.
+### Step 2: Map the questions inside each subject
 
-Organize your map into a hierarchy: core pillar topics, supporting subtopics, and granular question-level pages. This becomes your content cluster blueprint.
+For each subject, gather the questions people actually ask, from sales calls, support tickets, community threads, your conversational query research and grounding queries in Bing's reports. Group the questions into sub-topics and note which ones depend on others. Mark the questions where you have something original to say. The map shows what complete coverage looks like before anyone writes a page. Keep it as a living document that the team updates when new questions appear.
 
-> **Pro tip:** Query LLMs directly with questions in your domain and note which sources they cite. These are your current competitors for topical authority — study what they cover that you don't.
+### Step 3: Audit existing pages against the map
 
-### Step 2: Step 2: Audit Your Existing Content Against the Topic Map
+Match every existing page on the subject to the question or questions it answers. Flag pages that overlap heavily, pages that are thin or outdated, and questions with no page at all. Merge overlapping pages into one stronger page and redirect the old URLs. Remove or rewrite thin pages rather than leaving them to dilute the subject. The output is a gap list and a consolidation list.
 
-Before creating new content, evaluate what you already have. Map every existing page to your topic hierarchy. Identify which subtopics are already well-covered, which are partially covered, and which are completely missing.
+### Step 4: Write depth-first pages for the gaps
 
-For each existing page, assess its depth, accuracy, and recency. A page that superficially covers a subtopic can actually hurt your authority if an LLM retrieves it and finds it lacking compared to a competitor's deep-dive on the same topic. Flag pages that need to be expanded, updated, or consolidated.
+Start with a hub page that explains the subject and links to every sub-topic page. Then write focused pages for the most important gaps, each answering one question completely, with original examples, data or experience wherever you have them. Avoid producing a page for every phrasing of a question; Google's spam policies define [scaled content abuse](https://developers.google.com/search/docs/essentials/spam-policies) as generating many pages primarily to manipulate rankings without helping users. Give each page a named author with relevant experience. Publish at a pace your experts can review properly.
 
-This audit also reveals your internal linking gaps. Note which pages should link to each other but don't, and where your current linking structure might confuse the topical relationships between pages. You can leverage the approach from [auditing how LLMs represent your brand](https://tryhamster.com/skills/auditing-llm-knowledge-of-your-brand) to understand how models currently perceive your content.
+### Step 5: Link the cluster with descriptive anchors
 
-> **Pro tip:** Create a simple spreadsheet with columns for: subtopic, existing URL, content depth score (1-5), freshness, and priority for update/creation. This becomes your production roadmap.
+Link the hub to each sub-topic page and each sub-topic page back to the hub. Link sibling pages where a reader would naturally want the next answer, using anchor text that names the target's topic. Replace generic anchors such as "click here" or "learn more". Check that no important page is reachable only through search or a sitemap. A reader following the links should be able to learn the subject end to end.
 
-### Step 3: Step 3: Establish Entity and Terminology Consistency
+### Step 6: Keep entities and terms consistent
 
-LLMs are sensitive to semantic consistency. If you call something 'content clusters' on one page, 'topic hubs' on another, and 'pillar content' on a third, you're fragmenting your authority signal. Define a controlled vocabulary for your domain — the exact terms, entity names, and definitions you'll use consistently across every page.
+Use the same name for your organization, products and key concepts everywhere: pages, profiles, author bios and structured data. Define key terms once on the hub page and use them consistently across the cluster. Add Organization structured data on the home page with sameAs links to your official profiles, which Google says helps it [disambiguate your organization](https://developers.google.com/search/docs/appearance/structured-data/organization). Keep author pages up to date with each expert's role and areas of work. Inconsistent names make it harder for any system to connect your work to you.
 
-Create a style guide or glossary document that your content team references. This should include preferred terms, definitions written in your voice, and rules for when to use technical vs. accessible language. Include named entities relevant to your domain (tools, frameworks, people, companies) and how they should be referenced.
+### Step 7: Earn external corroboration
 
-This consistency helps LLMs build a coherent model of your expertise. When every page uses the same terminology in the same way, retrieval systems can more confidently cluster your content and LLMs can more easily verify internal consistency.
+Identify the independent sources that AI answers already cite for your subject: trade publications, research groups, analysts, community sites. Offer them things worth referencing, such as original data, expert commentary or practical guides. Speak at events and contribute to industry resources where your expertise is genuinely useful. Do not buy or fabricate mentions; Google says inauthentic mentions are not as helpful as they seem. Track which independent pages reference your work.
 
-> **Pro tip:** Include your glossary as an actual published page on your site. It serves double duty — reinforcing terminology for LLMs while giving users a useful reference that earns links.
+### Step 8: Measure coverage and citations by topic
 
-### Step 4: Step 4: Create Depth-First Content for Each Cluster Node
-
-For each subtopic in your map, create content that goes meaningfully deeper than what currently exists. This doesn't mean longer — it means more specific, more evidence-backed, and more practically useful.
-
-Each piece of content should include: a clear, direct answer to the core question (optimized for [appearing in AI-generated answers](https://tryhamster.com/skills/structuring-content-for-ai-answers)), original analysis or data where possible, specific examples and case studies, methodology descriptions that demonstrate hands-on experience, and explicit connections to related subtopics in your cluster.
-
-Prioritize creating content that includes original perspectives, proprietary data, or unique frameworks. LLMs are trained on massive datasets and can easily generate generic advice. Your authority comes from offering what they can't synthesize on their own — first-hand experience, original research, and novel analysis.
-
-> **Pro tip:** For each page, ask: 'What can I say about this topic that an LLM couldn't generate on its own?' That unique value is what makes you citation-worthy.
-
-### Step 5: Step 5: Build Semantic Internal Linking Architecture
-
-Internal linking for topical authority goes beyond navigation — it teaches both search engines and LLMs how your content relates. Every page in your cluster should link to the pillar page and to 3-5 related subtopic pages using descriptive, semantically rich anchor text.
-
-Structure your linking in a hub-and-spoke model: pillar pages link down to all subtopic pages, subtopic pages link up to the pillar and laterally to related subtopics. This creates a traversable knowledge graph that retrieval systems can follow to understand your coverage depth.
-
-Use anchor text that includes the target terminology from your style guide. Instead of 'click here' or 'learn more,' use anchors like 'our guide to implementing schema markup for answer engines' or 'how we measure AI search visibility.' This reinforces semantic relationships and helps LLMs understand the hierarchy of your expertise.
-
-> **Pro tip:** Audit your internal links quarterly. As you add new content, older pages may miss linking opportunities to newer, more comprehensive resources.
-
-### Step 6: Step 6: Add Structured Data and Entity Markup
-
-Complement your content clusters with structured data that makes your topical relationships machine-readable. Implement organization schema, author schema with credentials, and article schema with proper about/mentions properties that reference entities consistently.
-
-For each content cluster, consider implementing [schema markup for answer engine optimization](https://tryhamster.com/skills/implementing-schema-markup-for-aeo) — including FAQ schema, HowTo schema, and breadcrumb schema that mirrors your topic hierarchy. This structured layer helps retrieval systems understand your content's scope and authority without relying solely on natural language parsing.
-
-Pay special attention to author and organization markup. LLMs and their retrieval systems increasingly weight expertise signals like author credentials, organizational affiliation, and publication history. Make these signals explicit through schema rather than hoping they'll be inferred from page content.
-
-> **Pro tip:** Use the sameAs property in your Organization and Person schema to link to authoritative external profiles (LinkedIn, Wikipedia, industry directories). This helps LLMs corroborate your claimed expertise.
-
-### Step 7: Step 7: Pursue External Corroboration and Citation
-
-Topical authority isn't built in isolation. LLMs cross-reference sources, and your authority strengthens when other trusted domains reference your content, data, or frameworks. This is the AI-era evolution of link building — it's about being cited as a source rather than just earning a backlink.
-
-Create citeable assets: original research reports, industry benchmarks, unique datasets, definitive guides, and proprietary frameworks with memorable names. These are the assets that journalists, bloggers, academics, and other content creators reference, creating the external corroboration signal that LLMs weight heavily.
-
-Contribute expert commentary to industry publications, participate in expert roundups, and ensure your domain is mentioned in contexts where LLM training data is sourced — Wikipedia discussions, academic papers, government resources, and established industry publications. You should also focus on [optimizing for AI citation and attribution](https://tryhamster.com/skills/optimizing-for-ai-citation-and-attribution) to maximize how often your contributions are properly credited.
-
-> **Pro tip:** Track where LLMs currently cite sources in your domain by systematically querying them. Then create content specifically designed to displace or complement those cited sources.
-
-### Step 8: Step 8: Monitor, Measure, and Iterate
-
-Topical authority building is iterative. Regularly query LLMs with questions in your domain and track whether your content is being cited, paraphrased, or ignored. Use the techniques from [tracking AI search visibility](https://tryhamster.com/skills/tracking-ai-search-visibility) to build a systematic monitoring practice.
-
-Analyze which content clusters are gaining traction and which aren't. Look for patterns — maybe your technical deep-dives get cited but your beginner guides don't, or vice versa. Use these insights to adjust your content strategy, doubling down on what works and rethinking what doesn't.
-
-Revisit your topic map quarterly. Your domain evolves, new subtopics emerge, and competitor coverage shifts. Update existing content to maintain accuracy, expand coverage to address new questions, and prune or consolidate pages that fragment your authority rather than building it.
-
-> **Pro tip:** Set up a simple tracking sheet where you query the same 20-30 questions monthly across ChatGPT, Perplexity, and Google AI Overviews. Track citation frequency over time — this is your topical authority scorecard.
+Review your AI visibility results by subject, not only by page. Use the topic grouping in Bing's AI Performance report and your own tracking sheet to see which sub-topics bring citations and which do not. Revisit the question map from Step 2 each quarter and add pages only where there is a real gap. Expect authority to build slowly and to be visible as a trend across many questions.
 
 ## Best Practices
 
-- Cover every meaningful subtopic in your domain — breadth of coverage is as important as depth. LLMs prefer sources that demonstrate comprehensive understanding, not just expertise in one narrow area.
-- Use consistent entity naming and terminology across all pages. Create a published glossary and enforce its usage in all content production to strengthen semantic coherence signals.
-- Prioritize original data, proprietary research, and first-hand experience over synthesized information. LLMs can generate generic advice themselves — they cite sources that offer what they cannot.
-- Update content proactively, not reactively. Set a quarterly review cycle for every page in your cluster. Outdated information erodes topical authority faster than missing information.
-- Build your content clusters around the actual questions your audience asks, not just keywords. Use conversational query research to match how people interact with AI assistants, aligning with techniques from adapting keyword research for conversational queries.
-- Ensure every piece of content has a clear, direct answer to its primary question within the first 150 words. This serves both AEO snippet optimization and demonstrates the confident expertise LLMs associate with authority.
+- Go narrow before going broad. A small subject covered completely builds a clearer association than a broad subject covered thinly, and it lets your experts review everything.
+- Consolidate before creating. Merging overlapping posts into one strong page often improves coverage more than writing new ones, and it removes pages that compete with each other.
+- Put original material on every page you can. Examples, data and experience that only your team has are what make a cluster worth citing over a summary of the same subject.
+- Make the hub page useful on its own. The hub should explain the subject well enough to be cited on its own, with the links as a second layer.
+- Name the people behind the content. Author pages and bylines connect expertise to the pages that show it, which supports the trust signals Google describes.
+- Refresh on a schedule. Review each cluster for outdated facts and broken links at a set interval, since stale pages undermine the authority the rest of the cluster builds.
 
 ## Common Mistakes
 
-- **Publishing dozens of thin, overlapping pages targeting slightly different keywords instead of fewer, comprehensive pages covering subtopics thoroughly.** — Consolidate related content into authoritative single pages per subtopic. One 2,500-word definitive guide beats five 500-word posts that cannibalize each other. LLMs prefer depth and consolidation over fragmentation.
-- **Focusing exclusively on content creation while neglecting internal linking architecture, resulting in isolated pages that don't signal a connected knowledge base.** — Treat internal linking as a first-class content activity. After every new page is published, update 5-10 existing pages with links to it. Audit your linking structure monthly to ensure every node connects properly to the cluster.
-- **Using inconsistent terminology, brand names, or framework descriptions across different pages, confusing LLMs about whether the content represents a single coherent authority.** — Create and enforce a controlled vocabulary document. Run periodic content audits specifically for terminology consistency. Even small variations like 'AI SEO' vs 'AI-powered SEO' vs 'SEO for AI' can fragment authority signals.
-- **Trying to build topical authority across too many domains simultaneously, spreading resources thin and achieving shallow coverage everywhere instead of deep coverage somewhere.** — Choose one or two domains and achieve genuine depth before expanding. It's better to be the definitive source for one specific topic than a mediocre source for ten. LLMs consistently prefer the deepest available authority.
-- **Ignoring how LLMs currently perceive your content, building blindly without testing whether your strategy is actually moving the needle on AI citations.** — Implement regular LLM querying and citation tracking from day one. Use the insights to adjust your strategy iteratively rather than discovering months later that your approach isn't working.
+- **Mass-producing pages for query variants**: Spinning up a page for every phrasing of a question adds pages without adding knowledge. Google classes this as scaled content abuse when the aim is to manipulate rankings or AI responses; build one strong page per real question instead.
+- **Claiming subjects without expertise**: Covering a topic only because it has search demand produces generic content that others already published. Choose subjects where your team has something first-hand to say.
+- **Leaving the cluster unlinked**: Pages that exist but do not link to each other look like isolated posts. Link hub and spokes with descriptive anchor text.
+- **Ignoring off-site evidence**: A site that only talks about itself lacks the independent corroboration AI search appears to favor. Plan earned coverage as part of the work.
+- **Judging too early**: Authority builds over months. Measure trends by topic across many questions, and avoid rewriting a cluster after a single week of results.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ai-seo-optimization/METHOD.md) — AI-SEO Optimization
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ai-seo-optimization/METHOD.md): AI SEO Optimization
 
 ## Related Skills
 
-- [Optimizing Content for AI Citation and Source Attribution](../optimizing-for-ai-citation-and-attribution/SKILL.md)
+- [Optimizing Content for AI Citation and Attribution](../optimizing-for-ai-citation-and-attribution/SKILL.md)
 - [Structuring Content to Appear in AI-Generated Answers](../structuring-content-for-ai-answers/SKILL.md)
-- [Auditing How LLMs Represent Your Brand and Content](../auditing-llm-knowledge-of-your-brand/SKILL.md)
-- [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
-- [Tracking and Measuring Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
+- [Auditing How LLMs Represent Your Brand](../auditing-llm-knowledge-of-your-brand/SKILL.md)
+- [Keyword Research for Conversational AI Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
+- [Tracking Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
 - [Implementing Schema Markup for Answer Engine Optimization](../implementing-schema-markup-for-aeo/SKILL.md)
+
+## Sources
+
+- [Google Search Central: Optimizing your website for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central: Link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Google Search Central: Spam policies](https://developers.google.com/search/docs/essentials/spam-policies)
+- [Google Search Central: Organization structured data](https://developers.google.com/search/docs/appearance/structured-data/organization)
+- [Schema.org: sameAs](https://schema.org/sameAs)
+- [Chen et al.: Generative Engine Optimization: How to Dominate AI Search](https://arxiv.org/abs/2509.08919)
+- [Bing Search Blog: Intents, Topics, Citation Share, Compare](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/)

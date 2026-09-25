@@ -1,15 +1,20 @@
 ---
-name: categorizing-feedback-into-4ls
-description: "This skill teaches you how to accurately distinguish between Liked, Learned, Lacked, and Longed For items during a 4Ls retrospective, and how to resolve the overlapping or ambiguous feedback that inevitably arises."
+name: "categorizing-feedback-into-4ls"
+description: "Sort team feedback into the 4Ls categories, tell Liked, Learned, Lacked and Longed For apart, and resolve notes that fit more than one."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: 4ls-retrospective
+  method: "4ls-retrospective"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Categorizing and Sorting Team Feedback Using the 4Ls Sprint Retrospective Format
+# Sorting Team Feedback into the 4Ls Categories
 
-> This skill teaches you how to accurately distinguish between Liked, Learned, Lacked, and Longed For items during a 4Ls retrospective, and how to resolve the overlapping or ambiguous feedback that inevitably arises.
+> Sort team feedback into the 4Ls categories, tell Liked, Learned, Lacked and Longed For apart, and resolve notes that fit more than one.
 
 ## Before you start
 
@@ -24,114 +29,95 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 20-40 minutes per retrospective |
-| Outcome | You can confidently sort any piece of team feedback into the correct L category—or resolve ambiguity—so your retrospective produces focused, actionable insights instead of a muddled wall of sticky notes. |
-| Prerequisites | Basic understanding of the 4Ls Retrospective framework, Experience participating in at least one sprint retrospective, Familiarity with agile sprint cycles and team reflection practices |
-| Part of | [4Ls Retrospective](../../methods/4ls-retrospective/METHOD.md) |
+| Time to Learn | One or two retrospectives |
+| Outcome | You can help a team place each note in the right 4Ls category, merge duplicates and resolve ambiguous notes quickly, so the board reflects what people meant. |
+| Prerequisites | Familiarity with the 4Ls categories, experience in at least one retrospective |
+| Part of | [4Ls Sprint Retrospective](../../methods/4ls-retrospective/METHOD.md) |
 
 ## Overview
 
-In the [4Ls Retrospective](https://tryhamster.com/methods/4ls-retrospective), the sprint retrospective format depends on every piece of feedback landing in the right bucket. When team members confuse "Lacked" with "Longed For," or drop a learning into "Liked," the downstream discussion loses focus and action items become vague. Categorizing feedback correctly is the single highest-leverage skill for making the 4Ls format actually work.
+Sorting feedback into the 4Ls categories sounds trivial until a team does it. A note like "code review got faster once we paired" could be Liked or Learned. "No staging data" and "a seeded staging database" are the same gap written as Lacked and as Longed For. When notes land in the wrong place, clusters split, votes scatter and the team ends up discussing a theme twice under two names. This skill covers how to define the categories so people sort well on their own, and how to resolve what is left.
 
-This skill goes beyond the surface definitions. It gives you a practical decision framework for handling the gray-area items that trip up every team—the feedback that could reasonably live in two columns, the complaints disguised as wishes, and the lessons buried inside celebrations. You'll learn how to guide teammates through self-sorting, run a facilitator-led grouping pass, and merge duplicates without losing nuance.
+The categories come from Mary Gorman and Ellen Gottesdiener's [original EBG write-up](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/), which gives each L a plain meaning: what people liked, what they learned, what they lacked and what they longed for. Guides that followed add detail. [Parabol's template](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/) describes Liked as things enjoyed or appreciated about the process or project, Learned as knowledge gained by individuals or the team, Lacked as missing elements that could have improved the process, and Longed For as future-focused wishes. The [method page](../../methods/4ls-retrospective/METHOD.md) covers why each category exists.
 
-Mastering this categorization skill transforms your sprint retrospective format from a brainstorming free-for-all into a structured conversation engine. Teams that sort well spend less time debating where things go and more time deciding what to do about them.
+Perfect sorting is not the goal. The categories are prompts that help people think of different kinds of feedback, and a note in the "wrong" column still carries its meaning. Sorting matters to the extent it affects clustering, voting and the actions that come out. A facilitator who spends ten minutes debating whether one note is Lacked or Longed For has lost sight of that.
 
 ## How It Works
 
-The 4Ls sprint retrospective format works because each category serves a distinct purpose in driving team improvement. **Liked** captures positive behaviors and outcomes the team should consciously repeat. **Learned** captures new knowledge, insights, or surprising discoveries—things the team didn't know before the sprint. **Lacked** captures gaps, missing resources, absent processes, or things that were needed but not present. **Longed For** captures aspirational desires—things the team wishes they had or could change in the future.
+Most sorting problems come from three pairs of categories that overlap.
 
-The confusion arises because these categories overlap at the edges. A team member might write "We lacked automated testing" when they really mean "We longed for automated testing." The difference matters: Lacked items point to root-cause analysis (why was it missing?), while Longed For items point to roadmap planning (how do we get it?). The categorization framework resolves these overlaps by asking one diagnostic question per item: **What kind of action does this feedback naturally lead to?**
+| Pair | How to tell them apart |
+|------|------------------------|
+| Liked and Learned | Liked is a practice or outcome to repeat. Learned is new knowledge the team did not have before. |
+| Lacked and Longed For | Lacked describes the past sprint: what was missing. Longed For describes the future: what the team wants. |
+| Learned and Lacked | "We learned we need more test coverage" is a Lacked item phrased as a lesson. Ask whether the note is new knowledge or a missing thing. |
 
-Repeat-worthy actions go to Liked. Knowledge to share or document goes to Learned. Gaps to investigate go to Lacked. Wishes to plan for go to Longed For. When you orient around the *action type* rather than the *emotional tone*, ambiguity drops dramatically and the retrospective's output becomes immediately usable in sprint planning.
+A simple test resolves most notes: ask what the team would do with it. A note that leads to "keep doing this" is Liked. A note that leads to "write this down or teach it" is Learned. A note that leads to "fix this gap" is Lacked. A note that leads to "propose or request this" is Longed For. The action-type test works because the categories were designed to produce different kinds of follow-up.
+
+Some notes genuinely belong in two places. Lacked and Longed For pairs are the most common, and that duplication is useful: the Lacked note is evidence, the Longed For note is a proposal. Group them together during clustering, even across columns, so the team discusses the gap once. [Ben Linders' description](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) of the exercise has the team review notes for clarity and cluster similar items before voting, which is where these cross-column links are made.
+
+Who does the sorting also matters. Writers should place their own notes during silent writing, because they know what they meant. The facilitator only proposes moves during clustering, and the writer has the final say. In EBG's version, four subgroups each take one poster, read its notes and identify themes, which spreads the sorting work across the team and gives each group ownership of one category.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Each L Category with Examples Before Collection
+### Step 1: Define Each Category Before Writing Starts
 
-Before anyone writes a single sticky note, spend 2-3 minutes showing the team concrete examples of each category from a previous sprint or a generic scenario. Don't just read definitions—show the boundary cases. For instance, show how "pair programming was great" is Liked, but "I discovered pair programming helps me catch logic errors" is Learned. This priming step reduces miscategorization by 40-60% in most teams.
+Before silent writing, spend a minute explaining the four Ls with one concrete example each from this team's world. Put a short definition and a prompt at the top of each column, so people can check while they write. Spend the most time on Lacked versus Longed For, since that pair causes the most confusion. Tell people that a note in the wrong column is fine and can be moved later. This lowers the pressure and speeds up writing.
 
-Write a one-sentence decision rule on the board for each L:
-- **Liked**: "Something that went well and we should keep doing."
-- **Learned**: "Something new we discovered or now understand differently."
-- **Lacked**: "Something that was missing or insufficient during this sprint."
-- **Longed For**: "Something we wish we had or want to try in the future."
+### Step 2: Let Writers Place Their Own Notes
 
-> **Pro tip:** Use examples from the team's own domain, not textbook examples. A developer team relates better to 'We liked the new CI pipeline' than 'We liked the team lunch.'
+During silent writing, each person decides where each of their notes goes. Ask for one idea per note, since a note with two ideas often belongs in two columns. Provide a small "not sure" area for notes the writer cannot place. Do not correct placement during writing; interrupting breaks concentration and signals that sorting is a test. The writer's first instinct is usually close enough.
 
-### Step 2: Step 2: Have Team Members Self-Sort During Individual Brainstorming
+### Step 3: Read Each Column and Flag Misfits
 
-Give each person 5-8 minutes of silent writing time. Ask them to place each sticky note directly into the L column they think it belongs to. Emphasize that it's okay to be uncertain—they should make their best guess and flag anything they're unsure about with a small question mark or dot.
+When writing ends, walk through the columns one at a time. Read each note and ask the room whether it fits. If a note looks misplaced, ask the writer what they meant rather than moving it yourself. Apply the action-type test when there is doubt: keep, teach, fix or propose. Move the note only if the writer agrees.
 
-This self-sorting approach is more efficient than collecting unsorted items and having the facilitator categorize everything. It also builds team literacy around the sprint retrospective format over time, as people internalize the categories through repeated practice.
+### Step 4: Resolve the Not-Sure Area
 
-> **Pro tip:** Provide physical or digital sticky notes in four colors—one per L—so items are visually pre-sorted even before they hit the board.
+Take each note from the not-sure area and ask its writer what they want the team to do about it. Place it by that answer. If it genuinely fits two categories, place it in the one that leads to the more useful action and add a small link to the other. If it fits none, it may be a question or a topic for another meeting, so park it. Clear this area before clustering starts.
 
-### Step 3: Step 3: Run a Facilitator-Led Grouping Pass
+### Step 5: Merge Duplicates and Link Pairs
 
-After all items are on the board, the facilitator reads through each column aloud, one at a time. For each item, ask the group: "Does this feel like it's in the right place?" Don't belabor this—most items (70-80%) will be obviously correct. Spend your energy on the flagged items and anything that sparks disagreement.
+Group notes that say the same thing, keeping every original note visible in the group so the count of people who raised it is clear. Name each group with a short phrase that states the issue. Link Lacked and Longed For notes that describe the same gap, even across columns, so they are voted on and discussed as one theme. Avoid merging notes that only look similar; "slow reviews" and "unclear review criteria" may have different causes. When unsure, keep them separate and let the vote decide.
 
-When reading through Lacked and Longed For in particular, watch for items that are nearly identical but phrased differently. "We didn't have enough QA time" (Lacked) and "I wish we had dedicated QA sprints" (Longed For) are related but distinct. Keep both, but note the connection for the discussion phase.
+### Step 6: Check the Board with the Team
 
-> **Pro tip:** Time-box this step to 5-7 minutes. If a single item sparks a long debate about categorization, park it in a 'disputed' zone and come back to it after you've sorted everything else.
-
-### Step 4: Step 4: Apply the Action-Type Test to Ambiguous Items
-
-For every item that's disputed or flagged, ask the author: "What do you want the team to *do* with this?" Their answer reveals the correct category:
-
-- "Keep doing it" → **Liked**
-- "Share it / document it / remember it" → **Learned**
-- "Figure out why we didn't have it" → **Lacked**
-- "Plan to get it or try it next sprint" → **Longed For**
-
-This action-type test is the core diagnostic tool. It shifts the conversation from semantic hairsplitting ("Is this technically something we lacked or longed for?") to practical intent ("What should we do about it?"). In most cases, the author knows immediately which action type fits, and the item moves smoothly.
-
-> **Pro tip:** If the author genuinely can't choose, it often means the item is compound—two distinct observations collapsed into one sticky note. Help them split it.
-
-### Step 5: Step 5: Merge Duplicates and Near-Duplicates
-
-Once everything is categorized, scan each column for duplicates. Look for items that use different words to express the same observation. "Standups were too long" and "Daily syncs felt unfocused" are near-duplicates that should be merged into a single item with a vote count reflecting how many people raised it.
-
-Merging is important because it affects prioritization. An item mentioned by four people should carry more weight in the discussion phase than one mentioned by a single person. When merging, use the most specific phrasing—"Standups exceeded 15 minutes on 3 of 5 days" is better than "Standups were too long."
-
-> **Pro tip:** Ask the authors of near-duplicates to confirm the merge. Sometimes what looks like the same issue has different root causes, and forcing a merge would lose that nuance.
-
-### Step 6: Step 6: Validate the Final Board with a Quick Team Scan
-
-Before moving into discussion and action-item creation, do one final 60-second scan. Ask: "Does anyone see anything in the wrong column, or anything important that's missing?" This catches last-minute thoughts that were triggered by seeing other people's feedback—a common and valuable dynamic in retrospectives.
-
-At this point, your board should have clearly sorted, de-duplicated items in each of the four L columns. The sprint retrospective format is now set up for a productive prioritization and discussion phase, which you can learn more about in [converting 4Ls insights into sprint action items](https://tryhamster.com/skills/converting-4ls-insights-into-action-items).
-
-> **Pro tip:** Take a photo or screenshot of the final sorted board. It becomes invaluable when you're tracking trends across sprints.
+Before voting, give the team a minute to scan the final board. Ask whether any note is misrepresented by its group name or position. Adjust names that do not match what people meant. This check takes little time and prevents a vote on a theme nobody actually raised. Then move on to prioritizing.
 
 ## Best Practices
 
-- Always define categories with sprint-specific examples before collecting feedback—generic definitions lead to generic (and miscategorized) feedback.
-- Use the action-type test ('What do you want the team to do with this?') as your primary disambiguation tool rather than debating definitions.
-- Color-code sticky notes by L category so miscategorized items are visually obvious during the grouping pass.
-- Limit categorization debate to 60 seconds per item—if it takes longer, the item is probably compound and should be split into two notes.
-- Capture the vote count when merging duplicates so that prioritization during discussion accurately reflects team sentiment.
-- Rotate the facilitator role across sprints so the entire team builds categorization literacy, not just one person.
+- Use examples from the team's own recent work when explaining the categories. Generic examples are easy to agree with and hard to apply.
+- Treat categories as prompts, not a filing system. If a note is clear and the team understands it, its column matters less than its content.
+- Always ask the writer before moving a note. Moving someone's note without asking can feel like being corrected in public and makes people more cautious next time.
+- Keep duplicate notes visible inside their group. The number of people who raised something is information the vote should see.
+- Link Lacked and Longed For pairs rather than deleting one. The pair gives the team both the evidence and a proposal, which makes the action easier to write.
+- Write theme names as statements of the issue. "Release checklist unclear" is easier to act on than "Releases".
 
 ## Common Mistakes
 
-- **Confusing Lacked and Longed For by treating them as interchangeable negative categories.** — Lacked refers to something that was supposed to be present but wasn't (a gap or deficiency). Longed For refers to something the team wishes they had but hasn't existed yet (an aspiration). Use the action-type test: investigate the gap (Lacked) vs. plan for the future (Longed For).
-- **Putting lessons inside the Liked column because the learning experience was positive.** — If the core of the feedback is new knowledge or a changed understanding, it belongs in Learned regardless of whether the experience was positive. 'I enjoyed learning about test-driven development' is Learned, not Liked—the takeaway is the knowledge, not the enjoyment.
-- **The facilitator unilaterally re-sorting items without consulting the author.** — Always ask the author what action they intended before moving an item. The author's intent determines the correct category. Facilitator-imposed sorting breeds disengagement and often gets the categorization wrong.
-- **Spending 15+ minutes on categorization debates, burning time meant for discussion and action planning.** — Time-box the entire sorting phase to 8-10 minutes. Use a 'disputed items' parking lot for anything that can't be resolved in 60 seconds. Most parking lot items resolve naturally once the team sees the full board.
-- **Allowing vague or compound feedback items like 'communication needs improvement' to stay as-is.** — Ask the author to be specific: What communication? Between whom? What happened? Vague items can't be properly categorized because they contain multiple observations. Split them into concrete, single-issue notes before sorting.
+- **Debating placement at length**: Long arguments about whether a note is Lacked or Longed For waste time that belongs to discussion. Apply the action-type test, let the writer decide and move on.
+- **Facilitator re-sorting the board alone**: Moving notes without asking changes their meaning and erodes trust. Propose moves and let the writer confirm.
+- **Over-merging**: Collapsing different issues into one group hides distinct causes and produces vague actions. Merge only notes that describe the same thing.
+- **Ignoring Liked and Learned during clustering**: Teams cluster Lacked carefully and skim the rest. Cluster every column, since Liked themes tell the team what to protect.
+- **Notes with more than one idea**: A note that says "standups were good but the release was chaotic" cannot be placed or voted on cleanly. Ask for one idea per note and split any that combine two.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/4ls-retrospective/METHOD.md) — 4Ls Retrospective
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/4ls-retrospective/METHOD.md): 4Ls Sprint Retrospective
 
 ## Related Skills
 
-- [Building 4Ls Retrospective Templates and Boards](../building-4ls-retrospective-boards/SKILL.md)
-- [Facilitating a 4Ls Retrospective Meeting](../facilitating-4ls-retrospective-sessions/SKILL.md)
-- [Tracking 4Ls Trends Across Multiple Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
-- [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
-- [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
-- [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
+- [Building a 4Ls Retrospective Board and Template](../building-4ls-retrospective-boards/SKILL.md)
+- [Facilitating a 4Ls Sprint Retrospective Meeting](../facilitating-4ls-retrospective-sessions/SKILL.md)
+- [Tracking 4Ls Retrospective Trends Across Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
+- [Writing 4Ls Retrospective Questions for Each Category](../crafting-4ls-retrospective-questions/SKILL.md)
+- [Turning 4Ls Retrospective Insights into Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
+- [Running a 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
+
+## Sources
+
+- [EBG Consulting: The 4L's, a retrospective technique](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/)
+- [Parabol: 4Ls retrospective template](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/)
+- [Ben Linders: Four L's, a classic retrospective exercise](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/)

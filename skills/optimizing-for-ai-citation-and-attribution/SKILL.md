@@ -1,15 +1,20 @@
 ---
-name: optimizing-for-ai-citation-and-attribution
-description: "This skill teaches you how to format, structure, and position your content so that AI tools like ChatGPT, Perplexity, and Google AI Overviews are more likely to cite and link back to it as an authoritative source."
+name: "optimizing-for-ai-citation-and-attribution"
+description: "Earn AI citation and attribution with original data, claims that carry their sources, clear authorship and crawler access for AI search engines."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: ai-seo-optimization
+  method: "ai-seo-optimization"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# AI Powered SEO: Optimizing Content for AI Citation and Source Attribution
+# Optimizing Content for AI Citation and Attribution
 
-> This skill teaches you how to format, structure, and position your content so that AI tools like ChatGPT, Perplexity, and Google AI Overviews are more likely to cite and link back to it as an authoritative source.
+> Earn AI citation and attribution with original data, claims that carry their sources, clear authorship and crawler access for AI search engines.
 
 ## Before you start
 
@@ -24,127 +29,100 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes |
-| Outcome | Your content becomes significantly more likely to be cited, quoted, and linked by AI-powered search tools, driving referral traffic from a new category of discovery channels. |
-| Prerequisites | Basic understanding of SEO fundamentals, Familiarity with how AI answer engines generate responses, Working knowledge of structured content and schema markup, Understanding of E-E-A-T principles |
-| Part of | [AI-SEO Optimization](../../methods/ai-seo-optimization/METHOD.md) |
+| Time to Learn | about half a day |
+| Outcome | You can turn a page into a source AI answer engines can use and credit, with original evidence, sourced claims, clear authorship and open crawler access. |
+| Prerequisites | SEO fundamentals, access to robots.txt and page templates, a subject where your team has first-hand data or experience |
+| Part of | [AI SEO Optimization](../../methods/ai-seo-optimization/METHOD.md) |
 
 ## Overview
 
-AI-powered search tools like ChatGPT, Perplexity, and Google AI Overviews don't just summarize the web — they selectively cite sources they deem authoritative, clear, and information-dense. Getting your content cited by these systems is the new frontier of AI powered SEO, and it requires a fundamentally different optimization approach than traditional link-building or keyword targeting.
+An AI citation is the link an answer engine shows next to a claim to say where the claim came from. Getting one requires three things: the system has to be able to retrieve your page, your page has to contain something worth using, and the use has to be attributable to you rather than to a page that repeated your point. This skill works on all three.
 
-Unlike conventional search where you optimize for ranking position, AI citation optimization focuses on making your content the most quotable, verifiable, and structurally parseable source on a given topic. AI retrieval systems favor content that provides original data, names specific experts, makes definitive claims, and organizes information in formats that are easy to extract and attribute. This skill sits at the core of the broader [AI-SEO Optimization](https://tryhamster.com/methods/ai-seo-optimization) method.
+The evidence for what makes content worth citing comes mainly from the research that started the field. In the GEO experiments, adding statistics, adding quotations from relevant sources and citing credible sources were among the most effective edits, while keyword stuffing did little ([Aggarwal et al.](https://arxiv.org/html/2311.09735v3)). Google's guidance for its AI features points the same way from a different angle, asking for non-commodity content built on first-hand experience and original analysis ([Google's AI optimization guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)).
 
-Mastering this skill means understanding how retrieval-augmented generation (RAG) systems select sources, what formatting patterns increase citation probability, and how to build the kind of content authority that AI models recognize. The payoff is significant: a single citation in a popular AI tool can drive sustained, high-intent traffic without competing in a traditional SERP.
+Attribution adds a practical layer. If your finding is only stated in a slide deck or a social post, answer engines will cite whoever wrote it up on a crawlable page. If the page that states it has no author and no method, it competes poorly with a page that has both. The skill therefore covers where original work is published, how it is attributed, and whether crawlers for each AI search system can reach it.
+
+This is one skill in the [AI SEO Optimization](https://tryhamster.com/methods/ai-seo-optimization) method. Page structure, schema and measurement have their own skills; this one focuses on substance and credit.
 
 ## How It Works
 
-AI answer engines use retrieval-augmented generation (RAG) to find and cite sources. When a user asks a question, the system searches an index of web content, retrieves the most relevant passages, and uses them to generate a response — often with inline citations or source links.
+Answer engines retrieve candidate pages, then pick passages to support the sentences they write. A passage is more useful to that process when it contains a specific, checkable claim with its source, because the engine can use it to justify a statement. The GEO paper measured this directly by editing source pages and watching how much of each page appeared in generated answers. Adding a relevant statistic or quotation raised visibility, and citing sources raised it by [115.1% for pages ranked fifth](https://arxiv.org/html/2311.09735v3) in the underlying search results, while pages ranked first saw decreases. Specific evidence helped most for pages that were not already winning.
 
-The selection process is driven by several factors: **topical relevance** (does your content directly address the query?), **information density** (does it contain specific facts, statistics, or definitions?), **authority signals** (is the domain and author recognized as credible?), and **structural clarity** (can the system easily extract a clean, quotable passage?).
+Trust signals shape which specific claims get used. Google's people-first content guidance asks whether content provides original information, reporting, research or analysis, whether it shows clear sourcing, and whether bylines lead to information about the author ([Google Search Central](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)). It names trust as the most important part of E-E-A-T. Those are the same properties that make a passage safe for an engine to repeat.
 
-Crucially, AI citation isn't random. These systems have strong biases toward content that makes their job easier. A paragraph that begins with a clear definition, includes a specific number or date, and attributes a claim to a named expert is dramatically more likely to be pulled into a generated answer than a vague, conversational paragraph covering the same topic. Think of your content as a source for a journalist — the easier you make it to quote accurately, the more you'll be quoted.
+Third-party corroboration matters as much as what you publish yourself. A comparative study of AI search engines found a systematic bias toward earned media, meaning independent third-party sources, over brand-owned content ([Chen et al.](https://arxiv.org/abs/2509.08919)). A claim that appears on your site and is confirmed by an independent publication is more likely to reach an answer than one that exists only on your blog.
 
-This is why AI powered SEO for citation optimization is distinct from traditional SEO. You're not optimizing for a ranking algorithm — you're optimizing for an information extraction system that rewards precision, authority, and structural parsability.
+Access is the precondition for all of it. OpenAI separates OAI-SearchBot, which surfaces sites in ChatGPT search, from GPTBot, which collects content for model training; a site that disallows OAI-SearchBot will not be shown in ChatGPT search answers ([OpenAI crawler docs](https://platform.openai.com/docs/bots)). Perplexity runs PerplexityBot to surface and link sites in its results and says it does not use that crawler for training ([Perplexity crawler docs](https://docs.perplexity.ai/guides/bots)). A blanket block on every AI crawler can remove a site from AI search answers without anyone intending it.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify High-Citation-Potential Topics
+### Step 1: Pick topics where you hold evidence
 
-Start by mapping the queries where AI tools are most likely to cite external sources. These tend to be factual, data-driven, or expert-opinion queries — not navigational or transactional ones.
+List the questions in your category where your team has something others do not: product usage data, survey results, test results, support patterns or hands-on experience. Cross-check the list against your AI visibility baseline to find questions where answers currently cite weak or generic sources. Those are the best targets, because a strong primary source can displace a summary. Drop topics where you would only be restating common knowledge. The output is a short list of topic and evidence pairs.
 
-Use tools like Perplexity, ChatGPT with browsing, and Google AI Overviews to search queries in your niche. Note which types of responses include citations and which sources get cited. Look for patterns: do they cite studies, industry reports, how-to guides, or definition pages?
+### Step 2: Check crawler access for each AI search system
 
-Prioritize topics where you can provide original data, unique expert perspective, or the most comprehensive and current answer available. The goal is to find the intersection of your expertise and the AI tool's citation behavior.
+Read your robots.txt and any CDN or firewall rules for the search crawlers of the systems you care about, such as OAI-SearchBot for ChatGPT search and PerplexityBot for Perplexity. Decide separately whether to allow training crawlers such as GPTBot, since OpenAI treats the two settings as [independent](https://platform.openai.com/docs/bots). For Google, confirm that target pages are indexed and snippet-eligible, because Google's AI features only link to such pages ([Google Search Central](https://developers.google.com/search/docs/appearance/ai-features)). Check that key content is in the HTML text and not only inside images or scripts that fail to render. Record the decisions so a later firewall change does not silently undo them.
 
-> **Pro tip:** Search your brand name and key topics in Perplexity to see if you're already being cited anywhere — this reveals your baseline and shows which content formats the tool prefers for your niche.
+### Step 3: Publish original data with its method
 
-### Step 2: Step 2: Craft Quotable, Self-Contained Statements
+Put your original findings on a crawlable page on your own domain, stated in plain sentences near the top. Describe how the data was collected: the sample, the period and any exclusions. Publish the numbers themselves in a table, not only in a chart image. Give the page a stable URL and a clear title so others can cite it, and keep an update log if the data will be refreshed. A method section lets both readers and answer engines judge whether the finding can be trusted.
 
-AI retrieval systems extract passages — typically 1-3 sentences — that directly answer a question. Your content needs to contain these "citation-ready" statements.
+### Step 4: Write claims that carry their sources
 
-For every key claim or answer in your content, write a single sentence or short paragraph that is completely self-contained. It should make sense without the surrounding context, include the key terms a user would search for, and state a clear, definitive fact or opinion.
+Go through the page sentence by sentence and find every factual claim. For claims that come from your own data, state them precisely and link to the method. For claims that come from elsewhere, name and link the source in the same sentence, which is the "cite sources" edit that performed well in the [GEO experiments](https://arxiv.org/html/2311.09735v3). Replace vague phrases such as "studies show" with the actual study. Delete any claim you cannot source.
 
-For example, instead of writing "The number has gone up a lot recently," write "According to a 2024 Gartner survey, 67% of enterprise marketers now use AI-assisted content workflows, up from 31% in 2022." The second version is infinitely more quotable and citable.
+### Step 5: Add named expertise and clear authorship
 
-> **Pro tip:** Place your most citation-worthy statements in the first 1-2 sentences of a section or immediately after a subheading — retrieval systems weight passage position heavily.
+Put a byline on the page that names a real person and links to an author page describing their role and experience. Where an expert's view adds something, quote them by name with their title, and only with their permission and their actual words. Add Article structured data with author details that match the visible byline, following Google's [author markup best practices](https://developers.google.com/search/docs/appearance/structured-data/article). Show the published and updated dates. These signals help readers judge the page and help systems attribute it correctly.
 
-### Step 3: Step 3: Lead with Original Data and Unique Insights
+### Step 6: Earn independent corroboration
 
-AI tools strongly prefer citing primary sources over content that simply aggregates or paraphrases others. If your content contains original research, proprietary data, unique survey results, or first-person expert analysis, it becomes a primary source that other content (and AI systems) must reference.
+Share the original work with publications, analysts, researchers and communities who cover your subject, and make it easy to cite: a summary, the key numbers and a link to the method. Contribute data or expertise to independent articles where it genuinely helps the piece. Keep your company profiles on directories and review sites accurate, since those are third-party sources too. Avoid paying for or fabricating mentions; Google says seeking inauthentic mentions is not as helpful as it seems. The goal is for your finding to appear on sources that answer engines already trust.
 
-Conduct original surveys, analyze your own customer data (anonymized), run experiments, or compile industry benchmarks that don't exist elsewhere. Even small-scale original data — like "We analyzed 500 AI Overview results and found that 73% cited sources with schema markup" — creates a citable anchor.
+### Step 7: Monitor which pages get cited and why
 
-If you can't produce original data, focus on unique expert synthesis: combine multiple data points into a novel framework, provide a contrarian analysis, or offer practitioner-level insight that generic content lacks.
-
-> **Pro tip:** Label your data clearly with methodology and dates — AI systems are more likely to cite claims that include provenance information like "According to our 2024 analysis of..."
-
-### Step 4: Step 4: Structure Content for Machine Readability
-
-Format your content so that retrieval systems can easily identify, extract, and attribute your claims. This means using clear heading hierarchies (H2/H3 that mirror common questions), definition-style formatting, and logical content blocks.
-
-Use patterns that AI systems parse well: "What is [term]?" headings followed by a direct definition, numbered lists for processes, comparison tables for evaluations, and bold text for key terms. Avoid burying important facts in long narrative paragraphs.
-
-Implement relevant schema markup — especially `Article`, `FAQPage`, `HowTo`, and `ClaimReview` — to give AI crawlers explicit metadata about your content's structure and claims. This connects directly to the [implementing schema markup for AEO](https://tryhamster.com/skills/implementing-schema-markup-for-aeo) skill in the AI-SEO Optimization method.
-
-> **Pro tip:** Use the exact phrasing users would search for in your subheadings. If people ask "What is AI powered SEO?", make that your H2 — retrieval systems match headings to queries.
-
-### Step 5: Step 5: Strengthen Author and Domain Authority Signals
-
-AI citation systems weigh source credibility heavily. They're more likely to cite content from domains and authors that have established topical authority.
-
-Ensure every piece of content has a visible author byline linked to a detailed author page with credentials, publications, and social proof. Use `Person` schema markup for authors and `Organization` schema for your brand. These structured signals help AI systems evaluate your E-E-A-T.
-
-Build domain authority through consistent, comprehensive coverage of your topic cluster. AI models form associations between domains and topics over time — if your site is the go-to resource for a specific niche, citation probability increases dramatically. This overlaps with [building topical authority for LLMs](https://tryhamster.com/skills/building-topical-authority-for-llms).
-
-> **Pro tip:** Getting cited on Wikipedia, in academic papers, or by major publications creates a compounding effect — LLMs trained on these sources will associate your brand with authority on that topic.
-
-### Step 6: Step 6: Ensure Crawlability by AI Retrieval Systems
-
-Your content can't be cited if AI tools can't access it. Review your `robots.txt` and meta robots tags to ensure you're not blocking AI crawlers. Key user agents to allow include `GPTBot` (OpenAI), `PerplexityBot`, `Google-Extended` (for AI features), and `ClaudeBot` (Anthropic).
-
-Beyond crawler access, ensure your content loads without requiring JavaScript rendering for critical text. Many AI crawlers have limited JavaScript execution capabilities. Use server-side rendering or static HTML for your most important content.
-
-Also verify that your content is publicly accessible — paywalled or login-gated content is almost never cited by AI tools. If monetization requires gating, consider making your most citable content (definitions, key statistics, methodology descriptions) freely accessible while gating deeper analysis.
-
-> **Pro tip:** Check your server logs for AI bot user agents to confirm they're actually crawling your content. No crawl, no citation — it's that simple.
-
-### Step 7: Step 7: Monitor and Iterate on Citation Performance
-
-Track whether your optimization efforts are resulting in actual citations. Regularly search your key topics in ChatGPT, Perplexity, Google AI Overviews, and other AI tools to see if your content appears as a source.
-
-Use referral traffic data from analytics to identify visits from AI platforms (look for referrers like `perplexity.ai`, `chat.openai.com`, or flagged AI Overview clicks in Google Search Console). Tools specialized for AI visibility tracking can automate this — see the sibling skill on [tracking AI search visibility](https://tryhamster.com/skills/tracking-ai-search-visibility).
-
-When you find content that gets cited, analyze what made it citation-worthy and replicate those patterns. When key content isn't getting cited despite high relevance, compare it structurally to the sources that are being cited instead and identify the gaps.
+Track the target questions over time and record which of your pages are cited, which passage is used and whether the claim is attributed to you or to someone who repeated it. Use Bing's AI Performance report to see [page-level citation counts](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) for Copilot. When a third party is cited for your finding, check whether their page links to yours and whether your page states the finding as clearly as theirs. Feed what you learn back into Steps 3 and 4.
 
 ## Best Practices
 
-- Include specific numbers, dates, and named sources in every major claim — AI tools cite quantified, attributable statements at significantly higher rates than qualitative assertions.
-- Write a citation-ready summary sentence within the first 100 words of every article and immediately after each H2 subheading to maximize passage extraction likelihood.
-- Maintain a consistent publication cadence on your core topics — AI systems build topical authority associations over time and favor domains with deep, sustained coverage.
-- Use canonical URLs and avoid duplicate content across your domain — AI retrieval systems may ignore or deprioritize sources when they detect content duplication.
-- Cross-reference and link to your own related content to reinforce topical clusters, making it easier for AI systems to recognize your domain's authority on interconnected subjects.
-- Update high-value content quarterly with fresh data and current dates — recency is a strong signal for AI citation systems, especially for rapidly evolving topics like AI powered SEO.
+- Lead with the finding. State the most important result in the first paragraph in one plain sentence, because a finding buried under an introduction is harder for a reader to find and for an engine to quote.
+- Publish numbers as text. Charts are useful for readers, but a number that exists only in an image is invisible to text retrieval, so repeat key figures in a sentence or table.
+- Keep one canonical home for each finding. If the same data appears in a blog post, a report and a press release, make one page the canonical source and link the others to it, so citations concentrate instead of splitting.
+- Refresh data on a schedule and say so. Bing's guidance notes that regular updates help AI systems reference the current version of content; show the updated date and what changed.
+- Separate search access from training access. Decide on OAI-SearchBot and PerplexityBot based on whether you want to appear in those answers, and decide on training crawlers as a separate licensing question.
+- Make quotes real. Quote named people saying things they said, with permission. An invented or composite expert quote is a fabrication, and it undermines the trust the page is trying to earn.
 
 ## Common Mistakes
 
-- **Writing long, narrative-style content without clear, extractable statements** — Break key insights into standalone, self-contained sentences that can be quoted without surrounding context. AI retrieval systems extract passages, not entire articles — if your key insight is buried in paragraph six of a flowing narrative, it won't be found.
-- **Blocking AI crawlers via robots.txt to 'protect' content while expecting AI citations** — You can't be cited by systems that can't read your content. Explicitly allow GPTBot, PerplexityBot, and other AI user agents. If you're concerned about training data usage, note that citation-focused crawling (for RAG) is distinct from training crawling — blocking all AI bots eliminates your visibility entirely.
-- **Restating commonly available information without adding original analysis or data** — AI tools have access to thousands of pages saying the same thing. They cite the source that adds something unique — original data, expert analysis, a novel framework, or a contrarian perspective. If your content doesn't say something new, there's no reason for an AI to cite you specifically.
-- **Optimizing only for Google's AI Overviews while ignoring standalone AI tools** — ChatGPT, Perplexity, Claude, and other tools each have different retrieval mechanisms and citation behaviors. Test your content visibility across multiple AI platforms and optimize for the common denominators: clarity, authority, and structural parsability.
-- **Ignoring author attribution and publishing content without clear bylines** — AI systems evaluate source credibility partly through author identity. Add detailed author bios with credentials, link to author pages with Person schema, and ensure the author has a verifiable presence in your niche. Anonymous content gets cited less.
+- **Blocking every AI crawler by default**: A blanket block on AI user agents often includes search crawlers such as OAI-SearchBot and PerplexityBot. Review each crawler's documented purpose and allow the ones that surface your pages in answers you want to appear in.
+- **Citing "studies" without links**: Vague attributions give an engine nothing to verify and give a reader nothing to check. Link the specific source in the sentence, or remove the claim.
+- **Publishing original research only as a PDF or image**: Findings locked in a gated PDF or an infographic are hard to retrieve and easy for others to restate. Put the key findings and data in HTML on an open page.
+- **Anonymous content on expert topics**: Pages without a named author or credentials are weaker sources on topics where expertise matters. Add a real byline and an author page.
+- **Chasing mentions instead of earning them**: Paid placements and manufactured forum posts are inauthentic signals that Google says its systems are built to discount. Invest in work that independent sources want to cite.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ai-seo-optimization/METHOD.md) — AI-SEO Optimization
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ai-seo-optimization/METHOD.md): AI SEO Optimization
 
 ## Related Skills
 
 - [Building Topical Authority That LLMs Recognize](../building-topical-authority-for-llms/SKILL.md)
 - [Structuring Content to Appear in AI-Generated Answers](../structuring-content-for-ai-answers/SKILL.md)
-- [Auditing How LLMs Represent Your Brand and Content](../auditing-llm-knowledge-of-your-brand/SKILL.md)
-- [Adapting Keyword Research for Conversational and AI-Driven Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
-- [Tracking and Measuring Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
+- [Auditing How LLMs Represent Your Brand](../auditing-llm-knowledge-of-your-brand/SKILL.md)
+- [Keyword Research for Conversational AI Queries](../adapting-keyword-research-for-conversational-queries/SKILL.md)
+- [Tracking Your Visibility in AI Search Results](../tracking-ai-search-visibility/SKILL.md)
 - [Implementing Schema Markup for Answer Engine Optimization](../implementing-schema-markup-for-aeo/SKILL.md)
+
+## Sources
+
+- [GEO: Generative Engine Optimization, full text](https://arxiv.org/html/2311.09735v3)
+- [Google Search Central: Optimizing your website for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Google Search Central: Article structured data](https://developers.google.com/search/docs/appearance/structured-data/article)
+- [Chen et al.: Generative Engine Optimization: How to Dominate AI Search](https://arxiv.org/abs/2509.08919)
+- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+- [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/guides/bots)
+- [Bing Webmaster Blog: AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)

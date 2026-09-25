@@ -1,25 +1,21 @@
 # FAQ: Analyzing Active Evaluation Behavior
 
-## What is active evaluation in the McKinsey Consumer Decision Journey?
+## Where does active evaluation start and end?
 
-Active evaluation is the phase where consumers actively research, compare, and reshape their consideration set by adding and removing brands. Unlike the traditional funnel where options only narrow, McKinsey found consumers frequently add new brands during this phase through digital research, reviews, peer input, and comparison shopping.
+It starts when the buyer begins actively looking for information after a trigger, and it ends when they commit to a purchase. In practice the boundary with the moment of purchase is blurry, especially online, where the last comparison and the checkout can happen in the same session. Draw the line where your data lets you observe it consistently and keep it fixed between rounds.
 
-## How does customer journey analytics help track active evaluation behavior?
+## How many interviews do I need?
 
-Customer journey analytics tracks evaluation-stage signals like comparison page visits, review site engagement, competitor-related search queries, and multi-session research patterns. By stitching these touchpoints together, you can see how consumers move through evaluation, which content influences their consideration set changes, and where brands get added or eliminated.
+Enough to see the same triggers repeat. Start with a small set of recent buyers split between your customers and competitors' customers, and add more until new interviews stop producing new triggers. Use behavioral data afterward to estimate how common each pattern is across the whole market.
 
-## What tools do I need to analyze active evaluation behavior?
+## Can web analytics replace interviews?
 
-At minimum, you need web analytics (GA4), search console data, and a brand monitoring tool. For deeper analysis, add a social listening platform, competitive SEO tool (Ahrefs or Semrush), and review monitoring for platforms like G2 or Capterra. Supplement with qualitative data from win/loss customer interviews.
+No. Analytics show what happened on channels you can instrument, and most evaluation touchpoints, such as conversations with peers or third-party reviews, sit outside them. Interviews also give you the reason a brand was added or dropped, which data alone cannot. Use analytics to size patterns the interviews reveal.
 
-## How do I know if consumers are adding or removing my brand during evaluation?
+## How does this apply to B2B buying groups?
 
-Track branded search volume trends alongside evaluation-intent queries like 'best [category]' and '[brand] vs [competitor].' Win/loss interviews reveal specific addition and elimination triggers. Rising 'vs' search volume suggests you're being evaluated more; declining win rates despite stable consideration suggest elimination problems.
+Run the analysis per role. A technical evaluator, a budget holder and an end user often research in different places and drop vendors for different reasons. Record which role triggered each change, since a vendor can be added by one role and removed by another in the same deal.
 
-## How often should I update my active evaluation analysis?
+## What should I do about touchpoints I cannot control?
 
-Review quantitative evaluation metrics monthly (search data, review ratings, evaluation-stage conversion rates). Conduct qualitative win/loss interviews quarterly. Do a full touchpoint inventory refresh and competitive co-occurrence analysis every six months, or whenever a major competitor launches a new campaign or product.
-
-## What's the difference between analyzing evaluation behavior and running a traditional competitive analysis?
-
-Traditional competitive analysis compares features, pricing, and positioning statically. Evaluation behavior analysis tracks the dynamic process consumers go through when comparing brands—which touchpoints they use, what triggers add or eliminate brands, and how consideration sets change over time. It's consumer-centric rather than company-centric.
+Make sure accurate information about you is available there, respond to criticism in public where appropriate, and give satisfied customers an easy way to share their experience. You cannot script third-party content, but you can influence what it has to work with. Track those touchpoints through interviews even when you cannot measure them directly.

@@ -1,122 +1,169 @@
 ---
-category: Workflows
+name: "4ls-retrospective"
+category: "Workflows"
+description: "Run a 4Ls sprint retrospective: sort feedback into Liked, Learned, Lacked and Longed For, find the themes, and leave with owned actions."
+metadata:
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The 4Ls Sprint Retrospective: A Complete Guide to Structured Team Reflection
+# 4Ls Sprint Retrospective: Liked, Learned, Lacked, Longed For
 
-> Created by **Mary Gorman and Ellen Gottesdiener**
+> Created by **Mary Gorman and Ellen Gottesdiener** - [https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/)
 
 ## Overview
 
-The 4Ls Retrospective is one of the most accessible and effective sprint retrospective formats in agile practice. Developed by Mary Gorman and Ellen Gottesdiener, this technique gives teams a simple yet comprehensive structure for reflecting on their work by dividing feedback into four intuitive categories: **Liked** (positive experiences worth repeating), **Learned** (insights and knowledge gained), **Lacked** (resources, skills, or conditions that were missing), and **Longed For** (aspirational improvements the team desires). This balance of positive reinforcement and constructive critique makes it a favorite among Scrum Masters and agile coaches.
+The 4Ls sprint retrospective asks a team four questions about the period that just ended: what they Liked, what they Learned, what they Lacked, and what they Longed For. Each person writes answers on their own, the team posts them under the four headings, small groups look for themes, and the whole team decides what to do with them. The four words are easy to remember, which is part of why the format has spread from software teams to training debriefs and management groups.
 
-Unlike open-ended retrospective formats that can devolve into unfocused venting sessions, the 4Ls framework channels conversation into productive lanes. The "Liked" and "Learned" categories celebrate wins and capture institutional knowledge, while "Lacked" and "Longed For" surface gaps and aspirations without blame. This emotional balance keeps the retrospective meeting psychologically safe — a critical prerequisite for honest team feedback.
+Mary Gorman and Ellen Gottesdiener of EBG Consulting published the technique in [their June 2010 write-up](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). They describe it as a way to elicit feedback, share it collectively, and explore action possibilities, and they apply it to iteration and project retrospectives as well as to training classes and conference sessions. It began as a variation of the World Café, in which different areas of a room each hold one topic. An earlier version had only three Ls, Liked, Lacked and Longed For, and Learned was added later. The authors single out Longed For as the one category not to drop, because it tends to produce the most useful data.
 
-The 4Ls format scales elegantly across team sizes, sprint durations, and project types. Whether you're running a two-week Scrum sprint, a Kanban cadence review, or a post-project debrief, the four categories provide enough structure to be useful without being so rigid that they constrain discussion. Teams consistently report that the alliterative simplicity of the four L-words makes the format easy to remember, reducing facilitation overhead and letting the team focus on what matters: generating actionable insights that improve how they work together.
+Each category does a different job. Liked names what worked, so the team knows what to protect. Learned captures technical and interpersonal discoveries before they fade. Lacked looks back at what was missing: information, people, tools, time. Longed For looks forward at what the team wishes it had, which often turns a complaint into a proposal. Ben Linders, who has used the exercise with Scrum, Kanban and non-software teams, [writes that the words steer people](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) toward thinking about possibilities instead of blaming each other.
 
-In Hamster Studio, teams can run 4Ls retrospectives with AI-assisted facilitation — from auto-generating prompting questions for each L category to clustering similar feedback and tracking trends across multiple sprints. This transforms what's traditionally a whiteboard exercise into a living, data-informed continuous improvement practice.
+Compared with Start, Stop, Continue, the 4Ls ask for observations before decisions. [Parabol describes the difference](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/) as more neutral, far-reaching feedback aimed at fact-finding over immediate solutions. That makes the 4Ls a good fit after a large change, or when a team suspects something is off but cannot yet name it. It is a weaker fit when the team already knows the problem and needs to choose between fixes.
+
+The 4Ls cover the data-gathering part of a retrospective, so they sit inside a larger meeting structure. The one most teams use comes from Esther Derby and Diana Larsen's book [Agile Retrospectives](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/): set the stage, gather data, generate insights, decide what to do, and close. The four Ls fill the gather-data phase. Clustering and voting generate insights. Action items are the decision. A facilitator who knows which phase they are in can tell when the team is ready to move on.
+
+In Scrum, the 4Ls are one way to run the Sprint Retrospective, whose purpose [the Scrum Guide gives](https://scrumguides.org/scrum-guide.html) as planning ways to increase quality and effectiveness. The guide caps the event at three hours for a one-month Sprint and expects shorter Sprints to have shorter retrospectives. It also allows the most impactful improvements to go straight into the next Sprint Backlog, which is where 4Ls action items belong if they are going to happen.
+
+The method on this page covers the whole cycle: preparing a board and prompts, facilitating the session, sorting ambiguous notes, turning themes into actions, adapting the format for distributed teams, and reading trends across many retrospectives. If you keep your retrospective history and action items in Hamster, the trend work in the last skill has a single record to read from.
 
 ## Core Principles
 
-### Liked: Amplify What Works
+### Liked: Name What to Keep
 
-The Liked category captures positive experiences, practices, and outcomes the team wants to repeat. This isn't mere celebration — it's deliberate reinforcement of effective behaviors. By explicitly naming what went well, teams create shared awareness of their strengths and build momentum. Examples include smooth deployments, effective pair programming sessions, or a particularly helpful daily standup format.
+Liked is where the team records practices and outcomes worth repeating. Naming them matters because a practice that nobody mentions is easy to drop under deadline pressure. Good Liked notes are specific enough to repeat: "pairing on the migration script" rather than "good teamwork". The category also sets a constructive tone, since the session opens on what went right.
 
-### Learned: Capture Knowledge
+### Learned: Capture Knowledge Before It Fades
 
-The Learned category documents new insights, technical discoveries, process improvements, and personal growth that emerged during the sprint. This turns every iteration into an explicit learning cycle. Entries might include a new debugging technique, a realization about stakeholder communication patterns, or understanding of a domain concept. Capturing these prevents knowledge from evaporating after the sprint ends.
+Learned turns each iteration into an explicit learning record. [Parabol's 4Ls template](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/) treats it as knowledge gained by individuals or the team, technical or not. A Learned note can become documentation, an onboarding item or a change to the definition of done. If nobody acts on Learned items, they vanish with the sticky notes.
 
-### Lacked: Surface Gaps Without Blame
+### Lacked: Describe the Gap, Not the Person
 
-The Lacked category identifies missing resources, unclear requirements, insufficient tools, or absent conditions that hindered the team. The framing is crucial — it focuses on what was absent from the environment rather than who was at fault. This makes it psychologically safer to raise systemic issues like missing documentation, inadequate test environments, or unclear acceptance criteria.
+Lacked asks what was missing, which points attention at the environment rather than at colleagues. That framing makes it safer to raise missing requirements, unavailable reviewers or a flaky test environment. Norm Kerth's [Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive) states the assumption behind it: everyone did the best job they could with what they knew and had at the time. A Lacked note that names a person usually needs rewriting before it is discussed.
 
-### Longed For: Articulate Aspirations
+### Longed For: Turn Wishes into Proposals
 
-The Longed For category captures the team's wishes, desired improvements, and aspirational changes. While Lacked looks backward at what was missing, Longed For looks forward at what could be. This might include requests for better CI/CD pipelines, more cross-team collaboration, dedicated innovation time, or improved onboarding processes. It transforms complaints into constructive proposals.
+Longed For looks forward. Where Lacked says "we had no staging data", Longed For says "a seeded staging database for every branch". The EBG authors [ask teams not to drop it](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/), and Ben Linders reports that it sometimes surfaces a wish a teammate can grant on the spot. It is also the category most likely to reach outside the team, so the facilitator should expect some items to need escalation.
 
-### Psychological Safety First
+### Write Alone, Then Share
 
-The 4Ls framework is deliberately designed to balance positive and critical feedback. Starting with Liked establishes a constructive tone, and the distinction between Lacked and Longed For gives teams two different emotional registers for improvement feedback. Facilitators should reinforce that all contributions are valued and that the goal is systemic improvement, not individual blame.
+The original 4Ls, and the widely used guides that copy it, start with individual, silent writing before anyone speaks. The [EBG write-up](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) has each person write a note per L and post it silently. Writing first gives quieter people and newer members the same airtime as the loudest voice, and it keeps the first comment from anchoring everyone else. Discussion comes after the board is full.
 
-### Action-Oriented Outcomes
+### Safety Comes Before Candor
 
-Every 4Ls retrospective should conclude with concrete, owned action items derived from the discussion. Without commitments to change, retrospectives become performative venting sessions. The best teams select 1-3 high-impact actions, assign clear owners, and review progress at the next retrospective. This closes the feedback loop and demonstrates that the team's reflections lead to tangible improvement.
+Honest Lacked and Longed For notes depend on people believing they will not be punished for them. Google's research on its own teams [ranked psychological safety first](https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness) among the dynamics that set effective teams apart. In a retrospective that means no blame language, no managers taking notes on individuals, and an agreement about what leaves the room. When safety is low, anonymous input and a neutral facilitator matter more than any prompt.
+
+### End with Owned Actions
+
+A retrospective that ends with themes and no commitments teaches the team that the meeting changes nothing. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) expects the most helpful changes to be addressed as soon as possible, and allows them into the next Sprint Backlog. Each action needs one named owner, a concrete first step and a date, and the next retrospective opens by checking it.
 
 ## Steps
 
-1. **Step 1: Set the Stage**
-   Open the sprint retrospective by reminding the team of the 4Ls framework and its four categories: Liked, Learned, Lacked, and Longed For. Briefly review the sprint goal, key metrics, and any notable events. Establish ground rules — contributions are non-judgmental, focused on the team's system rather than individuals, and everything shared stays within the team. Set a timebox (typically 60-90 minutes for a two-week sprint). If using Hamster Studio, share the pre-configured 4Ls board with the team.
+1. **Prepare the board and the prompts**
+   Set up four areas labelled Liked, Learned, Lacked and Longed For, on posters, a whiteboard or a digital board. Add one or two prompt questions under each heading so people know what belongs there. Pull the facts of the iteration into view: the sprint goal, what shipped, incidents, and the open action items from last time. Decide the timebox in advance; [Atlassian's version of the play](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique) budgets an hour for a group of up to eight. Invite the whole team, and decide ahead of time whether anyone outside it should attend.
 
-2. **Step 2: Silent Brainstorming**
-   Give team members 5-10 minutes to independently write sticky notes (physical or digital) for each of the four L categories. Silent brainstorming prevents anchoring bias and ensures introverted team members contribute equally. Encourage at least one entry per category per person. Prompt with questions like: *What made you smile this sprint?* (Liked), *What surprised you?* (Learned), *What slowed you down?* (Lacked), *What do you wish existed?* (Longed For).
+2. **Set the stage**
+   Open by stating the purpose and the scope of the retrospective, then review last retrospective's action items and their status. Read or restate the Prime Directive so the room agrees to look at systems and conditions rather than at individuals. A short check-in, one word or one sentence from each person, gets everyone speaking early. Explain the four categories with one example each, especially the difference between Lacked and Longed For. This is the first phase in [Derby and Larsen's structure](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/), and skipping it is the usual reason later phases stall.
 
-3. **Step 3: Share and Cluster**
-   Have each team member present their notes briefly (30-60 seconds per note). As notes are placed on the board, the facilitator groups similar items into natural clusters. Avoid debating or solving problems at this stage — the goal is to get everything visible. In Hamster, AI can suggest clusters automatically based on semantic similarity, saving facilitation time and surfacing non-obvious connections.
+3. **Write individually and post silently**
+   Give everyone a few minutes to write notes for each L on their own, one idea per note. In the [original EBG steps](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/), participants write for 3-4 minutes and post their notes without talking. Keep the room quiet until the timer ends, since early discussion pulls later notes toward whatever was said first. Ask for specific notes tied to events in the iteration. If a note fits two categories, the writer picks one and the team can move it later.
 
-4. **Step 4: Dot Vote on Themes**
-   Give each team member 3-5 votes (dots) to distribute across the clustered themes they consider most important. Votes can be concentrated or spread. This democratic prioritization ensures the discussion focuses on what matters most to the team rather than what the loudest voice raises first. Tally votes and identify the top 2-4 themes for deeper discussion.
+4. **Cluster and find themes**
+   Read the notes aloud or let people read the board, then group notes that describe the same thing. EBG splits the room into four subgroups, one per L, so each group reads its poster, clusters it and names the themes, then reports back. Smaller teams can cluster together in one pass. Name each cluster with a short phrase that states the issue, such as "release checklist unclear". Move miscategorized notes now and merge duplicates, keeping a count of how many people raised each theme.
 
-5. **Step 5: Discuss Top Themes**
-   Facilitate a focused conversation on each prioritized theme. For **Liked** items, discuss how to institutionalize the practice. For **Learned** items, identify how to share the knowledge more broadly. For **Lacked** items, explore root causes and potential solutions. For **Longed For** items, assess feasibility and define what a first step would look like. Timebox each theme to 5-10 minutes to maintain energy.
+5. **Choose what to discuss**
+   There are usually more themes than time, so the team picks the few that matter most. Dot voting is the common tool; the [Nielsen Norman Group suggests](https://www.nngroup.com/articles/dot-voting/) giving each person about a quarter as many votes as there are options and voting silently. Spend the discussion time on the top themes, asking what caused them and what would change them. Keep Liked and Learned themes in the discussion, since protecting a good practice is also an action. Stop discussing a theme once the team can state its cause in one sentence.
 
-6. **Step 6: Define Action Items**
-   Convert the most impactful discussion points into specific, measurable action items. Each action item should have a clear owner, a definition of done, and a target date (typically before the next retrospective). Limit commitments to 1-3 actions — fewer, completed actions outperform a long, abandoned list. Record action items visibly so the team can track progress.
+6. **Decide on actions and owners**
+   Turn the top one or two themes into actions small enough to finish before the next retrospective. Write each as a concrete step with one named owner and a due date, and put it where the team tracks its other work. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) allows these improvements into the next Sprint Backlog, which keeps them visible during the sprint. If a theme is outside the team's control, the action is an escalation with a named owner. Drop themes that nobody will own rather than recording them as intentions.
 
-7. **Step 7: Close and Appreciate**
-   End the sprint retrospective with a quick round of appreciation — each person shares one thing they're grateful for about a teammate. Review the action items one final time for clarity and commitment. If you're tracking trends in Hamster, tag the session's themes and action items so they feed into your cross-sprint retrospective analytics dashboard.
+7. **Close and follow through**
+   End with a quick round on the retrospective itself, so the facilitator learns what to change next time. Record the board, the themes, the actions and their owners in the team's usual place within the day. [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) asks that every action be assigned with clear expectations for when it will be done. Keep the record in a consistent format, because the next retrospective starts from it. Over several iterations, those records show which themes keep coming back.
 
 ## When to Use
 
-- At the end of every Scrum sprint as your standard sprint retrospective format, especially when your team is new to agile and needs a straightforward, easy-to-facilitate structure.
-- When previous retrospectives have felt unfocused or unproductive and you need a framework that naturally balances positive feedback with constructive critique.
-- For cross-functional or newly formed teams where psychological safety is still being established — the 4Ls' non-blaming language lowers the barrier to honest participation.
-- As a post-project or post-release debrief format when you want to capture a comprehensive 360-degree reflection that goes beyond simple 'what went well / what didn't' binaries.
-- When you want to build a longitudinal improvement dataset by tracking trends across sprints — the consistent four-category structure makes comparison and pattern recognition straightforward.
+- At the end of a sprint or iteration when the team wants a balanced look at both what worked and what was missing, since the four categories cover both without forcing a verdict.
+- After a large change such as a new tool, reorganization or release process, when the team needs to gather observations before it knows what to fix.
+- For a project or release retrospective, where Learned captures knowledge the next project can reuse.
+- With non-software groups, training classes or events, which the [EBG authors](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) and [Ben Linders](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) both describe using it for.
+- When a team has run the same format so often that answers have gone stale, since the four prompts pull out different material from Start, Stop, Continue.
 
 ## When Not to Use
 
-- When the team is dealing with a specific, urgent crisis or conflict that requires deep-dive root cause analysis — consider a targeted technique like the 5 Whys or Fishbone diagram instead.
-- When your experienced team has been using 4Ls for many consecutive sprints and feedback is becoming repetitive or shallow — rotate to a different retrospective format like Sailboat, Starfish, or DAKI to inject fresh energy.
-- When the retrospective needs to focus exclusively on interpersonal dynamics or team health rather than process improvement — a team health check or one-on-one conversations may be more appropriate.
-- When there is no intention or capacity to act on the outcomes — running retrospectives without follow-through erodes trust faster than skipping them entirely.
+- After an incident that needs a timeline and root-cause analysis, where a structured post-incident review answers the question better than four open categories.
+- When trust is low enough that people will not write honest Lacked notes, even anonymously. Fix the safety problem first, with a neutral facilitator or a smaller session.
+- When the team already knows its main problem and needs to choose between solutions, where a decision-focused format moves faster.
+- When nobody has the time or authority to act on the results, because collecting feedback that goes nowhere erodes trust faster than skipping the meeting.
+
+## 4Ls Compared with Related Formats
+
+| Format | Categories | Best for |
+|--------|-----------|----------|
+| [4Ls (EBG)](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) | Liked, Learned, Lacked, Longed For | Balanced fact-finding over an iteration or project |
+| [3Ls (EBG, earlier form)](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) | Liked, Lacked, Longed For | Short sessions that do not need a learning record |
+| [Atlassian variant](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique) | Loved, Loathed, Longed for, Learned | Teams that want stronger emotional language |
+| [Start, Stop, Continue](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/) | Start, Stop, Continue | Teams ready to decide on behavior changes |
+| [Derby and Larsen phases](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/) | Five meeting phases | The meeting structure any of the above plugs into |
 
 ## Skills
 
 This method includes the following skills:
 
-- [Building 4Ls Retrospective Templates and Boards](../../skills/building-4ls-retrospective-boards/SKILL.md) — How to set up physical or digital boards (Miro, FigJam, Confluence) with the four-quadrant layout for capturing and organizing team feedback.
-- [Facilitating a 4Ls Retrospective Meeting](../../skills/facilitating-4ls-retrospective-sessions/SKILL.md) — How to plan, timebox, and facilitate each phase of a 4Ls retrospective session to maximize team participation and actionable outcomes.
-- [Tracking 4Ls Trends Across Multiple Sprints](../../skills/tracking-retrospective-trends-across-sprints/SKILL.md) — How to aggregate and analyze recurring themes from 4Ls retrospectives over time to identify systemic team issues and measure continuous improvement.
-- [Categorizing and Sorting Team Feedback into the 4Ls](../../skills/categorizing-feedback-into-4ls/SKILL.md) — How to help team members correctly distinguish between Liked, Learned, Lacked, and Longed For items and resolve overlapping or miscategorized feedback.
-- [Crafting Effective Questions for Each L Category](../../skills/crafting-4ls-retrospective-questions/SKILL.md) — How to design targeted prompts for Liked, Learned, Lacked, and Longed For that elicit specific, constructive feedback from team members.
-- [Converting 4Ls Insights into Sprint Action Items](../../skills/converting-4ls-insights-into-action-items/SKILL.md) — How to synthesize and prioritize retrospective findings into concrete, assignable action items that carry into the next sprint.
-- [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../../skills/adapting-4ls-for-remote-and-hybrid-teams/SKILL.md) — Techniques for running engaging 4Ls sessions with distributed teams using async collaboration tools, timeboxed video calls, and anonymous input methods.
+- [Building a 4Ls Retrospective Board and Template](../../skills/building-4ls-retrospective-boards/SKILL.md): Set up a reusable physical or digital 4Ls board with prompts, voting space and an action area.
+- [Facilitating a 4Ls Sprint Retrospective Meeting](../../skills/facilitating-4ls-retrospective-sessions/SKILL.md): Plan, timebox and run each phase of a 4Ls session so everyone contributes and the team leaves with owned actions.
+- [Tracking 4Ls Retrospective Trends Across Sprints](../../skills/tracking-retrospective-trends-across-sprints/SKILL.md): Log and tag 4Ls themes over many retrospectives to spot recurring, systemic issues.
+- [Sorting Team Feedback into the 4Ls Categories](../../skills/categorizing-feedback-into-4ls/SKILL.md): Tell Liked, Learned, Lacked and Longed For apart and resolve notes that fit more than one.
+- [Writing 4Ls Retrospective Questions for Each Category](../../skills/crafting-4ls-retrospective-questions/SKILL.md): Write prompts for each L that draw out specific, usable feedback.
+- [Turning 4Ls Retrospective Insights into Action Items](../../skills/converting-4ls-insights-into-action-items/SKILL.md): Turn clustered themes into a few concrete, owned actions that carry into the next sprint.
+- [Running a 4Ls Retrospective for Remote and Hybrid Teams](../../skills/adapting-4ls-for-remote-and-hybrid-teams/SKILL.md): Combine async input, a short video session and fair hybrid practices for distributed teams.
 
 ## FAQ
 
-**What is the difference between Lacked and Longed For in a 4Ls sprint retrospective?**
+**Who created the 4Ls retrospective?**
 
-Lacked refers to concrete things that were missing during the sprint — like unclear requirements, insufficient test data, or absent stakeholders. Longed For is more aspirational, capturing things the team wishes they had in the future, such as better tooling, more automation, or dedicated learning time. Lacked is backward-looking and specific; Longed For is forward-looking and visionary.
+Mary Gorman and Ellen Gottesdiener of EBG Consulting published it in [a June 2010 blog post](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). It grew out of a World Café variation and an earlier three-L version (Liked, Lacked, Longed For), with Learned added later. The authors used it for iteration and project retrospectives and for training and conference debriefs. Most retrospective tools and guides that include it credit them.
 
-**How long should a 4Ls sprint retrospective meeting take?**
+**What is the difference between Lacked and Longed For?**
 
-For a standard two-week sprint, plan 60-90 minutes. Allocate roughly 10 minutes for setup, 10 for silent brainstorming, 15 for sharing and clustering, 5 for voting, 20-30 for discussion, and 10 for action items and closing. For shorter sprints or smaller teams, 45 minutes can work. The key is timeboxing each phase so energy stays high.
+Lacked looks back at something that was missing during the period under review, such as unclear acceptance criteria or a reviewer who was unavailable. Longed For looks ahead at something the team wishes it had, such as a staging environment that matches production. The two often describe the same gap from different directions, and that is useful: Lacked gives the evidence and Longed For gives the proposal. If a note could go either way, ask whether it describes the past or a wish for the future.
 
-**What are good sprint retrospective questions for each of the 4Ls?**
+**How long should a 4Ls retrospective take?**
 
-For Liked: 'What would you want to do again next sprint?' For Learned: 'What surprised you or changed your perspective?' For Lacked: 'What slowed you down or was frustrating?' For Longed For: 'If you had a magic wand, what would you change about our process?' Tailor questions to your team's context — the more specific to the sprint's actual events, the better the responses.
+It depends on sprint length and team size. [Atlassian's play](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique) budgets an hour of run time for a group of up to eight, and [Retrium](https://www.retrium.com/retrospective-techniques/4ls) describes sessions of 30-60 minutes depending on group size. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) caps the Sprint Retrospective at three hours for a one-month Sprint and expects shorter Sprints to have shorter ones. Timebox each phase so discussion does not eat the time for actions.
 
-**Can the 4Ls retrospective be used for remote and hybrid teams?**
+**How is the 4Ls different from Start, Stop, Continue?**
 
-Absolutely. The 4Ls format translates naturally to digital collaboration tools. Use a virtual whiteboard or a tool like Hamster Studio with a pre-built 4Ls board. Silent brainstorming actually works better asynchronously for remote teams. Use video for the discussion phase, and consider extending the silent brainstorming window so teammates in different time zones can contribute before the synchronous session.
+Start, Stop, Continue asks people to propose behavior changes directly. The 4Ls ask for observations first, which [Parabol describes](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/) as more neutral and aimed at fact-finding. That makes the 4Ls better when a team does not yet know what to change, and Start, Stop, Continue better when it does. Many teams alternate formats to keep answers fresh.
 
-**How do you prevent the same issues from appearing in every sprint retrospective?**
+**Does the 4Ls retrospective work for remote teams?**
 
-This is the most common retrospective anti-pattern. Combat it by rigorously tracking action items and reviewing them at the start of each retro. If an issue recurs, escalate it — it likely requires a systemic change beyond the team's control. In Hamster, you can track 4Ls trends across sprints to visually identify recurring themes, making it harder for chronic issues to go unaddressed.
+Yes. [Ben Linders](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) calls it suitable for distributed retrospectives with a shared editable document, and the four categories map directly onto columns in any digital board. Many distributed teams collect notes asynchronously before a shorter video call, a pattern [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) recommends for its own groups. Hybrid teams should have everyone join from their own device so remote people are not second-class participants.
 
-**What is the ideal team size for a 4Ls sprint retrospective?**
+**Why do the same issues keep coming back in our retrospectives?**
 
-The 4Ls format works best with 3-9 people, which aligns with typical Scrum team sizes. For larger groups (10+), consider splitting into smaller breakout groups for the brainstorming and sharing phases, then reconvening for voting and discussion. This prevents the session from running too long and ensures everyone has a voice.
+Usually because actions were vague, had no single owner, or were never checked. Open each retrospective by reviewing the previous actions, and keep a running log of themes so a repeat is visible. A theme that returns despite completed actions is probably outside the team's control and needs escalation. [Matthies and Dobrigkeit](https://arxiv.org/abs/2101.01528) also argue that retrospectives rely too heavily on memory, so bringing project data into the gather-data phase helps separate recurring problems from recurring impressions.
+
+**Can the 4Ls be used outside software teams?**
+
+Yes. The [EBG authors](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) used it to debrief training classes and conference sessions, and [Ben Linders](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) reports using it with management teams. Nothing in the four categories depends on sprints or code. Any group that works together over a period and wants to improve the next one can use it.
+
+## Sources
+
+- [EBG Consulting: The 4L's, a retrospective technique](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/)
+- [Ben Linders: Four L's, a classic retrospective exercise](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/)
+- [Atlassian Team Playbook: The 4 Ls retrospective technique](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique)
+- [Parabol: 4Ls retrospective template](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/)
+- [Retrium: 4Ls retrospective](https://www.retrium.com/retrospective-techniques/4ls)
+- [Derby, Larsen and Horowitz: Agile Retrospectives, Second Edition](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Retrospective Wiki: The Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive)
+- [Google re:Work: Understand team effectiveness](https://rework.withgoogle.com/intl/en/guides/understand-team-effectiveness)
+- [Nielsen Norman Group: Dot voting](https://www.nngroup.com/articles/dot-voting/)
+- [GitLab Handbook: Group retrospectives](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/)
+- [Matthies and Dobrigkeit: Experience vs Data](https://arxiv.org/abs/2101.01528)
 
 ---
 

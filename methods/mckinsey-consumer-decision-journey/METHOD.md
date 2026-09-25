@@ -1,125 +1,165 @@
 ---
-category: Experience
+name: "mckinsey-consumer-decision-journey"
+category: "Experience"
+description: "The McKinsey Consumer Decision Journey replaces the funnel with a loop: consideration, evaluation, purchase, and a post-purchase loyalty loop."
+metadata:
+  datePublished: "2026-04-29"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# McKinsey Consumer Decision Journey: Rethinking the Customer Journey as a Circular Loop
+# McKinsey Consumer Decision Journey: The Circular Loop
 
-> Created by **McKinsey & Company** — [https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
+> Created by **David Court, Dave Elzinga, Susie Mulder and Ole Jørgen Vetvik (McKinsey & Company)** - [https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
 
 ## Overview
 
-In 2009, McKinsey & Company published research that fundamentally challenged the traditional marketing funnel. After studying the purchase decisions of nearly 20,000 consumers across five industries, they found that the customer journey is not a linear progression from awareness to purchase. Instead, consumers follow a circular decision loop where they constantly add and remove brands from consideration, heavily influenced by digital research, peer reviews, and real-time experiences.
+The McKinsey Consumer Decision Journey (CDJ) is a model of how people choose a brand, and it replaces the linear marketing funnel with a loop. David Court, Dave Elzinga, Susie Mulder and Ole Jørgen Vetvik introduced it in [McKinsey Quarterly in June 2009](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey), after examining the purchase decisions of almost 20,000 consumers across five industries and three continents. The industries were automobiles, skin care, insurance, consumer electronics and mobile telecom.
 
-The McKinsey Consumer Decision Journey (CDJ) introduces four distinct phases: the initial consideration set (brands that come to mind first), active evaluation (the research and comparison process), the moment of purchase (the actual conversion trigger), and the post-purchase experience (which feeds directly back into future decisions). The framework's most powerful insight is the "loyalty loop" — when a post-purchase experience is strong enough, consumers skip the evaluation phase entirely on their next purchase, creating a self-reinforcing cycle of brand preference.
+The funnel assumes a buyer starts with many brands and narrows them step by step until one is left. The CDJ describes four phases instead: initial consideration, active evaluation, closure (the moment of purchase), and postpurchase. The authors found that people often add brands during evaluation instead of only dropping them. In [the original study](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey), personal computer shoppers added an average of 1 brand to an initial set of 1.7, while car shoppers added 2.2 to an initial set of 3.8.
 
-This model matters because it exposes where traditional funnel thinking wastes budget. Marketers who assume a linear path over-invest at the top of the funnel and under-invest at the moments that actually change consumer decisions — especially during active evaluation and post-purchase. The CDJ redirects strategy toward the touchpoints where consumers are genuinely persuadable, and toward building experiences that earn the loyalty loop rather than renting attention repeatedly.
+Two further findings shape how the model is used. The first is that brands in the initial consideration set can be up to three times more likely to be bought than brands outside it, so the accumulated impressions a brand leaves before anyone shops matter a great deal. The second is that two-thirds of the touchpoints during active evaluation are consumer-driven, such as online reviews, word of mouth and recollections of past experience, and only a third are company-driven marketing, according to [the McKinsey article](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey). Marketers who only push messages reach a minority of the touchpoints that decide the sale.
 
-Since its introduction, the CDJ has become one of the most cited frameworks in modern marketing strategy. It has been adopted by Fortune 500 companies and adapted for B2B, SaaS, and direct-to-consumer contexts. Its emphasis on non-linear behavior and the compounding value of loyalty loops anticipated the shift toward customer-centric, experience-driven marketing that defines today's landscape.
+The postpurchase phase closes the loop. What a customer experiences after buying shapes the next decision in the category, and the authors separate active loyalists, who stay and recommend, from passive loyalists, who stay out of inertia and are open to a competitor's reason to switch. In auto insurance they found as much as a sixfold difference in the ratio of active to passive loyalists among major brands. When loyalty is strong enough, the customer skips consideration and evaluation on the next purchase and buys again directly. That shortcut is the loyalty loop.
+
+David Edelman, who later coauthored McKinsey's 2015 update, restated the model for a wider audience in [Harvard Business Review in December 2010](https://hbr.org/2010/12/branding-in-the-digital-age-youre-spending-your-money-in-all-the-wrong-places) as consider, evaluate, buy, and enjoy, advocate, bond, with a buy-enjoy-advocate-buy loop that skips the first two stages entirely. Many later write-ups use this vocabulary, so it helps to know both versions refer to the same model.
+
+McKinsey revised the idea in 2015. In [The new consumer decision journey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey), Edelman and Marc Singer argue that companies can now shape the journey on purpose, through automation, proactive personalization, contextual interaction and journey innovation, and in doing so compress or even remove the consideration and evaluation phases. The original model describes how people decide. The update describes what a company can build in response.
+
+The CDJ sits alongside other journey models rather than replacing them. Google's work on [the messy middle](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) zooms into the stretch between trigger and purchase and describes buyers looping between exploration and evaluation, which is a closer look at the CDJ's active evaluation phase. Staged frameworks such as the [five-stage customer journey](https://tryhamster.com/methods/five-stage-customer-journey-framework) are useful for aligning content and channels to a sequence of stages. The CDJ is the better choice when the question is where brands enter and leave consideration and whether customers come back without shopping around.
+
+Use the CDJ as a diagnostic. It tells you which phase is losing customers and which touchpoints carry the most weight in that phase, so budget and effort can move to where decisions are actually made. It does not prescribe tactics for any single touchpoint, and the skills below cover the working methods for each phase.
 
 ## Core Principles
 
-### Initial Consideration Set
+### Consideration is decided before shopping starts
 
-Consumers begin with a small set of brands already in mind, shaped by past exposure, advertising, and word-of-mouth. Unlike the funnel model's broad awareness phase, the CDJ recognizes that most brands never even make this initial list. The strategic implication is that brand-building investments must focus on mental availability — being top of mind before the customer journey even begins.
+When a need appears, people name a short list of brands from memory. That list comes from impressions accumulated over time through advertising, news, conversations and product use, and [the 2009 study](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) found that fragmented media had made consumers shrink it. Work that raises a brand's chance of being recalled in buying situations, which the Ehrenberg-Bass Institute calls [category entry points](https://marketingscience.info/news-and-insights/category-entry-points-dissected-how-they-really-contribute-to-growth), is what earns a place on the list. Measure it with unaided recall, because recognition overstates it.
 
-### Active Evaluation Phase
+### Evaluation can expand the set
 
-During active evaluation, consumers research, compare, and adjust their consideration set — often adding brands they hadn't originally considered while dropping ones they had. This phase is dominated by online search, review sites, peer recommendations, and social media. It represents the single largest opportunity for challenger brands to disrupt incumbents, because the consideration set is fluid and expandable, not fixed.
+Active evaluation is where the funnel metaphor breaks. Shoppers research, compare and ask others, and a brand that was absent at the start can enter and even push a rival out. Google's research on [the messy middle](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) describes the same behavior as a loop between exploration and evaluation that repeats until the shopper is ready to decide. For a challenger brand, this phase is often the most realistic way in.
 
-### Moment of Purchase
+### Consumers pull more than brands push
 
-The moment of purchase is where the final decision is made, and it can be heavily influenced by in-store experience, website UX, pricing presentation, promotions, and availability. McKinsey's research showed that a significant percentage of consumers change their minds at this stage, meaning brands that win active evaluation can still lose at the point of conversion if the purchase experience introduces friction or a competitor offers a better last-mile trigger.
+Most evaluation touchpoints are consumer-driven: reviews, recommendations, in-store interactions and memories of past use. A brand cannot buy these directly, so it has to earn them, by giving people useful information, making the product easy to recommend, and joining the conversations already happening. [McKinsey's authors](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) framed the shift as moving from buying media to developing properties that attract consumers.
 
-### Post-Purchase Experience
+### The moment of purchase is still contestable
 
-After purchase, the consumer's experience with the product or service directly feeds their next decision journey. Positive experiences build advocacy and simplify future purchases; negative ones fuel churn and negative word-of-mouth. This phase is where retention economics compound — the cost of keeping a customer in the loyalty loop is a fraction of the cost of winning them through active evaluation again.
+Winning evaluation does not guarantee the sale. The original research found that more consumers now delay the final decision until they are in the store, and up to 40 percent change their minds because of something they see, learn or do there, per [the McKinsey article](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey). Online, the equivalent is the checkout, the pricing page or the sales call, where friction and last-minute doubts decide the outcome.
 
-### The Loyalty Loop
+### Loyalty comes in two kinds
 
-The loyalty loop is the CDJ's most strategic concept. When a consumer's post-purchase experience is consistently positive, they skip the active evaluation phase entirely on subsequent purchases, going directly from trigger to purchase. This creates a compounding advantage: loyal customers are cheaper to retain, more likely to advocate, and increasingly immune to competitor messaging. Building and defending the loyalty loop is the highest-ROI activity in the framework.
+A renewal rate hides the difference between customers who would recommend you and customers who have not bothered to look elsewhere. Active loyalists stay and advocate. Passive loyalists stay without commitment and switch when a competitor makes comparison easy, which is how the article describes GEICO and Progressive winning customers in auto insurance. Grow the active group, and treat the passive group as at risk.
 
-### Consumer-Driven Touchpoints Over Brand-Driven Messaging
+### The journey is a loop that feeds itself
 
-The CDJ distinguishes between company-driven touchpoints (advertising, sponsorships, direct marketing) and consumer-driven touchpoints (reviews, word-of-mouth, online research). McKinsey's data showed that consumer-driven touchpoints are disproportionately influential during active evaluation. This principle shifts budget allocation toward earning influence in the spaces where consumers actually make decisions, rather than broadcasting messages in spaces where attention is passive.
+Postpurchase experience shapes the next consideration set, both for the buyer and for the people the buyer talks to. The McKinsey authors used US and Asian carmakers as the example: positive ownership experience built loyalty and word of mouth, which kept Toyota and Honda in the initial set while sales incentives could not break the cycle. Investment in the postpurchase phase therefore pays off in the first phase too.
+
+### Customer-facing work needs one owner
+
+The CDJ cuts across the website, PR, sales, support and loyalty programs, which usually sit with different executives and budgets. [The 2009 article](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) argues these activities must be integrated under one leader, and Edelman and Singer later proposed a journey product manager accountable for a journey's results in [Competing on Customer Journeys](https://hbr.org/2015/11/competing-on-customer-journeys). Without an owner, each team optimizes its own touchpoint and the loop breaks at the handoffs.
+
+## Funnel vs. Decision Journey
+
+| Question | Linear funnel | Consumer Decision Journey |
+|----------|---------------|---------------------------|
+| Starting set | Many brands, narrowed step by step | A short set recalled from memory |
+| During research | Brands only drop out | Brands can be [added or removed](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) |
+| Main influence | Company-pushed messages | Mostly consumer-driven touchpoints |
+| After the sale | The journey ends | Experience feeds the next decision |
+| Repeat purchase | Treated as a new funnel | Loyal buyers [skip ahead](https://hbr.org/2010/12/branding-in-the-digital-age-youre-spending-your-money-in-all-the-wrong-places) to buy |
 
 ## Steps
 
-1. **Step 1: Map the Initial Consideration Set**
-   Identify which brands consumers have in mind before they begin actively shopping. Use unaided brand recall surveys, search query data for category-level terms, and social listening to understand your presence (or absence) in the initial consideration set. Document the typical size of the consideration set in your category — McKinsey found this is usually 3-5 brands — and determine whether your brand consistently makes the cut.
+1. **Define the journey and the buyer**
+   Pick one category purchase and one buyer type to study, because journeys differ by segment and by trigger. Write down what starts the journey, who decides, and what counts as a purchase and a repeat purchase. For a subscription product, a renewal or an upgrade is the repeat purchase. Keep the scope narrow enough that one team can own the findings.
 
-2. **Step 2: Audit the Active Evaluation Landscape**
-   Map every touchpoint where consumers research, compare, and adjust their consideration set. This includes search engine results, review platforms, social media conversations, comparison sites, influencer content, and peer recommendations. Identify which consumer-driven touchpoints have the most influence on brand addition (new brands entering consideration) and brand elimination (brands being dropped). Track how your brand performs in these channels versus competitors.
+2. **Measure the initial consideration set**
+   Ask recent and prospective buyers, without showing them a list, which brands they would consider for this need. Record set size, whether your brand appears, and where it appears in the order of mentions. Ask why each brand came to mind, so you learn whether you have an awareness problem or a relevance problem. Repeat the question for each major buying trigger, since each one can produce a different set.
 
-3. **Step 3: Analyze Moment-of-Purchase Conversion Points**
-   Examine the final decision-making environment — whether that's an e-commerce checkout flow, a retail shelf, a sales conversation, or a sign-up page. Identify friction points that cause consumers to switch at the last moment: pricing surprises, poor UX, out-of-stock issues, or competitor promotions. Quantify your close rate among consumers who reached this stage and diagnose why you're losing any that you are.
+3. **Trace active evaluation**
+   Find out what buyers did between the trigger and the decision: what they searched, which reviews and comparison pages they read, whom they asked, and which brands they added or dropped along the way. Combine interviews with behavioral data such as search terms, review traffic and competitor comparisons. Sort each touchpoint as consumer-driven or company-driven, and note which ones caused a brand to enter or leave the set.
 
-4. **Step 4: Evaluate the Post-Purchase Experience**
-   Assess every interaction after the purchase: onboarding, product usage, customer support, billing, and ongoing communication. Use NPS, CSAT, customer interviews, and churn analysis to understand whether your post-purchase experience is building advocacy or eroding trust. Map the specific moments that create delight or frustration, as these directly determine whether the customer enters the loyalty loop or re-enters active evaluation with competitors next time.
+4. **Examine the moment of purchase**
+   Study the last step: the checkout, pricing page, store shelf or final sales conversation. Look for what made buyers hesitate, switch or leave, such as surprise costs, missing information, weak reassurance or a competitor's offer at the last moment. Compare conversion among people who reached this point with the reasons given by those who did not buy.
 
-5. **Step 5: Identify Loyalty Loop Patterns**
-   Segment your customer base to find those who have entered the loyalty loop — repeat purchasers who buy without extensive re-evaluation. Analyze what differentiates their experience from one-time buyers. Look for behavioral signals: direct navigation instead of search, reduced comparison shopping, higher engagement with brand communications, and organic referral behavior. Quantify the revenue and LTV difference between loyalty-loop customers and those who re-evaluate each time.
+5. **Separate active and passive loyalists**
+   Segment existing customers by whether they would recommend you and whether they have looked at alternatives. Survey questions such as the recommend question behind the [Net Promoter Score](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/), combined with behavior such as referrals, direct repurchase and comparison shopping, show who is in the loyalty loop and who is only staying put. Map what the active loyalists experienced that the passive ones did not.
 
-6. **Step 6: Reallocate Budget Across CDJ Phases**
-   Using your findings, shift marketing investment from over-funded phases to under-funded ones. Typically this means reducing pure awareness spend and increasing investment in consumer-driven touchpoints during active evaluation (SEO, reviews, UGC, influencer partnerships) and post-purchase experience improvements (onboarding, loyalty programs, community). Build a phase-by-phase budget allocation with clear KPIs tied to each stage of the decision journey.
+6. **Find the weakest phase and the heaviest touchpoints**
+   Put the four phases side by side and ask where you lose the most buyers relative to competitors. The McKinsey authors found that some brands are strong at consideration and weak at closure, and those brands need different spending from brands that never make the initial set. Rank touchpoints within the weak phase by how often buyers meet them and how much they sway the decision.
 
-7. **Step 7: Design Interventions at Key Decision Points**
-   Create specific strategies for the highest-leverage moments in your customer journey. This includes content and assets that get your brand added during active evaluation, conversion optimization at the moment of purchase, and experience design that builds the loyalty loop. Each intervention should be measurable: track changes in brand consideration rates, conversion rates at point of purchase, repeat purchase rates, and the percentage of customers entering the loyalty loop.
+7. **Reallocate effort and spending**
+   Move budget and people from phases where you already win to the phase where you lose. That might mean shifting brand advertising toward content that helps evaluation, retooling a loyalty program to reward advocates, or investing in packaging and checkout. Tailor messages to the weak phase, as Hyundai did in [the 2009 article's example](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) with a job-loss return guarantee that got it into more initial sets.
 
-8. **Step 8: Measure and Iterate the Decision Journey**
-   Establish a regular cadence of customer journey measurement. Conduct quarterly consumer decision journey audits using surveys, analytics data, and customer interviews to track how the shape of the journey is evolving. Monitor whether your interventions are expanding your initial consideration set, improving win rates during active evaluation, reducing moment-of-purchase defections, and growing the loyalty loop. Adjust your strategy as consumer behavior and competitive dynamics shift.
+8. **Assign ownership and remeasure**
+   Name one owner for the whole journey and give each phase a metric: inclusion rate in the initial set, win rate in evaluation, conversion at purchase, and the share of active loyalists. Rerun the consideration and loyalty research on a fixed cadence and after major launches, then check whether the changes moved the weak phase. Treat the journey as something you keep improving, as [Edelman and Singer recommend](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey).
 
 ## When to Use
 
-- When your brand consistently loses customers during the research and comparison phase despite strong initial awareness — the CDJ helps you diagnose where active evaluation is undermining your conversion and where to invest in consumer-driven touchpoints.
-- When you're allocating marketing budget and need a framework to justify shifting spend from top-of-funnel awareness campaigns toward mid-journey and post-purchase touchpoints that drive higher ROI and lifetime value.
-- When launching in a competitive category where consumers actively compare alternatives — the CDJ helps you identify how to break into consideration sets and win during the active evaluation phase against established incumbents.
-- When customer retention and repeat purchase rates are low despite satisfactory product quality — the CDJ's loyalty loop concept helps you design post-purchase experiences that short-circuit the decision journey for returning buyers.
-- When your marketing team is stuck in linear funnel thinking and you need a strategic framework to realign the organization around the non-linear, digitally-influenced way modern consumers actually make purchase decisions.
+- When buyers know your brand but rarely shortlist it, because the CDJ separates awareness from inclusion in the initial consideration set and shows which one you lack.
+- When you are deciding how to split marketing budget across awareness, evaluation content, conversion and retention, because the model gives you a phase-by-phase view of where decisions are won and lost.
+- When you are a challenger in a category with established leaders, because active evaluation is where brands that were not in the initial set can still enter and win.
+- When renewal numbers look healthy but growth from referrals and repeat purchases is weak, because the active and passive loyalist split shows whether loyalty is commitment or inertia.
+- When marketing, sales and support each own a piece of the customer experience and nobody owns the whole, because the loop makes the handoffs visible.
 
 ## When Not to Use
 
-- When your product is a low-involvement, impulse purchase with minimal research — the CDJ's active evaluation phase is less relevant when consumers decide in seconds based on price, shelf placement, or habit rather than deliberate comparison.
-- When you're in an early-stage startup without sufficient customer data to map actual decision patterns — applying the CDJ prematurely can lead to over-engineering a customer journey that hasn't yet stabilized or been validated.
-- When your business operates in a heavily regulated or monopolistic market where consumers have limited or no choice — the framework assumes competitive alternatives and consumer agency that may not exist in your context.
-- When you need a granular, step-by-step operational playbook rather than a strategic framework — the CDJ describes the shape of the customer journey but doesn't prescribe specific tactics for each touchpoint without additional tooling and research.
+- For low-involvement, habitual purchases where people barely evaluate, because the model's value comes from studying research and comparison behavior that hardly exists there.
+- Before you have enough customers to interview or observe, because a journey built from assumptions will reflect your team's beliefs more than buyer behavior.
+- In markets with no real choice, such as a single regulated provider, because the model assumes buyers can add, drop and switch brands.
+- When you need detailed interaction design for one screen or one service step, because a service blueprint or usability study will serve that question better than a category-level journey.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Mapping the Initial Consideration Set](../../skills/mapping-initial-consideration-sets/SKILL.md) — How to identify and analyze the brands and options consumers include in their initial consideration set before active research begins.
-- [Analyzing Active Evaluation Behavior](../../skills/analyzing-active-evaluation-behavior/SKILL.md) — Techniques for tracking and understanding how consumers add and remove brands during the active evaluation phase through digital research, reviews, and peer input.
-- [Optimizing Moment-of-Purchase Triggers](../../skills/optimizing-moment-of-purchase-triggers/SKILL.md) — How to identify and influence the critical decision-stage touchpoints that convert active evaluators into buyers at the point of purchase.
-- [Building Post-Purchase Loyalty Loops](../../skills/building-post-purchase-loyalty-loops/SKILL.md) — Designing post-purchase experiences that create ongoing loyalty loops so customers skip re-evaluation and repurchase directly.
-- [Creating Circular Consumer Journey Maps](../../skills/creating-circular-journey-maps/SKILL.md) — Step-by-step process for building a circular customer journey map based on the CDJ model instead of a traditional linear funnel.
-- [Replacing Funnel Thinking with the Decision Journey](../../skills/replacing-funnel-thinking-with-cdj/SKILL.md) — How to transition your marketing strategy from a linear customer journey funnel to the non-linear CDJ model with practical examples.
-- [Identifying Touchpoints Across CDJ Stages](../../skills/identifying-touchpoints-across-cdj-stages/SKILL.md) — How to audit and catalog every brand touchpoint across the four CDJ phases to find gaps and high-impact interaction opportunities.
+- [Mapping the Initial Consideration Set](../../skills/mapping-initial-consideration-sets/SKILL.md): Measure which brands buyers recall before they research, and why yours is included or left out.
+- [Analyzing Active Evaluation Behavior](../../skills/analyzing-active-evaluation-behavior/SKILL.md): Track how buyers add and drop brands while researching, and which touchpoints cause each change.
+- [Optimizing Moment-of-Purchase Triggers](../../skills/optimizing-moment-of-purchase-triggers/SKILL.md): Find and fix what makes buyers hesitate or switch at the final purchase step.
+- [Building Post-Purchase Loyalty Loops](../../skills/building-post-purchase-loyalty-loops/SKILL.md): Turn passive loyalists into active ones who repurchase directly and recommend you.
+- [Creating Circular Consumer Journey Maps](../../skills/creating-circular-journey-maps/SKILL.md): Build a journey map shaped as a loop from real buyer data instead of a linear funnel.
+- [Replacing Funnel Thinking with the Decision Journey](../../skills/replacing-funnel-thinking-with-cdj/SKILL.md): Move a team's plans, budgets and metrics from funnel stages to CDJ phases.
+- [Identifying Touchpoints Across CDJ Stages](../../skills/identifying-touchpoints-across-cdj-stages/SKILL.md): Inventory every touchpoint, assign it to a phase, and find gaps and imbalances.
 
 ## FAQ
 
-**How does the McKinsey Consumer Decision Journey differ from a traditional marketing funnel?**
+**How is the McKinsey Consumer Decision Journey different from the marketing funnel?**
 
-The traditional funnel assumes consumers progressively narrow choices in a linear sequence from awareness to purchase. The CDJ models the customer journey as a circular loop where consumers add and remove brands during active evaluation, and loyal customers can skip evaluation entirely. This reflects how digital research, reviews, and peer influence create a non-linear, iterative decision process.
+The funnel assumes buyers start with many brands and narrow them in a straight line to one purchase. The CDJ says buyers start with a short set recalled from memory, often add brands while researching, and loop back to the start after buying. It also treats the postpurchase experience as part of the next decision. The practical difference is where you spend: the funnel favors awareness and conversion, while the CDJ points to evaluation touchpoints and loyalty as well.
 
-**What is the loyalty loop in the Consumer Decision Journey?**
+**What is the loyalty loop?**
 
-The loyalty loop occurs when a customer's post-purchase experience is strong enough that they skip the active evaluation phase on their next purchase, going directly from need recognition to buying the same brand. It represents the highest-value outcome of the CDJ because it reduces acquisition costs, increases lifetime value, and makes the customer resistant to competitive messaging.
+The loyalty loop is the shortcut a satisfied customer takes on the next purchase: they skip initial consideration and active evaluation and buy the same brand again. Edelman described it in [HBR](https://hbr.org/2010/12/branding-in-the-digital-age-youre-spending-your-money-in-all-the-wrong-places) as a buy-enjoy-advocate-buy loop. The McKinsey authors warn that some customers inside the loop are only passive loyalists who have not looked elsewhere. Those customers can leave as soon as a competitor makes switching easy.
 
-**Can the McKinsey Consumer Decision Journey be used for B2B customer journey mapping?**
+**Who created the Consumer Decision Journey?**
 
-Yes, though with adaptations. B2B decision journeys typically involve longer active evaluation phases, multiple stakeholders, and more complex consideration sets. The core CDJ principles — non-linear evaluation, consumer-driven touchpoints, and loyalty loops — apply, but the touchpoints shift toward case studies, analyst reports, peer referrals, and procurement processes rather than consumer reviews and social media.
+David Court, Dave Elzinga, Susie Mulder and Ole Jørgen Vetvik of McKinsey & Company published it in McKinsey Quarterly in June 2009, based on research into nearly 20,000 consumers, as stated in [the original article](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey). David Edelman popularized the consider, evaluate, buy, enjoy-advocate-bond wording in Harvard Business Review the following year. Edelman and Marc Singer published [an update in 2015](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey) that focuses on how companies can design journeys.
 
-**How do you measure which customer journey stage needs the most investment?**
+**Does the CDJ work for B2B purchases?**
 
-Conduct a customer decision journey audit by surveying recent buyers about their path to purchase: which brands they initially considered, what research they did, what influenced their final decision, and their post-purchase satisfaction. Combine this with analytics data on search behavior, content engagement, conversion rates, and retention metrics to identify which phase has the biggest drop-off or the most competitive vulnerability.
+The four phases apply, but the buyer is usually a group, the evaluation is longer, and the touchpoints are different: peer references, analyst reports, trials, procurement and security reviews. Map each role in the buying group separately, because a champion and a finance approver meet different touchpoints. Renewal and expansion play the part of the loyalty loop. Expect a single deal to include several rounds of evaluation.
 
-**What are real customer journey examples using the CDJ framework?**
+**Is the original model still valid now that most research happens online?**
 
-McKinsey's original research studied auto insurance, mobile carriers, and skincare. In auto insurance, consumers considered an average of 3.8 brands initially but added 1.4 brands during active evaluation — meaning brands not in the initial set still had significant opportunity. In skincare, strong post-purchase experiences drove loyalty loops where consumers repurchased without re-evaluating, reducing the brand's ongoing acquisition costs dramatically.
+The core structure has held up, and later research describes the same non-linear middle. Google's [messy middle study](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) found shoppers loop between exploring and evaluating, and simulated 310,000 purchase scenarios to test which cognitive biases shift preference. McKinsey's own update kept the loop and added the idea that companies can now compress it. What has changed most is the mix of touchpoints, so the touchpoint inventory needs regular refreshing.
 
-**How does the Consumer Decision Journey apply to digital and e-commerce customer journeys?**
+**How do you find out which phase needs the most investment?**
 
-Digital environments amplify the CDJ's dynamics. Active evaluation is heavily driven by search engines, review sites, comparison tools, and social proof — all consumer-driven touchpoints. The moment of purchase is influenced by UX, checkout friction, and real-time competitor pricing. Post-purchase experience extends to delivery, unboxing, onboarding emails, and app engagement. Digital data also makes it easier to measure and optimize each phase of the journey quantitatively.
+Survey recent buyers, including people who chose a competitor, about what they considered at the start, how they researched, what decided the purchase, and how they feel after buying. Compare your performance with competitors phase by phase instead of looking at one conversion rate. The phase where you lose the most ground relative to rivals is the one to fix first. Back the survey with behavioral data such as search terms, conversion and repurchase rates.
+
+## Sources
+
+- [The consumer decision journey, McKinsey Quarterly (Court, Elzinga, Mulder, Vetvik)](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
+- [Branding in the Digital Age, Harvard Business Review (Edelman)](https://hbr.org/2010/12/branding-in-the-digital-age-youre-spending-your-money-in-all-the-wrong-places)
+- [The new consumer decision journey, McKinsey (Edelman, Singer)](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey)
+- [Competing on Customer Journeys, Harvard Business Review (Edelman, Singer)](https://hbr.org/2015/11/competing-on-customer-journeys)
+- [How people decide what to buy lies in the messy middle, Think with Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/)
+- [Category Entry Points Dissected, Ehrenberg-Bass Institute](https://marketingscience.info/news-and-insights/category-entry-points-dissected-how-they-really-contribute-to-growth)
+- [Measuring Your Net Promoter Score, Bain & Company](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/)
 
 ---
 

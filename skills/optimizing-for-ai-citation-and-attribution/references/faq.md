@@ -1,25 +1,21 @@
-# FAQ: Optimizing Content for AI Citation and Source Attribution
+# FAQ: Optimizing Content for AI Citation and Attribution
 
-## How long does it take for AI tools to start citing optimized content?
+## Should I block GPTBot?
 
-It varies by platform. Perplexity and ChatGPT with browsing can discover and cite new or updated content within days to weeks since they use real-time or near-real-time retrieval. Google AI Overviews may take 2-6 weeks after indexing. LLM training-based citations (without RAG) can take months or longer since they depend on model retraining cycles.
+That is a separate decision from appearing in ChatGPT search. OpenAI documents GPTBot as the crawler for training data and OAI-SearchBot as the crawler for ChatGPT search, with independent settings. You can disallow GPTBot for training and still allow OAI-SearchBot so your pages can be shown and cited in search answers. Make the training decision on licensing grounds and the search decision on visibility grounds.
 
-## Does AI powered SEO replace traditional SEO?
+## What kind of content gets cited most?
 
-No — AI powered SEO complements traditional SEO. Many AI citation signals (authority, structured content, E-E-A-T) align with traditional ranking factors. However, AI citation optimization adds specific requirements like passage-level quotability, machine-readable structure, and AI crawler access that go beyond standard SEO practices.
+The GEO research found that adding statistics, quotations and citations to credible sources improved visibility the most among the edits it tested. In practice that means original data, named expert views and precise, sourced claims. Generic summaries of common knowledge give an answer engine little reason to prefer your page.
 
-## Which AI tools are most likely to cite and link to external sources?
+## Can a small or new site earn AI citations?
 
-Perplexity is currently the most citation-heavy AI tool, providing inline source links for nearly every claim. Google AI Overviews include source links but more selectively. ChatGPT with browsing mode cites sources when using web retrieval. Claude and other tools vary — some cite sources when using retrieval features but not during standard conversations.
+Yes, especially on narrow topics where it has first-hand evidence. The GEO experiments found the largest gains for pages that ranked lower in the underlying search results. A small site still needs its pages indexed and crawlable, and it benefits from independent sources that confirm its findings.
 
-## Can I get AI tools to cite my content if I'm a small or new website?
+## How long does it take before AI tools cite new content?
 
-Yes, but it's harder without established domain authority. Focus on creating content with original data or unique expert insights that larger sites haven't covered. Niche topics with fewer competing sources offer the best opportunity for smaller sites to earn AI citations, since the retrieval system has fewer alternatives to choose from.
+It depends on the system and on how often crawlers revisit your site. Systems that retrieve live can pick up a page after it is crawled and indexed, while what a model knows from training changes only with a new model release. Treat citation work as a program measured over months, not a single change.
 
-## Should I allow or block AI crawlers like GPTBot?
+## Does adding citations to my own content really help?
 
-If your goal is AI citation visibility, allow AI crawlers. Blocking GPTBot, PerplexityBot, or ClaudeBot prevents these systems from indexing and citing your content. You can selectively allow retrieval-focused crawlers while monitoring usage. The tradeoff between content protection and AI visibility is a strategic decision each organization must make.
-
-## What content formats get cited by AI answer engines most often?
-
-Definitions, statistics, numbered process steps, comparison tables, and expert quotes are the most frequently cited content formats. These are easy for retrieval systems to extract as clean, attributable passages. Long narrative paragraphs and opinion-heavy content without supporting data are cited far less frequently.
+It helped in the GEO experiments, where citing sources was one of the strongest edits, especially for lower-ranked pages. It also helps readers verify claims, which is one of Google's trust questions for people-first content. The citation has to be real and relevant; padding a page with links that do not support its claims adds nothing.

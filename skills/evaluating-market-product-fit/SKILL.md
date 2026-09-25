@@ -1,15 +1,20 @@
 ---
-name: evaluating-market-product-fit
-description: "This skill teaches you how to systematically assess whether your product satisfies the core needs of your target market by analyzing market category, audience hypotheses, and value propositions—the foundational first fit in the Four Fits Framework."
+name: "evaluating-market-product-fit"
+description: "Evaluating Market Product Fit means defining the market first, then testing whether the product earns retention and pull from that market."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: four-fits-framework
+  method: "four-fits-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Evaluating Market Product Fit: How to Assess Whether Your Product Truly Serves Your Market
+# Evaluating Market Product Fit
 
-> This skill teaches you how to systematically assess whether your product satisfies the core needs of your target market by analyzing market category, audience hypotheses, and value propositions—the foundational first fit in the Four Fits Framework.
+> Evaluating Market Product Fit means defining the market first, then testing whether the product earns retention and pull from that market.
 
 ## Before you start
 
@@ -24,129 +29,95 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial assessment; ongoing refinement |
-| Outcome | You can confidently determine whether your product addresses real market needs, identify gaps in your market-product alignment, and make informed decisions about product direction before investing in growth channels. |
-| Prerequisites | Basic understanding of market segmentation, Access to customer data or ability to conduct customer interviews, Familiarity with value proposition design, Understanding of the Four Fits Framework concept |
+| Time to Learn | A few hours for a first pass, then ongoing |
+| Outcome | You can state who your market is, what problem drives them, and whether your product shows real pull with that market, backed by evidence. |
+| Prerequisites | Access to customers or prospects for interviews, retention data by cohort, a working knowledge of the Four Fits Framework |
 | Part of | [Four Fits Framework](../../methods/four-fits-framework/METHOD.md) |
 
 ## Overview
 
-Market product fit is the foundational layer of the [Four Fits Framework](https://tryhamster.com/methods/four-fits-framework). It answers the most fundamental question in product strategy: does your product actually satisfy the core needs of a definable, sizable market? Without this fit, every subsequent investment in channels, business models, and growth tactics is built on sand.
+Evaluating Market Product Fit is the first of the four checks in the [Four Fits Framework](../../methods/four-fits-framework/METHOD.md). It asks whether a defined market has a problem your product solves well enough that the market pulls the product forward. Brian Balfour deliberately reverses the usual phrase to "Market Product Fit" because, in his words, language shapes thinking, and the problem lives in the market before any product exists ([Balfour, Market Product Fit](https://brianbalfour.com/essays/market-product-fit)).
 
-Unlike the popular but vague notion of 'product-market fit' (often reduced to a feeling or a single survey question), evaluating market product fit within the Four Fits Framework is a structured, multi-component analysis. You decompose the assessment into three interconnected elements: your market category (what space you compete in and how customers contextualize your product), your audience hypotheses (who specifically you serve, what they need, and what motivates their behavior), and your value propositions (the specific promises your product makes to that audience). Each element must be validated independently and then checked for coherence across the set.
+The skill has two halves. First you write a market hypothesis: the category customers put you in, who exactly the customer is, the problems they have, and the motivations that make those problems worth solving. Then you write a product hypothesis against it: the core value proposition, the hook that expresses it simply, the time it takes a new user to experience it, and what makes people come back. Only after both are written do you look at evidence.
 
-This skill matters because market product fit is the constraint that shapes every other fit. Your choice of market determines the channels available to you (which feeds into [aligning product-channel fit](https://tryhamster.com/skills/aligning-product-channel-fit)), the business models that are viable, and ultimately the ceiling on your growth. Getting this wrong—or failing to rigorously evaluate it—is the most common root cause of growth stalls that teams later misdiagnose as channel or execution problems.
+This matters because every other fit depends on the answer. The market definition decides which channels can reach the customer, what they will pay, and how many of them exist. A team that skips this step often misreads a weak market fit as a channel or pricing problem and spends months tuning the wrong thing. Balfour describes his own earlier startup as a solution looking for a problem, which is the failure this skill is meant to catch early.
+
+The output is a short written assessment: the market definition, the product hypothesis, the evidence for and against each part, and a rating on a spectrum from weak to strong. Balfour is explicit that fit is a spectrum rather than a milestone, and that markets expand outward over time, so the assessment is something you update rather than file away.
 
 ## How It Works
 
-Evaluating market product fit works by breaking the abstract question 'does our product fit the market?' into three concrete, testable components and then validating each with evidence.
+The market hypothesis has four parts, following Balfour's essay. Category is the label customers use when they describe you to a colleague, and it sets which alternatives they compare you against. Who is the specific person with the problem, narrow enough that you could list real people. Problems are what goes wrong for that person today. Motivations explain why solving the problem matters to them, such as money, time, status, or reducing uncertainty. Balfour notes that most teams can state category and who, and that problems and motivations are where the useful insight lives.
 
-**Market Category** defines the competitive and conceptual frame customers use to understand your product. It determines what alternatives they compare you against, what features they expect as table stakes, and what price range they consider reasonable. Your market category is not just a label—it's a strategic choice that shapes customer expectations.
+The product hypothesis has four matching parts. The core value proposition says how the product solves the core problem. The hook is the simplest expression of that value, the thing a new user understands in one sentence. Time to value is how long a new user takes to experience the value for the first time. Stickiness is the mechanism that brings them back without prompting. Writing these down forces the team to say what the product is for, which makes the evidence easier to judge.
 
-**Audience Hypotheses** are specific, falsifiable statements about your target customers: who they are (demographics, roles, contexts), what problems they experience, how acute those problems are, and what their current workarounds look like. The word 'hypotheses' is deliberate—these are educated guesses that require validation, not assumptions to be treated as facts.
+Evidence comes from three directions. Qualitatively, Balfour points to measures of willingness to recommend such as NPS, and to what customers say in their own words during interviews. Quantitatively, he looks for retention curves that flatten rather than decay to zero, and for growth in direct and word-of-mouth traffic. Intuitively, strong fit feels like the market dragging you forward rather than you pushing the product onto it. His single test question is useful in any review: if you turned off all marketing today, would you keep growing?
 
-**Value Propositions** are the specific promises your product makes that address the needs identified in your audience hypotheses. They must be concrete enough to test (not 'we save you time' but 'we reduce weekly reporting from 4 hours to 20 minutes') and differentiated enough that they don't apply equally to every competitor in your market category.
+A common complement is the survey Sean Ellis popularized, which asks users how they would feel if they could no longer use the product. Ellis set a benchmark of more than 40% answering "very disappointed" and recommends surveying recently activated users rather than everyone who ever signed up ([Sean Ellis](https://seanellis.substack.com/p/is-productmarket-fit-hiding-in-your)). The survey is most useful when segmented. First Round's account of Superhuman describes a team that scored 22% overall and reached 32% just by focusing on the personas who loved the product most ([First Round Review](https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/)).
 
-The evaluation works because these three elements form a logical chain: the market category sets the context, audience hypotheses identify the needs within that context, and value propositions articulate how your product meets those needs. When all three are validated and aligned, you have strong market product fit. When any link is broken—wrong category, inaccurate audience assumptions, or value propositions that don't resonate—the fit is weak, and no amount of growth hacking will compensate.
+Segmentation is the thread through all of it. Aggregate retention or survey numbers can hide strong fit with one segment and none with another. Rate the fit per segment, and let the strongest segment reshape the market definition if the evidence points there.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Market Category Precisely
+### Step 1: Write the market definition
 
-Start by articulating the market category your product competes in. This is not your TAM slide from a pitch deck—it's the mental category a customer uses when they encounter your product. Ask: 'When a customer describes our product to a colleague, what category do they place it in?'
+Write one sentence each for category, who, problems, and motivations, following [Balfour's four market components](https://brianbalfour.com/essays/market-product-fit). Test the category by asking how a customer would describe the product to a colleague, and list the alternatives they would compare it against. Make "who" narrow enough that you could name real people who fit it. Spend most of the time on problems and motivations, since those drive behavior. If the team cannot agree on the sentences, that disagreement is the first finding.
 
-Write down your market category and then list 3-5 alternatives or competitors that customers would consider in the same category. If you struggle to name alternatives, your category may be too novel (which creates an education burden) or too vague (which means you haven't narrowed enough).
+### Step 2: Write the product hypothesis
 
-Finally, estimate the market size and growth trajectory. Market product fit requires a market large enough to support your growth ambitions. A perfect product for a tiny, shrinking market is not a fit worth pursuing.
+Against the market definition, write the core value proposition, the hook, the expected time to value, and the stickiness mechanism. Each should be specific enough to be wrong. "Saves time" is too vague; "shows a rep when a prospect opens their email" is testable. Note which parts are already built and which are planned. This hypothesis becomes the lens for reading all the evidence that follows.
 
-> **Pro tip:** If customers consistently miscategorize your product, that's a signal your market category positioning is off—not that customers are wrong. Their frame of reference determines your competitive set whether you like it or not.
+### Step 3: Interview for problems and language
 
-### Step 2: Step 2: Articulate Specific Audience Hypotheses
+Interview current customers, churned customers, and target prospects who never bought. Ask them to describe the problem, what they used before, how they found you, and what changed after they started using the product. Listen for the words they use for the category and the problem, and compare them to your definition. Churned customers are especially useful, because the gap between what they say and what retained customers say usually shows where the fit is weak.
 
-Write 3-5 specific, falsifiable hypotheses about your target audience. Each hypothesis should follow the format: 'We believe [specific audience segment] experiences [specific problem] in [specific context], and their current workaround is [specific alternative].'
+### Step 4: Read retention by segment
 
-Be as precise as possible. 'Marketing managers at mid-size B2B SaaS companies who spend 5+ hours weekly on manual reporting and currently use spreadsheets' is a hypothesis. 'Companies that need better analytics' is not.
+Plot retention curves by signup cohort and by segment. Balfour's quantitative signal is a curve that flattens at some level rather than sliding toward zero ([Market Product Fit](https://brianbalfour.com/essays/market-product-fit)). Compare segments side by side, since one segment with a flat curve and others that decay is a sign to narrow the market. Also look at how much new usage arrives through direct traffic and referrals rather than paid acquisition.
 
-For each hypothesis, identify what evidence would confirm or refute it. What would you need to see in interview data, usage analytics, or market research to know this hypothesis is true?
+### Step 5: Run the survey on activated users
 
-> **Pro tip:** Limit yourself to one primary audience segment initially. Trying to validate market product fit across three segments simultaneously dilutes your evidence and makes it impossible to know which segment actually fits.
+Send the "very disappointed" question to users who recently reached the product's core value, as [Sean Ellis](https://seanellis.substack.com/p/is-productmarket-fit-hiding-in-your) recommends, and ask a short follow-up about the main benefit and the type of person who would benefit most. Group responses by segment and persona. Treat the result as one signal among several. A high score in one persona and a low score overall is a finding about the market definition, not a failure.
 
-### Step 3: Step 3: Map Your Value Propositions to Audience Needs
+### Step 6: Rate the fit and update the definitions
 
-For each validated audience need from your hypotheses, articulate a specific value proposition your product delivers. Use the format: 'For [audience] who [need], our product [specific benefit] unlike [alternative] because [differentiator].'
-
-Create a simple mapping table: audience needs in one column, your value propositions in the next, and the evidence that each proposition is true in a third column. Evidence can include feature capabilities, customer testimonials, benchmark data, or usage metrics.
-
-Identify any audience needs that lack a corresponding value proposition (gaps in your product) and any value propositions that don't map to a validated audience need (features without a market). Both are signals of weak market product fit.
-
-> **Pro tip:** If your strongest value propositions address needs that your target audience ranks as low priority, you have a positioning problem disguised as a product problem. Re-examine which needs are truly acute versus merely acknowledged.
-
-### Step 4: Step 4: Validate with Qualitative Customer Evidence
-
-Conduct 8-12 structured interviews with current customers (or target prospects if pre-launch). Focus your questions on three areas: how they describe the problem your product solves (does it match your audience hypotheses?), how they discovered and categorized your product (does it match your market category?), and what specific value they've received (does it match your value propositions?).
-
-Listen for the language customers use. If they describe benefits you didn't articulate, you may have undiscovered value propositions. If they describe your product differently than you do, your market category positioning needs adjustment.
-
-Document patterns across interviews. You're looking for convergence—multiple customers independently confirming the same needs, the same category framing, and the same value received.
-
-> **Pro tip:** Ask churned customers the same questions. The delta between what retained and churned customers say is often more revealing than what happy customers tell you.
-
-### Step 5: Step 5: Validate with Quantitative Signals
-
-Layer quantitative data on top of your qualitative findings. Key metrics for market product fit include:
-
-- **Retention rate**: Are customers in your target segment retaining at rates consistent with strong fit? Benchmark against your market category, not generic SaaS benchmarks.
-- **Activation rate**: What percentage of new users from your target segment reach the moment where they experience your core value proposition?
-- **Sean Ellis test**: Survey active users asking 'How would you feel if you could no longer use this product?' A 40%+ 'very disappointed' threshold suggests strong fit, but segment this by your target audience—overall numbers can mask segment-level weakness.
-- **Natural word-of-mouth**: Are customers in your target segment referring others without prompting? Organic referrals are a strong signal of genuine fit.
-
-Compile these metrics into a single dashboard or document so you can track market product fit over time, not just assess it once.
-
-> **Pro tip:** Segment every metric by your target audience hypothesis. Aggregate metrics hide whether you have fit with your intended market or accidental fit with a different one.
-
-### Step 6: Step 6: Score and Synthesize Your Market Product Fit Assessment
-
-Create a simple scoring rubric for each of the three components:
-
-- **Market Category**: Is it clearly defined? Do customers recognize it? Is the market large enough and growing?
-- **Audience Hypotheses**: Have they been validated with evidence? Is the audience segment specific and reachable?
-- **Value Propositions**: Do they map to validated needs? Are they differentiated? Do quantitative metrics confirm customers are receiving the promised value?
-
-Rate each component as Strong (validated with multiple evidence sources), Moderate (partially validated, some gaps), or Weak (unvalidated or contradicted by evidence). Overall market product fit is only as strong as its weakest component.
-
-Document your assessment with the evidence behind each rating. This becomes a living artifact you'll reference when performing the other fits—particularly when [aligning product-channel fit](https://tryhamster.com/skills/aligning-product-channel-fit) or [diagnosing growth stalls](https://tryhamster.com/skills/diagnosing-growth-stalls-with-four-fits).
-
-> **Pro tip:** Be brutally honest in your scoring. Teams routinely rate themselves 'Moderate' when evidence points to 'Weak' because acknowledging weak fit feels like admitting failure. It's not—it's the first step toward real fit.
+Rate the market definition and the product hypothesis on a weak, moderate, strong scale, citing the evidence behind each rating. Apply Balfour's test question: would growth continue if marketing stopped? If the strongest evidence comes from a narrower segment than the one you defined, rewrite the market definition around that segment. Record the date and the evidence so the next review can see what moved.
 
 ## Best Practices
 
-- Treat market product fit as a living assessment, not a one-time milestone. Markets shift, competitors emerge, and customer needs evolve. Schedule quarterly reviews as part of your broader Four Fits audit cycle.
-- Always validate market category from the customer's perspective, not your internal positioning documents. The category customers place you in determines your real competitive set regardless of where you think you belong.
-- Separate 'acknowledged needs' from 'acute needs' in your audience hypotheses. Customers will agree that many problems exist, but they only change behavior and pay money for problems that are acutely painful or urgently important.
-- Keep your value propositions concrete and measurable. 'We help teams collaborate better' is not testable. 'We reduce cross-functional project handoff time by 60%' can be validated or falsified.
-- When quantitative signals conflict with qualitative findings, investigate the discrepancy rather than choosing the more flattering data source. Conflicts often reveal your most important insights.
-- Document the evidence behind your market product fit assessment in a shared artifact. When team members disagree about strategic direction, being able to point to validated (or invalidated) hypotheses prevents arguments from devolving into opinion battles.
+- Write the market definition before looking at product data. Evidence read without a hypothesis tends to confirm whatever the team already believed, and a written definition gives you something that can be proved wrong.
+- Rate fit per segment. Balfour describes markets expanding in concentric circles ([Market Product Fit](https://brianbalfour.com/essays/market-product-fit)), so strong fit in the inner circle is a normal and useful result even when the outer circles are weak.
+- Use the customer's category, not your positioning deck. The category customers assign determines the alternatives they compare you against, whatever the marketing site says.
+- Put problems and motivations at the center of interviews. Category and persona are easy to guess; the motivation behind the problem is what predicts whether someone changes behavior.
+- Combine signal types. Survey results, retention curves, and interview language each have blind spots, and agreement across all three is much stronger evidence than any one of them.
+- Keep the assessment as a living document. Fit moves as the market moves, and the [AI-era update](https://www.reforge.com/blog/four-fits-growth-framework) to the framework argues markets now shift faster than before.
 
 ## Common Mistakes
 
-- **Defining the market category too broadly to make the TAM look impressive** — Choose the narrowest market category where you can credibly win. 'Enterprise software' is not a market category—'workflow automation for legal operations teams' is. A narrow category with strong fit beats a broad category with weak fit every time. You can expand the category later once you've dominated a beachhead.
-- **Treating the Sean Ellis 40% benchmark as the sole measure of market product fit** — The 'very disappointed' survey is one useful signal, but it doesn't tell you whether your market category is right, whether your audience hypotheses are accurate, or whether your value propositions are differentiated. Use it as one data point within the broader three-component assessment, and always segment the results by your target audience.
-- **Validating market product fit with early adopters and assuming it holds for the mainstream market** — Early adopters tolerate incomplete products and actively seek novelty—their enthusiasm can mask poor fit with the broader target market. Explicitly distinguish between early adopter validation and mainstream market validation in your audience hypotheses. Re-evaluate fit when you transition from early adopters to early majority customers.
-- **Skipping the market product fit evaluation and jumping directly to channel optimization** — Channels amplify whatever you put through them. If your market product fit is weak, scaling channels will amplify a product that doesn't resonate—burning budget and generating misleading metrics. Always validate market product fit before investing heavily in channel growth. This is the correct sequence, as detailed in [sequencing fits for early-stage growth](https://tryhamster.com/skills/sequencing-fits-for-early-stage-growth).
-- **Conflating 'customers use the product' with 'the product fits the market'** — Usage alone doesn't confirm fit. Customers might use your product because it's free, because switching costs are high, or because they haven't found an alternative yet. Look for signals of genuine fit: high retention, organic referrals, willingness to pay increasing prices, and customers who describe the product's value in terms that match your intended value propositions.
+- **Defining the market broadly to make it look large**: A broad category produces weak, noisy evidence and hides the segment that actually loves the product. Choose the narrowest market where you can show strong fit, and let Model Market Fit tell you later whether it is big enough.
+- **Treating one survey score as the verdict**: The "very disappointed" survey measures intensity among the people you asked, and says little about whether the category or the customer definition is right. Use it as one input and always segment it.
+- **Confusing usage with fit**: People use products because they are free, because switching is costly, or because a manager told them to. Look for retention that flattens, unprompted referrals, and customers describing value in their own words.
+- **Reading early-adopter enthusiasm as mainstream fit**: Early adopters tolerate gaps and enjoy novelty. When you move to a broader segment, re-run the evaluation for that segment rather than assuming the result carries over.
+- **Jumping to channels before this fit is clear**: Channels amplify what you put through them. Scaling a channel on top of weak fit burns budget and produces misleading acquisition numbers, which is why the sequencing skill puts this fit first.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/four-fits-framework/METHOD.md) — Four Fits Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/four-fits-framework/METHOD.md): Four Fits Framework
 
 ## Related Skills
 
 - [Validating Business Model-Market Fit](../validating-business-model-market-fit/SKILL.md)
-- [Diagnosing Growth Stalls Using Four Fits Analysis](../diagnosing-growth-stalls-with-four-fits/SKILL.md)
+- [Diagnosing Growth Stalls with the Four Fits](../diagnosing-growth-stalls-with-four-fits/SKILL.md)
 - [Aligning Product-Channel Fit](../aligning-product-channel-fit/SKILL.md)
 - [Sequencing the Four Fits for Early-Stage Growth](../sequencing-fits-for-early-stage-growth/SKILL.md)
-- [Mapping the Four Fits as an Interconnected Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
-- [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
-- [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
+- [Mapping the Four Fits Ecosystem](../mapping-the-four-fits-ecosystem/SKILL.md)
+- [Matching Channel to Business Model](../matching-channel-to-business-model/SKILL.md)
+- [Running Four Fits Audits](../running-four-fits-audits/SKILL.md)
+
+## Sources
+
+- [Brian Balfour: Market Product Fit](https://brianbalfour.com/essays/market-product-fit)
+- [Sean Ellis: Is Product/Market Fit Hiding in Your User Base?](https://seanellis.substack.com/p/is-productmarket-fit-hiding-in-your)
+- [First Round Review: How Superhuman Built an Engine to Find Product/Market Fit](https://review.firstround.com/how-superhuman-built-an-engine-to-find-product-market-fit/)
+- [Reforge: The Four Fits, a Growth Framework for the AI Era](https://www.reforge.com/blog/four-fits-growth-framework)

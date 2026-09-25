@@ -1,15 +1,20 @@
 ---
-name: diagramming-the-double-diamond
-description: "This skill teaches you how to visually map your design process onto the Double Diamond diagram so you can communicate project phases, activities, and progress clearly to stakeholders and team members."
+name: "diagramming-the-double-diamond"
+description: "Create a Double Diamond diagram for your own project that shows its phases, activities, outputs and current position to stakeholders."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: double-diamond
+  method: "double-diamond"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# How to Create a Double Diamond Diagram for Your Design Process
+# How to Create a Double Diamond Diagram
 
-> This skill teaches you how to visually map your design process onto the Double Diamond diagram so you can communicate project phases, activities, and progress clearly to stakeholders and team members.
+> Create a Double Diamond diagram for your own project that shows its phases, activities, outputs and current position to stakeholders.
 
 ## Before you start
 
@@ -24,132 +29,105 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Beginner |
-| Time to Learn | 45-90 minutes |
-| Outcome | You can produce a clear, customized double diamond diagram that maps your real project activities to each phase, making it easy for stakeholders to understand where you are in the design process and what comes next. |
-| Prerequisites | Basic understanding of the Double Diamond framework and its four phases, Familiarity with divergent and convergent thinking concepts, Access to a diagramming tool (Figma, Miro, FigJam, or even pen and paper) |
+| Time to Learn | about an hour, then a little upkeep each week |
+| Outcome | You can draw a Double Diamond diagram for a specific project that shows its phases, planned activities, outputs, decision points and current position. |
+| Prerequisites | Basic knowledge of the four Double Diamond phases, a project plan or at least a list of planned activities, a whiteboard or diagramming tool |
 | Part of | [Double Diamond](../../methods/double-diamond/METHOD.md) |
 
 ## Overview
 
-The double diamond diagram is the most recognizable visual in design process communication. Originally developed by the British Design Council in 2005, the two-diamond shape elegantly captures how design work alternates between expanding possibilities (divergent thinking) and narrowing focus (convergent thinking). But a generic diagram downloaded from a blog post won't help your stakeholders understand *your* project.
+A Double Diamond diagram is the model's own picture, adapted to one project. The generic version, two diamonds labelled Discover, Define, Develop and Deliver, explains the idea behind the [Double Diamond](../../methods/double-diamond/METHOD.md). A project diagram goes further: it shows what this team will actually do in each phase, what each phase must produce, where decisions happen, and where the project is right now.
 
-This skill teaches you to go beyond copying a template. You'll learn to construct a double diamond diagram that's customized to your actual project — populated with your specific research activities, decision points, deliverables, and milestones. The result is a communication artifact that serves as a shared reference for your team and a powerful narrative device for stakeholder updates.
+The diagram has been used this way since the start. The Design Council's history of the model lists uses such as kicking off a project, checking in on "where we are in the process," and helping people get comfortable with going broad and unfocused in the divergent phases ([History of the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/history-of-the-double-diamond/)). A project diagram serves all three.
 
-Whether you're presenting a design process to executives who need a high-level roadmap, onboarding new team members who need to understand the project structure, or running a retrospective to evaluate what happened in each phase, a well-crafted double diamond diagram becomes the backbone of your process communication. This skill connects directly to the broader [Double Diamond](https://tryhamster.com/methods/double-diamond) methodology and complements skills like [mapping divergent and convergent thinking modes](https://tryhamster.com/skills/mapping-divergent-convergent-thinking).
+The inputs are the project's plan (activities, rough timing, owners), the problem as currently stated, and the key decision points. The outputs are a diagram that fits on one page or one board, a version history as the project moves, and a shared reference the team and stakeholders can point to in conversation.
+
+Drawing the diagram well matters because the diagram shapes expectations. Two symmetrical diamonds drawn with a straight arrow imply a tidy sequence of equal phases. Real projects are lopsided and loop back, and the Design Council says of its own framework diagram that "this is not a linear process as the arrows on the diagram show" ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)). A project diagram that shows its real proportions and loops sets honest expectations with stakeholders.
+
+This skill covers choosing the audience and level of detail, drawing and labelling the structure, adding activities and outputs, marking decision points and loops, showing current position, and keeping the diagram current.
 
 ## How It Works
 
-The double diamond diagram works because it encodes two fundamental principles of design into a single visual: the rhythm of divergence and convergence, and the distinction between problem space and solution space.
+A useful project diagram has four layers, added in order.
 
-The first diamond represents the **problem space**. It starts at a narrow point — an initial brief or challenge — then expands outward as the team explores broadly during the Discover phase. The widest point represents maximum ambiguity: you've gathered many insights, user needs, and perspectives. The diamond then narrows as the team synthesizes findings and converges on a clear problem definition.
+The structure layer is the two diamonds and four phase labels. Keep the standard names so the diagram is recognisable to anyone who has seen the model. The Design Council publishes its Framework for Innovation under a CC BY 4.0 licence, which allows adaptation with attribution ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)), and Wikipedia notes that it released an openly licensed visual and a Mural template for the model's anniversary ([Wikipedia on the Double Diamond](https://en.wikipedia.org/wiki/Double_Diamond_%28design_process_model%29)). Credit the Design Council when you base a diagram on theirs.
 
-The second diamond represents the **solution space**. It begins at the defined problem statement, then expands as the team generates multiple possible solutions during the Develop phase. Again, the widest point represents maximum possibility. It narrows as the team tests, iterates, and converges on a final solution to deliver.
+The content layer places this project's activities inside each phase: the research methods in Discover, the synthesis workshops in Define, the ideation sessions in Develop, the test rounds and pilot in Deliver. Place activities on the widening half or the narrowing half according to their mode. Add the output of each phase at its right-hand point, such as "agreed problem statement" at the end of Define.
 
-The visual power comes from the shape itself: stakeholders intuitively grasp that the wide parts mean 'we're exploring' and the narrow parts mean 'we're deciding.' This is far more effective than a linear timeline or a Gantt chart for communicating a design process, because it honestly represents the messy, non-linear nature of design work while still showing forward progress.
+The decision layer marks the points where the project commits: the end of Define, the concept selection in Deliver, and any funding or go-or-stop gates. Show who decides. Add return arrows where the team expects to loop back, for example from Deliver testing to Define.
 
-When you customize the diagram with your project's actual activities, deliverables, and current position, it transforms from an abstract model into a living project map. The shape provides structure; your annotations provide specificity.
+The status layer shows where the project is today and what has been completed. A simple marker and a date are enough. This layer changes most often, so keep it easy to update.
+
+Proportions carry meaning. If the team plans a long Discover and a short Develop, draw the first diamond wider. Dan Nessler's widely shared revamp of the model notes that diamond sizes vary with a project's scope and needs ([Nessler's revamped Double Diamond](https://marvelapp.com/blog/apply-design-thinking-hcd-ux-creative-process-scratch/)). A diagram with honest proportions starts useful conversations about where time is going.
+
+Different audiences need different levels of detail. Executives need the structure, outputs, decisions and status. The working team needs activities and owners too. Draw one detailed version and derive a simpler one from it, instead of maintaining two unrelated drawings.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Project's Four Phases
+### Step 1: Decide who the diagram is for
 
-Before touching any diagramming tool, write down what each of the four Double Diamond phases means for your specific project. For Discover, list the research activities you've done or plan to do (user interviews, competitive analysis, data mining). For Define, note how you'll synthesize findings into a problem statement. For Develop, capture your ideation and prototyping plans. For Deliver, specify testing, iteration, and launch activities.
+Name the main audience: the working team, sponsors, a steering group or a mixed workshop. Decide what they need to take away, such as where decisions will happen or what research will be done. That decides the level of detail. If you need more than one audience, plan a detailed version and a summary derived from it.
 
-This step forces you to move beyond generic labels. Instead of just writing 'User Research' under Discover, you might write '12 contextual inquiry sessions with enterprise buyers' or 'Analysis of 2,000 support tickets from Q3.' The specificity is what makes your diagram useful rather than decorative.
+### Step 2: Draw the structure with standard labels
 
-> **Pro tip:** If you're mid-project, audit what you've actually done versus what was planned. The diagram should reflect reality, not just the original plan.
+Draw two diamonds side by side with the challenge on the left and the outcome on the right. Label the four phases Discover, Define, Develop and Deliver. Size each diamond to match the planned effort instead of drawing them equal. If you adapt the Design Council's own artwork, credit it under the terms of its [CC BY 4.0 licence](https://www.designcouncil.org.uk/resources/framework-for-innovation/).
 
-### Step 2: Step 2: Draw the Two-Diamond Framework
+### Step 3: Add activities in the right half of each diamond
 
-Create two diamond shapes side by side, sharing a middle point. Each diamond is essentially two triangles: the left triangle widens (divergence) and the right triangle narrows (convergence).
+Place each planned activity in the phase and half it belongs to: widening halves for research and ideation, narrowing halves for synthesis and testing. Use short labels such as "interviews with drivers" or "concept test round two." Add owners if the audience is the working team. Keep the number of labels low enough to read at a glance, grouping minor tasks.
 
-In most diagramming tools, the easiest approach is to draw four diagonal lines forming two connected chevron shapes, or use two rhombus shapes positioned so they share a vertex. The horizontal axis represents time moving left to right. The vertical axis represents the breadth of exploration — wider means more options being considered, narrower means more focus.
+### Step 4: Mark outputs and decision points
 
-Label the four phases clearly: **Discover** (first diamond, left half), **Define** (first diamond, right half), **Develop** (second diamond, left half), **Deliver** (second diamond, right half). Place labels above or inside each section. Add a horizontal line through the center to create a clear baseline.
+At each diamond's right-hand point, write the output that phase must produce: the agreed problem statement for Define and the chosen, tested solution for Deliver. Mark each decision with who makes it. Add any external gates, such as funding approvals. These markers are what stakeholders look for first.
 
-> **Pro tip:** Use a subtle fill color for each diamond half — for example, shades of blue for the problem space diamond and shades of green for the solution space diamond. This color coding reinforces the problem/solution distinction at a glance.
+### Step 5: Show the loops
 
-### Step 3: Step 3: Annotate Each Phase with Activities and Deliverables
+Draw return arrows from later phases to earlier ones where you expect to revisit them, such as from Deliver testing back to Define. The Design Council's own framework diagram shows these loops ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)). Label each loop with the trigger, such as "tests show problem framing is wrong." This prepares stakeholders for loops as a planned part of the process.
 
-Now populate each phase section with the specific activities you identified in Step 1. Position items along the widening or narrowing slope to indicate whether they're part of the divergent or convergent motion within that phase.
+### Step 6: Mark current position and keep it current
 
-For example, in the Discover phase, place 'Stakeholder Interviews' and 'Field Studies' near the widening slope to show they're expanding understanding. In the Define phase, place 'Affinity Mapping' and 'Problem Statement Workshop' near the narrowing slope to show convergence.
+Place a clear marker showing where the project is now and the date of the update. Tick off completed activities. Update the diagram at a regular point, such as the weekly team meeting. Keep old versions, since the history of the diagram shows how the project really moved.
 
-Include key deliverables at the transition points between phases. At the center of the first diamond (the narrowest point between Define and Develop), place your problem statement or design brief. At the end of the second diamond, place your final deliverable — whether that's a launched product, a validated prototype, or a design specification.
+### Step 7: Use it in conversation
 
-Keep annotations concise. Use short labels (3-5 words) with optional supporting details in a legend or appendix. The diagram should be scannable in under 30 seconds.
-
-> **Pro tip:** Place the most important deliverables directly on the diamond's outline at transition points. Place supporting activities inside the diamond shape. This visual hierarchy helps stakeholders distinguish between milestones and day-to-day work.
-
-### Step 4: Step 4: Mark the Current Project Position
-
-If you're using the diagram for project communication (not just process education), add a clear marker showing where the team currently sits in the process. This could be a vertical dashed line, a highlighted section, or a 'You Are Here' indicator.
-
-This single addition transforms your diagram from a static process model into a dynamic project status tool. Stakeholders can immediately see what's been completed, what's in progress, and what's ahead. It also sets expectations about what kind of work is happening now — if you're in the wide part of Develop, stakeholders understand that the team is intentionally exploring multiple options rather than converging prematurely.
-
-Update this marker regularly (weekly or at each sprint review) to show progress. Over time, stakeholders develop an intuitive sense of the project's rhythm.
-
-> **Pro tip:** When presenting to executives, add estimated time ranges below each phase. This connects the abstract shape to concrete timelines without sacrificing the diagram's visual clarity.
-
-### Step 5: Step 5: Add Decision Gates Between Phases
-
-At each transition point between phases, add a decision gate — a visual marker (often a diamond shape or checkpoint icon) that represents the criteria for moving from one phase to the next.
-
-Between Discover and Define, the gate might be: 'Sufficient research data collected to begin synthesis.' Between Define and Develop, it's typically: 'Problem statement validated by stakeholders.' Between Develop and Deliver: 'Lead concept selected and validated through user testing.'
-
-Decision gates serve two purposes. First, they give stakeholders confidence that the process has built-in quality checks — you're not just exploring endlessly. Second, they give the team clear criteria for when to shift modes from divergent to convergent thinking, which is one of the hardest judgment calls in design work.
-
-> **Pro tip:** Frame decision gates as questions the team must answer 'yes' to before proceeding. For example: 'Do we have a clear, evidence-based problem statement?' is more actionable than 'Problem defined.'
-
-### Step 6: Step 6: Tailor Visual Complexity to Your Audience
-
-Create at least two versions of your double diamond diagram: a high-level version for executive stakeholders and a detailed version for the design and product team.
-
-The executive version should have clean lines, minimal text, four phase labels, key milestones, the current position marker, and a timeline. It should fit on a single presentation slide and be understandable without narration.
-
-The team version can include all activities, deliverables, methods used in each phase, team member assignments, and links to related artifacts (research reports, prototypes, test results). This version works well as a Miro or FigJam board that the team references throughout the project.
-
-Both versions should use the same core diamond shape and color scheme so they're instantly recognizable as the same process map at different zoom levels.
-
-> **Pro tip:** For the executive version, follow the 'three-second rule': a stakeholder should be able to identify the current phase and overall progress within three seconds of seeing the diagram.
-
-### Step 7: Step 7: Iterate and Update the Diagram Throughout the Project
-
-A double diamond diagram is not a one-time artifact. As the project progresses, update it to reflect what actually happened — activities that were added, phases that took longer than expected, pivots in direction.
-
-This living document becomes invaluable for retrospectives. By comparing the original diagram with the final version, teams can identify where the process diverged from expectations and discuss why. Did the Discover phase take twice as long because the problem space was more complex than anticipated? Did the team skip a proper Define phase and jump into solutions too early?
-
-Version your diagrams (save snapshots at key milestones) so you can tell the story of your project's evolution. This practice builds organizational learning about how design processes actually unfold versus how they're planned.
+Open reviews and stakeholder updates with the diagram. Point to where the project is and what the next decision is. When someone asks for a solution during Discover, point to the diagram to show where solutions will be developed. The diagram earns its keep when people start using it to ask better questions.
 
 ## Best Practices
 
-- Always populate the diagram with project-specific activities rather than generic labels — 'Contextual interviews with 15 hospital nurses' communicates far more than 'User Research.'
-- Use consistent color coding across all project communications: one color family for the problem space (Discover/Define) and another for the solution space (Develop/Deliver).
-- Position the widest point of each diamond at approximately 40-60% of that diamond's width to visually emphasize that divergence is a deliberate, substantial activity — not just a quick brainstorm.
-- Include a brief legend or key that explains what the diamond shape represents (divergent vs. convergent thinking) for audiences unfamiliar with the Double Diamond framework.
-- Add a horizontal timeline beneath the diagram with approximate dates or sprint numbers to anchor the abstract shape in real project time.
-- When presenting the diagram, narrate the story of the project by 'walking' through the shape from left to right — this narrative structure is more engaging than explaining each phase in isolation.
+- **Keep the standard phase names.** Recognisable labels let newcomers read the diagram without explanation.
+- **Draw honest proportions.** Size diamonds to the planned effort. Equal diamonds on an unequal plan mislead.
+- **Put outputs at the points.** The narrow tips are where each diamond produces something, so label them with the actual deliverable.
+- **Show loops as planned, not as failure.** Return arrows tell stakeholders that revisiting a phase is expected.
+- **Update on a rhythm.** A diagram that is weeks out of date is worse than none, because people trust it.
+- **Credit the source.** Attribute the Design Council when you adapt its artwork.
 
 ## Common Mistakes
 
-- **Using a generic double diamond template without customizing it for the specific project** — Always populate each phase with your actual activities, deliverables, and milestones. A diagram that could apply to any project communicates nothing about yours. Even 15 minutes of customization dramatically increases its communication value.
-- **Making both diamonds the same size when the phases were not equally weighted** — Adjust the relative size of each diamond to roughly represent the time or effort invested. If Discover/Define took 60% of the project time, make the first diamond proportionally larger. This honest representation prevents stakeholders from assuming equal phase distribution.
-- **Treating the diagram as a linear, one-way process with no loops or iteration** — Add small loop arrows or iteration markers within phases to show where the team cycled back. The Double Diamond is iterative in practice even if the shape suggests linearity. Acknowledging this in your diagram builds credibility with anyone who's actually done design work.
-- **Overloading the diagram with too much detail, making it unreadable at presentation scale** — Create separate versions for different audiences. The presentation version should have no more than 3-4 items per phase. Save the comprehensive version for team wikis or Miro boards where people can zoom in.
-- **Forgetting to show the starting point and ending point of the process clearly** — Label the far-left point with your initial brief or challenge statement and the far-right point with the final outcome or deliverable. These bookends give the diagram narrative structure and help stakeholders understand the transformation from ambiguous challenge to concrete solution.
+- **Drawing the generic model and stopping**: Two labelled diamonds explain the idea but tell nobody what this project will do. Add activities, outputs and decisions.
+- **Making it too detailed to read**: A diagram with every task becomes a plan in disguise. Group minor tasks and keep the full plan elsewhere.
+- **Implying a straight line**: A single forward arrow suggests no revisiting. Add loop arrows where the team expects them.
+- **Never updating the status**: A stale "you are here" marker misleads stakeholders. Update it at a fixed point each week.
+- **Hiding decisions**: If decision points and owners are missing, stakeholders cannot tell when to weigh in. Mark them clearly.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/double-diamond/METHOD.md) — Double Diamond
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/double-diamond/METHOD.md): Double Diamond
 
 ## Related Skills
 
-- [Converging on Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Conducting Discovery Research in the Double Diamond](../conducting-discovery-research/SKILL.md)
 - [Synthesizing Insights to Define the Problem](../synthesizing-problem-definitions/SKILL.md)
-- [Facilitating Divergent Ideation in the Develop Phase](../facilitating-divergent-ideation/SKILL.md)
-- [Mapping Divergent and Convergent Thinking Modes](../mapping-divergent-convergent-thinking/SKILL.md)
-- [Conducting Discovery Research in the Discover Phase](../conducting-discovery-research/SKILL.md)
-- [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
-- [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+- [Facilitating Divergent Ideation in the Double Diamond](../facilitating-divergent-ideation/SKILL.md)
+- [Converging on Final Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Double Diamond Thinking: Divergent and Convergent Modes](../mapping-divergent-convergent-thinking/SKILL.md)
+- [Double Diamond vs Design Thinking: Choosing a Framework](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
+- [Adapting the Double Diamond UX Framework for Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+
+## Sources
+
+- [Design Council: History of the Double Diamond](https://www.designcouncil.org.uk/resources/the-double-diamond/history-of-the-double-diamond/)
+- [Design Council: Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)
+- [Wikipedia: Double Diamond (design process model)](https://en.wikipedia.org/wiki/Double_Diamond_%28design_process_model%29)
+- [Dan Nessler: How to apply a design thinking, HCD, UX or any creative process from scratch](https://marvelapp.com/blog/apply-design-thinking-hcd-ux-creative-process-scratch/)

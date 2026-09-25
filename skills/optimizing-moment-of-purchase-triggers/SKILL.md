@@ -1,15 +1,20 @@
 ---
-name: optimizing-moment-of-purchase-triggers
-description: "This skill teaches you how to identify and influence the critical decision stage touchpoints that tip active evaluators into buyers, using the McKinsey Consumer Decision Journey's moment-of-purchase framework."
+name: "optimizing-moment-of-purchase-triggers"
+description: "Optimize moment-of-purchase triggers: find what makes ready buyers hesitate or switch at checkout, and fix it with evidence and honest reassurance."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: mckinsey-consumer-decision-journey
+  method: "mckinsey-consumer-decision-journey"
+  datePublished: "2026-04-29"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Optimizing Moment-of-Purchase Triggers at the Decision Stage
+# Optimizing Moment-of-Purchase Triggers
 
-> This skill teaches you how to identify and influence the critical decision stage touchpoints that tip active evaluators into buyers, using the McKinsey Consumer Decision Journey's moment-of-purchase framework.
+> Optimize moment-of-purchase triggers: find what makes ready buyers hesitate or switch at checkout, and fix it with evidence and honest reassurance.
 
 ## Before you start
 
@@ -24,137 +29,87 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes |
-| Outcome | You'll convert significantly more active evaluators into buyers by designing purchase moments that eliminate friction, build last-mile confidence, and align with how consumers actually decide. |
-| Prerequisites | Understanding of the McKinsey Consumer Decision Journey framework, Basic knowledge of conversion rate optimization, Familiarity with active evaluation behavior and how buyers research before purchasing, Access to analytics data (site analytics, checkout funnel data, or POS data) |
+| Time to Learn | 2-3 hours |
+| Outcome | You can identify where buyers who were ready to purchase hesitate or switch, and run tested changes that remove the causes without pressuring them. |
+| Prerequisites | Access to checkout or sales-stage data, a way to run A/B tests or structured before-and-after comparisons, customer feedback channels |
 | Part of | [McKinsey Consumer Decision Journey](../../methods/mckinsey-consumer-decision-journey/METHOD.md) |
 
 ## Overview
 
-In the McKinsey Consumer Decision Journey, the moment of purchase is the narrow window where weeks of active evaluation collapse into a single decision. It's the most fragile and most valuable stage—a consumer who has survived the initial consideration set, researched alternatives, and narrowed their options can still walk away if the final experience introduces doubt. Yet most marketing teams over-invest in awareness and under-invest in this exact moment.
+The moment of purchase, which McKinsey called closure, is the third phase of the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey). It covers the final step where a buyer commits: a checkout, a store shelf, a pricing page, a contract review or the last sales call. Buyers arrive here with a preferred option, but the decision is not settled. [The original McKinsey research](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) found that more consumers were delaying the final decision until they were in the store, and that up to 40 percent changed their minds because of something they saw, learned or did there, such as packaging, placement or a conversation with a salesperson.
 
-Optimizing moment-of-purchase triggers means auditing, designing, and testing every element a buyer encounters at the decision stage—whether that's a checkout page, an in-store display, a sales conversation, or a pricing page. The goal isn't manipulation; it's removing the gap between a buyer's intent and their action. When someone has already decided they want something in your category, the brand that makes it easiest and most reassuring to say 'yes' wins.
+That finding cuts both ways. A brand that led through evaluation can lose at the last step to friction or doubt, and a brand that was unlikely to be in the initial set can still win with the right presence at the point of purchase. The McKinsey authors describe skin care brands that won on the shelf with attractive packaging and on-shelf messaging even though few buyers had them in mind at the start.
 
-This skill applies across B2C and B2B, online and offline. The triggers differ—a SaaS pricing page has different friction points than a retail shelf—but the underlying psychology is universal: at the decision stage, buyers need clarity, confidence, and a reason to act now rather than later.
+Optimizing moment-of-purchase triggers means finding what tips buyers at this final step and changing it deliberately. The triggers fall into two groups: things that stop a purchase, such as surprise costs, confusing choices or missing reassurance, and things that complete one, such as clear proof, a relevant offer or a fast path to the product. The work is diagnostic first and experimental second.
+
+This skill does not cover manufactured pressure. Fake countdown timers and invented stock warnings may lift a number briefly, but they damage trust in the phase that follows, and the postpurchase experience is what decides whether the customer comes back.
 
 ## How It Works
 
-The moment of purchase operates on a simple but underappreciated principle: by the time a consumer reaches the decision stage in the McKinsey Consumer Decision Journey, they've already done the cognitive work of evaluating options. Their brain has shifted from exploratory mode ("what are my options?") to commitment mode ("which one do I pick?"). This shift creates a unique psychological state where the buyer is simultaneously motivated and vulnerable to last-second friction.
+Start from the observation that not every abandoned purchase is a lost sale. The [Baymard Institute](https://baymard.com/lists/cart-abandonment-rate), which compiles cart abandonment studies, points out that a large portion of abandonments are a natural consequence of how people browse, such as window shopping, price comparison and saving items for later. The job is to separate that background behavior from abandonment caused by problems you can fix, and to work on the second group.
 
-Purchase triggers work by addressing the three forces that compete at this moment. First, **momentum**—the accumulated research and emotional investment pushing the buyer forward. Second, **friction**—anything that slows, confuses, or complicates the act of buying. Third, **doubt**—the lingering questions ("Is this the right choice? Am I paying too much? Will I regret this?") that can derail a purchase even after the buyer has mentally committed.
+Fixable problems usually come from one of four sources. The first is cost surprises, where the total at the end differs from what the buyer expected. The second is choice overload, where too many plans, options or add-ons make the buyer unsure which one is right. The third is missing confidence, where the buyer lacks reassurance about returns, security, support or fit at the moment it matters. The fourth is effort, where forms, account creation or approval steps make the purchase harder than the decision.
 
-Effective trigger optimization amplifies momentum, eliminates friction, and neutralizes doubt simultaneously. It recognizes that the decision stage is not where you persuade someone to want your product—that happened during active evaluation. Instead, it's where you make the transition from wanting to owning feel inevitable and safe.
+On the other side are triggers that help a ready buyer commit. Google's [messy middle research](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) names six biases that shape purchase choices, several of which apply here: the power of now, where a shorter wait strengthens the offer, social proof from reviews, authority from trusted sources, scarcity when availability is genuinely limited, and the power of free, where a free extra motivates the purchase. In [Google's simulated purchase experiment](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/), a fictional cereal brand with five-star reviews and an extra-for-free offer won 28% of preference from shoppers' established favorites. Use these as ways to present true information well, not as tricks.
 
-This is why the McKinsey framework treats the moment of purchase as distinct from active evaluation. The levers are different. During evaluation, content and comparison drive behavior. At the purchase moment, experience design, risk reversal, and contextual urgency drive behavior. Confusing the two stages leads to misallocated effort—like running retargeting ads to someone who's already standing at your checkout counter.
+The diagnostic loop combines three kinds of evidence. Funnel data for the final step shows where buyers drop and how often. Session recordings, sales call notes and support tickets show what they encountered. Short exit questions or post-loss interviews give the reason in the buyer's words. When all three point at the same cause, you have a strong candidate for a change.
+
+Each change is then tested. Where traffic allows, run a controlled experiment and measure completed purchases, not clicks. Where it does not, as in most B2B sales stages, compare structured before-and-after periods and track the reasons buyers give for choosing or not choosing you. Keep a log of what you changed and what happened, so the team does not retest old ideas.
+
+Finally, check the downstream effect. A change that raises conversion but also raises refunds, cancellations or complaints has moved a problem into the postpurchase phase. Measure both before calling a change a win.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Map Every Purchase-Moment Touchpoint
+### Step 1: Define the Final Step
 
-Before you can optimize triggers, you need a complete inventory of every touchpoint a buyer encounters at the decision stage. This isn't just your checkout page—it includes every micro-interaction in the final stretch.
+Write down exactly what the moment of purchase is for your business: which pages, screens, store areas or sales stages it covers, and what event counts as a completed purchase. Include every route, such as web checkout, app purchase, phone orders and sales-assisted deals. Without a clear boundary, measurements drift and changes cannot be compared. Record the current completion rate for each route as your baseline.
 
-For e-commerce, map: product page → add to cart → cart page → checkout flow → payment confirmation. For B2B SaaS, map: pricing page → plan selection → sign-up form → payment → onboarding start. For retail, map: shelf placement → packaging → in-store signage → POS interaction → receipt.
+### Step 2: Find Where Buyers Drop
 
-For each touchpoint, document: what the buyer sees, what action they're asked to take, what information is available to them, and what's missing. Screenshot or photograph every step. The goal is to experience the purchase moment exactly as your buyer does—not as your internal team imagines it.
+Break the final step into its smallest measurable parts and look at where buyers leave or stall. Compare routes, devices and segments, since problems often concentrate in one of them. Set aside abandonment that looks like browsing, such as saving items or comparing prices, and focus on drops that follow a specific screen or event. For sales-led deals, look at which stage deals stall in and how long they stay there.
 
-> **Pro tip:** Do this exercise yourself as if you're a first-time buyer. Use a fresh browser with no cookies, or visit your retail location without your employee badge. The experience you see internally is never the experience your buyer sees.
+### Step 3: Collect the Reasons
 
-### Step 2: Step 2: Identify Friction Points Through Data and Observation
+Watch session recordings of abandoned purchases, read support tickets and chat logs from the final step, and review notes from lost deals. Add a single, optional question at the point of exit asking what stopped the purchase. Group the reasons into cost, choice, confidence and effort. The group with the most frequent and most fixable reasons is where to start.
 
-With your touchpoint map in hand, layer in quantitative and qualitative data to find where buyers are dropping off or hesitating.
+### Step 4: Fix Cost and Choice Problems
 
-Quantitatively, analyze your funnel drop-off rates. Where do the biggest losses happen between "intent to buy" and "purchase complete"? Common culprits: cart abandonment spikes at shipping cost reveal, drop-offs on pricing page when toggling between plans, exits at account creation forms. Use heatmaps and session recordings (tools like Hotjar, FullStory, or Microsoft Clarity) to see exactly where people hesitate, rage-click, or abandon.
+Show the full price, including shipping, taxes and fees, as early as the buyer asks for it. Reduce the number of choices at the final step, or give each option a short description of who it is for. Remove add-ons that distract from the main purchase. For B2B, make sure the proposal matches what the buyer was quoted and that terms do not change late in the process.
 
-Qualitatively, gather exit survey data ("What almost stopped you from buying today?"), interview recent buyers about their purchase experience, and review support tickets from people who had trouble completing purchases. Look for patterns, not outliers—if three different buyers mention confusion about your return policy, that's a friction point worth fixing.
+### Step 5: Add Confidence at the Point of Doubt
 
-Create a friction inventory: a prioritized list of every obstacle between intent and conversion, ranked by frequency and severity.
+Place reassurance where hesitation happens: return terms next to the purchase button, security details next to payment fields, relevant reviews next to the product choice. Use evidence buyers trust, such as reviews from similar buyers or recognized certifications, which work through the social proof and authority biases described in [Google's research](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/). Keep it short, because long blocks of reassurance can add doubt instead of removing it.
 
-> **Pro tip:** Don't just look at abandonment rates. Also measure time-to-completion at each step. A step with low abandonment but high dwell time often signals confusion or hesitation that's worth investigating.
+### Step 6: Reduce Effort
 
-### Step 3: Step 3: Audit Your Confidence Signals
+Remove every field and step that is not needed to complete the purchase. Offer guest checkout, saved details for returning buyers, and the payment methods your buyers expect. In sales-led deals, prepare the security, legal and procurement answers buyers will ask for so approvals do not stall the decision. Measure time to complete as well as completion rate.
 
-At the decision stage, buyers need reassurance that they're making the right choice. Audit the confidence signals present (or absent) at each purchase-moment touchpoint.
+### Step 7: Test and Check Downstream
 
-Confidence signals include: social proof (reviews, ratings, customer counts, logos), risk reversal (guarantees, free returns, money-back promises), authority markers (certifications, awards, press mentions), and specificity (exact delivery dates rather than "3-5 business days," precise plan features rather than vague benefit statements).
-
-For each touchpoint in your map, ask: What question might the buyer have right now? Is that question answered here? If a buyer is on your checkout page wondering about returns, is your return policy visible—or buried in a footer link? If they're choosing between two pricing plans, can they see exactly what they get and don't get—or is it hidden behind a "compare plans" toggle?
-
-Grade each touchpoint: strong confidence signals, adequate, weak, or missing entirely. This audit reveals where doubt can creep in at the exact moment your buyer needs certainty.
-
-> **Pro tip:** The most powerful confidence signal at the decision stage is specificity. "30-day money-back guarantee" beats "satisfaction guaranteed." "Join 14,328 marketing teams" beats "trusted by thousands." Vagueness breeds doubt; precision breeds confidence.
-
-### Step 4: Step 4: Design and Deploy Urgency and Scarcity Triggers
-
-Urgency and scarcity are the most misused and most effective purchase triggers. The key is authenticity—fake countdown timers and fabricated stock levels destroy trust, while genuine urgency catalyzes action.
-
-Authentic urgency examples: limited-time pricing tied to a real event (end of quarter, product launch window), genuine stock constraints displayed in real time, enrollment deadlines for cohort-based programs, seasonal relevance ("Set this up before your holiday traffic spike").
-
-Authentic scarcity examples: actual remaining inventory counts, limited seats or capacity, time-limited bonuses that genuinely expire, early-adopter pricing that will genuinely increase.
-
-Implement these triggers at the specific touchpoints where your data shows hesitation. If buyers linger on your pricing page for 90+ seconds without clicking, that's where urgency messaging ("Annual pricing ends Friday") can tip the balance. If cart abandonment is high, that's where scarcity ("Only 3 left at this price") or urgency ("Your cart expires in 30 minutes") can re-engage.
-
-Always ensure your urgency triggers are truthful. Regulatory risk aside, savvy buyers spot fake urgency instantly, and it undermines every other confidence signal on your page.
-
-> **Pro tip:** The most effective urgency trigger is often loss aversion, not gain. "You'll lose your reserved spot" is stronger than "Sign up now to get your spot." Frame what the buyer stands to lose by waiting, not just what they gain by acting.
-
-### Step 5: Step 5: Eliminate Decision Fatigue at the Final Step
-
-Decision fatigue is the silent killer at the moment of purchase. A buyer who has spent energy evaluating options arrives at your checkout or sign-up flow already cognitively depleted. Every additional choice you ask them to make increases the probability of abandonment.
-
-Audit your purchase flow for unnecessary decisions: Do buyers need to create an account before purchasing? (Offer guest checkout.) Are there too many form fields? (Remove anything non-essential.) Do you present upsells and cross-sells at checkout? (Test whether these help or hurt conversion.) Is the default option clear, or must the buyer figure out which plan or variant to choose?
-
-The most effective technique is intelligent defaulting: pre-select the most popular option, pre-fill information where possible, reduce steps to the absolute minimum, and make the primary action button unmistakably clear. For SaaS, highlight your recommended plan. For e-commerce, default to the most popular shipping option.
-
-Every field you remove, every decision you eliminate, and every default you set is a trigger that moves the buyer from intent to action.
-
-> **Pro tip:** Test a radical reduction. Take your current purchase flow and cut it in half—remove every field, step, and option that isn't legally or operationally required. Measure the impact. You'll almost always see conversion lift, and you can add back only what you prove is necessary.
-
-### Step 6: Step 6: Implement Post-Click Reassurance
-
-The decision stage doesn't end at the click of "Buy Now." The 30 seconds after a purchase are when buyer's remorse is most acute—and when you can either cement the decision or let doubt creep in.
-
-Design your confirmation experience to reinforce the buyer's choice: a confirmation page that says "Great choice—here's what happens next" with clear next steps, an immediate confirmation email that's warm and specific (not a generic receipt), and a first-touch onboarding message that makes the buyer feel smart for choosing you.
-
-Include elements that validate the decision: "You're joining [X] other customers who chose this plan," a quick-start guide or immediate value delivery, and a clear support path if anything goes wrong. This post-click reassurance is also a bridge to the post-purchase experience phase of the McKinsey Consumer Decision Journey, where loyalty loops begin forming.
-
-If your post-purchase communication is cold, delayed, or generic, you're leaking the goodwill you earned at the moment of purchase—and you're starting the loyalty loop on the wrong foot.
-
-> **Pro tip:** Send your confirmation email within 60 seconds of purchase. Speed of first contact after buying is one of the strongest predictors of buyer satisfaction and return-purchase behavior. A 24-hour delay in confirmation email feels like silence.
-
-### Step 7: Step 7: Test, Measure, and Iterate Systematically
-
-Purchase trigger optimization is not a one-time project—it's an ongoing practice. Set up a testing framework to continuously improve decision stage conversion.
-
-Prioritize tests by expected impact: start with the highest-friction touchpoints identified in Step 2. Run A/B tests on one trigger at a time so you can isolate effects. Key metrics to track: conversion rate at each purchase-stage touchpoint, average time-to-purchase, cart abandonment rate (e-commerce), pricing page-to-signup rate (SaaS), and revenue per visitor.
-
-Document every test with a hypothesis, what you changed, the result, and the learning. Build a knowledge base of what works for your specific audience. What triggers work for a $29/month SaaS tool are different from what works for a $2,000 B2B contract.
-
-Revisit your full touchpoint audit quarterly. Purchase experiences decay—new features change flows, seasonal patterns shift behavior, and competitor improvements raise buyer expectations. What converted well six months ago may underperform today.
-
-> **Pro tip:** Don't just test conversion rate in isolation. Measure downstream metrics like refund rate, support ticket volume, and 30-day retention. A trigger that boosts conversion but attracts uncommitted buyers will hurt your business in the loyalty loop phase.
+Run each change as a controlled test where you can, and measure completed purchases along with refunds, cancellations and support contacts in the following weeks. Keep changes that improve completion without raising those downstream measures. Log every test with its hypothesis and result. Revisit the reasons data regularly, since new causes appear as products, prices and competitors change.
 
 ## Best Practices
 
-- Place your strongest social proof (review count, customer logos, or testimonial) within visual proximity of your primary call-to-action button—buyers look for reassurance right before clicking, not at the top of the page.
-- Show the total cost including all fees, taxes, and shipping before the buyer reaches the final checkout step. Surprise costs at the last moment are the number one driver of cart abandonment across industries.
-- Use real-time data where possible: live inventory counts, actual number of current users, genuine time-limited offers. Buyers have been trained to distrust generic urgency signals, but specific, verifiable numbers still work.
-- Default to the choice you want most buyers to make. If 70% of your customers choose the mid-tier plan, pre-highlight it and label it 'Most Popular.' Decision stage buyers are looking for signals about what the right choice is.
-- Reduce form fields to the operational minimum for initial purchase and collect additional information after conversion. Every non-essential field is a micro-decision that adds friction at the worst possible moment.
-- Coordinate your purchase triggers across channels. If a buyer researches on mobile and buys on desktop, ensure the confidence signals and urgency cues are consistent—a discount that appears on mobile but not desktop creates confusion at the decision stage.
+- Measure completed purchases, not clicks on a buy button. Many changes that lift clicks do not change what buyers actually complete, and some move the drop to a later screen.
+- Put reassurance at the exact point of doubt. A return policy on a separate page does little for a buyer hesitating over the payment button, while one short line next to it answers the question when it arises.
+- Use urgency and scarcity only when they are true. Real delivery cutoffs and genuinely limited stock help buyers decide, while invented ones erode trust and show up later as complaints and returns.
+- Treat in-person and sales-assisted purchases as part of the same phase. Packaging, shelf position and the last conversation with a salesperson were among the factors [McKinsey found](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) changed minds, so audit them with the same care as a web checkout.
+- Keep a shared log of tests and results. It prevents repeated experiments, helps new team members learn quickly, and makes patterns across tests visible.
+- Review the final step after every pricing or packaging change. These changes often introduce new surprises at checkout that nobody planned for.
 
 ## Common Mistakes
 
-- **Using fake urgency like evergreen countdown timers that reset on page refresh, or 'Only 2 left!' messages on products with unlimited digital inventory.** — Only use urgency and scarcity triggers backed by real constraints. If your offer doesn't genuinely expire, use social proof or value reinforcement instead. Savvy buyers screenshot countdown timers and check back—getting caught destroys all trust signals simultaneously.
-- **Optimizing the checkout flow in isolation without considering the entire decision stage journey. For example, perfecting the payment form while the pricing page is confusing and drives buyers away before they ever reach checkout.** — Map the complete decision stage experience from the first purchase-intent touchpoint to post-purchase confirmation. Optimize sequentially, starting with the highest-abandonment step. Your conversion rate is constrained by your weakest link, not your strongest.
-- **Overloading the purchase moment with upsells, cross-sells, add-ons, and promotional messages that distract from the primary conversion action.** — Keep the moment of purchase singularly focused on completing the transaction. Test upsells on the confirmation page or in post-purchase follow-up emails instead. A buyer who abandons because you offered a $5 add-on is worth far more than the margin on that add-on.
-- **Treating all decision stage buyers as identical and showing the same triggers regardless of how they arrived—ignoring that someone who came from a comparison article has different needs than someone who came from a brand search.** — Segment your purchase experience by referral source or buyer behavior. Comparison-article visitors may need more competitive differentiation at checkout. Brand-search visitors may need less persuasion but more streamlined process. Use UTM parameters or behavioral data to personalize decision stage triggers.
-- **Neglecting the post-click experience entirely—sending a generic order confirmation email hours later and providing no immediate reinforcement of the purchase decision.** — Design the first 60 seconds after purchase as carefully as you design the moment before. Immediate, specific confirmation with clear next steps and decision-validating messaging reduces buyer's remorse and sets up the post-purchase loyalty loop that McKinsey's CDJ framework emphasizes.
+- **Treating all abandonment as lost sales**: Much abandonment is normal browsing behavior. Separate it from abandonment tied to specific problems before setting targets, or the team will chase a number it cannot move.
+- **Adding pressure instead of removing friction**: Countdown timers and aggressive pop-ups can raise short-term conversion while hurting trust and repeat purchase. Fix the cause of hesitation first, and use urgency only when it reflects a real constraint.
+- **Testing without enough traffic**: Small samples produce noisy results that look like wins. If traffic is low, test bigger changes, run tests longer, or use structured before-and-after comparisons with reasons data.
+- **Ignoring the downstream effect**: A change that increases purchases and also increases returns or cancellations has not improved the journey. Measure the postpurchase phase alongside conversion for every change.
+- **Optimizing one route only**: Buyers often switch between web, app, phone and store before completing. Audit all routes, since a problem fixed on the website can remain in the app or the sales process.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/mckinsey-consumer-decision-journey/METHOD.md) — McKinsey Consumer Decision Journey
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/mckinsey-consumer-decision-journey/METHOD.md): McKinsey Consumer Decision Journey
 
 ## Related Skills
 
@@ -164,3 +119,9 @@ Revisit your full touchpoint audit quarterly. Purchase experiences decay—new f
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
+
+## Sources
+
+- [The consumer decision journey, McKinsey Quarterly](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
+- [How people decide what to buy lies in the messy middle, Think with Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/)
+- [Cart Abandonment Rate Statistics, Baymard Institute](https://baymard.com/lists/cart-abandonment-rate)
