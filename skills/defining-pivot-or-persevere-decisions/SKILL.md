@@ -1,15 +1,20 @@
 ---
-name: defining-pivot-or-persevere-decisions
-description: "This skill teaches you how to use experiment data and innovation accounting metrics to make a structured, evidence-based decision about whether to pivot your startup strategy or persevere with the current direction."
+name: "defining-pivot-or-persevere-decisions"
+description: "Run pivot or persevere decisions on a schedule: judge experiment evidence, know when to pivot a startup, and pick a pivot type that keeps what you learned."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: lean-startup
+  method: "lean-startup"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Making Pivot-or-Persevere Decisions: Knowing When to Pivot Startup Direction
+# Pivot or Persevere: When to Pivot a Startup
 
-> This skill teaches you how to use experiment data and innovation accounting metrics to make a structured, evidence-based decision about whether to pivot your startup strategy or persevere with the current direction.
+> Run pivot or persevere decisions on a schedule: judge experiment evidence, know when to pivot a startup, and pick a pivot type that keeps what you learned.
 
 ## Before you start
 
@@ -24,132 +29,103 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Advanced |
-| Time to Learn | 2-4 hours for a full decision meeting with prep |
-| Outcome | You produce a documented pivot-or-persevere decision with clear rationale, either committing to the current strategy with a specific next experiment or defining a specific type of pivot and the new hypothesis it tests. |
-| Prerequisites | Completed at least two build-measure-learn cycles with measurable results, Defined success thresholds before running experiments (from formulating testable hypotheses), Tracked innovation accounting metrics such as activation rate, retention cohorts, or conversion rates, Familiarity with the Lean Startup build-measure-learn loop |
+| Time to Learn | One or two decision meetings to learn the routine |
+| Outcome | You hold a scheduled, evidence-based pivot or persevere decision, and when you pivot you change one part of the strategy while keeping what you learned. |
+| Prerequisites | A record of experiments with pass marks, a baseline for key metrics, the people who can change strategy |
 | Part of | [Lean Startup](../../methods/lean-startup/METHOD.md) |
 
 ## Overview
 
-The pivot-or-persevere decision is the highest-stakes judgment call in the [Lean Startup](https://tryhamster.com/methods/lean-startup) methodology. It is the moment when a founding team looks at accumulated experiment data and decides whether the current strategy is working well enough to continue, or whether a fundamental change in direction is needed. This decision sits at the intersection of quantitative evidence and strategic judgment, and getting it wrong in either direction carries serious consequences. Persevering too long with a failing strategy burns cash and morale. Pivoting too quickly abandons learning that may be on the verge of compounding. The skill is not about choosing correctly every time, but about making the decision in a structured, repeatable way that minimizes both types of error.
+A pivot or persevere decision is the moment a team asks whether its current strategy is working well enough to keep going. Eric Ries frames the question as: "Are we making sufficient progress to believe that our original strategic hypothesis is correct, or do we need to make a major change?" ([Ries, Pivot or Persevere?](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)). This skill covers how to prepare that decision, how to judge the evidence and how to choose a pivot when one is needed. It is the practical answer to when to pivot a startup or a new product.
 
-The concrete artifact this skill produces is a pivot-or-persevere decision document. This document contains three sections: the data summary (what experiments you ran, what the actual metrics were, and how they compared to pre-set thresholds), the diagnosis (what the data tells you about your core assumptions), and the decision itself (persevere with a defined next experiment, or pivot with a named pivot type, a new hypothesis, and a first experiment to test it). Without this document, teams tend to drift into implicit pivots where the strategy changes gradually without anyone acknowledging it, or they cycle through heated debates where opinions substitute for evidence.
+A lean startup pivot has a specific meaning. Ries defines it as a "structured course correction designed to test a new fundamental hypothesis about the product, business model and engine of growth" in the same excerpt. The key word is structured. In his earlier post he contrasts pivoting with jumping: successful startups "keep one foot in the past and place one foot in a new possible future," while unsuccessful ones jump to something completely different and lose what they had learned ([Pivot, don't jump](http://www.startuplessonslearned.com/2009/06/pivot-dont-jump-to-new-vision.html)).
 
-This decision typically happens after completing two to four full [build-measure-learn cycles](https://tryhamster.com/skills/running-build-measure-learn-cycles). Doing it after only one cycle rarely provides enough signal. The data you need comes from [innovation accounting metrics](https://tryhamster.com/skills/tracking-innovation-accounting-metrics), which track whether your growth engine is actually improving over time, not just whether individual experiments succeed or fail. The pivot-or-persevere meeting should be a scheduled event on the calendar, not a crisis response. Teams that schedule these reviews regularly, typically every four to eight weeks, make better decisions than teams that only revisit strategy when things feel obviously broken.
+The cost of avoiding the decision is high. Ries writes that there is "no bigger destroyer of creative potential than the misguided decision to persevere," and describes companies stuck in "the land of the living dead," neither growing nor dying while consuming resources and commitment. The opposite failure also happens: teams abandon a working strategy after one noisy result. A good decision process guards against both.
 
-Success looks like a team that can articulate exactly why they are continuing or changing course, point to specific data that supports the decision, and immediately translate the decision into a concrete next step. The worst outcome is not making the wrong call. It is making no call at all, letting ambiguity persist while the team drifts without conviction in any direction.
+Ries's answer is to take the emotion out by putting the decision on the calendar. He recommends that every startup hold a regular pivot or persevere meeting and says that "less than a few weeks between meetings is too often and more than a few months is too infrequent." The [Lean Startup method](../../methods/lean-startup/METHOD.md) places this meeting at the end of each set of Build-Measure-Learn cycles.
+
+The output is a recorded decision: persevere with the current strategy, pivot with a named pivot type and a new hypothesis, or, when the ideas or the money have run out, stop. Each outcome comes with the evidence that justified it and the next experiment to run.
 
 ## How It Works
 
-The pivot-or-persevere framework works by comparing observed reality against predicted reality. Before you run any experiment, you write down what you expect to happen and the minimum threshold that would constitute meaningful progress. After the experiment, you compare the actual result against that threshold. One experiment alone is rarely conclusive, which is why the framework asks you to accumulate evidence across multiple cycles before triggering the decision. The power of the framework comes from this accumulation: a single disappointing result might be execution error, but three consecutive results below threshold points to a flawed assumption.
+The decision rests on innovation accounting. Ries's slides describe three milestones: establish a baseline with an MVP, tune the engine with experiments that try to move the metrics toward the model's targets, and then decide whether to pivot or persevere ([RailsConf 2011 slides](https://slideshare.net/startuplessonslearned/eric-ries-the-lean-startup-railsconf-2011/31-Innovation_AccountingThe_Three_Learning_Milestonesbr)). If tuning keeps moving the metrics, the strategy is working and the team perseveres. If the experiments stop producing movement, the problem is probably the strategy itself, and more tuning will not help.
 
-The framework rests on a distinction between actionable metrics and vanity metrics, which is central to the [Lean Startup](https://tryhamster.com/methods/lean-startup) approach. Vanity metrics like total signups or page views almost always go up over time, which makes them useless for the pivot-or-persevere question. Actionable metrics like activation rate, week-over-week retention in a cohort, or conversion rate from trial to paid tell you whether your growth engine is actually improving. Innovation accounting specifically tracks whether these actionable metrics are trending in the right direction across successive experiments. If you ran three experiments targeting activation rate and it moved from 8% to 9% to 9.2%, you need to ask whether that trajectory, if it continued, would reach a viable business in a reasonable timeframe. If the answer is no, that is a pivot signal, even though the metric technically improved.
+Criteria set in advance protect the decision from bias. Tristan Kromer advises writing success and failure criteria before collecting data, and describes four outcomes of the decision: scale, kill, pivot or persevere ([Kromer, Pivot or persevere decision](https://kromatic.com/blog/how-to-make-pivot-or-persevere-decisions-in-your-innovation-accounting/)). When results land between the criteria, he recommends targeted experiments on the biggest remaining uncertainty rather than indecision.
 
-The mental model behind pivot types is that a startup has several core assumptions (customer segment, problem, solution, channel, revenue model, cost structure) and a pivot changes exactly one of them while preserving learning about the others. This is critical. A pivot is not starting over. It is a structured course correction that reuses validated learning. A zoom-in pivot takes one feature that users love and makes it the whole product. A customer segment pivot keeps the product but targets a different audience. A channel pivot keeps the product and audience but changes how you reach them. Naming the pivot type forces precision about what is actually changing and what you are preserving, which prevents the common failure mode of a vague "let's try something different" that discards everything learned so far.
+Ries's book gives a catalog of ten pivot types, summarized by Bajwa and colleagues in their study of software startup pivots ([Bajwa et al.](https://arxiv.org/pdf/1710.04037)). A zoom-in pivot makes one feature the whole product, and a zoom-out pivot does the reverse. A customer segment pivot serves a different segment with the same solution, and a customer need pivot solves a different problem for the same customers. Platform, business architecture, value capture, engine of growth, channel and technology pivots each change one other part of the model. The catalog is useful because it forces the team to say which part is changing and which parts stay.
 
-The framework also accounts for the emotional dynamics that make this decision so difficult. Founders are disproportionately optimistic, which means they systematically overweight small positive signals and underweight negative ones. The structured comparison of actual results versus pre-set thresholds acts as a corrective mechanism. You decided what "good enough" looked like before you were emotionally invested in the specific result. That prior commitment is what gives the framework its power. Without it, the goalposts shift after every experiment, and the team never reaches the clarity needed to pivot or commit.
+Research gives a sense of what happens in practice. In the [same study of 49 software startups](https://arxiv.org/pdf/1710.04037), the customer need pivot was the most common type, and negative customer reaction and a flawed business model were the most common triggers. A randomized trial with Italian founders found that those trained in a hypothesis-testing approach were more likely to pivot and performed better ([Camuffo et al.](https://www.insead.edu/faculty-research/publications/journal-articles/a-scientific-approach-entrepreneurial-decision)).
+
+The meeting itself is short if the preparation is good. The evidence is compiled beforehand, each core assumption is reviewed against it, and the group chooses among the outcomes. When the choice is a pivot, the group writes the new hypothesis and the first experiment to test it before leaving.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Schedule the Decision Meeting in Advance
+### Step 1: Put the meeting on the calendar
 
-Before you accumulate enough data for a decision, put the pivot-or-persevere meeting on the calendar. This should happen every four to eight weeks, depending on your experiment cycle speed. Invite all co-founders and key decision-makers. Set a fixed duration of 90 to 120 minutes.
+Set a recurring pivot or persevere meeting at a cadence that fits your cycle time, within Ries's range of more than a few weeks and less than a few months ([Ries](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)). Invite the people who can change the strategy and the people who ran the experiments. Scheduling in advance makes the decision routine and keeps it from being triggered only by panic or pressure.
 
-The act of scheduling it in advance prevents the meeting from being called only when things feel bad, which biases the discussion toward panic-driven pivots. It also prevents the opposite failure: never convening the meeting because things feel "okay enough" and drifting indefinitely.
+### Step 2: Compile the evidence
 
-> **Pro tip:** Schedule the meeting at the start of each experiment cycle, not at the end. If you wait until results are in, the emotional charge of the data will influence whether you even hold the meeting.
+Before the meeting, gather the experiment record since the last decision: each hypothesis, its pass mark, the result and what was learned. Add the trend in the key actionable metrics from their baseline, by cohort where possible. Include qualitative findings from interviews. Circulate the pack ahead of time so the meeting is spent on judgment.
 
-### Step 2: Step 2: Compile the Experiment Evidence Package
+### Step 3: Review each core assumption
 
-Before the meeting, one person (typically the product lead) assembles a concise document containing the results of every experiment since the last pivot-or-persevere review. For each experiment, include: the hypothesis tested, the metric tracked, the success threshold defined before the experiment, and the actual result. Also include the innovation accounting trend line showing how the key metric has moved across experiments. This document should be shared with all participants at least 24 hours before the meeting so people arrive having read it, not hearing it for the first time.
+Go through the leap-of-faith assumptions one at a time: customer, problem, solution, willingness to pay and growth. For each, state whether the evidence supports it, contradicts it or is still thin. An assumption that has been tuned several times without improving is a stronger signal than a single missed test. Write down the verdict for each.
 
-The package should be factual, not interpretive. Save the analysis for the meeting itself.
+### Step 4: Judge the trend against the criteria
 
-> **Pro tip:** If you cannot find the pre-set success threshold for an experiment, that is a sign you skipped the hypothesis formulation step. Note this gap honestly. Do not backfill thresholds after seeing results.
+Compare the metric trend with the criteria agreed before the experiments. If tuning is still moving the metrics toward the model's targets, that is a reason to persevere. If the numbers have stayed close to the baseline across several rounds, the strategy is the likely problem. If the evidence is mixed, name the single biggest uncertainty and plan an experiment to settle it by the next meeting.
 
-### Step 3: Step 3: Assess Each Core Assumption Independently
+### Step 5: Choose the outcome
 
-). For each assumption, ask: what evidence do we have that this is true? What evidence suggests it might be false? Rate each assumption as validated, invalidated, or inconclusive based on the experiment data.
+Decide among persevere, pivot and stop. Persevere when the strategy is improving. Pivot when a core assumption has failed but the team has learned something it can build on. Stop when there is no credible pivot left or not enough resources to test one, which Kromer also lists as a legitimate outcome ([Kromer](https://kromatic.com/blog/how-to-make-pivot-or-persevere-decisions-in-your-innovation-accounting/)).
 
-Write the ratings on a whiteboard or shared document so everyone can see the full picture.
+### Step 6: If pivoting, pick the pivot type
 
-> **Pro tip:** Have each participant write down their ratings silently before sharing. This prevents anchoring to the first opinion expressed and surfaces genuine disagreement.
+Name the failed assumption and pick the pivot type that changes it while keeping the rest. If customers love one feature and ignore the rest, that suggests a zoom-in. If a different segment responds better, that suggests a customer segment pivot. Write down what stays the same, so the team keeps the validated learning behind it.
 
-### Step 4: Step 4: Compare Metrics Against Thresholds and Trends
+### Step 7: Write the new hypothesis and first test
 
-For each key metric, plot the trajectory across your last two to four experiments. Ask three questions: Is the metric above or below the threshold we set? Is the metric trending upward, flat, or downward? If we extrapolate the current trajectory, does it reach a viable business within our runway?
-
-This extrapolation is not a precise forecast. It is a gut-check on whether the rate of progress is fast enough. If your activation rate improved from 5% to 7% over three months and you need 25% to have a viable business, you can see that the trajectory does not work even though the metric improved. Document the answer to each question clearly.
-
-> **Pro tip:** Distinguish between metrics that are below threshold but improving rapidly and metrics that are near threshold but flat. The former is often a persevere signal, while the latter may indicate a ceiling you cannot break through with iteration alone.
-
-### Step 5: Step 5: Apply the Decision Criteria
-
-With the evidence assembled, apply a structured decision framework. If most core assumptions are validated and the key metric is trending toward threshold, the decision is to persevere and define the next experiment to accelerate progress. If one or more core assumptions are invalidated and the key metric is flat or declining despite multiple experiments, the decision is to pivot. If the evidence is genuinely inconclusive (which is common), you have two honest options: run one more targeted experiment specifically designed to resolve the ambiguity, or set a time-boxed deadline (typically two to four weeks) after which you will decide with whatever evidence you have.
-
-Do not allow "more data" to become an indefinite postponement of the decision.
-
-> **Pro tip:** If the team is split, ask each person to write down their recommendation and one-sentence rationale before discussion. This surfaces the real disagreements rather than letting the loudest voice dominate.
-
-### Step 6: Step 6: If Pivoting, Name the Pivot Type and New Hypothesis
-
-If the decision is to pivot, do not leave the meeting without specifying the type of pivot and the new hypothesis it tests. Common pivot types include: zoom-in (one feature becomes the product), zoom-out (the product becomes one feature of a larger product), customer segment (same product, different audience), customer need (same customer, different problem), channel (same product and customer, different distribution), revenue model (same product, different pricing or monetization), and technology (same value proposition, different technical approach). Name the type. Then write the new hypothesis in the same testable format you used before: "We believe [new assumption].
-
-We will test this by [experiment]. We will measure [metric]. " This transforms the pivot from an emotional turning point into a structured next step.
-
-> **Pro tip:** Resist the urge to change more than one core assumption at a time. If you change both the customer segment and the revenue model simultaneously, you will not know which change caused the result.
-
-### Step 7: Step 7: If Persevering, Define the Next Accelerating Experiment
-
-If the decision is to persevere, do not treat it as validation that everything is fine. Persevering means the trajectory is promising enough to continue, but the team must still improve the rate of learning and growth. Define the next experiment, which should specifically target the weakest metric or the least-validated assumption. The experiment should be designed to accelerate progress, not just confirm what you already know.
-
-Write down the hypothesis, success threshold, and timeline. This step prevents persevere decisions from becoming complacency. The team should leave the meeting with the same urgency and specificity they would have after a pivot.
-
-> **Pro tip:** If you find yourself persevering three times in a row with the key metric barely moving, treat the pattern as a pivot signal even if each individual meeting seemed inconclusive. Slow decay is harder to spot than sudden failure.
-
-### Step 8: Step 8: Document the Decision and Rationale
-
-Write a one-page decision document within 24 hours of the meeting. Include: the decision (pivot or persevere), the specific evidence that drove the decision, what was debated and why the team resolved the debate the way it did, the next hypothesis and experiment, and the date of the next pivot-or-persevere review. Share this document with the full team, including people who were not in the meeting. This documentation serves two purposes: it creates accountability (the team cannot quietly abandon the decision), and it builds an institutional record of strategic reasoning that becomes invaluable if you pivot again later and need to recall what you already tried.
-
-> **Pro tip:** Store all pivot-or-persevere documents in a single shared folder or wiki page so you can trace the full arc of your strategic evolution. This record is especially valuable for new team members and future investors.
+Turn the pivot into a [testable hypothesis](../formulating-testable-hypotheses/SKILL.md) with a pass mark, and plan the first experiment. Reset the baseline for any metric the pivot changes. Record the decision, the evidence and the reasoning, then return to [running Build-Measure-Learn cycles](../running-build-measure-learn-cycles/SKILL.md).
 
 ## Best Practices
 
-- Set success thresholds before running experiments, not after seeing results. Pre-commitment to thresholds eliminates the goalpost-shifting that happens when founders see disappointing data and rationalize it as "close enough." Without pre-set thresholds, you will almost certainly persevere longer than you should because the threshold will unconsciously drift downward to match whatever you achieved.
-- Use cohort-based metrics rather than cumulative totals for the pivot-or-persevere analysis. Cumulative metrics like total users or total revenue almost always trend upward, which masks deteriorating performance in recent cohorts. Looking at week-over-week retention for each cohort separately reveals whether your product changes are actually improving the user experience or just riding the wave of accumulated signups.
-- Schedule pivot-or-persevere meetings at regular intervals regardless of how things feel. Teams that only hold these meetings when things feel bad are biased toward reactive pivots. Teams that only hold them when forced are biased toward indefinite perseverance. A fixed cadence of four to eight weeks normalizes the conversation and removes the stigma of raising the question.
-- Separate the data-review portion of the meeting from the decision portion. Spend the first 45 minutes walking through evidence without anyone arguing for a conclusion. Then take a five-minute break and return for the decision discussion. This separation prevents premature anchoring, where someone states their conclusion in minute five and the remaining evidence gets filtered through that lens.
-- Invite one person outside the core founding team to the decision meeting. This could be an advisor, a board member, or a trusted peer founder. External participants are less emotionally invested in the current strategy and can point out patterns the team is too close to see. Their role is not to make the decision but to ask uncomfortable questions the team is avoiding.
-- Track how long each experiment cycle takes and whether it is getting shorter. If your cycles are getting longer (more features, more polish, more edge cases before launching), that is often a sign of unconscious resistance to testing an assumption the team fears will be invalidated. The framework only works if you are generating data fast enough to learn from it.
-- After a pivot, explicitly list what validated learning you are preserving and carrying forward. A pivot is not a restart. If you validated that small business owners have a painful invoicing problem but your web app solution did not work, the validated problem understanding carries into whatever solution you try next. Documenting what you preserve prevents the team from re-running experiments you already completed.
+- Keep the date even when things look fine. Regular meetings catch slow drift that ad hoc reviews miss, which is the reason Ries recommends scheduling them ([Ries](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)).
+- Judge actionable metrics by cohort. Cumulative totals rise even when each new cohort does worse, and they will argue for persevering when you should not.
+- Separate the people who ran an experiment from the verdict on it. A second reader of the evidence reduces the pull to defend a favorite idea.
+- Change one element at a time. A pivot that changes the customer, the product and the channel at once is a new startup, and it discards the learning a pivot is supposed to keep.
+- Record the reasoning as well as the decision. The next meeting needs to know why the team chose what it chose.
+- Use the pivot catalog as a prompt. Walking through the types in [Bajwa et al.](https://arxiv.org/pdf/1710.04037) helps a stuck group see options it had not considered.
 
 ## Common Mistakes
 
-- **Using vanity metrics to justify persevering** — Total signups, page views, and social media followers almost always increase over time, which makes them feel reassuring but useless for the pivot-or-persevere question. The signal you need comes from actionable metrics like activation rate, cohort retention, or conversion rate from free to paid. If your total signups doubled but your activation rate dropped from 12% to 8%, the business is getting worse, not better. Before the decision meeting, explicitly ban cumulative totals from the evidence package and require cohort-level data.
-- **Pivoting based on a single failed experiment** — One experiment can fail for many reasons that have nothing to do with the underlying assumption: poor execution, a holiday week, a bug in your tracking code, or a sample size too small for statistical significance. A single data point is noise, not signal. The framework requires evidence from at least two, preferably three, full build-measure-learn cycles before triggering a pivot decision. If one experiment failed, the correct response is to diagnose whether the failure was in the assumption or the execution and run a follow-up experiment designed to distinguish between the two.
-- **Pivoting without naming what changes and what stays the same** — A vague pivot like "let's try a different approach" discards all previously validated learning and is functionally equivalent to starting a new company. This happens when teams skip the pivot-type naming step and jump straight into brainstorming new ideas. ) before any brainstorming begins. The pivot type constrains which assumption changes and which assumptions are carried forward as validated.
-
-If you cannot name the pivot type, you have not understood what went wrong with the current strategy.
-- **Letting the sunk cost of previous work prevent a necessary pivot** — Teams that have spent six months building a feature set or twelve months cultivating a specific customer segment feel enormous pressure to keep going because of the investment already made. This is the sunk cost fallacy applied to startups. The antidote is to focus exclusively on forward-looking evidence: given the data you have now, would you start this strategy today if you were starting fresh? If the honest answer is no, the right decision is to pivot regardless of past investment.
-
-Having an outside participant in the meeting helps surface this bias because they have no emotional attachment to the work already done.
-- **Treating persevere as the default and pivot as the exception** — Most teams have an unconscious bias toward perseverance because it feels less disruptive and does not require admitting that the current approach is not working. In practice, the median successful startup pivots one to three times. The decision framework should treat pivot and persevere as genuinely equal options, not as "continue unless proven wrong." You can counteract this bias by requiring the team to articulate the strongest case for pivoting before discussing perseverance, even if everyone enters the meeting expecting to persevere.
-- **Running the decision meeting as a debate rather than an evidence review** — When the meeting starts with opinions rather than data, the loudest or most senior voice usually wins. The team spends 90 minutes arguing about gut feelings instead of analyzing metrics. Structure the meeting so the first half is a silent or guided walkthrough of the evidence package. Each participant writes their individual assessment before any discussion begins.
-
-Only after individual assessments are visible does the group discussion start. This format ensures the decision is grounded in shared evidence rather than persuasion skill.
+- **Persevering on vanity metrics**: Rising totals hide flat or falling per-customer results. Look at cohorts and at the experiment record before deciding.
+- **Pivoting after one bad result**: A single miss can come from a poor test or the wrong audience. Check the test before blaming the strategy, and look at the trend across experiments.
+- **Jumping instead of pivoting**: Changing everything at once throws away what was learned. Name the one element that changes and the elements that stay.
+- **Letting the meeting drift**: Without a fixed date, the decision waits until money or morale forces it. Put it on the calendar and hold it.
+- **Leaving without a next test**: A pivot with no hypothesis and no first experiment is only a new opinion. Write both before the meeting ends.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/lean-startup/METHOD.md) — Lean Startup
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/lean-startup/METHOD.md): Lean Startup
 
 ## Related Skills
 
-- [Tracking Innovation Accounting Metrics](../tracking-innovation-accounting-metrics/SKILL.md)
-- [Formulating Testable Business Hypotheses](../formulating-testable-hypotheses/SKILL.md)
-- [Selecting the Right MVP Type for Your Idea](../selecting-mvp-types-and-formats/SKILL.md)
-- [Building a Minimum Viable Product (MVP)](../building-minimum-viable-products/SKILL.md)
+- [Innovation Accounting Metrics: Tracking Real Progress](../tracking-innovation-accounting-metrics/SKILL.md)
+- [Running the Build-Measure-Learn Loop](../running-build-measure-learn-cycles/SKILL.md)
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
-- [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
-- [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
+- [Lean Startup Hypothesis Template: Testable Hypotheses](../formulating-testable-hypotheses/SKILL.md)
+- [How to Build a Minimum Viable Product (MVP)](../building-minimum-viable-products/SKILL.md)
+- [Types of MVP: How to Choose the Right Format](../selecting-mvp-types-and-formats/SKILL.md)
+- [Customer Discovery Interview Questions and Technique](../conducting-customer-discovery-interviews/SKILL.md)
+
+## Sources
+
+- [Eric Ries: Pivot or Persevere?](https://www.entrepreneur.com/starting-a-business/pivot-or-persevere-the-key-to-startup-success/220302)
+- [Eric Ries: Pivot, don't jump to a new vision](http://www.startuplessonslearned.com/2009/06/pivot-dont-jump-to-new-vision.html)
+- [Eric Ries: The Lean Startup, RailsConf 2011 slides](https://slideshare.net/startuplessonslearned/eric-ries-the-lean-startup-railsconf-2011/31-Innovation_AccountingThe_Three_Learning_Milestonesbr)
+- [Tristan Kromer: Pivot or persevere decision, the 4 outcomes](https://kromatic.com/blog/how-to-make-pivot-or-persevere-decisions-in-your-innovation-accounting/)
+- [Bajwa et al.: An analysis of major pivots of software startups](https://arxiv.org/pdf/1710.04037)
+- [Camuffo et al.: A Scientific Approach to Entrepreneurial Decision Making](https://www.insead.edu/faculty-research/publications/journal-articles/a-scientific-approach-entrepreneurial-decision)

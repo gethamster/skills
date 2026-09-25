@@ -1,31 +1,37 @@
 # Examples: Validating Your North Star Metric with User Research
 
-## Example: Validating 'Weekly Active Projects' for a Project Management Tool
+## A meal kit service finds its quality bar
 
 **Scenario:**
 
-A project management SaaS company selected 'weekly active projects' as their North Star Metric, hypothesizing that each active project represents a team getting ongoing value from the platform. Before rolling this out across the organization, the product team conducted a user research product validation study.
+Illustrative scenario: a meal kit service uses "meals delivered per week" as its North Star. Retention has softened even though the metric keeps rising. The product lead suspects the metric counts meals that customers did not enjoy or did not cook.
 
 **Walkthrough:**
 
-The team interviewed 12 customers: 4 power users (5+ active projects), 4 moderate users (1-2 active projects), and 4 recently churned accounts. They asked each participant to describe when the tool felt most valuable and when it fell short.
+The team writes the hypothesis: every delivered meal represents value. They send a value survey with a "main benefit" question and interview customers from three groups: long-time subscribers, recent cancellations and subscribers who skip weeks often. The stories converge on one theme: customers value meals they actually cook on a busy weeknight, and meals that go to waste feel like wasted money.
 
-Power users described value in terms of **cross-project visibility**—being able to see status across multiple initiatives in one view. This aligned well with the metric. However, moderate users described their highest-value moments as **completing a project milestone and sharing a status update with stakeholders**—a value moment the metric didn't differentiate from routine activity. Churned users revealed that they had many 'active' projects that were actually zombie projects nobody updated, inflating the metric without delivering value.
+The team tests a refined metric in the data, meals marked as cooked, and finds it tracks retention more closely than meals delivered. The verdict is "refine": the North Star becomes weekly meals cooked, and a new input covers recipe fit for the customer's week.
 
-The mapping analysis showed a partial match: active projects correlated with value for teams managing multiple workstreams, but the metric couldn't distinguish genuinely active projects from stale ones, and it missed the milestone-completion value moment entirely.
-
-The team's verdict was 'validated with caveats.' They kept weekly active projects as the North Star but added two input metrics: 'projects with updates in the last 7 days' (to filter zombie projects) and 'milestone completions per week' (to capture the value moment moderate users described). This refinement made the metric system far more accurate at tracking real customer value.
-
-## Example: Discovering a Metric Mismatch in a Consumer Health App
+## A collaboration product confirms its metric
 
 **Scenario:**
 
-A consumer health app chose 'daily health logs completed' as their North Star Metric, believing that consistent logging represented users taking control of their health. The product team ran a user research product validation cycle before committing to this metric org-wide.
+Illustrative scenario: a document collaboration product has used "documents edited by more than one person per week" as its North Star for a year. The annual review includes a validation round.
 
 **Walkthrough:**
 
-The team interviewed 10 users, including 3 who had stopped logging despite maintaining their subscription. The interviews revealed a striking pattern: users who logged daily often described it as a **chore** rather than a value moment. The real value moment, described consistently across 8 of 10 participants, was **receiving a personalized insight** based on their logged data—a weekly summary that connected patterns in their behavior to health outcomes.
+Interviews with teams across segments show that the value customers describe is getting feedback and agreement on a document faster. Most of those stories involve several people editing or commenting, which the metric counts. A few customers describe value from reading and approving without editing.
 
-Two users who had stopped logging explained they'd gotten the insight they needed after a few weeks and no longer felt the logging added value. They were still engaged with the app's content and recommendations, but they were invisible to the daily logging metric.
+The team checks the data and finds that approval-only accounts are a small group with retention similar to editing accounts. The verdict is "confirm," with a note to watch the approval-only group. The metric's definition stays the same, and the finding is logged for the next review.
 
-The mismatch was clear: the metric tracked effort (logging) rather than value (insights). The team's verdict was 'not validated.' They proposed a revised North Star Metric: 'weekly users who engaged with a personalized insight,' which directly mapped to the value customers described. The team then re-entered the metric selection process with this customer-grounded hypothesis, significantly increasing confidence in the replacement metric.
+## A fitness app learns its metric counts the wrong people
+
+**Scenario:**
+
+Illustrative scenario: a fitness app's North Star is weekly workouts logged. Growth looks strong, but the team is unsure whether logging reflects real exercise.
+
+**Walkthrough:**
+
+Interviews with customers near the threshold reveal that many log workouts to keep streaks alive and do little exercise. Customers who describe real value talk about finishing a planned program and feeling stronger, and many of them log less often but complete longer sessions.
+
+The analytics check shows that program completions predict renewal far better than logged workouts. The verdict is "replace." The team reopens the selection process with a value sentence built from customer language about completing programs, and the old metric stays on the dashboard during the transition.

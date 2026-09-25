@@ -1,25 +1,21 @@
-# FAQ: Generating Multiple Solutions for Each Opportunity
+# FAQ: Generating Multiple Solutions per Opportunity
 
-## How many solutions should I generate per opportunity in my Opportunity Solution Tree?
+## Why generate several solutions instead of picking the best idea?
 
-Aim for a minimum of three genuinely distinct solutions per opportunity. Three is the floor because it prevents binary either/or thinking and creates a real comparison space. Five to seven is ideal for important opportunities. Beyond that, you're likely generating variations rather than distinct concepts.
+Evaluating one idea on its own is a "whether or not" decision, and it is hard to judge whether an idea is good in isolation. Teresa Torres recommends a compare-and-contrast decision instead: generate several ideas for the same opportunity and ask which looks best. Comparing also guards against falling in love with the first idea.
 
-## What's the best brainstorming technique for product managers generating solutions?
+## How many ideas should we aim for?
 
-Brainwriting (silent individual ideation followed by group sharing) is the most reliable starting technique because it prevents anchoring bias. Follow it with reverse brainstorming or analogy mapping to push beyond obvious ideas. The combination of two techniques consistently produces more diverse solutions than any single approach.
+Torres's book club guide to Chapter 8 of Continuous Discovery Habits talks about generating 15-20 ideas for a single opportunity before narrowing. The exact number matters less than pushing past the first obvious ideas. Then narrow to three for testing.
 
-## How do I know if my solutions are different enough from each other?
+## Why not run a normal brainstorm?
 
-Apply the mechanism test: do your solutions address the opportunity through fundamentally different approaches? If you could combine two solutions without conflict, they're likely distinct. If they're mutually exclusive variations of the same approach (e.g., two different notification designs), they're one solution with design options to test.
+Research on group brainstorming has found that individuals working alone generate more ideas than the same number of people brainstorming together, because of effects such as production blocking and conformity. Torres recommends an individual-then-share approach: people ideate alone, then share, build on each other's ideas, and ideate again.
 
-## Can I generate solutions alone or do I need a team?
+## Should we always test three solutions?
 
-You can generate solutions individually, but cross-functional teams consistently produce more diverse and higher-quality solution sets. At minimum, include one person from a different discipline — an engineer, designer, or customer-facing team member — to break out of your own mental model.
+Torres recommends considering more than one solution as a general rule, and choosing three to explore further. She acknowledges that teams will not always have time, and says comparing matters most when there is risk in the solution, when the opportunity is a differentiator, or when you need an innovative solution.
 
-## How long should a solution generation session take?
+## What if an idea addresses a different opportunity?
 
-A focused session typically takes 45-90 minutes per opportunity. Budget 5 minutes for framing, 10-15 minutes for brainwriting, 20-30 minutes for structured creativity techniques, 10-15 minutes for clustering, and 10-15 minutes for documenting solution concepts. Shorter sessions tend to produce only surface-level ideas.
-
-## What do I do with solutions that don't get tested first?
-
-Keep them on your Opportunity Solution Tree as alternative branches. Never discard untested solutions. If your first-choice solution fails assumption testing, these alternatives become your next experiments. Teams frequently find that their second or third solution concept outperforms the one they initially favored.
+Set it aside for now and note which opportunity it belongs to. Torres's original post on the tree says solutions can come from anywhere as long as they are bounded by an opportunity. Comparing it with ideas for your target opportunity would mix two different questions.

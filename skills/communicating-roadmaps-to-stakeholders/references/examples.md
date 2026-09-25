@@ -1,55 +1,37 @@
-# Examples: Communicating Now-Next-Later Roadmaps to Stakeholders
+# Examples: Communicating Now Next Later Roadmaps to Stakeholders
 
-## Example: Series B SaaS Startup Presenting to the Board
-
-**Scenario:**
-
-A 60-person B2B SaaS company has a board meeting every 6 weeks. The board includes two VC partners and one independent director. Previously, the VP of Product showed a timeline roadmap and spent most of the meeting defending missed dates. The team has recently adopted the now-next-later framework and needs to present it to the board for the first time.
-
-**Walkthrough:**
-
-The VP creates a one-page view with three columns. ' The VP opens the board meeting with the confidence framing: 'This roadmap shows what we are committed to, what we are validating, and what we are watching. ' The board asks about the billing migration in Next. Instead of offering a date, the VP shares the graduation criteria: 'This moves to Now when finance approves the pricing model and we complete three customer pricing experiments.
-
-' The board engages on the strategic merit of the pricing change rather than debating a delivery date. The meeting runs 20 minutes shorter than previous roadmap reviews.
-
-## Example: Product Manager Briefing Enterprise Customers at Annual Conference
+## A first presentation to a leadership team used to timelines
 
 **Scenario:**
 
-A mid-market project management tool hosts an annual customer conference with 200 attendees. The product team needs to share direction without creating contractual expectations. Previous years' roadmap sessions generated a flood of support tickets referencing 'promised features.'
+Illustrative scenario: a head of product is presenting the company's first Now Next Later roadmap to a leadership team that has always seen a quarterly Gantt chart. She expects the first question to be about dates.
 
 **Walkthrough:**
 
-The PM creates a customer-facing view that omits all internal infrastructure items and uses only problem-framed language. ' Later is omitted entirely because the PM determined from prior experience that conference attendees treat any Later mention as a commitment. The first slide says: 'What you are about to see reflects our current focus areas and the problems we are actively solving. Priorities and approaches may evolve as we learn more.
+She opens with a short explanation of the three columns in confidence terms and a sentence on how items move. She then presents the roadmap grouped by the company's three objectives, showing where each initiative sits. One objective has all of its initiatives in Later, and she raises it herself as the main risk.
 
-' The PM responds: 'Deeper integrations are in our Next horizon, which means we have validated the need and are exploring the best approach. I cannot commit to a specific integration today, but I can tell you this category is a validated priority. ' The PM collects 47 integration preference responses from the audience, which becomes input for prioritizing specific integrations within the Next horizon. Post-conference support tickets about 'promised features' drop by 80% compared to the previous year.
+When the CFO asks when a pricing change will ship, she answers with the objective it serves, its place in Next and what would need to be true for it to move to Now. The one initiative with a real regulatory date is shown with that date. She ends by proposing the five replacement questions for future reviews.
 
-## Example: Small Startup Aligning Engineering and Sales Weekly
+## Equipping a sales team
 
 **Scenario:**
 
-A 12-person startup has four engineers, two salespeople, and a founder who acts as product manager. Sales keeps promising features to close deals, and engineering keeps getting blindsided by commitments they did not make. The team adopted a now-next-later roadmap two weeks ago and needs a communication ritual that keeps everyone honest.
+Illustrative scenario: a sales team has been quoting roadmap quarters to prospects, and two deals have soured when features slipped. The product manager is asked to fix the problem without hiding the roadmap from sales.
 
 **Walkthrough:**
 
-The founder creates a simple Notion page with three sections. Now contains the two features in active development with acceptance criteria and the engineer assigned. Next contains four items that have been validated through customer conversations but are not yet scoped or scheduled. Later contains a catch-all list of ideas from customer calls that have not been validated.
+The product manager builds a sales view showing problem statements and horizons with no candidate solutions. Each column has approved language, such as "we are actively working on this" for Now and "we have confirmed this problem and are exploring approaches" for Next.
 
-Every Monday, the founder hosts a 20-minute sync. The first 2 minutes repeat the confidence framing: 'Now means we are building it. Next means we believe it is important but we have not started. ' The next 10 minutes cover Now items: status, blockers, expected completion.
+The view includes a short rule: nothing in Next or Later is promised, and deals that depend on a capability go through a commitment request to the product lead. In the first month, two requests come through; one becomes a dated commitment on a single initiative, and the other is declined with an explanation the salesperson can pass on.
 
-The remaining 8 minutes cover any changes to Next: new items added, items graduating to Now, items deprioritized. The founder explicitly tells sales: 'You can reference Now items as upcoming. For Next items, say we are exploring that area. ' Two weeks into this cadence, a salesperson catches herself about to promise a Later item in a call and instead uses the approved language.
-
-The prospect responds positively, saying they appreciate the honesty. The deal closes anyway, and engineering trust in sales increases measurably.
-
-## Example: B2C Mobile App Sharing a Public Roadmap
+## A customer advisory board session
 
 **Scenario:**
 
-A consumer fitness app with 500,000 monthly active users wants to share a public roadmap on their website to build community trust and reduce repetitive feature request emails. The product team is concerned about competitors seeing their plans and users treating public items as promises.
+Illustrative scenario: a B2B software company runs a customer advisory board and wants to use it to test roadmap direction rather than announce features.
 
 **Walkthrough:**
 
-The PM creates a public roadmap page with two visible horizons: 'What We Are Building' (Now) and 'What We Are Exploring' (Next). Later is omitted from the public view entirely. ' Each item links to a short paragraph explaining the problem being solved and inviting feedback via a form. The page header says: 'Our product direction is shaped by your feedback.
+The product team shows the customer view: problem statements for items safe to share, grouped by horizon, and a list of recently launched work. They ask customers which problems matter most and what they would add.
 
-Items here reflect our current priorities and may change as we learn. ' The PM reviews the page monthly, moving completed items to a 'Recently Shipped' archive and updating the active items. After three months, feature request emails drop by 40% because users can see their request is already on the roadmap. Competitor risk is mitigated by framing items as problems (not solutions) and omitting all Later-stage strategic bets.
-
-Community sentiment in app store reviews improves as users cite the transparency of the public roadmap.
+Customers push strongly on one Later problem around reporting across teams. The team does not promise anything in the room. At the next review, the new evidence moves that problem to Next, and the follow-up note to the advisory board says so and explains what discovery will look at.

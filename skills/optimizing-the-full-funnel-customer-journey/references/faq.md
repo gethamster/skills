@@ -1,25 +1,21 @@
-# FAQ: Optimizing the Full-Funnel Customer Journey with RACE
+# FAQ: RACE Framework Optimization
 
-## What is customer journey optimization in the RACE Framework?
+## What is full-funnel marketing optimization?
 
-Customer journey optimization in the RACE Framework is the process of analyzing performance data across all four stages — Reach, Act, Convert, and Engage — to identify where prospects drop off, diagnose root causes, and implement targeted improvements that increase the overall efficiency and ROI of your marketing funnel.
+It is improving Reach, Act, Convert and Engage as one system instead of optimizing each channel or page on its own. In practice it means a recurring review of stage KPIs and stage-to-stage rates, a focus on the weakest transition, and budget decisions based on where improvement is worth most.
 
-## How often should I run a customer journey optimization cycle?
+## How do I run a customer journey drop-off analysis?
 
-Start with monthly optimization cycles when you first implement the process, as early cycles tend to uncover large, impactful bottlenecks. Once you've addressed the most critical drop-off points, shift to quarterly reviews to maintain continuous improvement without overloading your team.
+Calculate the share of people who move from each stage to the next, compare each rate with its target and history, and pick the transition where the most value is lost. Then segment that transition by channel, device, audience and product to find where it is worst, and gather evidence on why people drop there.
 
-## Which RACE stage should I optimize first?
+## What RACE funnel conversion rates should I track?
 
-Optimize the stage transition with the highest estimated revenue impact, not necessarily the one closest to revenue. Calculate the effect of a 1-percentage-point improvement at each transition, factoring in downstream conversion rates and average order value, and start where the math points you.
+At minimum: Reach to Act (visitors who complete a key interaction), Act to Convert (leads or engaged visitors who buy), and Convert to Engage (new customers who buy again or stay active). Define each precisely and track it monthly. Compare with your own history before looking at anyone else's numbers.
 
-## What tools do I need for full-funnel customer journey optimization?
+## How often should the full-funnel review happen?
 
-At minimum, you need a web analytics platform (e.g., Google Analytics 4), a CRM or customer data platform for Engage-stage tracking, and a dashboard tool (e.g., Looker Studio) to unify stage metrics. Session recording tools like Hotjar or FullStory are valuable for qualitative diagnosis.
+Monthly suits most teams, and it is the cadence Smart Insights designed its RACE dashboard around. Individual tests may be checked more often. Feed the lessons into the plan at each planning cycle.
 
-## How do I calculate the transition rate between RACE stages?
+## When should budget move between RACE stages?
 
-Divide the number of people who enter the next stage by the number in the current stage. For example, if 50,000 visitors (Reach) produce 4,000 engaged interactions (Act), the Reach→Act transition rate is 4,000 ÷ 50,000 = 8%.
-
-## Can customer journey optimization work for small businesses with limited data?
-
-Yes, but you may need longer measurement periods to accumulate statistically meaningful data. Focus on the transition rates between stages rather than individual channel metrics, and supplement quantitative data with qualitative insights like customer interviews and support ticket analysis to compensate for smaller sample sizes.
+When one stage or transition is consistently the constraint and another is meeting its targets. Move resources toward the constraint gradually, record the reason, and check at the next review that the stage you took budget from has not become the new weak point.

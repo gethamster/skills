@@ -1,41 +1,21 @@
-# FAQ: Conducting User Tests and Synthesizing Feedback on Day 5
+# FAQ: Sprint User Testing: Running Design Sprint Day 5
 
-## How do I recruit the right participants when my target user is hard to find?
+## Why do design sprints test with only five users?
 
-Start recruitment before the sprint begins, ideally a week in advance. Use screener surveys with 3-5 qualifying questions that map to your target profile's most critical attributes. Post screeners in communities where your users gather: industry Slack groups, LinkedIn groups, Reddit communities, or your own customer base. , 'manages a team of 10+' for a management tool) and accept the limitation explicitly in your findings document.
+The checklist from Jake Knapp and John Zeratsky says that after five customer interviews, big patterns emerge ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). The number also reflects Jakob Nielsen's argument that small tests with about five users reveal most usability problems, and that several small rounds beat one large study ([Nielsen Norman Group](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/)). Nielsen also notes that distinct user groups each need their own participants, so a sprint with two very different customer types may need more.
 
-Offering $75-150 incentives dramatically improves response rates for professional participants.
+## What is the Five-Act Interview?
 
-## What if a participant gives overwhelmingly positive feedback but their behavior tells a different story?
+It is the interview structure used on sprint Friday: a friendly welcome, context questions, an introduction to the prototype, tasks and nudges, and a debrief. GV's sprint page links to a video of it with Michael Margolis ([GV](https://www.gv.com/sprint/)). The structure keeps every session comparable and gives the customer time to settle in before seeing the prototype.
 
-This is extremely common and it is why behavioral observation matters more than stated opinions. People are polite. They want to be helpful. ' but took 90 seconds to find the main action button, trust the 90 seconds.
+## Who should run the interviews?
 
-During synthesis, always weight behavioral notes (clicks, pauses, errors, backtracking) over attitudinal notes (statements of preference or intent). ' This framing helps stakeholders understand why positive quotes do not always equal validation.
+One Interviewer, chosen on Thursday, runs all five sessions and writes the script. It should be someone who can stay neutral and curious, and who can resist explaining the prototype. Everyone else, including the Decider, watches from the sprint room.
 
-## Should I run sprint user tests before or after building the full prototype?
+## Can sprint user tests be run remotely?
 
-User tests happen on Day 5 of the [design sprint agenda](https://tryhamster.com/skills/planning-design-sprint-agendas), which means the prototype from Day 4 is the test artifact. The prototype should look realistic enough that participants can react naturally, but it does not need to be fully functional. Clickable Figma prototypes, Keynote walkthroughs, or even paper prototypes with a 'human computer' operator all work. The key is that the participant can perform the core task without the interviewer explaining how things work.
+Yes. Knapp and Zeratsky write that a majority of their customer tests with Michael Margolis at GV were done online, and that remote testing needs very few changes ([Remote Design Sprint Guide](https://www.jackiecolburn.com/remote-design-sprint-guide)). Send participants instructions in advance, check their setup, and keep the observing team hidden from the customer's view.
 
-Testing before the prototype is ready means you are testing concepts, not usability. Testing after full development means you have already invested the resources the sprint was designed to save.
+## What if the results are mixed?
 
-## How long should each user test session take?
-
-Plan for 60-minute sessions with 30-minute buffers between them. The interview itself typically runs 45-55 minutes: 5 minutes warm-up, 5-7 minutes context questions, 2-3 minutes prototype introduction, 20-25 minutes task completion, and 5 minutes debrief. The buffer accounts for late arrivals, bathroom breaks, technical issues, and brief team debriefs. With five sessions, this means starting around 9:00 AM and finishing the last session by approximately 3:30 PM, leaving 2-3 hours for synthesis before end of day.
-
-## Can I run fewer than five sessions if I cannot recruit enough participants?
-
-Four sessions still yield useful data. Three is the minimum for pattern recognition, but patterns from three participants carry less confidence and should be framed as 'emerging signals' rather than validated findings. Below three, you are gathering anecdotal reactions rather than usable patterns. If recruitment is genuinely impossible, consider whether the sprint should be postponed.
-
-Running Day 5 with two participants often creates a false sense of validation or invalidation that leads to poor decisions. It is better to delay by a few days and get to four or five than to rush with two.
-
-## How do I handle stakeholders who want to dismiss negative test results?
-
-This is the most politically sensitive moment in any sprint. Anchor every finding to specific, observable behaviors rather than subjective interpretations. ' Use direct participant quotes as evidence. If a stakeholder says 'Those were not the right users,' point to the screener criteria and how each participant was qualified.
-
-If the pushback persists, suggest running a second round of tests with the stakeholder's preferred participant profile, which usually either confirms the original finding or reveals a genuine segment difference worth understanding.
-
-## Why does my pattern board keep producing only positive signals?
-
-Three common causes. First, your interviewer may be leading participants toward success through hints, explanations, or encouraging body language. Review the interview recordings and watch for any moment the interviewer does anything other than observe and ask neutral questions. Second, your observer team may be under-capturing negative signals because they are rooting for the prototype to succeed.
-
-Remind observers before each session that finding problems now saves months of building the wrong thing. Third, your task prompts may be too easy or too guided. If the prompt is 'Click the blue button to sign up,' of course everyone will succeed. Open-ended prompts like 'Show me how you would get started' reveal real navigation and comprehension challenges.
+A split row on the scorecard is a finding in itself. Check whether the split follows a difference between customers, such as company size or experience, or whether the prototype failed to test the question clearly. The Decider can record the question as unanswered and plan a narrower follow-up test.

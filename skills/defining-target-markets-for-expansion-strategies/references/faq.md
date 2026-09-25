@@ -1,25 +1,21 @@
 # FAQ: Defining Target Markets for Expansion Strategies
 
-## How do I identify the right target market when expanding to a new geography?
+## What is the difference between a market segment and a target market?
 
-Start with markets that share the most similarities with your current successful market—similar customer demographics, comparable digital infrastructure, and manageable logistical complexity. Validate demand with low-cost experiments like geo-targeted ads or localized landing pages before committing to full market entry.
+A segment is any group of buyers who share needs or characteristics. A target market is the segment, or small set of segments, you choose to aim your product, marketing and pricing at. Segmentation produces options, and target market definition commits to one of them with enough detail to act on.
 
-## What's the difference between TAM, SAM, and SOM when sizing a target market?
+## How detailed should a target market definition be?
 
-TAM (Total Addressable Market) is the entire revenue opportunity if you had 100% market share. SAM (Serviceable Addressable Market) narrows to customers you can realistically reach with your business model. SOM (Serviceable Obtainable Market) is the share you can capture in 2-3 years given competition and resources. For expansion planning, SOM is the most actionable number.
+Detailed enough that sales and marketing would pick the same prospects from a list without talking to each other. That usually means the job and circumstance, a few clear boundaries, the buyer and blockers, the reachable size, the main alternatives and the evidence of demand. It should still fit on one page.
 
-## How many target markets should I pursue simultaneously for expansion?
+## How do I size a market I have never sold to?
 
-For most organizations, focus on one new target market at a time. Splitting resources across multiple new markets typically results in weak traction everywhere. Only pursue parallel entries if you have dedicated teams and budgets for each market, and even then, limit to two.
+Build it from the bottom up. Count the organizations or people who match your boundaries using registers, directories or platform audience tools, then apply the share with a pressing need observed in interviews and tests. Use industry reports only as a cross-check, since they usually describe a whole category.
 
-## How does target market definition differ between market development and diversification in the Ansoff Matrix?
+## How many interviews are enough?
 
-In market development, your target market definition focuses on finding new customer segments for your existing product—so you emphasize need-fit and channel accessibility. In diversification, you're defining a target market for a new product, which requires deeper validation of the problem itself, not just the segment's willingness to adopt your current solution.
+Keep interviewing until new conversations stop changing your description of the job, the buyer and the alternatives. For a focused business market that can happen after a modest number of conversations, while broad consumer markets usually need more. Include buyers who have no relationship with you, so the sample is not biased toward friendly answers.
 
-## What data sources should I use to research a new target market?
+## Can one expansion have more than one target market?
 
-Combine industry reports (Statista, IBISWorld, Gartner) for market sizing with hands-on research: customer interviews, competitor analysis, Google Trends and keyword data for demand signals, and social media listening for unmet needs. Government census and trade data are useful for geographic market definitions.
-
-## How do I know when I've validated a target market enough to commit resources?
-
-Set explicit validation thresholds before you begin—for example, 'at least 6 of 10 interviewees describe this as a top-3 priority' or 'landing page conversion rate above 2%.' When you've met your thresholds across multiple evidence types (qualitative interviews plus quantitative demand signals), you have enough confidence to invest.
+Yes, but name one primary target that gets most of the effort and treat others as secondary. Spreading a new team across several targets slows learning in all of them. Add a second primary target only once the first shows a repeatable way to win customers.

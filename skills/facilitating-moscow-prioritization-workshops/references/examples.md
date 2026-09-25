@@ -1,37 +1,37 @@
-# Examples: Facilitating MoSCoW Prioritization Workshops with Stakeholders
+# Examples: Facilitating a MoSCoW Prioritization Workshop
 
-## Example: SaaS Product Team Prioritizing Q3 Feature Backlog
-
-**Scenario:**
-
-A B2B SaaS company has 28 features requested by customers, sales, and engineering. The product manager needs to align the VP of Sales (who wants CRM integration), the CTO (who wants to address tech debt), and the Head of Customer Success (who wants improved onboarding) on what ships in Q3. They have capacity for roughly 15-18 features depending on complexity.
-
-**Walkthrough:**
-
-The product manager sends the 28-item list to all three stakeholders plus two senior engineers 48 hours before the session. Each person pre-categorizes independently.
-
-In the workshop, they establish definitions: Must-have = the product loses existing customers without it or fails a compliance audit; Should-have = directly tied to Q3 revenue targets; Could-have = improves experience but isn't blocking deals; Won't-have = deferred to Q4 or later.
-
-Silent voting reveals 16 items in consensus: 6 Must-haves (including a security patch and a billing fix both agreed on), 5 Should-haves, 3 Could-haves, and 2 Won't-haves. The remaining 12 items are contested.
-
-The biggest conflict: CRM integration. Sales says Must-have (three enterprise deals depend on it), CTO says Could-have (complex integration with high maintenance cost). The facilitator asks both to present evidence. Sales shows signed LOIs contingent on integration. CTO shows the 3-sprint estimate. The group moves it to Should-have with a condition: if one sprint can deliver a basic webhook integration, it becomes Must-have. The CTO agrees to spike it.
-
-After resolving all contested items, the final Must-have list totals 8 items consuming 55% of Q3 capacity. Should-haves add 7 more items. The group confirms verbally, and the product manager distributes the documented list that afternoon. This output directly feeds into building prioritized roadmaps from MoSCoW outputs.
-
-## Example: Government Agency Prioritizing Compliance System Requirements
+## A release workshop with a declared interest
 
 **Scenario:**
 
-A government IT team is modernizing a legacy compliance system. They have 35 requirements gathered from 4 departments (Legal, Finance, Operations, IT Security). Each department considers their own requirements most critical. The project has a fixed 6-month delivery timeline and a constrained team of 8 developers.
+Illustrative scenario: a product manager has to run the MoSCoW workshop for the next release of a scheduling product because no neutral facilitator is available. She also owns several of the items on the list.
 
 **Walkthrough:**
 
-The project lead organizes two workshops: one for the 20 functional requirements and one for the 15 non-functional/technical requirements. She invites one representative from each department plus the tech lead.
+She opens by declaring her interest and asking the head of product, the workshop owner, to make the final call on any item she has proposed. A colleague acts as scribe. The pre-read went out with effort estimates, the four definitions and the capacity for the release.
 
-She defines Must-have as 'legally mandated or the system fails audit,' which is unambiguous in a compliance context. This immediately clarifies the conversation — Legal's regulatory requirements are objectively Must-have, while Finance's reporting dashboard preferences are Should-have at most.
+Participants categorize privately on a shared sheet with votes hidden, then reveal. Most items are agreed straight away. Five are contested, including two of her own. For those she steps back and the head of product runs the discussion. One item is parked under the five-minute rule and sent to the sponsor, with an answer due before the release plan is published.
 
-During silent voting on functional requirements, 14 items reach consensus quickly. The 6 contested items all involve departments wanting their specific workflow automated first. The facilitator uses a decision matrix: each contested item is scored on regulatory risk (H/M/L), number of affected users, and implementation complexity.
+## A remote workshop across time zones
 
-Scoring reveals that Operations' bulk-upload feature affects 200 daily users and is medium complexity, while Finance's custom report builder affects 12 users and is high complexity. The group moves bulk-upload to Must-have and custom reporting to Could-have without further debate — the data spoke for itself.
+**Scenario:**
 
-The final output: 10 Must-haves (58% of capacity), 7 Should-haves, 2 Could-haves, and 1 Won't-have. Each department head signs the documented list, which becomes the contractual scope baseline.
+Illustrative scenario: a distributed team spread over several time zones needs to categorize requirements for a timebox. Only a short window works for everyone.
+
+**Walkthrough:**
+
+The facilitator moves the individual categorization out of the meeting. Participants categorize in a shared sheet during their own working day, with columns hidden from each other until a set time. The live session covers only the contested items.
+
+Because agreed items are confirmed before the call, the live window is spent on the few Musts that people disagree about. Each is tested against the consequence question on screen. The scribe records reasons in the sheet during the call, and the list is final when the call ends.
+
+## A workshop that ran long
+
+**Scenario:**
+
+Illustrative scenario: a first workshop for a new internal tool ends without a finished list. One stakeholder spent most of the session arguing that a reporting feature was a Must.
+
+**Walkthrough:**
+
+In the retrospective, the group agrees what went wrong: there was no time limit on disputes and no escalation path. For the second session the facilitator introduces the five-minute rule and agrees the escalation route with the workshop owner in advance.
+
+The reporting feature comes up again. After five minutes without agreement it is parked and sent to the sponsor with both positions written down. The rest of the list is finished in the session. The sponsor rules it a Should with a manual export as the workaround, and the decision is added to the list.

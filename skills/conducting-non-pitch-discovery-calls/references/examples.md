@@ -1,33 +1,37 @@
 # Examples: Conducting Non-Pitch Discovery Calls with Developers
 
-## Example: Discovery Call with a Platform Engineer at a Series B Startup
+## A first call with a platform engineer
 
 **Scenario:**
 
-You're building a developer tool in the CI/CD space. Your advisory board member is a platform engineer responsible for maintaining internal developer tooling for a 40-person engineering team. This is your second call with them.
+Illustrative scenario: a founder building a CI caching tool has a first TAB call with a platform engineer who owns build infrastructure at a mid-sized company.
 
 **Walkthrough:**
 
-You open by referencing the previous call: 'Last time you mentioned your team was migrating from Jenkins to GitHub Actions — how's that going?' The developer laughs and says 'Don't get me started.' You resist the urge to ask about specific pain points and instead say 'Walk me through what happened since we last talked.'
+The founder opens by saying the call is about the member's experience with builds, with no pitch and no demo, and asks to record. The member agrees. The founder asks the magic wand question scoped to "slow builds" and waits through a long pause. The member says they would make every developer's local build match CI exactly.
 
-They describe a three-week migration that ballooned to eight weeks because of undocumented pipeline dependencies. You follow the thread: 'What kind of dependencies caught you off guard?' They describe secret management issues, custom scripts nobody understood, and test suites that assumed Jenkins-specific environment variables.
+The founder asks when a mismatch last caused trouble. The member describes a release that slipped a day because a test passed locally and failed in CI, and walks through how they tracked it down. The founder asks the follow-ups from the guide: how fixing it would change the member's work, and what is different now that makes it matter more. The member says the team has doubled and the build config has outgrown the one person who understood it. The founder closes on time, confirms next month's call, and saves the recording with notes.
 
-You catch an emotional signal when they say 'Honestly, I spent a full week just auditing what we even had.' You probe: 'Tell me about that audit process — what did you actually do, step by step?' They describe manually reading YAML files, grepping for environment variables, and maintaining a spreadsheet. You note the workaround's manual nature and the visible frustration.
-
-At no point do you mention that your product could automate pipeline auditing. Instead, you ask 'Have you tried any tools for that audit process?' They mention trying a couple of open-source projects and being disappointed. You ask what specifically disappointed them — and get three highly specific feature gaps.
-
-You close by summarizing: 'So the migration pain was really about invisible dependencies and the lack of tooling to audit what you already had. The audit itself was basically manual detective work.' They confirm and add a nuance you hadn't caught. You schedule a follow-up in six weeks. In your debrief, you note that this 'pipeline audit' pain thread has now appeared in 4 of your last 7 calls — a theme worth escalating.
-
-## Example: Navigating the 'So What Are You Building?' Question
+## A member asks what you are building
 
 **Scenario:**
 
-You're 20 minutes into a call with a senior backend developer. The conversation has been flowing well — they've described three distinct pain points around API observability. Then they ask directly: 'This is really interesting but I'm curious — what exactly are you working on?'
+Illustrative scenario: halfway through a call about API documentation, a developer advocate asks the founder directly what the startup is building.
 
 **Walkthrough:**
 
-You give a one-sentence honest answer: 'We're exploring tools that help teams understand what's happening across their API surface area — still early and figuring out the right approach.' Then you immediately pivot: 'Actually, something you said a minute ago about not knowing which APIs are actually being called in production — can we go back to that? How do you currently figure that out when something breaks at 2am?'
+The founder answers in one sentence, says she would be glad to show it in a separate call, and asks whether that would be useful. The member says yes. The founder books a separate slot, then returns to the question she had asked about how the member's team keeps docs in sync with releases.
 
-The developer, satisfied with the brief answer, returns to their narrative and shares a detailed incident story that reveals three workflow steps you hadn't considered. The key is that your one-sentence answer was honest and unexciting enough that it didn't activate their 'I'm being sold to' filter, and your pivot was so naturally connected to their own stated interest that it felt like genuine curiosity, not deflection.
+In her notes she marks the member as interested in a product conversation, which she keeps apart from the TAB record. The next TAB call with the member stays on problems, as before.
 
-This approach works because it respects the developer's legitimate curiosity while maintaining the advisory dynamic. Refusing to answer would feel evasive and break trust. Over-answering would shift the call into pitch mode.
+## Catching yourself leading
+
+**Scenario:**
+
+Illustrative scenario: a co-founder reviews the recording of one of his own calls a few weeks into the program.
+
+**Walkthrough:**
+
+He hears himself say "So the main problem is really the alerting noise, right?" after a member described a long incident. The member agreed and moved on, and the notes list alerting noise as the top pain. Listening again, the co-founder realizes the member had spent more time describing handoffs between teams.
+
+He flags the note as uncertain and adds a follow-up to the next call's plan: ask the member to describe the incident again from the start. He also adds a line to the top of his call notes reminding him to ask "what happened next" instead of summarizing.

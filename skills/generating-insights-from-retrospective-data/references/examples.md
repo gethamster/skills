@@ -1,38 +1,37 @@
 # Examples: Generating Insights from Retrospective Data
 
-## Example: Uncovering a Systemic Bottleneck Through Affinity Mapping
+## The 5 Whys on repeated deploy delays
 
 **Scenario:**
 
-A 7-person development team has just completed their data gathering phase. The board has 28 sticky notes covering topics like 'PR reviews take 3+ days,' 'I didn't know the sprint goal changed,' 'Story X was blocked for a week,' 'Design specs weren't ready when I started coding,' and 'Too many meetings on Wednesday.'
+Illustrative scenario: a team of six has a cluster of notes about deploys that were delayed three times in the sprint. The first explanation offered is "the pipeline is slow."
 
 **Walkthrough:**
 
-The facilitator asks the team to silently cluster the notes. Three major themes emerge: 'Slow Feedback Loops' (8 notes), 'Information Gaps' (7 notes), and 'Context Switching' (6 notes). The team dot-votes and selects Slow Feedback Loops and Information Gaps for deep analysis.
+The facilitator writes the theme at the top of the board and asks why the deploys were delayed. The team answers that each one waited for a manual database step. Why? Because that step is not automated. Why? Because only one person knows how to run it safely, and that person has never had time to write it down. Why? Because operational work is never planned into the sprint.
 
-For Slow Feedback Loops, the facilitator runs the Five Whys:
-- Why are PR reviews slow? → Only two people feel qualified to review the payment service code.
-- Why only two people? → The payment service was built by a former team member and knowledge wasn't shared.
-- Why wasn't knowledge shared? → There's no onboarding documentation and no pairing rotation for that service.
+The team checks each answer against the notes on the board and finds support for all of them. The pipeline speed turns out to be a minor factor. The insight they write down is: "Deploys wait on a manual step that only one person can run, because operational work is never planned." A proposal to automate the step goes on the side list for the decide phase.
 
-For Information Gaps, a fishbone diagram reveals that the team relies entirely on a single Slack channel for sprint updates, there are no async standup practices, and the PM communicates priority changes verbally to whoever is nearby.
-
-Cross-theme connection: both issues stem from single-point-of-failure knowledge distribution. The insight: 'Critical knowledge (code ownership AND project context) is concentrated in individuals rather than distributed through team practices, creating bottlenecks and information gaps across the board.'
-
-This single systemic insight feeds into two concrete action items in the [deciding phase](https://tryhamster.com/skills/deciding-what-to-do-in-retrospectives): implement pairing rotation for the payment service, and create an async daily update practice.
-
-## Example: Using Timeline Patterns Across Multiple Sprints
+## A fishbone for a missed sprint goal
 
 **Scenario:**
 
-A Scrum Master notices that for three consecutive sprints, the team's retrospective data includes complaints about 'last-minute rushes' and 'things breaking near the end of the sprint.' They decide to use the insight generation phase to explore this pattern more deeply.
+Illustrative scenario: a team of eight missed its sprint goal. The notes on the board point in many directions: unclear stories, a sick colleague, a slow test environment and a late design.
 
 **Walkthrough:**
 
-The facilitator puts up a timeline of the last three sprints side by side and asks the team to plot when things felt 'green' (on track) versus 'red' (stressed/reactive). A clear pattern emerges: the first half of each sprint feels productive and calm, then a sharp shift happens around day 6-7.
+The facilitator draws a fishbone with the missed goal at the head and four bones: people, process, tools and environment. The team places each note on a bone and adds causes that come up in discussion.
 
-The Five Whys reveals: stories are estimated in terms of development effort only, with no buffer for integration testing and code review. Developers mark stories as 'done' when code is written, but the remaining 30% of work (review, testing, bug fixes) piles up at the end.
+The process bone fills up fastest. Several notes trace back to stories that entered the sprint without agreed acceptance criteria. The team sees that the late design and the unclear stories share that cause. They write one insight about the missing readiness check and note the sick colleague as a one-off that needs no action.
 
-The insight: 'Our Definition of Done doesn't match our estimation model. We estimate development time but our DoD requires review and testing, creating a predictable end-of-sprint crunch every iteration.'
+## Finding a shared cause across two themes
 
-This insight is qualitatively different from 'we need to estimate better.' It identifies a specific structural misalignment the team can address by either updating their estimation approach or revising their DoD — a decision for the [next phase](https://tryhamster.com/skills/deciding-what-to-do-in-retrospectives).
+**Scenario:**
+
+Illustrative scenario: a team of five has two clusters on its board, "code reviews take too long" and "we keep starting new work before finishing", and plans to analyze them separately.
+
+**Walkthrough:**
+
+The facilitator asks the team to run a quick 5 Whys on each theme. Both chains end in the same place: each developer has three or four pieces of work open at once, so reviews wait while people switch between tasks.
+
+The team writes one insight instead of two: "Too much work in progress slows reviews and delays finishing." The facilitator points out that the team also noted a week earlier in the sprint when reviews were fast, and it was the week when two people paired on one story. That observation goes into the decide phase as evidence for a possible action.

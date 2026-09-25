@@ -1,37 +1,21 @@
-# FAQ: Setting Up PostHog Feature Flags for Experiment Variants
+# FAQ: PostHog Experiment Variant Configuration with Feature Flags
 
-## How do I set up PostHog experiment feature flags if my application uses server-side rendering?
+## What kind of flag does a PostHog experiment need?
 
-) before rendering the page. Pass the user's distinct ID and any relevant person properties to the `get_feature_flag` method. Inject the variant key into the rendered HTML or pass it as a prop to your client-side framework. This approach eliminates the flicker that occurs when client-side flag evaluation loads after the initial render.
+A multivariate flag with at least two variants, where the first variant is named `control`. If you do not link an existing flag, the experiment wizard creates one for you with `control` and `test`. Boolean and remote config flags cannot back an experiment.
 
-The tradeoff is that you must have the user's distinct ID available at render time, which typically means the user must be authenticated or you must use a persistent cookie-based ID.
+## How does PostHog decide which variant a user gets?
 
-## Can I use the same feature flag for multiple experiments at different times?
+It assigns users based on their distinct ID, and the assignment is stable across sessions and devices. The split between variants is even by default and can be edited. The rollout percentage decides what share of eligible users enter the experiment at all.
 
-Technically you can reuse a flag key, but it is strongly discouraged. PostHog's deterministic hashing means the same flag key and distinct ID always produce the same variant. If a user was in the 'control' variant of your first experiment, they will be in 'control' again if you reuse the flag key for a second experiment. This creates a population bias because you are testing the same user split, not a fresh random assignment.
+## Why are some users missing from my experiment results?
 
-Create a new flag with a new key for each experiment, even if the variants are similar.
+The usual causes are reading the flag with a method that does not record exposure, reading it before flags or the properties it depends on are available, or web SDK deduplication hiding returning users. Break down the exposure event by variant to look for empty values. PostHog's troubleshooting guide covers each case and its fix.
 
-## How long should I wait after enabling a flag before connecting it to an experiment?
+## Can each variant carry its own configuration?
 
-You should connect the flag to an experiment within the first few hours of enabling it, ideally before or immediately after. Any traffic that flows through the flag before the experiment is created will not be tracked in the experiment's results, because PostHog starts counting from the experiment's start timestamp. If you want to verify the flag works before starting the official experiment, enable the flag with a very small rollout (e.g., 5%) for a brief verification period, then increase to your target rollout and create the experiment simultaneously.
+Yes. Multivariate flags can have a different payload per variant, returned as JSON, which is useful for copy, limits or layout options. Keep in mind that reading only the payload does not record an exposure, so still read the variant with the exposure-recording call.
 
-## Should I set up PostHog experiment feature flags before or after designing my success metrics?
+## How do I stop the page from flashing the control version?
 
-Design your success metrics first. The flag configuration depends on knowing your target segment (which determines release conditions), your required sample size (which influences rollout percentages and timeline), and your goal events (which must be firing correctly before the flag sends traffic). The sibling skill on [designing experiment hypotheses and metrics](https://tryhamster.com/skills/designing-onboarding-experiment-hypotheses-and-metrics) should be completed before this one. Configuring a flag without defined metrics often leads to missing release conditions or incorrect targeting that must be fixed mid-experiment.
-
-## Why does my PostHog feature flag return undefined for some users even though it is enabled?
-
-The most common causes are: the user does not match your release conditions (check their person properties in PostHog against your conditions), the PostHog SDK has not finished loading when you call `getFeatureFlag()` (use the `onFeatureFlags` callback), the user has not been identified yet (anonymous users may not have the person properties your conditions require), or the distinct ID being used in code does not match the distinct ID in PostHog (common when switching between anonymous and identified users). Check each cause systematically using PostHog's feature flag debugger on the person detail page.
-
-## How do I handle PostHog experiment feature flags in a monorepo or microservices architecture?
-
-Centralize flag key definitions in a shared constants file or configuration service that all services can import. Each service that needs to evaluate the flag should have its own PostHog SDK instance initialized with the same project API key. Server-side services should use the server-side SDK and pass the user's distinct ID explicitly. Avoid evaluating the same flag in multiple services for the same user request, because this can cause race conditions if one service caches a different result.
-
-Instead, evaluate once at the entry point (API gateway or main application server) and pass the variant downstream via request headers or context objects.
-
-## What happens if a user clears their cookies or switches devices during the experiment?
-
-If the user's distinct ID changes (because cookies are cleared and they get a new anonymous ID), PostHog treats them as a new user and may assign them a different variant. This is a known limitation of client-side identity. To mitigate this, encourage or require authentication early in the flow you are testing, so the distinct ID is tied to a stable account rather than a cookie. PostHog's `identify` call merges anonymous and authenticated IDs, but the merge only works if both IDs have been seen in the same session.
-
-Cross-device consistency requires authenticated distinct IDs.
+Make flag values available before the page renders. PostHog's options are to wait for flags to load before showing the page, or to bootstrap the SDK with flag values computed on your server. Bootstrapping takes more engineering but keeps the page fast.

@@ -1,25 +1,21 @@
-# FAQ: Defining and Sequencing Waterfall Phases
+# FAQ: Defining Waterfall Phases with Entry and Exit Criteria
 
-## How many phases should a waterfall model project have?
+## What are the phases of the waterfall model?
 
-The classic waterfall model has five phases (requirements, design, implementation, verification, maintenance), but you can split or merge phases based on project complexity. Most projects work well with 4-7 phases. Fewer creates unmanageable phase sizes; more creates excessive gate review overhead.
+There is no single official list. Common versions use requirements, design, implementation, verification or testing, and maintenance, often with deployment as a separate phase. Royce's original paper used system requirements, software requirements, analysis, program design, coding, testing and operations. Choose names that match the deliverables your project must produce.
 
-## What is the difference between entry criteria and exit criteria in the waterfall model?
+## What is the difference between entry and exit criteria?
 
-Entry criteria define what must be true before a phase can start (e.g., approved requirements document). Exit criteria define what must be true before a phase is considered complete (e.g., all test cases passed). Together, they form the quality gates that enforce the waterfall model's sequential discipline.
+Entry criteria say what must be true before a phase starts, such as approved inputs and available people and environments. Exit criteria say what must be true for the phase to be finished, such as approved deliverables and passed reviews. In a waterfall project, the exit criteria of one phase and the entry criteria of the next usually describe the same handover from both sides.
 
-## Can I start the next waterfall phase before the current one is complete?
+## How many phases should a waterfall project have?
 
-In a strict waterfall model, no — phases are sequential, and the next phase begins only after the current phase passes its gate review. Some organizations allow 'phase overlap' under formal risk acceptance, but this undermines traceability and is generally discouraged, especially in regulated environments.
+Enough that each phase produces a reviewable deliverable and has one accountable owner, and few enough that the gate overhead is worth it. A small internal project may combine design and implementation, while a regulated or contract project may need extra phases for certification or parallel running. Let the required deliverables drive the count.
 
-## How do I handle changing requirements in a waterfall model?
+## Can phases overlap?
 
-Use a formal change request process. Any requirement change after the Requirements phase gate must be documented, impact-analyzed, and approved before implementation. See our guide on managing change requests in waterfall projects for the full process.
+In the strict model they do not, but many teams allow planned overlap between neighboring phases, and variants such as the sashimi model are built on it. If you allow overlap, say so in the phase definition, name the work that may start early and the risk it carries. Unplanned overlap hides the real status of the project.
 
-## What happens if a waterfall phase fails its gate review?
+## What happens when a later phase finds a problem in an earlier one?
 
-The phase does not advance. The team addresses the unmet exit criteria — typically through rework, additional reviews, or resolving open defects — and resubmits for gate review. The project schedule is updated to reflect the delay, and stakeholders are informed of the impact.
-
-## Is the waterfall model still relevant for modern software projects?
-
-Yes, for projects with stable, well-understood requirements, fixed budgets, and regulatory constraints. The waterfall model excels in industries like aerospace, defense, medical devices, and large infrastructure projects where traceability, documentation, and auditability are non-negotiable.
+The problem is raised as a change request against the specific approved deliverable. The change is assessed for its impact, approved or rejected, and if approved, only the affected item is reopened and re-baselined. Defining this route before the project starts avoids informal rework that nobody tracks.

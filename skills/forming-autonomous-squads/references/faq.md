@@ -1,39 +1,21 @@
 # FAQ: Forming Autonomous Squads with Clear Missions
 
-## How do I decide the right number of squads for my organization?
+## How many people should be in a squad?
 
-Count the number of distinct user outcomes your product needs to serve, then compare that to your available staffing. Each squad needs 6-8 dedicated people. If you have 25 engineers and identify 6 outcome areas, you can only staff 3-4 squads properly. Form fewer, well-staffed squads rather than many under-resourced ones.
+There is no fixed number in the original Spotify paper. Later summaries describe squads of roughly six to twelve people, and ING used nine-person squads. Start from the skills the mission needs and keep the team small enough that everyone takes part in planning. If a squad keeps splitting into sub-groups, it is probably too large.
 
-You can always add squads later as you hire. The spotify squad model works better with 3 strong squads than 6 weak ones.
+## What makes a good squad mission statement?
 
-## What should I do when I don't have enough product managers for one per squad?
+It names who the squad serves and the outcome it owns, in one sentence, and it will still be true in a year. It avoids naming a technology layer or a single project. A good test is whether the squad could set its own goals under the mission without asking another squad's permission most of the time.
 
-The product owner role requires decision-making authority and daily availability, not a specific job title. Senior engineers, designers, or team leads with strong product instincts can serve as effective product owners. The key test is: can this person say "we are doing X instead of Y this sprint" without escalating? If yes, they can fill the role.
+## What if we do not have enough product owners?
 
-Invest in coaching them on prioritization frameworks and stakeholder communication. Do not split one PM across two squads as a workaround.
+Treat it as a signal about how many squads you can support. A product owner shared across many squads becomes a bottleneck, and the squads wait for decisions. It is usually better to form fewer, broader squads with dedicated product owners than more squads that share one.
 
-## How long should a squad's mission last before it changes?
+## Should squads choose their own process?
 
-A well-scoped mission should last 6-18 months. If missions change every quarter, they are probably scoped at the project level rather than the outcome level. Rewrite the mission to focus on a durable user outcome rather than a specific deliverable. That said, missions should evolve as the product matures.
+In the original Spotify description they did, using Scrum, Kanban or a mix. The benefit is ownership; the cost is that squads working differently can find it harder to collaborate. Many organizations give squads freedom over their internal process while agreeing a small set of shared practices for working across squads.
 
-An activation squad might shift from "get users to first value" to "get users to habitual usage" as the initial activation problem gets solved. Review missions quarterly and adjust only when the strategic landscape genuinely shifts.
+## How do we handle a squad with too many dependencies?
 
-## Should I form squads before or after organizing tribes?
-
-Form squads first. Tribes are groupings of related squads, so you cannot define tribe boundaries until you know what squads exist and what they own. Start by mapping your product into outcome areas and forming squads around them. Once you have 3-5 squads that share strategic territory, group them into a tribe.
-
-See [organizing tribes for alignment](https://tryhamster.com/skills/organizing-tribes-for-alignment) for the next step in the process.
-
-## How do I handle a squad that has too many external dependencies to operate autonomously?
-
-First, check whether the dependencies are real or artifacts of organizational habit. Many dependencies exist because people are used to asking permission, not because technical coupling requires it. For genuine dependencies, you have three options: redraw the squad boundary to absorb the dependency, negotiate an SLA with the providing team so the squad can plan around it, or create a shared service with a clear API contract. If a squad has more than two hard dependencies that regularly block its sprint, its mission scope is probably too broad and should be narrowed.
-
-## Why does my squad's autonomy keep getting overridden by management decisions?
-
-This usually happens because autonomy guardrails were never documented, so both the squad and management have different assumptions about who decides what. Write down the guardrails explicitly: which decisions the squad makes alone, which require consultation, and which require approval. Share this with leadership and get explicit agreement. If leadership continues overriding documented autonomy, the issue is organizational trust, not squad formation.
-
-Address it directly with the decision-makers, ideally by showing examples where squad-level decisions led to better outcomes than top-down ones.
-
-## Can a squad be smaller than 6 people and still function?
-
-A squad of 4-5 can work for tightly scoped missions where the squad genuinely needs fewer disciplines, such as an internal tools squad staffed with 3 engineers and 1 PO. But below 4, you lose resilience (one person on vacation halts progress) and cross-functional breadth. If you find yourself forming squads of 3, consider whether the mission is too narrow and should be combined with a related area. The spotify squad model assumes squads can deliver independently, which requires enough people to cover the full delivery cycle.
+First check whether the mission is drawn around a technical layer, and redraw it around an outcome if so. Then decide which dependencies to remove through architecture work, which to remove by moving a person into the squad, and which to accept. Record the plan in the charter and revisit it at each health check.

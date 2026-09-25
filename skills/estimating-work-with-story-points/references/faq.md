@@ -1,25 +1,25 @@
-# FAQ: Estimating Work with Story Points and Planning Poker
+# FAQ: Scrum Estimation with Story Points
 
-## What is the best story point scale for scrum estimation?
+## Does Scrum require story points?
 
-The modified Fibonacci sequence (1, 2, 3, 5, 8, 13, 21) is the most widely used and recommended scale. The increasing gaps between numbers reflect the growing uncertainty in larger work items. Some teams use T-shirt sizes (S, M, L, XL) for early-stage estimation, then convert to Fibonacci for sprint planning.
+No. The Scrum Guide says the Developers who will do the work are responsible for sizing Product Backlog items, and that forecasts draw on past performance, capacity and the Definition of Done. It does not prescribe a unit. Story points, t-shirt sizes, item counts and time estimates are all practices teams add on top.
 
-## How many sprints does it take to establish a reliable velocity?
+## Why use Fibonacci numbers for story points?
 
-Most teams need 3-5 sprints to establish a stable velocity baseline. During this period, use the lowest completed sprint total as your capacity estimate for the next sprint to avoid over-commitment. After 5 sprints, a 3-sprint rolling average provides reliable forecasting data.
+Mike Cohn explains that people can distinguish estimates that differ by a proportion, which is Weber's Law, and the Fibonacci numbers grow by roughly the same proportion each step. The gaps also stop teams from arguing over tiny differences between large items. Cohn reports that a doubling sequence worked about as well, so the exact scale matters less than using one consistently.
 
-## Should the Scrum Master or Product Owner participate in planning poker?
+## Should the Product Owner play Planning Poker?
 
-No. Only team members who will actually do the work should estimate. The Scrum Master facilitates the session and the Product Owner answers clarifying questions about requirements, but neither should hold estimation cards. Their involvement can create anchoring bias or implicit pressure.
+The Product Owner should take part without estimating. Their job in the session is to explain the item, answer questions and make scope decisions, for example dropping part of an item when the estimate comes in high. The Developers own the sizing, as the Scrum Guide says.
 
-## What do I do when one developer always estimates much higher than the rest of the team?
+## How do we handle one person who always estimates high?
 
-This is valuable signal, not a problem. That developer may have deeper knowledge of technical debt, edge cases, or testing complexity. Use planning poker's discussion round to surface their reasoning. If they're consistently right (stories take longer than the majority estimated), the team's calibration needs adjustment.
+Treat it as information. Ask them to explain each time, since high estimates often point to testing, data migration or other work others have missed. If their concerns turn out to be right, the team's estimates should rise. If not, the discussion will show that over time, and the gap usually closes as understanding becomes shared.
 
-## Can story points be used across different Scrum teams?
+## Can we compare velocity between teams?
 
-Story points should not be compared across teams because each team calibrates to their own reference baseline and velocity. A '5' on one team is not equivalent to a '5' on another. For cross-team planning, use each team's individual velocity to forecast timelines rather than comparing raw point totals.
+No. Each team's points reflect its own reference items, skills and context, so the same number means different amounts of work on different teams. Ron Jeffries calls comparing teams on velocity harmful, because it pressures teams to inflate estimates. Compare outcomes such as delivered value and quality instead.
 
-## How do I estimate bugs and technical debt with story points?
+## When should a team stop estimating?
 
-Estimate bugs and tech debt the same way as feature work—using relative complexity compared to your reference story. Some teams reserve a fixed percentage of sprint capacity (e.g., 20%) for unplanned bugs and don't estimate those individually. Planned tech debt stories should go through normal planning poker like any other backlog item.
+Some teams find that once items are consistently small, counting items forecasts as well as points do. Ron Jeffries recommends slicing work down to small pieces instead of estimating. Try forecasting with item counts for a few Sprints alongside points, and drop points if the forecasts are just as useful.
