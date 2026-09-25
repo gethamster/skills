@@ -5,12 +5,15 @@ description: "Learn how Microsoft's Semantic Kernel Agent Framework builds AI ag
 metadata:
   datePublished: "2026-04-25"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/frozen-pond-colour-light.webp"
 ---
 
 # Semantic Kernel Agent Framework: Microsoft's AI Agents SDK
 
-> Created by **Microsoft** — [https://github.com/microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel)
+> Created by **Microsoft** - [https://github.com/microsoft/semantic-kernel](https://github.com/microsoft/semantic-kernel)
 
 ## Overview
 
@@ -116,14 +119,14 @@ Published results vary widely: one [2026 benchmark study](https://arxiv.org/html
 
 This method includes the following skills:
 
-- [Designing Human-in-the-Loop Agent Workflows](skills/designing-human-in-the-loop-agent-workflows/SKILL.md) — How to incorporate approval gates, termination strategies, and human feedback checkpoints into agent execution loops to maintain oversight and control.
-- [Deploying AI Agents for SEO and Keyword Research Automation](skills/deploying-ai-agents-for-seo-automation/SKILL.md) — How to build and deploy Semantic Kernel agents that autonomously perform keyword research, content optimization, and SEO auditing tasks.
-- [Selecting and Comparing AI Agent Architectures](skills/selecting-and-comparing-agent-architectures/SKILL.md) — How to evaluate Semantic Kernel's ChatCompletionAgent, OpenAIAssistantAgent, and custom agent types to choose the best architecture for your use case.
-- [Building Autonomous AI Agents with Semantic Kernel](skills/building-autonomous-ai-agents-with-semantic-kernel/SKILL.md) — How to define, configure, and instantiate autonomous AI agents using Semantic Kernel's agent abstractions, personas, and execution settings.
-- [Orchestrating Multi-Agent Conversations and Collaboration](skills/orchestrating-multi-agent-conversations/SKILL.md) — How to set up AgentGroupChat and agent channel patterns so multiple AI agents collaborate, delegate tasks, and resolve complex workflows together.
-- [Integrating Plugins and Tools into Semantic Kernel Agents](skills/integrating-plugins-and-tools-into-agents/SKILL.md) — How to register native functions, OpenAPI plugins, and external tools so agents can autonomously call APIs, databases, and services during execution.
-- [Adding Memory and Context Management to AI Agents](skills/adding-memory-and-context-to-agents/SKILL.md) — How to wire vector stores, chat history, and semantic memory into agents so they retain context across turns and retrieve relevant knowledge autonomously.
-- [Implementing Agent Planning Strategies for Complex Tasks](skills/implementing-agent-planning-strategies/SKILL.md) — How to configure and customize planning strategies—such as stepwise and function-calling planners—that enable agents to decompose goals into actionable steps.
+- [Designing Human-in-the-Loop Agent Workflows](../../skills/designing-human-in-the-loop-agent-workflows/SKILL.md): How to incorporate approval gates, termination strategies, and human feedback checkpoints into agent execution loops to maintain oversight and control.
+- [Deploying AI Agents for SEO and Keyword Research Automation](../../skills/deploying-ai-agents-for-seo-automation/SKILL.md): How to build and deploy Semantic Kernel agents that autonomously perform keyword research, content optimization, and SEO auditing tasks.
+- [Selecting and Comparing AI Agent Architectures](../../skills/selecting-and-comparing-agent-architectures/SKILL.md): How to evaluate Semantic Kernel's ChatCompletionAgent, OpenAIAssistantAgent, and custom agent types to choose the best architecture for your use case.
+- [Building Autonomous AI Agents with Semantic Kernel](../../skills/building-autonomous-ai-agents-with-semantic-kernel/SKILL.md): How to define, configure, and instantiate autonomous AI agents using Semantic Kernel's agent abstractions, personas, and execution settings.
+- [Orchestrating Multi-Agent Conversations and Collaboration](../../skills/orchestrating-multi-agent-conversations/SKILL.md): How to set up AgentGroupChat and agent channel patterns so multiple AI agents collaborate, delegate tasks, and resolve complex workflows together.
+- [Integrating Plugins and Tools into Semantic Kernel Agents](../../skills/integrating-plugins-and-tools-into-agents/SKILL.md): How to register native functions, OpenAPI plugins, and external tools so agents can autonomously call APIs, databases, and services during execution.
+- [Adding Memory and Context Management to AI Agents](../../skills/adding-memory-and-context-to-agents/SKILL.md): How to wire vector stores, chat history, and semantic memory into agents so they retain context across turns and retrieve relevant knowledge autonomously.
+- [Implementing Agent Planning Strategies for Complex Tasks](../../skills/implementing-agent-planning-strategies/SKILL.md): How to configure and customize planning strategies—such as stepwise and function-calling planners—that enable agents to decompose goals into actionable steps.
 
 ## FAQ
 
