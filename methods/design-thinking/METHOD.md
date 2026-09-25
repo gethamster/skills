@@ -5,12 +5,15 @@ description: "Design Thinking explained: Simon's roots, the d.school modes, how 
 metadata:
   datePublished: "2026-09-24"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite-forest-colour-light.webp"
 ---
 
 # What Is Design Thinking? Modes, Origins and Evidence
 
-> Created by **Herbert A. Simon, with later development and popularization by IDEO and Stanford d.school** — [https://en.wikipedia.org/wiki/Herbert\_A.\_Simon](https://en.wikipedia.org/wiki/Herbert_A._Simon)
+> Created by **Herbert A. Simon, with later development and popularization by IDEO and Stanford d.school** - [https://en.wikipedia.org/wiki/Herbert\_A.\_Simon](https://en.wikipedia.org/wiki/Herbert_A._Simon)
 
 ## Overview
 
@@ -117,12 +120,12 @@ Synthesis relies on [frameworks, maps and abductive thinking](https://dschool.st
 
 This method includes the following skills:
 
-- [Generating Divergent Ideas](skills/generating-divergent-ideas/SKILL.md) — Learn to produce many varied solution concepts using brainstorming, ideation prompts, analogies, and collaborative co-creation before narrowing the field.
-- [Building Rapid Prototypes](skills/building-rapid-prototypes/SKILL.md) — Learn to create quick, low-cost representations of ideas such as sketches, storyboards, role-plays, and mock-ups for exploration and communication.
-- [Balancing Desirability, Feasibility, and Viability](skills/balancing-desirability-feasibility-and-viability/SKILL.md) — Learn to evaluate ideas across human desirability, technical feasibility, and business viability to ensure well-rounded, sustainable solutions.
-- [Iterating from Evidence](skills/iterating-from-evidence/SKILL.md) — Learn to use test results and new discoveries to revise prototypes, reframe the problem, abandon weak assumptions, and move flexibly between Design Thinking modes.
-- [Synthesizing User Insights](skills/synthesizing-user-insights/SKILL.md) — Learn to organize qualitative evidence, identify patterns, distinguish observations from assumptions, and turn raw research findings into actionable insights.
-- [Framing Human-Centered Problems](skills/framing-human-centered-problems/SKILL.md) — Learn to define the underlying challenge as a focused problem statement or point of view rather than prematurely jumping to solutions.
+- [Generating Divergent Ideas](../../skills/generating-divergent-ideas/SKILL.md): Learn to produce many varied solution concepts using brainstorming, ideation prompts, analogies, and collaborative co-creation before narrowing the field.
+- [Building Rapid Prototypes](../../skills/building-rapid-prototypes/SKILL.md): Learn to create quick, low-cost representations of ideas such as sketches, storyboards, role-plays, and mock-ups for exploration and communication.
+- [Balancing Desirability, Feasibility, and Viability](../../skills/balancing-desirability-feasibility-and-viability/SKILL.md): Learn to evaluate ideas across human desirability, technical feasibility, and business viability to ensure well-rounded, sustainable solutions.
+- [Iterating from Evidence](../../skills/iterating-from-evidence/SKILL.md): Learn to use test results and new discoveries to revise prototypes, reframe the problem, abandon weak assumptions, and move flexibly between Design Thinking modes.
+- [Synthesizing User Insights](../../skills/synthesizing-user-insights/SKILL.md): Learn to organize qualitative evidence, identify patterns, distinguish observations from assumptions, and turn raw research findings into actionable insights.
+- [Framing Human-Centered Problems](../../skills/framing-human-centered-problems/SKILL.md): Learn to define the underlying challenge as a focused problem statement or point of view rather than prematurely jumping to solutions.
 
 ## FAQ
 
@@ -163,15 +166,15 @@ It depends on the problem, and the sources set no standard duration. [The d.scho
 - [Let's Stop Talking about THE Design Process \| Stanford d.school](https://dschool.stanford.edu/stories/lets-stop-talking-about-the-design-process)
 - [Design Thinking by IDEO: Human-Centered Innovation](https://designthinking.ideo.com)
 - [What's the difference between human-centered design and design](https://designthinking.ideo.com/faq/whats-the-difference-between-human-centered-design-and-design-thinking)
-- [What is Design Thinking? — updated 2026 \| IxDF](https://ixdf.org/literature/topics/design-thinking)
-- [dschool\_bootleg\_deck\_2018\_final\_sm2-6.pdf](https://dschool.sfo3.digitaloceanspaces.com/documents/dschool_bootleg_deck_2018_final_sm2-6.pdf)
+- [What is Design Thinking? - updated 2026 \| IxDF](https://ixdf.org/literature/topics/design-thinking)
+- [dschool.sfo3.digitaloceanspaces.com](https://dschool.sfo3.digitaloceanspaces.com/documents/dschool_bootleg_deck_2018_final_sm2-6.pdf)
 - [1987: Design Thinking was](https://ixdf.org/literature/article/design-thinking-get-a-quick-overview-of-the-history)
 - [Design Thinking: a Global Study on Implementation Practices in Organizations : Past - Present - Future](https://publishup.uni-potsdam.de/files/53466/design_thinking_study.pdf)
 - [Full article: A systematic review of design thinking](https://tandfonline.com/doi/full/10.1080/03043797.2026.2640060)
 - [The impact of design thinking and its underlying theoretical](https://onlinelibrary.wiley.com/doi/full/10.1111/caim.12626)
 - [A Systematic Review on Design Thinking Integrated Learning in K](https://oamonitor.ireland.openaire.eu/rfo/sfi_rfo/search/publication?pid=10.3390/app12168077)
 - [Is design thinking dead in 2026? What 100 practitioners](https://designsprintx.com/articles/is-design-thinking-dead-in-2026)
-- [Microsoft Word - dschool-brainstorming.doc - Stanford University](https://hci.stanford.edu/courses/cs247/2011/readings/dschool-brainstorming.pdf)
+- [hci.stanford.edu](https://hci.stanford.edu/courses/cs247/2011/readings/dschool-brainstorming.pdf)
 - [Framework for Innovation](https://designcouncil.org.uk/resources/framework-for-innovation)
 - [History of the Double Diamond - Design Council](https://designcouncil.org.uk/resources/the-double-diamond/history-of-the-double-diamond)
 
