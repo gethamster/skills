@@ -1,18 +1,18 @@
 ---
 name: "comparing-v2mom-with-okrs-and-other-frameworks"
-description: "Decide when V2MOM, OKRs, a balanced scorecard or Hoshin Kanri fits your planning problem, and how to combine V2MOM with OKRs without duplication."
+description: "V2MOM vs OKR: when each fits your planning problem, how both compare to a balanced scorecard and Hoshin Kanri, and how to combine them without overlap."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
   method: "v2mom-framework"
   datePublished: "2026-07-02"
-  dateModified: "2026-09-24"
+  dateModified: "2026-09-25"
   author:
     name: "Hamster"
     url: "https://tryhamster.com"
 ---
 
-# V2MOM vs OKRs and Other Goal-Setting Frameworks
+# Comparing V2MOM with OKRs and Other Goal-Setting Frameworks
 
 > Decide when V2MOM, OKRs, a balanced scorecard or Hoshin Kanri fits your planning problem, and how to combine V2MOM with OKRs without duplication.
 
@@ -60,6 +60,30 @@ Each framework maps to one of these. V2MOM is strongest on shared direction, bec
 The frameworks also combine. The most common pairing is V2MOM for annual direction and OKRs for quarterly execution. In that setup, V2MOM methods become the source of OKR objectives, and V2MOM measures inform the key results. The risk is duplication: two documents saying the same thing in different formats. Avoid it by giving each a clear job and linking them rather than copying text between them.
 
 Finally, size and stability matter. A small team with shared daily context may not need any formal framework. Visible.vc's [overview of V2MOM](https://visible.vc/blog/v2mom-salesforce/) suggests a long-established business running steadily may not need a V2MOM at all. Match the weight of the framework to the size of the alignment problem.
+
+## V2MOM vs OKRs: How the Two Differ and Which to Use
+
+V2MOM and OKRs differ mainly in the question they answer: V2MOM sets shared direction and decides what wins when priorities collide, while OKRs turn a direction into measurable results that are tracked and scored. The two are often compared because both connect goals across an organization. They work at different layers of planning, though, so the choice usually comes down to which layer is broken.
+
+### What each framework produces
+
+A V2MOM answers [five questions in Marc Benioff's write-up](https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/): what you want, what matters, how you will get it, what stands in the way and how you will know. The output is a ranked list of values and methods plus an explicit obstacles section, which tells people how to trade off competing work. An OKR set, as [What Matters defines it](https://www.whatmatters.com/faqs/okr-meaning-definition-example), pairs a few objectives with specific, time-bound key results on a quarterly cycle. Its output is a short list of outcomes that can be scored.
+
+| Dimension | V2MOM | OKRs |
+|-------|-------|-------|
+| Core purpose | Shared direction and priority order | Execution focus and measurable progress |
+| Structure ([Benioff](https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/), [What Matters](https://www.whatmatters.com/faqs/okr-meaning-definition-example)) | Vision, values, methods, obstacles, measures | Objectives with key results |
+| Priority handling | Values and methods are ranked | Objectives are kept few |
+| Risk handling | Obstacles named up front | Not a built-in section |
+| Rhythm ([What Matters](https://www.whatmatters.com/faqs/okr-meaning-definition-example)) | Set as a direction document | Quarterly cycle with scoring |
+
+### Which one to choose
+
+Choose V2MOM when teams disagree about where the company is going or keep fighting over which priority wins, because the ranking forces leaders to settle that in writing. Choose OKRs when direction is already clear but goals are vague and nobody can say whether they are on track, because key results make progress visible every cycle. What Matters also notes that OKRs are kept separate from compensation so people set ambitious targets, which matters if your current goals are sandbagged to protect bonuses.
+
+### Signs you picked the wrong one
+
+If you adopted OKRs and teams still argue about priorities each quarter, the missing piece is direction, and a V2MOM above the OKRs is likely to help. If you adopted a V2MOM and methods sit untouched for months with no one able to report progress, the missing piece is execution tracking, and OKRs derived from the V2MOM methods are the usual fix. When both symptoms appear, use the pairing described in How It Works rather than stretching one framework to do both jobs.
 
 ## Step-by-Step Guide
 
