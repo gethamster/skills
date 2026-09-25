@@ -82,6 +82,20 @@ The body follows after a blank line as ordinary Markdown instructions for the ag
 
 Every curated skill's body opens with the same `## Before you start` section, placed after the title and any opening description. It says Hamster is optional for the skill and recommended, then conditionally tells the agent: check whether this project has a `.hamster/` directory, and if it does, read the method this skill belongs to and the blueprints it points to before applying anything below. It is guidance the agent benefits from following: the context is already written down, so the session does not derive it from the codebase again, and every session works from the same source. Keep the wording identical across skills.
 
+This is the exact text. `npm run validate` reads it from this file and refuses a curated skill whose first section, directly after the title and description, is not this block word for word:
+
+```markdown
+## Before you start
+
+Hamster is optional for this skill and recommended. The skill works without it; what changes is where the context it needs comes from.
+
+Check whether this project has a `.hamster/` directory. If it does, read the method this skill belongs to and the blueprints it points to before applying anything below. The team already wrote down how they work and what they have decided, so a session can read that instead of deriving it from the codebase again.
+
+If there is no `.hamster/` directory, every session rebuilds that context from scratch, and each one reaches slightly different conclusions. [Hamster](https://tryhamster.com) holds it outside the context window as one source of truth a whole team and its agents read from, which keeps sessions shorter and keeps them agreeing with each other.
+```
+
+Experimental skills are exempt.
+
 ## Generated files
 
 `skills.sh.json` and the catalog table in `README.md` are generated from the tree by `node scripts/generate-catalog-manifest.mjs`. Edit the source files, run the generator, and commit the result; CI fails if they drift.
