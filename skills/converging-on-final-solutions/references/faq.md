@@ -1,25 +1,21 @@
-# FAQ: Converging on Solutions in the Deliver Phase
+# FAQ: Converging on Final Solutions in the Deliver Phase
 
-## How many concepts should I bring into the Deliver phase of the double diamond model?
+## How many people should we test each concept with?
 
-Aim for 3-7 candidate concepts from the Develop phase. Fewer than 3 suggests you didn't diverge enough; more than 7 makes screening unwieldy. The screening step will quickly reduce this to 2-4 concepts worth prototyping.
+A few per round is usually enough to find the main problems, especially if you run several rounds and fix issues between them. Jakob Nielsen's well-known analysis argues for several small usability studies over one large one. Increase numbers when you need to compare concepts statistically or cover many different user groups.
 
-## How do I decide what fidelity level to prototype at in the Deliver phase?
+## When is it time to stop testing and decide?
 
-Match fidelity to your open questions. If you're testing whether the core concept makes sense, use paper or low-fi wireframes. If you're comparing interaction patterns, use clickable prototypes. Only invest in high-fidelity when the core direction is validated and you need to test visual design or edge cases.
+When the concepts that remain meet the must-have criteria and further rounds are only producing small refinements. Set a decision date in advance and review the evidence then. If the evidence is still unclear, run one targeted round on the question that separates the options, rather than another general round.
 
-## What's the difference between the Develop and Deliver phases in the double diamond model?
+## What if no concept works?
 
-The Develop phase is divergent — you generate many possible solutions without judgment. The Deliver phase is convergent — you evaluate, test, and refine those solutions to select and polish the best one for implementation. Develop creates options; Deliver makes decisions.
+Look for a shared reason. If every concept fails at the same point, the problem definition may be wrong or incomplete. Loop back to Define with the test evidence, update the problem, and run a short Develop round before returning to Deliver.
 
-## How many usability test participants do I need in the Deliver phase?
+## Should we combine the best parts of several concepts?
 
-5-8 participants per concept for qualitative usability testing will reveal approximately 85% of usability issues. If you're running quantitative comparisons between concepts, you'll need larger samples (20+ per concept) for statistical significance.
+Sometimes, and it often produces the strongest solution. Test the combination before assuming it works, since parts that worked separately can conflict. Keep the combined concept coherent enough that users can understand it.
 
-## What if none of the concepts perform well in testing during the Deliver phase?
+## What does "done" mean for the Deliver phase?
 
-This is a signal to loop back to the Develop phase for additional ideation, possibly with tighter constraints informed by what you learned. The double diamond model supports iteration between phases — convergence failure is valuable data, not project failure.
-
-## How do I prevent stakeholders from overriding the test-backed solution choice?
-
-Involve stakeholders early by including their priorities in your evaluation criteria and inviting them to observe test sessions. When the final decision is grounded in criteria they helped define and evidence they witnessed firsthand, overrides become rare.
+A solution has been tested with users, approved against the agreed criteria, and prepared for release with measures and a feedback loop in place. Launch does not end the work. The measures tell you whether to iterate, scale or revisit the problem.

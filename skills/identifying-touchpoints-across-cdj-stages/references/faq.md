@@ -1,25 +1,21 @@
 # FAQ: Identifying Touchpoints Across CDJ Stages
 
-## How many touchpoints should I expect to find across buyer journey stages?
+## What is the difference between company-driven and consumer-driven touchpoints?
 
-Most businesses discover 30-60 distinct touchpoints when they audit thoroughly. The number matters less than the distribution—if 70% of your touchpoints cluster in one or two CDJ phases, you've found a significant imbalance. Aim for meaningful coverage across all four phases, weighted by where your consumers most need influence.
+Company-driven touchpoints are ones a brand creates and pays for, such as ads, sponsorships and direct marketing. Consumer-driven touchpoints are ones buyers seek out or create, such as reviews, word of mouth, community discussions and their own past experience. The distinction comes from McKinsey's original Consumer Decision Journey research.
 
-## What's the difference between a channel and a touchpoint in the CDJ?
+## How detailed should the inventory be?
 
-A channel is a communication medium like email or your website. A touchpoint is a specific interaction within a channel at a specific buyer journey stage. Email might contain five different touchpoints: a welcome sequence (post-purchase), a product launch announcement (consideration), a comparison guide (evaluation), an abandoned cart reminder (purchase), and a renewal prompt (loyalty loop).
+Detailed enough that each touchpoint can have an owner and a score. "Social media" is too broad, while "customer photos on our product pages" is specific enough to act on. Group very similar touchpoints together to keep the list usable.
 
-## How do I score touchpoint influence when I don't have attribution data?
+## How do I measure influence without a large research budget?
 
-Run a post-purchase survey asking customers which interactions most influenced their decision at each stage. Even 50-100 responses will reveal patterns. Supplement with qualitative input from sales and support teams who hear directly from customers. Flag estimated scores and prioritize building measurement for your highest-impact touchpoints.
+Interview recent buyers and ask what made them add, drop or choose a brand. A modest set of interviews usually reveals the most influential touchpoints. Use surveys later to check how common each one is.
 
-## How often should I update my touchpoint map across buyer journey stages?
+## Can one touchpoint belong to several stages?
 
-Conduct a full audit annually and a lightweight review quarterly. Trigger an immediate re-audit when you launch a major product, enter a new market, notice a significant competitor move, or see unexpected drops in conversion at any CDJ phase. The touchpoint landscape shifts faster in digital-first categories.
+Yes. Reviews can build consideration for one buyer and provide reassurance at the moment of purchase for another. Show the touchpoint in each stage separately with its own scores.
 
-## Which buyer journey stages are most commonly under-invested?
+## What should we do about touchpoints we do not control?
 
-Active evaluation and post-purchase are almost always under-invested relative to their influence on outcomes. Teams default to spending on awareness (initial consideration) and conversion (moment of purchase) because they're easier to measure. But consumers increasingly make decisions during evaluation—reading reviews, comparing features—and post-purchase experience determines whether they enter the loyalty loop or restart the journey with a competitor.
-
-## Can I use programmatic SEO to fill touchpoint gaps in the active evaluation phase?
-
-Absolutely—this is one of the highest-value applications of programmatic SEO. Comparison pages, integration directories, use-case content, and alternative pages can all be templated and built at scale to serve active evaluation queries. Each page becomes a new evaluation-phase touchpoint. See the programmatic SEO skill for implementation details.
+Assign an owner anyway. That person can make sure accurate information is available, respond where appropriate, and encourage satisfied customers to share their experience. Influence is possible even where control is not.

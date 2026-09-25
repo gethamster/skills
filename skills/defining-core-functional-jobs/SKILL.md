@@ -1,15 +1,20 @@
 ---
-name: defining-core-functional-jobs
-description: "This skill teaches you how to identify and articulate the single functional job your customer is trying to get done, using precise job statement syntax that separates the task from any product or solution."
+name: "defining-core-functional-jobs"
+description: "Define the customer's core functional job: one solution-free statement, at the right altitude, for a named job executor, that anchors JTBD work."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: jobs-to-be-done-jtbd-framework
+  method: "jobs-to-be-done-jtbd-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Defining the Customer's Core Functional Job: What Is a Product Manager Without This Skill?
+# Defining the Customer's Core Functional Job
 
-> This skill teaches you how to identify and articulate the single functional job your customer is trying to get done, using precise job statement syntax that separates the task from any product or solution.
+> Define the customer's core functional job: one solution-free statement, at the right altitude, for a named job executor, that anchors JTBD work.
 
 ## Before you start
 
@@ -24,127 +29,93 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial definition, including research and iteration |
-| Outcome | You produce a single, stable, solution-agnostic job statement that serves as the anchor for job mapping, outcome statements, and opportunity scoring across your entire product strategy. |
-| Prerequisites | Basic understanding of the Jobs-to-be-Done (JTBD) Framework and its vocabulary, Access to qualitative customer data such as interview transcripts, support tickets, or behavioral observations, Familiarity with the difference between functional, emotional, and social jobs |
+| Time to Learn | a few hours of practice |
+| Outcome | You can write one core functional job statement that names the job executor, contains no solution, and sits at an altitude the whole team accepts. |
+| Prerequisites | Notes from customer conversations, a named product area, familiarity with the JTBD idea of hiring a product |
 | Part of | [Jobs-to-be-Done (JTBD) Framework](../../methods/jobs-to-be-done-jtbd-framework/METHOD.md) |
 
 ## Overview
 
-Every product exists because a customer is trying to get something done. The core functional job is the underlying task or goal that persists regardless of which product, service, or workaround the customer chooses. When you ask what is a product manager's most foundational responsibility in the [Jobs-to-be-Done (JTBD) Framework](https://tryhamster.com/methods/jobs-to-be-done-jtbd-framework), the answer is this: defining the core functional job with enough precision that every team member, from engineering to marketing, shares the same understanding of what the customer is trying to accomplish. Without that shared definition, outcome statements drift, job maps fracture, and opportunity scoring loses its anchor.
+The core functional job is the task a customer is trying to get done, described without reference to any product. Every other artifact in the [Jobs-to-be-Done (JTBD) Framework](../../methods/jobs-to-be-done-jtbd-framework/METHOD.md) hangs off it: the job map breaks it into steps, the outcome statements measure those steps, and the survey and segments score them. If the core functional job is wrong, everything downstream measures the wrong thing with great precision.
 
-Defining the core functional job is deceptively difficult. Teams routinely confuse the job with a solution ('use a spreadsheet to track expenses'), an activity step ('enter receipt data'), or an emotional aspiration ('feel financially secure'). A well-formed functional job sits between those layers. It describes the objective the customer would still need to accomplish even if your product, your category, and your entire industry disappeared tomorrow. The classic example is 'manage personal finances over time,' not 'use budgeting software' or 'feel confident about money.'
+Defining the core functional job means making three decisions. The first is who the job executor is: the person who actually carries out the job, who may not be the buyer or the person who approves the purchase. The second is what the job is, written in Strategyn's format of verb, object of the verb and contextual clarifier, as in "listen to music while commuting to work" ([Strategyn JTBD template](https://strategyn.com/jobs-to-be-done-template/)). The third is the altitude: how broad the job is, which decides how much of the customer's world your research will cover.
 
-The artifact you produce is a single sentence following a precise syntactic pattern: action verb plus object of the action plus contextual clarifier. This sentence becomes the root node of your job map, the filter for which outcome statements belong in scope, and the lens through which you evaluate competitive alternatives. A core functional job defined at the right altitude of abstraction is stable for years or even decades, giving your team a durable strategic foundation rather than a moving target tied to market trends or feature requests.
+The output is short: a single sentence, the job executor, a note on what is in and out of scope, and the evidence behind it. It is also where most JTBD projects go wrong. Teams describe their own product's workflow and call it the job, or they pick a job so broad that no survey could cover it. This skill is about avoiding both.
 
-This skill sits at the very beginning of the JTBD workflow. You will use its output directly when [creating job maps](https://tryhamster.com/skills/creating-job-maps), [writing desired outcome statements](https://tryhamster.com/skills/writing-desired-outcome-statements), and eventually [identifying underserved outcome opportunities](https://tryhamster.com/skills/identifying-underserved-outcome-opportunities). Getting the job statement wrong at this stage cascades errors through every downstream artifact, which is why experienced practitioners spend more time here than anywhere else in the framework.
+The Christensen school frames the job as the progress a person is trying to make in a particular circumstance, and it stresses that jobs also have social and emotional sides ([Christensen Institute](https://www.christenseninstitute.org/theory/jobs-to-be-done/)). Keep those in view, but write them down separately. The core functional job is the practical task. The emotional and social jobs are the feelings and perceptions that come with it, and they need their own statements.
 
 ## How It Works
 
-The core functional job works as an abstraction layer between what customers do (observable behavior) and why they do it (motivations and emotions). By stripping away solutions and emotional language, you isolate the task itself, which is the most stable element in the customer's world. Products come and go, emotional contexts shift with demographics and culture, but the functional job endures. People needed to 'manage personal finances over time' long before spreadsheets existed, and they will need to do it long after today's fintech apps are obsolete.
+A job statement works when it stays true as solutions change. Strategyn requires needs to be "stable over time and devoid of solutions" ([needs framework](https://strategyn.com/customer-needs-through-a-jobs-to-be-done-lens/)), and the same test applies to the job itself. "Track expenses in a spreadsheet" fails it, because the spreadsheet is a solution. "Keep spending within a monthly budget" passes, because someone was doing that before spreadsheets and will be doing it after.
 
-The syntax, action verb plus object plus contextual clarifier, is not arbitrary. Each component does specific analytical work. The action verb anchors the statement to an observable, measurable activity. Verbs like 'manage,' 'transport,' 'acquire,' or 'maintain' describe what the customer is doing at a functional level. Verbs like 'feel,' 'enjoy,' or 'avoid' signal that you have slipped into emotional territory. The object of the action identifies what is being acted upon: finances, goods, knowledge, health. The contextual clarifier scopes the job to the relevant situation without over-narrowing it. 'Over time' is different from 'on a daily basis,' and both differ from 'during a cross-country move.'
+The verb carries the action. Pick one that describes what the executor is trying to achieve, such as keep, prepare, ensure, determine or resolve, rather than an interaction with a tool, such as click, log in or upload. The object is what the action is applied to. The contextual clarifier narrows the situation enough to separate this job from neighboring ones, for example "for a household" or "while traveling for work". Keep adjectives about quality out of the statement: "quickly", "easily" and "accurately" belong to the outcome statements you write later, where they become measurable.
 
-The most common failure mode is setting the altitude of abstraction incorrectly. Too high and the job becomes meaningless ('live a good life'). Too low and you have described a step rather than a job ('enter receipt data into a ledger'). The right altitude passes two tests. First, the job is stable across solutions: would this job exist if no current product existed? Second, the job is specific enough to generate distinct outcome statements: can you list 10-15 measurable things the customer would want to be true when this job is done well?
+Altitude is the judgment call. Bettencourt and Ulwick's job mapping article describes people hiring products to get a job done, from surgeons to janitors ([The Customer-Centered Innovation Map](https://hbr.org/2008/05/the-customer-centered-innovation-map)), and in each case the job is the executor's goal rather than one move inside it. A useful test is to ask "why?" of a candidate job. If the answer is a larger task the executor also cares about, you may be too low: "enter a receipt" becomes "keep spending within a budget". Ask "how?" of the candidate. If the answer is a list of distinct steps, you are at a level that can be mapped. If the answer is a list of separate jobs, you are too high.
 
-Within the [Jobs-to-be-Done (JTBD) Framework](https://tryhamster.com/methods/jobs-to-be-done-jtbd-framework), the core functional job also determines the competitive frame. Once you define the job, you can identify every solution the customer considers, not just direct competitors in your product category but workarounds, manual processes, and adjacent products that get the same job done. This expanded competitive lens is one of the framework's most powerful strategic outputs, and it depends entirely on defining the job at the right level.
+Scope follows from the executor and the market you want to serve. A company that sells to accountants and a company that sells to households may study jobs with similar words and very different executors. Name the executor explicitly and write the job for that person, and record the buyer and any other stakeholders separately so their concerns do not leak into the statement.
 
-Finally, a well-formed job statement acts as a coordination mechanism across functions. Engineers use it to evaluate feature requests ('does this help the customer get the core job done better?'). Marketers use it to write messaging that resonates with the customer's actual goal. Sales teams use it to qualify leads by checking whether the prospect actually has this job. The job statement is not a research artifact filed away after a workshop. It is the operating definition that your product organization returns to every time priorities conflict.
+The definition is a hypothesis until evidence supports it. Draft it from what customers have said and done, test it in interviews and revise it before the job map is built. A job statement that customers cannot recognize as a description of what they do is not finished.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Gather raw customer evidence
+### Step 1: Gather raw customer evidence
 
-Collect qualitative data that reveals what customers are trying to accomplish. Sources include interview transcripts from [JTBD customer interviews](https://tryhamster.com/skills/conducting-jtbd-customer-interviews), support tickets, sales call recordings, onboarding surveys, and behavioral analytics showing what users do immediately before and after using your product. You need at least 8-12 distinct customer accounts to see patterns. Pull verbatim quotes where customers describe their goals, frustrations, and the sequence of actions they take.
+Collect what you already have: interview notes, support tickets, sales call notes, reviews and any usage data that shows what customers do before and after using your product. Prefer records of behavior over opinions, since what customers did is more reliable than what they say they want. Pull the verbs customers use to describe their goals. Note the situations they mention, because those become contextual clarifiers. If you have little evidence, run a few switch interviews first using [Conducting JTBD Customer Interviews](../conducting-jtbd-customer-interviews/SKILL.md).
 
-Organize these quotes in a single document or spreadsheet, tagging each with the customer segment and context.
+### Step 2: Name the job executor
 
-> **Pro tip:** Pay special attention to 'switching stories,' moments when customers describe moving from one solution to another. These reveal the underlying job more clearly than satisfaction feedback, because the customer is articulating what they needed that the old solution failed to deliver.
+Decide whose job you are defining. The executor is the person who carries out the job, which in business products is often not the buyer. Write down the executor, the buyer and any approver as separate roles. Pick one executor for this definition, and plan a separate job statement if another role has its own job worth studying.
 
-### Step 2: Step 2: Extract candidate job statements from the evidence
+### Step 3: Draft candidate job statements
 
-Read through your evidence and write down every plausible job statement you can identify. Do not filter yet. Write each as a verb-object-context phrase. You will likely generate 10-25 candidates ranging from very broad ('improve quality of life') to very narrow ('compare weekly grocery prices at two stores').
+Write several candidates in the form verb, object, contextual clarifier. Aim for variety: some broader, some narrower, some with different verbs. Keep each to one sentence. Do not judge them yet, since the point of this step is to have options to test.
 
-Include overlapping and redundant statements. The goal is exhaustive coverage, not elegance. Each statement should describe something the customer is trying to get done, not something they feel or something your product does for them. If you catch yourself writing a product feature or an emotional state, rewrite it as a functional task.
+### Step 4: Remove solutions from every candidate
 
-> **Pro tip:** If a candidate statement includes your product name or any specific technology, it is a solution, not a job. Replace the product reference with the function it serves: 'use Mint to see spending' becomes 'monitor spending patterns over time.'
+Read each candidate and strike any product category, technology, feature or brand. Replace a tool-based verb with the goal it serves. Remove quality words such as "fast" or "easy", which belong in outcome statements. If a candidate collapses to nothing once the solution is gone, it described your product rather than the job, so drop it.
 
-### Step 3: Step 3: Test each candidate for solution independence
+### Step 5: Set the altitude with why and how
 
-Take each candidate and ask: would this job exist if my product category did not exist? Would it have existed 50 years ago? If the answer is no, the statement is tied to a solution or a technology era. Rewrite it at a higher level of abstraction.
+For each surviving candidate, ask why the executor does it and how they do it. Move up a level when the answer to "why" is a task the executor clearly owns and would want help with. Move down when the answer to "how" is a list of unrelated jobs. Stop at the level where "how" produces a sequence of steps that could form a job map, which is the input to [Creating Job Maps](../creating-job-maps/SKILL.md).
 
-For example, 'create a playlist for my workout' is tied to digital music products. ' Apply this test to every candidate and either promote it, rewrite it, or discard it. You should end up with 5-10 surviving candidates.
+### Step 6: Consolidate and test with customers
 
-> **Pro tip:** A helpful forcing function: imagine explaining the job to someone from a completely different era or culture. If the statement requires knowledge of modern technology to understand, it is not yet solution-agnostic.
+Merge the surviving candidates into one statement. Read it back to a few job executors and ask them to describe the last time they did it, from start to finish. If they describe a different task or skip large parts of the job, revise the wording or the altitude. A customer should recognize the statement without explanation.
 
-### Step 4: Step 4: Check the altitude of abstraction
+### Step 7: Document the definition
 
-For each surviving candidate, apply two tests. First, the 'too high' test: can you generate at least 10 distinct desired outcomes for this job? If you cannot, the statement is probably too narrow and describes a step within a larger job. Second, the 'too low' test: does the statement feel so broad that any product in any category could claim to address it?
-
-If so, add a contextual clarifier or narrow the object. A job like 'manage health' is too broad. 'Manage chronic pain without medication dependency' passes both tests. Work through each candidate, adjusting the verb, object, or context until both tests pass.
-
-Eliminate candidates that resist adjustment.
-
-> **Pro tip:** If two candidates seem to be at different altitudes on the same ladder, the higher one is likely the core job and the lower one is a job step that will appear later in your job map.
-
-### Step 5: Step 5: Consolidate overlapping candidates into a single job statement
-
-You should now have 3-6 refined candidates. Group any that describe the same underlying task from different angles. Choose the phrasing that is most precise, most stable, and most generative of outcome statements. If two candidates are truly distinct jobs, you may have identified two separate markets or use cases.
-
-In most product contexts, you want a single core functional job per product line. Write your selected statement in the canonical format: [action verb] + [object of the action] + [contextual clarifier]. Read it aloud. ' in plain language.
-
-> **Pro tip:** Run the final statement past a colleague who was not involved in the exercise. If they need more than one sentence of explanation to understand it, the statement is not clear enough.
-
-### Step 6: Step 6: Validate against the evidence and with customers
-
-Return to your original customer evidence from Step 1. Read through every quote and ask: does our job statement accurately describe what this person was trying to accomplish? If more than 20% of the quotes describe a goal that falls outside the job statement, your statement may be too narrow or you may have the wrong job entirely. ' Their reaction, whether they nod immediately or look confused, is the most direct validation you can get.
-
-Adjust the wording based on feedback, but resist the urge to add emotional or aspirational language.
-
-> **Pro tip:** Customers will often try to add solution language ('yes, and that is why I use X'). Acknowledge their input but keep the job statement solution-free. You are validating the goal, not the method.
-
-### Step 7: Step 7: Document the job statement with supporting context
-
-Create a one-page reference document that includes the final job statement, 3-5 supporting customer quotes that illustrate the job, a brief note on the altitude decision (why this level and not higher or lower), and a list of known solutions customers currently use to get this job done. Include the competitive frame: direct competitors, adjacent products, manual workarounds, and non-consumption (choosing not to do the job at all). This document becomes the input for [creating job maps](https://tryhamster.com/skills/creating-job-maps) and [writing desired outcome statements](https://tryhamster.com/skills/writing-desired-outcome-statements). Store it where your product team can reference it easily, such as a shared wiki or product brief.
-
-> **Pro tip:** Add a 'not this' section listing common misinterpretations of the job. For example: 'The job is not to use budgeting software. The job is not to feel financially secure. The job is to manage personal finances over time.' This prevents drift as the document circulates.
+Record the final statement, the executor, what is in and out of scope, the emotional and social jobs you heard, and the evidence behind each decision. Share it with product, design, engineering and marketing before mapping begins. Changing the job after outcomes are written means rewriting them, so agreement here saves rework later.
 
 ## Best Practices
 
-- Write the job statement before discussing solutions, features, or competitive positioning. Once solution language enters the conversation, it anchors the team's thinking and makes it harder to see the underlying job. Skipping this sequence leads to job statements that are just product descriptions in disguise.
-- Use verbs that describe observable functional activity: manage, acquire, transport, maintain, prepare, monitor, resolve. Avoid verbs that describe internal states: feel, enjoy, hope, avoid. If a verb is ambiguous, test it by asking whether you could watch someone doing it. You can watch someone 'manage finances.' You cannot watch someone 'feel secure.'
-- Keep the contextual clarifier situational, not demographic. 'Over time' or 'while traveling' scopes the job without tying it to a persona. Demographic qualifiers like 'for millennials' or 'for enterprise buyers' belong in your segmentation work, not in the job statement itself. Mixing the two conflates the job with the market.
-- Revisit the job statement quarterly during the first year of use. Teams often discover that their initial altitude was slightly off once they begin writing outcome statements and building job maps. A small adjustment early, such as narrowing 'manage health' to 'manage chronic conditions,' can prevent weeks of rework downstream.
-- Involve at least one person from outside the product team in the definition exercise. Customer success, sales, or support team members hear different language from customers and will catch solution-dependency that product teams miss because they are too close to their own features.
-- Test the job statement against non-obvious competitors. If your job is 'stay informed about industry developments,' your competitors include newsletters, podcasts, industry conferences, peer networks, and doing nothing. If the statement does not accommodate this full competitive set, it is too narrow or solution-bound.
-- Distinguish between the core functional job and related jobs. A customer hiring a financial planning tool has a core job ('manage personal finances over time') and related jobs ('prepare tax filings,' 'plan for retirement'). Related jobs are real, but they get their own job maps and outcome statements. Mixing them into one statement creates a bloated, unfocused foundation.
+- Write the executor into the definition document next to the job statement. Many disagreements that look like arguments about the job are disagreements about whose job it is.
+- Keep a short list of rejected candidates with the reason each was rejected. It shows stakeholders that broader and narrower options were considered, and it stops the same candidate from coming back every review.
+- Use the customer's verbs where they are solution-free. A statement in the customer's language is easier to validate in interviews and easier to use in survey wording.
+- Record emotional and social jobs separately from the core functional job ([Christensen Institute](https://www.christenseninstitute.org/theory/jobs-to-be-done/)). They matter for positioning and design, but mixing them into the functional statement makes it unmappable.
+- Revisit the statement after the first round of interviews and before writing outcome statements. Once outcomes are drafted, a change to the job costs far more.
 
 ## Common Mistakes
 
-- **Defining the job at the solution level instead of the task level** — This is the most frequent error. ' The signal is any mention of a product category, technology, or specific tool in the statement. To fix it, remove the solution reference and ask what task the solution was helping the customer accomplish. That task is the job.
-
-If you find yourself unable to remove the solution without losing meaning, you have not yet identified the underlying job.
-- **Setting the altitude too high, producing a job statement that is unfalsifiable** — Statements like 'achieve success in life' or 'be productive' are too abstract to generate useful outcomes. The diagnostic is the outcome test: try to write 10 specific, measurable desired outcomes for the job. If every outcome you write sounds like a platitude ('minimize the time it takes to succeed'), the job is too high. Drop down one level of specificity by adding a concrete object and context until the outcomes become tangible and measurable.
-- **Blending functional and emotional jobs into a single statement** — A statement like 'feel confident while managing investments' mixes a functional job (manage investments) with an emotional job (feel confident). This creates confusion downstream because outcome statements for functional jobs and emotional jobs have different structures and different measurement approaches. Separate them. Write the functional job as one statement and capture emotional and social jobs in their own dedicated section.
-
-The functional job always comes first in the JTBD workflow because it is the most stable and measurable.
-- **Defining multiple jobs as one compound statement** — ' Each of these is a distinct job with its own job map, steps, and outcomes. The compound statement makes it impossible to prioritize or measure. Pick the one job that is most central to your product's value proposition and define it cleanly. List the others as related jobs in your documentation.
-
-You can build separate job maps for each later, but they should never be crammed into a single statement.
-- **Anchoring to your most vocal customer segment instead of the broadest job executor** — Teams often define the job based on power users or early adopters, whose needs are more specific and more solution-aware than the broader market. The result is a job statement that feels right for 15% of the market but excludes 85%. Check your statement against the full range of people who execute this job, including those who use competing products, manual workarounds, or nothing at all. The job should resonate across all of them.
-- **Treating the job definition as a one-time workshop exercise and never revisiting it** — The initial definition is a hypothesis. As you build job maps and write outcome statements, you will discover that the job is slightly broader, narrower, or differently scoped than you assumed. Teams that lock in the statement on day one and refuse to adjust it end up with misaligned downstream artifacts. Schedule a review after your first complete job map and again after your first round of outcome-based customer research.
+- **Describing your product's workflow**: "Manage projects in our tool" is a solution, and a job map built on it will list your screens. Remove the product and ask what the customer is trying to achieve by using it.
+- **Choosing an altitude by convenience**: Teams pick the level that matches their current product scope, which hides adjacent steps where competitors or new entrants may help. Use the why and how test instead, and decide scope explicitly afterwards.
+- **Blending executors**: A statement that tries to cover the buyer, the user and the approver describes nobody's job well. Write one job per executor and study them separately.
+- **Putting quality words in the job**: "Quickly reconcile accounts" mixes the job with a need. Keep the job neutral and capture speed, accuracy and effort as outcome statements, where they can be measured ([Strategyn needs framework](https://strategyn.com/customer-needs-through-a-jobs-to-be-done-lens/)).
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/jobs-to-be-done-jtbd-framework/METHOD.md) — Jobs-to-be-Done (JTBD) Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/jobs-to-be-done-jtbd-framework/METHOD.md): Jobs-to-be-Done (JTBD) Framework
 
 ## Related Skills
 
+- [Creating Job Maps](../creating-job-maps/SKILL.md)
 - [Conducting JTBD Customer Interviews](../conducting-jtbd-customer-interviews/SKILL.md)
-- [Identifying Underserved Outcome Opportunities](../identifying-underserved-outcome-opportunities/SKILL.md)
-- [Applying JTBD Insights to Product Strategy and Roadmaps](../applying-jtbd-to-product-strategy/SKILL.md)
 - [Writing Desired Outcome Statements](../writing-desired-outcome-statements/SKILL.md)
-- [Creating Job Maps to Visualize Customer Processes](../creating-job-maps/SKILL.md)
-- [Segmenting Customers by Unmet Needs](../segmenting-customers-by-unmet-needs/SKILL.md)
+
+## Sources
+
+- [Strategyn: Jobs to Be Done template](https://strategyn.com/jobs-to-be-done-template/)
+- [Strategyn: Customer Needs Through a Jobs-to-be-Done Lens](https://strategyn.com/customer-needs-through-a-jobs-to-be-done-lens/)
+- [Christensen Institute: Jobs to Be Done](https://www.christenseninstitute.org/theory/jobs-to-be-done/)
+- [Bettencourt and Ulwick, The Customer-Centered Innovation Map, HBR](https://hbr.org/2008/05/the-customer-centered-innovation-map)

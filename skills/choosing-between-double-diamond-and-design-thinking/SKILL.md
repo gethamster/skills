@@ -1,15 +1,20 @@
 ---
-name: choosing-between-double-diamond-and-design-thinking
-description: "Learn how to compare the Double Diamond with Stanford d.school Design Thinking and Lean UX so you can select—or combine—the right design framework for your project's goals, team maturity, and constraints."
+name: "choosing-between-double-diamond-and-design-thinking"
+description: "Compare Double Diamond vs design thinking and Lean UX, then choose the framework, or the combination, that fits your project and team."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: double-diamond
+  method: "double-diamond"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Double Diamond vs Design Thinking: How to Choose the Right Framework
+# Double Diamond vs Design Thinking: Choosing a Framework
 
-> Learn how to compare the Double Diamond with Stanford d.school Design Thinking and Lean UX so you can select—or combine—the right design framework for your project's goals, team maturity, and constraints.
+> Compare Double Diamond vs design thinking and Lean UX, then choose the framework, or the combination, that fits your project and team.
 
 ## Before you start
 
@@ -24,114 +29,103 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You will be able to confidently evaluate, select, and justify the right design framework—or a hybrid—for any given project context. |
-| Prerequisites | Basic familiarity with the Double Diamond model and its four phases, Understanding of Stanford d.school's five-stage Design Thinking process, Experience participating in at least one structured design project |
+| Time to Learn | a couple of hours to compare, one project to test the choice |
+| Outcome | You can compare the Double Diamond with design thinking and Lean UX, choose a backbone for a specific project, and explain the choice to your team and sponsors. |
+| Prerequisites | Basic familiarity with the Double Diamond, a project with known goals and constraints, some knowledge of how your organisation plans and funds work |
 | Part of | [Double Diamond](../../methods/double-diamond/METHOD.md) |
 
 ## Overview
 
-Every product team eventually faces the question: should we follow the Double Diamond, Design Thinking, Lean UX, or something else entirely? The frameworks share DNA—they all value empathy, iteration, and user-centredness—but they differ in structure, emphasis, and the contexts where they shine. Picking the wrong model (or forcing a favourite onto an ill-suited project) leads to wasted cycles, confused stakeholders, and process theatre.
+Teams often ask whether to run a project with the Double Diamond or with design thinking, and sometimes whether Lean UX would suit them better. The frameworks overlap heavily, so the choice is about emphasis and fit, and the answer is often a combination. This skill gives you a way to compare Double Diamond vs design thinking and Lean UX against your project and pick a backbone deliberately.
 
-This skill teaches you to move beyond surface-level comparisons of double diamond vs design thinking. You will learn the structural differences, the philosophical trade-offs, and the practical decision criteria that help you match a framework to your project's actual constraints. Whether your challenge is deep problem-framing for a government service or rapid MVP validation for a startup, you'll walk away with a repeatable decision process.
+The [Double Diamond](../../methods/double-diamond/METHOD.md) describes the shape of a project: two rounds of widening and narrowing, first on the problem, then on the solution. The Design Council presents it inside a Framework for Innovation that adds design principles, a methods bank and the conditions of leadership and engagement ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)). It says little about which methods to use in each phase.
 
-This skill sits within the broader [Double Diamond](https://tryhamster.com/methods/double-diamond) method. Understanding the parent model's divergent-convergent rhythm is essential context, and you may also want to explore [Mapping Divergent and Convergent Thinking Modes](https://tryhamster.com/skills/mapping-divergent-convergent-thinking) to deepen your grasp of the underlying mechanics.
+Design thinking, as taught by Stanford's d.school, is organised as modes: Empathize, Define, Ideate, Prototype and Test. The d.school's Design Thinking Bootleg presents these as a set of tools and methods you "can start wherever you'd like," rather than a fixed sequence ([d.school Bootleg](https://dschool.stanford.edu/resources/design-thinking-bootleg)). The Nielsen Norman Group's version adds a sixth phase, Implement, and groups the phases into understand, explore and materialise ([NN/g Design Thinking 101](https://www.nngroup.com/articles/design-thinking/)).
+
+Lean UX, from Jeff Gothelf and Josh Seiden, applies lean and agile ideas to design. Its current edition is organised around the Lean UX Canvas, a one-page tool for identifying and testing a project's most important assumptions within an agile team ([Lean UX](https://leanuxbook.com/)). It assumes a team is already building and focuses on short cycles of hypothesis, experiment and learning.
+
+The inputs to the choice are the project's clarity (how well the problem is understood), its time frame, how the organisation funds and approves work, and the team's experience. The output is a stated backbone framework, the methods you will borrow from the others, and a checkpoint at which you will review the choice.
 
 ## How It Works
 
-At its core, choosing between frameworks is a matching problem. You are matching a process model's strengths to a project's needs. The Double Diamond excels at problem-framing: its first diamond (Discover → Define) forces teams to spend serious time understanding the problem space before jumping to solutions. Design Thinking—particularly the Stanford d.school variant—places heavier emphasis on rapid prototyping and user testing loops, making it powerful when you need to learn quickly through making. Lean UX strips away deliverables in favour of outcome-driven experiments and is optimised for cross-functional agile teams.
+Compare the three frameworks on what each makes explicit, since that is what each will protect under pressure.
 
-The key insight is that these frameworks are not mutually exclusive. They operate at different altitudes. The Double Diamond is a macro-level process architecture that tells you *when* to open up and close down thinking. Design Thinking provides a set of mindsets and micro-methods (empathy maps, crazy eights, prototype sprints) that can plug into any phase. Lean UX contributes a hypothesis-driven experimentation layer that fits naturally inside the second diamond's Develop and Deliver phases.
+The Double Diamond makes the problem definition an explicit phase with its own output. That protects against solving the wrong problem. It fits projects where the problem is unclear or disputed, where a sponsor needs a visible decision point before committing build budget, and where several teams need a shared, simple picture of the process. Its weakness is that it says little about methods and can be read as a linear sequence, which the Design Council explicitly rejects.
 
-The decision, then, is less about picking one winner and more about choosing a primary backbone and layering in complementary techniques. Your choice depends on four factors: (1) problem clarity—how well-understood is the challenge? (2) organisational context—does your team need explicit phase gates or fluid iteration? (3) stakeholder expectations—do sponsors expect a structured, visual process map or lean, continuous delivery? (4) team skill set—does the team have deep research capability or is it stronger in prototyping and engineering?
+Design thinking makes empathy and prototyping explicit. It gives teams a vocabulary of modes and a large toolkit of methods, and it encourages moving between modes freely. It fits teams that need practical methods for each activity and projects where hands-on prototyping will teach the most. Its weakness is that the flexible order can let teams skip or rush the problem-framing work that the Double Diamond protects.
+
+Lean UX makes assumptions and experiments explicit. It fits teams already shipping software in short iterations, where the fastest way to learn is to release something small and measure it. Its weakness is that it presumes a reasonably well-framed problem and a product to iterate on, so it is less suited to open-ended discovery.
+
+The frameworks combine well. A common arrangement uses the Double Diamond as the project-level backbone, design thinking methods inside each phase, and Lean UX cycles in Develop and Deliver once a product exists. The UK government's service phases (discovery, alpha, beta, live) are another backbone with the same arc, and add a decision on whether to continue at the end of discovery ([GOV.UK discovery phase](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works)).
+
+Two questions usually decide the backbone. First, how clear is the problem? The less clear it is, the more a separate problem diamond is worth. Second, how does your organisation commit money and people? If it wants a clear go or stop decision before build, the Double Diamond's first convergence point, or the GOV.UK end of discovery, gives it one. If it funds a standing product team, Lean UX's cycles fit its rhythm.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit your project's problem clarity
+### Step 1: Rate how clear the problem is
 
-Before comparing frameworks, assess how well the problem is understood. Ask: Do we have a clearly defined user need, or are we still exploring a vague opportunity area? Can we articulate the problem in one sentence that the whole team agrees on?
+Write down what the team knows about the problem and how it knows it. If the problem is disputed or based on assumptions, rate it unclear. If it is backed by recent research and agreed by stakeholders, rate it clear. Be honest: many "clear" problems are one senior person's view. This rating is the biggest single factor in the choice.
 
-If the answer is 'no'—the problem space is ambiguous, multi-stakeholder, or politically contested—the Double Diamond's first diamond (Discover → Define) is especially valuable because it mandates dedicated problem-framing time. If the problem is already well-scoped and you need to explore solutions quickly, you may jump more directly into Design Thinking's Ideate → Prototype → Test loop.
+### Step 2: Map how your organisation decides and funds
 
-> **Pro tip:** Use a simple 1-5 scale for problem clarity. Score 1-2 = lean toward Double Diamond's full first diamond. Score 4-5 = consider starting with Design Thinking's Ideate phase.
+Find out how work is approved: a project budget with gates, a standing team with a roadmap, or a client contract with fixed deliverables. Note who must approve moving from research to build. Frameworks that match these decision points meet less resistance. Record any fixed deadlines that limit how long exploration can run.
 
-### Step 2: Step 2: Map your organisational constraints
+### Step 3: Compare the frameworks against your project
 
-Frameworks don't exist in a vacuum—they have to survive contact with your organisation. Document three things: your team's composition (dedicated design team vs. cross-functional squad), your delivery cadence (waterfall milestones, two-week sprints, continuous deployment), and your stakeholder governance model (stage-gate approvals, lean portfolio management, or ad hoc).
+Put the three frameworks side by side against your ratings. Use the [Design Council framework](https://www.designcouncil.org.uk/resources/framework-for-innovation/), the [d.school Bootleg](https://dschool.stanford.edu/resources/design-thinking-bootleg) and the [Lean UX book site](https://leanuxbook.com/) as reference descriptions. For each framework, note what it would make the team do that it might otherwise skip, and where it would feel awkward. Keep the comparison to a single page.
 
-The Double Diamond maps cleanly to organisations that use stage-gate governance because each diamond has a natural decision point. Design Thinking's iterative loops fit agile sprint cadences. Lean UX was purpose-built for cross-functional squads practising Scrum or Kanban.
+### Step 4: Check your team's experience
 
-> **Pro tip:** If your organisation mandates formal phase-gate reviews, the Double Diamond's visual structure makes it far easier to communicate progress to senior leadership than Design Thinking's more fluid model.
+Consider what the team has done before. A team new to research may benefit from the Double Diamond's clear phases and outputs. A team that already runs experiments in production may find Lean UX natural. Mixed teams need a shared vocabulary more than a sophisticated framework. Plan any coaching the choice requires.
 
-### Step 3: Step 3: Compare framework structures side by side
+### Step 5: Choose a backbone and name what you borrow
 
-Create a comparison table with columns for each candidate framework and rows for: number of phases, primary emphasis, key activities, artefacts produced, ideal team size, and typical duration. For double diamond vs design thinking, the critical structural difference is that the Double Diamond explicitly separates the problem space (Diamond 1) from the solution space (Diamond 2), whereas Design Thinking interleaves them—Empathize and Define set up the problem, but Prototype and Test often circle back to redefine it.
+Pick one framework as the backbone that defines phases and decision points. List the methods you will borrow from the others, for example design thinking's empathy and prototyping methods inside the Double Diamond's phases, or Lean UX's hypothesis format in Deliver. Write the choice and the reasons in a short note. Avoid running two backbones in parallel, which confuses stakeholders.
 
-Also consider Lean UX as a third option. Lean UX replaces heavy deliverables with lightweight hypotheses and experiments, making it ideal when speed-to-learning matters more than comprehensive documentation.
+### Step 6: Explain the choice to stakeholders
 
-This side-by-side analysis prevents you from choosing based on familiarity bias and ensures the decision is grounded in structural fit.
+Present the backbone as a picture with phases, outputs and decision points. Explain what it protects against in plain terms, such as "we will agree the problem before committing build budget." Answer the question "when will we see something" directly. Invite objections now rather than mid-project.
 
-> **Pro tip:** Keep the comparison visual—a one-page table or Miro board that the whole team can reference. This artefact also helps you explain your choice to stakeholders.
+### Step 7: Review the choice at a checkpoint
 
-### Step 4: Step 4: Evaluate team capabilities and mindset
-
-A framework is only as good as the team's ability to execute it. If your team is strong in user research and synthesis, the Double Diamond's Discover and Define phases will feel natural. If your team is stronger in rapid prototyping and engineering, Design Thinking's bias toward making will yield faster results.
-
-Conduct a quick skills audit: list the core activities each framework requires (e.g., contextual inquiry, affinity mapping, concept sketching, usability testing) and rate your team's current proficiency. Gaps don't disqualify a framework, but they do flag where you'll need coaching or external support.
-
-> **Pro tip:** Don't confuse team preference with team capability. Designers often prefer the framework they learned first. Push for an honest assessment of actual skills rather than comfort zones.
-
-### Step 5: Step 5: Decide on a primary backbone and supplementary techniques
-
-Based on Steps 1-4, select one framework as your project's primary process backbone. This is the model you'll use to structure phases, set milestones, and communicate with stakeholders. Then identify specific techniques from other frameworks to layer in.
-
-For example, you might choose the Double Diamond as your backbone because the problem is complex and stakeholders need clear phase gates, but borrow Design Thinking's rapid prototyping sprints for the Develop phase and Lean UX's hypothesis-driven experiments for Deliver. Document this hybrid explicitly so the team knows which model governs overall flow and which provides tactical methods.
-
-> **Pro tip:** Write a one-paragraph 'process rationale' that explains why you chose this combination. Revisit it at the project midpoint to see if the choice still holds.
-
-### Step 6: Step 6: Align stakeholders on the chosen approach
-
-Present your framework choice—and the reasoning behind it—to project sponsors and key stakeholders. Use your comparison table from Step 3 and your process rationale from Step 5. Focus on three things they care about: what decisions they'll be asked to make and when, what artefacts they'll see at each phase gate, and how the framework reduces risk of building the wrong thing.
-
-This alignment step is critical because framework mismatches between the design team and leadership create friction throughout the project. If leadership expects a linear, phased process and you're running fluid Design Thinking sprints, you'll spend more time translating than designing.
-
-> **Pro tip:** Tailor your language to the audience. Executives respond to risk reduction and decision points, not to process philosophy.
-
-### Step 7: Step 7: Build in retrospective checkpoints to reassess the framework fit
-
-No framework choice is permanent. Schedule explicit retrospective checkpoints—at minimum, one after each major phase transition—to ask: Is the framework helping or hindering us? Are we skipping phases because they feel forced? Are stakeholders confused by the process?
-
-If the framework isn't working, pivot. You might discover that what started as a well-defined problem (favouring Design Thinking) is actually far more ambiguous than expected, warranting a shift to the Double Diamond's first diamond. Build this adaptability into your project plan from the start.
+Set a point, such as the end of the first diamond or after a few sprints, to review whether the framework is helping. Ask what it made the team do well and where it got in the way. Adjust, or switch backbone if the project has changed shape. Record what you learn for the next project.
 
 ## Best Practices
 
-- Always start with the project's needs, not the team's favourite framework. Run the problem-clarity audit (Step 1) before defaulting to whatever you used last time.
-- Treat frameworks as composable toolkits, not religions. The most effective teams borrow specific techniques across Double Diamond, Design Thinking, and Lean UX rather than following one model dogmatically.
-- Document your framework choice and rationale in a lightweight process brief that every team member and stakeholder can access. This prevents 'process drift' mid-project.
-- Match your framework's artefact expectations to your stakeholder governance model. If leadership needs formal deliverables at phase gates, the Double Diamond's structure makes this natural.
-- When comparing double diamond vs design thinking for a specific project, weight problem ambiguity highest. The more ambiguous the problem, the more valuable the Double Diamond's explicit problem-framing diamond becomes.
-- Revisit your framework choice at project retrospectives. A framework that was right at kickoff may need adjustment as you learn more about the problem and solution spaces.
+- **Choose on problem clarity first.** The less you know about the problem, the more a separate problem phase is worth.
+- **Match the organisation's decision rhythm.** A framework whose checkpoints line up with approvals will be followed. One that fights them will be abandoned.
+- **Use one backbone and borrow methods freely.** Frameworks differ most in structure; their methods are largely shared.
+- **Explain the choice in terms of risk.** Stakeholders care less about framework names than about what could go wrong without them.
+- **Review the choice explicitly.** A checkpoint makes it normal to adjust instead of silently drifting.
 
 ## Common Mistakes
 
-- **Treating the Double Diamond and Design Thinking as completely separate, incompatible approaches** — Recognise that they share core principles (empathy, iteration, diverge-converge). Use one as a macro structure and borrow techniques from the other. For example, use Design Thinking's prototyping methods within the Double Diamond's Develop phase.
-- **Choosing a framework based on team familiarity rather than project fit** — Run the structured evaluation (problem clarity, org constraints, team skills) before selecting. A bootcamp-trained team might default to Design Thinking even when the project's deep ambiguity demands the Double Diamond's extended Discover phase.
-- **Skipping the first diamond of the Double Diamond because it 'feels slow' compared to Design Thinking's prototype-first energy** — The first diamond exists precisely to prevent solving the wrong problem. If you skip Discover and Define, you risk building elegant solutions to misdiagnosed needs. Budget the time upfront and communicate its risk-reduction value to stakeholders.
-- **Over-engineering a hybrid framework with too many layers, stages, and artefacts** — Keep your hybrid simple: one primary backbone, 2-3 borrowed techniques maximum. Complexity in the process model translates directly into confusion for the team and overhead that slows delivery.
-- **Presenting the framework choice as a design team decision rather than a project-level alignment** — Involve product managers, engineering leads, and sponsors in the framework discussion. When the whole project team understands the process, they can contribute meaningfully to each phase rather than waiting for 'design to finish.'
+- **Treating the choice as a doctrine**: Arguing over which framework is correct wastes time. Pick the one that best protects against this project's biggest risk.
+- **Running Lean UX cycles on an unframed problem**: Rapid experiments on the wrong problem produce fast, confident answers to the wrong question. Frame the problem first.
+- **Using design thinking's flexibility to skip Define**: Jumping from empathy to ideation without an agreed problem statement leads to scattered ideas. Keep an explicit problem definition whichever framework you use.
+- **Presenting a framework as a straight line**: All three frameworks expect iteration. Show loops in your plan so stakeholders are not surprised.
+- **Adopting a framework without adapting it to your organisation's gates**: If the framework's decision points ignore how money is approved, the team will be forced off it. Align them before starting.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/double-diamond/METHOD.md) — Double Diamond
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/double-diamond/METHOD.md): Double Diamond
 
 ## Related Skills
 
-- [Converging on Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Conducting Discovery Research in the Double Diamond](../conducting-discovery-research/SKILL.md)
 - [Synthesizing Insights to Define the Problem](../synthesizing-problem-definitions/SKILL.md)
-- [Facilitating Divergent Ideation in the Develop Phase](../facilitating-divergent-ideation/SKILL.md)
-- [Mapping Divergent and Convergent Thinking Modes](../mapping-divergent-convergent-thinking/SKILL.md)
-- [Conducting Discovery Research in the Discover Phase](../conducting-discovery-research/SKILL.md)
-- [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
-- [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+- [Facilitating Divergent Ideation in the Double Diamond](../facilitating-divergent-ideation/SKILL.md)
+- [Converging on Final Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Double Diamond Thinking: Divergent and Convergent Modes](../mapping-divergent-convergent-thinking/SKILL.md)
+- [How to Create a Double Diamond Diagram](../diagramming-the-double-diamond/SKILL.md)
+- [Adapting the Double Diamond UX Framework for Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+
+## Sources
+
+- [Design Council: Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)
+- [Stanford d.school: Design Thinking Bootleg](https://dschool.stanford.edu/resources/design-thinking-bootleg)
+- [NN/g: Design Thinking 101](https://www.nngroup.com/articles/design-thinking/)
+- [Lean UX by Jeff Gothelf and Josh Seiden](https://leanuxbook.com/)
+- [GOV.UK Service Manual: How the discovery phase works](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works)

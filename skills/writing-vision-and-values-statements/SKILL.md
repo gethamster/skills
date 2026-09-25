@@ -1,15 +1,20 @@
 ---
-name: writing-vision-and-values-statements
-description: "This skill teaches you to craft a clear, time-bound vision statement and a prioritized set of values that together form the foundation of the V2MOM framework, giving every person on your team a shared definition of where you are headed and how you will make decisions along the way."
+name: "writing-vision-and-values-statements"
+description: "Write a V2MOM vision a reader can test and a ranked list of values that settles real tradeoffs, so the rest of the document has a clear anchor."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: v2mom-framework
+  method: "v2mom-framework"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# How to Create V2MOM Vision and Values Statements That Drive Alignment
+# Writing V2MOM Vision and Values Statements
 
-> This skill teaches you to craft a clear, time-bound vision statement and a prioritized set of values that together form the foundation of the V2MOM framework, giving every person on your team a shared definition of where you are headed and how you will make decisions along the way.
+> Write a V2MOM vision a reader can test and a ranked list of values that settles real tradeoffs, so the rest of the document has a clear anchor.
 
 ## Before you start
 
@@ -24,149 +29,89 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-3 hours for a first draft, plus 1-2 rounds of review |
-| Outcome | You produce a one-to-two sentence vision statement and a rank-ordered list of three to five values, both validated by stakeholders, that serve as the decision-making foundation for every downstream element of your V2MOM. |
-| Prerequisites | Understanding of the V2MOM framework structure (Vision, Values, Methods, Obstacles, Measures), Clarity on your team or organization's strategic context, including recent performance, market position, and leadership priorities, Access to stakeholders who can validate or pressure-test your draft statements, Familiarity with your company's existing mission or strategy documents, if any |
+| Time to Learn | 2-3 hours, plus one working session with the team |
+| Outcome | You can write a one-sentence vision someone can check against reality and a ranked values list that decides which priority wins when two collide. |
+| Prerequisites | A clear owner for the V2MOM, the parent V2MOM if one exists, the decision-makers available for a ranking discussion |
 | Part of | [V2MOM Framework](../../methods/v2mom-framework/METHOD.md) |
 
 ## Overview
 
-Vision and values are the first two letters of the [V2MOM Framework](https://tryhamster.com/methods/v2mom-framework), and they do the heaviest lifting in the entire document. The vision tells everyone where the team is headed over a defined time horizon. The values tell everyone how to make decisions when they inevitably face trade-offs getting there. If you get these two components right, methods, obstacles, and measures almost write themselves. If you get them wrong, the rest of the V2MOM will feel like a collection of disconnected tasks rather than a coherent strategy.
+Vision and Values are the first two parts of a V2MOM, and they carry the rest of the document. Vision states what you want to achieve. Values state what is important about it, and Marc Benioff asks authors to rank them in order of importance in [his description of the V2MOM](https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/). If the vision is vague, the methods have nothing to aim at. If the values are unranked, nobody can use them to settle a disagreement. The [V2MOM Framework](https://tryhamster.com/methods/v2mom-framework) method page covers where the format comes from; this skill is about writing these two sections well.
 
-The specific problem this skill solves is strategic ambiguity. Most teams suffer not from a lack of goals but from a lack of shared understanding about which goals matter most and which principles should govern the hundreds of micro-decisions made every week. A well-written vision statement eliminates the ambiguity of "where are we going?" and a well-ordered values list eliminates the ambiguity of "what matters more when two good things conflict?" The artifact you produce is deceptively simple: a concise paragraph for the vision and a short ranked list for the values. But the thinking required to reach that simplicity is where the real strategic work happens.
+Most vision statements fail in one of two ways. Some are so broad they could belong to any company ("be the leader in our market"). Others are really a single method dressed up as a destination ("launch the new pricing page"). A useful V2MOM vision sits between the two: specific enough that a reader could say, at the end of the period, whether it came true, and broad enough that several methods are needed to get there.
 
-This skill sits at the very start of the V2MOM creation workflow. You should complete your vision and values before attempting to [define methods and action plans](https://tryhamster.com/skills/defining-methods-and-action-plans) or [set measures and success metrics](https://tryhamster.com/skills/setting-measures-and-success-metrics). The reason is structural: every method should be in service of the vision, and every trade-off between methods should be resolvable by consulting the ranked values. If you skip ahead, you will find yourself retrofitting a vision to justify methods you already chose, which defeats the purpose of the framework. Success looks like a vision statement that a new hire can read on day one and immediately understand what the team is trying to accomplish, paired with a values list that two reasonable people on the team would use to reach the same conclusion when forced to choose between competing priorities.
+Values fail differently. Teams list words everyone agrees with, such as integrity, excellence and teamwork, and stop there. Patrick Lencioni opens [his HBR piece on values](https://hbr.org/2002/07/make-your-values-mean-something) with exactly that kind of list to show how good it sounds and how little it says. In a V2MOM the fix is built in: the values are ranked, and each one is written so it points at a behavior. When "ship quickly" sits above "polish every detail," an engineer deciding whether to hold a release has an answer.
+
+The output of this skill is two short sections. The vision is one or two sentences. The values are usually three to five items, each with a name, a sentence describing the behavior it asks for, and a position in the ranking the whole group has agreed to.
 
 ## How It Works
 
-The V2MOM vision statement works because it compresses strategic intent into a format that is memorable, testable, and time-bound. Unlike a corporate mission statement, which tends to be permanent and abstract ("empower every person and organization on the planet"), a V2MOM vision is tied to a specific planning cycle, usually a quarter, half-year, or full year. This temporal constraint forces you to be concrete. You cannot hide behind aspirational language when the clock is ticking.
+The vision answers "what do you want?" for the time period the V2MOM covers, usually a year. It helps to separate what should last from what should change. Jim Collins and Jerry Porras argued in [Building Your Company's Vision](https://hbr.org/1996/09/building-your-companys-vision) that lasting companies keep a core purpose and core values fixed while their strategies and practices keep adapting. A V2MOM vision is closer to the adapting layer: it names this year's destination in service of a longer purpose. Writing it that way stops the vision from being rewritten into a mission statement every cycle.
 
-The mental model behind the vision is a "future snapshot." Imagine you are standing at the end of the planning period, looking back. What is true now that was not true before? The best visions answer this question in plain language. They describe a changed state of the world, not an activity. "Launch the mobile app" is an activity. "Mobile users represent 30% of active weekly usage" is a changed state. The distinction matters because activities can be completed without producing the intended outcome, while changed states force you to think about impact.
+A good vision passes three tests. The first is the check test: at the end of the period, could two reasonable people agree on whether it happened? The second is the scope test: does it need more than one method to reach it? The third is the connection test: for any V2MOM below the company level, does it clearly serve one or more methods in the parent document? A vision that fails the first test needs a concrete noun (a customer group, a product, a market). One that fails the second is probably a method.
 
-Values in the V2MOM framework are different from corporate values like "integrity" or "innovation." They are decision-making priorities specific to this planning period. They answer the question: "When two good things are in conflict, which one wins?" For example, if your values list ranks "speed to market" above "feature completeness," then any team member facing a scope decision should cut features to hit the date, without needing to escalate. This is why values must be rank-ordered, not just listed. An unranked list of values is functionally useless because the whole point is to resolve conflicts, and conflicts only get resolved when one value clearly outranks another.
+Values answer "what is important about it?" Their job in a V2MOM is to decide conflicts before they happen. That only works when they are ranked, as Benioff describes in the [Salesforce post](https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/), and when each value is specific enough to conflict with another one. "Customer trust" and "speed" can collide. "Excellence" and "quality" cannot, because they mean the same thing, so they give no guidance.
 
-The ranking mechanism is what distinguishes V2MOM values from the values you might find on a poster in the break room. When Marc Benioff originally designed the [V2MOM Framework](https://tryhamster.com/methods/v2mom-framework) at Salesforce, the explicit instruction was that values must be in priority order. Value number one beats value number two whenever they collide. This ordering creates a decision tree that every person in the organization can apply independently. The result is distributed decision-making without distributed chaos.
+Ranking is the hard part, and it is meant to be. The practical technique is pairwise comparison: take two values and ask, "If we can only honor one of these in a real decision this year, which one?" Walk through concrete scenarios from recent history, such as a release that slipped, a customer escalation or a hiring decision, and see which value actually won. The ranking that emerges should describe how the team will act, including the tradeoffs it is willing to make, and not only how it would like to be seen.
 
-One important nuance: values are not permanent truths. They shift between planning cycles based on what the organization needs most right now. In a growth phase, "customer acquisition velocity" might outrank "unit economics." In a post-funding phase, the order might reverse. The vision tells you the destination, and the values tell you the driving rules for this particular leg of the journey. Together, they form a contract between leadership and the rest of the organization: here is what we are trying to achieve, and here is how we expect you to prioritize when things get hard.
+Once written, the vision and values become the reference point for everything else. Methods are checked against the vision. Obstacles are the things that stand between the methods and the vision. When a team argues about a method, the ranked values are the first place to look for the answer.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Gather Strategic Inputs
+### Step 1: Read the level above
 
-Before you write a single word, collect the raw materials you will synthesize into your vision and values. Pull together your company or team's current strategic plan, the previous V2MOM if one exists, recent board decks or investor updates, competitive analysis, customer feedback themes from the last quarter, and any quantitative performance data (revenue, retention, NPS, usage metrics). Read through these documents and highlight recurring themes, stated priorities, and any explicit statements about what matters most. Create a one-page summary of the top five to seven themes you see repeated across sources.
+If you are writing below the company level, start with the parent V2MOM. Identify which of its methods your team exists to deliver and which of its values apply most to your work. Write those down before drafting anything. Your vision should serve those methods, and your values should not contradict the parent's ranking.
 
-This summary becomes your working brief.
+### Step 2: Draft several vision sentences
 
-> **Pro tip:** If you are writing a team-level V2MOM, make sure you have also read the leadership-level V2MOM above yours. Your vision should nest inside theirs, not contradict it. See the skill on [cascading V2MOMs across teams](https://tryhamster.com/skills/cascading-v2moms-across-teams) for more detail.
+Have each person write one or two candidate visions silently before any discussion, so the loudest voice does not set the frame. Collect the drafts and look for the destination they share. Combine the strongest elements into one sentence that names who benefits and what will be true at the end of the period. Keep alternatives on the side until the group has tested the draft.
 
-### Step 2: Step 2: Draft Three Candidate Vision Statements
+### Step 3: Test the vision
 
-Do not try to write the perfect vision on your first attempt. Instead, write three distinct candidates, each taking a slightly different angle on the future you want to create. One might emphasize a customer outcome ("Enterprise customers consider us the default choice for X"). 99% uptime").
+Run the draft through the check, scope and connection tests. Ask someone outside the team to read it and describe what success would look like, and compare their answer with yours. Replace abstract words such as "best," "leading" or "world-class" with a concrete customer, product or market. Stop when a reader can tell whether the vision came true without asking you what it means.
 
-A third might emphasize a market position ("We are the top-ranked solution in the G2 mid-market category"). Keep each candidate to one or two sentences. Use plain language that a new team member could understand without an acronym glossary. Include at least one concrete, observable indicator in each candidate so the vision is testable, not just inspirational.
+### Step 4: Brainstorm candidate values
 
-> **Pro tip:** Read each candidate aloud. If it sounds like it could appear on any company's website without modification, it is too generic. The best test: could a competitor honestly claim the same vision? If yes, rewrite until the answer is no.
+List the principles the team actually uses, or needs to use, when making choices toward this vision. Look at recent hard decisions and name what the team valued in each one. Merge duplicates and drop values that could never conflict with anything else. Aim for a short list of three to five, because more than that is hard to rank and hard to remember.
 
-### Step 3: Step 3: Apply the Specificity and Timeframe Test
+### Step 5: Rank by pairwise comparison
 
-Take each candidate vision and run it through two filters. First, the specificity test: does it describe a concrete, observable future state, or does it use vague language like "be the best" or "drive innovation"? Replace any vague phrase with a measurable outcome. Second, the timeframe test: is there a clear planning period implied or stated?
+Compare values two at a time against real scenarios and record which one wins. Where the group splits, discuss the scenario until the disagreement is clear, then let the V2MOM owner decide. Write the final order and the reasoning for the top two positions. Expect this to be the longest part of the session.
 
-A vision should be achievable within your V2MOM cycle (typically one quarter to one year). If the vision would take three years, it is a mission, not a V2MOM vision. Narrow it to what the next cycle's contribution looks like. After filtering, you should have three tighter candidates.
+### Step 6: Write each value as a behavior
 
-Select the one that best captures the single most important change you need to create, and set the other two aside as potential inputs for your methods section.
-
-> **Pro tip:** A useful heuristic: your vision should be ambitious enough that achieving it would genuinely excite the team, but specific enough that you could tell a stranger at a coffee shop exactly how you would know whether you succeeded.
-
-### Step 4: Step 4: Brainstorm a Long List of Values
-
-Shift to values. Start by brainstorming every principle, priority, or trade-off preference that you believe should guide the team during this planning cycle. Do not filter yet. Write down everything: speed, quality, customer satisfaction, revenue growth, team morale, technical debt reduction, innovation, cost efficiency, partnership development.
-
-Aim for ten to fifteen items on your initial list. Pull from the strategic inputs you gathered in Step 1. Look especially at the tensions you noticed, because tensions reveal where values will actually matter. If your strategic inputs show pressure to grow fast AND pressure to improve margins, both of those are candidate values, and you will need to decide which one ranks higher.
-
-> **Pro tip:** Ask yourself: "In the last quarter, what decisions did we get wrong because we did not have clear priorities?" Each wrong decision usually points to a missing or misordered value.
-
-### Step 5: Step 5: Consolidate and Rank-Order Your Values
-
-Reduce your long list to three to five values. Start by grouping synonyms and near-duplicates. "Ship fast" and "speed to market" are the same value. "Quality" and "reliability" might be the same or different depending on your context, so make that call explicitly.
-
-Once you have your short list, rank them from most important to least important. This is the hardest part of the entire V2MOM process. The ranking is what gives values their power, because an unranked list cannot resolve trade-offs. To force the ranking, use pairwise comparison: take values A and B, imagine a real scenario where they conflict, and decide which one wins.
-
-Repeat for every pair. Write each value as a short phrase (two to five words) followed by one clarifying sentence that explains what this value means in practice during this cycle.
-
-> **Pro tip:** If you cannot bring yourself to rank one value above another, you have not defined them concretely enough. "Customer trust" and "rapid experimentation" feel like they cannot be ranked, but "never ship a feature without security review" and "run at least two A/B tests per sprint" can absolutely be ranked.
-
-### Step 6: Step 6: Write the Conflict Scenario Test
-
-For each pair of adjacent values in your ranked list, write a one-paragraph scenario where those two values come into direct conflict. For example, if value 1 is "revenue growth" and value 2 is "customer experience," your scenario might be: "A major enterprise prospect wants custom features that would delay the roadmap for existing customers by six weeks. " Then write the answer that your ranking implies. If the answer feels wrong, either your ranking is wrong or your value definitions need adjustment.
-
-This step catches errors before they become real organizational pain. Each scenario should take about five minutes to write and discuss. Document these scenarios because they become invaluable onboarding material for new team members.
-
-> **Pro tip:** Share these conflict scenarios with two or three peers who were not involved in drafting. If they reach a different conclusion from the ranking, your values are either unclear or misordered. Treat disagreement at this stage as a feature, not a bug.
-
-### Step 7: Step 7: Validate with Stakeholders
-
-Present your draft vision and ranked values to the people who will live with them: your leadership chain (to ensure alignment with organizational direction) and your direct team (to ensure the vision is understood and the values feel authentic). For leadership review, share the document asynchronously first and let reviewers provide written feedback before any live discussion. This prevents groupthink and ensures you hear from quieter voices. For team review, run a short working session where you present each conflict scenario from Step 6 and ask the team to independently write down their answer before sharing.
-
-If fewer than 80% of the group reaches the same answer, revisit the value definitions and ranking. Capture all feedback and prepare a revised draft.
-
-> **Pro tip:** Do not try to get universal agreement on every word. Your goal is alignment on direction and priority order, not consensus on phrasing. If the team agrees on what matters most but wants to reword the vision, accommodate the rewording. If they disagree on the ranking, that requires real discussion.
-
-### Step 8: Step 8: Finalize and Format for Cascading
-
-Incorporate stakeholder feedback into a final version. Format the vision as one to two sentences at the top of your V2MOM document. Format each value as a bolded phrase followed by a one-sentence clarification and (optionally) the conflict scenario that illustrates it. Number the values to make the rank order unmistakable.
-
-Add a "last updated" date and the author's name. Store the final V2MOM in whatever tool your organization uses (a shared doc, a wiki page, a V2MOM template). Ensure the document is accessible to everyone who will need to create a cascaded V2MOM beneath yours. The vision and values you just wrote become the constraint set for the next step: [defining methods and action plans](https://tryhamster.com/skills/defining-methods-and-action-plans).
-
-> **Pro tip:** Resist the temptation to add caveats or footnotes that soften the ranking. Phrases like "these are all equally important" undo the entire exercise. If a value is on the list, it matters. The ranking determines what wins when two important things collide.
+For each ranked value, add one sentence that says what it asks people to do, especially when it conflicts with a lower-ranked value. "Customer trust: we delay a release rather than ship a change that risks customer data" guides a decision. "Customer trust: we care about our customers" does not. Read the finished list against the vision to confirm the values support the destination.
 
 ## Best Practices
 
-- Write the vision in present tense as if describing the future state that already exists. "We are the default platform for mid-market e-commerce teams" is more galvanizing and testable than "We will try to become a leading platform." Present tense forces concreteness and creates a psychological anchor that pulls the team forward. If you write in future tense, the vision feels perpetually distant.
-- Limit values to three to five items per V2MOM. Every value you add dilutes the decision-making power of the list. If you have seven values, the person making a daily trade-off cannot hold them all in working memory and will default to their own judgment, which is exactly what the values are supposed to replace. Three values are easy to remember. Five are manageable. Seven are decorative.
-- Rank values using pairwise conflict scenarios, not abstract importance ratings. Asking "is quality more important than speed?" in a vacuum produces meaningless answers. Asking "would you delay the launch by two weeks to fix a performance regression that affects 5% of users?" produces an answer that reveals the real ranking. Always ground the ranking in situations the team has actually faced or could realistically face.
-- Rewrite your vision and values every planning cycle, even if the direction has not fundamentally changed. The act of rewriting forces you to reexamine assumptions, incorporate new information, and recommit publicly. Teams that carry over the same V2MOM from the previous cycle tend to stop reading it. A fresh document signals that leadership is actively steering, not coasting.
-- Include one quantitative element in your vision statement. "Become the trusted platform for HR teams" is hard to evaluate. "Achieve 40% market penetration among HR teams at companies with 200 to 2,000 employees" is unambiguous. The number does not need to be the only thing in the vision, but it provides an anchor that prevents reinterpretation.
-
-If you omit numbers entirely, different team members will hold different mental thresholds for success.
-- Make values action-oriented rather than noun-oriented. "Customer obsession" is a noun phrase that can mean anything. "Resolve every support ticket within 4 hours" is an action that leaves no room for interpretation. Even if your value is broader than a single metric, phrase it as a behavioral commitment: "Ship weekly, even if the release is small" beats "velocity" every time.
-
-People can follow instructions but they cannot follow abstract concepts.
-- Test your vision statement with the "stranger at a coffee shop" standard. Read it to someone outside your organization. If they can tell you what the team is trying to accomplish and roughly how they would know they succeeded, the vision passes. If they nod politely and change the subject, it is too vague.
-
-External readers are ruthlessly honest about clarity because they have no context to fill in the gaps.
-- Document the reasoning behind your value ranking, not just the ranking itself. When a new team member or a skeptical peer asks why speed outranks quality, you need a crisp answer grounded in the current strategic context. "Because we are in a land-grab market where the first mover with adequate quality wins, and a perfect product shipped six months late loses" is a convincing rationale. Without documented reasoning, the ranking feels arbitrary and people will quietly ignore it.
+- Write the vision for the V2MOM's time period and let a separate mission statement carry the long-term purpose. Mixing the two produces a sentence too vague to check and too permanent to update.
+- Keep values few enough that people remember the order without looking. If the list needs a scroll bar, some items are really methods or preferences.
+- Pair every value with a sentence about behavior. The behavior line is what someone actually uses at the moment of decision.
+- Record why the top values are ranked where they are. When people challenge the order later, the reasoning saves re-running the debate from scratch.
+- Revisit the ranking when the business changes direction. A ranking that fit a growth year may be wrong in a year focused on reliability, and updating it openly is better than ignoring it quietly.
 
 ## Common Mistakes
 
-- **Writing a vision statement that is actually a mission statement** — The most common error is writing something timeless and abstract like "Empower teams to do their best work" and calling it a V2MOM vision. This happens because people confuse mission (permanent purpose) with vision (time-bound future state). The signal to watch for is whether your statement would still be true five years from now regardless of what happens. If yes, it is a mission.
-
-A proper V2MOM vision is specific to this planning cycle and will be replaced or substantially revised at the next cycle.
-- **Listing values without rank-ordering them** — Teams often list four or five values as a bulleted list and consider the job done. This happens because ranking forces uncomfortable conversations about trade-offs, and avoiding discomfort feels like team harmony. The signal is a values list where every item uses the same formatting with no numbers, no hierarchy, and no stated priority. An unranked list is functionally identical to having no values at all, because it cannot resolve the conflicts that values exist to resolve.
-
-Force yourself to number them 1 through N and write a conflict scenario for each adjacent pair to confirm the ordering.
-- **Including too many values, diluting their decision-making power** — Some teams list seven, eight, or even ten values because every stakeholder insists their priority should be represented. This happens when the V2MOM drafting process is treated as a political exercise rather than a strategic one. The signal is a values list so long that no one on the team can recite them from memory. When a list is unmemorizable, it is unused.
-
-Consolidate aggressively by grouping related items and forcing a hard cap of five. If someone insists their priority is missing, ask them which existing value they would remove to make room. That conversation is the actual strategic work.
-- **Writing values as generic corporate virtues instead of contextual priorities** — Values like "integrity," "excellence," and "teamwork" appear in V2MOMs constantly and add zero decision-making value. This happens because people default to the vocabulary of corporate posters rather than thinking about the specific trade-offs their team faces this cycle. The signal is that you could swap your values list with any other company's and neither team would notice a difference. Replace each generic virtue with a specific behavioral commitment tied to your current context. "Integrity" becomes "publish our error rates publicly on the status page even when they are embarrassing." "Excellence" becomes "no feature ships without passing the accessibility audit."
-- **Drafting the vision in isolation without strategic inputs** — Leaders sometimes sit down and write a vision statement purely from intuition, skipping the input-gathering step. This happens because the vision feels like a creative exercise rather than a synthesis exercise. The signal is a vision that surprises the team or conflicts with data the team already has. A vision written without inputs tends to reflect the leader's personal excitement rather than the organization's strategic reality.
-
-Always start by reviewing the previous V2MOM's outcomes, current metrics, competitive positioning, and customer feedback. The vision should feel like the obvious next step, not a bolt from the blue.
-- **Failing to update the vision when the strategic context changes mid-cycle** — Some teams treat the V2MOM as a set-and-forget document, continuing to pursue an original vision even after a major market shift, a key competitor move, or a significant internal change. This happens because revising a V2MOM feels like admitting the original was wrong. The signal is a growing gap between what the V2MOM says and what the team is actually working on day to day. A V2MOM is a living document.
-
-If the strategic context shifts materially, revisit the vision and values within two weeks. A mid-cycle revision is a sign of strategic agility, not failure.
+- **Listing values without ranking them**: an unranked list reads well and decides nothing. Rank the values, even if the first attempt feels arbitrary, and refine the order through scenarios.
+- **Writing a vision that is really a method**: "Launch the partner program" is one action, not a destination. Ask what the partner program is for and put that in the vision.
+- **Copying the parent vision word for word**: a team V2MOM that repeats the company vision shows no translation has happened. Describe what your team will make true in service of the company's goal.
+- **Choosing values that cannot conflict**: synonyms such as "quality" and "excellence" give no guidance. Pick values that will actually pull against each other in real decisions.
+- **Letting consensus replace a decision**: when a group cannot agree on an order, it often settles for a tie. Give the V2MOM owner the final call and write down the reasoning.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/v2mom-framework/METHOD.md) — V2MOM Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/v2mom-framework/METHOD.md): V2MOM Framework
 
 ## Related Skills
 
-- [Comparing V2MOM with OKRs and Other Goal-Setting Frameworks](../comparing-v2mom-with-okrs-and-other-frameworks/SKILL.md)
-- [Facilitating Collaborative V2MOM Planning Sessions](../facilitating-v2mom-planning-sessions/SKILL.md)
-- [Building V2MOM Templates and Worksheets](../building-v2mom-templates-and-worksheets/SKILL.md)
+- [Defining V2MOM Methods and Action Plans](../defining-methods-and-action-plans/SKILL.md)
+- [Facilitating V2MOM Planning Sessions](../facilitating-v2mom-planning-sessions/SKILL.md)
 - [Cascading V2MOMs from Leadership to Individual Contributors](../cascading-v2moms-across-teams/SKILL.md)
-- [Defining Methods and Actionable Steps in V2MOM](../defining-methods-and-action-plans/SKILL.md)
-- [Identifying Obstacles and Building Mitigation Strategies](../identifying-obstacles-and-mitigation-strategies/SKILL.md)
-- [Setting Measurable Success Criteria for V2MOM](../setting-measures-and-success-metrics/SKILL.md)
+
+## Sources
+
+- [Marc Benioff: Create Strategic Company Alignment With a V2MOM](https://www.salesforce.com/blog/how-to-create-alignment-within-your-company/)
+- [Collins and Porras: Building Your Company's Vision](https://hbr.org/1996/09/building-your-companys-vision)
+- [Patrick Lencioni: Make Your Values Mean Something](https://hbr.org/2002/07/make-your-values-mean-something)

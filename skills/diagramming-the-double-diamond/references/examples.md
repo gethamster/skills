@@ -1,51 +1,45 @@
-# Examples: Creating Double Diamond Process Diagrams
+# Examples: How to Create a Double Diamond Diagram
 
-## Example: Double Diamond Diagram for an Enterprise Onboarding Redesign
-
-**Scenario:**
-
-A product design team at a B2B SaaS company is redesigning their enterprise customer onboarding experience. They're three months into a six-month project and need to present their process and progress to the VP of Product at a quarterly review.
-
-**Walkthrough:**
-
-The team creates a double diamond diagram with the following customizations:
-
-**First Diamond (Problem Space):**
-- Starting point labeled: 'Enterprise churn rate 3x higher than SMB in first 90 days'
-- Discover phase activities: '23 churned customer interviews,' 'Onboarding funnel analytics review,' 'Competitive onboarding audit of 5 competitors,' 'Support ticket analysis (1,200 tickets)'
-- Decision gate: 'Research synthesis complete — 4 key friction themes identified'
-- Define phase activities: 'Affinity mapping workshop,' 'Jobs-to-be-done framework applied,' 'Problem statement co-created with CS team'
-- Center point labeled: 'Problem: Enterprise admins cannot configure the product for their org structure without manual CS intervention'
-
-**Second Diamond (Solution Space):**
-- Develop phase activities: 'Design sprint week 1: Self-serve configuration wizard,' 'Design sprint week 2: Guided setup with AI assistance,' 'Design sprint week 3: Modular onboarding paths,' '5 concept tests with enterprise admins'
-- Decision gate: 'Guided setup with AI assistance validated — 4/5 participants completed setup independently'
-- Deliver phase: 'Hi-fi prototyping,' 'Engineering handoff,' 'Beta with 10 enterprise accounts,' 'Iterative fixes,' 'Full rollout'
-
-A 'You Are Here' marker is placed in the early Deliver phase. The diagram uses blue for the first diamond and green for the second. A timeline beneath shows months 1-6 with the current month highlighted.
-
-The VP of Product can immediately see: the problem is well-researched and clearly defined, three solution concepts were tested (not just one assumed), and the team is on track for the planned rollout.
-
-## Example: Lightweight Double Diamond Diagram for a Sprint Planning Kickoff
+## A diagram for a steering group
 
 **Scenario:**
 
-A UX designer at a startup needs to explain the design approach for a new feature to engineers at the beginning of a two-week sprint. The audience has limited exposure to design process frameworks.
+Illustrative scenario: a council's digital team is redesigning how residents report fly-tipping. The steering group meets monthly and keeps asking when it will see the new service.
 
 **Walkthrough:**
 
-The designer draws a quick double diamond diagram on a whiteboard (or a single FigJam frame) with minimal annotations:
+The service designer draws a summary diagram for the steering group. The first diamond is drawn wider than the second, because the plan gives more time to research across several neighbourhoods than to developing solutions.
 
-**First Diamond:** 'Understand the Problem'
-- Left side: 'Talk to 5 users this week about their workflow'
-- Right side: 'Narrow down to the #1 pain point by Wednesday'
-- Center point: 'Clear problem statement'
+At the tip of the first diamond, the output reads "Agreed problem statement, signed off by the head of service." At the tip of the second, it reads "Tested reporting service, ready for pilot in one ward."
 
-**Second Diamond:** 'Build the Solution'
-- Left side: 'Sketch 3 different approaches Thursday'
-- Right side: 'Pick the best one, build it Friday-next week'
-- End point: 'Tested prototype ready for review'
+A return arrow from Deliver to Define is labelled "if testing shows the problem was framed wrongly." A marker shows the project halfway through Discover, with the date.
 
-The designer adds a note: 'The wide parts = we're exploring options on purpose. The narrow parts = we're making decisions. This is why I'll have multiple sketches on Thursday, not one final design.'
+At the next meeting, the steering group looks for the marker first. Questions shift from "when is the app ready" to "what have you learned so far," which is the conversation the team needed.
 
-This 5-minute diagram sets expectations that the designer won't produce pixel-perfect mockups on day one, and gives engineers a mental model for when their input is most valuable (at the convergence points). It leverages the Double Diamond shape without requiring the audience to know the framework by name.
+## A working-team diagram on a shared board
+
+**Scenario:**
+
+Illustrative scenario: a small product team runs its Double Diamond on an online whiteboard and wants the diagram to double as a lightweight plan.
+
+**Walkthrough:**
+
+The team draws the four phases and places each activity as a sticky note in the right half: interviews and analytics review on the widening half of Discover, affinity mapping on the narrowing half of Define, and so on. Each note carries an owner's initials.
+
+Completed notes are moved slightly and ticked. The team updates the board at its Monday meeting.
+
+After a concept test fails, the team draws a new loop arrow back to Define with the date and a one-line reason. Looking back at the end, the board's history shows exactly where the project doubled back and why.
+
+## Reworking a misleading diagram
+
+**Scenario:**
+
+Illustrative scenario: a consultancy's proposal shows two identical diamonds with a straight arrow and a fixed week count per phase. Midway through, the client is frustrated that Define is taking longer than drawn.
+
+**Walkthrough:**
+
+The project lead redraws the diagram with the actual proportions to date, adds the loop from early testing back into Define that has already happened, and marks the current position.
+
+In the client meeting, the lead uses the new diagram to explain what triggered the loop and what the revised problem statement changed. The client agrees to the new plan because the diagram makes the reasoning visible.
+
+The team adopts the rule that proposal diagrams show planned loops and draw proportions from the actual plan.
