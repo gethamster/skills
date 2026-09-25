@@ -1,15 +1,20 @@
 ---
-name: facilitating-4ls-retrospective-sessions
-description: "This skill teaches you how to plan, timebox, and facilitate each phase of a 4Ls retrospective session so every team member contributes and the meeting produces concrete, assignable action items."
+name: "facilitating-4ls-retrospective-sessions"
+description: "Plan, timebox and facilitate a 4Ls sprint retrospective meeting so every person contributes and the team leaves with owned action items."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: 4ls-retrospective
+  method: "4ls-retrospective"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Facilitating a 4Ls Sprint Retrospective Meeting for Maximum Team Impact
+# Facilitating a 4Ls Sprint Retrospective Meeting
 
-> This skill teaches you how to plan, timebox, and facilitate each phase of a 4Ls retrospective session so every team member contributes and the meeting produces concrete, assignable action items.
+> Plan, timebox and facilitate a 4Ls sprint retrospective meeting so every person contributes and the team leaves with owned action items.
 
 ## Before you start
 
@@ -24,119 +29,115 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes (including preparation) |
-| Outcome | You can confidently run a structured, inclusive sprint retrospective meeting that consistently produces prioritized action items and measurably improves team dynamics over successive sprints. |
-| Prerequisites | Basic understanding of the 4Ls Retrospective framework (Liked, Learned, Lacked, Longed For), Experience participating in at least one sprint retrospective meeting, Familiarity with agile sprint cycles and team ceremonies |
-| Part of | [4Ls Retrospective](../../methods/4ls-retrospective/METHOD.md) |
+| Time to Learn | One or two sessions of practice |
+| Outcome | You can run a 4Ls sprint retrospective meeting that hears from everyone, stays on time and ends with a few actions that have owners and dates. |
+| Prerequisites | Familiarity with the 4Ls categories, a prepared board, one retrospective attended as a participant |
+| Part of | [4Ls Sprint Retrospective](../../methods/4ls-retrospective/METHOD.md) |
 
 ## Overview
 
-A sprint retrospective meeting is one of the most important agile ceremonies for continuous improvement, yet it's also one of the easiest to run poorly. Without intentional facilitation, retros devolve into venting sessions, get dominated by the loudest voices, or end without any concrete next steps. The [4Ls Retrospective](https://tryhamster.com/methods/4ls-retrospective) framework — Liked, Learned, Lacked, and Longed For — provides a balanced structure, but the framework alone isn't enough. You need deliberate facilitation skills to bring it to life.
+Facilitating a 4Ls sprint retrospective meeting means holding the process so the team can do the thinking. The facilitator decides the agenda and the timeboxes, protects silent writing, keeps discussion on the few themes that matter, and makes sure the meeting ends with commitments. They do not steer the content. The [4Ls method page](../../methods/4ls-retrospective/METHOD.md) covers what the four categories mean and where the format came from; this skill covers running the room.
 
-This skill covers the complete facilitation arc: preparing the session, opening with psychological safety, guiding the team through each of the four categories, managing timeboxes, handling conflict and tangents, and closing with prioritized action items that have clear owners. Whether you're a Scrum Master, team lead, or a developer who's been asked to run next week's retro, these techniques will help you run a sprint retrospective meeting that people actually look forward to.
+The meeting follows the five phases from Esther Derby and Diana Larsen's [Agile Retrospectives](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/): set the stage, gather data, generate insights, decide what to do, and close. The 4Ls fill the gather-data phase. Everything else is the facilitator's job, and most failed retrospectives fail in those other phases: a rushed opening that leaves people guarded, a discussion that wanders, or a close that produces no actions.
 
-Mastering facilitation of the 4Ls format also sets you up for related skills like [crafting effective questions for each L category](https://tryhamster.com/skills/crafting-4ls-retrospective-questions) and [converting insights into sprint action items](https://tryhamster.com/skills/converting-4ls-insights-into-action-items), creating a complete retrospective practice that compounds in value over time.
+A good facilitator watches three things at once. The clock, because a phase that overruns steals time from the decision. Participation, because a retrospective where two people talk reflects two people's view of the sprint. And tone, because blame shuts down honest Lacked notes faster than anything else. The skill is noticing drift in any of the three early and correcting it without making a show of it.
+
+The facilitator can be the Scrum Master, a rotating team member or someone from another team. The requirement is that the team sees them as neutral. [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) asks for an impartial moderator and says a moderator who wants to take part should say so explicitly, or hand moderation to a peer. That rule applies to anyone with a stake in the outcome, including a manager.
 
 ## How It Works
 
-Effective facilitation of a 4Ls sprint retrospective meeting works by creating a structured container that balances divergent thinking (generating ideas) with convergent thinking (prioritizing and committing to actions). The session follows a diamond-shaped flow: it starts narrow with a focused prompt, expands during brainstorming across all four L categories, then narrows again during clustering, voting, and action planning.
+Timing is the main design decision. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) caps the Sprint Retrospective at three hours for a one-month Sprint, and shorter Sprints get shorter retrospectives. For a 4Ls session, published guides converge on about an hour. [Atlassian's play](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique) budgets 60 minutes of run time for up to eight people, and [Retrium](https://www.retrium.com/retrospective-techniques/4ls) describes 30-60 minutes depending on group size.
 
-The psychological mechanism at play is simple but powerful: when people feel safe and see their input visibly captured, they contribute more honestly. The 4Ls structure helps because it isn't purely negative — 'Liked' and 'Learned' categories give people permission to celebrate wins before diving into gaps. As a facilitator, your job is to hold the space, enforce timeboxes, ensure balanced participation, and resist the urge to contribute your own opinions (which would collapse your facilitator neutrality).
+Retrium's guide to the five phases gives one way to split an hour:
 
-Timeboxing is the backbone of the entire meeting. Without it, teams spend 40 minutes on 'Liked' and rush through 'Lacked' and 'Longed For' — the categories that actually drive improvement. By assigning specific durations to each phase and making the timer visible, you create gentle accountability that keeps the team moving without feeling rushed. The result is a sprint retrospective meeting that covers all four dimensions evenly and ends with actions the team actually follows through on.
+| Phase | Minutes in Retrium's example |
+|-------|------------------------------|
+| Set the stage | [10 minutes](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective) |
+| Gather data (the 4Ls) | [10 minutes](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective) |
+| Generate insights | [20 minutes](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective) |
+| Decide what to do | [15 minutes](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective) |
+| Close | [5 minutes](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective) |
+
+Treat that as a starting point. A team with a hard sprint behind it may need more time generating insights. A small team may finish gathering data quickly.
+
+Silent writing is the facilitator's most important protection. In the [original EBG steps](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/), everyone writes notes for each L and posts them silently before any discussion. The reason is anchoring: once someone says "the release was chaotic", later notes tend to echo that framing. Writing first also gives quieter people and newer members an equal voice.
+
+Prioritizing is the second protection. There are usually more themes than time. Dot voting narrows them, and the [Nielsen Norman Group's guidance](https://www.nngroup.com/articles/dot-voting/) is to vote silently, give people roughly a quarter as many votes as there are options, and let less senior people vote before stakeholders. The facilitator then spends discussion time on the top themes only.
+
+Finally, the facilitator owns the close. Every action leaves with one named owner and a date, and the first agenda item of the next retrospective is checking them.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Prepare the Session Before the Meeting
+### Step 1: Prepare the Session
 
-Facilitation starts well before anyone joins the call or enters the room. At least 30 minutes before the sprint retrospective meeting, set up your [4Ls board](https://tryhamster.com/skills/building-4ls-retrospective-boards) — whether it's a physical whiteboard with four quadrants or a digital tool like Miro, FigJam, or Trello. Label each quadrant clearly: **Liked**, **Learned**, **Lacked**, and **Longed For**. Pre-populate each section with a guiding prompt question (see [crafting effective questions for each L category](https://tryhamster.com/skills/crafting-4ls-retrospective-questions) for inspiration).
+Book the meeting at the end of the sprint, before planning for the next one, so actions can go straight into the new backlog. Set up the board with the four columns, prompts under each, a parking area and an action area. Gather the facts of the sprint: the goal, what shipped, incidents, and last retrospective's actions with their status. Write your agenda with a timebox per phase and share it in the invite. If the sprint was rough, talk to anyone likely to arrive upset so they are not surprised by the format.
 
-Review the previous sprint's action items so you can open with an accountability check. Pull up any relevant sprint metrics (velocity, bug count, customer feedback) that might jog the team's memory. Finally, write out your facilitation script — not word-for-word, but a bullet list of transitions, time allocations, and key phrases you'll use to redirect tangents.
+### Step 2: Set the Stage
 
-> **Pro tip:** Send a brief pre-read to the team 1-2 hours before the retro: a quick reminder of what the sprint covered and a nudge to start thinking about each L category. This dramatically improves the quality of brainstorming.
+Open by stating the purpose and the scope: this sprint, this team. Read the [Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive), or restate it in your own words, so the room agrees to look at conditions rather than individuals. Review last retrospective's actions briefly: done, in progress or dropped, and why. Run a one-word or one-sentence check-in so everyone has spoken once. Explain the four Ls with one example each, paying most attention to the difference between Lacked and Longed For.
 
-### Step 2: Step 2: Open with a Check-In and Set Ground Rules (5 Minutes)
+### Step 3: Run Silent Writing
 
-Start the sprint retrospective meeting by welcoming everyone and doing a brief check-in. This can be as simple as asking each person to share one word describing how they feel about the sprint, or a quick thumbs-up/sideways/down. The goal is to get every voice in the room within the first two minutes — once someone has spoken once, the psychological barrier to contributing again drops significantly.
+Start a visible timer and ask everyone to write notes for all four Ls, one idea per note. Keep the room quiet until the timer ends, and answer questions privately if someone is stuck. Ask for notes tied to specific events, and nudge anyone who has written only in one column. When time is up, have people post their notes, or reveal them all at once on a digital board. If the board looks thin in one category, give one extra minute for that column alone.
 
-After the check-in, quickly review ground rules. Three are non-negotiable: (1) assume positive intent, (2) focus on systems and processes rather than blaming individuals, and (3) respect the timebox. If this is the team's first 4Ls retro, spend 60 seconds explaining the four categories. Then review the status of action items from the last retrospective — celebrate completions and acknowledge blockers honestly.
+### Step 4: Cluster and Name Themes
 
-> **Pro tip:** Rotate the check-in format each sprint to prevent it from feeling stale. One sprint use a word check-in, the next use an emoji, the next use a 'weather report' metaphor.
+Walk the board one column at a time, reading notes aloud or letting people read silently. Group notes that describe the same thing and give each cluster a short name that states the issue. Move notes that sit in the wrong column, and merge duplicates while keeping a count of how many people raised each theme. With a larger team, follow EBG's approach and split into four subgroups, one per L, that each cluster a column and report back. Keep interpretation out of this step; the goal is an accurate map of what people said.
 
-### Step 3: Step 3: Facilitate Silent Brainstorming Across All 4Ls (10-15 Minutes)
+### Step 5: Vote on What to Discuss
 
-This is the divergent phase and it must be silent. Set a visible timer for 10-15 minutes and instruct everyone to write sticky notes (physical or digital) for each of the four L categories simultaneously. One idea per note, written in short phrases. Emphasize that there are no bad contributions and they should aim for at least two notes per category.
+Explain the voting rules before anyone votes: how many dots, whether stacking is allowed, and that voting is silent. Have everyone vote at once, or on a digital board with other votes hidden until the end. Rank the themes by votes and draw a line under the few that fit the remaining time. Tell the team what happens to the themes below the line: they stay on the record and are reviewed next time. Include Liked and Learned themes in the vote, since protecting a good practice is a legitimate action.
 
-Silent brainstorming is critical because it prevents anchoring bias — the tendency for early speakers to define the conversation for everyone else. In a verbal brainstorming sprint retrospective meeting, introverts, junior team members, and remote participants almost always self-censor. Silent writing equalizes participation.
+### Step 6: Discuss the Top Themes
 
-As facilitator, your job during this phase is to stay quiet, monitor the timer, and gently remind people to spread their attention across all four quadrants. If you see someone stuck, you can quietly point them to the guiding prompts on the board.
+Take the top theme and ask what caused it, what made it worse and what would change it. Keep asking why until the team can state the cause in one sentence, then move on. Watch participation and invite people who have not spoken by name, gently. When the discussion drifts into a new topic, park it on the board rather than following it. Stop each theme at its timebox even if the conversation is lively, because the decision phase needs its time.
 
-> **Pro tip:** Play low-volume instrumental music during silent brainstorming to reduce the awkwardness of silence, especially in physical rooms. It sounds trivial but it measurably increases comfort.
+### Step 7: Agree on Actions and Owners
 
-### Step 4: Step 4: Guide Group Discussion and Clustering (15-20 Minutes)
+Turn each discussed theme into at most one or two actions small enough to finish before the next retrospective. Write each as a concrete step, with one person's name and a due date. Ask the owner to restate the action in their own words so any misunderstanding surfaces now. If a theme is outside the team's control, the action is an escalation with an owner. Put the actions in the sprint backlog or tracker during the meeting, which the [Scrum Guide](https://scrumguides.org/scrum-guide.html) explicitly allows for the most impactful improvements.
 
-Once brainstorming ends, facilitate a structured read-out. Go category by category — starting with **Liked** sets a positive tone. Have each person briefly read their notes aloud (no more than 15 seconds per note). As they read, cluster similar notes together on the board in real-time. Name each cluster with a short theme label.
+### Step 8: Close and Document
 
-During this phase, your facilitation skills matter most. Your job is to: (1) keep the pace moving by gently cutting off storytelling that exceeds the note-reading format, (2) ask clarifying questions to make vague notes concrete ('Can you give a specific example of what you mean by communication issues?'), (3) validate contributions without evaluating them ('Thanks for raising that'), and (4) redirect personal blame toward systemic observations.
-
-For detailed clustering techniques, see [categorizing and sorting team feedback into the 4Ls](https://tryhamster.com/skills/categorizing-feedback-into-4ls). A well-facilitated discussion phase typically surfaces 4-8 distinct theme clusters across all four categories.
-
-> **Pro tip:** If the team is large (8+ people), consider having participants read only their top two notes per category and silently post the rest. This prevents the discussion phase from ballooning past its timebox.
-
-### Step 5: Step 5: Prioritize with Dot Voting (5 Minutes)
-
-With clusters visible on the board, give each team member 3-5 dot votes (physical stickers or digital votes). Instruct them to place dots on the clusters they believe are most important to act on — they can distribute votes however they like, including stacking multiple dots on one cluster. Set a 3-minute timer for voting.
-
-Once votes are tallied, rank the clusters by vote count. The top 2-3 clusters become the focus for action planning. This democratic prioritization prevents the HiPPO effect (highest-paid person's opinion dominating) and ensures the team owns the outcomes. Announce the results and confirm with the team: 'These are our top three priorities — does anyone feel strongly that we're missing something critical?'
-
-> **Pro tip:** Remind the team that voting on 'Liked' items is just as valid as voting on 'Lacked' items — reinforcing good practices is a legitimate retrospective action item.
-
-### Step 6: Step 6: Create Specific Action Items with Owners (10-15 Minutes)
-
-This is where most sprint retrospective meetings fail: the team identifies problems but doesn't commit to solutions. For each of the top 2-3 prioritized clusters, facilitate a brief discussion to define a concrete action item. Each action item must have three elements: a specific task (not 'improve communication' but 'create a shared Slack channel for deployment notifications'), an owner (a single person, not 'the team'), and a deadline (typically 'by end of next sprint').
-
-Limit the team to 2-3 action items maximum. Research consistently shows that teams who commit to fewer actions complete more of them. Write each action item visibly on the board and read them back to the team for confirmation.
-
-For detailed guidance on turning retrospective insights into well-formed action items, see [converting 4Ls insights into sprint action items](https://tryhamster.com/skills/converting-4ls-insights-into-action-items).
-
-> **Pro tip:** Ask the action item owner to restate the commitment in their own words. This small act of verbal commitment dramatically increases follow-through rates.
-
-### Step 7: Step 7: Close with a Checkout and Document (5 Minutes)
-
-End the sprint retrospective meeting with a brief closing round. Ask each person to share one takeaway or rate the retro itself on a 1-5 scale. This gives you facilitator feedback and provides a clean emotional close to the session.
-
-Immediately after the meeting (within 30 minutes), document the action items in the team's project management tool and share a summary in the team channel. Include: the top themes that emerged, the action items with owners and deadlines, and any notable insights from the 'Learned' category. This documentation is essential for [tracking retrospective trends across sprints](https://tryhamster.com/skills/tracking-retrospective-trends-across-sprints).
-
-> **Pro tip:** Take a photo or screenshot of the final board state before cleaning up. These visual artifacts are invaluable when reviewing trends over multiple sprints.
+End with a short round on the retrospective itself: one thing to keep and one to change about the meeting. Thank people for specific contributions, not in general. Within the day, post the board, the themes, the actions and their owners where the team keeps its records. [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) asks that every action be assigned with clear expectations for when it will be done, which is the minimum a summary should show. Keep the format the same every time so trends are easy to read later.
 
 ## Best Practices
 
-- Always use a visible, shared timer for every phase — making the timebox transparent creates collective accountability and eliminates the need for the facilitator to awkwardly interrupt conversations.
-- Rotate the facilitator role across team members every 2-3 sprints. This distributes the skill, prevents facilitator fatigue, and gives quieter team members a structured opportunity to lead.
-- Enforce silent brainstorming strictly — even one person reading their notes aloud during this phase will collapse independent thinking and reduce the diversity of contributions.
-- Limit action items to 2-3 per retrospective. Teams that leave with 7 action items complete fewer than teams that commit to 2. Less is genuinely more.
-- Start every sprint retrospective meeting by reviewing action items from the previous retro. This accountability loop is what transforms retros from a venting ritual into a genuine improvement engine.
-- As facilitator, resist contributing your own retrospective items. Your role is to hold the process, not influence the content. If you have strong opinions, write them down silently and share them only if no one else raises similar themes.
+- Show a shared timer for every phase. A visible clock makes the timebox the team's agreement rather than the facilitator's opinion, and it removes the need to interrupt someone mid-sentence.
+- Rotate the facilitator every few sprints. Rotation spreads the skill across the team, keeps any one person from shaping every retrospective, and gives quieter members a structured way to lead.
+- Keep your own opinions out of the room while facilitating. If you have a note to add, write it during silent writing like everyone else and do not advocate for it during discussion.
+- Separate facilitating from note-taking. Ask a volunteer to capture themes and actions so you can watch the clock, participation and tone.
+- Limit actions to what the team can finish in one sprint. A short list that gets done teaches the team that retrospectives work; a long list that does not teaches the opposite.
+- Vary the check-in and prompts every few sprints while keeping the four categories. The structure stays familiar and the answers stay fresh.
 
 ## Common Mistakes
 
-- **Skipping or rushing the silent brainstorming phase and going straight to verbal discussion** — Always protect the silent writing phase with a non-negotiable timebox. Verbal-first discussions produce fewer unique ideas and are dominated by extroverts and senior team members. Ten minutes of silence yields more honest, diverse input than thirty minutes of open discussion.
-- **Ending the sprint retrospective meeting with themes or observations but no specific action items** — Never close a retro without at least one action item that has a specific task description, a named owner (not 'the team'), and a deadline. If the team can't agree on an action, narrow the scope until they can — even a small experiment is better than a vague intention.
-- **Allowing the 'Lacked' category to consume most of the meeting time while 'Liked' and 'Learned' are glossed over** — Timebox each L category equally during the discussion phase (roughly 4-5 minutes each). 'Liked' identifies practices to protect and repeat, and 'Learned' captures knowledge that would otherwise be lost. Both are just as valuable as identifying gaps.
-- **The facilitator also acting as the primary note-taker or Scrum Master who weighs in on every topic** — Separate the facilitator and note-taker roles. Assign a volunteer to capture key points while the facilitator focuses entirely on managing the process, time, and participation balance. If you're the Scrum Master, be explicit about when you're wearing the facilitator hat versus sharing a personal observation.
-- **Running the same exact format every sprint until the team finds it tedious and checks out** — Keep the 4Ls structure but vary the check-in activity, the guiding prompts, and the voting method every few sprints. You can also adapt the format for remote contexts (see [adapting the 4Ls for remote and hybrid teams](https://tryhamster.com/skills/adapting-4ls-for-remote-and-hybrid-teams)) to keep it fresh.
+- **Skipping silent writing**: Going straight to open discussion lets the first speaker frame the sprint for everyone. Protect the writing phase with a timer and keep the room quiet until it ends, even if people want to talk.
+- **Ending with themes and no actions**: A board full of insights with no owners changes nothing. Never close without at least one concrete action that has a named person and a date, and narrow the scope until someone will take it.
+- **Letting Lacked take over the discussion**: Problems attract attention, so Liked and Learned get skipped. Include them in voting and discussion, because naming what to protect is as useful as naming what to fix.
+- **Facilitating while holding a stake**: A manager or lead who facilitates and argues positions makes it unsafe to disagree. Say explicitly when you are speaking as a participant, or hand facilitation to someone neutral.
+- **Not checking last time's actions**: If the previous actions are never reviewed, people learn that commitments made in the retrospective are optional. Make the review the first agenda item, every time.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/4ls-retrospective/METHOD.md) — 4Ls Retrospective
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/4ls-retrospective/METHOD.md): 4Ls Sprint Retrospective
 
 ## Related Skills
 
-- [Building 4Ls Retrospective Templates and Boards](../building-4ls-retrospective-boards/SKILL.md)
-- [Tracking 4Ls Trends Across Multiple Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
-- [Categorizing and Sorting Team Feedback into the 4Ls](../categorizing-feedback-into-4ls/SKILL.md)
-- [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
-- [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
-- [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
+- [Building a 4Ls Retrospective Board and Template](../building-4ls-retrospective-boards/SKILL.md)
+- [Tracking 4Ls Retrospective Trends Across Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
+- [Sorting Team Feedback into the 4Ls Categories](../categorizing-feedback-into-4ls/SKILL.md)
+- [Writing 4Ls Retrospective Questions for Each Category](../crafting-4ls-retrospective-questions/SKILL.md)
+- [Turning 4Ls Retrospective Insights into Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
+- [Running a 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
+
+## Sources
+
+- [Derby, Larsen and Horowitz: Agile Retrospectives, Second Edition](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/)
+- [Retrium: The five phases of a successful retrospective](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)
+- [Atlassian Team Playbook: The 4 Ls retrospective technique](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique)
+- [EBG Consulting: The 4L's, a retrospective technique](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/)
+- [Nielsen Norman Group: Dot voting](https://www.nngroup.com/articles/dot-voting/)
+- [GitLab Handbook: Group retrospectives](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)

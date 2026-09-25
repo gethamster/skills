@@ -1,29 +1,37 @@
-# Examples: Adapting the 4Ls Retrospective for Remote and Hybrid Teams
+# Examples: Running a 4Ls Retrospective for Remote and Hybrid Teams
 
-## Example: A Fully Remote Team Across Three Time Zones
-
-**Scenario:**
-
-A product team of 8 people is spread across EST, CET, and IST (India Standard Time). Their previous retrospectives were 90-minute video calls that ran over time, with low participation from the IST team members who joined at 9:30 PM local time.
-
-**Walkthrough:**
-
-The Scrum Master restructured the retrospective using the two-phase model. On Monday after the sprint ended, she posted a Miro board link in Slack with anonymous sticky notes enabled and clear prompts for each L category. The async window ran for 48 hours, with a nudge message at the 24-hour mark. By Wednesday, the board had 41 items across all four categories.
-
-Before the live session, she spent 15 minutes clustering items into 9 theme groups. The live call was scheduled for 30 minutes during the only overlapping business hour (2 PM CET / 8 AM EST / 6:30 PM IST). She walked through the clusters in 12 minutes, ran a dot vote in 4 minutes, and spent the remaining 14 minutes defining 3 action items with owners.
-
-Result: participation jumped from 5/8 to 8/8, the IST team members reported feeling equally heard for the first time, and the session finished 2 minutes early. The team adopted this format permanently and started seeing it as one of their best recurring **sprint retrospective ideas**.
-
-## Example: A Hybrid Team with Office and Remote Split
+## A team spread across distant time zones
 
 **Scenario:**
 
-A team of 6 has 4 members in a London office and 2 working from home in different UK cities. Previous retros had the office group huddling around a whiteboard while remote members watched via a conference room camera with poor audio.
+Illustrative scenario: a team of eight has members in Europe and on the US West Coast, with almost no working hours in common. Live retrospectives have always been late at night for someone.
 
 **Walkthrough:**
 
-The facilitator implemented three changes. First, she moved brainstorming async using FigJam with anonymous notes, giving everyone a 24-hour window. Second, for the live session she required all 6 people to join from their own laptops—even the 4 in the office, who sat at their desks with headphones instead of in the conference room. Third, she assigned one office-based team member as the 'remote advocate' to monitor the chat.
+The facilitator opens a 4Ls board at the end of the sprint with a two-day window for notes, and posts a short message explaining the categories and the deadline. Everyone writes on their own schedule, with anonymous notes turned on.
 
-During the first session with this format, one of the remote team members posted a 'Lacked' item about feeling excluded from spontaneous office decisions. Because it was anonymous, it sparked a genuine discussion about information flow that the office-based members hadn't considered. The resulting action item—a daily 5-minute 'decisions digest' posted in Slack—directly addressed a recurring friction point.
+When the window closes, the facilitator groups duplicates and drafts theme names. The live session is shorter than the team's old in-person retrospectives and alternates between an early and a late slot each sprint so the inconvenience is shared. The team confirms clusters, votes silently in the tool and agrees on actions. A written summary goes to the team channel the same day.
 
-The office-based team members initially resisted joining from their own laptops ('We're right here, why can't we just use the room?'), but after one session they acknowledged the difference in engagement quality.
+## A hybrid team with an office group
+
+**Scenario:**
+
+Illustrative scenario: four people sit together in an office and three join remotely. Remote members say they struggle to follow discussion and cannot reach the whiteboard.
+
+**Walkthrough:**
+
+The facilitator moves the board into a digital tool and asks everyone, including the office group, to join from their own laptop with a headset. The meeting room screen shows only the video call.
+
+Side conversations in the office stop being a problem because everyone is on the same audio. The facilitator rotates who speaks first in each round. After two retrospectives, remote members report that they contribute as much as the office group, and the team keeps the setup.
+
+## A difficult sprint with high emotions
+
+**Scenario:**
+
+Illustrative scenario: a fully remote team has just finished a sprint with a missed launch date and some tension between members. The facilitator usually runs mostly async retrospectives.
+
+**Walkthrough:**
+
+Following the approach in GitLab's handbook for difficult iterations, the facilitator keeps the async writing window but schedules a full video session with cameras on, and agrees with the team not to record it. The Prime Directive is read at the start.
+
+During discussion, the facilitator keeps the focus on conditions, such as unclear scope changes, rather than individuals. The team agrees on one action about how scope changes are communicated. A short private check-in with two members after the call helps close the tension.

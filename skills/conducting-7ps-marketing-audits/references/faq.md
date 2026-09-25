@@ -1,25 +1,21 @@
-# FAQ: Conducting a 7 P's Marketing Audit
+# FAQ: 7 Ps Marketing Mix Analysis
 
-## How long does a full 7 Ps marketing mix analysis take?
+## How is a 7 Ps audit different from a general marketing audit?
 
-A thorough first-time audit typically takes 2-4 hours for the core evaluation, plus additional time for gathering customer feedback and competitive data. Subsequent annual audits are faster (1-2 hours) because you have prior baselines. Quarterly pulse checks can be completed in 30-60 minutes.
+A full marketing audit, as Kotler, Gregor and Rodgers describe it, covers the whole marketing function, including strategy, organization and systems. A 7 Ps audit is narrower. It looks at the mix of decisions the customer experiences and at whether those decisions agree with each other. Many teams run the 7 Ps audit more often and the full audit less often.
 
-## Can I use the 7 Ps marketing mix analysis for a product-based business, or is it only for services?
+## How long does a 7 Ps audit take?
 
-While the 7 P's framework was originally extended for service businesses, the full seven elements are relevant for any business. Product companies still have People (sales, support), Process (ordering, delivery, returns), and Physical Evidence (packaging, unboxing, website). The audit applies universally.
+The first one takes longer because the team has to write down the current decision for each P and agree scoring definitions. After that, most of the effort is gathering fresh evidence before the meeting. Keep the review meeting itself short by sending the evidence out in advance.
 
-## What's the difference between a 4 Ps and a 7 Ps marketing mix analysis?
+## Who should take part?
 
-A 4 Ps analysis covers Product, Price, Place, and Promotion. The 7 Ps analysis adds People, Process, and Physical Evidence — critical for service businesses and any company where customer experience extends beyond the product itself. The additional three Ps capture the delivery and trust dimensions that increasingly drive competitive advantage.
+A small group that covers marketing, sales, service delivery and pricing, plus a facilitator. Include someone who works directly with customers, since People and Process problems are visible to them first. Keep the group small enough to agree on actions in one meeting.
 
-## Who should be involved in conducting a 7 Ps marketing audit?
+## What if we have no data for some Ps?
 
-Include representatives from marketing, sales, product, operations, and customer success. Each function has visibility into different Ps. Marketing owns Promotion and Physical Evidence, product owns Product, finance influences Price, operations manages Process, and customer-facing teams understand People and Place dynamics.
+Score those Ps as unknown and make gathering evidence an action. A short customer survey, a handful of interviews and a walkthrough of the customer journey will fill most gaps. Avoid filling gaps with estimates presented as findings.
 
-## How do I measure the ROI of a 7 Ps marketing mix analysis?
+## How often should we repeat it?
 
-Track the success metrics you define for each action item in your prioritized plan. Common ROI indicators include improved conversion rates, increased customer satisfaction scores, higher average deal sizes, reduced churn, and improved win rates in competitive situations. Compare these metrics before and after implementing audit recommendations.
-
-## What tools do I need to conduct a 7 Ps marketing mix analysis?
-
-No specialized tools are required. A spreadsheet for the scoring rubric and cross-P matrix, access to your analytics and CRM data, customer feedback sources (reviews, surveys, support tickets), and a document for the final report and action plan. The value comes from the framework and rigor, not from software.
+No fixed interval is required. Pick a regular schedule that matches how fast your market changes, and add triggers for an earlier audit, such as a price change, a new channel, a new competitor or a fall in service quality scores.

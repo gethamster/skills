@@ -1,41 +1,21 @@
-# FAQ: Adapting the Six Pillars Framework for B2B SEO
+# FAQ: B2B SEO Six Pillars: Adapting the Framework
 
-## How do I adapt the b2b seo six pillars approach when search volumes are extremely low in my niche?
+## How do I choose B2B pillar topics when search volume is very low?
 
-Focus on commercial intent rather than volume. Calculate the pipeline value of each keyword by multiplying estimated clicks by your conversion rate and average deal value. A keyword with 20 monthly searches that attracts enterprise buyers can represent more revenue than a keyword with 5,000 searches that attracts students. Also aggregate volume across the entire cluster, not just the pillar head term.
+Start from the questions buyers ask in sales conversations and sort them by buying job. Choose topics where one job has enough distinct questions to support several cluster pages. Use keyword data to find the words buyers use and to spot overlapping pages, but do not drop a topic only because measured volume is small. In B2B, a few searches from the right buying group can matter more than many from students.
 
-A pillar with 50 monthly searches and 12 clusters averaging 30 searches each captures 410 monthly searches collectively, which is substantial in a niche market.
+## Should each industry we serve get its own pillar page?
 
-## Should I create separate pillar pages for each industry vertical my B2B company serves?
+Only where you have something specific to say for that industry, such as different integrations, regulations or customer evidence. A vertical pillar that swaps the industry name into generic text adds pages without adding value. If the buying jobs and questions are the same across industries, keep one pillar and add industry examples to its cluster pages.
 
-Yes, if you serve more than two distinct verticals and have enough expertise to create differentiated cluster content for each. Industry-vertical pillars ('supply chain software for pharmaceutical' vs. 'supply chain software for automotive') outperform generic category pillars in B2B because buyers search with industry context and trust vendors who demonstrate domain expertise. However, only create vertical pillars where you have real case studies, industry-specific features, or genuine expertise.
+## Should B2B cluster content be gated?
 
-A vertical pillar built on generic content with industry terms swapped in will underperform and may look thin to both search engines and savvy B2B buyers.
+Keep the answers buyers need for their own research open, because buyers research independently before they talk to sales. Offer an optional next step on each page, such as a template or worksheet that fits the buying job. Gating works best for material a buyer wants after they are already convinced the page is useful.
 
-## How long should I wait before evaluating whether my B2B pillar strategy is working?
+## How does this relate to the six pillars framework as a whole?
 
-Give each pillar at least 90 days after full cluster publication before making major adjustments. B2B content takes longer to gain traction for three reasons: lower search volumes mean slower data accumulation, longer sales cycles mean conversion data lags traffic data, and B2B domains often have lower authority, which means ranking improvements are more gradual. At the 90-day mark, evaluate indexation and ranking trends rather than absolute traffic numbers. If cluster pages are being indexed and moving from page 3 to page 2, the strategy is working and needs more time.
+The buying jobs and the role segmentation are a B2B version of the mapping and deepening pillars. The other pillars still apply: anticipation watches for new regulations or categories, timing follows budget cycles, and scenario planning covers changes in who buys and how. The parent method page describes all six pillars.
 
-If pages are not being indexed at all, you have a technical or quality problem to diagnose.
+## How do we measure B2B pillar content?
 
-## Should I build my B2B pillar content before or after creating semantic keyword maps?
-
-Create your [semantic keyword maps](https://tryhamster.com/skills/creating-semantic-keyword-maps) first. The keyword map reveals the actual language your buyers use, the relationships between topics, and the search intent behind each query cluster. Without this foundation, you risk building pillars around terms that sound right internally but do not match how your market actually searches. The keyword mapping process also surfaces cluster opportunities you might miss through intuition alone, such as adjacent topics, comparison queries, and problem-framing searches that represent early-stage buyer research.
-
-## How do I handle the overlap between pillar content and sales enablement content in B2B?
-
-Treat them as the same content with different distribution channels. A cluster page comparing your product to competitors serves both SEO (ranking for '[your product] vs [competitor]') and sales enablement (a resource your sales reps share with prospects evaluating alternatives). When creating your cluster map in Step 4, tag each cluster page with its sales enablement use case. Share the published URLs with your sales team through your CRM or sales enablement platform.
-
-This dual purpose also helps justify content investment to leadership, because each page serves two functions instead of one.
-
-## Why does my B2B pillar strategy generate traffic but no qualified leads?
-
-This is almost always a pillar selection or conversion layer problem, not a content quality problem. First, check whether your pillars are targeting awareness-stage queries that attract researchers and students rather than buyers. Look at the search intent: does the query suggest someone evaluating a purchase, or someone writing a report? Second, audit your conversion offers.
-
-If every cluster page has the same generic 'subscribe to our newsletter' CTA, you are not giving consideration-stage and decision-stage visitors a compelling reason to engage. Match the conversion offer to the buyer's stage: ungated guides for awareness, gated tools and templates for consideration, demo and consultation requests for decision.
-
-## How do I coordinate pillar content across multiple authors and subject matter experts in a B2B company?
-
-Use your B2B Pillar Adaptation Worksheet as the single source of truth. Each cluster page assignment should include the pillar it belongs to, the buyer role it targets, the primary keyword, the conversion offer, the assigned author or SME, and the publication deadline. Hold a monthly pillar review meeting where the content team reviews upcoming clusters, and SMEs provide technical accuracy feedback. The most common coordination failure is SMEs writing cluster content without awareness of the broader pillar structure, which leads to overlapping topics, inconsistent internal linking, and missed conversion opportunities.
-
-Prevent this by briefing every contributor on the full cluster map before they write.
+Track visibility and engagement per pillar and per buying job. For later-stage pages, ask sales which pages prospects mention, forward or ask about, because those pages often get little traffic and still influence decisions. Review the numbers alongside new questions from the field each quarter.

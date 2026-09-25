@@ -1,29 +1,43 @@
-# Examples: Auditing How LLMs Represent Your Brand and Content
+# Examples: Auditing How LLMs Represent Your Brand
 
-## Example: SaaS Company Discovers LLMs Conflate It with a Competitor
-
-**Scenario:**
-
-A project management SaaS called 'Flowwork' (fictional) runs an LLM brand audit and discovers that ChatGPT and Gemini both attribute features from a competitor named 'FlowBoard' to their product, including a Gantt chart builder they've never offered. Claude correctly distinguishes the two brands but lists Flowwork's pricing from 2022.
-
-**Walkthrough:**
-
-The team creates a Brand Truth Document with current features, pricing (updated 6 months ago), and explicit differentiation from FlowBoard. They design a 20-prompt matrix including: 'What is Flowwork?', 'Flowwork vs FlowBoard comparison', 'Does Flowwork have Gantt charts?', and 'Best project management tools for remote teams.'
-
-After running all prompts across four LLMs, they find: (1) ChatGPT and Gemini conflate the two brands in 60% of responses, (2) Claude gets features right but pricing wrong, (3) Perplexity cites an outdated TechCrunch article and a competitor's comparison page as sources for the wrong information, (4) None of the LLMs mention Flowwork when asked about 'best tools for remote team project management.'
-
-Their correction strategy priorities: First, update their own website to include a prominent FAQ explicitly stating 'Flowwork does not offer Gantt charts — here's what we offer instead' and a comparison page titled 'Flowwork vs FlowBoard.' Second, contact TechCrunch to correct the outdated article and update their Crunchbase and G2 profiles. Third, create category-defining content around 'remote team project management' to address the missing-from-category error. They re-audit in 8 weeks and find ChatGPT has corrected the conflation in 4 of 6 relevant prompts, while the category inclusion issue remains — indicating that building topical authority requires longer-term content investment.
-
-## Example: E-commerce Brand Finds Outdated Product Lines Dominating AI Responses
+## A software company confused with a similarly named competitor
 
 **Scenario:**
 
-An outdoor gear brand discontinued their tent product line 18 months ago to focus exclusively on backpacks and hiking gear. However, LLM auditing reveals that three of four major models still describe them primarily as a 'tent and outdoor shelter company.'
+Illustrative scenario: a small analytics company shares most of its name with a larger, unrelated firm in a different market. Sales reps hear prospects repeat features the company does not have, and suspect AI assistants are mixing the two up.
 
 **Walkthrough:**
 
-The brand's audit matrix includes prompts like 'What products does [Brand] sell?', 'Best backpack brands for hiking', and 'Where can I buy camping tents?' They discover that their old tent product pages (now 404ing) were heavily linked by outdoor review sites, and cached versions of those pages dominate the training data. Meanwhile, their newer backpack content hasn't been widely cited yet.
+Marketing writes a fact sheet covering the product, its category, pricing model, founders and headquarters, each linked to a page on the company's site. The prompt set includes direct questions, category questions and a few prompts that name both companies together.
 
-Scoring reveals: 80% of product-related claims across all LLMs reference tents, with only 20% mentioning their current backpack line. Worse, when users ask 'Best hiking backpack brands,' the company doesn't appear at all. Using Perplexity's citations, they trace the tent references to five specific review sites and their own archived pages.
+The audit confirms the suspicion: several answers attribute the larger firm's founding story and headquarters to the smaller company. Tracing shows that a business directory profile merged the two companies, and that the company's own About page never states where it is based.
 
-Their correction plan: implement proper 301 redirects from old tent URLs to a 'Our Story' page explaining the pivot, reach out to the five review sites to request article updates, create a comprehensive backpack buying guide and comparison content, update all third-party profiles, and add explicit 'About Us' language clarifying their current focus. They also implement schema markup on their product pages following the [schema markup for AEO](https://tryhamster.com/skills/implementing-schema-markup-for-aeo) skill to reinforce correct product information for AI crawlers.
+The team corrects the directory profile, adds a clear company description with location and founders to the About page, and adds Organization structured data with sameAs links to its official profiles. It reruns the audit each month and records which answers still confuse the two companies.
+
+## Outdated pricing in AI answers
+
+**Scenario:**
+
+Illustrative scenario: a subscription business moved from per-seat pricing to usage-based pricing. AI assistants still describe the old per-seat plans, and prospects arrive expecting prices that no longer exist.
+
+**Walkthrough:**
+
+The audit runs the pricing questions with web search on and off. With search on, most answers cite an old comparison article on a review site and a forgotten help center page on the company's own domain. With search off, the model describes the old pricing with no source.
+
+The company updates the help center page, redirects old pricing URLs to the current pricing page, and asks the review site to update its article. It notes that answers without search will likely keep the old pricing until newer models are released.
+
+At the next run, most search-enabled answers describe the new pricing. The no-search answers still show the old plans, which the team logs and rechecks after each major model release.
+
+## Missing from category recommendations
+
+**Scenario:**
+
+Illustrative scenario: a developer tools startup is accurately described when people ask about it by name, but it never appears when people ask assistants for tools in its category.
+
+**Walkthrough:**
+
+The audit scores the direct prompts as mostly correct and the category prompts as a consistent absence. The answers to category questions cite independent roundups and community threads, none of which mention the startup.
+
+Tracing shows the startup has no independent coverage in the sources the answers rely on. Its own site describes the product in its own terms and never uses the category name buyers use.
+
+The team adds the category name to its homepage and product pages in plain language and begins earning independent coverage through the topical authority and citation skills. It keeps the category prompts in the tracking set as the main measure of progress.

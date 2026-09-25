@@ -1,25 +1,21 @@
-# FAQ: Gathering Data During Sprint Retrospectives
+# FAQ: Gathering Data in Retrospectives
 
-## What are the best sprint retrospective questions to ask for gathering data?
+## What are good agile retrospective questions for gathering data?
 
-The most effective sprint retrospective questions target three channels: facts ('What events happened this sprint that weren't planned?'), metrics ('How did our cycle time compare to last sprint?'), and sentiments ('When did you feel most or least confident this sprint?'). Mixing all three gives the team a complete picture rather than a one-dimensional view.
+Ask open, specific questions about what happened and how it felt. Examples: what happened that you did not expect, where did you wait on something, when did you feel most productive, what did the data show that surprised you, and what did we say we would do last time and did it happen. Save "why" questions for the insight phase, and avoid any question that points at a person.
 
-## How long should the data gathering phase take in a retrospective?
+## Which metrics should we bring?
 
-For a standard one-hour retrospective, allocate 15-25 minutes to data gathering. This includes presenting pre-prepared metrics (2-3 minutes), silent individual writing (5-7 minutes), and sharing/clustering the data (8-15 minutes). Going shorter risks a shallow data set; going longer compresses the insights and action planning phases.
+Bring a few that relate to the sprint goal and to last time's actions, small enough to read at a glance. Delivery against plan, work added mid-sprint, blocked time, incidents and review wait times are common choices. The measure matters less than whether the team trusts it and can read it quickly. If a number is disputed, note the dispute and move on.
 
-## Should retrospective data be collected anonymously?
+## How do we handle sensitive topics?
 
-Use anonymous collection when the team has low psychological safety, when sensitive topics are involved (interpersonal conflict, management decisions), or when you notice people giving only polite, surface-level answers. As team trust grows, you can shift to attributed methods. Mixing both approaches in a single session also works well.
+Use anonymous input and phrase prompts around the process rather than individuals. Remind the team of its working agreements before the activity. Read anonymous notes aloud without asking who wrote them. If a topic is too sensitive for the group, the facilitator can raise it separately with the people involved after the meeting.
 
-## How do I prevent the retrospective from jumping straight to solutions during data gathering?
+## How long should this phase take?
 
-Explicitly name the phases and enforce boundaries. When someone proposes a solution during data gathering, say: 'Great observation — let's capture that data point and explore solutions after we have the full picture.' Physically separating the data board from the actions board reinforces this discipline visually.
+Long enough for everyone to contribute and for the group to agree the picture is complete. In a one-hour retrospective, sample plans from Retrium and Atlassian allot between ten and fifteen minutes. A sprint with a major event may need more, which is a reason to plan a timeline activity and a longer session.
 
-## What metrics should I bring to a sprint retrospective?
+## What if the team says nothing happened?
 
-Start with 2-4 metrics the team already tracks: sprint velocity or throughput, defect count (found and escaped), cycle time or lead time, and deployment frequency. Avoid overwhelming the team with dashboards — pick metrics relevant to that specific sprint's events. Over time, the team will tell you which metrics they find most useful.
-
-## How do sprint retrospective questions differ from sprint review questions?
-
-Sprint review questions focus on the product: 'Did we build the right thing? Does the increment meet acceptance criteria?' Sprint retrospective questions focus on the process and team: 'How did we work together? What slowed us down? How did we feel?' The review inspects the output; the retrospective inspects how the output was produced.
+Use the prepared data and a timeline to jog memory. Ask about specific days, handoffs and interruptions. A sprint with no visible problems is also worth recording: what went well is data, and understanding it helps the team repeat it.

@@ -1,15 +1,20 @@
 ---
-name: comparing-moscow-with-other-prioritization-frameworks
-description: "This skill teaches you when to choose MoSCoW over quantitative scoring frameworks like RICE, ICE, and WSJF, and how to combine multiple prioritization methods for stronger, more defensible prioritization outcomes."
+name: "comparing-moscow-with-other-prioritization-frameworks"
+description: "A prioritization framework comparison of MoSCoW vs RICE, ICE and WSJF: when each one fits, what each one misses, and how to combine them."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: moscow
+  method: "moscow"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Comparing MoSCoW with RICE, ICE, WSJF, and Other Prioritization Technique Frameworks
+# MoSCoW vs RICE, ICE and WSJF: Choosing a Framework
 
-> This skill teaches you when to choose MoSCoW over quantitative scoring frameworks like RICE, ICE, and WSJF, and how to combine multiple prioritization methods for stronger, more defensible prioritization outcomes.
+> A prioritization framework comparison of MoSCoW vs RICE, ICE and WSJF: when each one fits, what each one misses, and how to combine them.
 
 ## Before you start
 
@@ -24,161 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You will be able to confidently select the right prioritization framework—or combination of frameworks—for any product decision context, eliminating analysis paralysis and producing prioritization outcomes that stakeholders trust. |
-| Prerequisites | Basic understanding of MoSCoW categories (Must, Should, Could, Won't), Familiarity with at least one quantitative scoring framework (RICE, ICE, or WSJF), Experience managing a product backlog or requirements list |
-| Part of | [MoSCoW](../../methods/moscow/METHOD.md) |
+| Time to Learn | 2-3 hours |
+| Outcome | You can pick the right prioritization method for a decision, or a combination, and explain the choice to stakeholders. |
+| Prerequisites | Working knowledge of MoSCoW, a real prioritization decision to make, a sense of what data you have |
+| Part of | [MoSCoW Method](../../methods/moscow/METHOD.md) |
 
 ## Overview
 
-Every product team eventually faces the same question: which prioritization technique should we actually use? MoSCoW, RICE, ICE, WSJF, Kano, and Value vs. Effort matrices all promise better decisions, but each framework encodes different assumptions about what matters and how decisions should be made. Picking the wrong one—or using only one when you need two—leads to either shallow consensus or false precision.
+Product prioritization methods answer different questions, and many disagreements about which framework to use come from mixing the questions up. MoSCoW decides what is in and out of a fixed timeframe. RICE and ICE produce a ranked list of ideas. WSJF produces a sequence of jobs that maximizes economic benefit. This skill is a working prioritization framework comparison for choosing between them, and for combining prioritization frameworks when one is not enough. The method page has a summary table of the four; this skill covers how to make the choice.
 
-This skill gives you a structured way to evaluate when MoSCoW's categorical approach outperforms quantitative scoring methods, when scoring frameworks like RICE or ICE are the better choice, and—critically—how to layer methods together so that each compensates for the other's weaknesses. You'll learn the specific decision contexts, team dynamics, and data availability conditions that favor each framework.
+MoSCoW's strengths are scope and agreement. Its categories are defined by consequence, so business and technical stakeholders can apply them without a formula, and the Won't have list records what was left out. Its weaknesses are the ones the [Wikipedia entry on MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) lists: it does not rank items inside a category, and it gives no transparent way to decide between Must and Should.
 
-If you've already learned to [categorize requirements into MoSCoW buckets](https://tryhamster.com/skills/categorizing-requirements-into-moscow-buckets) and [facilitate MoSCoW workshops](https://tryhamster.com/skills/facilitating-moscow-prioritization-workshops), this skill extends your toolkit so you can adapt your approach as your product, team, and data mature.
+The scoring frameworks have the opposite profile. RICE, described by Sean McBride at [Intercom](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/), multiplies reach, impact and confidence and divides by effort. ICE, which [ProductPlan](https://www.productplan.com/glossary/ice-scoring-model) attributes to Sean Ellis, rates impact, confidence and ease and multiplies them. WSJF, as [SAFe](https://framework.scaledagile.com/wsjf) defines it, divides relative cost of delay by relative job duration. Each gives an order, and none of them says what a release guarantees.
+
+The practical choice turns on three things: the decision you are making (scope or order), the data you have (estimates of reach and value, or only judgement), and who has to agree (a product team, or stakeholders across the business). The rest of this skill works through those.
 
 ## How It Works
 
-Prioritization frameworks differ along four key dimensions: **input type** (qualitative judgment vs. quantitative data), **output type** (categories vs. ranked lists), **decision speed** (minutes vs. hours), and **stakeholder accessibility** (intuitive for everyone vs. requires training).
+Each framework is built for a particular decision.
 
-MoSCoW is a **categorical, qualitative** prioritization technique. It groups items into four buckets based on stakeholder judgment and business necessity. Its power lies in forcing binary inclusion/exclusion decisions (Must-have vs. Won't-have) and creating shared language for negotiation. It excels when the goal is alignment, not ranking.
+MoSCoW fits a fixed-deadline scope decision that several stakeholders must accept. The [DSDM definitions](https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html) tie each category to a delivery promise: Musts are guaranteed, and Shoulds and Coulds are contingency. That is why MoSCoW vs RICE is usually a false choice. RICE does not tell a sponsor what will ship on the date, and MoSCoW does not tell a product team which of two Shoulds to build first.
 
-RICE (Reach × Impact × Confidence ÷ Effort) and ICE (Impact × Confidence × Ease) are **quantitative scoring** frameworks. They produce numerical scores that create a rank-ordered backlog. Their power lies in making trade-offs explicit and reducing subjective bias—but they require data or calibrated estimates for each dimension.
+RICE fits a product team ranking many ideas where reach can be estimated. Intercom's version scores impact on a scale from 3 for massive to 0.25 for minimal and confidence at 100%, 80% or 50% ([Intercom](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/)). Intercom adds that RICE scores "shouldn't be used as a hard and fast rule", and that dependencies or strategy can justify working on a lower score first. The [RICE framework](https://tryhamster.com/methods/rice-framework) page covers the model in depth.
 
-WSJF (Weighted Shortest Job First) comes from SAFe and Lean thinking. It divides Cost of Delay by job duration to optimize economic flow. It's powerful in continuous delivery environments where sequencing—not just selection—drives value.
+ICE fits fast triage of many small bets, such as growth experiments. It rates impact, confidence and ease on a scale of 1 to 10 each and multiplies them ([ProductPlan](https://www.productplan.com/glossary/ice-scoring-model)). ProductPlan lists its drawbacks: it is almost completely subjective, low ease scores drag down high-impact ideas, and few people know enough to rate all three. In MoSCoW vs ICE terms, ICE is lighter and faster, and MoSCoW is sturdier when a commitment has to hold.
 
-The conceptual insight is that these frameworks answer **different questions**. MoSCoW answers "What must we include?" RICE answers "What should we do next?" WSJF answers "What sequence maximizes value throughput?" Understanding which question you're actually trying to answer is the key to choosing correctly—and understanding that you often need to answer more than one question is the key to combining them effectively.
+WSJF fits sequencing work in a continuous flow where the cost of waiting varies between jobs. [SAFe](https://framework.scaledagile.com/wsjf) estimates WSJF as relative cost of delay divided by relative job duration, using relative user and business value, time criticality, risk reduction or opportunity enablement, and job size. In MoSCoW vs WSJF terms, WSJF orders a stream of jobs, while MoSCoW sets the scope of one timeframe.
+
+The combinations follow from this. One pattern is MoSCoW for the scope line and a scoring model inside the Should and Could categories, where MoSCoW gives no order. Another is to use a score as evidence in a MoSCoW dispute: a high cost of delay can support a Must argument, but the DSDM consequence test still decides.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify the Decision Context You're Facing
+### Step 1: Name the decision
 
-Before selecting a framework, clarify what kind of prioritization decision you need to make. There are three fundamentally different contexts:
+Write down the decision in one sentence. "What will the release on the fixed date include?" is a scope decision and points to MoSCoW. "Which of these ideas should we build next?" is an ordering decision and points to a scoring model. "In what order should these jobs flow through the team?" points to WSJF. If the sentence contains both scope and order, plan to combine methods.
 
-1. **Scope definition** — You're deciding what's in and what's out for a release, MVP, or project. The question is inclusion vs. exclusion.
-2. **Backlog ranking** — You have a list of approved items and need to decide the order in which they'll be built. The question is sequencing.
-3. **Resource allocation** — You're distributing limited capacity across competing initiatives. The question is proportion.
+### Step 2: Check the data you actually have
 
-MoSCoW is strongest in scope definition. RICE and ICE are strongest in backlog ranking. WSJF is strongest when sequencing matters economically. Value vs. Effort matrices work for quick resource allocation conversations.
+List the inputs each framework needs and whether you have them. RICE needs reach and effort estimates; WSJF needs relative value, time criticality, risk reduction and job size ([SAFe](https://framework.scaledagile.com/wsjf)). If those inputs would be guesses, a scored ranking will look more precise than it is. MoSCoW needs only the consequence of leaving each item out and rough effort for the balance check.
 
-Write down which context you're in. If you're in multiple contexts simultaneously (common during quarterly planning), note that—you'll likely need a layered approach.
+### Step 3: Identify who has to agree
 
-> **Pro tip:** If stakeholders are arguing about what to build but you haven't agreed on what's in scope at all, start with MoSCoW. Jumping to RICE scoring when scope isn't set leads to ranking items that shouldn't be on the table.
+List who must accept the result. If it is stakeholders across the business, prefer categories they can apply themselves, since a formula owned by the product team is harder for them to challenge or accept. If it is the product team alone, a scoring model is easier to run repeatedly. Where both groups are involved, plan for MoSCoW with the stakeholders and scoring inside the team.
 
-### Step 2: Step 2: Assess Your Data Availability and Quality
+### Step 4: Choose a primary framework
 
-Quantitative frameworks require quantitative inputs. Be honest about what data you actually have:
+Pick the framework that fits the decision, the data and the audience from Steps 1 to 3. Write down why, in two or three sentences, including what the framework will not tell you. For MoSCoW, that is the order inside a category. For the scoring models, that is what the release guarantees.
 
-- **RICE** needs estimates for Reach (how many users), Impact (per-user effect), Confidence (data reliability), and Effort (person-months or story points). If you can't estimate Reach with any confidence, RICE will produce misleading scores.
-- **ICE** is lighter—Impact, Confidence, and Ease are all 1-10 scales—but the simplicity means scores compress and ties are common.
-- **WSJF** requires Cost of Delay estimates, which means you need to quantify the economic impact of delaying each item. This is powerful but requires financial modeling discipline.
-- **MoSCoW** requires stakeholder judgment and domain expertise but no numerical data. It works even when the product is pre-launch and you have zero usage metrics.
+### Step 5: Add a second framework only where there is a gap
 
-Map your available data against each framework's input requirements. If you have strong quantitative data, lean toward RICE or WSJF. If you're working from strategic judgment and stakeholder input, MoSCoW is likely more honest than fabricating numbers for a scoring model.
+If the primary framework leaves a gap that matters, fill only that gap. With MoSCoW as primary, score the Should and Could items so the team knows what to build first after the Musts. With a scoring model as primary, run a MoSCoW pass on the top of the ranking to agree what the next release guarantees. Avoid running two frameworks over the same decision, which produces two answers.
 
-> **Pro tip:** A RICE score calculated with made-up Reach numbers isn't more rigorous than MoSCoW—it's less rigorous, because the false precision hides the uncertainty.
+### Step 6: Test the choice on a real list
 
-### Step 3: Step 3: Evaluate Stakeholder Dynamics and Accessibility
+Run the chosen approach on the current backlog before rolling it out. Check whether the result matches what experienced team members would have chosen, and investigate where it does not. If a score contradicts a MoSCoW category, use the DSDM consequence test to settle it. Adjust definitions or scales before the next cycle.
 
-Consider who needs to participate in the prioritization process and what they can realistically engage with.
+### Step 7: Record and revisit the choice
 
-MoSCoW is immediately intuitive. You can run a [MoSCoW workshop](https://tryhamster.com/skills/facilitating-moscow-prioritization-workshops) with executives, engineers, designers, and customer success reps in the same room, and everyone understands what Must-have vs. Could-have means. This accessibility makes it the strongest prioritization technique for cross-functional alignment.
-
-RICE and ICE require participants to think in scoring dimensions, which adds cognitive load. Non-technical stakeholders sometimes resist numerical scoring because they feel manipulated by the math. However, for product teams working internally, scoring frameworks create productive debate about specific dimensions ("Do we really think this is a 3x impact?").
-
-WSJF works best with teams already operating in SAFe or Lean/Kanban environments who understand Cost of Delay as a concept. Introducing WSJF to a team that doesn't think in flow terms creates friction.
-
-Choose the framework that matches your audience's fluency, or plan to invest time in education before the prioritization session.
-
-> **Pro tip:** If you're facilitating prioritization with C-suite stakeholders, MoSCoW almost always wins on accessibility. Save RICE scoring for product team internal planning.
-
-### Step 4: Step 4: Map Each Framework's Strengths and Blind Spots to Your Situation
-
-Create a simple comparison table for your specific context. Here's the general pattern:
-
-| Framework | Best For | Blind Spots |
-|-----------|----------|-------------|
-| MoSCoW | MVP scoping, stakeholder alignment, requirements triage | Doesn't rank within categories; vulnerable to "everything is Must-have" |
-| RICE | Ranking features in a mature backlog with usage data | Effort estimates are notoriously unreliable; ignores strategic dependencies |
-| ICE | Quick relative ranking when data is sparse | Scores compress to similar ranges; low discrimination between items |
-| WSJF | Sequencing in continuous delivery; economic optimization | Requires Cost of Delay estimates; hard to apply to exploratory work |
-| Value vs. Effort | Quick triage in workshops; visual communication | Oversimplifies to two dimensions; no weighting for confidence or reach |
-| Kano Model | Understanding customer satisfaction drivers; feature differentiation | Requires customer research; doesn't produce a priority order directly |
-
-Circle the strengths that match your context and the blind spots that would cause the most damage. This narrows your choice—or reveals that you need a combination.
-
-> **Pro tip:** Print or share this comparison table in your planning meetings. Teams that can see the trade-offs side-by-side make faster, more confident framework decisions.
-
-### Step 5: Step 5: Design a Layered Approach When One Framework Isn't Enough
-
-In many real-world situations, the strongest prioritization technique is a combination. The most effective layering patterns are:
-
-**MoSCoW → RICE (most common):** Use MoSCoW first to separate Must-haves from everything else. This resolves the scope question. Then apply RICE scoring within the Should-have and Could-have buckets to sequence the remaining items. This prevents RICE from being wasted on scoring items that are obviously essential or obviously out of scope.
-
-**Kano → MoSCoW:** Use Kano analysis to classify features by customer satisfaction type (basic, performance, excitement). Map Kano categories to MoSCoW: basic needs → Must-have, performance features → Should/Could, excitement features → Could-have. This grounds MoSCoW in customer research rather than pure stakeholder opinion.
-
-**MoSCoW → WSJF:** Use MoSCoW to define the Must-have scope for an increment, then apply WSJF to sequence Must-haves and Should-haves based on economic value flow. This is especially effective in SAFe Program Increment planning.
-
-Define which framework handles which stage of your decision process, and document the handoff criteria between stages.
-
-> **Pro tip:** The layered approach also helps politically—stakeholders who prefer qualitative discussion get MoSCoW, while data-oriented PMs get their scoring framework. Both contribute to the final outcome.
-
-### Step 6: Step 6: Run a Pilot Comparison on a Real Backlog
-
-Theory only gets you so far. Take 15-20 items from your actual backlog and run them through two different frameworks side-by-side.
-
-First, have stakeholders categorize the items using MoSCoW. Record the distribution—how many Must-haves, Should-haves, etc. Then score the same items using RICE (or ICE, or WSJF). Compare the results:
-
-- Do the RICE top-5 items align with MoSCoW Must-haves? If yes, your frameworks agree and either works. If no, investigate the divergence—it usually reveals hidden assumptions.
-- Did MoSCoW surface items that RICE ranked low? This often happens with compliance, technical debt, or infrastructure work that has high necessity but low user-facing impact.
-- Did RICE surface items that MoSCoW missed as Could-have? These are often high-reach, low-effort opportunities that stakeholders undervalued.
-
-The divergences are the most valuable output. They expose the biases in each framework and give your team concrete evidence for which approach fits your product's decision-making needs.
-
-> **Pro tip:** Document the comparison results and share them with your team. This builds organizational memory about which framework works best for your context—saving time in future planning cycles.
-
-### Step 7: Step 7: Document Your Framework Selection Rationale
-
-Once you've chosen your approach (single framework or layered combination), write a brief decision record that captures:
-
-1. **Context**: What type of decision are we making? (scope, ranking, allocation)
-2. **Data availability**: What quantitative data do we have? What are we estimating?
-3. **Stakeholder requirements**: Who participates? What's their framework fluency?
-4. **Chosen approach**: Which framework(s) and in what sequence?
-5. **Review trigger**: When will we reassess this choice? (e.g., "When we have 6 months of usage data, we'll add RICE scoring.")
-
-This prevents framework drift—where teams unconsciously switch methods each quarter—and gives new team members a clear rationale for your process. Store this alongside your [prioritized roadmap documentation](https://tryhamster.com/skills/building-roadmaps-from-moscow-outputs).
-
-> **Pro tip:** Revisit this decision record every 2-3 quarters. As your product matures and data improves, the right framework choice often shifts from MoSCoW toward RICE or WSJF.
+Record which framework is used for which decision and why. Revisit the choice when the decision type, the data or the audience changes, for example when a product moves from a fixed launch date to continuous delivery. Keep the record short so new team members can follow it.
 
 ## Best Practices
 
-- Use MoSCoW as your first-pass prioritization technique when stakeholders disagree on scope—it forces the Must-have vs. Won't-have conversation that scoring frameworks avoid.
-- Never apply RICE or ICE scoring to items where you have zero data for Reach or Impact; the resulting scores create false confidence that's worse than qualitative judgment.
-- When layering frameworks, always run the categorical method (MoSCoW, Kano) before the scoring method (RICE, ICE)—categorization reduces the scoring workload and prevents wasted analysis on out-of-scope items.
-- Calibrate scoring frameworks by having 2-3 team members independently score the same 5 items, then discuss divergences before scoring the full backlog—this surfaces interpretation differences early.
-- Match your framework to your planning cadence: MoSCoW for quarterly/release planning, RICE for sprint-level backlog grooming, WSJF for PI planning in SAFe environments.
-- Document which framework you used and why—future-you (and new team members) will thank you when revisiting old prioritization decisions.
+- Match the framework to the question. Scope questions and ordering questions need different tools, and many arguments about frameworks are really about the question.
+- Treat scores as evidence. [Intercom](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/) says RICE scores should not be used as a hard and fast rule, which leaves room for judgement on dependencies and strategy.
+- Use MoSCoW where agreement matters most. Categories defined by consequence are easier for stakeholders outside the product team to apply and accept.
+- Define your scales. ProductPlan notes that without agreed definitions of each rating, [ICE assessments](https://www.productplan.com/glossary/ice-scoring-model) become unreliable, and the same applies to every scored framework.
+- Order inside MoSCoW categories with a score. The Should and Could lists are where a ranking adds the most, because MoSCoW gives none.
+- Keep the Won't have list whichever framework ranks the work. A ranked list does not say what is out of scope, and the Won't have list does.
 
 ## Common Mistakes
 
-- **Treating frameworks as mutually exclusive and committing to only one method for all prioritization decisions across all contexts.** — Recognize that different decision types (scope vs. ranking vs. sequencing) call for different frameworks. Build a layered approach where MoSCoW handles scope and a scoring framework handles sequencing within approved scope.
-- **Choosing RICE or WSJF because they seem more 'rigorous' when the team lacks the quantitative data these frameworks require.** — Audit your actual data availability before selecting a framework. MoSCoW with honest stakeholder judgment produces better outcomes than RICE with fabricated Reach and Impact numbers. Graduate to scoring frameworks as your data matures.
-- **Running a MoSCoW session and then immediately discarding the results in favor of a RICE-ranked backlog, undermining stakeholder trust.** — If you plan to layer MoSCoW with RICE, explain the two-stage process upfront. Show stakeholders how their MoSCoW input directly constrains the RICE scoring—Must-haves are built first regardless of RICE score, and Won't-haves are excluded from scoring entirely.
-- **Comparing framework outputs across different teams or time periods without recalibrating, leading to inconsistent prioritization.** — Treat each prioritization session as self-contained. If you need to compare across teams, agree on shared scoring definitions and calibration anchors (e.g., 'a RICE Impact score of 3 means X') before independent sessions.
-- **Over-rotating on framework selection meta-discussion instead of actually prioritizing the backlog.** — Spend no more than 15-20 minutes choosing your framework. If you can't decide, default to MoSCoW for its speed and accessibility, then layer in quantitative scoring later if the MoSCoW output feels insufficient.
+- **Choosing by habit**: Using the framework the team always uses, whatever the decision, produces confident answers to the wrong question. Name the decision first.
+- **Scoring with invented inputs**: A RICE or WSJF score built on guesses looks precise and is not. Say which inputs are estimates, or use categories until data exists.
+- **Running two frameworks on one decision**: Two answers invite people to pick the one they prefer. Give each framework its own decision.
+- **Letting a score override a Must**: A low score does not make a legal or safety requirement optional. Apply the DSDM consequence test to anything proposed as a Must.
+- **Using MoSCoW to order a long backlog**: Four categories cannot rank dozens of items. Use a scoring model for order and MoSCoW for scope.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/moscow/METHOD.md) — MoSCoW
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/moscow/METHOD.md): MoSCoW Method
 
 ## Related Skills
 
-- [Building Prioritized Roadmaps from MoSCoW Outputs](../building-roadmaps-from-moscow-outputs/SKILL.md)
+- [Categorizing Requirements into MoSCoW Categories](../categorizing-requirements-into-moscow-buckets/SKILL.md)
+- [Defining MVP Scope with MoSCoW](../defining-mvp-scope-with-moscow/SKILL.md)
+- [Building a MoSCoW Roadmap for Phased Delivery](../building-roadmaps-from-moscow-outputs/SKILL.md)
 - [Applying MoSCoW to Project and Software Requirements](../applying-moscow-to-project-requirements/SKILL.md)
-- [Resolving Stakeholder Priority Disputes Using MoSCoW](../resolving-stakeholder-disputes-with-moscow/SKILL.md)
-- [Categorizing Requirements into Must, Should, Could, and Won't Have](../categorizing-requirements-into-moscow-buckets/SKILL.md)
-- [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
-- [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
+- [Facilitating a MoSCoW Prioritization Workshop](../facilitating-moscow-prioritization-workshops/SKILL.md)
+- [Resolving Stakeholder Priority Conflicts with MoSCoW](../resolving-stakeholder-disputes-with-moscow/SKILL.md)
+
+## Sources
+
+- [Agile Business Consortium: DSDM handbook, MoSCoW prioritisation](https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html)
+- [Wikipedia: MoSCoW method](https://en.wikipedia.org/wiki/MoSCoW_method)
+- [Intercom: RICE, simple prioritization for product managers](https://www.intercom.com/blog/rice-simple-prioritization-for-product-managers/)
+- [ProductPlan: ICE scoring model](https://www.productplan.com/glossary/ice-scoring-model)
+- [Scaled Agile Framework: WSJF](https://framework.scaledagile.com/wsjf)

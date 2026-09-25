@@ -1,25 +1,21 @@
-# FAQ: Mapping the Four Fits as an Interconnected Ecosystem
+# FAQ: Mapping the Four Fits Ecosystem
 
-## What are the four fits in Brian Balfour's framework?
+## Does the map need to be a diagram?
 
-The four fits Brian Balfour defines are Market-Product Fit, Product-Channel Fit, Channel-Business Model Fit, and Business Model-Market Fit. They form a closed loop where each fit enables and constrains the next, meaning all four must be aligned for sustainable, scalable growth.
+No. A table or a one-page document works as well, as long as it shows the four nodes, the assumption on each link, the evidence, and the tensions. A simple diagram can help in a workshop, but the written assumptions are what matter.
 
-## How is mapping the four fits ecosystem different from checking product-market fit?
+## Who should build the map?
 
-Product-market fit is just one of the four fits. Mapping the ecosystem examines all four fits and, critically, the dependency connections between them. A product with strong market-product fit can still stall if the product doesn't suit available channels or the business model doesn't support the required acquisition costs.
+People who own the product, the primary channel, pricing, and customer data should build it together. Each knows one node best, and the tensions usually sit between two functions. A map built by one team tends to miss the tensions outside its area.
 
-## How often should I re-map the four fits Brian Balfour ecosystem?
+## How is this different from a four fits audit?
 
-Re-map the ecosystem quarterly as a standard cadence, and immediately after any major change—such as entering a new market, launching a new pricing model, or seeing a significant shift in channel performance. The binding constraint moves as your business evolves.
+The map is the model of how the fits connect; the audit is the recurring review that scores them against fresh evidence. An audit usually starts by updating the map. Keeping the map current makes audits quicker.
 
-## What tools can I use to create a four fits ecosystem map?
+## What if we have several products or tiers?
 
-Any visual collaboration tool works—Miro, FigJam, Whimsical, or even a whiteboard. The key is including labeled dependency arrows between fits, evidence-based scores for each node and connection, and cascade annotations. The format matters less than the rigor of the analysis.
+Draw a map for each offering that reaches customers through a different channel or model, and note which elements they share. A single combined map tends to average away the tensions within each offering. Balfour's LinkedIn example describes several layered sets of fits within one company.
 
-## Which fit should I fix first when multiple fits are weak?
+## How often should the map change?
 
-Fix the most upstream binding constraint first. Use cascade analysis to trace downstream symptoms back to their root cause. In Brian Balfour's four fits model, fixing upstream misalignments often automatically improves downstream fits, while fixing downstream symptoms without addressing the root cause produces only temporary improvements.
-
-## Can I map the four fits ecosystem for a pre-launch startup?
-
-Yes, but your map will be mostly hypotheses rather than validated data. Mark each assumption explicitly and use the map to prioritize which fits to validate first. The skill of sequencing fits for early-stage growth covers the recommended validation order for pre-launch companies.
+Update it whenever a node changes: a new price, a new primary channel, a redefined market, or a major product change. Review it in each regular audit even if nothing obvious changed, because channels and markets shift on their own.

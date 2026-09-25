@@ -1,31 +1,37 @@
-# Examples: Connecting Your North Star Metric to Product Roadmap Decisions
+# Examples: Connecting Your North Star Metric to the Product Roadmap
 
-## Example: B2B SaaS Collaboration Tool Quarterly Planning
-
-**Scenario:**
-
-A product team at a B2B SaaS company has defined their North Star Metric as 'Weekly Active Collaborators' — the number of users who collaborate with at least one teammate per week. Their input metrics are: (1) Team activation rate (% of new teams that complete their first shared project within 14 days), (2) Weekly collaboration frequency (average collaborative sessions per active team), and (3) Team expansion rate (% of teams that add a new member per month). Team activation rate has been declining from 45% to 38% over two quarters. They have 15 candidate initiatives for next quarter.
-
-**Walkthrough:**
-
-The PM maps each initiative to its primary input metric. Three initiatives target team activation (redesign onboarding, add templates for first project, implement invite reminders), five target collaboration frequency (real-time co-editing, notification improvements, mobile app improvements, comment threading, activity feed), and four target team expansion (referral program, admin dashboard, seat-based pricing change, SSO integration). Three items are foundational (API performance, database migration, accessibility audit).
-
-Scoring reveals the onboarding redesign has the highest composite score: high impact on the most constrained metric (activation), medium-high confidence based on user research data, and moderate effort. The real-time co-editing feature scores high on impact for collaboration frequency but low on confidence (no prototype tested yet) and high effort.
-
-The PM proposes: commit to the onboarding redesign and invite reminders (two activation bets), run a 2-week prototype sprint for co-editing to buy confidence before committing to full build, ship notification improvements (a quick win for collaboration frequency), and allocate 20% capacity to the API performance work. The referral program is deferred — team expansion is healthy and not the current bottleneck.
-
-Stakeholders from sales push for SSO integration, arguing it's blocking enterprise deals. The PM acknowledges this but shows it maps to team expansion, which is currently green. They agree to revisit SSO next quarter if expansion rate declines, or if the sales team can quantify its activation impact (teams that can't use SSO may not activate).
-
-## Example: Consumer Mobile App Resolving Conflicting Priorities
+## A roadmap review finds orphaned work
 
 **Scenario:**
 
-A fitness app's North Star Metric is 'Weekly Active Exercisers' (users who log at least one workout per week). Input metrics are: new user Day-1 retention (currently 28%, target 35%), workout completion rate (currently 61%, stable), and social engagement rate (users who interact with at least one friend's activity per week, currently 15%, growing). The CEO wants to double down on social features. The head of growth wants to fix onboarding. Engineering wants to rebuild the workout tracking core.
+Illustrative scenario: a SaaS company's North Star is weekly accounts that complete a core workflow, with three inputs: activation of new accounts, weekly workflow completion, and seat expansion. The quarterly roadmap has twelve items, planned before the North Star existed.
 
 **Walkthrough:**
 
-The PM organizes a scoring session with all three stakeholders present. They list seven candidate initiatives across the three input metrics. When scored transparently, two onboarding improvements (personalized first-workout recommendation and reduced sign-up friction) score highest due to Day-1 retention being the biggest bottleneck — at 28%, nearly three-quarters of new users never return, making downstream improvements irrelevant.
+The product lead maps each item to one input. Seven map cleanly. Two are infrastructure work and are labelled as supporting work with a set budget. Three map to nothing: a redesigned settings page, a new theme option and an integration requested by one prospect.
 
-The social feed redesign the CEO championed scores well on social engagement impact but moderate overall because that input metric is already trending positively. The PM reframes: 'Social is working — let's not risk disrupting momentum there. Activation is where we're leaking the most value.'
+For each orphan, the owner is asked to name an input and an expected effect. The integration turns out to matter for activation in a segment the company is targeting, so it stays with a written assumption. The settings redesign and theme option move to the backlog. The freed capacity goes to a small test on the activation input, which had no work planned at all.
 
-The workout tracking rebuild maps to workout completion rate, which is stable at 61%. It's categorized as foundational/enabling work and given a 20% capacity allocation rather than competing on input metric impact. The final product roadmap commits to onboarding improvements as the primary bet, continues lightweight social iteration, and begins scoped workout tracking improvements. All three stakeholders see their priorities represented, with a clear rationale for the emphasis.
+## Two teams compete for one slot
+
+**Scenario:**
+
+Illustrative scenario: a consumer app can staff one more project this cycle. The growth team wants a referral program to lift new user acquisition. The core team wants a reminder system to lift weekly repeat use. Both are sure their project matters more.
+
+**Walkthrough:**
+
+The product lead asks each team to estimate the effect on its input, its confidence, and the effort, and to write the assumptions down. Past data shows that repeat use is strongly linked to the North Star, while new users from past referral pushes rarely stayed.
+
+Weighted by each input's link to the North Star, the reminder system ranks higher. The referral team is not rejected outright: the lead offers a small referral test to check the retention assumption, with a date to review the result. The decision is written up in North Star terms so both teams can see how it was made.
+
+## Closing the loop after a miss
+
+**Scenario:**
+
+Illustrative scenario: a team shipped a guided setup flow expected to raise activation noticeably. Six weeks later, activation is flat.
+
+**Walkthrough:**
+
+The post-release review compares the result with the one-pager. Users complete the new setup at a higher rate, but completing setup no longer predicts reaching the first value moment. The level 3 bet worked, and the level 2 opportunity did not.
+
+The team records the miss, lowers confidence for setup-flow ideas, and runs interviews to find what new users do before they reach value. The next planning cycle targets that step instead. The input map gets a note that setup completion is a weak leading signal for activation.

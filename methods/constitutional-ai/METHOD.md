@@ -1,130 +1,157 @@
 ---
-category: Development
+name: "constitutional-ai"
+category: "Development"
+description: "Constitutional AI is Anthropic's method for training a harmless, non-evasive assistant from written principles, self-critique and RLAIF."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Constitutional AI: The Method Behind Claude's Ethical Alignment
+# Constitutional AI: Self-Critique, Revision and RLAIF
 
-> Created by **Anthropic Researchers (led by Yuntao Bai et al.)** — [https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback)
+> Created by **Yuntao Bai, Jared Kaplan and colleagues at Anthropic** - [https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback](https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback)
 
 ## Overview
 
-Constitutional AI (CAI) is a groundbreaking alignment technique developed by Anthropic researchers, led by Yuntao Bai and colleagues, to make large language models like Claude safer and more aligned with human values. Published in 2022, the method addresses a fundamental challenge in AI safety: how do you train a model to consistently avoid harmful outputs without requiring millions of human-labeled examples for every possible edge case? The answer lies in giving the AI a written "constitution" — a set of ethical principles — and training it to police its own behavior.
+Constitutional AI (CAI) is a training method from Anthropic, introduced in the December 2022 paper [Constitutional AI: Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073) by Yuntao Bai, Jared Kaplan and colleagues. It trains an AI assistant to be harmless without any human labels that identify harmful outputs. The only human oversight is a short list of principles written in plain language, which the authors call a constitution, plus a small number of examples used for few-shot prompting. Training runs in two phases: supervised learning on the model's own critiqued and revised answers, then reinforcement learning from AI feedback, which the paper named RLAIF.
 
-The method works in two distinct phases. In the **supervised learning phase**, the model generates responses to potentially harmful prompts, then critiques and revises those responses according to constitutional principles. These self-revised responses become training data. In the **reinforcement learning phase (RLAIF)**, an AI preference model — trained on the constitution rather than human preferences — provides feedback signals that further refine the model's behavior. This dramatically reduces the need for human annotators while improving consistency and scalability.
+The method grew out of a problem in Anthropic's earlier work. In [Training a Helpful and Harmless Assistant](https://arxiv.org/abs/2204.05862), the team used human preference labels (RLHF) to train an assistant for both helpfulness and harmlessness. The [Constitutional AI paper](https://arxiv.org/pdf/2212.08073) reports that the resulting assistant often refused controversial questions and could get stuck giving evasive answers for the rest of a conversation, because crowdworkers had rewarded evasiveness as a response to harmful requests. CAI set out to train an assistant that still declines unethical requests but always engages and explains its objections. The paper lists three further motivations: using AI systems to help supervise other AI systems, making the principles behind a model's behavior explicit, and shortening iteration time, since changing the objective no longer means collecting a new set of human labels.
 
-Constitutional AI is the core alignment methodology behind Claude, Anthropic's flagship AI assistant. It represents a philosophical shift from reactive content filtering (blocking bad outputs after generation) to proactive value internalization (training the model to reason about ethics from first principles). For teams building AI-powered applications, understanding Constitutional AI is essential for evaluating model safety, designing responsible AI workflows, and leveraging Claude's alignment properties effectively.
+The supervised phase starts from a helpful-only model that has not been trained for harmlessness. That model answers red-team prompts, which are prompts written to draw out harmful behavior, and its first answers are often harmful. A critique request drawn from the constitution is then appended, and the model writes a critique of its own answer. A revision request follows, and the model rewrites the answer in light of the critique. The loop can repeat with a different, randomly drawn principle each time. A pretrained model is then fine-tuned on the revisions, mixed with ordinary helpful answers so it stays useful. The paper calls this model SL-CAI.
 
-The practical impact is significant: Constitutional AI enables Claude to handle nuanced ethical scenarios, explain its reasoning when declining requests, and maintain a balance between being maximally helpful and avoiding harm — all without hardcoded rules for every situation. This makes it a foundational method for anyone working with AI systems in production environments.
+The reinforcement learning phase replaces human harmlessness labels with AI labels. The SL-CAI model writes two answers to each harmful prompt. A separate feedback model is shown the conversation, one principle, and both answers as a multiple-choice question, and its probabilities for option A and option B become a soft preference label. Those AI labels for harmlessness are mixed with human labels for helpfulness, a preference model is trained on the mix, and the SL-CAI model is fine-tuned with reinforcement learning against that preference model. Human feedback was still used for helpfulness in the paper. Only the harmlessness labels came entirely from AI.
+
+The word "constitution" has been used for two different things since. In the paper, the constitution was a set of critique, revision and comparison instructions that the authors say were chosen "in a fairly ad hoc and iterative way for research purposes." In May 2023 Anthropic published [the principles it used to train Claude](https://www.anthropic.com/news/claudes-constitution), drawn from sources such as the UN Declaration of Human Rights and Apple's terms of service. In January 2026 it published [a new constitution](https://www.anthropic.com/news/claude-new-constitution) that explains the reasons for the behavior it asks for, where the earlier version was a list of standalone principles, and said the approach has grown out of the Constitutional AI techniques it has used since 2023. That document has its own page at [Claude's Constitution](https://tryhamster.com/methods/claude-s-constitution). This page covers the training technique.
+
+Other groups have tested and reused the method. Researchers at Google compared the two approaches in [RLAIF vs. RLHF](https://arxiv.org/abs/2309.00267) and found that preference labels from an off-the-shelf language model gave performance comparable to human labels on summarization, helpful dialogue and harmless dialogue. Hugging Face published [an open recipe](https://huggingface.co/blog/constitutional_ai) that applies the critique and revision loop to Mistral 7B Instruct and trains on the result. Nathan Lambert's [RLHF book](https://rlhfbook.com/c/12-synthetic-data) describes CAI as "the earliest documented, large-scale use of synthetic data for RLHF training."
+
+Few teams will train a frontier model, but the parts of the method work at smaller scale. A team fine-tuning an open model can use the critique and revision loop to build a training set, use a principle-guided feedback model to label preference pairs, and use the same prompts to grade outputs during evaluation. The skills below cover each of those pieces, from writing the principles to red teaming the finished model.
 
 ## Core Principles
 
-### Principle-Based Alignment Over Rule-Based Filtering
+### Written principles are the only harmlessness supervision
 
-Rather than maintaining brittle blocklists or keyword filters, Constitutional AI embeds ethical reasoning directly into the model through a written constitution. This allows Claude to handle novel situations by reasoning from principles rather than matching patterns, producing more nuanced and contextually appropriate responses.
+In CAI, people do not label individual outputs as harmful. They write the principles, and the model applies them. The paper describes this as encoding the training goals "in a simple list of natural language instructions or principles" ([Bai et al.](https://arxiv.org/pdf/2212.08073)). The practical effect is that changing what the model should avoid means editing text rather than commissioning a new labeling project. It also means the principles deserve the care a team would otherwise spend on labeling guidelines, because every label downstream comes from them.
 
-### Self-Critique and Revision (Red Teaming from Within)
+### Critique before revising
 
-The model is trained to generate a potentially problematic response, then critique that response against constitutional principles, and finally produce a revised version. This iterative self-improvement loop teaches Claude to identify and correct its own failures without human intervention at each step.
+The supervised phase asks the model to explain what is wrong with its answer before it rewrites it. In the paper's experiments, critiqued revisions scored as more harmless than direct revisions for small models and made no noticeable difference for large ones ([Bai et al.](https://arxiv.org/pdf/2212.08073)). The authors kept the critique step anyway because it gives more transparency into the model's reasoning. They also note that the critiques were often inaccurate or overstated, so a critique is a draft to check before anyone relies on it.
 
-### Reinforcement Learning from AI Feedback (RLAIF)
+### Sample principles one at a time
 
-Instead of relying solely on Reinforcement Learning from Human Feedback (RLHF), Constitutional AI uses an AI-generated preference model to provide training signals. The AI evaluator judges which of two responses better adheres to the constitution, creating scalable feedback that doesn't bottleneck on human annotator availability.
+The model does not check every principle on every pass. At each critique and revision step, and for each comparison label, one principle is drawn at random. Anthropic's [2023 explanation](https://www.anthropic.com/news/claudes-constitution) puts it this way: the model "does not look at every principle every time, but it sees each principle many times during training." The paper found that ensembling over principles made the preference model more robust than using a single principle for every label.
 
-### Transparency Through Explicit Principles
+### Harmless without being evasive
 
-The constitution itself is a transparent document that can be inspected, debated, and updated. This makes the alignment process auditable — stakeholders can review exactly which values the model was trained to uphold, unlike opaque RLHF approaches where values are implicit in annotator preferences.
+A model that refuses everything is harmless and useless. CAI's revision and comparison instructions aim for answers that engage with a sensitive request and explain why the assistant will not help with the harmful part. The paper reports that RL-CAI was "virtually never evasive" on red-team prompts, and that crowdworkers evaluating the models were told to prefer the less evasive answer when two answers were equally harmless ([Bai et al.](https://arxiv.org/pdf/2212.08073)). The paper counts evasiveness as a failure mode in its own right.
 
-### Helpfulness-Harmlessness Balance
+### AI feedback replaces human labels where it is good enough
 
-Constitutional AI explicitly optimizes for both helpfulness and harmlessness simultaneously, recognizing that an overly cautious model that refuses legitimate requests is also a failure mode. The constitution includes principles that encourage the model to be maximally helpful within ethical boundaries.
+The paper replaced human labels only for harmlessness, and kept human labels for helpfulness. The authors describe their ultimate goal as making human supervision "more efficient, transparent, and targeted" ([Bai et al.](https://arxiv.org/pdf/2212.08073)). Before relying on AI labels, the authors checked how well language models could pick the better response on a set of helpful, honest and harmless comparisons, and found that ability improved with model size and with chain-of-thought reasoning.
 
-### Scalable Supervision Without Human Label Dependency
+### Soft, calibrated labels
 
-By shifting the feedback loop from human annotators to AI-driven evaluation grounded in constitutional principles, the method can scale to cover vastly more scenarios, languages, and edge cases than would be economically feasible with purely human oversight.
+The feedback model's normalized probabilities are used as targets rather than a hard pick of A or B. The paper found soft labels "led to much better results than hard labels" when no chain of thought was used ([Bai et al.](https://arxiv.org/pdf/2212.08073)). With chain-of-thought labeling the model usually commits to one answer, so the authors clamped its probabilities to a 40-60 percent range, because without clamping the trained models learned to give more extreme responses.
 
-### Honesty and Epistemic Humility
+### Watch for over-training
 
-The constitution includes principles around truthfulness, acknowledging uncertainty, and avoiding fabrication. Claude is trained not just to avoid harm but to be forthright about the limits of its knowledge, fostering trust with users who depend on accurate information.
+A preference model is a proxy, and pushing a policy too hard against it degrades real quality, a pattern [Gao, Schulman and Hilton](https://arxiv.org/abs/2210.10760) measured for reward models in general. The CAI paper saw this directly: over-trained RL-CAI models became overly harsh or added boilerplate such as "you are valid, valued, and cared for" to most red-team answers ([Bai et al.](https://arxiv.org/pdf/2212.08073)). Rewriting principles to discourage over-reactive or accusatory answers helped.
+
+## Constitutional AI Compared with RLHF and Later Variants
+
+The table places the original method among the approaches that came before and after it. Each row names where the training signal comes from.
+
+| Approach | Where the feedback comes from | What it showed |
+|---|---|---|
+| RLHF, as in [InstructGPT](https://arxiv.org/abs/2203.02155) and Anthropic's [HH assistant](https://arxiv.org/abs/2204.05862) (2022) | Human labelers compare or rank model outputs to train a reward model | The baseline CAI set out to improve on |
+| [Constitutional AI](https://arxiv.org/pdf/2212.08073) (December 2022) | AI labels for harmlessness from 16 written principles, human labels for helpfulness | Less harmful at a given level of helpfulness, and non-evasive |
+| [RLAIF vs. RLHF](https://arxiv.org/abs/2309.00267), Google (September 2023) | An off-the-shelf language model labels all preferences | Comparable to RLHF on summarization and dialogue tasks |
+| [Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input) (October 2023) | Principles drafted with about 1,000 members of the American public | Lower bias than the Anthropic-written constitution on nine social dimensions, equally helpful and harmless |
+| [Specific versus general principles](https://arxiv.org/abs/2310.13798) (October 2023) | A single principle, roughly "do what's best for humanity" | The largest models generalized from it; detailed lists still gave finer control |
+| [Constitutional Classifiers](https://www.anthropic.com/research/constitutional-classifiers) (February 2025) | A constitution used to generate synthetic data for input and output classifiers | Input and output filters that resist universal jailbreaks |
 
 ## Steps
 
-1. **Step 1: Draft the Constitutional Principles**
-   Define a clear, written set of ethical principles that will govern the AI's behavior. These should cover harmlessness (avoiding toxic, dangerous, or deceptive outputs), helpfulness (providing useful, accurate responses), and honesty (being transparent about limitations). Anthropic's original constitution drew from sources including the UN Declaration of Human Rights, Apple's terms of service, and common-sense ethical norms. Your constitution should reflect the specific values and risk tolerances of your deployment context.
+1. **Assemble a helpful model and red-team prompts**
+   Start from a model that follows instructions well and has not been trained for harmlessness, because the method needs harmful first drafts to correct. The paper used a helpful-only RLHF model. Collect prompts that try to draw out harmful behavior: the paper combined human-written red-team prompts from [Ganguli et al.](https://arxiv.org/abs/2209.07858) with many more generated by few-shot prompting a pretrained model. Also collect ordinary helpfulness prompts, which you will need later to keep the model useful. Check the red-team set for coverage across the kinds of harm you care about before generating anything.
 
-2. **Step 2: Generate Red-Team Prompts**
-   Create a diverse set of adversarial prompts designed to elicit harmful, unethical, or problematic responses from the model. These should cover a wide spectrum of risk categories: violence, deception, bias, privacy violations, illegal activities, and manipulation. The goal is to surface the model's worst-case behaviors so the self-critique process has meaningful material to work with. Both automated and human-crafted red-team prompts improve coverage.
+2. **Write the constitution as instructions**
+   Write each principle as a pair of instructions: a critique request that asks the model to find a specific kind of problem, and a revision request that asks it to fix that problem. For the reinforcement learning phase, write comparison principles in the form "choose the response that is more X." Keep each principle short and broad, since Anthropic found that longer, more specific principles tended to reduce generalization ([Anthropic, 2023](https://www.anthropic.com/news/claudes-constitution)). Add a few worked examples of critiques and revisions in the same format, which the paper used to stop the model confusing its critique and revision roles.
 
-3. **Step 3: Collect Initial (Unconstrained) Model Responses**
-   Run the red-team prompts through the base model (or a helpful-only model) to generate initial responses that may contain harmful content. These "raw" outputs serve as the starting point for the critique-revision cycle. It's important to use a model that is genuinely helpful but not yet safety-tuned, so the responses authentically represent the kinds of outputs that need correction.
+3. **Run the critique and revision loop**
+   For each red-team prompt, sample the model's answer, append a randomly drawn critique request, sample the critique, then append the matching revision request and sample the revision. Repeat the loop a few times with fresh principles if you want a sequence of revisions. The paper found the first revision almost always removed most of the harm, with later revisions giving smaller gains that were harder to see by inspection. Read a sample of critiques and revisions by hand before scaling up, since critiques can overstate problems.
 
-4. **Step 4: Apply Self-Critique Against the Constitution**
-   Prompt the model to critique its own responses by referencing specific constitutional principles. For example: *"Identify specific ways in which the assistant's response is harmful, unethical, or violates the following principle: [principle text]."* The model generates a written critique identifying problems with its original output. This step teaches the model to recognize misalignment in its own reasoning.
+4. **Fine-tune on revisions mixed with helpful answers**
+   Pair each red-team prompt with its revised answers, and add answers from the helpful model to the helpfulness prompts. Fine-tune a pretrained model on the mix, which produces the SL-CAI model. The helpful answers matter: Hugging Face's [open recipe](https://huggingface.co/blog/constitutional_ai) warns that the data needs enough helpful examples so the revisions do not "nerf" the model. Compare SL-CAI with the starting model on both harmlessness and helpfulness before moving on.
 
-5. **Step 5: Generate Revised Responses**
-   Using the critique as guidance, prompt the model to produce a revised response that addresses the identified issues while remaining as helpful as possible. The revision should correct harmful elements, add appropriate caveats, or respectfully decline when necessary — all while avoiding excessive refusal. These revised responses, paired with the originals, form the supervised fine-tuning dataset.
+5. **Label preference pairs with a feedback model**
+   Have the SL-CAI model write two answers to each red-team prompt. Show a feedback model the conversation, one randomly drawn comparison principle, and both answers as options A and B, and read off its probabilities for each option. Use the normalized probabilities as soft labels. If you ask the feedback model to reason step by step first, expect confident labels and clamp them, as the paper did. Swap the order of A and B on a sample to check for position bias, which [Lee et al.](https://arxiv.org/pdf/2309.00267) found in smaller labelers.
 
-6. **Step 6: Fine-Tune on Critique-Revision Pairs**
-   Use the (original prompt → revised response) pairs as supervised training data to fine-tune the model. This teaches the model to produce constitutionally-aligned outputs directly, without needing to go through the explicit critique step at inference time. The model internalizes the revision patterns so it can generate safe, helpful responses in a single pass.
+6. **Train the preference model and run RLAIF**
+   Train a preference model on the AI-labeled harmlessness pairs mixed with helpfulness comparisons. The paper used human labels for helpfulness, and a team without them can try AI labels for both, as Lee et al. did. Fine-tune the SL-CAI model with reinforcement learning against the preference model, which gives the RL-CAI policy. Keep the policy from drifting too far from its starting point, and save snapshots at intervals so you can compare them.
 
-7. **Step 7: Train an AI Preference Model (RLAIF)**
-   Generate pairs of responses to the same prompt and ask the AI evaluator — guided by the constitution — to choose which response better adheres to the principles. These AI-generated preference labels replace or supplement human preference labels. Train a reward model on these preference pairs that can score any response for constitutional alignment. This is the key innovation that makes Constitutional AI scalable.
-
-8. **Step 8: Apply Reinforcement Learning with the AI Reward Model**
-   Use the trained preference/reward model to provide feedback during reinforcement learning (typically PPO or similar algorithms). The model learns to maximize the reward signal — generating outputs that the preference model rates as well-aligned with the constitution. This RLAIF phase further refines the model's behavior beyond what supervised fine-tuning alone achieves, producing Claude's characteristic balance of helpfulness and safety.
+7. **Evaluate with people and watch for over-training**
+   Compare snapshots with human raters on both helpfulness and harmlessness, and tell raters to prefer a thoughtful, non-evasive answer when two answers are equally harmless, as the paper did. Look for the over-training signs the paper reported: overly harsh answers and the same reassuring boilerplate appended to many replies. When a behavior is wrong, the fix the method offers is to add or rewrite a principle and regenerate the data. Red team the final model again, since a new model has new weaknesses.
 
 ## When to Use
 
-- When building AI-powered products where safety and ethical alignment are non-negotiable requirements — such as customer-facing chatbots, healthcare applications, or educational tools — and you need a model that reasons about harm rather than just pattern-matching against blocklists.
-- When scaling AI deployment across diverse use cases and languages where it's impractical to manually label harmful vs. safe outputs for every possible scenario, and you need an alignment approach that generalizes from principles.
-- When your team needs transparent, auditable alignment — regulators, compliance teams, or stakeholders require documentation of exactly which ethical principles govern the AI's behavior, making Constitutional AI's explicit constitution a governance advantage.
-- When you want to reduce over-refusal in AI responses — models trained only on human safety labels often become excessively cautious. Constitutional AI's balanced optimization helps maintain helpfulness alongside harmlessness.
-- When integrating Claude into automated workflows where the AI must make ethical judgments autonomously, without a human in the loop for every interaction, and you need confidence that the model's value alignment is robust.
+- You are fine-tuning or post-training an open model for a product and need harmlessness training data, but cannot afford to have people label thousands of harmful outputs. CAI turns a short list of principles into that data.
+- Your current safety-tuned model refuses too often or lectures users. The method's explicit aim of harmless but non-evasive answers, and its comparison principles against preachy responses, target that failure.
+- Your policy changes often, for example because legal or product requirements shift. Editing principles and regenerating labels is faster than recollecting human labels, which was one of the paper's stated motivations.
+- You need to explain what values a model was trained on. The constitution is a short, readable artifact that reviewers can inspect and argue with.
+- You are building preference data or an automated grader and want its judgments tied to named criteria. Principle-guided comparison gives each label a stated reason.
 
 ## When Not to Use
 
-- When your use case requires domain-specific safety constraints that go beyond general ethical principles — such as financial compliance regulations or medical device safety standards — you'll need additional fine-tuning or guardrails on top of Constitutional AI's general alignment.
-- When you need deterministic, rule-based content moderation with zero tolerance for nuance — if regulatory requirements demand exact keyword blocking or binary allow/deny decisions, a principle-based reasoning approach may not provide the hard guarantees required.
-- When your primary challenge is factual accuracy rather than ethical alignment — Constitutional AI addresses the helpful/harmless/honest triad, but domain-specific knowledge accuracy requires separate solutions like retrieval-augmented generation (RAG) or specialized training data.
-- When you lack the compute resources and expertise to implement Constitutional AI training from scratch — the method requires significant infrastructure for the self-critique, revision, and RLAIF training loops. Most teams should leverage pre-aligned models like Claude rather than reimplementing CAI.
-- When your AI application operates in a domain where human oversight is legally mandated for every output — Constitutional AI reduces but does not eliminate the need for human review, and some regulated industries require human-in-the-loop verification regardless of alignment quality.
+- You are building an application on a hosted model you cannot train. Constitutional AI is a training method, so use system prompts, evaluation and guardrails instead; the method's ideas can still shape your review prompts.
+- Your helpful starting model is weak. The method depends on the model following critique and revision instructions and judging comparisons well, and the paper found that ability grows with model size.
+- You need guarantees that specific content never appears. A trained model can still be jailbroken, and Anthropic itself added separate [Constitutional Classifiers](https://www.anthropic.com/research/constitutional-classifiers) to filter inputs and outputs for the most serious harms.
+- The judgments require expertise the feedback model lacks, such as clinical or legal correctness. AI labels will be confidently wrong in those areas, so route them to qualified people.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Drafting a Constitution of Ethical Principles for AI](../../skills/drafting-ai-constitution-principles/SKILL.md) — How to define and structure a set of clear, actionable ethical principles that guide an AI model's behavior during training and inference.
-- [Generating Reinforcement Learning from AI Feedback (RLAIF)](../../skills/generating-reinforcement-learning-from-ai-feedback/SKILL.md) — How to use AI-generated preference labels instead of human annotations to create training signals for reinforcement learning alignment.
-- [Scaling Constitutional Training Without Human Labels](../../skills/scaling-constitutional-training-without-human-labels/SKILL.md) — How to reduce dependence on costly human feedback by leveraging AI-generated critiques and chain-of-thought reasoning to scale alignment training efficiently.
-- [Implementing Self-Critique and Revision in AI Outputs](../../skills/implementing-ai-self-critique-and-revision/SKILL.md) — How to prompt or train a language model to evaluate its own responses against constitutional principles and iteratively revise harmful or unhelpful content.
-- [Evaluating AI Alignment Using Preference Models](../../skills/evaluating-ai-alignment-with-preference-models/SKILL.md) — How to build and validate preference models that score AI outputs for adherence to constitutional principles across helpfulness, harmlessness, and honesty.
-- [Balancing Helpfulness and Harmlessness in AI Responses](../../skills/balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md) — How to tune constitutional principles and reward models so the AI remains maximally useful without producing unsafe or evasive outputs.
-- [Crafting Red-Team Prompts to Stress-Test AI Safety](../../skills/crafting-red-team-prompts-for-safety-testing/SKILL.md) — How to systematically generate adversarial prompts that probe for harmful, biased, or policy-violating outputs before and after constitutional training.
+- [Drafting AI Constitution Principles for Constitutional AI](../../skills/drafting-ai-constitution-principles/SKILL.md): Write the critique, revision and comparison principles that drive every label in Constitutional AI training.
+- [Generating Reinforcement Learning from AI Feedback (RLAIF)](../../skills/generating-reinforcement-learning-from-ai-feedback/SKILL.md): Produce principle-guided AI preference labels for harmlessness and turn them into a reward signal.
+- [Scaling Constitutional AI Training Without Human Labels](../../skills/scaling-constitutional-training-without-human-labels/SKILL.md): Decide which labels AI feedback can replace, which still need people, and how to grow the pipeline.
+- [Implementing AI Self-Critique and Revision](../../skills/implementing-ai-self-critique-and-revision/SKILL.md): Run the critique and revision loop that builds the supervised training set.
+- [Evaluating AI Alignment with Preference Models](../../skills/evaluating-ai-alignment-with-preference-models/SKILL.md): Train, test and monitor the preference model that scores outputs against the constitution.
+- [Balancing Helpfulness and Harmlessness in AI Responses](../../skills/balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md): Keep the trained model from becoming evasive, preachy or over-cautious while it becomes safer.
+- [Constitutional AI Red Teaming with Adversarial Prompts](../../skills/crafting-red-team-prompts-for-safety-testing/SKILL.md): Build the red-team prompt sets that feed training and test the finished model.
 
 ## FAQ
 
-**How is Constitutional AI different from RLHF used in other AI models?**
+**What is Constitutional AI in simple terms?**
 
-Traditional RLHF relies entirely on human annotators to label preferred responses, which is expensive, inconsistent, and hard to scale. Constitutional AI replaces much of this human labeling with AI-generated feedback (RLAIF) grounded in explicit written principles. This makes alignment more scalable, transparent, and consistent — the AI evaluator always references the same constitution rather than varying human preferences.
+It is a way to train an AI assistant to avoid harmful answers using a written list of principles instead of human labels on harmful outputs. The model critiques and rewrites its own answers against those principles, and is fine-tuned on the rewrites. Then another model compares pairs of answers using the same principles, and those comparisons train a reward signal for reinforcement learning. Anthropic introduced it in a [December 2022 paper](https://arxiv.org/abs/2212.08073).
 
-**What principles are included in Claude's constitution?**
+**What is RLAIF, and is it the same as Constitutional AI?**
 
-Anthropic's constitution draws from multiple sources including the UN Universal Declaration of Human Rights, principles of non-maleficence and beneficence, and practical guidelines about avoiding deception, respecting autonomy, and being truthful about uncertainty. The exact principles are publicly documented by Anthropic, making Claude's alignment process more transparent than most competing approaches.
+RLAIF, reinforcement learning from AI feedback, is the second phase of Constitutional AI: preference labels come from a model rather than from people. Constitutional AI also includes the supervised critique and revision phase, and it specifies that the AI feedback is guided by written principles. Lambert's [RLHF book](https://rlhfbook.com/c/12-synthetic-data) notes that the paper's title caused early confusion between the two ideas, and that RLAIF has since become a default method in post-training.
 
-**Can I customize Constitutional AI principles for my own application built on Claude?**
+**How is Constitutional AI different from RLHF?**
 
-While you cannot retrain Claude's base constitutional alignment, you can layer application-specific guidelines using Claude's system prompts and Anthropic's API features. This lets you define additional behavioral constraints, tone requirements, and domain-specific safety rules that work in concert with Claude's foundational Constitutional AI training.
+Both train a preference model and then optimize a policy against it with reinforcement learning. In RLHF, people compare outputs to create the preference data. In Constitutional AI, a model makes the harmlessness comparisons using written principles, and the paper kept human comparisons only for helpfulness. The pipeline after the labels are made is the same, which the paper states directly.
 
-**Does Constitutional AI completely eliminate harmful outputs from Claude?**
+**Does Constitutional AI remove humans from alignment?**
 
-No alignment method provides a 100% guarantee. Constitutional AI significantly reduces harmful outputs and makes failures more predictable and less severe, but adversarial users can still find edge cases. Anthropic continuously updates Claude's constitution and training based on real-world feedback. Teams should implement additional application-level safeguards for high-stakes deployments.
+No. People write the principles, choose the prompts, and judge the results, and in the original paper they also supplied the helpfulness labels. The authors wrote that their goal was not to remove human supervision but to make it more efficient, transparent and targeted ([Bai et al.](https://arxiv.org/pdf/2212.08073)). They also warned that needing less human feedback makes it easier to deploy models that people have not tested thoroughly.
 
-**How does Constitutional AI handle the tradeoff between safety and helpfulness?**
+**What was in the original constitution?**
 
-This is a central design goal of Constitutional AI. The constitution explicitly includes principles that encourage helpfulness alongside harmlessness, preventing the model from becoming overly cautious. During RLAIF training, the preference model rewards responses that are both safe and genuinely useful, so Claude learns to decline harmful requests gracefully while remaining maximally helpful for legitimate queries.
+The paper used 16 principles for the supervised phase and 16 for the reinforcement learning phase, listed in its appendix and in Anthropic's [supplementary repository](https://github.com/anthropics/ConstitutionalHarmlessnessPaper). Many were similar, general instructions to remove harmful, unethical, racist, sexist, toxic, dangerous or illegal content, while others targeted areas such as advice for crime or content unsuitable for children. The principles Anthropic later used for Claude, published in [May 2023](https://www.anthropic.com/news/claudes-constitution), drew on a wider set of sources.
 
-**How can teams use Constitutional AI principles when building AI agents in Hamster Studio?**
+**Is Constitutional AI the same as Claude's constitution?**
 
-Hamster Studio lets teams define agent behaviors using structured methods and skills that mirror Constitutional AI's approach. You can draft explicit behavioral constitutions for your AI agents, implement self-critique workflows where agents review their own outputs, and use evaluation skills to assess alignment — all within a collaborative workspace that makes AI governance a team effort rather than a black box.
+No. Constitutional AI is the training technique. Claude's constitution is the document of values Anthropic trains Claude with, and its [January 2026 version](https://www.anthropic.com/news/claude-new-constitution) explains the reasons behind the behavior it asks for, where the earlier version was a list of standalone principles. The document is covered on its own page, [Claude's Constitution](https://tryhamster.com/methods/claude-s-constitution).
+
+**Can I use Constitutional AI with open-source models?**
+
+Yes. Hugging Face's [open recipe](https://huggingface.co/blog/constitutional_ai) generated critiques and revisions with Mistral 7B Instruct, using red-team prompts from Anthropic's public dataset and Anthropic's constitution, then trained with supervised fine-tuning followed by DPO on the preference pairs. They found they had to write their own few-shot examples, and that the self-critique step sometimes missed responses that broke a principle.
 
 ---
 

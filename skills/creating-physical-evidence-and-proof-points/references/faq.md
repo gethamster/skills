@@ -1,25 +1,21 @@
-# FAQ: Creating Physical Evidence and Proof Points
+# FAQ: Physical Evidence in the Marketing Mix
 
 ## What is physical evidence in the marketing mix?
 
-Physical evidence in the marketing mix refers to the tangible cues and proof points that help customers evaluate and trust a product or service. It's the seventh P in the 7 P's Marketing Mix and includes elements like branded environments, packaging, testimonials, case studies, certifications, and service guarantees that make intangible value visible.
+Physical evidence is everything tangible that customers use to judge an intangible service: the environment where the service happens, the materials and documents they receive, the website and interface, and proof such as reviews and credentials. It helps customers judge quality before purchase and remember the service afterwards.
 
-## Why is physical evidence important for service businesses?
+## What are examples of physical evidence?
 
-Service businesses sell intangible outcomes that customers can't evaluate before purchase. Physical evidence bridges this gap by providing concrete signals of quality—such as professional environments, documented client results, and risk-reversing guarantees—that reduce perceived risk and increase buyer confidence.
+For a physical service: the building, layout, cleanliness, lighting, signage, uniforms and receipts. For a professional or digital service: the website, proposals, reports, invoices, onboarding emails, the product interface, case studies, reviews and certifications.
 
-## What are examples of physical evidence in marketing?
+## How does physical evidence apply to online services?
 
-Common examples include branded store or office environments, product packaging, website and app design quality, customer testimonials with specific results, detailed case studies, client logos, industry certifications, awards, service-level agreements, money-back guarantees, branded onboarding materials, and professional proposal documents.
+The website, the app interface and the documents customers receive are the online equivalent of a servicescape. They set expectations before purchase and act as proof afterwards. Treat them with the same care as a physical space, and check them against the price and positioning.
 
-## How do I choose which proof points to create first?
+## What makes a good proof point?
 
-Prioritize proof points at high-traffic, high-anxiety touchpoints in your customer journey. Interview recent buyers and lost prospects to identify their top concerns, then create evidence that directly addresses those specific objections. Pricing pages and sales proposals are typically the highest-leverage starting points.
+A good proof point is real, specific and placed where the customer is deciding. Customer stories with permission, verifiable credentials, clear guarantees and examples of finished work reduce the perceived risk of buying. Vague claims and unverifiable numbers do little and can undermine trust.
 
-## How often should I update my physical evidence assets?
+## Who should own physical evidence?
 
-Conduct a quarterly review of all physical evidence. Retire or refresh case studies older than two years, update testimonials to reflect current product capabilities, and ensure guarantees align with your current service offerings. Build continuous proof-point collection into your standard delivery workflow so you always have fresh material.
-
-## What is the difference between physical evidence and promotion in the 7 P's?
-
-Promotion is the active communication of your value proposition through advertising, content, and outreach. Physical evidence is the tangible proof that backs up those promotional claims. Promotion tells customers what you can do; physical evidence shows them you've actually done it through case studies, guarantees, environments, and third-party validation.
+Marketing usually leads, but many cues are produced by other teams: finance sends invoices, the product team designs system emails, operations runs the space. Give each important cue an owner and a simple standard so it stays consistent with the positioning.
