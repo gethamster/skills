@@ -13,7 +13,7 @@ metadata:
 
 # Continuous Discovery Habits: A Practitioner's Guide
 
-> Created by **Teresa Torres** — [https://www.producttalk.org/](https://www.producttalk.org/)
+> Created by **Teresa Torres** - [https://www.producttalk.org/](https://www.producttalk.org/)
 
 ## Overview
 
@@ -146,14 +146,14 @@ The framework is explicitly designed to be layered in gradually: start with the 
 
 This method includes the following skills:
 
-- [Building Opportunity Solution Trees](skills/building-opportunity-solution-trees/SKILL.md) — How to visually map desired outcomes to customer opportunities and potential solutions using Teresa Torres' opportunity solution tree framework.
-- [Conducting Weekly Customer Interviews](skills/conducting-weekly-customer-interviews/SKILL.md) — How to establish and sustain a habit of weekly customer touchpoints by automating recruitment, keeping interviews short, and integrating them into regular product development cadence.
-- [Defining Product Outcomes Over Outputs](skills/defining-product-outcomes-over-outputs/SKILL.md) — How to shift from output-focused roadmaps to outcome-driven product goals that guide meaningful discovery work and measurable business impact.
-- [Mapping and Prioritizing Customer Opportunities](skills/mapping-customer-opportunities/SKILL.md) — How to synthesize customer interview insights into distinct opportunity spaces, assess their relative importance, and decide which opportunities to pursue.
-- [Running Assumption Tests](skills/running-assumption-tests/SKILL.md) — How to identify the riskiest assumptions behind product ideas and design small, fast experiments to validate or invalidate them before committing to building.
-- [Story Mapping Customer Experiences](skills/story-mapping-customer-experiences/SKILL.md) — How to use experience mapping and story mapping techniques to capture the customer's current journey and identify gaps, pain points, and unmet needs.
-- [Automating Continuous Research Recruitment](skills/automating-participant-recruitment/SKILL.md) — How to set up automated pipelines for recruiting interview participants from your existing customer base so that weekly discovery conversations happen effortlessly.
-- [Comparing Solutions with Compare-and-Contrast Decisions](skills/comparing-solutions-with-compare-and-contrast/SKILL.md) — How to evaluate multiple potential solutions simultaneously rather than pursuing a single idea, using structured compare-and-contrast techniques to make better product bets.
+- [Building Opportunity Solution Trees](../../skills/building-opportunity-solution-trees/SKILL.md): How to visually map desired outcomes to customer opportunities and potential solutions using Teresa Torres' opportunity solution tree framework.
+- [Conducting Weekly Customer Interviews](../../skills/conducting-weekly-customer-interviews/SKILL.md): How to establish and sustain a habit of weekly customer touchpoints by automating recruitment, keeping interviews short, and integrating them into regular product development cadence.
+- [Defining Product Outcomes Over Outputs](../../skills/defining-product-outcomes-over-outputs/SKILL.md): How to shift from output-focused roadmaps to outcome-driven product goals that guide meaningful discovery work and measurable business impact.
+- [Mapping and Prioritizing Customer Opportunities](../../skills/mapping-customer-opportunities/SKILL.md): How to synthesize customer interview insights into distinct opportunity spaces, assess their relative importance, and decide which opportunities to pursue.
+- [Running Assumption Tests](../../skills/running-assumption-tests/SKILL.md): How to identify the riskiest assumptions behind product ideas and design small, fast experiments to validate or invalidate them before committing to building.
+- [Story Mapping Customer Experiences](../../skills/story-mapping-customer-experiences/SKILL.md): How to use experience mapping and story mapping techniques to capture the customer's current journey and identify gaps, pain points, and unmet needs.
+- [Automating Continuous Research Recruitment](../../skills/automating-participant-recruitment/SKILL.md): How to set up automated pipelines for recruiting interview participants from your existing customer base so that weekly discovery conversations happen effortlessly.
+- [Comparing Solutions with Compare-and-Contrast Decisions](../../skills/comparing-solutions-with-compare-and-contrast/SKILL.md): How to evaluate multiple potential solutions simultaneously rather than pursuing a single idea, using structured compare-and-contrast techniques to make better product bets.
 
 ## FAQ
 
@@ -203,7 +203,7 @@ The important thing is that the artifacts are visible and accessible to the enti
 
 - [Continuous Discovery Habits by Teresa Torres \| Open Library](https://openlibrary.org/books/OL32480798M/Continuous_Discovery_Habits)
 - [3 Best Practices for Adopting Continuous Product Discovery](https://producttalk.org/adopting-continuous-product-discovery)
-- [Everyone Can Do Continuous Discovery—Even You\!](https://producttalk.org/getting-started-with-discovery)
+- [Everyone Can Do Continuous Discovery - Even You\!](https://producttalk.org/getting-started-with-discovery)
 - [The Best Continuous Discovery Teams Cultivate These Mindsets](https://producttalk.org/continuous-discovery-mindsets)
 - [Continuous Discovery Habits: Discover Products that Create](https://inigomedina.co/library/work/torres-continuous-discovery-habits)
 - [Discovery vs Delivery: Dual-Track Product Teams \(2026\)](https://koji.so/docs/discovery-vs-delivery)
