@@ -1,49 +1,44 @@
 # Examples: Building Post-Purchase Loyalty Loops
 
-## Example: SaaS Project Management Tool Loyalty Loop
+## A subscription service with high renewals and low referrals
 
 **Scenario:**
 
-A B2B SaaS project management tool with a $49/month plan sees 40% annual churn. Customers who leave cite 'found a better alternative' in exit surveys—meaning they're re-entering the active evaluation phase of customer journey stages instead of staying in a loyalty loop.
+Illustrative scenario: a meal-kit subscription renews most customers each month, but almost no new customers arrive through referrals. Leadership reads the renewal rate as a sign of loyalty.
 
 **Walkthrough:**
 
-**Enjoy phase redesign**: The team identifies that users who create their first project and invite 3+ team members within 7 days have 3x higher retention. They build a guided onboarding flow that gets every new account to this milestone, including a personal check-in email from customer success on day 3 if the milestone hasn't been hit. They add a 'first project completed' celebration screen that shows time saved compared to the team's estimated manual process.
+The team surveys subscribers with the recommend question and joins the answers with behavior: referrals sent, skipped weeks and visits to the cancellation page.
 
-**Advocate phase**: At the moment a team completes their first project on time (satisfaction peak), the tool surfaces a prompt: 'Your team delivered on time—share how you did it.' This creates a LinkedIn post template pre-filled with the team's actual metrics. They also implement a 'bring another team' program where existing teams earn advanced features when they bring another team in their organization onto the platform.
+Illustrative scenario: the segmentation of 1,000 renewing subscribers looks like this.
 
-**Bond phase**: After 90 days, the tool generates a quarterly impact report showing projects completed, deadlines met, and hours saved. This data becomes the customer's organizational memory—leaving the tool means losing this historical insight. They also launch a community Slack where power users share templates and workflows, creating social bonds that increase switching costs.
+| Group | Subscribers | Referred someone |
+|-------|-------------|------------------|
+| Active loyalists (promoters, no cancellation visits) | 300 | 90 |
+| Passive loyalists (renewing, not promoters) | 700 | 7 |
 
-**Repurchase trigger**: Two weeks before annual renewal, the tool sends an automated 'Year in Review' showing total organizational impact. This pre-empts any re-evaluation by making the value undeniable. Churn drops from 40% to 22% within two quarters.
+Most renewing subscribers are passive. Comparing the groups shows that active loyalists cooked their first box within two days of delivery, while passive ones often let the first box sit. The team shortens the first-week recipes, adds a short setup message on delivery day, and moves the referral invitation to after the third successful meal. It repeats the segmentation each quarter to track the share of active loyalists.
 
-## Example: D2C Skincare Brand Loyalty Loop
+## A software product with a support problem hiding in early usage
 
 **Scenario:**
 
-A direct-to-consumer skincare brand sells a $65 serum. Average customer buys once and never returns. The brand spends $40 in acquisition costs per customer, making one-time purchases barely profitable. They need to design customer journey stages that bring buyers back without re-evaluation.
+Illustrative scenario: a small business accounting tool has steady renewals, but its recommend score is flat and reviews mention frustration during setup.
 
 **Walkthrough:**
 
-**Enjoy phase**: The brand redesigns their post-purchase email sequence. Instead of a generic 'thanks for your order,' customers receive a personalized routine guide based on the skin concerns they selected during checkout. On day 7, they get a 'what to expect in week 2' message with real customer photos showing typical early results. On day 21, a 'you should be seeing X by now' message with tips for maximizing results. Each email reinforces that results take time and the product is working.
+The team compares active and passive loyalists and finds a sharp difference in the first month. Customers whose first support ticket was resolved on first contact became active loyalists far more often than customers whose first ticket bounced between teams.
 
-**Advocate phase**: On day 30, when early results typically become visible, customers receive a 'skin check-in' that asks them to take a selfie. The tool compares it with the baseline photo taken during onboarding (a clever enjoy-phase touchpoint). Customers who see improvement are prompted to share their before/after on Instagram with a branded hashtag. The brand reposts the best stories, giving advocates social recognition.
+The team changes routing so that setup questions go to a dedicated group with authority to resolve them, and it writes help articles for the most common setup issues. It also stops sending upgrade offers during the first month. Advocacy is measured again after two survey cycles, alongside first-contact resolution for setup tickets.
 
-**Bond phase**: The brand introduces a personalized refill program that adapts to the customer's skin over time—seasonal adjustments, complementary product recommendations based on their skin profile, and early access to new formulations. The customer's skin profile becomes proprietary data that can't transfer to a competitor.
-
-**Repurchase trigger**: Based on bottle size and typical usage rate, the brand sends a 'running low?' reminder 5 days before the customer is likely to run out, with a one-tap reorder button. Customers who reorder within the loyalty loop receive a small loyalty discount—just enough to make comparison shopping feel like unnecessary effort. Repeat purchase rate increases from 15% to 38%.
-
-## Example: B2B Consulting Firm Engagement Loop
+## An insurer defending passive customers
 
 **Scenario:**
 
-A management consulting firm completes engagements averaging $150K but struggles with repeat business. Clients hire them for a project, then go quiet. When a new need arises, clients often issue RFPs and re-evaluate—putting the firm back into the initial consideration set of the customer journey stages instead of being the default choice.
+Illustrative scenario: a car insurer's customers renew each year at a high rate, but a competitor has launched a comparison tool that makes switching easy, and the insurer's losses at renewal are rising.
 
 **Walkthrough:**
 
-**Enjoy phase**: The firm restructures project delivery to include a 'quick win' milestone within the first 3 weeks of any engagement, even if the full project takes 6 months. They present interim findings that the client can act on immediately, creating an early sense of value. They also implement a 90-day post-project check-in to assess whether recommendations were implemented and share results data.
+The insurer segments customers and finds that most of those leaving were passive loyalists who had never filed a claim or contacted the company. They had no experience of the service to anchor their loyalty.
 
-**Advocate phase**: When projects deliver measurable results, the firm proposes co-authoring a case study or co-presenting at an industry conference. This positions the client contact as a thought leader (value for them) while generating advocacy for the firm. They also ask for introductions to other departments within the same company—warm referrals that leverage the existing relationship.
-
-**Bond phase**: The firm creates an exclusive 'alumni network' of client leaders they've worked with, hosting quarterly dinners and annual summits. They also provide a monthly industry brief customized to each client's sector and challenges. This positions the firm as an ongoing advisor, not a project vendor. Over time, the firm accumulates deep organizational knowledge that competitors would take months to replicate.
-
-**Repurchase trigger**: When the firm spots market shifts or regulatory changes relevant to past clients, they send proactive, personalized alerts with a brief analysis and an offer for a 30-minute discussion. This preempts the client's need to hire consultants—when the need arises, the firm is already in conversation. RFP-less re-engagement increases from 20% to 55% of repeat business.
+The insurer starts contacting customers well before renewal with a plain review of their cover and any savings available, rather than waiting for the renewal notice. It makes claims status visible online and asks customers who had a claim handled well whether they would share their experience. It tracks renewal and recommendation separately for customers who received the early review and those who did not.

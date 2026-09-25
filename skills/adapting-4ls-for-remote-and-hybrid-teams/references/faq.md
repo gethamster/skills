@@ -1,25 +1,21 @@
-# FAQ: Adapting the 4Ls Retrospective for Remote and Hybrid Teams
+# FAQ: Running a 4Ls Retrospective for Remote and Hybrid Teams
 
-## What are the best sprint retrospective ideas for remote teams?
+## Can a 4Ls retrospective be fully asynchronous?
 
-The 4Ls Retrospective is one of the most effective sprint retrospective ideas for remote teams because its four categories (Liked, Learned, Lacked, Longed For) map cleanly to async digital boards. Combined with anonymous input and a timeboxed synchronous call, it consistently produces higher participation and more honest feedback than formats that require real-time brainstorming.
+The writing part works well async, and GitLab's handbook recommends collecting retrospective feedback asynchronously so people can think on their own time. Discussion and agreeing on actions usually benefit from a live conversation. A common pattern is async writing followed by a shorter live session.
 
-## How long should a remote 4Ls retrospective take?
+## How long should the async window be?
 
-Plan for 24–48 hours of async brainstorming (requiring about 10–15 minutes of individual effort) plus a 45–60 minute synchronous video call. The total facilitator time including setup and documentation is typically 90 minutes spread across 2–3 days.
+Long enough to cover everyone's working hours, often a day or two. Too short and people in some time zones miss it. Too long and notes arrive stale or people forget.
 
-## Which tools work best for remote 4Ls retrospectives?
+## Should cameras be on?
 
-Miro, FigJam, and MURAL are excellent for visual boards with anonymous sticky notes and built-in voting. EasyRetro and Parabol are purpose-built retrospective tools with 4Ls templates. Choose whichever tool your team already uses—tool adoption friction is the biggest barrier to participation.
+It helps with reading the room, but it is a team decision. Ask for cameras during the check-in and discussion if the team is comfortable, and do not push people who are not.
 
-## How do I get honest feedback in a remote retrospective?
+## How do we handle a hybrid team fairly?
 
-Enable anonymous input during the async brainstorming phase, set clear ground rules that feedback is about processes not people, and never pressure anyone to reveal authorship of a sticky note. Anonymous input consistently surfaces issues that team members won't raise in a live video call.
+Run it as if everyone were remote: each person on their own device and headset, one digital board, no side conversations in the room. This removes most of the advantage people in the room otherwise have.
 
-## Can I run a 4Ls retrospective entirely asynchronously without a video call?
+## Should we record the live session?
 
-Yes, for teams with zero overlapping hours, you can run the entire 4Ls process async by adding a voting phase and a threaded discussion phase to the board. However, the synchronous discussion typically produces richer context and stronger action items, so use a fully async format only when a live call is genuinely impossible.
-
-## How do I prevent retro fatigue when running 4Ls every sprint with a remote team?
-
-Rotate your prompting questions each sprint, occasionally theme a retrospective around a specific topic (e.g., 'communication only' or 'tooling only'), and visibly track action items from previous retros so the team sees that their input drives real change. Fatigue usually stems from feeling unheard, not from the format itself.
+Some teams do for people who cannot attend. Others choose not to so people speak freely, which GitLab's handbook notes some of its groups prefer. Agree on it openly, and if you do not record, post a written summary instead.

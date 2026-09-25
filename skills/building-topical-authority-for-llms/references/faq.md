@@ -1,25 +1,21 @@
 # FAQ: Building Topical Authority That LLMs Recognize
 
-## How long does it take to build topical authority that LLMs recognize?
+## Is topical authority an official ranking signal?
 
-Most domains see initial LLM citations within 3-6 months of consistent, comprehensive content publishing. However, this depends on competition, content quality, and how frequently LLM retrieval indexes are updated. Plan for a 6-12 month sustained effort before expecting consistent citation across multiple AI platforms.
+No platform publishes a topical authority score. The term describes a combination of things the platforms do document: expertise and original content, clear site structure and internal links, and independent sources that reference you. Treat it as a planning concept that organizes that work.
 
-## How many pages do I need in a content cluster to establish topical authority?
+## How many pages does a subject cluster need?
 
-There's no magic number, but effective clusters typically contain 15-40 pages covering a topic exhaustively. The goal is to address every meaningful subtopic and question in your domain. Focus on completeness of coverage rather than hitting a specific page count.
+As many as there are real questions worth a separate page, and no more. The question map decides the number, not a target. Google warns that creating many pages for query variations in order to manipulate results violates its spam policies and does not make a site higher quality.
 
-## Does traditional SEO backlink authority help with LLM topical authority?
+## Do backlinks still matter for AI answers?
 
-Yes, but indirectly. Backlinks help your pages get indexed and ranked in traditional search, which increases the likelihood of appearing in LLM retrieval indexes. However, LLMs also evaluate content quality, depth, and consistency independently of backlink profiles. Backlinks are necessary but not sufficient.
+Links and mentions from independent sources remain part of how authority is judged. Research comparing AI search engines found a strong preference for earned third-party media over brand-owned content. The practical implication is to earn coverage from sources your audience and the engines already trust.
 
-## Can a small website outperform large publications in LLM citations?
+## Can a small site compete with large publishers?
 
-Absolutely. LLMs often prefer specific, expert sources over general publications for niche topics. A small site with deep, original, experience-backed content on a specific domain frequently gets cited over larger sites with shallow coverage. Depth and originality beat domain authority in the AI answer ecosystem.
+On a narrow subject, often yes. A small site with first-hand expertise and complete coverage of a niche can be the best source for those questions even when large publishers cover the broader topic. Research on AI search has also found a bias toward big brands, so a small site should pick its niche deliberately and build corroboration.
 
-## How does an AI SEO strategy for topical authority differ from traditional SEO content strategy?
+## Should the cluster live on the main domain or a separate site?
 
-Traditional SEO optimizes individual pages for specific keywords. An AI SEO strategy for topical authority optimizes an entire content ecosystem for comprehensive topic coverage, semantic consistency, and citation-worthiness. The focus shifts from ranking pages to becoming a trusted source that LLMs reliably reference across an entire subject domain.
-
-## Should I build topical authority on my main domain or a separate knowledge hub?
-
-Build on your main domain. LLMs associate authority with the domain as a whole, and splitting content across domains fragments your authority signal. Use a subdirectory structure (e.g., /resources/ or /guides/) to organize your content clusters while keeping everything under one domain.
+In most cases on the main domain, so that the expertise, links and brand signals reinforce each other. A separate site starts without that history and splits your signals. A separate site can make sense when the subject serves a different audience or brand, but that is a business decision to make on its own merits.

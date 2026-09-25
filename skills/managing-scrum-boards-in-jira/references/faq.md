@@ -1,25 +1,21 @@
 # FAQ: Managing Scrum Boards in Jira
 
-## What is the difference between a Jira scrum board and a Kanban board?
+## How do I create a Jira scrum board?
 
-A Jira scrum board organizes work into time-boxed sprints with a defined start and end date, a backlog, and sprint-specific reports like burndown charts. A Kanban board uses continuous flow without sprints, focusing on WIP limits and cycle time. Choose Scrum when your team needs structured iteration cadences; choose Kanban for ongoing support or maintenance work.
+Atlassian's documentation describes going to all boards, selecting Create board, choosing Create a Scrum board, and basing it on a new software space or one or more existing spaces. You need the Browse spaces permission. Team-managed spaces do not support creating additional boards directly, so Atlassian suggests creating a board from a saved filter in that case.
 
-## How do I add a burndown chart to my Jira scrum board?
+## Why does my Jira burndown chart look wrong?
 
-Burndown charts are built into every Jira scrum board automatically. Navigate to your board, click 'Reports' in the left sidebar, and select 'Burndown Chart.' It will display data for your active or most recently completed sprint. Ensure your estimation statistic is set to Story Points under Board Settings > Estimation for the most accurate chart.
+One likely cause is column mapping. Atlassian says the burndown and velocity charts count a work item as Done only when its status is mapped to the right-most column, and both charts only include items that match the board's filter. Story points on subtasks are not included. If the guideline line is missing, the sprint may have been started before any items were added to it.
 
-## Can multiple teams share the same Jira scrum board?
+## How does Jira calculate velocity?
 
-Technically yes, but it's not recommended. Each team should have its own scrum board with its own backlog and velocity tracking. If multiple teams work in the same Jira project, create separate boards using board-level JQL filters (e.g., filtering by team label or component). Shared boards make velocity meaningless and sprint planning chaotic.
+The velocity chart shows, for each recent sprint, the total estimate committed when the sprint started and the total completed when it ended. Atlassian describes velocity as the average of the completed estimates over recent sprints, based on the board's estimation statistic. Work added after the sprint starts is not included in the commitment total.
 
-## How many story points should I commit to in a Jira scrum sprint?
+## What happens to unfinished work when I complete a sprint?
 
-Use your team's velocity chart as the guide. Look at the average completed story points over the last 3-5 sprints and commit to that average or slightly below. Never use committed points as the baseline — use completed points. If you're a new team without history, start conservatively and let 3-4 sprints establish your baseline.
+Jira asks where to move incomplete work items: the backlog, a future sprint that already exists, or a new sprint. All subtasks must be Done first. In Scrum, unfinished items return to the Product Backlog, so moving them to the backlog lets the Product Owner decide their new position.
 
-## How do I handle bugs found during a sprint on the Jira scrum board?
+## Does Scrum require a burndown chart?
 
-If the bug is related to work in the current sprint, add it to the active sprint and link it to the parent story. If it's unrelated, add it to the backlog for prioritization in the next sprint. Track mid-sprint additions in your burndown chart to quantify disruption, and discuss recurring patterns during sprint retrospectives.
-
-## What Jira scrum board reports should I review during a sprint retrospective?
-
-Review three reports: the Sprint Report (shows committed vs. completed work, plus scope changes), the Burndown Chart (reveals daily progress patterns and scope creep spikes), and the Velocity Chart (shows multi-sprint trends). Together, these give your retrospective concrete data instead of just opinions about what went well or poorly.
+No. The Scrum Guide says burn-downs, burn-ups and cumulative flow can be useful for forecasting but "do not replace the importance of empiricism." Some teams use Jira's burndown in the Daily Scrum as a quick visual check. The requirement is that the Developers can inspect their progress toward the Sprint Goal.

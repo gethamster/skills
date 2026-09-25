@@ -1,25 +1,21 @@
-# FAQ: Building Content Waterfall Strategies
+# FAQ: Building a Content Waterfall Strategy for Repurposing
 
-## What is a content waterfall strategy?
+## What is a content waterfall?
 
-A content waterfall strategy is a sequential content production method where you create one pillar asset and then cascade it into multiple derivative formats across channels in planned phases. Each phase completes before the next begins, following the Waterfall methodology's linear structure.
+A content waterfall takes one core piece of content, usually called the pillar, and reuses it across channels as smaller derivative pieces. The Digital Marketing Institute uses that definition in its glossary. The pillar carries the research and the full argument. The derivatives adapt parts of it to the formats each channel rewards.
 
-## How many derivatives should a content waterfall produce from one pillar?
+## How is it related to the waterfall project methodology?
 
-The number depends on pillar depth. A 1,000-word blog post might yield 5–10 derivatives. A 5,000-word guide or 60-minute webinar can support 20–40+ derivatives. Plan your derivative map based on the pillar's actual substance—never stretch thin content across too many outputs.
+Only loosely. The name borrows the image of one source flowing down into many pieces, and the plan does run in ordered stages: pillar, derivatives, distribution, review. It does not use the phase gates, change control or requirements documents of the waterfall project model. Treat it as a marketing planning practice with a shared metaphor.
 
-## What is the difference between a content waterfall and content repurposing?
+## How many derivatives should one pillar produce?
 
-Content repurposing is often ad hoc—you decide after the fact to turn a blog post into social clips. A content waterfall plans the entire cascade upfront, structures production into sequential phases with gate reviews, and treats derivation as a disciplined workflow rather than an afterthought.
+As many as the pillar has distinct ideas worth sharing, in the formats your audience actually uses. Gary Vaynerchuk describes his team repurposing one piece of pillar content into 30 other pieces, spread across many platforms. A small team is better served by fewer, well-adapted pieces than by a long list of rushed ones. Let the matrix of ideas and channels decide the count.
 
-## Can I use a content waterfall approach with agile content teams?
+## Does repurposing content create duplicate content problems in search?
 
-You can hybridize, but the core value of a content waterfall is its sequential discipline—the pillar is locked before derivatives begin. Agile teams can iterate on derivative formats between waterfall cycles, but within a single cycle, the linear flow from pillar to derivatives to distribution should be respected.
+Repurposing is about adapting ideas to new formats, which produces different content, so a well-run waterfall rarely creates exact duplicates. If you republish a full article elsewhere, point the copy back to the original where the platform allows it and keep the original as the fullest version. Short derivatives such as clips and graphics do not compete with the pillar in search.
 
-## How long does a typical content waterfall cycle take?
+## How do we measure whether the cascade worked?
 
-A full cycle—from pillar creation through derivative distribution and performance review—typically takes 4–12 weeks depending on pillar complexity and derivative volume. Simple pillar-to-social waterfalls might complete in 2 weeks; research-report-based waterfalls with 40+ derivatives may run 3 months.
-
-## What tools do I need to manage a content waterfall?
-
-At minimum, you need a project management tool for phase tracking (Asana, Monday, or even a spreadsheet Gantt chart), a derivative tracking document mapping each piece to its pillar source, and a content calendar for sequenced distribution. No specialized software is required.
+Track each derivative against the pillar section it came from, and look at engagement and clicks by section and by format. The questions to answer are which ideas travelled, which formats worked on which channels, and whether derivatives sent people back to the pillar. Use the answers to plan the second round and choose the next pillar.

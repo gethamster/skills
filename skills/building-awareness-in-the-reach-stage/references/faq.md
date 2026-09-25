@@ -1,25 +1,21 @@
-# FAQ: Building Awareness in the Reach Stage
+# FAQ: Reach Stage
 
-## What is the awareness stage customer journey in the RACE Framework?
+## What counts as Reach in the RACE Framework?
 
-The awareness stage customer journey corresponds to the Reach stage in the RACE Framework. It's the top-of-funnel phase where potential customers first discover your brand through channels like search engines, social media, and paid advertising. The goal is to drive maximum qualified visibility before moving prospects into the Act (consideration) stage.
+Dave Chaffey defines Reach as building awareness and visibility of your brand, products and services on other sites and in offline media, to drive visits to your own web presences. It uses paid, owned and earned media touchpoints and aims to build repeated contact over time. Anything whose main job is to bring the right audience to you for the first time belongs here.
 
-## Which channels work best for the awareness stage customer journey?
+## Which awareness stage marketing channels should I start with?
 
-The best channels depend on your audience, but SEO, paid social media, paid search (broad and informational queries), display advertising, and content partnerships consistently perform well for the awareness stage. B2B brands often see strongest results from LinkedIn and organic search, while B2C brands frequently excel on Instagram, YouTube, TikTok, and Facebook.
+Start with the channels your defined audience already uses, then balance fast channels with compounding ones. Paid search and social ads can deliver visits quickly. Search-optimized content, email and earned coverage take longer and keep working after spending stops. Judge each by the visitors it brings, measured by what they do in Act.
 
-## How much budget should I allocate to the Reach stage vs. other RACE stages?
+## How do I measure brand awareness in digital marketing?
 
-A common starting allocation is 30-40% of total digital marketing budget to the Reach stage, but this varies by business maturity. New brands or those entering new markets may allocate 50%+ to awareness, while established brands with strong organic traffic can allocate as little as 20% and invest more in Convert and Engage stages.
+Use direct and indirect signals together. Direct measures include impressions, visits by channel and new users. Brand searches over time are a useful indirect signal, and Smart Insights lists them as a typical awareness measure. Surveys of your target audience add a direct read on awareness if you can run them regularly.
 
-## How do I measure success at the awareness stage of the customer journey?
+## How much budget should go to brand building versus activation?
 
-Key metrics include unique reach and impressions, new user sessions, cost per thousand impressions (CPM), share of voice relative to competitors, and brand search volume growth over time. Avoid judging awareness campaigns on direct conversion metrics—instead, track how awareness traffic flows into the Act stage using full-funnel RACE reporting.
+There is no fixed rule for every business. Binet and Field's research for the IPA found a 60:40 split between brand building and activation was the optimum in their 2013 report. Treat it as a reference point for checking whether your plan leans entirely on short-term activation.
 
-## How long does it take to see results from awareness stage campaigns?
+## How long before a Reach plan shows results?
 
-Paid media awareness campaigns typically show initial reach data within days, but meaningful pattern recognition requires 2-4 weeks of data. SEO-driven awareness takes 3-6 months to compound. Brand search volume—the truest indicator of awareness—usually takes 60-90 days of consistent multi-channel activity to show measurable uplift.
-
-## What's the difference between the awareness stage and the consideration stage in RACE?
-
-In the RACE Framework, the awareness stage (Reach) focuses on making potential customers aware of your brand through broad-reach channels. The consideration stage (Act) focuses on driving interactions—content engagement, email signups, product exploration—from people who already know you exist. Reach earns attention; Act earns interest.
+Paid channels show visit numbers almost immediately. Compounding channels such as content and search usually need months to build. Set expectations per channel and judge compounding channels on their trend rather than on the first few weeks.

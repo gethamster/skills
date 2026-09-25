@@ -1,43 +1,21 @@
-# FAQ: Identifying Obstacles and Building Mitigation Strategies
+# FAQ: Identifying V2MOM Obstacles and Mitigation Strategies
 
-## How many obstacles should a typical V2MOM have?
+## How many obstacles should a V2MOM list?
 
-A well-constructed V2MOM typically surfaces 15-30 raw obstacles during the assumption extraction process. After scoring and triaging, expect 3-6 Tier 1 obstacles with full mitigation plans, 5-10 Tier 2 obstacles with monitoring assignments, and the rest as documented Tier 3 items. If you have fewer than 10 total, you probably have not probed your assumptions deeply enough. If you have more than 6 Tier 1 items, either your scoring is inflated or your Methods section is overloaded.
+Enough to cover the serious risks to the top methods, which is usually a short list. A handful of precise obstacles with owners is more useful than a long catalogue. If the list grows long, rank it and plan responses only for the top few, leaving the rest visible for review.
 
-A v2mom example with 4-5 Tier 1 obstacles and clear mitigation plans is stronger than one with 15 undifferentiated risks.
+## What is a premortem, and why use it for obstacles?
 
-## Should I identify obstacles before or after defining my Measures?
+A premortem asks the team to assume the plan has already failed and write down why. Gary Klein described the technique for project planning, and it works well for V2MOMs because it makes concerns easier to say out loud. People who would not challenge a plan in a normal review will often explain why it failed once failure is the premise.
 
-Identify obstacles after Methods but before finalizing Measures. Your obstacle register directly informs what success looks like, because realistic measures must account for the risks you have identified. If a Tier 1 obstacle has a residual impact of "feature launches 3 weeks late," your Measures should reflect that possibility rather than assuming a best-case timeline. Some teams iterate, drafting preliminary measures, then adjusting them after the obstacle analysis reveals which Methods are most at risk.
+## Should obstacles include problems caused by leadership?
 
-Either sequence works, but never finalize Measures without reviewing your obstacle register first.
+Yes, when they are real. Unclear decision rights, competing priorities set by leadership, or a weak assumption in the company vision are often the most important obstacles. Leaving them out makes the document look confident and makes the plan fragile. Leaders who write their own obstacles honestly make it easier for everyone else to do the same.
 
-## How do I handle obstacles that span multiple V2MOMs in a cascading structure?
+## What is the difference between an obstacle and a method?
 
-When one team's obstacle is another team's dependency, both teams should document the obstacle in their own registers with cross-references. The upstream team (the one whose Method creates the dependency) owns the primary mitigation. The downstream team (the one waiting on the deliverable) should build a contingency countermeasure they can execute independently if the upstream mitigation fails. Share obstacle registers across cascading V2MOMs at every check-in so that score changes propagate.
+An obstacle is something that could stop a method from succeeding. The response to an obstacle can sometimes grow large enough to become a method in its own right, such as a hiring push. When that happens, move it into the methods list and rank it, and keep a short obstacle entry that points to it.
 
-If the upstream team re-scores a risk from Tier 2 to Tier 1, the downstream team needs to know immediately.
+## How often should obstacles be reviewed?
 
-## What if my team resists naming internal obstacles like skill gaps or political resistance?
-
-This resistance is normal and predictable. Internal obstacles feel like admissions of weakness, especially in organizations where vulnerability is not safe. Three techniques help. " Second, start with external obstacles to build momentum and trust in the process before turning to internal categories.
-
-Third, the facilitator should model vulnerability by naming an internal obstacle themselves first. If resistance persists, try anonymous input: have people submit internal obstacles on index cards or in a shared document without names, then discuss the themes rather than attributing specific concerns to individuals.
-
-## How often should I revisit and re-score my obstacle register?
-
-Match your obstacle review cadence to your V2MOM check-in cadence. For quarterly V2MOMs, review obstacles monthly. For annual V2MOMs, review quarterly at minimum and monthly during high-execution periods. The review should take 15-30 minutes if the register is well-maintained.
-
-Beyond the regular cadence, trigger an ad-hoc review whenever a significant change occurs: a key person leaves, a budget shifts, a competitor makes a major move, or a dependency delivers early or late. Stale obstacle registers are worse than no register at all, because they create a false sense of preparedness.
-
-## Can I use this obstacle identification process for a personal or individual contributor V2MOM?
-
-Yes, and it is simpler but equally valuable. For an individual V2MOM, extract assumptions from your personal Methods the same way, but the obstacle categories shift toward skill gaps, time conflicts, dependency on others' decisions, and energy management. You can skip the group scoring process and score on your own, but still write trigger conditions and countermeasures for your Tier 1 items. The discipline of pre-committing to a countermeasure is even more valuable for individuals, because when a solo contributor hits a blocker, there is no team to absorb the shock.
-
-Having a pre-decided pivot reduces decision fatigue at the worst possible moment.
-
-## Why does my obstacle register keep growing instead of shrinking over time?
-
-A growing register usually means one of two things. First, you may not be retiring resolved obstacles. At each review, explicitly ask which obstacles have been resolved or are no longer relevant, and move them to a Retired section. Second, execution naturally surfaces new risks that were not visible at planning time, which is healthy and expected.
-
-The total number of active obstacles should fluctuate but not trend upward indefinitely. If it does, check whether your Methods have expanded in scope without a corresponding V2MOM revision. Scope creep in Methods creates a cascade of new obstacles that the original plan did not anticipate.
+At every V2MOM checkpoint, and before the other sections. Obstacles change faster than visions and values. Mark which ones happened, which faded and which are new, and update the ranking and owners.

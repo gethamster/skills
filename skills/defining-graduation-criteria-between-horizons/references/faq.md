@@ -1,37 +1,21 @@
-# FAQ: Defining Graduation Criteria Between Horizons
+# FAQ: Defining Graduation Criteria Between Roadmap Horizons
 
-## How many dimensions should I include in my graduation criteria?
+## Do graduation criteria need numeric thresholds?
 
-Three to five dimensions work for most teams. Fewer than three misses important angles like resource readiness or strategic alignment. More than five creates assessment fatigue, and teams start skipping criteria or rating everything identically. Start with four (desirability, feasibility, viability, resource readiness) and add or remove after your first quarterly review based on which dimensions actually influenced decisions.
+Not usually. Numbers help only when your team already measures something reliably, such as a conversion rate from an experiment. Invented thresholds look rigorous but tend to be gamed or ignored. Most teams do better with clear statements about which kinds of evidence count for each transition.
 
-## Should I define graduation criteria before or after categorizing items into horizons?
+## Who should decide whether an item meets the criteria?
 
-Define criteria after you have an initial categorization. You need items in each horizon to calibrate your thresholds realistically. If you define criteria in the abstract, they tend to be either too strict (nothing graduates) or too loose (everything graduates). Categorize first using the [categorizing items skill](https://tryhamster.com/skills/categorizing-items-into-now-next-later-horizons), then build criteria, then test the criteria against your existing categorization to validate them.
+The product manager usually owns the decision, with input from engineering and design. Engineering's view is needed for Next to Now, because effort and technical approach are part of the checklist. The criteria make the decision transparent so others can challenge it with evidence.
 
-## How do graduation criteria interact with reprioritization across horizons?
+## What if a senior stakeholder wants to skip the criteria?
 
-Graduation criteria govern forward movement (Later to Next, Next to Now), while [reprioritization](https://tryhamster.com/skills/reprioritizing-across-horizons) can also move items backward (Now to Next, Next to Later). Backward movement does not need the same gate process. If strategic priorities shift or new information invalidates an assumption, items can move back immediately. Graduation criteria primarily prevent premature forward promotion, which is the more costly direction because it commits resources.
+Show which criteria the item still needs to meet and what work would satisfy them. Often the request becomes a request to start discovery sooner, which is easy to agree to. If there is a real external deadline, use the exception rule and flag the item so the trade-off is visible.
 
-## What if an initiative meets all criteria except one? Should I still block it?
+## Should the criteria be the same for every initiative?
 
-It depends on which criterion is unmet and how close it is to the threshold. Resource readiness is non-negotiable at the Next to Now gate because promoting without capacity guarantees stalling. For evidence-based criteria like desirability, a near-miss might warrant a time-boxed exception: promote to Now with a condition that the missing evidence is gathered within the first sprint. Document the exception and review whether the item would have benefited from waiting.
+Keep one standard checklist per transition, and allow lighter criteria for small, low-risk items such as minor fixes. The heavier checks matter for large bets where a wrong commitment is expensive. Write down which items qualify for the lighter path so the exception does not swallow the rule.
 
-Frequent exceptions signal your thresholds need adjustment.
+## How do graduation criteria relate to OKRs?
 
-## How do I create now next later roadmap graduation criteria for a team that resists process?
-
-Start with the lightest possible version: three binary checkpoints per gate, printed on a single card or slide. Frame it as a tool that saves meeting time, not a process that adds overhead. Demonstrate the value by using the criteria in one planning meeting to resolve a disagreement that would normally take 30 minutes of debate. Teams that resist process usually resist bureaucracy, not clarity.
-
-If the criteria genuinely make decisions faster and better, adoption follows.
-
-## Do graduation criteria apply differently when I create now next later roadmap for platform teams versus product teams?
-
-Yes. Platform and infrastructure teams often lack direct user-facing desirability evidence. Replace desirability with "impact evidence" showing measurable degradation or risk, such as latency metrics, error rates, developer velocity trends, or security vulnerability counts. Keep feasibility and resource readiness the same.
-
-Viability for platform work might focus on cost reduction or risk mitigation rather than revenue impact. Creating a separate criteria track for platform work ensures stability initiatives are not perpetually deprioritized against feature requests.
-
-## How long should it take to evaluate an item against graduation criteria?
-
-If the proposer has prepared the evidence in advance, evaluation should take 5-10 minutes per item during a planning meeting. The matrix is a checklist scan, not a deep analysis session. If evaluations regularly take longer than 15 minutes, either the criteria are too complex, the evidence is being gathered live instead of prepared beforehand, or the team is debating the criteria themselves rather than applying them. The preparation is the work.
-
-The meeting should be the verification.
+The link to an objective is usually one of the Later to Next criteria: an item that serves no current objective rarely deserves discovery time. OKRs also help with ordering items that meet the criteria, because the one that moves the most important key result goes first.

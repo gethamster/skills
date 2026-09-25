@@ -1,15 +1,20 @@
 ---
-name: operating-autonomously-in-customer-environments
-description: "This skill teaches forward deployed engineers how to make fast, independent technical decisions inside customer deployments while maintaining clear alignment with their home organization's product roadmap and engineering standards."
+name: "operating-autonomously-in-customer-environments"
+description: "How a forward deployed engineer makes fast technical decisions inside a customer environment while keeping the home team informed and aligned."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
+  method: "forward-deployed-engineering-five-lens-framework-fde-five-lens-framework"
+  datePublished: "2026-07-17"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Operating Autonomously in Customer Environments as a Forward Deployed Engineer
+# Operating Autonomously in Customer Environments
 
-> This skill teaches forward deployed engineers how to make fast, independent technical decisions inside customer deployments while maintaining clear alignment with their home organization's product roadmap and engineering standards.
+> How a forward deployed engineer makes fast technical decisions inside a customer environment while keeping the home team informed and aligned.
 
 ## Before you start
 
@@ -24,136 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Advanced |
-| Time to Learn | 2-4 hours for initial framework setup, then ongoing practice across engagements |
-| Outcome | You gain a repeatable decision framework that lets you move at customer speed, resolve ambiguous technical situations without waiting for HQ approval, and still produce artifacts that feed back cleanly into your organization's product roadmap. |
-| Prerequisites | Experience with at least one customer-facing technical deployment, Familiarity with your organization's product architecture and engineering standards, Basic understanding of mission scoping for FDE engagements, Working knowledge of your organization's communication and escalation norms |
-| Part of | [Forward Deployed Engineering Five‑Lens Framework (FDE Five‑Lens Framework)](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md) |
+| Time to Learn | A few weeks of practice on a live engagement |
+| Outcome | You can decide quickly on site within a written decision boundary, log each significant decision with its reasoning, and keep your home team aligned without waiting on approvals. |
+| Prerequisites | A signed mission brief, production engineering experience, familiarity with your company's platform and standards |
+| Part of | [FDE Five-Lens Framework](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md) |
 
 ## Overview
 
-The forward deployed engineer role is defined by a fundamental tension: you need to move fast inside a customer's environment, making real-time technical calls that shape production systems, but you also need to stay aligned with an engineering organization that cannot see what you see. Every day in the field presents choices that fall outside the scope of any pre-written playbook. Should you adopt the customer's internal API convention or enforce your own product's patterns? Should you build a one-off integration the customer needs this week, or push back because it conflicts with next quarter's platform direction? The ability to resolve these tensions independently, without either going rogue or grinding to a halt waiting for approvals, is what separates effective FDEs from those who drift into ad-hoc consulting.
+Operating autonomously in customer environments is the practical side of Empowered Autonomy, the third lens of the [FDE Five-Lens Framework](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7). Vishwanathan Chandran's one-line summary of the lens is "Bureaucracy is the enemy of forward deployment." A forward deployed engineer on site meets surprises every day: data that does not match the documentation, an approval that takes longer than planned, a stakeholder whose priority shifts. An engineer who routes every choice back to headquarters moves too slowly to keep the customer's trust.
 
-Within the [Forward Deployed Engineering Five-Lens Framework](https://tryhamster.com/methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework), operating autonomously is the third lens, sitting between interdisciplinary skill-building and continuous learning loops. It recognizes that the edge of a deployment is where the highest-quality signal lives, but also where the greatest risk of misalignment occurs. The skill is not about ignoring your home team. It is about building a structured approach to independent judgment so that your decisions are legible, reversible where possible, and consistently feed information back to the people who need it.
+Autonomy without structure creates a different problem. Decisions made in the field can leave technical debt that the core team inherits, create one-off forks of the product, or commit the company to things nobody at home agreed to. This skill resolves that tension with three tools: a decision boundary that says what the FDE can decide alone, a decision log that records what was decided and why, and a communication rhythm that keeps the home team informed without making them approvers.
 
-The concrete artifact you produce is a Decision Boundary Document (DBD) and an ongoing Decision Log. The DBD is created before or at the start of each engagement and classifies the types of decisions you will face into tiers of autonomy. The Decision Log is a running record of every non-trivial call you make in the field, capturing the context, your reasoning, the alternatives you considered, and the reversibility of the choice. Together, these artifacts make your autonomy transparent and auditable. They also become a primary input for the sibling skill of [transitioning field learnings into product features](https://tryhamster.com/skills/transitioning-field-learnings-into-product-features), because each logged decision carries signal about what the product should eventually handle natively.
+Palantir, where the role began, describes the environment that makes this work. Its careers page says "We optimize for impact, not consensus" and that there is "no bureaucratic distance between identifying a problem and fixing it" ([Palantir careers](https://www.palantir.com/careers/)). Its FDSE role description on Lever says engineers "experience the autonomy of a startup" while working in small teams that own end-to-end execution ([Palantir job posting](https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0)). Few companies start with that culture, so the tools here make autonomy explicit and reviewable.
 
-Mastering this skill means your home team trusts you to operate without supervision, your customer experiences fast resolution of technical blockers, and your organization accumulates a structured record of edge-case decisions that drives product evolution. Without it, FDE engagements either slow down to the speed of Slack threads with HQ, or they produce bespoke solutions that never connect back to the product.
+This skill assumes a mission brief already exists, because the mission sets the edge of the decision boundary. It is written for the individual FDE and for the lead who manages FDEs and needs to trust their judgment from a distance.
 
 ## How It Works
 
-The mental model behind autonomous FDE operation rests on a concept borrowed from military doctrine: commander's intent. In traditional command structures, front-line operators receive both orders and the intent behind those orders. When conditions on the ground change, the operator can deviate from the literal orders while still serving the intent. For a forward deployed engineer, the "commander's intent" is a combination of three things: the product strategy (where the product is headed over the next two to four quarters), the engineering standards (how your organization expects production systems to be built), and the engagement mission (the specific outcome this deployment is supposed to achieve). If you internalize all three before you enter the field, you can evaluate novel situations against them without asking anyone.
+The model comes from mission command. In mission-type tactics, subordinate leaders get a defined objective, a timeframe and resources, and decide the method themselves; the doctrine works only when they understand the commander's intent ([Wikipedia: Mission-type tactics](https://en.wikipedia.org/wiki/Mission-type_tactics)). For an FDE, the intent has three parts: the customer outcome in the mission brief, the product direction of the home company, and the engineering standards the company holds everywhere. A decision that serves all three can be made on the spot. A decision that trades one against another needs a conversation.
 
-The decision tiering system works because it forces you to do the hardest thinking before pressure arrives. In the calm of pre-engagement planning, you and your manager or tech lead classify decisions into three tiers. Tier 1 decisions are ones you make unilaterally and log afterward, like choosing which monitoring tool to install or deciding to use a customer's CI pipeline instead of yours. Tier 2 decisions are ones you make immediately but notify the home team about within 24 hours, like adopting a customer's authentication provider or adding a database index that changes query patterns. Tier 3 decisions require a synchronous conversation before execution, like committing to a custom feature the customer will depend on for more than 90 days, or making an architectural choice that would constrain future product direction.
+The decision boundary turns that intent into categories. Most teams find three are enough. Some decisions the FDE makes and does not need to report, such as implementation details inside the mission. Some the FDE makes and reports soon after, such as adopting a customer's tool or taking on a new dependency. Some the FDE brings to the home team before acting, such as changes to the core product, security exceptions or commitments that outlast the engagement. The value is in writing the categories down before the engagement, when nobody is under pressure.
 
-The tiering boundaries are not universal. They shift based on the engagement's risk profile, the maturity of the product area you are working in, and the trust level between you and your home team. Early in your tenure as an FDE, more decisions land in Tier 2 and 3. As trust builds and your judgment proves reliable, the boundaries expand and more decisions move to Tier 1. This graduated trust model is critical because it means autonomy is earned through demonstrated alignment, not simply granted by title.
+The second tool is the decision log. Michael Nygard's architecture decision records are a good template: each record captures the context, the decision, its status and its consequences, including the negative ones ([Nygard](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)). Nygard's reason for them applies directly to field work: the motivation behind a past decision is one of the hardest things to track, and without it later engineers either blindly accept the decision or blindly reverse it. A log kept by the FDE lets the home team review decisions after the fact instead of approving them in advance.
 
-The Decision Log serves a dual purpose. First, it creates accountability without bureaucracy. Your home team can review your decisions asynchronously, spot patterns, and intervene early if they see drift, all without requiring you to pause and ask permission. Second, the log becomes raw material for product learning. When you review thirty logged decisions from the last quarter and notice that twelve of them involved the same type of customer integration challenge, that is a strong signal the product needs a native solution. This is how autonomous operation feeds directly into the [continuous learning loop](https://tryhamster.com/skills/running-continuous-learning-loops-from-field-data), making every field decision a data point rather than an isolated event.
+The third tool is a rhythm of communication. The home team should hear from the FDE on a fixed schedule, with a short summary of decisions made, risks seen and help needed. OpenAI's FDE team, as described by [The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers), combines regular readouts with product leadership and an internal channel for field notes. Predictable updates build the trust that lets leaders widen the boundary over time.
 
-The system breaks down in two predictable ways. First, when the FDE does not internalize the product strategy deeply enough, they make technically sound decisions that inadvertently conflict with planned product direction. The fix is a mandatory product strategy sync before each engagement, not a slide deck review but a working session where you pressure-test scenarios. Second, when the Decision Log becomes performative, where the FDE logs decisions but nobody reads them, the accountability loop breaks and drift goes undetected for weeks. The fix is a structured weekly review cadence where someone at HQ actually reads the log and responds.
+A useful test for unclear cases is reversibility. If a decision is cheap to undo, make it and log it. If it is expensive to undo, such as a data migration, a customer-facing commitment or a change to shared code, slow down and bring it to the home team. That test keeps speed where it is safe and caution where mistakes compound.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Internalize the Three Pillars of Intent
+### Step 1: Write down the intent
 
-Before entering any customer environment, absorb three bodies of context. First, review the product roadmap for the next two to four quarters, focusing on which areas are stable versus under active development. Second, review your organization's engineering standards document, paying special attention to boundaries around data handling, security practices, and architectural patterns that are considered non-negotiable. Third, review the engagement mission document created during [mission scoping](https://tryhamster.com/skills/scoping-mission-driven-engagements), which specifies the business outcome this deployment targets.
+Before arriving on site, write three short statements: the customer outcome from the mission brief, the product direction your company is heading in for this area, and the engineering standards that apply everywhere, such as security, observability and code review. Share them with your lead and confirm you both read them the same way. These three statements are what you check a hard decision against.
 
-For each pillar, write down in your own words what it means for day-to-day decisions in this specific engagement. The output of this step is a one-page summary, written in plain language, describing what you can freely choose, what you should avoid, and where the gray areas are.
+### Step 2: Draw the decision boundary
 
-> **Pro tip:** Schedule a 30-minute call with your product manager or tech lead where you present your one-page summary back to them and ask 'What am I missing?' This call almost always surfaces implicit constraints nobody wrote down.
+List the kinds of decisions you expect to face and sort them into three groups: decide alone, decide and report, and discuss first. Put anything that changes the core product, weakens a security control or commits the company beyond the engagement in the discuss-first group. Agree the list with your lead. Revisit it after the first couple of weeks, when you know the environment better.
 
-### Step 2: Step 2: Build Your Decision Boundary Document
+### Step 3: Start a decision log
 
-Create a structured document that classifies anticipated decision types into three tiers. Tier 1 covers decisions you make unilaterally and log afterward: tooling choices, minor implementation patterns, non-critical scheduling calls. Tier 2 covers decisions you make immediately but report within 24 hours: adoption of customer infrastructure components, changes to data models, or integration approaches that differ from your product's defaults. Tier 3 covers decisions that require a synchronous check-in before execution: custom feature commitments, architectural choices with multi-quarter implications, any commitment that would be expensive to reverse, or anything touching contractual obligations.
+Create a shared log using an ADR-style template: context, decision, status, consequences. Record every decision in the report and discuss groups, and any decide-alone decision that a future engineer might question. Write entries on the day, while the reasoning is fresh. Keep the log where both your home team and the customer's maintainers can find it later.
 
-For each tier, list five to ten specific example decisions drawn from your engagement's domain. Share this document with your manager and get explicit written agreement on the tier boundaries.
+### Step 4: Set the communication rhythm
 
-> **Pro tip:** Include a 'When in doubt' rule at the bottom: if a decision does not clearly fit a tier, treat it as one tier higher than you think it should be. This default-to-caution prevents the most expensive mistakes.
+Agree a fixed cadence with your home team, such as a short written update at the end of each week and a live check-in less often. Each update covers decisions made, risks you see, and help you need. Use a separate, faster channel for anything urgent. Predictable updates are what allow your lead to trust decisions they did not see being made.
 
-### Step 3: Step 3: Set Up Your Decision Log
+### Step 5: Apply the reversibility test
 
-Create a shared, append-only log accessible to both you and your home team. A simple shared document, wiki page, or structured Slack channel works. Each entry should capture five fields: the date, a one-line summary of the decision, the tier classification, the context that made this decision necessary (what the customer needed, what constraint surfaced), and your rationale including alternatives you considered. The log does not need to be polished prose.
+Before any decision that is not plainly routine, ask how hard it would be to undo. Cheap-to-reverse choices, such as a library for an internal script, get made and logged. Expensive-to-reverse choices, such as a schema change on customer data, a promise to the customer's executives, or a change to shared platform code, go to the discuss-first path. When in doubt, spend a little time designing a way back before committing.
 
-It needs to be fast to write and easy to scan. Aim for entries that take less than three minutes to compose. Set a personal rule that every Tier 1 decision gets logged before end of day, and every Tier 2 decision gets logged within one hour of making it.
+### Step 6: Handle customer pressure explicitly
 
-> **Pro tip:** Use a consistent format template for each entry so your home team can scan quickly. Inconsistent formats force readers to parse structure before they can evaluate content, and they will stop reading.
+Customers will ask you to skip a standard or add scope because you are there and capable. Check the request against the mission and the standards. If it fits, do it. If it conflicts, explain the reason in terms the customer cares about, offer an alternative, and log the request and your answer. Palantir's FDSE notes that directing focus to the most valuable work is the hardest part of the role ([Palantir blog](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1)).
 
-### Step 4: Step 4: Establish Your Communication Cadence
+### Step 7: Review your own decisions regularly
 
-Agree on a regular rhythm for home-team syncs that balances autonomy with visibility. A common pattern is a weekly 20-minute async update (written summary of decisions made, blockers hit, and signals observed) plus a bi-weekly 30-minute synchronous call for deeper discussion. The async update is mandatory even if nothing major happened, because silence from the field is indistinguishable from 'everything is fine' and 'I have gone rogue.' In each async update, explicitly call out any decisions you are considering that might be Tier 2 or 3 but have not yet made. This gives your home team a chance to weigh in proactively rather than reactively.
+Set aside time at a fixed interval to reread your recent log entries. Look for decisions you would make differently now, decisions that should have been in a stricter group, and patterns your product team should hear about. Share the patterns in your next update. This habit catches drift before your lead has to.
 
-> **Pro tip:** Front-load your async updates with the single most important signal or decision from the week. If your home team only reads one sentence, make it the one that matters most.
+### Step 8: Run an autonomy retrospective at the end
 
-### Step 5: Step 5: Navigate Customer Pressure on Scope and Standards
-
-Customers will frequently request changes or approaches that conflict with your engineering standards or product direction. Develop a structured response pattern: acknowledge the need, explain the constraint, and propose an alternative that serves their goal within your boundaries. For example, if a customer insists on a data pipeline pattern that violates your organization's security model, acknowledge the business need driving their request, explain why the specific pattern is off-limits without being dismissive, and propose an alternative approach that achieves the same outcome within acceptable constraints. Document these negotiations in your Decision Log with the tag 'scope-pressure' so patterns become visible over time.
-
-When the pressure is persistent and legitimate, escalate it as a product signal rather than fighting it repeatedly in the field.
-
-> **Pro tip:** Never say 'our policy does not allow that' without immediately offering a concrete alternative. Customers interpret policy without alternatives as laziness or inflexibility.
-
-### Step 6: Step 6: Apply the Reversibility Test Before Every Non-Trivial Decision
-
-Before making any Tier 1 or Tier 2 decision, run a quick mental test: if this decision turns out to be wrong, how hard is it to undo? Reversible decisions, like choosing a logging format or selecting a staging environment configuration, should be made quickly with minimal deliberation. Irreversible or expensive-to-reverse decisions, like committing to a database schema that the customer will build downstream processes on, deserve more thought and often deserve a bump to a higher tier than initially classified. Note the reversibility assessment in your Decision Log entry.
-
-Over time, you will develop intuition for which decisions carry hidden irreversibility, like seemingly minor API design choices that external systems quickly depend on.
-
-> **Pro tip:** The most dangerous decisions are the ones that feel reversible but are not. Watch for anything a customer team will build on top of. Once they build, your 'reversible' choice becomes load-bearing.
-
-### Step 7: Step 7: Conduct a Weekly Self-Audit of Your Decision Log
-
-Every Friday, spend 15 minutes reviewing your own Decision Log entries from the week. Look for three patterns. First, clustering: are many decisions falling in the same domain? That might indicate a product gap worth escalating.
-
-Second, tier drift: are you classifying more decisions as Tier 1 that probably should have been Tier 2? Honest self-assessment here prevents the gradual erosion of decision boundaries. Third, rationale quality: are your logged rationales actually explaining your thinking, or have they devolved into one-word entries that would not help anyone reconstruct your reasoning later? Adjust your approach for the following week based on what you find.
-
-Share any patterns you notice in your next async update.
-
-> **Pro tip:** If you notice that you stopped logging certain categories of decisions because they felt routine, add them back. 'Routine' decisions that stop being logged are the ones most likely to drift without anyone noticing.
-
-### Step 8: Step 8: Conduct a Post-Engagement Autonomy Retrospective
-
-At the end of each engagement, review the complete Decision Log with your manager or tech lead. Walk through the decisions that had the most impact, both positive and negative. Identify decisions that were correctly tiered, decisions that should have been escalated sooner, and decisions where you had enough information to act faster than you did. Update your Decision Boundary Document template based on what you learned, so the next engagement starts with better-calibrated tiers.
-
-Also extract the three to five most important product signals from your log and hand them off as structured input for [transitioning field learnings into product features](https://tryhamster.com/skills/transitioning-field-learnings-into-product-features). This retrospective is what converts a single engagement's experience into durable organizational knowledge.
-
-> **Pro tip:** Invite someone from the product team to the retrospective, not just your engineering lead. Product managers see signal in your field decisions that engineering leads might classify as implementation details.
+When the mission closes, review the log with your lead. Which boundary categories were right, which were too loose or too tight, and which decisions created work for the core team? Update the boundary template for the next engagement. Hand the log to the customer's maintainers as part of the handoff.
 
 ## Best Practices
 
-- Write your Decision Boundary Document before you have access to the customer environment, when you can think clearly without operational pressure. Once you are embedded and fielding requests, you will not have the headspace to draw thoughtful tier boundaries, and you will default to either over-escalating (slow) or under-escalating (risky).
-- Keep your Decision Log entries factual and non-defensive. Write 'Chose X because of constraint Y, alternative Z would have required W' rather than 'Had to do X because the customer was being difficult.' Defensive framing signals to your home team that you are justifying rather than documenting, and it erodes trust in the log's accuracy.
-- Negotiate your Decision Boundary Document with your manager as a two-way conversation, not a top-down assignment. If you disagree with a tier classification, say so during setup. Resentment about boundaries set without your input leads to quiet boundary violations in the field, which leads to the kind of misalignment the whole system is designed to prevent.
-- When a customer stakeholder asks you to commit to something that falls in Tier 3, never say 'I need to check with my team' in a way that signals you lack authority. Instead, say 'I want to make sure we do this in a way that is sustainable for both of us, so let me align internally on the best approach.' This frames the delay as due diligence, not weakness.
-- Maintain a separate, private 'ambiguity journal' for situations where you were genuinely unsure what the right call was, even after making it. Review this journal quarterly. The entries that repeat are telling you where your decision framework has gaps, and they are the highest-leverage items to discuss with your manager at your next boundary recalibration.
-- Schedule your product strategy sync no more than one week before the engagement starts, not a month before. Product direction changes fast, and entering a customer environment with stale strategic context is worse than entering without context at all, because stale context creates false confidence.
-- Proactively share positive customer signals with your home team, not just problems and edge cases. If you only report friction, your team develops a warped view of the deployment and starts tightening your autonomy out of concern. Balanced reporting sustains trust and keeps your Tier 1 boundary appropriately wide.
+- **Agree the boundary before you arrive.** Negotiating authority in the middle of a customer crisis is slow and tense. A list agreed in advance lets you act and your lead relax.
+- **Log decisions on the day.** Reasoning fades within days. A short entry written immediately is worth more than a thorough one reconstructed later.
+- **Record negative consequences too.** Nygard's template asks for all consequences, including negative and neutral ones. The costs you record are the ones your team can plan for.
+- **Make updates boring and regular.** A predictable weekly note builds more trust than occasional long reports. Leaders widen autonomy for engineers whose updates never surprise them.
+- **Treat shared code as discuss-first.** A quick fork of platform code for one customer becomes a long-term maintenance cost for everyone. Route those changes through the product team.
+- **Explain refusals in customer terms.** When you decline a request, tie the reason to the customer's own outcome or risk. That keeps the relationship intact.
 
 ## Common Mistakes
 
-- **Going silent when things are going well** — FDEs often stop communicating with their home team when a deployment is running smoothly, reasoning that no news is good news. The problem is that silence is ambiguous. ' After two weeks of silence, you will find your Tier 1 decisions being second-guessed retroactively. Set a mandatory async update cadence and stick to it regardless of how routine the week felt.
-
-Include a brief 'health signal' even when there is nothing notable to report.
-- **Treating all customer requests as equally urgent** — In the field, customer urgency is contagious. A customer escalation feels like a fire that must be extinguished immediately, which leads FDEs to make Tier 2 and Tier 3 decisions at Tier 1 speed. The signal to watch for is when you notice yourself classifying a decision as Tier 1 while feeling anxious, because anxiety usually means the stakes are higher than Tier 1 warrants. When you feel urgency pressure, apply the reversibility test explicitly and add 30 minutes of buffer before committing.
-
-Most customer 'emergencies' can absorb a 30-minute delay without meaningful impact.
-- **Letting the Decision Boundary Document go stale after week one** — Most FDEs create the DBD at the start of an engagement and never update it, even as the engagement's context shifts. New stakeholders appear, scope evolves, and the customer's technical landscape changes in ways that invalidate original tier classifications. A decision that was Tier 1 in month one, like choosing a caching strategy, might become Tier 2 in month three when the customer builds production workflows on top of your cache. Review your DBD every two weeks and adjust tiers based on what you have learned about the deployment's actual risk surface.
-- **Building custom solutions to avoid difficult conversations with the customer** — When a customer's request conflicts with your product's direction, it is tempting to build a bespoke workaround rather than have an uncomfortable alignment conversation. This creates technical debt that your home team does not know about and that the customer will treat as a supported feature. The signal is when you find yourself building something and thinking 'I will clean this up later.' Instead, log the customer need as a product signal, have the alignment conversation, and propose a scoped alternative that does not create hidden obligations. Every avoided conversation becomes a larger conversation later.
-- **Over-indexing on home team alignment at the expense of customer speed** — Some FDEs, especially early in their tenure, treat almost every decision as Tier 3 because they fear making a wrong call. This turns the FDE into a bottleneck: the customer waits for the FDE, who waits for HQ, who takes 24 hours to respond. The result is the customer bypasses you and builds their own solution, which is worse for everyone. If you find yourself escalating more than two decisions per week to Tier 3, your boundaries are too tight.
-
-Discuss this with your manager and deliberately move low-risk decisions down to Tier 1 to rebuild speed.
-- **Logging decisions without rationale** — Under time pressure, FDEs often log decisions as bare facts: 'Used customer's Kafka cluster instead of deploying our own.' Without the rationale, nobody can evaluate whether the decision was sound, and the entry has zero value as a product signal. The minimum viable rationale is one sentence answering 'why this over the alternative.' If you cannot articulate the rationale in one sentence, that is a signal you made the decision on instinct without enough deliberation, and you should revisit it.
+- **Waiting for approval on routine choices**: Asking headquarters about every decision slows delivery and signals to the customer that you cannot act. Use the boundary to decide routine matters yourself and report them.
+- **Acting on irreversible decisions alone**: Speed on a schema migration or a customer commitment can create problems that outlast the engagement. Apply the reversibility test and bring those decisions home first.
+- **Keeping the reasoning in your head**: Without a log, nobody can review your decisions, and the next engineer cannot tell which ones still matter. Write the context and consequences down.
+- **Going quiet**: Long silences make your home team nervous and prompt them to pull decisions back. Keep the cadence even when there is little to report.
+- **Letting the boundary go stale**: A boundary that made sense on day one may be too tight or too loose a month later. Revisit it with your lead once you know the environment.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md) — Forward Deployed Engineering Five‑Lens Framework (FDE Five‑Lens Framework)
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md): FDE Five-Lens Framework
 
 ## Related Skills
 
-- [Scoping Mission-Driven FDE Engagements](../scoping-mission-driven-engagements/SKILL.md)
+- [FDE Engagement Scoping: Write a Mission Brief](../scoping-mission-driven-engagements/SKILL.md)
 - [Shipping Production Systems Inside Client Infrastructure](../shipping-production-systems-inside-client-infrastructure/SKILL.md)
-- [Measuring FDE Success by Business Outcomes](../measuring-fde-success-by-business-outcomes/SKILL.md)
-- [Running Continuous Learning Loops from Field Deployments](../running-continuous-learning-loops-from-field-data/SKILL.md)
-- [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
-- [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
-- [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
+- [Continuous Learning Loops from Field Deployments](../running-continuous-learning-loops-from-field-data/SKILL.md)
+
+## Sources
+
+- [Vishwanathan Chandran: The Rise of the Forward Deployed Engineer](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7)
+- [Palantir Careers](https://www.palantir.com/careers/)
+- [Palantir: Forward Deployed Software Engineer job posting](https://jobs.lever.co/palantir/dab396d4-2f14-4796-aac0-0d82883dccf0)
+- [Wikipedia: Mission-type tactics](https://en.wikipedia.org/wiki/Mission-type_tactics)
+- [Michael Nygard: Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)
+- [The Pragmatic Engineer: What are Forward Deployed Engineers?](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers)

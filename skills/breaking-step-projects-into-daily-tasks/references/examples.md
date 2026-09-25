@@ -1,55 +1,37 @@
-# Examples: Breaking Step-Projects into Actionable Daily Tasks
+# Examples: Breaking Step-Projects into Daily Tasks
 
-## Example: SaaS Onboarding Tooltip Experiment (Small Team, 2 Engineers)
-
-**Scenario:**
-
-A B2B SaaS company has a step-project to test whether adding five contextual tooltips to the dashboard reduces 'how do I' support tickets by 15% over two weeks. The team is two full-stack engineers and one technical product manager. Time box: 8 engineering days (4 days per engineer). The team uses a Kanban board in Linear.
-
-**Walkthrough:**
-
-' Three deliverables are identified: tooltip UI component, analytics instrumentation, and rollout configuration. The tooltip UI deliverable breaks into six tasks: write copy for five hotspots (half day), build reusable tooltip component (one day), wire tooltip triggers to five dashboard elements (one day), add feature flag wrapper (half day), deploy to staging (half day), cross-browser QA (half day). Analytics instrumentation breaks into three tasks: add tooltip-view and tooltip-dismiss events to the analytics layer (half day), create a dashboard in the analytics tool filtering support tickets tagged 'how-do-I' (half day), document the measurement methodology (quarter day). Rollout configuration breaks into two tasks: configure feature flag for 50% rollout (quarter day), schedule data review meeting for day 15 (quarter day).
-
-5 days of buffer within the 8-day time box. The critical path runs through the tooltip component build, trigger wiring, staging deploy, and QA. Analytics work runs in parallel. Engineer A owns the component and trigger work.
-
-Engineer B owns analytics and rollout. The task board is populated in Linear with dependencies linked, and the team starts pulling tasks the next morning.
-
-## Example: E-Commerce Checkout Flow Test (Cross-Functional Team, Sprint-Based)
+## Tasks for a smoke test
 
 **Scenario:**
 
-A B2C e-commerce company is running a step-project to test a single-page checkout against their current multi-step flow. The hypothesis is that single-page checkout increases completion rate by 10%. The team includes three engineers, a designer, and a technical product manager. They work in two-week sprints. The step-project must fit within one sprint.
+Illustrative scenario: a step-project tests whether users want to share dashboards with people outside their account. The step is a fake-door test: a "Share externally" button that records clicks and shows a short message.
 
 **Walkthrough:**
 
-' Four deliverables emerge: single-page checkout UI, A/B test infrastructure, payment integration on the new page, and results analysis. 5 day). 5 day). 5 day).
+The team lists three deliverables: the button and message, the click event in analytics, and a short analysis at the end. Broken down with the engineer, that becomes a handful of tasks: add the button behind a flag, write the message, add and verify the event, enable the flag for a sample of users, and prepare the query for the result.
 
-25 day). Total: 15 tasks across four deliverables. The critical path is the design mockup dependency followed by the UI implementation chain. The technical product manager contacts the designer before sprint planning to confirm the mockup will be ready by sprint day 1.
+The event task is sequenced first, so nothing reaches users before measurement works. Each task is tagged with the step's code. The whole step fits comfortably in one sprint, and no task takes more than a day.
 
-Tasks are loaded into the sprint backlog with dependencies annotated. Each engineer pulls from the Ready column daily.
-
-## Example: Internal Tool Automation Step-Project (Single Engineer, Kanban)
+## Cutting a step back to its question
 
 **Scenario:**
 
-A technical product manager at a mid-stage startup has a step-project to test whether automating the weekly metrics report saves the ops team 3+ hours per week. One backend engineer is available for this work alongside other responsibilities. The team uses a continuous-flow Kanban board with no fixed sprints. Time box: 10 working days.
+Illustrative scenario: a step-project is meant to test whether a simplified pricing page increases trial starts. The first task list includes a full design system update, new illustrations and localization.
 
 **Walkthrough:**
 
-' Two deliverables are identified: the automated report pipeline and the measurement apparatus. 5 day). 25 day). Total: 10 tasks, roughly 5 engineering days of effort spread across 10 calendar days to account for the engineer's other commitments.
+The product manager reads the list against the hypothesis. The question is about the page's structure and wording, so localization, new illustrations and the design system work are not needed to answer it. Those tasks move to a note for the full build if the idea succeeds.
 
-The critical path is the SQL query, formatting script, and scheduling chain. The technical product manager owns the ops team interview and measurement tasks. The engineer owns all pipeline tasks. Because the Kanban board is shared with other work, the step-project tasks are tagged with a project label so daily standups can filter by project.
+What remains is a new page layout using existing components, copy changes, an A/B split and the tracking to compare trial starts. The step now fits its time box, and the team can read the result within the planned end date.
 
-## Example: Mobile App Feature Flag Experiment (Large Team, Multiple Step-Projects in Flight)
+## Closing tasks when an idea is stopped
 
 **Scenario:**
 
-A consumer mobile app company has four step-projects running simultaneously across a team of eight engineers. The technical product manager needs to decompose a new step-project to test whether a simplified home screen increases daily active usage by 5%. The challenge is fitting this decomposition into an already busy sprint alongside three other active step-projects.
+Illustrative scenario: halfway through a step-project, early interview results clearly reject the idea's main assumption. The step's owner and the team agree to stop the idea at the weekly board review.
 
 **Walkthrough:**
 
-The technical product manager starts by reviewing the team's current capacity. Three engineers are fully committed to other step-projects. Two engineers have partial availability (roughly 3 days each in the upcoming two-week sprint). ' Because capacity is constrained, the deliverables must be minimal.
+Because every task is tagged with the step's code, the team finds all its open tasks in a minute. They close them with a note linking to the interview summary, and archive the partly built prototype branch.
 
-Two deliverables are defined: simplified home screen variant (using existing components, no new UI), and experiment tracking. 5 day). 1 day). Total: 8 tasks, approximately 4 engineering days.
-
-This fits within the 6 available days from the two partially available engineers, leaving buffer for cross-step-project context switching. The technical product manager assigns Engineer A (iOS-focused) to the layout and flag tasks, and Engineer B (data-focused) to the analytics and dashboard tasks. Platform testing is split. The task board uses a dedicated swimlane for this step-project so it does not visually compete with the three other active step-projects.
+The step's record in the idea bank lists what was built, what was learned, and why the idea was stopped. The freed capacity goes to the next step on the GIST board at the next sprint planning.

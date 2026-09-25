@@ -1,61 +1,43 @@
-# Examples: Measuring KPIs and Metrics for Each Journey Stage
+# Examples: Measuring Customer Journey Metrics and KPIs by Stage
 
-## Example: B2C E-commerce Company (Small Team, 4 People)
-
-**Scenario:**
-
-A direct-to-consumer skincare brand doing $2M in annual revenue with a four-person marketing and operations team. They sell through their own Shopify store and Instagram. They have Google Analytics, Shopify analytics, and Klaviyo for email. Their main growth challenge is that traffic is growing but revenue is flat, and they suspect a conversion problem but are not sure where.
-
-**Walkthrough:**
-
-The team maps five stages with these customer journey metrics. Awareness: Instagram reach and branded search volume (baseline: 45K monthly reach, 1,200 branded searches). 2% email signup rate). Purchase: add-to-cart to purchase conversion rate and average order value (baseline: 32% cart conversion, $67 AOV).
-
-Retention: 90-day repeat purchase rate and Klaviyo email engagement rate (baseline: 18% repeat purchase, 22% email click rate). Advocacy: Instagram UGC posts tagged with their brand hashtag and review submission rate (baseline: ~40 UGC posts per month, 8% review submission rate). The immediate finding: product page view rate is 28%, which is healthy, but cart conversion at 32% is below the Shopify benchmark of 45% for their category. This isolates the problem to the Purchase stage, specifically between add-to-cart and checkout.
-
-They investigate and discover that shipping costs displayed at checkout are causing abandonment. They test a free shipping threshold and monitor the cart conversion metric weekly. Within six weeks, cart conversion improves to 41% and monthly revenue increases by $28K.
-
-## Example: B2B SaaS Company (Mid-Size, Product-Led Growth)
+## A first scorecard for a subscription app
 
 **Scenario:**
 
-A project management SaaS company with 15,000 free users and 1,200 paid accounts. The product offers a free tier with paid upgrades. The team includes marketing (5 people), product (8 people), and customer success (3 people). They use HubSpot for CRM, Mixpanel for product analytics, and Delighted for NPS.
-
-Their challenge is that free-to-paid conversion is 8%, which is below their 12% target, and they do not know which stage is leaking.
+Illustrative scenario: a small fitness app reports downloads and revenue each month and nothing in between. Leadership wants to know where to invest next quarter.
 
 **Walkthrough:**
 
-They build customer journey metrics for each stage. Awareness: organic search traffic to educational content and webinar registrations (baseline: 22K monthly organic sessions, 180 webinar registrations per month). 1 minutes average time on comparison page). Purchase: free-to-paid conversion rate within 14-day trial and CAC (baseline: 8% conversion, $142 CAC).
+The team writes entry and exit events for each stage and chooses one primary metric per stage.
 
-Retention: 90-day retention rate for paid accounts and weekly active user percentage (baseline: 82% retention, 61% WAU). 2% referral participation). The review reveals that consideration is actually strong (1,400 trial signups is healthy), but the Mixpanel data shows that only 34% of trial users complete the onboarding checklist. The problem is not consideration-to-trial but trial-to-activated-user, which is a sub-transition within the Purchase stage.
+Illustrative scenario: the first scorecard, using round made-up numbers for one month.
 
-3%.
+| Stage | Primary metric | Value |
+|---|---|---|
+| Awareness | New visitors from target segment | 10,000 |
+| Consideration | Free trial starts | 1,000 |
+| Purchase | Trials converted to paid | 200 |
+| Retention | Paid users still active after a month | 120 |
+| Advocacy | Users who sent a referral | 12 |
 
-## Example: B2B Enterprise Services Firm (Large Team, Long Sales Cycle)
+Reading the chain, trial to paid converts 200 of 1,000, or 20%, and retention after a month keeps 120 of 200, or 60%. The biggest relative loss is between purchase and retention, so the next quarter's work goes to the first month of paid use rather than to more ads.
+
+## Resolving an argument about churn
 
 **Scenario:**
 
-A management consulting firm with $50M in revenue targeting Fortune 500 companies. Sales cycles average 6-9 months. The team includes a 12-person marketing department, a 30-person business development group, and a 6-person client success team. They use Salesforce, Marketo, and a custom Power BI dashboard.
-
-Their challenge is that pipeline is healthy but close rates have dropped from 28% to 19% over the past year.
+Illustrative scenario: finance and customer success report different churn numbers for the same quarter, and each team trusts its own.
 
 **Walkthrough:**
 
-The firm assigns customer journey metrics to each stage, adapting the framework for their long B2B cycle. Awareness: keynote speaking invitations, media mentions, and C-suite newsletter subscribers (baseline: 8 keynotes per quarter, 22 mentions, 4,500 subscribers). Consideration: qualified meeting requests and RFP invitations (baseline: 35 qualified meetings per quarter, 12 RFP invitations). Purchase: proposal-to-close rate and average deal size (baseline: 19% close rate down from 28%, $420K average deal).
+The definitions step shows the cause. Finance counts lost revenue, including downgrades. Success counts lost accounts and excludes customers who paused. Both are valid, but they answer different questions. The scorecard adopts logo churn as the primary retention metric for the stage owner and keeps revenue churn as a diagnostic, with both formulas written down. The next review starts with one number.
 
-1 out of 5 satisfaction). Advocacy: client referral introductions and case study participation willingness (baseline: 6 referral intros per quarter, 30% case study willingness). The close rate decline from 28% to 19% is clearly a Purchase stage problem. Deeper analysis of Salesforce stage progression data shows that deals are stalling at the "proposal review" substage, with the average time in that stage increasing from 18 days to 34 days.
-
-The firm investigates and discovers that a new procurement process at several target accounts is requiring additional security and compliance documentation that the firm had not been including in initial proposals. They create a standardized compliance appendix for proposals, reduce proposal review time to 21 days, and close rate recovers to 24% within two quarters.
-
-## Example: Subscription Media Company (B2C, Content-Driven)
+## Adding effort as a diagnostic
 
 **Scenario:**
 
-A digital news publication with 500K monthly unique visitors, 80K newsletter subscribers, and 12K paid subscribers at $10/month. They use a custom CMS, Google Analytics 4, Mailchimp, and Stripe. Their concern is that paid subscriber growth has plateaued at about 400 net new subscribers per month despite traffic increasing 20% year-over-year.
+Illustrative scenario: an insurance broker's retention metric slips, and satisfaction surveys look unchanged.
 
 **Walkthrough:**
 
-The team defines customer journey metrics across all five stages. Awareness: monthly unique visitors and social media referral traffic (baseline: 500K uniques, 85K social referrals). 4 articles per session). 8% paywall CTR).
-
-1 sessions per week). 4% share rate). 8% has not changed, meaning the consideration stage is not converting the additional traffic. Further investigation shows that the new traffic is coming from viral social posts that attract a different audience than the publication's core readership.
-
-These visitors read one article and leave. 1% and monthly net new paid subscribers rise to 620.
+The team adds a short effort question after policy changes and claims: how easy was it to get this done. Responses show that changing a policy online is hard enough that many customers call instead, and several of those customers later leave. The retention owner simplifies the online change form and watches both the effort responses and renewal rate over the following quarters.

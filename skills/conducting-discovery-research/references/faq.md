@@ -1,25 +1,21 @@
-# FAQ: Conducting Discovery Research in the Discover Phase
+# FAQ: Conducting Discovery Research in the Double Diamond
 
-## How many user interviews should I conduct in the Discover phase of the double diamond design process?
+## How many interviews does the Discover phase need?
 
-Plan for 8-15 interviews across different user segments. Research shows thematic saturation typically occurs around 12 interviews for a well-defined domain. If you're exploring a broad or unfamiliar problem space, lean toward the higher end. Quality of recruitment matters more than raw numbers.
+There is no fixed number. Plan a handful of sessions per segment you care about and keep going until new sessions mostly repeat what you have already heard. Guest, Bunce and Johnson's often-cited study found that themes stabilised within about a dozen interviews in a fairly uniform group, and later work found that studies spanning very different sites needed more. Let the repetition you observe decide, and report the segments you did not reach.
 
-## What's the difference between the Discover phase and the Define phase in the double diamond?
+## What is the difference between Discover and Define?
 
-The Discover phase uses divergent thinking to broadly explore and gather raw data about the problem space. The Define phase uses convergent thinking to synthesize those findings into a clear problem statement. Discover expands your understanding; Define narrows it to an actionable focus.
+Discover is divergent: it widens the team's understanding by gathering evidence without ranking it. Define is convergent: it clusters that evidence into themes and chooses one problem to solve. Keeping them apart stops early themes from steering the rest of the research. In practice there is a short overlap at the end of Discover when you check coverage.
 
-## How long should the Discover phase take in a double diamond design process?
+## Can we skip desk research and go straight to users?
 
-Typically 2-4 weeks depending on project complexity, access to users, and team size. A focused sprint with dedicated researchers can accomplish meaningful discovery in 2 weeks. Larger or more ambiguous problem spaces may need 4-6 weeks. Always timebox to prevent scope creep.
+You can, but you will waste sessions. Support logs, analytics and past research often answer basic questions about what happens and how often, which frees interviews for why it happens. A short desk research pass also makes your interview guide sharper. Keep it brief and stop when new material repeats what you have.
 
-## Can I skip desk research and go straight to user interviews?
+## How do we do discovery research with no access to users?
 
-You can, but you'll waste interview time asking questions that existing data already answers. Desk research gives you baseline context and sharpens your interview questions. Even 2-3 days of secondary research significantly improves the quality of your primary research conversations.
+Look for the people closest to users: front-line staff, call centre notes, complaint letters, sales and support teams. Treat what they tell you as second-hand evidence and label it that way. If you cannot reach anyone affected at all, say so in the handover, because a problem definition built without user contact rests on assumptions.
 
-## How do I convince stakeholders to invest time in discovery research instead of jumping to solutions?
+## Who should take part in discovery research?
 
-Frame discovery research as risk reduction: it costs far less to spend 2-3 weeks understanding the problem than to build the wrong solution and rework it. Share examples of projects where skipped discovery led to costly pivots. Involve stakeholders in research sessions so they experience user pain firsthand.
-
-## What tools are best for organizing discovery research findings?
-
-Dovetail and Condens are purpose-built for research repositories with tagging and analysis. Miro and FigJam work well for collaborative note capture and affinity mapping. For simpler setups, a well-structured Notion database or Google Sheets with consistent tagging is perfectly effective. Choose based on team size and budget.
+A small core team runs it, but invite engineers, product managers and stakeholders to observe sessions or review raw material. People who have heard users directly argue less about what the problem is. Keep observers quiet during sessions and debrief with them afterwards.

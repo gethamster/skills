@@ -1,27 +1,37 @@
-# Examples: Estimating Work with Story Points and Planning Poker
+# Examples: Scrum Estimation with Story Points
 
-## Example: E-commerce team's first planning poker session
-
-**Scenario:**
-
-A newly formed Scrum team at an e-commerce company is preparing for their third sprint. They've never formally estimated before and have been pulling stories into sprints based on gut feel, often over-committing. The product owner has 12 refined stories ready for estimation.
-
-**Walkthrough:**
-
-The team picks a previously completed story—'Add product to wishlist'—as their reference, rating it a 3. It involved a new API endpoint, a simple database write, frontend button integration, and standard test coverage.
-
-The first story up for estimation is 'Implement guest checkout flow.' After the product owner explains the acceptance criteria, the team votes: 5, 8, 8, 13, 8. The developer who voted 13 explains they're concerned about payment gateway edge cases with guest users. The one who voted 5 hadn't considered the email verification step. After a 2-minute discussion, the re-vote comes in at 8, 8, 8, 8, 13—they record it as an 8.
-
-They power through 12 stories in 45 minutes, totaling 64 points. Since they don't have velocity data yet, they commit to 40 points for the sprint (a conservative approach). They complete 38 points. Over the next two sprints they complete 42 and 44. Their rolling average velocity settles around 41 points, and sprint planning becomes dramatically more predictable.
-
-## Example: Using velocity to forecast a product launch
+## A first Planning Poker session
 
 **Scenario:**
 
-A mobile app team has been running Scrum for 6 months with a stable velocity of 26 points per 2-week sprint (range: 22-30). The VP of Product asks: 'When can we launch the v2.0 feature set?' The remaining backlog for v2.0 totals 145 story points.
+Illustrative scenario: a new Scrum Team of five Developers has never estimated together. The Product Owner has eight refined items for the next two Sprints. The team agrees to use the modified Fibonacci scale and picks three finished items as references at 1, 3 and 8 points.
 
 **Walkthrough:**
 
-The Scrum Master calculates three scenarios: optimistic (30 points/sprint = 5 sprints = 10 weeks), average (26 points/sprint = ~6 sprints = 12 weeks), and pessimistic (22 points/sprint = ~7 sprints = 14 weeks). They present this as a range: 'We expect to complete v2.0 in 10-14 weeks, with 12 weeks being our most likely scenario.'
+The first item is a change to a sign-up form. Four Developers show 2 or 3, and one tester shows 8. Instead of averaging, the Scrum Master asks the tester to explain. She points out that the form is used in three places and each needs regression testing. The team estimates again and agrees on 5.
 
-The VP appreciates the transparency and uses the pessimistic scenario for the external launch date while planning internal readiness around the average. This data-driven approach—rooted entirely in the team's scrum estimation practice—replaces the old method of asking each developer for hour estimates and adding a 20% buffer.
+The fourth item gets two question marks, because nobody knows whether the payment provider supports refunds through its API. The team records that question, and the Product Owner takes an action to find out before the next session. The session ends with seven items sized and one waiting on an answer.
+
+## Using velocity as a range
+
+**Scenario:**
+
+Illustrative scenario: after four Sprints a team has completed 18, 24, 21 and 17 points. A manager asks the team to "commit to 24 from now on."
+
+**Walkthrough:**
+
+The Scrum Master shows the range instead of the best Sprint: somewhere between 17 and 24 points. In Sprint Planning, the Developers note that one person is on leave for half of the next Sprint, so they aim for the lower end and write a Sprint Goal that can be met with the top few items.
+
+The Scrum Master explains to the manager that the Sprint Goal is the commitment and the point total is a forecast. Pushing for the highest number would lead the team to inflate estimates, which would make the forecast useless without changing how much gets done.
+
+## An item nobody can estimate
+
+**Scenario:**
+
+Illustrative scenario: the Product Owner brings an item to "support single sign-on for enterprise customers." In Planning Poker, cards range from 5 to infinity.
+
+**Walkthrough:**
+
+The high estimators explain that the item could mean one identity provider or several, with or without automatic user provisioning. The low estimator had assumed one provider. The Product Owner realizes she does not know which customers need which option.
+
+The team does not record a number. Instead, the Product Owner splits the item into "single sign-on with one named provider" and a separate item for provisioning, and the Developers add a short investigation to find out what the first provider requires. The first slice is estimated at 5 points in the next session.

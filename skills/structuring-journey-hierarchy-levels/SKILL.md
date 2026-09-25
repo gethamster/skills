@@ -1,15 +1,20 @@
 ---
-name: structuring-journey-hierarchy-levels
-description: "This skill teaches you how to decompose the full customer experience into four nested hierarchy levels, from a single macro lifecycle (L0) down to granular touchpoint interactions (L3), so your organization can manage journeys at every scale without losing strategic context."
+name: "structuring-journey-hierarchy-levels"
+description: "Set the Ecosystem Journey Framework levels: define the L0, L1, L2, L3 journey framework, draw boundaries, and place every journey at one level."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: ecosystem-journey-framework
+  method: "ecosystem-journey-framework"
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Structuring Customer Journey Hierarchy Levels (L0-L3)
+# Ecosystem Journey Framework Levels: L0 to L3 Hierarchy
 
-> This skill teaches you how to decompose the full customer experience into four nested hierarchy levels, from a single macro lifecycle (L0) down to granular touchpoint interactions (L3), so your organization can manage journeys at every scale without losing strategic context.
+> Set the Ecosystem Journey Framework levels: define the L0, L1, L2, L3 journey framework, draw boundaries, and place every journey at one level.
 
 ## Before you start
 
@@ -24,144 +29,104 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 3-5 hours for initial hierarchy definition; 1-2 hours per L1 stage to decompose into L2 and L3 |
-| Outcome | You produce a complete, documented hierarchy tree where every journey in your portfolio has a clear level designation (L0 through L3), explicit parent-child relationships, and defined boundaries, enabling your organization to zoom in and out across the customer experience without duplicating work or losing strategic alignment. |
-| Prerequisites | Familiarity with basic customer journey mapping concepts (stages, touchpoints, personas), Access to existing journey maps, customer research, or service blueprints for reference, Understanding of your organization's customer lifecycle stages, Stakeholder alignment on what constitutes a 'journey' versus a 'process' or 'workflow' |
+| Time to Learn | A few hours to learn, a few workshops to agree the first hierarchy |
+| Outcome | Your organization has written level definitions and a journey hierarchy in which every journey has one level, one parent, and clear boundaries. |
+| Prerequisites | A customer journey inventory, sponsors from the main customer-facing teams |
 | Part of | [Ecosystem Journey Framework](../../methods/ecosystem-journey-framework/METHOD.md) |
 
 ## Overview
 
-Customer journey hierarchy levels solve one of the most persistent problems in experience management: the mismatch between the strategic view of the customer lifecycle and the operational reality of individual interactions. When teams map journeys without a hierarchy, they end up with dozens of disconnected maps at wildly different levels of detail. A product team maps a micro-interaction with a checkout flow while a marketing team maps the entire pre-purchase experience, and neither artifact connects to the other. The result is redundant work, contradictory priorities, and no shared language for discussing where the customer experience breaks down. Structuring journeys into four nested levels, L0 through L3, creates a common architecture that every team can navigate.
+The Ecosystem Journey Framework levels give an organization a shared zoom setting for its customer journeys. The usual labels are L0, L1, L2, and L3, running from the broadest view to the most detailed interaction. Structuring the hierarchy means deciding what each level contains, writing a test for it, and placing every journey from the inventory at exactly one level with one parent. The [parent method](../../methods/ecosystem-journey-framework/METHOD.md) explains why the framework works this way and compares how different sources number the levels.
 
-This skill sits at the foundation of the [Ecosystem Journey Framework](https://tryhamster.com/methods/ecosystem-journey-framework). Before you can [prioritize journeys](https://tryhamster.com/skills/prioritizing-journeys-for-optimization), [build a portfolio inventory](https://tryhamster.com/skills/building-a-journey-portfolio-inventory), or [identify cross-journey patterns](https://tryhamster.com/skills/identifying-cross-journey-insights), you need the hierarchy itself. Think of it as the taxonomy that makes everything else possible. Without it, journey management becomes journey chaos. The hierarchy gives you a shared coordinate system: when someone says "the onboarding journey," everyone knows whether they mean the L1 stage journey covering the entire onboarding phase, the L2 scenario journey for enterprise customers specifically, or the L3 micro-journey for the first-login tutorial.
+The L0 L1 L2 L3 journey framework has no single authoritative definition. TheyDo's article on the [journey framework](https://www.theydo.com/blog/articles/simplify-journey-mapping-with-the-journey-framework) describes L0 as a strategic overview for executives, L1 as a macro view of a purchasing journey, L2 as micro journeys such as navigating an online store, and L3 as individual-level source journeys. JourneyTrack's [guide to L0 to L3](https://blog.journeytrack.io/journeytrack-cx-blog/demystifying-journey-management-what-l0-to-l3-really-means) instead uses L0 for an ecosystem view of teams, partners, systems, and journeys, L1 for the customer lifecycle, L2 for core journeys like onboarding, and L3 for task flows like resetting a password. Smaply starts its hierarchy at L1 ([Smaply](https://www.smaply.com/blog/managing-multiple-customer-journeys-a-framework-for-structure-and-scale)).
 
-The concrete artifact you produce is a hierarchy tree document. This is typically a visual diagram or structured table showing every journey in your portfolio organized by level, with explicit parent-child relationships, named owners, and boundary definitions. Each node in the tree includes a journey name, its level designation, the parent journey it rolls up to, the entry and exit conditions that define its scope, and the primary persona it serves. A well-built hierarchy for a mid-size SaaS company might have 1 L0, 5-7 L1s, 15-25 L2s, and 40-80 L3s. The exact numbers vary, but the ratio matters: each parent should decompose into 3-7 children. Fewer than three children suggests you have not actually added meaningful resolution. More than seven suggests you need an intermediate grouping.
+Because the sources differ, this skill treats the definitions as a decision your organization makes and writes down. The working convention used across this method follows JourneyTrack: L0 is the ecosystem or organization-wide view, L1 is the customer lifecycle, L2 holds specific journeys toward a customer goal, and L3 holds detailed interactions within a journey. Adopt it, adapt it, or pick another, but use one version everywhere.
 
-Success looks like this: any team in the organization can locate their work within the hierarchy, zoom out to understand strategic context, zoom in to find operational detail, and identify adjacent journeys that share touchpoints or handoff moments. The hierarchy becomes a living navigation system, not a one-time deliverable.
+A clear journey management hierarchy pays off in three ways. People stop talking past each other about scope, because "onboarding" has one agreed meaning. Owners can be assigned at each level, so accountability matches scope. And insights can be traced between levels, which JourneyTrack describes as moving "from a single failed task (L3) to strategic ecosystem decisions (L0)."
+
+The hierarchy is also where most portfolio problems first become visible. Journeys that do not fit under any lifecycle stage reveal gaps in the lifecycle. Two journeys that claim the same parent and the same steps reveal duplication. A lifecycle stage with nothing under it reveals a blind spot.
 
 ## How It Works
 
-The hierarchy works because customer experiences are inherently fractal. The same structural pattern, a sequence of interactions that moves a person from one state to another, repeats at every scale. The full customer lifecycle is a journey. So is a single stage within it. So is a specific scenario within that stage. So is a discrete interaction within that scenario. The L0 through L3 framework simply names these natural levels of resolution and gives teams a consistent way to navigate between them.
+Each level answers a different question for a different audience. TheyDo's help center describes a lifecycle level used as a dashboard overview by management, macro journeys used by CX leads and product managers, and micro journeys used by designers and researchers ([TheyDo Help Center](https://theydo.com/guides/the-3-zoom-levels-of-a-journey-framework)). Matching each level to the people who will use it keeps the level from collecting the wrong kind of detail.
 
-At L0, you define the macro lifecycle. This is singular. Every organization has exactly one L0, covering the entire relationship from first awareness through advocacy, churning, or win-back. The L0 is not a map you do detailed design work on. It is the strategic frame that ensures all other journeys are accounted for and connected. Think of it as the table of contents for your entire customer experience.
+In the working convention, L0 shows how the organization's journeys, teams, partners, and systems relate. It is a network rather than a sequence, and it is mainly used to spot ownership gaps and conflicts between journeys. L1 is the customer lifecycle in a small number of stages written in customer language. Kerry Bodine's nine stages, "Need, Seek, Choose, Give, Get, Use, Fix, Love, and Leave," are one example ([Bodine](https://kerrybodine.com/qa-from-my-webinar-the-path-to-journey-management/)).
 
-L1 journeys represent lifecycle stages. These are the major phases a customer moves through: Awareness, Consideration, Purchase, Onboarding, Active Use, Renewal, and so on. The naming should match your organization's actual language, not a textbook framework. If your company calls the post-purchase phase "activation" rather than "onboarding," use "activation." L1 journeys answer the question: what are the distinct chapters of the customer relationship? Each L1 should have a clear entry trigger (what causes a customer to enter this stage) and exit condition (what signals they have moved to the next stage or dropped out).
+L2 is where most journeys in the portfolio live. An L2 journey has a customer goal, a start, an end, and enough detail to find pain points, while staying small enough for one cross-functional team to own. Smaply describes L2 as the level "where most improvement work happens" ([Smaply](https://www.smaply.com/blog/managing-multiple-customer-journeys-a-framework-for-structure-and-scale)). L3 is reserved for interactions that need deep analysis, such as a checkout form or a password reset, and each L3 attaches to a specific step of its parent L2.
 
-L2 journeys are scenario journeys within a stage. This is where personas, use cases, and context start to differentiate the experience. Within an L1 like "Onboarding," you might have L2 scenarios for self-serve onboarding, guided enterprise onboarding, migration from a competitor, and team rollout. Each L2 shares the same stage but follows a meaningfully different path. The test for whether something is a distinct L2 is whether the touchpoints, actors, or sequence differ enough that a single map would be confusing. If two scenarios share 80% of their touchpoints and the differences are minor, they belong in the same L2 with conditional branches, not separate L2s.
+Boundaries are what make the hierarchy usable. Each L2 journey needs a trigger that starts it, an outcome that ends it, and a named parent stage. Each L3 needs a parent step. When two journeys overlap, the boundary definition decides which one owns the shared steps, and the other links to it.
 
-L3 journeys are micro-journeys, the most granular level in the hierarchy. These map specific interaction sequences at individual touchpoints or clusters of closely related touchpoints. Setting up a payment method, completing a product tutorial, contacting support about a billing issue: these are L3s. They are where operational teams do their most detailed design and optimization work. L3 journeys connect directly to UI flows, service scripts, and automation logic.
+Tests help people classify consistently. A workable set of questions: does this describe the whole relationship (L1), a complete attempt at one customer goal (L2), or one interaction inside such an attempt (L3)? Could one team own it end to end? Does it have a clear trigger and outcome? Journeys that fail every test are usually either a lifecycle stage in disguise or a touchpoint that belongs inside an L2 map.
 
-The hierarchy works within the [Ecosystem Journey Framework](https://tryhamster.com/methods/ecosystem-journey-framework) because it creates a shared coordinate system that other framework activities depend on. Prioritization requires knowing what level you are prioritizing at. Portfolio inventory requires consistent level classification. Cross-journey insights require the hierarchy to identify where journeys at the same level share touchpoints or handoff moments. The hierarchy is not a decoration layered on top of journey maps. It is the structural foundation that transforms a collection of maps into a managed portfolio.
+Not every branch needs every level. Smaply advises starting with the lifecycle and a handful of detailed journeys and adding the finest level "only where it drives better decisions." A hierarchy that is deep where the business needs detail and shallow elsewhere is doing its job.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit Existing Journey Artifacts
+### Step 1: Review the inventory and existing conventions
 
-Gather every journey map, service blueprint, experience map, and customer lifecycle diagram that exists across your organization. This includes formal deliverables from CX teams and informal sketches on whiteboards or in slide decks. ), and the date it was last updated. You are not evaluating quality at this point.
+Read the [customer journey inventory](../building-a-journey-portfolio-inventory/SKILL.md) and note how different teams already describe scope. Collect any level labels already in use, since some teams may have their own L1 or L2. List the journeys whose scope people disagree about. These disputed journeys make good test cases for the definitions.
 
-You are establishing what exists so you can see the natural groupings and gaps. Expect to find significant overlap, with multiple teams having mapped versions of the same journey at different levels of detail, and significant gaps, with entire lifecycle stages unmapped.
+### Step 2: Write the level definitions and tests
 
-> **Pro tip:** Send a short survey to team leads across product, marketing, sales, support, and success asking: 'Do you have any journey maps, customer flow diagrams, or experience maps? Share links or screenshots.' You will almost always discover artifacts that the CX team did not know existed.
+Decide whether the top level is an ecosystem view or the lifecycle itself, and what the finest level contains. Write one sentence per level describing its scope, its audience, and its typical owner. Add two or three yes-or-no tests per level. Try the definitions on the disputed journeys from Step 1 and revise until people from different functions classify them the same way.
 
-### Step 2: Step 2: Define Your Single L0 Lifecycle Journey
+### Step 3: Draft the L0 view and L1 lifecycle
 
-Write a one-paragraph description of the entire customer lifecycle for your organization. ' Define the entry point (typically first brand awareness or first touchpoint) and the exit point (typically churn, lapse, or ongoing advocacy). Do not try to map detailed touchpoints at L0. The L0 is a conceptual frame, not a detailed map.
+Sketch the L0 view of the teams, partners, systems, and major journeys involved in serving customers. Then draft the L1 lifecycle as a short sequence of stages in customer language. Test the stages with people from marketing, sales, product, and support to check they recognize them. Keep L1 small enough to read on one screen.
 
-Its purpose is to establish the full scope of your hierarchy and ensure nothing is left out. Document the L0 in a single row at the top of your hierarchy tree with the fields: journey name, level (L0), entry condition, exit condition, and a brief scope statement.
+### Step 4: Place journeys at L2 under a stage
 
-> **Pro tip:** Resist the urge to create multiple L0 journeys for different customer segments. You always have one L0. Segment differentiation happens at L2. If you feel you need multiple L0s, you are likely confusing personas with journeys.
+Assign each inventory journey that represents a complete customer goal to one L1 stage. Give each an explicit trigger and outcome. Where two journeys overlap, decide which one owns the shared steps and link the other to it. Record journeys that fit no stage, because they usually mean the lifecycle is missing a stage.
 
-### Step 3: Step 3: Identify and Name L1 Stage Journeys
+### Step 5: Add L3 only where it earns its place
 
-Decompose the L0 into 4-7 sequential or overlapping stage journeys. Review your existing artifacts, your sales funnel stages, and your customer success milestones to identify natural phase boundaries. For each candidate L1, write a clear entry trigger (what event or condition causes a customer to enter this stage) and exit condition (what signals transition to the next stage or dropout). Name each L1 using language your organization already uses rather than generic textbook terms.
+For each L2 journey, list the interactions that are complex, high-volume, or frequently broken. Create L3 entries only for those, each attached to a specific step of its parent. Leave the rest of the L2 journey without L3 detail. Revisit the list when priorities change.
 
-Validate the set by asking: if a customer moves through every L1 in sequence, does that cover the entire L0 lifecycle? If there are gaps, add missing stages. If stages overlap significantly, consider merging them. Document each L1 as a child of L0 in your hierarchy tree.
+### Step 6: Validate completeness and consistency
 
-> **Pro tip:** Common L1 stages for B2B SaaS: Discovery, Evaluation, Purchase, Onboarding, Adoption, Expansion, Renewal. For B2C e-commerce: Awareness, Browsing, Purchase, Fulfillment, Use, Repurchase. Use these as starting points but customize to match your actual business language and customer behavior.
+Check that every journey has one level and one parent, and that every L1 stage has at least one L2 journey or a recorded gap. Look for journeys at the same level with very different scopes, which usually signal a misclassification. Ask a reviewer outside the core team to classify a sample of journeys using only the written tests. Where they disagree with you, fix the tests.
 
-### Step 4: Step 4: Decompose Each L1 into L2 Scenario Journeys
+### Step 7: Publish the hierarchy with owners
 
-For each L1, identify the meaningfully different paths a customer can take through that stage. These differences typically come from persona type (enterprise vs. SMB), channel (self-serve vs. sales-assisted), use case (new purchase vs.
-
-migration), or context (first-time vs. returning). For each candidate L2, apply the differentiation test: do the touchpoints, sequence, or actors differ enough that a single journey map would be confusing or misleading? If yes, it is a distinct L2.
-
-If the differences are minor, it is a conditional branch within an existing L2, not a separate one. Each L1 should produce 2-5 L2 children. Write clear boundary definitions for each L2 specifying the persona, context, entry condition, and exit condition. Document each L2 as a child of its parent L1.
-
-> **Pro tip:** If you end up with more than 5 L2s under a single L1, you are probably splitting too finely. Look for L2s that could be merged with conditional logic. Conversely, if you have only one L2 under an L1, you either have a very simple stage or you have not yet identified the meaningful variations.
-
-### Step 5: Step 5: Define L3 Micro-Journeys Within Each L2
-
-For each L2, identify the specific interaction sequences that a customer goes through. These are the most granular unit in your hierarchy. An L3 typically corresponds to a single task or goal from the customer's perspective: completing account setup, submitting a support ticket, reviewing a proposal, configuring a feature. Each L2 should decompose into 3-7 L3 micro-journeys.
-
-For each L3, document: the specific touchpoint or touchpoint cluster involved, the customer's goal within this interaction, the start and end points, and the team or system responsible for delivering the experience. L3s are where you connect the journey hierarchy to operational systems, UI flows, and service processes.
-
-> **Pro tip:** Not every L3 needs to be mapped in detail right away. Identify and name all L3s for completeness, but only build detailed maps for L3s that are high-priority based on customer pain, business impact, or optimization opportunity. This prevents the hierarchy from becoming a multi-month project before anyone gets value from it.
-
-### Step 6: Step 6: Validate Hierarchy Completeness and Consistency
-
-Review the full hierarchy tree from L0 to L3 and run three validation checks. First, the completeness check: trace a customer from the L0 entry point through each L1, L2, and L3 to the L0 exit point. Are there any moments in the experience that are not covered? If a customer goes through an interaction that does not fit any L3, you have a gap.
-
-Second, the mutual exclusivity check: at each level, do the sibling journeys overlap? An L2 scenario should belong under exactly one L1 parent. If you find an L2 that could fit under two L1s, you likely need to refine your L1 boundary definitions. Third, the ratio check: does each parent have 3-7 children?
-
-Fewer than 3 children suggests the parent is too narrow. More than 7 suggests you need an intermediate grouping or you are splitting too finely.
-
-> **Pro tip:** Walk through the hierarchy with a specific customer story, ideally from a real support case or sales deal. Narrate the customer's journey step by step and point to where each moment lives in the hierarchy. If you cannot locate a moment, the hierarchy has a gap. If a moment fits in two places, you have an overlap to resolve.
-
-### Step 7: Step 7: Assign Ownership and Document Boundaries
-
-For each journey at L1 and L2, assign an owner. This is the person or team accountable for the quality of the experience within that journey's scope. Ownership should follow your organizational structure: marketing might own L1 Awareness and Consideration, product might own L1 Onboarding and Adoption, and customer success might own L1 Renewal and Expansion. For each journey, document explicit boundary definitions in a standardized format: journey name, level, parent journey, owner, entry condition, exit condition, key touchpoints, and primary persona.
-
-These boundary definitions prevent scope creep and ownership ambiguity. They answer the question: where does this journey start and stop, and who is responsible for what happens within it?
-
-> **Pro tip:** Ownership disputes almost always happen at L1 boundaries, the handoff moments between stages like Evaluation to Purchase or Onboarding to Active Use. Explicitly document these handoff points and assign joint accountability for the transition itself. One pattern that works: the outgoing team owns the handoff trigger, the incoming team owns the receiving experience.
-
-### Step 8: Step 8: Publish and Socialize the Hierarchy
-
-Create two versions of your hierarchy for distribution. First, a visual diagram showing the tree structure from L0 through L3, with journey names and level designations visible at a glance. This can be a simple indented tree, a diagram in a tool like Miro or FigJam, or a structured table in a wiki. Second, a detailed reference document with full boundary definitions, ownership assignments, and links to any existing detailed journey maps at each node.
-
-Share the visual version broadly across the organization in a format where people encounter it naturally, such as a Confluence page, a Notion database, or a shared drive folder that existing journey work links to. Run a 30-minute walkthrough session with journey owners to align on the hierarchy, clarify boundaries, and identify the first L2 or L3 journeys to map in detail.
-
-> **Pro tip:** Put the hierarchy tree in a living, editable format, not a static PDF. The hierarchy will evolve as you learn more about your customers and as your product changes. A Notion database or Airtable base works well because you can filter by level, owner, or status while maintaining the tree relationships.
+Publish the definitions, the tests, and the hierarchy in one place everyone can find. Record a provisional owner for each L1 stage and each L2 journey, and hand the ownership model to the [journey ownership](../aligning-teams-around-journey-ownership/SKILL.md) work. Explain the hierarchy in the forums where teams already plan work. Set a date to review the definitions after the first few months of use.
 
 ## Best Practices
 
-- Use your organization's existing language for stage names rather than adopting a generic textbook lifecycle. If your sales team calls the evaluation phase 'discovery' and your marketing team calls it 'consideration,' pick one and standardize. Forcing unfamiliar terminology creates resistance and reduces adoption. The hierarchy only works if people actually use it, and they will not use vocabulary that feels foreign.
-- Define entry and exit conditions for every journey at every level, not just L1s. Without explicit boundaries, journeys expand to cover adjacent territory and teams lose clarity about what is in scope. An L3 micro-journey for 'submitting a support ticket' should have a clear start (customer opens support channel) and end (ticket confirmed and assigned), not bleed into the resolution journey that follows.
-- Maintain the 3-7 children ratio at every level of the hierarchy. This ratio is not arbitrary. Fewer than 3 children means you have not added meaningful resolution by going one level deeper, which makes the hierarchy deeper than it needs to be. More than 7 children means the parent is too broad and the children will be difficult to compare, prioritize, or assign coherently.
-
-If you consistently exceed 7, introduce a sub-grouping.
-- Build the hierarchy top-down but validate it bottom-up. Start with L0 and decompose downward, then take real customer stories and trace them upward through the hierarchy to find gaps and overlaps. Top-down ensures strategic completeness. Bottom-up ensures operational accuracy. Neither approach alone is sufficient.
-- Do not try to achieve perfect coverage on the first pass. Define all L0, L1, and L2 journeys in your initial hierarchy, but only decompose into L3 for the 2-3 highest-priority L2s. You can progressively elaborate the hierarchy as teams begin working at the L3 level. Attempting to define every L3 upfront leads to analysis paralysis and delays the point where the hierarchy starts delivering value.
-- Review and update the hierarchy quarterly, not just when someone notices a problem. Customer journeys shift as products evolve, channels change, and market conditions move. A hierarchy that was accurate six months ago may have gaps or stale labels today. Tie the review to an existing cadence like quarterly business reviews so it does not require its own meeting overhead.
-- Link every detailed journey map back to its node in the hierarchy tree. When a team creates or updates a map for an L2 or L3 journey, the hierarchy entry for that journey should link directly to the map. This transforms the hierarchy from a classification exercise into a living navigation system. Without links, the hierarchy becomes an orphaned taxonomy that nobody references.
-- Keep L0 and L1 stable. These levels should change only when the fundamental business model or customer lifecycle shifts. L2 and L3 levels evolve more frequently as you add new products, segments, or channels. If you find yourself restructuring L1s regularly, your L1 definitions are probably too narrow or too tied to current product features rather than customer lifecycle phases.
+- Write the definitions before placing journeys. Placing first and defining later bakes each team's private conventions into the hierarchy.
+- Use customer language for L1 stages and L2 names. Internal process names make the hierarchy unreadable to other teams and hide duplicates.
+- Give every L2 journey a trigger and an outcome. Explicit boundaries prevent the overlapping maps [Smaply describes](https://www.smaply.com/blog/managing-multiple-customer-journeys-a-framework-for-structure-and-scale) as a common source of confusion.
+- Keep the hierarchy uneven on purpose. Deep detail belongs only where decisions need it, and shallow branches are fine elsewhere.
+- Record which numbering convention you use. A note that your L1 equals another team's L0 prevents confusion when people read outside sources such as [JourneyTrack](https://blog.journeytrack.io/journeytrack-cx-blog/demystifying-journey-management-what-l0-to-l3-really-means).
+- Revisit the definitions after real use. The first version will have gaps that only show up when people classify new journeys.
 
 ## Common Mistakes
 
-- **Creating multiple L0 journeys for different customer segments or product lines** — The L0 is always singular. It covers the entire relationship between your organization and your customers. When teams create separate L0s for 'enterprise customers' and 'SMB customers,' they lose the ability to see the full ecosystem and identify shared touchpoints. Segment differentiation belongs at L2 where scenario journeys capture different paths through the same lifecycle stage.
-
-If your business has fundamentally separate products with zero customer overlap, you may have separate hierarchies, but each still has a single L0. The signal that you have made this mistake is multiple hierarchy trees with no connection point.
-- **Defining L1 stages based on internal department structure rather than customer experience** — L1 stages should reflect what the customer is trying to accomplish, not how your org chart divides responsibility. When teams name L1s after departments ('Marketing Journey,' 'Sales Journey,' 'Support Journey'), they create silos rather than breaking them. Customers do not experience your departments. They experience stages like evaluating options, getting started, and solving problems.
-
-The signal is L1 names that match org chart boxes rather than customer verbs or states. Test by asking: would a customer recognize this stage name as something they went through?
-- **Splitting L2 scenarios too finely, creating dozens of nearly identical journey variants** — This happens when teams create a separate L2 for every minor variation in the customer experience, such as separate L2s for 'onboarding via mobile,' 'onboarding via desktop,' and 'onboarding via tablet.' The differentiation test exists to prevent this: if two scenarios share more than 80% of their touchpoints and the differences are minor variations rather than fundamentally different paths, they belong in the same L2 with conditional branches noted. The signal is more than 5 L2s under a single L1, many of which look almost identical when you compare their touchpoint sequences. Merge similar scenarios and use annotation to capture the variations.
-- **Skipping boundary definitions and relying on journey names alone to communicate scope** — A journey named 'Enterprise Onboarding' means different things to different teams without explicit entry and exit conditions. The implementation team might think it starts at contract signature and ends at go-live. The sales team might think it starts at deal close and ends at first value delivery. Without documented boundaries, teams unknowingly work on overlapping or disconnected scopes.
-
-The signal is recurring confusion about which team owns specific customer moments, or discovering that two teams have mapped the same touchpoint under different journey names. Write explicit entry triggers and exit conditions for every journey node.
-- **Building the entire hierarchy to L3 before getting any organizational adoption** — Teams sometimes spend months perfecting a comprehensive hierarchy in isolation, only to find that nobody uses it because they were not involved in creating it. The hierarchy is only valuable when teams adopt it as their shared coordinate system. Build L0 through L2 collaboratively with journey owners in a single workshop, publish it, start using it to structure conversations and decisions, and then progressively elaborate L3s only for journeys that are actively being optimized. The signal is a beautifully detailed hierarchy document that no one references in actual project work.
-- **Treating the hierarchy as a static deliverable rather than a living navigation system** — Some teams create the hierarchy once, circulate it in a PDF, and never update it. Within a quarter, new products, channels, or customer segments make the hierarchy inaccurate. When teams encounter journeys that do not fit, they work around the hierarchy rather than updating it, and the artifact loses credibility. The signal is team members saying 'the hierarchy doesn't reflect what we actually do.' Keep the hierarchy in a collaborative, editable tool with a named maintainer and a quarterly review cadence.
+- **Too many lifecycle stages**: When L1 keeps growing, detail from L2 is leaking upward. Move specific journeys down and keep L1 to broad stages.
+- **Mapping every branch to L3**: Detailed maps of low-priority journeys consume research time and are rarely maintained. Add L3 only where a specific decision needs it.
+- **Channel variants as separate journeys**: The same goal completed online and by phone is one journey with channel tags. Essense advises against listing scenario or channel variants as separate journeys ([Essense](https://essense.eu/journey-framework/)).
+- **Boundaries left implicit**: Without a trigger and outcome, neighbouring journeys absorb each other's steps and owners argue over them. Write the boundaries down.
+- **Copying another company's labels without definitions**: Two sources can use L1 to mean different things. Adopt labels only together with written definitions.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ecosystem-journey-framework/METHOD.md) — Ecosystem Journey Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ecosystem-journey-framework/METHOD.md): Ecosystem Journey Framework
 
 ## Related Skills
 
-- [Prioritizing Journeys for Optimization](../prioritizing-journeys-for-optimization/SKILL.md)
-- [Transitioning from Journey Mapping to Journey Management](../transitioning-from-journey-mapping-to-journey-management/SKILL.md)
-- [Aligning Teams Around Journey Ownership](../aligning-teams-around-journey-ownership/SKILL.md)
-- [Building a Journey Portfolio Inventory](../building-a-journey-portfolio-inventory/SKILL.md)
-- [Identifying Cross-Journey Insights and Patterns](../identifying-cross-journey-insights/SKILL.md)
+- [Building a Customer Journey Inventory and Portfolio](../building-a-journey-portfolio-inventory/SKILL.md)
 - [Mapping Touchpoint Interconnections Across Journeys](../mapping-touchpoint-interconnections/SKILL.md)
+- [Aligning Teams Around Customer Journey Ownership](../aligning-teams-around-journey-ownership/SKILL.md)
+- [Prioritizing Customer Journeys for Optimization](../prioritizing-journeys-for-optimization/SKILL.md)
+- [Identifying Cross-Journey Insights and Patterns](../identifying-cross-journey-insights/SKILL.md)
+- [From Journey Mapping to Continuous Journey Management](../transitioning-from-journey-mapping-to-journey-management/SKILL.md)
+
+## Sources
+
+- [TheyDo: Simplify journey mapping with the journey framework](https://www.theydo.com/blog/articles/simplify-journey-mapping-with-the-journey-framework)
+- [TheyDo Help Center: Journey framework zoom levels](https://theydo.com/guides/the-3-zoom-levels-of-a-journey-framework)
+- [JourneyTrack: What L0 to L3 Really Means](https://blog.journeytrack.io/journeytrack-cx-blog/demystifying-journey-management-what-l0-to-l3-really-means)
+- [Smaply: Managing multiple customer journeys](https://www.smaply.com/blog/managing-multiple-customer-journeys-a-framework-for-structure-and-scale)
+- [Essense: Journey framework](https://essense.eu/journey-framework/)
+- [Kerry Bodine: The Path To Journey Management Q&A](https://kerrybodine.com/qa-from-my-webinar-the-path-to-journey-management/)

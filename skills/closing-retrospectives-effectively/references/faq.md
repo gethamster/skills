@@ -1,25 +1,21 @@
-# FAQ: Closing Retrospectives Effectively
+# FAQ: Closing a Retrospective Meeting Effectively
 
-## How long should the closing phase of a retrospective meeting take?
+## How do you end a retrospective well?
 
-Plan for 5-15 minutes depending on team size and the number of action items. For a 60-minute retrospective meeting, 10 minutes is typical. Even when time is short, never allocate less than 3 minutes—a rushed close is better than none.
+Read back each action with its owner and review point, record the actions where the team plans its work, thank people for specific contributions, collect quick feedback on the session, and finish on time. Retromat summarizes the close as clarifying follow-up, appreciations, a clear end and asking how retrospectives could improve. The whole close takes a few minutes if you reserve them.
 
-## What if nobody wants to participate in the appreciation round?
+## What is a ROTI retrospective?
 
-That's completely fine—keep it optional. The facilitator can model one genuine appreciation to break the ice. If silence persists, simply move on. Forced appreciation feels hollow and can damage trust. Over time, as psychological safety grows, participation usually increases naturally.
+ROTI stands for return on time invested. At the end of the meeting, each person scores how worthwhile the session was, often on a scale from 1 to 5, where the middle score means they gained enough to justify the time. The facilitator asks what would raise low scores. It is a fast way to learn whether the retrospective format is working.
 
-## How do I track whether retrospective meeting action items actually get completed?
+## How long should the close take?
 
-Add action items to your sprint backlog or project board immediately after the retro. Check progress at standups mid-sprint. Open the next retrospective meeting by reviewing the status of previous action items. See the sibling skill on tracking retrospective action items across sprints for a full system.
+A few minutes. Atlassian's one-hour retrospective play gives it five minutes, and Retrium's sample one-hour plan does the same. Reserve the time when planning and protect it if earlier phases overrun.
 
-## What is the ROTI technique for closing a retrospective meeting?
+## What if people do not want to give feedback in front of the facilitator?
 
-ROTI stands for Return on Time Invested. Each participant rates the session from 1 (waste of time) to 5 (extremely valuable). It takes under a minute and gives the facilitator a quick quantitative signal about whether the retrospective meeting format is working.
+Use an anonymous method: sticky notes collected face down, an online poll or a form sent after the meeting. Show that feedback leads to change by telling the team at the next retrospective what you adjusted. Rotating the facilitator also makes honest feedback easier.
 
-## Should I close a retrospective meeting differently for remote teams?
+## Should the close include a summary of the whole retrospective?
 
-The same principles apply, but use remote-friendly mechanisms: chat-based one-word closes, emoji polls for ROTI, and screen-shared action item summaries. Verbal confirmation of action items is especially important remotely since body language cues are limited.
-
-## How many action items should come out of a single retrospective meeting?
-
-Aim for 1-3 action items per retrospective meeting. Research and practitioner experience consistently show that teams who commit to fewer items complete more of them. If you generated more during the 'Decide What to Do' phase, prioritize ruthlessly and park the rest.
+Keep it brief. The actions and their owners matter most, with a one-line note of the insight behind each. A written summary shared after the meeting helps people who were absent and gives the next retrospective a starting point.

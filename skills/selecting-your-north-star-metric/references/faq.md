@@ -1,25 +1,21 @@
-# FAQ: Selecting the Right North Star Metric for Your Product
+# FAQ: Selecting Your North Star Metric
 
-## What are the most important kpis product manager teams should consider for a North Star Metric?
+## How long should choosing a North Star Metric take?
 
-The best North Star Metric candidates are kpis product manager teams don't always think of first — they measure value delivered to customers, not business outputs. Look at metrics that capture the moment customers achieve their goal: meals delivered, projects completed, messages that got replies, searches that led to purchases. These 'value realization' metrics tend to be leading indicators of both retention and revenue.
+The first workshop can produce strong candidates in a couple of hours, and Amplitude's playbook says it has run many workshops in less than two hours. The definition usually needs follow-up work: pulling history, testing thresholds and asking the people who will own inputs to challenge it. Expect a few weeks from first draft to published definition. Spending months on it is a sign the team is chasing a perfect metric instead of a useful one.
 
-## Can a product have more than one North Star Metric?
+## Should the North Star count users, teams or events?
 
-No. The entire power of the North Star Metric framework lies in the discipline of choosing one. Multiple North Stars create competing priorities, split focus, and dilute alignment. If you feel you need two, you likely have two distinct products or two customer segments that need separate strategies. Your single North Star should be supported by 3-5 input metrics that provide nuance.
+Count the unit that experiences the value. A collaboration product often gets value at the team level, so a team count fits. A consumer product usually counts people. Event counts are easy to inflate, so if you count events, add a threshold per user or team so that one heavy user cannot carry the number.
 
-## How is a North Star Metric different from OKRs or regular KPIs?
+## Is daily active users ever a good North Star?
 
-OKRs change quarterly and define time-bound objectives. Regular kpis product manager teams use cover many aspects of the business — acquisition, engagement, monetization, support load. The North Star Metric is the single, stable metric (lasting 12-18+ months) that represents the core customer value your product delivers. OKRs and KPIs should ladder up to or support the North Star, not replace it.
+Rarely on its own. Amplitude's playbook lists daily active users as a vanity metric because it says nothing about what customers value. It can work for products where attention is the value delivered, as in some ad-supported products, but even then a measure of real consumption is usually closer to the value moment.
 
-## How often should I change my North Star Metric?
+## What if two candidates look equally good?
 
-Rarely. A well-chosen North Star Metric should remain stable for 12-18 months minimum. Change it only when your product undergoes a fundamental strategic shift — entering a new market, pivoting your value proposition, or transitioning between growth stages. For guidance on when and how to evolve it, see the skill on [evolving your North Star across growth stages](https://tryhamster.com/skills/evolving-north-star-across-growth-stages).
+Choose the one that is easier to explain and harder to game, then watch the other as a health metric. If the two candidates measure the same value from different angles, try a combined definition. If they measure different values, the tie may mean the team has not agreed on the value sentence yet.
 
-## What if my North Star Metric is hard to measure with our current data infrastructure?
+## How do product management KPIs relate to the North Star?
 
-If the ideal metric is difficult to measure today, use a proxy metric that's highly correlated and currently measurable, while investing in the instrumentation to track the real metric. Document the proxy relationship explicitly. A proxy that's 80% correlated with the ideal metric and measured reliably today is more useful than a perfect metric you can't track for six months.
-
-## How do I know if I've chosen the wrong North Star Metric?
-
-Three warning signs: (1) The metric is growing but retention or revenue aren't following within a reasonable lag period. (2) Teams are making product decisions that improve the metric but clearly hurt the customer experience. (3) Cross-functional teams frequently debate whether the metric reflects real progress. If you see these signals, revisit your stress tests and validation data.
+Most KPIs stay. They become either inputs, which teams move directly and which feed the North Star, or health metrics, which guard against damage the North Star does not see, such as support load or margin. The North Star sits at the top and gives the other KPIs a reason to exist.

@@ -1,15 +1,20 @@
 ---
-name: organizing-tribes-for-alignment
-description: "This skill teaches you how to group related squads into tribes with clear boundaries, the right size constraints, and effective tribe leadership so that autonomous squads stay aligned on shared strategic outcomes."
+name: "organizing-tribes-for-alignment"
+description: "Group related squads into tribes with boundaries drawn from real dependencies, a size limit people can manage, and a tribe lead who keeps squads aligned."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: spotify-squad-model
+  method: "spotify-squad-model"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Organizing Squads into Spotify Tribes for Strategic Alignment
+# Organizing Squads into Tribes for Alignment
 
-> This skill teaches you how to group related squads into tribes with clear boundaries, the right size constraints, and effective tribe leadership so that autonomous squads stay aligned on shared strategic outcomes.
+> Group related squads into tribes with boundaries drawn from real dependencies, a size limit people can manage, and a tribe lead who keeps squads aligned.
 
 ## Before you start
 
@@ -24,157 +29,102 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 3-5 hours for initial tribe design, plus 2-4 weeks of iteration |
-| Outcome | You produce a documented tribe structure that groups related squads under tribe leads, with explicit size limits, coordination rituals, and alignment mechanisms that reduce cross-squad friction while preserving each squad's autonomy. |
-| Prerequisites | An existing set of squads with defined missions (see forming-autonomous-squads), A clear product or organizational strategy to align tribes toward, Basic understanding of the Spotify Squad Model structure (squads, chapters, guilds), Authority or sponsorship to make structural organizational changes |
-| Part of | [Spotify Squad Model](../../methods/spotify-squad-model/METHOD.md) |
+| Time to Learn | A day to learn, a few weeks to design and announce the first tribes |
+| Outcome | You can group existing squads into tribes whose boundaries match how the squads actually depend on each other, with a tribe lead and a small set of tribe rituals. |
+| Prerequisites | Squads with written missions, a map of dependencies between squads, a view of the product strategy |
+| Part of | [The Spotify Model](../../methods/spotify-squad-model/METHOD.md) |
 
 ## Overview
 
-Spotify tribes are the primary mechanism for creating strategic alignment among autonomous squads. When you have more than a handful of squads, coordination costs start creeping up. Squads working on related parts of the product duplicate effort, make conflicting architectural decisions, or drift apart on priorities. Tribes solve this by grouping squads that share a mission area, a customer segment, or a product domain into a cohesive unit with shared context and lightweight governance. The concept comes directly from the [Spotify Squad Model](https://tryhamster.com/methods/spotify-squad-model), where tribes were designed as the smallest organizational unit large enough to pursue a meaningful strategic objective, yet small enough to maintain trust and informal communication.
+A tribe is a group of squads working in related areas of the product. In the [Spotify model](../../methods/spotify-squad-model/METHOD.md) it is the layer that keeps autonomous squads aware of each other, reduces duplicated work, and gives them a shared place to learn. This skill covers drawing tribe boundaries, sizing tribes, choosing a tribe lead and setting up the few rituals a tribe needs.
 
-The concrete artifact this skill produces is a tribe design document. This document maps each squad to a tribe, names the tribe lead, defines the tribe's mission boundary, lists the coordination rituals the tribe will use, and sets explicit size constraints. It also specifies how tribes relate to each other, identifying the narrow interfaces where cross-tribe coordination is genuinely necessary versus where tribes can operate independently. Think of it as an organizational blueprint that makes implicit groupings explicit and accountable.
+The [2012 paper](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf) by Kniberg and Ivarsson describes a tribe as a collection of squads in related areas, such as the music player or backend infrastructure, and calls it the "incubator" for the squad mini-startups. Each tribe has a tribe lead responsible for providing the best possible habitat for its squads. At the time, the squads in a tribe sat in the same office, close to each other, and held regular gatherings to show what they were working on.
 
-The success criteria are observable. After implementing a well-designed tribe structure, you should see fewer unplanned dependencies surfacing mid-sprint, faster resolution of cross-squad blockers, and squads that can articulate how their work connects to the broader tribe mission. If squads still feel isolated or, conversely, feel micromanaged, those are signals the tribe boundaries or the tribe lead's operating model need adjustment. This skill sits between [forming autonomous squads](https://tryhamster.com/skills/forming-autonomous-squads), which gives you the building blocks, and [balancing autonomy and alignment](https://tryhamster.com/skills/balancing-autonomy-and-alignment), which gives you the ongoing calibration practices to keep the whole system healthy.
+Size is the tribe's defining constraint. The paper cites the Dunbar number, the idea that most people cannot maintain social relationships with more than about a hundred others, and says tribes were designed to be smaller than 100 people or so ([Kniberg and Ivarsson](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf)). Beyond that size, the paper says, groups start to grow restrictive rules, bureaucracy, politics and extra layers of management.
 
-One important distinction: tribes are not traditional departments. A department is usually organized by function (all engineers, all designers). A tribe is organized by mission (all squads working on the payments experience, regardless of function). This cross-functional grouping is what makes tribes powerful for alignment. It is also what makes them tricky to get right, because you are drawing boundaries through your product architecture and your people structure simultaneously.
+Later descriptions add leadership detail. Atlassian's summary describes a trio for each tribe, made up of the tribe lead, a product lead and a design lead, and alliances of tribe trios when several tribes must work on one goal ([Atlassian](https://www.atlassian.com/agile/agile-at-scale/spotify)). You do not need all of this at the start. The output of this skill is a tribe map: which squads belong to which tribe and why, the tribe's mission, its lead, its rituals and the interfaces it has with other tribes.
 
 ## How It Works
 
-The mental model behind Spotify tribes draws from Dunbar's number research and the military concept of a "company" sized unit. Robin Dunbar's work suggests that humans can maintain roughly 150 stable social relationships, and functional working groups tend to top out around 100 before communication overhead becomes unsustainable. Spotify adopted this as a practical constraint: a tribe should contain no more than about 100 people. Below that threshold, people can still know each other by name, bump into each other in hallways or Slack channels, and maintain the informal trust networks that make real coordination possible without heavy process.
+A tribe boundary is a statement about where coordination should be cheap. Squads inside a tribe can talk informally, share a gathering and resolve most dependencies between themselves. Squads in different tribes coordinate through more deliberate channels. So the first principle is simple: put squads that depend on each other often in the same tribe.
 
-The reason tribes work for alignment is that they create a bounded context for strategic decision-making. Without tribes, alignment is either centralized (a leadership team that makes all the calls, creating a bottleneck) or absent (squads make their own calls, creating drift). Tribes provide a middle layer. The tribe lead holds strategic context for the tribe's mission area and translates company-level strategy into tribe-level priorities. Individual squads then figure out how to execute within that frame. This is the "aligned autonomy" principle from the [Spotify Squad Model](https://tryhamster.com/methods/spotify-squad-model): the tribe lead aligns on the "what" and "why," while squads own the "how."
+That requires data on dependencies. The [2012 paper](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf) describes asking every squad which other squads it depends on and whether each dependency blocks it or only slows it down, then discussing how to remove the problem ones, especially blocking and cross-tribe dependencies. The same survey is the input for drawing tribes. Clusters of squads that depend heavily on each other are candidate tribes; squads with few dependencies can go where their product area fits best.
 
-The sizing constraint is not arbitrary. When a tribe grows past 100 people, several failure modes emerge. The tribe lead can no longer maintain meaningful relationships with all squad members. Tribe gatherings become unwieldy presentations instead of interactive sessions. Cross-squad coordination requires more formal process, and informal trust degrades. At that point, you need to split the tribe, which means finding a natural seam in the mission area where two distinct strategic objectives can be separated with minimal ongoing coordination.
+The size limit then tests the clusters. A cluster that would pass the Dunbar-inspired cap needs splitting along the weakest dependency line. Published ranges differ: Atlassian's summary gives tribes of typically 40-150 people ([Atlassian](https://www.atlassian.com/agile/agile-at-scale/spotify)), while the paper's own wording is smaller than 100 people or so. Pick a cap and apply it consistently.
 
-Tribe leads occupy a unique role that is easy to misunderstand. They are not managers of the squads within the tribe. Squad product owners and tech leads still own their squad's execution. The tribe lead is more like a gardener: they create the conditions for squads to thrive by providing strategic context, removing systemic blockers, facilitating cross-squad conversations, and ensuring the tribe's collective output adds up to something coherent. A tribe lead who starts approving squad backlogs or attending squad standups is overstepping. A tribe lead who never convenes cross-squad discussions is understepping.
+The tribe lead builds the habitat and leaves the squads' projects to the squads. Their work is keeping the tribe's squads aligned to a shared direction, clearing obstacles that no squad can clear alone, and representing the tribe to the rest of the company. ING's version of the model gave tribes explicit alignment mechanisms, including portfolio wall planning, daily stand-ups to keep product owners aligned, and a quarterly business review in which each tribe records what it achieved, what it learned and which other tribes or squads it needs next quarter ([McKinsey Quarterly](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation)).
 
-The tribe boundary itself is the most consequential design decision. You are drawing a circle around a set of squads and saying, "coordination inside this circle is easy, coordination across circles is harder by design." This means you want high cohesion inside the tribe (squads that genuinely need to coordinate frequently) and loose coupling between tribes (tribes that can operate largely independently). If you draw the boundary wrong, you end up with constant cross-tribe escalations, which is worse than having no tribes at all because you have added a layer of overhead without reducing coordination cost.
+Rituals should be few and useful. The [2012 paper](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf) describes informal tribe gatherings with live demos, new tools and hack-day projects, and on-demand coordination, such as a daily sync between squads during a large cross-squad project, rather than a standing scrum of scrums. Add ceremony only when a real coordination problem shows up.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Map your current squads and their dependencies
+### Step 1: Survey squad dependencies
 
-Before grouping anything, you need a clear picture of what exists. List every squad, its mission, its primary product area, and its key dependencies on other squads. Dependencies include shared codebases, shared data pipelines, shared customers or user journeys, and squads whose work frequently blocks or is blocked by another squad. The best source for this data is not an org chart.
+Ask every squad which other squads it depends on, and whether each dependency blocks it or only slows it down. Record the answers in a simple table or graph. Include dependencies on platform and operations groups, since the [2012 paper](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf) noticed more and more squads being slowed down by operations. Repeat the survey later so you can see whether the structure is helping. This data is the foundation for every other step.
 
-It is the squads themselves. ). Plot this as a simple dependency graph where squads are nodes and coordination needs are edges. This graph is the raw material for tribe design.
+### Step 2: Find natural clusters
 
-> **Pro tip:** If you have more than 15-20 squads, do this exercise in a shared spreadsheet or a lightweight tool like Miro rather than in a meeting. Asking squad leads to fill it in asynchronously yields more honest answers because people are not anchoring on each other's responses.
+Look for groups of squads with many mutual dependencies or a shared product area and customers. Draw candidate tribes around those groups. Check that each candidate has a coherent purpose you can state in a sentence, such as "everything a listener does on a mobile device". Avoid tribes drawn around technology layers, because nearly every user-facing change would then cross tribe lines.
 
-### Step 2: Step 2: Identify natural clusters of high-dependency squads
+### Step 3: Apply the size limit
 
-Look at the dependency graph from Step 1 and identify clusters, groups of squads with many connections to each other and few connections to squads outside the cluster. These clusters are your candidate tribes. Common clustering patterns include: product area clusters (all squads working on search and discovery), customer journey clusters (all squads touching the onboarding experience), platform clusters (all squads maintaining shared infrastructure), and business unit clusters (all squads serving enterprise customers). You are looking for the grouping that minimizes cross-group dependencies.
+Count the people in each candidate tribe, including product owners, designers, coaches and chapter leads. If a tribe is over your cap, split it along the line with the fewest dependencies. If a tribe is very small, consider merging it with its closest neighbor so the tribe lead role and the rituals are worth their cost. Record the reasoning for each split and merge.
 
-There is no perfect answer. Every grouping creates some cross-tribe seams. Your goal is to make the seams as narrow as possible and to place them where coordination is infrequent and well-defined.
+### Step 4: Write the tribe mission
 
-> **Pro tip:** If two clustering options seem equally valid, choose the one that aligns with your product architecture rather than your business org chart. Product architecture changes less frequently, so tribes aligned to it are more stable over time.
+Give each tribe a mission that sits between company strategy and its squads' missions. Check that every squad mission in the tribe fits inside it and that no two tribes claim the same outcome. Keep it stable enough to last several planning cycles. Share it with the squads before finalizing, because they will spot overlaps leadership misses.
 
-### Step 3: Step 3: Apply the size constraint and split or merge as needed
+### Step 5: Appoint the tribe lead and leadership group
 
-Take each candidate tribe from Step 2 and count the total headcount (not just engineers, but all members of all squads, including designers, PMs, data analysts, and anyone else embedded in those squads). If a tribe exceeds roughly 100 people, look for a natural seam to split it into two tribes. The seam should be a point where dependencies across the split are minimal and well-defined. If a candidate tribe has fewer than about 30-40 people (roughly three to four squads), consider whether it should be merged with an adjacent tribe or whether it genuinely represents a distinct strategic area that will grow.
+Choose a tribe lead whose strength is coordination and removing obstacles rather than directing work. Decide whether the tribe lead works alongside product and design leads as a trio, as [Atlassian's summary](https://www.atlassian.com/agile/agile-at-scale/spotify) describes. Write down what the tribe lead decides, such as budget and staffing across squads, and what they leave to squads. Make clear that squads keep ownership of how they work.
 
-Very small tribes risk becoming isolated and under-resourced. Very large tribes lose the informal communication benefits that make tribes valuable. Document the final grouping with a simple table: tribe name, member squads, total headcount, and the one-sentence mission for the tribe.
+### Step 6: Set up a few tribe rituals
 
-> **Pro tip:** The 100-person limit is a guideline, not a law. Some organizations find their threshold is closer to 80 or 120 depending on geographic distribution, communication culture, and how much shared context squads actually need. If your tribe feels unwieldy at 70 people, it is too big for your context.
+Start with a regular tribe gathering where squads demo what they shipped and share what others can reuse. Add a regular planning or review point where the tribe checks its squads against its mission and priorities. Use on-demand syncs for projects that need several squads rather than a permanent coordination meeting. Review the rituals after a quarter and drop any nobody would miss.
 
-### Step 4: Step 4: Define each tribe's mission boundary
+### Step 7: Define cross-tribe interfaces
 
-Each tribe needs a mission statement that makes its boundary explicit. A good tribe mission answers three questions: What outcome does this tribe own? What is inside this tribe's scope? What is explicitly outside this tribe's scope?
+List the dependencies that still cross tribe lines after the boundaries are drawn. For each, name the owner on each side and how requests are made, whether by API contract, shared roadmap or a named contact. Where several tribes must work together on one goal, form a temporary alliance of their leadership rather than redrawing tribes. Revisit cross-tribe dependencies in the next dependency survey.
 
-The "outside" part is just as important as the "inside" part because it prevents scope creep and territory disputes. Write the mission in terms of customer outcomes or business capabilities, not in terms of technology. " The technology framing is too narrow and will break as architecture evolves. Test the mission by asking: if a new product initiative came up related to payments, would it be obvious that this tribe should own it?
+### Step 8: Announce, then review
 
-If the answer is ambiguous for too many realistic scenarios, the mission boundary needs sharpening.
-
-> **Pro tip:** Run a quick stress test by listing three or four recent product initiatives and asking, 'Which tribe would own this?' If people disagree or the answer requires a meeting to resolve, your boundaries have gaps or overlaps that need addressing now, not later.
-
-### Step 5: Step 5: Appoint tribe leads and define their operating model
-
-Select a tribe lead for each tribe. The ideal tribe lead has strong product and strategic thinking skills, the respect of the squads, and the interpersonal skills to influence without authority. They should be someone who can translate company strategy into tribe-level priorities and who can facilitate hard conversations about trade-offs between squads. Critically, write down what the tribe lead does and does not do.
-
-The tribe lead facilitates cross-squad alignment, owns the tribe's strategic roadmap, removes systemic blockers, and represents the tribe in company-level planning. The tribe lead does not manage squad backlogs, attend squad standups, approve squad-level decisions, or serve as a single point of escalation for every problem. Document this operating model and share it with all squad leads and the tribe lead's manager so expectations are explicit.
-
-> **Pro tip:** The most common failure with tribe leads is appointing a senior manager who treats the role as a traditional management position. Look for someone who is comfortable with influence-based leadership and who will resist the urge to micromanage squads.
-
-### Step 6: Step 6: Establish tribe coordination rituals
-
-Define the recurring rituals that will keep the tribe aligned. At minimum, most tribes need three: a tribe gathering (all-hands for the tribe, typically monthly or every six weeks, used to share progress, surface dependencies, and celebrate wins), a tribe lead sync (the tribe lead meets weekly or biweekly with all squad product owners to review priorities and surface blockers), and a dependency review (a lightweight session, often biweekly, where squads flag upcoming work that might affect other squads). Keep these rituals short and purposeful. A tribe gathering that becomes a two-hour status report will be avoided.
-
-A 45-minute session with two squad demos and 15 minutes of open discussion will be attended. Document each ritual's cadence, format, participants, and the specific decisions or outputs it should produce. This documentation prevents rituals from drifting into unfocused meetings over time.
-
-> **Pro tip:** Start with fewer rituals than you think you need. You can always add a ceremony when a real coordination problem surfaces. Removing a ritual that people find useless is much harder politically than never starting it.
-
-### Step 7: Step 7: Define cross-tribe interfaces
-
-Even well-drawn tribe boundaries will have seams where tribes need to coordinate. Identify these seams explicitly and define how coordination works across them. ), who the point of contact is on each side, and how changes to the interface are communicated. The goal is to make cross-tribe coordination as narrow and well-defined as possible, so that it does not require tribe leads to broker every interaction.
-
-Squads on either side of a seam should be able to coordinate directly using the agreed-upon interface, escalating to tribe leads only when the interface itself needs to change.
-
-> **Pro tip:** Cross-tribe interfaces work best when they mirror your technical architecture. If two tribes share a database, you have a tight coupling that will generate constant coordination overhead. Invest in decoupling the architecture, and the organizational coordination problem gets easier.
-
-### Step 8: Step 8: Communicate the tribe structure and rationale
-
-Roll out the tribe structure to the entire organization with clear communication about the rationale behind each decision. People need to understand not just which tribe they belong to, but why the boundaries were drawn this way, what problem the tribe structure is solving, and what will change about their day-to-day work. The communication should cover: the mapping of squads to tribes, the tribe missions, the tribe leads and their role, the new rituals and their cadences, and what is explicitly not changing (squad autonomy, chapter structures, guild participation). Hold a Q&A session, ideally one per tribe, where people can ask questions and surface concerns.
-
-Early concerns are gold. They reveal boundary ambiguities or role confusions that are much cheaper to fix now than after three months of friction.
-
-> **Pro tip:** Create a simple one-page visual that shows all tribes, their squads, and the key cross-tribe interfaces. This artifact becomes the most referenced document in the organization. Update it whenever squads move between tribes or new squads form.
-
-### Step 9: Step 9: Review and iterate the tribe structure quarterly
-
-Tribe structures are not permanent. Product strategy shifts, squads are created or disbanded, and the dependency landscape evolves. Set a quarterly review cadence where tribe leads and senior leadership assess whether the current structure is still serving the organization. In the review, examine: Are cross-tribe dependencies increasing?
-
-) Is any tribe consistently exceeding the size constraint? ) Are squads frequently requesting to move between tribes? ) Are tribe rituals well-attended and productive? ) Make small, incremental adjustments rather than wholesale reorganizations.
-
-Moving one squad between tribes is manageable. Redrawing every boundary simultaneously is disruptive and destroys the institutional knowledge that tribes build over time.
-
-> **Pro tip:** Track a simple metric: the number of cross-tribe escalations per month. A rising trend is the earliest warning sign that your tribe boundaries are no longer aligned with your actual work.
+Explain the tribe map to everyone affected, including the reasoning for each boundary, before it takes effect. Invite challenges for a fixed period and adjust where squads show a better grouping. After launch, repeat the dependency survey each quarter. If squads in the same tribe rarely coordinate, or squads in different tribes block each other constantly, redraw the boundaries.
 
 ## Best Practices
 
-- Keep tribes between 40 and 100 people. Below 40, a tribe lacks the critical mass to pursue a meaningful strategic objective and the tribe lead role becomes part-time overhead. Above 100, informal communication breaks down, tribe gatherings become broadcast-only events, and the tribe lead cannot maintain relationships with all members. When you approach the upper limit, start identifying seams for a future split before you are forced into an emergency reorganization.
-- Name tribes after their mission, not their technology stack. A tribe called "Payments Experience" communicates scope and purpose clearly to everyone in the organization. A tribe called "Backend Services Team 2" communicates nothing. The name frames how the tribe thinks about its work and how others understand what the tribe owns. Poor naming creates ambiguity that compounds over months.
-- Define tribe lead authority explicitly in writing and share it with all squad leads. The most damaging failure mode in tribe design is ambiguity about the tribe lead's role. If squad leads think the tribe lead is their manager, they will defer decisions upward. If they think the tribe lead is irrelevant, they will ignore alignment signals.
-
-Write down the specific decisions the tribe lead makes, the decisions they facilitate, and the decisions that remain with squads. Review this document with both the tribe lead and their squad leads in the same room.
-- Align tribe boundaries with your product architecture, not your business org chart. Business org charts reflect reporting relationships and budget ownership, which change with every reorg. Product architecture reflects how your systems actually interact, which changes more slowly and maps directly to the coordination needs that tribes are designed to manage. When tribe boundaries contradict the architecture, every sprint brings unexpected cross-tribe dependencies.
-- Invest in tribe-level onboarding for new squad members. When someone joins a squad, they also join a tribe. Make sure they understand the tribe's mission, the other squads in the tribe, the key cross-squad interfaces, and the tribe rituals they are expected to participate in. A 30-minute tribe onboarding session with the tribe lead prevents weeks of confusion and helps new members contribute to cross-squad coordination from day one.
-- Use tribe gatherings for alignment, not status reporting. If your tribe gathering consists of each squad lead reciting their sprint metrics while everyone else checks email, you are wasting everyone's time. Effective tribe gatherings feature squad demos of work-in-progress, open discussion of upcoming dependencies, celebration of cross-squad collaboration wins, and strategic context from the tribe lead. Keep it under 60 minutes and make attendance genuinely valuable.
-- Track and visualize cross-tribe dependencies separately from within-tribe dependencies. Cross-tribe coordination is inherently more expensive, so you want a clear signal when it is increasing. Maintain a simple log or board where squads flag work items that depend on a squad in another tribe. Review this log monthly.
-
-A consistent upward trend means your tribe boundaries are drifting out of alignment with your actual work patterns.
-- Resist the urge to create a tribe for every organizational need. Platform teams, internal tooling teams, and shared service teams sometimes get organized as tribes, but they often lack the customer-facing mission that makes a tribe cohesive. Consider whether a guild or a dedicated service team with clear SLAs to consuming tribes is a better fit for these cross-cutting concerns.
+- Draw boundaries from dependency data rather than from the existing org chart. The old departments are often exactly the silos the tribes are meant to dissolve.
+- Count everyone when checking size. Product owners, designers and coaches all add to the number of relationships people must keep up, which is the reason the size cap exists.
+- Keep the tribe lead out of squad task assignment. A tribe lead who assigns work turns squads back into delivery teams and removes the reason for having them.
+- Keep coordination on demand where you can. The [2012 paper](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf) notes that Spotify did not usually run a scrum of scrums because most squads were fairly independent, and set up a daily sync only when a large project needed several squads.
+- Make tribe results visible across the company. ING's quarterly business review documents are open to all tribes, which lets tribes see each other's plans and ask for help early ([McKinsey Quarterly](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation)).
+- Revisit tribes when the product strategy changes. A boundary that fitted last year's priorities can put today's most important work across two tribes.
 
 ## Common Mistakes
 
-- **Drawing tribe boundaries around existing reporting lines instead of around mission areas** — This happens because reorganizing reporting relationships is politically hard, so leaders default to wrapping a tribe label around an existing department. The result is tribes that look like old departments with new names, where squads within the same tribe have unrelated missions and little need to coordinate, while squads that desperately need to coordinate are in different tribes. Watch for this signal: if your tribe's squads share a manager but rarely discuss each other's work, you have a department masquerading as a tribe. Redraw boundaries around the actual product areas where coordination is genuinely needed, even if it means changing reporting lines.
-- **Letting tribes grow past 100 people without splitting** — This creep usually happens gradually. A new squad is added here, a team is absorbed there, and suddenly the tribe is at 130 people. The tribe lead rationalizes that splitting would be disruptive, so they add more process to compensate. But the process (more meetings, more documentation, more formal requests) is itself the problem that smaller tribes were designed to avoid.
-
-Set an alert at 80 people. When you hit it, start designing the split. Identify the natural seam, socialize it with squad leads, and execute the split before you hit the point where communication has already degraded. Splitting a healthy tribe proactively is far less painful than emergency-splitting a dysfunctional one.
-- **Appointing a tribe lead who acts as a layer of management over squads** — This is the single most common failure in tribe implementation. It typically happens when organizations appoint a senior engineering manager or director as tribe lead because they have positional authority. The tribe lead then starts attending squad ceremonies, reviewing squad-level decisions, and routing all cross-squad communication through themselves. Squads lose autonomy, decisions slow down, and the tribe lead becomes a bottleneck.
-
-' If more than one squad says overhead, coach the tribe lead on facilitative leadership, or find someone better suited to the role.
-- **Creating tribes with no regular coordination rituals, assuming alignment will happen organically** — Some organizations create tribes on paper but never establish the rituals that make tribes functional. They expect that simply being in the same tribe will make squads coordinate. It will not. Without a regular tribe gathering, squads have no forum to surface dependencies.
-
-Without a tribe lead sync, priorities drift apart. Without a dependency review, conflicts are discovered at integration time rather than planning time. Start with three rituals (monthly gathering, biweekly lead sync, biweekly dependency review) and adjust from there. Having too few rituals is more dangerous than having too many, because the failure mode is invisible until a major coordination breakdown occurs.
-- **Treating tribe structure as permanent and avoiding reorganization** — Organizations invest significant political and emotional capital in their initial tribe design and then treat it as sacred. But product strategy evolves, market conditions shift, and the dependency landscape changes. A tribe structure that was optimal six months ago may be generating unnecessary cross-tribe friction today. The signal to watch for is increasing cross-tribe escalations or squads that spend more time coordinating with squads in other tribes than within their own.
-
-Review tribe boundaries quarterly, and normalize small adjustments (moving one squad between tribes, splitting a growing tribe) as routine organizational hygiene rather than dramatic reorgs.
-- **Defining tribe missions that are too broad or overlapping** — Vague tribe missions like 'own the customer experience' or 'drive growth' create territory disputes because multiple tribes can claim the same work. This leads to either duplicated effort or political standoffs where no tribe takes ownership. The fix is specificity. A mission should be concrete enough that a hypothetical new product initiative would clearly belong to one tribe or another at least 80% of the time.
-
-Test your missions with real examples. List five recent product decisions and ask three different people which tribe should have owned each one. If they disagree on more than one, your mission boundaries need narrowing.
+- **Tribes that mirror old departments**: Renaming departments as tribes keeps the old hand-offs. Start from the dependency survey and let the grouping follow the work.
+- **Letting tribes grow without limit**: A tribe that keeps absorbing squads becomes a department with a tribe lead on top. Set a cap and split before it is reached.
+- **A tribe lead who runs the squads**: When the tribe lead sets squad priorities and tasks, squads lose autonomy and the product owners lose their role. Keep the tribe lead focused on direction, obstacles and habitat.
+- **Heavy standing coordination**: Weekly meetings for every squad lead add overhead that grows with each squad. Use gatherings for shared context and targeted syncs for real dependencies.
+- **Never redrawing boundaries**: Products and priorities change. A tribe structure that is never reviewed slowly drifts out of line with the work.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/spotify-squad-model/METHOD.md) — Spotify Squad Model
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/spotify-squad-model/METHOD.md): The Spotify Model
 
 ## Related Skills
 
-- [Scaling Agile Practices Using Spotify Structures](../scaling-agile-with-spotify-structures/SKILL.md)
-- [Evaluating Spotify Model Tradeoffs and Common Pitfalls](../evaluating-spotify-model-tradeoffs/SKILL.md)
-- [Building Guilds for Cross-Tribe Knowledge Sharing](../building-cross-cutting-guilds/SKILL.md)
-- [Balancing Squad Autonomy with Organizational Alignment](../balancing-autonomy-and-alignment/SKILL.md)
 - [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
+- [Scaling Agile with Spotify Squads and Tribes](../scaling-agile-with-spotify-structures/SKILL.md)
+- [Balancing Squad Autonomy with Organizational Alignment](../balancing-autonomy-and-alignment/SKILL.md)
+- [Running Chapters for Craft Excellence](../running-chapters-for-craft-excellence/SKILL.md)
+- [Building Guilds for Cross-Tribe Knowledge Sharing](../building-cross-cutting-guilds/SKILL.md)
 - [Adapting the Spotify Model to Your Organization](../adapting-spotify-model-to-your-organization/SKILL.md)
-- [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
+- [Evaluating Spotify Model Tradeoffs and Failure Modes](../evaluating-spotify-model-tradeoffs/SKILL.md)
+
+## Sources
+
+- [Henrik Kniberg and Anders Ivarsson: Scaling Agile @ Spotify (2012)](https://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf)
+- [Atlassian: Discover the Spotify model](https://www.atlassian.com/agile/agile-at-scale/spotify)
+- [McKinsey Quarterly: ING's agile transformation](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation)

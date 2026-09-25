@@ -1,37 +1,37 @@
-# Examples: Building Integrated Promotion Plans
+# Examples: Promotion Strategy in the Marketing Mix
 
-## Example: B2B SaaS Product Launch Integrated Promotion Plan
-
-**Scenario:**
-
-A mid-market project management software company is launching a new AI-powered resource allocation feature. Their target audience is operations directors at companies with 200-2,000 employees. The budget is $150,000 over a 3-month campaign. The brand is positioned as 'the smart operator's command center.'
-
-**Walkthrough:**
-
-**Messaging Architecture**: Core theme—'Stop guessing, start allocating.' Key messages: (1) AI-powered resource allocation eliminates overwork and underutilization, (2) Teams using the feature see 30% fewer project delays, (3) Setup takes 15 minutes, not 15 weeks.
-
-**Channel Selection and Roles**: Primary channels—LinkedIn advertising (targeting operations directors), content marketing (SEO-optimized blog series and downloadable guide), and email nurture. Secondary channels—PR (industry trade publications), webinars. Experimental—podcast sponsorships on two operations-focused shows.
-
-**Coordinated Calendar**: Weeks 1-2: Publish pillar blog post '2024 State of Resource Allocation' and corresponding social content; brief trade journalists under embargo. Week 3: PR embargo lifts, launch LinkedIn ad campaign driving to the guide download, announce webinar. Week 4: Webinar event, start email nurture for guide downloaders. Weeks 5-8: Retargeting ads to website visitors, case study content from beta users, sales promotion (extended free trial). Weeks 9-12: Customer testimonial campaign, performance optimization, and secondary webinar.
-
-**Budget Allocation**: LinkedIn ads—$50K (33%), content production—$30K (20%), PR agency—$25K (17%), webinar production—$10K (7%), email platform/creative—$10K (7%), podcast sponsorships—$10K (7%), flexible reserve—$15K (10%).
-
-**Shared Assets**: One hero explainer video (cut into LinkedIn ads, webinar intro, email embed, social clips), research data set (fuels blog content, PR pitch, infographics, webinar presentation), customer interview recordings (testimonial ads, case study blogs, social proof in emails).
-
-**Measurement**: Primary KPI—500 marketing qualified leads. Multi-touch attribution tracks the journey from first touch (PR, organic search, or LinkedIn ad) through content engagement to trial signup. Weekly cross-channel dashboard reviewed by all team leads.
-
-## Example: Local Restaurant Chain Seasonal Promotion
+## A landscaping company aligns its channels
 
 **Scenario:**
 
-A regional restaurant chain with 12 locations is launching a summer menu featuring locally sourced ingredients. Budget is $25,000. The brand positioning is 'farm-fresh flavors, neighborhood feel.' Target audience is families and food-conscious millennials within a 10-mile radius of each location.
+Illustrative scenario: a landscaping company runs local ads about low prices, while its website talks about design expertise and its salespeople lead with fast turnaround. Enquiries arrive, but many prospects drop out after the first quote.
 
 **Walkthrough:**
 
-**Messaging Architecture**: Core theme—'Summer tastes better from here.' Key messages: (1) Every summer dish features ingredients from farms within 50 miles, (2) Meet the farmers behind your meal, (3) Limited-time flavors you won't find anywhere else.
+The audit of current activity shows three messages in three channels. The team agrees on one core message, garden design that lasts, drawn from its product strategy and backed by photos of finished work and a planting guarantee. The low-price ads are replaced with before-and-after projects.
 
-**Channel Mix**: Primary—social media (Instagram and Facebook with location targeting), in-store materials and menu inserts. Secondary—local PR (food bloggers, local newspaper food sections), email to existing loyalty members. Sales promotion—'Summer Sampler' prix fixe meal at a special introductory price for the first two weeks.
+The sales team gets the same proof points and a short script. A shared calendar puts the spring campaign, a local gardening talk and a follow-up email in the same weeks. The team measures quote acceptance as well as enquiries, since the goal was to attract prospects who value design.
 
-**Coordinated Execution**: Two weeks before launch: Instagram teaser campaign featuring farmer profiles (video interviews at farms), email teaser to loyalty members with early access to the menu. Launch week: Local food blogger event at flagship location (PR), Instagram/Facebook ad campaign begins, in-store posters and table cards deploy across all 12 locations, loyalty email with Summer Sampler offer. Weeks 3-6: User-generated content campaign (customers share summer dishes for a chance to win a farm-to-table dinner experience), retargeting ads to website visitors, weekly social posts highlighting different farmers and dishes. Week 8: 'Last call for summer' push across all channels.
+## A software startup plans a launch across channels
 
-**Integration in Action**: The farmer profile videos shot for Instagram also appear on the website menu page, are referenced in the PR pitch to bloggers, and are linked in the loyalty email. Photos from the blogger event become social proof content on Instagram. User-generated content from the social campaign is reposted, featured in email newsletters, and displayed on in-store digital screens. Every touchpoint tells the same farm-fresh story.
+**Scenario:**
+
+Illustrative scenario: a startup is launching a scheduling tool for small clinics. It has a small budget and no brand awareness.
+
+**Walkthrough:**
+
+The team writes one claim, fewer no-shows, and checks it with the product lead: the reminder feature supports it, but only if clinics complete setup. So the onboarding team commits to a setup call for every new clinic, which makes the claim deliverable.
+
+The promotional mix focuses on channels clinic managers already use: a professional association newsletter, search content about reducing no-shows, and referrals from early customers. Paid ads are held back until the message is proven. All activity goes on one calendar, and the team tracks trials, completed setups and conversions together.
+
+## A hotel reins in an overpromising campaign
+
+**Scenario:**
+
+Illustrative scenario: a city hotel runs a campaign promising "a quiet retreat in the heart of the city." Reviews start mentioning street noise and complaints rise.
+
+**Walkthrough:**
+
+The review of results shows bookings rose but satisfaction fell. The promise set an expectation the rooms facing the street could not meet. The team changes the message to what every guest reliably gets, a central location with a quiet courtyard garden, and adds a room request option for guests who want the quieter side.
+
+Front desk staff are briefed on the new message. The team watches both bookings and review scores, treating a rise in complaints as an early warning that promotion has drifted ahead of delivery.

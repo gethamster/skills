@@ -1,40 +1,45 @@
 # Examples: Synthesizing Insights to Define the Problem
 
-## Example: E-commerce Checkout Drop-off Synthesis
+## From "people don't use the expense tool" to a sharper problem
 
 **Scenario:**
 
-A product team completed the Discover phase for an e-commerce platform experiencing 68% cart abandonment. They conducted 15 user interviews, analyzed session recordings, and reviewed support tickets. They now have over 150 individual findings to synthesize.
+Illustrative scenario: a finance team was asked why staff submit expenses late. Discover produced notes from a dozen interviews, a week of support tickets and two afternoons watching people file claims. The original brief assumed the expense tool was too hard to use.
 
 **Walkthrough:**
 
-The team runs a 90-minute affinity mapping session and identifies 8 clusters: shipping cost surprises, account creation friction, payment method limitations, trust/security concerns, mobile layout issues, coupon code confusion, slow page loads, and return policy anxiety.
+The team puts every note on one board and clusters in silence for twenty minutes, then discusses the contested notes. One cluster is labelled "People lose receipts between the trip and the claim." Another reads "People wait until the end of the month because approvals are batched then anyway."
 
-They write insight statements for each. For example, 'Shipping cost surprises' becomes: 'Users feel deceived when shipping costs appear only at the final checkout step, after they've invested time entering their information — this breaks trust and triggers abandonment.'
+The second cluster produces the key insight: staff delay on purpose, because submitting early gains them nothing when approvers only look once a month. The tool's usability is a real but smaller issue.
 
-Using a 2×2 prioritization matrix (user impact vs. implementation feasibility), they identify shipping cost transparency and account creation friction as the highest-impact, most-feasible themes.
+Candidate problems are compared on evidence, reach and whether finance can act on them. The team chooses the batching problem, records the receipt problem as set aside, and writes: "Staff who travel for work delay expense claims because approvals happen monthly, so early submission brings no benefit and receipts get lost in the gap."
 
-They craft their problem statement: 'How might we help shoppers understand the total cost of their purchase early enough in the journey that they can make a confident buying decision without feeling surprised at checkout?'
+"How might we" questions follow, such as "How might we make submitting soon after a trip worth it for the traveller?" The sponsor, who expected a tool replacement, signs off after seeing the evidence behind the batching cluster.
 
-This statement is validated with 5 users who confirm the frustration, and with the product director who confirms it aligns with the Q2 revenue retention goal. The team is now ready to enter the Develop phase of the double diamond framework with a focused, evidence-backed challenge.
-
-## Example: Internal Tool Adoption Synthesis for Enterprise
+## A library service with competing problems
 
 **Scenario:**
 
-A design team at a large enterprise is tasked with improving adoption of an internal project management tool. Discover-phase research included 20 employee interviews across 4 departments, a company-wide survey (n=340), and contextual inquiry sessions observing how teams actually manage projects.
+Illustrative scenario: a city library service researched falling visits among teenagers. The findings point in several directions: opening hours, lack of space to study in groups, and a sense that the library is "for younger kids."
 
 **Walkthrough:**
 
-During affinity mapping, the team uncovers a surprising pattern. While the initial hypothesis was that the tool had usability problems, the strongest clusters point to organizational issues: managers don't enforce usage, teams maintain shadow spreadsheets because they don't trust the tool's data accuracy, and the tool doesn't integrate with the email-based workflows people already rely on.
+The synthesis group includes librarians, a youth worker and two of the researchers. Clustering produces three strong themes, each with notes from several sources.
 
-The team names the dominant theme: 'Employees rationally choose not to use the tool because migrating their existing workflow carries effort and risk, while the benefits of adoption are invisible at the individual level — only management sees the aggregated data.'
+To choose, the group scores the three candidates on evidence, severity and what the service can change within a year. Opening hours scores low on "can we act," because of staffing agreements. Group study space scores high on evidence and reach.
 
-They write multiple HMW variations:
-- 'How might we make the benefits of using the tool visible to individual contributors, not just managers?'
-- 'How might we reduce the effort of migrating from spreadsheet-based workflows?'
-- 'How might we make the tool's data trustworthy enough that teams voluntarily abandon their shadow systems?'
+The problem statement names teenagers who need somewhere to work together after school, and the obstacle that libraries enforce quiet and offer no bookable space. The team explicitly records the "for younger kids" perception as a related problem that the chosen one may partly address.
 
-After prioritization with stakeholders, they select a combined problem statement: 'How might we make the project management tool deliver immediate, personal value to individual contributors so that adoption becomes a rational choice rather than a mandated chore?'
+## Catching a solution disguised as a problem
 
-This reframing — from 'fix the UI' to 'fix the value proposition' — fundamentally changes the solution space for the Develop phase, demonstrating how synthesis in the double diamond framework can redirect an entire project.
+**Scenario:**
+
+Illustrative scenario: a product team drafts its problem statement as "Customers need an in-app chat so they can get help faster." A design lead reviewing the Define output questions it before sign-off.
+
+**Walkthrough:**
+
+The lead asks what customers were trying to do when they needed help, and what blocked them. The team returns to its clusters and finds that most help requests came at one step: connecting a bank account, where error messages gave no reason for failure.
+
+The statement is rewritten: "New customers connecting a bank account fail at that step without knowing why, and most of them give up or contact support." Chat becomes one possible solution among several, alongside clearer errors and a different connection flow.
+
+The rewritten statement now rules some ideas out (generic support improvements) and leaves several open, which is the balance the team was aiming for.

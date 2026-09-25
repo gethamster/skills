@@ -1,40 +1,37 @@
 # Examples: Managing Scrum Boards in Jira
 
-## Example: Setting Up a Jira Scrum Board for a New Mobile Development Team
+## Setting up a board for a new Scrum Team
 
 **Scenario:**
 
-A newly formed mobile development team of 6 (4 developers, 1 QA engineer, 1 designer) is starting their first sprint. They need a Jira scrum board configured for their specific workflow, which includes design handoff, development, code review, QA testing, and release staging.
+Illustrative scenario: a new Scrum Team of six moves from a spreadsheet to Jira. Its workflow has five statuses: To Do, In Progress, In Review, Ready for Release and Released. The Definition of Done includes release to production.
 
 **Walkthrough:**
 
-The Scrum Master creates a new Scrum project called 'Mobile App v2' (key: MAV2). In Board Settings > Columns, they replace the default three columns with six: **Backlog → Design Review → In Development → Code Review → QA → Ready for Release → Done**. They map the corresponding workflow statuses to each column.
+The Scrum Master creates a Scrum board from the team's existing company-managed space and checks that the filter covers only that space. In the column settings, To Do, In Progress and In Review get their own columns. Because the Definition of Done requires release, only Released goes in the right-most column; Ready for Release stays in its own column so it does not count as Done.
 
-For swimlanes, they choose 'Epics' since the team is working across three major epics: Onboarding, Payments, and Notifications. They create Quick Filters for `type = Bug`, `assignee = currentUser()`, and `flagged = impediment`.
+The team adds one quick filter for blocked items and chooses swimlanes by story, so subtasks sit under their parent during the Daily Scrum. The Product Owner ranks the refined items in the backlog, and the Developers add story point estimates to the parent items, since subtask estimates are not counted in the reports.
 
-The product owner populates the backlog with 45 user stories across the three epics, each with acceptance criteria and story point estimates from a planning poker session. For Sprint 1, the team commits to 28 story points based on comparable team velocities in the organization.
-
-During the sprint, the team reviews the burndown chart at each standup. By day 3, the burndown shows they're slightly behind the ideal line. The board reveals three items stuck in Code Review — a bottleneck caused by only one senior developer doing reviews. They adjust by pairing junior developers for reviews, clearing the bottleneck by day 5.
-
-At sprint end, they complete 24 of 28 points (86% completion rate). The remaining 4-point story moves to Sprint 2. The Sprint Report shows no mid-sprint scope additions, confirming good discipline. They use this data in their retrospective to discuss the code review bottleneck and decide to implement a review rotation policy.
-
-## Example: Using Velocity Data to Improve Sprint Planning Accuracy
+## A burndown that flatlines and then drops
 
 **Scenario:**
 
-A team has been running sprints for 8 weeks (4 two-week sprints) but consistently overcommits, completing only 60-70% of planned work. The product owner is frustrated because delivery forecasts keep slipping.
+Illustrative scenario: halfway through a two-week sprint, the burndown line has barely moved, and then it drops sharply on the last two days. This happens for several sprints in a row.
 
 **Walkthrough:**
 
-The Scrum Master pulls up the Velocity Chart from the Jira scrum board reports. The data shows:
+At the retrospective the team looks at the chart together. The pattern matches one Atlassian's tutorial describes: steep drops suggest work was not broken down into small pieces. The items are large, and each one only reaches the right-most column at the very end.
 
-- Sprint 1: Committed 40 pts, Completed 28 pts
-- Sprint 2: Committed 42 pts, Completed 30 pts
-- Sprint 3: Committed 38 pts, Completed 25 pts
-- Sprint 4: Committed 35 pts, Completed 26 pts
+The team agrees to split stories so each can be finished within a few days, and to add a column constraint on In Review so reviews do not pile up. Over the next sprints the line moves more evenly, and the Daily Scrum can see problems earlier.
 
-The average velocity is 27.25 points, but the team has been committing 35-42 points. The Scrum Master presents this chart at the Sprint 5 planning session and proposes committing to no more than 28 points — the rolling average rounded slightly up for aspirational stretch.
+## Completing a sprint with unfinished work
 
-For Sprint 5, the team commits to 27 points. They also examine why completed velocity is low: the Sprint Reports reveal that 3-5 points of unplanned bug fixes get added each sprint. They create a 5-point buffer in future sprint plans for incoming bugs.
+**Scenario:**
 
-Sprint 5 results: Committed 27 pts, Completed 29 pts (including 4 points of mid-sprint bugs). The team completes everything committed for the first time, and the product owner can confidently forecast delivery timelines based on the ~28-point sustainable velocity.
+Illustrative scenario: at the end of a sprint, two stories are in progress and one has an open subtask. The Scrum Master tries to complete the sprint and cannot.
+
+**Walkthrough:**
+
+The Scrum Master checks Atlassian's guidance and finds that all subtasks must be Done before a sprint can be completed. The open subtask was a leftover checklist item that was already covered, so a Developer closes it with a note.
+
+When completing the sprint, Jira asks where the unfinished stories should go. The team moves them to the backlog, not into the next sprint, so the Product Owner can reorder them against everything else. In the next Sprint Planning, one of them is selected again and the other drops lower, because a customer need changed.

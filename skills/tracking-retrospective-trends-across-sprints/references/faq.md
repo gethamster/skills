@@ -1,25 +1,21 @@
-# FAQ: Tracking 4Ls Trends Across Multiple Sprints
+# FAQ: Tracking 4Ls Retrospective Trends Across Sprints
 
-## How many scrum sprint retrospective sessions do I need before trend tracking becomes useful?
+## Why track trends at all?
 
-You need a minimum of 3-4 retrospectives to start seeing meaningful patterns, but trend tracking becomes truly powerful after 6-8 sprints. Start logging from your very first session so you have the data ready when you reach critical mass.
+A single retrospective sees one sprint, and memory favors the most recent and most emotional one. A log shows which themes recur, which actions worked and which good practices faded. Matthies and Dobrigkeit argue that retrospectives rely too much on experience and too little on data, and a theme log is a simple step toward data.
 
-## What tools work best for tracking scrum sprint retrospective trends over time?
+## What should the log contain?
 
-A simple spreadsheet (Google Sheets or Excel) works for most teams. For larger organizations, Notion databases or dedicated retrospective tools like TeamRetro or Retrium offer built-in trend analytics. The best tool is whichever one your team will actually use consistently.
+Two parts. Themes, with sprint, category, name, tag and note count. Actions, with sprint, tag, owner, due date, status and whether the issue came back. Keep it short enough to fill in within a few minutes.
 
-## Should I track individual team member feedback or only anonymized themes?
+## How many tags should we use?
 
-Track themes and categories, not individual attributions. Retrospective psychological safety depends on anonymity. If people fear their specific feedback is being tracked to them over time, they will self-censor, and your data quality will collapse.
+A small, stable set with a one-line definition each. Too many tags split the same issue across labels and hide the pattern. Merge overlapping tags when you review the list.
 
-## How do I present scrum sprint retrospective trend data to stakeholders who weren't in the meetings?
+## How often should we review trends?
 
-Use visual summaries — line charts showing category balance over time and heatmaps highlighting persistent themes. Lead with the business impact: 'This recurring theme costs us X hours per sprint.' Avoid sharing raw retrospective notes, which lack context for outsiders.
+Every few sprints is usually enough. Reviewing every sprint crowds out the current sprint's discussion. Bring the summary into the gather-data phase of a retrospective and let the team interpret it.
 
-## What if the same Lacked item keeps appearing despite action items being completed?
+## What does a recurring theme mean?
 
-This is a signal that your action items are treating symptoms rather than root causes. Use the trend data to justify a deeper investigation — a dedicated problem-solving session, a root cause analysis, or escalation to leadership for structural changes that are beyond the team's authority.
-
-## Can I combine 4Ls trend data with other retrospective formats?
-
-Yes, if you maintain a consistent tagging taxonomy. The theme tags (deployment, communication, testing) are format-agnostic. Map items from other formats — like Start/Stop/Continue — into your existing tags. The L-category column won't apply to non-4Ls sessions, but theme frequency analysis still works.
+That something keeps coming back, not why. If it recurs despite completed actions, the cause may be deeper or outside the team. Use the log as evidence when you escalate.

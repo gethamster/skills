@@ -1,33 +1,37 @@
-# Examples: Evolving Your North Star Metric Across Product Growth Stages
+# Examples: Evolving Your North Star Metric Across Growth Stages
 
-## Example: A Collaboration Tool Evolving from MVP to Growth Stage
-
-**Scenario:**
-
-A project management SaaS product launched 18 months ago. Their initial North Star Metric was 'weekly users who complete at least one task.' They've achieved strong product-market fit with small teams and are now seeing larger organizations adopt the tool. Usage patterns have shifted — the most successful accounts don't just complete tasks; they use the tool for team coordination, file sharing, and status updates. The growth product manager notices that 'tasks completed' no longer differentiates retained accounts from churned ones, but 'number of team members collaborating on shared projects weekly' does.
-
-**Walkthrough:**
-
-The growth product manager runs the audit (Step 1) and confirms that task completion has plateaued as a predictor of retention — accounts with 50+ tasks/week churn at the same rate as those with 20. But accounts with 4+ collaborators per project have 3x better retention.
-
-She maps the value shift (Step 3): from 'personal productivity' to 'team coordination.' She generates candidates (Step 4) including 'weekly active collaborators per account,' 'projects with 3+ contributors weekly,' and 'weekly cross-team file shares.' After scoring, 'weekly active collaborators per account' wins — it's the most understandable and actionable.
-
-During validation (Step 5), she confirms that this metric correlates 0.72 with 12-month retention (vs. 0.31 for task completion). She runs parallel tracking for 6 weeks.
-
-The old metric ('weekly task completions') becomes an input metric feeding the new North Star. A second input metric is 'projects with 3+ contributors,' owned by the growth team. The product team owns 'weekly invites sent per account.' Dashboards are updated, OKRs are revised, and the transition is communicated in an all-hands with the narrative: 'Our product has evolved from a personal productivity tool to a team coordination platform, and our North Star should reflect that.'
-
-## Example: A Marketplace Transitioning from Growth to Maturity
+## A self-serve tool moves to teams
 
 **Scenario:**
 
-A two-sided marketplace for freelance designers has been using 'monthly completed transactions' as their North Star for three years. Growth is decelerating. The platform has strong supply and demand in core categories, but the growth product manager notices that the highest-value customers aren't just completing one-off transactions — they're building ongoing relationships with freelancers, using the platform's project management tools, and paying for premium features. The marketplace is evolving from a transactional platform to a relationship platform.
+Illustrative scenario: a design tool grew on individual users and uses "weekly active creators" as its North Star. The company now sells team plans, and most new revenue comes from teams. Weekly active creators keeps rising while team plan renewals are flat.
 
 **Walkthrough:**
 
-The growth product manager identifies the stage transition: from growth/scaling to early maturity. The value shift is from 'finding and hiring a freelancer' to 'managing an ongoing creative relationship.'
+The strategy change is a named trigger, so the product lead opens a review. The diagnosis shows the North Star rising with solo users who never invite anyone, while renewals depend on teams where several people edit the same files. The value sentence is rewritten around teams getting work done together.
 
-Candidate metrics include 'monthly active client-freelancer relationships (2+ transactions in 90 days),' 'monthly hours managed through platform tools,' and 'monthly repeat engagement rate.' After evaluation, 'monthly active client-freelancer relationships' wins because it directly captures the relationship value and is harder to game than transaction count.
+Two candidates are backfilled: teams with several active editors per week, and files edited by more than one person per week. The first tracks renewals more closely. The input map is rebuilt around team creation, invitations accepted and shared editing, and both metrics run side by side on the dashboard for a quarter before the switch.
 
-Validation shows this metric correlates strongly with LTV — clients with 3+ active relationships have 5x higher annual spend. The old 'completed transactions' metric becomes an input metric (specifically, 'first transactions' measures top-of-funnel health). New input metrics include 'repeat hire rate' (owned by the matching team) and 'project management tool adoption' (owned by the platform team).
+## A request that turned out to be a focus change
 
-The transition narrative emphasizes that the marketplace has matured: 'We've won the discovery game. Now we need to win the relationship game.' Board reporting is updated to track relationship depth alongside transaction volume.
+**Scenario:**
+
+Illustrative scenario: a subscription app's leadership proposes changing the North Star to "trial conversions" because conversion fell for two months. The current North Star is subscribers who complete a lesson each week.
+
+**Walkthrough:**
+
+The product lead runs the diagnosis. The North Star still tracks retention and revenue well; the problem is concentrated in one input, the step from trial to first lesson. No strategy has changed.
+
+Instead of replacing the North Star, the team makes trial-to-first-lesson the focus input for the quarter and assigns extra capacity to it. The North Star stays, the decision and its reasoning go into the review log, and the question is closed without resetting every dashboard.
+
+## An early product that adopted a North Star too soon
+
+**Scenario:**
+
+Illustrative scenario: a startup picked a North Star in its first months and has redefined it three times as the product changed. Teams have stopped paying attention to it.
+
+**Walkthrough:**
+
+The founders review the history and see that the value moment itself has not settled; each redefinition followed a pivot. They retire the North Star for now and focus on cohort retention, as Rachitsky recommends before product-market fit.
+
+They agree on a trigger for returning to a North Star: several consecutive cohorts whose retention curves flatten. When that happens, they will run the selection process again with a stable value sentence, and treat the result as the first real North Star.

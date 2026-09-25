@@ -1,15 +1,20 @@
 ---
-name: facilitating-divergent-ideation
-description: "This skill teaches you how to run structured brainstorming, co-design workshops, and rapid prototyping sessions that generate a wide range of potential solutions during the second diamond's divergent phase."
+name: "facilitating-divergent-ideation"
+description: "Facilitate divergent ideation in the Double Diamond Develop phase: brainstorms, sketching and co-design that produce distinct solution concepts."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: double-diamond
+  method: "double-diamond"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Facilitating Divergent Ideation in Double Diamond Design Thinking
+# Facilitating Divergent Ideation in the Double Diamond
 
-> This skill teaches you how to run structured brainstorming, co-design workshops, and rapid prototyping sessions that generate a wide range of potential solutions during the second diamond's divergent phase.
+> Facilitate divergent ideation in the Double Diamond Develop phase: brainstorms, sketching and co-design that produce distinct solution concepts.
 
 ## Before you start
 
@@ -24,142 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours per session |
-| Outcome | You can confidently plan and lead ideation sessions that produce a diverse, high-volume set of potential solutions ready for convergence and testing in the Deliver phase. |
-| Prerequisites | Understanding of the Double Diamond framework and its four phases, A clearly defined problem statement from the Define phase, Basic facilitation skills for group workshops, Familiarity with divergent vs. convergent thinking modes |
+| Time to Learn | a few workshops of facilitation practice |
+| Outcome | You can plan and run Develop-phase sessions that turn an agreed problem into a set of distinct, testable solution concepts. |
+| Prerequisites | An agreed problem statement and "How might we" questions from Define, a mixed group of participants, basic workshop facilitation |
 | Part of | [Double Diamond](../../methods/double-diamond/METHOD.md) |
 
 ## Overview
 
-The Develop phase is where the second diamond opens wide. After narrowing down to a clear problem definition, your team needs to expand outward again — exploring as many potential solutions as possible before committing to any single direction. Facilitating this divergent ideation effectively is one of the most critical and misunderstood skills in double diamond design thinking.
+Facilitating divergent ideation is the core of the Develop phase, where the second diamond of the [Double Diamond](../../methods/double-diamond/METHOD.md) opens out. With a problem agreed in Define, the team's job is now to produce many different possible answers before choosing any. The Design Council says the second diamond "encourages people to give different answers to the clearly defined problem, seeking inspiration from elsewhere and co-designing with a range of different people" ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)).
 
-Many teams struggle here because they either brainstorm too loosely (generating ideas that ignore constraints) or too tightly (self-editing before ideas have a chance to breathe). The Develop phase requires a structured yet psychologically safe environment where wild ideas coexist with practical ones. Your job as a facilitator is to create that space, manage energy, and ensure the output is broad enough to genuinely surprise the team.
+The difficulty is social more than creative. Groups converge on the first plausible idea, defer to the most senior person, or spend the session evaluating instead of generating. A facilitator's job is to structure time, rules and activities so the group produces volume and variety first, and to hold judgement back until the right moment.
 
-This skill covers the full toolkit: from setting up How Might We prompts and running timed brainstorming exercises, to organizing multi-stakeholder co-design workshops and lightweight prototyping sprints. Whether you're working with a small product team or a large cross-functional group, these techniques help you reliably generate the volume and diversity of ideas the Double Diamond model demands.
+The inputs are the problem statement, the "How might we" questions, the key insights from Define, and a group of participants chosen for range: designers, engineers, delivery staff, subject experts and, where possible, users. The outputs are a large pool of raw ideas, a smaller set of developed concepts that differ from each other in approach, and rough prototypes or sketches that make each concept concrete enough to test in Deliver.
+
+Divergent thinking has a long history as a named idea. The psychologist J. P. Guilford introduced the terms divergent and convergent thinking in 1956, describing divergent thinking as exploring many possible solutions in a free-flowing way ([Wikipedia on divergent thinking](https://en.wikipedia.org/wiki/Divergent_thinking)). The Double Diamond applies that idea to a design project by giving it its own phase.
+
+This skill covers preparing the room and the prompts, running generation rounds with different techniques, involving users and delivery staff, developing ideas into concepts, and knowing when to stop generating.
 
 ## How It Works
 
-Divergent ideation in the Develop phase works by deliberately suspending judgment and expanding the solution space. In the [Double Diamond](https://tryhamster.com/methods/double-diamond) framework, the first diamond (Discover → Define) narrows a broad problem space into a focused problem statement. The second diamond (Develop → Deliver) then opens up again to explore many possible solutions before narrowing to the best ones.
+Divergent sessions work when three conditions hold: the prompt is clear, judgement is suspended, and the group has more than one way to contribute.
 
-The underlying principle is that the quality of your final solution is directly correlated with the quantity and diversity of ideas you generate before converging. Research on creative problem-solving consistently shows that the best ideas rarely appear first — they emerge after the obvious solutions have been exhausted and the team pushes into less familiar territory.
+The prompt is the "How might we" question from Define. A good one points at a problem without naming a solution. If participants keep asking what the session is about, the prompt is too broad. If every idea looks the same, it is too narrow.
 
-Facilitation makes or breaks this phase. Without structure, ideation sessions devolve into unfocused discussions dominated by the loudest voices. Without psychological safety, team members self-censor. Effective facilitation uses time constraints, visual prompts, individual-before-group sequencing, and explicit rules (like deferring judgment) to create conditions where divergent thinking thrives. The goal isn't to find the answer — it's to build a rich landscape of possibilities that the Deliver phase can then evaluate and refine.
+Suspending judgement is a rule you state and enforce. IDEO.org's brainstorm rules are the common reference: defer judgement, encourage wild ideas, build on the ideas of others, stay focused on the topic, hold one conversation at a time, be visual, and go for quantity, with good sessions producing up to 100 ideas in 60 minutes ([Design Kit brainstorm rules](https://www.designkit.org/methods/brainstorm-rules.html)). Quantity matters because early ideas tend to be obvious, and less obvious ones appear once those are out of the way.
 
-Each technique in the facilitator's toolkit serves a specific purpose: brainwriting equalizes participation, Crazy 8s forces rapid volume, analogous inspiration breaks fixation, and co-design workshops bring diverse perspectives. By layering these techniques across a session, you prevent ideation fatigue and keep the group pushing into genuinely novel territory.
+Variety of contribution matters because open group discussion favours fast, confident talkers. Silent individual generation before sharing, sketching instead of talking, and small sub-groups all widen who contributes. Timed sketching exercises such as Crazy Eights, in which each person folds a sheet into eight panels and draws eight ideas in a few minutes with about 40 seconds per panel ([thoughtbot design sprint guide](https://github.com/thoughtbot/design-sprint/blob/main/Exercises/crazy-eights.md)), push people past their first idea.
+
+Looking elsewhere is a deliberate step. Ask how other industries, services or natural systems handle an analogous problem, and bring examples into the room. This is where the "seeking inspiration from elsewhere" in the Design Council's description becomes a technique rather than a slogan.
+
+Divergence in Develop also happens with materials. Rough prototypes (paper screens, role-played service moments, cardboard mock-ups) are a way to generate and compare ideas as well as to test them. Low-fidelity prototypes are quick to change and reduce designers' attachment to unfinished work ([NN/g on prototype fidelity](https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/)).
+
+Generation ends with light convergence: clustering the pool, combining complementary ideas, and choosing a handful of concepts that differ in approach to take into Deliver. Full evaluation and testing belong to the next phase.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Anchor the Session with a Sharp Problem Statement
+### Step 1: Prepare the prompt and the evidence
 
-Before generating any ideas, ensure every participant has internalized the problem statement that emerged from the Define phase. Write it on the wall, read it aloud, and spend 5-10 minutes discussing what it means and what it doesn't mean.
+Pick the "How might we" questions you will work on, one per round. Prepare a one-page summary of the problem statement and key insights and put it on the wall or at the top of the shared board. Test each question with a colleague: if they cannot think of three quite different answers in a minute, rework the wording. Decide in advance what a finished session should hand over, for example a handful of distinct concepts with sketches.
 
-A strong problem statement acts as a creative constraint — it focuses energy without prescribing solutions. If your problem statement already implies a solution (e.g., 'We need a mobile app for...'), reframe it as a need or opportunity (e.g., 'How might we help users access X when they're away from their desk?').
+### Step 2: Invite for range and set the rules
 
-Share relevant research insights from the [Discover phase](https://tryhamster.com/skills/conducting-discovery-research) so participants have empathy for the user. Consider creating a one-page brief that includes the problem statement, key user quotes, and any known constraints.
+Invite people with different expertise: designers, engineers, delivery or operations staff, subject experts and, where possible, users. State the rules at the start and keep them visible, drawing on [IDEO.org's brainstorm rules](https://www.designkit.org/methods/brainstorm-rules.html): defer judgement, build on others, go for quantity. Name what will happen to the ideas afterwards so people trust that wild ones will not be dismissed on the spot. Agree who will enforce the rules, usually the facilitator.
 
-> **Pro tip:** Use the 'How Might We' format to reframe your problem statement into 3-5 HMW questions. This gives participants multiple entry points for ideation instead of staring at a single prompt.
+### Step 3: Start with silent individual generation
 
-### Step 2: Step 2: Set Explicit Divergent Thinking Rules
+Give everyone a few minutes to write or sketch ideas alone before any discussion. This gets more ideas from quieter participants and stops the first speaker from anchoring the group. Ask for one idea per note. Then have each person share quickly, without debate, and post their notes on the board.
 
-At the start of every ideation session, establish and visibly post the rules of divergent thinking. The classic set includes: defer judgment, go for quantity over quality, build on others' ideas, encourage wild ideas, stay focused on the topic, and be visual.
+### Step 4: Run varied generation rounds
 
-These aren't just nice platitudes — they're functional ground rules that prevent the most common ideation failures. When someone critiques an idea mid-brainstorm, you can point to the rules. When energy dips, you can remind the group that wild ideas are explicitly welcomed.
+Change technique between rounds so the group does not fall into one pattern. Use timed sketching such as Crazy Eights, analogies from other industries, reversals ("How might we make this worse?" then invert the answers), and building on each other's notes. Keep rounds short and energetic. Stop a round when ideas slow down, not at a fixed count.
 
-Spend a moment explaining why these rules matter. Most professionals have been trained to evaluate ideas immediately. Divergent ideation requires them to override that instinct temporarily. Acknowledge that it feels uncomfortable and frame it as a deliberate phase — convergence will come later in the [Deliver phase](https://tryhamster.com/skills/converging-on-final-solutions).
+### Step 5: Co-design with users and delivery staff
 
-> **Pro tip:** Print the rules on large paper and tape them where everyone can see. During the session, physically point to them when redirecting behavior — it depersonalizes the correction.
+Bring in people who live with the problem or deliver the service, and give them the same materials and rules. Ask them to react to and extend ideas as well as generate their own. Watch for moments when a participant says "that would never work because..." and capture the reason, since it is evidence for Deliver. The Design Council's description of Develop names co-designing with a range of different people as part of the phase.
 
-### Step 3: Step 3: Start with Individual Ideation (Brainwriting)
+### Step 6: Cluster, combine and shape concepts
 
-Before any group discussion, give participants 5-10 minutes of silent, individual ideation. Provide sticky notes and markers, and ask each person to write one idea per note — as many as possible in the time allowed.
+Group similar ideas, merge ones that complement each other, and give each cluster a short working name. From the clusters, pick a handful of concepts that take different approaches to the problem. Write each as a short description with who it is for, how it works and what assumption it depends on. Avoid choosing several variants of one idea, since Deliver needs real alternatives to compare.
 
-Brainwriting solves the two biggest problems with traditional brainstorming: production blocking (only one person can speak at a time) and social loafing (people defer to louder voices). Research shows that groups generate significantly more unique ideas when individuals ideate first and share second.
+### Step 7: Make each concept tangible
 
-Encourage participants to sketch as well as write. Visual ideas are easier for the group to build on later. Remind them that half-formed ideas are welcome — they just need to capture enough on the sticky note that someone else can understand the concept.
-
-> **Pro tip:** Play ambient music during silent ideation to reduce the social pressure of silence. It sounds trivial but consistently improves output.
-
-### Step 4: Step 4: Run Structured Group Ideation Rounds
-
-After individual brainwriting, transition to structured group techniques. Two proven formats are:
-
-**Round Robin Sharing:** Each person shares their sticky notes one at a time, placing them on a shared wall. After each idea, invite a 30-second window for 'build-on' ideas from the group. This ensures every idea gets airtime.
-
-**Crazy 8s:** Give each participant a sheet of paper folded into 8 panels. Set a timer for 8 minutes. Each person must sketch 8 distinct solution concepts — one per panel, one minute each. The extreme time pressure forces people past their first instincts and into genuinely novel territory.
-
-Alternate between these formats to maintain energy. A typical 90-minute session might include brainwriting, then Round Robin sharing, then Crazy 8s, then a second sharing round. Each cycle builds on the last, and the ideas become progressively more interesting.
-
-> **Pro tip:** After the first round of Crazy 8s, ask participants to pick their single best idea and do a 'Super Sketch' — a more detailed version on a full sheet. This gives promising concepts enough definition to be understood by others.
-
-### Step 5: Step 5: Introduce Analogous Inspiration to Break Fixation
-
-Midway through the session, when the most obvious ideas have been captured, introduce analogous inspiration to push the group into less familiar territory. This technique asks: 'How do other industries, cultures, or domains solve a similar underlying problem?'
-
-Prepare 3-5 brief examples in advance. If you're designing a patient check-in experience, you might show how hotels handle check-in, how airlines manage boarding, or how theme parks manage queues. The goal is to stimulate lateral thinking by breaking the team's fixation on their own domain.
-
-Present each analogy in 2-3 minutes, then give the group another 5-minute brainwriting round focused specifically on ideas inspired by the analogy. This consistently produces the most surprising and differentiated concepts in a session.
-
-> **Pro tip:** Choose analogies from domains as far from your own as possible. The greater the conceptual distance, the more novel the ideas tend to be.
-
-### Step 6: Step 6: Facilitate a Co-Design Workshop with Diverse Stakeholders
-
-For complex problems, supplement your core team's ideation with a co-design workshop that brings in end users, subject matter experts, business stakeholders, or engineers. The diversity of perspectives is what generates the diversity of solutions that double diamond design thinking demands.
-
-Structure the workshop with a clear agenda: brief context-setting (15 min), individual ideation (10 min), small-group ideation in mixed teams (30 min), and group share-back (20 min). Keep groups small (3-5 people) and ensure each group has a mix of roles.
-
-Your facilitation role shifts here from generating ideas yourself to creating conditions for others to generate them. Circulate between groups, ask provocative questions, and redirect groups that are converging too early. Capture ideas on a shared wall so cross-pollination happens during share-back.
-
-> **Pro tip:** Pair participants who don't normally work together. A developer and a customer service rep will generate very different ideas from two designers — and that's the point.
-
-### Step 7: Step 7: Build Quick Prototypes to Externalize Ideas
-
-End the divergent phase by having participants build rough prototypes of their top 2-3 ideas. These aren't polished designs — they're thinking tools. Paper sketches, role-plays, storyboards, or cardboard models all work.
-
-Prototyping during ideation serves a specific purpose: it forces vague concepts into concrete form, revealing gaps and sparking new ideas. An idea that sounded brilliant as a sentence on a sticky note often transforms dramatically when someone tries to sketch how it would actually work.
-
-Give groups 20-30 minutes to prototype, then do a gallery walk where everyone views and adds feedback or build-on ideas to each prototype. This final round often generates a last wave of strong concepts right when you thought the well was dry.
-
-> **Pro tip:** Provide a variety of prototyping materials — paper, markers, tape, cardboard, pipe cleaners, LEGO. Physical materials engage different thinking modes than whiteboards and sticky notes alone.
-
-### Step 8: Step 8: Cluster, Label, and Document the Full Idea Landscape
-
-Before closing the session, organize the output. Have the group cluster similar ideas on the wall, then label each cluster with a theme name. Don't evaluate or rank yet — that's convergence, and it belongs in the [Deliver phase](https://tryhamster.com/skills/converging-on-final-solutions).
-
-Photograph everything. Create a digital record that captures every idea, not just the popular ones. Some of the best solutions emerge weeks later when someone revisits a 'throwaway' idea from the ideation wall.
-
-Close the session by reading back the cluster names and celebrating the volume. If the team generated 80+ distinct ideas across clusters, they've done the Develop phase justice. Thank participants explicitly for suspending judgment and remind them that the next step is structured convergence — not a free-for-all selection.
-
-> **Pro tip:** Assign one team member to be the 'documenter' who photographs every wall, sticky note, and sketch before anything gets moved. Lost ideas are the biggest waste in divergent ideation.
+Turn each concept into a rough prototype or storyboard: paper screens, a walkthrough script, a service scenario acted out. Keep them cheap so the team can drop or change them without regret, following the guidance on [low-fidelity prototypes](https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/). Note the riskiest assumption behind each concept, because that is what Deliver should test first. Hand the concepts, prototypes and assumptions to the Deliver phase.
 
 ## Best Practices
 
-- Always sequence individual ideation before group ideation — research consistently shows this produces more unique ideas and prevents anchoring to the first suggestion.
-- Use time constraints aggressively. Short bursts (3-8 minutes) produce more ideas per minute than open-ended sessions because they prevent over-thinking and self-editing.
-- Prepare 'warm-up' exercises for the first 5 minutes of any session — simple creative challenges unrelated to the project help participants shift into a divergent mindset before tackling the real problem.
-- Physically separate the divergent and convergent phases. If you ideate and evaluate in the same session, people self-censor during ideation because they know judgment is coming. Schedule convergence for a separate session or at minimum after a break.
-- Invite at least one participant from outside the core team for every ideation session. External perspectives consistently break groupthink and introduce novel solution directions.
-- Track your idea count. Aim for 100+ raw ideas in a 2-hour session with 5-8 participants. If you're generating fewer than 50, your facilitation structure needs adjustment.
+- **Separate generating from judging in time.** Mixing the two in one round shuts ideas down. Schedule evaluation as its own later activity.
+- **Warm up before the real prompt.** A short, low-stakes exercise loosens a group that is used to meetings about status and decisions.
+- **Keep the problem visible.** Ideas drift without an anchor. Posting the problem statement in the room keeps generation relevant without constraining it.
+- **Sketch more than you talk.** Drawings expose differences between ideas that sound alike in conversation, and they include people who think visually.
+- **Capture objections as data.** When someone explains why an idea would fail, write the reason down. It becomes a test criterion later.
+- **Leave time between sessions.** Ideas often improve after a night's gap. Run two shorter sessions instead of one long one when you can.
 
 ## Common Mistakes
 
-- **Allowing critique during ideation by letting phrases like 'that won't work because...' or 'we tried that before' go unchecked.** — Intervene immediately and redirect to the posted rules. Use a specific phrase like 'That's convergent thinking — let's save it for the Deliver phase. For now, what does this idea make you think of?' This preserves psychological safety without embarrassing the critic.
-- **Running a single brainstorming technique for the entire session, leading to ideation fatigue after 20-30 minutes.** — Layer 3-4 different techniques (brainwriting → round robin → Crazy 8s → analogous inspiration) across the session. Each technique shift re-energizes the group and pushes thinking in a new direction.
-- **Skipping the problem framing step and jumping straight into 'let's brainstorm solutions,' resulting in scattered ideas that don't connect to the defined problem.** — Spend the first 10-15 minutes anchoring the group in the problem statement and HMW questions. Reference insights from the Define phase. Every idea should be traceable back to the problem you're solving.
-- **Converging too early by dot-voting or ranking ideas before the divergent phase is truly complete, which kills the late-stage novel ideas that are often the most valuable.** — Resist the urge to evaluate during the Develop phase. Cluster and label ideas thematically, but save all ranking, voting, and selection for a separate convergence session in the Deliver phase.
-- **Relying entirely on remote tools like Miro or FigJam without adapting techniques for the digital medium, leading to low energy and surface-level ideas.** — For remote sessions, use built-in timers, enforce cameras-on during share-backs, use breakout rooms for small-group ideation, and have participants sketch on physical paper then photograph and upload. Hybrid approaches outperform purely digital ideation.
+- **Evaluating during generation**: Comments like "we tried that" end the flow of ideas. Enforce deferred judgement and move critique into a scheduled later step.
+- **Letting seniority steer the room**: If the most senior person speaks first, others align with them. Start with silent individual work, and ask senior participants to share last.
+- **Taking variants of one idea into Deliver**: Three versions of the same app screen give Deliver nothing to compare. Choose concepts that differ in approach.
+- **Ideating on an unagreed problem**: If participants disagree about what problem they are solving, the ideas will not be comparable. Go back to Define before continuing.
+- **Polishing prototypes too early**: High-fidelity work in Develop makes people defend ideas instead of testing them. Keep prototypes rough until an idea earns more investment.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/double-diamond/METHOD.md) — Double Diamond
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/double-diamond/METHOD.md): Double Diamond
 
 ## Related Skills
 
-- [Converging on Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Conducting Discovery Research in the Double Diamond](../conducting-discovery-research/SKILL.md)
 - [Synthesizing Insights to Define the Problem](../synthesizing-problem-definitions/SKILL.md)
-- [Mapping Divergent and Convergent Thinking Modes](../mapping-divergent-convergent-thinking/SKILL.md)
-- [Conducting Discovery Research in the Discover Phase](../conducting-discovery-research/SKILL.md)
-- [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
-- [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
-- [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+- [Converging on Final Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Double Diamond Thinking: Divergent and Convergent Modes](../mapping-divergent-convergent-thinking/SKILL.md)
+- [How to Create a Double Diamond Diagram](../diagramming-the-double-diamond/SKILL.md)
+- [Double Diamond vs Design Thinking: Choosing a Framework](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
+- [Adapting the Double Diamond UX Framework for Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+
+## Sources
+
+- [Design Council: Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)
+- [Wikipedia: Divergent thinking](https://en.wikipedia.org/wiki/Divergent_thinking)
+- [IDEO.org Design Kit: Brainstorm Rules](https://www.designkit.org/methods/brainstorm-rules.html)
+- [thoughtbot design sprint: Crazy Eights](https://github.com/thoughtbot/design-sprint/blob/main/Exercises/crazy-eights.md)
+- [NN/g: UX Prototypes, Low Fidelity vs. High Fidelity](https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/)

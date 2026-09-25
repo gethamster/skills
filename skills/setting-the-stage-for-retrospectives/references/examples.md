@@ -1,41 +1,39 @@
-# Examples: Setting the Stage for Effective Retrospectives
+# Examples: Setting the Stage in a Sprint Retrospective
 
-## Example: Setting the stage for a remote team after a difficult sprint
-
-**Scenario:**
-
-A distributed team of 7 developers just completed a sprint where a critical production bug consumed most of their capacity. Morale is low, and two team members have privately told the Scrum Master they feel the retrospective will just be 'venting.' The retrospective is 60 minutes on Zoom with a Miro board.
-
-**Walkthrough:**
-
-The facilitator opens the Miro board 5 minutes early with a welcoming note: 'Thanks for showing up. This sprint was tough, and this session is about learning, not blame.' As people join, she greets each person by name and asks a casual question.
-
-At start time, she frames the session: 'Today we're looking specifically at how the P1 bug affected our sprint, what our incident response revealed about our systems, and what we'd change. We have 60 minutes.'
-
-She displays four working agreements: Vegas Rule, no individual blame, cameras on if comfortable, and one conversation at a time. She asks: 'Anything to add or change?' One developer adds 'let's timebox venting to 10 minutes max.' The team agrees.
-
-For the check-in, she uses a 'battery level' activity: each person drags a slider on Miro from 0% to 100% to show their energy level and adds one word about their mood. Results show the team averaging 35% energy with words like 'drained' and 'frustrated'—but also 'hopeful.'
-
-She acknowledges the data: 'I see a lot of low batteries. That makes sense given the week. Let's use this time to figure out one thing we can change so the next hard sprint feels more manageable.' Then she transitions: 'Let's start by building a timeline of the sprint.'
-
-The explicit acknowledgment of difficulty, combined with the no-blame agreement and energy check, gives the team permission to be honest without spiraling into finger-pointing.
-
-## Example: First retrospective with a newly formed team
+## Opening a remote retrospective after a hard sprint
 
 **Scenario:**
 
-A new cross-functional team of 5 (2 developers, 1 designer, 1 QA, 1 product owner) has just completed their first two-week sprint together. Team members come from different departments and don't know each other well. The retrospective is in-person in a conference room, 45 minutes.
+Illustrative scenario: a remote team of six spent most of a two-week sprint fixing a production bug. Two people have told the facilitator they expect the retrospective to turn into venting. The session is one hour on a video call with a shared board.
 
 **Walkthrough:**
 
-The facilitator arrives 10 minutes early and arranges chairs in a circle with no table barrier. He places sticky notes, markers, and a whiteboard with the agenda visible.
+The facilitator opens the board a few minutes early with the agenda and the team's working agreements on it. At the start time she states the scope: the last two weeks, with a focus on how the bug was found and handled, and what the team would change. She shows the end time and the five phases on the board.
 
-He opens: 'Welcome to our very first retrospective as a team. The goal today is to reflect on Sprint 1 and start building the habit of continuous improvement together. We have 45 minutes.'
+She asks whether the agreements still hold. One developer suggests adding "we talk about the system, not about who wrote the bug", and the team accepts it. For the check-in she runs an anonymous ESVP poll. The result shows two explorers, two shoppers and two prisoners.
 
-Since this is a new team, he co-creates working agreements from scratch: 'What ground rules would help everyone feel comfortable speaking honestly?' He writes suggestions on the whiteboard as people offer them. The team lands on: speak from your own experience, what's said stays here, and it's okay to disagree respectfully. He asks for a thumbs-up commitment from everyone.
+She names what the poll shows without asking who voted what, and asks the room what would make the hour worth it for someone who feels stuck here. One person says they want to leave with one concrete change to the on-call process. She writes that on the board as the session's target and moves on to building a timeline.
 
-For the check-in, he uses 'Two truths and a wish': each person shares two things that are true about the sprint and one thing they wish had been different. This doubles as a light data-gathering warm-up while ensuring everyone speaks.
+## Resetting norms after two teams merge
 
-The designer, who tends to be quiet in meetings, shares: 'I got my first real sprint experience, the team was patient with my questions, and I wish I'd been included in story refinement earlier.' This single contribution surfaces a real process improvement opportunity that the team might not have heard without the structured check-in.
+**Scenario:**
 
-The facilitator summarizes themes he's hearing and transitions to the data-gathering phase.
+Illustrative scenario: two small teams have just merged into one team of eight. Each ran retrospectives differently, and this is their first one together.
+
+**Walkthrough:**
+
+The facilitator gives the opening more time than usual. He explains the five phases, since half the team has never used them, and asks each former team to name one habit from its own retrospectives it wants to keep. The group turns those into four working agreements, including one about keeping side conversations out of the chat.
+
+For the check-in he asks each person to say one thing they hope the merged team does better than their old one. Everyone answers once, in turn. He notes two themes that come up more than once, restates them as the focus for the session, and moves into data gathering.
+
+## A short opening for a stable team
+
+**Scenario:**
+
+Illustrative scenario: a long-standing team of five runs a retrospective every week. The mood is good, and people want to spend the time on the sprint rather than the opening.
+
+**Walkthrough:**
+
+The facilitator keeps the opening brief. She states the week under review, points to the agreements on the wall and asks whether any need changing. Nobody raises anything.
+
+For the check-in she changes the usual one-word round to a single question: "What surprised you this week?" Each person answers in a sentence. Two answers mention the same flaky test suite, so she flags it as a likely topic and starts the data phase.
