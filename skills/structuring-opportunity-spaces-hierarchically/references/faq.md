@@ -1,25 +1,25 @@
-# FAQ: Structuring and Grouping Opportunities into a Hierarchy
+# FAQ: Structuring Opportunity Spaces Hierarchically
 
-## How many levels deep should an opportunity hierarchy go?
+## Why use a tree instead of a prioritized list?
 
-Most effective opportunity hierarchies are 2-4 levels deep. Stop decomposing when each leaf opportunity is specific enough that your team can brainstorm at least 3 meaningfully different solutions for it. Going beyond 4 levels usually signals you're over-analyzing or starting to describe solutions instead of opportunities.
+A list mixes opportunities of different sizes, many of which overlap or are subsets of each other, so ranking them is comparing apples with fruit. A tree puts comparable opportunities side by side as siblings. It also lets the team prioritize one level at a time and move down only the chosen branch.
 
-## How is structuring opportunity hierarchies relevant to how to become a product manager?
+## What should the top-level branches be?
 
-Structuring opportunity hierarchies is a core product management skill because it demonstrates strategic thinking—the ability to make sense of complex, ambiguous problem spaces and turn them into actionable frameworks. It's one of the most tangible ways aspiring PMs can show they understand customer-centric product discovery within frameworks like the Opportunity Solution Tree.
+Teresa Torres recommends building an experience map from your interview stories and using its key moments as the top-level opportunities. Moments in time tend to be distinct from each other, which keeps branches from overlapping. Choose the moments that relate to your outcome.
 
-## What's the difference between an opportunity hierarchy and a feature backlog?
+## Can an opportunity belong to two parents?
 
-An opportunity hierarchy organizes customer needs and pain points, while a feature backlog organizes potential solutions. The hierarchy sits upstream of the backlog—you first decide which opportunities matter most, then generate and prioritize solutions (features) for those opportunities. Conflating the two leads to building features without understanding the problems they solve.
+Sometimes. If customers experience the same need in two different contexts, it can appear in both places. If many opportunities share the same two parents, though, the parents are probably not distinct, and the top-level structure needs another look.
 
-## Can I use an opportunity hierarchy without the full Opportunity Solution Tree?
+## Is there one correct structure?
 
-Yes, the hierarchical structuring technique is valuable on its own for making sense of research data, running prioritization workshops, or communicating your understanding of the problem space to stakeholders. However, it becomes most powerful when used within the full Opportunity Solution Tree framework, where it connects outcomes to solutions and experiments.
+No. Torres says more than one grouping can work and encourages teams to try different ones, because each grouping shows the opportunity space from a different angle. The best structure is the one that reflects how customers think about their experience and supports good prioritization decisions.
 
-## How do I handle opportunities that could belong under multiple parent nodes?
+## How deep should the tree go?
 
-Pick the parent where the opportunity most naturally fits from the customer's perspective, and add a cross-reference note on the other parent. Avoid duplicating the same opportunity in multiple places, as this creates confusion during prioritization. If an opportunity truly straddles two parents, it may indicate your parent categories need adjustment.
+Deep enough that the opportunities at the bottom are small enough to address with a small solution. Big, vague opportunities near the top should have children that break them into specific needs. How deep that is varies by branch, and branches you are not working on can stay shallow until you need them.
 
-## How often should I update my opportunity hierarchy?
+## How does this relate to affinity diagramming?
 
-Revisit your hierarchy every 1-2 weeks, aligned with your continuous research cadence. After each batch of customer interviews, check for new sub-opportunities, validate existing ones, and adjust groupings as your understanding deepens. The hierarchy should evolve as a living document, not be treated as a one-time exercise.
+Grouping opportunities under moments resembles affinity diagramming, which Nielsen Norman Group describes as clustering related observations into themes. The opportunity solution tree adds nesting: themes contain sub-themes, and every node is written as a customer need that can be compared with its siblings.

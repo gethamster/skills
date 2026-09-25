@@ -1,15 +1,20 @@
 ---
-name: decomposing-activities-into-user-tasks
-description: "This skill teaches you how to take high-level user activities from your story map backbone and systematically break them into specific tasks and vertically prioritized user stories, producing the detailed body of your map that drives sprint planning and release slicing."
+name: "decomposing-activities-into-user-tasks"
+description: "Story map decomposition means breaking down user activities into user tasks, details and stories that fill the body of the map below the backbone."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: story-mapping
+  method: "story-mapping"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Decomposing Activities into User Tasks and Stories for User Story Mapping
+# Story Map Decomposition: Activities to User Tasks
 
-> This skill teaches you how to take high-level user activities from your story map backbone and systematically break them into specific tasks and vertically prioritized user stories, producing the detailed body of your map that drives sprint planning and release slicing.
+> Story map decomposition means breaking down user activities into user tasks, details and stories that fill the body of the map below the backbone.
 
 ## Before you start
 
@@ -24,143 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes per major activity area |
-| Outcome | You produce a fully populated story map body where every high-level activity is decomposed into concrete, estimable user stories arranged by priority, giving your team a clear view of what to build first and what to defer. |
-| Prerequisites | A completed story map backbone with user activities and steps arranged horizontally, Defined user personas with goals and contexts, Basic understanding of user story format (As a [user], I want [action], so that [outcome]), Familiarity with the Story Mapping method and its two-axis structure |
-| Part of | [Story Mapping](../../methods/story-mapping/METHOD.md) |
+| Time to Learn | A few hours of practice on a real map |
+| Outcome | You fill each backbone column with user tasks, sub-tasks, alternatives, exceptions and details written as small user stories, without losing the activity they belong to. |
+| Prerequisites | A backbone of activities and high-level tasks, a named target user, a basic grasp of user stories |
+| Part of | [User Story Mapping](../../methods/story-mapping/METHOD.md) |
 
 ## Overview
 
-Decomposing activities into user tasks and stories is the skill that transforms a story map from a high-level narrative outline into an actionable development backlog. The [Story Mapping](https://tryhamster.com/methods/story-mapping) method organizes work along two axes: horizontally by the chronological flow of user activities, and vertically by priority or sophistication. The backbone, which captures activities and their major steps, gives you the horizontal narrative. This skill fills in the vertical dimension beneath each step, producing the granular user stories your team will estimate, prioritize, and build.
+Once a story map has a backbone, the rest of the map is decomposition: breaking down user activities into the tasks and details a team can build. Jeff Patton describes the move simply in [The New User Story Backlog is a Map](https://jpattonassociates.com/the-new-backlog/). An activity such as managing email is "way too big of a story to put into an iteration," so it breaks down into user tasks like send message, read message and delete message, and "I simply arrange the small things under the big things in a bit of a grid form." This skill covers doing that well across a whole map. For the method itself, see the [User Story Mapping](../../methods/story-mapping/METHOD.md) page.
 
-The core problem this skill solves is the gap between understanding what users do (activities like 'Search for a product' or 'Complete checkout') and knowing what to actually build in a sprint. Activities are too broad to estimate or assign. Tasks are too vague without context. You need stories that are specific enough to implement, small enough to fit in a sprint, and connected to user value rather than technical architecture. Without this decomposition step, teams either build features that miss user needs or create backlogs so abstract that nobody knows where to start.
+Decomposing on a map differs from decomposing in a backlog tool in one important way: the parent stays. Patton objects to the common habit of pulling an epic out of the backlog and replacing it with its pieces, because "That big story was context." On a map, the activity card stays at the top of its column and the pieces hang below it, so anyone can still see what the small stories add up to.
 
-The artifact you produce is a set of vertically stacked user stories beneath each step on your map. The top row, sometimes called the walking skeleton, contains the simplest possible version of each task that still delivers end-to-end user value. Rows below it add complexity, edge cases, delight features, and refinements. This vertical arrangement directly feeds into [release slicing](https://tryhamster.com/skills/prioritizing-and-slicing-releases), where you draw horizontal lines across the map to define what ships in each increment. A well-decomposed map makes release planning nearly mechanical: you draw a line, and everything above it becomes a release candidate.
+The body of the map holds several kinds of cards. Patton's [Story Mapping Quick Reference](https://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf) lists them: break high-level tasks into sub-tasks, alternative tasks, exceptions and details. It adds that down in the details "it's OK to include details about what UI might look like or what the system might do in the background." The Nielsen Norman Group uses a similar three-level structure of activities, steps and details, with the details stacked under each step in priority order ([NN/g](https://www.nngroup.com/articles/user-story-mapping/)).
 
-Success looks like this: every story on your map is independently valuable to a user, small enough for one developer to complete in a sprint, and clearly traceable back to the activity and persona it serves. When your team reviews the map, they should be able to point to any story and immediately understand why it exists, who it serves, and how it fits into the broader journey.
+The output of decomposition feeds everything after it. Release slicing needs cards small enough that a line can separate a basic version of a task from a richer one. Sprint planning needs stories that meet a team's definition of small and testable. A well-decomposed map gives both without losing the story.
 
 ## How It Works
 
-Decomposition works by applying a structured zoom-in process at each node on your story map backbone. You start with an activity (a broad thing the user does, like 'Manage their account'), move to its constituent steps (specific actions like 'Update profile information' or 'Change password'), and then generate the stories that represent different ways those steps can be implemented, from minimal to full-featured.
+Decomposition runs in two directions. Going down a column, you add the pieces that make a task work: its sub-tasks, the alternative ways users achieve it, the exceptions they hit, and the details of what the screen or system does. Going across, you keep the tasks in narrative order, so the columns still read as one journey.
 
-The mental model is a tree that fans out at each level. An activity contains 3-7 steps. Each step contains 3-10 stories. The stories are not random feature requests. They are systematic variations along several dimensions: user type (a new user changing their password vs. an admin resetting someone else's), scenario complexity (happy path vs. error handling vs. edge case), and sophistication level (basic text input vs. inline validation vs. password strength meter). By consciously varying these dimensions, you avoid both the problem of missing important stories and the problem of generating hundreds of stories that are really just restatements of the same thing.
+The quick reference's Explore phase gives prompts for the downward direction. Play "wouldn't it be cool if..." to find ideas. Ask "What else might users of the system have done?" to find variations. Ask "What could go wrong, and what would the user have to do to recover?" to find exceptions. Consider what other types of users might do. Add product details such as proposed UI, business rules and data elements. During this phase you add cards, split cards, rewrite them and reorganize them, and the reference says not to worry yet about whether ideas are in or out of scope.
 
-The vertical ordering is what makes this technique powerful rather than just thorough. Stories at the top of each column should form a 'walking skeleton,' a version of the product that is minimal but complete enough for a user to walk through the entire journey end to end. This is not the same as a list of MVP features picked by gut feel. It is a principled selection: for each step in the backbone, what is the thinnest possible implementation that still allows the user to proceed to the next step? Everything else stacks below.
+Goal level is the check on size. The quick reference defines a functional task as one "I'd expect to complete this task before taking a break," with summary tasks above that level and sub-functional ones below. Cards directly under the backbone should sit near the functional level. Sub-functional details belong further down in the same column.
 
-The ordering principle for rows below the walking skeleton varies by context, but it generally follows a pattern: the second row adds necessary error handling and basic usability improvements, the third row adds convenience and efficiency features, and rows below that add delight, personalization, and edge case coverage. This gradient from essential to delightful maps naturally to release increments.
+Cards become stories by adding who and why. The quick reference notes that "User Tasks make great story titles," and that in the standard template the task fits after "I want to" while the activity fits after "so that." NN/g describes the same flow: the verb phrases on the map become fully formed user stories that are paired with acceptance criteria before they enter the backlog.
 
-A critical nuance is the difference between decomposing by user value and decomposing by technical component. If you find yourself writing stories like 'Set up the database schema for user profiles' or 'Build the API endpoint for password changes,' you have slipped from user story mapping into technical task breakdown. Both are necessary, but they serve different purposes. The map captures user value. Technical tasks belong inside sprint planning after the stories are selected. Keeping this boundary clean ensures your map remains a communication tool that business stakeholders, designers, and engineers can all read.
-
-The assumptions behind this approach are that your backbone is reasonably stable and that your personas are well enough defined to generate meaningful story variations. If the backbone keeps shifting, decomposition is premature. If your personas are generic ('the user'), your stories will be generic too. Both of these prerequisites should be addressed using the [identifying activities and backbone](https://tryhamster.com/skills/identifying-user-activities-and-backbone) and [mapping personas to journeys](https://tryhamster.com/skills/mapping-user-personas-to-journeys) skills before you begin decomposition.
+Good stories on the map are vertical slices. The [Humanizing Work guide to splitting user stories](https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/) uses Bill Wake's INVEST criteria (independent, negotiable, valuable, estimable, small, testable) and warns against tasks or components "masquerading as stories." When a card is too big, its splitting patterns give concrete moves: split by workflow steps, by operations, by business rule variations, by variations in data, by data entry methods, by major effort, by simple versus complex, by deferring performance, or by breaking out a spike. For workflows, it recommends building the simple end-to-end case first and adding the middle steps later, which matches the walking skeleton idea on a story map.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Select an Activity Column to Decompose
+### Step 1: Pick a column and restate its goal
 
-Choose one activity from your backbone to focus on. Do not try to decompose the entire map at once. Pick the activity that is either highest priority for your next release or the one your team understands least well, since decomposition will surface gaps in understanding. Review the steps already placed beneath that activity on the backbone.
+Choose one activity and read aloud what the user is trying to do in it. Confirm the high-level tasks under it are in narrative order and at a similar goal level. Starting from the goal keeps the cards you add tied to something the user wants. Work column by column so no activity is left bare.
 
-Confirm that each step represents a discrete user action, not a system behavior or technical process. ' Having clean, user-facing steps is essential because every story you generate will hang beneath one of these steps.
+### Step 2: Add sub-tasks under each task
 
-> **Pro tip:** Start with the activity your team debates most. Decomposition forces concrete decisions and will resolve ambiguity faster than discussion alone.
+For each high-level task, write the smaller steps the user takes to complete it, one per card, and place them below. Use short verb phrases from the user's side. Stop when each card is something a user would do without a break. If a sub-task turns out to be big, it may be a task that belongs in the row above.
 
-### Step 2: Step 2: Identify the Walking Skeleton Story for Each Step
+### Step 3: Add alternatives and exceptions
 
-For each step in the selected activity, write the simplest possible user story that allows the user to complete that step and proceed to the next one. This is not about building the best version. It is about building the thinnest version that still works end to end. ' You deliberately exclude advanced search, filters, autocomplete, and relevance ranking at this stage.
+Ask what else users might do at each step and write the alternatives below the main path. Then ask what could go wrong and what the user would do to recover, and write those exception cards too. Include cases for other user types if they touch this column. This is where many missing requirements appear, so give it real time.
 
-Place this story in the first row beneath the step. Do this for every step in the activity before moving to lower rows.
+### Step 4: Add details and rules
 
-> **Pro tip:** Test each walking skeleton story by asking: 'If this were the only implementation of this step, could a user still complete the overall activity?' If the answer is no, you have cut too deep and need to add back the minimum feature that restores continuity.
+Under the relevant cards, add details such as what the screen shows, business rules and data the system needs. Keep these at the bottom of the column so they do not crowd the story. Mark any card the group cannot describe confidently as a question to investigate.
 
-### Step 3: Step 3: Generate Story Variations by Dimension
+### Step 5: Turn cards into stories
 
-Now expand each step vertically by systematically generating stories along three dimensions. First, vary by user type: how does this step differ for a first-time user vs. a power user vs. an admin?
+Write each card as a story title, using the task as the "I want to" part and the activity as the "so that" part, as the quick reference suggests. Check each story against INVEST. Rewrite cards that describe components or technical work as user outcomes, or attach them to the story they support. Leave acceptance criteria for the stories that are close to being built.
 
-Write a story for each meaningful variation. Second, vary by scenario: what happens on the happy path vs. when something goes wrong vs. when the user changes their mind?
+### Step 6: Split what is too big
 
-Error handling, undo, and recovery are scenarios, not afterthoughts. Third, vary by sophistication: what would a basic, good, and great implementation look like? Basic search is keyword matching. Good search adds filters.
+Where a story is too large to build in a short cycle, apply a splitting pattern. Try workflow steps first, keeping the simplest end-to-end path as one story and the extra steps as others. Then try rule variations, data variations or a simpler interface. Place the smaller, simpler version higher in the column and the richer versions below it.
 
-Great search adds autocomplete and personalized results. Write each variation as a separate user story card, placing it beneath the step it belongs to.
+### Step 7: Walk the column and check for gaps
 
-> **Pro tip:** Use a simple grid on a whiteboard or spreadsheet with columns for user type, scenario, and sophistication level. Walk through each cell and ask if it generates a distinct story. Empty cells are fine. Duplicate cells mean you are over-generating.
-
-### Step 4: Step 4: Write Stories in Proper Format with Acceptance Criteria
-
-Convert each story variation into a properly formatted user story. Use the 'As a [persona], I want [specific action], so that [measurable outcome]' template. Avoid vague outcomes like 'so that I have a good experience.' Instead, write outcomes tied to observable results: 'so that I can see matching products within 2 seconds.' For each story, add 2-4 acceptance criteria that describe how you will know the story is done. Acceptance criteria should be testable: 'Search results display product name, price, and thumbnail' rather than 'Search results are useful.' This step ensures that your stories are estimable and that your team shares a common understanding of done.
-
-> **Pro tip:** If you cannot write concrete acceptance criteria for a story, it is either too large (decompose further) or too vague (you need more user research before committing to it).
-
-### Step 5: Step 5: Arrange Stories Vertically by Priority
-
-Within each step column, order the stories from top to bottom by priority. The walking skeleton story is always at the top. Below it, place stories that address critical error handling and basic usability. In the middle rows, place stories that add efficiency, convenience, and common-case optimizations.
-
-At the bottom, place delight features, edge cases, and personalization. This ordering is not arbitrary. It reflects a principle: each row down the map should be safe to cut from the next release without breaking the user journey. If cutting a story from the bottom row would leave users stranded or unable to complete the activity, it belongs higher up.
-
-> **Pro tip:** Read each column from top to bottom and narrate the user experience at each row. 'In release 1, the user can search by keyword and see results. In release 2, they can also filter by category and price. In release 3, they get autocomplete and saved searches.' If the narrative does not build coherently, reorder.
-
-### Step 6: Step 6: Check for Gaps and Redundancies
-
-Review the full set of stories beneath the activity. Look for three specific problems. First, gaps: are there steps where the walking skeleton story is missing, meaning a user could not complete the journey end to end? Second, redundancies: are two stories in different columns describing the same implementation?
-
-This happens when a feature touches multiple steps. Decide which step it belongs under and remove the duplicate. Third, orphans: are there stories that do not clearly map to a user goal or persona? If a story exists because an engineer said 'we will need this' but you cannot connect it to a user outcome, flag it for discussion rather than discarding it.
-
-> **Pro tip:** Walk through the top row as a complete user journey, reading each story aloud in sequence. If the narrative has a gap ('the user searched, then somehow they are on the checkout page'), you are missing intermediate steps or stories.
-
-### Step 7: Step 7: Validate with Team Members and Stakeholders
-
-Share the decomposed activity with at least one person from each discipline: a designer, an engineer, and a product stakeholder or customer proxy. Ask each of them different questions. Ask the designer: 'Are there user scenarios we have missed? ' Ask the engineer: 'Are any of these stories too large to estimate?
-
-' Ask the stakeholder: 'Does the priority ordering match business needs? ' Capture feedback directly on the map by moving, adding, or splitting stories in real time.
-
-> **Pro tip:** Engineers often identify stories that look small but hide complex infrastructure work. When this happens, split the story into a user-facing slice and a technical enabler, and note the dependency. The user story stays on the map. The technical enabler goes into the sprint backlog when that story is selected.
-
-### Step 8: Step 8: Repeat for Remaining Activity Columns
-
-Apply steps 1-7 to each remaining activity on your backbone. You do not need to decompose every activity to the same depth. Activities that are well understood, low risk, or deferred to future releases can have fewer stories. Activities that are core to your next release, novel, or high risk should be decomposed thoroughly.
-
-The total number of stories on your map will typically range from 40 to 150 for a product of moderate complexity. If you have fewer than 30, you are likely still too abstract. If you have more than 200, you may be decomposing to a granularity that belongs in sprint-level task breakdown rather than on the story map.
-
-> **Pro tip:** Decompose activities in priority order, not left-to-right. If your third activity is the one you are building next sprint, decompose it first and most thoroughly. The first activity might be stable and well understood, needing only light decomposition.
+Tell the story of the column from top to bottom with someone who knows the users and a developer. Look for steps the user needs that have no card, duplicate cards in other columns, and cards that no user would recognize. Fix them, then move to the next column. When every column is done, walk the whole map left to right once more.
 
 ## Best Practices
 
-- Always decompose from the user's perspective, not the system's architecture. If you catch yourself writing stories like 'Build the notification service' or 'Set up the database table,' stop and reframe: what user-visible behavior does this enable? The map is a communication tool for the whole team. The moment it requires technical fluency to read, non-engineers disengage, and you lose the cross-functional alignment that makes story mapping valuable.
-- Write the walking skeleton for the entire activity before generating any deeper stories. This forces you to think about the end-to-end journey at a single level of fidelity before diving into details on any one step. Teams that decompose step by step, going deep on the first step before moving to the second, often produce uneven maps where early steps have 15 stories and later steps have 2. The walking skeleton pass prevents this imbalance.
-- Keep individual stories small enough that a single developer can complete one within a sprint. A reliable heuristic: if a story takes more than 3 days for one person, it is too large. Split it. Stories that are too large resist estimation, resist prioritization, and create merge conflicts when multiple people work on them simultaneously.
-
-Smaller stories also give you more granular options when slicing releases.
-- Use consistent story granularity across the map. If your stories under 'Search for a product' are at the level of 'display autocomplete suggestions,' but your stories under 'Complete checkout' are at the level of 'handle all payment methods,' your map will mislead you during release planning. One column will look like it has more work than another simply because of granularity differences, not actual effort differences. Spot-check by asking: would each story take roughly the same order of magnitude to implement?
-- Explicitly label which persona each story serves, even when it seems obvious. A story that reads 'As a user, I want to reset my password' is less useful than 'As a new customer who forgot the password they set during onboarding, I want to reset it via email.' The persona-specific version reveals design constraints (the user might not remember which email they used), edge cases (what if the onboarding email went to spam?), and acceptance criteria that the generic version hides.
-- Revisit and refine decomposition after each sprint. Stories that seemed small before development may turn out to contain hidden complexity. Stories that seemed important may lose priority after user testing reveals different needs. The map is a living document, not a contract.
-
-Teams that treat decomposition as a one-time event end up with maps that diverge from reality within weeks. Schedule 15 minutes in each sprint retrospective to update the map.
-- Limit decomposition depth for activities you will not build in the next 2-3 sprints. Over-decomposing future work wastes time because requirements will change before you get there. For distant activities, keep only the walking skeleton and 1-2 high-level variations. Decompose deeply only when a story is approaching sprint selection.
+- Keep the parent card on the map. The activity at the top of each column is the context for every story below it, which is the point Patton makes about epics.
+- Decompose the whole width before going very deep. A shallow pass across every column shows gaps sooner than a deep pass through one.
+- Use the quick reference prompts. Asking what else users might have done, and what could go wrong, reliably surfaces alternatives and exceptions.
+- Hold a steady goal level in each row. Consistent sizes make columns comparable and make release lines meaningful.
+- Split by user value and keep technical layers together. The Humanizing Work guide shows that splitting by architectural layer produces pieces that are small but neither independent nor valuable.
+- Put the simplest working version highest. That ordering prepares the map for slicing a walking skeleton later.
 
 ## Common Mistakes
 
-- **Decomposing by technical layer instead of user value** — This happens when engineers drive the decomposition session and naturally think in terms of frontend, backend, and database layers. You end up with stories like 'Create the API endpoint,' 'Build the React component,' and 'Write the database migration,' none of which deliver user value independently. The signal to watch for is stories that cannot be demonstrated to a user in a review session. Instead, write stories that describe a user-visible behavior ('User can filter search results by price range') and let the engineering team break that into technical tasks during sprint planning.
-- **Generating too many stories by treating every edge case as equally important** — Teams new to decomposition often try to be exhaustive, writing stories for every conceivable error state, browser combination, and accessibility standard. This produces maps with 300+ stories that overwhelm rather than clarify. The signal is a map where the bottom rows are three times as tall as the walking skeleton. Remember that lower rows are explicitly designed to be cut.
-
-, user submits a form with emoji in the name field) affects fewer than 1% of users, it belongs in the bottom two rows or in a separate issues backlog, not cluttering the map.
-- **Writing stories that are actually acceptance criteria or sub-tasks** — This looks like a column with 12 stories that are really the 12 things that need to be true for one feature to work: 'Email field validates format,' 'Password field requires 8 characters,' 'Submit button is disabled until form is valid.' These are acceptance criteria for a single story ('User can create an account'), not separate stories. The diagnostic: if you cannot demo a story independently to a stakeholder and have them say 'I see the value,' it is too small. Merge these into a single story with acceptance criteria listed inside it.
-- **Skipping the walking skeleton and jumping to detailed stories** — Without a walking skeleton, you have no way to verify that your map represents a complete, end-to-end journey. Teams skip this step because they feel they already understand the journey, then discover during release planning that they have deep decomposition on 'User browses products' but nothing on 'User receives order confirmation.' The journey breaks at the gap. Always do a single-row pass first, confirming that a user can walk from the first activity to the last with one story per step. Only then go deeper.
-- **Not involving enough perspectives during decomposition** — When a product manager decomposes alone, the stories skew toward business requirements and miss technical constraints. When an engineer decomposes alone, the stories skew toward implementation details and miss user nuance. When a designer decomposes alone, the stories skew toward ideal experiences and miss feasibility. The signal is stories that consistently get challenged or rewritten during sprint planning.
-
-Always include at least one representative from product, design, and engineering in the decomposition session, even if it is only a 30-minute review pass.
-- **Treating the decomposed map as a fixed contract rather than a living plan** — Teams invest significant effort in decomposition and then resist changing the map, even when new information arrives. A customer interview reveals a workflow you did not anticipate, but nobody wants to redo the map. The stories stay as written, and the team builds something that does not match reality. Protect against this by scheduling explicit map review sessions.
-
-After every major user research insight, demo, or sprint retrospective, spend 15 minutes updating the map. Lower the perceived cost of change by using physical sticky notes or a collaborative digital tool where moving stories takes seconds.
+- **Replacing the epic with its pieces**: Removing the activity card once it is broken down loses the context that explains the small stories. Keep it at the top of the column.
+- **Writing system tasks as stories**: Cards such as "set up the database" are work items that support stories. Attach them to the story they enable or rewrite them as a user outcome.
+- **Only mapping the happy path**: A column with no exceptions or alternatives will surprise the team during delivery. Ask what could go wrong at each step.
+- **Decomposing past usefulness**: Breaking every card into tiny details during the first session buries the story. Detail the stories you are about to build and leave the rest coarse.
+- **Splitting one step at a time from start to finish**: The Humanizing Work guide calls this the wrong way to split a workflow. Build a thin path through the whole workflow first, then enrich it.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/story-mapping/METHOD.md) — Story Mapping
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/story-mapping/METHOD.md): User Story Mapping
 
 ## Related Skills
 
-- [Refining and Evolving Story Maps Across Sprints](../refining-story-maps-across-sprints/SKILL.md)
-- [Identifying User Activities and Building the Story Backbone](../identifying-user-activities-and-backbone/SKILL.md)
-- [Mapping User Personas to Journey Narratives](../mapping-user-personas-to-journeys/SKILL.md)
-- [Facilitating Collaborative Story Mapping Workshops](../facilitating-story-mapping-workshops/SKILL.md)
-- [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
-- [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
+- [Story Map Backbone: Identifying User Activities](../identifying-user-activities-and-backbone/SKILL.md)
+- [Story Map Personas: Mapping Personas to User Journeys](../mapping-user-personas-to-journeys/SKILL.md)
+- [Story Mapping Facilitation: How to Run a Workshop](../facilitating-story-mapping-workshops/SKILL.md)
+- [Prioritizing and Slicing Releases on a Story Map](../prioritizing-and-slicing-releases/SKILL.md)
+- [User Story Mapping Template: Build One Your Team Reuses](../creating-story-mapping-templates/SKILL.md)
+- [Refining a Story Map Across Sprints](../refining-story-maps-across-sprints/SKILL.md)
+
+## Sources
+
+- [Jeff Patton: The New User Story Backlog is a Map (October 8, 2008)](https://jpattonassociates.com/the-new-backlog/)
+- [Jeff Patton: Story Mapping Quick Reference (Story Map Concepts, copyright 2013 Comakers LLC)](https://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf)
+- [Nielsen Norman Group: Mapping User Stories in Agile (2021)](https://www.nngroup.com/articles/user-story-mapping/)
+- [Humanizing Work: The Humanizing Work Guide to Splitting User Stories](https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/)

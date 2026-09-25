@@ -1,25 +1,25 @@
 # FAQ: Defining Scrum Roles and Accountabilities
 
-## What does a scrum master do all day?
+## What are the three Scrum accountabilities?
 
-A scrum master facilitates Scrum events, coaches the team on self-organization and Scrum practices, removes impediments that block progress, and works with stakeholders to improve how the organization supports the team. They don't assign tasks, write status reports, or manage the team's workload.
+The Scrum Guide defines three accountabilities within one Scrum Team: the Product Owner, the Scrum Master and the Developers. The Product Owner answers for the value the product delivers and for the Product Backlog. The Scrum Master answers for putting Scrum in place and for how effective the team is. The Developers answer for the Sprint plan, for quality through the Definition of Done, for adjusting the plan each day and for holding one another to professional standards.
 
-## Can the scrum master also be a developer on the team?
+## Why did "Development Team" become "Developers"?
 
-While technically allowed by the Scrum Guide, it's discouraged in practice. When delivery pressure increases, the person will deprioritize facilitation and coaching in favor of coding. Dedicated scrum masters consistently produce better team outcomes.
+The 2020 Scrum Guide removed the idea of a separate team within the team. Its revision notes say the aim was to eliminate "proxy" or "us and them" behavior between the Product Owner and the Development Team. There is now one Scrum Team with three sets of accountabilities, and the people doing the work are called Developers whatever their specialty.
 
-## What is the difference between a scrum master and a project manager?
+## What is the difference between a Product Owner and a Scrum Master?
 
-A project manager plans, assigns, and tracks work with authority over the team. A scrum master is a servant-leader with no authority over the team—they coach, facilitate, and remove impediments. The Development Team self-manages its work rather than receiving assignments.
+The Product Owner decides what the team works on and in what order, to maximize the value of the product. The Scrum Master helps everyone understand and practice Scrum and works on the team's effectiveness, including removing impediments. The Product Owner faces the market and stakeholders; the Scrum Master faces the team and the organization's way of working.
 
-## How many scrum teams can one scrum master support?
+## Can one person be both Product Owner and Scrum Master?
 
-One scrum master can typically serve 1-2 teams effectively. Beyond that, they lack the bandwidth for meaningful coaching, impediment removal, and stakeholder management. New teams or teams undergoing significant change need a dedicated scrum master.
+The Scrum Guide does not explicitly forbid it, but it describes the two accountabilities as distinct and lists ways the Scrum Master helps the Product Owner, which is hard to do for yourself. Combining them also means one person has to argue for both more scope and a sustainable pace. Keep them separate when you can, and if you must combine them, make it visible and revisit it at retrospectives.
 
-## Who assigns tasks to the Development Team in Scrum?
+## Does the Scrum Master manage the team?
 
-No one assigns tasks. The Development Team self-organizes to determine how to accomplish the sprint goal. During sprint planning, the team collectively selects backlog items and creates a plan. Individual developers pull tasks based on their skills and availability.
+No. The Developers are self-managing: they settle among themselves who works on what, when and in what way. The Scrum Master coaches, facilitates when needed, causes impediments to be removed, and helps the organization adopt Scrum. Line management tasks such as hiring and performance reviews sit outside the Scrum accountabilities.
 
-## Can the Product Owner and scrum master be the same person?
+## How big should a Scrum Team be?
 
-No. These roles have inherently conflicting priorities—the Product Owner pushes for maximum value delivery while the scrum master protects sustainable pace and process integrity. Combining them removes the healthy tension that keeps the team balanced and effective.
+The Scrum Guide says a Scrum Team is typically 10 or fewer people, counting the Product Owner and Scrum Master. It adds that smaller teams usually communicate better and get more done. If a team grows beyond that, the guide suggests reorganizing into several Scrum Teams that work from a single Product Goal, backlog and Product Owner.

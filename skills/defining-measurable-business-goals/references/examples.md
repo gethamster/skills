@@ -1,33 +1,37 @@
 # Examples: Defining Measurable Business Goals for Impact Maps
 
-## Example: SaaS Onboarding Activation Goal
+## From a feature request to a cost goal
 
 **Scenario:**
 
-A B2B SaaS product team notices that only 28% of new trial users complete the onboarding flow and reach 'activated' status (defined as creating their first project and inviting a teammate). The product leader wants to improve trial-to-paid conversion, and the team is planning their Q3 product manager roadmap using impact mapping.
+Illustrative scenario: the head of partnerships at a software company asks the product team to build a partner portal for the next milestone. There is no stated objective beyond "partners keep asking for it".
 
 **Walkthrough:**
 
-The team gathers strategic context: the company's top OKR is to grow net new ARR by $2M in H2, and the VP of Growth identifies trial-to-paid conversion as the biggest lever. The product team selects 'trial activation rate' as their metric because it's a leading indicator of conversion and is squarely within their control.
+The product manager asks what the portal would change. Partners want to register deals and download materials without emailing the partnerships team. Asked why that matters, the head of partnerships says each new partner currently takes several weeks of staff time to onboard, which limits how many partners the company can sign.
 
-Current baseline: 28% activation rate (measured as users who create a project and invite a teammate within 14 days of signup). Target: 45% activation rate. Deadline: September 30, 2025.
+The goal becomes: reduce the staff time needed to onboard a new partner by the end of the milestone. Asked about extremes, the head of partnerships says halving the time would be worth doing and cutting it to a few days would be excellent. The team records that range and the current baseline. The portal is now one possible deliverable among several, alongside onboarding templates and a partner training session.
 
-The team validates the goal by mapping the causal chain: improving onboarding UX → more users reach activation → higher trial-to-paid conversion → more net new ARR. The product team controls the first two links directly. They confirm with engineering that they can instrument activation events and build a weekly dashboard.
-
-The final impact map root reads: 'Increase 14-day trial activation rate from 28% to 45% by September 30, 2025.' From here, the team proceeds to identify actors (new trial users, account admins, invitees) and map the behavior changes that would drive activation—each traceable back to this single, measurable goal.
-
-## Example: E-commerce Marketplace Retention Goal
+## Narrowing a company-wide metric
 
 **Scenario:**
 
-A two-sided marketplace for handmade goods is experiencing seller churn. The CEO has flagged 'seller retention' as a strategic priority, but the product team needs to translate this into a measurable goal for their impact map and product manager roadmap.
+Illustrative scenario: a growth team is told its goal is "increase company revenue". Most revenue comes from enterprise contracts handled by the sales team, which the growth team does not work with.
 
 **Walkthrough:**
 
-The team interviews the CEO and Head of Marketplace Operations to understand the problem. They learn that 40% of sellers who list their first product never list a second one within 60 days, and the company's growth model depends on active sellers listing at least 5 products.
+The team checks the goal against its sphere of influence. Nothing it ships would reach the enterprise deals that drive most of the number, so any map built on this goal would be mostly wishful. The team proposes narrowing the goal to revenue from self-serve upgrades, which its product changes can affect directly.
 
-The team defines the metric as '60-day second-listing rate'—the percentage of new sellers who list a second product within 60 days of their first listing. Current baseline: 60% (meaning 40% churn after one listing). Target: 75%. Deadline: end of Q4 2025.
+The revenue owner agrees, and the team sets a range for self-serve upgrade revenue over the milestone, with a baseline taken from the finance dashboard. The original company goal stays in the milestone brief as context, and the map is built on the narrower goal.
 
-They validate sphere of influence: the product team controls the seller dashboard, listing flow, and in-app nudges. They cannot control marketplace demand (buyer traffic), but they can influence seller engagement behaviors that correlate with retention. The Head of Marketplace Operations agrees this is a meaningful proxy for seller retention.
+## When no one can agree on the value
 
-The impact map root becomes: 'Increase 60-day second-listing rate for new sellers from 60% to 75% by December 31, 2025.' The team then maps actors (new sellers, power sellers who could mentor, the operations team) and identifies behavior impacts like 'new sellers receive first sale within 7 days' and 'new sellers use the bulk listing tool.'
+**Scenario:**
+
+Illustrative scenario: a hospital operations director wants a new shift-scheduling tool. When the facilitator asks what the smallest worthwhile improvement would be, the answers range from "a little less overtime" to "we could close a staffing agency contract".
+
+**Walkthrough:**
+
+The extremes are too far apart to set a range, which suggests the stakeholders do not share a model of the value. Instead of forcing a number, the team defines a learning milestone. Its goal is to establish how much overtime and agency spend is caused by scheduling problems, measured over the milestone with the finance team.
+
+Once that baseline exists, the group meets again. With the evidence in front of them, they agree a goal range for reducing agency spend, and the impact map for the scheduling work is built on that goal.
