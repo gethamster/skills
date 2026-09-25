@@ -1,15 +1,20 @@
 ---
-name: identifying-user-activities-and-backbone
-description: "This skill teaches you how to define the top-level user activities for a story map and arrange them in chronological order to create the horizontal backbone that structures all subsequent decomposition and prioritization."
+name: "identifying-user-activities-and-backbone"
+description: "Build a story map backbone by finding the user activities in your product and arranging them in the order you would tell the user's story."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: story-mapping
+  method: "story-mapping"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# How to Do Story Mapping: Identifying User Activities and Building the Story Backbone
+# Story Map Backbone: Identifying User Activities
 
-> This skill teaches you how to define the top-level user activities for a story map and arrange them in chronological order to create the horizontal backbone that structures all subsequent decomposition and prioritization.
+> Build a story map backbone by finding the user activities in your product and arranging them in the order you would tell the user's story.
 
 ## Before you start
 
@@ -24,141 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Beginner |
-| Time to Learn | 45-90 minutes |
-| Outcome | You produce a validated horizontal backbone of 4-8 chronologically ordered user activities that serves as the structural foundation for the entire story map, enabling your team to decompose tasks, prioritize releases, and maintain a shared understanding of the user journey. |
-| Prerequisites | Basic understanding of user stories and who your target users are, Familiarity with the overall Story Mapping framework and its purpose, Access to a whiteboard, wall space, or a digital collaboration tool like Miro or FigJam, A clearly defined product scope or user goal to map against |
-| Part of | [Story Mapping](../../methods/story-mapping/METHOD.md) |
+| Time to Learn | About an hour to learn, one working session to apply |
+| Outcome | You produce a left-to-right backbone of user activities and high-level tasks that the whole team can read as one story and that gives every later card a place to go. |
+| Prerequisites | A short product or feature brief, a known target user, sticky notes or a whiteboard tool |
+| Part of | [User Story Mapping](../../methods/story-mapping/METHOD.md) |
 
 ## Overview
 
-The backbone is the single most important structural element of any story map. It is the horizontal row of high-level user activities arranged in the order a user performs them, stretching from the initial trigger ("I need to do X") through to the final outcome ("I have accomplished X"). Every user task, story, and detail in the map hangs beneath this backbone. If the backbone is wrong, incomplete, or out of order, every subsequent layer of the map will inherit those errors. Getting the backbone right is the first concrete step in learning how to do story mapping well.
+The story map backbone is the top row of a user story map. It lists the big things a user does with the product, in narrative order, and everything else on the map hangs below it. Jeff Patton describes the cards along the top as looking "a little like vertebrae," with the cards hanging down as ribs, and credits the term backbone to Dan Rawsthorne in [The New User Story Backlog is a Map](https://jpattonassociates.com/the-new-backlog/). This skill covers building that row: identifying user activities, checking them, and putting them in order. For background on the whole method, see the [User Story Mapping](../../methods/story-mapping/METHOD.md) method page.
 
-This skill sits at the very beginning of the [Story Mapping](https://tryhamster.com/methods/story-mapping) workflow. Before you can [decompose activities into tasks and stories](https://tryhamster.com/skills/decomposing-activities-into-user-tasks) or [prioritize and slice releases](https://tryhamster.com/skills/prioritizing-and-slicing-releases), you need a backbone that the entire team agrees represents the real user journey. The backbone is not a feature list, not an org chart of your product's modules, and not a technical architecture diagram. It is a narrative, a story told from the user's perspective about what they do and in what sequence.
+User activities are the unit you are looking for. In Patton's words, an activity is "sort of a big thing that people do," something with many steps and not always a precise workflow. For an email product his examples are managing email, setting up email servers and arranging out-of-office replies. His [Story Mapping Quick Reference](https://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf) adds that activities "organize tasks done by similar people at similar times to reach a goal."
 
-The concrete artifact you produce is a single horizontal row of 4-8 activity cards, each labeled with a verb-noun phrase ("Search for flights," "Compare options," "Complete booking"), arranged left to right in chronological order. This row should be readable as a sentence: "First the user does X, then Y, then Z, and finally W." When the team can walk along the backbone and nod in agreement that this is how the journey actually unfolds, you have a foundation strong enough to support the entire map. The backbone also becomes a communication tool for stakeholders who want the big picture without the detail, and a navigation aid for teams who need to locate where a given feature or story belongs within the broader journey.
+A good backbone does three jobs. It lets anyone explain what the product does by reading one row. It gives each detailed story a home, so gaps show up as empty space. And it sets up release planning, because a release slice has to cross every column of the backbone to be usable from start to finish.
 
-A well-constructed backbone typically takes 45-90 minutes to draft and validate with a small cross-functional group. The time investment pays dividends immediately: alignment improves, scope conversations become grounded in user reality rather than internal assumptions, and every future story mapping session starts from a shared reference point rather than a blank wall.
+You do not rank the backbone. Patton writes that he does not prioritize it at all, because the activities are the essentials, much as a car needs an engine, a transmission and brakes. The ranking happens in the tasks and stories below. That makes getting the backbone right a question of completeness and order, which is what this skill is about.
 
 ## How It Works
 
-The backbone works because it imposes a narrative constraint on product thinking. Without it, teams tend to organize features by technical system, business unit, or sprint backlog, none of which reflect how a user actually experiences the product. The backbone forces a shift to the user's perspective by asking one deceptively simple question: "What does the user do, and in what order?"
+The backbone is built from two layers. The first is activities, the broad goals a user pursues. The second is the high-level user tasks under each activity, written as short verb phrases such as "read an email message" or "mark a message as spam." The quick reference treats these tasks as the basic building block of a map and says the backbone is made of "activities and tasks at a higher goal level."
 
-Each activity on the backbone represents a chunk of user behavior that is big enough to contain multiple tasks but small enough to be distinct from neighboring activities. Think of activities as chapters in a book. "Onboarding" is a chapter. "Clicking the signup button" is a sentence inside a paragraph inside that chapter. The right altitude for a backbone activity is the chapter level. You should be able to explain the entire user journey in one breath by reading the backbone left to right.
+In practice, the tasks often come first. The quick reference recommends walking through a typical day in the life of the user type most critical to your product, writing each step as a task, and placing the tasks left to right. It notes that "activities often emerge after you see more of the story." You then group runs of related tasks under an activity card placed above them. Working bottom-up this way stops the team from inventing activities that match the org chart or the navigation menu.
 
-The chronological arrangement matters because it mirrors how users think about their own experience. Users do not think in feature categories. They think in sequences: "First I need to find the thing, then I need to evaluate it, then I need to buy it, then I need to set it up." By mapping to this mental model, the backbone becomes intuitive for anyone on the team to read, regardless of their role. It also exposes gaps. If you lay out your activities and notice a jump from "Search for product" to "Receive delivery," the absence of selection, checkout, and payment activities becomes immediately visible.
+Order comes from the story. When users can do things in different orders, Patton's test is to have someone explain the product out loud and use that sequence, because "the order you'd explain the behavior of the system in is the correct order" ([The New User Story Backlog is a Map](https://jpattonassociates.com/the-new-backlog/)). His 2005 article made the same point about a retail store where buying, receiving and selling happen at the same time: arrange cards "in an order that makes it easy to tell stories" ([How You Slice It](https://www.jpattonassociates.com/wp-content/uploads/2015/01/how_you_slice_it.pdf)).
 
-The backbone also serves as the primary axis for the [Story Mapping](https://tryhamster.com/methods/story-mapping) framework's two-dimensional structure. The horizontal axis (the backbone) represents the narrative flow. The vertical axis, which you build later, represents priority and detail. This two-axis structure is what differentiates story mapping from a flat backlog. A flat backlog is a one-dimensional list. A story map is a landscape with geography, and the backbone is the horizon line that gives that landscape its orientation.
+Consistency of size matters. The quick reference describes three goal levels, summary, functional and sub-functional, and asks you to check that tasks across the backbone sit at a similar level. Its test for a functional-level task is "I'd expect to complete this task before taking a break." A backbone that mixes "manage my account" with "enter a password" is uneven, and uneven backbones make release slices hard to read.
 
-One important mental model: the backbone is stable but not permanent. It should change infrequently, perhaps when you discover a major workflow you missed or when the product scope fundamentally shifts. But within a release cycle, the backbone acts as a fixed reference. Tasks and stories beneath it will move, get re-prioritized, and get split. The backbone stays. This stability is what makes it useful as a coordination tool across multiple teams and sprints. When someone asks "where does this new feature go?" you point to the backbone activity it belongs under, and the answer is immediately clear.
+Wording matters too. The Nielsen Norman Group advises framing each item by what the user is doing, and gives the example of writing "Share preferences" in place of "Train the AI" ([NN/g](https://www.nngroup.com/articles/user-story-mapping/)). Patton's 2005 article asks for features "expressed from a user's perspective" that start with an action verb. If a card describes a system component, a screen or an attribute, rewrite it or move it off the backbone.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define the Target User and Their Primary Goal
+### Step 1: Name the user and the goal
 
-Before writing a single activity, articulate who the user is and what they are trying to accomplish end to end. " This sentence becomes your scope boundary. Every activity you identify must serve this goal. If an activity does not contribute to the user reaching this outcome, it does not belong on this backbone.
+Write down who the map is about and what they are trying to achieve, using the product brief if you have one. Pick the user type most critical to the product's success, as the quick reference suggests, and note other user types for later. State the goal in one sentence from the user's side. If the group describes the goal in different words, settle it now, because every activity will be tested against it.
 
-Gather the team around this statement and confirm agreement before proceeding. If your product serves multiple user types with fundamentally different journeys, pick one and build a separate backbone for each. Mixing personas on one backbone creates confusion about whose journey you are mapping.
+### Step 2: Walk through a typical use and write tasks
 
-> **Pro tip:** If the team struggles to agree on the goal, it usually means you have multiple user segments mixed together. Split them. A backbone for 'new user onboarding' and a backbone for 'power user daily workflow' will each be more useful than one backbone trying to cover both.
+Have the group narrate a typical use of the product from the first moment to the goal, and write each step as a short verb phrase on its own card. Write silently first, then read the cards out, so quieter people contribute. Keep going until the story reaches the end, even if the cards feel rough. Aim for the whole journey at a shallow depth, which the quick reference calls "mile-wide, inch deep."
 
-### Step 2: Step 2: Brainstorm All Candidate Activities Individually
+### Step 3: Lay the tasks out left to right
 
-Give each participant 5-7 minutes of silent brainstorming to write down every high-level thing the user does to achieve the goal you defined. Each activity goes on its own sticky note or card. " Do not discuss or filter during this phase. The goal is divergence, getting as many candidate activities on the table as possible.
+Place the cards in the order you would tell the story to a newcomer. Where two people disagree about order, ask each to explain the product aloud and use the order that makes the explanation clearest. Put tasks that happen at about the same time close together. Remove duplicates and merge cards that say the same thing in different words.
 
-Encourage participants to think about the full journey, including steps that happen before they touch your product (the trigger) and steps that happen after (the outcome or follow-up). A common failure mode is to only brainstorm activities that correspond to existing features. Remind the group that the backbone maps what the user does, not what your product currently supports.
+### Step 4: Group tasks under activities
 
-> **Pro tip:** Silent brainstorming before group discussion prevents anchoring. The loudest voice or most senior person in the room often sets the frame, and everyone else edits around it rather than contributing genuinely different perspectives.
+Look for runs of tasks done by similar people at similar times toward one goal, and give each run an activity card above it. Name activities as things users do, such as "Going through my inbox," which is one of Patton's examples. If a group of tasks does not fit any activity, ask whether it belongs to a different user or a different product. Put activity cards in a distinct color so the backbone reads at a glance.
 
-### Step 3: Step 3: Cluster and Merge Duplicate Activities
+### Step 5: Check the goal level of each task
 
-Collect all the sticky notes and place them on the wall or board. Read each one aloud. Group duplicates and near-duplicates together. If three people wrote "Find a car," "Search inventory," and "Browse listings," those represent the same activity.
+Read across the high-level tasks and check that each is roughly the size of something a user would finish before taking a break. Split summary-level cards that hide several tasks, and move sub-functional details down below the backbone where they belong. Rewrite any card that names a system component or screen so it describes a user action.
 
-Choose the label that best captures what the user is doing at a level the whole team understands. Discard labels that are too granular (those will become tasks in the next skill) or too abstract. "Use the product" is too abstract. "Click the filter dropdown" is too granular.
+### Step 6: Walk the backbone with others
 
-"Filter search results" is about right for a task, but "Search for a car" is the activity-level version. After merging, you should have somewhere between 6-15 candidate activities. If you have fewer than 4, you are probably too abstract. If you have more than 15, you are probably mixing activities with tasks.
+Tell the story along the backbone to someone who knows the users, ideally a user. Patton reports that users often say "you've missed a couple steps here" during these walks ([The New User Story Backlog is a Map](https://jpattonassociates.com/the-new-backlog/)). Add the missing steps, fix the order, and note any disagreement you cannot settle. Repeat the walk with a developer, who will spot tasks that hide a lot of work.
 
-> **Pro tip:** A quick test for the right altitude: can you imagine spending an entire user session on this one activity? If yes, it is an activity. If a user would do it in under 30 seconds, it is probably a task that belongs one level down.
+### Step 7: Record the backbone
 
-### Step 4: Step 4: Arrange Activities in Chronological Order
-
-Take your merged set of activities and arrange them left to right in the order a user would typically perform them. Start with the trigger activity on the far left and end with the outcome or completion activity on the far right. " This narrative should feel like a plausible story. If the sequence feels forced or if activities seem interchangeable in order, consider whether two activities actually happen in parallel or whether one of them is optional.
-
-It is fine to have optional activities on the backbone. Note them with a visual marker, but keep them in the position where they most commonly occur.
-
-> **Pro tip:** Some journeys are not strictly linear. Users may loop back (search again after comparing) or skip steps. Map the most common happy path first. You can annotate loops and branches later, but the backbone should represent the primary flow.
-
-### Step 5: Step 5: Trim to 4-8 Core Activities
-
-A backbone with more than 8 activities becomes hard to use as a navigation tool. It loses the "one breath" readability that makes it powerful. Review your ordered sequence and look for activities that can be combined. " Alternatively, look for activities that are really tasks belonging under a neighboring activity.
-
-"Read reviews" might belong under "Compare options" rather than standing on its own. Your goal is a backbone of 4-8 activities. On the low end, 4 activities work for simple workflows like a signup flow. On the high end, 8 activities work for complex multi-session journeys like an enterprise procurement process.
-
-If you are stuck at 10 or more, you are likely mapping a journey that should be split into two separate story maps, each with its own backbone.
-
-> **Pro tip:** A useful forcing function: tell the team they get exactly 6 cards. Having to choose forces the conversation about what is truly a top-level activity versus what is a sub-step.
-
-### Step 6: Step 6: Validate the Backbone Against Real User Behavior
-
-The backbone is a hypothesis about how users experience your product. Before treating it as settled, validate it. Walk through the backbone with someone who has direct user contact: a support agent, a sales rep, a researcher. " Look specifically for missing activities (steps users take that the team forgot), phantom activities (steps the team assumed users take but that rarely happen in practice), and ordering errors (steps that happen in a different sequence than the team assumed).
-
-If you have access to analytics, session recordings, or user research transcripts, cross-reference those. A 15-minute validation pass can save hours of rework later. Common discoveries at this stage include realizing that users spend significant time on an activity the team considered trivial, or that a step the team thought was sequential actually happens much earlier.
-
-> **Pro tip:** If you have session recordings from tools like FullStory or Hotjar, watch 3-5 recordings of new users completing the journey. The discrepancy between what the team assumes and what users actually do is almost always revealing.
-
-### Step 7: Step 7: Label and Document the Final Backbone
-
-Once validated, create clean final versions of each activity card. Each card should have a clear verb-noun label, a one-sentence description of what the user is doing and why, and optionally a note about the user's emotional state or key concern at that point in the journey. " Document the backbone in whatever tool your team uses for story mapping, whether that is a physical wall, Miro, FigJam, or a dedicated tool like StoriesOnBoard. Take a photo of the physical version if applicable.
-
-This documented backbone becomes the starting point for the next skill: [decomposing activities into user tasks and stories](https://tryhamster.com/skills/decomposing-activities-into-user-tasks).
-
-> **Pro tip:** Adding the user's emotional state or key question at each activity is not required, but it dramatically improves the backbone's usefulness for design and prioritization conversations later.
+Photograph the wall or save the board, and write the backbone out as a simple list of activities with their high-level tasks. Keep the user and goal statement next to it. This record is the starting point for decomposition, persona mapping and release slicing, so share it with everyone who will work on the map.
 
 ## Best Practices
 
-- Always write activities as verb-noun phrases from the user's perspective, not from the system's perspective. "Search for listings" is correct. "Display search results" describes what the system does, not what the user does. This distinction matters because the backbone should be readable by anyone, including non-technical stakeholders, as a story about the user's experience.
-
-When activities are written in system language, the backbone drifts into a technical specification and loses its power as a shared communication tool.
-- Keep the backbone between 4 and 8 activities. Fewer than 4 means you are too abstract and the backbone will not provide useful structure for decomposition. More than 8 means you are mixing activity-level items with task-level items, and the backbone will become cluttered and hard to use as a navigation reference. If you consistently land above 8, check whether you are mapping a journey that should be split into two separate maps.
-- Start the backbone before the user touches your product and end it after they have achieved their goal. The first activity should capture the trigger or need that initiates the journey, and the last should capture the outcome or follow-up. This prevents the common trap of only mapping activities that correspond to existing features, which blinds the team to opportunities at the edges of the journey where users are currently underserved.
-- Do not skip the silent brainstorming step. When teams brainstorm activities out loud from the start, the first suggestion anchors the conversation and subsequent contributions become edits to that initial frame rather than independent ideas. Silent writing for 5-7 minutes before any discussion produces a wider and more accurate set of candidate activities. The resulting backbone is stronger because it reflects multiple mental models rather than one person's view.
-- Revisit the backbone quarterly or at major product pivots, but do not change it week to week. The backbone's value comes from its stability. Teams need a fixed reference point to coordinate across sprints. If the backbone changes every sprint, it stops being a map and becomes just another artifact that needs constant maintenance.
-
-Reserve backbone changes for genuine discoveries: a major workflow you missed, a user segment whose journey is fundamentally different, or a strategic pivot that changes the product's scope.
-- Use physical materials (sticky notes, markers) for the initial backbone creation, even if you plan to digitize later. Physical manipulation of cards is faster and more intuitive than dragging digital objects, and the large-format visibility of a wall makes it easier for groups to see the full journey at once. Digital tools are better for long-term storage and remote collaboration, but the initial generative session benefits from tactile interaction.
-- Invite 3-6 people from different functions to build the backbone together. Product, design, engineering, and customer-facing roles each carry different mental models of the user journey. A backbone built by product alone will over-emphasize features. A backbone built by engineering alone will mirror the technical architecture.
-
-The cross-functional version is messier to create but far more accurate and durable.
+- Start from tasks and let activities emerge. Grouping after the fact keeps the backbone tied to what users do and stops it from copying the product's menu or team structure.
+- Use the explanation test for order. When users vary, the sequence you would use to explain the product is the one to map, and variations belong in conversation.
+- Keep one goal level across the backbone. A consistent size makes columns comparable and makes it obvious when a release slice leaves a column empty.
+- Write every card as a user action with a verb. Cards that describe components, screens or attributes belong somewhere else.
+- Separate the backbone visually. A different card color or a tape line under the backbone makes the structure clear to people who join later.
+- Walk the backbone before you decompose. Fixing order and missing steps is cheap now and expensive once dozens of cards hang from the wrong column.
 
 ## Common Mistakes
 
-- **Organizing activities by product feature or module instead of user behavior** — This happens when the team unconsciously maps their product's information architecture rather than the user's journey. The telltale sign is activity labels that match your navigation menu: "Dashboard," "Settings," "Reports." Users do not think in terms of your nav structure. They think in terms of goals and actions: "Track my progress," "Configure my preferences," "Evaluate results." If your backbone reads like a site map, step back and re-ask: "What is the user trying to accomplish, and what do they do in what order to get there?" Rebuild from the user's narrative, not your product's structure.
-- **Creating too many activities (10+) by mixing activities with tasks** — This is the most common mistake in backbone creation. It happens because the line between an activity and a task feels blurry. " If yes, it is an activity. If it is a single discrete action, it is a task that belongs one level down.
-
-"Search for a flight" is an activity (it contains entering dates, selecting airports, applying filters, browsing results). "Enter departure date" is a task within that activity. When your backbone exceeds 8 items, go through each card and ask this question. Demote tasks to the row below their parent activity.
-- **Starting the backbone at the first screen of your product** — Teams frequently begin the backbone with "Sign up" or "Open the app" because that is where their product's experience begins. But the user's journey starts earlier, with a trigger or need. A user shopping for a car starts with "Realize I need a new car" and "Research options," both of which may happen before they ever visit your site. Starting too late on the backbone hides opportunities to capture users earlier in their journey and causes the team to miss important context about user intent.
-
-" That is often where the backbone should begin.
-- **Building the backbone alone as a product manager and presenting it to the team** — A backbone created by one person, no matter how experienced, reflects a single mental model. " The backbone is a shared artifact. Its authority comes from the fact that the team built it together and agreed on it. Present a pre-built backbone and the team will nod politely but never truly internalize it.
-
-Facilitate the creation collaboratively, even if it takes longer. The alignment you build during the session is as valuable as the artifact itself.
-- **Making the backbone too abstract with vague activity labels** — Labels like "Get started," "Do the thing," or "Manage stuff" are too vague to be useful. They do not help the team understand what the user is actually doing, and they make it impossible to decompose the activity into meaningful tasks in the next step. Each activity label should be specific enough that two people on the team would independently come up with similar tasks beneath it. "Configure notification preferences" is specific.
-
-"Set things up" is not. " If the answer is no, sharpen it.
-- **Treating the backbone as final and never validating it against real user data** — The backbone is a hypothesis. Without validation, it is just the team's best guess about the user journey, and teams are reliably wrong about certain steps. Common errors include assuming an ordering that does not match actual behavior, missing an activity that users consider essential, and including an activity that users rarely perform. Even a lightweight validation pass, watching 3 session recordings, reviewing 10 support tickets, or asking a customer success manager to walk through the backbone, will catch the most consequential errors.
-
-Schedule this validation before you invest time decomposing activities into tasks.
+- **Mapping the navigation menu**: Activities copied from the product's tabs describe the interface, which may not match how users think about their work. Build from the narrated journey instead.
+- **Mixing goal levels**: A backbone with both "manage billing" and "click save" is hard to read and hard to slice. Split the big cards and move the small ones down.
+- **Ranking the backbone**: Arguing whether one activity matters more than another wastes time, because a usable product needs all of them. Save prioritization for the tasks and stories below.
+- **Going deep too early**: Filling in details under the first activity before the story reaches the end leaves later activities thin or missing. Get the whole journey first.
+- **Mapping for too many users at once**: Mixing several user types in one line of story creates a backbone nobody recognizes. Start with the most critical user and add others as the story reaches them.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/story-mapping/METHOD.md) — Story Mapping
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/story-mapping/METHOD.md): User Story Mapping
 
 ## Related Skills
 
-- [Refining and Evolving Story Maps Across Sprints](../refining-story-maps-across-sprints/SKILL.md)
-- [Mapping User Personas to Journey Narratives](../mapping-user-personas-to-journeys/SKILL.md)
-- [Facilitating Collaborative Story Mapping Workshops](../facilitating-story-mapping-workshops/SKILL.md)
-- [Prioritizing Stories and Slicing Release Increments](../prioritizing-and-slicing-releases/SKILL.md)
-- [Creating and Using Story Mapping Templates](../creating-story-mapping-templates/SKILL.md)
-- [Decomposing Activities into User Tasks and Stories](../decomposing-activities-into-user-tasks/SKILL.md)
+- [Story Map Personas: Mapping Personas to User Journeys](../mapping-user-personas-to-journeys/SKILL.md)
+- [Story Map Decomposition: Activities to User Tasks](../decomposing-activities-into-user-tasks/SKILL.md)
+- [Story Mapping Facilitation: How to Run a Workshop](../facilitating-story-mapping-workshops/SKILL.md)
+- [Prioritizing and Slicing Releases on a Story Map](../prioritizing-and-slicing-releases/SKILL.md)
+- [User Story Mapping Template: Build One Your Team Reuses](../creating-story-mapping-templates/SKILL.md)
+- [Refining a Story Map Across Sprints](../refining-story-maps-across-sprints/SKILL.md)
+
+## Sources
+
+- [Jeff Patton: The New User Story Backlog is a Map (October 8, 2008)](https://jpattonassociates.com/the-new-backlog/)
+- [Jeff Patton: Story Mapping Quick Reference (Story Map Concepts, copyright 2013 Comakers LLC)](https://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf)
+- [Jeff Patton: It's All in How You Slice It (Better Software, January 2005)](https://www.jpattonassociates.com/wp-content/uploads/2015/01/how_you_slice_it.pdf)
+- [Nielsen Norman Group: Mapping User Stories in Agile (2021)](https://www.nngroup.com/articles/user-story-mapping/)

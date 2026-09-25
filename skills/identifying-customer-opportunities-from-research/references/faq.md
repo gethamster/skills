@@ -1,25 +1,21 @@
-# FAQ: Identifying Customer Opportunities from Continuous Research
+# FAQ: Identifying Customer Opportunities from Research
 
-## How many customer interviews do I need before identifying reliable opportunities?
+## What counts as an opportunity?
 
-There's no magic number, but patterns typically emerge after 5-8 interviews within the same segment. Teresa Torres recommends at least one interview per week as a continuous practice. Supplement with quantitative data to validate patterns faster.
+Teresa Torres defines an opportunity as an unmet customer need, pain point, or desire. It describes the customer's situation. A good test is to ask whether there is more than one way to address it. If there is only one way, you are looking at a solution and should ask why the customer wants it.
 
-## What's the difference between an opportunity and a customer need?
+## Why can't we use support tickets and sales notes as opportunities?
 
-In the Opportunity Solution Tree framework, they're effectively the same thing. An 'opportunity' is a customer need, pain point, or desire that represents a chance for your product to create value. The term 'opportunity' is preferred because it emphasizes the actionable nature of the insight.
+You can use them as inspiration. Torres points out that opportunities heard through these channels usually lack context, so the team risks addressing the wrong need. Use them to decide what to ask about in the next interviews, and add the opportunity to the tree once you have heard it in a customer's own story.
 
-## Can behavioral data alone produce valid opportunity nodes?
+## How many interviews do we need before building the tree?
 
-Behavioral data can signal where opportunities exist (e.g., a funnel drop-off) but rarely tells you why. Pair it with qualitative data to understand the underlying need. A drop-off is a symptom; the opportunity is the unmet need causing it.
+Torres suggests starting to map the opportunity space after three to four customer stories. That is enough to avoid overreacting to one story without getting lost in analysis. Keep interviewing weekly and revise the tree every three to four interviews after that.
 
-## How do I handle conflicting data across different customer segments?
+## What if a customer keeps talking about things unrelated to our outcome?
 
-Conflicting data usually means you're looking at different opportunities for different segments. Split the opportunity into segment-specific statements rather than averaging across segments. This keeps each opportunity node actionable for a specific audience.
+Let them tell the story and capture it. The interview snapshot records everything you heard, while the tree holds only opportunities related to the current outcome. Off-topic opportunities stay in the snapshots, ready for a future outcome or for maintenance work.
 
-## How often should I update my opportunity nodes in the OST?
+## Who should conduct the interviews?
 
-Update after every synthesis cycle—ideally weekly. Add new evidence to existing opportunities, create new nodes for emerging patterns, and archive opportunities that no longer have recent supporting data. A living OST reflects current customer reality, not last quarter's research.
-
-## Is identifying customer opportunities different from jobs-to-be-done analysis?
-
-They're complementary. Jobs-to-be-done focuses on the functional, emotional, and social jobs customers hire products for. Opportunity identification in the OST context is broader—it includes JTBD but also captures pain points, workarounds, and desires that may not fit neatly into the JTBD framework.
+Torres prefers that the product trio interview together, with one person leading and the other two observing and helping synthesize. She also recommends that all three roles become proficient interviewers, so the habit does not depend on one person.

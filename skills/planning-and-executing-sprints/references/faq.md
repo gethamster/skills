@@ -1,25 +1,21 @@
-# FAQ: Planning and Executing Sprints
+# FAQ: Scrum Sprint Planning
 
-## How long should scrum sprint planning take?
+## How long should a sprint planning meeting be?
 
-Sprint planning should be time-boxed to a maximum of 2 hours per week of sprint length. For a 2-week sprint, that's 4 hours maximum. If your team consistently exceeds this, it's a sign that backlog refinement sessions need more investment — planning shouldn't be where you discover complexity.
+The Scrum Guide caps it at eight hours for a month-long Sprint and says it is usually shorter when the Sprint is shorter. Atlassian's sprint planning guide gives the duration as usually about two hours per week of iteration, so a two-week Sprint starts with a planning meeting of about four hours. End the meeting when the team has a Sprint Goal, a forecast and enough of a plan to start.
 
-## What is the difference between a sprint goal and a sprint backlog?
+## Who attends Sprint Planning?
 
-The sprint goal is the overarching business or user outcome the team is working toward — it's the 'why.' The sprint backlog is the collection of product backlog items and tasks that the team believes will achieve the goal — it's the 'what' and 'how.' The goal is fixed; the backlog can be adapted during the sprint.
+The whole Scrum Team: the Product Owner, the Scrum Master and the Developers. The Scrum Guide lets the team bring in other people to give advice. The Product Owner brings the proposal for the Sprint's value, the Developers select the work and plan it, and the Scrum Master helps the event stay focused and within its timebox.
 
-## How do you handle unfinished work at the end of a sprint?
+## What makes a good Sprint Goal?
 
-Incomplete items return to the product backlog and are re-prioritized by the Product Owner for a future sprint. Never mark partially done work as complete, and never extend the sprint timebox. Use the retrospective to discuss why items weren't finished and whether the team should adjust how they plan capacity.
+A good Sprint Goal is a single objective that tells stakeholders why the Sprint is valuable and lets the team judge at the end whether it was met. It names an outcome rather than listing items. It leaves some flexibility in the exact work, so scope can be renegotiated with the Product Owner without abandoning the goal.
 
-## Who decides what goes into a sprint during scrum sprint planning?
+## Does the team commit to finishing every selected item?
 
-The Product Owner decides priority (what's most important), and the development team decides capacity (how much they can commit to). Sprint planning is a collaborative negotiation between these perspectives. The Scrum Master facilitates but doesn't dictate the plan.
+No. The Scrum Guide treats the selected items as a forecast and the Sprint Goal as the Developers' commitment. If the work turns out differently than expected, the Developers and the Product Owner agree a new scope for the Sprint Backlog while keeping the Sprint Goal.
 
-## Can you add work to a sprint after sprint planning is complete?
+## What should we do if we finish early?
 
-It's strongly discouraged but sometimes necessary for truly urgent items. If work must be added mid-sprint, the team should remove an equivalent amount of planned work to protect their capacity. Frequent mid-sprint additions signal a planning or prioritization problem that should be addressed in the retrospective.
-
-## What is the ideal sprint length for scrum sprint planning?
-
-Most teams use 2-week sprints as a starting point. One-week sprints offer faster feedback but create high ceremony overhead. Three or four-week sprints give more execution time but delay feedback and increase risk. Start with 2 weeks, then adjust based on your team's context and the cadence of stakeholder feedback.
+Check that the Sprint Goal is truly met and the work meets the Definition of Done. Then pull the next item from the ordered Product Backlog, help refine upcoming items, or work on the improvement from the last retrospective. Keeping the backlog ordered below the Sprint selection makes this easy.

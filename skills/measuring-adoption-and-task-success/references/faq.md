@@ -1,25 +1,21 @@
-# FAQ: Measuring Adoption Rates and Task Success for New Features
+# FAQ: Measuring Adoption and Task Success with HEART
 
-## What is the difference between adoption and engagement in the HEART Framework?
+## What is the difference between adoption and activation?
 
-Adoption measures whether users start using a feature (first-time activation within a time window), while engagement measures ongoing depth and frequency of use over time. A user can adopt a feature but not engage deeply with it. For more on engagement metrics, see Tracking Engagement and Retention Metrics at Scale.
+Adoption, in HEART, is the category for new users starting to use a product or feature. Activation is a common name for the specific action you choose to mark that start. Choosing a good activation event is how you make an adoption metric meaningful. The HEART paper notes that for some products a visit is enough, while for others a person counts as adopted only after completing a key task.
 
-## How do I choose the right activation event for measuring feature adoption?
+## Should adoption be a count or a rate?
 
-Look for the earliest action that indicates the user derived real value from the feature — not just that they saw it. Validate by checking if users who perform this action retain at higher rates than those who don't. If there's no retention difference, your activation event may be too shallow.
+Usually a rate. A raw count of new adopters rises whenever traffic rises, so it says little about the feature. Divide by the population that could adopt, such as weekly active users or new signups in the same period. Keep the count visible too, since a high rate on a tiny population may not matter.
 
-## What is a good task completion rate benchmark for new features?
+## How do I measure task success when I cannot tell what the user was trying to do?
 
-It depends on task complexity. Core workflows like signup or checkout should target 85-95% completion. Complex multi-step features like settings configuration or report building might target 70-85%. Always benchmark against your own product's historical data before comparing to industry averages.
+Use a study where tasks are assigned. The HEART paper suggests remote usability or benchmarking studies for measuring task success at scale, because logs alone often do not reveal intent. For flows with a clear start and end, such as checkout or sign-up, logs work well. For open-ended screens, assigned tasks give cleaner data.
 
-## How many product manager skills does measuring adoption and task success involve?
+## Is time on task always better when it is shorter?
 
-This skill draws on several core product manager skills including data analysis, funnel modeling, instrumentation planning, cross-functional collaboration with engineering, and stakeholder communication. It's an intermediate-level capability that builds on basic analytics literacy.
+Not always. For a checkout or a form, shorter is usually better. For reading, browsing or creative work, a longer time can mean people are getting value. Decide which direction is good before looking at the data, and pair time with completion so a faster but failing flow does not look like progress.
 
-## Should I measure adoption and task success separately or together?
+## What targets should I set for completion rates?
 
-Measure both, but analyze them in sequence. Adoption tells you if users are finding and trying the feature; task success tells you if they can use it effectively. High adoption with low task success indicates a usability problem. Low adoption with high task success indicates a discoverability problem.
-
-## How often should I review adoption and task success metrics after a feature launch?
-
-Review daily or every few days in the first 1-2 weeks post-launch to catch instrumentation issues and early signals. Shift to weekly reviews for the first month, then biweekly or monthly as metrics stabilize. Set automated alerts for sudden drops so you can react between scheduled reviews.
+Set them from your own baseline. Compute the rate on the current design, see how much it varies from week to week, and pick a target that would be a meaningful improvement. Rates vary so much by task complexity that a borrowed number from another product is rarely a useful goal.

@@ -1,25 +1,25 @@
-# FAQ: Maintaining and Evolving a Living Opportunity Solution Tree
+# FAQ: Maintaining a Living Opportunity Solution Tree
 
-## How often should I update my Opportunity Solution Tree?
+## How often should we update the tree?
 
-Aim for a lightweight weekly update (15-30 minutes) after your customer interviews and experiment reviews, plus a deeper quarterly review (60-90 minutes) aligned with strategic planning cycles. The weekly cadence is more important than the quarterly one—consistent small updates prevent the tree from becoming stale.
+Teresa Torres recommends revisiting the opportunity space every three to four customer interviews, which is about every three to four weeks for a team that interviews weekly. Update the solution and test layers whenever a test finishes. If you interview more often, update the opportunity space more often.
 
-## What tool should I use to maintain a living Opportunity Solution Tree?
+## When should we start a new tree?
 
-Collaborative visual tools like Miro, FigJam, or Mural work well because they support real-time collaboration, visual annotations, and easy restructuring. Avoid static tools like PowerPoint or PDF exports. The key requirement is that any team member can view and suggest changes without friction.
+Start a new tree when the direction of your outcome changes, for example from engagement to acquisition. If only the target changes, keep the same tree. Torres makes this distinction because the opportunity space you have mapped still applies as long as the direction stays the same.
 
-## How does maintaining an OST help my product manager career path?
+## What should we do with opportunities that don't relate to our outcome?
 
-Maintaining a living OST demonstrates continuous discovery maturity—a skill that distinguishes senior PMs from junior ones. It shows you can systematically connect customer evidence to business outcomes over time, communicate evolving product strategy visually, and make evidence-based prioritization decisions. These are capabilities hiring managers and leadership actively seek.
+Keep them in your interview snapshots. The tree is the active space for your current outcome, so unrelated opportunities would only clutter it. Some teams batch small requests from outside their outcome into periodic maintenance work.
 
-## Should I delete invalidated solutions from the Opportunity Solution Tree?
+## Should we delete solutions that failed their tests?
 
-No—archive them instead. Move invalidated solutions to a collapsed or visually distinct section with a note explaining what you learned. This prevents the team from revisiting dead ends and preserves institutional knowledge that's valuable for onboarding new team members or revisiting opportunities later.
+Mark them as ruled out or move them to an archive, with a short note on which assumption failed. The record helps when a stakeholder suggests the same idea later, and it shows the team's learning over time. Remove them from the active view so the live branches stay easy to read.
 
-## What do I do when the outcome at the top of my OST changes?
+## Our tree keeps changing shape. Is that a problem?
 
-Conduct a focused review session to assess which existing branches still align with the new outcome. Some opportunity branches may carry over directly, others may need reframing, and some should be archived. This is a natural part of the tree's lifecycle, especially during quarterly planning shifts.
+Some restructuring is expected, especially early on. Torres says the first version of an opportunity space often sprawls, and that the top-level structure should stabilize as you keep interviewing. If the top level is still moving a lot after many interviews, step back and restructure deliberately.
 
-## How do I get my team to actually use the OST as a living document?
+## How do we share the tree with stakeholders?
 
-Make the tree the default artifact you reference in planning conversations, sprint reviews, and stakeholder updates. When the team sees that the tree is where decisions are made—not just where ideas are stored—adoption follows naturally. Assigning lightweight rotating ownership for weekly updates also distributes the maintenance burden.
+Match the detail to the person. Stakeholders close to the work may want the whole tree, while others only need the top-level opportunities and the specifics of your target opportunity. Either way, walk from the outcome down, and ask whether you missed any opportunities.

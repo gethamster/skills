@@ -1,25 +1,25 @@
-# FAQ: Synthesizing Advisory Call Insights into Actionable Themes
+# FAQ: Synthesizing Developer Advisory Insights into Themes
 
-## How many advisory calls do I need before synthesis is worthwhile?
+## What framework should I use to synthesize TAB calls?
 
-You can start seeing meaningful patterns after 8-10 calls, but themes become robust and trustworthy around 20-25 calls. If you're running calls through the Technical Advisory Board (TAB) Framework, synthesize in batches of 8-15 to catch themes early without waiting for statistical significance.
+Adam Frankl uses Value Proposition Design by Alexander Osterwalder. For each persona, list the pains, the gains, and the jobs to be done, where gains are aspirational achievements rather than the absence of pains. He also highlights answers to the question about what has changed in the world. Affinity diagramming is a practical way to do the clustering.
 
-## What tools should I use for coding and affinity mapping developer feedback?
+## When should synthesis start?
 
-Dedicated qualitative research tools like Dovetail are ideal, but a well-structured spreadsheet works fine for teams under 50 calls. For affinity mapping, Miro or FigJam let multiple team members cluster codes collaboratively. The tool matters less than the discipline of the process.
+After the first set of calls, before the second round begins, because the second calls are built around the synthesis. You do not need to wait for every member's first call. Many teams synthesize once a reasonable share of first calls are done and then update the ranking as the rest come in.
 
-## How does synthesizing advisory insights relate to devtools technical SEO?
+## What do I do with outliers?
 
-The exact language developers use to describe their pain during advisory calls reveals high-intent search terms. Themes like "CI pipeline debugging" directly map to devtools technical SEO keyword opportunities. Synthesis gives you both product direction and a content strategy grounded in real developer vocabulary.
+Frankl's instruction is to throw out the outliers when grouping by persona. In practice, keep them in a separate list rather than deleting them. They do not shape the current ranking, but if the same outlier appears again in later rounds, it may be an early signal worth a closer look.
 
-## How do I prevent my own product bias from influencing the themes I identify?
+## How do I know if two personas should be merged?
 
-Involve at least one team member who wasn't on the calls in the coding and clustering process. Use a scoring matrix to enforce objective prioritization, and always require 3+ independent advisor quotes per theme. If a theme only makes sense because of what you want to build, it's not a real theme.
+Merge them if their top pains, gains, and jobs are the same. For your product they behave as one persona, whatever their job titles. Frankl writes that going from a theoretical 12 personas down to 3 is not unusual after this analysis.
 
-## How often should I re-synthesize themes from my Technical Advisory Board?
+## Can I use AI to do the synthesis?
 
-Re-synthesize quarterly at minimum, or after every batch of 10-15 new calls. Developer ecosystems shift quickly, and themes that were top priority six months ago may have been addressed by competitors or superseded by new pain points. Rolling synthesis keeps your understanding current.
+You can use it to find and group quotes, but read the transcripts yourself. Scaling DevTools host Jack tried AI tools on his TAB transcripts and felt the results were not accurate, possibly because tone and emotion are lost in text. Frankl has said he is experimenting with AI for this step too and found it trickier than expected.
 
-## What's the difference between a theme and a feature request?
+## How do I present the synthesis to members?
 
-A theme describes a validated problem experienced by multiple developers, while a feature request is one person's proposed solution. Themes like "developers lack visibility into deployment failures" open a wide solution space; feature requests like "add a dashboard" prematurely narrow it. Always synthesize at the problem level.
+Share one page for their persona in the second call and ask whether it matches their experience. Frankl suggests saying you have talked to a few dozen of their peers and these seem to be the top pains in their industry, then asking if they agree. Expect disagreement and treat it as data.

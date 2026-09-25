@@ -1,39 +1,25 @@
 # FAQ: Defining Measurable Product Goals in GIST
 
-## How many goals should a single product team have per quarter?
+## How many goals should a team have?
 
-Two to five. Fewer than two creates tunnel vision and makes the team fragile if one goal becomes irrelevant mid-quarter. More than five dilutes focus to the point where goals stop guiding daily decisions. Three is the sweet spot for most teams of 5-12 people.
+Few enough that each gets real attention. Every goal needs its own ideas, steps and review time, so a long list spreads the team thin. Gilad's GIST board has goals on the left with ideas and steps branching from each, and a crowded left column is a sign the team is trying to do too much at once.
 
-If you have more than five candidates, force-rank them and explicitly deprioritize the rest, documenting the reasoning so stakeholders understand.
+## Should goals be OKRs?
 
-## How do I define measurable goals when my product analytics are immature?
+Usually. Gilad took goal setting from the OKRs he used at Google, and GIST goals are typically key results with a current value and a target. Any format works if it states an outcome, a metric, a target and a date. The goal must leave the solution open.
 
-Start with whatever data you have, even if it is manual. You can count activated users by querying the database directly. You can measure onboarding completion by tagging support tickets. The baseline does not need to come from a polished dashboard.
+## What is the difference between a goal and an idea?
 
-It needs to come from a repeatable measurement process. If a metric truly cannot be measured today, make setting up instrumentation your first step-project under that goal, with a deadline of two weeks. Then set the actual target once you have baseline data.
+A goal describes the change you want to see, measured by a metric. An idea is one possible way to cause that change. If the sentence names a feature, a technology or a project, it is an idea and belongs in the idea bank. A good test is whether the goal would still make sense if the first idea failed.
 
-## Should I define goals before or after generating ideas?
+## How often should goals change?
 
-Before. Goals come first in the GIST hierarchy for a structural reason: they constrain the idea space. If you generate ideas first and then find goals to justify them, you have reversed the logic and your 'goals' are just rationalizations for features you already wanted to build. The one exception is when you are doing a discovery sprint with no existing strategic direction, in which case brainstorming ideas can reveal what outcomes the team implicitly cares about, which you then formalize as goals.
+In the original GIST article, goals are set at the start of the year for a horizon of a year or more and are evaluated and adjusted every quarter. Between reviews, leave them alone unless strategy changes. Stable goals let the idea and step layers change quickly without the whole plan shifting.
 
-## What is the difference between a GIST goal and an OKR?
+## What if the team cannot measure the metric yet?
 
-They are structurally similar. Both express outcomes as measurable targets. The main difference is operational context. An OKR typically has one objective (qualitative) with 2-5 key results (quantitative).
+Make measurement the first piece of work. A goal on an unmeasured metric cannot be tracked, and step-project results cannot be judged against it. In the meantime, use the closest metric you can measure and note its limits.
 
-A GIST goal combines these into a single statement: the metric is the key result, and the 'why' sentence provides the objective. GIST goals also explicitly connect downward to ideas and step-projects, which most OKR frameworks leave unspecified. If your company already uses OKRs, you can treat your GIST goals as the product team's key results within the company OKR structure.
+## How do team goals relate to company metrics?
 
-## How do I handle goals that conflict with each other?
-
-Acknowledge the tension explicitly in your goal sheet rather than pretending it does not exist. Write a note like: 'Goals 1 and 2 may compete. Increasing trial signups (Goal 1) could dilute trial-to-paid conversion (Goal 2) if signup quality drops. ' Then, during monthly reviews, monitor both goals together and discuss whether the tension is materializing.
-
-If it is, the team decides which goal takes priority for the remainder of the quarter.
-
-## Why does my goal progress keep stalling after the first month?
-
-The most common cause is a gap between goal-setting and idea execution. The team sets goals, feels accomplished, and then returns to their existing backlog without actually generating or prioritizing ideas that serve the new goals. The fix is Step 7 in the process: immediately connect each goal to at least three ideas and then run those ideas through ICE scoring within the first week. If no experiment is in flight within two weeks of setting a goal, the goal is decoration. Use the monthly review as a forcing function to ask: 'What experiment ran this month, and what did we learn about this metric?'
-
-## How do I set targets when I have no historical data to anchor against?
-
-Use industry benchmarks, analogies from adjacent products, or educated estimates. Document that the target is a hypothesis, not a data-driven projection. Write something like: 'Target is estimated. Industry benchmark for SaaS activation in this category is 40-60%.
-
-' The act of writing the estimate down, along with its uncertainty, is more valuable than waiting until you have perfect data. You will learn from the gap between your estimate and reality.
+Through a metrics tree. In Evidence-Guided, Gilad recommends a North Star Metric for value delivered and a Top Business Metric for value captured at the top. Teams pick the driver metrics beneath them that they can influence, which keeps local goals connected to the business.

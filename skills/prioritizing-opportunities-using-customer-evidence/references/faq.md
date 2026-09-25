@@ -1,25 +1,25 @@
 # FAQ: Prioritizing Opportunities Using Customer Evidence
 
-## How do I prioritize opportunities when I have limited customer evidence?
+## What factors should we use to assess opportunities?
 
-If you have fewer than 10 customer data points, focus on gathering more evidence before prioritizing. Use the frequency data you do have to identify which opportunities need deeper investigation, and supplement with quantitative signals like support tickets or product analytics to build confidence.
+Teresa Torres assesses four sets of factors: opportunity sizing (how many customers are affected and how often), market factors, company factors, and customer factors (how important it is to customers and how satisfied they are with existing solutions). Together they help estimate how much impact addressing the opportunity would have on your outcome.
 
-## Should I use a weighted scoring formula to combine frequency, severity, and breadth?
+## How does this relate to the frequency, severity, and breadth framework?
 
-You can, but it's often counterproductive. Weighted scores create a false sense of precision and obscure the trade-offs. Most experienced practitioners use the three dimensions as discussion prompts rather than inputs to a formula, keeping the conversation transparent and the reasoning visible.
+Frequency and breadth are both part of opportunity sizing, and severity is close to Torres's customer factors. Her approach adds market and company factors so strategy and competitive position are part of the decision. If your team already talks in frequency, severity, and breadth, keep those words and add the two strategic questions.
 
-## How does opportunity prioritization differ from feature prioritization frameworks like RICE or ICE?
+## Why not use a scoring formula?
 
-Opportunity prioritization happens before you've identified solutions. RICE and ICE score specific features or solutions. In the Opportunity Solution Tree framework, you first prioritize which customer problem to solve using evidence, then generate multiple solutions for the winning opportunity, then evaluate those solutions separately.
+Torres argues that these are subjective decisions and that quantifying them makes teams treat the result as truth. A score also hides the conversation about why one opportunity matters more than another, which is where the trio builds shared understanding. Write short rationales instead, and keep the comparison between a few siblings at a time.
 
-## What product manager interview questions test opportunity prioritization skills?
+## Why is effort left out?
 
-Common product manager interview questions in this area include: 'How would you decide what to build next?', 'Tell me about a time you used data to prioritize,' and 'How do you handle competing customer needs?' Demonstrating the frequency-severity-breadth framework with a concrete example is a strong way to answer.
+You are choosing opportunities, not solutions, and any opportunity can have both easy and difficult solutions. Effort is assessed when the team explores solutions and tests feasibility assumptions. Leaving it out avoids ruling out an important opportunity that might have a simple answer.
 
-## How often should I re-prioritize opportunities in my Opportunity Solution Tree?
+## How long should prioritization take?
 
-Re-evaluate whenever significant new evidence arrives — typically every 2-4 weeks if you're running continuous customer interviews. Also re-prioritize when your outcome metric changes or when you've shipped a solution and need to decide what to tackle next.
+Not long. Torres treats opportunity selection as a two-way door decision: if testing shows you chose poorly, you can walk back up the tree and choose again. Spend enough time to compare the siblings honestly, then move to solutions.
 
-## Can I use quantitative data instead of qualitative interviews to assess frequency, severity, and breadth?
+## What if we do not have enough evidence to compare?
 
-Quantitative data is excellent for validating frequency and breadth estimates but struggles to capture severity on its own. The strongest approach is to triangulate: use qualitative interviews to identify and understand opportunities deeply, then use quantitative data to validate how widespread they are.
+Note where the evidence is thin and treat it as a research question for your next interviews. If one opportunity has plenty of stories and another has none, that difference is information, but it may reflect who you interviewed. Add prompts to your interview guide and revisit the comparison.

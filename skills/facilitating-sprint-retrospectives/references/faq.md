@@ -1,25 +1,21 @@
 # FAQ: Facilitating Sprint Retrospectives
 
-## How long should a scrum retrospective last?
+## Who should facilitate the retrospective?
 
-The Scrum Guide suggests a maximum of 3 hours for a one-month sprint. In practice, most teams use 60 minutes for a two-week sprint and 90 minutes for a four-week sprint. The key is strict time-boxing—a focused 45-minute retro beats a rambling 90-minute one.
+The Scrum Master is accountable for making sure Scrum events happen and are productive, and often facilitates. Anyone on the team can do it, and rotating the role spreads the skill and changes the dynamics. Atlassian suggests an outside facilitator from another team when a team is stuck or the Scrum Master wants to participate fully.
 
-## Who should facilitate the scrum retrospective?
+## Should the Product Owner attend?
 
-The Scrum Master typically facilitates, but rotating facilitation among team members is a powerful practice for mature teams. It builds shared ownership and gives the Scrum Master a chance to participate as a contributor. Avoid having the Product Owner or a manager facilitate, as it can inhibit candid feedback.
+Yes. The Product Owner is a member of the Scrum Team, and the Scrum Guide describes the retrospective as an event for the Scrum Team. Many issues that come up, such as unclear items or priorities changing mid-Sprint, involve the Product Owner and need their help to fix. Managers and stakeholders outside the team usually do not attend.
 
-## What if nobody speaks up during the retrospective?
+## How long should a retrospective be?
 
-Silence usually indicates a lack of psychological safety, not a lack of opinions. Switch to anonymous input methods (sticky notes, digital tools like Retrium), use silent writing before any discussion, and start with a low-stakes check-in activity. Over multiple sprints, demonstrating that feedback leads to action will build trust.
+The Scrum Guide caps it at three hours for a month-long Sprint, and shorter Sprints usually need less. Atlassian suggests planning for at least thirty minutes and up to an hour, depending on how long the Sprint is and how much there is to cover. Leave enough time for the insight and decision phases, since those produce the actions.
 
-## How many action items should come out of a scrum retrospective?
+## What is a good scrum retrospective format for beginners?
 
-Limit action items to one or two per retrospective. Research and practitioner experience consistently show that teams attempting more than two improvements per sprint complete none of them well. One meaningful, completed improvement per sprint compounds into transformative change over a quarter.
+Use the five phases from Derby and Larsen's Agile Retrospectives with simple activities: a one-word check-in, Start / Stop / Continue for gathering data, dot voting to pick a theme, and a short list of actions with owners. Retromat offers many alternative activities for each phase once the team is comfortable.
 
-## Can we skip the retrospective if the sprint went well?
+## What if the same issue comes up every Sprint?
 
-No. Good sprints are actually the most valuable retrospectives because you can identify what went right and deliberately reinforce those practices. The Scrum Guide lists the retrospective as a required event. Skipping it when things go well trains the team to only reflect during crises.
-
-## What's the difference between a sprint review and a scrum retrospective?
-
-The sprint review inspects the product increment—what was built and whether it meets stakeholder expectations. The scrum retrospective inspects the team's process—how they worked together and what to improve. Reviews involve stakeholders; retrospectives are for the Scrum team only. Both are essential ceremonies in the Scrum framework.
+A recurring issue means earlier actions did not address the cause, or the cause sits outside the team. Dig deeper in the insight phase and check whether past actions were actually carried out. If the team cannot fix it alone, the Scrum Master should raise it as an organizational impediment and report back on progress.

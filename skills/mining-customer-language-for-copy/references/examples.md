@@ -1,69 +1,37 @@
 # Examples: Mining Customer Language for Persuasive Copy
 
-## Example: Writing a SaaS Landing Page Headline from Amazon Reviews of a Competitor
+## A pre-launch tool with no customers yet
 
 **Scenario:**
 
-You're writing copy for a project management tool targeting small agencies. Your competitor's product has hundreds of reviews on G2. You need a headline for your landing page.
+Illustrative scenario: a two-person team is building a scheduling tool for small physiotherapy clinics. It has no customers, no reviews and a landing page that says "Intelligent practice scheduling."
 
 **Walkthrough:**
 
-Start by reading 50+ reviews of the competitor, focusing on 2-4 star ratings. You notice these recurring phrases:
+The team reads reviews of the three scheduling products clinics mention most, using review-page searches built around phrases like "tired of" and "frustrated by." They copy about forty passages word for word into a shared document with the product name and date, then book five short calls with clinic managers.
 
-- "I spend more time updating the tool than doing actual work" (appears 8 times in variations)
-- "My team just ignores it and goes back to Slack" (appears 5 times)
-- "I need something that doesn't require a PhD to set up" (appears 4 times)
+Sorting the quotes, one theme stands out across reviews and calls: managers spend their evenings phoning patients to fill cancelled slots. One manager says, "Every cancellation is an hour on the phone that night." The team moves that phrase into the problem section, rewrites the headline around filling cancelled appointments without the evening phone calls, and drops "intelligent" from the page because no clinic manager used the word.
 
-The most frequent and emotional phrase clusters around wasted time on tool maintenance. Your power phrase becomes: "spend more time updating the tool than doing actual work."
-
-Your headline draft: **"Stop Spending More Time Managing Your Project Tool Than Managing Actual Projects."**
-
-Your subhead uses the second phrase: **"Finally, a project manager your team will actually use instead of ignoring for Slack."**
-
-This approach, central to [writing benefit-driven headlines](https://tryhamster.com/skills/writing-benefit-driven-headlines), ensures every word resonates because it came from real customers describing real frustrations.
-
-## Example: Building an Email Sequence from Customer Interview Transcripts
+## Support tickets behind a pricing page rewrite
 
 **Scenario:**
 
-You're writing a 3-email onboarding sequence for an online course about freelance copywriting. You have transcripts from 12 customer interviews conducted before the course launched.
+Illustrative scenario: a mid-sized accounting software company sees many pre-sales tickets asking which plan fits. The pricing page lists features by internal module names.
 
 **Walkthrough:**
 
-Reading through the transcripts, you categorize phrases into trigger events, fears, and desired outcomes:
+The writer exports a quarter of pre-sales tickets and copies every question about plans verbatim. The recurring wording is about people and situations, such as "I have one bookkeeper and an outside accountant" and "we just hired our first finance person," while the page talks about modules.
 
-**Trigger events**: "I got laid off and realized I had no marketable skills" (3 mentions), "I saw someone on Twitter say they made $10K/month writing" (4 mentions)
+The writer groups the quotes by situation, labels each plan with the situation it fits in the customers' own words, and turns the three most common questions into an FAQ under the plan table. The module names stay in the comparison table for buyers who need them, and the ticket file becomes the first source for the next test.
 
-**Fears**: "What if I'm not creative enough?" (6 mentions), "I don't even know where to find clients" (5 mentions)
-
-**Desired outcomes**: "I just want to replace my 9-to-5 income doing something I actually enjoy" (7 mentions), "I want to work from anywhere" (3 mentions)
-
-You map these to your [email sequence](https://tryhamster.com/skills/writing-email-sequences-that-sell):
-
-- **Email 1 (Welcome)**: Opens with the trigger event: "Maybe you saw someone mention they make a full-time income from copywriting and thought, 'Could I actually do that?'"
-- **Email 2 (Address fears)**: Subject line uses the top fear: "What if you're not 'creative enough' to be a copywriter?" Body addresses this objection directly.
-- **Email 3 (Vision)**: Closes with the desired outcome: "Imagine replacing your 9-to-5 income doing work you actually enjoy—from wherever you want."
-
-Each email feels like it's reading the subscriber's mind because it literally is—you borrowed their exact thoughts.
-
-## Example: Rewriting a Pricing Page Using Support Ticket Language
+## Interview language in a re-engagement email
 
 **Scenario:**
 
-Your SaaS product's pricing page has a high bounce rate. You pull 3 months of support tickets tagged "billing" or "pricing" to understand what's confusing customers.
+Illustrative scenario: a language-learning app interviews six users who stopped practicing after the first month. The team wants a re-engagement email that does not sound like a generic reminder.
 
 **Walkthrough:**
 
-From 87 support tickets, clear patterns emerge:
+In the interviews, four people describe the same trigger in different words: a busy week broke their streak and restarting felt like admitting defeat. One says, "Once I missed a week I felt too far behind to open it." The team tags this as a trigger event and an objection.
 
-- "I can't tell what I get on the Pro plan that I don't get on Basic" (12 occurrences)
-- "Am I going to get charged more if my team grows?" (9 occurrences)
-- "I just need [feature X], why do I have to pay for all this other stuff?" (7 occurrences)
-
-These aren't feature requests—they're copywriting instructions. You rewrite the pricing page:
-
-1. **Add a comparison row** with the headline: "Here's exactly what you get on Pro that you don't get on Basic" (mirrors their exact confusion)
-2. **Add a pricing clarity statement**: "Your price stays the same as your team grows. No surprise charges, no per-seat fees." (directly answers their anxiety)
-3. **Add a "Just need [Feature X]?" CTA** linking to a lighter plan, acknowledging that not everyone needs the full suite
-
-This is how customer language mining works for [page-specific copy](https://tryhamster.com/skills/writing-page-specific-website-copy). You're not guessing what to write—your customers told you exactly what was missing.
+The email opens with that situation instead of a feature announcement, offers a short review session sized to someone who has been away, and uses a button label that names the session. The team keeps the interview quotes in the research file and does not quote any interviewee in the email, since none agreed to be quoted.

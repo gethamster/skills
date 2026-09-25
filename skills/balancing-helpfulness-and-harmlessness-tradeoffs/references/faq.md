@@ -1,25 +1,21 @@
 # FAQ: Balancing Helpfulness and Harmlessness in AI Responses
 
-## How do I know if my AI model is being too cautious or too permissive?
+## Why is there a trade-off at all?
 
-Measure refusal rate on a curated set of legitimate-but-sensitive queries. If more than 5-10% of legitimate queries receive refusals or non-substantive hedging, the model is too cautious. Simultaneously measure harmful output rate on adversarial probes — if above 1%, it's too permissive. Both metrics must be tracked together.
+Helpfulness training makes a model more willing to follow requests, including harmful ones, and harmlessness training tends to make it more evasive. The Constitutional AI paper described this tension in Anthropic's earlier RLHF models and designed the method to reduce it by training for non-evasive, explained declines.
 
-## Can I use claude ai seo techniques to improve AI-generated content safety?
+## What is over-refusal?
 
-Yes. Constitutional AI principles that balance helpfulness and harmlessness directly improve content quality for SEO by ensuring AI-generated content is substantive and trustworthy rather than evasive or potentially misleading. Search engines reward comprehensive, accurate content — which is exactly what a well-balanced model produces.
+Over-refusal, sometimes called exaggerated safety, is when a model refuses safe requests because they look like unsafe ones or touch a sensitive topic. The XSTest suite was built to measure it, with safe prompts that a well-calibrated model should answer and unsafe prompts as contrasts.
 
-## What is the difference between harmlessness and over-refusal in Constitutional AI?
+## Can I fix over-refusal with a system prompt?
 
-Harmlessness means the model avoids producing outputs that could cause real-world harm. Over-refusal means the model unnecessarily declines to answer safe queries because they superficially resemble harmful ones. Over-refusal is itself a form of misalignment because it prevents the model from fulfilling its purpose of being helpful.
+A system prompt can shift tone, but it is a weak control over behavior learned in training. In Hugging Face's Constitutional AI experiments, a safety system prompt alone did not stop undesirable content, and the reverse problem, a model trained to refuse too much, also needs changes to training data and principles.
 
-## How often should I recalibrate the helpfulness-harmlessness balance?
+## How does Constitutional AI reduce evasiveness?
 
-Recalibrate whenever you deploy to a new domain, observe a significant shift in user query patterns, or receive user feedback indicating either excessive refusals or safety gaps. At minimum, run a full balance audit quarterly using updated adversarial test suites.
+Through principles that ask for thoughtful, non-accusatory answers, training data that includes helpful responses, rater instructions that prefer non-evasive answers when both are harmless, and choosing snapshots before over-training. The paper reports that its RL-CAI models were virtually never evasive on red-team prompts.
 
-## How does RLAIF help balance helpfulness and harmlessness without human labels?
+## What should I report to show the balance?
 
-In RLAIF, the AI evaluator critiques and ranks its own responses against constitutional principles. By including principles that explicitly penalize both harmful outputs and unnecessary refusals, the AI feedback signal naturally captures both dimensions. This scales better than human labeling because generating balanced preference pairs from AI feedback is faster and more consistent.
-
-## What reward model architecture works best for dual-axis scoring?
-
-A shared backbone with two separate scoring heads — one for helpfulness, one for safety — works well because it allows independent weight tuning at inference time. This is more flexible than a single blended score and lets you diagnose whether poor outputs stem from safety failures or helpfulness failures.
+Report harmful compliance on unsafe prompts and refusal or evasion on safe prompts, on fixed held-out sets, every time. Add a small sample of transcripts for each, because hedged non-answers and boilerplate are easy to miss in numbers alone.

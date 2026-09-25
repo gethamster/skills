@@ -1,31 +1,37 @@
-# Examples: Recruiting and Curating Your Developer Advisory Board
+# Examples: Recruiting Developer Advisory Board Members
 
-## Example: Building an Advisory Board for a Technical SEO Checklist DevTools Product
-
-**Scenario:**
-
-A startup is building a developer-focused tool that automates technical SEO audits (think: a technical SEO checklist devtools product that integrates into CI/CD pipelines). The founders have a hypothesis that developers managing SEO are underserved by existing tools designed for marketers, but they need structured developer feedback to validate this.
-
-**Walkthrough:**
-
-The team defines four personas: (1) Frontend engineers at startups responsible for Core Web Vitals and SEO, (2) Full-stack developers at agencies managing SEO across client sites, (3) DevOps/SRE engineers at mid-size companies managing crawl infrastructure, and (4) Solo developers or indie hackers handling everything including SEO for their own products.
-
-They allocate 8–12 seats per persona, targeting 40 total members. For sourcing, they mine GitHub contributors to Lighthouse CI, Screaming Frog automation scripts, and Next.js SEO plugins (persona 1 and 4). For agency developers, they join the TechSEO Slack community and identify active members. For DevOps, they attend a Cloud Native meetup and note attendees who ask questions about web crawler management.
-
-Their longlist has 130 names. After scoring each on persona fit, recency, and candor signals, they narrow to 60 and send personalized outreach. The message reads: 'I'm researching how developers handle technical SEO workflows — particularly the gap between marketer-focused SEO tools and developer workflows. I found your PR to [repo name] and your approach to [specific technique] is exactly the perspective I'm trying to understand. Would you be open to a 30-minute conversation once a quarter? No pitch, no product demo — just honest conversation about what's broken.'
-
-They get 35 responses, qualify 28 through brief intro calls, and onboard their first cohort. An audit reveals they're thin on agency developers (only 3 of the target 8–12), so they run a second targeted wave through agency-focused communities. Within 5 weeks, they have 38 active board members ready for their first round of [discovery calls](https://tryhamster.com/skills/conducting-non-pitch-discovery-calls).
-
-## Example: Recovering from a Poorly Recruited Initial Board
+## A two-founder startup fills its first personas
 
 **Scenario:**
 
-A devtools founder recruited their first advisory board by posting in their personal Twitter network and a YC Slack group. After two call cycles, they realize 80% of their 25 members are early-stage startup CTOs — a single persona that doesn't represent their broader market.
+Illustrative scenario: two founders are building a tool that speeds up flaky test triage in CI. They have no product yet and want a TAB before they write much code.
 
 **Walkthrough:**
 
-The founder conducts a persona audit and discovers they have zero representation from enterprise developers, agency developers, or junior engineers. They also notice that feedback has become repetitive because all members share similar contexts.
+They write a persona list with four roles: developers who fix failing builds, engineering managers who feel the delay, platform engineers who own the CI system, and the VP of engineering who approves tooling spend. They start with six people they know, then search LinkedIn for platform engineers who have posted about flaky tests.
 
-Rather than disbanding the board, they freeze new recruitment from their existing channels and run a targeted campaign: they identify enterprise developers through contributions to internal-tooling-focused repos, junior developers through bootcamp alumni Discords, and agency developers through freelancer communities.
+Each invitation names the specific post, says the founders started a company to attack flaky tests, and asks whether the person would consider joining a technical advisory board. Most people do not reply. After a few weeks the developer and platform personas have several members each, but nobody at the VP level has agreed. The founders shift the next weeks of outreach toward engineering leaders and write invitations that reference talks those leaders gave about developer productivity.
 
-They add 15 new members across these three personas over 3 weeks, and transition 8 of the original members to 'emeritus' status (thanking them and offering to re-engage in 6 months). The result is a rebalanced board of 32 members across 4 personas, producing dramatically more diverse and actionable insights in the next call cycle.
+## Recruiting through published posts
+
+**Scenario:**
+
+Illustrative scenario: a solo founder working on an internal-docs search tool finds cold LinkedIn messages get almost no response.
+
+**Walkthrough:**
+
+She starts posting short write-ups twice a week about how engineering teams find answers in internal documentation, drawing on what her first few members said, with their permission and without names. When a staff engineer comments that their team gave up on the internal wiki, she messages him the same day, thanks him for the comment, and asks for a short call about how his team finds answers now.
+
+On the short call she confirms that he has the problem, explains the commitment of one thirty-minute call a month for six months, and books the first call. Over the following weeks, most new members come from people who engaged with a post, and her cold outreach becomes a smaller share of her time.
+
+## Correcting a lopsided board
+
+**Scenario:**
+
+Illustrative scenario: a startup building a secrets-management tool has signed up ten members, and the weekly coverage review shows all of them are application developers.
+
+**Walkthrough:**
+
+The founders realize every member came from their own network and a single developer community. Their persona list also named security engineers and platform leads, the roles most likely to veto a secrets tool. They pause outreach to developers and spend two weeks searching for security engineers who have written about secret sprawl.
+
+The invitations to security engineers mention specific talks and posts, and several agree to join. In their first calls, the security members describe audit requirements none of the developers had raised. The founders add a compliance lead to the persona list and start recruiting for it.

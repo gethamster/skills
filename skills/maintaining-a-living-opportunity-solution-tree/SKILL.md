@@ -1,15 +1,20 @@
 ---
-name: maintaining-a-living-opportunity-solution-tree
-description: "This skill teaches you how to continuously update your Opportunity Solution Tree as new customer insights, experiment results, and strategic shifts emerge—keeping it a living artifact that drives ongoing product discovery rather than a one-time deliverable."
+name: "maintaining-a-living-opportunity-solution-tree"
+description: "Maintain a living opportunity solution tree: update it every few interviews and after each test so it stays the current record of discovery."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: opportunity-solution-tree
+  method: "opportunity-solution-tree"
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Maintaining a Living Opportunity Solution Tree on Your Product Manager Career Path
+# Maintaining a Living Opportunity Solution Tree
 
-> This skill teaches you how to continuously update your Opportunity Solution Tree as new customer insights, experiment results, and strategic shifts emerge—keeping it a living artifact that drives ongoing product discovery rather than a one-time deliverable.
+> Maintain a living opportunity solution tree: update it every few interviews and after each test so it stays the current record of discovery.
 
 ## Before you start
 
@@ -23,121 +28,100 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 20-40 minutes per weekly review cycle |
-| Outcome | Your OST becomes a continuously accurate, team-shared map of discovery progress that reflects your latest customer understanding, making product decisions faster and more evidence-based. |
-| Prerequisites | Basic understanding of the Opportunity Solution Tree framework, Experience with defining measurable outcomes for the top of your OST, Familiarity with identifying customer opportunities from continuous research, Comfort with designing assumption tests for solutions |
+| Difficulty | Beginner |
+| Time to Learn | One update cycle to learn, a short session every few weeks after that |
+| Outcome | You keep one tree per outcome current, with new opportunities placed, test results marked, dead branches cleared, and a version stakeholders can read at the right level of detail. |
+| Prerequisites | A first opportunity solution tree, a weekly interview habit, assumption tests in progress |
 | Part of | [Opportunity Solution Tree](../../methods/opportunity-solution-tree/METHOD.md) |
 
 ## Overview
 
-An Opportunity Solution Tree is only as useful as it is current. Too many product teams invest energy in building a beautiful OST during a workshop and then let it gather digital dust. The real value of the [Opportunity Solution Tree](https://tryhamster.com/methods/opportunity-solution-tree) framework emerges when the tree evolves alongside your product discovery work—incorporating new customer interview insights, experiment outcomes, and shifting business priorities in real time.
+A living opportunity solution tree is one that reflects what the team knows this week. Teresa Torres is explicit that "Creating an opportunity solution tree is not a one-time activity," and describes the tree as a living document that should evolve as the team learns from discovery ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). A tree drawn once for a planning meeting and never touched again stops guiding decisions within weeks, because the interviews and tests keep producing evidence it does not show.
 
-Maintaining a living OST is a critical skill on any **product manager career path** because it transforms the tree from a planning artifact into an operational decision-making tool. When your tree is alive, it becomes the single source of truth for what your team knows, what you've tried, and what remains uncertain. It connects weekly customer conversations to quarterly business outcomes without losing context.
+Maintaining the tree is part of OST continuous discovery. Torres describes the opportunity space as always evolving: "expanding as you learn about new needs, contracting as you address known problems, and gaining clarity as you learn more about specific needs" ([Torres, Opportunity Mapping](https://www.producttalk.org/opportunity-mapping/)). Solutions and tests change even faster, as each round of assumption tests rules ideas in or out. Maintenance keeps all four layers in step.
 
-This skill covers the cadences, rituals, and practical techniques for keeping your tree fresh. You'll learn when to prune dead branches, how to integrate experiment results, when to restructure the opportunity hierarchy, and how to communicate changes to stakeholders—all without turning tree maintenance into busywork.
+The skill is a routine with two rhythms. The opportunity space gets revised in batches, every three to four interviews. The solution and test layers get updated whenever a test returns a result. On top of that come occasional structural decisions: restructuring branches, removing opportunities that were addressed, and deciding whether the outcome has changed enough to need a new tree.
+
+A maintained tree is also the team's best communication tool. Stakeholders can see what the team learned and why it chose its current target, and the trio has a record of decisions to point back to. Building the first tree is covered in [OST Workshop Facilitation](../facilitating-ost-workshops-with-stakeholders/SKILL.md), and this skill covers keeping it current afterward.
 
 ## How It Works
 
-A living OST works because it mirrors the iterative nature of product discovery itself. Discovery is not a phase—it's a continuous process of learning. Each week, you conduct customer interviews that surface new opportunities (or deepen your understanding of existing ones). You run assumption tests that validate or invalidate solutions. Business context shifts, changing which outcomes matter most.
+Opportunity updates happen in batches. Torres recommends revisiting the opportunity space every three to four customer interviews, which is roughly every three to four weeks for a team that interviews weekly ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). She explains the batch size: it is enough new data that you do not over-index on a single interview, and not so much that it becomes overwhelming. Between batches, new opportunities live in interview snapshots.
 
-The OST captures these learnings structurally. When a customer interview reveals a new pain point, it appears as a new opportunity node. When an experiment disproves an assumption behind a solution, that solution gets archived or deprioritized. When a quarterly planning cycle shifts the target outcome, the entire tree reorients.
+Only relevant opportunities go on the tree. Product Talk's community guidance separates the two artifacts: interview snapshots capture everything a customer said, and the tree is the active space for the current outcome ([Product Talk, Tracking Opportunities Not Related to Your Outcome](https://www.producttalk.org/opportunities-not-related-to-outcome/)). Opportunities outside the outcome stay in the snapshots. Some teams in that discussion handle such requests in regular maintenance cycles instead.
 
-Conceptually, think of your OST as a knowledge garden. Some branches are thriving (well-validated opportunities with promising solutions). Others are dormant (opportunities you haven't explored yet). Some need pruning (invalidated paths). Regular tending—adding, removing, restructuring—keeps the garden healthy. The key mechanism is a tight feedback loop: learn something → update the tree → let the updated tree inform your next action. This loop is what separates teams that do continuous discovery from teams that do occasional research projects.
+Structure should settle over time. Torres expects a first opportunity space to sprawl and says that as the team keeps interviewing, the key moments at the top should not change often, with refinements coming from adding detail within branches ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). If top-level branches keep moving after many interviews, that is a signal to revisit how the space is structured rather than to keep patching it.
 
-For anyone on a **product manager career path**, mastering this feedback loop is what elevates you from someone who builds features to someone who systematically discovers the right things to build.
+Test results change status, and the tree should show status at a glance. On Product Talk, Hope Gurion describes color-coding nodes as promising, not promising, or unknown, and Torres suggests keeping colors for node types while adding status symbols: a check for supporting evidence, a circle for still collecting evidence, and an x for evidence against ([Torres and Gurion, Engaging Stakeholders](https://www.producttalk.org/engaging-stakeholders/)). Either way, anyone looking at the tree can see which branches are alive.
+
+A new tree is needed only when the direction changes. Torres distinguishes the directional part of an outcome from its target: raising the target keeps the same tree, while switching direction, such as from activation to acquisition, calls for a new one ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). The measure under a direction can also evolve, for example from a simple usage count to a better definition of valuable activity, without starting over.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Establish a Regular Review Cadence
+### Step 1: Set the update rhythm
 
-Set a recurring weekly ritual—ideally 20-30 minutes—dedicated to reviewing and updating your OST. This should be a distinct activity, not buried inside a sprint planning meeting. Pull up the tree (whether it's in Miro, FigJam, or a whiteboard photo) and walk through recent learnings.
+Agree on two recurring moments: a short opportunity update after every three or four interviews, and a solution and test update whenever results come in. Put the opportunity update on the calendar so it survives busy weeks. Decide who prepares each update; often the product manager prepares it and the trio reviews together.
 
-The cadence matters more than the duration. A team that spends 15 minutes every week updating the tree will have a dramatically more useful artifact than a team that does a 2-hour overhaul every quarter. Consistency builds the habit, and the habit is what keeps the tree alive.
+### Step 2: Place new opportunities from the latest interviews
 
-> **Pro tip:** Anchor the review to an existing ritual. Many teams place it right after their weekly customer interview synthesis, so insights flow directly into the tree while they're fresh.
+Pull the opportunities from recent interview snapshots, keep those that relate to the current outcome, and place each one under the right parent. Merge duplicates with existing nodes and note that the opportunity was heard again. Leave unrelated opportunities in the snapshots. Where a new opportunity does not fit anywhere, park it and look for it in the next interviews.
 
-### Step 2: Step 2: Integrate New Customer Opportunities
+### Step 3: Record test results
 
-After each round of customer interviews or research activities, assess whether new opportunities have emerged that aren't yet on the tree. Review your interview notes and ask: did we hear about a pain point, desire, or need that doesn't map to an existing opportunity node?
+For every assumption test that finished, mark the assumption as supported, refuted, or inconclusive, and update the solution's status. Drop solutions whose critical assumptions failed, and note why. If all solutions for the target opportunity failed, flag the opportunity for a new prioritization decision.
 
-If you find new opportunities, decide where they belong in the hierarchy. Do they sit under an existing parent opportunity, or do they represent an entirely new branch? Reference your skills in [structuring opportunity spaces hierarchically](https://tryhamster.com/skills/structuring-opportunity-spaces-hierarchically) to place them correctly. Also check whether existing opportunities need rewording based on deeper understanding—sometimes your initial framing was too broad or too narrow.
+### Step 4: Prune and restructure
 
-> **Pro tip:** Use a 'staging area' at the bottom of your tree for newly surfaced opportunities that you haven't yet placed in the hierarchy. This prevents interrupting the review flow while ensuring nothing gets lost.
+Remove or archive branches that are finished: opportunities you have addressed, and solutions you have ruled out. Move opportunities that sit under the wrong parent. If a branch has grown lopsided, restructure it. Keep a short changelog of structural changes so the trio remembers why the tree looks the way it does.
 
-### Step 3: Step 3: Update Experiment Results and Solution Status
+### Step 5: Revisit the target opportunity
 
-For each active experiment or assumption test, update the tree with results. Mark solutions as validated, partially validated, or invalidated based on what you've learned from [designing assumption tests](https://tryhamster.com/skills/designing-assumption-tests-for-solutions).
+Look at the chosen target with the new evidence. If results are promising, keep going. If the evidence has shifted, compare the siblings again and choose a new target, treating it as a reversible decision. Record the rationale either way.
 
-Use a simple visual system: green for validated solutions ready for deeper investment, yellow for partially validated solutions that need more testing, red for invalidated solutions. Don't delete invalidated solutions—archive them with a note about why they failed. This institutional memory prevents teams from revisiting dead-end ideas six months later.
+### Step 6: Share the update with stakeholders
 
-Also assess whether experiment results have changed your understanding of the parent opportunity. Sometimes a failed solution teaches you that the opportunity itself was misframed.
+Share what changed at the level of detail each stakeholder needs. Torres suggests sharing the full tree with stakeholders close to the work, and top-level opportunities plus specifics on the target opportunity with those who want highlights ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). Ask them whether you missed any opportunities.
 
-> **Pro tip:** Keep a brief log of 'what we learned' next to each archived solution. Future team members (or your future self) will thank you.
+### Step 7: Check whether the outcome has changed
 
-### Step 4: Step 4: Prune and Restructure Branches
-
-Not every branch deserves to stay on the tree forever. Pruning is the discipline of removing or collapsing branches that are no longer relevant. This includes opportunities that turned out to be edge cases, solution clusters that were fully explored, or entire sub-trees tied to outcomes that are no longer strategic priorities.
-
-Restructuring is equally important. As your understanding deepens, you may realize that two separate opportunity branches are actually facets of the same parent opportunity. Or that a single opportunity is actually three distinct problems that need to be broken apart. Don't be afraid to reorganize—the tree's structure should reflect your current best understanding, not your original guess.
-
-A clean, well-pruned tree is easier for the whole team to navigate and reduces cognitive overhead during planning discussions.
-
-> **Pro tip:** Before pruning, take a snapshot of the current tree. Version history lets you track how your understanding evolved—valuable for retrospectives and stakeholder communication.
-
-### Step 5: Step 5: Re-prioritize Based on Accumulated Evidence
-
-Each update cycle should include a quick prioritization check. As new evidence accumulates, the relative importance of opportunities shifts. An opportunity that seemed moderate two weeks ago might now have strong evidence from multiple customer interviews, making it the most promising path.
-
-Use the techniques from [prioritizing opportunities using customer evidence](https://tryhamster.com/skills/prioritizing-opportunities-using-customer-evidence) to reassess. Look at the frequency of the opportunity across interviews, the intensity of the pain, and the alignment with your target outcome at the top of the tree. Visually highlight the current 'active' branch so the team knows where to focus their solution generation and testing energy.
-
-> **Pro tip:** Limit your team's active exploration to 1-2 opportunity branches at a time. A living tree can have dozens of branches, but focus is what turns insights into shipped value.
-
-### Step 6: Step 6: Communicate Changes to Stakeholders
-
-A living OST is a powerful communication tool, but only if stakeholders know it's being updated. After each significant update, share a brief summary of what changed and why. This can be a short Slack message, a Loom video walking through the updated tree, or a standing agenda item in your stakeholder sync.
-
-Frame changes in terms of what you learned, not just what moved on the tree. Instead of 'we archived Solution B,' say 'We ran an assumption test on Solution B and found that customers don't perceive enough value in the time savings. We're now testing Solution C, which addresses the same opportunity from a different angle.' This builds stakeholder confidence in your discovery process.
-
-For anyone advancing along a **product manager career path**, the ability to narrate the evolving story of your discovery work—using the tree as a visual anchor—is a career-differentiating communication skill.
-
-> **Pro tip:** Create a 'changelog' section in your tree document. Stakeholders who miss meetings can catch up asynchronously.
-
-### Step 7: Step 7: Conduct Quarterly Deep Reviews
-
-Beyond the weekly cadence, schedule a deeper quarterly review (60-90 minutes) where you zoom out and assess the tree holistically. Ask: Is the outcome at the top still the right one? Have we explored the most important opportunity spaces? Are there systemic blind spots in our research?
-
-This is also the time to align the tree with business strategy. Quarterly planning cycles often shift priorities, and your tree needs to reflect those shifts. Use this session to [facilitate an OST workshop](https://tryhamster.com/skills/facilitating-ost-workshops-with-stakeholders) with the broader team, ensuring everyone has shared context on where discovery stands and where it's headed next.
+At each quarterly planning point, confirm the outcome with the product leader. If only the target changed, update it on the root node. If the direction changed, archive the tree with a note on what you learned and start a new one for the new outcome.
 
 ## Best Practices
 
-- Store your OST in a collaborative, easily accessible tool (Miro, FigJam, or similar) so any team member can view it anytime—avoid locked-down files that only the PM updates.
-- Use consistent visual annotations (color codes, icons, date stamps) so anyone glancing at the tree can instantly see what's validated, what's active, and what's been archived.
-- Always connect tree updates to specific evidence—never add or remove a node without noting the customer interview, experiment, or data source that justified the change.
-- Keep the tree's scope manageable by focusing on a single outcome at a time; if you're pursuing multiple outcomes, maintain separate trees rather than one sprawling mega-tree.
-- Pair tree updates with your continuous interview habit—the most effective teams update their tree the same day they conduct customer interviews while the context is vivid.
-- Review the tree from the bottom up periodically: start with experiments, then solutions, then opportunities, then the outcome. This surfaces disconnects where lower branches no longer logically connect to their parent nodes.
+- Batch opportunity updates. Updating after every interview leads to overreacting to the latest story, and three to four interviews per batch is the rhythm [Torres](https://www.producttalk.org/opportunity-solution-trees/) recommends.
+- Keep one tree per outcome per trio. A tree that tries to hold several outcomes or several teams' work becomes unwieldy fast.
+- Make status visible. Use colors or symbols for evidence so that stale or ruled-out branches are obvious, as described by [Gurion and Torres](https://www.producttalk.org/engaging-stakeholders/).
+- Archive instead of deleting. Dropped solutions and addressed opportunities are part of the record of what the team learned.
+- Use one shared tool. Torres uses Miro and names other whiteboards and flowchart tools that also work. Pick one that the whole trio can edit together.
+- Expect restructuring. Structure gets done, undone, and redone, and moving an opportunity usually means the team learned something.
 
 ## Common Mistakes
 
-- **Treating the OST as a one-time workshop output and never updating it** — Embed a weekly 20-minute OST review into your team's rituals. The value of the tree compounds over time through continuous updates, not from the initial creation session.
-- **Only adding to the tree without ever pruning or archiving** — A tree that only grows becomes overwhelming and loses its navigational value. Actively archive invalidated solutions and deprioritized opportunities. Move them to a separate 'archive' section rather than deleting them entirely.
-- **Updating the tree in isolation as the PM without team input** — The OST should be a shared artifact. Involve designers, engineers, and researchers in weekly reviews. Different perspectives catch blind spots and build collective ownership of discovery decisions.
-- **Restructuring the tree so frequently that the team can't track what changed** — Balance accuracy with stability. Make incremental adjustments weekly and save major restructuring for quarterly reviews. Always communicate what changed and why.
-- **Keeping every experiment and solution visible regardless of status, making the tree visually overwhelming** — Use visual layers or collapsible sections to hide completed or archived branches. The active view should only show current opportunities, live solutions, and running experiments.
+- **Treating the tree as a one-time deliverable**: A tree made for a kickoff and never updated stops matching reality. Put the update rhythm on the calendar from the start.
+- **Adding every opportunity heard**: Putting unrelated needs on the tree dilutes it. Keep them in interview snapshots until they become relevant.
+- **Leaving dead branches in place**: Ruled-out solutions and addressed opportunities clutter the view and confuse stakeholders. Mark or archive them promptly.
+- **Starting a new tree for every target change**: A higher target on the same outcome does not need a new tree. Keep the tree and its accumulated knowledge.
+- **Reacting to one loud interview**: Rebuilding the tree around the latest story discards what earlier interviews taught you. Wait for the batch.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/opportunity-solution-tree/METHOD.md) — Opportunity Solution Tree
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/opportunity-solution-tree/METHOD.md): Opportunity Solution Tree
 
 ## Related Skills
 
+- [Identifying Customer Opportunities from Research](../identifying-customer-opportunities-from-research/SKILL.md)
+- [Structuring Opportunity Spaces Hierarchically](../structuring-opportunity-spaces-hierarchically/SKILL.md)
 - [Prioritizing Opportunities Using Customer Evidence](../prioritizing-opportunities-using-customer-evidence/SKILL.md)
-- [Facilitating Opportunity Solution Tree Workshops with Teams](../facilitating-ost-workshops-with-stakeholders/SKILL.md)
-- [Designing Assumption Tests and Experiments for Solutions](../designing-assumption-tests-for-solutions/SKILL.md)
-- [Structuring and Grouping Opportunities into a Hierarchy](../structuring-opportunity-spaces-hierarchically/SKILL.md)
-- [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
-- [Identifying Customer Opportunities from Continuous Research](../identifying-customer-opportunities-from-research/SKILL.md)
-- [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
+- [Designing Assumption Tests for OST Solutions](../designing-assumption-tests-for-solutions/SKILL.md)
+- [Defining Measurable Outcomes for Product Discovery](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
+- [Generating Multiple Solutions per Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
+- [OST Workshop Facilitation](../facilitating-ost-workshops-with-stakeholders/SKILL.md)
+
+## Sources
+
+- [Teresa Torres: Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)
+- [Teresa Torres: Opportunity Mapping](https://www.producttalk.org/opportunity-mapping/)
+- [Product Talk: Tracking Opportunities Not Related to Your Outcome](https://www.producttalk.org/opportunities-not-related-to-outcome/)
+- [Teresa Torres and Hope Gurion: Engaging Stakeholders with Opportunity Solution Trees](https://www.producttalk.org/engaging-stakeholders/)

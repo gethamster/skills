@@ -1,25 +1,21 @@
 # FAQ: Setting Leading and Lagging Metrics for Roadmap Outcomes
 
-## How many leading indicators should a senior product manager track per outcome?
+## What is the difference between a leading and a lagging indicator?
 
-Limit yourself to 2-3 leading indicators per outcome. This forces rigorous thinking about which behaviors truly predict success and prevents dashboard overload. If you're tempted to track more, it's often a sign that your outcome is too broad and should be decomposed into sub-outcomes, each with their own focused metric pair. In practice, teams that track more than 3 leading indicators per outcome spend more time debating which signals to trust than actually making decisions.
+A lagging indicator records a result after the fact, such as revenue or churn. It is easy to measure and slow to change. A leading indicator is an earlier behavior that tends to come before the result, such as customers completing a key task. It is faster and more actionable, but its link to the result has to be checked.
 
-## What's the difference between a leading indicator and a proxy metric?
+## How many leading indicators should an outcome have?
 
-A leading indicator is an early signal that predicts movement in your specific lagging metric—it sits upstream in the same causal chain. A proxy metric is a substitute measurement you use when you can't measure the actual thing you want to track (e.g., using NPS as a proxy for long-term retention). Leading indicators are intentionally early and directional; proxy metrics are compromises forced by measurement limitations. A metric can be both—a proxy for one thing and a leading indicator for another—but the distinction matters because leading indicators should be validated for predictive power, while proxies need validation for representational accuracy.
+Usually one or two. More than that makes reviews harder, because some indicator will always be moving in the right direction. Pick the ones with the clearest link to the lagging metric and the clearest link to the team's work.
 
-## How do I validate that a leading indicator actually predicts my lagging metric?
+## What if we have no historical data to check the link?
 
-The most practical method is a historical cohort analysis. Split past users into those who exhibited the leading behavior and those who didn't, then compare their lagging metric outcomes. For example, if your leading indicator is 'completed onboarding within 24 hours,' check whether users who did that had significantly higher 90-day retention than those who didn't. You don't need statistical perfection—a clear directional difference in a sample of a few hundred users is sufficient to proceed. If you lack historical data, document a falsifiable hypothesis and commit to validating it within 4-6 weeks of launch.
+Choose the indicator on reasoning and customer research, label it as unvalidated, and check it as soon as the lagging metric has enough data. Treat early readings with caution. Plan a review where the team decides whether to keep the indicator once the first results are in.
 
-## When should I replace a leading indicator that isn't working?
+## Can sentiment scores like NPS be leading indicators?
 
-Give a leading indicator 4-8 weeks of data before concluding it's not predictive—shorter periods may not capture enough variance. Replace it when you observe one of two patterns: the leading indicator is on target but the lagging metric isn't moving (weak predictive relationship), or the leading indicator fluctuates randomly with no discernible connection to downstream behavior. When replacing, don't just swap in another guess—go back to your causal chain, examine which other behaviors correlate with the outcome in your data, and select a replacement with stronger evidence.
+They can be useful, but Teresa Torres points out that sentiment metrics are not directional: they do not tell a team where to explore. She suggests pairing a sentiment metric with a behavior metric and using sentiment as a counterweight, for example raising engagement without lowering satisfaction.
 
-## Can lagging metrics also serve as leading indicators for higher-level outcomes?
+## How often should leading indicators be reviewed?
 
-Absolutely—metrics exist in a hierarchy. Monthly retention (a lagging metric for your onboarding team) is a leading indicator for annual revenue (the CFO's lagging metric). A senior product manager should understand where their metrics sit in this chain. Your team's lagging metric feeds into someone else's leading indicator at the business level. This hierarchical awareness helps you explain to executives why your leading indicators matter—they're not just product metrics, they're early signals for the company-level outcomes leadership cares about.
-
-## How do leading and lagging metrics fit into outcome review ceremonies?
-
-In outcome review ceremonies (a sibling skill within Outcome-Driven Roadmapping), leading indicators are the primary discussion drivers because they provide the most current and actionable signal. The typical review structure opens with leading indicator trends (are we on track?), moves to any decision triggers that have been hit (do we need to act?), and closes with lagging metric updates when available (is the hypothesis holding?). Leading metrics make reviews forward-looking rather than retrospective, which keeps the team focused on what they can still influence rather than debating outcomes they can no longer change.
+Often enough that a change in direction is still affordable. Many teams look at them weekly or every sprint and review the lagging metric at a longer cadence that matches how fast it can respond. The review cadence itself is covered in the outcome review skill.

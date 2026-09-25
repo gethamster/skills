@@ -1,25 +1,21 @@
-# FAQ: Evolving Your North Star Metric Across Product Growth Stages
+# FAQ: Evolving Your North Star Metric Across Growth Stages
 
-## How often should a growth product manager revisit the North Star Metric?
+## How often do companies change their North Star?
 
-Conduct a lightweight audit quarterly and a deep reassessment annually or whenever the product undergoes a major stage transition (achieving PMF, entering a new market, pivoting the business model). Don't wait for the metric to obviously break — proactive reviews catch misalignment early.
+Not often, but it is normal over a company's life. In Lenny Rachitsky's survey of growth-stage companies, about a quarter said their North Star had recently changed or was about to. Netflix, Dropbox, Figma, Uber and Spotify are among the examples he lists. The changes followed shifts in strategy or business model.
 
-## What are the signs that my North Star Metric needs to change?
+## When should we change the North Star Metric?
 
-Key signals include: the metric plateaus despite product improvements, improving the metric no longer improves customer satisfaction, your best customers' behavior has diverged from what the metric measures, or your business model has fundamentally shifted. Any two of these together is a strong signal.
+When the strategy changes, when the business model or core customer changes, or when the metric stops predicting revenue and retention. Amplitude's playbook puts the last test simply: if the North Star is not directionally indicating where revenue is going, it is time to revise it. A bad quarter on its own is not a reason.
 
-## Can I have different North Star Metrics for different product lines?
+## What is the difference between changing the North Star and changing an input?
 
-Yes, but with caution. Multi-product companies often have a portfolio-level North Star and product-level North Stars. The key is that each product-level metric should ladder up to the portfolio metric. Avoid letting each team pick independently without a coordinating framework.
+Inputs are the working layer and should change whenever you learn that one no longer drives the North Star or can be gamed. The North Star is the strategy layer and should change only when the strategy does. Sean Ellis also distinguishes the persistent North Star from the "one metric that matters" right now, which can shift each quarter.
 
-## What happens to team OKRs when the North Star Metric changes?
+## Should a startup have a North Star before product-market fit?
 
-Team OKRs should be updated to align with the new input metrics that feed the new North Star. Ideally, time the metric transition with your OKR cycle. If mid-cycle, update the key results while keeping the broader objectives stable to minimize disruption.
+Usually not a formal one. Rachitsky recommends focusing on cohort retention until you know people are sticking with the product. The value moment tends to change with each pivot, and a North Star defined too early will need constant redefinition.
 
-## How do I get executive buy-in for changing the North Star Metric?
+## How long should the old and new metrics run in parallel?
 
-Present the historical validation data showing the new metric is a better predictor of business outcomes than the old one. Frame the change as product maturation, not a mistake. Run parallel tracking first so you have concrete evidence, and involve executives in the evaluation process rather than presenting a fait accompli.
-
-## Is it ever okay to go back to a previous North Star Metric?
-
-Yes. If you've made a metric change and the new metric isn't driving the right behaviors after a full quarter, reverting is the responsible choice. Document why the change didn't work. This is far better than stubbornly persisting with a metric that's leading the organization astray.
+Long enough for teams to see how their work shows up in the new metric and for you to catch definition problems. For most companies that is at least one full review cycle at the leadership level. Keep the old series available afterwards so long-term trends can still be compared.

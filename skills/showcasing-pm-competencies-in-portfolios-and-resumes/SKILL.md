@@ -1,15 +1,20 @@
 ---
-name: showcasing-pm-competencies-in-portfolios-and-resumes
-description: "Teaches you how to use the four-quadrant competency framework to structure a product manager resume or portfolio that clearly demonstrates breadth and depth across strategic, tactical, internal, and external skills."
+name: "showcasing-pm-competencies-in-portfolios-and-resumes"
+description: "Use Cabage's competency grid to plan a product manager resume and PM portfolio that show evidence in the boxes your target role needs."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: product-team-competencies-framework
+  method: "product-team-competencies-framework"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
 # Showcasing PM Competencies in Portfolios and Resumes
 
-> Teaches you how to use the four-quadrant competency framework to structure a product manager resume or portfolio that clearly demonstrates breadth and depth across strategic, tactical, internal, and external skills.
+> Use Cabage's competency grid to plan a product manager resume and PM portfolio that show evidence in the boxes your target role needs.
 
 ## Before you start
 
@@ -23,145 +28,102 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 2-4 hours |
-| Outcome | A product manager resume or portfolio organized around competency quadrants, where every bullet point pairs a specific PM action with a measurable result, making it immediately clear to hiring managers where your strengths lie and how deep they go. |
-| Prerequisites | Familiarity with the Product Team Competencies Framework and its four quadrants, A completed self-assessment or competency map identifying your strongest and weakest areas, A record of past product work including outcomes, metrics, and decisions you influenced |
+| Difficulty | Beginner |
+| Time to Learn | An afternoon for the resume, longer for portfolio case studies |
+| Outcome | Your resume and portfolio show measured evidence in the boxes of Cabage's grid that your target role needs, instead of a general list of PM skills. |
+| Prerequisites | A list of your past projects and their results, a target role or a few target job descriptions, a copy of Cabage's competency diagram |
 | Part of | [Product Team Competencies Framework](../../methods/product-team-competencies-framework/METHOD.md) |
 
 ## Overview
 
-Most product manager resumes read like a list of features shipped. They describe what was built but not the product thinking behind the work. Hiring managers scanning a product manager resume are trying to answer a deeper question: can this person operate across the full range of PM competencies, or are they strong in one narrow band? Without a framework guiding the resume, candidates end up with a document that accidentally overweights their most recent role or their comfort zone, leaving entire competency areas invisible.
+A product manager resume has to show, quickly, that you have done the work a specific role needs. The [Product Team Competencies Framework](../../methods/product-team-competencies-framework/METHOD.md) gives you a map of that work. Neal Cabage's chart lays out the competencies commonly associated with product management, with strategic work at the top, tactical work at the bottom, user and market work on the left, and business and technical work on the right ([Cabage, Product Team Competencies](https://nealcabage.com/framework/product-team-competencies/)). Using the grid, you can see which parts of the chart your experience covers and which parts your target role cares about.
 
-The [Product Team Competencies Framework](https://tryhamster.com/methods/product-team-competencies-framework) solves this by providing four quadrants that cover the full scope of PM work: strategic-external (market sensing, product vision, competitive positioning), strategic-internal (business outcomes, stakeholder alignment, roadmap strategy), tactical-external (user research, design collaboration, customer feedback loops), and tactical-internal (execution management, analytics, technical fluency). When you use these quadrants as the structural backbone of your resume and portfolio, every piece of evidence you include maps to a recognized PM competency. Gaps become visible before you submit, giving you time to fill them with examples you might have otherwise overlooked.
+Cabage's framework does not expect any PM to cover every box, and that helps when writing a resume. A hiring manager who uses the grid looks for a PM whose strengths sit in the role's region: upper-left for a senior consumer PM, lower-right for a junior internal tools PM, in Cabage's examples. A resume that shows depth in the right region reads as a fit. A resume that claims every box reads as unfocused.
 
-The concrete artifact produced by this skill is a restructured product manager resume or portfolio where each role section contains bullet points distributed across at least three of the four quadrants, with at least one quantified outcome per quadrant. For portfolios, each case study follows a quadrant-annotated narrative that shows how you moved between strategic and tactical work, and between internal and external focus, throughout a product lifecycle. The result is a document that tells a coherent story about your PM operating range, not just your shipping velocity.
+Seniority shows up as height on the chart. Cabage describes junior PMs as working toward the bottom, and in [The Role of Product Management](https://nealcabage.com/product-management/) he describes the junior role as often more "heads down," focused on feature definition and development. If you are applying for a senior role, your resume needs evidence from the boxes above the band, such as Opportunity Discovery, Product Roadmap and Business Case, and not only strong delivery.
 
-This skill pairs naturally with the sibling skills of [self-assessment](https://tryhamster.com/skills/assessing-pm-team-strengths-and-gaps) and [career development planning](https://tryhamster.com/skills/building-pm-career-development-plans). The self-assessment gives you an honest picture of where you stand. The career plan shows where you are headed. The resume and portfolio become the external proof that connects the two for hiring managers, promotion committees, or stakeholders evaluating your readiness for a new scope of responsibility.
+Each piece of evidence should carry a result. Laszlo Bock, formerly Senior Vice President of People Operations at Google according to his [Wikipedia entry](https://en.wikipedia.org/wiki/Laszlo_Bock), recommended the formula "Accomplished [X] as measured by [Y] by doing [Z]" in [My Personal Formula for a Winning Resume](https://www.linkedin.com/pulse/20140929001534-24454816-my-personal-formula-for-a-better-resume). Applied to the grid, the "doing Z" part names the box: the market positioning work, the build-versus-buy analysis, the experiment program.
+
+A product management portfolio extends the resume. Where a resume line can show one result, a portfolio case study can show how you worked in a box: the problem, the options, the decision and the outcome. Choose case studies from the boxes your target role needs most, and let the resume point to them.
 
 ## How It Works
 
-The technique works because hiring managers and recruiters evaluate product managers on pattern recognition. They are scanning for signals across multiple dimensions of PM work, even when they cannot articulate those dimensions explicitly. A product manager resume that clusters all its bullet points around execution and shipping triggers a mental flag: this person might be a project manager wearing a PM title. Conversely, a resume heavy on strategy and vision with no tactical evidence raises the opposite concern: this person might be a consultant who has never shipped.
+Start with the target role before your own history. Collect a few job descriptions for the role you want and map their responsibilities onto Cabage's grid. The boxes that appear repeatedly are the target region. A growth role will cluster in Market boxes such as Conversion Optimization and A/B Testing, and a platform role in Technical and Business boxes such as Build vs Buy and Internal Tools Requirements.
 
-The four-quadrant competency model provides a diagnostic lens for your own resume. Strategic-external competencies include market analysis, competitive intelligence, product vision articulation, and pricing strategy. Strategic-internal competencies include OKR setting, stakeholder management, roadmap prioritization, and business case construction. Tactical-external competencies include user interviews, usability testing, design collaboration, and customer feedback synthesis. Tactical-internal competencies include sprint management, data analysis, A/B test design, and technical collaboration with engineering teams. When you audit your resume against these four buckets, you can see where your evidence is dense and where it is thin.
+Then map your own work. For each past project, note which boxes it exercised and what result it produced. This gives you an evidence bank organized by box. Your evidence will probably cluster in one region, which is normal: Cabage's framework expects PMs to focus in one direction or another.
 
-The mental model behind the restructuring is coverage plus depth. Coverage means you have at least one strong bullet point in each quadrant for every role you list. Depth means your strongest quadrants have multiple examples that show progression, such as moving from running user interviews to designing a research program to mentoring junior PMs on research methods. Coverage signals versatility. Depth signals mastery. Most product manager resumes accidentally show one without the other.
+Selection is the key step. Choose resume bullets from the boxes in the target region first, then add a few from neighboring boxes to show range. Leave out evidence from boxes the role does not need unless it shows something distinctive. If you are moving up a level, favor evidence from above the band even if it is a smaller part of your work.
 
-The framework also helps you write better bullet points. A common failure mode in PM resumes is describing activities without outcomes. The quadrant model pushes you to pair the competency with evidence of impact. Instead of writing 'Conducted user research,' you write 'Led 40 user interviews across 3 segments, identifying a workflow gap that drove the Q3 roadmap pivot, resulting in a 22% increase in activation rate.' The quadrant tag (tactical-external, in this case) is not visible on the final resume, but it disciplines your writing process.
+Each bullet follows Bock's formula. Start with an active verb, state what you accomplished, give the measure, and say how you did it in terms of the box. A bullet such as "Improved trial conversion by running an onboarding experiment program with design and data science" names the Market boxes directly. Where a number would be confidential, use a relative measure or the scope of the decision.
 
-For portfolios, the quadrant model structures case study narratives. Rather than a chronological retelling of a project, the case study becomes a competency journey: how you identified the opportunity (strategic-external), aligned stakeholders on the bet (strategic-internal), validated solutions with users (tactical-external), and shipped with engineering (tactical-internal). This narrative arc demonstrates that you can operate across the full PM surface area within a single initiative, which is the strongest signal a portfolio can send.
-
-The [Product Team Competencies Framework](https://tryhamster.com/methods/product-team-competencies-framework) was originally designed for team assessment and career development. Applying it to resumes and portfolios is a natural extension. The same axes that help a VP of Product evaluate their team's collective capabilities also help an individual PM evaluate the story their career artifacts are telling.
+Portfolio case studies show judgement. For each case study, pick one or two boxes and show the reasoning: what you knew, what options you considered, what you decided and why, and what happened. A case study that covers everything from discovery to launch in equal depth hides the boxes that matter. Name the boxes in the case study so a reader using the grid can see where it fits.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Complete a self-assessment against the four quadrants
+### Step 1: Map the target role
 
-Before touching your resume, complete an honest self-assessment mapping your experience to each of the four competency quadrants: strategic-external, strategic-internal, tactical-external, and tactical-internal. For each quadrant, list the specific competencies you have practiced (for example, competitive analysis under strategic-external, or sprint management under tactical-internal). Rate your proficiency from 1 to 5. Note the strongest evidence you have for each.
+Collect a few job descriptions for the role you want. Map each responsibility onto a box on Cabage's grid. Circle the boxes that appear most often. That circle is your target region.
 
-This self-assessment becomes the inventory you will draw from when rewriting bullet points. If you have already completed a [team or individual assessment](https://tryhamster.com/skills/assessing-pm-team-strengths-and-gaps), use that output as your starting point rather than duplicating the work.
+### Step 2: Build an evidence bank by box
 
-> **Pro tip:** If a quadrant has fewer than two examples, go back through your work history before assuming a gap. Many PMs do tactical-external work (user research, design collaboration) without labeling it as such. Check Slack archives, design review notes, or sprint retro docs for evidence you may have forgotten.
+List your past projects and, for each one, the boxes it exercised and the result it produced. Include the measure where you have one. Group the list by box. Note boxes where you have strong evidence and boxes where you have little.
 
-### Step 2: Step 2: Audit your current resume for quadrant coverage
+### Step 3: Choose resume evidence from the target region
 
-Print or export your existing product manager resume. Tag every bullet point with its primary quadrant. Use a simple color code or margin annotation: SE for strategic-external, SI for strategic-internal, TE for tactical-external, TI for tactical-internal. Count the tags.
+Pick bullets from the circled boxes first. Add a few from neighboring boxes to show range. For a move up a level, include at least some evidence from above the band. Cut anything that does not support the target role.
 
-Most PM resumes cluster heavily in one or two quadrants, typically tactical-internal (execution, shipping) and sometimes strategic-internal (roadmapping, stakeholder management). This visual audit reveals the distribution problem you need to solve. Write down which quadrants are overrepresented and which are underrepresented. Also flag any bullet points that are pure activity descriptions with no outcome or metric attached.
+### Step 4: Write each bullet with the X-Y-Z formula
 
-> **Pro tip:** If more than 60% of your bullet points fall in a single quadrant, you almost certainly have real experience in the thin quadrants that simply was not written down. The audit is revealing a writing gap, not necessarily an experience gap.
+Rewrite each bullet as what you accomplished, how it was measured and what you did, following [Bock's formula](https://www.linkedin.com/pulse/20140929001534-24454816-my-personal-formula-for-a-better-resume). Start with an active verb. Make the "what you did" part name the competency in plain words. Check that every bullet has a result.
 
-### Step 3: Step 3: Build a competency evidence bank
+### Step 5: Write a summary that names your region
 
-Create a document or spreadsheet with four columns, one for each quadrant. For each role you have held, brainstorm every piece of evidence that could demonstrate competency in that quadrant. Include the situation, the action you took, and the outcome (quantified if possible). Pull from performance reviews, project postmortems, analytics dashboards, shipped product announcements, customer feedback compilations, and stakeholder presentations.
+Write a two or three sentence summary describing the kind of PM you are in terms of the grid: the products you work on, the boxes you are strongest in, and the direction you are growing. Avoid generic claims. The summary should match the target role's region.
 
-Aim for at least 3-5 evidence items per quadrant per role. This bank will be much larger than what appears on the final resume, but having it gives you the raw material to select the best examples. Prioritize evidence with numbers: revenue impact, user growth, efficiency gains, NPS changes, retention improvements, or cost savings.
+### Step 6: Build portfolio case studies for the top boxes
 
-> **Pro tip:** For strategic-external evidence, check old competitive analyses, market sizing documents, or pricing proposals. These are often buried in shared drives and forgotten, but they demonstrate high-value competency that most PM resumes underrepresent.
+Choose two or three projects that show your strongest work in the target boxes. For each, write the problem, the options, the decision, the outcome and what you would do differently. Name the boxes each case study shows. Link them from the resume.
 
-### Step 4: Step 4: Select and distribute bullet points across quadrants
+### Step 7: Check coverage and adjust
 
-For each role on your resume, select 4-6 bullet points from your evidence bank. The key constraint is quadrant distribution. Each role should have bullet points in at least three of the four quadrants, with no single quadrant holding more than half of the total bullets. If you are targeting a specific role (for example, a growth PM position), you can weight the distribution toward the relevant quadrants, but never eliminate one entirely.
-
-Arrange the bullet points within each role so the strongest evidence appears first. For your most recent role, aim for 5-6 bullets. For older roles, 3-4 is sufficient. If you held a role for less than a year, 2-3 bullets with strong quadrant coverage is better than 5 bullets all in the same quadrant.
-
-> **Pro tip:** When targeting a specific company, read their job description and tag each requirement to a quadrant. Then weight your bullet point selection to match their emphasis. A data-heavy PM role will want more tactical-internal evidence, while a product-market-fit role will lean strategic-external.
-
-### Step 5: Step 5: Rewrite each bullet point using the competency-outcome format
-
-Transform each selected bullet point into the format: [Competency Action] + [Context] + [Measurable Outcome]. The competency action uses a strong verb tied to the quadrant. ' Avoid generic verbs like 'managed' or 'worked on' that could apply to any role. The context provides enough specificity that the reader can assess complexity: team size, user base scale, revenue at stake, number of stakeholders.
-
-The measurable outcome provides the proof. Every bullet point must contain at least one number. If you cannot quantify the outcome directly, quantify the input or scope (for example, '12 enterprise accounts' or '3 engineering teams').
-
-> **Pro tip:** Read each bullet point in isolation and ask: could a project manager or a business analyst have written this exact sentence? If yes, you have not surfaced the product thinking. Rewrite to emphasize the judgment, tradeoff, or decision that only a PM would make.
-
-### Step 6: Step 6: Build a summary or profile section that maps to quadrant strengths
-
-Write a 3-4 line summary at the top of your product manager resume that explicitly signals your quadrant coverage. This is not a generic objective statement. It should name the types of PM work you excel at using language that maps to quadrant competencies. ' This sentence touches strategic-external (market strategy), tactical-internal (cross-functional execution), tactical-external (user research), and strategic-internal (stakeholder alignment) in a natural way.
-
-Avoid listing competencies mechanically. The summary should read as a coherent career narrative, not a keyword dump.
-
-> **Pro tip:** Test your summary by asking a friend to read it and tell you which PM archetype it evokes. If they say 'execution PM' or 'strategy PM' but not both, you have not achieved sufficient quadrant coverage in the summary.
-
-### Step 7: Step 7: Structure portfolio case studies around the quadrant journey
-
-For portfolio pieces, structure each case study as a four-phase narrative corresponding to the quadrants. Phase 1 (strategic-external): how you identified the opportunity, what market signals you read, and how you framed the problem. Phase 2 (strategic-internal): how you built the business case, aligned leadership, and made prioritization tradeoffs. Phase 3 (tactical-external): how you validated solutions with users through research, prototyping, and iteration.
-
-Phase 4 (tactical-internal): how you shipped, measured, and iterated with data. Not every case study will have equal depth in all four phases, but calling out each phase demonstrates that you operated across the full PM surface area. Include specific artifacts for each phase: a competitive landscape screenshot, a stakeholder alignment deck excerpt, a usability test plan, or an analytics dashboard.
-
-> **Pro tip:** If a case study is weak in one quadrant phase, be transparent about why. Writing 'Market validation was limited because the founding team had pre-existing customer commitments' is more credible than omitting the strategic-external phase entirely.
-
-### Step 8: Step 8: Validate coverage and iterate
-
-Once your resume or portfolio is restructured, run the quadrant audit again. Tag every bullet point and case study section to its quadrant. Calculate the distribution percentages. A healthy product manager resume for a generalist role should have no quadrant below 15% and no quadrant above 40% of total bullet points.
-
-For a specialist role, the target quadrant can go up to 50%, but the remaining quadrants should each still have at least one strong example. Ask two people to review the final document. One should be a PM peer who can assess whether the competency evidence is credible. The other should be a non-PM (recruiter, career coach, or friend in a different function) who can assess whether the narrative is clear without insider context.
-
-Incorporate their feedback and do a final pass for consistency in verb tense, formatting, and quantification.
-
-> **Pro tip:** If reviewers consistently ask 'what does this mean?' about a bullet point, the context is too thin. Add one more concrete detail (team size, revenue scale, user count) until the bullet is self-explanatory.
+Compare the finished resume and portfolio with the target region. Every circled box should have at least one piece of evidence, or a clear reason why not. Ask someone who hires PMs to read it and tell you which region they think you belong in. Adjust if their answer does not match your target.
 
 ## Best Practices
 
-- Map every bullet point to a specific competency quadrant during drafting, then remove the tags for the final version. This discipline ensures balanced coverage without making the framework visible to the reader. If you skip the tagging step, you will unconsciously default to your comfort zone and produce a resume that overweights one or two quadrants.
-- Quantify outcomes ruthlessly. Every bullet point on a product manager resume should include at least one number. Revenue, percentage improvements, user counts, team sizes, and timeframes all qualify. Bullet points without numbers read as opinion, not evidence, and hiring managers who review 50 resumes a day will skip unquantified claims entirely.
-- Write the summary section last, after all bullet points are finalized. The summary should synthesize the story your bullet points tell, not set up a promise the resume fails to deliver. If your bullet points cluster in tactical-internal work, a summary claiming strategic expertise will create a credibility gap that experienced readers will notice.
-- For portfolios, lead each case study with the outcome, not the process. Readers decide whether to keep reading within the first two sentences. Starting with 'Increased enterprise trial-to-paid conversion by 34% over two quarters by redesigning the onboarding flow' earns attention. Starting with 'I was assigned to the onboarding team in January' does not.
-- Tailor quadrant emphasis to the target role, but never drop a quadrant entirely. A growth PM role warrants heavier tactical-external and tactical-internal evidence, but including at least one strategic-external bullet (market context, competitive positioning) signals you understand the bigger picture. Dropping a quadrant entirely raises questions about your ability to operate in that dimension.
-- Use the job description as a quadrant decoder ring. Before customizing your resume for a specific role, tag every requirement in the job description to a quadrant. This tells you exactly how to weight your bullet point selection. Companies that emphasize 'cross-functional alignment' and 'stakeholder management' are asking for strategic-internal evidence.
-
-Companies that emphasize 'data-driven experimentation' are asking for tactical-internal evidence.
-- Refresh your competency evidence bank every six months, even when you are not actively job searching. The best resume evidence comes from recent memory when details are sharp. Waiting until you need a resume means reconstructing evidence from faded recollections, which produces weaker, vaguer bullet points.
+- Target a region of the chart. Cabage's framework expects PMs to [focus in one direction or another](https://nealcabage.com/framework/product-team-competencies/), and so do hiring managers who use it.
+- Put a result in every bullet. Bock's X-Y-Z formula keeps evidence concrete.
+- Show height for senior roles. Evidence from above the band, such as roadmap or business case work, matters more than a longer list of delivery work.
+- Name competencies in plain words. Readers may not use Cabage's labels, so describe the work in terms any hiring manager recognizes.
+- Keep portfolio case studies focused on one or two boxes and the decisions you made in them.
+- Tailor for each role type. A growth role and a platform role draw on different sides of the chart, and one resume rarely serves both.
 
 ## Common Mistakes
 
-- **Treating the quadrant framework as a visible structure on the resume** — The quadrants are a drafting tool, not a formatting choice. Do not create sections on your resume labeled 'Strategic-External' or 'Tactical-Internal.' Hiring managers and ATS systems expect standard resume formats: role, company, dates, bullet points. Use the quadrant framework behind the scenes to ensure coverage, then present bullet points in standard format ordered by impact. If a reader notices the framework, it looks like you followed a template rather than telling an authentic story.
-- **Writing activity descriptions instead of competency demonstrations** — Many PM resumes describe what the person did without revealing the product judgment behind it. 'Managed a team of 5 engineers to ship a feature on time' is an activity description. 'Reprioritized the Q2 roadmap after identifying a 15% churn spike in the mid-market segment, shipping a targeted retention feature that reduced churn by 8 points in 6 weeks' is a competency demonstration. The difference is the decision and the outcome.
-
-Every bullet point should answer two questions: what judgment did I exercise, and what changed as a result?
-- **Overloading the resume with tactical-internal evidence because it is easiest to recall** — Execution evidence (shipped features, managed sprints, ran A/B tests) is the easiest to remember because it is the most concrete daily work. But an overloaded tactical-internal section signals to senior hiring managers that you operate primarily as a delivery PM. Catch this by running the quadrant audit from Step 2. If tactical-internal exceeds 50% of your bullet points, go back to your evidence bank and deliberately surface strategic and external examples, even if they feel less dramatic.
-
-A single bullet about a competitive positioning decision that influenced a pricing change often carries more weight than three bullet points about shipping velocity.
-- **Using the same bullet points for every application without quadrant reweighting** — A generic product manager resume with even quadrant distribution is a good baseline, but submitting the same version to a growth PM role, a platform PM role, and a 0-to-1 PM role wastes the framework's power. Each role type emphasizes different quadrants. Growth PM roles lean tactical-external and tactical-internal. Platform PM roles lean strategic-internal and tactical-internal.
-
-Zero-to-one roles lean strategic-external. Adjust by promoting the most relevant evidence to the top of each role section and demoting less relevant bullets. This takes 15-20 minutes per application and dramatically increases interview rates.
-- **Omitting portfolio case studies because 'the work is under NDA'** — NDA constraints are real, but they do not require omitting case studies entirely. Anonymize the company and product while preserving the competency narrative. Write 'a B2B SaaS platform serving 200K users in the financial services vertical' instead of the company name. Focus the case study on your process, decisions, and outcomes rather than proprietary product details.
-
-Hiring managers care about how you think, not your employer's product roadmap. If the quadrant-based case study structure from Step 7 still reveals too much, zoom in on one decision point and expand it into a deep-dive that shows your reasoning without exposing the product.
-- **Writing a resume skills section as a flat list of tools and methodologies** — A skills section listing 'Jira, Figma, SQL, A/B testing, Agile' is noise because every PM applicant lists the same items. Replace the flat list with a competency-oriented skills section that groups capabilities by quadrant. For example, group 'competitive analysis, market sizing, pricing strategy' under a label like 'Market & Strategy' and 'experiment design, product analytics, technical scoping' under 'Data & Execution.' This structure signals PM fluency rather than tool familiarity, and it reinforces the quadrant coverage your bullet points demonstrate.
+- **Claiming every competency**: A resume that lists every PM skill looks unfocused and hard to believe. Show depth in the target region.
+- **Activity without results**: "Managed the backlog" says what you were responsible for and leaves out what you achieved. Add the measure and the outcome.
+- **Senior applications full of delivery evidence**: Strong tactical work alone does not show readiness for a senior role. Include strategic work, even if it was a smaller share of your time.
+- **Case studies that narrate a whole project**: Equal depth on every phase hides your judgement. Focus on the decisions in the boxes that matter.
+- **Borrowing framework jargon**: Writing "strategic-external competency" on a resume confuses readers who do not know the grid. Use the grid to plan, and plain language to write.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/product-team-competencies-framework/METHOD.md) — Product Team Competencies Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/product-team-competencies-framework/METHOD.md): Product Team Competencies Framework
 
 ## Related Skills
 
-- [Defining Competency Expectations from Associate PM to Senior PM](../defining-competency-levels-from-associate-to-senior-pm/SKILL.md)
-- [Assessing Product Team Strengths and Identifying Skill Gaps](../assessing-pm-team-strengths-and-gaps/SKILL.md)
-- [Building Personalized PM Career Development Plans Using Competency Data](../building-pm-career-development-plans/SKILL.md)
-- [Differentiating PM Role Types Using the Competency Framework](../differentiating-product-manager-role-types/SKILL.md)
-- [Mapping PM Competencies Across Strategic vs. Tactical and Internal vs. External Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
-- [Writing Competency-Based Product Manager Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
-- [Designing PM Interview Rubrics Aligned to Competency Quadrants](../designing-competency-based-pm-interview-rubrics/SKILL.md)
+- [Mapping PM Competencies on Strategic and Tactical Axes](../mapping-competencies-across-strategic-tactical-axes/SKILL.md)
+- [Assessing Product Team Strengths and Skill Gaps](../assessing-pm-team-strengths-and-gaps/SKILL.md)
+- [Defining PM Competency Levels from Associate to Senior](../defining-competency-levels-from-associate-to-senior-pm/SKILL.md)
+- [Building PM Career Development Plans from Competencies](../building-pm-career-development-plans/SKILL.md)
+- [Differentiating PM Roles with the Competency Framework](../differentiating-product-manager-role-types/SKILL.md)
+- [Writing Competency-Based PM Job Descriptions](../writing-competency-based-pm-job-descriptions/SKILL.md)
+- [Designing Competency-Based PM Interview Rubrics](../designing-competency-based-pm-interview-rubrics/SKILL.md)
+
+## Sources
+
+- [Neal Cabage: Product Team Competencies](https://nealcabage.com/framework/product-team-competencies/)
+- [Neal Cabage: The Role of Product Management](https://nealcabage.com/product-management/)
+- [Wikipedia: Laszlo Bock](https://en.wikipedia.org/wiki/Laszlo_Bock)
+- [Laszlo Bock: My Personal Formula for a Winning Resume](https://www.linkedin.com/pulse/20140929001534-24454816-my-personal-formula-for-a-better-resume)

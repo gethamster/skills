@@ -1,60 +1,37 @@
-# Examples: Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing
+# Examples: Page-Specific Website Copy: Homepage, Landing, Pricing
 
-## Example: SaaS Project Management Tool — Homepage vs. Landing Page
-
-**Scenario:**
-
-A project management SaaS needs a homepage for organic/direct traffic and a landing page for a Google Ads campaign targeting 'project management for remote teams.'
-
-**Walkthrough:**
-
-**Homepage approach:** The hero headline reads 'Project management that keeps your whole team on track' — broad enough for all audience segments (agencies, startups, enterprises). Below, three routing blocks point to use cases: 'For Remote Teams,' 'For Agencies,' 'For Product Teams.' Each block has a 1-sentence benefit and a 'Learn More' CTA. Social proof shows 5 client logos and '10,000+ teams trust us.' The page ends with a 'Start Free' CTA.
-
-**Landing page approach:** The hero headline reads 'Finally, Project Management Built for Remote Teams' — directly matching the ad's keyword intent. The subhead adds specificity: 'See every task, deadline, and conversation in one place — no matter what time zone your team works in.' The page then agitates the remote work pain (lost Slack messages, timezone confusion, missed deadlines), introduces the product as the solution with 3 specific features, stacks proof with two testimonials from remote team leads, handles the 'switching cost' objection with a migration guarantee, and repeats the CTA 'Start Your Free 14-Day Trial' three times.
-
-Notice how the same product requires fundamentally different copy structures. The homepage orients; the landing page persuades.
-
-## Example: Pricing Page for a Three-Tier SaaS Product
+## A homepage that was written as a landing page
 
 **Scenario:**
 
-An email marketing platform with Starter ($29/mo), Growth ($79/mo), and Scale ($199/mo) plans needs pricing page copy that helps visitors choose confidently.
+Illustrative scenario: a contract management startup's homepage has a single hero, "Close deals faster," and one button, "Start free trial." Analytics show many homepage visitors go straight to the About and Careers pages, and sales hears that prospects could not tell what the product does.
 
 **Walkthrough:**
 
-**Headline:** 'Simple pricing that grows with your list — start free, upgrade when you're ready.'
+The page audit shows the homepage serves at least three groups: in-house lawyers, sales leaders and job seekers. The writer replaces the hero with a tagline that states what the product does and for whom: contract drafting, approval and signing for in-house legal and sales teams.
 
-The Growth plan is visually highlighted as 'Most Popular' and positioned in the center. Each plan card leads with a one-line benefit statement, not just the plan name:
-- Starter: 'Everything you need to send your first campaign'
-- Growth: 'Advanced automation for growing businesses'
-- Scale: 'Enterprise features for high-volume senders'
+Below the hero, two labeled paths lead to pages for legal teams and sales teams, each with its own benefit line. The primary button stays, relabeled to say what the trial includes, and a secondary link lets visitors see a short product tour first. Careers moves to the footer, where job seekers already look.
 
-Below the plan cards, a feature comparison table lets visitors see exactly what's included at each tier. Critical details like send limits and contact limits are prominent, not buried.
-
-Risk reducers appear near each 'Choose Plan' button: '14-day free trial,' 'No credit card required,' 'Switch plans anytime.'
-
-A FAQ section at the bottom answers: 'What happens when I hit my contact limit?' 'Can I switch from monthly to annual?' 'Do you offer nonprofit discounts?' and 'What payment methods do you accept?'
-
-Every element on this page exists to reduce anxiety and make the decision feel safe — because that's the pricing page's singular job.
-
-## Example: Feature Page for an Analytics Dashboard
+## A pricing page with no prices
 
 **Scenario:**
 
-A business intelligence tool needs a feature page for its 'Custom Dashboards' capability, targeting visitors who are comparing BI tools.
+Illustrative scenario: a field service software company shows three plan names on its pricing page with "Contact us" instead of prices. Sales calls often end once prospects hear the price.
 
 **Walkthrough:**
 
-**Headline:** 'Build the Exact Dashboard Your Team Needs — in Minutes, Not Weeks' (benefit-first, not 'Custom Dashboards').
+The team cannot publish exact prices, because they depend on the number of technicians. Following the idea of showing sample prices, the writer adds a starting price per technician for each plan and a worked example for a typical crew size.
 
-**Problem context:** 'Most BI tools force you to choose from pre-built templates or hire a developer to customize reports. Either way, you're not seeing the metrics that actually matter to your business.'
+Each plan gets a one-line description of who it fits, written in customers' terms, such as crews that schedule by phone versus crews that dispatch from a map. Plan differences become a short list of things each plan lets the customer do. The most common questions from sales calls, about contracts and onboarding fees, get answers under the table. The button on each plan says what happens next: a trial or a call about a larger crew.
 
-**How it works:** A 3-step visual showing (1) drag-and-drop widgets from a library, (2) connect any data source with one click, (3) share with your team via link or embed. Copy is jargon-free and uses customer language mined from support tickets: 'No SQL required. No developer tickets. Just drag, drop, and share.'
+## A feature page for an evaluation team
 
-**Use cases:** Three mini-scenarios: a marketing manager tracking campaign ROI, a COO monitoring operational KPIs, and a client-facing agency building white-label reports.
+**Scenario:**
 
-**Differentiator:** 'Unlike [competitor category], our dashboards update in real-time and work across 200+ data sources out of the box — no middleware, no integration fees.'
+Illustrative scenario: a data platform's feature page for access controls says only "Enterprise-grade security you can trust." Security reviewers keep emailing the same questions during evaluations.
 
-**CTA:** 'Build Your First Dashboard Free — Takes 5 Minutes.'
+**Walkthrough:**
 
-The page educates and differentiates without reading like a spec sheet.
+The writer notes that the page's readers are evaluators with a checklist. The page now opens with what the feature lets an administrator do, in one sentence, followed by a short use case: giving a contractor read access to one project and removing it automatically when the contract ends.
+
+The rest of the page lists the specifics evaluators asked about, such as supported sign-on providers, permission levels and audit log retention, in a scannable table. A link to the security documentation and a button to request the security review package close the page, and the repeated email questions become the checklist for the next update.

@@ -1,46 +1,37 @@
 # Examples: Mapping Desired Behavior Impacts on Actors
 
-## Example: SaaS Onboarding Improvement
+## Turning a feature wish list into behavior changes
 
 **Scenario:**
 
-A B2B SaaS company has a goal to increase free-trial-to-paid conversion from 8% to 15% within 6 months. They've identified three key actors: new trial users, sales development reps (SDRs), and existing customers who might refer others.
+Illustrative scenario: a team building a project-management tool has the goal of increasing the share of trial teams that convert to paid plans. For the actor "trial team leads", the first impact list reads: better onboarding, a templates gallery, Slack integration.
 
 **Walkthrough:**
 
-For **new trial users**, the team maps these impacts:
+The facilitator asks what each item is meant to change. Better onboarding is meant to get team leads to set up a first real project in their first session instead of browsing. The templates gallery is meant to get them to invite teammates sooner, because a template gives the team something to work on together. The Slack integration is meant to get teammates to return without an email reminder.
 
-1. *Positive*: Trial users complete their first workflow within 30 minutes of signup (leverage: high, uncertainty: medium)
-2. *Positive*: Trial users invite a teammate during the first week (leverage: high, uncertainty: high)
-3. *Negative*: Trial users abandon the product after hitting a paywall before seeing value (leverage: high, uncertainty: low)
+The impacts become: create a first real project in the first session, invite at least one teammate during the trial, and teammates return during the trial without a reminder. The three features move to the deliverables level as options. The group ranks inviting a teammate highest, because the team's own analysis suggests single-user trials rarely convert.
 
-For **SDRs**:
-1. *Positive*: SDRs reach out to trial users who completed a workflow but haven't converted within 5 days (leverage: medium, uncertainty: low)
-
-For **existing customers**:
-1. *Defensive*: Existing customers continue renewing despite a competitor's aggressive discounting (leverage: medium, uncertainty: medium)
-
-The team writes causal hypotheses: 'We believe that if trial users complete their first workflow within 30 minutes, conversion will increase because users who experience the core value proposition early are 3x more likely to upgrade based on our historical cohort data.'
-
-They prioritize the first trial user impact (high leverage, testable) and the negative impact (high leverage, low uncertainty — they can fix the paywall timing quickly). The teammate-invite impact is flagged as a big bet requiring experimentation. This impact layer then feeds directly into deliverable brainstorming.
-
-## Example: Internal Platform Team Reducing Deployment Friction
+## Adding hindering impacts for a support team
 
 **Scenario:**
 
-An internal platform team's goal is to reduce average deployment cycle time from 5 days to 1 day across 12 product teams. Actors include: application developers, QA engineers, team leads, and the security review board.
+Illustrative scenario: an insurance company's goal is to reduce the cost of handling claims. The actors include policyholders and the claims support team.
 
 **Walkthrough:**
 
-For **application developers**, the team identifies:
-1. *Positive*: Developers self-serve environment provisioning instead of filing tickets (leverage: very high, uncertainty: low)
-2. *Positive*: Developers run integration tests locally before pushing to CI (leverage: medium, uncertainty: medium)
+The helpful impacts are easy to find: policyholders submit complete claims online the first time, and support staff resolve simple claims without escalating them. The facilitator then asks how each actor could obstruct the goal. Policyholders who are unsure of their claim status call support repeatedly, and some support staff escalate claims defensively when a rule is ambiguous.
 
-For **QA engineers**:
-1. *Positive*: QA engineers approve deployments within 2 hours of request instead of 24+ hours (leverage: high, uncertainty: medium)
+These become hindering impacts to reduce: status-check calls from policyholders, and escalations of claims that the rules allow frontline staff to settle. When the group ranks impacts, reducing status-check calls comes near the top, because it is common and costly and looks easy to influence.
 
-For **the security review board**:
-1. *Negative*: The security board blocks deployments for non-critical findings (leverage: high, uncertainty: low)
-2. *Defensive*: The security board maintains compliance audit pass rates while reviewing faster (leverage: high, uncertainty: medium)
+## Setting a range for a chosen impact
 
-The team realizes that the security board's negative impact — blocking deployments unnecessarily — is actually the highest-leverage item. One behavioral change (the board triaging critical vs. non-critical findings and only blocking on critical ones) could eliminate 60% of the deployment delay. This insight would have been missed in a feature-first approach, where the team might have focused on CI/CD tooling improvements.
+**Scenario:**
+
+Illustrative scenario: a public service team's goal is to reduce the backlog of benefit applications. It chooses the impact "applicants upload the required documents with their first submission".
+
+**Walkthrough:**
+
+The team asks what share of first submissions are complete today. The service data shows roughly half. The group then asks for the smallest improvement that would noticeably shrink the backlog, and for the level beyond which further effort would not be worth it.
+
+Caseworkers suggest that getting to about two thirds complete would be noticeable, and that beyond about four in five the remaining gaps are cases that need a conversation anyway. The team records the range, the current baseline and how completeness will be measured, and agrees to move on to another impact once the upper end is reached.

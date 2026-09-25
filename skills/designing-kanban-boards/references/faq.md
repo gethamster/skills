@@ -1,41 +1,25 @@
-# FAQ: Designing Effective Kanban Boards
+# FAQ: Kanban Board Design
 
-## How many columns should my kanban board have?
+## How many columns should a kanban board have?
 
-Most teams land between 5 and 9 columns. Fewer than 5 usually means you are hiding intermediate states where work queues up invisibly. More than 9 usually means you are modeling sub-steps that would work better as checklist items within a card. The right number is determined by your actual workflow: each column should represent a state with a distinct owner, distinct WIP behavior, or a distinct pull policy.
+As many as it takes to show where work waits, and no more. Kanban University's guide mentions a simple team board with around five columns as a typical example, but every board is unique. Start with the stages where work is handed off or queued, and add detail only when the team needs it to make a decision.
 
-If two adjacent columns always have the same person responsible and items flow between them instantly with no queue, merge them.
+## When should I add swimlanes?
 
-## When should I add swimlanes to my kanban board?
+Add a lane when a group of work items needs different treatment, such as an expedite lane that may exceed normal limits or separate lanes for planned and unplanned work. If a lane would not change how anyone acts, it adds clutter. Avoid lanes per person, which encourage individual queues.
 
-Add swimlanes when you have work categories that need different treatment in the same workflow. The most common triggers are: you need an expedite lane for urgent items with a WIP limit of 1, you handle distinct work types (bugs vs. features) that need separate WIP limits, or you manage multiple products on one board and need visual separation. If all your work flows the same way with the same policies, skip swimlanes.
+## What should go on a kanban card?
 
-They add visual complexity, and every unnecessary swimlane makes the board harder to scan.
+At minimum: a short title, the work type, the requester, the date the item was committed, any real deadline and a way to mark it blocked. The commitment date lets anyone see how long the item has been in progress. Keep the card readable at a glance and put longer details in a linked document.
 
-## Should I design my kanban board before or after setting WIP limits?
+## How do I show work that skips columns or loops back?
 
-Design the board first, then set WIP limits. You need to know what your columns represent before you can set meaningful limits on them. A WIP limit on a column called "In Progress" is almost useless because you do not know what kind of work accumulation it is capping. Once you have split your workflow into honest columns with clear definitions, you can observe where work queues up and set limits accordingly.
+Let cards skip columns that do not apply, and write a policy saying when that is allowed. For rework, move the card back to the right column and mark it so the loop is visible, since frequent rework is a signal worth measuring. If a whole type of work follows a different path, give it its own lane or board.
 
-See [setting WIP limits](https://tryhamster.com/skills/setting-wip-limits) for the detailed process.
+## How often should the board be redesigned?
 
-## How do I handle work that skips columns or follows a different path?
+Review the design after the first few weeks, then as part of a regular retrospective or service delivery review. Change it when cards sit in ambiguous places, columns go unused or work is happening off the board. Small, frequent adjustments are easier than a large redesign.
 
-You have three options depending on how frequently it happens. If rare (less than 10% of items), document a bypass policy in the column's entry criteria and let items skip the column. If frequent but predictable by work type, create a swimlane for that work type and define which columns it uses. If frequent and unpredictable, your columns may be modeling an idealized process rather than the real one.
+## Physical or digital board?
 
-Go back and retrace recent items to see if the column structure matches reality. Never force items through columns they do not need just to keep the board tidy.
-
-## How often should I redesign my kanban board?
-
-Do a lightweight board design review every 2-4 weeks for the first two months, then quarterly after that. Look for three signals: columns that are perpetually empty (remove or merge them), columns that are perpetually overloaded (consider splitting them to expose a hidden queue), and recurring team confusion about which column an item belongs in (rewrite the column definition or split it). Major redesigns should happen when the team's process fundamentally changes, such as adding a new role, a new approval step, or a new work type.
-
-## What is the difference between a physical board and a digital kanban board for design purposes?
-
-The design principles are identical. Columns represent states, swimlanes represent categories, and cards carry the minimum information needed for pull decisions. The practical differences are: physical boards have a fixed wall size that naturally constrains the number of columns, while digital boards let you add columns without friction, which leads to over-engineering. Physical boards make aging and blockers more visible because everyone walks past them.
-
-Digital boards support distributed teams and integrate with other tools. If your team is co-located, start with a physical board for the first month to build intuition, then move digital if needed.
-
-## Why does my kanban board keep drifting from reality after a few weeks?
-
-Board drift happens for three reasons. First, the initial design modeled an aspirational process instead of the real one, so people work around columns that do not fit. Second, the team's process changed (new approval step, new team member, new tool) but the board was not updated. Third, column definitions are ambiguous, so different team members interpret them differently and the board becomes inconsistent.
-
-Fix drift by revisiting the board specification document, walking a few recent items through the board with the team, and adjusting columns and definitions. Schedule regular design reviews as described in Step 9 to prevent drift from compounding.
+A physical board is fast to change and easy to gather around, which helps while the design is still settling. A digital board suits distributed teams and records timestamps for flow metrics automatically. Many teams sketch the first version on a wall or whiteboard and move it into a tool once the columns stop changing.

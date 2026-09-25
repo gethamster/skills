@@ -1,25 +1,21 @@
 # FAQ: Integrating Impact Maps with Product Roadmaps
 
-## How is an impact-map-driven product manager roadmap different from a regular product roadmap?
+## Is an impact map a roadmap?
 
-A regular roadmap typically lists features organized by time or team. An impact-map-driven product manager roadmap organizes initiatives by the actor behavior changes they target, with every item traceable to a measurable business goal. This makes the strategic 'why' visible for every initiative.
+Not on its own. The impactmapping.org overview presents impact maps as a tool for roadmap management, because they hold scope, goals, priorities and assumptions together. Gojko Adzic's Votito summary notes that maps carry little detail about deliverables and are not meant for day-to-day tracking. Most teams derive a roadmap from the map's prioritized branches and keep both.
 
-## What roadmap format works best with impact mapping?
+## What should a roadmap item derived from a map look like?
 
-The Now/Next/Later format works best because it mirrors confidence levels from the impact map. Validated deliverables go in 'Now,' partially validated in 'Next,' and speculative in 'Later.' This avoids false date precision while communicating clear priority order.
+Head it with the impact: the actor, the behavior change and the target range. List the starting deliverable underneath, with the goal it ultimately serves. That way the item can be judged by whether the behavior changed, and the deliverable can be swapped without changing the roadmap item.
 
-## How often should I update a product manager roadmap based on impact maps?
+## How far ahead should the roadmap go?
 
-Review 'Now' themes monthly against outcome metrics and 'Next/Later' themes quarterly. Whenever assumption validation experiments return new data, use those results to promote, demote, or retire themes. The roadmap should evolve as your understanding of actor impacts improves.
+It depends on how cheaply you can learn. In their InfoQ article, Adzic, Ingrid Domingues and Johan Berndtsson describe organizations that can deploy small changes and learn quickly using maps as short-term plans with frequent re-planning, while alignment-heavy organizations use larger milestones. Beyond the first item, horizons such as now, next and later usually work better than exact dates.
 
-## Can I use impact-map-driven roadmaps with tools like Jira or Productboard?
+## How do impact maps relate to OKRs?
 
-Yes. Most modern tools support custom fields and hierarchies. Create impact themes as epics or initiatives, tag deliverables with their actor and impact, and use custom fields for outcome metrics. The key is maintaining the traceability chain regardless of which tool you use.
+They fit together. Büşra Coşkuner describes higher-level outcomes as closer to OKR objectives and lower-level ones as closer to key results. A common pattern is to put the map's goal alongside an objective and use key impacts, with their target ranges, as key results.
 
-## How do I present an impact-map-driven product manager roadmap to executives who aren't familiar with impact mapping?
+## When should we update the roadmap from the map?
 
-Don't explain the methodology — tell the strategic story. Lead with the business goal and metric, show the 2-3 highest-impact themes with their target outcomes, and explain why you sequenced them this way. The narrative sells itself when every initiative clearly links to a measurable business result.
-
-## What if stakeholders request features that aren't on the impact map?
-
-Ask them to articulate which actor's behavior the feature changes and how that connects to the business goal. If they can make a compelling case, add it to the impact map, validate the assumptions, and let it compete for roadmap space on merit. This turns political requests into strategic conversations.
+At every planning cycle, and whenever an important measurement comes in. If an impact has reached its target, stop work on it and move the next item forward. If a deliverable shipped without changing behavior, try the next option under that impact or reconsider the impact itself.
