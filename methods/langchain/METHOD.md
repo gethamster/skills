@@ -5,12 +5,15 @@ description: "LangChain explained: who built it, how it grew from a side project
 metadata:
   datePublished: "2026-04-20"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/stone-circle-colour-light.webp"
 ---
 
 # LangChain: What It Is, How It Evolved, How It Compares
 
-> Created by **Harrison Chase** — [https://www.langchain.com](https://www.langchain.com)
+> Created by **Harrison Chase** - [https://www.langchain.com](https://www.langchain.com)
 
 ## Overview
 
@@ -115,14 +118,14 @@ Performance claims about LangChain come from [practitioner tests](https://checkt
 
 This method includes the following skills:
 
-- [Designing Autonomous Agents with LangChain](skills/designing-autonomous-agents/SKILL.md) — How to build agents that use reasoning, tool selection, and memory to autonomously complete complex tasks using LangChain's agent framework.
-- [Building RAG Pipelines with LangChain](skills/building-rag-pipelines-with-langchain/SKILL.md) — How to implement retrieval-augmented generation by connecting vector stores, document loaders, and LLMs to answer questions from custom data sources.
-- [Managing Memory and Conversation State in LangChain](skills/managing-memory-and-conversation-state/SKILL.md) — How to implement different memory types—buffer, summary, and vector-backed—to maintain context across multi-turn conversations and long-running sessions.
-- [Chaining Prompts and Composing LLM Workflows](skills/chaining-prompts-and-composing-workflows/SKILL.md) — How to use LangChain's chain abstractions \(including LCEL\) to sequence multiple LLM calls, transformations, and logic into multi-step workflows.
-- [Configuring LLM Providers and Models in LangChain](skills/configuring-llm-providers-and-models/SKILL.md) — How to set up and swap between different LLM providers like OpenAI, Anthropic, and open-source models using LangChain's standardized model interfaces.
-- [Integrating External Tools and APIs into LangChain](skills/integrating-external-tools-and-apis/SKILL.md) — How to connect LangChain applications with external services, databases, search engines, and custom APIs using built-in and custom tool integrations.
-- [Loading and Splitting Documents for LLM Processing](skills/loading-and-splitting-documents/SKILL.md) — How to use LangChain's document loaders and text splitters to ingest, chunk, and prepare diverse data formats for embedding and retrieval.
-- [Crafting Reusable Prompt Templates in LangChain](skills/crafting-prompt-templates/SKILL.md) — How to design, parameterize, and manage prompt templates including few-shot examples and dynamic variable injection for consistent LLM interactions.
+- [Designing Autonomous Agents with LangChain](../../skills/designing-autonomous-agents/SKILL.md): How to build agents that use reasoning, tool selection, and memory to autonomously complete complex tasks using LangChain's agent framework.
+- [Building RAG Pipelines with LangChain](../../skills/building-rag-pipelines-with-langchain/SKILL.md): How to implement retrieval-augmented generation by connecting vector stores, document loaders, and LLMs to answer questions from custom data sources.
+- [Managing Memory and Conversation State in LangChain](../../skills/managing-memory-and-conversation-state/SKILL.md): How to implement different memory types—buffer, summary, and vector-backed—to maintain context across multi-turn conversations and long-running sessions.
+- [Chaining Prompts and Composing LLM Workflows](../../skills/chaining-prompts-and-composing-workflows/SKILL.md): How to use LangChain's chain abstractions \(including LCEL\) to sequence multiple LLM calls, transformations, and logic into multi-step workflows.
+- [Configuring LLM Providers and Models in LangChain](../../skills/configuring-llm-providers-and-models/SKILL.md): How to set up and swap between different LLM providers like OpenAI, Anthropic, and open-source models using LangChain's standardized model interfaces.
+- [Integrating External Tools and APIs into LangChain](../../skills/integrating-external-tools-and-apis/SKILL.md): How to connect LangChain applications with external services, databases, search engines, and custom APIs using built-in and custom tool integrations.
+- [Loading and Splitting Documents for LLM Processing](../../skills/loading-and-splitting-documents/SKILL.md): How to use LangChain's document loaders and text splitters to ingest, chunk, and prepare diverse data formats for embedding and retrieval.
+- [Crafting Reusable Prompt Templates in LangChain](../../skills/crafting-prompt-templates/SKILL.md): How to design, parameterize, and manage prompt templates including few-shot examples and dynamic variable injection for consistent LLM interactions.
 
 ## FAQ
 
