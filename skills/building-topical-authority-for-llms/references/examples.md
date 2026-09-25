@@ -1,33 +1,43 @@
 # Examples: Building Topical Authority That LLMs Recognize
 
-## Example: B2B SaaS Company Building Authority in 'Email Deliverability'
+## Consolidating a blog into a subject cluster
 
 **Scenario:**
 
-An email marketing platform wants LLMs to cite their content when users ask about email deliverability best practices. Currently, LLMs cite three competitors and an outdated blog post from 2019 when answering deliverability questions.
+Illustrative scenario: an email platform has years of blog posts on email deliverability written by different authors. Several posts cover the same questions with slightly different advice, some are outdated, and AI answers about deliverability cite a mix of other vendors and independent guides.
 
 **Walkthrough:**
 
-The team maps the email deliverability topic space, identifying 45 subtopics ranging from SPF/DKIM/DMARC setup to inbox placement algorithms to ISP-specific policies. They audit their existing 12 blog posts and find most are surface-level.
+The content lead maps the questions buyers ask about deliverability, grouped into authentication, list hygiene, sending reputation and troubleshooting. Each existing post is matched to the map. Overlapping posts are merged into one page per question and the old URLs redirect to the merged page.
 
-They consolidate the 12 posts into 6 comprehensive guides and plan 15 new deep-dives on uncovered subtopics. They create a glossary page defining 80+ deliverability terms with consistent definitions used across all content. Each page includes original data from their platform — actual deliverability rates, A/B test results, and trend analyses that no competitor can replicate.
+A hub page explains deliverability end to end and links to every sub-topic page. The deliverability engineers review each page and add examples from real support cases, anonymized. Every page gets a named author from that team.
 
-They structure internal linking so the pillar page 'The Complete Guide to Email Deliverability' connects to every subtopic page, and lateral links connect related concepts (e.g., DMARC setup links to authentication troubleshooting links to ISP-specific requirements).
+The company then offers its engineers as sources to newsletters and trade publications that cover email marketing. The team tracks citations by sub-topic and finds which areas still send answers to other sources, which guides the next quarter's work.
 
-They publish a quarterly 'Email Deliverability Benchmark Report' with proprietary data, which industry blogs and newsletters begin citing. After 3 months, they start appearing in Perplexity citations for deliverability questions. After 6 months, ChatGPT references their benchmark data in responses about deliverability trends.
-
-## Example: Independent Consultant Building Authority in 'Sustainable Packaging'
+## An independent consultant focusing on one niche
 
 **Scenario:**
 
-A packaging consultant wants to be recognized as an expert source when LLMs answer questions about sustainable packaging materials, regulations, and implementation for DTC brands.
+Illustrative scenario: a packaging consultant writes about sustainability, supply chains, branding and pricing. AI assistants never mention her when asked about sustainable packaging for small food brands, which is the work she is best known for among clients.
 
 **Walkthrough:**
 
-The consultant starts by querying ChatGPT, Perplexity, and Google Gemini with 30 common sustainable packaging questions. They discover that LLMs mostly cite large publications (Packaging Digest, Sustainable Brands) and Wikipedia, with no individual consultants being referenced.
+She narrows her site to sustainable packaging for small food brands. She writes a hub page on choosing packaging materials for that audience, then focused pages on the questions clients ask her most: material trade-offs, labeling claims, supplier minimums and cost planning.
 
-They identify their differentiator: hands-on experience implementing sustainable packaging for 40+ DTC brands with documented cost and environmental impact data. They build a content cluster of 25 pages covering materials (compostable mailers, recycled cardboard, mushroom packaging), regulations (EU Packaging Directive, state-level US laws, FTC green claims guidelines), implementation (supplier vetting, cost modeling, customer communication), and case studies from their client work.
+Each page includes cases from her own projects, with client permission and without confidential details. She links the pages to each other with anchors that name the topic, and moves unrelated older posts to an archive.
 
-Every case study includes specific numbers: 'switching from polymailer to compostable mailer increased per-unit packaging cost by $0.23 but reduced customer complaints by 34% and increased repeat purchase rate by 12%.' This level of specificity is exactly what LLMs cannot generate on their own.
+She keeps her name and business name identical across her site, professional profiles and speaker bios, and pitches talks to regional food industry events. Her tracking focuses on the handful of questions that define the niche.
 
-The consultant also contributes expert quotes to Packaging Digest articles and gets cited in two academic papers on sustainable DTC logistics. Within 4 months, Perplexity begins citing their case studies. Their AI SEO strategy of combining original data with comprehensive coverage creates authority that larger but shallower publications can't match.
+## A software company deciding against a page for every keyword
+
+**Scenario:**
+
+Illustrative scenario: a growth team at an analytics company proposes generating a separate page for every variation of "how to measure churn" that appears in its keyword tools, using a template and an AI writer.
+
+**Walkthrough:**
+
+The content lead reviews Google's guidance and spam policies with the team. Generating many near-identical pages to catch query variants is the pattern Google describes as scaled content abuse, and Google says its AI systems understand meaning without exact matches.
+
+Instead, the team writes one thorough page on measuring churn, with sections for the main variations of the question: by revenue, by customer count, for monthly and annual plans. The page includes worked examples using the company's anonymized benchmarks with the method explained.
+
+The team adds the variants to its tracking set to check whether the single page is retrieved for them. Where it is not, the team improves the relevant section before considering another page.

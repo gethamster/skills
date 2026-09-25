@@ -1,129 +1,174 @@
 ---
-category: Marketing
+name: "ai-seo-optimization"
+category: "Marketing"
+description: "AI SEO optimization makes pages easy for AI Overviews, ChatGPT and Perplexity to retrieve, trust and cite, built on GEO research and SEO basics."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# AI SEO Optimization: How to Rank in AI-Generated Answers
+# AI SEO Optimization: Getting Cited in AI-Generated Answers
 
-> Created by **Hamster** — [https://tryhamster.com](https://tryhamster.com)
+> Created by **Pranjal Aggarwal et al.** - [https://arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
 
 ## Overview
 
-**AI SEO Optimization** is a specialized methodology designed for a world where search results are no longer just ten blue links. As large language models (LLMs) power AI Overviews in Google, conversational search in ChatGPT and Perplexity, and AI-assisted research tools across the web, the rules of visibility have fundamentally changed. Traditional SEO focused on ranking pages; AI SEO focuses on getting your content *cited, synthesized, and surfaced* by AI systems that generate answers directly.
+AI SEO optimization is the practice of making your pages easy for AI answer systems to find, understand, trust and cite. The systems in scope are Google's AI Overviews and AI Mode, ChatGPT search, Perplexity and Microsoft Copilot. Each one retrieves pages from a search index and writes a response grounded in what it retrieved, the pattern the research literature calls [retrieval-augmented generation](https://arxiv.org/abs/2005.11401). A page succeeds in this setting when it is retrieved, when a claim from it makes it into the generated answer, and when the answer credits it with a link.
 
-The method encompasses three overlapping disciplines. **Answer Engine Optimization (AEO)** ensures your content is structured to be selected as the definitive answer to specific queries. **Generative Engine Optimization (GEO)** focuses on optimizing for AI systems that generate synthesized responses by pulling from multiple sources. **LLM Optimization (LLMO)** addresses the deeper challenge of how large language models represent your brand, recall your expertise, and choose your content as a training or retrieval source.
+The research framing comes from the paper [GEO: Generative Engine Optimization](https://arxiv.org/abs/2311.09735) by Pranjal Aggarwal, Vishvak Murahari, Tanmay Rajpurohit, Ashwin Kalyan, Karthik Narasimhan and Ameet Deshpande, a team that includes researchers from Princeton and IIT Delhi alongside independent authors. It was first posted to arXiv in November 2023 and published at [KDD 2024](https://arxiv.org/abs/2311.09735). The authors named the field, built a benchmark of diverse user queries called GEO-bench, and tested which edits to a source page change how much of it a generative engine uses. Their headline result is that these edits can [boost visibility by up to 40%](https://arxiv.org/abs/2311.09735) in generative engine responses, and that what works varies by domain.
 
-Unlike traditional SEO where you could reverse-engineer a ranking algorithm, AI SEO requires understanding how retrieval-augmented generation (RAG) pipelines work, how LLMs weigh source authority, and how structured data helps AI systems parse and attribute information. It demands a shift from keyword-density thinking to entity-based, question-answer, and topical-authority thinking.
+The detail of that result shapes this method. Across the nine edits the authors tested, adding quotations from relevant sources, adding statistics and citing credible sources helped most, while keyword stuffing offered [little to no improvement](https://arxiv.org/html/2311.09735v3). The best edits improved a position-adjusted word count metric by [41% over baseline](https://arxiv.org/html/2311.09735v3). Lower-ranked pages gained the most: citing sources raised visibility by [115.1% for pages ranked fifth](https://arxiv.org/html/2311.09735v3) in the search results, while top-ranked pages saw decreases. Evidence and specificity help. Repeating the query does not.
 
-This method matters now because the traffic landscape is shifting rapidly. Studies show that AI Overviews can reduce traditional click-through rates by 30-60% for informational queries. Brands that adapt their AI SEO strategy early will capture visibility in this new paradigm, while those that don't risk becoming invisible to the fastest-growing information retrieval channel in history.
+The platforms have since published their own guidance, and it does not all point the same way. Google says there are [no additional requirements](https://developers.google.com/search/docs/appearance/ai-features) and no special schema.org markup needed to appear in AI Overviews or AI Mode. Its generative AI guide treats AEO and GEO as ordinary SEO and lists tactics to ignore, including llms.txt files, "chunking" content and chasing inauthentic mentions ([Google's AI optimization guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)). Microsoft puts more weight on structure: its guidance says Copilot parses a page into smaller pieces and favors concise, self-contained answers, clear headings, lists and tables ([Microsoft Advertising](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers)). This method keeps the overlap: write for readers first, in a form that also survives extraction.
+
+The traffic stakes are measurable. In a Pew Research Center study of Google searches, users who saw an AI summary clicked a traditional result in [8% of visits, against 15% without one](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/). Only [1% of visits](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) included a click on a link inside the summary itself. Google, for its part, says clicks from results pages with AI Overviews are [higher quality](https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search), with visitors spending more time on the site. Both points lead to the same practice: measure citations and conversions alongside clicks.
+
+Practitioners use three overlapping labels. Answer engine optimization (AEO) usually means shaping content to be selected as the answer, generative engine optimization (GEO) means improving visibility inside synthesized responses, and LLM optimization means shaping how models describe a brand. This method treats them as one practice with seven skills: auditing, query research, content structure, structured data, topical authority, citation-worthiness and measurement.
+
+Everything here sits on top of SEO fundamentals. A page must be indexed and eligible for a snippet to appear as a supporting link in [Google's AI features](https://developers.google.com/search/docs/appearance/ai-features), and a site that blocks OAI-SearchBot will not be shown in [ChatGPT search answers](https://developers.openai.com/api/docs/bots). The method does not replace crawlability, internal linking or helpful content. It adds a way to check whether AI systems use that work, and a set of changes to make when they do not.
 
 ## Core Principles
 
-### Answer-First Content Architecture
+### Retrieval comes before persuasion
 
-Every page should lead with a clear, concise, self-contained answer to the primary question it targets. AI systems favor content that provides direct answers in the first 1-3 sentences before expanding into supporting detail. This mirrors how LLMs extract snippets for synthesis — they prioritize content that front-loads the answer rather than burying it below lengthy introductions.
+An AI answer can only cite a page its system retrieved. Google limits supporting links to pages that are indexed and snippet-eligible, and OpenAI and Perplexity each run a separate search crawler ([OAI-SearchBot](https://developers.openai.com/api/docs/bots), [PerplexityBot](https://docs.perplexity.ai/guides/bots)) that a robots.txt rule can shut out. Check access before rewriting anything. A blocked crawler makes every other principle irrelevant.
 
-### Entity-Based Topical Authority
+### Give the answer something only you have
 
-LLMs don't just match keywords — they understand entities, relationships, and expertise signals. Building topical authority means creating comprehensive, interlinked content clusters around core entities in your domain so that AI systems associate your brand with authoritative knowledge on specific topics. This is how you move from being one source among many to being the preferred source LLMs cite.
+Generative engines draw on many sources at once, so restating common knowledge gives them no reason to pick your page. Google's guide asks for [non-commodity content](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide), such as first-hand experience and original analysis, over summaries of what already exists. The GEO results point the same way: statistics and quotations were among the most effective additions. Original numbers, named expert views and worked cases are what an answer engine can use and credit.
 
-### Structured Data as Machine Communication
+### Evidence travels with the claim
 
-Schema markup (JSON-LD) serves as a direct communication channel with AI systems. FAQ schema, HowTo schema, Article schema, and Organization schema help LLMs and retrieval systems understand your content's structure, authorship, and intent without ambiguity. Structured data isn't optional in AI SEO — it's the equivalent of speaking the machine's native language.
+A claim that carries its source is easier to reuse than one that asks the reader to trust the page. Citing credible sources was one of the strongest edits in the [GEO experiments](https://arxiv.org/html/2311.09735v3), and Bing's guidance lists supporting claims with examples, data and cited sources as a way to build trust when content is [reused in AI answers](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview). Put the source in the sentence that states the fact.
 
-### Citation Worthiness
+### Write passages that stand alone
 
-AI systems need to justify their answers, and they prefer citing sources that demonstrate original research, unique data, expert authorship, and clear attribution. Optimizing for citation means including quotable statistics, named expert perspectives, original frameworks, and clearly sourced claims — the kind of content an AI system can confidently point to as evidence.
+Retrieval systems often lift a sentence or a passage away from the rest of the page. A heading that names the question, followed by a direct answer that makes sense on its own, serves both the reader who skims and the system that extracts. Microsoft recommends exactly this pattern for [snippet selection](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers). Google adds that there is no need to split content into tiny pieces, so structure for clarity and stop there.
 
-### Conversational Query Alignment
+### Structured data describes the page
 
-Users interact with AI search engines using natural language — full questions, multi-turn conversations, and contextual follow-ups. Keyword research must evolve to capture these conversational query patterns, long-tail question variants, and the implicit intents behind how people actually talk to AI assistants rather than how they type into traditional search boxes.
+Schema.org markup gives search systems explicit clues about what a page is, who wrote it and which organization stands behind it. Google says it is [not required](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) for its generative AI features and that no special markup exists for them. Rich result support also shrinks over time: HowTo rich results were [deprecated in 2023](https://developers.google.com/search/blog/2023/08/howto-faq-changes) and FAQ rich results stopped appearing in [May 2026](https://developers.google.com/search/updates). Use markup that matches visible content and helps disambiguate your entities, and expect no ranking boost from it.
 
-### Continuous LLM Brand Monitoring
+### Authority is earned off your own site
 
-Because AI answers are generated dynamically, your visibility can change without warning as models are updated or retrieval sources shift. Ongoing auditing of how LLMs represent your brand — what they say when asked about you, whether they cite you accurately, and where they might hallucinate — is essential for maintaining and correcting your AI presence.
+AI answers lean on third-party sources. A comparative study of AI search engines found a systematic bias toward [earned media](https://arxiv.org/abs/2509.08919) over brand-owned content. That makes independent coverage, reviews and expert references part of AI SEO work. Google warns that seeking [inauthentic mentions](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) is not as helpful as it seems. Coverage has to be earned through work that others choose to cite.
 
-### Multi-Platform AI Visibility
+### Measure with first-party data first
 
-AI SEO isn't just about Google. ChatGPT, Perplexity, Claude, Copilot, and dozens of vertical AI tools all retrieve and synthesize information differently. An effective AI SEO strategy optimizes for the retrieval mechanisms of multiple AI platforms, recognizing that each may weight different signals — from web crawling freshness to domain authority to structured data completeness.
+Visibility in AI answers changes as models, retrieval and demand change. Google Search Console now has a [Generative AI performance report](https://support.google.com/webmasters/answer/16984139) for AI Overviews and AI Mode impressions, and Bing Webmaster Tools reports [citations and grounding queries](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview) for Copilot. Third-party trackers add coverage of ChatGPT and Perplexity, but Google notes that no third-party tool has access to its [internal ranking data](https://developers.google.com/search/docs/fundamentals/third-party-seo). Start from the platform reports and treat sampled prompt tracking as a directional signal.
+
+## Research and Platform Guidance Compared
+
+The tactics in circulation come from different kinds of evidence. This table sorts the main ones by who says what, so a team can tell a tested finding from a platform statement from folklore.
+
+| Tactic | GEO research | Google Search | Microsoft Bing |
+|---|---|---|---|
+| Add statistics, quotations, cited sources | Among the most effective edits ([Aggarwal et al.](https://arxiv.org/html/2311.09735v3)) | Favors unique, non-commodity content ([guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)) | Support claims with data and sources ([Bing](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)) |
+| Keyword stuffing | Little to no improvement ([Aggarwal et al.](https://arxiv.org/html/2311.09735v3)) | Long-tail variants not needed ([guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)) | Avoid keyword stuffing in descriptions ([Microsoft](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers)) |
+| Splitting content into small chunks | Not tested | Not required ([guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)) | Clear headings define content slices ([Microsoft](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers)) |
+| Special schema or llms.txt | Not tested | Not needed, ignored ([guide](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)) | Use schema as part of structure ([Microsoft](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers)) |
 
 ## Steps
 
-1. **Step 1: Audit Your Current AI Search Visibility**
-   Before optimizing, establish a baseline. Query your brand name, key products, and core topic areas in ChatGPT, Perplexity, Google AI Overviews, and other relevant AI tools. Document what these systems say about you — are you cited? Are citations accurate? Are competitors being featured instead? Use this audit to identify gaps, inaccuracies, and opportunities. Record the specific queries, the AI responses, and which sources are being cited to create your AI visibility scorecard.
+1. **Audit your current AI visibility**
+   Write down the questions a buyer would ask an AI assistant about your category, your brand and your competitors. Run them in the systems your audience uses and record, for each answer, whether you are mentioned, whether you are cited with a link, which sources are cited instead and whether the facts about you are right. Pull the first-party numbers too: the Search Console [Generative AI performance report](https://support.google.com/webmasters/answer/16984139) and the Bing [AI Performance report](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview). The output is a baseline sheet of questions, answers, citations and errors. Every later step is judged against it.
 
-2. **Step 2: Adapt Your Keyword Research for Conversational Queries**
-   Expand your keyword universe beyond traditional short-tail terms. Map out the natural-language questions your audience asks AI assistants. Use tools like AlsoAsked, AnswerThePublic, and actual AI chat interfaces to discover conversational query patterns. Organize these into question clusters that align with your topical pillars. Prioritize queries where AI systems are currently providing incomplete, inaccurate, or uncited answers — these represent your highest-opportunity targets.
+2. **Research conversational queries**
+   People ask AI systems longer questions than they type into a search box; Google reports that AI Mode queries are [twice as long](https://blog.google/products-and-platforms/products/search/ai-mode-multimodal-search/) as traditional searches on average. Collect those questions from sales calls, support tickets, community threads and the grounding queries Bing now reports. Group them by the job the asker is trying to do, and note which follow-up questions tend to come next. Google warns that building separate pages for every variant or [fan-out query](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) to manipulate answers violates its scaled content policy, so the output is a question map for a small set of strong pages.
 
-3. **Step 3: Structure Content for AI Answer Extraction**
-   Restructure existing content and create new content using an answer-first format. Begin each section with a clear, self-contained answer in 40-75 words. Use descriptive H2/H3 headings that mirror natural language questions. Incorporate definition blocks, numbered process steps, comparison tables, and FAQ sections — all formats that AI retrieval systems parse efficiently. Ensure each piece of content has a clear primary question it answers and that the answer appears within the first 200 words.
+3. **Structure pages so answers stand alone**
+   For each page, name the primary question in the title and H1 and answer it directly near the top. Use headings that say what the section answers, then open each section with a sentence that would still make sense if quoted alone. Put comparisons in tables and procedures in numbered lists, because Microsoft's guidance says these formats can be [lifted cleanly](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers) into answers. Keep the page organized for a human reader, since Google says there is [no ideal page length](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide) and no need to chunk content.
 
-4. **Step 4: Implement Schema Markup for AEO**
-   Add comprehensive structured data to every key page. Implement `FAQPage` schema for question-answer content, `HowTo` schema for process content, `Article` schema with author and datePublished for thought leadership, and `Organization` schema for brand entity establishment. Validate all markup using Google's Rich Results Test and Schema.org validators. Schema markup gives AI retrieval systems explicit signals about your content's structure, making it dramatically easier for them to extract and cite your information accurately.
+4. **Add structured data that matches the page**
+   Mark up the entities a page is about: Organization on the home page, Article with author details on editorial pages, Product where you sell things. Google's guidelines require that markup represent the [main content](https://developers.google.com/search/docs/appearance/structured-data/sd-policies) and describe only what users can see, and they recommend JSON-LD. Use the sameAs property to point to profiles that [unambiguously identify](https://schema.org/sameAs) your organization. Validate before release, and do not expect markup alone to earn a citation.
 
-5. **Step 5: Build Topical Authority Clusters**
-   Create comprehensive content clusters around your core topics. Each cluster should have a pillar page covering the topic broadly, supported by 5-10 detailed skill pages targeting specific subtopics and long-tail conversational queries. Interlink these pages with descriptive anchor text that reinforces entity relationships. The goal is to signal to LLMs that your domain has deep, interconnected expertise on specific subjects — the kind of authority that makes an AI system prefer citing you over a competitor with thinner coverage.
+5. **Build topical depth around your core subjects**
+   Pick the few subjects where you have real expertise and cover each one completely: a hub page for the topic and focused pages for the questions buyers actually ask. Link the pages to each other with [descriptive anchor text](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) that says what the target page covers. Cut or merge thin pages rather than adding more; Google's [scaled content abuse](https://developers.google.com/search/docs/essentials/spam-policies) policy covers many pages generated without adding value. Depth shows in the questions you can answer that competitors cannot.
 
-6. **Step 6: Optimize for Citation and Source Attribution**
-   Make your content maximally citable by AI systems. Include original data points, named expert quotes, unique statistics, and clearly attributed claims. Add author bylines with credentials and link to author entity pages. Reference and cite other authoritative sources to demonstrate participation in the knowledge graph of your industry. Content that reads like a primary source — with unique insights, specific numbers, and expert perspectives — is far more likely to be selected as a citation by AI answer engines.
+6. **Make pages worth citing**
+   Add the material an answer engine can credit: original data with its method, named expert commentary, clear definitions and sources for every factual claim. Put a byline on each article that leads to information about the author, one of the trust signals in Google's [people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) guidance. Check crawler access for each AI search system you care about, keeping OAI-SearchBot separate from GPTBot, which governs [training use](https://developers.openai.com/api/docs/bots). Then pursue independent coverage, since AI search engines lean toward [earned media](https://arxiv.org/abs/2509.08919).
 
-7. **Step 7: Track and Measure AI Search Visibility**
-   Establish ongoing measurement systems for your AI search presence. Monitor your appearance in Google AI Overviews using Search Console data and third-party AI SEO tools. Conduct regular manual and automated audits of AI chatbot responses about your brand and topics. Track citation frequency, source attribution accuracy, and competitive share of voice in AI-generated answers. Build dashboards that show AI visibility trends alongside traditional SEO metrics so you can correlate optimization efforts with measurable improvements.
+7. **Track visibility and share of citations**
+   Rerun the baseline question set on a fixed schedule with the same wording, systems and settings, and log mentions, citations, cited URLs and accuracy. Add Bing's [citation share](https://blogs.bing.com/search/2026/6/New-AI-Visibility-Insights-in-Bing-Webmaster-Tools-Intents-Topics-Citation-Share-Compare/) for Copilot and the Search Console generative AI impressions for Google. Report changes against the baseline, broken out by topic and by page. Tie the numbers to outcomes such as signups or demo requests, because Google itself suggests looking past clicks to [conversions](https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search).
 
-8. **Step 8: Iterate Based on AI Model Updates and Results**
-   AI search is evolving rapidly — models update, retrieval methods change, and new AI search platforms emerge. Review your AI visibility metrics monthly. When models update (e.g., a new GPT version or Gemini update), re-audit your baseline queries to detect shifts. Refresh content that has lost visibility, double down on formats and topics where you're gaining citations, and continuously expand your topical coverage. Treat AI SEO as an ongoing practice, not a one-time project.
+8. **Iterate on what the data shows**
+   Compare pages that gained citations with pages that did not, and look for concrete differences: fresher data, a clearer opening answer, a named source, a better internal link. Change one thing at a time on a group of pages so you can attribute the result. Re-audit after major model or product changes, because answers shift without any change on your side. Retire tactics that show no effect in your own data, even when they are popular.
 
 ## When to Use
 
-- When your analytics show declining organic click-through rates on informational queries due to AI Overviews or zero-click results cannibalizing your traffic.
-- When you're building a content strategy from scratch and want to future-proof it for both traditional search engines and AI answer engines simultaneously.
-- When your brand operates in a knowledge-intensive industry (B2B SaaS, healthcare, finance, education) where being cited as an authoritative source by AI systems directly impacts trust and pipeline.
-- When competitors are appearing in AI-generated answers for queries in your domain and you need a systematic approach to reclaim visibility in these new surfaces.
-- When launching thought leadership or content marketing initiatives where being the cited expert in AI-synthesized answers would amplify brand authority at scale.
+- Your Search Console data shows impressions holding while clicks fall on informational queries, a pattern consistent with Pew's finding that users click less when an [AI summary](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/) appears.
+- Buyers in your market research by asking assistants comparison and how-to questions, and your sales team hears competitor names that AI tools recommended.
+- AI assistants describe your company or product incorrectly, for example with an old price or a discontinued feature, and you need a repeatable way to find and fix the sources.
+- You publish expert content in a knowledge-heavy field and have original data or experience that commodity content cannot match.
+- You are planning a content program and want each page to serve classic search and AI answers from the start.
 
 ## When Not to Use
 
-- When your business relies primarily on transactional/e-commerce queries where traditional product listings, shopping ads, and conversion optimization matter more than AI answer visibility.
-- When your content is behind a hard paywall or login wall that prevents AI crawlers and retrieval systems from accessing it — you'll need to address access before optimization can work.
-- When you haven't established basic on-page SEO fundamentals yet — AI SEO builds on top of solid traditional SEO practices like crawlability, site architecture, and content quality, not as a replacement for them.
-- When your primary audience discovers you through channels that AI search doesn't influence, such as direct referrals, offline events, or closed community platforms.
+- Your pages are not crawlable or indexed yet. Fix technical SEO first, because Google's AI features only link to pages that meet the normal [Search technical requirements](https://developers.google.com/search/docs/appearance/ai-features).
+- Your content sits behind a login or paywall that crawlers cannot reach, and you have decided to keep it there.
+- Demand in your category is almost entirely transactional or local, where product feeds, business profiles and ads matter more than answer visibility.
+- You want a shortcut such as mass-producing pages for query variants or buying mentions. Those tactics run into Google's spam policies and add little value for readers.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Optimizing Content for AI Citation and Source Attribution](../../skills/optimizing-for-ai-citation-and-attribution/SKILL.md) — Teaches techniques for increasing the likelihood that AI tools like ChatGPT, Perplexity, and Google AI Overviews cite and link back to your content as a source.
-- [Building Topical Authority That LLMs Recognize](../../skills/building-topical-authority-for-llms/SKILL.md) — Teaches how to create comprehensive, interlinked content clusters that establish domain expertise signals LLMs use when selecting trusted sources for AI-generated answers.
-- [Structuring Content to Appear in AI-Generated Answers](../../skills/structuring-content-for-ai-answers/SKILL.md) — Teaches how to format and organize web content using concise definitions, FAQ schemas, and direct-answer patterns so that LLMs and AI search engines select your content for generated responses.
-- [Auditing How LLMs Represent Your Brand and Content](../../skills/auditing-llm-knowledge-of-your-brand/SKILL.md) — Teaches a systematic process for prompting major LLMs to discover how they describe your brand, identify inaccuracies, and develop a correction strategy to improve AI-generated brand representation.
-- [Adapting Keyword Research for Conversational and AI-Driven Queries](../../skills/adapting-keyword-research-for-conversational-queries/SKILL.md) — Teaches how to identify and target natural-language, question-based, and long-tail conversational queries that users type into AI search tools and chatbots rather than traditional search engines.
-- [Tracking and Measuring Your Visibility in AI Search Results](../../skills/tracking-ai-search-visibility/SKILL.md) — Teaches how to monitor, measure, and benchmark your brand and content appearances across AI-generated search results, chatbots, and answer engines using specialized tools and manual auditing methods.
-- [Implementing Schema Markup for Answer Engine Optimization](../../skills/implementing-schema-markup-for-aeo/SKILL.md) — Teaches how to apply structured data (FAQPage, HowTo, Speakable, and other schemas) that help AI systems parse, understand, and surface your content in generated answers.
+- [Optimizing Content for AI Citation and Attribution](../../skills/optimizing-for-ai-citation-and-attribution/SKILL.md): Make pages that answer engines cite, using original data, sourced claims, clear authorship and open crawler access.
+- [Building Topical Authority That LLMs Recognize](../../skills/building-topical-authority-for-llms/SKILL.md): Cover a few subjects in depth with linked pages and earned third-party coverage.
+- [Structuring Content to Appear in AI-Generated Answers](../../skills/structuring-content-for-ai-answers/SKILL.md): Write headings and passages that answer one question each and still make sense when quoted alone.
+- [Auditing How LLMs Represent Your Brand](../../skills/auditing-llm-knowledge-of-your-brand/SKILL.md): Test what AI assistants say about your brand, trace errors to sources and fix them.
+- [Keyword Research for Conversational AI Queries](../../skills/adapting-keyword-research-for-conversational-queries/SKILL.md): Find the full questions and follow-ups people ask AI assistants and map them to a small set of pages.
+- [Tracking Your Visibility in AI Search Results](../../skills/tracking-ai-search-visibility/SKILL.md): Measure mentions, citations and share of citations across AI answer engines over time.
+- [Implementing Schema Markup for Answer Engine Optimization](../../skills/implementing-schema-markup-for-aeo/SKILL.md): Add JSON-LD that matches visible content and identifies your entities, with realistic expectations.
 
 ## FAQ
 
-**How is AI SEO different from traditional SEO?**
+**How is AI SEO optimization different from traditional SEO?**
 
-Traditional SEO optimizes for ranking positions in search engine results pages (SERPs). AI SEO optimizes for being cited, synthesized, and surfaced in AI-generated answers. While traditional SEO focuses on keywords, backlinks, and click-through rates, AI SEO emphasizes answer structure, topical authority, entity relationships, structured data, and citation worthiness — the signals that LLMs and retrieval-augmented generation systems use to select and attribute sources.
+Traditional SEO aims for a ranked position on a results page. AI SEO optimization aims for a place inside a generated answer: being retrieved, having a claim used and getting a cited link. The foundations overlap heavily, and Google describes optimizing for its generative AI features as [still SEO](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide). The differences are in emphasis: evidence and original data, passages that stand alone, off-site authority, and measuring citations rather than rank alone.
 
-**What are the best AI SEO tools for tracking visibility in AI answers?**
+**Who created generative engine optimization?**
 
-Emerging tools include Perplexity's source tracking, Otterly.ai for monitoring AI citations, and specialized features in platforms like Semrush and Ahrefs that track AI Overview appearances. For manual auditing, regularly querying ChatGPT, Perplexity, and Google AI Overviews for your key topics provides direct visibility data. Hamster Studio lets teams run these audits collaboratively using AI agents.
+The term and the first systematic study come from the paper by [Aggarwal and colleagues](https://arxiv.org/abs/2311.09735), a team including Princeton and IIT Delhi researchers, published at KDD. They defined visibility metrics for generative engine responses, built the GEO-bench benchmark, and tested nine ways of editing source content. The paper is the research origin of optimizing content for generated answers.
 
-**Does AI SEO optimization replace traditional SEO?**
+**Do I need schema markup or an llms.txt file to appear in AI answers?**
 
-No. AI SEO builds on traditional SEO fundamentals. You still need a crawlable site, quality content, strong domain authority, and good technical SEO. AI optimization adds a layer focused on how AI systems specifically extract, synthesize, and cite your content. Think of it as an expansion of your SEO practice, not a replacement.
+For Google, no. Its documentation says there is no special schema.org markup and no AI text file needed for AI Overviews or AI Mode, and that Google Search [ignores llms.txt](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide). Structured data is still useful for describing your entities and for the rich results that remain. Other systems may use such files, so keeping one does no harm, but it is not a lever for Google.
 
-**How do I get my content cited in ChatGPT and Perplexity answers?**
+**How do I get cited by ChatGPT and Perplexity?**
 
-Focus on creating authoritative, well-structured content with original data, clear answers to specific questions, and strong author credentials. Implement schema markup, build topical authority through content clusters, and ensure your content is accessible to web crawlers. Perplexity uses real-time retrieval, so freshness and source quality matter heavily. ChatGPT relies more on training data and browsing capabilities, so sustained domain authority is key.
+First make sure their search crawlers can reach you: OpenAI uses [OAI-SearchBot](https://developers.openai.com/api/docs/bots) for ChatGPT search and Perplexity uses [PerplexityBot](https://docs.perplexity.ai/guides/bots). Blocking GPTBot only opts out of model training and does not remove you from ChatGPT search. Beyond access, the same things that help elsewhere apply: direct answers, original evidence and independent coverage. Both companies say robots.txt changes can take up to a day to take effect.
 
-**How long does it take to see results from AI SEO optimization?**
+**How should I measure results?**
 
-Results vary by platform. Google AI Overview visibility can shift within weeks as Google re-crawls and re-indexes your structured content. Perplexity citations can appear quickly since it performs real-time retrieval. Changes in how ChatGPT represents your brand may take longer, as it depends on model training cycles and browsing tool updates. Most teams see measurable improvements within 2-4 months of systematic optimization.
+Use the first-party reports where they exist: Search Console's Generative AI performance report for Google and Bing's AI Performance report for Copilot. For ChatGPT, Perplexity and other assistants, run a fixed set of questions on a schedule and log mentions, citations and accuracy. Answers vary from run to run, so compare trends across many questions rather than reacting to a single response. Tie visibility to business outcomes such as signups, not only to sessions.
 
-**What role does schema markup play in AI SEO strategy?**
+**How long does it take to see changes?**
 
-Schema markup provides explicit, machine-readable signals about your content's structure, authorship, and topic. AI retrieval systems use structured data to parse content more accurately, extract answers more reliably, and attribute sources more confidently. FAQ, HowTo, Article, and Organization schemas are particularly impactful for AI SEO because they align directly with how AI systems structure their generated responses.
+It depends on the system. Answers built from live retrieval can change once a page is recrawled; Google notes that recrawling can take anywhere from [several days to several months](https://developers.google.com/search/docs/appearance/ai-features) depending on the page. What a model says from its training data changes only when a new model is trained and released. Plan in quarters and track the trend.
+
+**Can small sites compete with large brands in AI answers?**
+
+Sometimes. The GEO experiments found the biggest gains for lower-ranked pages, with citing sources raising visibility by [115.1% for pages ranked fifth](https://arxiv.org/html/2311.09735v3). A separate study found AI search engines show a [big brand bias](https://arxiv.org/abs/2509.08919) and favor earned media. A small site's best chance is a narrow topic covered with original evidence, plus independent coverage that corroborates it.
+
+## Sources
+
+- [GEO: Generative Engine Optimization (Aggarwal et al.)](https://arxiv.org/abs/2311.09735)
+- [GEO: Generative Engine Optimization, full text](https://arxiv.org/html/2311.09735v3)
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks (Lewis et al.)](https://arxiv.org/abs/2005.11401)
+- [Generative Engine Optimization: How to Dominate AI Search (Chen et al.)](https://arxiv.org/abs/2509.08919)
+- [Google Search Central: AI features and your website](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central: Optimizing your website for generative AI features](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+- [Google Search Central Blog: Succeeding in AI search](https://developers.google.com/search/blog/2025/05/succeeding-in-ai-search)
+- [Google Search Central: Documentation updates](https://developers.google.com/search/updates)
+- [Search Console Help: Generative AI performance report](https://support.google.com/webmasters/answer/16984139)
+- [Microsoft Advertising: Optimizing content for inclusion in AI search answers](https://about.ads.microsoft.com/en/blog/post/october-2025/optimizing-your-content-for-inclusion-in-ai-search-answers)
+- [Bing Webmaster Blog: AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)
+- [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
+- [Pew Research Center: Clicks when an AI summary appears](https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/)
 
 ---
 

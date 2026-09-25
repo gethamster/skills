@@ -1,25 +1,21 @@
-# FAQ: Validating Business Model-Market Fit
+# FAQ: Validating Model Market Fit
 
-## What is model market fit and how is it different from product-market fit?
+## Is this the same as calculating total addressable market?
 
-Model market fit validates that your business model—pricing, revenue model, and monetization mechanic—aligns with your market's willingness to pay and purchasing behavior. Product-market fit validates that your product solves a real problem. You can have strong product-market fit but weak model market fit if customers love your product but won't pay enough to sustain your business.
+It overlaps but asks a narrower question. A total addressable market figure often describes a broad category. Model Market Fit uses your own market definition, your real revenue per customer, and a capture share you can defend, and asks whether the result reaches a specific goal.
 
-## How do I know if my model market fit is broken?
+## What if my goal is smaller than venture scale?
 
-Common symptoms include high trial-to-paid conversion drop-off, persistent pricing objections in sales, negative or barely positive unit economics, high churn concentrated around billing events (renewals, price increases), and inability to profitably scale customer acquisition. If your product metrics are strong but revenue metrics are weak, model market fit is likely the culprit.
+Use your own goal. Balfour frames the test around the revenue a venture-backed company needs, but the arithmetic works for any target. A bootstrapped business with a smaller goal may pass easily with a niche market that would fail a venture test.
 
-## What's the best way to test willingness to pay before launching?
+## Why adjust market size before price?
 
-Use the Van Westendorp Price Sensitivity Meter with 30-50 target customers to identify the acceptable price range. Complement this with a 'painted door' test: build a realistic pricing page, drive traffic to it, and measure click-through to purchase intent. This combines stated and revealed preference data for a more reliable signal.
+Market size is usually the input that was estimated most loosely, and it is often the easiest to correct with better counting. Price changes also ripple into channel economics, so they carry more risk. Capture share comes last because raising it is the least defensible way to make the numbers work.
 
-## How does model market fit connect to the other fits in the Four Fits Framework?
+## How do I count customers in a market without a report?
 
-Model market fit closes the Four Fits loop. Your ARPU (from model market fit) must be high enough to fund the channels that reach your market (channel-business model fit), those channels must deliver users who engage with your product (product-channel fit), and the product must solve a real market need (market-product fit). A failure in model market fit cascades backward through the entire system.
+Build the count from the ground up. Use registries, job title searches, company databases, or association memberships that match your definition, and record where each number came from. A bottom-up count is easier to defend and closer to the customers your product serves.
 
-## Can I have strong model market fit with a freemium model?
+## Does usage-based pricing change the test?
 
-Yes, but freemium adds complexity to validation. You need to validate that the conversion rate from free to paid, combined with paid ARPU, generates enough blended revenue per user to fund acquisition of both free and paid users. If only 2% convert, your paid ARPU must be 50x higher than what you'd need if everyone paid.
-
-## How often should I re-validate model market fit?
-
-Re-validate quarterly during active scaling, or whenever you see leading indicators shift—rising churn, declining conversion rates, increasing pricing objections, or new competitor pricing that resets market expectations. Incorporate model market fit checks into your regular Four Fits audits as described in the running periodic Four Fits audits skill.
+The formula still works, but revenue per customer becomes an average across customers with very different usage. Model it from real usage data where you have it, and look at the spread as well as the average. If a few heavy users carry most of the revenue, the market you need to count is the market of heavy users.
