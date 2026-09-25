@@ -1,15 +1,20 @@
 ---
-name: mapping-initial-consideration-sets
-description: "This skill teaches you how to identify and analyze the small set of brands consumers already have in mind at the consideration stage—before they begin any active research—so you can ensure your brand earns a spot on that critical mental shortlist."
+name: "mapping-initial-consideration-sets"
+description: "Measure the initial consideration set: which brands buyers recall before they research, why yours is included or left out, and how to track it."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: mckinsey-consumer-decision-journey
+  method: "mckinsey-consumer-decision-journey"
+  datePublished: "2026-04-29"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mapping the Initial Consideration Set in the Consideration Stage
+# Mapping the Initial Consideration Set
 
-> This skill teaches you how to identify and analyze the small set of brands consumers already have in mind at the consideration stage—before they begin any active research—so you can ensure your brand earns a spot on that critical mental shortlist.
+> Measure the initial consideration set: which brands buyers recall before they research, why yours is included or left out, and how to track it.
 
 ## Before you start
 
@@ -24,127 +29,87 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial mapping; ongoing refinement |
-| Outcome | You gain a clear, data-backed picture of exactly which brands your target consumers consider before researching—and what drives inclusion or exclusion—so you can allocate marketing spend to the touchpoints that actually earn consideration. |
-| Prerequisites | Basic understanding of the McKinsey Consumer Decision Journey framework, Access to brand tracking or consumer survey data, Familiarity with brand awareness and recall metrics, Working knowledge of your competitive landscape |
+| Time to Learn | 2-3 hours, plus the time to field a survey |
+| Outcome | You know which brands your buyers recall for each buying situation, where your brand ranks among them, and whether a gap comes from low awareness or weak relevance. |
+| Prerequisites | Access to recent and prospective buyers, a defined category and segment, basic survey design |
 | Part of | [McKinsey Consumer Decision Journey](../../methods/mckinsey-consumer-decision-journey/METHOD.md) |
 
 ## Overview
 
-In the McKinsey Consumer Decision Journey, the consideration stage is the critical first moment when a consumer recognizes a need and mentally assembles a small shortlist of brands. Unlike the traditional marketing funnel, which assumes consumers methodically narrow from many options to few, the CDJ reveals that most buyers start with just two to four brands already in mind. If your brand isn't on that initial list, you're fighting an uphill battle during active evaluation.
+The initial consideration set is the short list of brands a buyer names from memory at the moment a need appears, before any searching or comparing. In the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey) it is the first of four phases, and it matters because [the original McKinsey research](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) found that brands in this set can be up to three times more likely to be bought than brands that are not. A brand that misses the list can still get in later, but it starts behind.
 
-Mapping the initial consideration set means systematically identifying which brands your target consumers recall unprompted, understanding why those brands made the cut, and diagnosing what kept others out. This isn't a one-time exercise—consideration sets shift as advertising campaigns launch, competitors enter markets, and consumer experiences accumulate. Regular mapping lets you track whether your brand-building efforts are translating into real mental availability.
+Mapping the initial consideration set means measuring three things for each segment and buying situation: which brands come to mind, in what order, and why. The first tells you whether you are on the list. The second tells you how strongly. The third tells you what to do about it, because a buyer who has never heard of you needs something different from a buyer who knows you but does not think of you when the need arises.
 
-This skill sits at the foundation of the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey) framework. Without understanding the consideration stage, your downstream work on active evaluation, purchase triggers, and loyalty loops lacks the context it needs. Brands that master consideration set mapping consistently outperform those that focus only on lower-funnel conversion tactics.
+The output is a consideration map: a grid of segments or buying situations against brands, with inclusion rates in each cell and notes on why brands were included or left out. It feeds every later phase. Evaluation work depends on knowing which brands a buyer starts with, and loyalty work depends on knowing whether past customers still recall you when they come back to the category.
+
+This skill is survey work at its core. Search and web analytics show you what people do once they are already looking, which is the active evaluation phase. To see the list people bring with them, you have to ask them before they look, and ask without prompting.
 
 ## How It Works
 
-The initial consideration set forms through a combination of three forces: past experience with a brand, exposure to marketing and advertising, and recommendations from peers or trusted sources. When a consumer recognizes a need—say, they need a new project management tool—they don't start with a blank slate. They instantly recall a handful of brands shaped by these forces.
+People do not build a consideration set by weighing every option on the market. They pull brands from memory, and memory is cued by the situation they are in. The Ehrenberg-Bass Institute calls these situations [category entry points](https://marketingscience.info/news-and-insights/category-entry-points-dissected-how-they-really-contribute-to-growth): the moments when someone mentally enters a category, such as a hot afternoon that prompts a cold drink or a neighbor's story that prompts a look at solar panels. A brand linked in memory to more of the relevant entry points is more likely to be recalled when any one of them occurs.
 
-McKinsey's original research found that the average initial consideration set contains just 1.5 to 3.8 brands depending on the category. This means the consideration stage acts as an extraordinarily powerful filter. Brands that make the initial set have a disproportionate advantage: McKinsey found they are up to three times more likely to be purchased than brands added later during active evaluation.
+This has a direct consequence for measurement. The same person can produce different consideration sets for different triggers. A software buyer whose team has outgrown spreadsheets may recall one group of tools, while a buyer whose contract is expiring recalls another. So the unit of analysis is the pair of segment and entry point, and a single overall recall number will hide most of what you need.
 
-The mechanism is rooted in cognitive psychology. Consumers rely on mental shortcuts—brand salience, emotional associations, and availability heuristics—to assemble their shortlist. They aren't rationally evaluating every option in the market. They're pulling from memory. This is why mapping the consideration stage requires measuring mental availability (what consumers recall) rather than just physical availability (what's on the shelf or in search results).
+[McKinsey's authors](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) describe the set as the product of accumulated impressions from advertising, news, conversations and product experience, most of which seem wasted until something triggers the impulse to buy. They also report that set sizes vary by category: in their data, personal computer shoppers started with an average of 1.7 brands and car shoppers with 3.8. Use your own data for your category rather than borrowing either figure.
 
-By mapping these sets across consumer segments, you reveal which competitors you're really fighting against (often not who you assume), which touchpoints are driving recall, and where your brand-building has gaps. This intelligence directly informs media strategy, messaging, and competitive positioning.
+Two measurements separate the causes of a gap. Unaided recall, where the respondent names brands with no list in front of them, shows whether you come to mind. Aided awareness, where you show the name and ask whether they know it, shows whether they know you at all. A brand with high aided awareness and low unaided recall has a relevance or salience problem: people know it but do not link it to the buying situation. A brand low on both has an awareness problem. The fixes differ, so the diagnosis has to come first.
+
+Mention order adds a third signal. The first brand named for a given entry point is the one most strongly linked to it in memory. Tracking your average position alongside your inclusion rate shows whether you are gaining ground or only appearing as an afterthought.
+
+Finally, the map is only useful as a trend. Sets shift as competitors launch, campaigns run and customer experiences accumulate, so a single survey is a baseline, and the value comes from repeating the same questions over time and connecting changes to what you did.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Category Entry Points
+### Step 1: List the Category Entry Points
 
-Before you can map what brands consumers consider, you need to understand the situations, needs, and motivations that trigger category entry. These are called Category Entry Points (CEPs)—the specific moments when a consumer begins thinking about a purchase.
+Write down the situations that make someone start thinking about your category. Pull them from customer interviews, sales call notes, support tickets and onboarding questions, using the buyer's words instead of your marketing language. Good entry points describe a moment or a need, such as a team outgrowing spreadsheets or a contract coming up for renewal. Group near-duplicates and keep the ones that come up most often. A handful of distinct entry points is enough for a first map.
 
-For a CRM tool, entry points might include: 'My team is losing track of leads,' 'We're scaling past spreadsheets,' 'Our current CRM contract is expiring,' or 'A colleague recommended switching tools.' Each entry point can produce a different consideration set because different triggers activate different brand memories.
+### Step 2: Choose Segments and Recruit Respondents
 
-Document 5-10 primary category entry points for your market. Use customer interviews, sales call transcripts, and support ticket analysis to identify them. The more specific and grounded in real language, the better.
+Decide which buyer segments you need to compare, for example first-time buyers against people replacing an existing product. Recruit people who are in or near the market, including buyers who chose a competitor and people who have never bought from you. Surveying only your own customers will overstate your presence on every list. Aim for a sample large enough to compare inclusion rates across segments, and if budget is tight, run qualitative interviews first to shape the survey.
 
-> **Pro tip:** Don't guess at entry points from a conference room. Pull actual language from customer conversations. Tools like Gong or chorus transcripts are gold mines for identifying the exact moments people start thinking about your category.
+### Step 3: Ask for Unaided Recall First
 
-### Step 2: Step 2: Conduct Unaided Brand Recall Research
+For each entry point, ask which brands or products the respondent would consider, with no list shown. Record every brand named and the order in which they came. Ask this before any question that mentions your brand or a competitor, because showing names first contaminates the answers. Treat "nothing" or "we'd build it ourselves" as valid answers, since those are real alternatives buyers weigh.
 
-The core data for mapping consideration sets comes from unaided recall surveys. Ask target consumers to name the brands they'd consider for each category entry point—without showing them a list. The question format matters: 'If you needed to [category entry point], which brands or products come to mind?' This must be unaided because aided recall (showing a list) inflates numbers and masks actual mental availability.
+### Step 4: Add Aided Awareness and Reasons
 
-Survey a representative sample of your target audience. Aim for at least 200-300 respondents per segment for statistical reliability. Record the order in which brands are mentioned—first-mentioned brands have stronger mental availability than third or fourth mentions.
+After the unaided questions, show a list of brands and ask which ones the respondent has heard of. Then ask, for each brand they named unaided, why it came to mind, with prompts such as past use, a recommendation, something they read or an ad. For brands they recognized but did not name, ask why they would not consider them. These answers separate awareness gaps from relevance gaps and point to the touchpoints that put brands on the list.
 
-Break results out by segment: new buyers vs. repeat buyers, different demographics, different entry points. The consideration set for a first-time buyer often looks very different from someone replacing an existing solution.
+### Step 5: Build the Consideration Map
 
-> **Pro tip:** Online survey panels (Prolific, UserTesting, or Wynter for B2B) can get you unaided recall data in days, not weeks. If budget is tight, even 30-50 qualitative interviews yield directional insights.
+Tabulate inclusion rate, average mention position and average set size for each segment and entry point. Lay the results out as a grid with segments or entry points as rows and brands as columns. Mark the cells where you trail a competitor that has similar awareness, since those are the most fixable gaps. Add the most common inclusion and exclusion reasons next to each row so the grid explains itself.
 
-### Step 3: Step 3: Analyze Consideration Set Composition
+### Step 6: Diagnose and Assign Actions
 
-With raw recall data in hand, build a consideration set map. For each category entry point and each segment, calculate:
+For each gap, decide whether it is an awareness problem, a relevance problem or a perception problem, and write the action that fits. Awareness gaps call for reach. Relevance gaps call for linking the brand to specific entry points in messaging and content, which is the approach the [Ehrenberg-Bass Institute recommends](https://marketingscience.info/news-and-insights/category-entry-points-dissected-how-they-really-contribute-to-growth). Perception gaps, such as being seen as too expensive or built for a different kind of buyer, call for changes to positioning or proof. Hand each action to an owner.
 
-- **Set size**: How many brands does the average consumer recall? (Benchmark: 1.5-3.8 depending on category complexity)
-- **Inclusion rate**: What percentage of respondents included your brand?
-- **Position**: What's your average mention order? (First mention vs. third)
-- **Competitive overlap**: Which brands most frequently appear alongside yours?
-- **Exclusion patterns**: Which segments consistently leave you out?
+### Step 7: Remeasure on a Fixed Cadence
 
-Visualize this as a matrix: rows are consumer segments or entry points, columns are brands, cells are inclusion percentages. This immediately reveals where you're strong, where you're absent, and who your true consideration-stage competitors are.
-
-> **Pro tip:** Your real competitors at the consideration stage are often surprising. Enterprise software companies frequently find they're competing against 'doing nothing' or 'spreadsheets' more than against named rivals.
-
-### Step 4: Step 4: Identify Drivers of Inclusion and Exclusion
-
-For each brand in the consideration set (including yours), investigate what drove its inclusion. Follow up your recall survey with diagnostic questions: 'Why did [brand] come to mind?' Typical drivers fall into categories:
-
-- **Past experience**: Previously used the product
-- **Advertising exposure**: Saw ads recently
-- **Word of mouth**: Friend, colleague, or influencer recommended it
-- **Content/thought leadership**: Read their blog, saw them on a podcast
-- **Market presence**: Encountered them at events, in directories, or in reviews
-
-Equally important: ask consumers who didn't include your brand why it didn't come to mind. Common exclusion reasons include: never heard of it, perceived as too expensive, perceived as wrong category, or had a negative past experience. This diagnosis tells you whether you have an awareness problem, a perception problem, or a positioning problem—each requires a fundamentally different response.
-
-> **Pro tip:** Don't just ask 'why.' Use stimulus-aided follow-ups: 'Had you heard of [your brand] before this survey?' This separates true awareness gaps from salience gaps—you might be known but not recalled at the right moment.
-
-### Step 5: Step 5: Map Touchpoints to Consideration Set Entry
-
-Now connect the dots between marketing touchpoints and consideration set inclusion. For consumers who included your brand, trace back which touchpoints contributed. This isn't simple attribution—it's understanding which channels build the kind of mental availability that earns consideration.
-
-Create a touchpoint influence map that cross-references your inclusion rate with marketing channel exposure. Consumers who recalled your brand after seeing your content on LinkedIn represent a different signal than those who recalled you from a Google search. The consideration stage is primarily won through brand-building channels (content, social, sponsorships, PR, word-of-mouth) rather than direct-response channels.
-
-This analysis often reveals that the channels driving the most consideration stage inclusion are not the ones getting the most budget. Display advertising, podcasts, and community presence frequently punch above their weight for consideration set inclusion, while paid search captures demand that already exists rather than creating it.
-
-> **Pro tip:** Cross-reference your touchpoint data with the sibling skill on [identifying touchpoints across CDJ stages](https://tryhamster.com/skills/identifying-touchpoints-across-cdj-stages) for a complete picture of how channels influence each phase.
-
-### Step 6: Step 6: Benchmark Against Category Norms and Track Over Time
-
-A single consideration set map is a snapshot. Its real value comes from benchmarking and trending. Compare your findings against category norms—industry brand tracking reports from sources like Kantar, YouGov BrandIndex, or Morning Consult provide baselines for typical set sizes and leader inclusion rates.
-
-Establish a cadence for remeasurement. For fast-moving categories (consumer tech, DTC brands), measure quarterly. For slower categories (financial services, enterprise software), biannual or annual tracking is sufficient. Track these KPIs over time:
-
-- Your brand's inclusion rate (overall and by segment)
-- Your average mention position
-- Set size trends (shrinking sets mean incumbents are strengthening)
-- New entrants appearing in sets
-- Correlation between campaign launches and inclusion rate changes
-
-This longitudinal data becomes your most powerful argument for brand investment. When you can show that a content series moved your consideration stage inclusion rate from 12% to 23% among enterprise buyers, you've made an ROI case that brand marketers rarely get to make.
-
-> **Pro tip:** Layer this data into your broader CDJ map. Feed consideration set insights into your work on [analyzing active evaluation behavior](https://tryhamster.com/skills/analyzing-active-evaluation-behavior) to understand how your initial set position affects downstream conversion.
+Repeat the survey with the same questions, the same entry points and comparable samples. Choose the cadence by how fast your category moves, and add a measurement after any major launch or campaign. Compare inclusion and position over time and note what changed in between. Share the trend with the teams working on evaluation and loyalty, since a drop in recall among past customers is an early warning for the loyalty loop.
 
 ## Best Practices
 
-- Always measure unaided recall first before showing any brand lists—aided recall inflates numbers and hides your real consideration stage position.
-- Segment your consideration set analysis by category entry point, not just demographics. The same consumer assembles a different consideration set depending on why they're shopping.
-- Track mention order, not just inclusion. Being first-mentioned (top of mind) correlates much more strongly with purchase than being third or fourth in a consumer's list.
-- Pair quantitative survey data with qualitative interviews to understand the 'why' behind inclusion and exclusion—numbers tell you what's happening, interviews tell you why.
-- Resist the urge to map consideration sets only among your current customers. Survey the broader target market, including people who've never bought from you, to get an accurate picture.
-- Use consideration set data to challenge assumptions about competitive positioning. Your consideration stage competitors are defined by consumers, not by your internal strategy team.
+- Ask unaided questions before anything that names a brand. Once a respondent has seen a list, their later answers reflect the list instead of their memory, and the recall numbers are no longer comparable.
+- Segment by entry point as well as by demographics. Buyers assemble different sets for different triggers, and the most actionable gaps usually show up in one entry point while the overall number looks fine.
+- Track mention position alongside inclusion. Being named first for an entry point signals a stronger memory link than being named last, and position often moves before inclusion does.
+- Include non-customers and competitor customers in every wave. They are the people you need to win, and their sets are the ones that tell you where you are missing.
+- Pair the survey with a small number of interviews. The survey tells you what the pattern is, and a conversation tells you why, which is what you need to write the action.
+- Keep the question wording fixed between waves. Changing it makes trend lines meaningless, so decide the wording carefully once and change it only with a documented break in the series.
 
 ## Common Mistakes
 
-- **Using aided brand awareness as a proxy for consideration set inclusion** — Aided awareness ('Have you heard of X?') vastly overstates real consideration. Someone can recognize your brand name but never think of you when a need arises. Always use unaided recall framed around specific purchase situations to measure true consideration stage presence.
-- **Assuming the consideration set is the same across all buyer segments** — A first-time buyer, a switcher, and someone whose contract is expiring have very different consideration sets. Segment your research by buyer type, company size, geography, and especially by category entry point. One aggregate number hides the most actionable insights.
-- **Mapping the consideration set once and treating it as static** — Consideration sets shift as brands launch campaigns, competitors enter markets, and consumer experiences accumulate. Establish a regular measurement cadence—quarterly for dynamic categories, biannually for stable ones—and track trends over time rather than relying on a single snapshot.
-- **Focusing only on brands included while ignoring why brands are excluded** — Exclusion data is often more actionable than inclusion data. If 40% of your target market has heard of you but doesn't consider you, that's a positioning or perception problem—fundamentally different from an awareness problem and requiring a different solution.
-- **Conflating search behavior with the consideration stage** — The initial consideration set forms before active research begins. By the time someone types a query into Google, they've already assembled their mental shortlist. Search data reveals active evaluation behavior, not consideration stage composition. Use surveys and brand tracking to measure the consideration stage; use search data for the active evaluation phase.
+- **Using aided awareness as the consideration measure**: Recognizing a name is far easier than recalling it when a need appears, so aided numbers flatter every brand. Use unaided recall framed around a specific buying situation as the primary measure, and keep aided awareness as a diagnostic.
+- **Reporting one number for the whole market**: An overall inclusion rate hides the entry points and segments where you are strong or absent. Break results out by entry point and segment before drawing conclusions, even if the sample in each cell is smaller.
+- **Reading search data as consideration data**: By the time someone searches, they already have a list, so search terms describe active evaluation. Use search data in the evaluation analysis and use surveys for this phase.
+- **Measuring once and filing the report**: A single wave is a baseline with no trend. Schedule the next wave before you present the first, so the map becomes a tracking tool that can show whether actions worked.
+- **Ignoring why brands were left out**: Exclusion reasons often point to the fix more directly than inclusion reasons do. A brand that is known but judged wrong for the buyer needs positioning work, not more reach, and only the exclusion questions reveal that.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/mckinsey-consumer-decision-journey/METHOD.md) — McKinsey Consumer Decision Journey
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/mckinsey-consumer-decision-journey/METHOD.md): McKinsey Consumer Decision Journey
 
 ## Related Skills
 
@@ -154,3 +119,8 @@ This longitudinal data becomes your most powerful argument for brand investment.
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
 - [Identifying Touchpoints Across CDJ Stages](../identifying-touchpoints-across-cdj-stages/SKILL.md)
+
+## Sources
+
+- [The consumer decision journey, McKinsey Quarterly](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
+- [Category Entry Points Dissected, Ehrenberg-Bass Institute](https://marketingscience.info/news-and-insights/category-entry-points-dissected-how-they-really-contribute-to-growth)

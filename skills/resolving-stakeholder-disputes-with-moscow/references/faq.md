@@ -1,25 +1,21 @@
-# FAQ: Resolving Stakeholder Priority Disputes Using MoSCoW
+# FAQ: Resolving Stakeholder Priority Conflicts with MoSCoW
 
-## What do you do when a senior executive overrides MoSCoW project prioritization decisions?
+## Why does everyone want their requirement to be a Must have?
 
-Acknowledge their authority while making the trade-off visible: 'Absolutely, we can make this a Must-have. To stay within capacity, which of these current Must-haves should we move to Should-have?' This respects their decision-making power while ensuring they own the consequences. If they refuse to make any trade-off, escalate the capacity mismatch to their level with data.
+Must is the only category DSDM guarantees, so it feels like the only safe place for anything a stakeholder cares about. The DSDM handbook adds that believing everything is a Must is often a sign the requirements have not been broken down enough. Splitting items usually shows that only part of each one needs the guarantee.
 
-## How do I handle stakeholders who refuse to participate in MoSCoW prioritization honestly?
+## Who has the final say in a MoSCoW dispute?
 
-Pre-session 1:1 conversations are your best tool. Understand their underlying concern—often it's fear that anything below Must-have will never get built. Show them historical data of Should-haves that were delivered. If a stakeholder consistently games the system, involve their manager in the next session to add accountability.
+Whoever the escalation route agreed at the start names. DSDM gives the Business Visionary or an empowered Business Ambassador the job of explaining why a requirement is a Must, and suggests an escalation route up to the Business Sponsor. Agree the route and the level of authority at each step before any dispute begins.
 
-## Can MoSCoW work when all requirements genuinely seem like Must-haves?
+## What if two stakeholders have genuinely conflicting Musts?
 
-If everything truly is essential, your scope is too large for your capacity, and MoSCoW is correctly surfacing that problem. Split the work across multiple releases, negotiate additional resources, or redefine the minimum viable scope. The framework isn't failing—it's revealing a real constraint that needs an executive decision.
+Test both against the consequence question and check whether either can be split. If both still pass and together they exceed capacity, the timeframe, the objective or the team has to change, which is a decision for the sponsor. Park the item with both positions written down and escalate it.
 
-## How does MoSCoW project prioritization compare to weighted scoring for resolving disputes?
+## How do I stop Must-have inflation from coming back each cycle?
 
-MoSCoW is faster and more intuitive for stakeholder workshops because it uses simple categories rather than numeric scores. Weighted scoring frameworks like RICE or WSJF are better for data-rich environments where you can quantify impact and effort precisely. Many teams use MoSCoW for initial categorization and then apply weighted scoring within the Must-have tier to sequence delivery order.
+Keep the reasons for past decisions on the list, keep the Won't haves visible, and check the Must effort against the agreed level every time a new item is added. DSDM warns specifically against letting new requirements push the Must share up. Tell stakeholders what would move their item up at the next increment, so they have a route other than relabelling.
 
-## How many stakeholders should participate in a MoSCoW dispute resolution session?
+## Is it acceptable to compromise on Should?
 
-Keep the core decision group to 5-8 people representing distinct perspectives (business, engineering, design, compliance). Larger groups increase the likelihood of disputes and slow down resolution. Stakeholders outside the core group can submit pre-session input and review decisions afterward within a defined feedback window.
-
-## What if stakeholders agree during the session but relitigate decisions afterward?
-
-This is why decision documentation is critical. Share the decision log with rationale within 24 hours and include a 48-hour objection window. After that window closes, decisions are locked until the next prioritization cycle. If relitigation is chronic, it signals a trust or authority problem that needs to be addressed at the organizational level, not the facilitation level.
+Only when Should is the honest answer. Settling a Must vs Could argument at Should to end the meeting hides the real risk. DSDM describes workshops as a place to reach consensus rather than compromise on important decisions.

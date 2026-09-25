@@ -1,25 +1,21 @@
-# FAQ: Identifying Actors and Stakeholders in Impact Mapping
+# FAQ: Identifying Actors and Stakeholders for an Impact Map
 
-## How many actors should an impact map have?
+## What is an actor in impact mapping?
 
-Aim for 3-5 actors per business goal. More than 5 makes the map unwieldy and dilutes focus. If you have more, prioritize by influence on the goal and feasibility of changing their behavior, and park the rest for future consideration.
+An actor is a person or group whose behavior can affect the business goal. The impactmapping.org drawing page defines actors through four questions about who could bring about the effect, who could block it, who uses the product, and who the work will affect. Actors can be customers, internal teams, partners, regulators or decision-makers. What they share is a plausible route to helping or hindering the goal.
 
-## What is the difference between actors and personas in product management?
+## How specific should an actor be?
 
-Personas describe archetypal users with demographic and psychographic details. Actors in impact mapping are specifically defined by their relationship to a business goal — anyone or anything whose behavior change can influence the goal, including internal teams, systems, and regulators. Actors are goal-specific; personas are product-wide.
+As specific as the team can make it while still describing a group whose behavior can be discussed. Gojko Adzic suggests an order of preference: a specific individual, a user persona, a role or job title, then a group or department. If two parts of a group would behave differently for different reasons, split them. If they would behave the same way, keep them together.
 
-## Should internal stakeholders be included as actors in an impact map?
+## Should competitors be actors?
 
-Yes, absolutely. Internal stakeholders like sales teams, support agents, and engineering managers often have high-leverage behavior changes that directly affect business goals. Ignoring them is one of the most common mistakes in impact mapping.
+Only if their behavior can affect the goal and the team can plausibly influence it. A competitor's pricing may be a constraint on the map rather than an actor you can change. It is often more useful to list the customers who compare you with competitors, since their behavior is what the team can affect.
 
-## How does identifying actors relate to product manager roles and responsibilities?
+## How many actors should a map have?
 
-Identifying actors is a core product manager responsibility because it determines who the team builds for and which behavior changes to prioritize. It sits at the intersection of strategy, stakeholder management, and user understanding — three pillars of effective product management.
+There is no fixed number in Adzic's guidance. A useful map lists enough actors to show the realistic routes to the goal and then picks a few to focus on first. In the impactmapping.org music site example, the map shows three groups of actors and works on the most promising one first.
 
-## How do I identify actors I haven't thought of?
+## What do we do with actors we decide not to pursue?
 
-Run cross-functional brainstorms with people from sales, support, engineering, and customer success. Review analytics for unexpected user segments. Check support tickets for frustrated cohorts. Ask 'who could block this goal?' to surface negative actors. Finally, send your draft list to people outside the workshop for fresh perspectives.
-
-## When should I revisit my actor list in an impact map?
-
-Revisit actors quarterly, whenever your business goal changes, or when you learn that an assumed high-influence actor isn't actually driving the expected behavior change. Treat the actor list as a living artifact that evolves with your understanding of the market and product.
+Keep them on the map, marked as not in focus for this milestone, with a note on why. They are options if the first actors do not produce the expected impacts. Reviewing them at each milestone also catches actors whose importance has grown.

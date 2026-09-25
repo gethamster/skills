@@ -1,25 +1,21 @@
 # FAQ: Validating Your North Star Metric with User Research
 
-## How many customer interviews do I need to validate a North Star Metric?
+## How many customers should we interview?
 
-For most products, 8-15 interviews across different customer segments provide enough signal. You're looking for thematic saturation—when new interviews stop revealing new patterns about how customers perceive value. If your product serves very different segments, lean toward the higher end of that range.
+Enough to see the patterns repeat across the segments that matter, which for many products means a modest number per segment rather than a large sample. Stop when new interviews stop producing new value stories. Then check the patterns in analytics, because interviews show why and the data shows how common it is.
 
-## Can I validate my North Star Metric with surveys instead of interviews?
+## Should validation happen before or after choosing the metric?
 
-Surveys can supplement but shouldn't replace interviews. The nuance of how customers describe value—their specific language, emotions, and examples—is difficult to capture in structured survey responses. Use surveys to quantify patterns you've already identified through interviews, not as the primary validation method.
+Both. Validate candidates before adopting one, so research can shape the definition while it is cheap to change. Then repeat a lighter version on a schedule, such as once a year, because products and customer bases change and the metric can drift from value.
 
-## What if my user research shows the North Star Metric is partially valid?
+## What if research and analytics disagree?
 
-A partial match is the most common outcome and is workable. Document the specific blind spots, then design input metrics or guardrail metrics that compensate. For example, if your metric captures value for one segment but misses another, add a segment-specific input metric to your tracking framework.
+Treat the disagreement as the finding. If customers describe value the metric does not count, check how large that group is in the data. If the metric counts behavior customers do not value, test whether a quality bar fixes it. Decide based on which version tracks retention and matches customer stories best.
 
-## How often should I re-validate my North Star Metric with user research?
+## Can a survey replace interviews?
 
-Re-validate annually at minimum, and always when your product enters a new growth stage, expands to a new market, or experiences a significant shift in customer composition. Customer value perception isn't static—what mattered to early adopters may not matter to mainstream users.
+A short value survey is a good first step and gives a broader sample, especially the question about how disappointed customers would be without the product and what main benefit they get. It rarely explains the edge cases, such as customers who meet the metric without getting value. Use the survey to find patterns and interviews to understand them.
 
-## What's the difference between user research for metric validation and regular product discovery research?
+## Who should run the research?
 
-Discovery research explores what to build next. Metric validation research tests whether your strategic measurement captures real customer value. The interview techniques overlap, but the analysis is different—you're mapping customer language against a specific metric hypothesis rather than generating feature ideas.
-
-## How do I use user research product insights to convince leadership to change a flawed metric?
-
-Present direct customer quotes alongside the mapping analysis showing where the metric diverges from described value. Show concrete examples of false positives (users scoring well on the metric but not experiencing value) and false negatives (valuable users invisible to the metric). Real customer stories are more persuasive than abstract arguments about measurement theory.
+A researcher or product manager who is not attached to the metric, if possible. People who proposed the metric tend to hear confirmation. Involve analysts in planning so the qualitative findings can be checked in the data quickly.

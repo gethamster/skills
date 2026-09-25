@@ -1,33 +1,39 @@
-# Examples: Evaluating Market-Product Fit
+# Examples: Evaluating Market Product Fit
 
-## Example: B2B Project Management Tool Evaluating Market Product Fit
-
-**Scenario:**
-
-A startup has built a project management tool and is targeting 'all knowledge workers who manage projects.' After six months, growth has stalled despite positive user feedback and decent trial-to-paid conversion. The team decides to rigorously evaluate their market product fit using the three-component framework.
-
-**Walkthrough:**
-
-**Market Category Assessment**: The team realizes 'project management' is an overcrowded category with deeply entrenched competitors (Asana, Monday.com, Jira). Customers compare them unfavorably to established players on feature completeness. They investigate further and discover that their happiest, most retained customers are specifically creative agency teams who manage client deliverables. They redefine their market category to 'client deliverable management for creative agencies.'
-
-**Audience Hypotheses**: They write three hypotheses: (1) Creative agency project managers spend 5+ hours/week manually tracking deliverable status across clients, (2) Existing project management tools don't handle the client-approval workflow that's central to agency work, (3) Agency PMs currently cobble together email, spreadsheets, and generic PM tools as a workaround. They validate all three through 10 interviews with agency PMs, finding strong confirmation with one modification—the acute pain is client visibility and approval bottlenecks, not just status tracking.
-
-**Value Proposition Mapping**: They map three value propositions: (1) Built-in client approval workflows reduce revision cycles by 40%, (2) Client-facing dashboards eliminate weekly status update meetings, (3) Template-based project setup cuts new client onboarding from 2 days to 2 hours. Retention data for the creative agency segment shows 85% 6-month retention versus 45% for their general user base, confirming strong fit within this specific market.
-
-**Outcome**: The team scores market product fit as Strong for creative agencies and Weak for the general 'knowledge worker' market. They narrow their focus, which subsequently makes their channel decisions much clearer—industry conferences, agency directories, and partnership with agency management platforms become obvious channels to evaluate in their [product-channel fit analysis](https://tryhamster.com/skills/aligning-product-channel-fit).
-
-## Example: Consumer Fitness App Discovering Misaligned Market Product Fit
+## A project tool that was really an agency tool
 
 **Scenario:**
 
-A consumer fitness app positioned in the 'health and wellness' category has 200,000 downloads but only 8% 30-day retention. The team assumes they have a product quality problem and begins planning feature additions. Before committing engineering resources, they run a market product fit evaluation.
+Illustrative scenario: a small startup sells a project management tool to "any team that manages projects." Growth is flat, and the team assumes it needs more features to compete with the large incumbents in that category.
 
 **Walkthrough:**
 
-**Market Category Assessment**: They survey 500 recent users asking 'What alternatives did you consider before trying our app?' Answers cluster around two surprising categories: not 'fitness apps' as expected, but 'habit tracking apps' (35%) and 'social accountability tools' (28%). Their actual competitive set is different from what they assumed.
+The team writes a market definition and finds it cannot name a specific customer or motivation. Interviews with twenty customers show that the ones who stay are creative agencies managing client deliverables, and that their problem is getting clients to review and approve work on time. Their motivation is getting paid sooner and avoiding revision loops.
 
-**Audience Hypotheses**: Original hypothesis was 'health-conscious adults aged 25-40 who want to get fit.' Through interviews, they discover their retained users (the 8%) share a specific profile: they're people returning to fitness after a break (post-injury, postpartum, or after a sedentary period) who feel intimidated by intense fitness apps. Their need isn't 'getting fit'—it's 'rebuilding a fitness habit without feeling judged or overwhelmed.'
+Retention curves split by segment confirm it: the agency cohort flattens, while general teams decay steadily. The survey sent to recently activated users shows the same split.
 
-**Value Proposition Gap Analysis**: The app's current value propositions emphasize workout intensity tracking and performance benchmarks—exactly the features that alienate their actual best-fit audience. The features their retained users love most (gentle progression, encouragement-based notifications, community of 'returners') are buried in the UX and absent from marketing.
+The team rewrites the market definition around agency client approvals, rates Market Product Fit as strong for that segment and weak for the broad one, and reframes the product hypothesis around an approval flow. The channel question becomes much easier, because agencies gather in a small number of communities and directories.
 
-**Outcome**: The team scores market product fit as Weak for 'fitness enthusiasts' and Moderate-to-Strong for 'fitness returners.' Rather than building more features, they redesign onboarding and repositioning around the returner audience. 30-day retention for the returner segment climbs to 32% after repositioning—a signal to double down and continue validating this narrower market product fit.
+## A fitness app with the wrong customer in mind
+
+**Scenario:**
+
+Illustrative scenario: a consumer fitness app positions itself for people who want to train hard. Downloads are healthy but most users leave within the first month, and the team plans a new set of advanced workouts.
+
+**Walkthrough:**
+
+Before building, the team interviews retained and churned users. The retained group turns out to be people returning to exercise after a long break, who feel intimidated by intense programs. Their problem is restarting a habit without feeling judged, and the category they place the app in is closer to habit tracking than training.
+
+The product hypothesis the team had written emphasized performance tracking, which is the part this group ignores. The team rates fit as weak for serious athletes and promising for returners, then tests a gentler onboarding and a hook aimed at returners, and re-reads retention for that cohort before deciding on any new features.
+
+## A B2B tool checking fit before a raise
+
+**Scenario:**
+
+Illustrative scenario: a seed-stage B2B analytics tool wants to show investors it has product-market fit. The founders have a strong overall survey result and want to present it as the answer.
+
+**Walkthrough:**
+
+Following the skill, they first write the market definition and product hypothesis, then look at the evidence by segment. The survey result is driven almost entirely by finance teams at software companies; operations teams, which the pitch also claims, answer lukewarmly and churn faster.
+
+They also apply Balfour's test question. Signups from finance teams keep arriving through referrals when paid campaigns pause, while operations signups stop. The founders narrow the market definition to finance teams, present fit as strong for that segment, and describe operations as a later expansion rather than a current market.

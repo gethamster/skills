@@ -1,25 +1,21 @@
-# FAQ: Deciding What to Do: Prioritizing Retrospective Action Items
+# FAQ: Decide What to Do in a Retrospective
 
-## How many action items should a team commit to per sprint retrospective?
+## How many action items should a retrospective produce?
 
-Commit to 1–3 action items maximum. Research and practitioner experience consistently show that teams completing fewer items per sprint make more cumulative progress than teams that overcommit. If your completion rate is below 80%, reduce the number until follow-through becomes reliable.
+Usually one or two. The Agile Alliance's description of the practice says one or two improvement ideas per retrospective may well be enough, and it warns against both too few and too many. A small number leaves room to finish them alongside product work. Good ideas that are not chosen can go on an improvement backlog for later.
 
-## What sprint retrospective format works best for prioritizing action items?
+## Which retrospective voting techniques work best?
 
-Dot voting is the most common and effective sprint retrospective format for prioritization because it's fast, democratic, and easy to facilitate. For teams that need more nuance, an effort/impact matrix helps distinguish quick wins from larger investments. Both approaches are part of the 'Decide What to Do' phase in the Five-Step Retrospective Framework.
+Dot voting is simple and widely used. Give each person votes equal to roughly a quarter of the options, vote silently, and reveal the result only when everyone has voted. For the top few options, an impact and effort grid or a quick fist-of-five on confidence can help settle close calls. Whatever the method, vote before discussion so confident speakers do not sway the result.
 
-## What should I do with retrospective ideas that don't get selected?
+## How do we prioritize retrospective improvements when everything seems important?
 
-Place unselected items in a visible parking lot and review them at the start of the next retrospective's prioritization phase. Items that recur across multiple retros are signaling a persistent problem that deserves attention. Items that lose relevance over time can be archived.
+Look at impact, effort and control. Favor changes that address a cause behind several problems, fit in the next sprint and are within the team's control. Ask which single change would make the next sprint noticeably better. Record the rest so the team can come back to them.
 
-## How do I make sure retrospective action items actually get completed?
+## What if the most important issue is outside the team's control?
 
-Three practices drive completion: assign a single owner (not 'the team'), add the item to the sprint backlog so it's visible during daily standups, and review completion status at the start of the next retrospective. See our guide on tracking retrospective action items across sprints for a complete system.
+Separate what the team can influence from what it can only respond to. Turn influence into a specific request with a named person to make it, and turn response into a change in how the team plans or works around the constraint. Diana Larsen's Circles and Soup exercise is designed for exactly this sorting.
 
-## Should retrospective action items be added to the sprint backlog?
+## Should action items go in the sprint backlog?
 
-Yes. Action items that live only in retrospective notes tend to be forgotten. Adding them to the sprint backlog gives them visibility, allows the team to account for the effort during planning, and creates accountability through daily standups and sprint reviews.
-
-## How do I handle action items that are outside the team's control?
-
-Separate these from team-level commitments. Reframe what the team *can* do — often this means 'escalate with data.' For example, 'We need faster CI servers' becomes 'Tech lead will present CI wait-time data to engineering management by Thursday and request a budget review.' The team owns the escalation, not the outcome.
+If the team uses Scrum, that is a good default. The Scrum Guide says the most impactful improvements may be added to the Sprint Backlog for the next Sprint. Putting them there makes them visible in planning and lets the team account for the capacity they need.

@@ -1,25 +1,21 @@
-# FAQ: Auditing How LLMs Represent Your Brand and Content
+# FAQ: Auditing How LLMs Represent Your Brand
 
-## How often should I audit how LLMs represent my brand?
+## How often should I run the audit?
 
-Conduct a comprehensive audit quarterly, with lighter monthly spot-checks on your highest-priority prompts. Additionally, re-audit within 2-3 weeks of major model updates from OpenAI, Anthropic, or Google, as these can significantly change how your brand is represented.
+Run a full baseline once, then repeat the same prompts on a regular cadence, such as monthly, and after major model releases. Answers change as models update and as retrieved pages change, so a single audit goes stale. Keep the prompts and method fixed so each run is comparable with the last.
 
-## Which LLMs should I include in my brand audit?
+## Which assistants should I include?
 
-At minimum, audit ChatGPT (GPT-4o), Claude, Google Gemini, and Perplexity AI. Perplexity is especially valuable because it cites sources, helping you trace where errors originate. If your audience uses specific tools like Microsoft Copilot or specialized industry AI assistants, include those as well.
+Include the ones your buyers actually use, which you can learn from sales conversations, surveys and referral data in your analytics. A typical set covers Google's AI features, ChatGPT, Perplexity, Microsoft Copilot, Claude and Gemini. It is better to cover fewer systems consistently than many systems once.
 
-## How long does it take for LLMs to update their brand information after I fix source content?
+## Can I ask an AI company to correct what its model says about me?
 
-There's no guaranteed timeline. Models with web access (Perplexity, Bing Chat) can reflect changes within days to weeks. Models relying on training data snapshots (base ChatGPT, Claude) may take months until their next training update. RAG-augmented features may pick up changes faster.
+Some platforms have feedback tools, and Google lets official representatives claim a knowledge panel and suggest edits. Those channels are limited, though. The reliable path is fixing the public sources that answers depend on: your own pages, third-party profiles and coverage.
 
-## Can I directly submit corrections to LLM companies about my brand?
+## How long do corrections take to show up?
 
-Currently, no major LLM provider offers a formal brand correction submission process. Your most effective strategy is to ensure correct, consistent, authoritative information exists across the web sources these models train on. This is why AI in SEO focuses on optimizing your content ecosystem rather than the models directly.
+Answers that rely on live retrieval can change after the corrected page is recrawled, which may take days or longer depending on the site. What a model says from its training data changes only when a newer model is trained and released. Log both kinds separately so you know which errors to expect to clear first.
 
-## What's the difference between an LLM brand audit and traditional brand monitoring?
+## How is this different from traditional brand monitoring?
 
-Traditional brand monitoring tracks mentions across social media, news, and review sites. An LLM brand audit specifically tests how AI models synthesize and present your brand when users ask questions. These can diverge significantly — your social sentiment might be excellent while LLMs still describe your product incorrectly based on outdated training data.
-
-## How does auditing LLM brand representation relate to other AI in SEO practices?
-
-The LLM audit is the diagnostic foundation of the entire AI-SEO Optimization method. Its findings directly inform which content to restructure for AI answers, what topical authority gaps to fill, which pages need schema markup, and what to track in your AI visibility metrics. Without the audit, other optimizations lack a data-driven starting point.
+Brand monitoring tracks what people publish about you. An LLM audit tracks what AI systems say about you when asked, which is a synthesis of many sources and sometimes of none. The two work together: monitoring finds sources, and the audit shows which of them shape answers.

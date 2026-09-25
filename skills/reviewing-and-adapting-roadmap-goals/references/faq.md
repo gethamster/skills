@@ -1,31 +1,21 @@
-# FAQ: Reviewing and Adapting GO Roadmap Goals Each Quarter
+# FAQ: Reviewing and Adapting GO Roadmap Goals
 
-## How long should a quarterly roadmap review meeting take?
+## How often should a GO roadmap be reviewed?
 
-Plan for 90-120 minutes for teams with 4-8 active goals. If you have fewer than four goals, 60 minutes is sufficient. The meeting should never exceed two hours. If it regularly does, you either have too many active goals or you are spending time on status updates that should have been handled in the pre-read. Time-box each goal to 8-10 minutes and park lengthy debates for follow-up sessions.
+Pichler's checklist says at least once every three months as a rule of thumb. In his agile roadmap tips he gives a range from every four weeks to every three months, depending on how young the product is and how dynamic the market is. Between reviews, keep watching KPIs so you can call an extra review when something important changes.
 
-## Should I review the roadmap more often than quarterly?
+## Should the roadmap review be separate from the strategy review?
 
-Quarterly is the standard cadence for goal-level reviews because goals need enough time to show measurable progress. However, if your market moves very fast (early-stage startup, crisis response), you can run lighter monthly check-ins that focus only on at-risk goals rather than reviewing the full roadmap. Avoid reviewing more frequently than monthly because constant re-evaluation undermines execution focus and exhausts stakeholders.
+Pichler recommends combining them. The roadmap implements the strategy, so reviewing them together keeps the two plans aligned and saves a meeting. He suggests allowing two to three hours for a well-prepared quarterly strategy and roadmap workshop.
 
-## What do I do if a stakeholder disagrees with my goal classification?
+## Who should attend the review?
 
-Start with the data. Show the metric target and the actual value, and ask the stakeholder to explain what additional context changes the picture. If they have information your data does not capture (a pending deal, a strategic pivot from the board), record it in the decision log and adjust the classification accordingly. If they simply feel optimistic without evidence, hold your classification and note the disagreement.
+The same people who helped create the roadmap: key stakeholders and development team representatives, ideally with a facilitator. Involving them keeps their buy-in when the plan changes. Stakeholders who are not in the room should receive a short summary of what changed.
 
-The point of data-driven classification is precisely to resolve these disputes without relying on authority or gut feeling.
+## What if a goal was missed?
 
-## How do I handle goals that span multiple quarters?
+Look at what the metrics and the team's experience show before deciding. The goal may still be right and need more time, the features may have been the wrong way to reach it, or the goal may no longer matter. Decide deliberately, record why, and tell stakeholders about any date change.
 
-Multi-quarter goals are common for large initiatives like compliance certifications or platform migrations. Break them into quarterly milestones with their own success criteria so each review has something concrete to measure. For example, a SOC 2 goal might have Q1 milestone of "complete gap analysis," Q2 milestone of "implement controls," and Q3 milestone of "pass audit." Each milestone gets its own classification at review time. This prevents multi-quarter goals from becoming uncheckable items that persist on the roadmap without accountability.
+## How much should the roadmap change at each review?
 
-## Should I invite engineers and designers to the review, or just product and leadership?
-
-Invite the leads from engineering and design, not the full team. They provide critical context on feasibility, technical blockers, and design constraints that pure metric data cannot capture. Keeping the group to 5-8 people ensures the session stays decision-focused. Share the review memo with the broader team afterward so everyone understands the updated priorities without sitting through the full discussion.
-
-## How do I prevent the review from becoming a blame session for missed goals?
-
-Frame the review explicitly as forward-looking: "We are deciding what to do next, not assigning fault for what happened." Use the four-status classification (completed, on-track, at-risk, obsolete) because it is descriptive rather than evaluative. The word "obsolete" is deliberately chosen over "failed" because it attributes the miss to changed context rather than team performance. If a goal was missed due to execution issues, that conversation belongs in a retrospective, not the roadmap review.
-
-## What if my team does not have clear metrics for some goals yet?
-
-This is a signal that the [metrics and success criteria](https://tryhamster.com/skills/setting-go-roadmap-metrics) step was skipped or done superficially during planning. In the current review, classify those goals based on the best proxy data available and add a concrete action item to define proper metrics before the next quarter begins. Going forward, no goal should enter the roadmap without at least one measurable success criterion. A goal without a metric cannot be meaningfully reviewed, which means it cannot be meaningfully managed.
+As much as the evidence requires and no more. Small adjustments to features and metrics are normal. If goals change at every review, the goals may be too small or the strategy too unstable, and that underlying problem is the thing to fix.

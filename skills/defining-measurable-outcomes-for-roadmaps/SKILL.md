@@ -1,15 +1,20 @@
 ---
-name: defining-measurable-outcomes-for-roadmaps
-description: "This skill teaches product managers how to translate high-level business objectives into specific, measurable outcome statements that replace feature-based milestones and become the organizing units of an outcome-driven roadmap."
+name: "defining-measurable-outcomes-for-roadmaps"
+description: "Define roadmap outcomes that a team can influence: turn business objectives into measurable outcomes with a metric, baseline, target and owner."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: outcome-driven-roadmapping-odr
+  method: "outcome-driven-roadmapping-odr"
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Defining Measurable Outcomes for Your Product Manager Roadmap
+# Defining Measurable Outcomes for Product Roadmaps
 
-> This skill teaches product managers how to translate high-level business objectives into specific, measurable outcome statements that replace feature-based milestones and become the organizing units of an outcome-driven roadmap.
+> Define roadmap outcomes that a team can influence: turn business objectives into measurable outcomes with a metric, baseline, target and owner.
 
 ## Before you start
 
@@ -24,107 +29,96 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-3 hours for an initial roadmap conversion |
-| Outcome | You produce a set of clearly written, measurable outcome statements tied to business objectives that can replace feature-centric milestones on your product manager roadmap, enabling teams to optimize for impact rather than output. |
-| Prerequisites | Familiarity with product roadmap formats (timeline, kanban, or now-next-later), Understanding of your company's current business objectives or OKRs, Access to product analytics or baseline metrics for your product, Basic knowledge of leading vs. lagging indicators |
-| Part of | [Outcome-Driven Roadmapping (ODR)](../../methods/outcome-driven-roadmapping-odr/METHOD.md) |
+| Time to Learn | A few hours to learn, one planning cycle to get good at |
+| Outcome | You can turn a business objective into a short set of measurable product roadmap outcomes, each with a metric, baseline, target, timeframe and owner. |
+| Prerequisites | Current business objectives or OKRs, access to product analytics, a product strategy |
+| Part of | [Outcome-Driven Roadmapping](../../methods/outcome-driven-roadmapping-odr/METHOD.md) |
 
 ## Overview
 
-Most product manager roadmaps are organized around features: 'Launch dark mode in Q2,' 'Ship Slack integration by March,' 'Redesign onboarding flow.' These feel concrete and satisfying to plan, but they encode a dangerous assumption — that building the feature automatically produces the desired business result. When the feature ships and the needle doesn't move, teams scramble to understand why, often too late to course-correct. Defining measurable outcomes is the foundational skill of Outcome-Driven Roadmapping (ODR), and it solves this problem at the root.
+To define roadmap outcomes is to decide what change in the world the roadmap is supposed to produce before deciding what to build. This skill is the first working step of [Outcome-Driven Roadmapping](../../methods/outcome-driven-roadmapping-odr/METHOD.md) and the core of outcome-based product planning. Its output is a small set of product roadmap outcomes, each written so that the team can tell, from data, whether it happened.
 
-A measurable outcome is a specific, observable change in user behavior or a business metric that you believe will result from product work. Instead of 'Ship Slack integration,' the outcome might be 'Increase weekly active collaboration events per team by 30% within 90 days of launch.' This shift matters because it gives the team freedom to explore multiple solutions (maybe a Slack integration isn't even the best lever), it makes success objectively verifiable, and it connects every line item on your product manager roadmap back to a business result stakeholders actually care about.
+The definition most teams use comes from Josh Seiden, quoted by Teresa Torres in [Outcomes vs. Outputs](https://www.producttalk.org/2021/05/outcomes-vs-outputs/): "An outcome is a change in human behavior that drives business results." An output is what the team ships. An outcome is what customers do differently because of it. A roadmap item such as "launch the Android app" is an output. "More mobile users engage with the product each week" is an outcome, and it leaves the team free to find out whether an app is the best way to get there.
 
-This skill sits at the heart of the ODR framework. Without well-defined outcomes, you can't prioritize competing initiatives, you can't run meaningful outcome review ceremonies, and your roadmap presentations devolve back into feature wishlists. Getting this right transforms how your team thinks about product work — moving from 'Did we ship it?' to 'Did it matter?'
+The hard part is scope. Business outcomes such as revenue, retention and market share are what executives care about, but a single product team rarely controls them. Torres separates business outcomes, which measure the health of the business, from product outcomes, which measure customer behavior in the product or sentiment about it. She calls business outcomes lagging indicators and product outcomes "leading indicators within the team's control." A measurable outcome on a team's roadmap is usually a product outcome with a stated link to a business outcome above it.
+
+Measurability is the other half. An outcome needs a metric, a current baseline, a target, a timeframe and an owner. Roman Pichler's checklist for roadmap outcomes is that they be specific, measurable and feasible, and he advises asking "why" of any candidate to expose features dressed up as goals ([Pichler](https://www.romanpichler.com/blog/get-the-outcomes-on-your-product-roadmap-right/)). Without that discipline the roadmap keeps its feature list and only the headings change.
 
 ## How It Works
 
-The mental model behind measurable outcomes is a causal chain: Business Objective → Measurable Outcome → Initiatives → Features. Each layer is a hypothesis about what causes what. Your business objective might be 'Grow revenue 40% this year.' That's important but not actionable for a product team. Measurable outcomes decompose that objective into the specific behavioral or metric changes your product needs to drive — such as 'Increase trial-to-paid conversion from 8% to 14%' or 'Reduce churn among accounts in their first 90 days from 22% to 12%.'
+The skill works top-down through three layers. It starts with objectives the business has already agreed. For each objective, it asks whose behavior would have to change for the objective to be met. Hope Gurion, writing on [Product Talk](https://www.producttalk.org/2020/02/product-outcomes/), frames this with Seiden's question "What are the customer behaviors that drive business results?" and notes that every revenue goal rests on a theory about which people will behave differently.
 
-The key insight is that outcomes describe changes in the world, not changes in your product. A feature describes what you're building. An outcome describes what's different for users or the business after you build it. This distinction matters because it preserves optionality — if your first initiative doesn't move the metric, the team can pivot to a different approach without waiting for the next roadmap cycle.
+Each candidate behavior then becomes an outcome statement. A useful format names the metric, the direction, the baseline, the target, the segment and the date. Pichler derives roadmap outcomes in one of two ways: breaking down the user needs and business goals in the product strategy, or, for mature products, starting from key performance indicators that are trending the wrong way ([Pichler](https://www.romanpichler.com/blog/get-the-outcomes-on-your-product-roadmap-right/)). Either way the outcome has to trace back to the strategy.
 
-Good outcomes sit in a sweet spot on the specificity spectrum. Too broad ('Improve user satisfaction') and the team can't tell what to build or whether they've succeeded. Too narrow ('Increase clicks on the green button by 5%') and you've essentially prescribed a solution, defeating the purpose. The right level is what practitioners call 'team-actionable scope' — specific enough that a single product team can own the metric and influence it directly, but broad enough that they have real design latitude in how they achieve it.
+Candidates are filtered with three tests. The first is the output test: could the team hit this number without helping a customer? Torres's example is a course-review site whose goal was more reviews; reviews are something users produce, and a better outcome counted course views that included reviews ([Torres](https://www.producttalk.org/2021/05/outcomes-vs-outputs/)). The second is the influence test: can this team move the metric through product changes, or does it depend mostly on sales, pricing or the market? The third is the measurement test: is the metric instrumented and trusted today?
 
-Measurable outcomes also need a time horizon. 'Reduce support tickets' is a direction, not an outcome. 'Reduce support tickets related to billing by 40% within Q3' is an outcome you can plan around, resource against, and definitively evaluate. The time-bounding creates urgency, enables honest retrospectives, and prevents outcomes from becoming permanent wallpaper that nobody tracks.
+Size matters too. Pichler suggests roadmap outcomes be no smaller than six weeks and no bigger than four months, because smaller goals look like sprint goals and bigger ones give too little guidance. He treats this as a guideline tied to a twelve-month roadmap. The last part of the skill is agreement. Torres recommends negotiating outcomes between leaders, who bring the business view, and the team, which brings customer and technical knowledge and a sense of how far the metric can move. A target set by one side alone tends to come out either sandbagged or unrealistic.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: List Your Active Business Objectives
+### Step 1: List the objectives you are serving
 
-Gather the 3-5 top-level business objectives your company or business unit is pursuing this planning period. These typically come from executive strategy documents, OKRs, annual plans, or board decks. Write them down exactly as stated — don't interpret or rewrite them yet. If your company doesn't have clear objectives, work with your leadership to define them before proceeding, because outcomes without parent objectives are just metrics floating in space.
+Collect the business objectives already in force, from company OKRs, a strategy document or leadership priorities. Write them down in the business's own language and do not add new ones. If there are more than a handful, ask leadership which ones this product area is expected to move this cycle. If there are none, stop and get them, because every outcome you write will otherwise be a guess at what matters.
 
-> **Pro tip:** If you have more than 5 active business objectives, that's a prioritization problem upstream. Flag it, but for this exercise, focus on the 3 that most directly relate to your product area.
+### Step 2: Name the behaviors behind each objective
 
-### Step 2: Step 2: Decompose Each Objective into User or Business Behaviors
+For each objective, list the customer behaviors that would have to change for it to be met. Use Seiden's question, as reported by [Gurion](https://www.producttalk.org/2020/02/product-outcomes/): which customer behaviors drive this business result? A retention objective might rest on users reaching a first success, returning in their second week, or adding colleagues. Aim for behaviors you can observe in product data. Keep the list broad at this stage.
 
-For each business objective, ask: 'What specific changes in user behavior or business metrics would need to happen for this objective to be achieved?' Brainstorm without filtering. For a revenue growth objective, you might list: more users convert from free to paid, existing customers upgrade to higher tiers, churned customers reactivate, average contract value increases, or sales cycle shortens. Aim for 4-8 behavioral or metric changes per objective. Write them in plain language first — don't worry about measurement precision yet.
+### Step 3: Choose the outcomes the team can move
 
-> **Pro tip:** Use the 'If we succeed, what's different?' framing with your team. It shifts thinking from outputs ('we shipped X') to observations ('users now do Y more often').
+Filter the behaviors down to the ones this team can plausibly influence through product changes, and discard the ones that mainly depend on other functions or outside factors. Gurion's example is churn caused by customers going out of business, which Gurion places outside the product team's influence. Pick the few with the strongest link to the objective. Pichler's advice is to pursue one product goal at a time where you can, and treat several goals in one period as an exception ([Pichler](https://www.romanpichler.com/blog/get-the-outcomes-on-your-product-roadmap-right/)).
 
-### Step 3: Step 3: Select the Highest-Leverage Outcomes
+### Step 4: Write the outcome statements
 
-You'll have a long list of potential behavioral changes. Now prioritize ruthlessly. For each candidate, assess: (1) How much impact would moving this metric have on the parent objective? (2) Can your product team directly influence this metric? (3) Is the metric currently measurable, or can you instrument it within a reasonable timeframe? Eliminate anything your team can't influence or measure. Select 1-2 outcomes per business objective — more than that dilutes focus and makes it impossible to resource properly.
+Write each outcome as a sentence with a metric, a direction, a baseline, a target, a segment and a date. Then apply the why test: ask why the outcome matters until the answer is a change in customer behavior or a business result. A capability is not an answer. Apply the output test too: if the number could rise without customers getting value, rewrite it. Torres suggests pairing a sentiment metric with a behavior metric, using sentiment as a counterweight, because sentiment alone gives no direction.
 
-> **Pro tip:** Apply the '80/20 test' — which 1-2 behavioral changes would account for the majority of progress toward the business objective? Those are your primary outcomes.
+### Step 5: Set baselines and confirm instrumentation
 
-### Step 4: Step 4: Write Outcome Statements Using the DMT Format
+Pull the current value of each metric and check how it is calculated. If it is not tracked, or two dashboards disagree, fix that before committing to a target. Note how long after a release the metric will show a change; Pichler points out that an acquisition goal can need several days or weeks of data after launch before you can tell whether it worked. Record the baseline, the source and the refresh frequency next to each outcome.
 
-Transform each selected outcome into a formal statement using the Direction-Metric-Timeframe (DMT) format: '[Direction] [specific metric] from [baseline] to [target] by [date].' For example: 'Increase trial-to-paid conversion rate from 8% to 14% by end of Q3 2025.' Every element matters — the direction (increase/decrease/maintain) prevents ambiguity, the baseline grounds the target in reality, the specific target makes success binary, and the date creates accountability. If you don't have a reliable baseline, your first sub-outcome should be establishing measurement.
+### Step 6: Negotiate targets and owners
 
-> **Pro tip:** Avoid vanity metrics in your outcome statements. 'Increase page views' is measurable but rarely meaningful. Always ask 'So what?' — does this metric change actually matter to the business?
+Take the draft outcomes to the leader who owns the objective and to the team that will do the work. Leadership explains what the business needs; the team explains what it believes it can move and why. Agree a target and a single owner for each outcome. For a new outcome where nobody knows what moves the metric, Torres recommends starting with a learning goal before setting a performance target ([Torres](https://www.producttalk.org/2021/05/outcomes-vs-outputs/)).
 
-### Step 5: Step 5: Validate Outcomes with the Influence and Attribution Test
+### Step 7: Place the outcomes on the roadmap
 
-For each outcome statement, stress-test it with two questions. First, the influence test: 'Can our product team move this metric by at least 30% through product changes alone?' If the metric is primarily driven by marketing spend, macroeconomic conditions, or another team's work, it's the wrong scope for your product roadmap. Second, the attribution test: 'When this metric moves, will we be able to trace the change back to our product work?' If six other teams are also affecting the metric, you'll never know if your work mattered. Revise or scope down outcomes that fail either test.
-
-> **Pro tip:** A common fix for attribution problems is to scope the metric to a specific segment — instead of 'reduce churn,' try 'reduce churn among self-serve accounts activated after onboarding V2 launch.'
-
-### Step 6: Step 6: Establish Baselines and Instrumentation
-
-For each outcome, confirm you can actually measure it today. Pull the current baseline from your analytics, data warehouse, or business systems. If the metric isn't currently tracked, document what instrumentation is needed and make that instrumentation a prerequisite initiative on your roadmap. Record the baseline value, the data source, the measurement frequency (daily, weekly, monthly), and who owns the data pipeline. Without this step, your outcomes are aspirational statements, not measurable commitments.
-
-> **Pro tip:** Create a simple 'Outcome Measurement Card' for each outcome: metric name, baseline, target, data source, measurement frequency, and dashboard link. This becomes the single source of truth during outcome review ceremonies.
-
-### Step 7: Step 7: Map Outcomes onto Your Roadmap Structure
-
-Replace feature milestones on your roadmap with your outcome statements. Each time horizon on your roadmap (now, next, later — or Q1, Q2, Q3) should be organized around 1-3 outcomes rather than a list of features. Features and initiatives become the 'how' beneath each outcome, not the organizing principle. This is the structural change that transforms a feature-based roadmap into an outcome-driven one. Ensure each outcome has a clear owner — typically a product trio (PM, designer, tech lead) — who is accountable for the metric, not just for shipping features.
-
-> **Pro tip:** Keep your 'now' column to 2-3 outcomes maximum per team. If every outcome is 'now,' you've created a prioritization illusion. Use the sibling skill on prioritizing outcomes across product teams to resolve conflicts.
-
-### Step 8: Step 8: Socialize and Iterate with Stakeholders
-
-Share your draft outcome statements with key stakeholders — engineering leads, design, data science, and business leadership. The goal isn't approval; it's stress-testing. Engineers may identify measurement challenges you missed. Data scientists may flag that a baseline is unreliable. Business leaders may tell you a target is too conservative or that the outcome doesn't connect to what they actually care about. Expect to revise 30-50% of your outcomes after this round. Two iterations are normal before outcomes are crisp enough for the roadmap.
-
-> **Pro tip:** Frame this conversation as 'Here's what we think success looks like — help us get it right' rather than 'Here's the plan.' Stakeholders who help shape outcomes become advocates for the outcome-driven approach.
+Put the outcomes at the top level of the roadmap under the objectives they serve, and leave space underneath for initiatives. Near-term outcomes get full statements and owners; later ones can be described as problems. Share the draft with the stakeholders who will read the roadmap and ask whether each outcome is clear to them without explanation. Revise any that are not.
 
 ## Best Practices
 
-- Write outcomes from the customer's or business's perspective, never from the team's perspective. 'Users complete onboarding in under 3 minutes' is an outcome. 'Team ships new onboarding flow' is an output. If the subject of your sentence is your team, rewrite it.
-- Limit each product team to 1-2 primary outcomes per quarter. Research consistently shows that teams with more than 3 concurrent outcome targets make meaningful progress on none of them. Fewer outcomes with real focus beats a portfolio of neglected metrics.
-- Always include a baseline in your outcome statement, even if it's approximate. 'Increase retention' is a direction. 'Increase 30-day retention from 62% to 75%' is a commitment you can plan against, resource, and evaluate honestly at the end of the period.
-- Pair every lagging outcome with at least one leading indicator your team can monitor weekly. If your outcome is 'reduce 90-day churn from 22% to 12%,' you'll wait three months for signal. A leading indicator like 'percentage of new accounts completing 3+ core actions in week 1' gives you faster feedback on whether your initiatives are working.
-- Revisit and recalibrate outcomes at a fixed cadence — monthly for early-stage products, quarterly for mature ones. Market conditions change, baselines shift, and new data emerges. An outcome that was ambitious in January might be irrelevant by April. Build in formal recalibration moments rather than letting outcomes go stale.
-- Document the causal hypothesis behind each outcome explicitly. Write down: 'We believe that [initiative] will cause [outcome] because [reasoning/evidence].' This forces clarity, makes it easier to debug when outcomes don't move, and creates an institutional memory of what you've learned about your product's levers.
+- Start from objectives that already exist. Outcomes invented by the product team without a link to the business strategy are easy for leadership to ignore, as Pichler notes when he recommends deriving roadmap goals from the strategy ([OKRs and Product Roadmaps](https://www.romanpichler.com/blog/okrs-and-product-roadmaps/)).
+- Measure the moment of value. Torres's job-board example shows that applications are easier to count than hires, but hires are when both sides get value. Push toward the value moment even when it is harder to measure.
+- Keep outcomes few. Several outcomes per team per period dilute focus and make progress hard to read.
+- Write outcomes the team can explain to a new hire in one sentence. If it needs a paragraph of caveats, it is probably two outcomes or not yet an outcome.
+- Expect to revise the metric. Torres reports teams iterating several times before finding a metric that is actionable, and treats that as part of the process.
+- State what a proxy misses. When the real goal is hard to measure, choose a proxy and write down the gap between them.
 
 ## Common Mistakes
 
-- **Disguising features as outcomes by adding a metric to a feature description** — Statements like 'Launch dark mode and increase daily active usage by 10%' aren't outcomes — they're features with a metric stapled on. The test is whether the team has solution flexibility. If your outcome prescribes a specific feature, you've embedded an assumption that bypasses discovery. Rewrite as 'Increase daily active usage among evening-session users by 10% by Q3' and let the team explore whether dark mode, notification timing, or content recommendations is the best lever.
-- **Setting outcomes the product team cannot directly influence** — Revenue, NPS, and total market share are important business metrics, but they're influenced by pricing, sales, support, marketing, and macroeconomics — not just product. When a product team owns 'increase revenue by 20%,' they feel accountable without having control, which leads to demoralization or gaming. Scope outcomes to metrics your product team can move through product changes: activation rate, feature adoption, task completion time, or retention within a specific cohort. These product-level metrics should roll up to business metrics, but the product team owns the proximal lever, not the distal result.
-- **Setting targets without a reliable baseline or any current measurement** — Teams often set ambitious targets like 'achieve 90% onboarding completion' without knowing the current rate. This happens because measurement feels like a distraction from 'real work.' But without a baseline, you can't size the effort, you can't tell if early initiatives are working, and you'll argue endlessly about whether you succeeded. If you don't have a baseline, make your first outcome 'establish reliable measurement of X within 2 weeks' and treat it as a prerequisite before committing to a numeric target.
-- **Creating too many outcomes and spreading the team thin** — The excitement of outcome-driven thinking often leads teams to define 6-8 outcomes per quarter, reasoning that more outcomes means more impact. In practice, this creates a portfolio of metrics that are all tracked but none are meaningfully moved. The cognitive load of context-switching between outcomes, running parallel experiments, and interpreting interleaved results makes it nearly impossible to achieve breakthrough progress on any single metric. Ruthlessly constrain to 1-2 primary outcomes per team per quarter. If leadership pushes for more, reframe it as a sequencing conversation: 'Which outcome should we focus on first?'
-- **Never updating outcomes after initial definition** — Some teams treat outcome statements as sacred texts — once defined at the start of a quarter, they're locked in regardless of what happens. But outcomes are hypotheses, and new data should change them. If you discover your baseline was wrong, if a competitor launches something that shifts the landscape, or if your first initiative reveals that the real problem is different from what you assumed, update the outcome. Build formal recalibration checkpoints into your planning cadence. The goal is achieving impact, not maintaining consistency with a document you wrote eight weeks ago.
+- **Outputs in disguise**: "Launch the new dashboard" or "ship integrations" describe work to be shipped. Ask why each item matters until the answer is a change in behavior.
+- **Assigning business outcomes directly to a product team**: A team told to "increase revenue" cannot see which of its choices mattered. Translate the business outcome into a product outcome the team can influence and keep the business outcome as context.
+- **Traction metrics as outcomes**: Adoption of one feature measures usage. It does not show whether customers succeeded. Torres calls these traction metrics and warns they can push users toward features they do not need.
+- **Targets with no baseline**: A target without a current value cannot be judged as ambitious or timid. Establish the baseline first, even if it delays the roadmap by a week.
+- **Tying outcomes to performance reviews too early**: Torres warns that teams sandbag targets and disguise outputs as outcomes when reviews depend on hitting them. Start with learning goals on unfamiliar metrics.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/outcome-driven-roadmapping-odr/METHOD.md) — Outcome-Driven Roadmapping (ODR)
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/outcome-driven-roadmapping-odr/METHOD.md): Outcome-Driven Roadmapping
 
 ## Related Skills
 
-- [Running Outcome Review Ceremonies and Check-Ins](../running-outcome-review-ceremonies/SKILL.md)
-- [Building Outcome-Based Roadmap Presentations for Stakeholders](../building-outcome-based-roadmap-presentations/SKILL.md)
-- [Mapping Product Initiatives to Business Outcomes](../mapping-initiatives-to-business-outcomes/SKILL.md)
-- [Prioritizing Competing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
 - [Setting Leading and Lagging Metrics for Roadmap Outcomes](../setting-leading-and-lagging-outcome-metrics/SKILL.md)
-- [Transitioning from Feature-Based to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
+- [Mapping Product Initiatives to Business Outcomes](../mapping-initiatives-to-business-outcomes/SKILL.md)
+- [Prioritizing Outcomes Across Product Teams](../prioritizing-outcomes-across-product-teams/SKILL.md)
+- [Building Outcome-Based Roadmap Presentations](../building-outcome-based-roadmap-presentations/SKILL.md)
+- [Running Outcome Review Ceremonies and Check-Ins](../running-outcome-review-ceremonies/SKILL.md)
+- [Transitioning from Feature to Outcome-Based Roadmaps](../transitioning-from-feature-to-outcome-roadmaps/SKILL.md)
+
+## Sources
+
+- [Teresa Torres: Outcomes vs. Outputs](https://www.producttalk.org/2021/05/outcomes-vs-outputs/)
+- [Hope Gurion: Product Outcomes, Not Business Outcomes](https://www.producttalk.org/2020/02/product-outcomes/)
+- [Roman Pichler: Get the Outcomes on Your Product Roadmap Right](https://www.romanpichler.com/blog/get-the-outcomes-on-your-product-roadmap-right/)
+- [Roman Pichler: OKRs and Product Roadmaps](https://www.romanpichler.com/blog/okrs-and-product-roadmaps/)

@@ -1,25 +1,21 @@
 # FAQ: Implementing Schema Markup for Answer Engine Optimization
 
-## Does schema markup directly help content appear in AI-generated answers?
+## Does schema markup help content appear in AI answers?
 
-Schema markup doesn't guarantee AI citation, but it significantly improves the odds. It reduces the inferential work AI systems must do to understand your content's structure, meaning, and intent—making your content easier to parse, extract from, and cite accurately in generated responses.
+Not directly on Google, which says there is no special schema.org markup needed for AI Overviews or AI Mode. Structured data still helps systems understand your entities and content and keeps you eligible for the rich results that remain. Other AI systems may read it too, and Microsoft's guidance lists schema as part of structuring content for AI search.
 
-## Which schema types matter most for AI for SEO and answer engine optimization?
+## Which schema types matter most?
 
-FAQPage and HowTo are the highest-impact types for AEO because they provide pre-structured question-answer pairs and step-by-step instructions that AI systems can consume directly. Speakable is increasingly important for voice AI surfaces, and Article schema with `about` entity links helps with topical matching.
+For AI answers, the types that establish identity: Organization with sameAs links, Person for authors, and Article with author details. Product markup matters for commerce pages. FAQPage and HowTo are valid types but no longer produce special results in Google Search.
 
-## Should I use JSON-LD, Microdata, or RDFa for schema markup?
+## Should I use JSON-LD, Microdata or RDFa?
 
-Use JSON-LD. It's Google's explicitly recommended format, it's independent of your HTML DOM structure so it won't break when you redesign templates, and it's the easiest format for AI crawlers to parse since it's a self-contained data block in your page's head or body.
+Use JSON-LD, which Google recommends and which is easiest to maintain because it sits in one block rather than being woven through the HTML. Generate it from the same data that renders the page, so the two stay consistent.
 
-## How do I know if AI answer engines are reading my schema markup?
+## Should I remove FAQPage and HowTo markup now?
 
-Monitor your AI search visibility using the techniques in Tracking and Measuring Your Visibility in AI Search Results. Compare citation rates before and after schema implementation. For Google specifically, the Search Console Enhancements report confirms whether your structured data is being parsed correctly.
+There is no need to remove markup that accurately describes visible content. Google has said unused structured data does not cause problems. Remove it where it describes content that is not on the page, which breaks the guidelines, or where maintaining it is not worth the effort.
 
-## Can I add FAQPage schema to a page that doesn't have a traditional FAQ section?
+## How do I know if my markup is being read?
 
-Only if you add visible Q&A content to the page. Every question and answer in your FAQPage schema must appear on the visible page. You can restructure existing content into Q&A format—many explanatory paragraphs naturally answer implicit questions—but the schema must mirror what users see.
-
-## How often should I update my schema markup?
-
-Review schema markup whenever you update the page content it describes, and conduct a full site audit quarterly. Schema that falls out of sync with visible content can trigger Google penalties and confuse AI systems, which undermines your AI for SEO efforts.
+Validate it with the Rich Results Test and the Schema Markup Validator, and check the rendered page with URL Inspection in Search Console. For AI answers specifically, no platform reports schema use directly, so judge effects through the brand audit and tracking results, such as fewer entity confusion errors.

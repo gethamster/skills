@@ -1,15 +1,20 @@
 ---
-name: conducting-phase-gate-reviews
-description: "This skill teaches you how to run formal gate reviews at the end of each Waterfall phase to validate deliverables, secure stakeholder sign-off, and make go/no-go decisions that authorize progression to the next phase."
+name: "conducting-phase-gate-reviews"
+description: "Run a waterfall gate review at the end of each phase: check deliverables against exit criteria, then record a go, conditional go, recycle or stop decision."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: waterfall
+  method: "waterfall"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Conducting Phase Gate Reviews in the Waterfall Model
+# Conducting Phase Gate Reviews in a Waterfall Project
 
-> This skill teaches you how to run formal gate reviews at the end of each Waterfall phase to validate deliverables, secure stakeholder sign-off, and make go/no-go decisions that authorize progression to the next phase.
+> Run a waterfall gate review at the end of each phase: check deliverables against exit criteria, then record a go, conditional go, recycle or stop decision.
 
 ## Before you start
 
@@ -24,120 +29,92 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You will be able to design and facilitate rigorous phase gate reviews that catch defects early, keep stakeholders aligned, and ensure each waterfall phase is truly complete before the project advances. |
-| Prerequisites | Understanding of the Waterfall methodology and its sequential phases, Familiarity with project deliverables and acceptance criteria, Basic stakeholder management experience, Knowledge of creating Waterfall project plans |
+| Time to Learn | A few hours to learn, one real gate to practice |
+| Outcome | You can prepare, chair and document a phase gate review that ends in a clear, recorded decision with owners for every condition. |
+| Prerequisites | Defined phases with written exit criteria, a named decision-maker for each gate, the phase deliverables in reviewable form |
 | Part of | [Waterfall](../../methods/waterfall/METHOD.md) |
 
 ## Overview
 
-Phase gate reviews are the critical quality checkpoints that give the waterfall model its disciplined, sequential structure. At the boundary between each phase—requirements to design, design to development, development to testing—a formal gate review brings together stakeholders and subject matter experts to inspect deliverables, verify that exit criteria have been met, and make an explicit go/no-go decision. Without these gates, the waterfall model loses its primary advantage: the confidence that downstream work rests on a validated foundation.
+A phase gate review is the meeting at the end of a waterfall phase where the people who own the project's resources decide whether the next phase may start. In a waterfall gate review, the phase's deliverables, such as an approved requirements specification, a design, or a test report, are checked against exit criteria agreed before the phase began. The gate review process ends in a recorded decision: proceed, proceed with conditions, redo part of the work, or stop.
 
-In practice, many teams skip or rush gate reviews, treating them as rubber-stamp formalities. This undermines the entire methodology. A well-conducted gate review surfaces ambiguities in [requirements documents](https://tryhamster.com/skills/writing-waterfall-requirements-documents), design inconsistencies, and resource gaps before they compound into expensive rework. It also creates a clear accountability record—every stakeholder who signs off shares ownership of the decision to proceed.
+The gate is where the [Waterfall method](../../methods/waterfall/METHOD.md) gets its quality control. Because each phase builds on the frozen output of the last, a defect that passes a gate is inherited by everything after it. NASA's software engineering handbook frames reviews around two sets of criteria: entrance criteria, the "activities and products that are to be completed before the review can begin," and exit or success criteria, the decisions and actions that must be completed before the review is considered complete ([NASA SWEHB](https://swehb.nasa.gov/spaces/7150/pages/16449865/7.09+-+Entrance+and+Exit+Criteria)). Its lifecycle names reviews for each transition, from requirements reviews through preliminary and critical design reviews to test readiness reviews.
 
-This skill covers the end-to-end process of preparing for, facilitating, and documenting gate reviews within a [Waterfall](https://tryhamster.com/methods/waterfall) project. You'll learn how to define exit criteria, structure the review meeting itself, handle disagreements, and produce decision records that protect the project and its team.
+The term "gate" is also widely used through Robert G. Cooper's Stage-Gate model for new product development, a term Cooper coined that [first appeared in print in 1988](https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/). Stage-Gate describes gates as decision points where the business chooses whether and how to keep investing, with defined deliverables, criteria and outputs, and with "Go, Kill, Hold, or Recycle" as the typical outcomes. A waterfall phase gate borrows the same structure. Its questions lean more toward completeness and correctness of the deliverable, since the scope was fixed at the start.
+
+Royce's original paper already asked for formal checkpoints with the customer. He wrote that giving the contractor "free rein between requirement definition and operation is inviting trouble" and proposed several points after requirements where the customer commits to the direction ([Royce](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf)). A gate review is the practical form of that commitment.
 
 ## How It Works
 
-The phase gate review mechanism works on a simple but powerful principle: **no phase transition without explicit validation**. Each phase in the waterfall model produces defined deliverables—a requirements specification, a system design document, tested code, and so on. The gate review is the formal ceremony where those deliverables are measured against pre-agreed exit criteria.
+A gate has four parts: criteria, evidence, reviewers and a decision. The criteria are written when the phase is planned, so the team knows the target while doing the work. The evidence is the gate package: the deliverables themselves plus a short summary of how each criterion is met, open issues and risks. The reviewers are the people with authority over the next phase's budget and scope, plus technical reviewers who have read the deliverables. The decision is recorded in writing with its conditions.
 
-Conceptually, each gate has three possible outcomes: **Go** (all criteria met, proceed to next phase), **No-Go** (critical gaps exist, return to current phase for rework), or **Conditional Go** (minor items outstanding, proceed with documented action items and deadlines). This trinary decision model prevents the dangerous middle ground where teams proceed despite known issues but without a plan to resolve them.
+Criteria come in two kinds. Completeness criteria ask whether the required deliverables exist and have been reviewed, for example whether every requirement has an identifier and an acceptance test reference. Quality criteria ask whether the content is good enough to build on. NASA's example exit criteria for a software requirements review ask for requirements "determined to be clear, complete, consistent, feasible, traceable, testable" ([NASA SWEHB](https://swehb.nasa.gov/spaces/7150/pages/16449865/7.09+-+Entrance+and+Exit+Criteria)). A phase gate checklist should hold both kinds, and each item should be answerable yes or no with evidence.
 
-The power of gate reviews comes from several reinforcing dynamics. First, the existence of a gate motivates teams to complete work thoroughly rather than leaving loose ends. Second, the multi-stakeholder review catches blind spots that a single team might miss. Third, the formal sign-off creates shared accountability—if requirements are approved at the gate, the business cannot later claim they were never agreed upon. This is why the waterfall model, when executed properly with rigorous gates, remains effective for projects with regulatory compliance needs, fixed contracts, or safety-critical systems.
+Decisions need more than a yes or no. A clean go lets the next phase start. A conditional go lets it start while named issues are closed by a date, with an owner for each. A recycle sends specific parts of the work back for rework and a re-review. A stop or hold ends or pauses the project. Stage-Gate lists Go, Kill, Hold and Recycle, and adds that an approved project receives confirmed resources, a timeline and the date of the next gate ([Stage-Gate](https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/)). Writing the conditions down is what separates a conditional go from a quiet pass.
 
-Gate reviews also serve as natural synchronization points for [project plans and Gantt charts](https://tryhamster.com/skills/creating-waterfall-project-plans), giving project managers concrete milestones to track progress against the baseline schedule.
+Follow-up closes the loop. NASA reviews track Requests for Action and Review Item Discrepancies, and a later review expects responses to all of them or a timely closure plan ([NASA SWEHB](https://swehb.nasa.gov/spaces/7150/pages/16449865/7.09+-+Entrance+and+Exit+Criteria)). The same discipline applies to any gate: conditions and actions go on a tracked list, and the next gate starts by checking that list.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Exit Criteria Before the Phase Begins
+### Step 1: Write the exit criteria before the phase starts
 
-Exit criteria should be established at the start of each phase, not invented at the end. Work with the project sponsor, technical leads, and quality assurance to define specific, measurable criteria that deliverables must satisfy. For a requirements phase, exit criteria might include: all functional requirements traced to business objectives, all non-functional requirements quantified, requirements document reviewed by at least two subject matter experts, and no open TBD items remaining.
+When the phase is planned, agree what must be true for it to end: the deliverables, the reviews they must pass and the quality bar for each. Keep criteria specific and checkable, such as "every requirement has an acceptance test reference" rather than "requirements are good." Agree them with the gate's decision-maker so there is no argument about the target later. Publish them with the phase plan.
 
-Document these criteria in a gate review checklist that will be used during the actual review. Each criterion should be binary—met or not met—to prevent subjective interpretation during the gate meeting. Where quantitative thresholds are appropriate (e.g., test coverage percentages, defect density limits), specify the exact numbers.
+### Step 2: Name the decision-maker and reviewers
 
-Make sure all team members know the exit criteria from day one of the phase. This gives them a clear target and prevents surprises at the gate.
+Decide who holds the authority to approve the next phase, usually the sponsor or a small board that controls budget and scope. Stage-Gate describes gatekeepers as senior managers who own the resources the team needs for the next stage ([Stage-Gate](https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/)). Add technical reviewers who will read the deliverables in depth, and the customer representative where the contract calls for one. Keep the group small enough to decide in one meeting.
 
-> **Pro tip:** Store exit criteria in the same document repository as your project plan so they're always accessible. Consider creating a standardized template with common criteria for each waterfall phase that you customize per project.
+### Step 3: Assemble and send the gate package
 
-### Step 2: Step 2: Prepare the Gate Review Package
+Collect the deliverables and write a short cover document that walks through each exit criterion with a link to the evidence. List open issues and risks honestly, with a proposed disposition for each. Send the package early enough for reviewers to read it properly. A gate where reviewers see the material for the first time in the meeting becomes a presentation.
 
-One to two weeks before the scheduled gate review, the phase lead should assemble the gate review package. This package includes: all phase deliverables in their final or near-final state, a self-assessment against each exit criterion, a summary of any known issues or risks, and metrics collected during the phase (effort spent, defects found and resolved, scope changes processed).
+### Step 4: Collect review findings before the meeting
 
-Distribute this package to all gate reviewers with enough lead time for them to conduct a thorough review—typically 3-5 business days for complex deliverables. Specify exactly what you need reviewers to do: read the entire document, focus on specific sections, validate technical accuracy, or check regulatory compliance.
+Ask technical reviewers to log findings against the deliverables before the meeting, each tagged by severity. The team responds to each finding in writing: accepted and fixed, accepted with a plan, or disputed with a reason. This moves most of the detailed discussion out of the meeting. The meeting then focuses on the findings that affect the decision.
 
-Include a pre-filled gate review form that reviewers can annotate with their findings. This structures their feedback and makes the actual gate meeting far more productive than an open-ended discussion.
+### Step 5: Run the meeting against the phase gate checklist
 
-> **Pro tip:** Send a brief cover memo highlighting what's new or changed since any prior reviews. Busy stakeholders will engage more deeply if you respect their time and direct their attention.
+Walk through the exit criteria in order and confirm each one as met, met with conditions, or not met. Discuss the open severe findings and the risks to the next phase. Keep the conversation on whether the phase is complete enough to build on. New scope ideas raised in the meeting go to change control.
 
-### Step 3: Step 3: Schedule and Structure the Gate Meeting
+### Step 6: Decide and record the outcome
 
-Book the gate review meeting with all required attendees well in advance—these are often senior stakeholders whose calendars fill quickly. Define required vs. optional attendees clearly: required attendees must be present for the gate decision to be valid.
+End the meeting with an explicit decision: go, conditional go, recycle, or stop or hold. For a conditional go, record each condition with an owner and a due date. For a recycle, record exactly which parts go back and when the re-review will happen. Have the decision-maker sign or approve the record, then baseline the approved deliverables.
 
-Structure the meeting with a clear agenda: (1) brief phase summary and context setting (5-10 minutes), (2) walkthrough of deliverables against exit criteria (bulk of the time), (3) discussion of open issues and risks (15-20 minutes), (4) formal go/no-go decision (10 minutes). For a typical phase gate, allocate 60-120 minutes depending on project complexity.
+### Step 7: Track conditions to closure
 
-Assign a dedicated note-taker who is not the facilitator. The facilitator needs to manage the discussion, drive toward decisions, and handle conflicts—they cannot simultaneously capture accurate minutes.
-
-> **Pro tip:** Never combine a gate review with a status meeting or other agenda items. The gate deserves its own dedicated time block to signal its importance and ensure adequate focus.
-
-### Step 4: Step 4: Facilitate the Review Against Exit Criteria
-
-During the meeting, work through each exit criterion systematically. For each criterion, present the evidence that it has been met, allow reviewers to challenge or confirm, and record the verdict. Resist the temptation to skip criteria that seem obviously satisfied—the discipline of checking each one is what makes gates effective.
-
-When reviewers raise concerns, distinguish between three categories: (a) showstoppers that must be resolved before proceeding, (b) important items that can be resolved in parallel with the next phase, and (c) observations for future phases. Categorizing issues in real-time prevents the discussion from spiraling into an unfocused debate.
-
-If technical disagreements arise between reviewers, capture both positions and the evidence for each. If resolution isn't possible in the meeting, assign an owner and deadline for resolution before the gate decision is finalized.
-
-> **Pro tip:** Use a visible scorecard—projected on screen or shared document—and mark each criterion green, yellow, or red in real-time. This creates transparency and builds toward the final decision naturally.
-
-### Step 5: Step 5: Make and Record the Formal Gate Decision
-
-After reviewing all criteria, the gate decision authority (typically the project sponsor or steering committee) makes the formal decision: Go, No-Go, or Conditional Go. This should be an explicit, verbal declaration, not an implied conclusion.
-
-For a **Go** decision, confirm the date the next phase will begin and any preparation needed. For a **No-Go**, specify exactly which criteria were not met, what rework is required, and when the gate will be re-reviewed. For a **Conditional Go**, document each condition with an owner, deadline, and escalation path if the condition isn't met.
-
-Capture the decision in a gate review decision record that includes: date, attendees, criteria assessment results, decision, conditions (if any), and sign-off lines. Obtain signatures—physical or digital—from the decision authority and key stakeholders before the meeting concludes or within 24 hours.
-
-> **Pro tip:** A 'Conditional Go' should have no more than 3-5 minor conditions. If you're tempted to attach a dozen conditions, the honest decision is probably No-Go.
-
-### Step 6: Step 6: Distribute the Decision Record and Track Conditions
-
-Within 24 hours of the gate review, distribute the signed decision record to all stakeholders, the project team, and anyone affected by the phase transition. Store it in the project's controlled document repository alongside the reviewed deliverables.
-
-If the decision was Conditional Go, add each condition to the project's issue or action item tracker with the assigned owner and deadline. Review progress on these conditions in the next phase's kickoff meeting and subsequent status meetings. If a condition misses its deadline, escalate to the gate decision authority immediately—do not let conditions quietly expire.
-
-Update the [project plan and Gantt chart](https://tryhamster.com/skills/creating-waterfall-project-plans) to reflect the actual gate review date (which may differ from the baseline) and formally transition the project to the next phase.
-
-> **Pro tip:** Create a gate review log that tracks all gate decisions across the project lifecycle. This becomes invaluable for retrospectives and for demonstrating process compliance to auditors or clients.
+Put conditions and actions on a tracked list that the project manager reviews weekly. Report their status to the decision-maker. Open the next gate by confirming that every earlier condition is closed or explicitly carried forward. Unclosed conditions that pile up across gates are a signal that the gates are passing work that is not ready.
 
 ## Best Practices
 
-- Define exit criteria at the start of each phase, not retroactively before the gate review—this gives the team a clear definition of done throughout the phase.
-- Distribute review materials at least 3-5 business days before the gate meeting so reviewers can prepare substantive feedback rather than reacting in real-time.
-- Keep gate reviews focused on deliverable quality against criteria—do not allow them to become status update meetings or scope negotiation sessions.
-- Require the decision authority to verbally state the gate decision and sign the decision record—implicit approval erodes accountability over time.
-- Maintain a running gate review log across all phases so you can identify patterns (e.g., certain criteria types consistently failing) and improve your process.
-- Time-box issue discussions during the gate meeting and park items that need deeper investigation—assign owners and deadlines rather than solving everything in the room.
+- Agree criteria in advance. Criteria invented at the gate turn it into a negotiation, while criteria agreed at planning make the review a check.
+- Separate finding from deciding. Collecting written findings before the meeting, as [NASA's review practice](https://swehb.nasa.gov/spaces/7150/pages/16449865/7.09+-+Entrance+and+Exit+Criteria) does with tracked actions, keeps the meeting short and focused on the decision.
+- Make recycle a normal outcome. A gate that can only say yes gives false assurance. Treat sending part of the work back as the gate doing its job.
+- Put the right authority in the room. If the people present cannot commit budget or accept risk, the decision will be reopened later.
+- Record conditions with owners and dates. A conditional go without tracked conditions is a pass in practice.
+- Scale the gate to the risk. A small internal project can combine gates or hold a short review, while a contract milestone or regulated deliverable warrants the full process.
 
 ## Common Mistakes
 
-- **Treating gate reviews as rubber stamps where approval is assumed before the meeting even starts** — Establish a culture where No-Go is a legitimate and respected outcome. The first time a gate legitimately rejects a phase, it signals that the process has teeth. Celebrate the defect caught, not the delay.
-- **Allowing the gate review to proceed without all required stakeholders present** — Define required attendees upfront and enforce the rule that the gate cannot issue a valid decision without them. If a required attendee can't make it, reschedule—don't dilute the gate's authority.
-- **Using vague, subjective exit criteria like 'requirements are complete' or 'design is adequate'** — Make every criterion specific and measurable: 'All 47 functional requirements have acceptance criteria defined' or 'Architecture document has been reviewed and approved by the security team.' Binary criteria eliminate interpretation disputes.
-- **Issuing a Conditional Go with too many or too significant conditions, effectively proceeding despite a failed gate** — Reserve Conditional Go for genuinely minor items. If conditions represent more than 10-15% of the phase's exit criteria or include any showstoppers, the honest decision is No-Go with a rework period and re-review date.
-- **Not tracking conditional items after the gate, allowing them to silently become technical debt** — Add every condition to your project tracker with an owner, deadline, and escalation path. Review condition status in the first status meeting of the next phase and escalate missed deadlines immediately.
+- **Treating the gate as a status meeting**: When the meeting is spent presenting progress, no one checks the deliverables against criteria. Send progress in writing and use the meeting to decide.
+- **Passing everything under schedule pressure**: Approving an incomplete phase to protect the timeline moves the problem downstream, where it costs more to fix. Use a conditional go with dated conditions, or recycle.
+- **Vague criteria**: Criteria such as "design is complete" cannot be checked and invite argument. Rewrite them as observable conditions with evidence.
+- **Missing decision-makers**: A review without the people who own the next phase's resources produces a recommendation that has to be approved again elsewhere.
+- **Losing the conditions**: Conditions recorded in meeting notes and never tracked are forgotten. Put them on a list with owners and review it at the next gate.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/waterfall/METHOD.md) — Waterfall
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/waterfall/METHOD.md): Waterfall
 
 ## Related Skills
 
-- [Defining and Sequencing Waterfall Phases](../defining-waterfall-phases/SKILL.md)
-- [Building Content Waterfall Strategies](../building-content-waterfall-strategies/SKILL.md)
-- [Running Structured Testing and Verification Phases](../running-waterfall-testing-phases/SKILL.md)
+- [Defining Waterfall Phases with Entry and Exit Criteria](../defining-waterfall-phases/SKILL.md)
 - [Managing Change Requests in Waterfall Projects](../managing-change-requests-in-waterfall/SKILL.md)
-- [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
-- [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
-- [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
+- [Running Waterfall Testing Phases from Unit to Acceptance](../running-waterfall-testing-phases/SKILL.md)
+
+## Sources
+
+- [NASA Software Engineering Handbook: Entrance and Exit Criteria](https://swehb.nasa.gov/spaces/7150/pages/16449865/7.09+-+Entrance+and+Exit+Criteria)
+- [Stage-Gate International: The Stage-Gate Model, an Overview](https://www.stage-gate.com/blog/the-stage-gate-model-an-overview/)
+- [Winston W. Royce: Managing the Development of Large Software Systems](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf)

@@ -1,15 +1,20 @@
 ---
-name: designing-validated-learning-experiments
-description: "This skill teaches you how to structure low-cost experiments that produce reliable evidence about customer behavior, so you can make informed build, pivot, or kill decisions instead of guessing."
+name: "designing-validated-learning-experiments"
+description: "Design validated learning experiments: pick the test, from landing page to concierge MVP or Wizard of Oz test, and set pass marks before any data arrives."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: lean-startup
+  method: "lean-startup"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
 # Designing Validated Learning Experiments
 
-> This skill teaches you how to structure low-cost experiments that produce reliable evidence about customer behavior, so you can make informed build, pivot, or kill decisions instead of guessing.
+> Design validated learning experiments: pick the test, from landing page to concierge MVP or Wizard of Oz test, and set pass marks before any data arrives.
 
 ## Before you start
 
@@ -24,148 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for first experiment design, 1-3 weeks for execution |
-| Outcome | You produce a complete experiment card with hypothesis, experiment type, success metric, threshold, timeline, and sample size, then execute it and generate a documented learning that directly informs your next product decision. |
-| Prerequisites | A written business hypothesis in testable form (see formulating-testable-hypotheses), Basic understanding of the Build-Measure-Learn loop from the Lean Startup method, A defined customer segment you can reach for testing, Familiarity with at least one landing page or prototyping tool |
+| Time to Learn | A few hours to learn the design, a few experiments to calibrate |
+| Outcome | You design experiments with a clear hypothesis, the cheapest adequate test, a behavioral metric and pass and fail criteria set in advance, so every result leads to a decision. |
+| Prerequisites | A ranked list of assumptions, access to target customers, a way to record behavior |
 | Part of | [Lean Startup](../../methods/lean-startup/METHOD.md) |
 
 ## Overview
 
-Validated learning experiments are the mechanism that turns assumptions into knowledge inside the [Lean Startup](https://tryhamster.com/methods/lean-startup) framework. Every new product or feature rests on a stack of unproven beliefs: customers have this problem, they will pay for a solution, they can find us, they will use the product the way we expect. Validated learning experiments isolate one belief at a time and expose it to real customer behavior under controlled, low-cost conditions. The artifact you produce is an experiment card that specifies the hypothesis, experiment type, success metric, threshold, sample size, and timeline. After execution, you append the result and the learning to that card, creating a permanent record your team can reference when making pivot-or-persevere decisions.
+Validated learning experiments are small, deliberate tests that turn one assumption into evidence. Eric Ries calls validated learning "a rigorous method for demonstrating progress when one is embedded in the soil of extreme uncertainty" ([The Lean Startup principles](https://theleanstartup.com/principles)). An experiment earns that name when it is designed before it runs: the hypothesis, the test, the metric and the criteria for passing and failing are all written down first. This skill covers how to design product experiments that meet that standard.
 
-The core problem this skill solves is premature building. Teams spend months coding features based on assumptions that a two-week experiment could have invalidated. A landing page test might cost a weekend and $200 in ad spend to learn whether anyone cares about a value proposition. A concierge MVP might take a week of manual service delivery to learn whether customers will actually pay. A Wizard of Oz test might take a simple prototype backed by manual fulfillment to learn whether a workflow feels right. Each of these is dramatically cheaper than writing production code, and each produces behavioral evidence rather than opinion.
+Hypothesis-driven product development depends on this discipline. Without it, a team launches something, looks at the numbers, and finds a story that fits what it already wanted to do. With it, the team agrees in advance what result would change its plan. The [Lean Startup method](../../methods/lean-startup/METHOD.md) explains how experiments feed the Build-Measure-Learn loop. This page covers the design of a single experiment.
 
-This skill sits between [formulating testable hypotheses](https://tryhamster.com/skills/formulating-testable-hypotheses) and [tracking innovation accounting metrics](https://tryhamster.com/skills/tracking-innovation-accounting-metrics) in the Lean Startup workflow. You arrive here with a written hypothesis and leave with a documented learning. If you skip this skill and jump straight to building, you risk spending your entire runway on a product nobody wants. If you do this skill well, every experiment either validates a critical assumption and gives you confidence to invest further, or invalidates it early enough that you can pivot cheaply. The success state is a team that treats every uncertain belief as a candidate for a small, fast experiment, and that accumulates a growing body of validated learnings that compound into a defensible product strategy.
+Lean startup experiments come in many forms. A landing page test measures whether people will sign up or pay for something described but not yet built. A concierge MVP delivers the service by hand to a few customers. A Wizard of Oz test presents what looks like a working product while people do the work behind the scenes. A split test compares two versions of a live product. Each answers a different kind of question at a different cost, and choosing well is half of the design.
+
+Good design also means knowing when to stop. Research summarized in [The Conversation](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214) cites a study finding that more validation is not necessarily better and a diminishing and negative relationship between the number of validated hypotheses and team success. Experiments are for the assumptions that matter. Testing everything wastes the time that the method is meant to save.
+
+The output is an experiment brief that anyone on the team can read: what we believe, how we will test it, what we will measure and what result counts as right. When the result comes in, the brief makes the decision almost mechanical.
 
 ## How It Works
 
-At its core, a validated learning experiment is a structured bet. You are wagering that a specific customer behavior will occur under specific conditions, and you are defining in advance what evidence would prove you right or wrong. The structure works because it forces precision. Vague beliefs like "customers will love this" cannot be tested. Precise predictions like "at least 8% of visitors to our landing page will click the sign-up button within 14 days of a 500-visitor paid traffic campaign" can be tested, measured, and falsified.
+Strategyzer's Test Card is a compact template for the brief. It has four lines: "We believe that" for the hypothesis, "To verify that, we will" for the test, "And measure" for the metric, and "We are right if" for the criteria. It also asks the team to rate how critical the hypothesis is, the test cost and the data reliability ([Strategyzer Test Card](https://assets.strategyzer.com/assets/resources/the-test-card.pdf)). Those three ratings are the core trade-off in experiment design: test the critical assumptions first, and prefer tests that give reliable data for little cost.
 
-The experiment design rests on four interlocking decisions. First, you choose what to test. The [Lean Startup](https://tryhamster.com/methods/lean-startup) method distinguishes between value hypotheses (will customers find this valuable?) and growth hypotheses (will usage grow?). Early-stage teams almost always need to test value first. Picking the right hypothesis to test next is itself a judgment call. The rule of thumb is to test the assumption that, if wrong, would most change your plan. This is sometimes called the "riskiest assumption" or the "leap of faith" assumption.
+The test type follows from the question. Ries plans in reverse, starting from what the team needs to learn, then what to measure, then what to build ([Ries on planning in reverse](https://www.goodreads.com/quotes/7179811-although-we-write-the-feedback-loop-as-build-measure-learn-because-the)). A demand question can often be answered with a landing page test MVP or an ad smoke test; Ries notes that "a simple AdWords smoke test" would have revealed how bad one feature concept was ([Ries, MVP guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)). A question about whether the service creates value needs customers to actually receive it, which a concierge MVP or a Wizard of Oz test provides.
 
-Second, you choose the experiment type. The options range from zero-product tests (landing pages, ad campaigns, explainer videos with a call to action) to partially manual products (concierge MVPs where you deliver the service by hand, Wizard of Oz tests where the customer sees a product interface but a human performs the back-end work) to stripped-down functional products (single-feature MVPs). The right choice depends on what evidence you need. If you need to learn whether customers want the outcome, a landing page or ad test may suffice. If you need to learn whether they will pay, you need a transaction. If you need to learn whether the workflow works, you need them to use something.
+The concierge MVP and the Wizard of Oz test differ in what the customer knows. OpenClassrooms describes the concierge MVP as "manually helping your users accomplish their goals," so the customer sees the human effort, while a Wizard of Oz MVP "gives a certain impression of your solution from the outside" while the inner workings are something else ([OpenClassrooms, 4 types of MVP](https://openclassrooms.com/en/courses/4544561-learn-about-lean-startup/4703206-discover-the-4-types-of-minimum-viable-product)). The Wizard of Oz name comes from human-computer interaction research, where John F. Kelley used it for studies in which a hidden person operates a system the participant believes is automated ([Wikipedia, Wizard of Oz experiment](https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment)).
 
-Third, you define the success metric and threshold before you start. This is the step teams most often skip, and it is the step that makes the entire framework work. Without a pre-committed threshold, you will rationalize any result as positive. "Only 2% signed up, but those 2% were really enthusiastic" is not validated learning. It is motivated reasoning. The threshold should be informed by your business model. If your unit economics require a 5% conversion rate to break even, your threshold for a landing page test should be at or near 5%.
+Measure behavior. Sign-ups, payments, repeat use and referrals are actions with a cost to the customer. Survey answers about future intentions cost nothing and are much weaker evidence. When comparing versions, a split test is the most direct design, but it must run both versions at the same time with random assignment. The [Wikipedia article on lean startup](https://en.wikipedia.org/wiki/Lean_startup) explains that a serial test, with one version this week and another next week, lets outside events change behavior between the two periods.
 
-Fourth, you define the sample size and duration needed for the result to be trustworthy. A landing page test with 30 visitors tells you almost nothing. A landing page test with 500 visitors and a 14-day window captures weekday and weekend behavior and provides enough signal to distinguish a 3% conversion rate from an 8% one. You do not need a PhD in statistics to get this right. For most early-stage experiments, a few hundred data points and a clear threshold will produce actionable learning. The key insight is that the experiment design is more important than the analysis. If you design the experiment well, the analysis is often a simple comparison: did the metric pass the threshold, or not?
+Criteria are set before data arrives. Tristan Kromer recommends that each criterion name a specific impact, a timeframe and a probability level, and that criteria be written before any data is collected to counter cognitive bias ([Kromer](https://kromatic.com/blog/how-to-make-pivot-or-persevere-decisions-in-your-innovation-accounting/)). Write both a pass line and a fail line. A result between them is a legitimate outcome that calls for a sharper follow-up test.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Select the Riskiest Assumption
+### Step 1: Pick the assumption worth testing
 
-Review your current set of business hypotheses. If you have completed the [formulating testable hypotheses](https://tryhamster.com/skills/formulating-testable-hypotheses) skill, you should have a list of written hypotheses. Rank them by two dimensions: how uncertain you are about each one, and how much damage it would cause if you are wrong. The assumption that scores highest on both dimensions is your riskiest assumption and should be tested first.
+Start from the ranked list of leap-of-faith assumptions and choose one that is critical to the business and weakly supported by evidence. Skip assumptions you could not act on whatever the result. Write down what decision the experiment will inform, such as whether to build a feature or target a segment. If no decision depends on the answer, do not run the experiment.
 
-Write a single sentence naming the assumption you will test. " If the answer is no, that is your riskiest assumption.
+### Step 2: Write the hypothesis
 
-> **Pro tip:** Teams often gravitate toward testing assumptions they are already fairly confident about, because it feels safe. Resist this. The value of an experiment is proportional to the uncertainty it resolves. Testing what you already believe wastes time and money.
+State the assumption as a falsifiable claim about a specific customer and a specific behavior, using the [lean startup hypothesis template](../formulating-testable-hypotheses/SKILL.md). Name who, what they will do and in what setting. Avoid words like "like" or "interested", which cannot be observed. The hypothesis should make a clear prediction that a result could contradict.
 
-### Step 2: Step 2: Write the Hypothesis in Falsifiable Form
+### Step 3: Choose the cheapest adequate test
 
-Transform the assumption into a prediction with a specific metric and threshold. " The threshold should connect to your business model. If you need a 5% trial-to-paid conversion and you expect 50% of trial users to convert, you need at least 10% of landing page visitors to start a trial. Adjust accordingly.
+List the test types that could produce evidence on the hypothesis: interviews, landing page test, smoke test, concierge MVP, Wizard of Oz test, prototype test or split test. Rate each on cost and on how reliable its data would be, as the [Test Card](https://assets.strategyzer.com/assets/resources/the-test-card.pdf) suggests. Pick the cheapest test whose data would be strong enough to change your decision. Move to more expensive tests only once cheaper ones have passed.
 
-If you do not yet have a business model, use comparable benchmarks from your industry or adjacent products. The key discipline is writing the threshold before you see any data.
+### Step 4: Define the metric and the sample
 
-> **Pro tip:** Write the threshold on a shared document or whiteboard that the whole team can see. This creates social accountability and prevents post-hoc rationalization.
+Choose one primary behavioral metric that directly reflects the hypothesis, plus any guardrail metrics that would reveal a misleading result. Define the audience, how they will be recruited and how many you need to see a meaningful difference. If you are comparing versions, randomize who sees which, and run both at once. Write down how each customer will be counted.
 
-### Step 3: Step 3: Choose the Experiment Type
+### Step 5: Set pass and fail criteria in advance
 
-Match your experiment type to the evidence you need. "), use a landing page test, a pre-order page, or a crowdfunding campaign. If you need to test willingness to pay, you need a transaction, so consider a concierge MVP where you deliver the service manually, or a Wizard of Oz test where the front end looks real but you fulfill manually behind the scenes. If you need to test usability or workflow fit, build a single-feature MVP or a clickable prototype and observe users.
+Write a pass line and a fail line for the primary metric, each with a timeframe. State what you will do in each case, and what you will do if the result falls between the lines. Share the criteria with the people who will make the decision before the test starts. This is the step that makes the learning validated.
 
-The cheapest experiment that can falsify your hypothesis is the right one. Do not build a concierge MVP if a landing page test would answer your question. Do not build a functional MVP if a concierge MVP would suffice. Each experiment type has a cost in time, money, and effort.
+### Step 6: Run the test without moving the goalposts
 
-Map that cost explicitly and compare it to the value of the learning you expect to gain.
+Launch to the defined audience and monitor that data is being recorded. Do not change the test or the criteria mid-run. If something breaks the test, stop, fix it and restart with a fresh sample. Keep notes on anything unexpected, since surprises are often worth their own experiment.
 
-> **Pro tip:** A useful heuristic: if your hypothesis is about whether people want the outcome, test with a page. If it is about whether they will pay, test with a transaction. If it is about whether the experience works, test with a prototype they can use.
+### Step 7: Read the result and record the learning
 
-### Step 4: Step 4: Define the Metric, Threshold, Sample Size, and Duration
-
-Document four numbers on your experiment card. The metric is the specific behavior you will measure, such as click-through rate, sign-up rate, purchase rate, or retention rate at day 7. The threshold is the minimum value that would validate your hypothesis. The sample size is the number of people who need to be exposed to the experiment for the result to be trustworthy.
-
-For landing page tests, 300-500 unique visitors is a reasonable minimum. For concierge MVPs, 10-20 paying customers may be enough for a qualitative signal. The duration is the calendar time you will run the experiment before evaluating results. Set it long enough to capture natural variation (at least one full week for consumer products, two weeks for B2B).
-
-Write all four numbers down before you launch anything.
-
-> **Pro tip:** If you are unsure about sample size, use this shortcut: for a binary outcome like click/no-click, you need roughly 400 observations to distinguish a true 5% rate from a true 10% rate with reasonable confidence. If you are testing something with smaller expected differences, you need more observations.
-
-### Step 5: Step 5: Build the Minimum Experiment Artifact
-
-Create only what is necessary to run the experiment. For a landing page test, this means a single page with a clear value proposition, a call-to-action button, and a way to track clicks or sign-ups. Use a no-code tool or a simple HTML page. Do not design a logo, build a blog, or write an about page.
-
-For a concierge MVP, this means a way to accept customers (an email address, a booking link, a simple form) and a manual process for delivering the service. For a Wizard of Oz test, this means a front-end interface that looks functional and a plan for how you will manually fulfill each request behind the scenes. The artifact should take hours or days to create, not weeks. If it takes longer, you are over-building.
-
-> **Pro tip:** Set a hard time cap for building the experiment artifact. Two days for a landing page test. One week for a concierge or Wizard of Oz setup. If you are not done by the deadline, ship what you have. Perfection in the experiment artifact is a form of procrastination.
-
-### Step 6: Step 6: Plan Your Traffic or Recruitment Strategy
-
-An experiment with no participants produces no learning. Before you launch, define exactly how you will get people into the experiment. For landing page tests, common sources include paid social ads (Facebook, Instagram, LinkedIn), Google search ads for specific keywords, posts in relevant online communities, or direct outreach to your network. Calculate the budget needed to hit your target sample size.
-
-50, budget $750. For concierge MVPs, plan your outreach sequence: who you will contact, through what channel, with what message, and how many conversations you need to start to get your target number of participants. For all experiment types, identify whether your traffic source introduces bias and note it on your experiment card.
-
-> **Pro tip:** Paid traffic is faster and more controllable than organic. If speed matters, invest the $200-$800 to get clean data in two weeks rather than spending two months hoping people find your page organically.
-
-### Step 7: Step 7: Launch and Resist the Urge to Tinker
-
-Start the experiment and let it run for the full planned duration. Do not check results hourly and make changes based on early data. Early results are noisy and unreliable. If you change the headline after 50 visitors because the conversion rate looks low, you have invalidated your experiment and will need to start over.
-
-Monitor only for technical issues: is the page loading, are the tracking pixels firing, are ads being served? If something is technically broken, fix it and restart the clock. Otherwise, hands off. Record the launch date, any technical issues encountered, and any deviations from the plan on your experiment card.
-
-> **Pro tip:** Set a calendar reminder for the evaluation date and close the analytics dashboard until then. Seriously. The single most common way teams sabotage their own experiments is by peeking at results early and reacting emotionally.
-
-### Step 8: Step 8: Evaluate Results Against Your Pre-Committed Threshold
-
-When the planned duration has elapsed and you have reached your target sample size, compare the actual metric to your threshold. This is a binary evaluation: pass or fail. If your threshold was 8% sign-up rate and you observed 11%, the hypothesis is validated. If you observed 4%, it is invalidated.
-
-5%, it is invalidated, even though it is close. The threshold exists to prevent ambiguity. , several users emailed asking when the product would launch, or all drop-offs happened at the pricing step).
-
-> **Pro tip:** If the result is very close to the threshold (within 1-2 percentage points), note this as a "weak signal" and consider running a follow-up experiment with a larger sample size before making a major decision. Close does not mean pass, but it does mean the idea is not dead.
-
-### Step 9: Step 9: Document the Learning and Decide on Next Action
-
-" Then choose one of three actions. If the hypothesis was validated, move to the next riskiest assumption and design a new experiment. If the hypothesis was invalidated, decide whether to pivot (change the hypothesis, audience, or solution) or to kill the idea. If the signal was ambiguous, design a follow-up experiment with a larger sample or a different experiment type.
-
-Share the experiment card with your team and add it to your learning repository. This card feeds directly into [innovation accounting](https://tryhamster.com/skills/tracking-innovation-accounting-metrics) and [pivot-or-persevere decisions](https://tryhamster.com/skills/defining-pivot-or-persevere-decisions).
-
-> **Pro tip:** Negative results are not failures. They are the most valuable learnings because they prevent you from investing months of effort into something that would not have worked. Celebrate invalidations as money and time saved.
+Compare the result with the pre-set criteria and record whether the hypothesis passed, failed or landed between. Add what customers said or did that explains the result. Update the assumption list and pick the next experiment, or bring the evidence to the next [pivot or persevere decision](../defining-pivot-or-persevere-decisions/SKILL.md).
 
 ## Best Practices
 
-- Test one variable per experiment. If you change the value proposition and the price and the audience simultaneously, you cannot know which variable caused the result. Isolate the single most uncertain element and hold everything else constant. Teams that bundle multiple variables into one experiment end up with data they cannot interpret and decisions they cannot justify.
-- Define success criteria before collecting data and write them where the whole team can see them. Pre-commitment prevents the most common failure mode in experimentation: post-hoc rationalization. If you wait until results are in to decide what 'good' looks like, you will unconsciously set the bar wherever the data landed. Written, visible thresholds create accountability.
-- Spend 80% of your design time on the hypothesis and success criteria, and 20% on the artifact. The experiment card is the primary deliverable, not the landing page or the prototype. A perfectly designed landing page testing a vague hypothesis produces no learning. A rough landing page testing a precise hypothesis produces clear learning.
-
-The intellectual work of framing the hypothesis correctly is where most of the value lives.
-- Run experiments in sequence, not in parallel, unless you have enough traffic or users to support multiple simultaneous tests without contamination. Parallel experiments with overlapping audiences create confounding effects. Sequential experiments build on each other and create a clear learning narrative. The exception is when you have large, segmentable audiences and the experiments target completely different assumptions.
-- Time-box every experiment with a hard end date. Without a deadline, experiments drift indefinitely as teams wait for 'more data' or 'better results.' Two weeks is a good default for most digital experiments. If you cannot reach your target sample size in two weeks, your traffic strategy needs work, or you need to lower your sample size requirements and accept more uncertainty.
-- Keep a shared experiment log or repository that the whole team can access. Each experiment card should include the hypothesis, experiment type, success criteria, results, and learning statement. Over time, this log becomes a strategic asset. It prevents re-testing things you have already learned, informs pivot-or-persevere discussions with evidence, and helps new team members understand why the product looks the way it does.
-- Match experiment fidelity to the stage of your idea. Very early ideas deserve the cheapest possible tests: a landing page, an ad campaign, a conversation. Only increase fidelity (concierge MVP, Wizard of Oz, functional prototype) after the lower-fidelity test has produced a positive signal. Teams that jump to high-fidelity experiments too early waste resources and develop emotional attachment to artifacts that should be disposable.
+- Test one assumption per experiment. When a test covers two, a failure cannot tell you which one was wrong.
+- Prefer behavior that costs the customer something, such as time, money or reputation. It predicts future behavior far better than stated intent.
+- Run split tests in parallel with random assignment. A serial comparison mixes the effect of your change with whatever else changed that week, as the [Wikipedia summary](https://en.wikipedia.org/wiki/Lean_startup) explains.
+- Start cheap and escalate. A landing page or smoke test can kill a weak idea before a concierge MVP is worth the effort.
+- Write the brief where the whole team can see it. Shared criteria make it harder to reinterpret a result after the fact.
+- Stop testing assumptions that no longer matter. The research cited in [The Conversation](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214) suggests over-validation can hurt.
 
 ## Common Mistakes
 
-- **Setting the success threshold after seeing the results** — This is the most damaging mistake in experiment design because it completely undermines the purpose of the experiment. It typically happens when teams launch without a written threshold, then look at the data and decide that whatever they observed is 'pretty good.' The signal to watch for is any sentence like 'Well, 3% is not bad for a first test' when no one defined what 'bad' meant beforehand. The fix is simple: write the threshold on the experiment card before you launch, share it with at least one other person, and do not change it after the experiment starts.
-- **Building too much before testing** — Teams spend weeks building a polished MVP when a two-day landing page test would have answered their question. This happens because building feels productive while designing experiments feels abstract. The warning sign is when more than half of your experiment timeline is spent on building the artifact rather than on hypothesis formulation, traffic planning, and analysis. Force yourself to ask: 'What is the cheapest artifact that could falsify this hypothesis?' If the answer is a landing page or a manual service, do not write code.
-- **Treating qualitative feedback as validated learning** — Asking five friends whether they like your idea and hearing 'yes' is not a validated learning experiment. People say what they think you want to hear, especially people who know you. ' Validated learning requires measuring behavior, not opinions. A click, a sign-up, a payment, a return visit.
-
-Design your experiment to capture what people do, not what they say they would do.
-- **Insufficient sample size producing meaningless results** — Running a landing page test with 40 visitors and concluding that the 10% conversion rate validates demand is statistically reckless. With 40 visitors, a true 5% rate and a true 15% rate are nearly indistinguishable. This mistake is common among teams that are impatient or have limited budgets. The signal is any experiment where the total number of observations is below 100 for a quantitative test.
-
-Either invest more in traffic to reach a meaningful sample, or switch to a qualitative experiment type (like a concierge MVP with 10-15 customers) where the depth of each observation compensates for the small number.
-- **Changing the experiment mid-flight based on early results** — A team sees low conversion after three days and changes the headline, resets nothing, and then reports the combined result. This produces data that is uninterpretable because two different treatments are blended into one result. The psychological driver is anxiety: the experiment is not going well and the team feels compelled to 'do something.' The fix is a strict rule: if you change anything about the experiment, you restart the clock and the sample count. Better yet, commit to the full duration upfront and save your improvement ideas for the next experiment iteration.
-- **Only testing the happy path and ignoring negative signals** — Some teams design experiments that can only produce positive results. For example, a landing page test that counts email sign-ups but does not track bounce rate or time on page. If 95% of visitors leave within 3 seconds, the 5% who sign up may be noise, not signal. Design experiments that capture both the target behavior and the surrounding context.
-
-Track not just conversions but also drop-off points, time spent, and any qualitative signals (emails, support questions, social comments). A complete picture prevents false confidence.
+- **Setting the criteria after seeing the data**: Any result can be framed as a win once you know it. Write pass and fail lines before launch.
+- **Measuring opinions**: Survey answers about future use feel like data but rarely predict it. Measure what people do.
+- **Running tests too small to read**: A handful of visitors cannot distinguish a real effect from noise. Size the audience to the difference you need to detect, or pick a test with a stronger signal.
+- **Confusing a concierge test with a Wizard of Oz test**: In a concierge test the customer knows a person is helping, so it tests the value of the result. To learn how customers react to what looks like the finished, automated product, run a Wizard of Oz test instead.
+- **Testing what is easy instead of what is risky**: Button colors are easy to test and rarely decide the fate of a product. Start with the assumption that would hurt most to get wrong.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/lean-startup/METHOD.md) — Lean Startup
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/lean-startup/METHOD.md): Lean Startup
 
 ## Related Skills
 
-- [Tracking Innovation Accounting Metrics](../tracking-innovation-accounting-metrics/SKILL.md)
-- [Formulating Testable Business Hypotheses](../formulating-testable-hypotheses/SKILL.md)
-- [Selecting the Right MVP Type for Your Idea](../selecting-mvp-types-and-formats/SKILL.md)
-- [Building a Minimum Viable Product (MVP)](../building-minimum-viable-products/SKILL.md)
-- [Making Pivot-or-Persevere Decisions](../defining-pivot-or-persevere-decisions/SKILL.md)
-- [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
-- [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
+- [Lean Startup Hypothesis Template: Testable Hypotheses](../formulating-testable-hypotheses/SKILL.md)
+- [Types of MVP: How to Choose the Right Format](../selecting-mvp-types-and-formats/SKILL.md)
+- [How to Build a Minimum Viable Product (MVP)](../building-minimum-viable-products/SKILL.md)
+- [Running the Build-Measure-Learn Loop](../running-build-measure-learn-cycles/SKILL.md)
+- [Innovation Accounting Metrics: Tracking Real Progress](../tracking-innovation-accounting-metrics/SKILL.md)
+- [Pivot or Persevere: When to Pivot a Startup](../defining-pivot-or-persevere-decisions/SKILL.md)
+- [Customer Discovery Interview Questions and Technique](../conducting-customer-discovery-interviews/SKILL.md)
+
+## Sources
+
+- [The Lean Startup: Principles](https://theleanstartup.com/principles)
+- [Strategyzer: The Test Card](https://assets.strategyzer.com/assets/resources/the-test-card.pdf)
+- [Eric Ries quote on planning the loop in reverse](https://www.goodreads.com/quotes/7179811-although-we-write-the-feedback-loop-as-build-measure-learn-because-the)
+- [Eric Ries: Minimum Viable Product, a guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)
+- [OpenClassrooms: The 4 types of minimum viable product](https://openclassrooms.com/en/courses/4544561-learn-about-lean-startup/4703206-discover-the-4-types-of-minimum-viable-product)
+- [Wikipedia: Wizard of Oz experiment](https://en.wikipedia.org/wiki/Wizard_of_Oz_experiment)
+- [Wikipedia: Lean startup](https://en.wikipedia.org/wiki/Lean_startup)
+- [Tristan Kromer: Pivot or persevere decision](https://kromatic.com/blog/how-to-make-pivot-or-persevere-decisions-in-your-innovation-accounting/)
+- [Ratinho and Bruneel: Is the lean start-up method really universally applicable?](https://theconversation.com/is-the-lean-start-up-method-really-universally-applicable-119214)

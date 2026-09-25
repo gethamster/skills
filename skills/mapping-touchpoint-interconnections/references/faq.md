@@ -1,37 +1,21 @@
 # FAQ: Mapping Touchpoint Interconnections Across Journeys
 
-## How do I handle touchpoints that serve completely different purposes in different journeys?
+## How is this different from a single journey map?
 
-Document the touchpoint once in your inventory but annotate its role per journey in the relationship matrix. For example, a pricing page serves an evaluation role in the acquisition journey but a comparison role in the renewal journey. Use the cell in your matrix to capture the role or purpose, not just the presence. When scoring for optimization priority, consider whether the touchpoint needs journey-specific variants or whether a single design can serve all roles.
+A journey map shows the touchpoints in one journey, in order. An interconnection map looks across all journeys to show which touchpoints are shared, where journeys hand off, and which systems sit behind several touchpoints. It answers questions a single map cannot, such as which journeys a change to one touchpoint will affect. The two work together: the journey maps supply the touchpoints, and the interconnection map connects them.
 
-If the purposes are fundamentally incompatible, you may need to split the touchpoint into journey-specific versions.
+## What is a shared touchpoint?
 
-## How long should the initial customer journey touchpoint mapping exercise take?
+It is a touchpoint that appears in more than one journey, such as a help center, a contact center, a billing statement, or a login page. A change to a shared touchpoint affects every journey that uses it, for better or worse. A problem there hurts several journeys at once, and a fix helps several journeys at once. The touchpoint-by-journey matrix is the easiest way to find them.
 
-For a small organization with 3-5 journeys and under 30 touchpoints, expect 3-5 hours of focused work including inventory extraction, normalization, matrix building, and initial visualization. For a large organization with 15 or more journeys and over 100 touchpoints, expect a 2-day workshop with representatives from each journey-owning team, followed by 1-2 weeks of refinement and validation. The time investment scales with the number of journey owners you need to coordinate, not just the number of touchpoints.
+## Do we need service blueprints to do this?
 
-## Should I map touchpoint interconnections before or after structuring journey hierarchy levels?
+No, but they help. Blueprints already show the backstage people, props, and processes behind touchpoints, so they speed up the dependency step. Where no blueprint exists, short interviews with the teams that run a touchpoint usually reveal its main systems. Focus that effort on the most shared touchpoints first.
 
-Structure your journey hierarchy levels first. The [Ecosystem Journey Framework](https://tryhamster.com/methods/ecosystem-journey-framework) uses L0 through L3 levels to organize journeys from lifecycle stages down to micro-interactions. Knowing the hierarchy helps you decide the right granularity for touchpoint mapping. If you map interconnections without a hierarchy, you will likely mix granularity levels, mapping some touchpoints at the L1 journey level and others at the L3 micro-interaction level.
+## What tool should we use?
 
-See [Structuring Journey Hierarchy Levels](https://tryhamster.com/skills/structuring-journey-hierarchy-levels) for the prerequisite exercise.
+A spreadsheet can hold the register, the matrix, and the handoff list for a first version. Larger portfolios often move to a journey management platform that can link touchpoints across maps. Large network diagrams tend to be hard to maintain whatever the tool. Choose whatever lets you answer the change-impact question quickly.
 
-## What tools work best for building and maintaining an interconnection map?
+## How often should the interconnection map be updated?
 
-Use whatever tool your team already collaborates in. A Google Sheet or Excel matrix works for any size ecosystem and is the most maintainable option because it requires no special skills. Miro or FigJam boards work well for visual representations when the audience prefers spatial layouts. For large enterprises, dedicated journey management platforms like TheyDo or Smaply can handle scale and versioning.
-
-The tool matters far less than the discipline of updating it. A well-maintained spreadsheet beats a beautiful but abandoned Miro board.
-
-## How do I map touchpoints that exist in partner or third-party systems I don't control?
-
-Include them in your inventory with a clear "external" or "partner" ownership tag. The customer does not distinguish between touchpoints you control and touchpoints your partners control. If your product integrates with a partner's checkout system, that checkout experience is a touchpoint in your customer's journey regardless of who owns the code. Document what data you send to the partner touchpoint, what data you receive back, and what your fallback is if the partner system changes.
-
-Flag these as higher-risk dependencies in your channel analysis because you cannot guarantee their stability.
-
-## Why does my interconnection map keep getting outdated within weeks of creation?
-
-The three most common causes are: no assigned owner for map maintenance, no trigger for updates when touchpoints change, and building the map in a tool that is separate from where teams do their actual work. Fix ownership by naming a specific person, not a team, as the map maintainer. Fix the trigger problem by requiring any touchpoint change request to include an impact assessment referencing the map. Fix the tool problem by embedding the map (or a link to it) in the systems teams already use daily, whether that is a project management tool, a CRM, or a shared wiki.
-
-## How many touchpoints is too many to map effectively?
-
-There is no hard limit, but visualization becomes impractical above approximately 60 touchpoints in a single diagram. For ecosystems with more than 60 touchpoints, use a filterable matrix as your source of truth and create focused visual maps for specific subsets, such as all touchpoints in the onboarding stage across journeys, or all touchpoints in the email channel. The key constraint is not the total number but the number visible at one time. If a stakeholder cannot understand the map in under 5 minutes, it needs to be filtered or layered.
+Update it whenever a journey is remapped, a touchpoint is added or retired, or a backstage system changes. Review handoffs on a regular rhythm with the owners on both sides. Date every change so readers know how current each part is. A map that is not updated gives false confidence during change reviews.

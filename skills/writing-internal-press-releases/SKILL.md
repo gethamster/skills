@@ -1,15 +1,20 @@
 ---
-name: writing-internal-press-releases
-description: "This skill teaches you how to draft a concise, customer-centric internal press release that forces clarity about who the customer is, what problem they face, and why your proposed solution matters, all before any code is written or design work begins."
+name: "writing-internal-press-releases"
+description: "How to write an internal press release: the one-page working backwards press release that opens a PR/FAQ document before anything is built."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: working-backwards
+  method: "working-backwards"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Writing Internal Press Releases for Product Concepts
+# Writing an Internal Press Release for a Product Idea
 
-> This skill teaches you how to draft a concise, customer-centric internal press release that forces clarity about who the customer is, what problem they face, and why your proposed solution matters, all before any code is written or design work begins.
+> How to write an internal press release: the one-page working backwards press release that opens a PR/FAQ document before anything is built.
 
 ## Before you start
 
@@ -23,153 +28,111 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 3-5 hours across multiple drafts |
-| Outcome | You produce a one-page internal press release that any person in your organization can read and immediately understand the target customer, the problem being solved, and the solution's key benefits, enabling aligned decision-making before committing engineering resources. |
-| Prerequisites | A clearly identified customer segment you intend to serve, A hypothesis about the specific problem or unmet need for that customer, Basic familiarity with the Working Backwards framework and the role of the PR/FAQ document, Access to at least one stakeholder or peer who can review drafts critically |
+| Difficulty | Beginner |
+| Time to Learn | An afternoon for the first draft, several rounds to get good |
+| Outcome | You can write a one-page internal press release that names a specific customer, states their problem, and shows why the product is meaningfully better than what they use today. |
+| Prerequisites | A product idea, some evidence about the customer's problem, a reviewer willing to be blunt |
 | Part of | [Working Backwards](../../methods/working-backwards/METHOD.md) |
 
 ## Overview
 
-An internal press release is a one-page document written as if your product has already launched and a journalist is announcing it to the world. It is the centerpiece of the [Working Backwards](https://tryhamster.com/methods/working-backwards) method. Unlike a product requirements document or a pitch deck, the press release is written from the customer's perspective. It names who the customer is, describes the problem they struggle with today, and explains how the product solves that problem in plain, jargon-free language. The format forces you to articulate the end state of value delivery before anyone discusses technical architecture, sprint plans, or resource allocation.
+An internal press release is a one-page announcement of a product that does not exist yet, written as if it launched today. It is the first half of the PR/FAQ document in Amazon's [Working Backwards method](../../methods/working-backwards/METHOD.md), and the rest of the process depends on it. The FAQ answers questions the press release raises, the review meeting critiques it, and the go or no-go decision is made on it. Nobody outside the company reads it. The imagined reader is the customer the product is for.
 
-The specific artifact you produce is a document between 500 and 1,000 words, structured with a headline, a subheadline, a dateline paragraph, three to four body paragraphs, and a fictional customer quote. This document becomes the anchor for all downstream decisions. When a design question arises, the team checks the press release. When scope creep threatens, the team re-reads the press release. When leadership asks what the project is about, you hand them the press release. It is not a throwaway exercise. Teams that practice this skill rigorously report that the press release saves weeks of misaligned effort because disagreements about vision surface on paper instead of in code reviews.
+Colin Bryar and Bill Carr, the former Amazon executives who wrote the book on the process, set the length: the press release is "a few paragraphs, always less than one page" ([Amazon's excerpt from Working Backwards](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). The limit is deliberate. A page leaves room for the customer, the problem, the solution and the reason to care, and nothing else. It also forces the author to decide which of the product's many possible benefits is the one that matters.
 
-Writing an effective press release is harder than it looks. The constraint of plain language eliminates the hiding spots that technical jargon provides. You cannot write "leveraging cutting-edge AI" and call it a benefit. You must instead say something like "customers get personalized recommendations in under two seconds without leaving the checkout page." This precision is exactly the point. If you cannot articulate the benefit in a sentence a customer would actually care about, you do not yet understand the product well enough to build it. The press release is a test of understanding disguised as a writing exercise, and among the most underrated product manager skills in modern practice.
+Writing the working backwards press release first changes what the author thinks about. A normal launch announcement is written at the end, when the product is fixed. Written at the start, it pulls attention away from current capabilities, competitors and the P&L and onto a single question: would the customer who reads this want the product? Bryar and Carr call the press release "a forcing function to ensure that the creator of the new product idea is focused on the customer" ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)).
 
-Success looks like this: a colleague in a completely different department reads your press release cold and can answer three questions correctly: Who is this for? What problem does it solve? Why would someone care? If they can, the document is working. If they cannot, you iterate.
+This skill is useful for any customer-centric product development work where the team needs to agree on a direction before investing. The draft is cheap. The authors say a first draft should take only a few hours, so it is realistic to write press releases for several competing ideas and compare them. A weak press release is useful too: if the author cannot make the customer benefit compelling on one page, that is early evidence the idea needs work.
+
+The output of this skill is one page. The FAQ that follows it is covered in [Drafting the FAQ Section of a PR/FAQ](../drafting-frequently-asked-questions-documents/SKILL.md).
 
 ## How It Works
 
-The internal press release works because it exploits a specific cognitive trick: writing in the format of a finished announcement forces you to commit to concrete claims about value. When you write "Company X today announced Product Y, which helps [customer] do [thing] 50% faster," you have made a testable statement. That statement can be debated, verified, and refined. Compare this to a typical product brief that says "We will build a tool that improves efficiency." The brief is unfalsifiable. The press release is not.
+The press release follows a fixed structure. The template Bryar and Carr publish lists the parts in order ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)):
 
-The structure of the document maps directly to the decisions a product team must make. The headline answers "What is the single most important benefit?" The subheadline answers "Who is this for and why should they care?" The opening paragraph answers "What exactly does this product do?" The body paragraphs answer "How does it work from the customer's perspective?" The customer quote answers "What does the emotional payoff feel like?" The closing paragraph answers "How does someone get started?" By filling in each section, you are sequentially resolving the questions that, left unanswered, cause teams to build the wrong thing.
+- **Heading**: the product's name, phrased so the target customer would understand it.
+- **Subheading**: one sentence naming the customer and the benefit they get.
+- **Summary paragraph**: opens with the city, the media outlet and a proposed launch date, then summarizes the product and its benefits.
+- **Problem paragraph**: the problem the product solves, written from the customer's point of view.
+- **Solution paragraph or paragraphs**: how the product solves that problem, and how it differs from what customers use today.
+- **Quotes and getting started**: one quote from a company spokesperson, one from a hypothetical customer, and a short note on how to get started.
 
-The press release also functions as an alignment test. When you share the draft with stakeholders, disagreements become visible immediately. One executive may read the headline and say, "That is not the most important benefit." Another may read the customer quote and say, "Our actual customers would never describe their problem that way." These objections are enormously valuable. They surface misalignment that would otherwise remain hidden until much later in the development cycle, when changing direction is expensive.
+Two parts carry most of the weight. The subheading forces a choice of customer, and the template is direct about it: "If you think your product is for everyone, you are mistaken." The solution paragraph forces a comparison. The template suggests a sentence of the form "Today, customers with this problem use x, y, or z products to meet their needs," followed by where those products fall short and how the new product addresses the gap. If the new product solves the same problem in roughly the same way, the authors say to go back to the drawing board.
 
-Within the [Working Backwards](https://tryhamster.com/methods/working-backwards) framework, the press release is the first half of the PR/FAQ document. The second half, the [FAQ section](https://tryhamster.com/skills/drafting-frequently-asked-questions-documents), addresses the hard questions the press release deliberately avoids. The press release paints the aspirational picture. The FAQ pressure-tests it. Together, they form a complete proposal that can be evaluated by leadership without requiring a prototype.
+The launch date should mean something. The template asks for the date you actually expect to launch, rough in early drafts and firm by the last one. A date that is obviously invented tells reviewers the author has not thought about delivery.
 
-One important nuance: the press release is not a marketing document. It will never be published externally. Its audience is internal decision-makers. This means you do not need to worry about brand voice, legal compliance, or competitive positioning. You need to worry about clarity. The best internal press releases read like explanations to a smart friend who knows nothing about your industry. They avoid acronyms, skip buzzwords, and use specific numbers wherever possible. The constraint of writing for an uninformed reader is what makes the exercise so effective at exposing fuzzy thinking.
+The quotes do different jobs. The spokesperson quote says why the company built the product. The customer quote says what changed in the customer's life, in words a real customer might use. Both are hypothetical, and a reader should be able to tell that. Their value is that writing them exposes whether the author can imagine a customer caring.
+
+Reviewers then test the draft. At Amazon, a common executive question when reviewing the features in a press release is "so what?", and if the product is not meaningfully better (faster, easier, cheaper) than what is already out there, the authors say it isn't worth building ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). [ProductPlan's summary of the method](https://www.productplan.com/glossary/working-backward-amazon-method/) cites former Amazon director Ian McAllister on spending a lot of time revising and cutting the release, and adds that a draft the team finds uninspiring is a good indicator the idea lacks something.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define the target customer in one sentence
+### Step 1: Name the customer
 
-Before you write a single word of the press release, write down a one-sentence description of the specific customer you are building for. This is not a market segment or a demographic bucket. It is a description of a real type of person with a real daily context. " The description should include who they are, what context they operate in, and a hint at the friction they experience.
+Write one sentence describing the customer segment: who they are, what situation they are in, and what they are trying to get done. Make it narrow enough that a colleague could decide whether a given person belongs to it. Pull the details from evidence you have, such as support tickets, sales calls, reviews or interviews. If you find yourself writing "businesses" or "users" with no qualifier, stop and pick the segment whose problem is sharpest.
 
-Write this on a separate sheet of paper or at the top of your document as a reference line. Every sentence you write afterward must serve this person. If a sentence would not matter to this customer, cut it.
+### Step 2: Write the heading and subheading
 
-> **Pro tip:** Test your customer description by asking: could I find five real people who match this description and interview them this week? If the description is too vague to identify real individuals, it is too vague to write a press release for.
+Name the product in words the customer would understand, and keep internal code names out of it. Then write a one-sentence subheading that names the customer and the benefit they get. The subheading is the hardest sentence in the document, because it commits you to one customer and one main benefit. Write several versions and keep the one a customer would most want to read on.
 
-### Step 2: Step 2: Write the headline as a customer benefit
+### Step 3: Write the summary paragraph
 
-The headline is the single most important sentence in the document. It should communicate the primary benefit to the customer in plain language, not announce a feature or use your company's internal terminology. A useful formula is: [Company Name] Launches [Product Name], Helping [Customer] [Achieve Specific Outcome]. " The headline must pass the "so what" test.
+Open with a city, a media outlet and the date you expect to launch. Summarize what the product is and what it does for the customer in two or three sentences. Resist listing features. A reader who stops after this paragraph should still know who the product is for and why they would want it.
 
-" and have a point, the headline is not specific enough. Write five to ten headline variations before selecting one. Place the customer and their benefit as close to the front of the headline as possible. Avoid superlatives like "revolutionary" or "groundbreaking" because they communicate nothing concrete.
+### Step 4: Write the problem paragraph
 
-> **Pro tip:** Read each headline candidate aloud. If it sounds like something a real newspaper would run, it is probably specific enough. If it sounds like a tagline on a billboard, it is probably too abstract.
+Describe the problem the way the customer experiences it today: what they do now, what it costs them, and what goes wrong. Write from their point of view, in their language. If several problems compete, pick the one that matters most to the customer. The template also asks you to consider whether enough customers have the problem and would pay to solve it, since a problem that fails either test is not worth solving ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)).
 
-### Step 3: Step 3: Write the subheadline to expand context
+### Step 5: Write the solution paragraph
 
-The subheadline is one to two sentences that add the context the headline could not fit. If the headline names the benefit, the subheadline explains who specifically gets it and under what circumstances. " The subheadline should introduce the mechanism of the product in enough detail that the reader understands roughly how the benefit is delivered. It should not introduce a second benefit.
+Explain how the product solves the problem you just described, directly and simply. Name what customers use today and why it falls short, then say how the new product is better. Keep the solution focused on the stated problem and leave out features that address other needs. For a complex product you may need a second paragraph, but check each sentence against the problem paragraph.
 
-Stay focused on the single value proposition from the headline and make it more concrete.
+### Step 6: Add the quotes and the getting-started paragraph
 
-> **Pro tip:** The subheadline is the sentence most likely to get quoted by a stakeholder summarizing the project. Optimize it for that use case. Would someone in an executive meeting read this sentence aloud and have it make complete sense without additional context?
+Write a spokesperson quote that explains why the company built the product. Write a customer quote that describes the change in the customer's day in plain words. Close with how a customer gets started and where they would go to learn more. Keep getting started short; if it needs a long explanation, the experience is probably too complicated.
 
-### Step 4: Step 4: Draft the opening paragraph with the dateline structure
+### Step 7: Cut and test the draft
 
-, "Seattle, WA, January 15, 2025"), then states the announcement in one sentence, followed by two to three sentences that provide essential context. The first sentence should essentially restate the headline in slightly different words. The next sentences should name the problem being solved, quantify it if possible, and briefly state why existing solutions fall short. 2 hours per week compiling data from multiple analytics platforms into a single report.
+Cut every sentence that does not help the customer decide. Replace jargon and internal terms with plain words. Then test the draft: ask "so what?" of every claimed benefit, and cover the product and company names to see whether the customer and the benefit are still clear. Read it aloud to someone outside the team and ask what they think the product does.
 
-" This paragraph sets up the stakes.
+### Step 8: Hand the internal press release on to the FAQ
 
-> **Pro tip:** Use a real or realistic date that is 6-12 months in the future. This creates a concrete mental model of the launch timeline and helps the team calibrate scope.
-
-### Step 5: Step 5: Write two to three body paragraphs explaining how it works
-
-These paragraphs describe the product experience from the customer's perspective, not the engineering architecture. Walk through what the customer does: they sign up, connect their tools, click a button, and receive a report. Be specific about the sequence of actions and the results of each action. The first body paragraph should cover the core workflow.
-
-The second paragraph should describe one secondary benefit or feature that reinforces the primary value proposition. If there is a third paragraph, use it to address scale, reliability, or a differentiator that matters to the customer. Avoid listing features. Instead, describe outcomes.
-
-" Every sentence should make the customer's life feel easier, faster, or less frustrating.
-
-> **Pro tip:** After drafting, highlight every sentence that describes a feature rather than an outcome. Rewrite each one as an outcome. If you cannot rewrite it as an outcome, the feature may not matter to the customer, and you should consider cutting it.
-
-### Step 6: Step 6: Write a fictional customer quote
-
-The customer quote is a paragraph attributed to a named, fictional customer that captures the emotional response to the product. It should sound like something a real person would say in a testimonial, not like marketing copy. A good quote names the old way of doing things, describes the frustration, and then describes the relief or delight of the new way. For example: "'I used to spend every Monday morning pulling numbers from six different dashboards and pasting them into a slide deck,' said Maria Chen, VP of Marketing at CloudScale.
-
-'Now I open ReportBot on Monday morning and the deck is already there, with insights I would have missed doing it manually. '" The quote serves two purposes. First, it tests whether you understand the emotional journey of your customer deeply enough to voice it. Second, it gives leadership a concrete image of the customer's experience that abstract benefit statements cannot achieve.
-
-> **Pro tip:** Write the quote first in your own voice as a straightforward benefit statement, then rewrite it as dialogue from the customer's mouth. If the customer would never actually say the words you wrote, the benefit is probably not real or not expressed correctly.
-
-### Step 7: Step 7: Write a closing paragraph with a call to action
-
-The final paragraph tells the reader what happens next. " In the internal version, this paragraph describes the intended path from awareness to usage. It should answer: How does a customer discover this product? What is the first action they take?
-
-What does the free or trial experience look like? This paragraph forces you to think about the go-to-market motion early. If you cannot describe a simple path from discovery to value, the product concept may have a distribution problem that is worth addressing now. Keep this paragraph to three to four sentences.
-
-> **Pro tip:** The call to action is the paragraph most teams skip or write lazily. Resist this impulse. The path to first value is one of the hardest product decisions, and thinking about it at the press release stage saves significant rework later.
-
-### Step 8: Step 8: Review for jargon, vagueness, and missing specifics
-
-Read the entire document from top to bottom as if you are encountering the product for the first time. Circle every word or phrase that a customer would not use in their own vocabulary. Replace or remove each one. " If you do not have the specific number, write a placeholder like "[X]% faster" and flag it for research.
-
-Vague claims are a signal that the thinking is not yet complete. Finally, confirm that the document answers five questions clearly: Who is the customer? What is their problem? What is the solution?
-
-How does it work? Why is it better than the status quo?
-
-> **Pro tip:** Hand the press release to someone outside your team and ask them to summarize it back to you in two sentences. If their summary does not match your intent, the document has a clarity problem. Their paraphrase reveals what the document actually communicates versus what you meant.
-
-### Step 9: Step 9: Circulate for feedback and prepare to iterate
-
-Share the press release with three to five stakeholders who represent different perspectives: a potential customer (or a proxy like a customer success team member), a technical lead, a business stakeholder, and at least one person completely unfamiliar with the project. Ask each reader three specific questions: What do you think this product does? Who do you think it is for? What is the one thing that is unclear or that you do not believe?
-
-Collect responses in writing before holding a group discussion. Written feedback prevents anchoring. Expect that the first draft will require substantial revision. Most press releases go through four to seven drafts before they reach a state where every reader answers the three questions consistently.
-
-This iteration process is the subject of the [iterating PR/FAQ documents](https://tryhamster.com/skills/iterating-pr-faq-documents-through-feedback) skill.
-
-> **Pro tip:** Track which section of the press release generates the most disagreement across reviewers. That section almost always points to an unresolved strategic question about the product, not a writing problem. Address the strategic question first, then rewrite the section.
+Share the draft with your manager and one or two peers, then start the FAQ with the questions they raise. Keep a list of the assumptions the press release makes, since each one will need an answer in the internal FAQ. Expect the press release to change after review; the process in [Iterating PR/FAQ Documents Through Feedback](../iterating-pr-faq-documents-through-feedback/SKILL.md) assumes several drafts.
 
 ## Best Practices
 
-- Write the headline before anything else and do not proceed until you are satisfied with it. The headline forces the hardest decision, which is choosing the single most important customer benefit. If you write the body first, you will hedge and try to serve multiple benefits, producing a muddled document that persuades no one.
-- Keep the entire document to one page, roughly 500-1,000 words. Length discipline prevents you from hiding weak thinking behind volume. If the value proposition is clear, one page is enough. If one page feels insufficient, the product concept may be trying to serve too many customers or solve too many problems simultaneously.
-- Use the customer's language, not your company's language. Read support tickets, sales call transcripts, and forum posts from your target customer segment. Borrow their exact phrasing. When the press release uses words the customer actually uses, it reads as credible. When it uses internal terminology, it reads as detached.
-- Include at least one specific, quantified claim about the improvement the product delivers. "50% faster" is better than "faster." "Saves 6 hours per week" is better than "saves time." If you do not yet know the number, write a placeholder and treat it as a research task. The act of committing to a number forces the team to think about measurement from day one.
-- Write the customer quote early in the drafting process, not as an afterthought. The quote is where empathy lives. If you struggle to write a believable quote, you may not understand the customer's emotional experience well enough. Use the difficulty as a diagnostic signal and go talk to more customers before continuing.
-- Separate the press release from the FAQ. The press release paints the aspirational picture. The FAQ interrogates it. Mixing skepticism into the press release weakens its narrative clarity. Save hard questions, edge cases, and technical challenges for the FAQ section, where they belong.
-- Date the document and version it. When a press release goes through seven drafts over three weeks, you need to know which version each stakeholder reviewed. Use a simple naming convention like "PR-v1-2025-01-15" and store all versions so you can trace how the product vision evolved.
-- Read the press release aloud. Awkward phrasing, run-on sentences, and unclear antecedents are far easier to catch when spoken. If you stumble over a sentence while reading it aloud, a reader will stumble over it silently too.
+- Write the problem paragraph before the solution. When the problem is vague, the solution grows to fill the space with features.
+- Keep one main benefit. A press release that claims five benefits usually has not decided which customer it serves.
+- Use numbers only when you can defend them. A concrete claim about time or money saved is stronger than an adjective, but reviewers will ask where it came from, so note the source in the FAQ.
+- Write the competitive sentence honestly. Naming what customers use today, including spreadsheets or doing nothing, makes the improvement easier to judge.
+- Write press releases for competing ideas in the same format. Comparing several one-page drafts side by side is cheaper and clearer than debating the ideas in a meeting.
+- Keep the launch date realistic. Update it with each draft so the final version carries the date the team would commit to.
 
 ## Common Mistakes
 
-- **Writing about features instead of customer outcomes** — The most common failure mode is a press release that reads like a feature list: "Product X includes AI-powered analytics, customizable dashboards, and Slack integration." This happens because the writer is more familiar with what the product does than with what the customer gets. To catch this, review every sentence and ask, "Would the customer care about this sentence?" If the answer depends on the customer understanding how the feature works, rewrite the sentence to describe the outcome of using the feature. "Customizable dashboards" becomes "Managers see only the metrics relevant to their team, without asking IT to configure anything."
-- **Targeting multiple customer segments in one press release** — Writers often try to make the press release appeal to several audiences: small businesses, enterprises, developers, and end users. This produces a document that resonates with no one because each sentence tries to serve too many masters. " Pick one customer. Write the press release for that customer.
-
-If the product genuinely serves multiple segments, write separate press releases for each and see which one is strongest. That is your lead segment.
-- **Using the press release to justify the project internally rather than describe customer value** — Some press releases drift into internal justification language: "This product aligns with our Q3 strategic priority of expanding into the mid-market." This happens because the writer is thinking about the internal audience who will approve the project rather than the external customer who will use it. The press release should read as if a journalist wrote it for a customer-facing publication. If a sentence would not appear in TechCrunch or a trade blog, it does not belong in the press release. Move internal justification to the FAQ section or a separate internal memo.
-- **Making the customer quote sound like marketing copy** — " Real customers do not talk like this. They talk about specific frustrations and specific relief: "I used to dread Monday mornings because of the reporting. " The signal that a quote is too polished is that it could apply to almost any product in the category. Rewrite the quote with a specific detail that only applies to your product's unique approach.
-
-Ground it in a moment in the customer's day.
-- **Treating the first draft as final and skipping iteration** — Teams under time pressure write one draft, get general approval, and move on to building. This defeats the purpose of the exercise. The press release's value comes from the iteration cycle, where each round of feedback exposes a new layer of unclear thinking. If the document has not been through at least three revision cycles with different readers, it has not been tested rigorously enough.
-
-Watch for the pattern where everyone says "looks good" without specific feedback. That usually means reviewers skimmed it rather than engaged with it. Ask pointed questions: "Do you believe the quantified claim in paragraph two?
-- **Burying the benefit below background context** — Many press releases open with two paragraphs of market context and company background before getting to the actual product announcement. This mimics bad real-world press releases but is even more damaging in the internal version, where the reader needs to understand the value proposition immediately. The customer benefit should appear in the headline and be reinforced in the first sentence of the opening paragraph. Background context belongs in the FAQ section, not the press release.
-
-If you find yourself writing "The market for X is projected to reach $Y billion by 2027" in the first paragraph, you are stalling. Cut it and lead with the customer.
+- **Starting from the technology**: A press release that opens with the architecture or the model is written for the team. Rewrite it so the first two paragraphs say nothing about how the product is built.
+- **Describing everyone as the customer**: A broad customer makes every later sentence vague. Pick the segment with the sharpest problem and write for them; other segments can get their own press release later.
+- **Listing features instead of an experience**: A list of capabilities does not tell the reader what changes for them. Describe what the customer can now do that they could not do before.
+- **Writing it after the decision is made**: A press release written to justify a project already approved will never kill a bad idea. Write it while the decision is still open.
+- **Treating the first draft as final**: The first draft is where the thinking starts. Plan for review and revision before anyone treats the press release as the plan.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/working-backwards/METHOD.md) — Working Backwards
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/working-backwards/METHOD.md): Working Backwards
 
 ## Related Skills
 
-- [Iterating PR/FAQ Documents Through Multiple Feedback Cycles](../iterating-pr-faq-documents-through-feedback/SKILL.md)
-- [Drafting the FAQ Section of a PR/FAQ Document](../drafting-frequently-asked-questions-documents/SKILL.md)
-- [Running PR/FAQ Review and Critique Sessions](../running-pr-faq-review-meetings/SKILL.md)
-- [Identifying Minimum Requirements by Working Backwards from Launch](../identifying-minimum-lovable-requirements/SKILL.md)
-- [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
-- [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
+- [Drafting the FAQ Section of a PR/FAQ](../drafting-frequently-asked-questions-documents/SKILL.md)
+- [Defining the Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
+- [Identifying Minimum Lovable Requirements](../identifying-minimum-lovable-requirements/SKILL.md)
+- [Running PR/FAQ Review Meetings](../running-pr-faq-review-meetings/SKILL.md)
+- [Iterating PR/FAQ Documents Through Feedback](../iterating-pr-faq-documents-through-feedback/SKILL.md)
+- [Using Working Backwards in PM Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
+
+## Sources
+
+- [Working Backwards LLC: PR/FAQ Instructions and Template](https://workingbackwards.com/resources/working-backwards-pr-faq/)
+- [About Amazon: excerpt from Working Backwards](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
+- [ProductPlan: Working Backwards (the Amazon Method)](https://www.productplan.com/glossary/working-backward-amazon-method/)

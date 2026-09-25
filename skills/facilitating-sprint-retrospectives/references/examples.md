@@ -1,33 +1,37 @@
 # Examples: Facilitating Sprint Retrospectives
 
-## Example: Using the Sailboat Format After a Rocky Sprint
+## A retrospective after a missed Sprint Goal
 
 **Scenario:**
 
-A six-person Scrum team just finished a two-week sprint where they missed their sprint goal by 30%. Morale is low, and there's visible tension between frontend and backend developers over integration issues. The Scrum Master decides to use the Sailboat format for this scrum retrospective.
+Illustrative scenario: a team missed its Sprint Goal because two items waited several days for review by another team. The mood is tense, and one Developer has already said in chat that "the reviewers are the problem."
 
 **Walkthrough:**
 
-The Scrum Master draws a sailboat on the whiteboard with four zones: Wind (what propelled us), Anchor (what held us back), Rocks (risks ahead), and Island (our goal). After reading the Prime Directive, she gives 7 minutes of silent writing time.
+The Scrum Master opens by reading the Prime Directive and states the goal: find one change that makes the next Sprint's work flow better. The team builds a timeline of the Sprint on the board and marks the days items sat waiting. Silent writing surfaces something new: the review requests were sent late in the day and lacked context.
 
-During grouping, the Anchor zone dominates. Three developers independently wrote variations of 'API contracts changed mid-sprint without warning.' Two wrote about 'unclear acceptance criteria in stories.' The team dot-votes and the API contract issue wins decisively.
+Dot voting picks "slow external reviews" as the theme. Asking why several times leads to two causes the team can influence: requests go out late, and the other team does not know the Sprint Goal. The actions are to send review requests before midday with a short summary, owned by one Developer, and for the Scrum Master to invite the reviewing team's lead to the next Sprint Planning. The first action goes into the Sprint Backlog.
 
-Using 5 Whys, the team discovers the root cause: the backend team finalizes API specs during the sprint rather than during refinement, so frontend developers build against assumptions. The action item becomes: 'Starting next sprint, no story enters the sprint backlog without an approved API contract document. Jake (backend lead) will own creating a lightweight contract template by Wednesday. The team will trial this during next sprint's refinement session.'
-
-The Scrum Master adds this as a task in the next sprint on their Jira board and schedules a 15-minute mid-sprint check to see if the experiment is working.
-
-## Example: Reviving a Stale Retrospective with a Timeline Format
+## A calm Sprint and a stale format
 
 **Scenario:**
 
-A mature Scrum team of eight has been running retrospectives for over a year. Attendance has dropped—two developers regularly skip. The remaining attendees give generic, recycled feedback. The Scrum Master recognizes retrospective fatigue and decides to shake things up.
+Illustrative scenario: a team has used Start / Stop / Continue for many Sprints in a row. Notes have become repetitive and the retrospective often ends early with no actions.
 
 **Walkthrough:**
 
-Instead of the usual Start/Stop/Continue, the Scrum Master announces a Timeline retrospective. She draws the two-week sprint as a horizontal timeline on a shared Miro board, marking key events: Sprint Planning, the mid-sprint deploy, the production incident on day 7, and the Sprint Review.
+The facilitator switches the data-gathering format to a simple "Glad / Sad / Mad" board and asks each person to add one note about the Definition of Done. That prompt surfaces a real issue: nobody is sure whether accessibility checks are part of Done, so they are done inconsistently.
 
-She asks each team member to add sticky notes at specific points on the timeline: green for positive moments, red for painful ones, yellow for surprising ones. The visual format sparks memory and specificity—instead of 'communication was bad,' someone writes 'On day 7 at 3pm, three of us were debugging the same issue independently because nobody posted in Slack.'
+The team decides to add a basic accessibility check to the Definition of Done and asks a designer to run a short session on how to do it. The five phases stay the same; only the prompts changed, and the retrospective produced its first real action in weeks.
 
-The discussion naturally gravitates to the production incident cluster. The team discovers that their incident response process is ad-hoc, with no clear on-call rotation or communication protocol. The action item: 'Maria will draft a one-page incident response runbook by Thursday. The team will review it during Friday's standup and adopt it as a working agreement for the next sprint.'
+## A remote team with quiet members
 
-Both previously-absent developers attended this retro and later told the Scrum Master the timeline format 'actually felt useful.' The Scrum Master adds Timeline to her regular rotation.
+**Scenario:**
+
+Illustrative scenario: a distributed team holds retrospectives on video. The same two people do most of the talking, and others rarely add notes.
+
+**Walkthrough:**
+
+The facilitator moves data gathering to a shared online board with a few minutes of silent writing, and asks everyone to add at least two notes before anyone reads theirs aloud. Notes are anonymous during clustering. Voting is also silent.
+
+Two of the quieter members' notes end up in the top theme: unclear acceptance criteria on items coming into the Sprint. The action, owned by the Product Owner, is to review acceptance criteria with one Developer before each refinement session. The facilitator also rotates the role, so the next retrospective is run by someone else.

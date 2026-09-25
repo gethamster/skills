@@ -1,39 +1,37 @@
-# Examples: Mapping the Four Fits as an Interconnected Ecosystem
+# Examples: Mapping the Four Fits Ecosystem
 
-## Example: SaaS Collaboration Tool Hitting a $5M ARR Ceiling
-
-**Scenario:**
-
-A B2B SaaS collaboration tool has strong product engagement (high retention, good NPS) and grows well through organic/word-of-mouth channels. However, growth has stalled at $5M ARR. The team has tried increasing paid ad spend but CAC keeps rising without proportional returns. They decide to map the four fits Brian Balfour ecosystem to diagnose the constraint.
-
-**Walkthrough:**
-
-**Step 1 — Inventory**: Market-Product Fit is strong (40% week-1 retention, NPS 55) for teams of 5-20 in tech companies. Product-Channel Fit is strong for viral/word-of-mouth (product has natural sharing loops). Channel-Business Model Fit for viral is good (near-zero CAC), but for paid channels it's weak (CAC of $450 vs. LTV of $380 at current ARPU of $12/user/month). Business Model-Market Fit is flagged: $12/user/month ARPU limits market size addressable through paid channels.
-
-**Step 2 — Diagram**: They draw the loop and notice the dependency arrow from Business Model-Market → Market-Product is labeled 'low ARPU constrains which segments are profitable to serve.' The arrow from Product-Channel → Channel-Business Model is labeled 'product's viral mechanics work but paid channels need higher conversion value per user.'
-
-**Step 3 — Scoring**: Market-Product: 5. Product-Channel (viral): 5. Product-Channel (paid): 2. Channel-Business Model (viral): 4. Channel-Business Model (paid): 1. Business Model-Market: 2.
-
-**Step 4 — Cascade**: The binding constraint is Business Model-Market Fit. The $12 ARPU is too low to support paid acquisition channels, which limits growth to viral-only, which caps at $5M given their market size. This isn't a channel problem—it's a pricing and market positioning problem.
-
-**Step 5 — Hypothesis**: If they introduce a team plan at $25/user/month with admin and security features targeting companies of 50-200 employees, ARPU could reach $20+ blended, making paid search viable at a 9-month payback. They test this with 50 existing accounts before scaling.
-
-The ecosystem map revealed that what felt like a 'we need better ads' problem was actually a business model constraint two fits upstream.
-
-## Example: DTC Consumer Brand Struggling with Channel Diversification
+## A collaboration tool with a hidden price tension
 
 **Scenario:**
 
-A direct-to-consumer health supplement brand built its business on Instagram and influencer marketing, reaching $15M in revenue. iOS privacy changes have degraded ad performance, and the team wants to diversify into content/SEO and retail partnerships. They map the four fits ecosystem to understand why diversification attempts keep failing.
+Illustrative scenario: a team collaboration product grows through invitations but has recently started hiring salespeople to close larger accounts. Leaders disagree about whether the next step is more sales hires or more product-led growth.
 
 **Walkthrough:**
 
-**Step 1 — Inventory**: Market-Product Fit is validated for health-conscious millennials seeking premium supplements. Product-Channel Fit for Instagram is strong (visual product, lifestyle branding). Product-Channel Fit for SEO is scored weak—the product doesn't solve a problem people are actively searching for (it's aspirational, not problem-solution). Product-Channel Fit for retail is scored unknown.
+The team writes the four nodes together. The channel node reveals two answers: invitations for small teams and sales for large accounts. The model node shows one price list for both. Writing the link assumptions exposes the tension: the price is too high for many invited users to pay without help, and too low to cover a salesperson's time on most accounts.
 
-**Step 2 — Diagram**: The key dependency arrow from Market-Product → Product-Channel reads: 'aspirational wellness positioning works for interrupt-driven channels (social) but doesn't generate search intent.' The arrow from Channel-Business Model → Business Model-Market reads: 'Instagram CAC has risen from $25 to $65, compressing margins from 40% to 12%.'
+The team decides to draw two maps, one for self-serve teams and one for larger accounts, and turns the tension into two decisions: lower the self-serve entry price, and create a separate annual plan for sales-led accounts. Each decision gets an owner and a date.
 
-**Step 3 — Scoring**: Market-Product: 4. Product-Channel (Instagram): 3 (was 5, declining). Product-Channel (SEO): 1. Channel-Business Model (Instagram): 2 (deteriorating). Business Model-Market: 3.
+## A direct-to-consumer brand relying on one channel
 
-**Step 4 — Cascade**: The root issue is that the product's positioning (aspirational wellness) creates a hard dependency on interrupt-driven channels. As those channels degrade, there's no natural migration path. The cascade runs: Market-Product positioning → constrains viable channels → compresses unit economics → threatens business model viability.
+**Scenario:**
 
-**Step 5 — Hypothesis**: Rather than forcing SEO to work for an aspirational product, they hypothesize reframing part of the product line around specific health outcomes (e.g., 'sleep quality supplement') that people actively search for. This creates Product-Channel Fit for SEO without abandoning the Instagram channel. They test with one SKU repositioned for search intent before committing to a full pivot.
+Illustrative scenario: a consumer brand sells a single product through paid social ads. Costs in that channel are rising, and the marketing lead proposes adding several new channels at once.
+
+**Walkthrough:**
+
+Mapping the links shows that the product to channel assumption is strong for paid social, where the product demonstrates well in short video, and weak for search, where few people look for a product they have not heard of. The channel to model link is weakening because the product is bought once, so customer value is low.
+
+The map points to a model change rather than a channel spree: adding a refill subscription would raise customer value and let the existing channel pay back again. The team records that decision, plus one small test of a second channel, instead of launching several at once.
+
+## A new product line inside an established company
+
+**Scenario:**
+
+Illustrative scenario: a company known for a mid-market product launches a lightweight tool aimed at individual professionals. The new team inherits the parent company's sales channel and pricing norms.
+
+**Walkthrough:**
+
+The map for the new line shows a market of individuals, a product with fast time to value, and an inherited channel built for mid-market sales. The product to channel and channel to model links both rate weak: individuals do not want a sales conversation, and the price they will pay cannot cover one.
+
+The team draws the new line's map separately from the parent's and chooses a self-serve channel and a low price, accepting that the new line will not reuse the parent's sales team. The shared elements, such as brand and customer data, are noted on both maps.

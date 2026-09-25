@@ -1,25 +1,21 @@
 # FAQ: Mapping the Initial Consideration Set
 
-## How many brands are typically in an initial consideration set at the consideration stage?
+## How is the initial consideration set different from brand awareness?
 
-McKinsey's research found that initial consideration sets typically contain 1.5 to 3.8 brands depending on category complexity. Simple, low-involvement categories (like household cleaners) skew toward 1-2 brands, while complex categories (like automobiles or enterprise software) can reach 3-4. The key insight is that these sets are much smaller than marketers assume.
+Awareness means a person recognizes your brand when they see it. The initial consideration set is the smaller list they recall on their own when a need appears. Many brands are widely recognized and rarely recalled, which is why unaided recall tied to a buying situation is the better measure. Keep aided awareness as a second question so you can tell the two problems apart.
 
-## What's the difference between the consideration stage and active evaluation in the CDJ?
+## How many brands are usually in the set?
 
-The consideration stage happens before any active research—it's the mental shortlist consumers assemble instantly from memory when a need arises. Active evaluation is the subsequent research phase where consumers investigate options, read reviews, and may add or remove brands. Brands in the initial consideration set are up to three times more likely to be purchased than those added during active evaluation.
+It depends on the category, so measure your own. In McKinsey's original research, personal computer shoppers started with fewer brands than car shoppers. Set size is itself worth tracking, since a shrinking average set usually means the leaders are strengthening their hold.
 
-## How often should I remap the initial consideration set?
+## Can a brand win without being in the initial set?
 
-Measurement cadence depends on category dynamics. For fast-moving categories like consumer tech or DTC products, map quarterly. For slower categories like financial services or enterprise software, biannual or annual tracking is sufficient. Always remeasure after major campaigns, competitor launches, or market shifts.
+Yes. The Consumer Decision Journey found that buyers often add brands during active evaluation, so a brand can enter later through reviews, recommendations or search. It starts at a disadvantage, though, and the effort needed to get added is usually higher than the effort to be recalled in the first place. Work on both phases if you can.
 
-## Can a brand enter the consideration set during active evaluation instead?
+## How often should the map be updated?
 
-Yes—brands can be added during active evaluation through search results, recommendations, or comparison content. However, McKinsey's data shows brands in the initial consideration set have a significant purchase advantage. Being added later means you're playing catch-up against brands the consumer already trusts enough to have recalled from memory.
+Match the cadence to how fast your category changes, and keep it fixed so the trend is readable. Add an extra wave after a major launch, a competitor entry or a large campaign. Keep the question wording identical between waves.
 
-## How do I improve my brand's inclusion rate at the consideration stage?
+## Who should own the results?
 
-Focus on building mental availability through consistent brand-building touchpoints: content marketing, PR, community presence, influencer partnerships, and advertising that reinforces your category association. Address specific exclusion reasons—if people know you but don't recall you, it's a salience problem requiring more distinctive brand assets and category entry point messaging.
-
-## Is the consideration stage the same as top-of-funnel awareness?
-
-No. Top-of-funnel awareness is a broad measure of whether people have heard of you. The consideration stage is whether they actually think of you when a specific purchase need arises. You can have high awareness but low consideration stage inclusion if your brand lacks strong associations with relevant purchase triggers. This distinction is critical for choosing the right marketing tactics.
+Brand or product marketing usually owns the survey, but the actions spread across teams. Relevance gaps land with content and positioning, awareness gaps with media, and perception gaps sometimes with product or pricing. Name an owner for each action when you present the map, or the findings tend to stay in the report.

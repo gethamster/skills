@@ -1,15 +1,20 @@
 ---
-name: mapping-desired-behavior-impacts
-description: "This skill teaches you how to articulate the specific behavioral changes you want each actor to make, forming the impact layer in Impact Mapping that connects high-level goals to actionable deliverables."
+name: "mapping-desired-behavior-impacts"
+description: "Write the impact level of an impact map: observable changes in each actor's behavior, helpful and hindering, that would move the goal, with ranges."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: impact-mapping
+  method: "impact-mapping"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mapping Desired Behavior Impacts on Actors: Essential Product Manager Skills
+# Mapping Desired Behavior Impacts on Actors
 
-> This skill teaches you how to articulate the specific behavioral changes you want each actor to make, forming the impact layer in Impact Mapping that connects high-level goals to actionable deliverables.
+> Write the impact level of an impact map: observable changes in each actor's behavior, helpful and hindering, that would move the goal, with ranges.
 
 ## Before you start
 
@@ -24,140 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You can consistently articulate precise, observable behavioral changes for each actor that directly connect business goals to product deliverables, eliminating wasted work on features that don't drive outcomes. |
-| Prerequisites | Understanding of Impact Mapping fundamentals, A defined measurable business goal, A completed actor/stakeholder identification exercise |
+| Time to Learn | A few hours, including practice rewriting features as behaviors |
+| Outcome | You can write impacts as observable changes in what specific actors do, rank them by contribution to the goal, and give the important ones a measurable range. |
+| Prerequisites | An agreed goal, a list of specific actors, some knowledge of how those actors behave today |
 | Part of | [Impact Mapping](../../methods/impact-mapping/METHOD.md) |
 
 ## Overview
 
-The impact layer is the heart of an [Impact Map](https://tryhamster.com/methods/impact-mapping). It sits between actors and deliverables, answering the question: *"How should this actor's behavior change to help us reach our goal?"* Without well-defined impacts, teams fall into the feature factory trap — shipping outputs without connecting them to outcomes.
+Impacts are the second branch level of an impact map, the level that answers "how". The [Drawing impact maps](https://www.impactmapping.org/drawing.html) page describes it as the level that "sets the actors in the perspective of our business goal", answering three questions: "How should our actors' behaviour change? How can they help us to achieve the goal? How can they obstruct or prevent us from succeeding?" Each impact is a change in what one actor does.
 
-Mapping desired behavior impacts is one of the most important **product manager skills** because it forces clarity about *why* you're building something before deciding *what* to build. An impact is not a feature request or a task; it's a description of a human doing something differently. For example, "new users complete onboarding within 3 minutes" is an impact, while "build an onboarding wizard" is a deliverable.
+This level is where [impact mapping](../../methods/impact-mapping/METHOD.md) differs most from a feature list. Gojko Adzic's [book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf) says "Impacts are not product features" and asks teams to focus on business activities. He builds on Anthony Ulwick's idea of understanding the jobs customers want to get done, and on Robert Brinkerhoff's refinement of focusing on desired changes in those jobs. The impact level captures that change.
 
-This skill is especially valuable during strategic planning, quarterly roadmap reviews, and discovery sessions. When practiced well, it aligns cross-functional teams around behavioral outcomes, makes prioritization decisions more defensible, and creates a traceable line from every deliverable back to the business goal it serves. It builds directly on the work you've done [defining measurable business goals](https://tryhamster.com/skills/defining-measurable-business-goals) and [identifying actors and stakeholders](https://tryhamster.com/skills/identifying-actors-and-stakeholders).
+The level carries the map's central assumption. The [impactmapping.org overview](https://www.impactmapping.org/about.html) describes two assumptions on every branch: that a deliverable will produce an impact, and that the impact will contribute to the goal. Well-written impacts make both testable, because a behavior change can be observed after a deliverable ships, and its effect on the goal can be checked.
+
+Writing impacts well is also the hardest part of the map in practice. Mashooq Badar's workshop report from [Codurance](https://codurance.com/2015/01/09/impact-mapping/) describes the difficulty of getting people to think about behaviors instead of product features, and how participants kept returning to features until asked what behavior each feature was meant to support. This skill gives a routine for that translation and for choosing which impacts matter.
+
+The output is, for each focus actor, a short list of behavior changes stated so that someone could observe them, with the important ones ranked and given a target range. Deliverables come afterward, and they are only as good as the impacts they are written against.
 
 ## How It Works
 
-Impact Mapping follows a left-to-right hierarchy: **Goal → Actors → Impacts → Deliverables**. The impact layer captures the behavioral changes that, if achieved, would move the needle on the goal. Each actor can have multiple impacts, and each impact can spawn multiple deliverables.
+Adzic's "getting it right" notes in the [book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf) set the rules. List only the impacts that really move you toward the goal. Avoid software ideas at this level. "Ideally show a change in actor behaviour, not just the behaviour", so instead of "selling tickets", write "selling tickets five times faster". Include the hindering or negative impacts alongside the positive ones. Once you find one impact for an important actor, ask what else they could do. His examples are short: inviting more friends, purchasing tickets without calling the call centre, and selling tickets faster.
 
-The key conceptual shift is thinking in terms of *behavior*, not *solutions*. Instead of asking "What should we build for this actor?" you ask "What should this actor *do differently*?" This reframe is powerful because it opens up the solution space. A single desired behavior change (e.g., "support agents resolve tickets without escalation") could be addressed by training, a knowledge base, an AI assistant, or a process change — not just a product feature.
+The change is what makes an impact measurable. In [User stories should be about behaviour changes](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/), Adzic credits Brinkerhoff with the argument that an initiative is valuable when it changes, observably, how someone works. Capturing the change immediately raises the questions of how much and how fast, which is what lets a team judge whether a proposed solution is "appropriate, inadequate or over the top." For new capabilities, he says "Start to" or "Stop doing" are valid behavior changes. Where precise targets are hard, he suggests ranges: ask for the minimum change that would be valuable and what would be over the top.
 
-Impacts can be positive (behaviors we want to encourage), negative (behaviors we want to prevent), or defensive (behaviors we want to maintain against disruption). Mapping all three types gives a more complete picture. Positive impacts drive growth, negative impacts reduce risk, and defensive impacts protect existing value.
+His later [Votito summary](https://www.votito.com/methods/impact-mapping/) adds that impacts capture intermediate value, indicating whether the team is making progress toward the goal. They should describe outcomes rather than outputs, and should ideally be "objective, externally observable and measurable quickly after the work is delivered." The same page suggests restating an impact with a target range once it is chosen, so that the team knows when to move on.
 
-The reason this works is psychological and organizational. When a team sees that a feature exists to change a specific human behavior, they can evaluate whether the feature actually accomplishes that change — and stop building if it doesn't. This is fundamentally different from a feature-driven roadmap where the only question is "did we ship it?"
+Separating outputs from outcomes takes practice. Büşra Coşkuner's [mini-series on outcome focus](https://www.busra.co/post/mini-series-outcome-focus-with-impact-mapping) distinguishes outputs, such as a user reading a report or using the search bar, from outcomes, which she describes as "something that the user does or perceives." She uses a chain of why questions to move from an interaction with the product to the behavior it leads to, and notes that there is no single right level: higher outcomes widen the room for ideas, lower ones narrow it.
+
+Once impacts are listed, rank them before anyone proposes deliverables. A UK Department for Education team, writing on the [DfE Digital blog](https://dfedigital.blog.gov.uk/2021/06/17/policy-intent/), ran a stacked ranking of the behavior changes with policy colleagues to find which were most important for the goal, and deliberately kept feature ideas out of that discussion.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Gather Your Goal and Actor Map
+### Step 1: Take one focus actor at a time
 
-Before writing any impacts, ensure you have a clearly defined, measurable business goal and a complete list of actors. Pull these directly from the earlier stages of your [Impact Map](https://tryhamster.com/methods/impact-mapping). Post the goal prominently — every impact you write must trace back to it.
+Work through the actors chosen for focus, one at a time, starting with the one with most influence on the goal. Write the actor and the goal side by side so every candidate impact is judged against both. Describe briefly what this actor does today in the area the goal touches. That baseline makes it easier to describe a change.
 
-Review each actor and confirm the team understands who they are, what they currently do, and their relationship to the goal. If you completed [identifying actors and stakeholders](https://tryhamster.com/skills/identifying-actors-and-stakeholders), you should have this context ready.
+### Step 2: Ask the three impact questions
 
-> **Pro tip:** Print or display the goal in large text during the session. Teams drift toward pet features quickly; a visible goal anchors the conversation.
+For the actor, ask how their behavior should change, how they could help achieve the goal, and how they could obstruct it, using the wording from the [Drawing impact maps](https://www.impactmapping.org/drawing.html) page. Capture every answer as a short phrase starting with a verb. Once one impact is on the board, ask what else this actor could do, as Adzic suggests in the [book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf).
 
-### Step 2: Step 2: For Each Actor, Ask 'How Should Their Behavior Change?'
+### Step 3: Rewrite features as behaviors
 
-Take each actor one at a time. Pose the question: *"If we achieve our goal, how would this actor's behavior be different from today?"* Alternatively, flip it: *"What behavior change by this actor would contribute to our goal?"*
+Some answers will be features such as "a referral button". For each one, ask which behavior it is meant to change and write that behavior instead, keeping the feature aside as a candidate deliverable for later. Badar's group at [Codurance](https://codurance.com/2015/01/09/impact-mapping/) handled this by letting people propose features and then asking exactly what behavior each one supported. Keep going until the impact list contains no product nouns.
 
-Encourage the team to brainstorm freely. Write every suggestion on a sticky note or whiteboard node connected to the actor. Don't filter yet — volume matters at this stage. Aim for 3-8 impacts per major actor.
+### Step 4: State the change from today's behavior
 
-Make sure each impact is written as an observable behavior, not a system capability. Test each one by asking: *"Could I watch someone do this?"* If the answer is no, it's probably a feature or an internal system state, not a behavior.
+Turn each behavior into a change from today: faster, more often, without a step they currently need, or starting or stopping something. "Buying tickets" becomes "buying tickets without calling the call centre". For capabilities that do not exist yet, use "start to" or "stop" phrasing, as Adzic recommends in [User stories should be about behaviour changes](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/). Check that an outsider could observe whether the change happened.
 
-> **Pro tip:** Use the formula: [Actor] + [action verb] + [observable outcome]. Example: 'New users complete their first project within 24 hours of signing up.'
+### Step 5: Add hindering impacts
 
-### Step 3: Step 3: Categorize Impacts as Positive, Negative, or Defensive
+Ask how each actor could slow or block the goal, and write those changes as impacts to reduce or prevent. A marketplace might list sellers posting inaccurate listings, and a platform might list users posting inappropriate content, as the Codurance group did. Hindering impacts often lead to different deliverables from helpful ones, so they are worth separate branches.
 
-Label each impact with its type:
+### Step 6: Rank the impacts against the goal
 
-- **Positive**: A new behavior you want to encourage (e.g., "customers refer a friend")
-- **Negative**: An undesirable behavior you want to prevent (e.g., "competitors poach our enterprise clients")
-- **Defensive**: A current behavior you want to protect (e.g., "existing users continue renewing annually")
+Ask the goal owners which impacts would contribute most to the goal, with deliverables still off the table. A simple stacked ranking works, as the [DfE Digital team](https://dfedigital.blog.gov.uk/2021/06/17/policy-intent/) found. Consider how confident the group is in each link from impact to goal, since low-confidence, high-value impacts are good candidates for early testing. Mark the top few for this milestone.
 
-This categorization prevents the common blind spot of only mapping growth-oriented impacts while ignoring retention and risk. Most teams over-index on positive impacts. Defensive and negative impacts often reveal the highest-leverage work.
+### Step 7: Give the chosen impacts a range
 
-> **Pro tip:** Assign a different color sticky note or tag to each category so the balance (or imbalance) is immediately visible.
-
-### Step 4: Step 4: Make Each Impact Specific and Observable
-
-Now refine each brainstormed impact into a precise statement. Vague impacts like "users are more engaged" are useless for prioritization. Sharpen them into something you could measure or observe: "Free trial users log in at least 3 times in their first week."
-
-For each impact, ask:
-- **Is it behavioral?** Does it describe something a human does, not something a system does?
-- **Is it observable?** Could you detect this behavior through analytics, surveys, or direct observation?
-- **Is it connected to the goal?** If this behavior changed, would it plausibly move the goal metric?
-
-Rewrite any impact that fails these tests. If you can't make it specific, it may be a symptom of an unclear actor definition — revisit the actor.
-
-> **Pro tip:** The 'newspaper test' helps: could a journalist report on this behavior happening? If not, it's too abstract.
-
-### Step 5: Step 5: Validate Causal Links Between Impacts and the Goal
-
-This is the critical quality check. For each impact, explicitly articulate the causal hypothesis: *"We believe that if [actor] [does this behavior change], then [goal metric] will improve because [reason]."*
-
-Write these hypotheses down. They become the assumptions you'll later test through [validating Impact Map assumptions with experiments](https://tryhamster.com/skills/validating-assumptions-with-experiments). If you can't articulate a plausible causal chain, the impact is either poorly defined or not actually connected to the goal.
-
-Also look for redundancy. Multiple impacts that describe the same underlying behavior change should be consolidated. And watch for impacts that conflict with each other — they may indicate a strategic tension that needs resolution before you proceed.
-
-> **Pro tip:** Have a skeptic on the team challenge each causal link. If the connection requires more than two logical steps, it's likely too indirect to prioritize highly.
-
-### Step 6: Step 6: Prioritize Impacts by Leverage and Uncertainty
-
-Not all impacts are equally valuable. Prioritize based on two dimensions:
-
-1. **Leverage**: How much would this behavior change move the goal metric? High leverage means a small change in this behavior produces a large change in the goal.
-2. **Uncertainty**: How confident are you that you can actually influence this behavior? High uncertainty means you need to experiment first.
-
-Plot impacts on a 2×2 matrix. High-leverage, low-uncertainty impacts are your quick wins. High-leverage, high-uncertainty impacts are your big bets — these need experiments. Low-leverage impacts, regardless of certainty, should be deprioritized or dropped.
-
-This prioritization directly feeds into [generating and prioritizing deliverables from impacts](https://tryhamster.com/skills/generating-deliverables-from-impacts), where each high-priority impact spawns potential solutions.
-
-> **Pro tip:** Use dot voting with the team to surface where there's genuine disagreement about leverage. Disagreement often signals where the most learning is needed.
-
-### Step 7: Step 7: Document and Connect Impacts to the Full Map
-
-Add the refined, prioritized impacts to your Impact Map, connecting each one to its parent actor and noting priority level. Each impact node should include:
-
-- The behavioral statement
-- Its category (positive/negative/defensive)
-- Its priority ranking
-- The causal hypothesis linking it to the goal
-
-This completed impact layer becomes the foundation for the next phase of Impact Mapping, where you'll brainstorm deliverables for each impact. It also becomes a living reference document — revisit impacts quarterly to check whether the behavioral changes are actually happening and whether they're moving the goal as hypothesized.
-
-Share the map with stakeholders who weren't in the room. The impact layer is often the most persuasive part of an Impact Map because it makes the *why* behind product decisions transparent.
-
-> **Pro tip:** Use a tool like Miro, Mural, or even a simple mind-mapping tool that lets you collapse and expand branches — the map gets large quickly.
+For each prioritized impact, name how it will be observed and agree a range: the minimum change that would matter and the level beyond which more effort is not worth it. If the data to observe it does not exist yet, add building that measurement to the plan. Record the ranges on the map so the team knows when an impact is achieved and it can move to another branch.
 
 ## Best Practices
 
-- Always write impacts as actor behaviors, not product features. Test with: 'Could I observe a human doing this?' If you'd need to look at a database instead, it's a deliverable, not an impact.
-- Limit yourself to 3-5 impacts per actor during initial mapping. You can always add more later, but starting with too many dilutes focus and makes prioritization harder.
-- Include at least one defensive or negative impact per major actor. Teams systematically over-focus on growth behaviors and under-invest in protecting existing value.
-- Use the 'because' test on every impact: '[Actor] does [behavior] because [motivation].' If you can't articulate the motivation, you don't understand the actor well enough yet.
-- Revisit and update impacts after each experiment cycle. Behavioral assumptions are hypotheses — treat them as living artifacts, not permanent fixtures on your map.
-- Time-bound your impacts where possible. 'Users complete onboarding in under 5 minutes' is more actionable than 'users complete onboarding quickly.'
+- Start every impact with a verb that describes what the actor does. Nouns tend to be features in disguise.
+- Describe how behavior will differ from today. Adzic's advice to show "a change in actor behaviour, not just the behaviour" is what makes an impact measurable ([book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf)).
+- Keep impacts inside the team's sphere of influence. The team should be able to affect the behavior through what it delivers, even though it cannot control it.
+- Include hindering impacts. Behaviors to reduce, such as abandoning a form or calling support, often produce cheaper and more effective deliverables than behaviors to increase.
+- Use ranges where points are guesses. A range from minimum valuable to over the top is easier to agree and gives a clear stopping point ([Adzic](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/)).
+- Rank impacts before deliverables. Deciding which behavior changes matter most while features are still off the table keeps the ranking about outcomes.
 
 ## Common Mistakes
 
-- **Writing deliverables or features instead of behaviors** — If your impact says 'build a recommendation engine' or 'add a dashboard,' you've jumped to solutions. Rewrite as the behavior you want: 'Users discover relevant products without searching.' The deliverable comes later.
-- **Making impacts too vague or immeasurable** — Impacts like 'users are happier' or 'engagement increases' can't be acted on. Add specificity: 'Users rate support interactions 4+ stars' or 'Free users return within 7 days of signup.' If you can't define how you'd know the behavior changed, it's too vague.
-- **Mapping only positive impacts and ignoring risks** — Failing to map negative impacts (competitor poaching, churn triggers) and defensive impacts (maintaining renewal rates) leaves you blind to your biggest vulnerabilities. Explicitly prompt the team for each category.
-- **Treating all actors' impacts as equally important** — Not all actors have equal influence on the goal. Prioritize impacts from high-influence actors first. A marginal behavior change from your power users may move the goal more than a dramatic change from a low-frequency actor.
-- **Skipping the causal hypothesis and assuming the link to the goal is obvious** — Without an explicit 'We believe that if X behavior changes, then Y metric improves because Z,' you can't test your assumptions. Write the hypothesis. Many seemingly obvious links fall apart under scrutiny, saving you from building the wrong thing.
+- **Writing features as impacts**: "Use the new dashboard" is an interaction with an output. Ask what the dashboard is meant to change, such as "resolve account issues without escalating", and put that on the map.
+- **Listing behaviors without a change**: "Customers buy tickets" describes the present. State what is different, such as buying faster or without a phone call, so there is something to measure.
+- **Listing everything an actor might want**: A long wish list of impacts buries the few that move the goal. Keep only impacts with a plausible link to the goal and rank them.
+- **Forgetting hindering behavior**: Maps with only positive impacts miss the actions that are quietly undermining the goal. Ask how each actor could obstruct success.
+- **Choosing impacts nobody can observe**: If the team cannot tell whether a behavior changed, the branch cannot be validated. Pick an observable signal or plan how to measure it.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/impact-mapping/METHOD.md) — Impact Mapping
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/impact-mapping/METHOD.md): Impact Mapping
 
 ## Related Skills
 
-- [Integrating Impact Maps with Product Roadmaps](../integrating-impact-maps-with-roadmaps/SKILL.md)
-- [Defining Measurable Business Goals for Impact Maps](../defining-measurable-business-goals/SKILL.md)
-- [Identifying Actors and Stakeholders in Impact Mapping](../identifying-actors-and-stakeholders/SKILL.md)
-- [Validating Impact Map Assumptions with Experiments](../validating-assumptions-with-experiments/SKILL.md)
-- [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
+- [Identifying Actors and Stakeholders for an Impact Map](../identifying-actors-and-stakeholders/SKILL.md)
 - [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
+- [Validating Impact Map Assumptions with Experiments](../validating-assumptions-with-experiments/SKILL.md)
+
+## Sources
+
+- [Impact Mapping: Drawing impact maps](https://www.impactmapping.org/drawing.html)
+- [Impact Mapping book sample (PDF)](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf)
+- [Impact Mapping: Why use impact mapping?](https://www.impactmapping.org/about.html)
+- [Gojko Adzic: User stories should be about behaviour changes](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/)
+- [Votito: Impact Mapping, by Gojko Adzic](https://www.votito.com/methods/impact-mapping/)
+- [Büşra Coşkuner: Outcome-focus with Impact Mapping](https://www.busra.co/post/mini-series-outcome-focus-with-impact-mapping)
+- [DfE Digital: Meeting policy intent and user needs at the same time](https://dfedigital.blog.gov.uk/2021/06/17/policy-intent/)
+- [Codurance: Impact mapping, by Mashooq Badar](https://codurance.com/2015/01/09/impact-mapping/)

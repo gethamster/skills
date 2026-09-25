@@ -1,25 +1,21 @@
-# FAQ: Creating Waterfall Project Plans and Gantt Charts
+# FAQ: Creating Waterfall Project Plans with WBS and Gantt Charts
 
 ## What is a waterfall chart in project management?
 
-A waterfall chart in project management is a Gantt-based visual schedule that shows the sequential flow of project phases, tasks, dependencies, and milestones. It reflects the Waterfall methodology's linear structure where each phase must complete before the next begins, making it easy to see the full project timeline at a glance.
+The phrase usually means a Gantt chart of a sequential plan, where the phase bars step down the page like a cascade. In finance and reporting, a waterfall chart means something else: a bridge chart that shows how a starting value changes through a series of increases and decreases. Project teams sometimes use that kind for budget variance, but it does not show the schedule.
 
-## How do I identify the critical path in a waterfall chart?
+## How detailed should the work breakdown structure be?
 
-The critical path is the longest sequence of dependent tasks from project start to finish. Most Gantt chart tools calculate it automatically once you enter task durations and dependencies. Look for the chain of tasks with zero float — any delay on these tasks directly delays the project end date.
+Detailed enough that each work package can be estimated, assigned to one owner and tracked within a reporting period. Common rules of thumb cap a work package at a set number of hours or at one reporting period, but they are guides. Going much deeper than you can track creates overhead without better control.
 
-## What tools are best for creating a waterfall chart project plan?
+## What is the critical path and why does it matter?
 
-Microsoft Project is the industry standard for complex waterfall chart schedules. Smartsheet and Monday.com offer accessible web-based alternatives. For simpler projects, tools like TeamGantt or even Google Sheets with Gantt chart templates work well. Choose based on your project's complexity and team's technical comfort.
+It is the longest chain of dependent tasks from start to finish, and it sets the shortest possible duration of the project. Any delay on it delays the end date, while tasks off it have some float. Knowing it tells you where to focus attention, resources and risk management.
 
-## How detailed should my work breakdown structure be for a waterfall chart?
+## Should the Gantt chart show every task?
 
-Apply the 8/80 rule: no task smaller than 8 hours or larger than 80 hours of effort. For a 6-month project, aim for 100-300 tasks across 3-5 levels of WBS hierarchy. Too few tasks and you can't track progress; too many and maintenance becomes unmanageable.
+Keep two views. The team needs the detailed view with every work package, dependency and owner. Sponsors and stakeholders need a summary with phases, gate milestones and key deliverables. Both come from the same underlying plan, so they never disagree.
 
-## What is the difference between a waterfall chart and a regular Gantt chart?
+## When should the baseline be changed?
 
-A Gantt chart is the visualization format (horizontal bars on a timeline). A waterfall chart specifically uses a Gantt format to represent the Waterfall methodology's sequential phase structure, with strict phase-gate dependencies and milestones that enforce the linear progression from one phase to the next.
-
-## How often should I update my waterfall chart project plan?
-
-Update your waterfall chart weekly. Collect actual start dates, completion percentages, and revised remaining estimates from team leads. Compare against your baseline to identify variance. Significant changes from approved change requests should trigger a re-baseline and stakeholder communication.
+Only when an approved change request alters scope, dates or budget. Each rebaseline should be recorded with its reason, and the original baseline kept for comparison. Resetting the baseline to make a slipping project look on time removes the main value of having one.

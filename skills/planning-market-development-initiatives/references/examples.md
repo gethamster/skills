@@ -1,37 +1,37 @@
-# Examples: Planning Market Development Initiatives for New Segments
+# Examples: Planning a Market Development Strategy for New Segments
 
-## Example: B2B Project Management Tool Expanding into Healthcare
-
-**Scenario:**
-
-A project management SaaS company currently serves tech startups and digital agencies. Revenue growth is plateauing, and the team decides to explore market development — taking their existing product into new industry verticals. They need to determine which new segment to pursue first.
-
-**Walkthrough:**
-
-The team begins by conducting market segmentation across 8 industry verticals: healthcare, financial services, education, manufacturing, legal, real estate, non-profit, and government. For each, they research TAM, growth rate, competitive landscape (existing PM tools serving each vertical), regulatory complexity, and product fit.
-
-They build a weighted scoring matrix prioritizing product fit (20%), market size (20%), competitive intensity (15%), regulatory accessibility (15%), channel availability (15%), and time to revenue (15%).
-
-Healthcare scores highest overall: large TAM ($4.2B for project management in healthcare), moderate competition (existing tools are legacy and poorly rated), strong product fit (their collaboration features align well with care coordination needs), and accessible channels (healthcare IT conferences and LinkedIn targeting are viable). However, regulatory accessibility scores lower due to HIPAA requirements.
-
-Before committing, they validate by running LinkedIn ads targeting healthcare operations managers. The campaign generates 47 leads at $38 CPL — significantly better than their $85 industry benchmark. Five discovery calls reveal that care coordination teams are frustrated with existing tools and would trial a modern alternative.
-
-The team develops a healthcare-specific GTM plan: HIPAA-compliant hosting (a configuration change, not a product rebuild), healthcare-specific templates and case studies, a partnership with a healthcare IT consultant for channel access, and a 90-day pilot with three health systems. They present this to leadership with a business case projecting $1.2M ARR within 18 months at a $280K investment.
-
-## Example: DTC Skincare Brand Entering a New Geographic Market
+## A legal billing tool looks beyond law firms
 
 **Scenario:**
 
-A US-based direct-to-consumer skincare brand has saturated its domestic audience and wants to expand internationally. The team needs to use market segmentation to determine which geographic market to enter first with their existing product line.
+Illustrative scenario: a time-tracking and billing product sells to small law firms in one country. Growth in that market has slowed, and leadership wants a market development strategy for the next year.
 
 **Walkthrough:**
 
-The brand segments potential markets geographically (UK, Canada, Australia, Germany, Japan, South Korea) and layers demographic and behavioral data: skincare spending per capita, e-commerce penetration, English-language content consumption, social media platform usage, and import/regulatory requirements.
+The team reviews why law firms buy: accurate billable hours, client-ready invoices and trust accounting reports. Segmentation by profession produces a long list, including accounting practices, architecture firms, consultancies and mediators. Scoring puts accounting practices and consultancies on top, since both bill by the hour and neither needs trust accounting.
 
-Their scoring matrix weighs e-commerce penetration (20%), skincare spending per capita (20%), English-language accessibility (15%), shipping logistics (15%), competitive landscape (15%), and regulatory ease (15%).
+Tests change the ranking. Interviews show accounting practices mostly use billing built into their practice software, while consultancies describe the same pain as law firms. A small landing page test aimed at consultancies draws steady sign-ups. The team chooses consultancies, plans a lighter onboarding without the legal features, and sets a first milestone of a small group of paying consultancies within one quarter.
 
-Canada and the UK emerge as top contenders. Canada wins narrowly due to shared shipping infrastructure (easy NAFTA logistics), high e-commerce penetration, English-language market (no translation needed), similar skincare preferences, and lower competitive intensity from DTC brands compared to the UK.
+## A consumer brand enters a neighboring country
 
-Validation: They enable Canadian shipping on their existing site, run Instagram and TikTok ads targeting Canadian skincare enthusiasts, and measure demand signals for 30 days. Results show a 2.3% conversion rate (vs. 2.8% US baseline) and $42 CAC (vs. $35 US) — strong enough to proceed.
+**Scenario:**
 
-Their Canada GTM plan includes: CAD pricing, Canadian influencer partnerships, local customer service hours, and a micro-fulfillment arrangement with a Canadian 3PL to reduce shipping times from 8 days to 3. They set a 6-month milestone of $200K CAD revenue before expanding to the UK.
+Illustrative scenario: a maker of reusable food containers sells online and through retailers in its home country. It is considering a first move abroad.
+
+**Walkthrough:**
+
+Geographic segmentation produces candidate countries, which the team scores on market size, shipping cost, language, packaging regulation and retail access. A neighboring country with the same language and similar packaging rules scores highest on fit, even though a larger market scores higher on size.
+
+The team runs a small online test in the top two countries with local pricing and delivery promises. The neighboring country shows stronger response and lower delivery cost. The entry plan covers local packaging labels, one retail partner and a paid social budget, with a review after the first two quarters and a stop condition tied to repeat purchase rates.
+
+## A new use for an existing industrial product
+
+**Scenario:**
+
+Illustrative scenario: a manufacturer of industrial air filters sells to factories. A distributor mentions that commercial kitchens have asked about similar filters.
+
+**Walkthrough:**
+
+The team treats this as a new use and a new market. Segmentation by application shows commercial kitchens, bakeries and laboratories as possible segments with filtration needs. Kitchens need a smaller filter and grease resistance, which is a moderate product change.
+
+The team interviews kitchen equipment installers, who confirm the need and name the certifications buyers expect. The business case includes the redesign and certification costs, the distributor channel, and a pilot with a handful of restaurant groups. Leadership approves the pilot and schedules a decision on full entry once the certification is complete.

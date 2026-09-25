@@ -1,25 +1,21 @@
-# FAQ: Crafting Actionable Start Stop Continue Questions and Prompts
+# FAQ: Writing Start Stop Continue Questions and Prompts
 
-## How many start stop continue questions should I ask per session?
+## What are the basic start stop continue questions?
 
-Aim for 2-3 questions per category, totaling 6-9 prompts per session. This gives enough variety to cover your focus areas without causing survey fatigue. If your session is shorter than 30 minutes, reduce to 1-2 per category.
+What should we start doing, what should we stop doing, and what should we continue doing? Parabol's template uses these three prompts. They work best when you add a scope, such as "this sprint," and a short example under each.
 
-## What are good start stop continue questions for remote teams?
+## What are some start stop continue question examples for a retrospective?
 
-For remote teams, anchor questions to async workflows and digital tools: "What's one Slack practice we should start to reduce notification overload?" or "Which virtual meeting habit should we stop because it doesn't translate well from in-person?" Focus on communication channels, meeting formats, and documentation practices that are uniquely impacted by remote work.
+Start: "What one practice would have saved us the most time if we had started it at the beginning of this sprint?" Stop: "What do we do that costs us time without improving the result?" Continue: "What did we do this sprint that we should keep even under pressure, and why?"
 
-## How do I make start stop continue questions feel safe for teams with low trust?
+## How do I make Stop questions feel safe?
 
-Depersonalize all questions by focusing on processes, not people. Use "we" language exclusively. Soften Stop questions with phrases like "do less of" or "experiment with removing." Start with Continue questions to build positivity before addressing problems, and consider collecting answers anonymously.
+Point them at processes and habits, not people, and use softer wording for new teams, such as "What could we do less of?" Anonymous notes also help. If the Stop column stays empty, look at safety in the team rather than at the wording alone.
 
-## Can I reuse the same start stop continue questions every sprint?
+## Should the questions change every session?
 
-Reusing identical questions leads to stale, repetitive answers. Instead, maintain a question bank organized by focus area and rotate which areas you target each session. You can reuse the structural patterns and formulas, but swap in fresh focus areas, temporal anchors, and domain references.
+Change the scope and the examples to fit each session, and keep the meaning of the three columns stable. That way answers from different sessions can be compared, and the team does not have to relearn the format.
 
-## What's the difference between a start stop continue question and a survey question?
+## Can I add a fourth question?
 
-Start stop continue questions are open-ended prompts designed for qualitative feedback and group discussion, while survey questions typically seek quantitative ratings. SSC prompts should elicit short narrative answers describing specific practices, not numerical scores or yes/no responses.
-
-## How do I write start stop continue questions for one-on-one performance reviews?
-
-In one-on-ones, tailor questions to the individual's role and recent work. Replace "we" with "you" or "I" and reference specific projects: "What's one thing I could start doing as your manager to better support your work on the migration project?" This makes the feedback personally relevant and immediately actionable.
+Yes, a free text question for anything that fits none of the headings is useful, especially for course or program feedback. Hoon and colleagues suggest combining the structured questions with free text for that reason. Keep it at the end so it does not replace the three main prompts.
