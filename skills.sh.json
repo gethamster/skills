@@ -112,14 +112,20 @@
       "description": "Engineering practice and the methods for working alongside AI agents.",
       "skills": [
         "balancing-helpfulness-and-harmlessness-tradeoffs",
+        "calibrating-confidence-to-outcomes",
         "comparing-gstack-to-other-ai-coding-frameworks",
         "comparing-posthog-experiments-with-alternative-platforms",
         "crafting-red-team-prompts-for-safety-testing",
         "customizing-and-extending-gstack-skills",
         "designing-onboarding-experiment-hypotheses-and-metrics",
+        "designing-outcome-based-reward-signals",
+        "designing-schema-constrained-decisions",
         "drafting-ai-constitution-principles",
+        "estimating-decision-confidence",
         "evaluating-ai-alignment-with-preference-models",
+        "evaluating-probabilistic-calibration",
         "generating-reinforcement-learning-from-ai-feedback",
+        "handling-abstention-and-uncertainty",
         "implementing-ai-self-critique-and-revision",
         "installing-and-configuring-gstack-skill-pack",
         "integrating-posthog-experiments-with-webflow-and-marketing-pages",
@@ -132,6 +138,7 @@
         "setting-up-posthog-feature-flags-for-experiments",
         "shipping-winning-variants-and-cleaning-up-experiments",
         "structuring-ai-coding-sessions-with-gstack-phases",
+        "structuring-machine-to-machine-decision-outputs",
         "using-multi-agent-perspectives-for-development"
       ]
     },
