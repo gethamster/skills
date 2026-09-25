@@ -5,12 +5,15 @@ description: "Crystal Agile Framework for the product manager: Cockburn's family
 metadata:
   datePublished: "2026-07-07"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/terraced-fields-colour-light.webp"
 ---
 
 # Crystal Agile Framework explained for the product manager
 
-> Created by **Alistair Cockburn** — [https://www.alistair.cockburn.us](https://www.alistair.cockburn.us)
+> Created by **Alistair Cockburn** - [https://www.alistair.cockburn.us](https://www.alistair.cockburn.us)
 
 ## Overview
 
@@ -128,14 +131,14 @@ Crystal variants scale their practices by [team size and project criticality](ht
 
 This method includes the following skills:
 
-- [Selecting the Right Crystal Color Variant for Your Team](skills/selecting-crystal-color-variant/SKILL.md) — How to assess team size, project criticality, and priorities to choose the appropriate Crystal variant \(Clear, Yellow, Orange, or Red\).
-- [Implementing Frequent Delivery Cycles in Crystal Projects](skills/implementing-frequent-delivery-cycles/SKILL.md) — How to plan and execute short, regular delivery increments to get working software to users quickly and incorporate feedback continuously.
-- [Designing Technical Environments That Support Team Focus](skills/designing-technical-environments-for-focus/SKILL.md) — How to configure workspaces, tools, and automated testing/integration infrastructure to minimize distractions and maximize sustained developer focus and productivity.
-- [Facilitating Osmotic Communication in Agile Teams](skills/facilitating-osmotic-communication/SKILL.md) — How to design team environments and communication practices so that information flows passively to team members through proximity and ambient awareness.
-- [Integrating Expert User Access into Development Workflow](skills/integrating-expert-user-access/SKILL.md) — How to establish and maintain direct, ongoing access to real expert users so the team can validate requirements, test assumptions, and refine features collaboratively.
-- [Tailoring Agile Processes to Your Specific Team Context](skills/tailoring-processes-to-team-context/SKILL.md) — How to apply Crystal's methodology-tuning principles to strip away unnecessary process overhead and adopt only the practices that fit your team's unique situation.
-- [Establishing Personal Safety for Honest Team Collaboration](skills/establishing-personal-safety-in-teams/SKILL.md) — How to create a psychologically safe environment where team members feel comfortable raising concerns, admitting mistakes, and providing candid feedback.
-- [Running Reflective Improvement Workshops in Crystal](skills/running-reflection-workshops/SKILL.md) — How to conduct structured reflection workshops where teams identify what is working, what needs adjustment, and commit to specific process improvements each iteration.
+- [Selecting the Right Crystal Color Variant for Your Team](../../skills/selecting-crystal-color-variant/SKILL.md): How to assess team size, project criticality, and priorities to choose the appropriate Crystal variant \(Clear, Yellow, Orange, or Red\).
+- [Implementing Frequent Delivery Cycles in Crystal Projects](../../skills/implementing-frequent-delivery-cycles/SKILL.md): How to plan and execute short, regular delivery increments to get working software to users quickly and incorporate feedback continuously.
+- [Designing Technical Environments That Support Team Focus](../../skills/designing-technical-environments-for-focus/SKILL.md): How to configure workspaces, tools, and automated testing/integration infrastructure to minimize distractions and maximize sustained developer focus and productivity.
+- [Facilitating Osmotic Communication in Agile Teams](../../skills/facilitating-osmotic-communication/SKILL.md): How to design team environments and communication practices so that information flows passively to team members through proximity and ambient awareness.
+- [Integrating Expert User Access into Development Workflow](../../skills/integrating-expert-user-access/SKILL.md): How to establish and maintain direct, ongoing access to real expert users so the team can validate requirements, test assumptions, and refine features collaboratively.
+- [Tailoring Agile Processes to Your Specific Team Context](../../skills/tailoring-processes-to-team-context/SKILL.md): How to apply Crystal's methodology-tuning principles to strip away unnecessary process overhead and adopt only the practices that fit your team's unique situation.
+- [Establishing Personal Safety for Honest Team Collaboration](../../skills/establishing-personal-safety-in-teams/SKILL.md): How to create a psychologically safe environment where team members feel comfortable raising concerns, admitting mistakes, and providing candid feedback.
+- [Running Reflective Improvement Workshops in Crystal](../../skills/running-reflection-workshops/SKILL.md): How to conduct structured reflection workshops where teams identify what is working, what needs adjustment, and commit to specific process improvements each iteration.
 
 ## FAQ
 
@@ -170,7 +173,7 @@ It is documented as unsuitable for life-critical systems and as best suited to c
 ## Sources
 
 - [Crystal Clear: A Human-Powered Methodology for Small Teams\|eBook](https://barnesandnoble.com/w/crystal-clear-alistair-paul-becker/1138695701)
-- [Crystal Clear: A Human-Powered Methodology for Small Teams Paperback – 19 Oct. 2004](https://amazon.co.uk/Crystal-Clear-Human-Powered-Methodology-Small/dp/0201699478)
+- [Crystal Clear: A Human-Powered Methodology for Small Teams Paperback - 19 Oct. 2004](https://amazon.co.uk/Crystal-Clear-Human-Powered-Methodology-Small/dp/0201699478)
 - [Bio](https://alistaircockburn.com/Bio)
 - [AlistairCockburn](https://alistaircockburn.com)
 - [\[PDF\] Agile Software Development Methodologies: Survey of Surveys](https://scirp.org/pdf/JCC_2017033115471602.pdf)
@@ -179,7 +182,7 @@ It is documented as unsuitable for life-critical systems and as best suited to c
 - [An Empirical Study of Agile Software Development](https://research.ijcaonline.org/volume84/number8/pxc3892832.pdf)
 - [Effective Implementation of Agile Practices](https://pdfs.semanticscholar.org/57b4/6f23ff3328f09661d83ef1f590536c323e90.pdf)
 - [Scrum vs Crystal Methodology: What's the Difference?](https://tms-outsource.com/blog/posts/scrum-vs-crystal-methodology)
-- [Crystal Agile Methodology – Project Management Formula](https://projectmanagementformula.com/crystal-agile-methodology)
+- [Crystal Agile Methodology - Project Management Formula](https://projectmanagementformula.com/crystal-agile-methodology)
 - [Agile Software Development The Cooperative Game:](https://uxhh.de/roundtable/archiv/_media/2008/HO08-21_CockburnAlistairASD.pdf)
 - [Crystal Methods - Wikiversity](https://en.wikiversity.org/wiki/Crystal_Methods)
 - [Agile 2007](https://scribd.com/document/95144672/Agile-2007)
