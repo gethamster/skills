@@ -1,35 +1,37 @@
-# Examples: Conducting Phase Gate Reviews
+# Examples: Conducting Phase Gate Reviews in a Waterfall Project
 
-## Example: Requirements-to-Design Gate Review for an ERP Implementation
-
-**Scenario:**
-
-A mid-sized manufacturing company is implementing a new ERP system using the waterfall model. The requirements phase has just concluded, producing a 120-page Software Requirements Specification (SRS). The project manager needs to run the gate review before design begins.
-
-**Walkthrough:**
-
-The project manager established exit criteria at the start of the requirements phase: all functional requirements traced to business processes, all requirements reviewed by department leads, no open TBD items, and sign-off from the compliance officer on regulatory requirements.
-
-Two weeks before the gate, the BA team completed the SRS and performed a self-assessment, finding 3 remaining TBD items related to inventory valuation methods. They escalated these to the finance director and resolved 2 of 3 before the gate package was distributed.
-
-The gate review package was sent 5 business days before the meeting, including the SRS, traceability matrix, self-assessment checklist, and a note flagging the one remaining TBD item (a tax calculation edge case awaiting legal input).
-
-During the 90-minute gate meeting, the team walked through each criterion. All passed except the TBD item. The compliance officer confirmed it was low-risk and wouldn't affect the initial design architecture. The steering committee issued a Conditional Go: proceed to design, with the TBD resolved within 10 business days and the SRS updated accordingly. The finance director was assigned as owner.
-
-The decision record was signed, distributed, and the condition was tracked in the project's issue log. The item was resolved in 7 days, the SRS was updated, and the condition was formally closed.
-
-## Example: Design-to-Development Gate with a No-Go Decision
+## Requirements gate with a conditional go
 
 **Scenario:**
 
-A government agency is building a citizen portal using the waterfall model. The design phase produced detailed system architecture and UI wireframes, but the security review revealed significant gaps in the authentication design.
+Illustrative scenario: a team replacing an internal billing system reaches the end of its requirements phase. The exit criteria say every requirement must have an identifier, a source stakeholder and an acceptance test reference, and the finance and support leads must sign off.
 
 **Walkthrough:**
 
-Exit criteria for the design gate included: system architecture approved by the enterprise architecture board, UI designs validated against accessibility standards (WCAG 2.1 AA), security architecture reviewed and approved by the CISO's team, and all interface specifications documented for third-party integrations.
+The gate package shows all criteria met except one: a handful of reporting requirements still lack acceptance test references because the finance team has not agreed the report formats. Reviewers logged their findings a week earlier, and the team has answered each one.
 
-During the gate review, the enterprise architecture and accessibility criteria passed. However, the security team presented findings showing that the proposed authentication flow didn't meet the agency's zero-trust requirements—a fundamental architectural concern, not a minor detail.
+The sponsor gives a conditional go. Design may start on everything except reporting, and the finance lead owns agreeing the report formats by a set date. The condition goes on the tracked list, and the design gate will check it first.
 
-The gate decision authority (the program director) issued a No-Go decision. The decision record specified: the security architecture must be redesigned to incorporate zero-trust principles, the CISO's team would provide reference architecture patterns within 5 business days, and the gate would be re-reviewed in 3 weeks.
+## Design gate that recycles part of the work
 
-Rather than viewing this as a failure, the project sponsor acknowledged that catching this gap before development saved an estimated 8-12 weeks of rework. The redesigned security architecture passed the re-review, and the project proceeded to development on a revised but realistic timeline. The project plan and Gantt chart were updated to reflect the 3-week delay at this gate.
+**Scenario:**
+
+Illustrative scenario: a vendor is building a scheduling system for a hospital department under a fixed-price contract. The design review is a contract milestone.
+
+**Walkthrough:**
+
+The technical reviewers find that the design for integration with the hospital's patient records system is based on an interface version that the records team plans to retire. Everything else meets its criteria.
+
+The board recycles the integration design only. The vendor gets a short, fixed window to revise it against the current interface and present that part again. The rest of the design is baselined, and detailed work on unaffected modules continues. The recycle is recorded with its scope and re-review date, so there is no dispute later about what was approved.
+
+## Test readiness gate that holds
+
+**Scenario:**
+
+Illustrative scenario: an internal team is about to start system testing for a new inventory application. The entry criteria for testing include a stable build, an approved test plan and a test environment with realistic data.
+
+**Walkthrough:**
+
+The review shows that the build and plan are ready but the test environment still has placeholder data, because the data masking work slipped. Testing on that data would miss the defects the team most needs to find.
+
+The decision-maker puts the gate on hold. The data work gets an owner and a date, and the gate is rescheduled for that date rather than opened now with a condition. The project manager updates the schedule to show the slip openly.

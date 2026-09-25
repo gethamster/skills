@@ -1,15 +1,20 @@
 ---
-name: categorizing-requirements-into-moscow-buckets
-description: "This skill teaches you how to evaluate each requirement or feature against clear criteria and assign it to the correct MoSCoW category — must have, should have, could have, or won't have — so your team ships what matters most."
+name: "categorizing-requirements-into-moscow-buckets"
+description: "How to categorize requirements into the MoSCoW categories with the DSDM tests, including where the Must have vs Should have line falls."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: moscow
+  method: "moscow"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Categorizing Requirements into Must Have, Should Have, Could Have, and Won't Have
+# Categorizing Requirements into MoSCoW Categories
 
-> This skill teaches you how to evaluate each requirement or feature against clear criteria and assign it to the correct MoSCoW category — must have, should have, could have, or won't have — so your team ships what matters most.
+> How to categorize requirements into the MoSCoW categories with the DSDM tests, including where the Must have vs Should have line falls.
 
 ## Before you start
 
@@ -23,153 +28,100 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You can confidently and consistently assign every requirement to the right MoSCoW bucket, producing a prioritized backlog that stakeholders trust and engineers can act on. |
-| Prerequisites | A gathered list of requirements or features to prioritize, Basic understanding of the MoSCoW framework and its four categories, Access to stakeholders or subject matter experts who can validate business impact, Familiarity with your product's strategic goals and constraints |
-| Part of | [MoSCoW](../../methods/moscow/METHOD.md) |
+| Difficulty | Beginner |
+| Time to Learn | About an hour |
+| Outcome | You can place any requirement in the right MoSCoW category with a stated reason that someone else could check. |
+| Prerequisites | A fixed timeframe, a list of candidate requirements, a named business decision-maker |
+| Part of | [MoSCoW Method](../../methods/moscow/METHOD.md) |
 
 ## Overview
 
-Sorting requirements into must have, should have, could have, and won't have categories is the core activity of the MoSCoW prioritization method. Without clear, repeatable criteria for each bucket, teams default to gut feel or political influence — and the resulting prioritization crumbles the moment stakeholders push back. This skill gives you a structured evaluation process so every requirement lands in a defensible category.
+MoSCoW categorization is the step where each requirement gets its label: Must have, Should have, Could have or Won't have this time. The four MoSCoW prioritization categories come from DSDM, and the background on where they came from is on the [MoSCoW method](../../methods/moscow/METHOD.md) page. This skill covers the decision itself: how to categorize requirements with MoSCoW so that two people applying the rules to the same item reach the same answer.
 
-The challenge isn't understanding what the four letters stand for. Most teams get that in five minutes. The real challenge is drawing sharp lines between categories when everything feels important. This skill teaches you to apply specific litmus tests — business criticality, workaround availability, regulatory obligation, and user impact — so the boundaries between must have and should have (or should have and could have) become concrete rather than subjective.
+The categories are defined by what happens when a requirement is missing. The [DSDM definitions](https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html) make a Must have part of the Minimum Usable SubseT that the project guarantees to deliver. A Should have is "important but not vital" and survivable with a workaround. A Could have is wanted but has less impact if left out. A Won't have is agreed to be outside this timeframe.
 
-When you master this categorization process, you create alignment across product, engineering, design, and business stakeholders. The output feeds directly into MVP scoping, sprint planning, and roadmap construction. It's the foundation skill for every other activity in the [MoSCoW](https://tryhamster.com/methods/moscow) framework.
+Most categorization errors happen at one boundary: Must have vs Should have. Stakeholders tend to hear "Should" as "optional", so they argue for Must on anything they care about. The DSDM tests move that argument away from importance and toward consequences, which people can check. The second hard boundary, Should vs Could, is the one DSDM itself calls "quite subjective", so this skill has you agree a rule for it before you start.
+
+Who categorizes matters as much as the rules. DSDM gives the business side, the Business Visionary or an empowered Business Ambassador, the job of explaining why a requirement is a Must, while the analyst and the delivery team are expected to question any Must that is not obvious. A list categorized by one person at a desk is a draft. It becomes the plan once the people who own the objectives have accepted it.
+
+The output of this skill is a list in which every requirement has one category for one named timeframe and a one-line reason for anything that was contested. That list feeds the effort check, the workshop and the roadmap covered in the sibling skills.
 
 ## How It Works
 
-MoSCoW categorization works by running each requirement through a decision framework built on four evaluation dimensions: **business criticality** (does the product fail without it?), **user impact** (how many users are affected and how severely?), **workaround availability** (can users or the business achieve the goal another way?), and **regulatory or contractual obligation** (is there an external mandate?).
+Categorization runs each requirement through a short sequence of questions, starting from the bottom. The [DSDM handbook](https://www.agilebusiness.org/wp-content/uploads/2026/05/DSDM-Agile-Project-Framework-Handbook.pdf) suggests treating every requirement as a Won't have at first and asking why it deserves more. That default reverses the burden of proof: the requirement's sponsor explains why it is needed now, rather than the team explaining why it should be cut.
 
-The key insight is that the categories are not a spectrum of importance — they represent qualitatively different relationships to the release. A **must have** isn't just 'very important'; it means the product literally cannot ship or function without it. A **should have** isn't just 'less important'; it means there's a viable workaround for this release, even though you need it soon. A **could have** is a genuine enhancement that improves satisfaction but whose absence doesn't degrade the core experience. A **won't have** is an explicit, transparent decision to defer — not a rejection, but a scoping boundary.
+A requirement becomes a Must have only if it passes the consequence test. DSDM asks "what happens if this requirement is not met?" If the answer is that the project should be cancelled, or that the solution would be illegal, unsafe or not viable, it is a Must. The handbook's second test asks the business whether it would stop the deployment if told the night before that this item could not be delivered. A third check looks for a workaround: if one exists, even a manual one, the requirement is not a Must.
 
-This qualitative distinction is what makes the framework powerful. Rather than arguing about whether something is a 7 or an 8 on a priority scale, you're asking binary questions: 'Can we launch without this? Yes or no.' 'Is there a workaround? Yes or no.' These binary gates make categorization faster and more defensible than numerical scoring systems.
+Must haves also have to be self-contained. The handbook states that a Must cannot depend on anything other than a Must, because a Should or Could it relies on might not be delivered. When a Must depends on a lower item, either the dependency is promoted or the Must is not really a Must.
+
+Anything that fails the Must tests is a Should or a Could. DSDM separates them by the degree of pain a missing requirement causes, measured in business value or the number of people affected, and recommends agreeing objective criteria for that line at the start of the project. The handbook also suggests comparing the cost of the workaround with the cost of delivering the requirement, including any cost of doing it later.
+
+Categories belong to a timeframe. The [DSDM page](https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html) describes separate priorities for the project, the Project Increment and the Timebox, so the same requirement can be a Must for the project and a Could for the first timebox. Always state which timeframe a category applies to.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Prepare Your Requirements List and Context
+### Step 1: Name the timeframe and the objective
 
-Before categorizing anything, ensure your requirements list is clean and well-defined. Each item should be specific enough to evaluate — 'improve performance' is too vague, while 'reduce page load time to under 2 seconds on 3G connections' is evaluable. Remove duplicates and merge overlapping items.
+Write down which timeframe you are categorizing for: the whole project, the next increment or one timebox. State the business objective that timeframe must meet. DSDM advises tying each requirement to a project objective, because a requirement serving an objective that is not a Must is probably not a Must either. Without a named timeframe, the categories have nothing to refer to and every debate becomes abstract.
 
-Gather the context documents you'll need: the product vision or strategy statement, any regulatory or compliance requirements, contractual obligations, technical architecture constraints, and user research findings. Having these on hand prevents the categorization from becoming a memory test.
+### Step 2: Agree the Should vs Could rule
 
-Finally, identify the **time horizon** for your MoSCoW exercise. Are you prioritizing for a single sprint, an MVP release, or a quarterly roadmap? The time horizon directly affects categorization — a feature might be a 'must have' for a Q4 release but a 'won't have' for the current sprint.
+Before anyone categorizes, agree the objective criteria that separate a Should from a Could. Useful criteria are the number of users affected, the value of benefits at stake, or the cost of the workaround. Write the rule down and put it where everyone can see it. DSDM's advice is to settle this before requirements are captured, when nobody is attached to a particular item.
 
-> **Pro tip:** Create a shared document with the requirements list, evaluation criteria definitions, and context links before the session starts. This prevents 30 minutes of setup eating into your prioritization time.
+### Step 3: Start every item at Won't have
 
-### Step 2: Step 2: Define Your Category Criteria Explicitly
+Place every requirement in Won't have for the chosen timeframe. Then take each item and ask its sponsor why it is needed in this timeframe, following the [DSDM tip](https://www.agilebusiness.org/wp-content/uploads/2026/05/DSDM-Agile-Project-Framework-Handbook.pdf) to justify promotion rather than demotion. Items nobody argues for stay where they are. This keeps the Won't have list honest and stops quiet additions.
 
-Write down the specific criteria for each category before you start sorting. Generic definitions invite interpretation drift — by requirement #15, 'must have' has subtly expanded to include anything stakeholders feel strongly about.
+### Step 4: Run the Must have tests
 
-Here are battle-tested criteria to start with:
+For each item proposed as a Must, ask the consequence question, the night-before-deployment question and the workaround question in turn. Record the answer to each, not just the verdict. If the item passes, check its dependencies: anything it relies on must also be a Must. If an item partly passes, split it and categorize the parts separately.
 
-- **Must have**: The product cannot launch, is unusable, is unsafe, or violates a contract/regulation without this. There is no acceptable workaround. Removing this makes the release pointless.
-- **Should have**: This is important and painful to leave out, but the product still works without it. There exists a workaround (even if it's manual, ugly, or temporary). Plan to deliver it soon after must haves.
-- **Could have**: This is desirable and would improve user satisfaction or efficiency, but its absence doesn't cause pain. Include it only if time and budget permit after must and should haves are complete.
-- **Won't have (this time)**: This is acknowledged as a valid requirement but is explicitly out of scope for this release. It may be revisited in future iterations.
+### Step 5: Place the rest as Should or Could
 
-Post these definitions where everyone can see them throughout the exercise. Refer back to them whenever a categorization debate stalls.
+Apply the agreed rule from Step 2 to every item that failed the Must tests. Where the rule gives no clear answer, compare the cost of the workaround with the cost of building the item now. Keep a short reason next to any item that was argued over. Borderline Should vs Could calls matter less than Must calls, so do not let them consume the session.
 
-> **Pro tip:** Add 1-2 real examples from your domain to each category definition. Seeing 'GDPR consent flow = Must Have' and 'Dark mode = Could Have' makes the abstract criteria tangible.
+### Step 6: Check the shape of the result
 
-### Step 3: Step 3: Apply the 'Launch Failure' Test for Must Haves
+Estimate the effort in each category and compare the Must share with DSDM's guideline of typically no more than 60% of effort ([DSDM: MoSCoW prioritisation](https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html)). If the share is too high, the handbook's diagnosis is usually that requirements have not been broken down enough. Return to Step 4 with the largest Musts and split them. Also check that some Could haves exist, since they are the first contingency.
 
-Go through your requirements list and identify the must haves first. For each requirement, ask: **'If we launch without this, does the product fail to deliver its core promise, violate a law, or break a contract?'**
+### Step 7: Record the categories with their reasons
 
-Be ruthless. The most common mistake in MoSCoW is overstuffing the must have bucket. A good rule of thumb from Dai Clegg's original framework is that must haves should represent roughly **60% or less of your total effort budget**. If your must haves exceed this, you either have too many must haves or your scope is too large for the timeline.
-
-For each candidate must have, apply these secondary checks:
-- Is there truly no workaround? (Even a manual, temporary one?)
-- Would a significant percentage of users be blocked entirely?
-- Is there a legal, safety, or contractual mandate?
-
-If the answer to all three is 'no,' the requirement probably belongs in should have, even if it feels very important.
-
-> **Pro tip:** Ask the question in reverse: 'What happens if we ship without this?' If the answer is 'users will be annoyed but can still accomplish their core task,' it's not a must have.
-
-### Step 4: Step 4: Separate Should Haves from Could Haves
-
-With must haves identified, take the remaining requirements and split them into should have and could have. This is where most teams struggle because the boundary is less dramatic than the must have line.
-
-The key differentiator is **pain and frequency**. A should have causes noticeable pain or friction when absent — users will complain, support tickets will increase, or key workflows become significantly slower. A could have, when absent, simply means the experience isn't as polished or delightful.
-
-Apply these questions to each remaining item:
-- **How many users are affected?** High-frequency, broad-impact items lean toward should have.
-- **How severe is the impact?** Significant friction or efficiency loss = should have. Minor inconvenience = could have.
-- **Is there a reasonable workaround?** If the workaround is painful but functional, it's a should have (the pain justifies prioritizing it soon). If the workaround is trivial, it's a could have.
-
-Should haves typically represent about **20% of your effort budget**, and could haves another **20%**. This gives you a natural buffer — if must haves take longer than expected, could haves get cut first, then should haves if necessary.
-
-> **Pro tip:** When stuck between should and could, ask: 'Will we get negative reviews or lost customers if this is missing at launch?' If yes, it's a should have.
-
-### Step 5: Step 5: Explicitly Designate Won't Haves
-
-Don't just ignore the remaining items — actively categorize them as won't haves for this release. This step is critical because it transforms an ambiguous backlog into a clear scope boundary.
-
-For each won't have, document **why** it's deferred and **when** it might be revisited. 'Won't have this time' is not 'never.' Stakeholders who see their request acknowledged and scheduled for future consideration are far more likely to accept the deferral than those who feel their input was dismissed.
-
-Won't haves often include:
-- Features that serve a future market segment you haven't entered yet
-- Nice-to-have integrations with low current demand
-- Speculative features without validated user need
-- Items that depend on infrastructure not yet in place
-- Requests from a single stakeholder that don't align with broader strategy
-
-> **Pro tip:** Create a 'Won't Have (This Time)' section in your roadmap or backlog tool. Revisit it at the start of each planning cycle. This builds stakeholder trust and prevents won't haves from becoming forgotten ideas.
-
-### Step 6: Step 6: Validate the Distribution and Stress-Test Edge Cases
-
-Step back and look at the overall distribution across your four buckets. A healthy MoSCoW split typically follows a ratio close to 60/20/20 for effort across must/should/could haves (with won't haves excluded from the effort calculation since they're deferred).
-
-If your must haves consume more than 60% of available effort, you have a problem. Either you've been too generous with the must have label, or the project scope exceeds your capacity. Go back through the must haves and re-apply the launch failure test more strictly.
-
-Next, stress-test your categorization with edge cases:
-- Pick 2-3 items on the boundary between must and should. Present the 'launch without it' scenario to stakeholders. If they accept the workaround, downgrade to should.
-- Pick 2-3 should haves and ask: 'If we run out of time, can we live without this for 4-6 weeks post-launch?' If yes, confirm should have. If the delay would cause serious damage, reconsider as must have.
-- Verify that no won't haves are actually must haves in disguise — especially compliance or security items that were categorized based on perceived complexity rather than actual necessity.
-
-> **Pro tip:** Present the categorized list to someone who wasn't in the session — a fresh pair of eyes will quickly spot items that seem miscategorized.
-
-### Step 7: Step 7: Document and Communicate the Categorized Output
-
-The final step is documenting the categorized requirements in a format that's actionable for the team and transparent for stakeholders. For each requirement, record:
-- The MoSCoW category
-- A 1-sentence rationale for the categorization
-- Any dependencies on other requirements
-- The estimated effort (if available)
-
-Share this document broadly. The power of must have, should have, could have, and won't have categories is that they're immediately understandable by anyone — executives, engineers, designers, and customers. Use this accessibility to build alignment.
-
-This categorized output directly feeds into [defining your MVP scope](https://tryhamster.com/skills/defining-mvp-scope-with-moscow) and [building your prioritized roadmap](https://tryhamster.com/skills/building-roadmaps-from-moscow-outputs).
+Publish the list with every item, its category, the timeframe and the reason for contested calls. Keep the Won't haves on it. Note any item whose category will change in a later timeframe, for example a Should now that becomes a Must for a later release. Send the list to everyone who will be asked to accept the scope.
 
 ## Best Practices
 
-- Always define your MoSCoW categories with specific, written criteria before starting categorization — never rely on the team's intuitive understanding of 'must' vs. 'should.'
-- Cap must haves at roughly 60% of your available effort budget. If you exceed this, you're either miscategorizing or your scope needs to shrink.
-- Categorize must haves first by applying the binary 'launch failure' test, then sort the remainder into should, could, and won't have — working from highest to lowest stakes reduces ambiguity.
-- Document a brief rationale for each categorization decision. This prevents re-litigation in future meetings and helps onboard new team members to the reasoning.
-- Treat 'won't have' as 'won't have this time' — always communicate that deferred items will be revisited, and actually follow through by reviewing them each planning cycle.
-- Re-run the categorization whenever a significant constraint changes (timeline cut, budget change, new regulation). MoSCoW categories are tied to a specific release context, not permanent labels.
+- Write the reason next to the label. A category with a stated consequence can be checked by someone who was not in the room, and a bare label invites the same argument again.
+- Split before you debate. The [DSDM handbook](https://www.agilebusiness.org/wp-content/uploads/2026/05/DSDM-Agile-Project-Framework-Handbook.pdf) treats "everything is a Must" as a symptom of insufficient decomposition, and splitting usually ends the argument faster than discussion does.
+- Give acceptance criteria their own priorities. A requirement can have a Must threshold and a Should target, as in the handbook's example of a restore time that should be fast and must be within a longer limit.
+- Keep the Must tests in the room. Print the consequence and night-before questions where everyone can see them, so challenges refer to the test rather than to the person.
+- Say which W you mean. Some teams read W as "would" or "wish", and some add an X for items excluded permanently, as the [Wikipedia entry](https://en.wikipedia.org/wiki/MoSCoW_method) notes, so define it on the list.
+- Prioritise testing too. DSDM suggests applying MoSCoW to tests as well as requirements, which keeps test effort aligned with what is guaranteed.
 
 ## Common Mistakes
 
-- **Putting everything in must have because stakeholders insist their features are critical** — Apply the binary 'launch failure' test strictly: if the product can still function and deliver core value without it, it's not a must have regardless of who requested it. Facilitate this by asking stakeholders to describe what happens if the feature ships 6 weeks later — if they can articulate a viable interim state, it's a should have.
-- **Using must have, should have, could have, and won't have as a simple importance ranking (1-4 scale) rather than qualitatively different categories** — Reinforce that the categories represent different relationships to the release, not degrees of importance. A could have might be incredibly valuable — it's just not essential for this specific release to succeed. Train the team on the qualitative definitions before every session.
-- **Leaving the 'won't have' bucket empty because it feels negative or confrontational** — Explicitly populating won't have is one of the most valuable parts of MoSCoW — it creates a transparent scope boundary. Frame it as 'won't have this time' and pair each item with a tentative future date. This turns a potential conflict into a planning conversation.
-- **Categorizing based on effort or feasibility instead of value and necessity** — MoSCoW categorization should reflect how critical the requirement is to the release, not how hard it is to build. A technically complex feature that's required by law is still a must have. Separate the 'what bucket does it belong in?' discussion from the 'can we actually deliver it?' discussion — the latter is a resourcing problem, not a prioritization one.
-- **Doing MoSCoW categorization once and treating the results as permanent** — Requirements shift categories as context changes. A could have might become a must have when a competitor launches that feature, or a must have might become a won't have if the timeline is cut in half. Schedule periodic re-categorization reviews, especially after major scope or constraint changes.
+- **Treating Must as "very important"**: Importance is not the test. A requirement is a Must only if missing it means cancelling, or an illegal, unsafe or non-viable result; anything with a workaround belongs lower.
+- **Categorizing without a timeframe**: A category with no timeframe cannot be checked against capacity. Name the project, increment or timebox before labelling anything.
+- **Letting a Must depend on a Should**: The Must inherits the risk of the lower item. Promote the dependency, remove the dependency, or demote the Must.
+- **Debating Should vs Could without a rule**: DSDM calls this boundary subjective. Without an agreed rule, it absorbs time the Must decisions need.
+- **Deleting Won't haves**: Removing them from the list invites the same requests back. Keep them visible with a reason.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/moscow/METHOD.md) — MoSCoW
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/moscow/METHOD.md): MoSCoW Method
 
 ## Related Skills
 
-- [Building Prioritized Roadmaps from MoSCoW Outputs](../building-roadmaps-from-moscow-outputs/SKILL.md)
 - [Applying MoSCoW to Project and Software Requirements](../applying-moscow-to-project-requirements/SKILL.md)
-- [Resolving Stakeholder Priority Disputes Using MoSCoW](../resolving-stakeholder-disputes-with-moscow/SKILL.md)
-- [Facilitating MoSCoW Prioritization Workshops with Stakeholders](../facilitating-moscow-prioritization-workshops/SKILL.md)
-- [Defining MVP Scope Using MoSCoW Categories](../defining-mvp-scope-with-moscow/SKILL.md)
-- [Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
+- [Facilitating a MoSCoW Prioritization Workshop](../facilitating-moscow-prioritization-workshops/SKILL.md)
+- [Resolving Stakeholder Priority Conflicts with MoSCoW](../resolving-stakeholder-disputes-with-moscow/SKILL.md)
+- [Defining MVP Scope with MoSCoW](../defining-mvp-scope-with-moscow/SKILL.md)
+- [Building a MoSCoW Roadmap for Phased Delivery](../building-roadmaps-from-moscow-outputs/SKILL.md)
+- [MoSCoW vs RICE, ICE and WSJF](../comparing-moscow-with-other-prioritization-frameworks/SKILL.md)
+
+## Sources
+
+- [Agile Business Consortium: DSDM handbook, MoSCoW prioritisation](https://www.agilebusiness.org/dsdm-project-framework/moscow-prioritisation.html)
+- [DSDM Agile Project Framework handbook (PDF)](https://www.agilebusiness.org/wp-content/uploads/2026/05/DSDM-Agile-Project-Framework-Handbook.pdf)
+- [Wikipedia: MoSCoW method](https://en.wikipedia.org/wiki/MoSCoW_method)

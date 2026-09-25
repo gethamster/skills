@@ -1,15 +1,20 @@
 ---
-name: deciding-what-to-do-in-retrospectives
-description: "This skill teaches you how to help your team select, prioritize, and commit to specific, actionable improvements from a retrospective so they actually get implemented in the next sprint."
+name: "deciding-what-to-do-in-retrospectives"
+description: "Decide what to do in a retrospective: prioritize improvements with voting and a control check, then commit to one or two owned actions for the next sprint."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: five-step-retrospective-framework
+  method: "five-step-retrospective-framework"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Sprint Retrospective Format for Deciding What to Do: Prioritizing Action Items
+# Decide What to Do in a Retrospective: Prioritize Actions
 
-> This skill teaches you how to help your team select, prioritize, and commit to specific, actionable improvements from a retrospective so they actually get implemented in the next sprint.
+> Decide what to do in a retrospective: prioritize improvements with voting and a control check, then commit to one or two owned actions for the next sprint.
 
 ## Before you start
 
@@ -24,127 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 15-25 minutes per retrospective |
-| Outcome | Your team consistently leaves retrospectives with 1–3 clearly owned, realistically scoped action items that get completed before the next retro. |
-| Prerequisites | Familiarity with basic agile retrospective structure, Experience gathering data and generating insights in retrospectives, Understanding of team capacity and sprint planning |
+| Time to Learn | A few retrospectives of practice |
+| Outcome | You help the team turn its insights into one or two specific, owned improvements that fit in the next sprint and have a clear test of success. |
+| Prerequisites | Agreed insights from the previous phase, knowledge of the team's capacity, a place where the team plans its work |
 | Part of | [Five-Step Retrospective Framework](../../methods/five-step-retrospective-framework/METHOD.md) |
 
 ## Overview
 
-"Decide What to Do" is the fourth phase of the [Five-Step Retrospective Framework](https://tryhamster.com/methods/five-step-retrospective-framework), and it's arguably where most retrospectives succeed or fail. After you've [set the stage](https://tryhamster.com/skills/setting-the-stage-for-retrospectives), [gathered data](https://tryhamster.com/skills/gathering-data-in-retrospectives), and [generated insights](https://tryhamster.com/skills/generating-insights-from-retrospective-data), the team is sitting on a rich set of potential improvements. The challenge is converting that list into a small number of commitments the team will actually follow through on.
+Deciding what to do is the fourth phase of the [Five-Step Retrospective Framework](../../methods/five-step-retrospective-framework/METHOD.md). Its job is to turn the insights the team has just agreed on into a small number of concrete improvements. Retromat's summary of the decide-what-to-do phase is "Pick a few issues to work on and create concrete action plans of how you'll address them" ([Retromat](https://retromat.org/blog/what-is-a-retrospective/)). The phase is where a retrospective becomes useful to the next sprint.
 
-Many teams skip rigorous prioritization and end up with vague resolutions like "communicate better" or ambitious lists of ten improvements that never happen. A well-designed sprint retrospective format for this phase uses structured voting, feasibility filtering, and explicit commitment rituals to ensure the team walks out with actions that stick. The goal isn't to fix everything — it's to fix one or two things *completely* before the next retrospective.
+The main decision is how much to take on. Teams tend to leave with too many actions, because every insight seems to deserve one and nobody wants to dismiss a colleague's idea. The Agile Alliance's description of retrospectives warns against both too few and too many actions and says "one or two improvement ideas per iteration retrospective may well be enough" ([Agile Alliance](https://www.agilealliance.org/glossary/heartbeat-retrospective/)). MindTools' summary of the five steps gives the same advice: prioritize the insights and select one or two for action planning ([MindTools](https://www.mindtools.com/ao5tslk/sprint-retrospectives-in-agile-project-management/)).
 
-This skill covers the practical facilitation techniques, voting methods, and commitment patterns that transform retrospective outputs from wish lists into tangible team improvements. When done well, this phase creates a virtuous cycle: the team sees real change, which builds trust in the retrospective process, which increases engagement in future retrospectives.
+The second decision is what kind of action to take. The best actions are within the team's control and small enough to finish in the next sprint. Ben Linders describes steering teams toward "actions that they could do in the next increment" and away from things the organization would need to do ([Ben Linders](https://www.benlinders.com/2013/how-i-started-with-agile-retrospectives/)). Some issues are outside the team's control, and the useful action there is to influence someone or to change how the team responds.
+
+The third decision is how the action will be carried out. An action needs a clear description, an owner, a way to tell when it is done, and a place in the team's plan. The Scrum Guide notes that the most impactful improvements "may even be added to the Sprint Backlog for the next Sprint" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)), which puts improvement work alongside product work instead of on a separate list that gets forgotten.
+
+This skill covers how to prioritize retrospective improvements, which voting techniques to use, how to check that an action is realistic, and how to write it so it gets done.
 
 ## How It Works
 
-The "Decide What to Do" phase works by applying progressive filtering to narrow a broad set of potential improvements down to a committed few. Think of it as a funnel with three stages: **surface preferences** (voting), **test feasibility** (filtering), and **lock in commitment** (ownership and specificity).
+The phase runs in four moves: generate options, narrow, shape and commit.
 
-First, the team uses a democratic mechanism — most commonly dot voting — to signal which insights or improvement ideas they believe will have the highest impact. This prevents the loudest voice or the most senior person from dictating the agenda. The voting surface reveals where collective energy already exists, which is a leading indicator of follow-through.
+Generating options starts from the insights and the side list of solutions parked earlier. For each insight the team proposes one or more possible changes. Retrium lists Start Stop Continue, Impact/Effort/Energy mapping and Hypotheses and Experiments among decide-phase activities ([Retrium](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)). Framing a change as an experiment helps when the team is unsure it will work, because it sets an expectation of learning.
 
-Next, the top-voted items pass through a feasibility filter. The facilitator guides the team to ask: *Can we actually do this in one sprint? Is this within our control? Can we define what 'done' looks like?* Items that fail these tests get reformulated or deferred — not discarded, but placed in a parking lot for future retrospectives or escalated to management if they require organizational change.
+Narrowing uses a quick, fair method. Dot voting is a common retrospective voting technique. Nielsen Norman Group recommends giving each person a number of votes equal to "roughly a quarter of the total number of options", voting quietly with no lobbying, and having junior people vote before senior ones to protect the votes of those less likely to speak up ([Nielsen Norman Group](https://www.nngroup.com/articles/dot-voting/)). The same article names the pitfalls: persuaded voting, split votes and group think. An impact and effort grid works well as a second pass on the top few options.
 
-Finally, each surviving action item gets sharpened into a SMART-style commitment: specific behavior or deliverable, a single owner (not "the team"), and clear acceptance criteria. The facilitator explicitly asks for verbal commitment. This ritual matters because psychological research on implementation intentions shows that specificity and public commitment dramatically increase follow-through rates. The output feeds directly into sprint planning and into your [action item tracking](https://tryhamster.com/skills/tracking-retrospective-action-items-across-sprints) system.
+Shaping checks that each candidate is realistic. Diana Larsen's [Circles and Soup](https://www.dianalarsen.com/blog/2010/07/26/circles-and-soup/) sorts issues into what the team controls, what it can influence, and "the soup" it can only respond to, with direct, influencing or response actions for each. An action in the team's control can start tomorrow. An action that depends on another team becomes a request with a named person to make it.
+
+Committing makes the action concrete. Ben Linders advises teams to "state what should be done, be specific", to keep actions small, and to "ask for volunteers for actions, don't assign them" ([Ben Linders](https://www.benlinders.com/2017/practical-and-personal-retrospective-actions/)). Each action ends the phase with a volunteer owner, a definition of done and a place in the team's plan. Atlassian's retrospective play also calls for assigning owners and deadlines ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)).
+
+The ideas that lose the vote still have value. Record them on an improvement backlog with the insight they came from, so a later retrospective can pick one up when capacity allows. Saying out loud which ideas are being set aside, and where they are kept, makes it easier for people to accept a short list without feeling dismissed.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Consolidate and Cluster Improvement Ideas
+### Step 1: List candidate improvements
 
-Before voting, review the insights and improvement ideas generated in the previous phase. Group duplicates and closely related items together using affinity mapping. Read each cluster aloud and give it a short label so the team shares a common understanding of what each option actually means.
+Start from the agreed insights and the side list of solutions. For each insight, ask what change would address its cause. Write each candidate as a short action phrase. Merge candidates that are really the same change. Keep ideas that came from successes, since repeating what worked is also an improvement.
 
-This step prevents vote-splitting, where three similar ideas each get a few votes instead of one consolidated idea getting strong support. It also surfaces hidden connections — two seemingly different suggestions might actually be addressing the same root cause.
+### Step 2: Dot vote to find the team's priorities
 
-Aim for 5–10 distinct clusters. If you have more, the team may need to do a quick pre-filter to remove items that are clearly out of scope or already in progress.
+Give each person a small number of votes, roughly a quarter of the number of candidates. Ask people to vote silently, and reveal or count votes only when everyone has finished. Read the result aloud and discuss only the top few. If votes split evenly, ask the people who voted for each option to make the case in a sentence, then vote again on the finalists.
 
-> **Pro tip:** Write cluster labels as verb phrases ('Add integration tests to deploy pipeline') rather than nouns ('Testing') to keep the team thinking in terms of concrete actions.
+### Step 3: Check control and effort
 
-### Step 2: Step 2: Dot Vote to Surface Team Priorities
+For each top candidate, ask whether the team can do it on its own, can influence it, or can only respond. Estimate roughly how much effort it would take in the next sprint. Drop or reshape candidates that depend entirely on others or that would take more capacity than the team has. Turn out-of-control issues into a specific request or a change in how the team responds.
 
-Give each team member a fixed number of votes — typically 3–5 dots for a list of 5–10 items. Team members place their dots on the items they believe will have the most positive impact on the team's performance. Allow stacking (multiple dots on one item) so people can express strong preferences.
+### Step 4: Choose one or two actions
 
-Collect votes simultaneously to avoid anchoring bias. In physical settings, have everyone walk up at once. In virtual settings, use a tool with hidden voting that reveals results after everyone has voted.
+Select the one or two actions the team will actually carry out. Say out loud which good ideas are not being taken now, and record them on an improvement backlog so they are not lost. If the team insists on more, ask which of the chosen actions it would drop to make room. A short list the team finishes builds more trust than a long list it abandons.
 
-Once votes are revealed, rank the items by vote count. Identify the top 3–5 items as candidates for commitment. If there's a clear gap between a cluster of high-vote items and the rest, the prioritization is straightforward. If votes are evenly distributed, you may need a brief discussion or a second round of voting on just the top candidates.
+### Step 5: Write each action so anyone can tell when it is done
 
-> **Pro tip:** If your team has fewer than 5 people, give each person only 2–3 votes to create meaningful differentiation. Too many votes per person flattens the results.
+Describe what will change, who will do it, and when progress will be checked. Add a definition of done and the signal that would show the change is working. If the change is uncertain, write it as an experiment with a review date. Read the result back and ask whether anyone would interpret it differently.
 
-### Step 3: Step 3: Apply the Feasibility Filter
+### Step 6: Get a volunteer owner and a place in the plan
 
-Take each top-voted candidate and run it through three questions with the team:
-
-1. **Is it within our control?** If the action requires approval from another department, budget allocation, or organizational policy changes, it's not a good sprint-level action item. Flag it for escalation instead.
-2. **Can we complete it in one sprint?** If the answer is 'probably not,' break it down. What's the smallest slice that would still be meaningful?
-3. **Can we define 'done'?** If the team can't articulate what success looks like, the item isn't specific enough yet.
-
-Items that fail the filter aren't thrown away. Move them to a 'parking lot' visible to the team, or convert them into escalation items the Scrum Master or manager will carry forward. This validates the team's concern while keeping the action list realistic.
-
-> **Pro tip:** Keep this step brisk — spend no more than 2 minutes per item. The goal is a quick gut check, not a detailed planning session.
-
-### Step 4: Step 4: Sharpen Actions into SMART Commitments
-
-For each item that passes the feasibility filter, collaboratively rewrite it as a specific commitment. A well-formed retrospective action item has four elements:
-
-- **What** specifically will change (a behavior, a process step, a tool configuration)
-- **Who** owns it (a single person, not 'the team')
-- **When** it will be done (by end of next sprint, by next Wednesday, etc.)
-- **How we'll know** it's done (observable outcome or artifact)
-
-For example, 'improve code reviews' becomes 'Jamie will create a code review checklist by Wednesday and the team will use it for all PRs in Sprint 14. Done means the checklist exists in Confluence and has been used on at least 3 PRs.'
-
-This transformation is where the real value happens. Vague intentions become trackable commitments.
-
-> **Pro tip:** Ask the owner to rephrase the commitment in their own words. If they can't, it's a sign the action isn't clear enough yet.
-
-### Step 5: Step 5: Limit to 1–3 Actions Maximum
-
-Even if multiple items passed the feasibility filter, resist the temptation to commit to all of them. Research on behavior change and team performance consistently shows that fewer commitments lead to higher completion rates.
-
-If the team has 4–5 strong candidates after filtering, facilitate a brief final round of discussion: 'If we could only do one of these, which would it be?' Then ask, 'Can we realistically do a second?' Most teams should commit to 1–2 actions in a two-week sprint. Three is the hard ceiling for experienced teams with a strong track record of completing retro actions.
-
-The remaining items go into the parking lot for the next retrospective. They won't be forgotten if you're [tracking action items across sprints](https://tryhamster.com/skills/tracking-retrospective-action-items-across-sprints).
-
-> **Pro tip:** A team that consistently completes 1 action item per sprint will make 26 concrete improvements per year. That compounds dramatically.
-
-### Step 6: Step 6: Secure Explicit Verbal Commitment
-
-Before moving to [closing the retrospective](https://tryhamster.com/skills/closing-retrospectives-effectively), read each action item aloud — including the owner, the deadline, and the done criteria. Ask the owner directly: 'Are you committed to this?' Then ask the team: 'Are we all committed to supporting this?'
-
-This isn't a formality. Public verbal commitment activates consistency bias — people are significantly more likely to follow through on promises made in front of peers. It also surfaces last-minute objections ('Actually, I'm on vacation next week, can someone else own this?') before they become missed commitments.
-
-Document the commitments in a visible, shared location immediately — on the team board, in Jira, in your retrospective tracking tool. Don't wait until after the meeting.
-
-> **Pro tip:** Take a photo of the physical board or screenshot the virtual board before anyone leaves. Retrospective outputs have a way of evaporating if not captured in the moment.
+Ask who will own each action and wait for a volunteer. Put the action into the sprint backlog or on the team board where the team plans its work. Agree when the team will look at progress, at the latest in the next retrospective. Hand the list to the close, which will read it back to the whole team.
 
 ## Best Practices
 
-- Always review the status of previous retrospective action items before deciding on new ones. Unfinished items either need to be recommitted to or explicitly dropped — carrying invisible debt undermines trust in the process.
-- Use a 'circle of control' visual to help the team distinguish between actions they can take independently, actions that need collaboration with other teams, and systemic issues that require management escalation. Only commit to items in the inner circle.
-- Add retrospective action items directly to the next sprint backlog during sprint planning — don't treat them as side work. If improvement work doesn't get the same visibility as feature work, it won't get done.
-- Rotate the owner role for action items across sprints so the same 1–2 motivated people don't end up carrying all improvement work. This distributes learning and prevents burnout.
-- When an action item is too large, use the 'experiment' framing: 'Let's try X for one sprint and evaluate.' This lowers the commitment threshold and makes it psychologically safer to propose bold changes.
-- Keep a visible 'done' wall or channel where completed retrospective actions are celebrated. Acknowledging progress reinforces the behavior of following through.
+- Limit the list to what the team will do. The [Agile Alliance](https://www.agilealliance.org/glossary/heartbeat-retrospective/) suggests one or two improvement ideas per retrospective may well be enough.
+- Vote silently and simultaneously. [Nielsen Norman Group](https://www.nngroup.com/articles/dot-voting/) recommends no lobbying during voting and letting junior participants vote first.
+- Prefer actions within the team's control. They can start immediately and do not stall waiting on another group.
+- Ask for volunteers rather than assigning owners, as [Ben Linders](https://www.benlinders.com/2017/practical-and-personal-retrospective-actions/) recommends, so the owner is committed to the outcome.
+- Write actions as experiments when the outcome is uncertain. An experiment with a review date makes it acceptable to learn that a change did not work.
+- Put actions where the team plans its work. An action on a separate list competes with nothing and is easy to forget.
 
 ## Common Mistakes
 
-- **Committing to too many action items (5+ per sprint)** — Limit to 1–3 actions maximum. Completing one meaningful improvement is worth far more than partially attempting five. Track your completion rate — if it drops below 80%, you're overcommitting.
-- **Writing vague action items like 'communicate better' or 'improve quality'** — Apply the specificity test: can a new team member read this action item and know exactly what to do? Rewrite until the answer is yes. 'Communicate better' becomes 'Post daily async standup updates in Slack #team-updates by 10am, starting Monday.'
-- **Assigning action items to 'the team' instead of a specific owner** — Every action needs exactly one owner. 'The team' means nobody. The owner doesn't have to do all the work — they're responsible for making sure it gets done and reporting back.
-- **Letting the highest-paid person's opinion (HiPPO) override the team vote** — Use anonymous or simultaneous voting to neutralize authority bias. If a manager or tech lead wants to override the vote, they should make their case and let the team re-vote rather than simply overruling.
-- **Never revisiting the parking lot of deferred items** — Start each retrospective's 'Decide What to Do' phase by reviewing the parking lot. Items that keep reappearing are either genuinely important (and need to be prioritized) or no longer relevant (and should be removed).
+- **Leaving with a long wish list**: Many actions spread attention thin, and most do not get done. Choose one or two and keep the rest on an improvement backlog.
+- **Writing vague actions**: "Improve communication" cannot be finished or checked. Say what will change, who will do it and how the team will know it happened.
+- **Choosing actions the team cannot carry out**: Actions that depend on other teams or management stall. Turn them into a specific request with a named person, or pick something the team controls.
+- **Assigning owners to absent or reluctant people**: An owner who did not volunteer rarely drives the action. Ask for volunteers and keep the action small enough that someone will.
+- **Letting the loudest voice decide**: Open discussion favors confident speakers. Use silent voting before discussion so the choice reflects the whole team.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/five-step-retrospective-framework/METHOD.md) — Five-Step Retrospective Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/five-step-retrospective-framework/METHOD.md): Five-Step Retrospective Framework
 
 ## Related Skills
 
-- [Closing Retrospectives Effectively](../closing-retrospectives-effectively/SKILL.md)
-- [Choosing Retrospective Activities and Exercises](../choosing-retrospective-activities-and-exercises/SKILL.md)
-- [Building Sprint Retrospective Templates](../building-sprint-retrospective-templates/SKILL.md)
-- [Tracking Retrospective Action Items Across Sprints](../tracking-retrospective-action-items-across-sprints/SKILL.md)
-- [Setting the Stage for Effective Retrospectives](../setting-the-stage-for-retrospectives/SKILL.md)
 - [Generating Insights from Retrospective Data](../generating-insights-from-retrospective-data/SKILL.md)
-- [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
+- [Closing a Retrospective Meeting Effectively](../closing-retrospectives-effectively/SKILL.md)
+- [Tracking Retrospective Action Items Across Sprints](../tracking-retrospective-action-items-across-sprints/SKILL.md)
+
+## Sources
+
+- [Retromat: What is a retrospective](https://retromat.org/blog/what-is-a-retrospective/)
+- [Agile Alliance Glossary: Heartbeat Retrospective](https://www.agilealliance.org/glossary/heartbeat-retrospective/)
+- [MindTools: Sprint Retrospectives in Agile Project Management](https://www.mindtools.com/ao5tslk/sprint-retrospectives-in-agile-project-management/)
+- [Ben Linders: How I Started with Agile Retrospectives](https://www.benlinders.com/2013/how-i-started-with-agile-retrospectives/)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Retrium: The Five Phases of a Successful Retrospective](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)
+- [Nielsen Norman Group: Dot Voting](https://www.nngroup.com/articles/dot-voting/)
+- [Diana Larsen: Circles and Soup](https://www.dianalarsen.com/blog/2010/07/26/circles-and-soup/)
+- [Ben Linders: Practical and Personal Retrospective Actions](https://www.benlinders.com/2017/practical-and-personal-retrospective-actions/)
+- [Atlassian Team Playbook: Sprint Retrospective](https://www.atlassian.com/team-playbook/plays/retrospective)

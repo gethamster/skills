@@ -1,49 +1,37 @@
-# Examples: Mapping Scopes Instead of Tasks
+# Examples: Mapping Shape Up Scopes Instead of Tasks
 
-## Example: SaaS onboarding flow for a 6-week cycle (small team of 2)
-
-**Scenario:**
-
-A designer and a programmer are building a new user onboarding flow for a B2B SaaS product. The shaped pitch describes a 4-step wizard that collects company info, invites team members, configures initial settings, and shows a getting-started dashboard. The team is two people working a 6-week cycle.
-
-**Walkthrough:**
-
-After reading the pitch together, the team identifies four natural joints matching the wizard steps plus one additional scope for the overall wizard navigation and progress bar. They create five scopes: 'Set up company profile' (form, validation, API, database), 'Invite teammates' (email input, invitation sending, acceptance flow), 'Configure workspace settings' (preferences form, defaults logic, persistence), 'Getting-started dashboard' (checklist UI, completion tracking, first-run content), and 'Wizard navigation' (step indicator, back/forward, skip logic, progress persistence). Each scope is independently demoable. They mark 'Set up company profile' and 'Wizard navigation' as must-haves, 'Invite teammates' and 'Configure workspace settings' as must-haves with room to simplify, and 'Getting-started dashboard' as nice-to-have.
-
-By week 3, the dashboard scope is still uphill and the team decides to simplify it to a static checklist page rather than a dynamic dashboard, cutting the scope down to a 2-day effort. They ship all five scopes on time.
-
-## Example: E-commerce returns feature for a 6-week cycle (team of 3)
+## From role lists to scopes
 
 **Scenario:**
 
-A team of one designer and two programmers is building a self-service returns feature for an e-commerce platform. The shaped pitch covers return initiation, label generation, refund processing, and a returns dashboard for customer service agents. The team has 6 weeks and the appetite is firm.
+Illustrative scenario: a designer and a programmer are adding appointment booking to a small clinic app. After the first week they have two lists, Design and Backend, with a dozen tasks checked off between them and nothing a user can try.
 
 **Walkthrough:**
 
-The team drafts an initial scope map with six scopes: 'Start a return' (order lookup, item selection, reason capture), 'Generate return label' (carrier API integration, PDF generation, email delivery), 'Track return status' (status model, customer-facing tracking page, status update webhook), 'Process refund' (refund calculation, payment provider integration, confirmation), 'CS agent dashboard' (list view, filters, detail view, manual override), and 'Return policy enforcement' (eligibility rules, time window checks, category exclusions). In the first two days of building, the team discovers that 'Generate return label' and 'Track return status' are more entangled than expected because the carrier API handles both. ' They also discover that 'Return policy enforcement' touches every other scope and is not independently completable. They dissolve it, distributing the eligibility checks into the 'Start a return' scope where they naturally belong.
+They stop and pick one core interaction to finish: choosing an open time slot. The designer builds a plain slot picker in the app's templates, and the programmer wires it to the calendar data. Two days later, anyone on the team can pick a slot on the staging server.
 
-The revised map has four scopes. By week 5, the CS agent dashboard is lagging. They simplify it to a basic list view without filters, cutting roughly 3 days of work. They ship the core returns flow on time.
+With that working, they regroup the remaining tasks into scopes named after the product: Pick Slot (now done), Confirm Booking, Reminders and Staff View. Each list holds both design and programming tasks. The next status conversation is short: Pick Slot is done, Confirm Booking is downhill, and Reminders still has an open question about text messages.
 
-## Example: Internal reporting tool for a 3-week cycle (solo developer)
+## An iceberg scope
 
 **Scenario:**
 
-A single developer is building an internal weekly metrics report for the operations team. The shaped pitch describes pulling data from three sources, computing key metrics, and displaying them in a simple dashboard with email delivery. The cycle is 3 weeks with a fixed appetite.
+Illustrative scenario: a team is building an export feature for an accounting tool. The UI is one button and a settings dialog, but the export has to produce files that match several tax formats.
 
 **Walkthrough:**
 
-Working alone, the developer maps three scopes: 'Aggregate data sources' (connect to the three APIs, normalize data into a common format, store weekly snapshots), 'Compute and display metrics' (calculation logic for 5 key metrics, dashboard page with charts, date range selector), and 'Email weekly report' (scheduled job, HTML email template, recipient management). Each scope can be built and verified independently. The developer starts with 'Aggregate data sources' because the other scopes depend on having data available. By the end of week 1, the first scope is done and the second scope is halfway down the hill.
+At first the team treats Export as one scope, and its dot sits uphill for days while the button and dialog are long finished. They recognize an iceberg: most of the work is below the surface. They split it into Export UI, which they mark done, and one scope per format family, so each format can be finished and checked on its own.
 
-In week 2, the developer realizes the email scope is more complex than expected because of HTML rendering edge cases across email clients. They simplify by sending a plain-text email with a link to the dashboard instead of an inline HTML report. This cuts the scope from 3 days to 1 day. All three scopes ship within the 3-week cycle.
+Before accepting the complexity, they question it. The pitch only promised the two formats most customers use, so the others become nice-to-haves marked with a tilde. The iceberg shrinks to something the team can finish inside the cycle.
 
-## Example: Mobile app feature for a 6-week cycle (cross-functional team of 4)
+## A growing Chowder list
 
 **Scenario:**
 
-A team of two mobile developers, one backend developer, and one designer is adding a social sharing feature to a consumer fitness app. The shaped pitch covers share cards, social platform integrations, in-app activity feeds, and friend challenges. The team is large by Shape Up standards and coordination is a concern.
+Illustrative scenario: halfway through a cycle on a team inbox feature, the team's Chowder list of loose tasks has grown to seven items.
 
 **Walkthrough:**
 
-The team maps seven scopes: 'Design share card' (card layout, stat selection, branding), 'Generate share image' (server-side image rendering, caching, CDN delivery), 'Share to Instagram Stories' (Stories API integration, deep link handling), 'Share to other platforms' (generic share sheet, Twitter/Facebook metadata), 'Activity feed' (feed data model, feed UI, pagination), 'Friend challenges' (challenge creation, invitation, progress tracking, completion), and 'Push notifications for social' (notification triggers, templates, delivery). They immediately mark 'Friend challenges' and 'Push notifications for social' as nice-to-haves. ' Scopes are picked up by pairs rather than individuals, which keeps coordination manageable. By week 4, the core sharing scopes are done.
+Reading the list, the team notices that five of the items are about what happens when a conversation is assigned to someone who is away: an out-of-office flag, reassignment, a notice to the sender and two edge cases. That is a scope hiding in the chowder.
 
-The team has time to start 'Activity feed' but decides to cut 'Friend challenges' entirely, deferring it to a future cycle. They ship five of seven scopes, and the product is shippable and valuable without the cut scopes.
+They create an Away Handling scope, move the five tasks into it, and mark two of them as nice-to-haves. The Chowder list drops back to two genuinely unrelated items, and the new scope gets its own dot on the hill chart.

@@ -1,15 +1,20 @@
 ---
-name: selecting-mvp-types-and-formats
-description: "This skill teaches you how to evaluate different types of MVP and select the format that best matches your riskiest assumption, available resources, and learning goal so you build the smallest thing that answers the most important question."
+name: "selecting-mvp-types-and-formats"
+description: "Compare the types of MVP, from landing page and concierge to Wizard of Oz, piecemeal and single-feature, and pick one that tests your riskiest assumption."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: lean-startup
+  method: "lean-startup"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Types of MVP: How to Select the Right Format for Your Idea
+# Types of MVP: How to Choose the Right Format
 
-> This skill teaches you how to evaluate different types of MVP and select the format that best matches your riskiest assumption, available resources, and learning goal so you build the smallest thing that answers the most important question.
+> Compare the types of MVP, from landing page and concierge to Wizard of Oz, piecemeal and single-feature, and pick one that tests your riskiest assumption.
 
 ## Before you start
 
@@ -23,147 +28,109 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 1-2 hours |
-| Outcome | You produce a documented MVP selection decision that names the chosen format, the specific assumption it tests, the success metric, and a rough scope boundary, giving your team a clear starting point for building. |
-| Prerequisites | A clearly articulated product idea or problem hypothesis, Familiarity with the Lean Startup build-measure-learn cycle, At least one testable business hypothesis formulated for the idea, A rough understanding of your team's technical and non-technical capabilities |
+| Difficulty | Beginner |
+| Time to Learn | An hour or two to learn the types, then practice on real questions |
+| Outcome | You match the question you need answered to the cheapest MVP type that can answer it, and you can explain why the other types were ruled out. |
+| Prerequisites | A testable hypothesis, a rough sense of budget and time, knowledge of the target segment |
 | Part of | [Lean Startup](../../methods/lean-startup/METHOD.md) |
 
 ## Overview
 
-Choosing among the many types of MVP is one of the most consequential decisions in early-stage product work, yet teams routinely skip it. They default to whatever format feels familiar, building a full app when a landing page would suffice, or running a concierge experiment when the real risk is technical feasibility. This skill sits squarely inside the [Lean Startup](https://tryhamster.com/methods/lean-startup) build-measure-learn loop, right after you have formulated a testable hypothesis and right before you begin [building your MVP](https://tryhamster.com/skills/building-minimum-viable-products). Getting the format wrong does not just waste time. It produces learning that answers a question nobody asked, leaving the riskiest assumption untested.
+There are many types of MVP, and they answer different questions. A landing page can tell you whether people want something enough to sign up or pay. A concierge MVP tells you whether the service is valuable when a person delivers it by hand. A Wizard of Oz MVP tells you how customers respond to what looks like a working product. This skill covers the common types of minimum viable product and how to choose among them so you build the smallest thing that answers your most important question.
 
-The five core types of MVP are the landing page MVP, the concierge MVP, the Wizard of Oz MVP, the single-feature MVP, and the piecemeal MVP. Each one is optimized for a different category of risk. A landing page MVP tests whether anyone cares enough to sign up. A concierge MVP tests whether your proposed workflow actually solves the problem when delivered by hand. A Wizard of Oz MVP tests the user experience of an automated product without building the automation. A single-feature MVP tests whether one core capability is strong enough to retain users. A piecemeal MVP tests whether existing tools can be stitched together to deliver the value proposition before you write custom code. The choice depends on three inputs: the riskiest assumption you need to test, the resources you have available, and how much fidelity the customer needs to give you honest feedback.
+Eric Ries defines an MVP as the version of a new product that collects "the maximum amount of validated learning about customers with the least effort," and he stresses that choosing one "requires judgment to figure out, for any given context, what MVP makes sense" ([Ries, MVP guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)). The type is the main judgment call. The same hypothesis can often be tested three ways at very different costs, and the cheapest adequate option is usually right.
 
-The concrete artifact produced by this skill is a one-page MVP selection document. It names the chosen format, the hypothesis it tests, the success criteria, the resources required, and the explicit scope boundary that defines what is not included. This document becomes the contract between the product person and the team, preventing scope creep and anchoring every subsequent decision back to the learning goal. Without it, MVPs tend to grow into full products, defeating the purpose of the experiment entirely.
+The [Lean Startup method](../../methods/lean-startup/METHOD.md) covers where MVPs sit in the Build-Measure-Learn loop, and [how to build a minimum viable product](../building-minimum-viable-products/SKILL.md) covers scoping and launching one. This page covers the choice that comes between: which kind of thing to build.
+
+Well-known cases show the range. Dropbox used a short demonstration video of the product working, and Ries writes that it validated the founder's leap-of-faith assumption because people actually signed up ([Ries on TechCrunch](https://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/)). Food on the Table began with one customer served by hand and added customers one at a time ([Food on the Table case study](https://www.slideshare.net/startuplessonslearned/food-on-the-table-case-study-at-sllconf-by-manuel-rosso)). Groupon's first version used WordPress and other existing tools rather than custom technology ([CRV, What is an MVP?](https://www.crv.com/content/what-is-an-mvp)).
+
+The output of this skill is a short decision record: the hypothesis, the MVP type chosen, the reason, and the types ruled out and why. That record makes the choice easy to revisit if the test gives an unclear answer.
 
 ## How It Works
 
-The core mental model behind MVP type selection is risk-to-fidelity matching. Every product idea carries multiple risks: demand risk (will anyone want this?), problem-solution fit risk (does this workflow actually solve the problem?), usability risk (can people figure out how to use it?), feasibility risk (can we build the technology?), and viability risk (can we deliver it profitably?). The types of MVP differ primarily in which risk category they address and how much fidelity they require to generate trustworthy signal.
+Each type trades cost against the strength of the evidence it produces. The table summarizes the common types, with a source for each definition.
 
-Fidelity matters because different risks require different levels of realism to test honestly. Demand risk is the least fidelity-dependent. A landing page with a clear value proposition and a signup button is enough, because you are only measuring whether the promise resonates. Problem-solution fit risk requires moderate fidelity. The customer needs to experience the actual workflow, even if a human is executing it behind the scenes, which is why the concierge MVP exists. Feasibility risk demands high fidelity, because the question is whether the technology works, and you cannot answer that without building real technology, which points to a single-feature MVP.
+| MVP type | What it is | Best for |
+|---|---|---|
+| Landing page | A page describing the offer with a sign-up or buy action ([CRV](https://www.crv.com/content/what-is-an-mvp)) | Demand and messaging |
+| Explainer video | A short demo of the product as it is meant to work ([Ries on Dropbox](https://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/)) | Demand for a product that is hard to describe |
+| Concierge | Manually helping users reach their goal ([OpenClassrooms](https://openclassrooms.com/en/courses/4544561-learn-about-lean-startup/4703206-discover-the-4-types-of-minimum-viable-product)) | Value of the outcome, customer needs |
+| Wizard of Oz | Looks automated while humans do the work ([CRV](https://www.crv.com/content/what-is-an-mvp)) | Response to the product experience |
+| Piecemeal | Existing tools combined into an offering ([CRV](https://www.crv.com/content/what-is-an-mvp)) | Whether the full service works end to end |
+| Single-feature | One key feature at launch ([CRV](https://www.crv.com/content/what-is-an-mvp)) | Use and retention of the core feature |
 
-The [Lean Startup](https://tryhamster.com/methods/lean-startup) framework teaches that you should always test the riskiest assumption first, because if that assumption is wrong, nothing else matters. This principle directly drives MVP format selection. If your riskiest assumption is demand, pick the lowest-fidelity format. If your riskiest assumption is feasibility, pick the highest-fidelity format that isolates just the technical question. If your riskiest assumption is the end-to-end experience, pick a middle-fidelity format like the Wizard of Oz.
+Landing page and video MVPs test demand. They are cheap and fast, and they can reach many people through ads or communities. Their weakness is that a sign-up is a small commitment. Asking for a deposit or a pre-order makes the signal stronger. OpenClassrooms cites Buffer, whose founder collected sign-ups through a landing page describing the product ([OpenClassrooms](https://openclassrooms.com/en/courses/4544561-learn-about-lean-startup/4703206-discover-the-4-types-of-minimum-viable-product)).
 
-The decision also depends on your resource constraints. A solo founder with no engineering skills cannot build a single-feature MVP, but they can run a concierge experiment or assemble a piecemeal MVP from existing tools. A funded team with three engineers might skip the landing page and jump straight to a single-feature MVP, because the opportunity cost of not testing feasibility early is higher than the cost of building. Resource constraints are not obstacles to work around. They are inputs that shape which format produces the best learning per dollar spent.
+Concierge and Wizard of Oz MVPs test value. Customers receive the actual outcome, so you learn whether it helps them and whether they come back. The difference is what the customer knows. In a concierge MVP they see the person helping them, which makes it a good way to learn what they need. In a Wizard of Oz MVP they see a product interface, which lets you test the experience before the automation exists. OpenClassrooms gives Aardvark as a Wizard of Oz example: questions were routed to experts by hand behind what looked like an automated system.
 
-Finally, understand that MVP types are not a strict hierarchy. You do not have to start with a landing page and progress through each type. You can run a landing page MVP and a Wizard of Oz MVP simultaneously if they test different assumptions. You can skip types entirely if the risk they address has already been validated through customer discovery. The framework is a decision tool, not a checklist.
+Piecemeal and single-feature MVPs test a working product at small scale. A piecemeal MVP strings together existing services, such as a website builder, a form tool and a payment link, to deliver the full offer without new technology. A single-feature MVP builds one feature properly and leaves the rest out. CRV's example is Uber's early product, which offered only smartphone-based ride requests ([CRV](https://www.crv.com/content/what-is-an-mvp)). These cost more than a landing page but produce evidence about real, repeated use.
+
+The choice starts from the hypothesis. If the question is whether anyone wants this, start with demand tests. If it is whether the outcome is worth paying for, use a concierge or Wizard of Oz MVP. If it is whether people will keep using a working product, use piecemeal or single-feature. Strategyzer's advice to decide what to learn and measure before choosing the test applies directly ([Strategyzer](https://www.strategyzer.com/library/dont-build-when-you-build-measure-learn)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: List Your Riskiest Assumptions
+### Step 1: State the question the MVP must answer
 
-Pull out the testable hypotheses you formulated during earlier work. If you completed the [formulating testable hypotheses](https://tryhamster.com/skills/formulating-testable-hypotheses) skill, use that output directly. If not, write down every assumption your product idea depends on: people have this problem, they will pay to solve it, the proposed solution actually solves it, the technology is buildable, and you can deliver it profitably. Rank these assumptions from riskiest to least risky.
+Take the hypothesis you are testing and classify its question: demand, value, experience or sustained use. Write the question in one sentence. If the hypothesis covers more than one kind of question, split it and choose an MVP for the most important part first.
 
-Riskiest means the assumption that, if wrong, makes everything else irrelevant. Be honest. Teams often rank demand risk low because they have talked to a few friends who said the idea sounds cool. That is not validation.
+### Step 2: Shortlist the types that fit
 
-Write down the evidence you have for each assumption and assess its strength.
+Use the table to list every type that could answer the question. For a demand question, that might be a landing page, a video or an ad smoke test. For a value question, a concierge or Wizard of Oz MVP. Keep two or three candidates.
 
-> **Pro tip:** If you cannot agree on the riskiest assumption, have each team member rank independently and then compare. Disagreement usually reveals that someone has customer evidence others have not seen. Surface it before choosing a format.
+### Step 3: Rate each candidate on cost and signal
 
-### Step 2: Step 2: Categorize the Top Risk
+For each candidate, estimate the time and money to run it and how strong its evidence would be. Behavior that costs the customer something, such as payment or repeated use, is stronger than a click. Note any practical limits, such as how many customers a concierge approach can serve by hand.
 
-Take your riskiest assumption and categorize it into one of five buckets: demand risk, problem-solution fit risk, usability risk, feasibility risk, or viability risk. Demand risk means you are unsure whether anyone wants this at all. Problem-solution fit risk means you believe people want it but are unsure your specific approach solves the problem. Usability risk means the solution might work but people may not be able to use it.
+### Step 4: Check the constraints
 
-Feasibility risk means the core technology might not be buildable within your constraints. Viability risk means you can build it and people want it, but you are unsure whether you can deliver it at a sustainable cost. Write one sentence naming the risk category and the specific assumption within it.
+Consider what could make a type unsuitable. A Wizard of Oz MVP needs a plan for how customers would react if they learned people were behind it. A public landing page can reveal your idea to competitors. A concierge MVP may not reach enough people to show a trend. Drop candidates that fail a constraint.
 
-> **Pro tip:** Viability risk is rarely the riskiest assumption for a brand-new product. If you find yourself categorizing it there, double-check that you are not skipping demand or problem-solution fit testing because those feel uncomfortable.
+### Step 5: Choose and record the decision
 
-### Step 3: Step 3: Map Risk Category to MVP Type
+Pick the cheapest candidate whose evidence would be strong enough to change your decision. Write down the type, the reason, the candidates ruled out and the pass mark. Then move to [building the MVP](../building-minimum-viable-products/SKILL.md) with that scope.
 
-Use this mapping to narrow your options. For demand risk, use a landing page MVP: a page describing the product with a signup form or payment button. For problem-solution fit risk, use a concierge MVP: deliver the service manually to a small number of customers and observe whether the workflow solves their problem. For usability risk, use a Wizard of Oz MVP: present a product interface that looks automated but is operated by humans behind the scenes.
+### Step 6: Plan the next type in the sequence
 
-For feasibility risk, use a single-feature MVP: build only the core technical capability and ship it with minimal surrounding product. For viability risk or integration risk, use a piecemeal MVP: stitch together existing tools (Zapier, Airtable, Stripe, Calendly) to simulate the product experience. This mapping is a starting point. Write down the one or two MVP types your risk category suggests.
-
-> **Pro tip:** If your risk spans two categories, lean toward the format that tests the harder-to-reverse risk first. Technical feasibility is harder to reverse than demand uncertainty, because you can always run a landing page later, but discovering an architecture problem after building a full product is expensive.
-
-### Step 4: Step 4: Evaluate Resource Fit
-
-For each candidate MVP type from Step 3, assess whether your team can actually execute it within your timeline and budget. A landing page MVP requires copywriting, basic web design, and a traffic source. A concierge MVP requires someone with enough domain expertise to manually deliver the service and enough time to serve 5-15 customers individually. A Wizard of Oz MVP requires a functional front end and a human operator who can respond in near real-time.
-
-A single-feature MVP requires engineering capability to build production-quality code for one feature. A piecemeal MVP requires familiarity with no-code tools and the patience to duct-tape integrations together. If your top choice from Step 3 exceeds your resources, move to the next-best format. Write down the chosen format and why.
-
-> **Pro tip:** Be realistic about timeline. If you estimate two weeks for a single-feature MVP, triple it. If that makes the timeline unacceptable, switch to a lower-fidelity format. An imperfect test completed this month beats a perfect test completed in three months.
-
-### Step 5: Step 5: Define the Success Metric
-
-Every MVP needs a single primary metric that tells you whether the riskiest assumption was validated. For a landing page MVP, this is typically signup conversion rate, with a threshold like 5% of visitors sign up. For a concierge MVP, this might be retention across three manual service deliveries, or willingness to pay after the second session. For a Wizard of Oz MVP, this could be task completion rate or Net Promoter Score after the first interaction.
-
-For a single-feature MVP, this might be weekly active usage after week two. For a piecemeal MVP, this is typically whether customers complete the full workflow end-to-end without needing to leave the tool chain. Write down one metric, one threshold, and one timeframe.
-
-> **Pro tip:** Resist the urge to define multiple success metrics. A single metric forces clarity. If you feel you need three metrics, you are probably testing three assumptions, which means you need to go back to Step 1 and pick one.
-
-### Step 6: Step 6: Draw the Scope Boundary
-
-Write an explicit list of what the MVP will not include. This is the most important part of the selection document because it prevents scope creep. For a landing page MVP, you are not building any product. For a concierge MVP, you are not automating anything.
-
-For a Wizard of Oz MVP, you are not building backend infrastructure. For a single-feature MVP, list every feature you are deliberately omitting, including authentication, payment, onboarding, and analytics unless they are essential for the test. For a piecemeal MVP, list the limitations of the tool chain that you will accept. The scope boundary should feel uncomfortable.
-
-If it does not, you are probably building too much.
-
-> **Pro tip:** Share the scope boundary with stakeholders before you start building. Anyone who will later say 'but we should also add X' needs to see this document now. Scope creep during an MVP experiment invalidates the experiment.
-
-### Step 7: Step 7: Estimate Learning Timeline
-
-Determine how long the experiment needs to run to produce a statistically or qualitatively meaningful result. A landing page MVP needs enough traffic to reach your conversion threshold, so estimate traffic volume and calculate days needed. A concierge MVP needs enough manual interactions to identify patterns, usually 5-15 customers over 2-4 weeks. A Wizard of Oz MVP needs enough usage sessions to measure the usability metric, typically 10-20 users over 1-3 weeks.
-
-A single-feature MVP needs enough usage to measure retention, usually 2-4 weeks of active use. A piecemeal MVP needs enough end-to-end completions to assess workflow viability, usually 10-20 completions. Write down the estimated run time and the minimum sample size.
-
-> **Pro tip:** If your estimated learning timeline exceeds 6 weeks, consider whether a lower-fidelity MVP type could answer a related question faster. Speed of learning is the primary advantage of the Lean Startup approach. Slow experiments erode it.
-
-### Step 8: Step 8: Assemble the MVP Selection Document
-
-Compile your decisions into a one-page document with six sections: the riskiest assumption (from Step 1-2), the chosen MVP type and rationale (from Step 3-4), the success metric and threshold (from Step 5), the scope boundary (from Step 6), the learning timeline (from Step 7), and the team assignments. This document is the input for the [building a minimum viable product](https://tryhamster.com/skills/building-minimum-viable-products) skill. Share it with the full team and any stakeholders who will be involved in the build or the decision that follows the experiment. Get explicit agreement before proceeding.
-
-If someone disagrees with the format choice, resolve it now. Disagreement during the build leads to scope creep.
-
-> **Pro tip:** Keep this document in a shared location everyone can reference during the build. When someone suggests adding a feature, point to the scope boundary. When someone questions the timeline, point to the learning timeline. This document is a shield against drift.
+Most products move through several MVP types as questions are answered. A passed landing page test often leads to a concierge MVP, and a passed concierge MVP to a Wizard of Oz or single-feature product. Note which type you expect to use next if this one passes, so the team knows what a pass leads to.
 
 ## Best Practices
 
-- Test demand before testing usability or feasibility. If nobody wants the product, it does not matter whether the technology works or the interface is elegant. A landing page MVP is almost always the right first step unless you have strong demand evidence from customer discovery interviews. Skipping demand validation because it feels too simple is one of the most common reasons teams waste months building something nobody uses.
-- Choose the lowest-fidelity MVP type that can produce a trustworthy answer. Higher fidelity always costs more time and money. If you can learn what you need from a landing page, do not build a Wizard of Oz. If a concierge test works, do not write code.
-
-The team that ships the cheapest experiment wins the most learning per dollar. Teams that default to high fidelity often do so because building feels more productive than experimenting, but feeling productive and being productive are different things.
-- Write the scope boundary before you write a single line of code or a single word of copy. Scope boundaries written after work begins are retrospective justifications, not constraints. Written beforehand, they are contracts that prevent the MVP from silently growing into a full product. Teams that skip this step typically ship something 3-5x larger than necessary.
-- Run one MVP type per riskiest assumption. Combining multiple types to test multiple assumptions in parallel sounds efficient but produces muddy results. You end up unsure which format generated which learning. Sequential experiments with clean separation produce clearer signals, even if they take longer calendar time.
-- Include a kill criterion alongside the success criterion. Define upfront what result would cause you to abandon or pivot the idea. If fewer than 2% of landing page visitors sign up, you will pivot the value proposition before testing anything else. Without a kill criterion, teams tend to reinterpret failed experiments as partial successes, which delays the honest reckoning that drives progress.
-- Use the piecemeal MVP more often than you think you should. Most teams underestimate how much you can simulate with existing tools. Zapier, Airtable, Typeform, Stripe, and Calendly can approximate remarkably complex workflows. The piecemeal approach is especially powerful when you are uncertain about the right workflow, because you can reconfigure tools in hours instead of rewriting code in weeks.
-- Revisit MVP type selection if your first experiment produces ambiguous results. Ambiguous outcomes often mean the format was wrong, not the idea. A landing page that gets moderate signups but no enthusiasm might need a concierge test to understand whether the problem is the value proposition or the presentation. Switching formats is not failure. It is part of the iterative learning process.
+- Start with the cheapest type that could change your mind. A landing page or video can rule out a weak idea before any service is delivered.
+- Ask for a real commitment when you test demand. A deposit, pre-order or booked call is stronger evidence than an email address.
+- Use a concierge MVP to learn, then automate. The Food on the Table team coded only the tasks that became too time consuming to do by hand ([case study](https://www.slideshare.net/startuplessonslearned/food-on-the-table-case-study-at-sllconf-by-manuel-rosso)).
+- Keep a Wizard of Oz MVP honest. Deliver what you promise, protect customer data handled by people and be ready to explain how the service works.
+- Build a single feature well. A single-feature MVP only tests use if that feature is reliable.
+- Record the types you ruled out. If the result is unclear, the record shows what to try next.
 
 ## Common Mistakes
 
-- **Defaulting to a single-feature MVP regardless of the risk being tested** — This happens because building feels like progress, and engineers on the team want to write code. The signal to watch for is a team that jumps to technical architecture discussions before identifying the riskiest assumption. A single-feature MVP is only appropriate when the core risk is technical feasibility. If the risk is demand or problem-solution fit, you are building an answer to a question you have not asked.
-
-Go back to Step 2 and categorize the risk honestly. If it is demand risk, use a landing page. If it is workflow risk, use a concierge test.
-- **Testing demand with a landing page but using the wrong traffic source** — A landing page MVP requires traffic to produce meaningful results. Teams often launch a landing page and then share it with friends, family, and their existing social network. This audience is biased toward encouragement and does not represent real market demand. The signal is high signup rates from low volumes of known contacts.
-
-Use paid ads targeting your actual customer segment, post in communities where your target audience already gathers, or use cold outreach to people who match your persona. The traffic source must reflect the real acquisition channel you would use at scale.
-- **Running a concierge MVP without tracking the manual effort required** — The purpose of a concierge MVP is not just to validate the workflow. It is also to understand the operational cost of delivering the service, which informs whether the business is viable and what needs automation. Teams get so focused on customer satisfaction that they forget to log how many hours each customer interaction takes, what steps require specialized expertise, and where the process breaks down. Without this data, you validate the solution but have no basis for scoping the real product.
-
-Keep a simple time log for every manual delivery session.
-- **Confusing Wizard of Oz with concierge and picking the wrong one** — The distinction matters. In a concierge MVP, the customer knows a human is doing the work. In a Wizard of Oz MVP, the customer believes they are interacting with an automated product. The Wizard of Oz tests whether the automated experience would satisfy users.
-
-The concierge tests whether the underlying service solves the problem. If you use concierge when you should use Wizard of Oz, you learn whether the service works but not whether the product experience works. Watch for this confusion when the team says 'let us just do it manually' without specifying whether the customer knows it is manual.
-- **Letting the MVP grow past its scope boundary during the build phase** — This is the most common and most damaging mistake. ' Each addition feels small, but collectively they transform a two-week experiment into a two-month product build. The signal is any task that is not directly required by the success metric defined in Step 5. ' If the answer is no, it goes on the post-MVP list.
-
-Enforce the scope boundary from Step 6 ruthlessly.
-- **Selecting an MVP type based on what competitors have built rather than what you need to learn** — Teams research competitors and see polished products, then feel pressure to match that fidelity. But a competitor's current product is the result of years of iteration, not their first experiment. Your MVP is not a competitor. It is a learning tool.
-
-' Redirect the conversation to your riskiest assumption. What do you need to learn? That question, not competitor benchmarking, should drive the format choice.
+- **Defaulting to a coded product**: Teams often build software because it is what they know how to do. Check whether a landing page, concierge or piecemeal MVP could answer the question first.
+- **Treating sign-ups as proof of value**: A landing page shows interest in a description. It does not show that the product helps once people use it.
+- **Scaling a concierge MVP too long**: Serving customers by hand is meant to teach you what to build. When the manual work stops producing new learning, move to the next type.
+- **Picking the type the team is most comfortable with**: Designers reach for prototypes and engineers for code. Start from the question and let it choose the type.
+- **Mixing types in one test**: Combining a new landing page and a new concierge service in one test makes it unclear which drove the result. Change one thing at a time.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/lean-startup/METHOD.md) — Lean Startup
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/lean-startup/METHOD.md): Lean Startup
 
 ## Related Skills
 
-- [Tracking Innovation Accounting Metrics](../tracking-innovation-accounting-metrics/SKILL.md)
-- [Formulating Testable Business Hypotheses](../formulating-testable-hypotheses/SKILL.md)
-- [Building a Minimum Viable Product (MVP)](../building-minimum-viable-products/SKILL.md)
-- [Making Pivot-or-Persevere Decisions](../defining-pivot-or-persevere-decisions/SKILL.md)
+- [How to Build a Minimum Viable Product (MVP)](../building-minimum-viable-products/SKILL.md)
 - [Designing Validated Learning Experiments](../designing-validated-learning-experiments/SKILL.md)
-- [Running Build-Measure-Learn Cycles](../running-build-measure-learn-cycles/SKILL.md)
-- [Conducting Customer Discovery Interviews](../conducting-customer-discovery-interviews/SKILL.md)
+- [Lean Startup Hypothesis Template: Testable Hypotheses](../formulating-testable-hypotheses/SKILL.md)
+- [Running the Build-Measure-Learn Loop](../running-build-measure-learn-cycles/SKILL.md)
+- [Innovation Accounting Metrics: Tracking Real Progress](../tracking-innovation-accounting-metrics/SKILL.md)
+- [Customer Discovery Interview Questions and Technique](../conducting-customer-discovery-interviews/SKILL.md)
+- [Pivot or Persevere: When to Pivot a Startup](../defining-pivot-or-persevere-decisions/SKILL.md)
+
+## Sources
+
+- [Eric Ries: Minimum Viable Product, a guide](http://www.startuplessonslearned.com/2009/08/minimum-viable-product-guide.html)
+- [Eric Ries: How DropBox started as a minimal viable product](https://techcrunch.com/2011/10/19/dropbox-minimal-viable-product/)
+- [Manuel Rosso: Food on the Table case study](https://www.slideshare.net/startuplessonslearned/food-on-the-table-case-study-at-sllconf-by-manuel-rosso)
+- [CRV: What is an MVP?](https://www.crv.com/content/what-is-an-mvp)
+- [OpenClassrooms: The 4 types of minimum viable product](https://openclassrooms.com/en/courses/4544561-learn-about-lean-startup/4703206-discover-the-4-types-of-minimum-viable-product)
+- [Strategyzer: Don't build when you build-measure-learn](https://www.strategyzer.com/library/dont-build-when-you-build-measure-learn)
