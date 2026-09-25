@@ -13,7 +13,7 @@ metadata:
 
 # Reinforcement Learning for Calibrated Decisions (RLCD)
 
-> Created by **Diogo Almeida and TypeSafe AI** — [https://typesafe.ai/](https://typesafe.ai/)
+> Created by **Diogo Almeida and TypeSafe AI** - [https://typesafe.ai/](https://typesafe.ai/)
 
 ## Overview
 
@@ -121,13 +121,13 @@ RLCD is a vendor-coined, proprietary term according to [Forbes](https://forbes.c
 
 This method includes the following skills:
 
-- [Calibrating Confidence to Outcomes](skills/calibrating-confidence-to-outcomes/SKILL.md) — Aligning predicted confidence values with empirical accuracy so that decisions at a stated confidence level are correct at approximately that rate in practice.
-- [Structuring Machine-to-Machine Decision Outputs](skills/structuring-machine-to-machine-decision-outputs/SKILL.md) — Integrating typed decisions, confidence metadata, and uncertainty states into downstream software workflows that programmatically consume and act on model outputs.
-- [Designing Schema-Constrained Decisions](skills/designing-schema-constrained-decisions/SKILL.md) — Defining permitted decision categories, output types, fields, and validation rules so that a model produces structured, machine-actionable results rather than unconstrained prose.
-- [Handling Abstention and Uncertainty](skills/handling-abstention-and-uncertainty/SKILL.md) — Configuring a decision system to defer, abstain, or route cases to alternative processes when available evidence does not justify a confident prediction.
-- [Designing Outcome-Based Reward Signals](skills/designing-outcome-based-reward-signals/SKILL.md) — Creating reinforcement learning reward functions that jointly incentivize correct decisions and statistically reliable confidence estimates.
-- [Estimating Decision Confidence](skills/estimating-decision-confidence/SKILL.md) — Producing well-formed confidence scores or probabilities that represent the model's belief in the correctness of each individual structured decision.
-- [Evaluating Probabilistic Calibration](skills/evaluating-probabilistic-calibration/SKILL.md) — Testing whether model confidence values track real-world correctness on held-out data using calibration curves, reliability diagrams, and discrimination analyses.
+- [Calibrating Confidence to Outcomes](../../skills/calibrating-confidence-to-outcomes/SKILL.md): Aligning predicted confidence values with empirical accuracy so that decisions at a stated confidence level are correct at approximately that rate in practice.
+- [Structuring Machine-to-Machine Decision Outputs](../../skills/structuring-machine-to-machine-decision-outputs/SKILL.md): Integrating typed decisions, confidence metadata, and uncertainty states into downstream software workflows that programmatically consume and act on model outputs.
+- [Designing Schema-Constrained Decisions](../../skills/designing-schema-constrained-decisions/SKILL.md): Defining permitted decision categories, output types, fields, and validation rules so that a model produces structured, machine-actionable results rather than unconstrained prose.
+- [Handling Abstention and Uncertainty](../../skills/handling-abstention-and-uncertainty/SKILL.md): Configuring a decision system to defer, abstain, or route cases to alternative processes when available evidence does not justify a confident prediction.
+- [Designing Outcome-Based Reward Signals](../../skills/designing-outcome-based-reward-signals/SKILL.md): Creating reinforcement learning reward functions that jointly incentivize correct decisions and statistically reliable confidence estimates.
+- [Estimating Decision Confidence](../../skills/estimating-decision-confidence/SKILL.md): Producing well-formed confidence scores or probabilities that represent the model's belief in the correctness of each individual structured decision.
+- [Evaluating Probabilistic Calibration](../../skills/evaluating-probabilistic-calibration/SKILL.md): Testing whether model confidence values track real-world correctness on held-out data using calibration curves, reliability diagrams, and discrimination analyses.
 
 ## FAQ
 
@@ -171,7 +171,7 @@ RLCD was named and introduced by TypeSafe AI with the Jev launch ([TypeSafe laun
 - [RLCD explained: Reinforcement Learning for Calibrated Decisions](https://systemonemodels.org/guides/rlcd-explained)
 - [TypeSafe Jev: A Model That Returns Decisions, Not Text](https://digitalapplied.com/blog/typesafe-jev-system-one-model-typed-decisions)
 - [新興TypeSafe AIが放つ新AI「Jev」、ハルシネーションなしは](https://forbesjapan.com/articles/detail/105002)
-- [Laya — 33ms Multilingual System 1 Decision Engine](https://laya.convaiinnovations.com)
+- [Laya - 33ms Multilingual System 1 Decision Engine](https://laya.convaiinnovations.com)
 - [TypeSafe AI「Jev」モデルの訓練ロジックとRLCDアルゴリズム](https://note.com/wayne_chang/n/n151303c2041a)
 - [RLCD vs RLHF: How Does Typesafe AI Jev Work](https://gingerlabs.ai/blog/rlcd-vs-rlhf-how-does-typesafe-ai-jev-work)
 - [Jev: The Language Model That Won't Talk - Anthony Maio](https://anthonymaio.substack.com/p/jev-the-language-model-that-wont)
@@ -181,7 +181,7 @@ RLCD was named and introduced by TypeSafe AI with the Jev launch ([TypeSafe laun
 - [Jev, Sorted: What TypeSafe's 'System One' Model Actually Is](https://pearpages.com/blog/2026/09/16/jev-sorted-what-typesafes-system-one-model-actually-is-and-what-is-still-just-a-claim)
 - [GitHub - Heman10x-NGU/Verdict-open-jev: Non-autoregressive](https://github.com/Heman10x-NGU/Verdict-open-jev)
 - [Jev Calibrated Decisions Explained](https://blockchain-council.org/ai/jev-calibrated-decisions-explained)
-- [RLCD — the training method behind Jev - Jev by TypeSafe AI](https://jevtypesafeai.com/jev/rlcd)
+- [RLCD - the training method behind Jev - Jev by TypeSafe AI](https://jevtypesafeai.com/jev/rlcd)
 - [Reinforcement Learning for Calibrated Decisions \(RLCD\)](https://dsebastien.net/reinforcement-learning-for-calibrated-decisions-rlcd)
 - [A new kind of AI model from a ChatGPT inventor is thrilling developers \| TechCrunch](https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers)
 - [David Pereira's Post](https://linkedin.com/posts/dpereirapaz_were-you-overwhelmed-by-all-the-terminology-activity-7505897578740326400-MYzT)
