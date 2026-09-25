@@ -1,37 +1,25 @@
-# FAQ: Tracking Brand Consideration Shifts Across Stages
+# FAQ: Brand Consideration Tracking Across Journey Stages
 
-## How do I track brand consideration shifts when I cannot run longitudinal surveys?
+## What is a brand consideration set?
 
-Use cross-sectional sampling by recruiting separate groups of customers at each stage and comparing aggregate consideration frequencies. This approach is less precise than tracking the same individuals over time because you are comparing different people, not observing actual transitions. To compensate, increase sample sizes by 50% compared to longitudinal panels and use statistical techniques like Markov chain estimation to infer transition probabilities from cross-sectional data. Label all results as estimated transitions rather than observed transitions.
+It is the group of brands a buyer seriously considers before choosing. It sits inside the larger set of brands the buyer knows about, next to brands they have no view on and brands they have ruled out. In a planned journey the consideration set changes from stage to stage, which is what this skill measures.
 
-## How long should the full consideration tracking process take from setup to actionable insights?
+## How is this different from a brand health tracker?
 
-Plan for 3-5 hours to set up the survey instrument, define stage boundaries, and configure data collection. Data collection itself depends on your purchase cycle length, anywhere from 2 weeks for consumer electronics to 6 months for financial products. Analysis and visualization take another 4-6 hours once data is complete. In total, your first consideration shift analysis will take 2-4 weeks for fast-cycle categories and 3-7 months for slow-cycle categories.
+A typical brand tracker reports awareness and consideration for the market as a whole. Consideration tracking by stage asks which brands buyers considered at each stage of a specific purchase, and which entered or left between stages. That shows where a brand gains or loses buyers, which a single consideration figure cannot.
 
-Subsequent runs are faster because the instrument and definitions are already in place.
+## Should I survey current shoppers or recent buyers?
 
-## Should I track brand consideration shifts before or after mapping touchpoints at each stage?
+Both have a place. Current shoppers give accurate answers about the stage they are in, but you need several samples to cover all stages. Recent buyers can describe the whole journey, but their memory of the latent stage is less reliable. Many teams use a recall study of recent buyers and check it against a smaller current-shopper sample.
 
-Track consideration shifts first. The consideration data tells you where your brand is gaining or losing ground, which determines which stage transitions are most important to investigate. Then use the sibling skill on [optimizing touchpoints per stage](https://tryhamster.com/skills/optimizing-touchpoints-per-stage) to drill into the specific experiences driving those gains or losses. Without the consideration data, touchpoint optimization is untargeted.
+## How do I measure consideration in the latent stage?
 
-You would be improving experiences that may not actually influence brand retention.
+Ask which brands come to mind in the situations that bring people into the category, such as a contract ending or a move. This follows the category entry point approach and is closer to how buyers actually start shopping than an unprompted list. Keep the situations the same in every wave.
 
-## Why does my brand's consideration retention rate keep fluctuating between quarterly measurements?
+## What sample size do I need?
 
-Fluctuation usually comes from one of three sources. First, small sample sizes produce noisy estimates. If your per-stage sample is under 100, expect retention rates to vary by plus or minus 10 percentage points from quarter to quarter just from sampling error. Second, seasonal factors affect purchase timing and competitive activity.
+It depends on how many brands and stages you want to compare and how precise the comparison must be. The key constraint is the base for each brand's additions and removals, which can be small even when the total sample is large. Flag small bases in the report and avoid drawing conclusions from them.
 
-A competitor's major product launch or promotional campaign can temporarily shift consideration patterns. Third, inconsistent stage definitions between measurement waves reclassify respondents, creating artificial shifts. Check your sample sizes and stage definitions for consistency before interpreting quarter-over-quarter changes as real trends.
+## How often should consideration be tracked?
 
-## How do I handle brands that are only considered by a very small percentage of respondents?
-
-Set a minimum consideration threshold, typically 5% of your sample, below which you group brands into an "Other" category for transition analysis. Individual transition rates for brands considered by fewer than 15-20 respondents are statistically unreliable and will produce misleading displacement patterns. If a low-consideration brand is strategically important (for example, a fast-growing startup), track it separately in your raw data but flag that its transition metrics are directional only, not statistically robust.
-
-## Can I use website analytics instead of surveys to track consideration shifts?
-
-Website analytics can serve as a proxy for the evaluation and buying stages but cannot reliably capture the latent stage or measure the full competitive consideration set. You can observe that a visitor went from browsing blog content (latent behavior) to comparing pricing pages (evaluation behavior) to starting a trial (buying behavior), but you cannot see which competitors they were simultaneously considering. Combine web analytics as a behavioral stage-classification signal with periodic surveys that capture the competitive consideration set. This hybrid approach gives you the best of both data sources.
-
-## How does tracking consideration shifts differ for B2B versus B2C purchases?
-
-Three key differences emerge. First, B2B buying involves committees of 3-10 people, and each person may have a different consideration set. You need to survey multiple stakeholders per account, not just one. Second, B2B sample sizes are inherently smaller, so use wider confidence intervals and focus on directional patterns rather than precise percentages.
-
-Third, B2B evaluation stages are more formalized (RFPs, vendor demos, reference checks), which makes stage boundaries easier to define but transitions slower to measure. The skill on [adapting planned journeys for B2B](https://tryhamster.com/skills/adapting-planned-journeys-for-b2b) covers these structural differences in more detail.
+Set a regular interval that matches how fast the category moves, and add a wave after major campaigns, product launches or competitor moves. Keep the questions and brand list stable so waves can be compared.

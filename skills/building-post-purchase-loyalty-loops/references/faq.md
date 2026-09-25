@@ -1,25 +1,21 @@
 # FAQ: Building Post-Purchase Loyalty Loops
 
-## How do post-purchase loyalty loops relate to customer journey stages?
+## What is the difference between active and passive loyalists?
 
-In the McKinsey Consumer Decision Journey, customer journey stages include initial consideration, active evaluation, purchase, and post-purchase experience. Loyalty loops are the mechanism that shortens these stages on subsequent purchases—when the post-purchase experience is strong enough, customers skip consideration and evaluation entirely and repurchase directly.
+Active loyalists stay with a brand and recommend it. Passive loyalists stay without real commitment, often because switching seems like effort, and they leave when a competitor gives them a clear reason. Both show up as retained customers, which is why retention alone does not measure loyalty.
 
-## How long does it take to build an effective loyalty loop?
+## Is the Net Promoter Score enough to identify them?
 
-Expect 2-4 hours for initial loop design, 4-8 weeks to implement the first version of touchpoints across enjoy, advocate, and bond phases, and at least 2-3 purchase cycles to measure whether the loop is actually closing. Most teams see meaningful retention improvements within one quarter of implementation.
+It is a useful attitude measure, but combine it with behavior. A customer can give a high score while already comparing alternatives, and a customer who never answers surveys can still refer others. Referrals, direct repurchase and signs of shopping around complete the picture.
 
-## Can loyalty loops work for one-time purchase products?
+## Do loyalty programs create loyalty loops?
 
-Yes, but the loop closes differently. For infrequent purchases (cars, mattresses, appliances), the loyalty loop drives brand advocacy and category expansion rather than direct repurchase. A delighted car buyer becomes a referral source for years and may buy accessories, service plans, or their next car from the same brand.
+They can support one, but they rarely create it. Programs that reward every repeat purchase mostly pay customers who would have stayed. Programs that reward referrals, deeper use or engagement, on top of a strong basic experience, do more to move customers into active loyalty.
 
-## What's the difference between a loyalty program and a loyalty loop?
+## Where should a team start if everything seems important?
 
-A loyalty program is a rewards mechanism (points, tiers, discounts) that creates transactional incentives. A loyalty loop is a system of experiences across the enjoy-advocate-bond phases that creates habitual repurchase behavior. Programs are one tool within the bond phase; they aren't sufficient to create a complete loop on their own.
+Start with the enjoy phase: the first successful use and the first support contact. These moments affect every customer and often separate active from passive loyalists most clearly. Advocacy and bonding work have more to build on once they are reliable.
 
-## How do I measure whether customers are actually in a loyalty loop versus just repurchasing?
+## How does this apply to B2B?
 
-Track whether repeat customers visit comparison sites, search for alternatives, or engage with competitor content before repurchasing. True loyalty loop customers show shorter time-to-repurchase, no competitive research behavior, and higher NPS scores. If repeat buyers are still comparison shopping, they're re-entering active evaluation—not in a closed loop.
-
-## Which customer journey stages are most important for preventing churn?
-
-The transition from enjoy to advocate is the highest-risk moment. Customers who experience value but never advocate have weaker emotional commitment and are vulnerable to competitive offers. Designing a smooth enjoy-to-advocate bridge—where sharing success feels natural—is the single highest-leverage intervention for preventing churn and closing the loyalty loop.
+The loop shows up as renewal and expansion without a new vendor evaluation. Loyalty has to be earned with several people in the customer's organization, including users, managers and the budget holder, so segment by role. A strong champion with unhappy users is a passive account in disguise.

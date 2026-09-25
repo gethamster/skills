@@ -1,45 +1,37 @@
-# Examples: Building 4Ls Retrospective Templates and Boards
+# Examples: Building a 4Ls Retrospective Board and Template
 
-## Example: Setting Up a 4Ls Board in Miro for a Remote Team of 7
-
-**Scenario:**
-
-You're a Scrum Master for a fully remote team of 7 developers running two-week sprints. Your team uses Miro for all whiteboarding. You need a reusable sprint retrospective template that works within a 45-minute timebox.
-
-**Walkthrough:**
-
-Start by creating a new Miro board and adding four frames in a 2×2 grid, each 1000×800 pixels. Color the frames: green (Liked), blue (Learned), orange (Lacked), purple (Longed For). Add a large heading in each frame and a prompt question in smaller text below. Create a pack of 10 sticky notes in matching colors inside each frame.
-
-Below the grid, add a 2000×400 frame labeled 'Action Items' with three columns: Action, Owner, Due Date. Add 4 blank structured sticky notes as placeholders. To the right of the grid, add a small 'Parking Lot' frame for off-topic items.
-
-At the top, create a header frame with the team name, sprint number placeholder, and a 5-step agenda. Enable the Miro voting plugin set to 3 votes per participant. Lock all frames, labels, and prompts so only sticky notes are movable. Set board permissions to 'Can edit' for team members.
-
-Save the board as a Miro template in your team's workspace. Before the next sprint, duplicate the template, update the sprint number, and optionally customize one prompt to reference a specific sprint event. Share the link in your calendar invite 10 minutes before the meeting so people can start adding notes early.
-
-## Example: Building a Physical 4Ls Whiteboard for a Co-located Team
+## A digital template for a co-located team
 
 **Scenario:**
 
-Your co-located team of 5 meets in a conference room with a large whiteboard. You want to create a physical 4Ls board that's quick to set up each sprint and encourages tactile participation.
+Illustrative scenario: a team of seven sits in one office but keeps losing retrospective notes because boards are photographed and never transcribed. The Scrum Master wants a digital template that is quick to reuse.
 
 **Walkthrough:**
 
-Use painter's tape to divide the whiteboard into four equal quadrants. Write the headings with a thick dry-erase marker in each section's designated color (green, blue, orange, purple). Below each heading, write a concise prompt question. Place four stacks of Post-it notes (color-matched) on the conference table near the whiteboard along with markers.
+The Scrum Master builds a board with a header for the sprint goal, what shipped and last sprint's actions. Below it sit four columns in the order Liked, Learned, Lacked, Longed For, each with a fixed color and two prompts. A small "Not sure" area sits to the right, and an action table with columns for action, owner and due date sits at the bottom.
 
-In the bottom-right corner of the whiteboard, reserve space for 'Action Items' with three column headers. On a separate small whiteboard or flip chart, list 'Previous Sprint Actions' so the team can review them at the start.
+Voting rules go in a legend: a few dots per person, results hidden until everyone has voted. The board is saved as a template, and each sprint the Scrum Master copies it, updates the header and edits one prompt per column. After the first use, the team asks for more room under Lacked, and the template is updated rather than the single copy.
 
-Create a laminated 'Setup Card' with a photo of the finished layout and the exact prompt text for each quadrant. Store it in the conference room so any facilitator can recreate the board in 5 minutes. Give each person a strip of 5 small dot stickers for voting. After the session, photograph the completed board, upload it to Confluence as a record, and wipe the whiteboard clean for next time.
-
-## Example: Creating an Async 4Ls Template in Confluence for a Distributed Team
+## A physical board for a workshop
 
 **Scenario:**
 
-Your team spans three time zones and can't meet synchronously. You need an asynchronous sprint retrospective template in Confluence that allows people to contribute over a 48-hour window.
+Illustrative scenario: a product group runs a 4Ls retrospective at the end of an in-person planning offsite. Everyone is in the room and the facilitator wants people moving.
 
 **Walkthrough:**
 
-Create a new Confluence page using a four-column layout macro. Label each column with one of the 4Ls and add a prompt question and a color-coded header. Enable inline comments so team members can add their feedback as comments within each column.
+Following the original EBG layout, the facilitator hangs four posters on different walls, one per L, each with a single prompt written at the top. People write notes at their seats and walk to each poster to post them. The group then splits into four subgroups, one per poster, to cluster the notes and name the themes.
 
-Add a table at the bottom for action items with columns for Description, Owner, Priority, and Due Date. At the top of the page, include clear instructions: 'Add your feedback as comments in each section by Friday 5pm. On Monday, we'll vote asynchronously using emoji reactions (👍) on the items you think are most important. Tuesday, the facilitator will summarize the top 3 items and propose action items for team approval.'
+Each subgroup reports its themes to the room. Dots are handed out for voting, and actions go on a fifth poster by the door with owner and date columns. At the end, the facilitator transcribes the action poster into the team's tracker the same day.
 
-Include a link to the previous sprint's retrospective page and highlight which action items were completed. Save this as a Confluence space template so you can generate a new instance each sprint with one click. The asynchronous format gives quieter team members more time to reflect and compose thoughtful feedback, which often surfaces insights that get lost in synchronous sessions. See [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](https://tryhamster.com/skills/adapting-4ls-for-remote-and-hybrid-teams) for more async facilitation strategies.
+## A board redesign after repeated confusion
+
+**Scenario:**
+
+Illustrative scenario: a team has used a bare four-box board for months. Many notes land in the wrong box, and meetings often end without actions.
+
+**Walkthrough:**
+
+The facilitator adds prompts to each box, including one line on the difference between Lacked and Longed For. They move the action area from a corner to the bottom center of the board and give it required owner and date fields. A header now shows last sprint's actions with a status field.
+
+In the next retrospective, fewer notes need moving and the team ends with two actions that have owners. The facilitator keeps the changes in the template and archives each finished board with the sprint name and date, so later reviews can compare themes.

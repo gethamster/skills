@@ -1,44 +1,43 @@
-# Examples: Facilitating Start Stop Continue Retrospectives
+# Examples: Facilitating a Start Stop Continue Retrospective
 
-## Example: Sprint Retrospective for a 6-Person Scrum Team
-
-**Scenario:**
-
-A development team of 6 has just finished a two-week sprint. The sprint goal was partially met—two key stories were not completed. The Scrum Master decides to run a start stop continue retrospective to uncover why and identify improvements.
-
-**Walkthrough:**
-
-The Scrum Master opens a Miro board with three columns and shares the link 5 minutes before the meeting. At the start, she states the ground rules and sets context: 'We delivered 18 of 20 story points. Let's reflect on what worked and what we can improve.'
-
-She sets a 10-minute timer for silent brainstorming. Participants add sticky notes. Key items that emerge:
-- **Start**: 'Spike stories before estimating complex backend work', 'Pair programming on unfamiliar codebases'
-- **Stop**: 'Accepting scope changes mid-sprint without adjusting commitments', 'Skipping the definition of done checklist'
-- **Continue**: 'Daily 15-minute standups (they've been tight lately)', 'Deploying to staging daily'
-
-After clustering 22 notes into 8 themes, each person gets 4 dot votes. The top themes: 'Mid-sprint scope changes' (9 votes), 'Spike stories before estimation' (7 votes), 'Definition of done discipline' (5 votes).
-
-The team discusses the top two themes. Action items:
-1. Product Owner will bring any new requests to the next sprint planning instead of mid-sprint. If truly urgent, the team will drop an equivalent story. Owner: PO. Deadline: Effective next sprint.
-2. Tech lead will create a spike story template and add it to the backlog refinement checklist. Owner: Tech lead. Deadline: Wednesday.
-
-The Scrum Master posts both action items in Jira and the team Slack channel within 30 minutes.
-
-## Example: Remote Start Stop Continue Retrospective with a Distributed Team
+## A sprint that missed its goal
 
 **Scenario:**
 
-A product team of 10 people spread across three time zones needs to run a retrospective after a rocky product launch. Trust is moderate—some team members have never met in person. The facilitator needs to ensure equitable participation despite the remote format.
+Illustrative scenario: a team of six finishes a two-week sprint with two of its planned stories unfinished. The facilitator has one hour and wants to know why before the team proposes changes.
 
 **Walkthrough:**
 
-The facilitator uses FigJam and schedules the session for a 60-minute window that overlaps all three time zones. She sends a pre-read the day before explaining the start stop continue retrospective format and asking people to start thinking about items in advance.
+The facilitator opens with the sprint goal, the two unfinished stories, and the status of last sprint's two actions: one done, one dropped. The team spends a few minutes on what happened and finds that both stories grew after they entered the sprint.
 
-She opens with a one-word check-in ('How are you feeling about the launch in one word?') to break the ice and surface the emotional temperature—responses range from 'relieved' to 'frustrated.'
+Silent writing produces about twenty notes. The main Stop theme is accepting new requirements into a story mid-sprint without re-planning. The main Start theme is splitting large stories during refinement. Continue items cluster around the daily deploy to staging.
 
-During the 10-minute silent brainstorm, the facilitator monitors the board to ensure everyone has contributed. She notices two people haven't added notes after 5 minutes and sends a private chat: 'No pressure, but feel free to add anything—even small observations are valuable.'
+After a dot vote, the team discusses the top two themes. The product owner volunteers to route new requirements to the next refinement session, and a developer volunteers to bring a splitting checklist to the next refinement. Both actions go into the team's tracker with a review date at the next retrospective.
 
-Clustering reveals a dominant theme in the Stop column: 'Last-minute design changes without engineering input.' Dot-voting confirms it as the #1 priority. The facilitator runs a 5-minute focused discussion using a round-robin format—each person gets 30 seconds to share their perspective before open discussion. This prevents dominant voices from taking over.
+## A remote team across time zones
 
-The team agrees on one action item: 'Design and engineering leads will hold a 15-minute sync every Tuesday and Thursday during the next project to review upcoming changes. First sync: this Thursday. Owners: Design Lead and Engineering Lead.'
+**Scenario:**
 
-The facilitator documents everything in Notion and schedules a 10-minute follow-up check-in for two weeks later.
+Illustrative scenario: a product team of ten works across three time zones and has just shipped a difficult release. Some members have never met in person, and the facilitator expects people to be cautious about Stop items.
+
+**Walkthrough:**
+
+The facilitator opens an online board two days early with the three columns and a short definition under each. Notes are anonymous and hidden until the meeting. The facilitator asks everyone to add items before the call, so people in distant time zones are not writing late at night.
+
+In the call, the facilitator spends the first part on a timeline of the release. Notes are then revealed and grouped. Several anonymous Stop notes point to late changes in release scope. The group votes and picks two themes.
+
+For each theme, the facilitator asks for a volunteer from each affected function. The resulting actions are written into the team's tracker during the call so everyone sees the same wording before they leave.
+
+## A team whose actions keep coming back
+
+**Scenario:**
+
+Illustrative scenario: a team has run the format every sprint for several months. The same Stop item about unclear acceptance criteria appears again, and people are starting to joke about it.
+
+**Walkthrough:**
+
+The facilitator opens by showing the item's history across the last few sessions and the actions attached to it. Each action was assigned to "the team" and none had a review date.
+
+Instead of a new round of writing on that topic, the group discusses why the action never stuck. It turns out that acceptance criteria are written by someone outside the team. The facilitator reframes the action as something the team controls: a short check of criteria at refinement, with a named owner, plus a request to the outside group that the team lead will raise.
+
+The next session opens with both actions. The check happened, and the Stop item does not return.

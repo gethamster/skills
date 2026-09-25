@@ -1,25 +1,21 @@
-# FAQ: Adapting the Double Diamond for UX Design Projects
+# FAQ: Adapting the Double Diamond UX Framework for Design Projects
 
-## How is the Double Diamond different from Design Thinking for UX?
+## How does the Double Diamond map to UX activities?
 
-The Double Diamond explicitly separates problem-finding (first diamond) from solution-finding (second diamond), while Design Thinking's five stages (Empathize, Define, Ideate, Prototype, Test) blend these more fluidly. For UX teams, the Double Diamond's structure is often easier to plan against and communicate to stakeholders. See our comparison in [Choosing Between Double Diamond and Design Thinking](https://tryhamster.com/skills/choosing-between-double-diamond-and-design-thinking).
+Discover covers user research and data review. Define covers synthesis artefacts such as journey maps, personas and problem statements. Develop covers sketching, flows, wireframes and early prototypes. Deliver covers usability testing, refinement, hand-off and post-release measurement.
 
-## How long should each phase of the double diamond UX process take?
+## How does the Double Diamond fit with agile sprints?
 
-A common split is 25% Discover, 15% Define, 30% Develop, 30% Deliver, but this varies by project. Greenfield projects need more Discover time. Projects with established user research can compress the first diamond and invest more in Develop and Deliver.
+Run the first diamond as a short discovery before development starts, then run Develop and Deliver in step with sprints. Designers often work a sprint or two ahead of engineers. Keep the problem statement visible in sprint planning so solution work stays anchored to it.
 
-## Can I use the Double Diamond in agile sprints?
+## Do we need a first diamond for small features?
 
-Yes. Run a compressed first diamond (Discover + Define) as a 'Sprint 0' or discovery sprint, then execute the second diamond (Develop + Deliver) across subsequent sprints. Each sprint can also contain a mini double diamond for individual features.
+A short one, yes. For a small feature it may be a quick look at analytics and a few conversations with users. The aim is to confirm the problem behind the request before designing screens.
 
-## What UX deliverables come out of each Double Diamond phase?
+## Which UX deliverables matter most?
 
-Discover produces research reports, interview transcripts, and raw data. Define produces personas, journey maps, and a problem statement. Develop produces sketches, wireframes, and concept prototypes. Deliver produces tested high-fidelity designs, usability reports, and engineering-ready specifications.
+The ones the rest of the team uses. A clear problem statement, a journey map that shows where the problem occurs, tested prototypes and a hand-off that includes reasoning tend to have the most effect. Skip artefacts that do not change a decision.
 
-## How do I convince stakeholders to invest time in the Discover phase instead of jumping to design?
+## How many usability test participants do we need?
 
-Frame Discover as risk reduction, not delay. Show examples where skipping research led to expensive rework. Propose a time-boxed Discover phase (e.g., one week of interviews) and promise a concrete deliverable—a problem statement the team commits to—at the end.
-
-## What's the minimum viable version of the Double Diamond for a small UX project?
-
-At minimum, conduct 5 user interviews (Discover), synthesize into one problem statement (Define), sketch 3 concepts and pick one (Develop), and run a single round of usability testing with 5 users (Deliver). This can fit in 2 weeks and still provides the framework's core benefit of separating problem-finding from solution-finding.
+For finding usability problems, a few people per round is usually enough if you run several rounds and fix issues between them. Test with more people when you need to compare designs quantitatively or cover several distinct user groups.

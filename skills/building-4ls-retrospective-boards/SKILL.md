@@ -1,15 +1,20 @@
 ---
-name: building-4ls-retrospective-boards
-description: "This skill teaches you how to design and set up physical or digital sprint retrospective templates using the 4Ls quadrant layout, so your team can efficiently capture, organize, and act on feedback in tools like Miro, FigJam, and Confluence."
+name: "building-4ls-retrospective-boards"
+description: "Build a reusable 4Ls retrospective board and template, physical or digital, with prompts, voting space and an action area the team reuses."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: 4ls-retrospective
+  method: "4ls-retrospective"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Building a Sprint Retrospective Template with the 4Ls Board Layout
+# Building a 4Ls Retrospective Board and Template
 
-> This skill teaches you how to design and set up physical or digital sprint retrospective templates using the 4Ls quadrant layout, so your team can efficiently capture, organize, and act on feedback in tools like Miro, FigJam, and Confluence.
+> Build a reusable 4Ls retrospective board and template, physical or digital, with prompts, voting space and an action area the team reuses.
 
 ## Before you start
 
@@ -24,131 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Beginner |
-| Time to Learn | 20-45 minutes |
-| Outcome | You can quickly spin up a reusable, well-structured 4Ls retrospective board that guides team members to contribute meaningful feedback and produces organized, actionable output every sprint. |
-| Prerequisites | Basic understanding of the 4Ls Retrospective framework (Liked, Learned, Lacked, Longed For), Familiarity with at least one digital whiteboard or collaboration tool, Understanding of agile sprint cycles and retrospective ceremonies |
-| Part of | [4Ls Retrospective](../../methods/4ls-retrospective/METHOD.md) |
+| Time to Learn | About an hour |
+| Outcome | You can set up a 4Ls retrospective board template that tells people where each note goes, supports clustering and voting, and ends in a clear list of owned actions. |
+| Prerequisites | Familiarity with the 4Ls categories, access to a whiteboard or a digital board tool |
+| Part of | [4Ls Sprint Retrospective](../../methods/4ls-retrospective/METHOD.md) |
 
 ## Overview
 
-A well-designed sprint retrospective template is the difference between a retrospective that produces clear action items and one that devolves into unfocused venting. The 4Ls board layout—Liked, Learned, Lacked, and Longed For—gives teams a structured canvas that balances positive reflection with constructive criticism, but only if the board itself is set up thoughtfully.
+A 4Ls retrospective board is the workspace where the team writes, sorts and votes on its feedback. A good board does part of the facilitator's work: it tells people what each category means, where to put a note that fits nowhere, how voting works and where the actions go. A bad board is four empty boxes, which leaves every question to be answered out loud and wastes the first ten minutes of the meeting. The [method page](../../methods/4ls-retrospective/METHOD.md) explains the categories themselves; this skill is about the physical or digital layout that holds them.
 
-This skill walks you through building 4Ls retrospective boards from scratch in popular tools like Miro, FigJam, and Confluence, as well as on physical whiteboards. You'll learn how to size quadrants appropriately, write effective prompt questions for each section, add facilitation aids like voting dots and timers, and create reusable templates your team can clone sprint after sprint.
+The original layout was physical. Mary Gorman and Ellen Gottesdiener's [EBG write-up](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) hangs four posters around the room, one per L, so people walk to each poster to post notes and later split into subgroups, one per poster. [Ben Linders describes](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) the same idea with flip charts, and notes that a shared editable document works for distributed teams. Today most teams use a digital board even when co-located, because it keeps a record without anyone photographing sticky notes.
 
-Whether you're a Scrum Master preparing for your first retrospective or an experienced facilitator looking to standardize your sprint retrospective template across multiple teams, this guide gives you everything you need to build boards that drive genuine continuous improvement through the [4Ls Retrospective](https://tryhamster.com/methods/4ls-retrospective) framework.
+Build the board once as a template, then copy it each sprint. A template keeps the layout consistent, which matters later when someone wants to compare themes across many retrospectives. It also lowers the preparation cost to a few minutes: copy, update the sprint facts, set the prompts, and share the link.
 
 ## How It Works
 
-The 4Ls board works by spatially separating four distinct types of reflection, which reduces cognitive overload and prevents feedback from blurring together. When a team member sees four clearly labeled quadrants—each with a guiding prompt—they can mentally sort their observations before writing them down, which leads to more specific, higher-quality contributions.
+The board has to support each phase of the meeting, so design it phase by phase. The five phases from [Derby and Larsen's Agile Retrospectives](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/) map onto areas of the board.
 
-The quadrant layout leverages a principle from information architecture: chunking. By dividing the feedback space into four meaningful categories, you make it easier for participants to both contribute and later analyze the results. The **Liked** quadrant captures what went well (reinforcing positive behaviors), **Learned** captures new insights (building team knowledge), **Lacked** surfaces gaps and blockers (identifying systemic issues), and **Longed For** captures aspirational improvements (driving forward-looking action).
+| Meeting phase | Board area |
+|---------------|-----------|
+| Set the stage | Header with sprint goal, dates, last actions and the working agreement |
+| Gather data | Four columns or quadrants, one per L, each with prompts |
+| Generate insights | Space inside each column for clusters and theme names |
+| Decide what to do | Action area with owner and due date fields |
+| Close | A small feedback area about the retrospective itself |
 
-The physical or digital board also serves as a facilitation scaffold. When the board includes voting mechanisms, timer placeholders, and an action items section, it guides the facilitator through the ceremony without requiring a separate run-of-show document. The board *is* the process. This is why investing 20-45 minutes in a solid sprint retrospective template pays dividends across dozens of future sprints—every ceremony starts with structure already in place.
+Columns or quadrants both work. A four-quadrant grid keeps all categories visible at once and suits a wide screen or wall. Four side-by-side columns leave more vertical space for notes and are easier to scan left to right. Put the categories in the order Liked, Learned, Lacked, Longed For, which starts the team on what went well and ends on what it wants.
+
+Prompts go at the top of each column. One or two short questions per category are enough; [FunRetrospectives offers examples](https://www.funretrospectives.com/the-4-ls-liked-learned-lacked-longed-for/) such as "What aspects of our work did you really enjoy?" for Liked. Prompts cut down on miscategorized notes and on blank stares.
+
+Voting needs its own rules on the board. The [Nielsen Norman Group recommends](https://www.nngroup.com/articles/dot-voting/) giving each person about a quarter as many votes as there are options, and voting silently. On a digital board, use the tool's hidden-voting feature if it has one, so people cannot see where others' dots went before they vote.
+
+The action area is the part most boards get wrong. It needs fields for the action, one owner and a date, and it should sit where everyone sees it at the close, not in a corner.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Choose Your Medium and Tool
+### Step 1: Choose the Medium
 
-Decide whether you're building a physical board (whiteboard, poster paper) or a digital board, based on your team's working arrangement. For co-located teams, a physical whiteboard with painter's tape dividers and real sticky notes creates tactile engagement. For remote or hybrid teams, choose a digital tool your team already uses—Miro and FigJam are ideal for real-time collaboration, while Confluence works well for asynchronous retrospectives.
+Pick physical or digital based on where people sit, not on habit. If everyone is in one room, posters or a whiteboard make the session more active, as in the [EBG layout](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). If anyone is remote, use a digital board for everyone, so remote people are not reading a camera view of a wall. Check that the tool supports anonymous notes, hidden voting and export, because each of those comes up later. Choose one tool and stick with it, since switching loses the history.
 
-Consider your team size: tools like Miro handle 15+ simultaneous users smoothly, while FigJam is lighter-weight and better for smaller teams. If your organization already has licenses for a specific tool, default to that—reducing tool friction matters more than feature differences.
+### Step 2: Lay Out the Four Categories
 
-> **Pro tip:** If your team is hybrid, always default to digital. Having some people on sticky notes and others on a screen creates a two-tier participation problem that undermines the retrospective.
+Create four equal areas labelled Liked, Learned, Lacked and Longed For, in that order. Give each area a distinct background color and use the same color every sprint, so people learn the layout. Leave enough room in each area for clusters to grow, since Lacked usually fills fastest. Add a small "Not sure where this goes" area beside the four, which stops people from agonizing over placement during silent writing. Keep labels large enough to read from across the room or on a laptop screen.
 
-### Step 2: Step 2: Create the Four-Quadrant Layout
+### Step 3: Add Prompts to Each Category
 
-Divide your canvas into four equal quadrants arranged in a 2×2 grid. In Miro, use frames or draw rectangles; in FigJam, use sections; on a physical whiteboard, use painter's tape. Label each quadrant prominently:
+Write one or two questions at the top of each area. Keep them short and concrete: "What would you want to do again next sprint?" is easier to answer than "What did you like?" Use the [FunRetrospectives prompts](https://www.funretrospectives.com/the-4-ls-liked-learned-lacked-longed-for/) as a starting point and adjust them to the sprint. For Lacked and Longed For, add one line that clarifies the difference: Lacked is what was missing, Longed For is what you wish you had next. Leave the prompts editable in the template so each facilitator can tune them.
 
-- **Top-left:** Liked (often color-coded green)
-- **Top-right:** Learned (often color-coded blue)
-- **Bottom-left:** Lacked (often color-coded red or orange)
-- **Bottom-right:** Longed For (often color-coded purple or yellow)
+### Step 4: Build the Header
 
-Make each quadrant large enough to hold 8-12 sticky notes without overlap. For a digital board, a minimum of 800×600 pixels per quadrant works well for teams of 5-8 people. Leave breathing room—cramped boards discourage participation.
+Across the top, add the sprint name and dates, the sprint goal and whether it was met, and a short list of what shipped. Include last retrospective's actions with a status field for each. Add the working agreement or a paraphrase of the [Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive) so the tone is set before anyone writes. The header gives people facts to react to, which makes notes more specific. Keep it short enough to read in a minute.
 
-> **Pro tip:** Place positive quadrants (Liked, Learned) on top and improvement quadrants (Lacked, Longed For) on the bottom. This top-to-bottom flow mirrors the natural retrospective arc: celebrate first, then identify improvements.
+### Step 5: Add Clustering and Voting Space
 
-### Step 3: Step 3: Add Prompt Questions to Each Quadrant
+Inside each category, leave room to drag notes into groups, with a place to write a theme name above each group. Add a legend that explains the voting rules: how many dots each person gets and whether they can stack them. If the tool supports it, set up a voting session with results hidden until everyone is done. On a physical board, use sticky dots and ask people to vote at the same time. Put the vote count next to each theme name so the ranking is visible.
 
-Below each quadrant heading, add a guiding prompt question that helps team members understand what belongs there. Good prompts are specific enough to spark thinking but open enough to allow diverse responses:
+### Step 6: Add the Action Area
 
-- **Liked:** "What practices, interactions, or outcomes from this sprint would you want to repeat?"
-- **Learned:** "What new insights, skills, or information did you gain during this sprint?"
-- **Lacked:** "What was missing, insufficient, or blocking your progress this sprint?"
-- **Longed For:** "What tools, processes, or changes do you wish you had during this sprint?"
+Create a table or column labelled Actions with fields for the action, the owner and the due date. Place it to the right of or below the four categories, where people naturally look at the end. Add a note that each action needs one named person, not "the team". Include a small parking area for topics raised but not discussed, so they are not lost. Link or copy actions from here into the sprint backlog before the meeting ends.
 
-These prompts serve double duty: they orient first-time participants and they keep experienced team members from defaulting to vague statements like 'communication was bad.' For more on writing effective prompts, see [Crafting Effective Questions for Each L Category](https://tryhamster.com/skills/crafting-4ls-retrospective-questions).
+### Step 7: Save as a Template and Test It
 
-> **Pro tip:** Format prompts in a slightly smaller font or lighter color than the quadrant heading so they serve as hints rather than dominating the visual hierarchy.
-
-### Step 4: Step 4: Pre-Populate with Color-Coded Sticky Notes
-
-Add a stack of blank sticky notes in each quadrant, color-coded to match the quadrant's theme. In Miro, create a sticky note pack in each section; in FigJam, use the built-in sticky note tool with color presets. On a physical board, place stacks of colored Post-its near each quadrant.
-
-Color-coding serves two purposes: it makes it visually obvious which category a note belongs to even if it gets moved, and it creates a satisfying visual density as the board fills up during the session. Pre-populating also removes a small friction point—participants can grab a note and start writing immediately rather than hunting for the sticky note tool.
-
-> **Pro tip:** For digital boards, lock the quadrant frames and labels so participants can't accidentally drag or resize them. Only the sticky notes should be movable.
-
-### Step 5: Step 5: Add Voting and Prioritization Mechanisms
-
-After the brainstorming phase, teams need to prioritize which items to discuss. Build this into your sprint retrospective template from the start. In Miro, enable the voting plugin and set a dot limit (typically 3-5 votes per person). In FigJam, use the stamp or emoji reaction feature. On physical boards, give each person 3-5 dot stickers.
-
-Place a brief instruction near the voting area: 'Each person gets 3 votes. Vote on the items you think are most important to discuss. You can place multiple votes on one item.' This eliminates the need for the facilitator to explain voting mechanics during the session.
-
-> **Pro tip:** Set the vote count to roughly half the expected number of sticky notes divided by team size. Too many votes dilutes prioritization; too few creates frustration.
-
-### Step 6: Step 6: Include an Action Items Section
-
-Below the four quadrants, create a dedicated 'Action Items' section with columns for: the action, the owner, and the due date. This is where discussion outcomes get captured as concrete commitments. Without this section, retrospective insights evaporate within hours.
-
-Format this as a simple table or a row of structured sticky notes. Aim for 2-4 action item slots—more than that and the team overcommits. Include a note referencing your team's process: 'Actions will be added to the next sprint backlog' or similar. For guidance on converting insights to actions, see [Converting 4Ls Insights into Sprint Action Items](https://tryhamster.com/skills/converting-4ls-insights-into-action-items).
-
-> **Pro tip:** Add a 'Previous Sprint Actions' section above or beside the action items area. Reviewing last sprint's commitments at the start of each retrospective closes the feedback loop and builds accountability.
-
-### Step 7: Step 7: Add Facilitation Aids and Instructions
-
-Round out your template with elements that make facilitation smoother. Add a timer placeholder (or embed a timer widget if your tool supports it) with suggested timeboxes: 5 minutes for silent brainstorming, 15 minutes for discussion, 5 minutes for action planning. Include a 'Parking Lot' section for off-topic but important items that shouldn't derail the retrospective.
-
-At the top of the board, add a brief agenda or ceremony flow: '1. Review previous actions → 2. Silent brainstorm → 3. Vote → 4. Discuss top items → 5. Define actions.' This turns your board into a self-contained facilitation guide, which is especially valuable when facilitators rotate or when someone fills in unexpectedly. See [Facilitating a 4Ls Retrospective Meeting](https://tryhamster.com/skills/facilitating-4ls-retrospective-sessions) for the full facilitation playbook.
-
-> **Pro tip:** Include a 'Ground Rules' callout with 2-3 norms like 'Focus on systems, not people' and 'What happens in retro stays in retro.' This sets psychological safety without requiring a verbal preamble every sprint.
-
-### Step 8: Step 8: Save as a Reusable Template and Test It
-
-In Miro, save the board as a template in your team's template library. In FigJam, duplicate the file into a 'Templates' project. In Confluence, save it as a page template within your space settings. For physical boards, photograph the layout and post it where the team can reference it during setup.
-
-Before using the template in a real retrospective, do a dry run: open a fresh copy, pretend to add 3-4 sticky notes per quadrant, vote, and fill in an action item. This reveals spacing issues, confusing labels, or permission problems (a common gotcha in Miro where participants can't add sticky notes because the board permissions are set to 'view only'). Fix these before your first live session.
-
-> **Pro tip:** Name your templates with the format '[Team Name] 4Ls Retro - Template' so teams can find them quickly. Include the date of last update in the description so you know when to refresh the design.
+Save the board as a template in your tool, with prompts, legend and empty action table in place. Run a quick dry run with one or two teammates to catch confusing labels or cramped areas. After the first real retrospective, ask what was confusing about the board and fix it in the template, not only in that sprint's copy. Keep an archive of finished boards with a consistent naming scheme, which makes trend tracking possible later. Review the template every few months rather than every sprint.
 
 ## Best Practices
 
-- Keep the visual design minimal and consistent—use the same four colors, same font sizes, and same layout every sprint so team members develop muscle memory and can focus on content rather than navigation.
-- Size your quadrants based on team size: teams of 3-5 need smaller quadrants (6-8 notes each), teams of 8-12 need larger quadrants (12-20 notes each). An overcrowded board signals you need to split into smaller retro groups.
-- Always include the sprint number, date, and team name on the board header so retrospective boards become searchable historical records useful for tracking trends across sprints.
-- Lock structural elements (frames, labels, prompt text) in digital tools so participants can only interact with sticky notes and votes—this prevents accidental layout destruction that derails sessions.
-- Create separate template variants for different retrospective durations (30-minute vs. 60-minute) with adjusted timeboxes and fewer/more sticky note slots, rather than using one template for all situations.
-- After each retrospective, archive the completed board rather than clearing it. Completed boards are your team's improvement history and are invaluable when reviewing patterns over multiple sprints—see [Tracking 4Ls Trends Across Multiple Sprints](https://tryhamster.com/skills/tracking-retrospective-trends-across-sprints).
+- Keep the same layout, colors and order every sprint. Consistency lets people focus on content instead of finding their way around, and it makes old boards comparable.
+- Put prompts on the board itself rather than only saying them aloud. People look at the board while writing, and written prompts reduce miscategorized notes.
+- Turn on anonymous notes when trust is uncertain. Anonymity is easy to switch off later once the team is comfortable, and hard to recover once someone has been singled out.
+- Hide votes until everyone has voted. Visible votes pull later voters toward early leaders, which the [Nielsen Norman Group lists](https://www.nngroup.com/articles/dot-voting/) as a common dot-voting failure.
+- Make the action area impossible to miss. If it is small or off to the side, the meeting tends to end without filling it.
+- Archive every finished board with the date and sprint name. The archive is the raw material for any later look at recurring themes.
 
 ## Common Mistakes
 
-- **Making quadrants different sizes or giving 'Liked' and 'Learned' more space than 'Lacked' and 'Longed For'** — Keep all four quadrants exactly equal in size. Unequal sizing unconsciously signals that some feedback types are more welcome than others, which suppresses constructive criticism and undermines the balance that makes the 4Ls framework effective.
-- **Skipping the action items section on the board and planning to 'capture actions elsewhere'** — Always include the action items section directly on the retrospective board. When actions live in a separate document or ticket system, the connection between insight and action breaks, follow-through drops, and team members feel their feedback goes into a void.
-- **Using the same generic prompt ('What did you like?') without tailoring it to the sprint context** — Customize at least one prompt per sprint to reference specific events. For example, 'What worked well about how we handled the production incident on Tuesday?' generates far more specific, actionable feedback than a generic prompt.
-- **Setting up the board during the retrospective meeting instead of beforehand** — Always prepare the board at least 30 minutes before the meeting starts. Setting up during the meeting wastes precious timebox minutes, makes the facilitator look unprepared, and gives participants time to mentally disengage before the session even begins.
-- **Creating elaborate, visually complex templates with illustrations, icons, and decorative elements** — Resist the urge to over-design. A clean sprint retrospective template with clear labels and ample whitespace outperforms a pretty one. Visual complexity increases cognitive load and makes the board harder to scan when you're trying to identify patterns across 30+ sticky notes.
+- **Four empty boxes with no prompts**: People stall or put notes in the wrong place. Add one or two concrete questions to each category and a short line on the Lacked and Longed For difference.
+- **No place for actions**: Boards that stop at the four categories end meetings with themes and no commitments. Add an action table with owner and date fields as a fixed part of the template.
+- **Rebuilding the board from scratch each sprint**: This wastes preparation time and makes boards inconsistent. Save a template and copy it.
+- **Too much decoration**: Icons, stickers and instructions everywhere compete with the notes. Keep the board plain and let the content stand out.
+- **A physical board for a hybrid team**: Remote people cannot read or move notes on a wall. Use a digital board for everyone whenever even one person is remote.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/4ls-retrospective/METHOD.md) — 4Ls Retrospective
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/4ls-retrospective/METHOD.md): 4Ls Sprint Retrospective
 
 ## Related Skills
 
-- [Facilitating a 4Ls Retrospective Meeting](../facilitating-4ls-retrospective-sessions/SKILL.md)
-- [Tracking 4Ls Trends Across Multiple Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
-- [Categorizing and Sorting Team Feedback into the 4Ls](../categorizing-feedback-into-4ls/SKILL.md)
-- [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
-- [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
-- [Adapting the 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
+- [Facilitating a 4Ls Sprint Retrospective Meeting](../facilitating-4ls-retrospective-sessions/SKILL.md)
+- [Tracking 4Ls Retrospective Trends Across Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
+- [Sorting Team Feedback into the 4Ls Categories](../categorizing-feedback-into-4ls/SKILL.md)
+- [Writing 4Ls Retrospective Questions for Each Category](../crafting-4ls-retrospective-questions/SKILL.md)
+- [Turning 4Ls Retrospective Insights into Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
+- [Running a 4Ls Retrospective for Remote and Hybrid Teams](../adapting-4ls-for-remote-and-hybrid-teams/SKILL.md)
+
+## Sources
+
+- [EBG Consulting: The 4L's, a retrospective technique](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/)
+- [Ben Linders: Four L's, a classic retrospective exercise](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/)
+- [FunRetrospectives: 4 Ls](https://www.funretrospectives.com/the-4-ls-liked-learned-lacked-longed-for/)
+- [Derby, Larsen and Horowitz: Agile Retrospectives, Second Edition](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/)
+- [Nielsen Norman Group: Dot voting](https://www.nngroup.com/articles/dot-voting/)
+- [Retrospective Wiki: The Prime Directive](https://www.retrospectivewiki.org/index.php?title=The_Prime_Directive)

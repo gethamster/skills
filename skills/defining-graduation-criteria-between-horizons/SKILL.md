@@ -1,15 +1,20 @@
 ---
-name: defining-graduation-criteria-between-horizons
-description: "This skill teaches you how to establish clear, measurable criteria and confidence thresholds that determine when a product initiative is ready to graduate from Later to Next, or from Next to Now, removing ambiguity from promotion decisions."
+name: "defining-graduation-criteria-between-horizons"
+description: "Write the evidence an initiative needs to move from Later to Next and from Next to Now, so roadmap moves follow learning instead of pressure."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: now-next-later-framework
+  method: "now-next-later-framework"
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Defining Graduation Criteria Between Horizons to Create Now Next Later Roadmap
+# Defining Graduation Criteria Between Roadmap Horizons
 
-> This skill teaches you how to establish clear, measurable criteria and confidence thresholds that determine when a product initiative is ready to graduate from Later to Next, or from Next to Now, removing ambiguity from promotion decisions.
+> Write the evidence an initiative needs to move from Later to Next and from Next to Now, so roadmap moves follow learning instead of pressure.
 
 ## Before you start
 
@@ -24,138 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-3 hours for initial criteria definition, plus 1 hour per quarterly refinement |
-| Outcome | You produce a documented graduation criteria matrix that your team uses to evaluate every promotion decision, eliminating subjective debates about whether an initiative belongs in Now, Next, or Later. |
-| Prerequisites | Familiarity with the Now-Next-Later Framework and its three horizons, A populated Now-Next-Later roadmap with at least 10-15 items across horizons, Understanding of product discovery concepts such as problem validation and solution scoping, Ability to assess confidence levels across dimensions like desirability, feasibility, and viability |
-| Part of | [Now-Next-Later Framework](../../methods/now-next-later-framework/METHOD.md) |
+| Time to Learn | A few hours to draft, refined over several reviews |
+| Outcome | Your team has a short written checklist for each horizon transition that states what evidence an initiative needs to move, and uses it in every roadmap review. |
+| Prerequisites | A Now Next Later roadmap with initiatives placed, agreed horizon definitions, knowledge of the discovery methods your team uses |
+| Part of | [Now Next Later Framework](../../methods/now-next-later-framework/METHOD.md) |
 
 ## Overview
 
-When teams first create a now next later roadmap, the initial categorization feels intuitive. Items land in Later because they are speculative, in Next because they seem promising, and in Now because they are urgent. But within weeks, the hard question surfaces: what exactly needs to change for a Later item to earn a spot in Next? Without explicit graduation criteria, promotion decisions devolve into opinion battles, recency bias, or whoever speaks loudest in the planning meeting. Graduation criteria solve this by converting the fuzzy notion of "readiness" into observable, measurable checkpoints that an initiative must pass before moving closer to execution.
+Graduation criteria are the written conditions an initiative must meet before it moves one horizon closer to Now. They answer the question Janna Bastow suggests leaders ask instead of "when": "What would need to be true for this to move to Now?" ([Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)). Written criteria turn that question from a negotiation into a checklist.
 
-This skill sits at the operational core of the [Now-Next-Later Framework](https://tryhamster.com/methods/now-next-later-framework). While [categorizing items](https://tryhamster.com/skills/categorizing-items-into-now-next-later-horizons) handles the initial placement and [reprioritizing across horizons](https://tryhamster.com/skills/reprioritizing-across-horizons) handles the ongoing reshuffling, graduation criteria provide the rules of the game for those movements. Think of horizons as stages in a pipeline and graduation criteria as the stage gates. Without gates, the pipeline collapses into a single undifferentiated backlog, which defeats the purpose of the framework entirely.
+The need comes from how the horizons are defined. In the [Now Next Later framework](../../methods/now-next-later-framework/METHOD.md) the columns are confidence horizons, so an item should move only when the team's confidence has risen. ProdPad's [confidence horizons](https://www.prodpad.com/glossary/confidence-horizons/) entry is explicit: items "do not graduate inward because time passes or because a stakeholder pushes hard. They graduate because the team has learned enough to raise its confidence." Without criteria, the loudest request tends to win, Now fills up, and the board stops describing what the team knows.
 
-The concrete artifact you produce is a graduation criteria matrix: a table that lists each transition (Later to Next, Next to Now), the dimensions evaluated at each gate (such as problem clarity, solution confidence, resource availability, and strategic alignment), and the specific thresholds that must be met. This matrix lives alongside your roadmap and is referenced in every planning cycle. Teams that invest in this skill report faster planning meetings, fewer escalations about priority disagreements, and a healthier ratio of well-scoped work entering Now versus half-baked ideas that stall engineering capacity.
+There are two transitions to govern. Later to Next is a decision to invest discovery effort: the problem looks real and important enough to explore solutions. Next to Now is a decision to commit delivery capacity: the team has a solution it trusts, understands the effort and has room to do it. The criteria for the two differ, because the questions differ.
 
-Defining graduation criteria also creates a shared vocabulary for confidence. Instead of arguing whether something is "ready," the team can point to the matrix and say, "We have strong evidence on desirability and feasibility, but viability is still a question mark. Let's keep it in Next until we resolve the pricing model." That precision is what transforms a now next later roadmap from a visual organizer into a genuine decision-making tool.
+Criteria also work in reverse. An item in Next whose evidence weakens should move back to Later or leave the roadmap, with the reason recorded. ProdPad's guidance is to keep the rationale "so the team remembers why." Demotion criteria are shorter to write but just as important, because they stop the roadmap from accumulating items nobody believes in.
+
+The output is a one-page checklist per transition that anyone on the team can apply, and a habit of citing it in reviews. Good criteria are specific enough that two people applying them reach the same answer most of the time, and loose enough to leave room for judgment on unusual work.
 
 ## How It Works
 
-Graduation criteria work by decomposing the vague concept of "readiness" into independent, assessable dimensions, then setting explicit thresholds on each dimension for each horizon transition. The mental model is borrowed from stage-gate processes in product development, but adapted for the lighter-weight, sequence-over-dates philosophy of the Now-Next-Later Framework.
+The criteria are built from types of evidence, ranked by how much trust each deserves. Itamar Gilad's [Confidence Meter](https://itamargilad.com/the-tool-that-will-help-you-choose-better-product-ideas/) is a useful model. It treats self-conviction, thematic support and other people's opinions as weak evidence, gives more weight to estimates, market data and customer research, gives more to results from tests with real users, and puts launch data at the top. In Gilad's words, the only way to calculate confidence is by looking for supporting evidence. Your criteria can name which kinds of evidence count for each transition.
 
-The foundational insight is that different horizons demand different types of confidence. Later items need only strategic relevance and a plausible hypothesis. Next items need validated problems and directional evidence that a solution is feasible. Now items need scoped solutions, allocated resources, and high confidence that delivering the work will produce the expected outcome. Each horizon transition is a step increase in confidence across multiple dimensions, not a binary yes/no on a single factor.
+For Later to Next, the question is whether the problem is worth exploring. Typical criteria cover the problem and the strategy: customer or business evidence that the problem exists and matters, a link to a current objective, and no known blocker that makes the problem unworkable. ProdPad's glossary describes Next as the place where "opportunities get sharper" and where discovery narrows the options, so the bar at this transition is evidence of a real problem. A chosen solution is not required yet.
 
-The dimensions themselves come from product risk frameworks. Most teams find four dimensions sufficient: desirability (do users want this?), feasibility (can we build this?), viability (does this make business sense?), and usability (can users actually use what we build?). Some teams collapse usability into feasibility or add a fifth dimension for strategic alignment. The key is choosing dimensions your team can actually assess with available evidence.
+For Next to Now, the question is whether the team can commit. Criteria usually cover three risks: the problem is validated, a solution has been tested enough to trust, and the effort and technical approach are understood. The confidence horizons entry stresses that technical feasibility "is a major input to where work sits," so engineering's view belongs in the Now criteria. Capacity is the last check: an item that meets every evidence criterion may still wait in Next until the team has room.
 
-For each dimension, you define what "good enough" looks like at each gate. At the Later to Next gate, desirability might require at least five user interviews confirming the problem exists. At the Next to Now gate, desirability might require a prototype test with positive signal from 70% or more of participants. These thresholds are not universal formulas. They are team-specific norms calibrated by your risk tolerance, data maturity, and domain.
+ProdPad's conversion guide adds a simple rule that works as a backstop: "If confidence hasn't increased, the Initiative shouldn't move left" ([Convert a Timeline Roadmap](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)). The guide also warns against the reverse failure, an initiative moved into Now only because of a deadline, which usually means discovery is unfinished. Hard external deadlines are the one legitimate override, and the criteria should say how they are handled: the item moves, is flagged, and discovery is compressed rather than skipped.
 
-The system works because it separates the question of "should we do this eventually" from "are we ready to commit resources now." An initiative can be strategically important (high alignment) but operationally unready (low feasibility confidence). Graduation criteria make that gap visible and create a clear action list: what evidence do we need to collect to close the gap? This turns the roadmap from a static snapshot into an active discovery backlog.
-
-One common misunderstanding is treating graduation criteria as rigid bureaucracy. They are not approval workflows. They are shared heuristics that make implicit reasoning explicit. The matrix should evolve as your team learns what evidence actually predicts successful delivery. Reviewing and refining your criteria quarterly is part of the skill, not a sign that the initial criteria were wrong.
+The criteria sit in a short matrix: transitions as columns, evidence areas as rows, and a plain description of what "enough" looks like in each cell. Keep numbers out unless your team already measures them reliably, since a made-up threshold looks precise and invites gaming. Review the matrix against real decisions after a few cycles and tighten any criterion that let a weak item through.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify the transitions you need to govern
+### Step 1: Agree the horizon definitions
 
-Start by mapping the transitions that exist in your roadmap. The two primary transitions are Later to Next and Next to Now. Some teams also define an entry gate for Later (what qualifies an idea to appear on the roadmap at all) and an exit gate for Now (what does "done" look like beyond shipping). Write each transition as a row in a table.
+Confirm what Now, Next and Later mean for your team before writing criteria. Use the confidence definitions in ProdPad's [glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/) as a starting point and adjust the wording to your context. Criteria cannot be consistent if the horizons themselves are read differently by different people.
 
-For each transition, note the current implicit criteria your team uses, even if those criteria are just gut feeling or stakeholder pressure. Interviewing two or three team members about how they decide something is "ready" will surface hidden assumptions. This step produces a draft transition map with 2-4 gates identified.
+### Step 2: List the evidence your team can produce
 
-> **Pro tip:** If your team struggles to articulate implicit criteria, ask them to recall the last item that moved between horizons and walk through why it moved. The specific example surfaces real reasoning better than abstract discussion.
+Write down the discovery activities you actually run: interviews, support ticket analysis, usage data, surveys, prototypes, experiments, technical spikes. Rank them by strength, using Gilad's [Confidence Meter](https://itamargilad.com/the-tool-that-will-help-you-choose-better-product-ideas/) as a reference. Criteria that demand evidence your team never produces will be ignored.
 
-### Step 2: Step 2: Select your assessment dimensions
+### Step 3: Draft Later to Next criteria
 
-Choose 3-5 dimensions that your team will evaluate at each gate. The most widely applicable set is desirability, feasibility, viability, and strategic alignment. Desirability asks whether users want or need this. Feasibility asks whether your team can build it within reasonable constraints.
+Write three or four conditions about the problem. A typical set is: evidence from customers or data that the problem exists; a clear link to a current objective; a rough sense of how many customers or how much value is involved; no known blocker. Phrase each as a yes or no question so it can be checked in a review.
 
-Viability asks whether it makes business sense (revenue impact, cost, regulatory risk). Strategic alignment asks whether it advances your product vision and current company priorities. Write a one-sentence definition for each dimension so every team member interprets them consistently. Avoid adding dimensions you cannot realistically assess.
+### Step 4: Draft Next to Now criteria
 
-If your team has no way to evaluate regulatory risk independently from viability, do not create a separate dimension for it.
+Write conditions about the solution and delivery. A typical set is: the problem is validated; at least one solution has been tested with users or data; engineering has scoped the approach and effort; dependencies are identified; capacity exists. Add how a hard deadline is handled, so exceptions are visible rather than silent.
 
-> **Pro tip:** Limit yourself to five dimensions maximum. Every dimension you add multiplies the assessment effort. Teams with more than five dimensions tend to shortcut the process by rating everything a 3 out of 5 across the board, which defeats the purpose.
+### Step 5: Add demotion and removal triggers
 
-### Step 3: Step 3: Define evidence types and thresholds for Later to Next
+Write the conditions that send an item back or off the roadmap. Examples: discovery shows the problem is smaller than thought, the linked objective is retired, or a test shows the leading solution does not work. Require a one-line rationale for every demotion so the history is kept.
 
-For each dimension, specify what evidence is required before an item can graduate from Later to Next. This gate is about validating that the problem or opportunity is real and worth investigating further. For desirability, you might require a documented problem statement supported by at least three customer signals (support tickets, interview quotes, or usage data anomalies). For feasibility, you might require a preliminary technical assessment confirming there is no known blocker.
+### Step 6: Test the criteria on past decisions
 
-For viability, a rough estimate of addressable market size or revenue impact range. For strategic alignment, confirmation from a product leader that the initiative maps to a current strategic pillar. Write each threshold as a concrete, checkable statement, not a subjective rating scale.
+Apply the draft to the last several items that moved between horizons. Check whether the criteria would have allowed each move, and whether any item that later stalled would have been stopped. Adjust criteria that are too loose or too strict before rolling them out.
 
-> **Pro tip:** Phrase thresholds as yes/no checkpoints rather than numeric scores. "Problem statement documented with three or more customer signals" is more actionable than "Desirability score of 3 or higher" because it tells the team exactly what to produce.
+### Step 7: Use them in every review
 
-### Step 4: Step 4: Define evidence types and thresholds for Next to Now
-
-The Next to Now gate is stricter because graduating to Now means committing engineering capacity. For desirability, you might require usability testing or prototype validation with a defined success metric (such as 7 of 10 participants completing the core task). For feasibility, a technical design document or spike showing the approach works, plus a rough effort estimate in team-weeks. For viability, a validated business case with projected impact on a key metric (revenue, retention, activation).
-
-For strategic alignment, inclusion in the current quarter's strategic bets or explicit executive sponsorship. Add a resource readiness check: the team that would execute has capacity in the current or next sprint cycle. This step produces the second half of your graduation criteria matrix.
-
-> **Pro tip:** Include a resource readiness dimension at this gate even if you skip it elsewhere. The single most common failure mode is promoting items to Now when no team has capacity, which creates a Now column full of stalled work that erodes trust in the roadmap.
-
-### Step 5: Step 5: Assemble the graduation criteria matrix
-
-Combine the outputs from Steps 1 through 4 into a single reference document. The format is a table with transitions as rows, dimensions as columns, and each cell containing the specific threshold for that combination. Add a header section explaining the purpose and how the matrix is used. Include a brief glossary of terms so new team members can onboard without oral tradition.
-
-Store the matrix wherever your roadmap lives, whether that is a wiki page, a Notion doc, a Confluence page, or a shared spreadsheet. The document should be short enough to scan in under two minutes. If it takes longer, you have too many dimensions or overly complex thresholds.
-
-> **Pro tip:** Put the matrix in the same tool or workspace as your roadmap so it is visible during planning. A graduation criteria doc buried in a separate wiki that nobody opens during sprint planning is as useless as having no criteria at all.
-
-### Step 6: Step 6: Test the matrix against recent promotion decisions
-
-Take the last five items that moved between horizons and retroactively evaluate them against your new criteria. For each item, check whether it would have passed the gate. If an item that was promoted successfully would have failed the criteria, your thresholds may be too strict or you may be missing a dimension. If an item that struggled after promotion would have passed the criteria, your thresholds are too loose.
-
-Adjust thresholds based on this calibration. This is the most important quality check before rolling out the matrix to the team. Document the calibration results as evidence that the criteria are grounded in real experience, not theory.
-
-> **Pro tip:** Expect to adjust at least two thresholds during this calibration step. If everything passes perfectly on the first try, you are probably being too generous with your criteria or cherry-picking favorable examples.
-
-### Step 7: Step 7: Introduce the matrix to the team and integrate into planning rituals
-
-Present the graduation criteria matrix to your product team, engineering leads, and key stakeholders. Walk through the rationale for each dimension and threshold. Demonstrate with a real example from Step 6 so the team sees how the matrix works in practice. Then integrate the matrix into your existing planning rituals.
-
-During roadmap reviews or sprint planning, when someone proposes promoting an item, reference the matrix and check each criterion. This does not need to be a formal ceremony. A quick scan of the checklist during the meeting is sufficient. The goal is making the criteria a habit, not a bureaucratic process.
-
-Assign one person (usually the PM) as the owner responsible for maintaining the matrix and facilitating gate reviews.
-
-> **Pro tip:** Frame the matrix as a tool that protects the team's focus, not a gate that blocks ideas. Engineers especially appreciate criteria that prevent half-baked work from landing in Now, because they have experienced the cost of building without clear problem validation.
-
-### Step 8: Step 8: Review and refine criteria quarterly
-
-At the end of each quarter, review the graduation criteria matrix. Examine every item that was promoted during the quarter and assess whether the criteria predicted success. Look for patterns: are items failing after promotion because a dimension was missing or a threshold was too low? Are items stuck in Next because a threshold is unrealistically high for your team's discovery capacity?
-
-Adjust thresholds, add or remove dimensions, and update the glossary. Document what changed and why so the team can see the criteria evolving based on evidence. This quarterly refinement is what makes the criteria a living system rather than a one-time exercise.
-
-> **Pro tip:** Track the ratio of items that pass the gate and deliver successfully versus those that pass and stall or fail. A healthy gate should have at least a 70-80% success rate. Below that, your criteria are not catching real readiness gaps.
+Bring the checklist to each roadmap review and cite it when proposing a move. When a stakeholder asks for an item to move, answer with the criteria it still needs to meet. Revisit the checklist every few cycles and whenever the team's discovery practice changes.
 
 ## Best Practices
 
-- Write thresholds as binary checkpoints rather than numeric scores. "Technical spike completed with documented approach" is unambiguous, while "Feasibility: 4 out of 5" invites haggling over what a 3 versus a 4 means. Binary checkpoints reduce meeting time because the team is verifying facts, not debating subjective ratings.
-- Keep the total number of criteria per gate between four and six. Fewer than four tends to miss important dimensions like resource readiness. More than six creates assessment fatigue and teams start rubber-stamping everything. If you notice criteria being skipped or glossed over in planning meetings, you likely have too many.
-- Differentiate thresholds by initiative size or risk level. A small UX improvement graduating from Next to Now does not need the same level of business case rigor as a new product line. Create two tiers, standard and high-stakes, so the criteria are proportional. Without tiering, small improvements get stuck in Next because they cannot justify a full business case, while large bets slip through with insufficient diligence.
-- Make the graduation criteria matrix visible during every planning meeting. Print it, project it, or pin it to the top of your planning board. Criteria that exist only in a document nobody opens become decoration. The matrix needs to be in the room when decisions are made.
-- Require the proposer to fill in the evidence before the meeting, not during it. When someone wants to promote an item, they should prepare a brief summary showing each criterion is met, with links to evidence. This shifts the conversation from "I think this is ready" to "Here is the evidence," and it saves meeting time because the group is reviewing evidence rather than generating it on the spot.
-- Treat failed gate reviews as discovery tasks, not rejections. When an item does not meet criteria, the output should be a clear list of what evidence is needed, assigned to someone, with a target date. This reframes the gate as a planning tool that generates useful work, rather than a bureaucratic blocker that discourages teams from proposing ideas.
-- Involve engineering leads in defining feasibility thresholds. Product managers tend to underestimate what constitutes sufficient technical validation. Engineers who have been burned by underscoped Now items will provide more realistic thresholds and will trust the criteria because they helped create them.
+- Tie criteria to evidence types. "Validated in customer interviews" is checkable; "we feel confident" is not, and the [Confidence Meter](https://itamargilad.com/the-tool-that-will-help-you-choose-better-product-ideas/) shows why opinion is weak evidence.
+- Keep each checklist short. A handful of questions per transition gets used; a long form gets skipped.
+- Include engineering in the Now criteria. The [confidence horizons](https://www.prodpad.com/glossary/confidence-horizons/) entry treats technical feasibility as part of confidence, and a proven customer need does not make an unknown build ready.
+- Write criteria for moving back as well as forward. A roadmap with only promotion rules only grows.
+- Make exceptions visible. When a hard deadline forces a move, flag the item so the team knows discovery was compressed.
+- Publish the criteria. Stakeholders who can read the checklist know what evidence an item still needs.
 
 ## Common Mistakes
 
-- **Setting identical criteria for every type of initiative regardless of size or risk** — A minor copy change and a platform migration have vastly different risk profiles. Applying the same rigorous gate to both creates bottlenecks for small items and insufficient scrutiny for large bets. Create two tiers of criteria, one for standard initiatives and one for high-stakes initiatives, with the threshold for what counts as high-stakes defined clearly (such as more than four weeks of engineering effort or impact on a revenue-critical metric). Review which tier applies during the initial categorization step.
-- **Using subjective confidence scores without defining what each score level means** — Teams that rate confidence on a 1-5 scale without anchored definitions end up with everyone rating everything a 3 or 4. The scores feel objective but are actually uncalibrated gut feelings. Instead, anchor each level to specific evidence types. " Without these anchors, your graduation criteria look rigorous on paper but produce the same subjective decisions as before.
-
-You can spot this problem when different team members consistently rate the same initiative differently.
-- **Defining criteria once and never revisiting them** — Teams often invest heavily in the initial criteria definition workshop and then treat the output as permanent. Over time, the criteria drift out of alignment with reality as the team's discovery capabilities mature, the product domain shifts, or company strategy evolves. Stale criteria either block good ideas that do not fit the old mold or let through ideas that no longer match company priorities. Schedule a quarterly review of the criteria matrix as a standing agenda item.
-
-Track promotion success rates as the signal that triggers threshold adjustments.
-- **Treating graduation criteria as a rigid approval workflow that requires formal sign-off** — When graduation criteria are implemented as a multi-stakeholder approval chain with sign-off requirements, teams start gaming the system or avoiding it entirely. The criteria should function as a shared checklist that the product manager uses to structure the promotion conversation, not a bureaucratic form that requires signatures. If you notice teams routing around the criteria or complaining about process overhead, simplify the mechanism while keeping the dimensions and thresholds. The goal is shared understanding of readiness, not compliance documentation.
-- **Ignoring resource readiness as a graduation criterion for the Next to Now gate** — Even when an initiative meets every evidence threshold for desirability, feasibility, and viability, promoting it to Now without available engineering capacity creates a false promise. The Now column fills up with work that cannot start, which erodes stakeholder trust in the roadmap and creates pressure to expand the team or cut corners. Add a resource readiness checkpoint at the Next to Now gate that confirms a team has capacity within the next one to two sprint cycles. This simple addition prevents the most common source of Now column bloat.
+- **Using time as a criterion**: "Has been in Next for a month" moves items without learning. Only evidence and capacity should move work forward.
+- **Invented numeric thresholds**: A made-up bar such as a fixed number of interviews looks rigorous but invites box-ticking. Use numbers only where your team already measures them reliably.
+- **Skipping feasibility**: Promoting a validated problem to Now without an engineering view leads to stalls in delivery. Put effort and technical approach in the Now checklist.
+- **Letting deadlines bypass the criteria silently**: A deadline can justify a move, but it should be flagged. Otherwise the team loses track of which Now items are under-validated.
+- **Writing criteria once and never revisiting them**: As discovery practice matures, the evidence available changes. Test the criteria against real decisions and update them.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/now-next-later-framework/METHOD.md) — Now-Next-Later Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/now-next-later-framework/METHOD.md): Now Next Later Framework
 
 ## Related Skills
 
-- [Comparing Now-Next-Later to Quarterly and Timeline Roadmaps](../comparing-now-next-later-to-timeline-roadmaps/SKILL.md)
-- [Categorizing Items into Now, Next, and Later Horizons](../categorizing-items-into-now-next-later-horizons/SKILL.md)
-- [Building Now-Next-Later Roadmap Templates](../building-now-next-later-roadmap-templates/SKILL.md)
-- [Reprioritizing and Moving Items Across Horizons](../reprioritizing-across-horizons/SKILL.md)
-- [Applying Now-Next-Later Roadmaps to SaaS Products](../applying-now-next-later-to-saas-products/SKILL.md)
-- [Communicating Now-Next-Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
+- [Now Next Later Categorization: Sorting Work Into Horizons](../categorizing-items-into-now-next-later-horizons/SKILL.md)
+- [Reprioritizing Roadmap Items Across Now, Next and Later](../reprioritizing-across-horizons/SKILL.md)
+- [Now Next Later Roadmap Template: How to Build One](../building-now-next-later-roadmap-templates/SKILL.md)
+- [Communicating Now Next Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
+- [Now Next Later vs Timeline Roadmap: Choosing a Format](../comparing-now-next-later-to-timeline-roadmaps/SKILL.md)
+- [Now Next Later Framework for SaaS Product Roadmaps](../applying-now-next-later-to-saas-products/SKILL.md)
+
+## Sources
+
+- [ProdPad Glossary: What Are Confidence Horizons?](https://www.prodpad.com/glossary/confidence-horizons/)
+- [ProdPad Glossary: What Is a Now-Next-Later Roadmap?](https://www.prodpad.com/glossary/now-next-later-roadmap/)
+- [ProdPad: Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)
+- [ProdPad: How to Convert a Timeline Roadmap to Now-Next-Later](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)
+- [Itamar Gilad: Product Discovery With ICE and The Confidence Meter](https://itamargilad.com/the-tool-that-will-help-you-choose-better-product-ideas/)

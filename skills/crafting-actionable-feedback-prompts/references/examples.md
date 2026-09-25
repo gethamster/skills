@@ -1,73 +1,41 @@
-# Examples: Crafting Actionable Start Stop Continue Questions and Prompts
+# Examples: Writing Start Stop Continue Questions and Prompts
 
-## Example: Sprint Retrospective for a Product Team
-
-**Scenario:**
-
-A product team has just completed a two-week sprint building a new checkout flow. The engineering manager noticed friction in code reviews (slow turnaround) and design handoffs (rework due to unclear specs), but the team's standup format was working well.
-
-**Walkthrough:**
-
-**Scope statement**: "Feedback on Sprint 14 of the checkout redesign, specifically code reviews, design-to-engineering handoffs, and standup meetings."
-
-**Continue questions**:
-- "What's one thing about our current standup format that's working well and we should keep doing exactly as-is?"
-- "Which aspect of our collaboration this sprint felt most productive?"
-
-**Stop questions**:
-- "What's one step in our code review process that adds time without adding value?"
-- "What's a practice in our design handoff workflow that leads to unnecessary rework?"
-
-**Start questions**:
-- "What's one new practice we could adopt to get code reviews completed within 24 hours?"
-- "Name one thing we could add to our design specs to reduce back-and-forth during implementation."
-
-Notice how each question targets a specific focus area, uses behavioral language, and asks for one thing. The engineering manager's observations inform the focus areas, but the questions don't lead toward predetermined answers.
-
-## Example: Quarterly Personal Development Self-Review
+## Sharpening prompts for a sprint retrospective
 
 **Scenario:**
 
-A marketing manager uses the Start Stop Continue framework for their own quarterly self-assessment, focusing on professional growth. They want to evaluate their time management, learning habits, and networking efforts over the past quarter.
+Illustrative scenario: a team has used the three plain questions for several sprints. Answers have become repetitive and general, such as "better communication" and "fewer meetings."
 
 **Walkthrough:**
 
-**Scope statement**: "Self-reflection on my professional development practices in Q3, focusing on time management, skill-building, and professional networking."
+The facilitator writes a scope statement: "This sprint, from planning to the demo." Then the prompts:
 
-**Continue questions**:
-- "What's one time management habit from this quarter that noticeably reduced my stress or increased my output?"
-- "Which learning activity this quarter gave me the most applicable new knowledge?"
+Start: "What one practice, if we had started it on the first day of this sprint, would have saved us the most time?" Hint: "For example, a short check of acceptance criteria before a story enters the sprint."
 
-**Stop questions**:
-- "What's one recurring task I spent time on this quarter that didn't meaningfully contribute to my goals?"
-- "What's a networking or meeting commitment I maintained this quarter out of obligation rather than genuine value?"
+Stop: "What do we do between planning and the demo that costs us time without improving the result?" Hint: "For example, re-estimating stories in the daily meeting."
 
-**Start questions**:
-- "What's one skill-building practice I've been meaning to start that would directly support my Q4 goals?"
-- "What's one relationship-building activity I could begin doing weekly to expand my professional network?"
+Continue: "What did we do this sprint that we should keep even when we are under pressure, and why?" Answers become specific enough to group into a few themes, and two of them turn directly into actions.
 
-Self-directed start stop continue questions require extra specificity because there's no group discussion to draw out detail. Anchoring to "this quarter" and naming specific domains (time management, skill-building) prevents the reflection from becoming an unfocused journaling exercise.
-
-## Example: Cross-Functional Team Health Check
+## Prompts for a manager's 1-on-1
 
 **Scenario:**
 
-A project lead runs a monthly Start Stop Continue session for a cross-functional team of designers, engineers, and product managers. Last month's session produced vague feedback like "communicate better" and "keep being collaborative." The lead wants to redesign the prompts.
+Illustrative scenario: a manager wants to use the format in monthly 1-on-1s with a report and needs prompts that feel two-way.
 
 **Walkthrough:**
 
-**Diagnosis**: The previous questions were generic ("What should we start/stop/continue?"). They failed the specificity test—every answer could be a one-word cliché.
+The scope is "our work together this month." The prompts for the report are: "What could you start doing that would make your work easier or more effective?", "What are you spending time on that you would like to stop or hand off?", and "What are you doing that is working and that you want to keep?"
 
-**Redesigned Continue questions**:
-- "What's one specific thing about how we ran the feature kickoff meetings this month that we should keep?"
-- "Name one cross-functional collaboration moment from the past month where the handoff between teams was smooth. What made it work?"
+A second set asks about the manager: "What could I start doing that would help you?", "What do I do that gets in your way?", and "What do I do that helps and should continue?" Each prompt has a hint asking for one recent example.
 
-**Redesigned Stop questions**:
-- "What's one recurring approval step in our workflow that slows us down without catching real issues?"
-- "Which Slack channel or communication practice creates more noise than signal for you?"
+## Prompts for end-of-course feedback
 
-**Redesigned Start questions**:
-- "What's one practice from a previous team or company that you think would improve how we share context across functions?"
-- "What's one thing we could start doing in the first 10 minutes of our weekly sync to make the rest of the meeting more productive?"
+**Scenario:**
 
-The redesigned questions passed the specificity test: none can be answered with "communicate better." Each references a concrete artifact (kickoff meetings, Slack channels, weekly sync) and asks for behavioral specifics.
+Illustrative scenario: a lecturer replaces a single "any comments?" box on an end-of-module form with the three headings.
+
+**Walkthrough:**
+
+The prompts are: "What should the lecturer stop doing because it does not help your learning?", "What should the lecturer start doing that would help your learning?", and "What should the lecturer continue doing because it helps?" Each has a short example, such as continuing weekly quizzes.
+
+Following the suggestion in the Hoon and colleagues paper, the form keeps one free text box at the end for anything that fits none of the headings. The lecturer finds the answers easier to turn into changes for the next run of the module.
