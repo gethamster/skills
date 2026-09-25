@@ -1,37 +1,21 @@
-# FAQ: Transitioning Field Learnings into Core Product Features
+# FAQ: Transitioning Field Learnings into Product Features
 
-## How do I handle a field solution that scores high on frequency but low on generalizability?
+## How many customers need something before it becomes a feature?
 
-A high-frequency, low-generalizability candidate is still worth proposing because the frequency evidence is the hard part. Product teams can invest engineering effort to generalize a solution when the demand case is strong. In your proposal, be transparent about the generalization cost and suggest a phased approach: ship the core logic first with a narrow configuration surface, then expand coverage in subsequent iterations. Frame it as validated demand with known engineering cost, not as a risky bet.
+There is no fixed threshold in the sources. The useful test is independent evidence: the need appears at more than one customer, ideally logged by different FDEs, and fits where the product is going. A single strategic customer's request can still be built, but as a configuration or custom solution inside the engagement until the pattern shows up elsewhere.
 
-## How long should the full field-to-product proposal process take?
+## Who decides what gets generalized?
 
-For a single candidate, expect 3 to 5 hours of focused work spread across cataloging, scoring, writing, and presenting. The catalog step is the most time-intensive the first time you do it but becomes trivial if you maintain it continuously. Writing the one-page proposal itself should take 60 to 90 minutes. If you are spending more than that, you are probably including too much technical detail and not enough problem evidence.
+The product team decides, through its normal planning process. The FDE's job is to bring well-evidenced proposals and to help find the general capability. Cagan describes the platform product organization at Palantir as the group that generalizes what FDEs identify. Proposals that bypass product through side channels rarely lead to a lasting feature.
 
-## Should I propose field features before or after running continuous learning loops?
+## What if the product team keeps declining field proposals?
 
-Run learning loops first. The [continuous learning loops skill](https://tryhamster.com/skills/running-continuous-learning-loops-from-field-data) generates the raw observations, patterns, and metrics that feed the catalog in this skill. Without structured learning loops, your catalog will be incomplete and your frequency scores will rely on memory rather than evidence. Think of learning loops as the data collection phase and this skill as the analysis and action phase.
+Ask for the reasons and record them. Some declines reflect weak evidence or poor fit, which you can fix. If good proposals are declined consistently, raise it with leadership, because a missing path from field to product is one of the conditions the method page lists as a reason the FDE model breaks down.
 
-## What if the product team rejects my proposal?
+## Should the FDE build the product version?
 
-A rejection is data, not failure. Ask the product manager for the specific reason: was the frequency evidence unconvincing, did the feature conflict with roadmap priorities, or was the effort estimate too large? Document the feedback and adjust future proposals accordingly. Some rejections are timing issues, meaning the feature is valid but the team is committed to other work this quarter.
+Sometimes. After Palantir launched Foundry, more of its FDEs went back to working as software engineers on it, bringing field experience into the core product, according to The Pragmatic Engineer. At minimum the FDE should pair with the product engineers, share the field code as a reference and review the design against real cases. Leaving entirely after acceptance risks repeating mistakes the field version already solved.
 
-Resubmit rejected proposals when roadmap priorities shift. Consistent rejection across multiple proposals suggests you may need to recalibrate your understanding of the product strategy.
+## What happens to the custom solutions after the feature ships?
 
-## How do I propose features when I do not have access to the product roadmap?
-
-Request a 30-minute conversation with a product manager to understand the top three priorities for the next two quarters. You do not need the full roadmap document. If even that is unavailable, infer strategic direction from recent product releases, company all-hands presentations, and investor communications. Score strategic fit based on what you can observe, and note the uncertainty explicitly in your proposal.
-
-The proposal itself often opens the roadmap conversation that should have happened earlier.
-
-## Can multiple customer facing engineers on the same team submit proposals for the same problem?
-
-They should not submit separate proposals for the same problem. Coordinate through the field solution catalog, which should be a shared resource. When two engineers identify the same problem class independently, that is strong frequency evidence. Combine their observations into a single, stronger proposal with dual authorship.
-
-Duplicate proposals from the same team signal a broken internal communication process and reduce the product team's confidence in the field engineering organization's coordination.
-
-## Why does my proposal keep getting deprioritized against internally generated feature requests?
-
-This usually happens for one of two reasons. First, the proposal may lack quantified impact. Internal feature requests from product managers often include projected revenue or retention metrics. Match that format by including concrete numbers: hours saved per customer, support tickets eliminated, or expansion revenue unlocked.
-
-Second, the product team may not trust field evidence because previous proposals lacked validation data. Build credibility by validating shipped features and sharing post-launch reports that demonstrate accuracy of your original estimates.
+Plan to migrate each customer from the custom solution to the product feature, with their agreement and a tested cutover. Custom versions left running double the maintenance burden. Record the migration in the field log, along with the first new customer who used the feature without custom work.

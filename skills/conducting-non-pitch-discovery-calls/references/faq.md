@@ -1,25 +1,25 @@
 # FAQ: Conducting Non-Pitch Discovery Calls with Developers
 
-## How long should a non-pitch developer discovery call last?
+## How long should a TAB discovery call be?
 
-Aim for 30-45 minutes. This is long enough to explore 2-3 pain threads in depth but short enough to respect the developer's time. Going over 45 minutes without explicit permission signals that you value your data extraction over their schedule.
+Thirty minutes. Adam Frankl writes that across thousands of these calls he never heard anything valuable in the second half of hour-long calls, so he keeps them short and limits the guide to about seven questions. Ending on time also respects the member's commitment of one short call a month.
 
-## How do non-pitch discovery calls relate to seo site audit tools?
+## Why not interview two or three developers together?
 
-Both use systematic, unbiased scanning to surface hidden problems. Just as seo site audit tools crawl a site to find technical issues without prescribing solutions upfront, non-pitch discovery calls systematically explore a developer's workflow to surface pain points without pushing a product. The discipline of observation before recommendation is the shared principle.
+In a group, the quickest person answers and the others nod along, so you lose their ideas. Frankl runs every TAB call one on one for that reason. The aim is to hear every member's ideas, because the valuable ones cannot be predicted in advance.
 
-## How many discovery calls should I conduct before I start seeing patterns?
+## What do I do if a member asks for a demo?
 
-Most teams see clear thematic patterns emerge after 8-12 calls with diverse participants. However, you should begin lightweight synthesis after every 3-4 calls. The TAB Framework recommends formal synthesis sessions monthly — see Synthesizing Advisory Call Insights into Actionable Themes.
+Answer honestly in a sentence and offer a separate call. Frankl's guidance is that TAB calls are not sales calls, and if a member shows interest in the product you schedule another conversation for it. Keep that product call out of the TAB record so it does not mix with discovery data.
 
-## What if a developer asks for a demo during the discovery call?
+## Should I record the calls?
 
-Thank them for the interest and offer to schedule a separate demo call. Say something like: 'I'd love to show you — let's set up a separate time for that so we can use our remaining minutes here to keep learning from your experience.' This preserves the advisory boundary while honoring their request.
+Yes, with permission. Frankl says almost everyone agrees when asked. Make a transcript, keep it confidential inside the company, and share it with the founders and the team so they hear members directly. Recordings also let you review your own interviewing.
 
-## Can I compensate advisory board members for discovery calls?
+## Who should run the calls?
 
-Yes, and you should. Common compensation includes gift cards ($50-100 per call), donations to open-source projects of their choice, or early access to your product. Compensation signals respect for their expertise and improves show-up rates. See Recruiting and Curating Your Developer Advisory Board for detailed guidance.
+Frankl treats talking to developers as a founder-level responsibility and prefers one person running the calls, for consistency and because the skill improves with practice. He has also seen co-founders split the calls successfully. If no founder can do it, he suggests hiring someone who can rather than skipping the calls.
 
-## How do I avoid bias when the developer's pain aligns perfectly with my product?
+## What if a member keeps talking about a problem we will never solve?
 
-Acknowledge the alignment internally but keep probing as if you had no product. Ask 'What else have you tried?' and 'What would your ideal solution actually look like?' — their answer may reveal that what they need is quite different from what you assumed. The goal is ground truth, not confirmation.
+Let them finish, then ask where within your problem area they would wave the magic wand. Scaling DevTools host Jack found that some threads go down rabbit holes you will never address, and still help you understand the member's world. Note it, and use the next question to bring the call back to your scope.

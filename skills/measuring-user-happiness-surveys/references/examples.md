@@ -1,33 +1,37 @@
-# Examples: Measuring User Happiness Through Surveys and Satisfaction Scores
+# Examples: Measuring User Happiness Through Satisfaction Surveys
 
-## Example: Measuring Satisfaction After Onboarding Redesign
-
-**Scenario:**
-
-A B2B SaaS product team redesigned their onboarding flow and wants to measure whether the new experience makes users happier. They have about 500 new signups per week.
-
-**Walkthrough:**
-
-The team defines their happiness goal: 'New users feel confident and successful after completing onboarding.' They deploy a 2-question CSAT survey triggered when a user completes the final onboarding step. Question 1: 'How satisfied are you with the setup experience?' (1-5 scale). Question 2: 'What could we improve?' (open text).
-
-They sample 30% of completing users (to reach ~100 responses/week) with a display delay of 5 seconds post-completion. After 4 weeks with the old flow (baseline: CSAT 3.4, n=412), they launch the redesign and collect another 4 weeks (new: CSAT 4.1, n=389).
-
-Thematic coding of the open-ended responses reveals that the old flow's top complaint ('too many steps') dropped from 38% of responses to 8%. The new top complaint is 'wanted more customization options during setup' at 22%—a useful signal for the next iteration.
-
-They present these results in their product review using the [HEART dashboard](https://tryhamster.com/skills/building-heart-dashboards), showing happiness improvement alongside adoption rates for onboarding completion. The combined data makes a compelling case that the redesign succeeded and identifies the next area to improve.
-
-## Example: Quarterly NPS Program for a Consumer Mobile App
+## Replacing a feedback button with a sampled survey
 
 **Scenario:**
 
-A consumer mobile app with 2 million MAU wants to implement a recurring NPS program to track overall user sentiment and identify emerging issues.
+Illustrative scenario: a project management tool reports "happiness" from a feedback button in its help menu. The ratings are mostly low, and nobody trusts them.
 
 **Walkthrough:**
 
-The team sets up an in-app NPS survey that appears to a random 2% of active users each quarter, with a 90-day cooldown per user. This yields roughly 40,000 eligible users per quarter, with an expected 15% response rate (6,000 responses)—more than enough for reliable segmentation.
+The team keeps the button for bug reports but stops treating its ratings as a metric. It sets up a sampled survey instead: each week a random set of active users sees a small, non-blocking invitation at the bottom of the screen, and nobody is invited again for several months.
 
-The survey appears when the user opens the app (not during a task) after they've been active for at least 5 seconds. It shows the standard NPS question followed by 'What's the biggest reason for your score?'
+The questionnaire opens with overall satisfaction on a fully labeled 7-point scale, followed by two optional open-ended questions about frustrations and favorite parts. After a few weeks, satisfaction turns out to be much higher than the button suggested, and the most common frustration is slow loading on large projects. The engineering team takes that theme into its next planning cycle.
 
-After Q1 (NPS: +32), Q2 shows a drop to +24. Segmentation reveals that the drop is concentrated in Android users (NPS dropped from +28 to +12) while iOS held steady. Sentiment analysis of Android Detractor responses shows 67% mention 'crashes' or 'freezing' after a recent app update.
+## Reading a dip after a redesign
 
-The team flags this to engineering, who identify a memory leak in the Android build. After the fix ships mid-Q3, they run a supplementary CSAT micro-survey targeting Android users: CSAT rises from 2.9 to 4.0. Q3 NPS recovers to +30. The incident becomes a case study in how happiness data catches problems that aggregate engagement metrics (which barely moved) would have missed.
+**Scenario:**
+
+Illustrative scenario: a note-taking app ships a new navigation layout. In the first week after launch, its tracked satisfaction score falls noticeably, and some stakeholders want to roll back.
+
+**Walkthrough:**
+
+The product manager points to the pattern described in the HEART paper, where iGoogle's satisfaction dipped after a redesign and then recovered as users adjusted. The team agrees to wait several survey periods before deciding.
+
+Meanwhile it reads the open-ended answers. Early comments mention not finding favorite notebooks; later comments shift to praising faster search. Behavioral data shows task completion for opening a notebook recovering to its old level. After a few weeks satisfaction returns to its previous range, and the team keeps the layout while adding a pinned-notebooks shortcut.
+
+## Satisfaction with specific tasks
+
+**Scenario:**
+
+Illustrative scenario: an accounting product has good overall satisfaction, but the team suspects that month-end reconciliation is painful. Overall scores do not show where the pain is.
+
+**Walkthrough:**
+
+The team adds a task section to the survey. Respondents first select which tasks they tried in the last month from a short list, and then rate satisfaction with a few of the tasks they selected on the same 7-point scale.
+
+Reconciliation scores lowest among the tasks, and the open-ended frustration answers from respondents who tried it cluster around matching bank entries. The team pairs this with a task success measure for reconciliation and plans a redesign, using both the task satisfaction rating and completion rate to judge it.

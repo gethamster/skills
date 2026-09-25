@@ -1,15 +1,20 @@
 ---
-name: writing-clarity-first-web-copy
-description: "This skill teaches you how to audit and rewrite vague, clever, or jargon-heavy web copy into specific, scannable messaging that prospects instantly understand — the single most impactful improvement you can make to B2B website conversion."
+name: "writing-clarity-first-web-copy"
+description: "Write clarity-first web copy: audit B2B website copy for jargon and vague claims, rewrite it in plain words, and check that visitors understand it."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: copywriting-framework
+  method: "copywriting-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# B2B Copywriting: Writing Clarity-First Web Copy That Eliminates Jargon
+# Writing Clarity-First Web Copy Without Jargon
 
-> This skill teaches you how to audit and rewrite vague, clever, or jargon-heavy web copy into specific, scannable messaging that prospects instantly understand — the single most impactful improvement you can make to B2B website conversion.
+> Write clarity-first web copy: audit B2B website copy for jargon and vague claims, rewrite it in plain words, and check that visitors understand it.
 
 ## Before you start
 
@@ -23,141 +28,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You'll be able to identify and eliminate every instance of vague, jargon-heavy, or abstract copy on your website and replace it with specific, trust-building messaging that prospects understand in seconds. |
-| Prerequisites | Basic understanding of your product's value proposition, Access to existing website copy or draft messaging, Familiarity with your target customer's pain points |
+| Difficulty | Beginner |
+| Time to Learn | A few hours, then practice on each page |
+| Outcome | You can audit a page for jargon, vague claims and hard-to-scan structure, rewrite it in plain words, and confirm with real readers that it is understood. |
+| Prerequisites | The page's one job, a customer quote file, a way to show the page to a few people from the audience |
 | Part of | [Copywriting Framework](../../methods/copywriting-framework/METHOD.md) |
 
 ## Overview
 
-Most B2B websites fail not because they lack information, but because they bury value behind walls of jargon, buzzwords, and vague abstraction. Phrases like 'leverage synergies,' 'end-to-end solution,' and 'drive digital transformation' sound impressive internally but tell prospects absolutely nothing about what you actually do or why they should care. This is the most common and most costly b2b copywriting mistake.
+Clarity-first web copy is copy a first-time visitor understands on one pass: what the product is, who it is for, what it does for them and what to do next. This skill is the editing pass of the [copywriting framework](../../methods/copywriting-framework/METHOD.md). You audit existing copy for jargon, vague claims and dense structure, rewrite it in plain and specific words, and check the result with people who have never seen it.
 
-Clarity-first web copy flips the script. Instead of trying to sound smart, you write to be instantly understood. You replace abstract claims with concrete specifics. You swap insider language for the words your customers actually use. The result isn't dumbed-down copy — it's copy that respects your reader's time and earns their trust by being direct.
+Clear web copy matters because most visitors scan. Jakob Nielsen's research on [how users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/) found that 79 percent of test users always scanned a new page. Scanning readers pick up headings, first words and highlighted terms, so any sentence that needs a second read is likely to be skipped.
 
-This skill, a core practice within the [Copywriting Framework](https://tryhamster.com/methods/copywriting-framework), gives you a repeatable process for auditing existing copy, identifying jargon patterns, and rewriting every section of your website so that a first-time visitor understands your value within 5 seconds of landing on any page.
+Plain language is not only for general audiences. The GOV.UK guidance on [clear language](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/) cites research on legal documents in which 80% of people preferred sentences written in clear English, with the preference growing stronger among more educated and specialist readers. For B2B website copy, that is an argument against the dense category language many business sites default to.
+
+There is also conversion evidence, though it is correlational. Unbounce's [2024 Conversion Benchmark Report](https://unbounce.com/conversion-benchmark-report/) found that landing pages written at a 5th to 7th grade reading level converted at 11.1%, which it describes as 56% higher than pages written at an 8th and 9th grade level. Treat that as a reason to test simpler copy on your own pages, since reading level travels with many other page differences.
+
+Clarity-first copywriting does not mean removing every technical term. NN/g's guidance on [technical jargon](https://www.nngroup.com/articles/technical-jargon/) treats jargon as relative to the reader and suggests deciding term by term, based on how many readers know it and how important it is. A term your buyers use daily can stay. A term only your team uses should go.
 
 ## How It Works
 
-Jargon survives in B2B copy because of the 'curse of knowledge' — when you're deep inside a product or industry, insider language feels natural and precise. But to prospects who are still figuring out their problem, that language creates friction. Every vague phrase forces the reader to do interpretive work, and most simply won't.
+The skill runs in three passes: audit, rewrite and verify.
 
-Clarity-first copy works by applying three filters to every sentence: **specificity** (does this describe something concrete?), **immediacy** (can the reader understand this without prior context?), and **relevance** (does this matter to the reader's problem, not just our product?). When a sentence fails any filter, you rewrite it.
+The audit reads the page as a stranger would and marks four kinds of problem. First, jargon and internal terms: product module names, category buzzwords and acronyms the reader may not know. Second, vague claims: lines such as "streamline your workflow" or "unlock insights" that could describe any product. Third, hard-to-scan structure: long paragraphs, headings that are clever instead of descriptive, and key facts buried mid-paragraph. Fourth, promotional tone. The NN/g study of [concise, scannable and objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/) writing found that each of those three qualities improved measured usability, and that a version combining all three scored 124% higher than a promotional control.
 
-The underlying principle is that trust is built through precision. Saying 'We reduce invoice processing time from 14 days to 2 days' is inherently more credible than 'We streamline your financial workflows.' The specific version can be verified, questioned, and compared — which is exactly what B2B buyers want. Clarity doesn't limit your messaging; it forces you to actually say something worth reading.
+The rewrite fixes each problem at its root. Replace internal terms with the words customers use, from your research file. Replace each vague claim with the specific task, result or scenario it stands for, or delete it if nothing specific stands behind it. Use active verbs and present tense, as [Digital.gov's plain language guide](https://digital.gov/guides/plain-language/writing) recommends, because active sentences make clear who does what. Put the most important point first in each section, give each paragraph one idea, and write headings that say what the section contains. Where a technical term is necessary, keep it and explain it the first time it appears, as the GOV.UK guidance advises.
 
-This connects directly to sibling skills like [mining customer language for persuasive copy](https://tryhamster.com/skills/mining-customer-language-for-copy), which gives you the raw material for clarity-first rewrites, and [translating features into benefits](https://tryhamster.com/skills/translating-features-into-benefits), which ensures your clear copy focuses on what matters to buyers.
+Verification is what separates a clarity pass from a style preference. Show the rewritten page to a few people from the target audience who have not seen it. A [five-second test](https://www.lyssna.com/guides/five-second-testing/) asks people what the page was about and who it was for after a brief look, which checks the headline and first screen. A slower read-through, where people say aloud what each section means to them, checks the body. When answers match what you intended, the copy is clear. When they do not, the gap tells you where to rewrite, and the words people use to describe the page are often better than yours.
+
+Finally, capture the decisions so they last. A short list of banned words, preferred terms and example rewrites keeps the next writer, and any AI agent drafting copy, from reintroducing the same jargon.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Run a Full Jargon Audit on Your Existing Copy
+### Step 1: Audit the page as a stranger
 
-Copy your entire website text into a single document. Read through every page — homepage, product pages, about page, pricing page — and highlight every word or phrase that falls into one of these categories:
+Print or copy the page and mark every internal term, acronym, buzzword and vague claim. Note paragraphs with more than one idea and headings that do not describe their section. Ask for each line whether a first-time visitor would understand it without help. Keep the marked copy, because it becomes your before-and-after record.
 
-- **Buzzwords**: words that sound impressive but mean nothing specific (e.g., 'innovative,' 'cutting-edge,' 'best-in-class,' 'seamless')
-- **Insider acronyms**: abbreviations your prospect might not know (e.g., 'our CDP integrates with your MAP')
-- **Abstract nouns**: concepts that can't be visualized (e.g., 'digital transformation,' 'operational excellence,' 'holistic approach')
-- **Weasel qualifiers**: vague intensifiers (e.g., 'highly scalable,' 'robust,' 'powerful')
+### Step 2: Decide what to do with each term
 
-Don't try to fix anything yet. The goal is to see the full scope of the problem. Most B2B sites find that 30-60% of their copy contains at least one jargon flag per sentence.
+For each marked term, ask how many of your readers know it and how important the exact term is, the two questions NN/g's [jargon guidance](https://www.nngroup.com/articles/technical-jargon/) uses. Keep terms your buyers use every day. Replace terms only your team uses with the customer's words. For necessary but unfamiliar terms, keep them and add a plain explanation on first use.
 
-> **Pro tip:** Use Ctrl+F to search for your top 10 most-used buzzwords across all pages. You'll often find the same vague phrases appearing dozens of times — that repetition is a clarity red flag.
+### Step 3: Replace vague claims with specifics
 
-### Step 2: Step 2: Apply the 'Coffee Shop Stranger' Test
+Rewrite every vague claim as the specific task, outcome or scenario it refers to. If the claim was "save time," say which task gets shorter and roughly how, using only figures you can support. If nothing specific stands behind a claim, delete it. Check each new specific against what the product really does.
 
-For each flagged phrase, ask: 'If I said this sentence to a stranger in a coffee shop, would they immediately understand what I do and why it matters?' This isn't about dumbing down your copy — it's about making sure your message lands without requiring the reader to already know your industry's vocabulary.
+### Step 4: Restructure for scanning
 
-Go sentence by sentence through your highest-traffic pages (homepage first, then top landing pages). For each flagged phrase, write the answer to: 'What do I actually mean by this?' That plain-language answer is usually your rewrite.
+Put the main point first in each section, following the [inverted pyramid](https://www.nngroup.com/articles/inverted-pyramid/) approach NN/g recommends for web writing. Split paragraphs so each carries one idea. Rewrite headings so they describe the content. Turn lists of parallel items into bullets, and bold only the words a scanner most needs.
 
-For example, 'We provide end-to-end supply chain visibility solutions' fails the coffee shop test. But 'We show you exactly where every shipment is, from factory to delivery' passes it immediately.
+### Step 5: Tighten sentences
 
-> **Pro tip:** Read your copy out loud. If you stumble, pause, or feel embarrassed saying it to a real person, the sentence needs rewriting.
+Cut words that add nothing, convert passive sentences to active ones, and change hidden verbs back into verbs, such as "decide" instead of "make a decision." Read the page aloud and rewrite any sentence you stumble over. Keep the tone plain and confident, without superlatives the page cannot prove.
 
-### Step 3: Step 3: Replace Every Abstract Claim with a Concrete Specific
+### Step 6: Verify with real readers
 
-This is the most transformative step in b2b copywriting clarity work. For every abstract claim, force yourself to include at least one concrete detail — a number, a timeframe, a named outcome, or a specific action.
+Show the rewritten page to a few people from the audience who have not seen it. Run a five-second test on the first screen and a read-through on the rest, asking what each part means to them. Fix what they misread or skip. Where traffic allows, test the new page against the old one on the page's main conversion.
 
-**Before → After examples:**
-- 'Improve efficiency' → 'Cut report generation from 4 hours to 15 minutes'
-- 'Enterprise-grade security' → '256-bit encryption, SOC 2 certified, 99.99% uptime since 2021'
-- 'Trusted by leading companies' → 'Used by 340 SaaS companies including Shopify, Notion, and Linear'
-- 'Scalable platform' → 'Handles 10 to 10 million records without slowing down'
+### Step 7: Write down the rules you applied
 
-If you can't make a claim specific, question whether it deserves to be on the page at all. Vague claims that can't be substantiated actively erode trust.
-
-> **Pro tip:** Keep a running 'specifics bank' — a document where you collect real numbers, customer results, and concrete details from your team. This becomes your rewriting fuel.
-
-### Step 4: Step 4: Shorten Sentences and Activate Your Voice
-
-Clarity isn't just about word choice — it's about sentence structure. Long, passive, compound sentences are where jargon hides. Apply these structural rules:
-
-- **One idea per sentence.** If a sentence has a comma followed by 'and' or 'which,' consider splitting it.
-- **Active voice by default.** 'Our tool automates your reporting' beats 'Reporting is automated by our tool.'
-- **Front-load the meaning.** Put the benefit or action at the beginning of the sentence, not buried after a dependent clause.
-- **Aim for 12-18 words per sentence on average.** Some can be shorter (powerful for emphasis), some longer (for necessary nuance), but the average should stay tight.
-
-Rewrite your flagged sections applying these structural filters. You'll find that shorter, active sentences naturally resist jargon — there's simply less room for fluff.
-
-> **Pro tip:** Use the Hemingway Editor (free online tool) to highlight sentences that are hard to read. Aim for a Grade 6-8 reading level — this is where the Wall Street Journal and most high-performing SaaS sites operate.
-
-### Step 5: Step 5: Validate with Real Prospects or Fresh Eyes
-
-The curse of knowledge means you can't fully audit your own copy. After rewriting, test it with someone who isn't familiar with your product. This can be:
-
-- A friend or family member outside your industry
-- A new team member who just joined
-- A real prospect in a user interview or sales call
-
-Ask them to read your homepage (or landing page) for 5 seconds, then cover it. Ask: 'What do we do? Who is it for? Why would you care?' If they can't answer all three confidently, you still have clarity gaps to close.
-
-For a more structured test, use the 'five-second test' on a tool like UsabilityHub — show your page to testers for 5 seconds and collect their impressions. Patterns in confusion reveal exactly where jargon still lingers.
-
-> **Pro tip:** Record sales calls and note where prospects ask 'What do you mean by that?' Those exact moments reveal the jargon that's costing you conversions on your website too.
-
-### Step 6: Step 6: Build a Banned Words List and Style Guide
-
-To prevent jargon from creeping back in, create a living document with two columns: **Banned Phrase** and **Say This Instead.** Include the worst offenders from your audit and their specific replacements.
-
-Examples for your banned list:
-- 'Leverage' → 'Use'
-- 'Utilize' → 'Use'
-- 'Solutions' → [name the specific thing]
-- 'Streamline' → [describe the specific improvement]
-- 'Best-in-class' → [cite the specific evidence]
-- 'Empower' → 'Help [person] [do specific thing]'
-
-Share this with every person who writes or approves copy — marketing, product, sales, founders. Jargon is a team problem, and clarity requires a team commitment. This banned list becomes part of your voice and tone guide within the broader [Copywriting Framework](https://tryhamster.com/methods/copywriting-framework).
-
-> **Pro tip:** Review and update your banned words list quarterly. New jargon trends emerge constantly ('AI-powered' and 'agentic' are current offenders) and your list needs to evolve.
+Record the banned words, preferred terms and a few before-and-after examples in a short style note. Share it with everyone who writes for the site, including any AI tools you use for drafts. Revisit it when the product or audience changes.
 
 ## Best Practices
 
-- Write the first draft for a 12-year-old, then edit up for sophistication — this forces you to nail the core message before adding nuance.
-- Use your customer's exact words wherever possible. Pull phrasing from support tickets, G2 reviews, and sales call transcripts rather than inventing marketing language. This pairs with the sibling skill of mining customer language for persuasive copy.
-- Lead every page section with the clearest, most specific sentence. Visitors scan in an F-pattern — your best clarity copy must appear in the first line of each block.
-- Quantify every claim that can be quantified. 'Fast onboarding' means nothing; '15-minute setup, no developer needed' means everything.
-- Test your headlines and subheads in isolation. If someone read only the bold text on your page, they should understand your full value proposition.
-- Treat 'we help companies' as a red flag phrase. It's almost always followed by vague abstraction. Replace with the specific action and result.
+- Write for the scanner first. With most users [scanning new pages](https://www.nngroup.com/articles/how-users-read-on-the-web/), headings, first words and bullets carry most of the message.
+- Treat jargon as relative. Keep the terms your buyers use and remove the ones only your team uses, following NN/g's [two-question test](https://www.nngroup.com/articles/technical-jargon/).
+- Explain necessary terms once. The GOV.UK guidance on [clear language](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/) asks writers to explain a term in plain English the first time they use it.
+- Prefer active voice and present tense. They make clear who does what and read faster.
+- Drop promotional adjectives. Objective copy tested better than boastful copy in NN/g's research, and it is easier to believe.
+- Verify with people outside the team. The team already knows what the page means, so its members cannot judge whether a stranger will.
 
 ## Common Mistakes
 
-- **Replacing jargon with different jargon instead of plain language** — Don't just swap 'optimize' for 'enhance.' Replace abstract verbs with concrete actions: instead of 'optimize your workflow,' say 'finish proposals in half the time.' The fix must be specific, not just a synonym.
-- **Making copy so minimal that it loses persuasive power** — Clarity doesn't mean fewer words — it means fewer wasted words. A detailed, specific paragraph is clearer than a vague one-liner. 'We automate accounts payable for mid-size manufacturers, cutting invoice processing from 14 days to 48 hours' is longer than 'We streamline finance' but infinitely clearer.
-- **Only auditing the homepage and ignoring product, pricing, and about pages** — Jargon often concentrates on feature pages and technical documentation — the exact places where prospects go to make purchase decisions. Audit every customer-facing page, especially pricing and feature comparison pages.
-- **Assuming your target audience 'knows' the jargon because they're technical buyers** — Even technical buyers prefer clear copy. Research shows that decision-makers often share vendor pages with non-technical stakeholders (finance, ops, C-suite). Your copy needs to persuade the buying committee, not just the technical evaluator. Write for the least technical person who has veto power.
-- **Running a one-time jargon audit and declaring the problem solved** — Jargon is a recurring habit, not a one-time bug. New feature launches, new hires, and new campaigns constantly introduce vague language. Build jargon review into your content publishing workflow — every piece of copy gets a clarity check before going live.
+- **Swapping jargon for different jargon**: Replacing "synergy" with "alignment" keeps the page just as vague. Replace abstract words with the concrete task or result.
+- **Stripping terms experts need**: Removing a precise technical term can make copy less clear for specialist buyers. Keep terms your audience uses and explain the rest.
+- **Editing only for style**: Shorter sentences do not help if the page still never says what the product does. Check that the first screen answers what, who and why.
+- **Skipping the reader check**: A clarity rewrite judged only by its writer is still a guess. Show it to people who have not seen it.
+- **Letting jargon creep back**: Without a written list of banned and preferred terms, the next update often reintroduces the old language.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/copywriting-framework/METHOD.md) — Copywriting Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/copywriting-framework/METHOD.md): Copywriting Framework
 
 ## Related Skills
 
 - [Mining Customer Language for Persuasive Copy](../mining-customer-language-for-copy/SKILL.md)
-- [Translating Product Features into Customer Benefits](../translating-features-into-benefits/SKILL.md)
-- [Crafting High-Converting Call-to-Action Copy](../crafting-high-converting-ctas/SKILL.md)
-- [Writing Email Copy Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
-- [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
+- [How to Translate Features into Benefits](../translating-features-into-benefits/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
-- [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
+- [Page-Specific Website Copy: Homepage, Landing, Pricing](../writing-page-specific-website-copy/SKILL.md)
+- [Structuring Landing Page Copy for Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
+- [Call-to-Action Copywriting: Writing High-Converting CTAs](../crafting-high-converting-ctas/SKILL.md)
+- [Email Copywriting: Writing Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
+
+## Sources
+
+- [NN/g: How Users Read on the Web](https://www.nngroup.com/articles/how-users-read-on-the-web/)
+- [NN/g: Concise, Scannable, and Objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/)
+- [NN/g: Dealing with Technical or Professional Jargon](https://www.nngroup.com/articles/technical-jargon/)
+- [NN/g: Inverted Pyramid](https://www.nngroup.com/articles/inverted-pyramid/)
+- [GOV.UK: Use clear language](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/clear-language/)
+- [Digital.gov: Plain language writing](https://digital.gov/guides/plain-language/writing)
+- [Unbounce: Conversion Benchmark Report](https://unbounce.com/conversion-benchmark-report/)
+- [Lyssna: Five-second testing](https://www.lyssna.com/guides/five-second-testing/)

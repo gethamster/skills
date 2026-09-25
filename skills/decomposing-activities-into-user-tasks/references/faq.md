@@ -1,39 +1,21 @@
-# FAQ: Decomposing Activities into User Tasks and Stories
+# FAQ: Story Map Decomposition: Activities to User Tasks
 
-## How many stories should I generate per step on the backbone?
+## How detailed should the cards below the backbone be?
 
-A healthy range is 3-10 stories per step. Fewer than 3 suggests you are still thinking at too high a level and your stories are likely too large to estimate or implement in a single sprint. More than 10 suggests you may be breaking stories into acceptance criteria or sub-tasks rather than independent user-value slices. The exact number depends on the complexity of the step and how many personas it serves.
+As detailed as the next decision needs. Early on, cover every column shallowly so gaps show. As a release takes shape, detail the stories you are about to build down to the level a team can estimate and test. Jeff Patton's quick reference notes that UI details and background system behavior are fine in the lower parts of the map.
 
-A step that only one persona touches with one scenario might have 3 stories. A step that 4 personas touch in different ways with error handling variations might have 10.
+## What is the difference between a user task and a user story?
 
-## Should I decompose all activities to the same depth before slicing releases?
+A user task is a short verb phrase for something a person does, such as "read an email message." A user story adds who wants it and why, and later carries acceptance criteria. Patton's quick reference suggests using tasks as story titles: the task fits after "I want to," and the activity fits after "so that."
 
-No. Decompose deeply only the activities you plan to build in the next 1-2 release increments. For activities further out on the roadmap, keep only the walking skeleton stories and perhaps one row of high-priority additions. Over-decomposing future work wastes effort because requirements change as you learn from shipped releases and user feedback.
+## When should I write acceptance criteria?
 
-Revisit and deepen decomposition as each activity approaches development. This also keeps your map visually manageable rather than overwhelming.
+Close to building. Writing acceptance criteria for every card during the first mapping session spends time on stories that may never be built. The Nielsen Norman Group describes adding acceptance criteria as the verb phrases on the map become full stories headed into the backlog, and Patton's quick reference places that work in a workshop with developers and testers.
 
-## How do I handle stories that span multiple steps or activities?
+## How do I split a story that is too big?
 
-This is common for cross-cutting concerns like authentication, error handling, or analytics. Place the story under the step where the user first encounters the behavior, and add a visual indicator (a colored dot, a tag, or a connector line) showing that it also affects other steps. Do not duplicate the story in multiple columns because that creates confusion during estimation and sprint planning. If the story is truly large enough that it needs to be split, create step-specific slices: 'User sees authentication prompt when searching' and 'User sees authentication prompt when checking out' are separate stories with independent value.
+Use a splitting pattern. The Humanizing Work guide lists patterns such as workflow steps, operations, business rule variations, variations in data, data entry methods, simple versus complex, deferring performance and breaking out a spike. For workflows it suggests building the simple end-to-end case first, which suits a story map, where the simplest version sits highest in the column.
 
-## How long should a decomposition session take for a full story map?
+## Where do technical tasks go on the map?
 
-Plan 60-90 minutes per major activity. A map with 5-6 activities will take a full day if you decompose everything in one session, but that is usually not necessary or advisable. Most teams decompose 2-3 high-priority activities in a half-day workshop, ship the first release based on that, and decompose the remaining activities in subsequent sessions. If your decomposition sessions consistently run over 90 minutes per activity, you are likely debating design decisions that should be resolved separately or decomposing to a granularity that belongs in sprint planning.
-
-## Should I decompose activities before or after estimating stories?
-
-Decompose first, estimate second. Estimation is unreliable when stories are large and ambiguous. The entire point of decomposition is to produce stories small and specific enough that estimation becomes meaningful. After decomposition, you can estimate the walking skeleton stories quickly (they are small and well-defined) and defer estimation on lower-row stories until they approach sprint selection.
-
-This avoids the waste of estimating 100 stories when you will only build 20 in the next quarter.
-
-## What do I do when the team disagrees about whether something is one story or two?
-
-Apply the independent demonstration test: can you show each proposed story to a user independently and have them recognize value? If yes, they are separate stories. If one story only makes sense after the other is built, they might be one story or they might be two stories with a dependency. A second heuristic is the assignment test: could you give these to two different developers working in parallel without them stepping on each other's code?
-
-If the answer is no, they are likely one story. When in doubt, keep them as one story and split later during sprint planning when you have more technical context.
-
-## Why do my decomposed stories keep getting rewritten during sprint planning?
-
-This usually means decomposition happened without enough engineering input. Product managers and designers tend to write stories that describe the ideal user experience but miss technical constraints, dependencies, and implementation realities. Engineers then rewrite stories during sprint planning to reflect what is actually buildable. The fix is to include at least one engineer in the decomposition session, specifically asking them to flag stories that hide technical complexity, require infrastructure changes, or have dependencies on other stories.
-
-You do not need the full engineering team. One senior engineer who understands the system architecture is sufficient.
+Technical work usually supports a user story, so attach it to that story. Patton's 2005 article notes that features like "migrate to an Oracle database" do not work well in the model. If technical work has no user story to attach to, track it in your delivery tool and keep the map about users.

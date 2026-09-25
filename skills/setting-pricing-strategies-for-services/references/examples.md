@@ -1,41 +1,37 @@
-# Examples: Setting Pricing Strategies for Products and Services
+# Examples: Pricing Strategy in the Marketing Mix for Services
 
-## Example: SaaS Project Management Tool Launching Tiered Pricing
-
-**Scenario:**
-
-A B2B SaaS startup sells a project management tool currently priced at a flat $29/month per user. Growth has stalled because small teams find it expensive while enterprise prospects see it as too cheap (signaling limited capability). The company wants to redesign pricing to serve both segments while reinforcing its positioning as a 'powerful yet accessible' tool within its broader marketing mix.
-
-**Walkthrough:**
-
-**Step 1 – Positioning audit**: The team confirms their positioning: 'For growing teams, ProjectFlow is the project management platform that scales from 5 to 500 users because it combines enterprise-grade features with intuitive design.'
-
-**Step 2 – Cost floor**: Fully loaded cost per user is $6/month (infrastructure, support, amortized development). CAC averages $180, so they need roughly $15/month for 12 months to recover CAC and cover costs.
-
-**Step 3 – Competitive research**: Competitors range from free (basic tools) to $45/user/month (enterprise). Mid-market tools cluster at $12-25/user/month.
-
-**Step 4 – Value ceiling**: Customer interviews and a Van Westendorp study reveal small teams see fair value at $15-20/user, while enterprise buyers expect to pay $30-50/user for advanced features like SSO, audit logs, and priority support.
-
-**Step 5 – Model selection**: Tiered pricing is the clear fit—distinct segments with different needs and willingness to pay.
-
-**Step 6 – Architecture**: Three tiers launched: **Starter** at $12/user/month (core features, up to 15 users), **Professional** at $24/user/month (advanced features, unlimited users, integrations—this is the target tier), and **Enterprise** at $45/user/month (SSO, audit logs, dedicated support, custom onboarding). The $45 anchor makes $24 feel like strong value.
-
-**Step 7 – Testing**: Rolled out to new signups only for 60 days. Professional tier captured 55% of new revenue, Starter brought in teams that previously churned on day 1 of the trial, and Enterprise opened three deals over $50K ARR.
-
-**Step 8 – Mix alignment**: Updated landing pages to lead with ROI messaging (promotion), added an enterprise sales process with live demos (process/people), and created case study PDFs for the Enterprise tier (physical evidence).
-
-## Example: Consulting Firm Shifting from Hourly to Value-Based Pricing
+## A design studio moves from hourly rates to packages
 
 **Scenario:**
 
-A marketing consulting firm charges $200/hour and finds that clients constantly push to minimize hours, leading to scope negotiations that hurt both relationship quality and project outcomes. The firm's marketing mix positions it as a strategic partner, but hourly billing makes it feel transactional.
+Illustrative scenario: a small design studio bills by the hour. Clients question every invoice, and the studio's most efficient designers earn it the least per project.
 
 **Walkthrough:**
 
-**Positioning check**: The firm's positioning is 'strategic marketing partner for mid-market B2B companies driving measurable revenue growth.' Hourly billing directly contradicts 'strategic partner'—it incentivizes minimizing time rather than maximizing outcomes.
+The studio interviews recent clients and finds they value a finished brand kit delivered by a set date and care little about hours. It calculates the cost to serve a typical brand kit from its time records, which sets the floor. It then looks at what clients were paying agencies and freelancers for similar kits, which shows room above the floor.
 
-**Value analysis**: For a typical engagement, the firm helps clients generate $500K-$2M in pipeline over 6 months. The firm's fully loaded cost per engagement is approximately $25,000.
+The studio moves to three fixed packages that differ in scope, with half paid upfront and half on delivery. It checks the rest of the mix: the proposal document and portfolio are updated to look like the package price, and the project process adds a fixed review step so the delivery date holds. Invoice disputes drop because the price is known before work starts.
 
-**New model**: Value-based project pricing with three engagement tiers: **Growth Audit** ($15,000 one-time—diagnostic), **Growth Accelerator** ($8,500/month for 6 months—full strategic execution, the core offering), and **Growth Partnership** ($15,000/month ongoing—embedded strategic support with quarterly business reviews).
+## A software company tests a tiered price
 
-**Mix alignment**: Proposals were redesigned with ROI projections front and center (physical evidence). The website was updated to remove any mention of hourly rates and instead showcase client revenue outcomes (promotion). Client onboarding was formalized with a kickoff workshop (process). The result: average deal size increased 40%, scope negotiations disappeared, and client NPS jumped from 42 to 71 within two quarters.
+**Scenario:**
+
+Illustrative scenario: a company sells a customer support tool at one price. Small teams say it is too expensive and large teams ask for features it does not have.
+
+**Walkthrough:**
+
+The team sees that customers differ mainly in team size and in the need for reporting. It designs three tiers: a basic tier for small teams, a middle tier with reporting, and a top tier with priority support. It keeps the number of tiers to three so customers can choose without a sales call.
+
+Before a full rollout, the new tiers are shown to new sign-ups only. The team tracks which tier new customers choose, how many contact sales, and whether churn changes. It also checks People and Process: priority support in the top tier needs a staffed queue, so the support lead signs off before launch.
+
+## A physiotherapy clinic reviews its prices after a competitor arrives
+
+**Scenario:**
+
+Illustrative scenario: a physiotherapy clinic charges per session. A new clinic nearby opens at a lower per-session price.
+
+**Walkthrough:**
+
+The clinic resists matching the price immediately. It reviews what patients value: seeing the same therapist each time and getting a written home exercise plan. Neither is offered by the new competitor.
+
+The clinic keeps its session price, adds a package of sessions paid upfront at a small saving, and makes the home exercise plan a visible part of every visit. Front desk staff are briefed to explain what is included. The owner records the reasoning and schedules a review once a few months of bookings are in.

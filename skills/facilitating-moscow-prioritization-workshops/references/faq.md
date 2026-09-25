@@ -1,25 +1,21 @@
-# FAQ: Facilitating MoSCoW Prioritization Workshops with Stakeholders
+# FAQ: Facilitating a MoSCoW Prioritization Workshop
 
-## How long should a MoSCoW analysis workshop take?
+## Who should facilitate a MoSCoW workshop?
 
-Plan for 90 minutes for up to 25 items with 5-7 participants. For larger backlogs, split into multiple sessions by theme rather than extending a single session past 2 hours. Decision quality drops significantly after 90 minutes due to fatigue.
+Ideally someone with no stake in the outcome. The DSDM handbook says the facilitator should be neutral to the objectives, the outcome and the participants, and ideally come from outside the project. If the facilitator must come from the project, they should declare any interest and leave content decisions to the workshop owner.
 
-## What's the ideal number of participants for a MoSCoW workshop?
+## Who should attend?
 
-5-7 participants is the sweet spot. Below 5, you risk missing key perspectives. Above 9, side conversations start and consensus becomes exponentially harder. If more stakeholders need input, collect asynchronous pre-votes and have a representative present their department's view.
+The workshop owner, who owns the objective, and participants who are needed for the outcome and empowered to decide. DSDM says a workshop needs at least four participants for effective group dynamics and warns against uninvited extras. A scribe can record the decisions so the facilitator can focus on the process.
 
-## How do I handle a stakeholder who insists everything is a Must-have?
+## How do I stop one person dominating the session?
 
-Introduce a hard constraint: Must-haves cannot exceed 60% of available capacity. Then ask them to rank their Must-haves against each other — forcing relative priority reveals which items they'd actually sacrifice. If everything is a Must-have, nothing is.
+Collect categories individually before any discussion, so everyone's view is on record before the loudest voice is heard. Start the discussion of each contested item from the DSDM tests rather than from opinions. DSDM lists preventing individuals or factions from dominating as part of the facilitator's job.
 
-## Can MoSCoW analysis be done remotely with distributed teams?
+## What happens to items the group cannot agree on?
 
-Yes. Use tools like Miro, FigJam, or Mentimeter for silent voting, and video conferencing for the discussion rounds. Remote workshops work well if you enforce the silent voting phase strictly — it's actually easier to prevent anchoring bias in digital tools with hidden votes.
+Park them. DSDM describes a five-minute rule some facilitators use: a disagreement not resolved in five more minutes becomes an open issue, documented and resolved later or outside the workshop. Send it along the escalation path agreed beforehand, with both positions written down.
 
-## How is MoSCoW analysis different from RICE or WSJF prioritization?
+## Can a MoSCoW workshop run remotely?
 
-MoSCoW analysis categorizes items into priority tiers through stakeholder discussion, making it ideal for alignment workshops. RICE and WSJF produce numerical scores based on formulas, which are better for individual prioritization. You can learn more in our guide on comparing MoSCoW with other prioritization frameworks.
-
-## What do I do when stakeholders disagree and can't reach consensus?
-
-Use structured decision criteria (impact, urgency, cost) to score the contested item objectively. If scoring doesn't resolve it, invoke a pre-agreed tiebreaker — typically the product owner or project sponsor makes the final call. For deeper techniques, see our guide on resolving stakeholder disputes with MoSCoW.
+Yes. Move individual categorization into a shared sheet completed before the call, with answers hidden until a set time. Use the live session only for contested items. Keep the same roles, ground rules and time limit on disputes.

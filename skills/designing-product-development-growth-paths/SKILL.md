@@ -1,15 +1,20 @@
 ---
-name: designing-product-development-growth-paths
-description: "This skill teaches you how to plan, evaluate, and prioritize new product or service offerings for existing markets, ensuring your innovation pipeline directly supports your marketing strategy and growth goals."
+name: "designing-product-development-growth-paths"
+description: "Design a product development strategy for current customers: find unmet jobs, test concepts and sequence them into a product development roadmap."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: ansoff-matrix
+  method: "ansoff-matrix"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Designing Product Development Growth Paths for Your Marketing Strategy
+# Product Development Strategy: Designing Growth Paths
 
-> This skill teaches you how to plan, evaluate, and prioritize new product or service offerings for existing markets, ensuring your innovation pipeline directly supports your marketing strategy and growth goals.
+> Design a product development strategy for current customers: find unmet jobs, test concepts and sequence them into a product development roadmap.
 
 ## Before you start
 
@@ -24,138 +29,97 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes |
-| Outcome | You'll be able to systematically identify, evaluate, and roadmap new product opportunities for existing markets, reducing innovation risk and aligning product development with your overall marketing strategy. |
-| Prerequisites | Understanding of the Ansoff Matrix and its four growth quadrants, Familiarity with your existing customer segments and their needs, Basic knowledge of product-market fit concepts, Access to customer feedback data or market research |
+| Time to Learn | A few hours to learn, several weeks to run with customer research |
+| Outcome | You produce a short list of validated new product concepts for your current customers, sequenced into a growth path with a launch plan and success measures for each stage. |
+| Prerequisites | An established customer base, access to customers for interviews, usage and sales data, a product or engineering partner |
 | Part of | [Ansoff Matrix](../../methods/ansoff-matrix/METHOD.md) |
 
 ## Overview
 
-Product development — introducing new products or services to your existing markets — sits in the upper-left quadrant of the Ansoff Matrix and represents a moderate-risk growth strategy. Unlike market penetration (which focuses on selling more of what you already have) or diversification (which ventures into entirely new territory), product development leverages the deep customer knowledge you've already built. This makes it one of the most efficient ways to grow revenue when your current market still has unmet needs.
+A product development strategy grows the business by selling new products to the customers and markets you already serve. It is the new-product, existing-market quadrant of the [Ansoff Matrix](../../methods/ansoff-matrix/METHOD.md). In Ansoff's words, it "retains the present mission and develops products that have new and different characteristics such as will improve the performance of the mission" ([Ansoff, 1957](https://archive.org/details/strategiesfordiversificationansoff1957hbr)). The market is known. The product is the uncertainty.
 
-Designing product development growth paths is the discipline of turning that potential into a structured plan. It means identifying gaps in your current offering, generating concepts that fill those gaps, scoring them for feasibility and strategic fit, and sequencing them into a phased roadmap. When done well, this skill connects product innovation directly to your marketing strategy — ensuring that every new offering has a clear audience, a compelling value proposition, and a go-to-market plan before development begins.
+That combination shapes how the work should be done. Because you already serve these customers, you have privileged access to them: usage data, support tickets, sales conversations and people willing to be interviewed. The strategy tries to use that access, together with an existing brand's reputation and customer loyalty, to offer products that address evolving needs ([Wikipedia: Ansoff matrix](https://en.wikipedia.org/wiki/Ansoff_matrix)). The risk is that a company builds what it can build, or what one large customer asked for, instead of what the wider customer base needs.
 
-This skill is essential for product managers, marketing strategists, and founders who want to grow without the higher risk of entering unfamiliar markets. It's especially valuable when customer acquisition costs are rising and you need to extract more lifetime value from the relationships you've already built.
+This skill structures the path from customer insight to a product development roadmap. It starts with the jobs your customers are trying to get done and where current products, including yours, do them poorly. It generates concepts against those jobs, scores them, tests the strongest with customers, and sequences the survivors into a growth path. Each stage of the path has a launch plan aimed at existing customers and a measure of success.
+
+A useful distinction when sequencing is between incremental and bolder moves. Bansi Nagji and Geoff Tuff separate core initiatives, which make incremental changes to existing products, from adjacent ones, which leverage something the company does well into a new space, and from transformational ones that create new offers for new markets ([HBR](https://hbr.org/2012/05/managing-your-innovation-portfolio)). A healthy product development roadmap usually mixes near-core extensions with at least one adjacent bet.
 
 ## How It Works
 
-The core logic behind product development growth paths is that your existing customers are your most underexploited asset. You already know their pain points, usage patterns, and willingness to pay. Product development takes that knowledge and asks: *What else can we offer them?*
+The work starts from customer jobs, and features come later. Clayton Christensen and his coauthors argue that product teams spend too much effort profiling customers and mining data for correlations. In their account, successful innovators find jobs that customers' current options do poorly, then build products, experiences and processes around those jobs. They also note that jobs have social and emotional dimensions as well as functional ones ([HBR](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done)). For an existing customer base, the richest source of such jobs is the work customers do just before and just after using your product.
 
-The Ansoff Matrix frames this as a moderate-risk strategy because you're changing one variable (the product) while holding the other constant (the market). Your risk is lower than diversification because you're not guessing about customer behavior — you're building on observed demand. But it's higher than market penetration because you're committing resources to something new that may fail.
+Concepts are then generated against those jobs. A concept states the job, the customer group, the proposed product and why your company can deliver it. Good concepts reuse something you already have: the customer relationship, the data your product holds, your brand's permission, or a capability your team has built. Concepts that reuse nothing are closer to diversification and should be treated with that level of caution.
 
-The process works in three conceptual phases. First, **demand mapping**: you audit your existing customer base to surface unmet needs, feature requests, adjacent problems, and competitive gaps. Second, **concept scoring**: you generate candidate products or services and evaluate each against criteria like strategic alignment with your marketing strategy, technical feasibility, expected margin, and time to market. Third, **path sequencing**: you arrange the winning concepts into a phased roadmap that balances quick wins (extensions and enhancements) with longer-term bets (entirely new offerings), creating a development pipeline that delivers value continuously.
+Scoring compares concepts on the size and urgency of the job, the share of your customer base that has it, fit with your capabilities, effect on existing products (including cannibalization), effort and time to launch, and fit with the marketing strategy. The scores give a first ranking. Customer testing then does the real work: problem interviews, concept tests, prototypes, pre-orders or beta programs. Smart Insights suggests market research that asks potential customers and influencers for feedback when evaluating product development ([Smart Insights](https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/)).
 
-This approach works because it grounds product decisions in evidence rather than intuition, and it forces cross-functional alignment between product, marketing, and commercial teams before resources are committed.
+Validated concepts are arranged into a growth path. Early stages favor concepts that are fast to deliver and build on the core, so they generate revenue and learning. Later stages carry bigger bets that depend on capabilities the early stages build. Each stage has a launch plan to existing customers through the channels you already use, and a measure that tells you whether to move to the next stage.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit your existing customer base for unmet needs
+### Step 1: Map the jobs your customers are trying to get done
 
-Start by gathering every signal you have about what your current customers want but don't yet get from you. Pull data from support tickets, NPS verbatims, feature request logs, churn interviews, sales call notes, and competitive win/loss analyses. Organize these signals into themes — for example, 'customers want a self-service analytics dashboard' or 'multiple clients have asked about integration with Salesforce.'
+Interview a cross-section of customers, including heavy users, light users and recent churners. Ask what they were trying to achieve when they bought, what they do just before and after using your product, and where they still use workarounds. Combine this with support tickets and usage data. Write the jobs in customers' words and note the circumstance that makes each one pressing.
 
-Don't limit yourself to explicit requests. Look for behavioral signals too: which features have the highest engagement? Where do users drop off? What complementary tools are your customers buying from competitors? The goal is to build a comprehensive demand map that reveals the white space in your current portfolio.
+### Step 2: Find the poorly performed jobs
 
-This step is the foundation of everything that follows. If your demand map is thin, your product development path will be speculative rather than evidence-based.
+For each job, note how well it is done today by your product, competitors or workarounds, and how much it matters to the customer. Jobs that matter a lot and are done badly are the best starting points. Estimate what share of your customer base has each job. Discard jobs that only one customer has, however large that customer is.
 
-> **Pro tip:** Create a simple spreadsheet with columns for signal source, customer segment, need description, frequency (how often it appears), and urgency (how strongly customers express it). This makes prioritization in later steps much easier.
+### Step 3: Generate product concepts
 
-### Step 2: Step 2: Generate candidate product or service concepts
+For each promising job, generate several concepts, from a feature or add-on to a separate product or service. Write each concept with the job, the customer group, the proposed offer and the asset it reuses. Include service and packaging ideas as well as software or physical products. Keep the concept short enough to test with a customer.
 
-With your demand map in hand, brainstorm specific product or service concepts that address the highest-frequency, highest-urgency needs. Each concept should be described in a one-paragraph brief that covers: what it is, who it's for, what problem it solves, and how it relates to your existing offering.
+### Step 4: Score and rank the concepts
 
-Cast a wide net at this stage. Include line extensions (new tiers, bundles, or configurations of existing products), feature additions (major new capabilities within an existing product), and entirely new offerings (new products or services that serve the same customer base in an adjacent way). Aim for 8-15 candidate concepts.
+Score each concept on job size and urgency, share of customers affected, capability fit, cannibalization, effort, time to launch and fit with the marketing strategy. Write the evidence behind each score. Rank the list and pick the top few for testing. Keep the full list, since lower-ranked concepts may become viable once early stages build new capabilities.
 
-Involve cross-functional stakeholders — product, engineering, marketing, sales, customer success — to ensure you're capturing ideas from every angle. The diversity of perspectives is what makes this step productive.
+### Step 5: Test the top concepts with customers
 
-> **Pro tip:** Use a 'How Might We' framing for each need on your demand map to spark creative concepts. For example, 'How might we help our enterprise customers automate their reporting workflow?'
+Run the cheapest test that could prove each concept wrong: a concept description, a clickable prototype, a pre-order, or a limited beta with a small group. Define what response would count as success before you start. Watch for customers taking action, such as signing up or paying, rather than only saying they like the idea. Revise or drop concepts based on the results.
 
-### Step 3: Step 3: Define scoring criteria aligned with your marketing strategy
+### Step 6: Sequence the product development roadmap
 
-Before you evaluate concepts, establish the criteria you'll use to score them. This is where your broader marketing strategy becomes the filter. Typical criteria include:
+Arrange validated concepts into stages. Put near-core concepts that are fast to deliver early, and later place concepts that depend on what the early ones build. Mark each stage as core or adjacent so the balance is visible. Link each stage to the capability or learning it provides for the next.
 
-- **Strategic alignment**: Does this concept reinforce your brand positioning and support your stated marketing strategy goals?
-- **Customer demand strength**: How many customers have expressed this need, and how urgently?
-- **Competitive differentiation**: Does this concept create a meaningful gap between you and competitors?
-- **Revenue potential**: What's the estimated addressable revenue within your existing customer base?
-- **Feasibility**: Can your team build and launch this within a reasonable timeframe and budget?
-- **Go-to-market readiness**: Can you market and sell this through your existing channels and sales motions?
+### Step 7: Plan launches and measures for each stage
 
-Weight each criterion based on your strategic priorities. If your marketing strategy emphasizes retention, weight customer demand and alignment heavily. If it emphasizes competitive positioning, weight differentiation more.
-
-> **Pro tip:** Use a 1-5 scale for each criterion and weight criteria as percentages summing to 100%. This gives you a single composite score per concept that makes comparison straightforward.
-
-### Step 4: Step 4: Score and rank your candidate concepts
-
-Bring your cross-functional team together for a structured scoring session. Walk through each candidate concept and score it against every criterion. Use evidence from your demand map, competitive analysis, and technical assessments to ground the scores — not gut feeling.
-
-After scoring, calculate weighted composite scores and rank the concepts from highest to lowest. Identify a natural breakpoint between the top tier (concepts that clearly stand out) and the rest. Your top-tier concepts are your primary candidates for the product development roadmap.
-
-Don't discard lower-ranked concepts entirely. Some may become relevant as market conditions change or as you complete higher-priority items. Keep them in a backlog for periodic reassessment.
-
-> **Pro tip:** If your team can't agree on a score, that's a signal you need more data. Flag those concepts for further customer validation before committing resources.
-
-### Step 5: Step 5: Validate top concepts with customers
-
-Before committing to development, validate your top-ranked concepts directly with customers. This can range from lightweight validation (showing mockups or concept descriptions to a panel of existing customers) to more rigorous methods (landing page tests, pre-order experiments, or structured interviews).
-
-The goal is to confirm that the demand you identified in Step 1 translates into genuine willingness to use and pay for the proposed concept. Pay attention to enthusiasm level, willingness to pay, and whether the concept matches customers' mental model of your brand.
-
-Validation at this stage is far cheaper than discovering low demand after you've built something. Even a small sample of 10-15 customer conversations can dramatically increase your confidence in the roadmap.
-
-> **Pro tip:** Ask customers to rank the top 3-5 concepts in order of preference. Forced ranking reveals relative priority much better than asking 'Would you use this?' (to which most customers will say yes).
-
-### Step 6: Step 6: Build a phased product development roadmap
-
-Sequence your validated concepts into a phased roadmap. A typical structure includes three horizons:
-
-- **Horizon 1 (0-6 months)**: Quick wins and line extensions that require minimal development and can generate revenue or retention impact quickly.
-- **Horizon 2 (6-18 months)**: Larger feature additions or new product modules that require significant development but have strong validated demand.
-- **Horizon 3 (18+ months)**: Strategic bets on new offerings that open up new revenue streams within your existing market.
-
-For each item on the roadmap, document the target customer segment, value proposition, estimated development cost and timeline, go-to-market plan, and success metrics. This ensures that when your marketing strategy calls for launching a new offering, the plan is ready — not improvised.
-
-Align your roadmap with your marketing calendar and budget cycles so that launch timing, campaigns, and resource allocation are synchronized.
-
-> **Pro tip:** Build in explicit review gates between horizons. At each gate, reassess demand signals, competitive landscape, and strategic alignment before advancing to the next phase.
-
-### Step 7: Step 7: Define success metrics and feedback loops
-
-For each product development initiative on your roadmap, define the metrics that will tell you whether it's working. Common metrics include adoption rate among existing customers, incremental revenue per customer, impact on retention or churn, customer satisfaction scores, and cross-sell/upsell conversion rates.
-
-Establish feedback loops that flow data back into your demand map from Step 1. Post-launch customer feedback, usage analytics, and commercial performance should continuously update your understanding of what your market needs next. This turns your product development growth path from a static plan into a living system.
-
-Schedule quarterly reviews where product, marketing, and commercial teams assess roadmap performance against metrics and adjust priorities as needed.
-
-> **Pro tip:** Define a 'kill criteria' for each initiative — specific thresholds below which you'll pause or cancel a project rather than throwing more resources at it.
+For each stage, plan the launch to existing customers: which segments hear first, through which channels, with what offer. Set measures such as adoption among targeted customers, revenue from the new product, and effect on retention of the core product. Agree the result that would trigger the next stage or a change of course. Review the path at least at each stage gate.
 
 ## Best Practices
 
-- Always ground product development decisions in observed customer demand rather than internal assumptions — the best growth paths emerge from real usage data, support tickets, and direct customer conversations.
-- Use your marketing strategy as a filter at every stage: if a product concept doesn't reinforce your brand positioning or support your stated growth goals, deprioritize it regardless of how exciting it seems.
-- Involve marketing, sales, and customer success in concept generation and scoring — product development that happens in a product team silo often produces offerings that are hard to sell or position.
-- Sequence your roadmap to deliver early wins that build organizational confidence and fund longer-term bets — this creates a flywheel where product development success feeds further investment.
-- Revisit your Ansoff Matrix positioning quarterly; a product development path may shift into diversification territory if market conditions change, requiring a different risk profile and marketing strategy.
-- Document assumptions behind each concept score so you can revisit decisions when new data emerges rather than re-debating from scratch.
+- Start with jobs, then features. A long feature request list tells you what customers imagine, while a job tells you what they need done.
+- Exploit your access to customers. Existing customers will talk to you, test prototypes and join betas, which is the main advantage of this quadrant.
+- Check cannibalization explicitly. A new product that mostly moves revenue from an existing one adds cost without much growth.
+- Reuse at least one existing asset in each concept. Concepts that reuse nothing carry diversification-level risk.
+- Mix core and adjacent bets. A roadmap made only of small extensions can miss the next stage of growth, and one made only of big bets can starve the core.
+- Launch to your warmest customers first. They give faster, more honest feedback and forgive rough edges.
 
 ## Common Mistakes
 
-- **Building products based on a single customer's request rather than validated patterns across the customer base.** — Aggregate demand signals from multiple sources and look for themes that appear across segments. A single loud customer can lead you to a niche feature that doesn't move the needle for your broader market.
-- **Treating product development as a purely technical exercise disconnected from marketing strategy.** — Embed go-to-market planning into the roadmap from the start. Every product concept should include a positioning hypothesis, target segment, and channel strategy before it enters development.
-- **Trying to launch too many new products simultaneously, spreading resources thin and diluting marketing focus.** — Use your phased roadmap to enforce sequencing discipline. Limit work-in-progress to 1-2 major initiatives per horizon and give each one sufficient marketing support to succeed.
-- **Skipping customer validation because the team is confident in the concept.** — Even a lightweight validation step (10-15 customer conversations or a simple landing page test) can prevent six-figure development mistakes. Confidence is not evidence.
-- **Confusing product development with diversification by drifting into offerings that serve a fundamentally different customer than your existing base.** — Regularly check your concepts against the Ansoff Matrix. If the target customer for a new product is meaningfully different from your current market, you've moved into the diversification quadrant and need to reassess risk accordingly.
+- **Building for the largest customer's request**: One customer's need may not be shared by the rest of the base. Check how many customers have the job before building.
+- **Testing opinions instead of behavior**: Customers are polite about ideas. Ask them to act, through a sign-up, a pilot or a pre-order.
+- **Treating every new product as the same risk**: A small extension and a separate new product for the same customers carry very different risk. Label each concept as core or adjacent and plan accordingly.
+- **Ignoring the effect on the core product**: New products can distract the team and confuse the offer. Measure retention and satisfaction for the core product alongside the new one.
+- **Fixing the roadmap too early**: A roadmap written before testing locks in guesses. Sequence only validated concepts and revisit at each stage gate.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ansoff-matrix/METHOD.md) — Ansoff Matrix
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ansoff-matrix/METHOD.md): Ansoff Matrix
 
 ## Related Skills
 
-- [Evaluating Market Penetration Strategies for Existing Products](../evaluating-market-penetration-strategies/SKILL.md)
-- [Assessing Diversification Risk and Opportunity](../assessing-diversification-risk-and-opportunity/SKILL.md)
-- [Planning Market Development Initiatives for New Segments](../planning-market-development-initiatives/SKILL.md)
-- [Defining Target Markets for Expansion Strategies](../defining-target-markets-for-expansion-strategies/SKILL.md)
 - [Mapping Growth Options to the Ansoff Grid](../mapping-growth-options-to-the-ansoff-grid/SKILL.md)
-- [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
+- [Evaluating Market Penetration Strategies](../evaluating-market-penetration-strategies/SKILL.md)
+- [Assessing Diversification Risk and Opportunity](../assessing-diversification-risk-and-opportunity/SKILL.md)
+- [Planning a Market Development Strategy](../planning-market-development-initiatives/SKILL.md)
+- [Defining Target Markets for Expansion Strategies](../defining-target-markets-for-expansion-strategies/SKILL.md)
+- [Digital Marketing Channels for Each Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
+
+## Sources
+
+- [H. Igor Ansoff: Strategies for Diversification, Harvard Business Review, 1957](https://archive.org/details/strategiesfordiversificationansoff1957hbr)
+- [Wikipedia: Ansoff matrix](https://en.wikipedia.org/wiki/Ansoff_matrix)
+- [Christensen and coauthors: Know Your Customers' Jobs to Be Done, Harvard Business Review](https://hbr.org/2016/09/know-your-customers-jobs-to-be-done)
+- [Nagji and Tuff: Managing Your Innovation Portfolio, Harvard Business Review](https://hbr.org/2012/05/managing-your-innovation-portfolio)
+- [Smart Insights: The Ansoff Model](https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/)

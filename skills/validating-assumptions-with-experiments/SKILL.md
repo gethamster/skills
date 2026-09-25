@@ -1,15 +1,20 @@
 ---
-name: validating-assumptions-with-experiments
-description: "This skill teaches you how to treat every branch of an impact map as a hypothesis, design lightweight experiments to test those hypotheses, and use the results to iterate on your map — ensuring your team builds only what evidence supports."
+name: "validating-assumptions-with-experiments"
+description: "Test the two assumptions on each impact map branch, that a deliverable changes behavior and the change moves the goal, then prune or extend the map."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: impact-mapping
+  method: "impact-mapping"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Validating Impact Map Assumptions with Experiments: How to Become a Product Manager Who Ships with Confidence
+# Validating Impact Map Assumptions with Experiments
 
-> This skill teaches you how to treat every branch of an impact map as a hypothesis, design lightweight experiments to test those hypotheses, and use the results to iterate on your map — ensuring your team builds only what evidence supports.
+> Test the two assumptions on each impact map branch, that a deliverable changes behavior and the change moves the goal, then prune or extend the map.
 
 ## Before you start
 
@@ -24,137 +29,99 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 1-2 hours per assumption cycle |
-| Outcome | You will be able to systematically de-risk your product decisions by running fast, structured experiments that validate or invalidate each assumption on your impact map before committing engineering resources. |
-| Prerequisites | Basic understanding of Impact Mapping structure (goals, actors, impacts, deliverables), Familiarity with defining measurable business goals, Understanding of hypothesis-driven development concepts, Experience mapping desired behavior impacts on actors |
+| Time to Learn | A few hours to learn, then one delivery cycle per assumption tested |
+| Outcome | You can turn each prioritized branch of an impact map into testable assumptions, choose the cheapest credible test, and update the map from the result. |
+| Prerequisites | An impact map with ranked impacts and target ranges, access to behavioral data or users, a way to ship small changes or run research |
 | Part of | [Impact Mapping](../../methods/impact-mapping/METHOD.md) |
 
 ## Overview
 
-Every impact map is built on assumptions. You assume certain actors matter most. You assume specific behavior changes will drive your goal. You assume particular deliverables will cause those behavior changes. If any of these assumptions are wrong, your team wastes time building the wrong thing. Validating assumptions with experiments is the discipline that turns an impact map from a hopeful plan into an evidence-based strategy.
+Every branch of an impact map is a chain of assumptions. The impactmapping.org [overview](https://www.impactmapping.org/about.html) names two: that a deliverable "will support a change in behaviour of an actor", and that once the impact is supported, the actor "will contribute to the overall objectives." Tom Poppendieck's foreword to Gojko Adzic's book calls an impact map "a map of assumptions connecting causes and effects" and says that uncertainty in those assumptions "can then be addressed by doing experiments" ([Foreword](https://www.impactmapping.org/book_foreword.html)).
 
-This skill is essential for anyone learning how to become a product manager because it bridges the gap between strategic planning and execution. Rather than treating the impact map as a fixed blueprint, you learn to treat it as a living document — one that evolves as you gather real-world evidence. Each experiment you run either strengthens your confidence in a branch or gives you the data to prune it and redirect effort.
+This skill makes that testing deliberate. Instead of shipping deliverables and hoping the goal moves, the team states each assumption, decides what evidence would confirm or refute it, runs the cheapest test that could produce that evidence, and changes the map based on the result. The overview page describes the payoff: impact mapping helps ensure the right business outcomes are achieved, "or that unrealistic projects are stopped before they cost too much", by communicating assumptions and allowing teams to test them.
 
-Within the broader [Impact Mapping](https://tryhamster.com/methods/impact-mapping) framework, assumption validation sits at the critical juncture between planning and delivery. After you've completed your map — defining goals, identifying actors, mapping impacts, and generating deliverables — this skill ensures you don't simply hand off the entire map to engineering. Instead, you systematically test the riskiest assumptions first, creating a feedback loop that keeps your roadmap honest and your resources focused on what actually moves the needle.
+Impact maps leave assumptions implicit in the links between levels. Adzic's own comparison with Opportunity Solution Trees notes that a tree lists assumptions and their tests explicitly under each solution, while in an impact map they "are implicit in the links between deliverables and impacts, but are not explicitly set out" ([Votito](https://www.votito.com/methods/opportunity-solution-tree/)). Much of this skill is making those links explicit enough to test.
+
+The output is a short list of assumptions for the prioritized branches, each with a test, a success threshold and a decision rule, and an impact map updated after every test. Over time, the map records what the team has learned about which behavior changes move the goal. The wider method is described on the [impact mapping](../../methods/impact-mapping/METHOD.md) page. Use this skill once branches are prioritized and before the team commits significant effort to any one of them.
 
 ## How It Works
 
-The core concept is simple: every connection on an impact map represents a belief, and beliefs should be tested before they become commitments.
+Separate the two assumptions on each branch because they need different evidence. The first, that a deliverable changes an actor's behavior, is tested by observing the actor after the deliverable reaches them. The second, that the behavior change moves the goal, is tested by checking whether the goal metric responds when the behavior changes. A branch can fail at either link. A deliverable can change behavior that turns out not to matter, or the right behavior can be targeted by a deliverable that does not change it.
 
-An impact map has four layers — Goal → Actors → Impacts → Deliverables — and each arrow between layers encodes an assumption. The arrow from an actor to an impact assumes that actor's behavior can actually change in the way you've described. The arrow from an impact to a deliverable assumes that building a specific thing will cause the behavior change. These assumptions stack: if a lower-level assumption fails, everything above it in the chain may be invalid.
+Measurable impacts are what make the first assumption testable. Justin Holmes, writing on [Opensource.com](https://opensource.com/open-organization/17/6/experiment-impact-mapping), says impact mapping "provides a framework for using metrics to translate these assumptions into testable hypotheses", and that teams working this way have an incentive to "experiment with low cost prototypes" early in delivery. In [User stories should be about behaviour changes](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/), Adzic adds that even when a story passes all its technical and functional tests, if it fails to produce the expected behavior change "it is not complete", and that if an early story achieves more than planned, the remaining stories aimed at the same change can be dropped.
 
-Experiment design follows a structured pattern: (1) identify the assumption, (2) express it as a falsifiable hypothesis, (3) choose the cheapest experiment that could disprove it, (4) define pass/fail criteria before running the experiment, and (5) update the map based on results. The key insight is that you should always test the riskiest assumption first — the one that, if wrong, would invalidate the largest portion of your planned work.
+Choose the test by cost and by what the context allows. When uncertainty is high, Adzic suggests setting a budget for learning first, which "can lead to prototypes, low-fi interface testing with users, half-manual processes and skeleton apps", and taking smaller steps with less confidence and larger ones with more ([Budget instead of estimating](https://gojko.net/2014/02/24/budget-instead-of-estimating/)). The [InfoQ article](https://www.infoq.com/articles/most-impact-mapping/) he wrote with Ingrid Domingues and Johan Berndtsson ties the choice to context. Online services that can deploy incrementally can validate ideas with real users through staged deployments and A/B tests. Organizations that cannot release to users quickly, such as makers of medical devices, should try options through user research first, and where both risk and budget constraints are severe, use the map to drive customer research and prototype evaluation before committing to delivery.
 
-This approach draws from lean startup methodology and scientific thinking, but applies them specifically to the structure of impact maps. Because impact maps make assumptions explicit and visual, they are uniquely well-suited to systematic experimentation. You can literally point to a branch and say, 'This is what we're testing this week.'
+Decide what each result will mean before running the test. A success threshold taken from the impact's target range, and a decision rule for each outcome, stop results from being reinterpreted after the fact. Typical decisions are to continue with the branch, try the next deliverable under the same impact, reconsider the impact, or move to another part of the map.
 
-The feedback loop matters as much as any single experiment. After each test, you return to the map and make one of three moves: reinforce the branch (the evidence supports it), pivot the branch (modify the assumption based on what you learned), or prune the branch (the assumption is definitively wrong). Over multiple cycles, your impact map converges toward a strategy backed by evidence rather than opinion.
+Feed results back into the map. The [impactmapping.org overview](https://www.impactmapping.org/about.html) describes measuring the actual change in behavior and the effect on the objective after a deliverable ships, then deciding whether to keep working on that branch or shift to another part of the map. Itamar Gilad's GIST framework takes a similar stance on ideas: on the [GIST board](https://itamargilad.com/the-gist-board/), ICE scores are updated based on experiment results and failed ideas are removed along with their steps.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Inventory All Assumptions on Your Impact Map
+### Step 1: Pick the branches to test
 
-Start by walking through your completed impact map and explicitly listing every assumption embedded in it. For each connection between nodes, write down the belief it represents.
+Start with the branches the team has prioritized for this milestone. Among them, test first the assumptions that are both important to the goal and least certain. A cheap deliverable with a confident link to the goal may not need a separate test, since shipping it is the test. An expensive deliverable resting on an uncertain assumption should be tested before it is built.
 
-For example, if your map shows 'Enterprise IT Admins → Reduce manual provisioning time by 50%' → 'Self-service user directory sync,' you have at least three assumptions: (1) Enterprise IT Admins are the right actor to focus on, (2) reducing manual provisioning time is a behavior change they care about and that drives your goal, and (3) a self-service directory sync feature will actually reduce that time.
+### Step 2: Write both assumptions for each branch
 
-Create a simple table or spreadsheet with columns for: assumption statement, map branch it belongs to, confidence level (high/medium/low), and potential impact if wrong (high/medium/low). This inventory becomes your experiment backlog.
+For each branch, write the deliverable assumption as "if we deliver X, actor A will change behavior B", and the impact assumption as "if actor A changes behavior B within the target range, the goal metric will move". Use the two levels described on the [impactmapping.org overview](https://www.impactmapping.org/about.html). Note what the team currently believes about each and why. Writing them down often reveals that one of the two has never been discussed.
 
-> **Pro tip:** Color-code or tag assumptions directly on the visual impact map so the whole team can see where the riskiest bets are at a glance.
+### Step 3: Define the evidence and the threshold
 
-### Step 2: Step 2: Prioritize Assumptions by Risk
+For each assumption, name the signal that would show it holding, how it will be measured and over what period. Take the threshold from the impact's target range: the minimum change that would matter. Write down what result would count as refuting the assumption, too. If the signal cannot be measured yet, building the measurement is the first task.
 
-Not every assumption needs testing — some are well-established, others are too trivial to matter. Focus your experimentation budget on assumptions that are both uncertain and consequential.
+### Step 4: Choose the cheapest credible test
 
-Use a simple 2×2 matrix: one axis is 'confidence level' (how sure are you this is true?) and the other is 'blast radius' (how much planned work depends on this being true?). Assumptions in the low-confidence, high-blast-radius quadrant are your top priority.
+Pick the smallest test that could produce the evidence. Options include a manual or half-manual version of the deliverable, a prototype tested with a few actors, a staged release to a subgroup, or an A/B test where traffic allows, as Adzic's [learning budget](https://gojko.net/2014/02/24/budget-instead-of-estimating/) and the [InfoQ contexts](https://www.infoq.com/articles/most-impact-mapping/) suggest. For the impact assumption, look for existing data first: actors who already behave the desired way may show whether the goal metric moves with the behavior.
 
-Stack-rank the top 3-5 assumptions. These are your first experiment candidates. Resist the urge to test everything simultaneously — you'll dilute your learning and slow down the cycle.
+### Step 5: Agree the decision rules
 
-> **Pro tip:** If an assumption near the top of the map (closer to the goal) is risky, test it first. A failed goal-level or actor-level assumption invalidates entire branches below it.
+Before running the test, agree what the team will do for each result. If the behavior changes and the goal moves, continue and scale the branch. If the behavior changes but the goal does not move, question the impact. If the behavior does not change, try the next deliverable under the impact or revisit it. Record the rules with the stakeholders who will act on them.
 
-### Step 3: Step 3: Convert Each Assumption into a Falsifiable Hypothesis
+### Step 6: Run the test and record the result
 
-Transform your assumption into a structured hypothesis statement. A good format is: 'We believe that [actor] will [behavior change / impact] if we [deliverable or intervention]. We will know this is true when [measurable signal] within [timeframe].'
+Run the test for the agreed period without changing the threshold midway. Record the result, the data behind it and anything unexpected, such as a different actor responding. Share it with the people who hold the assumption, including stakeholders who proposed the branch. Keep results even when they are disappointing, since they are the map's learning record.
 
-For example: 'We believe that enterprise IT admins will reduce manual provisioning time by 50% if we provide a self-service directory sync. We will know this is true when 60% of beta users complete their first sync within 10 minutes, within 2 weeks of launch.'
+### Step 7: Update the map and the plan
 
-Being specific about the measurable signal and timeframe is non-negotiable. Without these, you can't objectively determine whether the experiment passed or failed, and the whole exercise becomes subjective.
-
-> **Pro tip:** Write hypotheses collaboratively with your team. Engineers and designers often spot unstated sub-assumptions that product managers miss.
-
-### Step 4: Step 4: Design the Lightest Possible Experiment
-
-Choose the cheapest, fastest method that can credibly test the hypothesis. The experiment type should match the assumption type:
-
-- **Actor assumptions** (Are these the right people?): Customer interviews, survey screening, analytics on current user segments.
-- **Impact assumptions** (Will this behavior change actually happen?): Concierge tests, Wizard-of-Oz prototypes, landing page smoke tests, fake-door tests.
-- **Deliverable assumptions** (Will this specific thing cause the impact?): Clickable prototypes, A/B tests, feature flags with partial rollouts, painted-door experiments.
-
-The cardinal rule is to avoid building the full feature as your experiment. If you need to build the whole thing to learn, you've chosen the wrong experiment. A 3-day prototype test that gives you 70% confidence is almost always better than a 3-month build that gives you 100% confidence.
-
-> **Pro tip:** Keep a library of experiment templates your team has used before. Over time this dramatically reduces the design time for new experiments.
-
-### Step 5: Step 5: Define Pass/Fail Criteria Before Running the Experiment
-
-Before you launch the experiment, the team must agree on what 'success' and 'failure' look like in concrete numbers. Write these down and make them visible.
-
-For example: 'PASS: ≥60% of participants complete the task within 10 minutes. FAIL: less than 40% complete within 10 minutes. INCONCLUSIVE: 40-59% — we redesign the experiment with a larger sample or different approach.'
-
-Defining these thresholds upfront prevents post-hoc rationalization, where teams unconsciously move the goalposts to justify the deliverable they already want to build. This is one of the most common failure modes in assumption validation, and pre-committed criteria are the antidote.
-
-> **Pro tip:** Include a 'what we'll do if it fails' statement. This forces the team to genuinely commit to acting on negative results rather than ignoring them.
-
-### Step 6: Step 6: Run the Experiment Within a Fixed Timebox
-
-Execute the experiment with a clear start date, end date, and owner. Timeboxing is critical — experiments that drag on indefinitely consume resources without generating decisions.
-
-For most impact map assumptions, a 1-2 week timebox is appropriate. If your experiment requires more than 2 weeks, consider whether you can break it into a smaller, faster test.
-
-During the experiment, resist the urge to peek at results and make premature conclusions. Commit to the full sample size or time period you planned. Early peeking introduces statistical and cognitive biases that undermine the whole exercise.
-
-> **Pro tip:** Assign a single 'experiment owner' who is responsible for execution, data collection, and reporting results — even if the whole team participates.
-
-### Step 7: Step 7: Analyze Results and Update the Impact Map
-
-Once the experiment concludes, compare results against your pre-defined criteria. Then take one of three actions on the impact map:
-
-- **Reinforce**: The hypothesis passed. Increase confidence in this branch. You may still want to run a larger-scale validation before full commitment, but this branch earns priority.
-- **Pivot**: The results were mixed or surprising. Modify the assumption — perhaps the right impact exists but for a different actor, or the deliverable needs a different form. Redraw the relevant branch and design a follow-up experiment.
-- **Prune**: The hypothesis clearly failed. Remove or de-prioritize this branch. Redirect effort to higher-confidence branches.
-
-Share results with the full team in a brief experiment review. Document what you learned, not just whether it passed. The qualitative insights often inform adjacent branches of the map.
-
-Return to Step 2 and pick the next highest-risk assumption. This cycle continues throughout your product development process, not just at the planning stage.
-
-> **Pro tip:** Keep an 'experiment log' that records every test, its results, and the map changes it triggered. This becomes invaluable institutional knowledge.
+Apply the decision rule. Mark validated branches, prune or annotate refuted ones, and add new actors or impacts the test revealed. If an impact reached its target, stop adding deliverables under it, since Adzic notes that when early work achieves more than planned, other stories aimed at the same change can be thrown out ([gojko.net](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/)). Update the roadmap to match, and pick the next assumption to test.
 
 ## Best Practices
 
-- Always test the assumption with the highest blast radius first — an invalidated actor-level assumption can save you from running dozens of unnecessary impact and deliverable experiments.
-- Timebox every experiment to 1-2 weeks maximum. If you can't learn something meaningful in that window, simplify the experiment, not extend the timeline.
-- Write hypothesis statements and pass/fail criteria collaboratively with engineers and designers, not in isolation. Different perspectives catch hidden assumptions.
-- Maintain a visible 'confidence dashboard' on your impact map, using color codes (red/yellow/green) to show which branches have been validated, which are in testing, and which remain untested guesses.
-- Prefer qualitative experiments (interviews, usability tests) early in the cycle when you're testing actor and impact assumptions, and shift to quantitative experiments (A/B tests, analytics) when validating specific deliverables.
-- Treat pruned branches as valuable learning, not failure. A pruned branch that took 5 days to invalidate saved months of misdirected engineering effort.
+- Test the riskiest important assumption first. A branch that is central to the goal and highly uncertain is where learning is worth most.
+- Keep the two assumptions separate. Knowing whether a branch failed at the deliverable link or the impact link tells the team which part of the map to change.
+- Set thresholds before running the test. Thresholds chosen afterward tend to fit whatever the data shows.
+- Prefer tests that observe real behavior. What actors do after a change is stronger evidence than what they say they would do, although interviews help explain the result.
+- Use non-software tests where you can. Half-manual processes and prototypes, which Adzic lists among options for a [learning budget](https://gojko.net/2014/02/24/budget-instead-of-estimating/), can test a behavior change before anything is built.
+- Record refuted assumptions on the map. A pruned branch with a note stops the same idea from returning without new evidence.
 
 ## Common Mistakes
 
-- **Testing deliverable assumptions before validating actor and impact assumptions** — Work top-down on the map. If you haven't confirmed the actor is real and the desired impact matters, testing whether a specific feature works is premature. Validate from goal → actor → impact → deliverable in that order.
-- **Defining pass/fail criteria after seeing the experiment results** — Always commit to success thresholds in writing before launching the experiment. Post-hoc criteria are subject to confirmation bias and will almost always rationalize the outcome the team already wanted.
-- **Running experiments that are too expensive or slow, essentially building the full feature as the 'test'** — If your experiment takes more than 2 weeks or requires significant engineering investment, you're not experimenting — you're building. Step back and ask: what's the cheapest artifact (a mockup, a landing page, a manual concierge service) that could disprove this assumption?
-- **Treating the impact map as fixed after initial creation and only experimenting at the deliverable level** — The entire map is fair game for iteration. Experiments may reveal that you've identified the wrong actors, the wrong impacts, or even that your goal metric needs adjustment. Be willing to redraw any part of the map based on evidence.
-- **Not actually pruning branches when experiments fail** — Sunk-cost bias is real. If the experiment clearly failed according to your pre-set criteria, prune the branch. Document the learning and move on. Teams that ignore negative results waste the time they invested in experimenting.
+- **Counting shipped deliverables as success**: A feature that works but does not change behavior has not achieved its impact. Judge each branch by the behavior change and its effect on the goal.
+- **Testing only the deliverable assumption**: Teams often check that actors used a feature but never check whether that behavior moved the goal. Measure both links.
+- **Running tests without decision rules**: Results without agreed consequences get argued away. Agree what each outcome will trigger before the test starts.
+- **Building the full solution to test the idea**: Expensive tests delay learning and make refuted assumptions harder to accept. Start with the cheapest test that could change the team's mind.
+- **Leaving the map unchanged after a result**: If results are not written back to the map, the map stops reflecting what the team knows. Update it at every review.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/impact-mapping/METHOD.md) — Impact Mapping
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/impact-mapping/METHOD.md): Impact Mapping
 
 ## Related Skills
 
-- [Integrating Impact Maps with Product Roadmaps](../integrating-impact-maps-with-roadmaps/SKILL.md)
-- [Defining Measurable Business Goals for Impact Maps](../defining-measurable-business-goals/SKILL.md)
-- [Identifying Actors and Stakeholders in Impact Mapping](../identifying-actors-and-stakeholders/SKILL.md)
-- [Facilitating Collaborative Impact Mapping Workshops](../facilitating-impact-mapping-workshops/SKILL.md)
-- [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
 - [Mapping Desired Behavior Impacts on Actors](../mapping-desired-behavior-impacts/SKILL.md)
+- [Generating and Prioritizing Deliverables from Impacts](../generating-deliverables-from-impacts/SKILL.md)
+- [Integrating Impact Maps with Product Roadmaps](../integrating-impact-maps-with-roadmaps/SKILL.md)
+
+## Sources
+
+- [Impact Mapping: Why use impact mapping?](https://www.impactmapping.org/about.html)
+- [Impact Mapping: Foreword by Tom Poppendieck](https://www.impactmapping.org/book_foreword.html)
+- [Votito: Opportunity Solution Tree, by Gojko Adzic](https://www.votito.com/methods/opportunity-solution-tree/)
+- [Opensource.com: Using impact mapping to help your team experiment](https://opensource.com/open-organization/17/6/experiment-impact-mapping)
+- [Gojko Adzic: User stories should be about behaviour changes](https://gojko.net/2014/02/12/user-stories-should-be-about-behaviour-changes/)
+- [Gojko Adzic: Budget instead of estimating](https://gojko.net/2014/02/24/budget-instead-of-estimating/)
+- [InfoQ: Getting the most out of impact mapping](https://www.infoq.com/articles/most-impact-mapping/)
+- [Itamar Gilad: The GIST Board](https://itamargilad.com/the-gist-board/)

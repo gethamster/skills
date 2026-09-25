@@ -1,53 +1,37 @@
-# Examples: Tracking Brand Consideration Shifts Across Stages
+# Examples: Brand Consideration Tracking Across Journey Stages
 
-## Example: Mid-size auto manufacturer tracking sedan consideration
-
-**Scenario:**
-
-A mid-size auto brand wants to understand why it has strong unaided awareness (top 3 in its segment) but lower-than-expected market share. The marketing team suspects the brand is being considered early but dropped before purchase. They have budget for a 500-person longitudinal panel tracked over 4 months during the typical car-buying journey.
-
-**Walkthrough:**
-
-The team defines stage boundaries: latent ends when the customer visits a dealership website or car comparison site, evaluation ends when the customer requests a test drive or price quote. They deploy the three-question survey (unaided recall, aided recall of 12 brands, top-3 ranking) at enrollment (latent), after first comparison site visit (evaluation), and after test drive request (buying). At latent, 68% of the panel includes their brand in aided consideration. At evaluation, that drops to 41%.
-
-At buying, it holds at 38%. The transition matrix reveals: latent-to-evaluation retention is 60%, well below the segment leader's 78%. Displacement analysis shows that 45% of customers who dropped their brand at evaluation added a specific Japanese competitor. The alluvial diagram makes the problem vivid: a thick flow of blue (their brand) thins dramatically between column one and column two, with most of that flow redirecting to the Japanese competitor's band.
-
-The team identifies that the Japanese competitor dominates comparison site reviews and has a significantly richer online configurator. The action plan prioritizes investment in comparison site content partnerships and an improved digital configuration tool, targeting the evaluation-stage touchpoints where displacement is concentrated.
-
-## Example: B2B SaaS company tracking enterprise CRM consideration
+## A well-known carmaker that loses at the dealership
 
 **Scenario:**
 
-A B2B CRM vendor selling to enterprises with 500+ employees notices that it wins only 15% of deals where it makes the initial shortlist but wins 40% of deals where it reaches the final evaluation round. The sales team suspects buyers are dropping the brand during mid-funnel evaluation. The total addressable market is small (roughly 200 active buying cycles per quarter), so sample sizes are constrained.
+Illustrative scenario: a carmaker with strong awareness suspects it is losing buyers late but cannot say where. It surveys buyers who bought any brand in the last few months, asking about each stage, and adds a small sample of people currently shopping.
 
 **Walkthrough:**
 
-The team adapts the skill for B2B by defining stages around the buying committee's process: latent equals internal needs assessment, evaluation equals RFP issuance and vendor demos, buying equals final vendor selection and contract negotiation. They use a combination of sales call transcripts (coded for brand mentions) and a 60-person cross-sectional survey of IT decision-makers at each stage. At latent, their brand appears in 72% of aided consideration sets. At evaluation (RFP stage), that drops to 48%.
+The shift table shows the brand in most latent sets and most evaluation sets. The drop comes between evaluation and buying, where many buyers remove it. The top reasons given are the trade-in offer and the dealer experience, and the current-shopper sample confirms the same pattern.
 
-At buying, it recovers slightly to 52%, indicating some late-stage re-entry. The displacement analysis reveals that customers drop them at evaluation primarily in favor of the market leader, but 18% of their buying-stage consideration comes from late entries (companies that did not consider them during evaluation but added them after a peer referral or analyst report). The team documents a vulnerability index of 65%, meaning 65% of their evaluation-stage considerers also consider the market leader. The action plan focuses on two initiatives: creating more evaluation-stage content (detailed ROI calculators, implementation case studies) to retain consideration during RFP review, and investing in analyst relations to strengthen the late-entry pathway that is already working.
+A competitor shows the opposite shape: it is rarely in latent sets but is added often during evaluation, with owner reviews as the main reason. The team writes two statements, one about late losses at the dealer and one about a rival winning on reviews, and hands them to the retail and content teams.
 
-## Example: Consumer electronics brand tracking wireless headphone consideration
+## A challenger bank checking whether it is ever considered
 
 **Scenario:**
 
-A premium headphone brand launches a new product line and wants to track how consideration evolves over the 2-3 week purchase journey typical in the $200-400 wireless headphone segment. They have access to an online research panel of 1,200 consumers who self-identified as planning to buy wireless headphones in the next 30 days.
+Illustrative scenario: a digital bank offering mortgages wants to know whether it loses buyers in evaluation or is simply never in the set. It runs a recall survey of recent mortgage buyers and a short survey of people who have just started looking.
 
 **Walkthrough:**
 
-The team defines stage boundaries using behavioral triggers captured via the panel provider: latent equals enrolled but no comparison activity, evaluation equals visited two or more product pages or review sites, buying equals added a product to cart or visited a retailer page. They survey the panel at enrollment and then re-survey each respondent 48 hours after they hit the evaluation and buying triggers. At latent, their brand has 55% aided consideration, trailing the market leader at 78%. At evaluation, their brand grows to 61% (gaining from late discovery via YouTube reviews), while the market leader holds at 76%.
+The latent questions, asked around triggers such as moving home and a fixed rate ending, show the bank almost never comes to mind. Among buyers who did add it during evaluation, few drop it later, and the reasons for keeping it are speed and clarity of the application.
 
-At buying, their brand drops to 44%, while a value-oriented competitor surges from 35% to 58%. The transition matrix shows an evaluation-to-buying retention of only 72%, compared to 89% for the value competitor. Displacement analysis reveals that price transparency is the mechanism: customers who see both brands' prices side by side in retailer listings drop the premium brand. The alluvial diagram shows a clear red flow from their brand's evaluation band to the value competitor's buying band.
+The team concludes that the problem is latent consideration. The product and the buying experience hold up once buyers find the bank. It shifts effort toward being associated with the moving-home trigger and keeps the application process as it is.
 
-The team recommends bundling accessories to improve perceived value at the buying stage, and they create a retail partner brief showing how to display total value of ownership rather than sticker price alone.
-
-## Example: Financial services firm tracking retirement account consideration
+## Comparing waves after a campaign
 
 **Scenario:**
 
-A regional bank wants to grow its share of new retirement account openings. The purchase journey for retirement products is 3-6 months long, heavily influenced by financial advisors and online research. The bank has a modest research budget and can survey 300 customers cross-sectionally, roughly 100 per stage.
+Illustrative scenario: an electronics brand ran a campaign aimed at buyers comparing premium headphones. It repeats its consideration study with the same questions and brand list as the previous wave.
 
 **Walkthrough:**
 
-The team defines stages: latent equals the customer has thought about retirement planning but not taken action, evaluation equals the customer has compared at least two providers' offerings, buying equals the customer has started an application or scheduled a consultation. "). At latent, the regional bank appears in only 28% of aided consideration, while three national brands each appear in 60-70%. At evaluation, the regional bank drops to 19%, losing primarily to national brands with richer online comparison tools.
+Additions to the brand's consideration during evaluation have risen compared with the previous wave, and the reason most often given is a comparison review. Losses between evaluation and buying are unchanged, with price still the leading reason.
 
-At buying, however, the bank recovers to 31%, gaining from customers who value in-person advisory relationships. The late discovery rate is 63%, meaning most of the bank's buying-stage consideration comes from customers who did not consider them during evaluation. The team recognizes that the bank's strength is the buying-stage relationship, not the evaluation-stage digital experience. The action plan focuses on making the advisory consultation available earlier in the journey (moving the strength upstream) by offering free retirement planning sessions to evaluation-stage prospects identified through content marketing.
+The team reports the campaign as effective for the evaluation stage and not for the buying stage, and opens a separate piece of work on pricing and retailer offers. Because the questions did not change between waves, the team can treat the difference as real.

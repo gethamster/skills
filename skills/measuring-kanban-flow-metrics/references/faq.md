@@ -1,41 +1,25 @@
-# FAQ: Measuring Kanban Flow Metrics
+# FAQ: Kanban Flow Metrics
 
-## How do I measure flow metrics if my kanban tool does not track per-column timestamps?
+## What is the difference between lead time and cycle time?
 
-Use a parallel spreadsheet with one row per work item and one column per board stage. When you move a card, log the date in the corresponding cell. This takes less than 30 seconds per transition. After two weeks, you will have enough data to compute cycle time and build a basic CFD.
+It depends on the source. The Kanban Guide uses cycle time for the time from started to finished. Kanban University's guide uses lead time for the time from the commitment point to completion and customer lead time for the time from request to delivery. Choose definitions, write them on the board and use them consistently.
 
-If the manual overhead becomes unsustainable, it is a strong argument for switching to a tool that tracks timestamps natively. In the meantime, even imperfect manual data is far better than no data at all.
+## My tool does not record column timestamps. What can I do?
 
-## Should I measure flow metrics before or after setting WIP limits?
+Record at least the start and finish date on each card, by hand if necessary. That is enough for cycle time, throughput and work item age. For a cumulative flow diagram, count the cards in each column at the same time each day and keep the counts in a spreadsheet.
 
-Ideally, you do both in parallel. Start collecting data immediately, even if your WIP limits are not yet formal. Your first two to four weeks of metrics will show you where work accumulates, which directly informs where to set or adjust WIP limits. See the [WIP limits skill](https://tryhamster.com/skills/setting-wip-limits) for how to use flow data to choose initial limits.
+## How should blocked time be handled?
 
-Waiting until WIP limits are perfect before measuring means you have no data to evaluate whether those limits are working.
+Keep it inside cycle time, because the customer waits either way. Mark blocked items visibly and record how long they were blocked so you can see how much delay comes from blockers. Removing blocked time from the metric makes the system look faster than it is.
 
-## How long should it take to see results after a process change?
+## Why does throughput swing so much from week to week?
 
-Allow 3-6 weeks of data after a process change before drawing conclusions. Shorter windows are too noisy because weekly throughput and cycle time vary naturally. Longer windows risk confounding results with other changes. If you change a WIP limit on Monday, do not check the metrics on Friday expecting a transformation.
+Items differ in size, arrivals vary, and holidays and incidents affect capacity. Look at throughput as a range over several weeks. If the swings are extreme, check whether large items are mixed with small ones or whether work is released in batches.
 
-Instead, mark the date of the change on your charts and compare the 4-week window before with the 4-week window after. Look for shifts in percentile lines and CFD band widths, not individual data points.
+## Can flow metrics forecast when a specific feature will be done?
 
-## How do I handle items that get blocked by external dependencies in my cycle time calculation?
+For one item, the SLE gives a probability-based answer from your cycle time history. For a batch of items, throughput history can be used to forecast how many items will finish in a period. Forecasts are only as good as the stability of the system, so revisit them as new data arrives.
 
-Tag blocked items and track them in two ways. First, include them in your overall cycle time calculation because they reflect the reality of your delivery system, dependencies and all. Second, calculate a separate 'active cycle time' that excludes blocked days so you can see how long items take when they are actually being worked on. The gap between the two numbers quantifies the cost of external dependencies.
+## How many weeks of data do we need?
 
-Bring this gap to your service delivery review as evidence when advocating for dependency reduction or better cross-team coordination.
-
-## Why does my throughput keep fluctuating even though WIP is stable?
-
-Stable WIP with fluctuating throughput usually means item sizes are inconsistent. One week you complete eight small items, the next week you complete two large ones. The WIP count looks the same, but the work content is very different. The fix is not to estimate sizes but to decompose work more consistently.
-
-Aim for items that most team members can complete in 1-5 days. Another cause is hidden batch-and-queue patterns where items complete in clusters rather than flowing individually through the system. Check your CFD for staircase patterns in the Done band, which confirm batching.
-
-## Can I use flow metrics for forecasting delivery dates on specific features?
-
-Yes, and this is one of the most valuable applications. For a single item, use your cycle time percentiles: 'Based on our data, there is an 85% chance this will be done within X days of starting.' For a set of items, use Monte Carlo simulation: input your historical throughput data, specify how many items need to be delivered, and the simulation will produce a probability distribution of completion dates. Many kanban tools include Monte Carlo forecasting. If yours does not, a simple spreadsheet simulation using random samples from your last 12-16 weeks of throughput data works well.
-
-## How do flow metrics relate to the cadences in kanban methodology?
-
-Each [kanban cadence](https://tryhamster.com/skills/running-kanban-cadences) has a natural metrics pairing. The daily standup uses aging WIP to identify items that need attention today. The replenishment meeting uses throughput data to decide how many items to pull into the commitment point. The delivery planning meeting uses lead time percentiles to set expectations with stakeholders.
-
-The service delivery review uses the CFD and trend data to evaluate systemic performance. The operations review uses cross-service metrics to optimize the broader value stream. Without metrics, cadences become status meetings. With metrics, they become decision-making sessions.
+There is no fixed amount. A few weeks of finished items gives a rough picture, and the SLE becomes more reliable as history grows. The Kanban Guide says a best guess will do until there is enough history for a proper SLE calculation.

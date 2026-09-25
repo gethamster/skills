@@ -1,29 +1,37 @@
-# Examples: Conducting a 7 P's Marketing Audit
+# Examples: 7 Ps Marketing Mix Analysis
 
-## Example: SaaS Company Discovers Pricing-Process Misalignment
-
-**Scenario:**
-
-A B2B SaaS company selling project management software noticed declining conversion rates despite strong inbound traffic and positive product reviews. They decided to conduct a full 7 Ps marketing mix analysis to diagnose the problem.
-
-**Walkthrough:**
-
-During the individual P audits, Product scored well (4/5 on all three lenses) and Promotion scored adequately (3/5). But the cross-P analysis revealed a critical conflict: their Pricing strategy had shifted to annual-only contracts to improve cash flow, while their Process still offered a 14-day free trial. Customers were experiencing friction at the trial-to-paid transition — they liked the product but balked at committing to a full year without monthly options.
-
-Frontline sales reps confirmed this: 'We lose 40% of trial conversions at the pricing conversation.' Customer reviews echoed the sentiment: 'Great tool but the pricing commitment is too steep for teams just getting started.'
-
-The gap-impact score was high on both dimensions (severity: 4, impact: 5). The action plan introduced a monthly pricing tier at a 20% premium over annual rates, giving price-sensitive customers an entry point while preserving the incentive to commit annually. Within one quarter, trial-to-paid conversion increased by 28%. This finding would have been invisible without the cross-P analysis — both Pricing and Process looked acceptable in isolation.
-
-## Example: Boutique Consulting Firm's Physical Evidence Gap
+## A bookkeeping firm finds its price and process disagree
 
 **Scenario:**
 
-A boutique management consulting firm with strong client relationships and premium pricing ($500/hour) was struggling to win new clients from competitive pitches. They suspected their proposals weren't compelling enough but couldn't pinpoint why.
+Illustrative scenario: a small bookkeeping firm raised its monthly fee last year and repositioned as a premium service for growing companies. New sign-ups have slowed and some long-standing clients have left.
 
 **Walkthrough:**
 
-The 7 Ps marketing mix analysis revealed that Product (expertise), People (senior consultants), and Price (premium but justified) all scored well. However, Physical Evidence scored 2/5 on customer perception. Their website hadn't been updated in three years, proposal documents used inconsistent templates, and they had no case studies or published thought leadership.
+The team writes the current decision for each P. Price and Promotion are clearly premium: the website talks about a dedicated advisor. The evidence tells a different story for People and Process. Clients describe being passed between junior staff, and month-end reports arrive late about as often as they arrive on time.
 
-The cross-P analysis showed a severe Price-Physical Evidence misalignment: they were charging top-tier rates but presenting themselves with bottom-tier collateral. Prospective clients perceived a value gap — the tangible signals didn't match the premium positioning.
+The contradiction list has one clear entry: a premium price and promise against a variable, impersonal delivery. The team decides against cutting the price. Instead it assigns each client a named advisor and sets a fixed report date with a check before it goes out. The next audit will look at on-time reports and client feedback on the advisor relationship.
 
-The prioritized action plan focused on three Physical Evidence improvements: redesign the website with client outcome data (8 weeks), create a standardized proposal template with ROI visualizations (2 weeks), and publish three detailed case studies (6 weeks). Within two quarters, their pitch win rate improved from 22% to 38%. The consulting expertise hadn't changed — only the proof points that signaled its value.
+## A software company audits its onboarding service
+
+**Scenario:**
+
+Illustrative scenario: a company sells scheduling software to clinics, with paid onboarding. Trial conversion is steady, but support tickets in the first month are rising.
+
+**Walkthrough:**
+
+The team scores the first four Ps as strong. The service Ps score lower. The onboarding process has no written standard, so each specialist runs it differently, and the welcome materials still show an old interface. The short service survey shows customers rate reliability and tangibles well below what they expected.
+
+The group writes two actions: a standard onboarding checklist owned by the service lead, and an update of every customer-facing document owned by marketing. Both actions name the evidence that should move, the first-month ticket count and the tangibles score, and the next audit opens by checking them.
+
+## A regional gym chain compares two locations
+
+**Scenario:**
+
+Illustrative scenario: a gym chain runs the same membership price and advertising across two locations. One location retains members well and the other does not.
+
+**Walkthrough:**
+
+Running one audit per location shows that Product, Price and Promotion are identical, so the difference must sit elsewhere. The walkthrough finds the weaker location has broken equipment signs left up for weeks, and front desk staff there have not been trained on the new booking system, which causes queues at peak times.
+
+The team scores Physical Evidence, People and Process as weak for that location only. Actions go to the location manager with a date, and the chain adds a monthly walkthrough to its regular checks. Auditing by location kept the problem from being averaged away.
