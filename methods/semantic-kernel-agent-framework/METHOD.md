@@ -126,7 +126,7 @@ This method includes the following skills:
 - [Orchestrating Multi-Agent Conversations and Collaboration](../../skills/orchestrating-multi-agent-conversations/SKILL.md): How to set up AgentGroupChat and agent channel patterns so multiple AI agents collaborate, delegate tasks, and resolve complex workflows together.
 - [Integrating Plugins and Tools into Semantic Kernel Agents](../../skills/integrating-plugins-and-tools-into-agents/SKILL.md): How to register native functions, OpenAPI plugins, and external tools so agents can autonomously call APIs, databases, and services during execution.
 - [Adding Memory and Context Management to AI Agents](../../skills/adding-memory-and-context-to-agents/SKILL.md): How to wire vector stores, chat history, and semantic memory into agents so they retain context across turns and retrieve relevant knowledge autonomously.
-- [Implementing Agent Planning Strategies for Complex Tasks](../../skills/implementing-agent-planning-strategies/SKILL.md): How to configure and customize planning strategies—such as stepwise and function-calling planners—that enable agents to decompose goals into actionable steps.
+- [Implementing Agent Planning Strategies for Complex Tasks](../../skills/implementing-agent-planning-strategies/SKILL.md): How to configure and customize planning strategies (such as stepwise and function-calling planners) that enable agents to decompose goals into actionable steps.
 
 ## FAQ
 
