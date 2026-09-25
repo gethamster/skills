@@ -1,126 +1,163 @@
 ---
-category: Product
+name: "north-star-framework"
+category: "Product"
+description: "The North Star Framework is a product management model: one metric, the inputs that produce it, and the work that moves them, agreed in a workshop."
+metadata:
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# North Star Framework: How Every Product Manager Aligns Teams Around One Metric
+# North Star Framework: The Metric, the Inputs, and the Work
 
-> Created by **Sean Ellis** — [https://www.seanellis.me/](https://www.seanellis.me/)
+> Created by **Amplitude (John Cutler and Jason Scherschligt)** - [https://amplitude.com/north-star-hub](https://amplitude.com/north-star-hub)
 
 ## Overview
 
-The North Star Framework was developed by Sean Ellis, the growth marketer who coined the term "growth hacking" and led early growth at Dropbox and LogMeIn. Ellis observed that the highest-performing product teams shared a common trait: they rallied around a single metric that captured the moment customers received genuine value. He formalized this observation into the North Star Framework, first popularizing it through GrowthHackers.com and later co-authoring the definitive guide with the Amplitude product analytics team. The framework emerged from a practical frustration—teams were drowning in dashboards full of metrics that pulled people in conflicting directions, and leadership needed a shared language for what "winning" actually meant.
+The North Star Framework is a product management framework built around one number. Amplitude's [North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) defines it as "a product management model based on a single metric," the North Star Metric, that best captures the value customers derive from a product. The framework adds two layers under that metric: a small set of inputs that together produce it, and "the work," the research, design, engineering and testing that teams do every day to move the inputs. A workshop is how most teams build the first version. This page covers the framework as an operating model. The metric on its own, and how to choose and decompose it, has its own page on the [North Star Metric](https://tryhamster.com/methods/north-star-metric).
 
-The problem the North Star Framework solves is deceptively simple but devastatingly common: misalignment. Engineering optimizes for shipping velocity. Marketing optimizes for signups. Sales optimizes for closed deals. Finance optimizes for revenue. Without a unifying metric, each function can hit its targets while the product stagnates or even declines. The North Star Metric acts as a single source of truth—a leading indicator that, when it grows, reliably predicts long-term business success because it measures real customer value delivered. For Airbnb, that metric is nights booked. For Spotify, it's time spent listening. For Slack, it's messages sent within organizations. Each metric captures the atomic unit of value the product delivers.
+The term North Star Metric has its own origin. [Stream's explainer](https://getstream.io/blog/north-star-metric/) credits Sean Ellis, founder of GrowthHackers, with coining it and quotes his definition: "the single metric that best captures the core value that your product delivers to customers." Amplitude's playbook builds a full operating model around the metric. Amplitude published The North Star Playbook in December 2019, and co-author [Jason Scherschligt](https://jason.scherschligt.com/2019/12/10/published-amplitudes-north-star-playbook/) wrote at the time that he had written it with John Cutler and that Amplitude sponsored the project. Amplitude's [North Star hub](https://amplitude.com/north-star-hub) calls Cutler "the original author of the North Star Playbook." The playbook itself refers to "Amplitude's North Star Framework," so the creator line credits Amplitude and both authors.
 
-The framework is more than just picking a metric, though. A product manager using the North Star Framework also identifies 3–5 input metrics—the levers the team can directly influence to move the North Star. These inputs create a causal model of the business. If your North Star is weekly active subscribers, your inputs might be new signups, activation rate, content engagement depth, and churn rate. The product manager's job becomes orchestrating work across these inputs, making trade-off decisions visible, and ensuring every team understands how their work connects to the metric that matters most.
+The playbook sets three qualities for the metric. It represents the value users get from the product, it sits within product and marketing's sphere of influence, and it is a leading indicator of revenue. It then lists three purposes for the framework as a whole: it helps prioritize and speed up informed but decentralized decision-making, it helps teams align and communicate, and it lets teams focus on impact and sustainable, product-led growth. Product and marketing teams may pull on very different inputs, but they check their choices against the same North Star.
 
-The North Star Framework has become a staple in product management because it scales across company sizes—from a five-person startup trying to find product-market fit to a thousand-person enterprise trying to prevent organizational drift. It's especially powerful for any product manager navigating the tension between short-term revenue pressure and long-term product health, because a well-chosen North Star Metric inherently balances customer value with business outcomes.
+The structure is a tree. The playbook describes its diagram as "a scaffold containing assumptions, beliefs, and causal relationships." At the bottom sits the work, above it the inputs, above them the North Star Metric, and at the top the medium- and long-term business results it is expected to lead. The playbook calls inputs independent variables and the North Star an outcome, a dependent variable. In Cutler's words from the playbook, "The goal of the North Star is to be one level out of reach." Teams move inputs, and the North Star shows whether those moves added up.
+
+Cutler is clear that the tree is not a chain of command. In a [2021 post on cascades](https://cutlefish.substack.com/p/tbm-2452-beware-of-the-cascade) he writes that models like the North Star Framework "are not cascades" because there is no hierarchical relationship between the metric and the inputs. The relationship is causal and leading or lagging. Goals such as OKRs can still be set, and in his framing they map the work to the inputs. That difference matters in practice: a cascade hands each level a target from above, while the framework asks each team which input its work can move and why.
+
+The playbook also lists what the framework is not. It is not a roadmap, a software development process, a prioritization framework, a goal-setting system such as OKRs, management by objectives, or a one-time fix. It informs all of those. Its chapters on roadmaps, prioritization and OKRs show how to connect them, for example by framing OKRs as the expected impact of shorter bets on one or more inputs.
+
+Most of the value comes from the conversations the model forces. The playbook's closing chapter says teams leave with "nagging disagreements" and still have meaningful conversations about beliefs, value exchanges, inputs and outputs, and bets. It sums this up in one line: "The quality of your conversations is the real secret to the North Star." A team that fills in the boxes without having those conversations ends up with a metric on a slide and nothing else changed.
 
 ## Core Principles
 
-### One Metric That Captures Customer Value
+### Connect the Three Languages
 
-The North Star Metric must reflect the core value customers derive from your product, not an internal business outcome like revenue. Revenue is a lagging indicator that tells you what already happened; a value-based metric like 'weekly meals delivered' or 'projects completed' tells you whether customers are actually getting what they came for. When this metric grows, revenue follows—but the reverse is not always true, which is why leading with customer value prevents the trap of extracting short-term revenue at the expense of product health.
+The playbook opens with a product manager who found her company speaking three languages: the customer's (needs, goals, experiences), the product's (features, workflows, releases) and the business's (vision, differentiation, revenue, growth). The framework exists to connect them. The North Star Metric expresses customer value in a way the business can read as a leading indicator, and the inputs express it in a way product teams can act on. If a draft North Star makes sense to only one of the three groups, keep working on it.
 
-### Input Metrics Create a Causal Model
+### Keep the Metric One Level Out of Reach
 
-The North Star Metric alone is too high-level for daily decision-making, so the framework requires identifying 3–5 input metrics that act as controllable levers. These inputs should have a demonstrable causal relationship to the North Star—if you improve activation rate, you should be able to predict the impact on your NSM. This causal structure is what transforms the framework from a motivational slogan into an operational system, giving each team a specific input they own and can move.
+The North Star should not be something a team can move directly. The [playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) says never to try to influence it directly and to work on the inputs instead. Cutler describes the metric as a composite of the parts of the company working together, meant to get people asking why it went up or down. A metric one team can push on its own measures that team's output, and the rest of the organization stops caring about it.
 
-### Alignment Over Optimization
+### Treat the Tree as a Set of Beliefs
 
-The primary benefit of the framework is not the metric itself but the alignment it creates across functions. When a product manager can point to a shared North Star and say 'this is what we're collectively trying to grow,' it changes how trade-off conversations happen. Engineering, design, marketing, and data science begin evaluating their work against the same outcome, reducing the political friction that arises when each team optimizes for its own KPIs in isolation.
+Every link in the tree is a bet that one thing causes another. The playbook calls the first pass at a North Star "literally a hypothesis about the levers of growth" and expects teams to go through a cycle of doubt before they converge. It asks teams to write down beliefs about customers, competitors, technology and causation, because unspoken beliefs leave unresolved tensions in the team. Writing them down turns a disagreement about the metric into a disagreement about a specific assumption, which data can settle.
 
-### The Metric Must Be Measurable and Actionable
+### Put Words Before Numbers
 
-A North Star Metric that your team cannot reliably measure or influence is worse than having no framework at all—it breeds cynicism. The metric needs to be something you can track at least weekly (ideally daily), and your team must believe their work can move it. Abstract metrics like 'customer happiness' fail this test because they're hard to measure consistently and even harder to connect to specific product decisions.
+Teams tend to jump straight to formulas. Cutler's [statement exercise](https://cutlefish.substack.com/p/tbm-2853-words-before-numbers-north) starts with a sentence about the path to sustainable growth and treats measurement options as the last step. The playbook's reason is blunt: if someone cannot explain the North Star qualitatively, they will not be able to explain it quantitatively. It also warns against dropping promising ideas just because nobody yet knows how to measure them.
 
-### Leading Indicators Over Lagging Indicators
+### Decide Locally Against a Shared Reference
 
-The North Star Metric should be a leading indicator of business success, not a lagging one. Revenue, profit margin, and NPS scores are lagging—they tell you about decisions made weeks or months ago. A good NSM like 'weekly active teams creating documents' tells you right now whether you're delivering value, giving you time to course-correct before the business impact shows up in financial reports. This forward-looking quality is what makes the framework a strategic tool rather than just a reporting mechanism.
+The framework is meant to let teams make decisions without escalating every trade-off. Each team chooses which input to work on and how, and every team checks those choices against the same North Star. That only works if there is one North Star per product and customer base; the playbook treats the urge for several as a common trap and reserves multiple North Stars for distinct lines of business with different customers. With one reference, a dispute between two teams becomes a comparison of expected impact.
 
-### The Metric Evolves With the Business
+### Make It Part of the Operating Rhythm
 
-A North Star Metric is not permanent. As your product matures, your market shifts, or your strategy pivots, the metric should evolve too. Early-stage products might focus on activation-oriented NSMs while mature products shift to engagement or expansion metrics. The danger is changing the metric too frequently (which destroys alignment) or never changing it (which leads to optimizing for an outdated view of value). Most teams revisit their NSM annually or at major strategic inflection points.
+A workshop output that nobody revisits changes nothing. The playbook lists what teams that stuck with the framework had in place: a sponsor with influence and authority, leadership buy-in, communication and change management, onboarding for new team members, and approval processes. It also lists signals that the framework is working, such as team members explaining how their daily work connects to the North Star and people outside product using words like "inputs."
 
 ## Steps
 
-1. **Step 1: Articulate Your Product's Core Value Proposition**
-   Before choosing any metric, the product manager must clearly articulate what value customers receive from the product. This is not your tagline or marketing positioning—it's the fundamental reason customers keep coming back. Interview 10–15 of your most engaged users and ask them what they would miss most if your product disappeared. Look for patterns in their answers. The most common mistake at this step is confusing what your product does (features) with what value it delivers (outcomes). A project management tool's features include task creation and Gantt charts, but the value it delivers is 'projects completed on time.' Get to the outcome, not the mechanism.
+1. **Name the game and the value exchanges**
+   Start by deciding which game the product plays. The playbook describes three: an attention game, where more time in the product signals satisfaction; a transaction game, where users want the right product and an easy transaction; and a productivity game, where users have a job to do. Then list the key value exchanges, the moments where a customer's time, attention or money is rewarded. The playbook says most products can narrow these to a handful and that some happen outside the product. The output is one sentence naming the game and a short list of value exchanges.
 
-2. **Step 2: Identify Your North Star Metric Candidates**
-   Generate 3–5 candidate metrics that could serve as your North Star by asking: which metric, when it increases, most reliably indicates that more customers are getting more value from our product? Common archetypes include attention metrics (time spent), transaction metrics (actions completed), and productivity metrics (tasks accomplished). Test each candidate against four criteria: Does it measure customer value delivered? Can we measure it reliably? Can our team influence it? Does growth in this metric lead to growth in revenue over time? A strong candidate passes all four. Be wary of vanity metrics like total registered users or page views—they can grow while the product deteriorates.
+2. **Write the North Star statement**
+   Before choosing any metric, complete the playbook's statement worksheet: our path to sustainable growth is a function of our ability to do something, which is a function of a few inputs, which the team can influence through named opportunities and interventions. Cutler says teams have spent entire workshops "just chipping away at this statement." Surface beliefs and review the product vision while you write it. Only when the words hold up do you list measurement options under each box.
 
-3. **Step 3: Select and Validate Your North Star Metric**
-   Narrow your candidates to one metric through a combination of data analysis and stakeholder alignment. Run a historical correlation analysis: does past growth in this metric correlate with subsequent revenue growth, retention improvement, and customer satisfaction? Present the top 2–3 candidates to your leadership team with the data, and drive consensus on one. The validation step is critical—if you skip it, you risk choosing a metric that leadership doesn't believe in, which will undermine the entire framework. Document the rationale for your choice so new team members understand why this metric was selected over alternatives.
+3. **Run the workshop**
+   Bring a small cross-functional group into a focused session. Amplitude's [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) runs it in about two hours: an opening discussion, the game, the checklist of a good North Star, the statement exercise, the structure of metric and inputs, a warm-up on another company's product, then silent drafting and convergence. The output is a few strong candidates for the metric and its inputs, plus the questions still open. The [workshop skill](../../skills/running-north-star-workshops/SKILL.md) covers facilitation in detail.
 
-4. **Step 4: Map the Input Metrics That Drive Your North Star**
-   Decompose your North Star Metric into 3–5 input metrics that represent the controllable levers your team can pull. Think of this as building a simple equation: NSM = f(Input 1, Input 2, Input 3, ...). For example, if your NSM is 'weekly active subscribers watching content,' your inputs might be new subscriber activations, content catalog freshness, recommendation accuracy, and stream completion rate. Each input should be ownable by a specific team or squad. The most common failure here is choosing too many inputs (which dilutes focus) or choosing inputs that are correlated with each other rather than independently contributing to the NSM.
+4. **Define the metric and inputs precisely**
+   Give the metric and every input a name and a definition, using the playbook's template: "Our North Star Metric is called X, which we define as Y." Test the metric against the seven-item checklist and look at how it would have moved in historical data. Test the inputs by asking whether a team can generate ideas to influence each one and whether current roadmap items map to them. Expect several rounds; the guide's closing questions ask what additional information you need before deciding.
 
-5. **Step 5: Assign Input Ownership and Set Targets**
-   Assign each input metric to a specific team or individual who has the authority and capability to move it. The product manager coordinates this assignment, ensuring there are no gaps and no overlaps. For each input, set a current baseline, a 90-day target, and a stretch goal. Be explicit about the expected relationship: 'If we improve activation rate from 32% to 40%, we expect our NSM to increase by approximately X based on our model.' This makes the framework testable—if you improve the input and the NSM doesn't move, either your input mapping is wrong or there's an external factor you haven't accounted for.
+5. **Connect the work through levels of bets**
+   Link every piece of work to an input. The playbook's levels of bets model runs from Level 0, which ties the North Star to company success over years, to Level 3, which covers interventions a team can finish in a sprint. Put the bets on a roadmap that shows at a glance how in-progress and planned work connect to the North Star. Review each bet when it finishes instead of marking it done and moving on.
 
-6. **Step 6: Build Dashboards and Reporting Cadences**
-   Create a shared dashboard that displays the North Star Metric and all input metrics with trend lines, targets, and current values. This dashboard should be visible to the entire company, not just the product team. Establish a weekly review cadence where the product manager walks through each input's progress, highlights anomalies, and surfaces trade-off decisions. The dashboard is not a vanity display—it's the operating system for your prioritization conversations. If a team proposes a new initiative, the first question should be 'which input does this move, and by how much?'
+6. **Make it stick**
+   Name a sponsor, get leadership to use the metric in their own reviews, and add the North Star to onboarding. Amplitude reports its own North Star weekly in product and leadership teams and quarterly at company All Hands, according to the [playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf). Share the work repeatedly in formal and informal forums. Watch for the playbook's signals, such as people saying "no" more easily and with more evidence.
 
-7. **Step 7: Use the Framework for Prioritization and Trade-offs**
-   With your NSM and inputs established, every product decision should be evaluated through this lens. When comparing two feature proposals, estimate their expected impact on the relevant input metrics and, by extension, the North Star. This doesn't mean you only work on things that directly move an input—some work is infrastructure, some is debt reduction, some is compliance. But the framework makes the cost of non-NSM work visible: 'We're choosing to invest in this compliance project, which means we're accepting slower growth in Input 2 this quarter.' Transparency about trade-offs is the framework's greatest practical benefit.
+7. **Review and revise the model**
+   Check the tree on a regular rhythm. Ask whether your confidence in the inputs and the North Star has gone up or down in the last couple of weeks, and why. Revise inputs and definitions as you learn. Revise the North Star itself when the strategy shifts or, as Amplitude's Ted Clark puts it in the playbook, when it stops directionally indicating where revenue is going.
 
-8. **Step 8: Review, Learn, and Iterate**
-   Conduct a quarterly North Star review where the product manager presents: Did the NSM move as expected? Did the inputs move? Where did our causal model break down? Are there new inputs we should add or existing ones we should retire? This review is also the appropriate time to ask whether the North Star Metric itself still captures your product's core value, especially if you've launched new product lines, entered new markets, or observed shifts in customer behavior. Treat the framework as a living system, not a set-it-and-forget-it exercise.
+## The Four Layers of the Framework
+
+The playbook's statement worksheet and its levels of bets model describe the same four layers from two angles: what each layer should look like, and how long a bet at that level takes to show results. Each row cites the [North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf).
+
+| Layer | What it should be | Bet level and horizon |
+|---|---|---|
+| North Star Metric | Customer-centric, stable, mid or long term, not revenue ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) | Level 0, years ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) |
+| Inputs | More addressable, part of the formula, persistent over quarters or years ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) | Level 1, 1 to 3 quarters ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) |
+| Opportunities | A leverage point, solution agnostic but directional ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) | Level 2, 1 to 3 months ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) |
+| Interventions | Work-like, experiment-like, time bound, expected to change ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) | Level 3, 1 to 3 weeks ([playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)) |
+
+The playbook notes that time horizons vary by company, and that the higher-level bets, Levels 0 and 1, are the ones most closely tied to the North Star Metric and its inputs. Reading the table from the bottom up shows how a sprint-sized change is supposed to connect, through an opportunity and an input, to the metric.
 
 ## When to Use
 
-- When your product team has grown past 10 people and different functions are optimizing for conflicting metrics—engineering ships features, marketing drives signups, and no one agrees on whether the product is actually getting better for customers.
-- When your company has achieved initial product-market fit and you need to shift from chaotic experimentation to disciplined, scalable growth. The North Star Framework provides the operational structure to focus experimentation on what matters without killing the growth mindset.
-- When your product manager is struggling to prioritize a backlog of 30+ feature requests because there's no shared language for evaluating impact. The NSM and its input metrics give you a quantitative basis for saying 'this initiative moves our North Star more than that one.'
-- When leadership keeps asking 'are we winning?' and every team gives a different answer based on their own dashboards. A single North Star Metric with transparent input metrics creates one shared answer and one shared reality.
-- When you're preparing for a board meeting or annual planning cycle and need a concise way to communicate product strategy and progress. The North Star and its inputs compress your product narrative into a model that non-product stakeholders can understand and hold you accountable to.
+- Several teams ship into one product and each reports a different measure of success. The framework gives them one outcome to check decisions against and separate inputs to work on.
+- Strategy discussions keep producing agreement that fades within weeks. The workshop and statement exercise put the strategy into words and a structure the team can refer back to.
+- The roadmap is a list of features and nobody can say which outcome each one serves. Linking work to inputs through levels of bets exposes items with no theory of impact.
+- The company is moving toward product-led growth. The playbook says the framework works especially well in companies that use a product-led growth model, which it describes as using the product, rather than marketing or sales, to drive acquisition, retention and monetization.
+- Leadership sees revenue and pipeline but no early signal of whether customers are getting value. A leading metric with inputs underneath gives that signal before it shows up in revenue.
 
 ## When Not to Use
 
-- When you're a pre-product-market-fit startup still searching for what value you actually deliver. Choosing a North Star Metric before you understand your core value proposition will lock you into optimizing for the wrong thing. Focus on discovery and qualitative learning first, and adopt the framework once you have confidence in your value hypothesis.
-- When your product serves fundamentally different user segments with incompatible definitions of value—for example, a marketplace where buyer value and seller value are measured in completely different units. In these cases, a single NSM can obscure important segment-level dynamics. Consider separate North Stars per segment or a composite metric approach.
-- When your organization's leadership is not willing to commit to a single metric and will continue demanding that every team hit their own siloed KPIs regardless. Without executive buy-in, the North Star becomes another metric on the dashboard rather than the unifying force it's designed to be—and the product manager ends up fighting political battles instead of building products.
-- When your product is in sunset or maintenance mode with no active investment in growth. The framework is designed to focus growth efforts; if there's no growth investment, it adds process overhead without corresponding benefit.
-- When your team lacks the analytics infrastructure to reliably measure the North Star and its inputs at least weekly. Adopting the framework without trustworthy data leads to debates about measurement accuracy rather than strategic decisions, and can erode team trust in data-driven approaches entirely.
+- The business is really several businesses with separate customers and separate profit and loss statements. Build one framework per line of business instead of forcing a single tree over all of them.
+- Nobody with authority will sponsor it. The playbook lists a sponsor and leadership buy-in among the things successful teams had, and without them the North Star becomes one more chart on a wall.
+- The team wants a quick fix for a delivery problem. The framework is not a development process or a one-time fix, and it will not repair missed deadlines or unclear requirements.
+- The main goal is a target to tie individual bonuses to. The framework is built on hypotheses that are expected to change, and hard incentives on one number invite people to move the number without moving value.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Identifying Your Product's North Star Metric](../../skills/identifying-your-north-star-metric/SKILL.md) — How to discover and define the single metric that best captures the core value your product delivers to customers.
-- [Mapping Input Metrics That Drive Your North Star](../../skills/mapping-input-metrics-to-north-star/SKILL.md) — How to identify, define, and connect the 3-5 key input metrics that directly influence your North Star Metric.
-- [Building Dashboards to Track Your North Star and Inputs](../../skills/building-north-star-metric-dashboards/SKILL.md) — How to set up real-time dashboards and reporting structures that visualize your North Star Metric and its supporting input metrics.
-- [Running a North Star Framework Workshop with Stakeholders](../../skills/running-north-star-workshops/SKILL.md) — A step-by-step guide to facilitating a collaborative workshop where teams define or refine their North Star Metric and input metrics.
-- [Using the North Star Metric to Prioritize Your Product Roadmap](../../skills/using-north-star-for-roadmap-prioritization/SKILL.md) — How to evaluate and rank roadmap initiatives based on their expected impact on the North Star Metric and its input metrics.
-- [Iterating and Evolving Your North Star Metric Over Time](../../skills/iterating-and-evolving-north-star-metric/SKILL.md) — When and how to revisit, validate, or change your North Star Metric as your product matures and strategy shifts.
-- [Aligning Cross-Functional Teams Around a North Star Metric](../../skills/aligning-teams-around-north-star-metric/SKILL.md) — Techniques for communicating, cascading, and embedding the North Star Metric across product, engineering, marketing, and leadership teams.
+- [Identifying Your North Star Metric: Words Before Numbers](../../skills/identifying-your-north-star-metric/SKILL.md): Surface beliefs and write the North Star statement before choosing the measure.
+- [Mapping Input Metrics From the North Star to the Work](../../skills/mapping-input-metrics-to-north-star/SKILL.md): Name the inputs and trace each one down through opportunities to the work.
+- [Building North Star Metric Dashboards That Trace the Work](../../skills/building-north-star-metric-dashboards/SKILL.md): Lay out results, the metric, inputs, system health and bets on one page.
+- [Running a North Star Framework Workshop](../../skills/running-north-star-workshops/SKILL.md): Invite the right group, run the agenda, converge, and schedule the follow-ups.
+- [Using the North Star Framework for Roadmap Prioritization](../../skills/using-north-star-for-roadmap-prioritization/SKILL.md): Rank bets by input influence and likelihood, and review every finished bet.
+- [Iterating the North Star Metric and Its Inputs](../../skills/iterating-and-evolving-north-star-metric/SKILL.md): Run regular reviews of the model and refine it as confidence changes.
+- [North Star Metric Cross-Functional Alignment That Sticks](../../skills/aligning-teams-around-north-star-metric/SKILL.md): Give the framework a sponsor, onboarding and rituals without turning it into a cascade.
 
 ## FAQ
 
-**What's the difference between a North Star Metric and a KPI for a product manager?**
+**What is the North Star Framework?**
 
-A KPI (Key Performance Indicator) is any metric a team tracks to measure performance—you might have dozens of them. The North Star Metric is a specific type of KPI that serves as the single most important indicator of customer value delivered. All other KPIs should either be input metrics that drive the NSM or supporting metrics that provide context. The distinction matters because without a hierarchy, teams treat all KPIs as equally important, which leads to exactly the misalignment the framework is designed to solve.
+It is a product management model built on one metric that captures the value customers get from a product, plus the inputs that produce that metric and the everyday work that moves the inputs. Amplitude describes it in [The North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf), which also covers the workshop used to create it. The metric must represent customer value, sit within product and marketing's influence, and lead revenue. The framework's purpose is to let teams make decentralized decisions against one shared reference.
 
-**How does a product manager choose between revenue and a usage metric as the North Star?**
+**How is the North Star Framework different from a North Star Metric?**
 
-Almost always choose the usage or value metric over revenue. Revenue is a lagging indicator—it tells you what happened, not what's happening. A product manager who optimizes directly for revenue risks making decisions that extract short-term value (aggressive upsells, dark patterns) at the expense of long-term product health. The North Star Framework's core insight is that a metric capturing customer value delivered is a leading indicator of revenue. When customers get more value, they retain longer, expand more, and refer others. Revenue follows value, but value doesn't always follow revenue.
+The metric is one number. The framework is the whole model around it: the inputs, the link to the work, the workshop, and the practices for keeping it alive. Sean Ellis is credited with coining the term North Star Metric ([Stream](https://getstream.io/blog/north-star-metric/)), and Amplitude's framework builds on it. If you only need to choose and decompose the metric, the [North Star Metric](https://tryhamster.com/methods/north-star-metric) page covers that.
 
-**Is the North Star Framework effective for small teams of 3-5 people?**
+**How do you choose a North Star Metric with the framework?**
 
-Yes, but the implementation is lighter. A small team doesn't need formal input metric ownership assignments or elaborate dashboard tooling—a whiteboard with the NSM and three inputs is sufficient. The real value for small teams is the forcing function of choosing one metric that captures customer value. Even a 3-person startup can waste cycles arguing about whether to optimize signups, engagement, or monetization. A shared North Star resolves that argument and keeps everyone rowing in the same direction during the chaotic early stages.
+Start with words. Name the game the product plays, list the key value exchanges, and write the North Star statement before proposing any measure. Then draft candidates in a workshop and test them against the playbook's seven questions: does it express customer value, represent vision and strategy, lead success, stay actionable, make sense to non-technical partners, stay measurable, and avoid being a vanity metric. Define the winner with a name and a precise definition.
 
-**How often should a product manager change the North Star Metric?**
+**What are some North Star Metric examples from the playbook?**
 
-The general guidance is to review the NSM quarterly and change it no more than once per year unless there's a major strategic pivot. Changing too frequently destroys the alignment and institutional knowledge the framework builds—teams need time to understand the metric, build intuition about what moves it, and see the results of their experiments. However, clinging to a metric that no longer reflects your strategy is equally harmful. Common triggers for a change include a major pivot in business model, entering a fundamentally new market, or reaching a maturity stage where the old metric has plateaued and a new growth vector needs attention.
+In the playbook, Netflix's product team in 2005 used the percentage of customers who placed three or more DVDs in their queue during their first session ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Burger King's digital team used digital transactions per user, with new user activation, registration and frequency as inputs. Amplitude once used Weekly Learning Users, active users who shared a learning that at least two other people consumed in the previous seven days. A delivery app chose "Happy Deliveries," deliveries with no issues, after customer research.
 
-**What are examples of good North Star Metrics for different product types?**
+**How long does a North Star workshop take?**
 
-The best NSMs map to your product's value archetype. For attention-based products (media, social), time-based metrics work well—Spotify uses 'time spent listening,' Facebook used 'daily active users.' For transaction-based products (marketplaces, e-commerce), completed transaction metrics work—Airbnb uses 'nights booked,' eBay uses 'gross merchandise volume.' For productivity products (SaaS tools), output metrics are strongest—Slack uses 'messages sent within organizations,' a project management tool might use 'tasks completed.' The pattern is always the same: find the atomic unit of value your product delivers and measure how much of it is being delivered.
+Amplitude's [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) sets out a typical agenda of about two hours, and the playbook says Amplitude has run many successful workshops in less than two hours. The first session produces strong candidates for the metric and inputs. Most teams hold further sessions to gather other perspectives, pull data and define the metric precisely, and Cutler warns that getting it right can take weeks or months.
 
-**How does a product manager handle it when improving one input metric hurts another?**
+**Does the North Star Framework replace OKRs?**
 
-This tension is expected and is actually one of the framework's strengths—it makes trade-offs visible rather than hiding them. When improving activation rate (by simplifying onboarding) reduces engagement depth (by skipping educational steps), the product manager should quantify the net impact on the North Star. If the NSM goes up despite the engagement dip, the trade-off is worth it. If it goes down, you need a different approach. Document these trade-off decisions explicitly so the team builds institutional knowledge about how the inputs interact, and revisit your input model if you find persistent conflicts.
+No. The playbook says the framework is not a goal-setting system, though it can be a strong foundation for goals. Its tips suggest framing OKRs as the impact that shorter bets will have on one or more inputs, and note that some teams that set goals directly on inputs find they can retire OKRs. Cutler makes the same point in his [post on cascades](https://cutlefish.substack.com/p/tbm-2452-beware-of-the-cascade): time-based goals map the work to the inputs.
+
+**Can a company have more than one North Star?**
+
+It can when it runs distinct lines of business with different customer bases, and the playbook calls those the exception. For a single product or portfolio serving one customer base, it recommends one North Star Metric and its inputs per product. Its example is a bank with dozens of consumer products that customers may see as one trustworthy partner, which would call for one North Star. Challenge the request for several by looking for real boundaries in users, needs and strategy.
+
+## Sources
+
+- [Amplitude: The North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)
+- [Amplitude: How-to Guide, Running Your North Star Workshop](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)
+- [Amplitude: North Star hub](https://amplitude.com/north-star-hub)
+- [Jason Scherschligt: Published, Amplitude's North Star Playbook](https://jason.scherschligt.com/2019/12/10/published-amplitudes-north-star-playbook/)
+- [Stream: What Is Your North Star Metric](https://getstream.io/blog/north-star-metric/)
+- [John Cutler: Beware of the Cascade](https://cutlefish.substack.com/p/tbm-2452-beware-of-the-cascade)
+- [John Cutler: Words Before Numbers](https://cutlefish.substack.com/p/tbm-2853-words-before-numbers-north)
 
 ---
 

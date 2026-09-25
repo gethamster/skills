@@ -1,53 +1,37 @@
-# Examples: Building and Managing an Idea Bank for Product Development
+# Examples: Building a Product Idea Bank for the GIST Ideas Layer
 
-## Example: Early-Stage B2B SaaS Team (6 People)
-
-**Scenario:**
-
-A six-person startup building project management software for architecture firms. They have three active goals: increase trial-to-paid conversion from 8% to 15%, reduce time-to-first-project from 45 minutes to under 15 minutes, and grow monthly active users by 20% over two quarters. The PM is the only person who has done formal product work before. Engineering and design have ideas but no structured outlet.
-
-**Walkthrough:**
-
-The PM sets up the idea bank in a shared Google Sheet with the standard columns. She seeds it with 12 ideas pulled from the last month of customer calls and internal Slack discussions, including 'guided project setup wizard' (linked to time-to-first-project goal, ICE: 8/5/6), 'template library for common architecture project types' (linked to both activation and MAU goals, ICE: 7/6/7), and 'in-app progress bar during trial period' (linked to conversion goal, ICE: 6/4/8). She explicitly credits two ideas to the lead engineer and one to a customer support conversation. She shares the bank in the team Slack with a three-paragraph message explaining the purpose, the norms, and a link to a two-minute Loom video showing how to add an entry.
-
-Within the first week, three team members add four new ideas. The PM thanks each submission publicly. By the first quarterly review six weeks later, the bank has 28 ideas. The team reviews the top 12, re-scores them silently, and selects 'guided project setup wizard' and 'template library' for step-project design.
-
-Seven ideas linked to a now-retired goal are marked Retired. The remaining ideas stay in the bank for the next cycle.
-
-## Example: Mid-Size B2C Mobile App Team (15 People)
+## Turning a feature backlog into an idea bank
 
 **Scenario:**
 
-A 15-person team at a fitness app company with separate iOS, Android, and backend squads. They have five active goals spanning retention, engagement, and revenue. Ideas come from multiple sources: data analytics findings, A/B test learnings, App Store reviews, and competitive benchmarking. The challenge is that ideas get lost across Slack channels, Jira comments, and meeting notes.
+Illustrative scenario: a product team inherits a long backlog of feature requests collected over several years. Many items have no owner or rationale, and the team has just set two goals for the quarter: faster onboarding and better retention of small accounts.
 
 **Walkthrough:**
 
-The PM creates the bank in Notion as a database with filtered views: one view per goal, one view for new submissions needing review, and one sorted by ICE score. She seeds it with 15 ideas, pulling three from analytics insights ('push notification timing optimization,' linked to retention, ICE: 7/7/8), four from App Store review themes ('social workout sharing,' linked to engagement, ICE: 8/4/5), and eight from internal team discussions. She sets up a Slack integration that posts a reminder every Friday: 'Got a product idea this week? ' During the weekly 15-minute intake, she merges two near-duplicate ideas about workout reminders, credits both submitters, and asks a data analyst to clarify the evidence behind a high-Confidence score.
+The product manager copies every backlog item into a new idea bank and rewrites each as a hypothesis. "Bulk import" becomes "If new accounts can import existing data in one step, more of them will reach first value in week one." Each idea is linked to one of the two goals, and items that fit neither are parked with a note.
 
-By the quarterly review, the bank holds 52 ideas. The team uses the goal-filtered views to review only ideas linked to next quarter's priorities, which narrows the review set to 18. They select four for step-project experiments, park six that are interesting but need more customer evidence, and retire nine linked to a deprioritized revenue goal. The PM writes a five-sentence quarterly summary noting that analytics-sourced ideas had the highest average Confidence scores, suggesting the team should invest more in data exploration as an ideation source.
+Triage takes an afternoon. Each idea gets a rough ICE score from a few minutes of thought and a quick data lookup, and the source is recorded. A short list of candidates emerges for each goal. The rest of the old backlog now sits in Parked, where it can be found, instead of being implied as a promise.
 
-## Example: Enterprise Product Team During Annual Planning
+## A sales request goes through the bank
 
 **Scenario:**
 
-A 40-person product organization at a B2B enterprise company with four product areas. Annual planning is approaching, and leadership wants each product area to present their top ideas for the next fiscal year. Historically, each area scrambles to brainstorm ideas in a two-day offsite, producing lists that are forgotten within a month. The VP of Product wants to shift to a continuous ideation model.
+Illustrative scenario: a sales lead asks the product team to build a custom reporting feature that one large prospect wants. In the past, requests like this went straight onto the roadmap.
 
 **Walkthrough:**
 
-Each product area PM creates an idea bank using a standardized Airtable template with consistent field definitions. The VP's team creates a master view that aggregates all four banks. Over three months leading up to annual planning, the four banks accumulate a combined 140 ideas. Each PM runs monthly mini-reviews instead of waiting for the quarter, re-scoring the top 10 ideas in their area and flagging cross-area opportunities.
+The product manager adds the request to the idea bank, links it to the retention goal, and notes the source as one prospect. At the weekly intake the team scores it. Impact on the goal looks modest, and Confidence is low because the only evidence is one customer's request.
 
-During annual planning, instead of brainstorming from scratch, each PM presents their bank's top 8 ideas with ICE scores, goal links, and submission sources. The leadership team notices that three different product areas have ideas addressing the same customer pain point (onboarding complexity), which reveals a cross-cutting initiative opportunity that no single area's brainstorm would have surfaced. They allocate a dedicated cross-functional team to that problem. After planning, 30 ideas are selected across the organization for step-project design, 45 are parked for future consideration, and 20 are retired.
+The idea is parked with that reasoning, and the sales lead is shown the entry. When several more customers ask for similar reports over the next months, the entries are merged, the Confidence score rises with the new evidence, and the idea moves to Candidates. The history shows exactly why it moved.
 
-The remaining 45 carry forward as the seed for next quarter's continuous ideation.
-
-## Example: Solo PM Learning How to Become a Product Manager
+## Reviewing the parked list
 
 **Scenario:**
 
-An aspiring product manager currently working as a software developer. She wants to build a portfolio artifact that demonstrates strategic product thinking. She is working on a side project, a meal-planning app, and wants to practice GIST Planning with real ideas. She has no team, so all submissions come from her own research.
+Illustrative scenario: a team has been running an idea bank for a few quarters. The parked list has grown long, and a new goal on self-serve upgrades was set this quarter.
 
 **Walkthrough:**
 
-She creates a simple spreadsheet with the standard columns and defines two goals for her side project: increase weekly active users from 50 to 200, and improve recipe save rate from 12% to 25%. Over four weeks, she conducts five user interviews, reads 30 App Store reviews of competing meal-planning apps, and analyzes her own usage analytics. From these sources, she generates 18 ideas, including 'AI-powered ingredient substitution suggestions' (linked to save rate, ICE: 9/3/4, noting low Confidence due to technical uncertainty), 'grocery list auto-generation from saved recipes' (linked to WAU, ICE: 8/6/7), and 'social meal plan sharing via link' (linked to WAU, ICE: 7/5/6). She scores Confidence before Impact for each idea, noting her evidence source in the Notes field.
+The team spends an hour on the parked list. They merge duplicates, close ideas tied to features that have since been removed, and re-link several parked ideas to the new upgrade goal. Two of those ideas had failed earlier tests for a different goal, and the notes show why, which saves the team from repeating those tests.
 
-After four weeks, she runs a solo review session, re-scores her top 8 based on what she learned in the most recent interviews, and selects 'grocery list auto-generation' for her first step-project. She documents the entire bank and her review process in a portfolio case study, showing a hiring manager that she understands how to become a product manager by demonstrating systematic ideation tied to measurable goals, not just feature wishlists.
+They also notice that a theme keeps recurring: users asking to share reports with people outside their account. That pattern goes to the next goal review as possible evidence of an unmet need.

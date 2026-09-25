@@ -1,25 +1,21 @@
 # FAQ: Building HEART Metric Dashboards for Product Teams
 
-## What tools can I use to build a HEART metric dashboard?
+## How many metrics should a HEART dashboard show?
 
-Common choices include Looker Studio (free, integrates well with BigQuery), Tableau (powerful but requires a license), Amplitude or Mixpanel built-in dashboards (great for behavioral metrics), and Google Sheets with data connectors for smaller teams. Choose the tool your team already uses for other dashboards to maximize adoption.
+As few as the goals require. Kerry Rodden's guidance is to prioritize the most important metrics and consider moving secondary ones to a separate dashboard, and the Interaction Design Foundation says juggling five goals and more than a dozen metrics at once is not practical. One primary metric per chosen category is a reasonable starting point.
 
-## How does a HEART dashboard improve my product manager roadmap?
+## Should all five HEART categories appear?
 
-A HEART dashboard surfaces real-time UX data across five dimensions, replacing gut-feel prioritization with evidence. When Retention is red and Task Success is green, you know to focus your product manager roadmap on re-engagement rather than flow optimization. It gives roadmap conversations a shared, objective foundation.
+Only the ones the team chose for this product or feature. The HEART paper says it is not always appropriate to use every category. Note the excluded categories and the reasons on the dashboard so readers know the omission was deliberate.
 
-## How often should I review the HEART dashboard with my team?
+## Where do PULSE metrics like uptime and traffic go?
 
-Most teams benefit from a weekly summary review (5 minutes in standup using the KPI summary row), a monthly deep-dive into dimension details, and a quarterly recalibration of thresholds and metrics. Automate a weekly Slack or email snapshot to build the habit.
+Keep them on their existing operational or business dashboards, or in a separate section. They matter for product health, but the HEART paper describes them as indirect measures of user experience. Mixing them into the HEART view makes it harder to see whether the experience itself changed.
 
-## Can I build a HEART dashboard without a data warehouse?
+## How often should the dashboard be reviewed?
 
-Yes, but with limitations. You can connect Looker Studio directly to Google Analytics and Google Sheets, or use Amplitude's native dashboards. For a complete HEART dashboard with survey data (Happiness), you'll likely need at least a lightweight integration layer like Zapier or a scheduled CSV import.
+Match the review to how fast each metric can move. Behavioral metrics built from logs can often be reviewed weekly. Survey metrics usually need longer periods to collect enough responses for a stable reading, so show them monthly or with confidence intervals.
 
-## What's the difference between a HEART dashboard and a regular product analytics dashboard?
+## What should happen when a metric moves sharply?
 
-A regular analytics dashboard tracks business or usage metrics without a unifying UX framework. A HEART dashboard is structured around five specific user-experience dimensions with explicit goals and thresholds, making it purpose-built for UX-informed product manager roadmap decisions rather than ad-hoc metric monitoring.
-
-## How do I handle missing data for one of the five HEART dimensions?
-
-Show the dimension on the dashboard with a 'data not yet available' placeholder rather than omitting it. This creates visible accountability and motivates the team to close the gap. Prioritize setting up the missing data source in your next sprint—an incomplete HEART dashboard still has blind spots that can mislead roadmap decisions.
+First check the data: tracking changes and outages cause many sudden moves. If the data is sound, look at release annotations and segment breakdowns, then bring in qualitative research to understand why. Record the explanation on the chart so the next reader does not repeat the investigation.

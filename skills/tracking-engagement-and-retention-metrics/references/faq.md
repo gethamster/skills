@@ -1,25 +1,21 @@
-# FAQ: Tracking Engagement and Retention Metrics at Scale
+# FAQ: Tracking Engagement and Retention Metrics
 
-## What is the difference between engagement and retention in the HEART Framework?
+## Is DAU divided by MAU a good engagement metric?
 
-Engagement measures the depth and frequency of user interaction within a given time period (e.g., sessions per week, features used per session). Retention measures whether users come back over time, typically expressed as the percentage of a cohort that returns after D1, D7, D30, etc. Engagement is about intensity of use; retention is about longevity of use.
+It can be, for products meant to be used daily, because it is a per-user frequency measure rather than a total. For products used weekly or monthly it will look low even when people are well served. Choose a frequency threshold that matches how a healthy user would naturally use your product, as the Gmail team did in the HEART paper with visits on five or more days a week.
 
-## How do engagement and retention metrics fit into a product manager roadmap?
+## What is the difference between retention and churn?
 
-Engagement and retention metrics provide the quantitative foundation for roadmap prioritization. They help PMs identify which features drive lasting value, diagnose where users drop off, and set measurable targets for product initiatives. A data-informed product manager roadmap ties every major initiative to an expected improvement in these metrics.
+They describe the same thing from opposite sides. Retention is the share of a cohort still active in a later period, and churn is the share that stopped. Kerry Rodden notes that some teams focus specifically on the failure to retain, which is called churn. Pick one to report so readers are not converting between them.
 
-## What tools do product managers use to track engagement and retention at scale?
+## How long should the retention window be?
 
-Common tools include Amplitude, Mixpanel, and Heap for behavioral analytics; Segment or Rudderstack for event collection; BigQuery, Snowflake, or Redshift for data warehousing; and dbt for transformation pipelines. Many teams also use Looker or Tableau for dashboarding. The choice depends on team size, budget, and technical maturity.
+Long enough to match how often people need the product. The HEART paper notes that week-to-week retention suits some products, while monthly or longer windows suit others. A good test is whether a loyal user could plausibly skip one period; if so, the window is too short or you should count returns in that period or later.
 
-## How often should I review engagement and retention metrics?
+## Should retention be measured per user or per account?
 
-Review engagement metrics weekly to catch short-term trends and anomalies. Review retention cohort curves bi-weekly or monthly, since retention data needs time to mature—you can't evaluate D30 retention until 30 days have passed. Run deeper segmented analyses quarterly to inform roadmap planning.
+For consumer products, per user. For B2B products, measure both, because a company can keep paying while individual users drift away, or keep a few loyal users while most seats go unused. Account-level retention shows commercial health, and user-level retention shows whether the experience is working.
 
-## What is a good DAU/MAU ratio for a SaaS product?
+## Why did our engagement metric rise while retention fell?
 
-For a daily-use SaaS product like Slack or a CRM, a DAU/MAU of 0.30-0.50 is strong. For tools used weekly (e.g., project management), WAU/MAU of 0.50-0.70 is a better benchmark. The 'right' ratio depends entirely on the natural usage frequency of your product category.
-
-## How do I track retention if my product has a long usage cycle?
-
-Use longer cohort windows that match your product's natural cadence. For a quarterly tax tool, measure retention at 90-day and 365-day intervals. For a monthly budgeting app, use monthly cohorts. The key is choosing a retention window that reflects when a user *should* return based on your product's value proposition.
+Usually because the mix of users changed. If lighter users leave, the average engagement of those who remain goes up. Look at engagement within fixed cohorts rather than across all active users, and check whether the rise comes from a small group of heavy users.

@@ -1,15 +1,20 @@
 ---
-name: defining-heart-goals-signals-metrics
-description: "This skill teaches you how to use the Goals-Signals-Metrics (GSM) process to translate each HEART dimension into measurable, actionable product metrics that directly connect user experience outcomes to data you can track."
+name: "defining-heart-goals-signals-metrics"
+description: "Use the Goals-Signals-Metrics process to turn each chosen HEART category into a goal, the signals that show progress, and metrics you can track."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: heart-framework
+  method: "heart-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Defining Goals, Signals, and Metrics with the HEART Framework: Essential Product Manager Skills
+# Defining Goals, Signals, and Metrics for HEART
 
-> This skill teaches you how to use the Goals-Signals-Metrics (GSM) process to translate each HEART dimension into measurable, actionable product metrics that directly connect user experience outcomes to data you can track.
+> Use the Goals-Signals-Metrics process to turn each chosen HEART category into a goal, the signals that show progress, and metrics you can track.
 
 ## Before you start
 
@@ -24,134 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes |
-| Outcome | You will be able to systematically convert abstract UX objectives into a concrete, trackable metrics table for any product or feature, ensuring every number on your dashboard has a clear purpose and connection to user outcomes. |
-| Prerequisites | Basic understanding of the five HEART dimensions (Happiness, Engagement, Adoption, Retention, Task Success), Familiarity with product analytics tools (e.g., Amplitude, Mixpanel, Google Analytics), Experience writing product goals or OKRs |
+| Time to Learn | A few hours to learn, one working session per feature to apply |
+| Outcome | You produce a short table that links each chosen HEART category to an agreed goal, a sensitive signal with a named data source, and a precisely defined metric. |
+| Prerequisites | A launched product or feature, access to its event logs or survey data, the people who own the product decisions |
 | Part of | [HEART Framework](../../methods/heart-framework/METHOD.md) |
 
 ## Overview
 
-The HEART Framework gives product teams five powerful lenses for evaluating user experience—Happiness, Engagement, Adoption, Retention, and Task Success. But the framework's real value isn't in the categories themselves; it's in the **Goals-Signals-Metrics (GSM) process** that transforms those categories from abstract labels into numbers your team can act on. Without GSM, teams end up with vanity metrics or dashboards full of data that nobody trusts.
+Goals, signals, and metrics are the three steps of the process that Kerry Rodden, Hilary Hutchinson and Xin Fu published alongside HEART in their CHI paper, [Measuring the User Experience on a Large Scale](https://research.google.com/pubs/archive/36299.pdf). The paper describes it as a simple process that takes a team through "articulating the goals of a product or feature, then identifying signals that indicate success, and finally building specific metrics to track on a dashboard." The [HEART framework](../../methods/heart-framework/METHOD.md) supplies the categories. This skill turns them into numbers.
 
-Defining Goals, Signals, and Metrics is one of the most important **product manager skills** because it sits at the intersection of strategy and execution. A well-constructed GSM table forces clarity: What are we actually trying to improve? How will we know if users are behaving differently? What specific number will we track, and how will we compute it? This rigor prevents the common failure mode where teams ship features but have no way to evaluate whether users' lives actually improved.
+The order is the whole point. Teams that start from the metrics they already collect tend to keep whatever is easy to count, then write goals that justify it. Rodden's later post, [How to make HEART metrics work in practice](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice), describes teams getting excited by the acronym and jumping straight to brainstorming metrics for a dashboard, and calls that "very unlikely to lead to a successful outcome." Starting from goals forces the team to say what the product or feature is for before it decides what to count.
 
-This skill is applicable whether you're working on a new feature launch, a redesign of an existing flow, or a company-wide UX measurement initiative. By the end, you'll have a repeatable process for filling out a GSM table for any HEART dimension, grounded in real user behaviors rather than business-centric vanity metrics. The GSM process is the foundational step that powers every other skill in the [HEART Framework](https://tryhamster.com/methods/heart-framework) methodology.
+Each step answers a different question. A goal says what a better experience would look like, in words, for this product or feature. A signal says how that improvement, or a failure, would show up in what users do or say. A metric says exactly how the signal will be computed and tracked over time. Keeping them separate lets a team argue about each question on its own terms. People can agree on a goal while disagreeing about the best signal, and that disagreement is useful to surface.
+
+The output is a small table with one row per chosen goal. For each row it records the HEART category, the goal, one or two signals with their data sources, and the metric definitions. That table becomes the input to instrumentation work, to the dashboard, and to later reviews. It is also a record of what the team agreed, which is valuable when people change roles or when a metric moves and someone asks why it was chosen.
+
+The process works for a whole product, a redesign or one feature, but the goals differ by scope. The paper notes that goals for a particular project or feature "may be different from those for the product as a whole," so settle the scope before writing the first goal.
 
 ## How It Works
 
-The GSM process works as a three-layer funnel that progressively narrows abstract intentions into concrete data points.
+Goals come first and stay qualitative. The [CHI paper](https://research.google.com/pubs/archive/36299.pdf) suggests using the HEART categories to prompt the discussion, for example by asking whether it is more important to attract new users or to encourage existing users to become more engaged. It adds three tips: expect team members to disagree about goals and use the process to reach consensus, remember that project goals can differ from product goals, and do not get distracted at this stage by whether a goal can be measured. Jeff Humble's [guide to goals, signals and metrics](https://www.thefountaininstitute.com/blog/goals-signals-metrics) makes a related point: goals should be based on outcomes rather than outputs, and it advises asking the product manager for the goals or facilitating the team to set them instead of making them up.
 
-**Goals** are qualitative, user-centered statements about what you want to achieve within a HEART dimension. They answer the question: *What outcome do we want for the user?* A good goal for the Engagement dimension might be "Users find enough value in the product to incorporate it into their weekly routine." Notice this is about the user's experience, not about a business KPI like revenue.
+Signals translate a goal into observable evidence. The paper asks what actions would indicate the goal had been met and what feelings or perceptions would correlate with success or failure. For each signal, name the data source. Logs and surveys were the sources the Google team used most often, and the paper mentions other options such as a panel of judges. Two tips matter most. A signal should be sensitive and specific to the goal, moving "only when the user experience is better or worse, not for other, unrelated reasons." And failure is sometimes easier to see than success, through events such as abandoned tasks or undo actions. Rodden's [practical post](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice) adds that teams should weigh both how easy a signal is to track and how likely it is to respond to design changes.
 
-**Signals** are observable user behaviors or attitudes that would indicate the goal is being achieved. They answer: *How would we know if the goal is happening?* For the engagement goal above, signals might include "Users return to the product multiple times per week" or "Users interact with core features during each session." Signals are still somewhat abstract—they describe categories of evidence, not exact calculations.
+Metrics make the signal computable. The paper's first metric tip is that raw counts rise as the user base grows and "need to be normalized; ratios, percentages, or averages per user are often more useful." A metric definition should name the event or survey answer, the population, the aggregation and the time window. Rodden's example turns the goal "make the upload process easier" into the metric "the percentage of times a user finishes the upload flow successfully, having started it in the past 7 days" ([Rodden](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)).
 
-**Metrics** are the specific, instrumented measurements derived from signals. They answer: *What exact number will we track, and how is it computed?* A metric for the engagement signal above might be "7-day active users / 28-day active users (DAU/MAU ratio)" or "median number of core-feature interactions per session per user."
+Illustrative scenario: a team scoping HEART for a new in-app scheduling feature fills in one row per chosen category.
 
-The power of this three-layer process is that it creates an **audit trail from strategy to data**. When a stakeholder asks "Why are we tracking this number?" you can trace it back: this metric measures this signal, which indicates this goal, which supports this HEART dimension. This traceability is what separates rigorous product measurement from dashboard clutter.
+| Category | Goal | Signal | Metric |
+|---|---|---|---|
+| Adoption | People who manage calendars discover and try scheduling | First scheduling event created | Share of weekly active users who created their first event this week |
+| Task success | Creating an event is quick and error-free | Event saved without validation errors | Share of started events saved on the first attempt, per week |
+| Happiness | Users find scheduling easy | Survey answer on ease | Mean ease rating from a sampled in-product survey, per month |
 
-Critically, you don't need to fill out every cell for every HEART dimension. The GSM process is also a **prioritization tool**—it forces teams to discuss which dimensions matter most for a given product or feature and focus instrumentation effort there.
+The last stage is prioritization. Rodden's guidance is to focus on metrics tied to the top goals, because a few well-chosen metrics beat an overwhelming dashboard, and to expect to iterate once real data arrives ([Rodden](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Choose the Right HEART Dimensions for Your Product or Feature
+### Step 1: Fix the scope and the decision
 
-Before you fill out a single cell, decide which HEART dimensions are most relevant. Not every dimension applies to every project. A brand-new feature might focus on Adoption and Task Success, while a mature product might prioritize Retention and Happiness.
+Write down whether you are measuring a product, a redesign or a feature, which users are in scope, and what decision the metrics will inform. A launch decision, a redesign review and a quarterly health check each call for different goals. If the scope is a whole product with many features, consider narrowing it, since [Amplitude's HEART guide](https://amplitude.com/blog/heart-framework-software-ux) recommends working at the feature level. Share the scope with everyone who will attend the goals discussion.
 
-Gather your cross-functional team (PM, design, engineering, data) and ask: "Given what we're building or improving, which aspects of user experience matter most right now?" Select 2-3 dimensions to start with. Trying to instrument all five simultaneously often leads to shallow metrics across the board.
+### Step 2: Choose the categories that matter
 
-Write your selected dimensions across the top of a table (physical whiteboard or shared doc). You'll fill in rows for Goals, Signals, and Metrics underneath each one.
+Walk through Happiness, Engagement, Adoption, Retention and Task success and decide which ones apply. The [paper](https://research.google.com/pubs/archive/36299.pdf) says it is not always appropriate to use every category but that the framework helps make an explicit decision about each one. Record a sentence on why each excluded category was left out. Two or three categories is a manageable start for one feature.
 
-> **Pro tip:** If you're struggling to choose, ask: 'If this project succeeds wildly, what would users be doing differently?' The answer usually maps to 1-2 HEART dimensions naturally.
+### Step 3: Write one goal per category
 
-### Step 2: Step 2: Articulate User-Centered Goals for Each Dimension
+Phrase each goal as a change in the user experience, in plain words, such as "new members can set up their first project without asking for help." Avoid numbers at this stage, and avoid goals that are really features ("launch the setup wizard"). Collect every proposed goal before trimming, since the paper treats disagreement about goals as an opportunity to reach consensus. Keep the goal that the team would most regret failing.
 
-For each selected dimension, write a goal statement that describes the desired user outcome in plain language. The goal must be about the **user's** experience, not about a business outcome. 'Increase revenue by 15%' is not a HEART goal. 'Users successfully complete their core task without needing support' is.
+### Step 4: List signals and their data sources
 
-Use this template to get started: *"We want users to [feel/do/achieve] [specific outcome] when [using this product/feature]."* For example, under Happiness: "We want users to feel confident that the product gives them accurate, trustworthy results." Under Task Success: "We want users to complete the checkout flow without errors or confusion."
+For each goal, brainstorm the behaviors or attitudes that would show success or failure, then mark each with a source: an existing log event, a new event, a survey question or a manual review. Check with engineering which actions are logged today. Prefer signals that respond to the experience and little else, and include failure signals such as abandonment where they are cleaner. Keep one or two signals per goal; Humble's [guide](https://www.thefountaininstitute.com/blog/goals-signals-metrics) suggests picking two or three signals at first.
 
-Discuss each goal as a team. Push back on goals that are too vague ("Users like the product") or too metric-shaped ("Users have a 90% completion rate"). Goals should be aspirational and qualitative—the quantification comes later.
+### Step 5: Define each metric precisely
 
-> **Pro tip:** Read each goal aloud and ask: 'Could a designer and an engineer both independently identify work that supports this goal?' If not, it's too vague.
+Write the numerator, the denominator, the population, the time window and any filters. Normalize counts into rates or averages per user. Exclude automated traffic and confirm that the actions you rely on are logged, which the paper calls out as common accuracy problems. A good test is to give the definition to two analysts and check that they would compute the same number.
 
-### Step 3: Step 3: Identify Observable Signals for Each Goal
+### Step 6: Test the metrics against real data
 
-For each goal, brainstorm user behaviors or attitudes that would serve as evidence the goal is being met. Signals fall into two categories:
+Before publishing, compute each metric on recent data. Check that it varies enough to detect a change, that it moves in the expected direction around past launches, and that it does not simply track overall traffic. Rodden's [post](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice) warns that coming up with a metric through HEART does not mean it is a good or useful metric, or that it correlates with the quality of the experience. Drop or redefine anything that fails.
 
-- **Behavioral signals** are things users do: returning to the app, completing a task, sharing content, upgrading their account, abandoning a flow.
-- **Attitudinal signals** are things users feel or express: survey responses, NPS scores, support ticket sentiment, app store review language.
+### Step 7: Publish the table and schedule a revisit
 
-List 2-5 candidate signals per goal. Be specific about the behavior. Instead of "users engage with the feature," write "users click into the detail view after seeing search results" or "users create more than one project within their first week."
-
-After brainstorming, evaluate each signal on two criteria: (1) **Sensitivity** — will this signal actually change when the user experience changes? (2) **Feasibility** — can we actually observe and log this behavior with our current or planned instrumentation? Drop signals that fail either test.
-
-> **Pro tip:** Attitudinal signals (like survey responses) are essential for the Happiness dimension but are often overlooked for others. Consider mixing behavioral and attitudinal signals where possible for a richer picture.
-
-### Step 4: Step 4: Translate Signals into Specific, Computable Metrics
-
-Now convert each surviving signal into a precise metric definition. A good metric definition includes:
-
-- **Name**: A clear, descriptive label (e.g., "Weekly active rate")
-- **Formula**: How it's calculated (e.g., "Count of users with ≥1 session in trailing 7 days / Count of users with ≥1 session in trailing 28 days")
-- **Granularity**: How often it's computed (daily, weekly, monthly) and at what level (per-user, per-cohort, per-feature)
-- **Data source**: Where the raw data comes from (event log, survey platform, CRM)
-
-Avoid composite metrics that blend too many signals together—they become impossible to diagnose when they move. Prefer metrics that are **specific enough to be actionable**: when the number goes down, the team should be able to form a hypothesis about why.
-
-For each HEART dimension, aim for 1-2 primary metrics and optionally 1 supporting metric. More than three metrics per dimension signals that you haven't prioritized enough.
-
-> **Pro tip:** Write the metric formula in a way that a data engineer could implement it without a follow-up meeting. Ambiguity in metric definitions is the #1 source of 'the numbers don't match' arguments later.
-
-### Step 5: Step 5: Validate Metrics Against Real Data
-
-Before committing to your GSM table, do a quick sanity check. Pull a sample of real data (even a week's worth) and compute your proposed metrics. You're checking for:
-
-- **Variance**: Does the metric actually move, or is it flatlined? A metric stuck at 99.8% won't help you detect improvements.
-- **Sensitivity to known events**: If you recently shipped a change, does the metric reflect it? If you had an outage, does it dip?
-- **Distribution shape**: Is the metric heavily skewed by outliers? Median might be more useful than mean.
-- **Sample size**: Do you have enough data for the metric to be statistically meaningful at your desired granularity?
-
-If a metric fails these checks, revise it. Sometimes you need to adjust the time window, change from a mean to a percentile, or pick a different signal entirely. This validation step often saves weeks of dashboard-building effort on metrics that turn out to be useless.
-
-> **Pro tip:** If you don't have historical data yet (e.g., for a new feature), define the metrics anyway but add a 'validation checkpoint' to your project plan for 2 weeks after launch.
-
-### Step 6: Step 6: Assemble and Socialize the GSM Table
-
-Compile your work into a clean GSM table—a grid with HEART dimensions as columns and Goals, Signals, Metrics as rows. Each cell should be concise but specific enough that someone who wasn't in the room can understand it.
-
-Share this table with stakeholders beyond the immediate team: engineering leads who will instrument the events, data scientists who will build the dashboards, and leadership who will use the metrics in decision-making. The act of socializing the table often surfaces blind spots: an engineer might point out that a particular event isn't currently logged, or a stakeholder might challenge whether a goal is truly user-centered.
-
-Treat the GSM table as a **living document**. Revisit it quarterly or whenever the product strategy shifts. Metrics that made sense at launch may become irrelevant as the product matures. The table is the artifact, but the conversation it generates is the real value.
-
-> **Pro tip:** Store the GSM table alongside your product strategy doc or PRD, not in a standalone analytics wiki. This keeps the 'why' connected to the 'what' and makes it easier for new team members to understand the measurement philosophy.
+Share the final table with the owners of each metric, the data sources and the date it was agreed. Put a review on the calendar for after the next launch or after enough data has accumulated. Update the table when goals change, and keep old versions so later readers can see why a metric was chosen.
 
 ## Best Practices
 
-- Always start with goals before signals or metrics. Teams that jump straight to metrics end up measuring what's easy to track rather than what matters to users.
-- Limit each HEART dimension to 1-2 primary metrics. More metrics create dashboard bloat and dilute focus. If everything is a priority metric, nothing is.
-- Write metric definitions with enough precision that two different analysts would compute the same number independently. Include the formula, time window, user cohort definition, and any filters (e.g., excluding internal users).
-- Mix leading and lagging indicators. Signals like 'user completed onboarding' (leading) and 'user retained at 30 days' (lagging) give you both early warnings and outcome confirmation.
-- Revisit your GSM table after major product changes. A metric defined for a V1 feature may not capture the user experience of V2. Schedule a quarterly GSM review as a team ritual.
-- Use the GSM table as a communication tool, not just a measurement tool. When proposing a new feature, show which cell in the GSM table it's expected to move. This grounds prioritization conversations in user outcomes.
+- Start with the goal the team cares most about and finish that row before adding others. A complete table of two rows is more useful than a half-finished table of five.
+- Keep goals free of numbers. Targets belong to the metric once there is a baseline, and a number in the goal tends to pull the discussion toward whatever metric already produces it.
+- Name a data source for every signal. A signal that nobody logs is a task for engineering, and it should be recorded as one.
+- Look for failure signals. The [CHI paper](https://research.google.com/pubs/archive/36299.pdf) notes that failure, such as abandonment or undo events, is sometimes easier to identify than success.
+- Normalize by default. Counts that rise with the user base make every period look better than the last, so use rates or averages per user unless there is a reason not to.
+- Involve the team. Rodden's [practical guide](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice) lists neglecting team involvement as a common pitfall, since shared work increases buy-in and improves the metric ideas.
 
 ## Common Mistakes
 
-- **Writing business goals instead of user goals (e.g., 'Increase conversion rate to 5%' instead of 'Users find the signup process easy and trustworthy').** — Reframe every goal from the user's perspective. Ask: 'What does this goal mean for the person using the product?' Business KPIs can be secondary metrics, but HEART goals must be user-centered.
-- **Choosing metrics that are too composite or abstract, like a single 'UX score' that averages across dimensions.** — Keep metrics granular and dimension-specific. Composite scores hide what's actually changing. If Engagement goes up but Happiness goes down, a blended score would mask both movements.
-- **Trying to fill every cell for all five HEART dimensions, resulting in 15+ metrics nobody actually monitors.** — Prioritize 2-3 dimensions most relevant to your current product phase. It's better to deeply instrument and act on two dimensions than to superficially track five.
-- **Confusing signals with metrics. Teams write 'DAU/MAU ratio' in the signals row, skipping the conceptual step of identifying what user behavior they're trying to observe.** — Enforce the distinction: signals describe categories of behavior ('users return frequently'), metrics define exactly how you'll count it ('DAU/MAU ratio, computed daily, for users who completed onboarding'). The signal layer is where you think; the metric layer is where you compute.
-- **Setting the GSM table once and never revisiting it, even as the product evolves significantly.** — Schedule explicit GSM review checkpoints—at minimum quarterly, and always after a major launch or strategy pivot. Outdated metrics are worse than no metrics because they create false confidence.
+- **Starting from available metrics**: Teams list what their analytics tool already reports and then write goals to match. Start with goals, and treat existing metrics as candidates to be tested against them.
+- **Writing goals as metrics**: A goal like "raise completion" hides the experience the team wants to improve. Say what users should be able to do or feel, then find the signal.
+- **Choosing signals that move for other reasons**: Total page views or time in product can rise because of marketing, seasonality or confusion. Prefer signals the paper would call sensitive and specific to the goal.
+- **Leaving metric definitions vague**: "Task completion rate" without a denominator, window or population will be computed three different ways. Write the full definition once and link to it.
+- **Tracking every category at once**: Five goals with several metrics each is more than a team can act on. Choose the categories that matter for this scope and write down why the others were left out.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/heart-framework/METHOD.md) — HEART Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/heart-framework/METHOD.md): HEART Framework
 
 ## Related Skills
 
-- [Measuring Adoption Rates and Task Success for New Features](../measuring-adoption-and-task-success/SKILL.md)
-- [Tracking Engagement and Retention Metrics at Scale](../tracking-engagement-and-retention-metrics/SKILL.md)
-- [Measuring User Happiness Through Surveys and Satisfaction Scores](../measuring-user-happiness-surveys/SKILL.md)
-- [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
-- [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
+- [Running HEART Framework Workshops](../running-heart-framework-workshops/SKILL.md)
+- [Measuring Adoption and Task Success with HEART](../measuring-adoption-and-task-success/SKILL.md)
+- [Tracking Engagement and Retention Metrics](../tracking-engagement-and-retention-metrics/SKILL.md)
+- [Measuring User Happiness Through Satisfaction Surveys](../measuring-user-happiness-surveys/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
+- [HEART Framework Interview Answers for PM Metrics Questions](../presenting-heart-metrics-in-interviews/SKILL.md)
+
+## Sources
+
+- [Rodden, Hutchinson and Fu: Measuring the User Experience on a Large Scale (CHI 2010, PDF)](https://research.google.com/pubs/archive/36299.pdf)
+- [Kerry Rodden: How to make HEART metrics work in practice](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)
+- [Jeff Humble: How to Set UX Metrics with the Google HEART Framework](https://www.thefountaininstitute.com/blog/goals-signals-metrics)
+- [Amplitude: How to Use the HEART Framework to Improve Software UX](https://amplitude.com/blog/heart-framework-software-ux)

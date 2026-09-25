@@ -1,37 +1,25 @@
-# FAQ: Prioritizing Journeys for Optimization
+# FAQ: Prioritizing Customer Journeys for Optimization
 
-## How do I prioritize customer journeys when I have very little quantitative data?
+## What criteria should a journey prioritization framework use?
 
-Replace quantitative metrics with structured qualitative evidence. Use customer interview transcripts, support chat logs, session recordings, and frontline team observations. Simplify your scoring scale to three levels (Low/Medium/High) to avoid false precision. The key is that every score must still have a documented rationale, even if that rationale is 'based on 8 customer interviews, 6 mentioned confusion at this step.' As you optimize your first journey, instrument better data collection so the next scoring cycle has stronger inputs.
+A common starting set is business impact, customer pain, strategic alignment, and feasibility. Business impact covers revenue, retention, and cost. Customer pain covers satisfaction, complaints, and research findings. Adapt the set to your organization, but keep it short and define each criterion in writing.
 
-## Should I prioritize customer journeys before or after mapping touchpoint interconnections?
+## Should we weight the criteria equally?
 
-Prioritize first, then map interconnections for the journeys you select. Mapping touchpoint interconnections across all journeys is time-consuming and produces diminishing returns for journeys you will not optimize this quarter. Score and rank your portfolio, identify your Tier 1 journeys, and then invest in detailed interconnection mapping only for those top-priority journeys. This sequence ensures your deepest analytical work is focused where it will actually inform action.
+Only if the organization's strategy gives them equal importance. Weights should reflect current priorities, such as churn reduction or cost savings. Agree the weights with decision-makers before anyone scores, and record the reasoning. Changing weights after seeing the scores undermines trust in the ranking.
 
-See [mapping touchpoint interconnections](https://tryhamster.com/skills/mapping-touchpoint-interconnections) for the detailed process once you have selected your focus journeys.
+## How do we handle journeys with no data?
 
-## How often should I re-score the journey priority ranking?
+Record them as unscored and treat the gap as a finding. A journey with no evidence may be a blind spot worth researching, especially if people suspect it matters. Move it to a research tier and score it once evidence exists. Averaging guesses hides the problem.
 
-Quarterly is the standard cadence for most organizations. This aligns with typical OKR and planning cycles and gives enough time for new evidence to accumulate between scoring sessions. However, trigger an off-cycle re-score if a major event changes the landscape: a significant product launch that creates new journeys, a strategic pivot that shifts company priorities, or a sudden spike in friction data (like a service outage affecting a specific journey). Re-scoring does not mean starting from scratch.
+## How often should journeys be re-scored?
 
-Review what changed, update affected scores, and recalculate.
+Set a regular rhythm tied to planning, and list events that trigger an early re-score, such as a strategy change, a major launch, or a sharp move in a journey metric. Many teams align re-scoring with quarterly or annual planning. Keep the previous scores so changes over time are visible.
 
-## How many scorers should I include in the prioritization exercise?
+## What if a stakeholder disagrees with the ranking?
 
-Aim for 3-7 scorers representing different functions. Fewer than 3 risks blind spots, because any single person's biases dominate. More than 7 makes calibration sessions unwieldy without proportionally improving accuracy. The essential perspectives to include are someone with customer data access (CX or research), someone who understands business financials (product, finance, or leadership), and someone from a customer-facing role (support, sales, or customer success).
+Ask which evidence or weight they believe is wrong. The written model turns the disagreement into a question about data or strategy, which the group can resolve. If new evidence changes a score, update it and record why. If the disagreement is about weights, take it to the decision-makers who set them.
 
-If you must limit to 3, pick one from each of those categories.
+## Can the scoring model be used at other levels?
 
-## Why does my journey priority ranking keep changing every quarter?
-
-Moderate quarter-over-quarter movement is healthy. It means your scoring model is responding to real changes in strategy, friction data, and business conditions. If rankings are volatile (top journeys completely reshuffling each quarter), the likely cause is one of three issues: your evidence base is too thin to produce stable scores, your strategic alignment dimension is shifting frequently because company priorities are unstable, or different scorers are participating each cycle without sufficient rubric calibration. Fix this by standardizing your scorer group, strengthening your evidence briefs, and checking whether your strategic priorities are genuinely changing or just being communicated inconsistently.
-
-## Can I use this scoring approach for prioritizing within a single journey (L2 sub-stages) instead of across journeys?
-
-Yes, and the process is nearly identical. Once you have selected an L1 journey for optimization, list its L2 sub-stages and score each one using the same three dimensions. The main adjustment is that business impact at the L2 level is usually measured by contribution to the L1 outcome rather than top-line revenue. For example, if the L1 journey is 'onboarding,' the business impact of an L2 sub-stage like 'first integration setup' would be measured by its effect on time-to-value or activation rate, not total company revenue.
-
-## How do I handle a stakeholder who disagrees with the final ranking and wants to override it?
-
-Invite them into the process rather than defending the output. Share the rubric, the evidence briefs, and the individual scores. Ask them to identify which specific dimension and journey they disagree on and to provide their own score with a documented rationale. If their rationale introduces new evidence the group did not have, incorporate it and re-score that journey.
-
-If their rationale is 'I just think this is more important,' point them to the weight on strategic alignment. The model is designed to absorb subjective judgment through declared weights, not through after-the-fact overrides. Over time, as the model's predictions prove accurate, these challenges decrease.
+Yes, but score one level at a time. Some teams rank L1 stages to set broad investment themes, then rank L2 journeys within the chosen stages. Comparing journeys at different levels in one list produces misleading results. Keep separate rankings for separate levels.

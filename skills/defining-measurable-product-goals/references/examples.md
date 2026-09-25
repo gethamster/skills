@@ -1,55 +1,37 @@
 # Examples: Defining Measurable Product Goals in GIST
 
-## Example: Early-stage B2B SaaS (team of 5)
+## A small SaaS team turns "reduce churn" into a goal
 
 **Scenario:**
 
-A small B2B SaaS company selling a project management tool to agencies has 800 paying customers and is pre-Series A. The CEO's stated priority is 'reduce churn to extend runway.' The product team has one PM, two engineers, and one designer. Analytics are basic: Mixpanel for events, Stripe for revenue.
+Illustrative scenario: a small B2B software company has one product manager, two engineers and a designer. The CEO's priority for the year is "reduce churn". The team has basic event analytics and billing data.
 
 **Walkthrough:**
 
-5% for the past six months. She also finds that churn is concentrated among accounts in their first 60 days: 42% of churned accounts never completed onboarding. She maps the CEO's priority to two candidate metrics: overall monthly churn rate and 60-day onboarding completion rate. She selects the 60-day completion rate as the primary goal because it is more directly influenceable by the product team and likely a leading indicator of churn.
+The product manager first looks at where churn comes from and finds that most cancelled accounts never finished setting up the product. Company churn depends on sales, support and pricing as well as the product, so she treats it as the top metric and looks one level down the metrics tree for something her team can move within a quarter.
 
-The baseline is 38% of new accounts completing onboarding within 60 days. She sets the target at 55% by end of Q2, which would roughly halve the churn contribution from unactivated accounts. As a guardrail, she adds 'monthly gross churn must not exceed 7%' to ensure that fixing onboarding does not come at the expense of retention for mature accounts. She brainstorms five ideas: a guided setup wizard, an in-app checklist, a 'quick start' template, proactive outreach from support on day 3, and a reduced free trial period to create urgency.
+She picks the share of new accounts that complete setup within their first month as the team's goal. She records the current value over the last quarter, sets a target for the end of the next quarter, and adds a guardrail: churn among established accounts must not rise. The goal names no feature. The ideas people already had, such as a setup checklist, a template gallery and a support call on day three, go into the idea bank as hypotheses.
 
-Each is stored in the idea bank with an ICE score for later prioritization. The goal sheet is a single Notion page shared with the CEO and engineering lead.
-
-## Example: Mid-stage B2C mobile app (team of 12)
+## A consumer app squad separates its goal from pricing
 
 **Scenario:**
 
-A consumer fitness app with 2 million MAU and a freemium model. The company just raised Series B and the board wants to see 'improvement in monetization.' The product org has three squads. This squad owns the premium upgrade experience. The analytics stack includes Amplitude, RevenueCat, and a data warehouse.
+Illustrative scenario: a consumer app company has several product squads. The board wants better monetization, and one squad owns the upgrade path from the free plan to the paid plan.
 
 **Walkthrough:**
 
-40/month. The board's 'improvement in monetization' maps to multiple candidate metrics, but the PM focuses on what her squad controls: trial start rate and trial-to-paid conversion. She eliminates ARPPU because it depends on pricing changes that the growth team owns. She sets two goals.
+The squad lead maps "better monetization" to the metrics tree. Revenue per paying user depends on pricing, which another team owns, so she leaves it out. Her squad can influence how many free users start a trial and how many trials convert, so those become the two candidate metrics.
 
-' The second goal is a guardrail. She deliberately does not set a combined revenue target because she wants the team thinking about the behavioral funnel, not the revenue number. During stress-testing, the designer flags that the easiest way to increase trial starts is to add dark patterns, like auto-enrolling users in trials. ' She brainstorms eight ideas, including a contextual trial prompt after the user's tenth workout, a comparison screen showing premium vs.
+She writes one goal on trial-to-paid conversion and uses trial starts as a guardrail rather than a target, because the easiest way to raise trial starts is to push users into trials they did not want. During the stress test, the designer points out that auto-enrolling users would hit a trial-start target and hurt trust. The final goal sheet lists the goal, the baseline, the target, the date and the guardrail, and the squad reviews progress at each board meeting.
 
-free features, and a social proof banner showing how many users upgraded this week. The goal sheet is published in the squad's Confluence space and reviewed biweekly.
-
-## Example: Enterprise platform team (team of 20+)
+## A platform team finds an outcome behind a technical request
 
 **Scenario:**
 
-A large enterprise software company's platform team is responsible for APIs and developer tools that other product teams build on. The company's annual plan calls for 'accelerating time-to-market for new features across all product lines.' The platform team has no direct end-user metrics, which makes goal-setting uniquely challenging.
+Illustrative scenario: an internal platform team is asked to "migrate all services to the new deployment system this quarter". The team wants to use GIST but the request is phrased as a solution.
 
 **Walkthrough:**
 
-The platform PM realizes that 'accelerating time-to-market' is a company-level objective, not a platform goal. 2 days integrating with the platform's authentication service every time they build a new feature. She validates this with data from Jira, counting the average number of days spent on auth-related tickets per feature project. ' The metric is measurable (average days per integration project, tracked in Jira), influenceable (the platform team controls the auth SDK), and strategically aligned (fewer integration days equals faster time-to-market).
+The lead asks what outcome the migration is meant to produce. The answer from engineering leadership is that product teams wait too long to get changes into production and that failed deployments are hard to roll back. Those become the outcome: shorter time from merge to production, with a guardrail on failed deployments.
 
-' She then brainstorms ideas: a self-serve auth SDK with documentation, a pre-configured auth template for the internal framework, and an auth-as-a-service API that eliminates integration entirely. The goal sheet is shared with all product team leads so they understand the platform team's priorities and can plan accordingly. Monthly reviews include pulling integration time data from the three most recent feature projects.
-
-## Example: Product manager updating a traditional roadmap (individual contributor)
-
-**Scenario:**
-
-A product manager at a mid-size company has been asked to present her Q4 product manager roadmap to the leadership team. Her current roadmap is a Gantt-style timeline with feature names and delivery dates. She wants to restructure it using GIST goals to make the roadmap outcome-oriented instead of output-oriented.
-
-**Walkthrough:**
-
-She starts by listing the features on her current roadmap: a new dashboard redesign, a Slack integration, and an in-app notification system. ' and traces each answer to a user or business outcome. The dashboard redesign is meant to increase daily active usage. The Slack integration is meant to reduce churn among team accounts.
-
-The notification system is meant to increase feature discovery. 1%/month, and feature discovery rate (percentage of users who try a feature within 30 days of release) is 11%. ' The original features become ideas under these goals, not the goals themselves. This means the Slack integration is no longer a commitment.
-
-It is one hypothesis for reducing team churn, sitting alongside alternatives like an onboarding email series for teams or an admin dashboard showing team engagement. When she presents the updated roadmap to leadership, she leads with the three goals and their baselines, then presents the top-ranked ideas under each goal. Leadership appreciates the clarity because they can now evaluate progress by metric movement, not by whether a feature shipped on time.
+The migration stays in the plan, but as an idea in the bank next to others, such as improving the existing pipeline's caching. The lead notes that part of the migration is a known commitment with a fixed date, which GIST does not help with, so that part is tracked as ordinary work outside the idea layer.
