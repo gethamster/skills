@@ -1,25 +1,25 @@
-# FAQ: Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing
+# FAQ: Page-Specific Website Copy: Homepage, Landing, Pricing
 
-## What's the difference between website copywriting for a homepage and a landing page?
+## What is the difference between homepage and landing page copy?
 
-A homepage orients visitors and routes them to relevant sections — it speaks to multiple audience segments with broad messaging. A landing page persuades visitors toward one specific conversion action — it speaks to one audience about one offer with tight, specific copy and repeated CTAs.
+A homepage serves many visitors with different goals, so its copy says clearly what the company does and routes each visitor type to the right place. A landing page serves one audience from one source and asks for one action, so its copy makes a single argument. Writing a homepage as if it were a landing page leaves most of its visitors without a path.
 
-## How long should website copy be for different page types?
+## How long should copy be on each page type?
 
-Homepage sections should be scannable and concise (short paragraphs, clear headings). Landing pages can be long-form if the purchase decision is complex — every section just needs to earn its place. Pricing pages should be comprehensive but scannable. Feature pages should be thorough enough to answer 'how does this work?' without requiring a sales call.
+It depends on what the visitor needs to decide. Homepages are usually scannable overviews with clear paths deeper into the site. Landing pages run as long as the argument for their one action needs. Pricing pages should be as short as possible while answering the questions that block a choice, and feature pages need enough detail for evaluators.
 
-## What should I put above the fold on a pricing page?
+## What should go above the fold on a pricing page?
 
-Above the fold on a pricing page, show your plan options with prices, a one-line benefit description for each tier, and visual highlighting of the recommended plan. Include at least one risk reducer (like 'free trial' or 'money-back guarantee') visible before the visitor needs to scroll.
+The plans, their prices or a starting price, who each plan is for, and a clear recommended option. Visitors on a pricing page have usually come to compare costs, so put that information first. Detailed comparisons and FAQs can follow below.
 
-## How do I write website copywriting for a feature page without sounding too technical?
+## How do I write a feature page without making it a spec sheet?
 
-Lead with the outcome the feature delivers ('See every metric in one view'), then explain how the feature works in plain language. Use screenshots or short videos. Add technical specs in a collapsible section or secondary area for visitors who want the details, but don't lead with them.
+Lead with what the feature lets the customer do and show it in a concrete use case. Then add the specifics evaluators need, in a scannable format. The benefit gives the reason to care, and the specifics give the reason to believe.
 
-## Should my homepage have one CTA or multiple CTAs?
+## Should the homepage have one call to action or several?
 
-Your homepage can have multiple CTAs that route visitors to different sections (like 'See Features,' 'View Pricing,' 'Start Free Trial'), but you should have one primary CTA that's visually dominant and repeated. Too many competing primary CTAs create decision paralysis.
+One primary action plus clear paths for the main visitor types usually works best. The primary action suits visitors ready to try the product, and the paths serve visitors who need to learn more first. Every label should say where it leads.
 
-## How do I know which page type to create for a specific marketing campaign?
+## How do I know which page type a campaign needs?
 
-If the traffic source has specific intent (a search ad, a targeted email), build a dedicated landing page with message-matched copy. If you're driving general awareness traffic (brand campaigns, PR), your homepage is usually the right destination. Create feature pages for mid-funnel content like comparison searches or 'how does X work' queries.
+Ask where the traffic comes from and what one action you want. Paid campaigns and emails with a single offer usually deserve a dedicated landing page. Broad awareness traffic can go to the homepage, and readers comparing options are best served by pricing or comparison pages.

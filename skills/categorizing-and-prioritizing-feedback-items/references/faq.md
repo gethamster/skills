@@ -1,25 +1,21 @@
-# FAQ: Categorizing and Prioritizing Feedback Items
+# FAQ: Categorizing and Prioritizing Start Stop Continue Items
 
-## How many votes should each person get in a start stop continue exercise?
+## How many votes should each person get in a dot voting retrospective?
 
-A good rule of thumb is to give each person 3–5 total votes, or roughly one-third of the total number of clusters. The constraint is essential — if people can vote on everything, you learn nothing about relative priority. For a typical retrospective with 8–12 clusters, 3–4 votes per person works well.
+Nielsen Norman Group suggests giving each person votes equal to roughly a quarter of the number of options. With eight themes, that is two votes each. Fewer votes force sharper choices, while more votes tend to spread support evenly.
 
-## Should we prioritize within each category separately or across all three?
+## Should we cluster across columns or within them?
 
-Vote across all three Start, Stop, and Continue categories simultaneously. This reveals the team's true priorities without artificial balance. Sometimes the most impactful actions are all Stops, and forcing one commitment per category wastes a slot on a lower-priority item.
+Within them. Start, Stop and Continue themes lead to different kinds of action: adopting, dropping and protecting a practice. Keeping them separate makes the actions clearer.
 
-## What if the team can't agree on how to cluster feedback items?
+## What is affinity clustering in a retrospective?
 
-If two people disagree on whether an item belongs in Cluster A or Cluster B, ask the original author which theme feels more accurate. If the item genuinely spans two themes, let the author choose one placement — don't duplicate it. Clustering doesn't need to be perfect; it just needs to be good enough for meaningful voting.
+It is the practice of grouping related notes into themes and labelling each theme. Nielsen Norman Group describes it as organizing related observations into distinct clusters. In a retrospective, it turns many individual notes into a smaller set of topics the team can vote on.
 
-## How many action items should a team commit to after a start stop continue exercise?
+## What if the most voted theme is outside the team's control?
 
-Commit to no more than 2–3 action items per cycle. Teams that commit to 5+ actions typically complete none of them. It's better to fully execute 2 improvements than to half-attempt 6. You can always tackle the next-highest-voted items in the following retrospective.
+Turn it into a request to whoever does control it, with a named person to raise it and a date to report back. Then pick a theme the team can act on for its own action. Record both so the request is checked at the next session.
 
-## Can I use this prioritization method for a start stop continue exercise with just 2 people?
+## Do we have to vote at all?
 
-Yes, but skip dot-voting since there aren't enough voters for meaningful aggregation. Instead, after clustering, have each person rank their top 3 clusters, then discuss where your rankings overlap and differ. Focus your commitments on areas where both people agree on high impact.
-
-## What do I do with low-priority items that didn't get votes?
-
-Don't discard them. Add unvoted items to a 'parking lot' document that's reviewed at the start of the next retrospective. Sometimes items that seemed minor become urgent over time. The parking lot also signals to contributors that their feedback was heard even if it wasn't prioritized this cycle.
+No. Retrium treats dot voting as optional, useful when there are many ideas. If the board has only a few clear themes, the group can agree the order through discussion.
