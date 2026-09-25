@@ -1,15 +1,20 @@
 ---
-name: building-race-planning-templates
-description: "Learn how to create structured, actionable customer journey templates and planning spreadsheets that map objectives, tactics, channels, and KPIs across all four RACE stages — Reach, Act, Convert, and Engage."
+name: "building-race-planning-templates"
+description: "Build a RACE planning template: a digital marketing plan with objectives, tactics, owners, budgets and KPIs for Plan, Reach, Act, Convert and Engage."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: race-framework
+  method: "race-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Building a Customer Journey Template with RACE Planning Sheets
+# RACE Planning Template: Build a Digital Marketing Plan
 
-> Learn how to create structured, actionable customer journey templates and planning spreadsheets that map objectives, tactics, channels, and KPIs across all four RACE stages — Reach, Act, Convert, and Engage.
+> Build a RACE planning template: a digital marketing plan with objectives, tactics, owners, budgets and KPIs for Plan, Reach, Act, Convert and Engage.
 
 ## Before you start
 
@@ -23,159 +28,113 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes |
-| Outcome | You will have a reusable, team-ready customer journey template that structures your entire digital marketing plan around the RACE funnel, ensuring every tactic ties to a measurable objective and stage. |
-| Prerequisites | Basic understanding of the RACE Framework and its four stages, Familiarity with digital marketing channels (SEO, paid, email, social), Experience setting marketing KPIs or goals, Spreadsheet proficiency (Google Sheets or Excel) |
+| Difficulty | Beginner |
+| Time to Learn | About a day to build the first version |
+| Outcome | You have one reusable RACE planning template that holds the plan's objectives, tactics, owners, budgets, KPIs and review dates, stage by stage. |
+| Prerequisites | Business goals for the period, a list of current marketing activities, a first set of KPIs per stage |
 | Part of | [RACE Framework](../../methods/race-framework/METHOD.md) |
 
 ## Overview
 
-A customer journey template built on the RACE Framework transforms abstract marketing strategy into an organized, executable plan. Instead of scattered campaign briefs and disconnected channel spreadsheets, you get a single document that maps every marketing activity to one of four lifecycle stages: Reach (awareness), Act (interaction), Convert (purchase/lead), and Engage (retention). This clarity is what separates teams that consistently hit targets from those that run disjointed campaigns.
+A RACE planning template is a single document or spreadsheet that holds a marketing plan organized by the stages of the [RACE Framework](../../methods/race-framework/METHOD.md): a Plan section, then Reach, Act, Convert and Engage. It replaces scattered channel plans with one view in which every tactic sits in a stage, serves an objective, has an owner and a budget, and is measured by a KPI.
 
-The templates you'll build in this skill go beyond simple editorial calendars. They integrate objectives, audience segments, channel selections, tactical details, KPIs, ownership assignments, budgets, and timelines — all organized stage by stage. Whether you're a solo marketer building your first plan or a team lead aligning multiple departments, this customer journey template approach ensures nothing falls through the cracks.
+Smart Insights builds its own digital marketing plan template this way. The company describes its planning template as structured across the RACE Framework and recommends using it to create a 90-day prioritized plan before a longer-term annual plan ([Smart Insights: The RACE Framework](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/)). Its campaign template follows the same five sections and can be used to brief agencies or clients, in full or as a one-page summary ([Smart Insights: campaign plan](https://www.smartinsights.com/digital-marketing-strategy/organize-campaign-plan-race-framework/)).
 
-This skill connects directly to several sibling skills in the [RACE Framework](https://tryhamster.com/methods/race-framework). You'll reference KPI-setting work from [Setting KPIs and Metrics Across Each RACE Stage](https://tryhamster.com/skills/setting-kpis-across-race-stages) and journey mapping from [Creating Customer Journey Maps Using the RACE Framework](https://tryhamster.com/skills/creating-race-customer-journey-maps). The template is where all of that strategic thinking becomes operational.
+The template matters because RACE only works when the stages are planned together. When Reach, Act, Convert and Engage live in separate documents owned by separate teams, nobody sees that a Reach campaign is attracting visitors who never interact, or that an Engage program has no budget. A shared template puts those gaps on one page.
+
+This skill covers building the template itself: its sections, its columns, the rules for filling it in, and how it is used in reviews. It relies on two neighboring skills. The KPIs come from [RACE framework KPIs](../setting-kpis-across-race-stages/SKILL.md), and the journey stages behind each section come from [RACE funnel mapping](../mapping-customer-journey-stages-to-race/SKILL.md). The output is a template your team can reuse every quarter and a first filled-in plan.
 
 ## How It Works
 
-The core principle behind a RACE planning template is **stage-aligned organization**. The RACE Framework divides the customer lifecycle into four discrete stages, and your template mirrors this structure so every row or section answers three questions: *What are we trying to achieve at this stage? What will we do to achieve it? How will we measure success?*
+The template has two layers. The first is a Plan section that captures the strategic inputs. The second is one section per RACE stage that captures what will be done and how it will be measured.
 
-Conceptually, the template works as a translation layer between strategy and execution. At the top level, you define stage-specific objectives (e.g., "Increase organic traffic by 30%" for Reach). Below that, you list the channels and tactics that will drive those objectives (e.g., "Publish 12 pillar articles targeting high-volume keywords"). Finally, you attach KPIs and tracking methods so you can close the feedback loop.
+The Plan section follows the Opportunity and Strategy parts of Smart Insights' OSA process: audit performance, review the marketplace, summarize the key issues, set objectives, review strategy options, assess budget, and prioritize the strategic initiatives ([Smart Insights](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/)). Keep each item short. Its job is to explain why the stage sections contain what they do.
 
-The template also enforces **balanced funnel investment**. Without a structured customer journey template, teams tend to over-invest in one stage — usually Reach or Convert — while neglecting Act and Engage. By laying all four stages side by side, you immediately see gaps. If your Engage column is nearly empty, that's a visual signal to invest in retention before pouring more budget into acquisition.
+Each stage section uses the same columns so the plan can be read across stages:
 
-Finally, the template serves as a **communication artifact**. It gives stakeholders, agencies, and team members a shared reference point. When someone asks "What's our plan for Q3?" you hand them the template, and they can trace any activity back to a business objective through the RACE stage structure.
+| Column | What goes in it |
+|---|---|
+| Objective | One SMART objective for the stage |
+| Tactics | The activities that serve the objective, with channel |
+| Owner and budget | One accountable person and the money or hours assigned |
+| KPIs | Headline and supporting KPIs, each with baseline and target |
+| Timing | Start and end dates, or the week in a quarterly plan |
+| Status | Planned, live, paused or done, updated at each review |
+
+Objectives should pass the SMART test. Smart Insights defines SMART as specific, measurable, actionable, relevant and time-bound, and its [objectives guide](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/) gives sample objectives for each RACE stage that you can adapt.
+
+To check coverage, compare your tactics with a list of core activities per stage. Chaffey says Smart Insights breaks RACE into a set of key digital communications activities, five for each part of RACE ([Chaffey: RACE marketing model](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)). You do not need to adopt their list, but writing your own short list per stage exposes empty sections quickly.
+
+Timing belongs in the template too. The Smart Insights campaign guide recommends a visual timeline or Gantt chart for the Reach media plan, so the team can see when each communication goes live and who is responsible. A simple timeline tab linked to the tactics column does the same job.
+
+Finally, the template carries its own review rhythm. Each review updates status and KPI actuals, and each planning cycle revisits the Plan section. If nobody reopens the template after the first fill, the plan stops guiding decisions.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Template Structure and Format
+### Step 1: Choose the format and scope
 
-Choose your tool (Google Sheets, Excel, Notion, or Airtable) and set up the foundational structure. Create four main sections or tabs — one for each RACE stage: Reach, Act, Convert, and Engage. Within each section, create columns for: Objective, Target Audience Segment, Channel, Tactic/Activity, KPI, Target Value, Owner, Budget, Timeline/Deadline, and Status.
+Decide whether the template will be a spreadsheet, a document or a planning tool, based on where your team already works. Decide what one filled-in template covers: the whole marketing plan, one product, one market or one campaign. [Smart Insights](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/) suggests starting with a 90-day prioritized plan and then an annual plan, so consider two views of the same template. Name the person who maintains the template.
 
-If you prefer a single-sheet view, use the first column for the RACE stage and color-code rows: blue for Reach, green for Act, orange for Convert, and purple for Engage. This visual coding makes the customer journey template immediately scannable.
+### Step 2: Build the Plan section
 
-For teams that need a more visual approach, consider a hybrid layout: a summary dashboard tab that shows high-level objectives and KPIs per stage, plus detailed tabs for tactical planning.
+Create short fields for the audit summary, marketplace review, key issues, objectives, strategy choices and budget, following the OSA steps from [Smart Insights](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/). Limit each field to a few lines. Link to the underlying analysis rather than pasting it in. The Plan section should be readable in a few minutes by someone new to the plan.
 
-> **Pro tip:** Add a "Notes/Dependencies" column from the start. Tactics often depend on other activities (e.g., a retargeting campaign in Convert depends on pixel implementation in Reach), and capturing these dependencies early prevents execution bottlenecks.
+### Step 3: Create one section per stage with shared columns
 
-### Step 2: Step 2: Set Stage-Specific Objectives
+Add sections for Reach, Act, Convert and Engage with identical columns: objective, tactics, owner and budget, KPIs, timing and status. Shared columns let you compare stages at a glance and total budgets across them. Add a short description at the top of each section stating what the stage means for your business, for example what counts as an interaction in Act.
 
-For each RACE stage, write 1-3 SMART objectives that define what success looks like. These objectives should cascade from your overall business goals.
+### Step 4: Fill in objectives and KPIs
 
-**Reach:** Objectives focused on awareness and visibility. Example: "Increase new website visitors from organic search by 25% in Q3."
+Write one SMART objective per stage, using the sample objectives in the [Smart Insights guide](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/) as a starting point. Copy the headline and supporting KPIs for each stage, with baselines and targets, from your KPI work. Check that the four objectives connect, so that Reach feeds Act and Act feeds Convert.
 
-**Act:** Objectives focused on engagement and interaction. Example: "Achieve a 15% increase in product page engagement rate (time on page > 2 minutes)."
+### Step 5: Add tactics, owners, budgets and timing
 
-**Convert:** Objectives focused on transactions or lead generation. Example: "Generate 500 marketing-qualified leads from gated content downloads."
+List the tactics for each stage, with the channel, owner, budget and dates. Compare each stage's list with your checklist of core activities and note empty cells. Put every dated tactic on the timeline tab. Total the budget per stage and check the split against your objectives.
 
-**Engage:** Objectives focused on retention and advocacy. Example: "Improve email subscriber 90-day retention rate from 60% to 75%."
+### Step 6: Add a summary view
 
-Refer to your work from [Setting KPIs and Metrics Across Each RACE Stage](https://tryhamster.com/skills/setting-kpis-across-race-stages) to ensure your objectives are grounded in the right metrics.
+Build a one-page summary that shows, for each stage, the objective, the headline KPI with target and latest actual, the total budget, and the status of the main tactics. This is the page leadership reads and the page the monthly review starts from. Keep it generated from the stage sections so it never drifts from them.
 
-> **Pro tip:** Limit yourself to 1-3 objectives per stage. More than that dilutes focus. If you have 8 objectives under Reach, you probably need to prioritize or combine them.
+### Step 7: Set the review rhythm and version the template
 
-### Step 3: Step 3: Map Channels and Tactics to Each Stage
-
-Under each objective, list the specific marketing channels and tactics you'll use. Be concrete — "social media" is too vague; "LinkedIn sponsored content targeting CFOs in SaaS companies" is actionable.
-
-For each tactic, include enough detail that someone could execute it without asking clarifying questions. Specify the content format, audience targeting criteria, frequency, and any tools required.
-
-A common pattern for a customer journey template across RACE stages:
-
-- **Reach:** SEO content clusters, Google Ads brand campaigns, social media awareness ads, PR outreach, podcast guest appearances
-- **Act:** Interactive tools (calculators, quizzes), blog CTAs to email signup, webinar registrations, product comparison guides, remarketing display ads
-- **Convert:** Personalized email nurture sequences, demo request landing pages, limited-time offers, abandoned cart recovery, sales enablement content
-- **Engage:** Onboarding email series, loyalty programs, NPS surveys, user community management, referral incentive campaigns
-
-Map these against the customer journey stages you've defined in [Mapping Customer Journey Stages to the RACE Funnel](https://tryhamster.com/skills/mapping-customer-journey-stages-to-race).
-
-> **Pro tip:** Use a channel matrix overlay: for each tactic, note whether it's paid, owned, or earned media. This helps you balance your mix and ensures you're not over-reliant on any single media type.
-
-### Step 4: Step 4: Assign KPIs and Target Values
-
-Every tactic in your template needs a measurable KPI and a specific target value. This is what makes your customer journey template actionable rather than aspirational.
-
-For each row, define:
-- **KPI:** The metric you'll track (e.g., impressions, click-through rate, conversion rate, repeat purchase rate)
-- **Target Value:** The specific number you're aiming for (e.g., 50,000 impressions, 3.5% CTR, 4% conversion rate)
-- **Measurement Tool:** Where you'll pull the data (Google Analytics, HubSpot, Shopify dashboard, etc.)
-- **Reporting Frequency:** How often you'll check this metric (daily, weekly, monthly)
-
-Align your KPIs with the stage-level objectives you set in Step 2. If your Reach objective is about organic traffic growth, your Reach-stage tactics should have KPIs like organic sessions, keyword rankings, and backlink acquisition rate — not conversion-oriented metrics.
-
-> **Pro tip:** Include both leading and lagging indicators. A lagging KPI like 'monthly revenue from email' tells you what happened; a leading KPI like 'email list growth rate' tells you what's likely to happen.
-
-### Step 5: Step 5: Assign Ownership, Budgets, and Timelines
-
-A customer journey template without clear ownership is just a wish list. For every tactic, assign:
-
-- **Owner:** The specific person (not a team) responsible for execution. If it's outsourced, name the agency contact.
-- **Budget:** The allocated spend for this tactic. Even if it's $0 (organic effort), note the estimated time investment.
-- **Timeline:** Start date, end date, and any key milestones. For ongoing activities, note the cadence (e.g., "2 blog posts/week, ongoing").
-- **Status:** Create a simple status system — Not Started, In Progress, Live, Paused, Complete.
-
-This operational layer transforms your template from a strategic planning document into a project management tool. It's what makes the template a living document your team actually uses week to week, not something that gets created in January and forgotten by March.
-
-> **Pro tip:** Add conditional formatting to your status column: red for overdue items, yellow for in-progress, green for complete. This gives you an instant health check in team meetings.
-
-### Step 6: Step 6: Build a Summary Dashboard
-
-Create a dashboard tab or section that pulls together high-level metrics from all four RACE stages into a single view. This is the tab you'll show to leadership and use in weekly standups.
-
-Your dashboard should include:
-- **Stage health indicators:** A quick status (on track / at risk / off track) for each RACE stage
-- **Key metric trends:** Sparklines or simple charts showing your top 1-2 KPIs per stage over time
-- **Budget utilization:** Percentage of allocated budget spent per stage
-- **Next actions:** The top 1-2 priorities for the upcoming week per stage
-
-If you're in Google Sheets, use formulas to pull data from your detailed planning tabs. If you're in a tool like Notion or Airtable, use rollup fields or linked databases. The dashboard should auto-update as you modify the underlying tactic rows.
-
-> **Pro tip:** Keep the dashboard to one screen — no scrolling. If stakeholders have to scroll, they won't use it. Ruthlessly prioritize what appears here.
-
-### Step 7: Step 7: Establish a Review and Iteration Cadence
-
-Your customer journey template is a living document, not a one-time artifact. Establish a regular review rhythm:
-
-- **Weekly:** Update status fields, flag blockers, review leading indicators
-- **Monthly:** Assess KPI progress against targets, reallocate budget if needed, add or remove tactics based on performance
-- **Quarterly:** Review stage-level objectives, update audience segments based on new data, refresh the channel mix
-
-During each review, ask three questions per RACE stage: Are we hitting our KPI targets? Is our budget allocation proportional to results? Are there emerging opportunities or threats we need to add to the template?
-
-Document decisions directly in the template (a "Change Log" tab works well) so you have an audit trail of what was adjusted and why. This makes your template increasingly valuable over time as it accumulates institutional knowledge about what works for your business across the full [RACE Framework](https://tryhamster.com/methods/race-framework) funnel.
-
-> **Pro tip:** Rotate the review facilitator each month. Fresh eyes catch blind spots that the template owner might miss.
+Schedule reviews, monthly for most teams, in which owners update status and KPI actuals. At each planning cycle, archive the filled-in plan with its date and start the next one from the template. Change the template's structure only on purpose, and note what changed, so plans from different periods stay comparable.
 
 ## Best Practices
 
-- Start with your highest-priority RACE stage first — fill it out completely before moving to the next stage. This prevents the common trap of building a wide but shallow template that lacks actionable detail in every section.
-- Use consistent naming conventions for channels and tactics across all four stages. If you call it 'Google Ads' in the Reach tab, don't call it 'PPC' in the Convert tab. Consistency makes filtering, sorting, and reporting accurate.
-- Include a 'customer action' column alongside each tactic that describes what the customer does at this touchpoint (e.g., 'reads blog post,' 'submits email,' 'completes purchase'). This keeps your customer journey template genuinely customer-centric rather than channel-centric.
-- Version your templates with dates (e.g., 'RACE Plan Q3 2024 v2.1') and archive previous versions. This lets you compare planning approaches across quarters and identify what structural changes improved results.
-- Build your template modularly so individual stages can be shared with specialists (e.g., the Reach tab goes to your SEO agency, the Convert tab to your CRO team) without exposing the entire plan or creating confusion.
-- Add a 'hypothesis' field for experimental tactics. State what you expect to happen and why. This turns your template into a learning tool, not just a task list, and dramatically improves the quality of your quarterly reviews.
+- Keep one template for the whole team. Separate channel templates recreate the silos RACE is meant to remove.
+- Start with a 90-day plan. Smart Insights recommends a 90-day prioritized plan first and an annual plan after, which gets a first version live quickly ([Smart Insights](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/)).
+- Give every row an owner. A tactic with no owner is a wish, and it will not be updated at the review.
+- Include offline tactics in the stage they serve, such as sales calls in Convert or events in Reach. Chaffey built offline activity into RACE, so the template should reflect it ([Chaffey](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)).
+- Use the one-page summary for briefings. The Smart Insights campaign template can be used as a one-page summary for briefing agencies or clients, and a summary view does the same for your stakeholders.
+- Keep analysis out of the template. Link to audits and research so the template stays short enough to be read.
 
 ## Common Mistakes
 
-- **Building an overly complex template with 20+ columns that no one wants to update** — Start with 8-10 essential columns (Stage, Objective, Channel, Tactic, KPI, Target, Owner, Timeline, Status) and only add fields when there's a demonstrated need. A template that gets used weekly beats a comprehensive one that gets abandoned.
-- **Filling all four RACE stages with tactics but leaving the Engage stage with only 1-2 generic entries like 'send monthly newsletter'** — Apply the same rigor to Engage as you do to Reach and Convert. Define specific retention objectives, map out lifecycle email sequences, community tactics, and loyalty programs. Reference the work in [Optimizing the Full-Funnel Customer Journey with RACE](https://tryhamster.com/skills/optimizing-the-full-funnel-customer-journey) to ensure balanced coverage.
-- **Using the same KPIs across multiple RACE stages, such as tracking 'website traffic' for both Reach and Convert** — Each stage needs stage-appropriate metrics. Reach uses awareness metrics (impressions, new visitors), Act uses engagement metrics (pages per session, content downloads), Convert uses transaction metrics (conversion rate, cost per acquisition), and Engage uses retention metrics (repeat purchase rate, NPS, churn rate).
-- **Creating the customer journey template in isolation without input from the people who will execute the tactics** — Co-create the template with channel owners and specialists. They'll provide realistic timeline estimates, flag resource constraints, and ensure tactics are actually executable. A top-down template often contains aspirational tactics that the team can't deliver.
-- **Treating the template as a static annual plan and never updating it after initial creation** — Implement the weekly/monthly/quarterly review cadence from Step 7. Marketing conditions change rapidly — a template that doesn't evolve becomes misleading. Schedule recurring calendar events for reviews and assign a template owner responsible for keeping it current.
+- **A template with no Plan section**: Tactics listed without objectives cannot be prioritized. Fill in the Plan section first.
+- **Empty Act or Engage sections**: Many plans are strong on Reach and Convert and blank in between and after. Treat an empty section as a gap to discuss.
+- **Different columns in each section**: When each stage uses its own format, budgets and KPIs cannot be compared. Keep the columns identical.
+- **Filling it in once**: A plan that is never updated soon stops matching what the team is doing. Tie the template to a review cadence.
+- **Too much detail**: Pasting research into the template makes it unreadable. Link out and keep each cell short.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/race-framework/METHOD.md) — RACE Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/race-framework/METHOD.md): RACE Framework
 
 ## Related Skills
 
-- [Setting KPIs and Metrics Across Each RACE Stage](../setting-kpis-across-race-stages/SKILL.md)
-- [Mapping Customer Journey Stages to the RACE Funnel](../mapping-customer-journey-stages-to-race/SKILL.md)
-- [Building Awareness in the Reach Stage](../building-awareness-in-the-reach-stage/SKILL.md)
-- [Driving Interactions in the Act (Consideration) Stage](../driving-interactions-in-the-act-stage/SKILL.md)
-- [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
-- [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
-- [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
+- [RACE Framework KPIs: Setting Metrics for Each Stage](../setting-kpis-across-race-stages/SKILL.md)
+- [RACE Funnel Mapping: Align Journey Stages to RACE](../mapping-customer-journey-stages-to-race/SKILL.md)
+- [RACE Framework Journey Map: How to Build One](../creating-race-customer-journey-maps/SKILL.md)
+- [RACE Framework Optimization Across the Full Funnel](../optimizing-the-full-funnel-customer-journey/SKILL.md)
+- [Reach Stage: Building Awareness in the RACE Framework](../building-awareness-in-the-reach-stage/SKILL.md)
+- [Act Stage: Driving Interactions in the Consideration Stage](../driving-interactions-in-the-act-stage/SKILL.md)
+- [Convert Stage: Optimizing Conversions at the Decision Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
+
+## Sources
+
+- [Smart Insights: The RACE Framework](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/)
+- [Smart Insights: Marketing campaign strategy with the RACE Framework](https://www.smartinsights.com/digital-marketing-strategy/organize-campaign-plan-race-framework/)
+- [Smart Insights: How to define SMART marketing objectives](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/)
+- [Dave Chaffey: RACE marketing model](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)

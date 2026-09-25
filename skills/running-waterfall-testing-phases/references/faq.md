@@ -1,25 +1,21 @@
-# FAQ: Running Structured Testing and Verification Phases
+# FAQ: Running Waterfall Testing Phases from Unit to Acceptance
 
-## How long should the testing phase take in a waterfall model project?
+## What are the testing levels in the waterfall model?
 
-Testing typically consumes 25-40% of total project duration in a waterfall model project. The exact length depends on system complexity, the number of requirements, and regulatory requirements. A system with 200 requirements might need 4-8 weeks of dedicated testing across all four levels.
+The usual levels are unit, integration, system and acceptance testing. Unit tests check individual modules, integration tests check how modules work together, system tests check the whole system against the requirements, and acceptance tests check that the system meets the customer's acceptance criteria. Each level has its own entry and exit criteria.
 
-## What happens if critical defects are found late in the waterfall model testing phase?
+## What is a requirements traceability matrix?
 
-Critical defects must be fixed and retested before exit criteria can be met. If the fix requires significant rework, the project may need to return to the development phase, and affected testing levels must be re-executed. This is why early defect detection through thorough unit and integration testing is crucial — defects found later are exponentially more expensive.
+It is a table that links each requirement to the design elements and test cases that address it, with the latest test results. It shows which requirements are covered and verified and which are not. It is the main evidence at the test gate and speeds up impact analysis when a requirement changes.
 
-## Can you automate testing in a waterfall model project?
+## How does the V-model relate to waterfall testing?
 
-Yes, and you should where practical. Automated unit tests and integration tests dramatically speed up regression testing after defect fixes. However, system testing and acceptance testing often require manual execution, especially for usability, exploratory scenarios, and stakeholder validation that requires human judgment.
+The V-model keeps the waterfall sequence but draws the test levels as the rising side of a V, each opposite the design phase it verifies. Requirements pair with acceptance testing, system design with system testing, architecture with integration testing and module design with unit testing. Its practical lesson is to plan each level of testing while writing the matching design document.
 
-## What is the difference between verification and validation in waterfall testing?
+## Is testing only at the end a weakness of waterfall?
 
-Verification asks 'did we build the product right?' — it checks that the system conforms to its specifications through unit, integration, and system testing. Validation asks 'did we build the right product?' — it confirms the system meets actual user needs, primarily through acceptance testing. The waterfall model's testing phase covers both.
+It is the main risk Royce pointed out in his original paper, because testing is the first time the whole system is exercised. Unit testing and code review during implementation reduce that risk, as do early test planning and a pilot build. Where that is not enough, teams use incremental or iterative approaches instead.
 
-## Who is responsible for acceptance testing in a waterfall model?
+## When is the testing phase finished?
 
-Business stakeholders, end users, or their designated representatives own acceptance testing. The testing team facilitates by preparing the environment, test scenarios, and test data, but the actual pass/fail judgment comes from the people who will use the system or who commissioned it.
-
-## How does the waterfall model testing phase differ from agile testing?
-
-In the waterfall model, testing is a dedicated phase that occurs after development is complete, covering the entire system at once. In agile, testing is continuous and happens within each sprint alongside development. The waterfall approach provides comprehensive, documented verification but discovers defects later, while agile finds defects earlier but may lack the systematic traceability that regulated industries require.
+When the exit criteria in the test plan are met, which usually means all planned tests have run, every requirement is covered, no open defects of the agreed severity remain, and the customer has signed acceptance. The decision is made at the gate review using the test summary report and the traceability matrix. If the criteria are not met, the gate can hold, recycle or approve with conditions.

@@ -1,15 +1,20 @@
 ---
-name: adapting-spotify-model-to-your-organization
-description: "This skill teaches you how to translate the Spotify squad, tribe, chapter, and guild structure into an operating model that fits your company's specific size, culture, technical landscape, and existing processes, rather than blindly copying another company's org chart."
+name: "adapting-spotify-model-to-your-organization"
+description: "A pilot-first approach to Spotify model implementation: adapt squads, tribes, chapters and guilds to your company's size, culture and architecture."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: spotify-squad-model
+  method: "spotify-squad-model"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Implementing Spotify Model: Adapting Squads, Tribes, and Guilds to Fit Your Organization
+# Adapting the Spotify Model to Your Organization
 
-> This skill teaches you how to translate the Spotify squad, tribe, chapter, and guild structure into an operating model that fits your company's specific size, culture, technical landscape, and existing processes, rather than blindly copying another company's org chart.
+> A pilot-first approach to Spotify model implementation: adapt squads, tribes, chapters and guilds to your company's size, culture and architecture.
 
 ## Before you start
 
@@ -24,166 +29,105 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Advanced |
-| Time to Learn | 4-8 weeks for a single-tribe pilot; 3-6 months for full organizational rollout |
-| Outcome | You produce a tailored organizational blueprint that maps your existing teams into squads, tribes, chapters, and guilds, complete with a phased rollout plan, customized rituals, and measurable success criteria that you can pilot in one tribe before scaling. |
-| Prerequisites | Working knowledge of Agile principles (Scrum or Kanban at the team level), Understanding of the Spotify Model's four structural layers (squads, tribes, chapters, guilds), Authority or executive sponsorship to restructure teams, Access to current org charts, team charters, and dependency maps |
-| Part of | [Spotify Squad Model](../../methods/spotify-squad-model/METHOD.md) |
+| Time to Learn | A day to learn, several months to pilot and adjust |
+| Outcome | You can design a version of the Spotify model that fits your organization, test it in a pilot with clear success measures, and decide on evidence whether to extend it. |
+| Prerequisites | An evaluation of which elements fit, an executive sponsor, a willing pilot area, the ability to change reporting lines |
+| Part of | [The Spotify Model](../../methods/spotify-squad-model/METHOD.md) |
 
 ## Overview
 
-The [Spotify Squad Model](https://tryhamster.com/methods/spotify-squad-model) is one of the most discussed frameworks for scaling Agile, but it was never designed as a plug-and-play prescription. Spotify itself described it as a snapshot of how they worked at a particular moment in time, not a template for others to adopt wholesale. Yet organizations routinely rename their teams to "squads," redraw boxes on an org chart, and wonder why autonomy, alignment, and cross-pollination don't magically appear. Implementing Spotify Model structures effectively requires a deliberate adaptation process that respects the constraints your company actually has.
+Adapting the Spotify model means building your own version of it for your company rather than installing Spotify's. It covers the practical side of a Spotify model implementation: choosing which structures to use, changing them to fit your size, culture and architecture, testing them in a pilot, and deciding whether to extend them. For background on where the model came from and why it should not be copied as is, see the [method page](../../methods/spotify-squad-model/METHOD.md).
 
-This skill walks you through that adaptation. You will audit your current team topology and dependencies, identify which elements of the model address problems you genuinely face, design a customized version of the structure with terminology and rituals that fit your culture, and run a controlled pilot before committing the entire organization to the change. The concrete artifact you produce is a rollout blueprint: a document that maps every existing team to a squad, groups squads into tribes with explicit scope boundaries, establishes chapter and guild charters, defines the rituals each layer will practice, and lays out a 90-day pilot plan with success metrics.
+Adaptation is what the model's authors and observers recommend. Henrik Kniberg, who co-wrote the original description, wrote that companies copying the model can benefit, mainly because looking at your own organization critically and taking inspiration from others is valuable, "As long as you adapt to your local context" ([Kniberg](https://blog.crisp.se/2015/06/07/henrikkniberg/no-i-didnt-invent-the-spotify-model)). Atlassian's summary gives the same advice: understand the structure, practices and mindset behind Spotify's approach, then tweak them to fit your environment ([Atlassian](https://www.atlassian.com/agile/agile-at-scale/spotify)).
 
-The reason this skill matters is that the gap between "understanding the Spotify Model" and "operating successfully inside one" is enormous. The model's power comes from a specific set of tradeoffs: squad autonomy traded against alignment overhead, chapter leadership traded against traditional management authority, and guild participation traded against focused delivery time. Without understanding which tradeoffs are acceptable in your context, you will either cargo-cult the labels while keeping the old operating model underneath, or you will break coordination mechanisms you actually need. This skill closes that gap by giving you a structured process for making those tradeoffs explicit and reversible.
+ING's is one of the better-documented large adaptations. Its executives describe a model inspired by several technology companies "which we then adapted to our own business", starting with pilot squads and using the lessons to adjust the design before implementing it across headquarters ([McKinsey Quarterly](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation)). They also warn against taking only some building blocks while keeping the old organizational structure and governance, which they say defeats the purpose.
 
-By the end of this skill, you will have a customized organizational design, a phased migration plan, a set of rituals and governance mechanisms calibrated to your company, and a clear definition of what "working" looks like so you can evaluate the pilot honestly.
+The output of this skill is an adaptation design and a pilot plan: the elements you are adopting and how you are changing each, the pilot area, the decision rights, the success measures, and the point at which you decide whether to go further.
 
 ## How It Works
 
-The core insight behind implementing the Spotify Model is that it is not a single structure but a system of four interlocking coordination layers, each solving a different organizational problem. Squads solve the problem of team ownership and delivery speed. Tribes solve the problem of strategic alignment across related squads. Chapters solve the problem of craft excellence and career growth within a discipline. Guilds solve the problem of knowledge sharing and standardization across the entire organization. When you adapt the model, you are really asking: which of these four problems do we actually have, how severe is each one, and what is the lightest-weight version of each layer that addresses it?
+Adaptation starts with problems rather than structures. Marcin Floryan of Spotify argued that you should not start from a model or a book, but look at what you want to achieve and use whatever helps you get there ([InfoQ](https://www.infoq.com/news/2016/10/no-spotify-model/)). So the first input is a short list of the problems the organization wants to solve, and the second is an honest picture of its current structure, architecture and culture.
 
-The adaptation process works because it forces you to separate the model's principles from its specific implementation details. The principle behind squads is "small, autonomous, cross-functional teams with end-to-end ownership of a mission." The implementation detail is "typically 6-8 people with a Product Owner and an Agile Coach." Your company might achieve the same principle with teams of 4-5, a shared Product Manager across two squads, and no dedicated Agile Coach. The point is to preserve the principle while adjusting the implementation details to your constraints.
+Each element of the model then gets one of three treatments: adopt as described, adapt, or skip. Common adaptations address the model's known weak points. Chapters can keep their craft role while line management sits with an engineering manager per squad, answering the accountability gap Jeremiah Lee describes ([Lee](https://www.jeremiahlee.com/posts/failed-squad-goals/)). Squads can keep freedom over their internal process while agreeing a small set of shared practices for working together, which a former Spotify coach Lee quotes calls "minimum viable agility". Tribes can be skipped entirely until there are enough squads to need them.
 
-A second mechanism that makes adaptation work is the pilot-then-expand pattern. Organizational restructuring is inherently risky because you are changing reporting lines, decision rights, and communication patterns simultaneously. By constraining the initial change to a single tribe (a group of 30-80 people working on a related mission), you create a bounded experiment. The tribe is large enough to surface real coordination challenges between squads, between chapters and squad leads, and between the tribe and the rest of the organization, but small enough to adjust without destabilizing the company.
+Architecture shapes what is possible. [Conway's law](https://www.melconway.com/Home/Conways_Law.html) says a system's design tends to mirror the organization's communication structure, and the practical corollary is that squad boundaries that cut across a tightly coupled codebase create dependencies no reorganization can remove. Adapted squad boundaries should follow the parts of the system teams can actually own, and the plan should include the technical work needed to make more of it ownable.
 
-The mental model to carry is this: think of the [Spotify Squad Model](https://tryhamster.com/methods/spotify-squad-model) as a reference architecture, the same way a software architect treats a reference architecture. You study it to understand the design decisions and tradeoffs, then you produce a concrete architecture that accounts for your specific infrastructure, traffic patterns, and team capabilities. Copying the reference architecture verbatim into production without considering your constraints would be malpractice in software. The same logic applies to organizational design.
+A pilot limits risk and produces evidence. ING's executives describe setting up five or six pilot squads in parallel with the design work and using the lessons to adapt the setup, working environment and overall design before rolling out ([McKinsey Quarterly](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation)). They also say it took about eight or nine months from writing the strategy to having the new organization in place across headquarters. A pilot needs a fixed period, measures agreed in advance, and a decision point.
 
-Finally, the adaptation process accounts for the cultural dimension that structural diagrams ignore. The Spotify Model assumes a high-trust, low-hierarchy culture where squads can make local technical decisions without escalation, where chapter leads coach rather than direct, and where guilds are voluntary communities rather than mandated committees. If your company currently operates with centralized approval workflows, strict role hierarchies, and top-down technology mandates, simply renaming teams will not create the cultural conditions the model requires. Your adaptation plan must include specific changes to decision rights, escalation paths, and leadership behaviors, not just boxes and lines.
+Culture carries the adaptation. ING's Bart Schlatmann calls culture "perhaps the most important element" of the change, and describes leaders spending a lot of time modeling the behavior they wanted. A structure adopted without that change in behavior tends to revert to the old habits under new names.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit Your Current Team Topology and Dependencies
+### Step 1: Audit your current structure and dependencies
 
-Before you design anything new, you need a clear picture of what exists. Map every delivery team in the area you plan to restructure: who is on each team, what they own (services, features, product areas), who they depend on for deployments and releases, and who makes decisions about their backlog. Create a simple grid with columns for team name, members (count and roles), owned services or product areas, upstream dependencies (teams that feed them work), downstream dependencies (teams that consume their output), and primary decision-maker for priorities. The goal is to surface the real coordination patterns, not the ones the org chart implies.
+Document how teams are organized today, how work flows between them, and where it waits. Survey teams about which other teams they depend on and whether each dependency blocks or slows them. Map how code is built and released, and which parts teams can release on their own. Note how decisions are made and who approves what. This audit is the baseline the pilot will be compared against.
 
-Pay special attention to shared services teams, platform teams, and individuals who sit on multiple teams. These are the hardest elements to map into a squad model because they violate the assumption of dedicated, cross-functional membership. Interview at least one member of each team and their manager to validate your map, because written documentation almost always lags reality.
+### Step 2: Match model elements to real problems
 
-> **Pro tip:** The dependency map matters more than the people map. If you discover that four teams all depend on one shared database team for schema changes, that bottleneck will persist regardless of whether you call the teams squads. Address structural bottlenecks before, not after, the reorganization.
+List the problems the audit shows and rank them. For each, note which element of the model addresses it: cross-functional squads for hand-offs, tribes for coordination among many squads, chapters for isolated specialists, guilds for duplicated tools and knowledge. Mark elements that address none of your top problems as candidates to skip. If you have not already, run a fuller [evaluation of the tradeoffs](../evaluating-spotify-model-tradeoffs/SKILL.md) for each element.
 
-### Step 2: Step 2: Identify Which Model Elements Address Your Real Problems
+### Step 3: Design your version of each element
 
-With your topology mapped, run a problem-matching exercise. List the top 5-7 organizational pain points that motivated interest in the Spotify Model. Common examples include slow delivery due to cross-team dependencies, unclear ownership of product areas, inconsistent engineering practices across teams, siloed knowledge, difficulty retaining specialists, and misalignment between teams and strategy. For each pain point, identify which layer of the Spotify Model is designed to address it.
+For each element you keep, write down how your version differs from the original and why. Decide who line-manages engineers, whether squads share any process, how big tribes may get, and whether you need tribes at all yet. Use names your people will understand; the words are optional, and Lee argues that plain terms such as teams and departments communicate better. Keep the design to a few pages.
 
-Slow delivery from dependencies is a squad-formation problem (squads need to be cross-functional enough to deliver independently). Inconsistent engineering practices is a chapter problem. Siloed knowledge is a guild problem. Misalignment is a tribe problem.
+### Step 4: Choose a pilot area
 
-If a pain point does not map cleanly to any of the four layers, note it separately. The model does not solve every organizational problem, and forcing a mismatched solution will create new problems.
+Pick one product area whose squads can be made largely independent, with a leader who wants to try the new structure. Avoid the area with the heaviest dependencies for the first pilot, because its problems will be architectural rather than organizational. Make sure the pilot is large enough to test the elements you care about; a chapter needs several people with the same skill, and a tribe needs several squads.
 
-> **Pro tip:** If your top pain points are mostly about squad-level autonomy and delivery speed, and you have fewer concerns about cross-team knowledge sharing, you may not need guilds at all in your first iteration. Layer complexity only as you encounter the problems each layer solves.
+### Step 5: Define decision rights
 
-### Step 3: Step 3: Design Your Customized Squad Boundaries
+Write down who decides what in the pilot: what each squad works on, how work is done, who is on each squad, who manages each person, and how conflicts between squads and chapters are settled. Share this before the pilot starts. Unclear decision rights are where a pilot most often slides back into the old way of working.
 
-This is the most consequential design decision. Take your topology map and draw proposed squad boundaries that satisfy three criteria: each squad owns a coherent piece of the product or platform, each squad can deliver most of its work without blocking on another squad, and each squad is small enough for everyone to know each other (ideally 4-8 people). Start by identifying natural ownership boundaries in your codebase or product. If one team already owns the checkout flow end-to-end, that is likely a good squad boundary.
+### Step 6: Set success measures and a decision point
 
-If ownership is fragmented (frontend team owns the UI, backend team owns the API, data team owns the analytics pipeline), you need to decide whether to reorganize into vertical squads that own a slice across the stack, or keep horizontal squads with explicit contracts between them. For most organizations adopting the model, vertical slices produce better outcomes because they reduce handoffs. Document each proposed squad with a mission statement (one sentence describing who the squad serves and what outcome it drives), a list of owned services or product areas, and the roles needed. For detailed guidance on writing squad missions and selecting members, see [Forming Autonomous Squads with Clear Missions](https://tryhamster.com/skills/forming-autonomous-squads).
+Agree in advance what would show the pilot is working: time from idea to release, the number of blocking dependencies, squad health check results, and feedback from stakeholders. Take a baseline from the audit. Fix a pilot period, often a few months, and a date when leadership will decide to extend, adjust or stop. Writing the decision criteria down before starting keeps the review honest.
 
-> **Pro tip:** Test your squad boundaries by asking: 'Can this squad ship a meaningful change to its area in one sprint without waiting on another squad for more than a code review?' If the answer is frequently no, the boundary is wrong.
+### Step 7: Launch the pilot with clear communication
 
-### Step 4: Step 4: Group Squads into a Pilot Tribe
+Explain to everyone involved what is changing, why, what will be measured, and that the design will be adjusted based on what is learned. Explain also what is not changing. Form the pilot squads with their missions, product owners and charters, and start the chapter and guild arrangements you designed. Give the pilot a named sponsor who can remove obstacles quickly.
 
-Select a group of 3-6 related squads to form your pilot tribe. The tribe should be large enough to create real inter-squad coordination challenges (at least 3 squads) but small enough to manage closely during the experiment (no more than about 80 people). Choose squads that share a strategic domain, like all the squads working on the consumer-facing product, or all the squads working on the payments platform. The tribe needs a Tribe Lead, someone with sufficient authority to make resourcing and prioritization decisions across the squads, and enough organizational influence to protect the pilot from interference.
+### Step 8: Review, adjust and decide whether to extend
 
-Write a tribe mission that describes the business outcome the tribe collectively owns. Establish the tribe's relationship to the rest of the organization: how the tribe communicates its roadmap outward, how requests from outside the tribe are triaged, and how cross-tribe dependencies are handled during the pilot. For deeper guidance on tribe structure and alignment, see [Organizing Squads into Tribes for Strategic Alignment](https://tryhamster.com/skills/organizing-tribes-for-alignment).
-
-> **Pro tip:** Avoid selecting a tribe that is already high-performing and low-conflict. You want the pilot to stress-test the model against real coordination pain. Pick a group that currently struggles with cross-team dependencies or unclear ownership, because that is where the model will either prove its value or reveal necessary adjustments.
-
-### Step 5: Step 5: Establish Chapters and Guilds Based on Actual Needs
-
-Chapters and guilds are the horizontal coordination mechanisms that prevent squads from drifting into silos. Chapters group people of the same discipline (all backend engineers, all product designers) who work in different squads within the same tribe. The chapter lead is responsible for craft quality, career development, and consistency of practices within the discipline. For your pilot, identify which disciplines need formal chapters.
-
-If you have 2 or more people of the same discipline spread across different squads in the tribe, that discipline likely needs a chapter. Appoint a chapter lead, who may be a senior individual contributor or a people manager, depending on your company's management model. Define the chapter's initial rituals: a bi-weekly chapter meeting for knowledge sharing, a quarterly skill assessment, and a shared standards document. For guilds, start only if there is a clear cross-tribe or company-wide interest area that needs coordination (such as API design standards or accessibility practices).
-
-Make guild participation voluntary and keep the initial commitment light, a monthly meeting and a shared Slack channel or equivalent. See [Running Chapters to Build Discipline-Specific Excellence](https://tryhamster.com/skills/running-chapters-for-craft-excellence) and [Building Guilds for Cross-Tribe Knowledge Sharing](https://tryhamster.com/skills/building-cross-cutting-guilds) for detailed playbooks.
-
-> **Pro tip:** The most common failure mode for chapters is that chapter leads lack the time or authority to actually influence practices. Budget at least 20% of a chapter lead's time for chapter responsibilities, and give them explicit authority to set and enforce coding standards, design review processes, or equivalent craft standards.
-
-### Step 6: Step 6: Customize Rituals and Decision-Rights for Your Culture
-
-The structural boxes mean nothing without the operating rhythms that make them work. For each layer of your adapted model, define the specific rituals, their cadence, and who participates. At the squad level, most teams will keep their existing Agile ceremonies (standups, sprint planning, retrospectives) with minor adjustments. At the tribe level, define a tribe-wide sync (typically bi-weekly or monthly) where squad leads share progress, surface cross-squad dependencies, and flag blockers.
-
-At the chapter level, define the chapter meeting cadence and format. Equally important, document the decision rights. A decision-rights matrix should answer: Who decides what a squad works on? ) Who decides how work is done technically?
-
-) Who decides staffing changes to a squad? ) Who resolves conflicts between squads? ) Write these down explicitly. Ambiguous decision rights are the single largest source of friction in Spotify Model implementations.
-
-> **Pro tip:** Run a pre-mortem with the pilot tribe's leadership: 'It is 90 days from now, and the pilot has failed. What went wrong?' The answers will reveal which decision rights are still unclear and which rituals are missing.
-
-### Step 7: Step 7: Define Success Metrics and a 90-Day Pilot Plan
-
-Before launching the pilot, define what success looks like in observable, measurable terms. " Instead, choose 4-6 metrics that capture the problems you identified in Step 2. For delivery speed, track cycle time (from work starting to reaching production) before and after restructuring. For autonomy, track the percentage of work items a squad can complete without waiting on another team.
-
-For alignment, survey squad members on whether they understand how their work connects to business goals (use a simple 1-5 scale, compare pre and post). For craft quality, track defect rates or code review turnaround within chapter disciplines. Set baseline measurements before the pilot starts. Define the pilot timeline: 90 days is sufficient to complete several delivery cycles and surface meaningful patterns, but short enough to course-correct if the structure is not working.
-
-Create a week-by-week plan for the first month that includes the kickoff (communicating the change and rationale), the first round of new rituals, and the first retrospective on the new structure at the 4-week mark.
-
-> **Pro tip:** Include at least one qualitative metric alongside the quantitative ones. A monthly "org health" retrospective where people rate satisfaction, clarity, and autonomy on a 1-5 scale will catch cultural friction that cycle-time numbers miss.
-
-### Step 8: Step 8: Launch the Pilot with Clear Communication
-
-Communication during the transition is as important as the structural design. Prepare a kickoff document for the pilot tribe that covers: why you are making this change (tied to the specific problems from Step 2, not abstract ideals), what is changing structurally (new squad assignments, new reporting lines, new rituals), what is NOT changing (compensation, job titles if you are keeping them, project commitments already in flight), and where to go with questions or concerns. Hold a tribe-wide kickoff meeting. Let the Tribe Lead and chapter leads present the plan together, reinforcing shared ownership of the experiment.
-
-" Be honest. Explain this is a pilot, that you will evaluate it with specific metrics, and that the team's feedback will directly influence whether and how you scale it. In the first two weeks, have the Tribe Lead hold daily 15-minute office hours for anyone to raise concerns or confusion. Most questions will cluster around decision rights and ritual logistics.
-
-Answer them promptly and update the documentation in real time.
-
-> **Pro tip:** Announce the pilot to the rest of the organization, not just the pilot tribe. Peer teams need to know who to contact, how the tribe handles incoming requests, and that the pilot is sanctioned by leadership. Otherwise, the pilot tribe gets isolated and external coordination breaks down.
-
-### Step 9: Step 9: Evaluate, Adjust, and Decide Whether to Scale
-
-At the 90-day mark, run a structured evaluation. Compare your success metrics (from Step 7) against the baselines you set before the pilot. Hold a tribe-wide retrospective focused on three questions: What is working better than before? What is working worse?
-
-What is confusing or undefined? Synthesize the feedback into three categories: structural adjustments (squad boundaries that need to shift, a chapter that needs to be created or dissolved), ritual adjustments (meetings that need a different cadence or format), and cultural adjustments (decision rights that need clarification, leadership behaviors that need to change). Make the adjustments and run a second 90-day cycle if the initial results are promising but inconclusive. If the pilot clearly improves the target metrics and the tribe reports higher clarity and satisfaction, begin planning the rollout to a second tribe.
-
-Do not attempt a big-bang rollout across the entire organization. Expand one tribe at a time, applying lessons from each pilot to the next. For a thorough assessment of common pitfalls during scaling, see [Evaluating Spotify Model Tradeoffs and Common Pitfalls](https://tryhamster.com/skills/evaluating-spotify-model-tradeoffs).
-
-> **Pro tip:** The most dangerous outcome is a pilot that is "okay" but not clearly better. Avoid the sunk-cost trap of scaling a marginal result. If the pilot does not show meaningful improvement on your target metrics after two 90-day cycles, revisit Step 2. You may be solving the wrong problems, or the model may not be the right tool for your specific constraints.
+Run squad health checks, repeat the dependency survey, and compare the measures with the baseline. Adjust the design where evidence shows a problem, as ING did with its pilot squads. At the decision point, extend the design to more areas, adjust and run another cycle, or stop. Document what you changed and why so later areas start from the improved version.
 
 ## Best Practices
 
-- Preserve principles, customize implementations. The Spotify Model's value comes from its principles (small autonomous teams, clear ownership, horizontal knowledge sharing), not from its specific team sizes, role names, or meeting formats. When adapting, write each principle on one side of a card and your specific implementation on the other. If you cannot articulate the principle a given practice serves, you are cargo-culting.
-
-This distinction prevents you from blindly copying rituals that do not fit your culture and keeps you anchored to the outcomes that actually matter.
-- Start with one tribe, not the whole company. Full-organization rollouts of the Spotify Model have a poor track record because they change too many variables simultaneously. A single-tribe pilot lets you validate squad boundaries, test chapter and guild mechanics, and discover unforeseen coordination problems in a contained environment. If you skip the pilot, you will discover structural problems at scale, where they are expensive to fix and demoralizing to experience.
-- Document decision rights explicitly and revisit them quarterly. The most common source of friction in Spotify Model implementations is ambiguity about who decides what. Write a decision-rights matrix covering at minimum: backlog prioritization, technical standards, staffing changes, cross-squad dependency resolution, and escalation paths. Review and update this matrix at every quarterly retrospective, because decision-right boundaries drift as squads mature and organizational priorities shift.
-- Budget real time for chapter and guild work. If chapter leads and guild facilitators have no protected time for their horizontal responsibilities, chapters and guilds become ceremonial. Allocate at least 20% of a chapter lead's capacity explicitly for chapter activities (one-on-ones, standards development, knowledge sharing sessions). For guild facilitators, budget at least 10%.
-
-Track this allocation in sprint planning, not as a side responsibility squeezed into gaps.
-- Use your own language. Renaming teams to squads without changing how they work just creates confusion. Conversely, some organizations resist the Spotify terminology because it feels foreign. Use whatever terms resonate with your culture: "pods" instead of squads, "domains" instead of tribes, "craft groups" instead of chapters.
-
-The words do not matter. The structural principles and operating behaviors do. Consistent internal language that everyone understands outperforms borrowed vocabulary that triggers eye-rolls.
-- Align squad boundaries to your technical architecture. If your codebase has a monolithic architecture where multiple squads need to touch the same repository for every change, squad autonomy is structurally impossible regardless of how well you design the org chart. Identify the top architectural bottlenecks during your topology audit (Step 1) and create a parallel technical decoupling plan. Squads need ownership of deployable units, not just ownership of backlogs.
-- Measure outcomes, not structure. The goal is not "we have squads, tribes, chapters, and guilds." The goal is "we deliver faster, with fewer dependencies, better craft quality, and more shared knowledge." Track the outcomes that motivated the change (cycle time, dependency wait time, knowledge-sharing frequency, engineer satisfaction) and be willing to dissolve or restructure elements that are not contributing to those outcomes. A guild that nobody attends should be shut down, not propped up with mandatory attendance.
+- Start from the problems. An element that does not address a real problem adds vocabulary and overhead without benefit.
+- Change the management design deliberately. Deciding who owns delivery and who manages whom before launch avoids a failure that critics of the model describe in detail.
+- Pilot before rolling out. A pilot shows how the design behaves with your people and systems, and ING used its pilot squads to adapt the setup before implementing it more widely.
+- Change behavior as well as structure. Leaders who keep approving every decision undo any structure; plan how leadership habits will change.
+- Use the words that help. Squads, tribes and chapters are optional labels, and plain terms may communicate better in your company.
+- Keep adapting after launch. Spotify's own structure kept changing, and so should yours as the organization grows.
 
 ## Common Mistakes
 
-- **Copying Spotify's structure without adapting to your constraints** — This is the most pervasive mistake and it stems from treating the Spotify Model as a prescription rather than a reference architecture. It looks like an organization that renames existing teams to squads, appoints chapter leads, and announces guilds, but changes nothing about how decisions are made, how code is deployed, or how priorities are set. You can spot it early when the new structure cannot answer basic operational questions like 'Who decides if this squad takes on a new project?' or 'What happens when two squads need to change the same service?' The fix is to go back to Step 2 and identify which specific problems you are solving, then design the lightest-weight version of each structural layer that addresses those problems. If you do not have a cross-tribe knowledge-sharing problem, you do not need guilds yet.
-- **Launching across the entire organization simultaneously** — Big-bang rollouts of the Spotify Model fail because organizational restructuring is inherently unpredictable. You cannot foresee all the coordination problems, decision-rights conflicts, and cultural friction that the new structure will create. This mistake happens because leadership is excited about the model and wants to move fast, or because they believe partial adoption will create an inconsistent organization. The signal that you are heading here is a rollout plan with a single 'go-live' date for the whole company.
-
-Instead, pilot with one tribe for 90 days, evaluate rigorously, adjust, and expand one tribe at a time. The inconsistency of having some teams in the new model and some in the old is uncomfortable but dramatically safer than a universal change that goes wrong everywhere simultaneously.
-- **Treating the reorganization as a one-time event rather than an ongoing process** — Organizations that implement the Spotify Model often treat the restructuring as a project with a completion date. They design the structure, roll it out, and move on. This fails because squad boundaries need to shift as the product evolves, chapter leads burn out and need succession planning, and guilds lose energy after the initial enthusiasm fades. The warning sign is that nobody is responsible for evaluating whether the structure is still working six months after launch.
-
-Build an explicit review cadence: a tribe-level structural retrospective every quarter, a company-level assessment every six months. Include structural adjustments (splitting or merging squads, creating or dissolving guilds) as a normal part of your operating rhythm, not as a crisis response.
-- **Ignoring the cultural prerequisites for squad autonomy** — The Spotify Model assumes that squads can make local decisions about technology choices, release timing, and process without escalating for approval. If your company culture requires manager sign-off on technical decisions, centralized release management, or standardized tooling mandated from above, simply creating squads will not produce autonomy. You will have squads that still wait for approvals, which is the worst of both worlds: reorganization cost without autonomy benefit. Diagnose this early by mapping your current approval workflows.
-
-For each decision type (tech stack, release timing, backlog priorities, hiring), ask whether the proposed squad can make this decision independently. Where they cannot, either change the approval policy or accept the constraint and design your adaptation accordingly. Forced autonomy without the cultural support structure leads to chaos. Gradual expansion of decision rights, with clear guardrails, leads to sustainable autonomy.
-- **Making chapter leads purely ceremonial with no real authority or time** — This mistake manifests as chapter leads who are named but have no capacity for chapter work because they are fully allocated to their squad's delivery commitments. The chapter meeting becomes a monthly status update that nobody finds useful, and craft quality remains inconsistent across squads. This happens because organizations underestimate the real work of chapter leadership: running one-on-ones with chapter members, setting and reviewing coding or design standards, facilitating knowledge sharing, and handling career development conversations. The fix is structural, not motivational.
-
-Reduce the chapter lead's squad delivery allocation by 20-30% and make chapter responsibilities a formal part of their role expectations and performance evaluation. If you cannot afford this capacity trade, you are not ready for chapters.
-- **Drawing squad boundaries along existing team lines to minimize disruption** — The path of least resistance is to keep existing teams intact and just relabel them as squads. This preserves all the existing dependencies and ownership gaps that motivated the change in the first place. The signal is a squad map that looks identical to the pre-change org chart. The underlying cause is risk aversion: nobody wants to split up a team that is currently functioning, and managers do not want to lose their reports.
-
-The correct approach is to draw squad boundaries based on product ownership and delivery independence (Step 3), even if this means splitting existing teams. Use the pilot period to manage the disruption in a contained way. If existing teams happen to align with good squad boundaries, that is fine, but verify this against the three criteria (coherent ownership, delivery independence, appropriate size) rather than assuming it.
+- **Copying the org chart**: Reproducing Spotify's structure without asking which problems it solves imports the model's costs without its benefits. Adapt each element to a problem you have.
+- **Keeping the old structure alongside the new**: Running new squads while old departments still control decisions and budgets produces confusion. ING's executives describe this as defeating the purpose.
+- **Piloting in the hardest area first**: An area with heavy technical dependencies will struggle whatever the structure, and the pilot will be judged a failure for the wrong reason. Start where independence is achievable.
+- **No success measures**: Without a baseline and agreed measures, the review becomes a debate of opinions. Set them before launch.
+- **Treating the design as final**: A design that is never changed after the pilot ignores the evidence the pilot produced. Plan explicit review points.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/spotify-squad-model/METHOD.md) — Spotify Squad Model
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/spotify-squad-model/METHOD.md): The Spotify Model
 
 ## Related Skills
 
-- [Organizing Squads into Tribes for Strategic Alignment](../organizing-tribes-for-alignment/SKILL.md)
-- [Scaling Agile Practices Using Spotify Structures](../scaling-agile-with-spotify-structures/SKILL.md)
-- [Evaluating Spotify Model Tradeoffs and Common Pitfalls](../evaluating-spotify-model-tradeoffs/SKILL.md)
+- [Evaluating Spotify Model Tradeoffs and Failure Modes](../evaluating-spotify-model-tradeoffs/SKILL.md)
+- [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
+- [Organizing Squads into Tribes for Alignment](../organizing-tribes-for-alignment/SKILL.md)
+- [Running Chapters for Craft Excellence](../running-chapters-for-craft-excellence/SKILL.md)
 - [Building Guilds for Cross-Tribe Knowledge Sharing](../building-cross-cutting-guilds/SKILL.md)
 - [Balancing Squad Autonomy with Organizational Alignment](../balancing-autonomy-and-alignment/SKILL.md)
-- [Forming Autonomous Squads with Clear Missions](../forming-autonomous-squads/SKILL.md)
-- [Running Chapters to Build Discipline-Specific Excellence](../running-chapters-for-craft-excellence/SKILL.md)
+- [Scaling Agile with Spotify Squads and Tribes](../scaling-agile-with-spotify-structures/SKILL.md)
+
+## Sources
+
+- [Henrik Kniberg: No, I didn't invent the Spotify model](https://blog.crisp.se/2015/06/07/henrikkniberg/no-i-didnt-invent-the-spotify-model)
+- [Atlassian: Discover the Spotify model](https://www.atlassian.com/agile/agile-at-scale/spotify)
+- [McKinsey Quarterly: ING's agile transformation](https://www.mckinsey.com/industries/financial-services/our-insights/ings-agile-transformation)
+- [InfoQ: Don't Copy the Spotify Model](https://www.infoq.com/news/2016/10/no-spotify-model/)
+- [Jeremiah Lee: Spotify's Failed #SquadGoals](https://www.jeremiahlee.com/posts/failed-squad-goals/)
+- [Mel Conway: Conway's Law](https://www.melconway.com/Home/Conways_Law.html)
