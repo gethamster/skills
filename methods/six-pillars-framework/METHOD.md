@@ -1,177 +1,172 @@
 ---
-category: Marketing
+name: "six-pillars-framework"
+category: "Marketing"
+description: "The six pillars framework is Sohail Inayatullah's futures method, applied here to SEO: map, anticipate, time, deepen, build alternatives, transform."
+metadata:
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The Six Pillars Framework: From Futures Thinking to Strategic Content Architecture
+# Six Pillars Framework: Futures Thinking for SEO Strategy
 
-> Created by **Sohail Inayatullah** — [https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)
+> Created by **Sohail Inayatullah (futures-studies framework)** - [https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)
 
 ## Overview
 
-Most content strategies start with a keyword list and end with a publishing calendar. The six pillars framework asks a harder question first: what is actually true about your market right now, what is changing, and what kind of future do you want to build toward? Developed by futurist Sohail Inayatullah in the early 2000s as part of his broader work on Causal Layered Analysis and anticipatory action learning, the framework was originally designed for governments, NGOs, and organizations grappling with long-range planning under uncertainty. Its core claim is that effective strategy requires moving through six distinct cognitive modes, not just forecasting trends or brainstorming scenarios, but layering multiple types of analysis to arrive at interventions that are both timely and structurally sound.
+The six pillars framework is Sohail Inayatullah's structure for futures thinking. It names six pillars of practice (mapping, anticipating, timing, deepening, creating alternatives and transforming) and ties each one to specific methods. Inayatullah set it out in the paper "Six pillars: futures thinking for transforming", published in the journal Foresight in 2008, according to the [University of the Sunshine Coast research record](https://research.usc.edu.au/esploro/outputs/journalArticle/Six-pillars-futures-thinking-for-transforming/99449696902621). This guide applies the framework to SEO and content strategy: it uses the six pillars to decide what a site should cover, when to publish it, and which position in the market the content is meant to build.
 
-The six pillars are: mapping the present (understanding what is actually happening, not what you assume), anticipation (identifying signals of change before they become obvious), timing (knowing when to act, not just what to do), deepening (using layered analysis to move beyond surface-level symptoms to root causes), creating alternatives (building multiple plausible futures rather than betting on one), and transformation (actively working toward a preferred future rather than passively reacting). Each pillar builds on the ones before it, creating a progression from observation through analysis to strategic action.
+Inayatullah is a futurist. A [Journal of Futures Studies interview](https://jfsdigital.org/2020/03/07/an-interview-with-the-unesco-chair-in-futures-studies-sohail-inayatullah/) introduces him as the UNESCO Chair in Futures Studies and gives his posts as professor at Tamkang University in Taiwan and adjunct professor at the University of the Sunshine Coast in Australia. In that interview he says, "Futures work has a clear structure. I use the Six Pillars approach." The framework was written for futures work in general, and Inayatullah's examples come from organizations, cities and nations. It says nothing about search engines. Everything on this page that concerns SEO is our application of his framework, and it should be read that way.
 
-In the SEO and content strategy world, the six pillars framework has been adapted as a structural model for building topical authority. Rather than treating content as isolated posts targeting individual keywords, the framework encourages teams to organize their entire content architecture around pillar pages (comprehensive, authoritative hubs) supported by clusters of semantically related content. This mirrors the original framework's insistence on layered understanding: a pillar page maps the current state of a topic, cluster pages deepen and diversify coverage, and the overall architecture anticipates how search behavior and algorithms will evolve. The result is a content system that compounds in value over time rather than decaying as individual posts age.
+Each pillar carries its own tools. The [Insight & Foresight summary of the paper](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah) lists them. Mapping uses shared history, the futures triangle and the futures landscape. Anticipation uses emerging issues analysis and the futures wheel. Timing looks for grand patterns and models of change. Deepening uses causal layered analysis, which reads an issue at four levels: the litany, systemic causes, worldview, and myth or metaphor. Creating alternatives builds scenarios. Transforming narrows the options to a preferred future through visioning, backcasting and the transcend method.
 
-What distinguishes the six pillars framework from simpler pillar-and-cluster models is its emphasis on timing, alternatives, and transformation. Most content strategies treat publishing as a linear activity: research keywords, write posts, build links. The six pillars approach adds temporal intelligence (when is the right moment to publish on a topic?), scenario thinking (what if the search landscape shifts?), and intentional direction (what position do you want to own in your market two years from now?). This makes it particularly valuable for teams operating in competitive or rapidly evolving markets where a static content plan becomes obsolete within months.
+The framework has roots in earlier futures work. In his chapter [Futures Studies: Theories and Methods](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf), Inayatullah calls the Six Pillars approach "derivative of Dator's Manoa school" and credits several of its tools to others: backcasting to Elise Boulding and the transcend method to Johan Galtung. He also writes that the pillars can be used as theory or in a workshop, either in sequence from mapping to transforming or by focusing on one pillar. That flexibility matters for content teams, who rarely have time for a full foresight program and often need only one or two pillars at a given moment.
 
-The framework sits between pure SEO tactics and high-level business strategy. It is more structured than "just write great content" advice, but less prescriptive than a rigid editorial process. Teams that have adopted it successfully tend to be those comfortable with strategic ambiguity, willing to invest in foundational research before scaling production, and focused on building durable organic moats rather than chasing short-term traffic spikes. Hamster offers a workspace where teams can run frameworks like this with AI agents, coordinating the research, mapping, and content production phases without losing the strategic thread.
+Most SEO planning works at what causal layered analysis calls the litany: rankings, traffic, keyword volumes and the next quarter's publishing list. The pillar and cluster model gives that work a structure. In HubSpot's report [Topic Clusters: The Next Evolution of SEO](https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/research/reports/Topic%20Clusters%20SEO%20Report.pdf), a pillar page acts as the hub for a broad topic and cluster pages link back to it and to each other. That model answers how to organize content. It does not answer which topics the site should own in a few years, what could make today's plan obsolete, or why the audience searches the way it does. Those are the questions the six pillars ask.
 
-Since its introduction, the framework has evolved in practice. Early adopters focused heavily on the first two pillars (mapping and anticipation), treating the later pillars as optional. More mature implementations now emphasize the full cycle, recognizing that the deepening and transformation pillars are what separate a good content strategy from a reactive one. The growing importance of topical authority in search algorithms, the rise of AI-generated search results that favor comprehensive coverage, and the increasing sophistication of semantic search have all made the framework more relevant, not less, since it was first articulated.
+The word "pillar" means two different things here, and it helps to keep them apart. SEO content pillars are pillar pages: hub pages inside a topic cluster. Inayatullah's pillars are stages of thinking. In this guide the six pillars decide the strategy, and pillar pages are one of the things the strategy produces. The phrase six pillars of SEO can point to either meaning. This page covers the framework, and the skills listed below cover pillar pages and clusters.
+
+A full pass produces a set of working documents: a map of the site's current reality, a list of emerging issues in its market, a view of where the topic is in its cycle, a layered analysis of the core topic, two to four scenarios for how search could change, and a preferred position with a backcast plan. The backcast plan becomes the pillar and cluster architecture, the semantic keyword map and the publishing sequence. Teams that keep this work in Hamster can store each pillar's output as a document that their agents read before they plan or write content.
 
 ## Core Principles
 
-### Map before you move
+### Map the past and present before choosing a future
 
-The first principle is honest assessment of current reality. Before building any content architecture, teams need to understand where they actually stand: what topics they already cover, where they have authority, where they have gaps, and how search engines currently perceive their site. Teams that skip this step end up building pillar pages for topics where they have no foundation, creating content that floats disconnected from the rest of their site. The tradeoff is time.
+Mapping comes first because every later pillar depends on an honest picture of where you stand. Inayatullah's futures triangle weighs three forces: the pull of images of the future, the pushes of the present, and the weights of the past that resist change, as the [Insight & Foresight summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah) describes. For a website, the pushes are measurable trends in search demand and performance, and the weights are things like technical debt, a thin archive or a brand that search engines associate with a different topic. A team that skips mapping plans against the site it imagines, and its targets rest on guesses.
 
-Mapping takes weeks of audit work, and impatient teams often jump to production. But without an accurate map, every subsequent decision is based on assumptions rather than evidence.
+### Anticipate emerging issues before they become trends
 
-### Anticipate structural shifts, not just trending keywords
+Anticipation looks for issues while they are still small. The [Metafuture chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf) says emerging issues analysis seeks "to identify issues before they become unwieldy and expensive". In search, an emerging issue might be new vocabulary in a professional community, a new product category, or a change in how answers are presented in results. Keyword tools report demand that already exists, so they are weak at this stage. Inayatullah also warns, in the [Journal of Futures Studies interview](https://jfsdigital.org/2020/03/07/an-interview-with-the-unesco-chair-in-futures-studies-sohail-inayatullah/), that issues with few supporting data points can easily be wrong, so treat them as bets to watch.
 
-Anticipation in this framework means looking beyond current search volume to identify emerging topics, shifting user intent patterns, and algorithmic changes that will reshape your competitive landscape. This is not the same as chasing trending keywords. It means monitoring how your audience's questions are evolving, how competitors are repositioning, and how AI-driven search is changing what kind of content gets surfaced. Teams that ignore anticipation build strategies optimized for today's search environment, only to find them obsolete when Google updates its approach to AI Overviews or when a competitor launches a comprehensive resource that redefines the topic.
+### Read timing as a pattern of change
 
-The tradeoff is that anticipatory work is inherently uncertain, and some investments won't pay off.
+The timing pillar asks what shape change takes: linear progress, cycles, a pendulum between two poles, or a spiral that combines progress with parts of the past. In the [interview](https://jfsdigital.org/2020/03/07/an-interview-with-the-unesco-chair-in-futures-studies-sohail-inayatullah/) Inayatullah describes using macrohistory as a diagnostic, asking which parts of an organization show linear, cyclical or pendulum patterns. For content, the same question separates seasonal topics, topics climbing steadily, and topics that swing between two framings. The answer changes when you publish and whether you build a permanent pillar page or a timely piece you expect to retire.
 
-### Timing determines impact more than quality alone
+### Deepen below the litany
 
-A well-timed piece of content can outperform a better piece published at the wrong moment. The six pillars framework treats timing as a distinct strategic consideration, not an afterthought. This means understanding seasonal patterns, product launch cycles, competitor publishing rhythms, and the lag between when a topic emerges and when it reaches peak search volume. Teams that treat every week as interchangeable in their publishing calendar miss windows of opportunity and waste resources publishing when attention is elsewhere.
+Causal layered analysis moves from the litany (the headlines and short-term fixes) to systemic causes, then to worldview, then to the myth or metaphor underneath. Inayatullah notes in the [Metafuture chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf) that the first two levels are the most visible and the last two are harder to identify, and that outsiders are better at seeing them. For content strategy, the litany is the keyword list. The deeper levels explain why people search, what they assume, and which story about the problem they already believe. Content written from those levels is harder for a competitor to copy, and it lines up with Google's question about whether a page offers ["original information, reporting, research, or analysis"](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
 
-The tradeoff is complexity: timing-aware strategies require more coordination and flexibility than fixed calendars.
+### Keep several futures open
 
-### Deepen before you scale
+The alternatives pillar protects a strategy from depending on one forecast. Pierre Wack, who developed Shell's scenario planning system with Edward Newland, wrote in [Harvard Business Review](https://hbr.org/1985/09/scenarios-uncharted-waters-ahead) that traditional planning based on forecasts "worked reasonably well in the relatively stable 1950s and 1960s", and that forecasting errors became more frequent from the early 1970s. Search has its own discontinuities, from ranking updates to new result formats. A content plan built on scenarios keeps parts of the architecture that work in every future and holds back investments that only pay off in one.
 
-Surface-level coverage of many topics loses to deep coverage of fewer topics. The deepening pillar asks teams to move beyond keyword-level thinking to understand the layered structure of a topic: the surface questions users ask, the underlying concepts that connect those questions, the assumptions embedded in the topic, and the worldview that shapes how the audience thinks about the problem. Content built from this kind of layered analysis is harder to replicate and more likely to earn topical authority signals from search engines. Teams that skip deepening end up with dozens of thin posts that compete with each other rather than reinforcing a coherent topical position.
+### Choose a preferred future and backcast from it
 
-### Build for multiple futures, not one prediction
+Transformation narrows the scenarios to the future you want and works backward to today. The [Metafuture chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf) credits backcasting to Elise Boulding and notes that it can also be used to avoid the worst case, by tracing the steps that would lead there. For a content team, the preferred future is a specific position: the topics the site should be known for and the framing it wants the market to use. The backcast turns that position into a sequence of pillar pages, clusters and supporting work.
 
-The alternatives pillar is the framework's hedge against overconfidence. Rather than betting your entire content strategy on one version of how your market will evolve, you build architectures flexible enough to serve multiple scenarios. This might mean creating content clusters that can be expanded in different directions, designing pillar pages that can absorb new subtopics as they emerge, or maintaining optionality in your editorial calendar. Teams that lock into a single strategic bet often find themselves unable to pivot when conditions change.
+### Let the architecture carry the strategy
 
-The tradeoff is that maintaining optionality requires more upfront architectural thinking and sometimes means producing content that serves strategic flexibility rather than immediate traffic.
+Strategy that lives only in a slide deck does not reach search engines. The site's structure has to express it: pillar pages for the topics you chose, cluster pages for their subtopics, and internal links that show how they relate. Google's [link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) say every page you care about should have a link from at least one other page on your site, and that descriptive anchor text helps people and Google understand it. If the architecture does not match the preferred future, the strategy has not been carried out.
 
-### Strategy is transformation, not just optimization
+## Pillars and Their SEO Uses
 
-The final pillar separates this framework from purely tactical SEO approaches. Transformation means you are not just trying to rank for existing queries. You are working to shape how your market thinks about your topic, to define the vocabulary, to set the frame. This is the difference between optimizing for "best project management tool" and creating the category definition that determines what "best" means.
+Each pillar keeps Inayatullah's tools. The right column is our application to search and content work, and it is not part of the original paper.
 
-Teams that stop at optimization are always playing someone else's game. Transformation is the most ambitious and most uncertain pillar, but it is where durable competitive advantages are built.
-
-### Architecture compounds, content decays
-
-Individual pieces of content lose relevance over time. A well-designed content architecture, with internal linking, semantic clustering, and clear topical hierarchies, gains authority over time as each new piece reinforces the whole. This principle is why the framework emphasizes structural thinking over volume. Publishing 200 disconnected blog posts creates a content graveyard.
-
-Publishing 50 posts organized into pillar-cluster architectures creates a compounding asset. Teams that focus on production volume without architectural thinking end up doing periodic "content audits" to prune dead weight, when the real problem was never having a structure in the first place.
+| Pillar | Inayatullah's main tools | Use in SEO and content strategy |
+|---|---|---|
+| Mapping | Shared history, futures triangle, futures landscape ([summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)) | Baseline audit of content, demand, competitors and history |
+| Anticipation | Emerging issues analysis, futures wheel ([summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)) | New query spaces and their knock-on effects |
+| Timing | Macrohistory and models of change ([chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf)) | Seasonality, momentum and when to publish or refresh |
+| Deepening | Causal layered analysis ([chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf)) | Search intent, audience worldview, semantic keyword mapping |
+| Creating alternatives | Structural-functional analysis, scenarios ([summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)) | Scenarios for search changes and a hedged content plan |
+| Transforming | Visioning, backcasting, transcend ([chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf)) | Target position, pillar and cluster architecture, roadmap |
 
 ## Steps
 
-1. **Step 1: Map your current content and competitive reality**
-   Begin with a thorough audit of your existing content, your current search visibility, and your competitive landscape. Catalog every page on your site, its target keyword (if any), its current ranking, its traffic, and its internal linking relationships. Simultaneously, map your top 5-10 competitors: what topics they cover, where they rank, how their content is structured, and where their gaps are. You have done this step well when you can draw a visual map of your topical coverage and clearly identify clusters of strength, isolated orphan content, and white spaces where neither you nor competitors have authoritative coverage.
+1. **Map the current reality**
+   Build a shared history of the site: launches, migrations, redesigns, major content pushes and the ranking changes that followed. Then draw the futures triangle, using the pushes of the present from your search data, the weights of the past in your archive and technical setup, and the images of the future your team and your market hold. Inventory the content by topic and record which topics already earn visibility. Add the three or four competitors that rank for the topics you care about. The output is a written current-reality map that the whole team agrees is accurate.
 
-Watch out for the temptation to skip the competitive analysis and focus only on your own site. Your content strategy does not exist in isolation. A common variation is to start with a keyword gap analysis using tools like Ahrefs or Semrush, then layer on qualitative assessment of content quality and structure.
+2. **Anticipate emerging issues**
+   List issues that are not yet mainstream in your market but could change what people search for: new terms, new regulations, new tools, new ways search engines present answers. For each one, sketch a futures wheel of first and second-order effects on the questions your audience will ask. Keep the list short and label each item with how much evidence supports it. Revisit it each quarter, because most emerging issues fade and a few grow into trends.
 
-2. **Step 2: Identify signals of change and emerging opportunities**
-   With your map of current reality established, shift to anticipation. Look for emerging topics in your space that do not yet have high search volume but show growing interest: new terminology appearing in industry discussions, questions showing up in forums and social media, adjacent topics that your audience is starting to care about. Analyze how search behavior is evolving: are queries becoming more specific? Are new intent patterns appearing?
+3. **Time the topics**
+   Sort your topics by the shape of their demand: seasonal, rising, declining, or swinging between framings. Use Google Trends for relative interest over time and your Search Console history for your own queries, keeping in mind that [Google Trends data](https://support.google.com/trends/answer/4365533?hl=en) shows relative popularity rather than absolute volume. Decide for each topic whether it deserves a permanent pillar page, a timely piece, or a refresh on a schedule. The output is a timing note per topic that the publishing sequence will follow.
 
-Is AI search changing which types of content get surfaced? You have done this well when you have a list of 10-20 emerging opportunities ranked by their likely trajectory and relevance to your business. The gotcha here is confusing noise with signal. Not every trending Reddit thread represents a lasting shift.
+4. **Deepen the core topic**
+   Run a causal layered analysis on the one or two topics that matter most. Start with the litany of common questions, then ask what systems cause those questions, what worldview sits behind them, and which metaphor the audience uses for the problem. Interview customers or practitioners where you can, because the deeper levels rarely show in keyword data. Use what you learn to shape the semantic keyword map and the angle of the pillar page.
 
-Cross-reference multiple sources before committing resources to an emerging topic.
+5. **Create alternative futures**
+   Pick the two biggest uncertainties for your search visibility and build a small set of scenarios, for example with a two by two matrix or with the archetypes the [Insight & Foresight summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah) credits to James Dator: continued growth, collapse, steady state and transformation. Write a short narrative for each so the team can picture it. For each scenario, note which content would still pay off and which would be wasted. Content that holds up in every scenario goes first in the plan.
 
-3. **Step 3: Design your pillar-cluster architecture**
-   Based on your mapping and anticipation work, define your pillar topics (3-7 broad themes you intend to own) and the cluster content that supports each pillar. Each pillar should represent a topic area where you have or can build genuine authority, where there is sufficient search demand to justify the investment, and where the topic connects to your product or service. For each pillar, identify 8-20 cluster topics that explore subtopics, answer specific questions, cover use cases, or address different audience segments. Design the internal linking structure: every cluster page links to its pillar, the pillar links to its clusters, and related clusters cross-link where semantically appropriate.
+6. **Choose the preferred future and backcast**
+   Agree on the position you want: the topics you intend to own, the framing you want to establish, and the audience you want to reach first. If stakeholders hold conflicting visions, look for a combination that serves both before you settle for a compromise. Work backward from that position to today and list the pillar pages, clusters, research pieces and links required to get there. Turn the list into a pillar and cluster architecture with an internal linking plan and a publishing sequence.
 
-You know this step is done well when you can explain to a non-SEO stakeholder exactly what each pillar covers, why it matters to your audience, and how the clusters reinforce the pillar's authority.
-
-4. **Step 4: Sequence and time your content production**
-   Do not publish everything at once. Sequence your content production so that pillar pages are published before their supporting clusters, foundational clusters go live before advanced ones, and timing aligns with seasonal or market dynamics. For each pillar, create a publication timeline that accounts for research, writing, review, and optimization cycles. Factor in competitive timing: if a major competitor just published a comprehensive guide on a topic, you may choose to defer that pillar and accelerate another where you can establish first-mover advantage.
-
-You have done this well when your editorial calendar reflects strategic sequencing rather than arbitrary deadlines. A common mistake is treating all content as equally urgent. The framework's timing pillar specifically warns against this. Some content should be held until the right moment.
-
-5. **Step 5: Deepen each pillar with layered analysis**
-   For each pillar topic, move beyond surface-level keyword coverage to develop genuinely deep understanding. This means conducting original research, interviewing subject matter experts, analyzing data that competitors have not accessed, and exploring the underlying assumptions and mental models that shape how your audience thinks about the topic. The deepening process often reveals subtopics that did not appear in keyword research but are essential for comprehensive coverage. It also surfaces opportunities for original data, proprietary frameworks, and unique perspectives that make your content difficult to replicate.
-
-You know you have deepened sufficiently when your pillar page could serve as a definitive reference on the topic, not just a keyword-optimized summary of what everyone else has already published. Watch for diminishing returns: at some point, additional depth produces content too specialized for your audience.
-
-6. **Step 6: Build alternative content paths and maintain strategic flexibility**
-   Design your content architecture to accommodate multiple possible futures. This means creating modular content structures that can be expanded, reorganized, or repurposed as your market evolves. For each pillar, identify 2-3 directions the topic could develop and ensure your architecture can support expansion in any of those directions without requiring a complete restructuring. Practically, this might mean designing pillar pages with sections that can absorb new subtopics, building cluster content that serves double duty across multiple pillars, or maintaining a backlog of content briefs for topics that are not yet worth producing but might become critical.
-
-You have done this well when you can respond to a major market shift (new competitor, algorithm update, industry regulation) by adjusting your production priorities rather than starting over.
-
-7. **Step 7: Execute the transformation and measure compound effects**
-   The final step is active transformation: publishing your content, building internal links, earning external citations, and progressively shifting how search engines and your audience perceive your authority on your pillar topics. Measure not just individual page performance but compound metrics: how does adding a new cluster page affect the pillar page's rankings? How does total topical coverage correlate with domain authority growth? How are your pages performing in AI search results and AI Overviews?
-
-Track indexation rates, time-to-rank for new content, and the share of voice you hold across your pillar topics compared to competitors. You know transformation is working when new content ranks faster over time, when your pillar pages climb for increasingly competitive head terms, and when your content gets cited by other publications and AI systems as an authority on your topics.
+7. **Publish, measure and review the map**
+   Publish in the sequence you set, pillar pages alongside enough cluster content to support them. Track visibility at the topic level as well as per page, and watch the indicators you attached to each scenario. Each quarter, update the current-reality map and the emerging issues list, and check whether the preferred future still holds. The framework is a cycle, so the review restarts it at mapping.
 
 ## When to Use
 
-- When you are entering a competitive content market where established players already rank for most high-volume keywords, and you need a structural approach to build topical authority from the ground up rather than competing post by post.
-- When your content library has grown organically over several years and now contains hundreds of posts with overlapping topics, cannibalization issues, and no coherent internal linking strategy, making a full architectural redesign necessary before further scaling.
-- When your business operates in a market undergoing significant change (regulatory shifts, technology disruption, audience behavior evolution) and your content strategy needs to anticipate and adapt to multiple possible futures rather than optimizing for the current state.
-- When you are planning a large-scale programmatic SEO effort and need a strategic framework to determine which pillar topics to build around, how to structure cluster content, and how to sequence production so that early content creates foundations for later content.
-- When leadership is asking for a content strategy that connects to business outcomes beyond traffic, and you need a framework that bridges the gap between SEO execution and strategic positioning in your market.
-- When you have a B2B product with a complex buyer journey spanning multiple personas and decision stages, and you need to build content architectures that serve different audience segments while reinforcing a unified topical position.
+- A content library grew for years without a plan, pages compete with each other, and the team needs to decide which topics to own before restructuring.
+- The market is changing fast (new technology, new regulation, new buyer behavior) and a plan based only on current keyword data would be out of date within a year.
+- Leadership wants content tied to a position in the market, and the team needs a way to connect that position to specific pages and links.
+- A team is about to build a large set of pillar pages and clusters and wants to choose and sequence them from evidence rather than habit.
+- Search results for the core topics are shifting toward new formats, and the team wants to plan for more than one outcome.
+- A B2B company sells into long, committee-driven purchases and needs content that matches how buyers research, which the [B2B SEO six pillars skill](../../skills/adapting-six-pillars-for-b2b-seo/SKILL.md) covers.
 
 ## When Not to Use
 
-- When you need to generate results in the next 30-60 days. The six pillars framework requires substantial upfront research, mapping, and architectural planning before production begins. If you are under immediate pressure to show traffic growth, a more tactical approach (targeting low-competition long-tail keywords, refreshing existing high-potential content) will deliver faster returns. The framework's strength is compounding value over quarters, not weeks.
-- When your site has fewer than 20 existing pages and no domain authority. The framework assumes you have enough existing content and authority to meaningfully map, audit, and restructure. For brand-new sites, a simpler approach of publishing foundational content and building initial authority will serve you better before layering on architectural complexity.
-- When your content team has fewer than two people and no budget for external support. The full six pillars process requires research, competitive analysis, content architecture design, production, and ongoing maintenance. A solo content marketer will burn out trying to execute all six pillars simultaneously. In this case, focus on the first two pillars (mapping and anticipation) and adopt the full framework as your team grows.
-- When your market is narrow and stable with a clearly defined, small set of topics. If there are only 15-20 relevant keywords in your entire space and they do not change significantly year over year, the framework's emphasis on anticipation, alternatives, and transformation adds complexity without proportional value. A straightforward content calendar with regular updates will suffice.
-- When you are primarily competing on brand or paid channels rather than organic search. If your growth model does not depend on organic traffic, investing in the full six pillars process diverts resources from channels that actually drive your business. The framework is specifically designed for teams where organic search is a primary growth lever.
+- The site needs quick fixes this month, such as broken technical basics or obvious missing pages. Fix those first; a full six pillars pass takes weeks of research before it changes anything on the site.
+- The site is new and has almost no content or search data to map. Publish a small, focused set of pages first, then map once there is a history to read.
+- Organic search is not a meaningful channel for the business. The effort is better spent on the channels that drive growth.
+- The topic space is small and stable, with few queries that rarely change. A simple, well-maintained set of pages will do, and scenarios and emerging issues add work without changing decisions.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Adapting the Six Pillars Framework for B2B SEO](../../skills/adapting-six-pillars-for-b2b-seo/SKILL.md) — How to tailor pillar-based content strategy to B2B buying cycles, longer sales funnels, and niche industry topics for maximum organic impact.
-- [Building Topical Authority Through Content Clustering](../../skills/building-topical-authority-through-content-clustering/SKILL.md) — How to organize content into interconnected pillar-and-cluster structures that establish deep subject-matter authority and improve search visibility.
-- [Creating Semantic Keyword Maps for Pillar Content](../../skills/creating-semantic-keyword-maps/SKILL.md) — How to research, group, and map semantically related keywords to pillar topics so that each cluster comprehensively covers user intent.
-- [Designing Content Cluster Architectures](../../skills/designing-content-cluster-architectures/SKILL.md) — How to structure pillar pages, supporting articles, and internal linking patterns into cohesive content clusters that signal topical depth to search engines.
-- [Mapping Current Reality Using the Six Pillars Framework](../../skills/mapping-current-reality-with-pillar-one/SKILL.md) — How to systematically audit and document the present state of your domain, identifying key forces, trends, and baseline conditions as the foundation for futures thinking.
-- [Implementing a Six Pillar SEO Strategy End to End](../../skills/implementing-six-pillar-seo-strategy/SKILL.md) — How to execute a complete six-pillar SEO plan—from technical foundations and content to authority building—ensuring every pillar works together as one cohesive framework.
-- [Scenario Planning for Alternative SEO and Content Futures](../../skills/scenario-planning-for-alternative-futures/SKILL.md) — How to develop multiple plausible future scenarios—including algorithm shifts and market changes—and create adaptive content strategies for each.
-- [Timing Content Interventions and Publication Strategically](../../skills/timing-content-interventions-strategically/SKILL.md) — How to identify optimal windows for publishing, updating, and retiring pillar content based on trend analysis, seasonality, and competitive signals.
+- [B2B SEO Six Pillars: Adapting the Framework](../../skills/adapting-six-pillars-for-b2b-seo/SKILL.md): Map pillar pages and clusters to B2B buying jobs, buying groups and niche, high-intent queries.
+- [Building Topical Authority With Content Clustering](../../skills/building-topical-authority-through-content-clustering/SKILL.md): Plan, publish and grow a pillar and cluster set that covers a topic completely.
+- [Semantic Keyword Mapping for Pillar Content](../../skills/creating-semantic-keyword-maps/SKILL.md): Group keywords by shared results and intent, and assign each group to one page.
+- [Designing Content Cluster Architectures](../../skills/designing-content-cluster-architectures/SKILL.md): Draw the blueprint for pillar pages, supporting pages, URLs and internal links.
+- [Six Pillar SEO Strategy: Implementing End to End](../../skills/implementing-six-pillar-seo-strategy/SKILL.md): Run all six pillars on an SEO program, from mapping to a backcast roadmap.
+- [Mapping SEO Reality: Pillar One of the Six Pillars](../../skills/mapping-current-reality-with-pillar-one/SKILL.md): Build the baseline audit with shared history, the futures triangle and the futures landscape.
+- [SEO Scenario Planning for Alternative Futures](../../skills/scenario-planning-for-alternative-futures/SKILL.md): Build scenarios for how search could change and a content plan that holds up in each.
+- [Timing Content Interventions for SEO Pillars](../../skills/timing-content-interventions-strategically/SKILL.md): Decide when to publish, refresh or retire pillar content from demand patterns and competition.
 
 ## FAQ
 
-**What is the six pillars framework in simple terms?**
+**What is the six pillars framework?**
 
-The six pillars framework is a strategic method for building content and SEO strategies that compound over time. Originally a futures thinking methodology from Sohail Inayatullah, it has been adapted for content strategy as a structured approach to building topical authority. You map your current state, anticipate changes, time your actions, deepen your understanding, create flexible plans for multiple scenarios, and work toward a defined strategic position. Think of it as the difference between publishing a blog and building a library.
+It is a futures thinking framework by Sohail Inayatullah with six pillars: mapping, anticipating, timing, deepening, creating alternatives and transforming. Each pillar has its own methods, such as the futures triangle for mapping and causal layered analysis for deepening. The paper was published in the journal Foresight in 2008, according to the [University of the Sunshine Coast record](https://research.usc.edu.au/esploro/outputs/journalArticle/Six-pillars-futures-thinking-for-transforming/99449696902621). Organizations use it to move from a picture of the present to a chosen future and a plan to reach it.
 
-**How is the six pillars framework different from a standard pillar-cluster content model?**
+**Did Inayatullah design the six pillars for SEO?**
 
-A standard pillar-cluster model tells you to create a hub page and link supporting articles to it. The six pillars framework adds strategic layers on top of that structure: anticipation of how topics will evolve, timing intelligence for when to publish, deepening analysis to build content competitors cannot replicate, scenario planning for alternative futures, and intentional transformation toward a market position. The pillar-cluster model is an architectural pattern. The six pillars framework is a strategic process that includes architecture as one component.
+No. The paper addresses futures studies in general, and the [Insight & Foresight summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah) describes examples such as an educational organization and disability futures. Applying the pillars to search and content strategy is our adaptation. The tools transfer well because an SEO program has the same parts as any strategy: a present state, forces of change, uncertainty and a goal.
 
-**Does the six pillars framework work for small teams or solo content marketers?**
+**How is this different from the pillar and cluster content model?**
 
-It can, but with significant scope reduction. A solo marketer should focus on the first two pillars (mapping and anticipation) and one or two pillar topics rather than attempting the full framework across five or more pillars simultaneously. The deepening and transformation pillars are where small teams get the most leverage, because they produce content that is genuinely differentiated. The risk is trying to do everything at once and spreading too thin.
+The pillar and cluster model is an architecture: a hub page for a broad topic and linked pages for its subtopics, as described in [HubSpot's topic clusters report](https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/research/reports/Topic%20Clusters%20SEO%20Report.pdf). The six pillars framework is a way of deciding strategy, and the architecture is one of its outputs. You can build clusters without the six pillars, but you then choose topics from current demand alone. The six pillars add emerging issues, timing, deeper analysis and scenarios to that choice.
 
-Start narrow, build depth on one pillar, and expand as you prove the model works for your context.
+**Do I have to run all six pillars in order?**
 
-**Why does the six pillars framework fail in practice?**
+No. Inayatullah writes in the [Metafuture chapter](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf) that the pillars can be run in sequence from mapping to transforming, or a facilitator can select one pillar to focus on. A content team with limited time often starts with mapping and deepening. Do the full sequence when you are setting direction for a year or more.
 
-The most common failure mode is spending too long on mapping and planning without ever producing content. The framework's emphasis on research and analysis can become a procrastination trap for teams that are uncomfortable with imperfect execution. The second failure mode is treating it as a one-time exercise rather than an ongoing process. Markets shift, competitors respond, and algorithms change.
+**How does topical authority fit in?**
 
-Teams that build a six pillars strategy in January and never revisit it find their architecture obsolete by summer. The third failure is ignoring the transformation pillar and treating the framework as purely defensive optimization rather than active market positioning.
+Topical authority is one of the outcomes the transforming pillar aims at. Ahrefs describes it as search engines recognizing a site as an expert source for the full range of queries in a topic, built by covering the subject comprehensively and connecting the content ([Ahrefs guide](https://ahrefs.com/blog/topical-authority/)). The six pillars help you decide which topics deserve that investment. The [topical authority skill](../../skills/building-topical-authority-through-content-clustering/SKILL.md) covers the build.
 
-**How does the six pillars framework work alongside OKRs and quarterly planning?**
+**Where does semantic keyword mapping come in?**
 
-The framework's mapping and anticipation phases align well with quarterly planning cycles. Use quarterly reviews to update your map of current reality, reassess emerging signals, and adjust production priorities. OKRs can be set for each pillar: metrics like topical authority scores, share of voice on pillar keywords, cluster completion percentages, and compound ranking improvements. The timing pillar specifically supports quarterly planning by providing a rationale for why certain content should be prioritized this quarter versus next.
+It belongs to the deepening and transforming pillars. Deepening tells you why people search and what they assume. Keyword mapping then groups the queries that share results and intent so each group gets one page, a practice Ahrefs describes in its [keyword clustering guide](https://ahrefs.com/blog/keyword-clustering/). The [semantic keyword mapping skill](../../skills/creating-semantic-keyword-maps/SKILL.md) walks through it.
 
-The longer-term pillars (alternatives and transformation) inform annual or semi-annual strategic reviews.
+**How often should the pillars be revisited?**
 
-**Can you apply the six pillars framework to B2B SEO specifically?**
+Review the current-reality map, the emerging issues list and the scenario indicators every quarter, and revisit the preferred future about once a year or when a scenario indicator fires. Search data supports this rhythm: Google's Search Console keeps [16 months of performance data](https://developers.google.com/search/blog/2018/01/introducing-new-search-console), enough for year-over-year comparison. A review that finds nothing new is still useful, because it confirms the plan.
 
-B2B is actually where the framework delivers its strongest results, because B2B markets typically have complex buyer journeys, niche topics with lower search volume but higher intent, and longer sales cycles that reward compounding content authority. The framework's emphasis on deepening analysis is particularly valuable in B2B, where surface-level content gets ignored by sophisticated buyers. The key adaptation for B2B is mapping pillar topics to buying stages and persona segments rather than just search volume. Our skill on [adapting the six pillars for B2B SEO](https://tryhamster.com/skills/adapting-six-pillars-for-b2b-seo) covers this in detail.
+## Sources
 
-**How does topical authority connect to the six pillars framework?**
-
-Topical authority is the outcome the six pillars framework is designed to produce. Each pillar contributes to building authority: mapping ensures you understand where you need authority, anticipation identifies emerging topics where authority is available to claim, timing determines when to publish for maximum authority signals, deepening produces the kind of comprehensive coverage that search engines associate with authority, alternatives keep your authority resilient to market changes, and transformation extends your authority into market leadership. The framework treats topical authority as something you build systematically rather than something that accumulates accidentally through volume.
-
-**What is the role of semantic keyword mapping in the six pillars framework?**
-
-Semantic keyword mapping is the technical implementation layer of the framework's deepening pillar. When you deepen your understanding of a pillar topic, you discover the semantic relationships between subtopics, related concepts, and query patterns that form the foundation of your cluster architecture. Semantic maps reveal which topics are closely related (and should cross-link), which represent distinct user intents (and need separate pages), and which serve as bridges between pillars. Without semantic mapping, your content clusters are organized by editorial intuition rather than data.
-
-The [creating semantic keyword maps](https://tryhamster.com/skills/creating-semantic-keyword-maps) skill covers the practical process.
+- [Six Pillars: Futures Thinking for Transforming, Insight & Foresight summary](https://www.insightandforesight.com.au/blog-foresights/knowledge-base-six-pillars-futures-thinking-for-transforming-by-sohail-inayatullah)
+- [Six pillars: futures thinking for transforming, University of the Sunshine Coast record](https://research.usc.edu.au/esploro/outputs/journalArticle/Six-pillars-futures-thinking-for-transforming/99449696902621)
+- [Futures Studies: Theories and Methods, Sohail Inayatullah](https://www.metafuture.org/library1/FuturesStudies/Futures-Studies-theories-and-methods-published-version-2013-with-pics.pdf)
+- [Interview with the UNESCO Chair in Futures Studies, Journal of Futures Studies](https://jfsdigital.org/2020/03/07/an-interview-with-the-unesco-chair-in-futures-studies-sohail-inayatullah/)
+- [Scenarios: Uncharted Waters Ahead, Harvard Business Review](https://hbr.org/1985/09/scenarios-uncharted-waters-ahead)
+- [Topic Clusters: The Next Evolution of SEO, HubSpot](https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/research/reports/Topic%20Clusters%20SEO%20Report.pdf)
+- [Link best practices for Google, Google Search Central](https://developers.google.com/search/docs/crawling-indexing/links-crawlable)
+- [Creating helpful, reliable, people-first content, Google Search Central](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Topical Authority, Ahrefs](https://ahrefs.com/blog/topical-authority/)
+- [Keyword Clustering, Ahrefs](https://ahrefs.com/blog/keyword-clustering/)
 
 ---
 

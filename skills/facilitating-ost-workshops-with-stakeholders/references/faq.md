@@ -1,25 +1,25 @@
-# FAQ: Facilitating Opportunity Solution Tree Workshops with Teams
+# FAQ: OST Workshop Facilitation
 
-## How many people should attend an OST workshop?
+## What do we need before running an opportunity solution tree workshop?
 
-Aim for 5–8 participants from your core cross-functional team: PM, designer, 1-2 engineers, and optionally a researcher, data analyst, or customer-facing team member. Groups larger than 8 create coordination overhead that slows the session. If more stakeholders need input, run the workshop with the core team and share results in a separate alignment meeting.
+Teresa Torres lists three prerequisites for a first tree: a theory of your target customer and value proposition, a clearly defined outcome, and three to four story-based customer interviews. Without interviews, the workshop fills the tree with invented opportunities. If you have none yet, run interviews first or use a clearly fictional case for practice.
 
-## How do I handle stakeholders who want to skip opportunities and jump straight to their preferred solution?
+## Who should attend?
 
-Acknowledge their solution idea by writing it on a visible 'Solutions Parking Lot,' then redirect with: 'Great—we'll get to solutions shortly. First, let's make sure we understand the customer need this would address.' This validates their contribution while maintaining the problem-first structure. When you reach the solution phase, their idea gets fair consideration alongside alternatives.
+For a working session that builds the tree, keep it small: the product trio and perhaps a few people with direct customer knowledge. Stakeholders are better served by a separate walkthrough where the team shows its work and invites contributions. Mixing both in one large session slows decisions.
 
-## What tools work best for remote OST workshops?
+## How long should the workshop be?
 
-Miro and FigJam are the most popular choices because they offer sticky notes, templates, and real-time collaboration. Some teams use Mural or even a shared Google Slide deck. The tool matters less than having a visual canvas where everyone can see and contribute to the tree simultaneously. Pre-build the tree structure (outcome at top, empty branches below) before the session starts.
+Plan for less content than you think will fit. Product Talk's story about practice sessions at BBC Maestro describes a first agenda that proved ambitious for the time available. It is better to leave with a rough draft of the opportunity space and a target opportunity than to rush through every layer.
 
-## How often should teams run OST workshops?
+## How do we stop the session from turning into a feature debate?
 
-Run a full OST-building workshop once per major outcome or initiative—typically quarterly. Between workshops, hold shorter 30-minute weekly or biweekly sessions to review and update the living tree based on new evidence and experiment results. The initial workshop creates the artifact; the ongoing cadence keeps it relevant.
+Start with the outcome and keep returning to it. When someone pitches a solution, ask which opportunity it addresses and park it until the solution step. Having everyone write silently before discussing also reduces the pull of the loudest opinion.
 
-## Are OST workshop facilitation skills tested in product manager interview questions?
+## How do we run the session with senior stakeholders?
 
-Yes—product manager interview questions at discovery-focused companies increasingly test your ability to facilitate collaborative frameworks like OSTs. Interviewers may ask you to walk through how you'd run a discovery session, how you align a team on priorities using customer evidence, or how you handle disagreements about product direction. Demonstrating OST facilitation skills shows you can lead teams through structured, evidence-based discovery.
+Show your work rather than presenting conclusions. Torres suggests walking from the outcome through the opportunity space, the prioritization decisions, the target opportunity, solutions, and test results, and asking at each level whether the stakeholder sees something you missed. Their ideas can join the solution set if they add diversity.
 
-## What if my team has no prior customer research to bring to the workshop?
+## What tools work for remote workshops?
 
-You can still run the workshop, but label every opportunity as a hypothesis that needs evidence. Use the session to identify your team's collective assumptions about customer needs, then prioritize which assumptions to validate through research first. This actually makes a strong case for starting continuous customer interviews—a prerequisite for the identifying customer opportunities from research skill.
+Any digital whiteboard that supports shapes and arrows works. Torres uses Miro and provides templates for Miro, Mural, and FigJam. Choose the tool your team already knows so the session time goes to the tree.

@@ -1,41 +1,37 @@
-# Examples: Planning and Executing Sprints
+# Examples: Scrum Sprint Planning
 
-## Example: E-Commerce Team Planning a 2-Week Sprint
-
-**Scenario:**
-
-A 6-person Scrum team working on an e-commerce platform is planning their next 2-week sprint. Their average velocity over the last 4 sprints is 42 story points. One developer will be out for 3 days, and the team has 2 points of carryover from the previous sprint. The Product Owner wants to ship a guest checkout feature.
-
-**Walkthrough:**
-
-**Capacity calculation:** With one developer out for 3 of 10 working days, the team adjusts capacity to approximately 36 story points (42 × 5/6, roughly adjusted, minus a 10% buffer). Subtract 2 points of carryover, leaving ~34 points for new work.
-
-**Sprint goal:** "Enable shoppers to complete purchases without creating an account." The Product Owner explains that cart abandonment data shows 28% of users drop off at the registration screen.
-
-**Backlog selection:** The team selects 5 user stories directly supporting guest checkout (totaling 26 points), plus 2 smaller items for a search bug fix and an analytics event (8 points combined). Total: 34 points + 2 points carryover = 36 points against a 36-point capacity.
-
-**Task decomposition:** The largest story ("Guest can enter shipping info without logging in" — 8 points) is broken into 6 tasks: modify auth middleware, create guest session handler, update shipping form component, write API tests, write E2E tests, update documentation. Each task is estimated at 2-6 hours.
-
-**Commitment check:** The team confirms confidence. The Scrum Master notes the sprint review is scheduled for the final Friday and updates the [Scrum board in Jira](https://tryhamster.com/skills/managing-scrum-boards-in-jira).
-
-**Execution:** By day 5, the team notices the auth middleware changes are more complex than expected. At the daily stand-up, they decide to drop the analytics event story (2 points) from the sprint to protect the sprint goal. The guest checkout feature ships on time.
-
-## Example: New Team Establishing Sprint Cadence
+## Planning a two-week Sprint with reduced capacity
 
 **Scenario:**
 
-A newly formed team of 4 developers, 1 designer, and 1 QA engineer is running their third sprint ever. They don't have reliable velocity data yet and previously overcommitted in both prior sprints, completing only 60-70% of planned work.
+Illustrative scenario: a team of five Developers works in two-week Sprints. For the coming Sprint, one Developer is on leave for three days and another is on the support rotation for the whole Sprint. In recent Sprints the team finished between 20 and 26 points.
 
 **Walkthrough:**
 
-**Addressing the pattern:** The Scrum Master opens planning by reviewing the last two sprints. Sprint 1: planned 35 points, delivered 22. Sprint 2: planned 30 points, delivered 21. The team acknowledges they've been optimistic.
+The Product Owner proposes a goal: "Customers can reset their own password without contacting support." The team agrees it is valuable and testable. The Developers count their available days and see they have noticeably less time than usual, so they aim for the lower end of their range.
 
-**Conservative capacity:** Rather than averaging past velocity (21.5 points), the team agrees to plan for 20 points — deliberately leaving room to succeed and build confidence.
+Starting from the top of the backlog, they select the password reset items that serve the goal and stop before the full range, leaving a reporting item in the backlog even though it was ranked just below. They break the first two items into tasks of a day or less and leave the rest to be planned as they go. The meeting ends early, with the goal written at the top of the board.
 
-**Sprint goal:** "Complete the user profile editing flow end-to-end." This is focused and achievable.
+## A Sprint where the work turns out different than expected
 
-**Backlog selection:** The team selects 4 stories totaling 18 points, leaving a 2-point buffer. Each story is decomposed into tasks, and the team explicitly discusses who has the skills for each task to avoid bottlenecks.
+**Scenario:**
 
-**Execution result:** The team completes all 4 stories (18 points) by day 8 of the 10-day sprint. They pull 1 additional story (3 points) from the top of the backlog and complete it. Total delivery: 21 points. The team celebrates their first fully completed sprint.
+Illustrative scenario: midway through a Sprint whose goal is "Invoices can be exported to the accounting system," the Developers discover the accounting system's interface does not support one of the fields the export needs.
 
-**Key lesson:** Under-planning for the first few sprints builds trust, establishes a reliable velocity baseline, and creates positive momentum. It's always easier to add work mid-sprint than to remove it.
+**Walkthrough:**
+
+At the Daily Scrum, the Developers ask whether this threatens the goal. It does not have to: they can export the other fields now and add the missing one when the interface is updated. They talk with the Product Owner the same day, who agrees to drop the missing field from this Sprint and add a new item for it to the backlog.
+
+The Sprint Backlog is updated, the goal stays the same, and the team delivers a working export at the Sprint Review. The Product Owner explains the missing field to stakeholders and shows where it sits in the backlog.
+
+## A planning session that turned into refinement
+
+**Scenario:**
+
+Illustrative scenario: a team's Sprint Planning has been running for most of a day. Most of the time goes to debating what each item means and how big it is.
+
+**Walkthrough:**
+
+At the retrospective, the team traces the problem to items arriving at planning without acceptance criteria or estimates. They agree to hold a refinement session in the middle of each Sprint and to only select items that have been refined.
+
+In the next planning, the Product Owner opens with a proposed goal, the Developers select refined items that serve it, and the plan takes a fraction of the previous time. One item still raises questions; instead of debating it, the team leaves it in the backlog for the next refinement session.

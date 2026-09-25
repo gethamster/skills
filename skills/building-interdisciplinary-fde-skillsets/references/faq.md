@@ -1,35 +1,21 @@
-# FAQ: Building Interdisciplinary Forward Deployed Engineer Skills
+# FAQ: Building Interdisciplinary FDE Skills
 
-## How long does it take to reach functional fluency in a weak pillar?
+## What skills does a forward deployed engineer need?
 
-Most people can move a weak pillar from an average score of 1-2 to a functional 3 within 8 to 12 weeks of consistent practice at 3 to 5 hours per week. This assumes you are doing cross-discipline exercises and getting real feedback, not just reading about the topic. Sub-skills that require tacit knowledge, like reading a room during a client meeting, take longer than technical sub-skills like writing SQL, because you get fewer real repetitions. Plan for the full 12 weeks and treat any faster progress as a bonus.
+The sources describe a broad mix. Palantir's FDSE lists software development, data engineering, customer engagement and creative problem-solving, and Palantir's job posting adds architecture decisions, large-scale data and AI work, and engaging stakeholders up to executives. This skill groups them into four areas: software engineering, data engineering and analytics, domain learning, and stakeholder communication. Software engineering is the foundation the others build on.
 
-## Should I build forward deployed engineer skills before or after my first FDE engagement?
+## How do I assess myself honestly?
 
-Start the assessment and planning before your first engagement, but expect the most meaningful development to happen during it. The assessment gives you awareness of your gaps so you can be intentional about learning opportunities during the engagement rather than just surviving. If you have 4 or more weeks before your first engagement, complete Steps 1 through 5 of the plan. If you are starting immediately, do Steps 1 through 3 in a single focused session and begin practicing alongside the live work.
+Tie every rating to a specific thing you did and how it went. Leave a sub-skill unrated if you have no evidence. Then ask a lead, mentor or peer to challenge the ratings, and use customer feedback where you have it. Differences between your view and theirs are the most useful part of the exercise.
 
-## How do I assess client communication skills when there is no client available?
+## Can I build these skills before getting an FDE job?
 
-Use peer role-play with specific scenarios drawn from real engagements. Have a colleague play a skeptical VP who has 15 minutes and wants to know if the project is on track. Or play a technical lead at the client who disagrees with your proposed architecture. ' Record the session if possible and review it together afterward.
+Partly. You can build engineering and data skills on any job, and you can practice communication by presenting technical work to non-technical colleagues. Domain learning gets easier with practice in any new area, such as learning how a different team in your company works. Customer-facing experience of any kind, such as supporting a key account, is valuable evidence for an FDE application.
 
-You will be surprised how much you learn from watching yourself on video.
+## How long does it take to become well rounded?
 
-## Why does my skill score keep stalling at 2.5 despite regular practice?
+There is no fixed answer, and nobody is strong in everything. Working on two gaps per engagement and reassessing after each one produces steady progress. Most of the learning happens on real engagements with feedback, so the pace depends on how varied your assignments are.
 
-The 2-to-3 transition is the hardest because it requires moving from 'can do it with significant effort' to 'can do it independently at acceptable quality.' Three common causes of stalling: your exercises are too easy and you are not being pushed, you are not getting specific feedback on what is wrong, or you are practicing the same type of exercise repeatedly instead of introducing variation. Try a harder exercise, get feedback from someone who is a 4 or 5 in that sub-skill, and introduce a new constraint like a tighter timeline or unfamiliar tooling.
+## Should FDE teams hire generalists or specialists?
 
-## How do I handle engagements that demand skills I have not developed yet?
-
-This will happen, especially early in your FDE career. The practical approach is to identify the gap as early as possible during engagement scoping, communicate it to your team lead, and propose a mitigation. Mitigation might mean pairing with a specialist for specific tasks, front-loading the work that requires the weak skill so you have time to iterate, or adjusting the scope to avoid relying heavily on your weakest area. The worst outcome is silently struggling and delivering poor-quality work.
-
-Being explicit about your development areas builds trust rather than undermining it.
-
-## Should every FDE have the same skill profile, or should teams specialize?
-
-Teams should have a floor of functional fluency across all members, then allow natural specialization above that floor. A team where every person scores exactly 3 across all pillars is less effective than a team where everyone scores at least 3 but individuals have different 4s and 5s. The floor ensures anyone can handle a solo engagement. The peaks allow the team to match the right person to engagements that demand deeper expertise in specific areas.
-
-The [scoping](https://tryhamster.com/skills/scoping-mission-driven-engagements) process should explicitly consider team skill profiles when assigning people to engagements.
-
-## How do I convince my manager to give me time for skill development alongside billable work?
-
-Frame skill development in terms of engagement risk reduction and team capacity. Calculate how many hours per engagement are currently spent on specialist handoffs, code rework due to quality gaps, or rescheduled client meetings because the assigned FDE was not comfortable leading them. A 3-to-5-hour weekly investment in skill development that reduces handoff time by even 20% pays for itself within one engagement cycle. Present your assessment scores, your development plan, and a specific timeline for when the investment will translate into increased independence on engagements.
+Teams usually need both. A strong engineering foundation is the common requirement, and a16z's advice is to look for high agency and curiosity, sometimes with exposure to the industry being served. Mixing people with different strengths lets FDEs mentor each other across areas.

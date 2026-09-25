@@ -1,25 +1,21 @@
-# FAQ: Optimizing People Touchpoints in Service Delivery
+# FAQ: People in the Marketing Mix
 
-## What does 'people' mean in the marketing mix?
+## What does People mean in the 7 Ps?
 
-People in the marketing mix refers to every human being involved in delivering your product or service — customer-facing staff like sales and support teams, as well as back-office employees whose work affects the customer experience. It's the fifth P in the 7 P's Marketing Mix and recognizes that human interactions are a critical part of how customers perceive your brand.
+People covers everyone involved in delivering the service who affects the customer's experience: front-line staff, back-office staff whose work reaches the customer, and in many services the customers themselves. In services such as consulting, finance and hospitality, the people are a large part of what the customer is buying.
 
-## Why are people important in the 7 P's marketing mix?
+## Why is People part of the marketing mix and not only HR?
 
-People are important because they are the most variable and emotionally impactful element of the marketing mix. Unlike price or product features, people interactions create emotional connections that drive loyalty and word-of-mouth. A great product delivered by poorly trained staff will underperform a good product delivered by exceptional people.
+Because customers judge the service by the people they meet. Marketing sets the brand promise, and staff are the ones who keep or break it. Writing the people standards from the positioning keeps the promise and the delivery aligned.
 
-## How do I measure the effectiveness of people in my marketing mix?
+## How do I make service consistent when people naturally vary?
 
-Measure effectiveness using a combination of customer satisfaction scores (CSAT) per touchpoint, Net Promoter Score (NPS), first-contact resolution rates, qualitative customer feedback analysis, and internal quality assurance reviews. Always balance efficiency metrics with quality metrics to avoid optimizing for speed at the expense of experience.
+Combine a short set of behavioural standards with good hiring, training, tools and clear discretion. A documented process sets the steps; people standards set how each encounter should feel. Regular coaching on real interactions keeps both from drifting.
 
-## What is the difference between people and process in the marketing mix?
+## How do I measure the people element?
 
-People refers to the individuals who deliver your service and their skills, attitudes, and empowerment levels. Process — covered in the sibling skill on streamlining service delivery processes — refers to the systems, workflows, and procedures those people follow. Both must be optimized together; great people in a broken process will still deliver inconsistent results.
+Use customer feedback tied to specific touchpoints, quality reviews of real interactions, and staff measures such as turnover and engagement. Service quality surveys that include dimensions such as assurance and empathy give a view of how customers experience staff behaviour.
 
-## How do back-office staff affect the people element of the marketing mix?
+## Where do customers fit in the people element?
 
-Back-office staff directly impact customer experience even though customers rarely interact with them. Warehouse teams affect delivery accuracy, billing teams affect invoice clarity, and IT teams affect system uptime. Errors in any of these areas create negative customer moments that front-line staff must then resolve, making back-office alignment essential.
-
-## How often should I retrain staff on people touchpoint standards?
-
-Run brief micro-training sessions monthly focused on one specific behavior or touchpoint, conduct quarterly skill refreshers that review performance data and update standards as needed, and do an annual deep-dive aligned with any changes to your overall 7 P's marketing strategy. Continuous reinforcement outperforms annual training events.
+In many services, customers take part in producing the result and interact with other customers. The plan should tell customers what to bring, what to expect and what they need to do, and should consider how customers affect each other's experience.

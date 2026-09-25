@@ -1,25 +1,21 @@
-# FAQ: Evaluating Market Penetration Strategies for Existing Products
+# FAQ: Evaluating Market Penetration Strategies
 
-## How do I choose between pricing and lead generation for market penetration?
+## What counts as a market penetration strategy?
 
-Use a weighted scoring matrix that compares both tactics across criteria like cost, speed to results, competitive defensibility, and expected share impact. Pricing moves deliver faster results but are easily matched by competitors, while lead generation campaigns build a proprietary pipeline that compounds over time. The right choice depends on your business context and strategic priorities.
+Any tactic that grows sales of your existing products in your existing market. That includes selling more to current customers, keeping them longer, winning buyers in your segment who do not buy yet, and taking customers from competitors. If the tactic needs a new product or targets a buyer group you do not serve today, it belongs in another quadrant.
 
-## What's the difference between market penetration and market development in the Ansoff Matrix?
+## Is penetration pricing the same as a market penetration strategy?
 
-Market penetration grows share for existing products in existing markets — think lead generation campaigns targeting your current audience. Market development takes existing products into new markets, segments, or geographies. Penetration is lower risk because you're working with known customers and known products.
+No. Penetration pricing is one tactic, setting low prices to reach many buyers quickly, and a market penetration strategy can use many other levers. Joel Dean's work suggests penetration pricing fits best when demand is highly sensitive to price, costs fall with volume and competitors are about to enter. Outside those conditions, other levers often grow share more cheaply.
 
-## How do I know when to stop investing in market penetration?
+## How do I know when my current market is saturated?
 
-Calculate your penetration headroom — the gap between current share and a realistic ceiling. When headroom drops below 3-5 percentage points, or when the cost to acquire each additional point of share exceeds the returns, it's time to shift resources toward market development or product development quadrants in the Ansoff Matrix.
+Compare your sales with the size of the target market, and look at trends in acquisition cost and response rates. If you already reach most potential buyers and each new customer costs more than the last, acquisition headroom is shrinking. At that point retention, usage and value per customer usually offer more room, and the other quadrants deserve a closer look.
 
-## How many lead generation tactics should I evaluate at once?
+## How is lead generation evaluated in this quadrant?
 
-Generate 8-15 candidate tactics in the brainstorming phase to ensure breadth, then narrow to a top 3 through weighted scoring. Pilot no more than 2 simultaneously to maintain experimental rigor and avoid splitting resources too thin for any single test to reach statistical significance.
+Treat lead generation into your current segment as one penetration tactic among others and score it on the same criteria. Judge it by qualified pipeline and closed revenue from the segment rather than by lead volume. Compare its cost per customer with the cost of retention and expansion tactics before shifting budget toward it.
 
-## Can I use this evaluation framework for digital and offline lead generation?
+## How long should a penetration pilot run?
 
-Yes — the weighted scoring matrix is channel-agnostic. Include both digital lead generation tactics (paid search, content marketing, social ads) and offline tactics (events, partnerships, direct mail) in your candidate list. The scoring criteria will surface the best option regardless of channel.
-
-## How often should I re-evaluate my market penetration strategy?
-
-Reassess quarterly at minimum, or whenever a significant market event occurs — such as a competitor's pricing change, a new entrant, or a shift in customer behavior. Your weighted scores may change substantially as market conditions evolve, making previously low-ranked lead generation or pricing tactics suddenly viable.
+Long enough to cover a full buying cycle for the product, so the result reflects real purchase behavior. Fast-moving consumer products may show a result within weeks, while business software may need a quarter or more. Set the duration and the success threshold before the pilot starts, and resist extending it because the early numbers look promising.

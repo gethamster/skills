@@ -1,25 +1,21 @@
 # FAQ: Validating Impact Map Assumptions with Experiments
 
-## How many experiments should I run before committing to a deliverable on my impact map?
+## What assumptions does an impact map contain?
 
-There's no fixed number, but a good rule of thumb is to validate at least the actor assumption and the impact assumption before testing the deliverable itself. For high-stakes deliverables (>2 weeks of engineering), run 2-3 experiments across the chain. For low-cost deliverables, a single well-designed test may suffice.
+Two on every branch, according to the impactmapping.org overview. The first is that a deliverable will support a change in an actor's behavior. The second is that once the behavior changes, the actor will contribute to the goal. Testing a branch means checking both links, since either can fail independently.
 
-## What's the cheapest experiment I can run to validate an impact map assumption?
+## Do we need to test every branch?
 
-Analyzing existing data (analytics, support tickets, CRM records) costs almost nothing and can validate or invalidate actor and impact assumptions within hours. After that, 5-10 customer interviews are the next cheapest option. Only move to prototypes and A/B tests when you need to validate specific deliverable assumptions.
+No. Focus on branches that are both important to the goal and uncertain. If a deliverable is cheap and the link to the goal is well supported, shipping it and measuring the result is the test. Expensive deliverables resting on uncertain assumptions are the ones to test before building.
 
-## How does validating impact map assumptions help me learn how to become a product manager?
+## What kinds of tests work for impact maps?
 
-Assumption validation is a cornerstone product management skill. It demonstrates that you can think critically about strategy, design experiments to reduce risk, and make evidence-based decisions — all competencies that hiring managers look for. Practicing this within the Impact Mapping framework gives you a structured, repeatable approach to show in interviews and on the job.
+It depends on how quickly you can reach users and how costly mistakes are. Gojko Adzic lists prototypes, low-fidelity interface testing, half-manual processes and skeleton apps as options when uncertainty is high. His InfoQ article with Ingrid Domingues and Johan Berndtsson describes online services validating ideas through staged deployments and A/B tests, and organizations that cannot release quickly relying on user research and prototypes.
 
-## What happens if my experiment results are inconclusive?
+## How do we know when a test has succeeded?
 
-Inconclusive results usually mean your sample size was too small, your success metric was poorly defined, or your experiment design didn't isolate the variable you wanted to test. Redesign the experiment with tighter criteria or a different method rather than treating inconclusive results as a pass.
+Set the threshold before the test, taken from the impact's target range, and write down what result would count as failure. Also agree what the team will do for each outcome. Without thresholds and decision rules set in advance, results tend to be reinterpreted to support whatever the team already wanted to do.
 
-## Can I validate impact map assumptions without access to real users?
+## How is this different from an Opportunity Solution Tree's assumption tests?
 
-You can partially validate actor and impact assumptions using secondary research, competitive analysis, and internal stakeholder interviews. However, deliverable-level assumptions almost always require real user interaction. If you have zero user access, prioritize getting even 5 people to talk to — the learning per dollar is unmatched.
-
-## How does assumption validation relate to integrating impact maps with product roadmaps?
-
-Validated branches of your impact map should feed directly into your roadmap with higher priority and confidence. See the sibling skill on integrating impact maps with product roadmaps for how to translate validated map branches into roadmap items with evidence-backed justification.
+The idea is similar, but the placement differs. Adzic notes that an Opportunity Solution Tree lists assumptions and tests explicitly under each solution, while an impact map leaves them implicit in the links between levels. Writing the two assumptions out for each prioritized branch, as this skill does, brings that explicitness to an impact map.

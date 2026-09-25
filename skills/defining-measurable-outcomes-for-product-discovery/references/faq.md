@@ -1,25 +1,25 @@
-# FAQ: Defining Measurable Outcomes for the Top of Your OST
+# FAQ: Defining Measurable Outcomes for Product Discovery
 
-## How does defining a measurable outcome improve my product manager roadmap?
+## What is the difference between a business outcome and a product outcome?
 
-A measurable outcome gives your product manager roadmap a concrete destination rather than a vague direction. It transforms your roadmap from a list of features into a strategy for impact—every item on the roadmap can be traced back to how it moves your outcome metric, making prioritization decisions clearer and stakeholder conversations more productive.
+A business outcome measures the health of the business and is usually financial, such as retention or revenue. A product outcome measures a customer behavior in the product or a customer sentiment about it. Teresa Torres recommends a product outcome at the top of an opportunity solution tree because the team can influence it directly. The product outcome should be a leading indicator of a business outcome.
 
-## What if my leadership gives me a feature to build instead of an outcome?
+## Does the outcome have to be measurable before we start?
 
-Ask 'What business result do we expect this feature to achieve?' and then propose that result as your measurable outcome. Most leaders are receptive when you frame it as ensuring the feature actually succeeds. If they insist on the feature regardless, define the outcome it should produce and use your OST to validate whether it's the best solution.
+No. Torres says an outcome can start as a direction, such as increasing engagement, while the team works out how to measure it. Many teams start with a rough measure and refine it as they learn what successful customers do. Start discovery with a clear direction and build the measurement in parallel.
 
-## Can I have multiple outcomes at the top of my Opportunity Solution Tree?
+## How do I know if my outcome is really an output?
 
-Teresa Torres recommends one outcome per tree. Multiple outcomes split your team's focus and make it impossible to prioritize between opportunities that serve different metrics. If you truly have two outcomes, consider whether they should be two separate trees owned by two teams, or whether one is actually a guardrail metric rather than a primary outcome.
+Ask whether the answer is yes or no. "Deliver an Android app" is done or not done, which makes it an output. An outcome describes a change in what customers do or feel, which the output is supposed to cause. If you can only measure completion, rewrite it around the behavior you hope the output will change.
 
-## How often should I change the outcome at the top of my OST?
+## Can a team work on more than one outcome at a time?
 
-Review your outcome quarterly or whenever company strategy materially shifts. Don't change it mid-quarter just because progress is slow—that's usually a signal to explore different opportunities, not to redefine the outcome. Frequent changes prevent your team from building the deep understanding needed for meaningful product discovery.
+Torres recommends one. A team spread across several outcomes tends to get only a shallow understanding of each opportunity space. If leadership assigns several, prioritize them yourselves, build the tree for the most important one, and do what you can on the others while being clear about the trade-off.
 
-## What's the difference between a product outcome and a business outcome in the OST?
+## How long should a team keep the same outcome?
 
-A business outcome is a high-level company metric like total revenue or market share that many teams and factors influence. A product outcome is a more specific metric—like activation rate or feature adoption—that your product team can directly move through product changes. Product outcomes are better for the top of your OST because they're actionable.
+Torres suggests at least two to three quarters, and some teams keep one for years. It takes time to learn how to move a metric, and a team that switches every quarter rarely gets past the learning stage. Keep the direction steady and adjust the target and the measure as you learn.
 
-## How do I know if my outcome metric is too narrow or too broad?
+## Where do OKRs fit?
 
-If your team could move the metric by changing a single button, it's too narrow—it's actually a solution metric. If your team is one of ten groups that influence it, it's too broad. The sweet spot is a metric where your product work is the primary driver but multiple solutions could improve it, giving you room for genuine discovery.
+An OKR is a format. Torres notes that business and product outcomes can both be written as OKRs, with the objective expressing the outcome qualitatively and the key results expressing it as numbers. The harder work is choosing which outcome matters, and this skill is about that choice.

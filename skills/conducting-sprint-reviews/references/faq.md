@@ -1,25 +1,21 @@
-# FAQ: Conducting Sprint Reviews and Demos
+# FAQ: Conducting Sprint Reviews
 
-## How long should a scrum sprint review meeting last?
+## How long should a sprint review meeting take?
 
-The Scrum Guide recommends a maximum of four hours for a one-month sprint, scaled proportionally. For a two-week sprint, aim for 60-90 minutes. Most teams find 60 minutes is the sweet spot—long enough for meaningful demos and discussion, short enough to maintain energy and attendance.
+The Scrum Guide sets a maximum of four hours for a one-month Sprint and says the event is usually shorter for shorter Sprints. Treat that as a ceiling. Atlassian's guide to sprint reviews suggests half an hour to an hour per iteration for its own teams. Pick a length that leaves real time for discussion after the demonstration, and end early when the purpose is met.
 
-## What is the difference between a sprint review and a sprint retrospective?
+## Who runs the sprint review?
 
-The sprint review inspects the product increment with stakeholders and adapts the product backlog based on feedback. The [sprint retrospective](https://tryhamster.com/skills/facilitating-sprint-retrospectives) inspects the team's process and identifies improvements for the next sprint. The review focuses on 'what did we build,' while the retrospective focuses on 'how did we work together.'
+The whole Scrum Team takes part and the Product Owner usually leads the conversation about the Product Backlog. The Developers show and explain the work they did. The Scrum Master makes sure the event happens, stays positive and productive, and stays within its timebox. Stakeholders are invited by the Scrum Team, usually on the Product Owner's judgment of who is key for this Sprint.
 
-## Who should attend the scrum sprint review?
+## What is the difference between a sprint review and a retrospective?
 
-The entire Scrum team (Product Owner, Scrum Master, developers) plus key stakeholders who can provide feedback that influences the product backlog. This typically includes business leaders, customer representatives, UX researchers, and support leads. Avoid inviting passive observers who don't contribute feedback.
+The sprint review inspects the product and its environment with stakeholders, and its output is an adapted Product Backlog. The retrospective inspects how the team worked, with the Scrum Team only, and its output is a set of improvements to the team's process. The review comes first, and the retrospective concludes the Sprint.
 
-## What do you do in a sprint review if the team didn't complete all planned work?
+## Should we show work that is almost done?
 
-Be transparent. Demo what was completed and meets the Definition of Done, then briefly explain why other items weren't finished and the plan for addressing them. Incomplete work is normal and provides valuable data for improving [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints) and [estimation](https://tryhamster.com/skills/estimating-work-with-story-points).
+No. The Scrum Guide says an item that does not meet the Definition of Done cannot be released or presented at the Sprint Review, and returns to the Product Backlog. You can mention that it is unfinished and why, so stakeholders are not surprised, but do not demonstrate it as progress.
 
-## Can you skip the sprint review if there's nothing significant to demo?
+## What if key stakeholders never come?
 
-No. The sprint review is a mandatory Scrum event. Even if the increment is small—bug fixes, performance improvements, refactoring—there is always something to inspect and discuss. Frame technical work in terms of user impact: faster load times, fewer errors, improved reliability.
-
-## How do you handle stakeholders who give vague or unhelpful feedback during the sprint review?
-
-Ask specific, targeted questions instead of open-ended prompts. Replace 'What do you think?' with 'Does this search filter address the complaint your team raised about finding orders?' Providing context and constraints focuses stakeholder feedback on actionable, concrete observations rather than abstract opinions.
+Find out who actually makes decisions about the product and ask what they need from the event. Put that question in the invitation, keep the meeting short and hands-on, and send a summary that shows how their earlier feedback changed the backlog. If nobody with authority will attend, raise it with the Product Owner as an impediment, because the event cannot do its job without them.

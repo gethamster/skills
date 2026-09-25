@@ -1,37 +1,37 @@
-# Examples: Running Effective Daily Stand-Up Meetings
+# Examples: Running the Scrum Daily Standup
 
-## Example: Board-Walking Standup for a 6-Person Sprint Team
-
-**Scenario:**
-
-A product team of 6 developers is midway through a two-week sprint building a new checkout flow. The sprint goal is "Customers can complete a purchase using saved payment methods." They use Jira with a board showing columns: To Do, In Progress, In Review, Done. The Scrum Master facilitates the daily standup.
-
-**Walkthrough:**
-
-The Scrum Master shares the Jira board on the conference room screen and reads the sprint goal aloud. Starting from the rightmost column, she asks about each card:
-
-**In Review:** "CHECKOUT-45: Saved card selection UI" — Maria says the PR is approved and she'll merge after standup. Card moves to Done.
-
-**In Progress:** "CHECKOUT-47: Payment token API integration" — James reports he's blocked waiting for the sandbox credentials from the payment provider. Scrum Master notes this as Blocker #1 and commits to calling the vendor contact within the hour.
-
-**In Progress:** "CHECKOUT-48: Order confirmation email" — Priya says she'll finish the template today and move to code review by end of day. No blockers.
-
-**In Progress:** "CHECKOUT-50: Error handling for expired cards" — David mentions he discovered an edge case in the payment gateway's retry logic that isn't documented. He needs 20 minutes with James to align on the approach. Scrum Master parks this for a breakout.
-
-Two To Do cards remain. The Scrum Master asks for a confidence vote: the team shows mostly 3s and 4s (out of 5), with James noting his confidence depends on getting sandbox access today.
-
-Total time: 11 minutes. After standup, David and James stay for a 10-minute breakout on the retry logic. The Scrum Master calls the payment vendor.
-
-## Example: Async-First Standup for a Distributed Team
+## Moving from round-robin to walking the board
 
 **Scenario:**
 
-A fully remote team spans UTC-5 to UTC+5 with no overlapping working hours. Traditional synchronous standups would force someone to attend outside working hours every day.
+Illustrative scenario: a team of six uses the three questions in a fixed order every morning. The meeting regularly runs long, and at the Sprint Review two items turn out to have been stuck for days without anyone noticing.
 
 **Walkthrough:**
 
-The team adopts an async-first standup using a Slack bot that prompts each member at their local 9:00 AM: "What did you complete? What's your plan today? Any blockers?" Responses post to a #daily-standup channel.
+At the retrospective, the team agrees to try walking the board for one Sprint. Each morning the facilitator opens with the Sprint Goal and then starts at the column closest to Done, asking about blocked items first and then items that have not moved since yesterday. People speak only about items they are working on.
 
-The Scrum Master reviews all responses by 10:00 AM their local time and flags any blockers in a #blockers channel with owners and deadlines. If more than one blocker surfaces or sprint goal confidence seems low, the Scrum Master schedules a 15-minute sync call at the best overlapping time (typically the edges of the widest time zones).
+Within a few days, the stuck items are the first thing discussed each morning, and two Developers pair on one of them. The meeting also gets shorter, because people who have nothing new to add do not speak. The team keeps the format and rotates the facilitator weekly.
 
-The team agreed to this format during a [retrospective](https://tryhamster.com/skills/facilitating-sprint-retrospectives) and re-evaluates it every two sprints. They found that on average, they only need a synchronous standup 2-3 times per sprint, freeing significant time while maintaining sprint goal alignment.
+## A standup that turned into a status meeting
+
+**Scenario:**
+
+Illustrative scenario: a department manager has started attending the Daily Scrum. Developers now face the manager, give detailed accounts of their day, and avoid mentioning problems.
+
+**Walkthrough:**
+
+The Scrum Master talks to the manager privately, explains that the Daily Scrum is the Developers' planning event, and offers a better source of information: the board and the Sprint Review. The manager agrees to stop attending and to read the board instead.
+
+The Scrum Master also asks the Developers to stand facing the board and to speak to each other. At the next retrospective, the team notes that blockers are being raised earlier, and that the manager is getting clearer updates at the Sprint Review than before.
+
+## A distributed team across time zones
+
+**Scenario:**
+
+Illustrative scenario: a team has Developers in two time zones with a few hours of overlap. Half of them join the Daily Scrum from a meeting room and half from home, and the remote members struggle to follow side conversations.
+
+**Walkthrough:**
+
+The team adopts Atlassian's heuristic of treating everyone as remote: each person joins from their own computer, even those in the office. The board is shared on screen, and the facilitator walks it item by item. The team picks a time inside the overlap and keeps it fixed.
+
+Problems that need discussion are noted and handled right after the standup in a smaller call. The team also agrees that anyone who is blocked outside the overlap posts it in the team channel straight away, since the Daily Scrum is not the only time to ask for help.

@@ -1,15 +1,20 @@
 ---
-name: conducting-sprint-reviews
-description: "This skill teaches you how to run a scrum sprint review meeting that effectively demonstrates working increments to stakeholders and captures actionable feedback that shapes the product backlog."
+name: "conducting-sprint-reviews"
+description: "Run a sprint review meeting as the Scrum Guide intends: a working session where stakeholders inspect the Increment and the backlog is adapted."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: scrum
+  method: "scrum"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Conducting Sprint Reviews and Demos: The Scrum Sprint Review Guide
+# Conducting Sprint Reviews: Run the Sprint Review Meeting
 
-> This skill teaches you how to run a scrum sprint review meeting that effectively demonstrates working increments to stakeholders and captures actionable feedback that shapes the product backlog.
+> Run a sprint review meeting as the Scrum Guide intends: a working session where stakeholders inspect the Increment and the backlog is adapted.
 
 ## Before you start
 
@@ -24,128 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes per sprint review |
-| Outcome | You will be able to facilitate sprint reviews that keep stakeholders engaged, surface meaningful feedback, and directly influence product direction through transparent inspection of the increment. |
-| Prerequisites | Understanding of Scrum framework basics and sprint cycles, Familiarity with the Definition of Done, A completed sprint increment with demonstrable work, Basic facilitation skills |
+| Time to Learn | A few Sprints of practice |
+| Outcome | You run a sprint review meeting where stakeholders use the Increment, discuss what changed, and leave with a Product Backlog they helped reorder. |
+| Prerequisites | A Scrum Team with a Product Owner, a Definition of Done, a Sprint Goal, access to key stakeholders |
 | Part of | [Scrum](../../methods/scrum/METHOD.md) |
 
 ## Overview
 
-The scrum sprint review is one of the five Scrum events and serves as the primary feedback loop between the development team and stakeholders. Held at the end of every sprint, it is where the team demonstrates the working increment—actual software, not slides—and collaborates with stakeholders to inspect what was built and adapt what comes next. Despite its importance, the sprint review is one of the most frequently misunderstood and poorly executed ceremonies in Scrum.
+The sprint review meeting is the Scrum event where the team and its stakeholders look at what the Sprint produced and decide what to do next. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) states its purpose as "to inspect the outcome of the Sprint and determine future adaptations." The Scrum Team presents the results of its work to key stakeholders, progress toward the Product Goal is discussed, and the attendees collaborate on what to do next. The Product Backlog may be adjusted on the spot.
 
-Many teams reduce the sprint review to a one-way status presentation where developers click through features while stakeholders passively watch. This misses the point entirely. The scrum sprint review is designed to be an interactive working session where the team and stakeholders co-create understanding about the product's trajectory. The output isn't applause—it's revised backlog items, new insights about user needs, and alignment on priorities for the next sprint.
+Some teams run the event as a demo: the team shows slides or clicks through features while stakeholders watch. The guide asks for something more active. It calls the Sprint Review "a working session" and says the team "should avoid limiting it to a presentation." The demonstration is one input. The discussion about what the demonstration means for the product, the market and the backlog is the part that produces adaptation.
 
-Mastering this skill is critical because the sprint review is where organizational trust in Scrum is built or eroded. When reviews are engaging and transparent, stakeholders feel ownership over the product. When they're perfunctory or theatrical, stakeholders lose confidence and resort to backchannel requests. This guide walks you through running sprint reviews that genuinely drive product decisions, building on the broader [Scrum](https://tryhamster.com/methods/scrum) framework's emphasis on inspection and adaptation.
+The event sits near the end of the Sprint. It is the second to last event, before the Sprint Retrospective, and the guide timeboxes it to a maximum of four hours for a one-month Sprint, usually shorter for shorter Sprints. Only work that meets the Definition of Done can be presented as part of the Increment. The guide also says the review "should never be considered a gate to releasing value," so a team that releases during the Sprint still reviews those Increments here.
+
+This skill covers preparing the review, running it as a working session, and turning what stakeholders say into backlog changes. For Scrum's accountabilities and the other events, see the [Scrum method page](../../methods/scrum/METHOD.md).
 
 ## How It Works
 
-The scrum sprint review operates on the Scrum pillar of **inspection**—teams present the increment so that all participants can inspect the actual state of the product and make informed decisions about what to do next. This is distinct from a demo day or a release presentation; the sprint review is a **collaborative working session**, not a performance.
+A sprint review has three inputs and one main output. The inputs are the Increment, which is everything that met the Definition of Done during the Sprint; the Sprint Goal, which tells stakeholders why the Sprint mattered; and the current Product Backlog with the Product Goal it serves. The output is an updated Product Backlog that reflects what the group learned. The guide also asks the group to review "what has changed in their environment," so market news, customer feedback, budget and timeline belong in the conversation alongside the product.
 
-Conceptually, the sprint review closes the feedback loop that began during [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints). The Product Owner presented the sprint goal, the team committed to backlog items, and now the results are inspected against the original goal and stakeholder expectations. The gap between what was expected and what was delivered is not a failure—it's data. That data feeds directly back into the [product backlog](https://tryhamster.com/skills/grooming-the-product-backlog) as refined items, reprioritized work, or entirely new ideas.
+The Scrum Guide revision history shows that the emphasis on value in this event is deliberate. The 2013 edition reinforced "the concept of value" in the Sprint Review, with attendees collaborating "on the next things that could be done to optimize value" ([Scrum Guide revisions](https://scrumguides.org/revisions.html)). That is why a good review spends as much time on "what next" as on "what we built."
 
-The meeting typically follows this flow: the Product Owner opens by reviewing the sprint goal and which items met the Definition of Done; the development team demos working software; stakeholders ask questions and provide feedback; the group discusses marketplace changes, timeline impacts, and budget considerations; and the session closes with a revised product backlog that reflects everything learned. The entire meeting is time-boxed to four hours for a one-month sprint, scaled proportionally for shorter sprints.
+Stakeholders are the reason the event exists. The Product Owner decides who counts as key for this Sprint: customers, users, sales or support staff, and the managers who fund the work. Atlassian describes the review as outward-facing and the retrospective as an internal team meeting, and suggests having different team members demonstrate functionality to build ownership ([Atlassian on sprint reviews](https://www.atlassian.com/agile/scrum/sprint-reviews)). The Developers explain what they built and what they learned. The Scrum Master makes sure the event happens, stays within its timebox and stays productive.
 
-The key conceptual shift is thinking of the sprint review not as the team presenting *to* stakeholders, but as the team and stakeholders reasoning *together* about the product. This is why the Scrum Guide explicitly calls it a "working session" rather than a "presentation."
+The sprint review vs retrospective question comes up often because the two events sit back to back. The review inspects the product and the environment with stakeholders. The retrospective inspects the team's way of working, with the Scrum Team only. Mixing them makes both worse: stakeholders sit through process discussion, and the team holds back honest process feedback in front of outsiders.
+
+What goes wrong is predictable. Teams show work that is not Done, which the guide rules out. They rehearse a polished show that leaves no time for questions. They invite nobody who can make a decision, so the backlog does not change. Or the Product Owner hears feedback and then reorders the backlog alone a week later, and stakeholders never learn that their input mattered. Each step below targets one of these failures.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Prepare the Increment and Confirm the Definition of Done
+### Step 1: Confirm what is Done
 
-Before the sprint review, the development team should verify that every backlog item planned for demonstration meets the team's Definition of Done. Items that are partially complete should not be demoed as if they're finished—acknowledge them separately as work-in-progress. This protects the team's credibility and gives stakeholders an accurate picture.
+A day or two before the review, the Developers and Product Owner list the Product Backlog items that meet the Definition of Done. Anything that does not meet it is left out of the demonstration and, per the [Scrum Guide](https://scrumguides.org/scrum-guide.html), returns to the Product Backlog. Note partly finished work separately so you can mention it honestly without showing it. Check that the Increment runs in an environment stakeholders can use, such as staging or production. If you released during the Sprint, include those Increments too.
 
-Prepare the demo environment in advance. This means deploying to a staging or demo environment that mirrors production as closely as possible. Avoid demoing on a developer's local machine with test data—stakeholders need to see the product in a realistic context to give meaningful feedback.
+### Step 2: Invite the right stakeholders
 
-Create a brief outline of what will be shown, ordered by the sprint goal and stakeholder interest rather than the order work was completed. This isn't a script—it's a roadmap for the conversation.
+The Product Owner picks attendees based on what the Sprint changed and what decisions are coming. Invite people who use the product, people who sell or support it, and at least one person who can change priorities or budget. Send the Sprint Goal and the list of Done items ahead of time with one or two questions you want answered. A smaller group of people who care is better than a large audience that watches passively. Keep the time slot fixed each Sprint so stakeholders can plan around it.
 
-> **Pro tip:** Run a 15-minute dry run with the team the day before. This isn't about rehearsing a pitch—it's about catching broken demo environments, missing test data, and awkward transitions.
+### Step 3: Build a short sprint review agenda
 
-### Step 2: Step 2: Invite the Right Stakeholders and Set Expectations
+A workable scrum sprint review agenda has four parts: the Sprint Goal and whether it was met, a hands-on look at the Increment, a discussion of what has changed in the market and the organization, and a review of the Product Backlog and the likely next steps. Put most of the time into the last three parts. Decide who will show each item, and rotate presenters so the Developers who built the work explain it. Keep the whole event well inside the guide's maximum of four hours for a one-month Sprint.
 
-The sprint review should include the Scrum team (Product Owner, Scrum Master, developers) and key stakeholders—product managers, business leaders, customer representatives, support leads, or anyone whose feedback will materially affect backlog decisions. Avoid inviting people purely for visibility; that creates a presentation dynamic.
+### Step 4: Let stakeholders use the Increment
 
-Send the invitation with a clear agenda that includes: the sprint goal, a list of completed items, any items not completed and why, and specific questions the team wants stakeholder input on. This primes attendees to come prepared with relevant context rather than generic reactions.
+Open with the Sprint Goal, then hand over control. Let a stakeholder click through the feature, try a real task, or read the actual output, while the Developers answer questions. Ask what surprised them and what they would need before using it for real. Record every piece of feedback in plain language along with who said it. Watching someone use the product exposes problems that a scripted demo hides.
 
-Explicitly frame the meeting as interactive. A line like "We'll be demoing working features and asking for your input on direction" sets a different tone than "The team will present their sprint results."
+### Step 5: Discuss progress and the environment
 
-> **Pro tip:** If key stakeholders consistently skip sprint reviews, ask them what format would be more useful. Sometimes a shorter, focused review with a single stakeholder group is more effective than a large all-hands session.
+Show where the team stands against the Product Goal and any release forecast, using whatever measure the team already trusts. Then ask the group what has changed outside the team since the last review: customer requests, competitor moves, regulatory news, budget or deadlines. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) lists "what has changed in their environment" as part of what the group reviews. This is the part of the meeting that most often changes priorities, so protect time for it.
 
-### Step 3: Step 3: Open with the Sprint Goal and Context
+### Step 6: Adapt the Product Backlog in the room
 
-The Product Owner should open the scrum sprint review by restating the sprint goal—not the list of stories, but the overarching objective the team committed to. This grounds the demo in purpose rather than features. For example, "Our goal this sprint was to reduce the time it takes a new user to complete onboarding from 8 minutes to under 3 minutes."
+With feedback and context on the table, the Product Owner walks through the top of the Product Backlog and proposes changes: new items, removed items, and a new order. Stakeholders can argue for their priorities, and the Product Owner decides, since the guide makes the Product Owner accountable for ordering. Capture new items at a rough level; detailed refinement can happen later. End the step with a clear view of what the next Sprint is likely to address.
 
-Next, briefly summarize what was completed versus planned. Be honest: if 8 of 10 stories were completed, say so. If scope was adjusted mid-sprint due to a production incident, explain the trade-off. This transparency builds trust and gives stakeholders a realistic understanding of team velocity, which helps during [backlog refinement](https://tryhamster.com/skills/grooming-the-product-backlog).
+### Step 7: Close the sprint review meeting and share the outcome
 
-> **Pro tip:** Avoid spending more than 5 minutes on this opening. The bulk of the meeting should be live demonstration and discussion.
-
-### Step 4: Step 4: Demo Working Software, Not Slides
-
-This is the core of the scrum sprint review. Developers (not just the Product Owner) should walk through the actual working increment. Show real user flows, click real buttons, and demonstrate real behavior. If something is slow or rough around the edges, that's fine—it's working software, not a marketing video.
-
-Organize the demo around user scenarios rather than technical stories. Instead of "We implemented API endpoint X and updated the database schema," frame it as "A customer can now filter search results by date range—let me show you what that looks like." This keeps stakeholders engaged and their feedback grounded in user experience.
-
-Pause after each major feature or flow for questions and reactions. Don't wait until the end to take Q&A—by then, stakeholders have forgotten their early questions and the conversation becomes diffuse. Encourage stakeholders to interact with the product themselves when possible.
-
-> **Pro tip:** Designate one person to take notes on all stakeholder feedback during the demo. The person demoing can't also capture nuanced feedback accurately.
-
-### Step 5: Step 5: Facilitate Stakeholder Discussion and Feedback
-
-After the demo, open the floor for broader discussion. This is where the sprint review becomes a working session rather than a presentation. Prompt stakeholders with specific questions: "Given what you've seen, does the onboarding flow address the concerns you heard from the sales team?" or "We have two directions for the next feature—which aligns better with the Q3 roadmap?"
-
-Capture feedback in real time using a shared document or your project management tool. Categorize feedback as: new backlog items, changes to existing items, questions requiring follow-up, or out-of-scope observations. This prevents feedback from evaporating after the meeting ends.
-
-Allow space for stakeholders to share marketplace changes, competitive intelligence, or customer feedback that may affect priorities. The sprint review is one of the few moments where the entire product community is in one room—use it.
-
-> **Pro tip:** If a feedback discussion goes deep on a single topic, timebox it to 5 minutes and schedule a follow-up. Don't let one topic consume the entire review.
-
-### Step 6: Step 6: Review and Revise the Product Backlog
-
-Before closing, the Product Owner should summarize how the feedback will affect the product backlog. This might mean reprioritizing existing items, adding new stories based on stakeholder input, or removing items that are no longer relevant given what was learned.
-
-This doesn't need to be a full [backlog grooming session](https://tryhamster.com/skills/grooming-the-product-backlog)—it's a high-level alignment check. The goal is for everyone to leave the sprint review with a shared understanding of what's likely coming next and why. The Product Owner can refine the details in subsequent backlog refinement sessions.
-
-End with a brief look ahead: what's the likely focus of the next sprint based on today's conversation? This gives stakeholders confidence that their feedback was heard and will influence upcoming work.
-
-> **Pro tip:** Take a photo or screenshot of any whiteboard brainstorming that happened during the review. Physical artifacts get erased; digital ones become backlog fodder.
-
-### Step 7: Step 7: Close and Capture Action Items
-
-Formally close the sprint review by thanking stakeholders for their time and participation. Summarize the key decisions made, feedback captured, and any follow-up actions with owners and deadlines.
-
-Distribute a brief written summary within 24 hours—not meeting minutes, but a focused document listing: what was demonstrated, key feedback received, backlog changes agreed upon, and open questions. This serves as a contract of understanding and prevents the "I thought we agreed to X" conversations that plague poorly documented reviews.
-
-Finally, the Scrum Master should note any process observations for the upcoming [sprint retrospective](https://tryhamster.com/skills/facilitating-sprint-retrospectives). Was the review too long? Were the right people in the room? Did the team get useful feedback? These meta-observations help improve the review itself over time.
-
-> **Pro tip:** Track a simple metric over time: what percentage of sprint review feedback actually results in backlog changes? If it's near zero, your reviews aren't generating actionable input.
+Summarize the decisions: what changed in the backlog, which feedback will be acted on, and what will not be acted on and why. Send a short written summary to attendees and to stakeholders who could not attend. Link each backlog change to the feedback that caused it so people can see their input used. Then the Scrum Team moves to the Sprint Retrospective, which concludes the Sprint.
 
 ## Best Practices
 
-- Always demo working software in a realistic environment—never use slides as a substitute for showing the actual increment. Stakeholders can only give meaningful feedback on things they can see and interact with.
-- Encourage developers to present their own work rather than having the Product Owner demo everything. This builds developer confidence, gives stakeholders direct access to technical context, and distributes the facilitation load.
-- Send the sprint review agenda 24 hours in advance with specific questions you want stakeholder input on. Prepared stakeholders give dramatically better feedback than surprised ones.
-- Time-box the entire meeting strictly—60 minutes for a two-week sprint is a good default. A concise, energetic review generates better engagement than a sprawling, exhaustive one.
-- Capture every piece of stakeholder feedback visibly during the meeting, even if it seems minor. When stakeholders see their input being recorded, they contribute more freely and trust the process.
-- Rotate who facilitates the sprint review. Having different team members lead builds shared ownership and prevents the ceremony from becoming one person's show.
+- Treat the Definition of Done as the entry ticket. Showing unfinished work creates false expectations and hides risk, and the [Scrum Guide](https://scrumguides.org/scrum-guide.html) says such work cannot be presented at the review.
+- Hand the keyboard to stakeholders. Feedback from someone using the product is more specific than reactions to a presentation, and it surfaces usability problems early.
+- Spend more time on "what next" than on "what we built." The event exists to decide future adaptations, and the backlog discussion is where that happens.
+- Rotate presenters among the Developers. Atlassian suggests different team members demonstrate work to encourage ownership ([Atlassian on sprint reviews](https://www.atlassian.com/agile/scrum/sprint-reviews)).
+- Invite someone who can decide. If nobody in the room can change priorities, budget or scope, feedback piles up without effect.
+- Close the loop in writing. A short summary that ties backlog changes to specific feedback keeps stakeholders coming back.
 
 ## Common Mistakes
 
-- **Turning the sprint review into a status report or slide presentation instead of a live demo of working software** — Show the actual product. If something isn't demo-ready, explain why honestly rather than substituting a screenshot or mockup. The sprint review's value comes from inspecting the real increment.
-- **Demoing incomplete or 'almost done' items as if they meet the Definition of Done** — Only demonstrate items that fully meet the Definition of Done. Acknowledge incomplete work separately and explain the plan. Blurring this line erodes stakeholder trust and creates false progress signals.
-- **Treating the sprint review as a one-way presentation with Q&A only at the end** — Pause after each feature demo for questions and reactions. The sprint review is a collaborative working session—stakeholders should be talking at least 30-40% of the time.
-- **Not inviting the right stakeholders or consistently having empty seats from key decision-makers** — Identify who has the authority and context to give feedback that will actually change the backlog. Work with those people to find a format and cadence that respects their time. A 30-minute focused review beats a 90-minute review that nobody attends.
-- **Failing to connect sprint review feedback back to the product backlog** — Every piece of feedback should have a clear disposition: added to the backlog, merged with an existing item, noted for future consideration, or explicitly deprioritized. Feedback without follow-through teaches stakeholders that the review doesn't matter.
+- **Turning the review into a slideshow**: A presentation leaves stakeholders passive. The guide asks for a working session, so show the real Increment and leave most of the time for discussion.
+- **Presenting work that is not Done**: This inflates perceived progress and invites rework. Keep it out of the demonstration and mention it only as unfinished work that returns to the backlog.
+- **Treating the review as a release gate**: Waiting for the review to ship delays value. The guide says Increments can be delivered before the end of the Sprint and the review is never a gate.
+- **Mixing in retrospective topics**: Process complaints in front of stakeholders make the team defensive and waste stakeholders' time. Save them for the Sprint Retrospective.
+- **Collecting feedback that never reaches the backlog**: If the Product Owner does not adapt the backlog in or right after the meeting, stakeholders learn their input does not matter and stop coming.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/scrum/METHOD.md) — Scrum
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/scrum/METHOD.md): Scrum
 
 ## Related Skills
 
+- [Facilitating Sprint Retrospectives for Scrum Teams](../facilitating-sprint-retrospectives/SKILL.md)
+- [Scrum Sprint Planning: Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
+- [Backlog Grooming and Product Backlog Refinement](../grooming-the-product-backlog/SKILL.md)
 - [Defining Scrum Roles and Accountabilities](../defining-scrum-roles-and-accountabilities/SKILL.md)
-- [Facilitating Sprint Retrospectives](../facilitating-sprint-retrospectives/SKILL.md)
-- [Grooming and Refining the Product Backlog](../grooming-the-product-backlog/SKILL.md)
-- [Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
-- [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
-- [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
-- [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
+- [Running the Scrum Daily Standup (Daily Scrum)](../running-daily-standups/SKILL.md)
+- [Scrum Estimation with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
+- [Managing Scrum Boards in Jira: Setup, Sprints, Reports](../managing-scrum-boards-in-jira/SKILL.md)
+
+## Sources
+
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Scrum Guide revision history](https://scrumguides.org/revisions.html)
+- [Atlassian: What is a Sprint Review in Agile?](https://www.atlassian.com/agile/scrum/sprint-reviews)

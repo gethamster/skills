@@ -1,15 +1,20 @@
 ---
-name: identifying-customer-opportunities-from-research
-description: "This skill teaches you how to synthesize customer interviews, surveys, and behavioral data into distinct opportunity nodes—unmet needs, pain points, or desires—that feed directly into your Opportunity Solution Tree."
+name: "identifying-customer-opportunities-from-research"
+description: "Identify customer opportunities from continuous discovery interviews, framed in the customer's words and ready to place on your solution tree."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: opportunity-solution-tree
+  method: "opportunity-solution-tree"
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Identifying Customer Opportunities from Continuous Research: Essential Product Manager Skills
+# Identifying Customer Opportunities from Research
 
-> This skill teaches you how to synthesize customer interviews, surveys, and behavioral data into distinct opportunity nodes—unmet needs, pain points, or desires—that feed directly into your Opportunity Solution Tree.
+> Identify customer opportunities from continuous discovery interviews, framed in the customer's words and ready to place on your solution tree.
 
 ## Before you start
 
@@ -24,142 +29,102 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours per research cycle |
-| Outcome | You can reliably transform raw customer research into a set of clearly articulated, evidence-backed opportunity nodes ready for prioritization and solution ideation within your OST. |
-| Prerequisites | Basic customer interviewing skills, Familiarity with the Opportunity Solution Tree framework, Access to at least one source of customer data (interviews, surveys, or analytics), Understanding of qualitative coding or affinity mapping |
+| Time to Learn | A few weeks of weekly interviews to get comfortable |
+| Outcome | You can run story-based interviews, capture each one in a snapshot, and pull out opportunities that are real, framed in the customer's voice, and relevant to your outcome. |
+| Prerequisites | An agreed product outcome, access to customers or prospects, a trio willing to interview together |
 | Part of | [Opportunity Solution Tree](../../methods/opportunity-solution-tree/METHOD.md) |
 
 ## Overview
 
-Identifying customer opportunities from continuous research is one of the most critical product manager skills in modern product discovery. Rather than waiting for a quarterly research report or relying on gut instinct, this skill teaches you to maintain an ongoing synthesis practice—turning the steady stream of customer interviews, survey responses, and behavioral data into actionable opportunity nodes that represent real unmet needs, pain points, or desires.
+Identifying customer opportunities is how the middle layer of an [Opportunity Solution Tree](../../methods/opportunity-solution-tree/METHOD.md) gets filled. Teresa Torres defines an opportunity as "an unmet customer need, pain point, or desire," and she is specific about where opportunities should come from: stories customers tell about their own past behavior ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). Opportunities the team invents from what it already believes carry its biases into the tree, and the rest of the tree inherits them.
 
-Within the [Opportunity Solution Tree](https://tryhamster.com/methods/opportunity-solution-tree) framework, opportunity nodes sit between your desired outcome and potential solutions. They are the bridge between what customers actually experience and what your team decides to build. Without well-defined opportunities, teams either jump straight to solutions (building features nobody asked for) or get stuck in analysis paralysis because the research feels overwhelming and unstructured.
+This is the research synthesis half of continuous discovery. Torres recommends that a product team interview at least one customer every week and says the habit matters more than the number of people: one interview every week beats four in one week and none the next ([Torres, Customer Interviews](https://www.producttalk.org/customer-interviews/)). Each interview can surface many opportunities. The skill is turning that steady stream into a short list of well-framed opportunities that belong on the current tree.
 
-This skill covers the full synthesis workflow: extracting raw insights from multiple data sources, coding them into themes, translating themes into opportunity statements phrased from the customer's perspective, and validating that each opportunity is distinct, evidence-backed, and actionable. When practiced continuously—weekly rather than quarterly—it keeps your OST alive and your team aligned on what matters most to customers.
+The skill has three parts. The first is collecting specific stories rather than opinions or feature requests. The second is capturing each interview in a one-page interview snapshot while it is fresh. The third is extracting opportunities, checking that each one is really a need and not a solution in disguise, and choosing which ones relate to the current outcome.
+
+The output is a set of opportunity statements, each written the way a customer might say it and each traceable to the interviews it came from. Organizing those statements into a tree is covered in [Structuring Opportunity Spaces Hierarchically](../structuring-opportunity-spaces-hierarchically/SKILL.md).
 
 ## How It Works
 
-The core principle is that opportunities are not solutions, features, or ideas—they are customer-centric descriptions of unmet needs, pain points, or desires. The synthesis process works by moving through three layers of abstraction:
+Story-based interviewing asks customers about a specific time they did something, not about what they generally do or what they want. Torres's prompts take the form "Tell me about a time when..." or "Tell me about the last time you watched streaming entertainment" ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). Stories reveal needs in context: when the moment happened, what the customer was trying to do, and what got in the way. Asking customers directly what they need is less reliable, and [Torres notes](https://www.producttalk.org/product-discovery/) that cognitive biases interfere with their ability to answer such questions reliably.
 
-**Layer 1: Raw Data Collection.** You gather verbatim quotes from interviews, open-ended survey responses, support tickets, behavioral analytics (funnel drop-offs, rage clicks, feature non-adoption), and any other customer signal. The key is that this happens continuously—ideally through weekly customer touchpoints rather than periodic research sprints.
+Torres narrows what counts as a customer interview. Usability tests, sales conversations, and support conversations can be valuable, but their purpose is different, so they are not interviews in this sense ([Torres, Customer Interviews](https://www.producttalk.org/customer-interviews/)). Opportunities heard through sales or support usually lack context. She uses those sources as inspiration for what to ask about in upcoming interviews.
 
-**Layer 2: Pattern Recognition (Coding).** You read through the raw data and tag each insight with a descriptive code. Similar codes get clustered into themes. For example, three different interviewees might describe frustration with onboarding in different words, but they share the same underlying theme: 'difficulty understanding the product's value during first use.'
+After each interview, the team makes an interview snapshot, a one-page summary with the participant's name, quick facts, a memorable quote, the opportunities heard, insights, and an experience map of the story. Torres suggests creating it right after the interview while the story is fresh, and says experienced teams can do it collaboratively in a short block after the call ([Torres, The Interview Snapshot](https://www.producttalk.org/interview-snapshot/)).
 
-**Layer 3: Opportunity Framing.** Each theme gets rewritten as an opportunity statement from the customer's perspective. A good opportunity statement follows the pattern: *'[Customer segment] needs a way to [desired outcome] because [current barrier].'* This framing ensures you stay in problem space rather than jumping to solution space.
+The snapshot captures everything, and the tree takes only what is relevant. Product Talk summarizes the split: interview snapshots record what you are learning, and "your opportunity solution tree is your active space for your current outcome" ([Product Talk, Tracking Opportunities Not Related to Your Outcome](https://www.producttalk.org/opportunities-not-related-to-outcome/)). Opportunities that fall outside the current outcome stay in the snapshots, where they remain available for later.
 
-The power of this approach is that opportunities accumulate evidence over time. As you conduct more interviews, some opportunities gain more supporting data points, which naturally helps with [prioritizing opportunities using customer evidence](https://tryhamster.com/skills/prioritizing-opportunities-using-customer-evidence). New opportunities emerge, and some fade as the market or product evolves. This is why continuous research matters—it keeps your opportunity landscape current.
+Two checks keep opportunities clean. The first is voice: Torres frames opportunities as something a customer might say, because "I couldn't find anything to watch" is a real customer need, while "I wish I binge-watched Netflix more" is something the business wishes a customer would say ([Torres, Prioritize Opportunities, Not Solutions](https://www.producttalk.org/prioritize-opportunities/)). The second is the solution test: ask whether there is more than one way to address the statement. If there is only one, it is a solution, and asking why the customer wants it reveals the underlying opportunity.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Establish Your Continuous Research Cadence
+### Step 1: Put an interview on the calendar every week
 
-Before you can synthesize anything, you need a reliable stream of customer data. Set up a weekly or biweekly rhythm that includes at least one of the following: customer interviews (even 15-minute conversations count), survey pulse checks, or behavioral data reviews.
+Automate recruiting so the team starts each week with an interview already booked. Torres describes three ways to do it: recruit people while they use the product, ask customer-facing teams to help, or build a customer advisory group ([Torres, Customer Interviews](https://www.producttalk.org/customer-interviews/)). Decide who you are interviewing based on the outcome, for example recent cancellations for a retention outcome. Have the whole trio attend, with one person leading and the others taking notes.
 
-The goal is consistency, not volume. Two interviews per week over three months gives you far richer opportunity data than 20 interviews crammed into a single sprint. Create a simple tracking sheet that logs each research touchpoint: date, source type, participant segment, and a link to the raw notes or recording.
+### Step 2: Collect one specific story
 
-If you're working within the [Opportunity Solution Tree](https://tryhamster.com/methods/opportunity-solution-tree) framework, this cadence should align with your discovery cycles—feeding fresh opportunities into your tree regularly rather than letting it go stale.
+Open with a prompt about a specific past instance tied to the outcome, such as the last time the customer planned a trip or ran a report. Keep pulling the customer back to what actually happened when they drift into generalizations. Ask what happened next, what they were trying to do, and where it was hard. Do not pitch or test ideas in this conversation.
 
-> **Pro tip:** Block 'research synthesis time' on your calendar immediately after interviews. Insights degrade rapidly—synthesize within 24 hours while context is fresh.
+### Step 3: Make an interview snapshot right away
 
-### Step 2: Step 2: Capture Raw Insights in a Consistent Format
+Fill in a one-page snapshot within the hour: quick facts, a memorable quote, an experience map of the story, the opportunities you heard, and any insights. Do it together so the trio agrees on what it heard. The quote and the map are what will let you remember this customer weeks later.
 
-For every research touchpoint, extract the raw insights into a standardized format. Each insight should be one atomic observation—a single quote, behavior, or data point—not a summary paragraph.
+### Step 4: Write each opportunity in the customer's voice
 
-Use a simple template: **Source** (interview, survey, analytics), **Participant/Segment**, **Verbatim quote or observation**, and **Your interpretation** (what you think this signals). Keep the verbatim quote separate from your interpretation so you can revisit the raw data later without your initial bias baked in.
+For each moment of friction, need, or desire in the story, write a short statement the customer might say, such as "I don't know which of these plans fits my budget." Keep the context attached: when it happened and what they were doing. Avoid statements only the business would say. One story often yields several opportunities.
 
-Store these in a shared repository—tools like Dovetail, Notion databases, or even a structured spreadsheet work. The key is that every team member contributing to research uses the same format so insights are combinable across sources.
+### Step 5: Check for solutions in disguise
 
-> **Pro tip:** For behavioral data, write the insight as if it were a quote: 'User dropped off at step 3 of onboarding—suggesting the value proposition isn't clear at that point.' This makes it combinable with interview data.
+Ask of each statement whether there is more than one way to address it. "I want a dark mode" has one answer, so ask why the customer wants it, and you may find "I read in bed and the screen hurts my eyes," which has many answers. Rewrite or discard statements that fail. Also split statements that bundle two needs.
 
-### Step 3: Step 3: Code Insights into Descriptive Themes
+### Step 6: Filter by the current outcome
 
-Review your accumulated insights (weekly or biweekly) and apply descriptive codes—short labels that capture the essence of each insight. This is qualitative coding, and it doesn't need to be academic. You're looking for patterns.
+Mark which opportunities could plausibly move the outcome at the top of your tree if addressed. Those are candidates for the tree. Leave the rest in the snapshots, where you can find them when the outcome changes or when the team schedules maintenance work.
 
-Start with open coding: read each insight and assign a code that describes what's happening. 'Confused by pricing tiers,' 'Can't find the export button,' 'Wants to share reports with their manager.' Don't force fit—let codes emerge naturally from the data.
+### Step 7: Add opportunities to the tree in batches
 
-After coding 15-30 insights, step back and look for clusters. Group similar codes into broader themes. For example, 'Confused by pricing tiers,' 'Doesn't understand what's included in free plan,' and 'Surprised by charges after trial' might cluster into a theme like 'Pricing transparency and expectations.'
-
-Affinity mapping (physical or digital sticky notes) is particularly effective for this step because it makes clusters visually obvious.
-
-> **Pro tip:** Resist the urge to create too few themes. If a theme feels like it covers two distinct customer problems, split it. You can always merge later when you structure opportunities hierarchically.
-
-### Step 4: Step 4: Translate Themes into Opportunity Statements
-
-Each theme now becomes a candidate opportunity. Rewrite it as a customer-centric opportunity statement using this structure: **'[Customer segment] needs a way to [desired outcome/job-to-be-done] because [current barrier or pain point].'**
-
-For example, the pricing transparency theme might become: *'Trial users need a way to understand exactly what they'll pay after the trial because the current pricing page creates unexpected charges that erode trust.'*
-
-This framing is critical because it forces you to stay in problem space. Notice there's no mention of a specific solution—no 'add a pricing calculator' or 'send a pre-charge email.' The opportunity is the need, not the fix.
-
-Write the statement, then pressure-test it: Does it describe a real customer need (not a business goal)? Is it specific enough to ideate solutions against? Is it broad enough to allow for multiple possible solutions? If yes to all three, you have a viable opportunity node for your OST.
-
-> **Pro tip:** Read each opportunity statement aloud and ask: 'Could a customer say this in their own words?' If it sounds like product jargon, rewrite it.
-
-### Step 5: Step 5: Annotate Opportunities with Supporting Evidence
-
-For each opportunity statement, attach the evidence trail: how many data points support it, from how many different sources, across which customer segments, and how intense the signal is (mild inconvenience vs. dealbreaker pain).
-
-Create a simple evidence scorecard per opportunity:
-- **Frequency**: How many distinct data points mention this need? (e.g., 12 interview mentions, 45 survey responses)
-- **Source diversity**: Does it appear in interviews AND behavioral data AND support tickets? Multi-source validation is stronger.
-- **Segment breadth**: Does it affect one niche segment or multiple?
-- **Intensity**: Are customers working around this problem (high intensity) or just noting it in passing (low intensity)?
-
-This evidence annotation directly feeds into [prioritizing opportunities using customer evidence](https://tryhamster.com/skills/prioritizing-opportunities-using-customer-evidence), making the next step in your OST workflow much smoother.
-
-> **Pro tip:** Don't discard low-evidence opportunities—park them in a 'watch list.' A single strong interview quote can signal an emerging opportunity that gains evidence over time.
-
-### Step 6: Step 6: Deduplicate and Validate for Distinctness
-
-Review your full set of opportunity statements and check for overlaps. Two opportunities that share the same root cause or the same desired outcome might actually be one opportunity stated two ways—or they might be genuinely distinct sub-opportunities.
-
-For each pair that feels similar, ask: 'Would the same solution address both of these?' If yes, merge them. If different solutions would be needed, keep them separate.
-
-Also validate against your [desired outcome at the top of your OST](https://tryhamster.com/skills/defining-measurable-outcomes-for-product-discovery). Every opportunity should plausibly connect to that outcome. If an opportunity is real but doesn't connect to your current outcome, file it for a future discovery cycle rather than cluttering your current tree.
-
-This deduplication step ensures that when you move to [structuring opportunities hierarchically](https://tryhamster.com/skills/structuring-opportunity-spaces-hierarchically), you're working with a clean, non-redundant set.
-
-> **Pro tip:** Have a teammate independently review your opportunity set. Fresh eyes catch duplicates and ambiguous framing that you've become blind to.
-
-### Step 7: Step 7: Add Opportunity Nodes to Your Living OST
-
-Place each validated opportunity as a node in your [Opportunity Solution Tree](https://tryhamster.com/methods/opportunity-solution-tree), connected to the relevant desired outcome. If you already have opportunities in your tree, integrate the new ones—some may strengthen existing nodes with fresh evidence, while others represent genuinely new branches.
-
-This is not a one-time event. As you practice continuous research, you'll add, refine, and occasionally retire opportunity nodes. Mark each node with the date of its last evidence update so your team can see how fresh the data is.
-
-Share the updated tree with your team in your next discovery sync. Walk through any new or significantly changed opportunities, citing the evidence. This creates shared understanding and sets the stage for [generating multiple solutions per opportunity](https://tryhamster.com/skills/generating-multiple-solutions-per-opportunity).
-
-> **Pro tip:** Use a visual tool (Miro, FigJam, or a dedicated OST tool) so the tree is always accessible and editable by the whole team—not locked in a PM's private document.
+After three to four interviews, bring the new candidates to the tree and place them, merging duplicates and noting how many stories each one appeared in. Torres suggests starting to map after three to four stories and revising the opportunity space every three to four interviews after that ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). Batching avoids overreacting to the most recent conversation.
 
 ## Best Practices
 
-- Phrase every opportunity from the customer's perspective, never as a business metric or feature request. 'Users need a way to track their progress' is an opportunity; 'increase DAU' is an outcome; 'add a dashboard' is a solution.
-- Triangulate across at least two data sources before treating an opportunity as validated. An interview quote backed by behavioral data is far more credible than either alone.
-- Conduct synthesis in small, frequent batches (weekly) rather than large, infrequent ones. This prevents insight debt from accumulating and keeps your OST current.
-- Maintain a canonical repository of opportunity statements with linked evidence. When anyone on the team asks 'why are we working on this?' you can point to the evidence trail in seconds.
-- Involve engineers and designers in synthesis sessions periodically. They catch patterns PMs miss and develop deeper customer empathy, which improves solution ideation downstream.
-- Time-stamp every evidence data point. An opportunity supported by 20 data points from 18 months ago may be less relevant than one with 5 data points from last week.
+- Interview together. When the whole trio hears the story, it does not have to be retold later, and disagreements about what the customer meant surface in the snapshot conversation instead of in a planning meeting ([Torres, Product Trios](https://www.producttalk.org/product-trios/)).
+- Talk to a wide range of people at first. Qualitative research is about uncovering variation, so early interviews should cover different segments before the team goes deep with a few customers.
+- Treat sales and support notes as leads. Use them to decide what to ask about in upcoming interviews, and add an opportunity to the tree only once you have heard it in a story.
+- Keep traceability. Link each opportunity on the tree to the snapshots it came from, so anyone can check the evidence behind it.
+- Record desires as well as problems. Torres uses opportunity rather than problem because products also serve desires, and a tree of only pain points misses them.
+- Keep snapshots even for off-topic interviews. They are the backlog of opportunities for future outcomes.
 
 ## Common Mistakes
 
-- **Writing opportunities as solutions in disguise (e.g., 'Users need a better onboarding wizard').** — Remove any reference to a specific solution. Rewrite as the underlying need: 'New users need a way to understand the product's core value within their first session because the current experience doesn't connect features to their goals.' This keeps your solution space open.
-- **Treating a single interview quote as a validated opportunity without seeking corroborating evidence.** — Log the insight but label it as 'emerging' until you find corroborating data from additional interviews, surveys, or behavioral signals. One passionate user does not represent a pattern.
-- **Creating overly broad opportunities that are impossible to act on (e.g., 'Users want a better experience').** — Apply the 'could I ideate three distinct solutions for this?' test. If the opportunity is too vague to generate specific solutions, break it down into sub-opportunities. Use hierarchical structuring to manage scope.
-- **Only synthesizing qualitative data and ignoring behavioral/quantitative signals.** — Deliberately include at least one quantitative data source in each synthesis cycle. Funnel analytics, feature usage data, and NPS drivers provide scale context that interviews can't. The combination is what makes opportunities robust.
-- **Doing a big research-and-synthesis push once per quarter and letting the opportunity set go stale between cycles.** — Shift to continuous discovery—even two interviews per week with a 30-minute synthesis session keeps your opportunities fresh. Stale opportunities lead to building for yesterday's problems.
+- **Asking customers what they want**: Direct questions produce feature requests and speculation. Ask about a specific past experience and listen for the need inside the story.
+- **Making opportunities up**: Opportunities written from the team's assumptions look plausible and are often wrong. If you have not heard it in an interview, add it to the list of things to ask about in upcoming interviews and keep it off the tree.
+- **Writing opportunities from the business's point of view**: "Users should upgrade sooner" is a business goal. Rewrite it as something a customer would actually say, or drop it.
+- **Letting solutions onto the tree as opportunities**: Requests like "export to spreadsheet" are solutions. Apply the one-way test and reframe by asking why.
+- **Reacting to the last interview**: One vivid story can hijack the roadmap. Batch new opportunities and place them after several interviews.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/opportunity-solution-tree/METHOD.md) — Opportunity Solution Tree
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/opportunity-solution-tree/METHOD.md): Opportunity Solution Tree
 
 ## Related Skills
 
+- [Defining Measurable Outcomes for Product Discovery](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
+- [Structuring Opportunity Spaces Hierarchically](../structuring-opportunity-spaces-hierarchically/SKILL.md)
 - [Prioritizing Opportunities Using Customer Evidence](../prioritizing-opportunities-using-customer-evidence/SKILL.md)
-- [Maintaining and Evolving a Living Opportunity Solution Tree](../maintaining-a-living-opportunity-solution-tree/SKILL.md)
-- [Facilitating Opportunity Solution Tree Workshops with Teams](../facilitating-ost-workshops-with-stakeholders/SKILL.md)
-- [Designing Assumption Tests and Experiments for Solutions](../designing-assumption-tests-for-solutions/SKILL.md)
-- [Structuring and Grouping Opportunities into a Hierarchy](../structuring-opportunity-spaces-hierarchically/SKILL.md)
-- [Defining Measurable Outcomes for the Top of Your OST](../defining-measurable-outcomes-for-product-discovery/SKILL.md)
-- [Generating Multiple Solutions for Each Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
+- [Generating Multiple Solutions per Opportunity](../generating-multiple-solutions-per-opportunity/SKILL.md)
+- [Designing Assumption Tests for OST Solutions](../designing-assumption-tests-for-solutions/SKILL.md)
+- [Maintaining a Living Opportunity Solution Tree](../maintaining-a-living-opportunity-solution-tree/SKILL.md)
+- [OST Workshop Facilitation](../facilitating-ost-workshops-with-stakeholders/SKILL.md)
+
+## Sources
+
+- [Teresa Torres: Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)
+- [Teresa Torres: Customer Interviews](https://www.producttalk.org/customer-interviews/)
+- [Teresa Torres: The Interview Snapshot](https://www.producttalk.org/interview-snapshot/)
+- [Product Talk: Tracking Opportunities Not Related to Your Outcome](https://www.producttalk.org/opportunities-not-related-to-outcome/)
+- [Teresa Torres: Prioritize Opportunities, Not Solutions](https://www.producttalk.org/prioritize-opportunities/)
+- [Teresa Torres: Product Discovery Basics](https://www.producttalk.org/product-discovery/)
+- [Teresa Torres: Product Trios](https://www.producttalk.org/product-trios/)

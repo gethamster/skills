@@ -1,15 +1,20 @@
 ---
-name: defining-scrum-roles-and-accountabilities
-description: "This skill teaches you how to clearly establish and operate within the Product Owner, Scrum Master, and Development Team roles so your Scrum implementation has the structural clarity needed for effective self-organization and delivery."
+name: "defining-scrum-roles-and-accountabilities"
+description: "Define Scrum roles and responsibilities the way the Scrum Guide does: one Product Owner, one Scrum Master and Developers, with clear decision rights."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: scrum
+  method: "scrum"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Defining Scrum Roles and Accountabilities: Product Owner, Scrum Master, and Development Team
+# Defining Scrum Roles and Accountabilities
 
-> This skill teaches you how to clearly establish and operate within the Product Owner, Scrum Master, and Development Team roles so your Scrum implementation has the structural clarity needed for effective self-organization and delivery.
+> Define Scrum roles and responsibilities the way the Scrum Guide does: one Product Owner, one Scrum Master and Developers, with clear decision rights.
 
 ## Before you start
 
@@ -24,116 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Beginner |
-| Time to Learn | 45-90 minutes |
-| Outcome | Your team operates with crystal-clear role boundaries where the Product Owner, scrum master, and Development Team each understand their unique accountabilities—eliminating confusion, reducing conflict, and accelerating delivery. |
-| Prerequisites | Basic understanding of Agile principles, Familiarity with the Scrum Guide, Understanding of iterative development concepts |
+| Time to Learn | A few hours to set up, several Sprints to settle |
+| Outcome | Your team has one named Product Owner, one Scrum Master and a cross-functional group of Developers, and everyone, including managers, knows who decides what. |
+| Prerequisites | A product or goal to work toward, agreement from the managers of the people involved, a copy of the Scrum Guide |
 | Part of | [Scrum](../../methods/scrum/METHOD.md) |
 
 ## Overview
 
-Every successful Scrum implementation starts with role clarity. The [Scrum](https://tryhamster.com/methods/scrum) framework defines exactly three roles—Product Owner, Scrum Master, and Development Team—each with distinct accountabilities that interlock to create a high-performing delivery system. When these roles are muddled, teams experience decision paralysis, scope creep, and frustration.
+Scrum roles and responsibilities are defined in one place: [the Scrum Guide](https://scrumguides.org/scrum-guide.html). Since the 2020 edition the guide speaks of three accountabilities inside a single Scrum Team: the Product Owner, the Scrum Master and the Developers. The [revision history](https://scrumguides.org/revisions.html) explains why the guide dropped the separate "Development Team": the goal was to eliminate "proxy" or "us and them" behavior between the Product Owner and the rest of the team. Defining scrum accountabilities well means mapping real people onto those three sets of responsibilities and making sure the organization respects the decisions each one owns.
 
-This skill walks you through the precise accountabilities of each role as defined by the Scrum Guide, how to assign them in your organization, and how to operationalize the boundaries day-to-day. You'll learn what a scrum master actually does versus what most organizations mistakenly assign them, why the Product Owner must be a single person (not a committee), and how the Development Team's self-organization depends on the other two roles functioning correctly.
+The guide is precise about who owns what. The Product Owner is accountable for maximizing the value of the product and for effective Product Backlog management. The Scrum Master is accountable for establishing Scrum as the guide defines it and for the Scrum Team's effectiveness. The Developers are accountable for creating a plan for the Sprint, instilling quality through the Definition of Done, adapting their plan each day toward the Sprint Goal, and holding each other accountable as professionals. The whole team is accountable for creating "a valuable, useful Increment every Sprint."
 
-Whether you're launching a new Scrum team or resetting an existing one that has drifted, mastering role definition is the foundational skill that makes every other Scrum practice—from [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints) to [retrospectives](https://tryhamster.com/skills/facilitating-sprint-retrospectives)—actually work.
+Accountabilities are not job titles. Atlassian's guide to Scrum roles makes the same point: any existing job title can perform one of the roles ([Atlassian on Scrum roles](https://www.atlassian.com/agile/scrum/roles)). A product manager can take the Product Owner accountability, and designers, testers and writers can all be Developers. Each accountability needs a clear owner with the time and authority to carry it.
+
+This skill walks through choosing the people, setting their decision rights, and checking over time that the roles work as intended. For the rest of the framework, see the [Scrum method page](../../methods/scrum/METHOD.md).
 
 ## How It Works
 
-Scrum's three roles form a deliberate system of checks and balances. The Product Owner holds accountability for *what* gets built by owning the Product Backlog and making value-maximizing decisions. The Development Team holds accountability for *how* the work gets done, self-organizing to turn backlog items into usable increments each sprint. The scrum master holds accountability for the *process itself*, ensuring the team understands and enacts Scrum theory, practices, and rules.
+Start from the team. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) says a Scrum Team has "one Scrum Master, one Product Owner, and Developers," with no sub-teams or hierarchies, and is "typically 10 or fewer people." It is cross-functional, meaning the members have all the skills needed to create value each Sprint, and self-managing, meaning they internally decide who does what, when and how. If the group gets too large, the guide suggests splitting into several Scrum Teams that share the same Product Goal, Product Backlog and Product Owner.
 
-This triad works because no single role has total authority. The Product Owner can't tell the Development Team *how* to build something. The Development Team can't unilaterally decide *what* to build. The scrum master doesn't manage anyone—they serve everyone. This separation prevents the common dysfunction where a single manager dictates scope, timeline, and implementation simultaneously.
+The Product Owner owns the "what" and the "why." The guide lists four parts of backlog management: developing and communicating the Product Goal, creating and communicating backlog items, ordering them, and making the backlog transparent and understood. The Product Owner may delegate some of this work and stays accountable. The guide is blunt about authority: "The Product Owner is one person, not a committee," and anyone who wants to change the backlog does so "by trying to convince the Product Owner." For that to work, "the entire organization must respect their decisions."
 
-The key concept is *accountability*, not *authority*. The Product Owner is accountable for value even if stakeholders influence priority. The scrum master is accountable for Scrum adoption even without positional power. The Development Team is accountable for the increment even though the Product Owner sets direction. When each role embraces its accountability fully—and resists absorbing someone else's—the framework generates its signature velocity and adaptability.
+The Scrum Master role is the one most often misunderstood. The guide describes Scrum Masters as "true leaders who serve the Scrum Team and the larger organization." They serve the team by coaching self-management and cross-functionality, helping it focus on high-value Increments, causing the removal of impediments, and making sure events happen and stay within their timebox. They serve the Product Owner with techniques for the Product Goal and backlog management. They serve the organization by leading and coaching its Scrum adoption and removing barriers between stakeholders and teams. The guide gives the Scrum Master no authority to assign work.
+
+The product owner vs scrum master distinction comes down to what each person optimizes. The Product Owner optimizes the value of the product by deciding what gets built and in what order. The Scrum Master optimizes the team's effectiveness by improving how Scrum is practiced. Combining the two in one person puts two different aims, product value and the team's way of working, on one person, so keep the roles separate where you can.
+
+The Developers own the "how." The guide says only the Developers decide how to turn Product Backlog items into an Increment, and that the Developers who do the work are responsible for sizing it. If the Product Owner or Scrum Master are also doing Sprint Backlog work, the guide says they participate in the Daily Scrum as Developers.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify and Assign the Product Owner
+### Step 1: Choose one Product Owner
 
-Select one person—not a committee—to serve as the Product Owner. This individual must have the authority to make binding decisions about product direction and backlog priority. They should have deep knowledge of the market, customers, and business strategy, plus the availability to engage with the team daily.
+Pick one person who understands the customers and the business and who can make ordering decisions without escalating each one. Confirm with their manager that they have time for backlog work, stakeholder conversations and the Scrum events. Write down the Product Goal they will own. If several stakeholders want a say, make them advisers to the Product Owner, since the [Scrum Guide](https://scrumguides.org/scrum-guide.html) says the Product Owner is one person and represents the needs of many stakeholders. Tell the organization who it is.
 
-Document explicitly what the Product Owner is accountable for: maximizing the value of the product, managing and ordering the Product Backlog, ensuring backlog items are transparent and understood by the team, and being the single point of decision for 'what to build next.' Communicate this to stakeholders so they understand that conflicting requests must be funneled through the Product Owner rather than directly to the team.
+### Step 2: Choose a Scrum Master
 
-> **Pro tip:** If your organization insists on a 'Product Owner committee,' you have a governance problem, not a Scrum problem. Escalate this—shared ownership of the backlog is the #1 predictor of Scrum failure.
+Choose someone who knows Scrum well, can coach without directing, and has standing to take impediments to management. The role can be full-time or shared with other work, but it needs real time for coaching, facilitation and organizational change. Avoid giving it to the team's line manager, because Developers are less likely to raise problems openly with someone who writes their reviews. Agree which organizational impediments the Scrum Master is expected to work on.
 
-### Step 2: Step 2: Select and Empower the Scrum Master
+### Step 3: Form a cross-functional group of Developers
 
-Choose someone to serve as scrum master who understands Scrum deeply and has the interpersonal skills to coach, facilitate, and diplomatically challenge organizational dysfunction. The scrum master does not need to be the most technically skilled person—they need to be the most process-aware and team-oriented.
+List the skills needed to take a backlog item from idea to Done: design, coding, testing, data, writing, operations, whatever the product requires. Staff the team so those skills are inside it, and name the gaps you cannot fill yet. Keep the whole Scrum Team small, since the [Scrum Guide](https://scrumguides.org/scrum-guide.html) describes it as "typically 10 or fewer people." Use one title for everyone doing the work, Developers, in Scrum conversations, whatever their job titles say elsewhere.
 
-Clearly define the scrum master's accountabilities: facilitating Scrum events, coaching the team in self-organization, removing impediments that block the team's progress, helping the Product Owner with backlog management techniques, and shielding the team from external interruptions during sprints. Critically, document what the scrum master is *not*: they are not a project manager, not a task assigner, not a status reporter to management, and not the team's boss.
+### Step 4: Write down decision rights
 
-Ensure the scrum master has organizational backing to address impediments that extend beyond the team—slow procurement, blocked environments, policy conflicts—because their effectiveness depends on the ability to influence across boundaries.
+Hold a short working session where the team lists recurring decisions and marks who owns each: backlog order (Product Owner), how work is done and who does it (Developers), sizing (Developers), whether a Sprint is cancelled (Product Owner only), and how events run (Scrum Master ensures they happen and stay within the timebox). Add any decisions that belong to people outside the team, such as release approval or budget. Keep the result to one page and store it where everyone can find it.
 
-> **Pro tip:** A common anti-pattern is assigning the scrum master role to someone who also serves as a developer on the team. While the Scrum Guide doesn't explicitly prohibit this, in practice it creates a conflict of interest—they'll deprioritize process coaching whenever delivery pressure rises.
+### Step 5: Brief managers and stakeholders
 
-### Step 3: Step 3: Form the Development Team
+Walk managers and key stakeholders through the three accountabilities and the decision list. Explain the channel for new requests: they go to the Product Owner, who decides where they fit in the backlog. Explain that managers no longer assign individual tasks to Developers during a Sprint. Ask for explicit support, because the guide says the Product Owner can only succeed if the organization respects their decisions.
 
-Assemble a cross-functional group of 3-9 people who collectively possess all the skills needed to deliver a done increment each sprint. This includes design, development, testing, documentation, and any other disciplines required. The team should be stable—meaning the same people work together sprint after sprint—because trust and velocity build over time.
+### Step 6: Make the roles visible in the events
 
-Establish with the team that they are collectively accountable for delivery. There are no sub-teams or hierarchies within the Development Team. A senior developer is not 'above' a tester. Work is owned by the team, not by individuals. This doesn't mean everyone does everything—people naturally gravitate toward their strengths—but it means no one says 'that's not my job' when the sprint goal is at risk.
+Use the events to reinforce the roles. In Sprint Planning, the Product Owner proposes how the Sprint could add value and the Developers select work and plan how to do it. In the Daily Scrum, the Developers run their own conversation. In the Sprint Review, the Product Owner leads the backlog discussion with stakeholders. The Scrum Master facilitates when asked and coaches others to facilitate, so the events do not depend on one person.
 
-> **Pro tip:** If your 'Development Team' is actually 12+ people, you don't have a Scrum team—you have a project group. Split into multiple Scrum teams, each with its own scrum master and a shared Product Owner if needed.
+### Step 7: Inspect the roles at retrospectives
 
-### Step 4: Step 4: Document Role Boundaries with a RACI or Working Agreement
-
-Create a concise document—a team charter, working agreement, or simple RACI matrix—that spells out who is responsible, accountable, consulted, and informed for key activities. Cover areas like: who prioritizes the backlog (Product Owner), who estimates effort (Development Team), who decides the sprint length (team with scrum master facilitation), who communicates with stakeholders (Product Owner, supported by the scrum master), and who resolves technical disagreements (Development Team internally).
-
-This document isn't bureaucratic overhead—it's a reference artifact the team can point to when role confusion arises, which it inevitably will. Review it during your first [sprint retrospective](https://tryhamster.com/skills/facilitating-sprint-retrospectives) and refine as needed.
-
-> **Pro tip:** Keep this document to a single page. If it's longer, you're overcomplicating it. The goal is clarity, not compliance theater.
-
-### Step 5: Step 5: Communicate Roles to Stakeholders and Leadership
-
-Role clarity means nothing if people outside the team don't respect the boundaries. Hold a brief stakeholder alignment meeting to explain: requests for features or changes go through the Product Owner, the Development Team is not available for ad-hoc work during sprints, and the scrum master is the point of contact for process questions.
-
-This is often the hardest step because it requires changing how managers and executives interact with the team. The scrum master plays a critical role here, coaching stakeholders on how to engage with the team productively rather than disruptively. Frame it as 'here's how to get what you need faster' rather than 'here's what you can't do anymore.'
-
-> **Pro tip:** Prepare for the scenario where a VP walks directly to a developer with an urgent request. Have a pre-agreed protocol: the developer acknowledges the request and redirects it to the Product Owner, who evaluates priority. The scrum master follows up to reinforce the boundary.
-
-### Step 6: Step 6: Operationalize Roles in Scrum Events
-
-Each Scrum event has specific role expectations. In [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints), the Product Owner presents priorities and the Development Team selects work and creates the plan. In [daily standups](https://tryhamster.com/skills/running-daily-standups), the Development Team coordinates while the scrum master facilitates. In [sprint reviews](https://tryhamster.com/skills/conducting-sprint-reviews), the team demonstrates the increment and the Product Owner accepts or rejects items. In [retrospectives](https://tryhamster.com/skills/facilitating-sprint-retrospectives), the scrum master facilitates and all three roles participate.
-
-Map out these expectations explicitly for the first 2-3 sprints. After that, the patterns should become second nature.
-
-> **Pro tip:** If the Product Owner is dominating sprint planning by dictating *how* work should be done, the scrum master needs to intervene immediately. The planning conversation should be 'what do we need to achieve?' from the Product Owner and 'here's how we'll do it' from the Development Team.
-
-### Step 7: Step 7: Inspect and Adapt Role Clarity Regularly
-
-Role drift is natural. Over time, a strong Product Owner might start micromanaging implementation. A capable developer might start making priority calls without consulting the Product Owner. A scrum master might slip into project management habits under organizational pressure.
-
-Use sprint retrospectives to explicitly check role health. Ask questions like: 'Did everyone operate within their accountability this sprint?' 'Were there moments of confusion about who should make a decision?' 'Did any external interference bypass our role structure?' Adjust your working agreement based on what you discover.
-
-This isn't a one-time setup—it's an ongoing practice. The best Scrum teams revisit role clarity quarterly even when things are going well, because organizational changes (new team members, leadership shifts, product pivots) can destabilize even well-established patterns.
+Every few Sprints, ask in the retrospective whether each accountability is working. Warning signs include a Product Owner who is never available, managers reordering the backlog directly, a Scrum Master assigning tasks, or Developers waiting to be told what to do. Pick one fix at a time and track it like any other improvement. Update the decision list when something changes.
 
 ## Best Practices
 
-- Ensure the Product Owner is a single, empowered individual—never a committee, proxy, or rotating role—so the team always has one authoritative voice on priority and value.
-- Give the scrum master dedicated time for coaching and impediment removal rather than filling their calendar with the same development tasks as the rest of the team.
-- Let the Development Team self-organize around task assignment—resist the urge to have the scrum master or Product Owner assign specific tasks to specific people.
-- Revisit your team's role working agreement during retrospectives at least once per quarter, or immediately after any team composition change.
-- When role conflicts arise, resolve them by referencing the Scrum Guide's language on accountabilities rather than organizational hierarchy—this keeps the conversation framework-grounded rather than political.
-- Encourage the scrum master to build relationships with leadership and stakeholders so they can effectively remove organizational impediments that the Development Team cannot resolve alone.
+- Read the current [Scrum Guide](https://scrumguides.org/scrum-guide.html) with the whole team. Many internal documents still describe the pre-2020 "Development Team," and mixed vocabulary causes confusion about who is on the team.
+- Give the Product Owner real authority. A Product Owner who must check every ordering decision with a committee turns the backlog into a negotiation, which the guide rules out by making the role one person.
+- Keep the Scrum Master out of the reporting line. Coaching works when people can admit problems without worrying about their performance review.
+- Separate roles from titles. As [Atlassian notes](https://www.atlassian.com/agile/scrum/roles), existing job titles can perform a Scrum role, so you do not need to rename anyone to start.
+- Route all requests through the Product Owner. A single entry point for new work protects the Sprint Goal and keeps the backlog as the one source of work.
+- Grow cross-functional skills deliberately. When a skill lives in one person, pair others with them so the team is not blocked when that person is away.
 
 ## Common Mistakes
 
-- **Treating the scrum master as a project manager who assigns tasks, tracks status, and reports to leadership.** — Redefine the scrum master role explicitly as a servant-leader and facilitator. They coach the team, remove impediments, and protect the process—but they never assign work or serve as a reporting conduit. If leadership needs status, direct them to the sprint review or the team's Scrum board.
-- **Having a 'part-time' Product Owner who is too busy with other responsibilities to attend sprint events or answer team questions.** — The Product Owner must be available to the team daily. If the person can't commit at least 60-80% of their time, either reassign their other duties or find a different Product Owner. An absent Product Owner creates a decision vacuum that the team fills with guesswork.
-- **Allowing the Development Team to defer all decisions to a senior developer or tech lead, creating an informal hierarchy.** — Coach the team that accountability for the increment is collective. Rotate facilitation of technical discussions, pair junior and senior members on complex items, and ensure [story point estimation](https://tryhamster.com/skills/estimating-work-with-story-points) includes every team member's voice, not just the loudest.
-- **Combining the Product Owner and scrum master roles into one person to 'save headcount.'** — These roles have fundamentally different—and sometimes conflicting—priorities. The Product Owner pushes for maximum scope; the scrum master protects sustainable pace. Combining them eliminates the healthy tension that keeps the team balanced. Always keep them separate.
-- **Defining roles once during team formation and never revisiting them.** — Role drift is inevitable as teams mature, members change, and organizational context shifts. Build a recurring role-clarity check into your retrospective cadence—at minimum quarterly—to catch and correct drift before it becomes dysfunction.
+- **A committee of Product Owners**: Several people sharing the role produce conflicting priorities. Name one person and make the others advisers.
+- **A proxy Product Owner with no authority**: If the named Product Owner must get every decision approved elsewhere, the real Product Owner is invisible to the team. Give the role to the person who actually decides, or give the named person the authority.
+- **Treating the Scrum Master as a project manager**: Assigning tasks and chasing status undermines self-management. The Scrum Master coaches and removes impediments, and the Developers plan their own work.
+- **Keeping specialists outside the team**: If testing or operations sits in another group, work waits at every hand-off and "Done" means different things to different people. Bring the skills into the team or make the gap visible as an impediment.
+- **Managers assigning work mid-Sprint**: Direct requests to individual Developers bypass the Product Owner and put the Sprint Goal at risk. Send them to the Product Owner.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/scrum/METHOD.md) — Scrum
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/scrum/METHOD.md): Scrum
 
 ## Related Skills
 
-- [Facilitating Sprint Retrospectives](../facilitating-sprint-retrospectives/SKILL.md)
-- [Grooming and Refining the Product Backlog](../grooming-the-product-backlog/SKILL.md)
-- [Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
-- [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
-- [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
-- [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
-- [Managing Scrum Boards in Jira](../managing-scrum-boards-in-jira/SKILL.md)
+- [Scrum Sprint Planning: Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
+- [Backlog Grooming and Product Backlog Refinement](../grooming-the-product-backlog/SKILL.md)
+- [Running the Scrum Daily Standup (Daily Scrum)](../running-daily-standups/SKILL.md)
+- [Conducting Sprint Reviews: Run the Sprint Review Meeting](../conducting-sprint-reviews/SKILL.md)
+- [Facilitating Sprint Retrospectives for Scrum Teams](../facilitating-sprint-retrospectives/SKILL.md)
+- [Scrum Estimation with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
+- [Managing Scrum Boards in Jira: Setup, Sprints, Reports](../managing-scrum-boards-in-jira/SKILL.md)
+
+## Sources
+
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Scrum Guide revision history](https://scrumguides.org/revisions.html)
+- [Atlassian: Agile Scrum Roles](https://www.atlassian.com/agile/scrum/roles)
