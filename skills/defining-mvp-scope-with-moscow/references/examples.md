@@ -1,31 +1,37 @@
-# Examples: Defining MVP Scope Using MoSCoW Categories
+# Examples: Define MVP Scope with MoSCoW
 
-## Example: Defining MVP scope for a B2B invoicing SaaS
-
-**Scenario:**
-
-A startup is building an invoicing tool for freelancers. They have 47 user stories, 12 weeks of development capacity with a 3-person team, and pressure from investors to launch quickly. Stakeholders disagree on whether recurring invoices, multi-currency support, and a client portal should be in the MVP.
-
-**Walkthrough:**
-
-The product manager applies the litmus test to all 47 stories. Core invoicing (create, send, mark paid) passes the viability gate — without it, the product can't deliver its core job. Tax calculation passes the legal/compliance gate for target markets. User authentication passes the technical dependency gate.
-
-Recurring invoices fail the viability test — freelancers can manually create invoices for the first release. Multi-currency fails too — the initial launch targets US-based freelancers only. The client portal is clearly a Could-have.
-
-The Must-have list totals 18 stories estimated at roughly 7 weeks — 58% of the 12-week capacity, safely under the 60% threshold. Should-haves (recurring invoices, multi-currency, PDF customization) are tagged as Release 1.1 candidates.
-
-When the investor asks about multi-currency, the PM shows the scope document: 'It's the top Should-have for Release 1.1, targeted for week 14. Adding it to MVP would push launch by 2 weeks and require removing either tax calculation or payment tracking — which would you prefer to cut?' The investor agrees to the current scope.
-
-## Example: Negotiating scope reduction for an enterprise feature release
+## A marketplace testing whether sellers will list
 
 **Scenario:**
 
-A product team at an enterprise software company has 6 weeks to deliver a new analytics dashboard. The initial Must-have list from the stakeholder workshop contains 24 items consuming an estimated 8 weeks of effort — well over the 60% threshold and exceeding total capacity.
+Illustrative scenario: a two-person founding team is building a marketplace for secondhand camera gear. Their riskiest assumption is that sellers will list items if listing takes very little effort. They have a fixed date for a first release to a small group of invited sellers.
 
 **Walkthrough:**
 
-The product lead flags the capacity problem and reconvenes the stakeholders. She walks through each Must-have using the litmus test. Three items (SSO integration, data export, real-time alerts) are revealed to be Must-haves — they're contractually required for the launch customer.
+The learning filter picks out "create a listing from a phone photo" and "see how many buyers viewed your listing". The DSDM Must filter adds "sellers accept the terms of use" (not legal without it) and "sign in securely" (unsafe without it). Those four are the Musts.
 
-Twelve items pass the viability gate: core dashboard views, filtering, date ranges, and basic charting. The remaining nine items — custom report builder, scheduled email reports, drag-and-drop layout, advanced drill-downs, role-based views, benchmark comparisons, embedded sharing, annotation tools, and dark mode — are reclassified.
+Payments are the hard call. Buyers need to pay, but the team can arrange payment by bank transfer by hand for the invited group. Because a workaround exists, payments become a Should, and the team writes the manual process into the scope document. Search, reviews and saved searches are Coulds. A mobile app is Won't have this time.
 
-The trimmed Must-have list of 15 items estimates at 3.5 weeks (58% of capacity). Six items move to Should-have, and three to Could-have. The team documents each reclassification with a one-line rationale. The scope document is shared company-wide, and the engineering lead confirms the timeline is achievable. Two weeks into development, the sales team requests adding the custom report builder. The PM asks them to identify a swap — they can't, and agree to wait for Release 1.1.
+## A B2B pilot with a contractual requirement
+
+**Scenario:**
+
+Illustrative scenario: a startup is preparing a pilot of its scheduling software for one hospital. The contract requires single sign-on with the hospital's identity provider from the first day.
+
+**Walkthrough:**
+
+Single sign-on teaches the team nothing about the product, but it passes the Must test because the pilot cannot start without it. The learning Musts are "nurses can swap shifts" and "managers can approve swaps", since the hypothesis is that swapping is the pain point.
+
+The capacity check shows the Must effort is too high. The team splits "managers can approve swaps" into approving single swaps, which stays a Must, and bulk approvals, which becomes a Should. Reporting becomes a Could, with a weekly export sent by hand as the workaround.
+
+## Holding the line during the build
+
+**Scenario:**
+
+Illustrative scenario: halfway through building a consumer budgeting app's first release, the design lead asks to add dark mode and the head of growth asks to add referral invites.
+
+**Walkthrough:**
+
+The product owner runs both through the tests. Neither passes the learning filter, since the hypothesis is about whether users keep categorizing spending after the first week. Neither passes the DSDM Must test. Both go on the Could list with a note that referrals are a likely first addition after launch.
+
+The head of growth asks for referrals to be a Must anyway. The product owner asks which current Must should leave the line to make room. No one proposes one, and the scope document stays as agreed.

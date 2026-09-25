@@ -1,49 +1,37 @@
-# Examples: Customizing and Extending gstack with Your Own Skills
+# Examples: Customizing and Extending gstack
 
-## Example: Small startup encoding API response conventions
-
-**Scenario:**
-
-A 4-person backend team uses NestJS with PostgreSQL. Every API response must follow a specific envelope format, include request tracing IDs, and use a custom error code taxonomy. New developers (and the AI agent) keep forgetting the error code mapping.
-
-**Walkthrough:**
-
-The team lead forks the gstack framework GitHub repository under their org account. They audit last month's PR comments and find 14 corrections related to API response formatting, with 9 of them about incorrect error codes. md` with YAML frontmatter declaring the slash command `/api-response`, the role `engineer`, and no dependencies. , `AUTH_001` through `AUTH_005` for authentication errors, `VAL_001` through `VAL_012` for validation errors), and an instruction to always include the `traceId` from the request context.
-
-They register it in the manifest, test it with three different endpoint scenarios (a successful list response, a validation error, and an auth failure), and verify the output matches their standard on all three. After the PR is merged and the team pulls the update, API response convention violations in code review drop from 9 per sprint to 1 within two sprints.
-
-## Example: Mid-size B2B SaaS team modifying the default code review skill
+## Solving three complaints without a fork
 
 **Scenario:**
 
-A 12-person engineering team has an existing gstack setup. Their codebase has strict rules about database query patterns: no N+1 queries in API handlers, all queries must use the query builder rather than raw SQL, and any new table access must include a comment referencing the data model documentation page.
+Illustrative scenario: after a month with gstack, a team lists three complaints. The planning skills keep asking whether to add analytics events, which the team always declines. An internal script that resets staging data has twice run by accident. Designers never touch this backend repository, yet the design pre-pass runs anyway.
 
 **Walkthrough:**
 
-Rather than creating a separate skill, the senior engineer modifies the existing code review skill file. They open the skill's markdown file, scroll to the end of the default instructions, and add a section titled `## TeamDB Query Standards`. ' They preserve the entire original skill content above their additions. Testing confirms that the modified skill catches a real N+1 pattern in a recent PR diff and correctly suggests the QueryBuilder syntax.
+The lead handles all three through configuration. `/plan-tune` marks the analytics question as never-ask. The name of the reset script goes into the per-project careful patterns file, so `/careful` now warns before it runs. `gstack-config set design_detector off` turns off the design pre-pass.
 
-Because they modified rather than created, the existing `/review` slash command picks up the changes with no manifest update needed. The team pulls the fork update and immediately benefits.
+The lead writes the three settings into the project's CLAUDE.md so every teammate applies them, and nobody needs to fork anything.
 
-## Example: Large enterprise team creating a compliance-focused skill
+## Adding a migration review skill beside gstack
 
 **Scenario:**
 
-A 40-person engineering organization at a fintech company needs every code change that touches payment processing to include specific audit log entries, use approved cryptographic libraries only, and include a compliance tag in the commit message. These requirements come from their SOC2 and PCI-DSS obligations.
+Illustrative scenario: a team's database migrations follow house rules, such as backfilling in batches and never renaming a column in one step, that no gstack skill knows about.
 
 **Walkthrough:**
 
-md`. The YAML frontmatter declares the slash command `/compliance`, roles `engineer` and `qa` (to get both implementation and verification perspectives from gstack's multi-agent system), and a dependency on the default security review skill. record()` with the transaction ID, actor ID, and action type), Cryptography (only `@finco/crypto` library permitted for hashing and encryption, with a list of approved algorithms), and Commit Standards (commit messages for payment-related changes must include `[PCI]` or `[SOC2]` tags). They also add an Output Format section specifying that the skill should produce a compliance checklist with pass/fail for each item and a summary suitable for the PR description.
+The team writes a skill in the repository's `.claude/skills/` directory under a team prefix, so the name cannot collide with gstack's. Its description says to use it whenever a change adds or edits a migration file, and its instructions list the house rules with a short example of each.
 
-After thorough testing with five different payment-related code changes, they distribute the skill across all engineering teams. Compliance review time per PR drops from 25 minutes of manual checking to 5 minutes of verifying the AI's checklist output.
+The instructions tell it to run after `/plan-eng-review` and to read the engineering test plan. On the next migration, the skill flags a one-step column rename, and the team adjusts the plan before any code is written. The skill is reviewed and versioned like the rest of the code.
 
-## Example: Solo developer creating a personal deployment skill
+## Changing a gstack skill in a fork and upstreaming it
 
 **Scenario:**
 
-A solo developer runs three side projects, each deployed differently: one on Vercel, one on Railway, and one on a VPS with Docker. They keep mixing up deployment steps and environment variable names between projects.
+Illustrative scenario: a developer finds that a gstack skill's instructions assume a branch named main, while their repositories use a different default branch.
 
 **Walkthrough:**
 
-md`. Each skill's system prompt encodes the exact deployment sequence for that platform, including the specific environment variables needed (with placeholder values, never real secrets), the pre-deployment checks (run tests, verify build, check for uncommitted changes), and the post-deployment verification steps (hit the health endpoint, check error monitoring, verify the latest migration ran). The YAML frontmatter for each declares no role dependencies since this is a solo workflow. deploy-target` file that specifies the platform, so invoking `/deploy` in any project context routes to the correct skill.
+They fork gstack, clone it fully, run `bun install` and `bin/dev-setup`, and find the relevant `.tmpl` template. The CONTRIBUTING guide points them to the repository's template-writing guidance on dynamic branch detection, so they use that instead of a hard-coded name, then run `bun run gen:skill-docs` and `bun run skill:check`.
 
-After setup, the developer never again accidentally pushes Railway environment variables to the Vercel project. Total authoring time for all three skills is about 90 minutes.
+They symlink the fork into the project where the problem appeared, rerun setup and repeat the task, which now works. Because the fix helps anyone with a non-standard default branch, they open a pull request upstream instead of keeping a private fork.

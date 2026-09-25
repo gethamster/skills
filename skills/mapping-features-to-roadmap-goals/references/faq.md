@@ -1,37 +1,21 @@
-# FAQ: Mapping Features and Capabilities to Strategic Goals
+# FAQ: Mapping Features to GO Roadmap Goals
 
-## How do I map a feature that genuinely contributes to three or more goals?
+## How many features should each goal have?
 
-Assign it to the goal where you expect the largest measurable impact, and tag one secondary goal at most. If a feature truly advances three or more goals, it is often too broadly defined. Try decomposing it into smaller capabilities, each of which maps more cleanly. For example, "redesign the dashboard" might break into "add usage trend charts" (maps to retention), "add upgrade prompts" (maps to revenue expansion), and "add team activity feed" (maps to activation).
+Pichler's checklist says to limit features to three to five per outcome, and in his original article he suggests aiming for three and stating no more than five. The limit forces a choice about which capabilities matter most. Work that is useful but not needed for the goal goes into the backlog under the goal.
 
-Decomposition usually reveals that the feature is actually three features bundled together.
+## How detailed should a roadmap feature be?
 
-## Should I map bug fixes and tech debt to goals, or keep them separate?
+Capability-sized. Pichler describes a feature as a large piece of functionality bigger than an epic, and he keeps epics and user stories off the roadmap. A reader should understand what the product will be able to do, without the design or story-level detail.
 
-Map them when the connection is real and specific. A tech debt item like "refactor authentication service" maps to a reliability or security goal if you can state the mechanism: "Eliminates the token refresh race condition causing 3% of login failures, directly supporting activation rate improvement." Generic maintenance work ("update dependencies") usually does not map to a strategic goal and should be budgeted as operational overhead, not placed on the goal-oriented roadmap. Trying to force infrastructure work into strategic goals dilutes the meaning of the mapping.
+## What do I do with a request that fits no goal?
 
-## How long should the mapping exercise take for a team doing it the first time?
+Decline it, park it, or bring it to the next roadmap workshop. Pichler recommends using the goal as the decision tool and warns against adding features to please a stakeholder. If an important request keeps fitting no goal, that may mean a goal is missing, which is a conversation about goals rather than features.
 
-For a team with 3-5 goals and 20-40 backlog items, expect 2-4 hours for the first time, including individual mapping, comparison, rationale writing, and balance review. The stakeholder validation session adds another 60-90 minutes. Subsequent quarterly mapping cycles take about half as long because the team has muscle memory and many items carry over with minor adjustments. If the exercise takes a full day, you either have too many items (consolidate into epics) or too many goals (tighten the scope).
+## Should technical work appear in the features row?
 
-## Should I map features to goals before or after defining success metrics for those goals?
+Yes, when it is required to meet the goal. Pichler lists bug fixes and architecture refactoring among the changes to consider when deciding what a goal needs. Leaving enabling work off the roadmap hides effort and makes the plan look more achievable than it is.
 
-Always define metrics first. The rationale writing step depends on being able to say "this feature advances this goal by moving this metric in this direction." Without metrics, your rationales become vague assertions that cannot be challenged or later verified. If you are learning how to create a product roadmap for the first time, establish goals and metrics using [setting metrics and success criteria](https://tryhamster.com/skills/setting-go-roadmap-metrics) before beginning the mapping exercise.
+## Can one feature serve two goals?
 
-## Why does my mapping keep drifting within a quarter?
-
-Mapping drift happens for three common reasons. First, new requests arrive and get added to the roadmap without going through the mapping exercise, eventually outnumbering the mapped items. ") before accepting them. Second, goals themselves shift without the mapping being updated.
-
-When a goal changes, trigger a re-mapping of the items under it. Third, team members forget the rationale behind mappings and start treating items as standalone tasks. Counter this by referencing the mapping and rationale during sprint planning, not just during quarterly reviews.
-
-## How do I handle stakeholders who insist on a feature that maps to no current goal?
-
-Acknowledge the feature's potential value, then present the trade-off explicitly. Show which goal would lose investment if you add the unmapped feature. Ask the stakeholder whether they want to propose a new goal that the feature would serve, and what existing goal they would deprioritize to make room. " Most unmapped feature requests quietly withdraw when the trade-off is made visible.
-
-The few that survive usually do represent a legitimate strategic gap.
-
-## Can I use this mapping skill with roadmap tools like Productboard, Aha!, or Jira?
-
-Yes. Most roadmap tools support custom fields or labels. Create a "Primary Goal" field with your goals as dropdown options, and a "Rationale" text field for the one-sentence justification. Some tools like Productboard have native objective-linking features that align well with this mapping.
-
-The key is ensuring the mapping is visible at the roadmap level, not buried in individual ticket descriptions where it gets ignored. Configure your default roadmap view to group or color-code items by goal so the mapping is always front and center.
+It can help both, but it should be placed under the goal it serves most, with any secondary benefit noted. Listing it in two columns double-counts the effort and blurs where the work sits in time.

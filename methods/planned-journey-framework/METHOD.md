@@ -1,163 +1,166 @@
 ---
-category: Experience
+name: "planned-journey-framework"
+category: "Experience"
+description: "The Planned Journey Framework maps deliberate purchases across latent, evaluation and buying stages to show where brands gain or lose consideration."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The Planned Journey Framework: Mapping the Customer Journey for High-Stakes Purchases
+# Planned Journey Framework: Map High-Stakes Purchases
 
-> Created by **SKIM Group** — [https://www.skimgroup.com/](https://www.skimgroup.com/)
+> Created by **SKIM Group (publisher)** - [https://www.skimgroup.com/](https://www.skimgroup.com/)
 
 ## Overview
 
-Most customer journey models were built for fast-moving consumer goods or digital products where decisions happen in minutes. The Planned Journey Framework, developed by the research consultancy SKIM Group, addresses a different reality: purchases that unfold over weeks or months, involve significant financial commitment, and require deliberate research. Think of someone buying a car, selecting a mortgage provider, or choosing enterprise software. These decisions are infrequent, high-stakes, and deeply considered. The framework gives teams a structured way to map that extended customer journey without flattening its complexity into a generic funnel.
+The Planned Journey Framework is a way to map purchases that people research and deliberate over a long stretch of time, such as a car, a mortgage or a phone contract. It splits the customer journey into three stages, latent, evaluation and buying, and asks how the brands a buyer considers, and the reasons behind that consideration, change from one stage to the next. The framework was published by the market research company SKIM: in a [Quirk's article from 2017](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys), Alex Xiaoguang Zhu, SKIM's senior manager for decision journeys, set out the planned journey as one of four frameworks for mapping customer decision journeys. SKIM also republished the piece [on its own site](https://skimgroup.com/news/4-frameworks-mapping-customer-decision-journeys/). The article does not say who first proposed the three stages, so this page credits SKIM as the publisher of the framework and claims no earlier origin.
 
-The core insight behind the Planned Journey Framework is that high-involvement purchases do not follow a smooth, linear progression from awareness to purchase. Instead, buyers move through three qualitatively different stages: latent, evaluation, and buying. In the latent stage, a consumer may not yet recognize a need, but environmental triggers, life changes, or ambient brand exposure are quietly shaping future consideration sets. During evaluation, the consumer actively researches options, compares features, seeks reviews, and narrows choices. In the buying stage, the decision crystallizes around specific offers, pricing, availability, and final confidence. Each stage operates on different psychological dynamics, involves different information sources, and responds to different brand interventions.
+Zhu's definition is short. A planned journey is "a longer decision journey where customers are more involved in research for products and services purchased relatively infrequently," with financial services and big-ticket items as the examples. The article says the framework "works best when consumers typically deliberate their choices over an extended period of time" and names automobiles, financial services and consumer electronics as applicable industries ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). The same article offers three other frameworks for other kinds of purchase, which the comparison table further down sets side by side.
 
-What distinguishes the Planned Journey Framework from older models like AIDA (Attention, Interest, Desire, Action) or McKinsey's Consumer Decision Journey is its emphasis on connecting insights across stages rather than treating each stage as a siloed optimization problem. AIDA is a linear hierarchy of effects, useful for advertising creative but blind to the nonlinear way real research unfolds. McKinsey's loop model introduced the idea of an ongoing loyalty cycle but was primarily designed around packaged goods and digital interactions. The Planned Journey Framework occupies a specific niche: it is purpose-built for categories where the gap between latent need and final purchase can span months, where brand consideration sets shift dramatically between stages, and where the evaluation process itself changes the buyer's criteria.
+The three stages describe what the buyer is doing. In the latent stage, as a [SKIM expert Q&A](https://skimgroup.com/blog/what-you-need-to-know-about-customer-journey-mapping/) puts it, "customers are not actively looking for any information but in a passive receiving information mode." Brand impressions, conversations and advertising land during this period even though the person is not shopping. The evaluation stage starts when the buyer forms an intention and begins to research, compare and ask other people. The buying stage is the final choice of a specific offer, price and place to buy. The Q&A calls the later two stages consideration and purchase, and the Quirk's article calls them evaluation and buying. The substance is the same.
 
-Since its introduction, the framework has been adopted primarily in automotive, financial services, healthcare, and B2B technology research. Its evolution has tracked the growing availability of behavioral data. Early applications relied on survey-based journey reconstruction, asking buyers to recall their process after the fact. More recent implementations blend survey data with digital analytics, CRM touchpoint logs, and panel-based tracking to build richer, more accurate stage maps. The framework has also been adapted for B2B contexts, where buying committees replace individual consumers and the latent stage can last years before a procurement cycle opens.
+The framework's central claim is that consideration moves between stages. Zhu writes that familiar or popular brands may dominate the initial consideration set in the latent stage, but that buyers who discuss their choices with others and research online may conclude that another brand better meets their needs later. Hence Zhu's instruction: "The key to this framework is to identify distinctive stages in the decision journey and connect the dots across stages" ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). The article's example is a major U.S. telecom company: network and value were the dominant drivers of brand consideration in the latent phase, while plan and data were the most important drivers in the buying phase. A team that measured only one of those stages would have optimized the wrong message for the other.
 
-Teams that benefit most from the Planned Journey Framework are those responsible for marketing strategy, brand management, or customer experience in categories where the purchase cycle is long and the stakes are high. Product marketers in automotive, wealth management, insurance, higher education, and enterprise technology will find it directly applicable. The framework is especially valuable when a brand performs well in awareness metrics but underperforms in conversion, because it reveals where in the customer journey brand consideration is gained or lost. In workspaces like Hamster, where AI agents can help teams structure and maintain journey maps, the Planned Journey Framework provides a clean scaffold for organizing research, touchpoint data, and stage-specific strategy.
+The framework is narrower than the general models it is often compared with. AIDA, credited to E. St. Elmo Lewis, is a linear hierarchy-of-effects model, and a literature review found little empirical support for hierarchical models ([AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing))). McKinsey's consumer decision journey, published in the McKinsey Quarterly in June 2009 ([Purchase funnel](https://en.wikipedia.org/wiki/Purchase_funnel)), replaced the funnel with a loop that includes post-purchase loyalty, and it has its own page on the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey). The planned journey stays on the pre-purchase decision in deliberate categories and adds one analytical habit: comparing what drives consideration at each stage and explaining the differences.
 
-The framework is not a silver bullet. It requires category-specific calibration, honest assessment of data gaps, and willingness to invest in cross-stage research rather than point-in-time snapshots. But for teams working in high-involvement categories who find that generic funnel models leave too much unexplained, the Planned Journey Framework offers a more faithful map of how real buyers actually decide.
+The research behind a planned journey map usually mixes sources. SKIM describes its journey work as capturing stated and behavioral consumer data, with passive metering and digital tracking filling gaps that surveys leave ([SKIM journey mapping](https://skimgroup.com/services/decision-customer-journey-mapping/)). The mix matters because buyers reconstructing a months-long decision from memory are prone to [recall bias](https://en.wikipedia.org/wiki/Recall_bias), while behavioral data alone cannot say why a brand dropped out. The skills below cover [defining the planned journey framework stages](../../skills/defining-latent-evaluation-buying-stages/SKILL.md) for a category and [research-intensive purchase mapping](../../skills/mapping-high-involvement-purchase-journeys/SKILL.md) from interviews and data.
+
+Brand, insight and customer experience teams in long-cycle categories get the most from it, especially when awareness is healthy but the brand keeps losing at the final choice. In Hamster, a team can keep the stage definitions, consideration data and journey map in one shared workspace that people and AI agents read from.
 
 ## Core Principles
 
-### Stage-Specific Psychology
+### Each Stage Has Its Own Drivers
 
-Each stage of the customer journey operates on fundamentally different cognitive and emotional dynamics. A buyer in the latent stage processes brand signals passively and associatively, while a buyer in evaluation mode is actively comparing features and seeking disconfirming evidence. Teams that skip this principle end up running evaluation-stage messaging (comparison charts, spec sheets) against latent-stage audiences who have no frame of reference for it, wasting budget and confusing prospects. The tradeoff is that stage-specific design requires separate creative, separate measurement, and separate KPIs for each stage, which increases complexity.
+The reasons a brand gets considered in the latent stage are often different from the reasons it wins at the buying stage. In Zhu's telecom example, network and value drove latent consideration, and plan and data mattered most at the buying stage ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). Measure drivers separately for each stage instead of averaging them across the journey. An averaged driver list hides exactly the shift the framework exists to find.
 
-### Cross-Stage Insight Connection
+### Consideration Sets Change
 
-The highest-value insights emerge not from analyzing any single stage in isolation, but from tracking how attitudes, consideration sets, and decision criteria change between stages. A brand might enter the evaluation set of 60% of buyers but survive to the buying stage for only 20%, and the reason for that drop is often invisible if you only study the buying stage. Teams that treat stages as separate projects miss these transitions entirely. This principle demands longitudinal or cross-sectional research designs that link the same cohort or segment across stages.
+The consideration set is the group of brands a buyer seriously evaluates before choosing, and the literature treats it as moving: "These sets are fluid and the products in each set can change rapidly when the consumer is presented with new information" ([Consideration set](https://en.wikipedia.org/wiki/Consideration_set)). Brands enter the set late through reviews, advice or a strong comparison, and long-standing favorites can drop out. Track entries and exits between stages, since both carry information. A brand that only tracks its share of the final set cannot tell whether it lost buyers early or late.
 
-### Consideration Set Fluidity
+### Connect the Dots Across Stages
 
-Brand consideration is not fixed at the start of the journey. The Planned Journey Framework assumes that the set of brands a buyer is willing to consider shifts materially between stages, and that both additions and removals carry strategic significance. Brands can enter the consideration set late during evaluation (through strong content or peer recommendations) and brands can exit even after being long-held favorites (through a poor dealer experience or negative review). Ignoring this fluidity leads teams to over-invest in top-of-funnel awareness and under-invest in mid-journey retention.
+Zhu names the connection between stages as the key to the framework ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). A finding at the buying stage, such as a competitor winning on plan terms, often has its cause earlier, in how buyers formed their criteria during evaluation. Design research so that the same buyers, or comparable segments, answer about every stage. Analysis that treats each stage as a separate study cannot show a transition.
 
-### Category-Specific Calibration
+### The Latent Stage Still Shapes the Outcome
 
-The duration, triggers, and information sources for each stage vary dramatically by category. A car purchase latent stage might last two years, triggered by a lease expiration date. A financial product latent stage might last until a life event like marriage or retirement. Teams that apply a generic template without calibrating stage definitions, durations, and trigger events to their specific category will produce maps that look plausible but fail to predict actual buyer behavior.
+Buyers in the latent stage are not searching, yet SKIM's Q&A notes "an enormous amount of influence for consumers before they even formulate an intention to make a purchase" ([SKIM Q&A](https://skimgroup.com/blog/what-you-need-to-know-about-customer-journey-mapping/)). Long purchase cycles mean most potential buyers sit in that stage at any moment. For B2B services such as banking, legal, software and telecoms, a study by John Dawes of the Ehrenberg-Bass Institute reports that companies change providers around every five years, which the Institute's summary says means "only 20% are in the market for those services in a given year and just 5% in a given quarter" ([Ehrenberg-Bass](https://marketingscience.info/news-and-insights/ehrenberg-bass-95-of-b2b-buyers-are-not-in-the-market-for-your-products)). Plan latent-stage work as memory building for a later decision, and judge it on consideration when buyers enter the market.
 
-The investment in upfront category research pays off in every downstream decision.
+### Combine What Buyers Say With What They Do
 
-### Touchpoint Attribution Across Time
+Stated data explains why buyers moved, and behavioral data shows what they actually did and when. SKIM's own approach pairs the two, using passive metering and digital tracking alongside surveys ([SKIM journey mapping](https://skimgroup.com/services/decision-customer-journey-mapping/)). Either source alone misleads: memories of a long decision drift ([recall bias](https://en.wikipedia.org/wiki/Recall_bias)), and clickstreams miss conversations, dealer visits and advice from friends. Where the two disagree, treat the disagreement as a question for the next round of research.
 
-In a purchase process that spans months, attributing influence to specific touchpoints requires methods that account for time decay, sequence effects, and interaction between channels. A TV ad seen during the latent stage may have primed a brand association that made a search ad effective six months later during evaluation. Teams that rely on last-click or single-session attribution will systematically undervalue latent-stage and early-evaluation touchpoints. The tradeoff is that multi-touch, cross-stage attribution is harder to implement and requires richer data infrastructure.
+### Pick the Right Journey Framework First
 
-### Trigger Identification Over Demographic Targeting
+The planned journey is one of four frameworks in Zhu's article, and the article treats choosing the framework as the first step in mapping a journey ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). Frequent, low-involvement purchases fit the habitual journey better, and purchases with many stakeholders fit the ecosystem journey. Forcing a quick or routine purchase into three deliberate stages produces a map that looks tidy and predicts nothing. Check the fit before any fieldwork.
 
-The Planned Journey Framework prioritizes understanding what moves a buyer from one stage to the next over who the buyer is demographically. Two people with identical demographics can be in completely different stages because of different life triggers. A 35-year-old might be in the latent stage for a car if their current vehicle is new, and deep in evaluation if they just had a third child. When teams skip trigger identification and rely on persona-based targeting alone, they mistime their interventions and reach the right person at the wrong moment.
+### Give Early Touchpoints Fair Credit
 
-### Measurement at Stage Boundaries
-
-The most diagnostic measurement points are at the transitions between stages, not within them. What caused a buyer to shift from latent to evaluation? What caused a brand to drop out of the consideration set between evaluation and buying? These transition moments reveal the leverage points where marketing and experience design can have the greatest impact.
-
-Teams that only measure within stages (awareness scores, satisfaction scores, conversion rates) miss the why behind the what.
+In a journey that runs for months, the touchpoint that closes the sale is rarely the one that put the brand in the set. Last-click attribution, as Google Analytics documents it, gives 100% of the credit to the last channel clicked before conversion ([Google Analytics attribution](https://support.google.com/analytics/answer/10596866)). Use stage-level research, data-driven attribution where click data exists, or both, so latent and evaluation touchpoints are not undervalued by default.
 
 ## Steps
 
-1. **Step 1: Define Category-Specific Stage Boundaries**
-   Begin by establishing what the latent, evaluation, and buying stages look like in your specific category. Interview recent buyers and lost prospects to understand the typical timeline, the triggers that moved them from passive to active consideration, and the criteria that governed their final decision. For an automotive purchase, the latent stage might begin when a driver first notices their car aging, two years before any active research. For enterprise software, it might begin when a team lead mentions frustration in a quarterly review.
+1. **Confirm the purchase is a planned journey**
+   Check the category against Zhu's test: infrequent purchases, heavy research and deliberation over an extended period ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). Talk to a handful of recent buyers and ask how long they thought about the purchase and what they did before choosing. If most describe a quick or routine decision, use the habitual journey instead. If several people shared the decision, consider the ecosystem journey or at least map each role separately. Write down which framework you chose and why.
 
-You have done this well when you can describe each stage in behavioral terms (what the buyer is doing, not just feeling), when you can identify 2-3 concrete triggers at each stage boundary, and when your stage definitions would be recognized as accurate by actual buyers in your category. A common mistake is defining stages based on your internal sales process rather than the buyer's lived experience.
+2. **Define the planned journey framework stages for your category**
+   Describe latent, evaluation and buying in terms of what buyers do, with the signals that mark each boundary. The latent stage ends when the buyer forms an intention, which SKIM describes as the move out of passive receiving ([SKIM Q&A](https://skimgroup.com/blog/what-you-need-to-know-about-customer-journey-mapping/)). Evaluation ends when a short list of offers is being priced or negotiated. Validate the definitions with recent buyers in your own words and theirs. The [stage definition skill](../../skills/defining-latent-evaluation-buying-stages/SKILL.md) covers this step in detail.
 
-2. **Step 2: Map the Consideration Set at Each Stage**
-   For each stage, identify which brands or solutions are in the buyer's active consideration set and how that set changes. This requires research that captures consideration at multiple points, not just at the moment of purchase. Survey-based approaches ask respondents to recall which brands they were aware of, considered, and ultimately chose, while behavioral approaches track search queries, website visits, and content engagement over time. You have done this well when you can quantify the size of the consideration set at each stage and name the specific brands that enter and exit between stages.
+3. **Measure consideration and its drivers at each stage**
+   For each stage, record which brands buyers were aware of, which they seriously considered, and which they rejected, using the set hierarchy from consumer research ([Consideration set](https://en.wikipedia.org/wiki/Consideration_set)). Ask what drove each brand's inclusion or exclusion at that stage. Include buyers who chose competitors and people who stalled, or the picture will reflect only your own customers. The output is a consideration set and a ranked driver list per stage.
 
-Watch for survivorship bias: talking only to your own customers will give you a distorted view. Include competitive buyers and people who abandoned the category entirely.
+4. **Map touchpoints and information sources per stage**
+   List the sources buyers used at each stage and how much each influenced them. SKIM's journey work aims to identify the where, when, what and how of touchpoints and which are most impactful ([SKIM journey mapping](https://skimgroup.com/services/decision-customer-journey-mapping/)). Combine buyer accounts with analytics or CRM data where you have it. Expect latent-stage sources to be ambient, such as advertising and conversation, and evaluation sources to be active, such as reviews, comparison sites and visits.
 
-3. **Step 3: Identify Touchpoints and Information Sources by Stage**
-   Document every touchpoint, channel, and information source that buyers engage with at each stage, along with the relative influence each has on their progression. During the latent stage, ambient media like TV, social feeds, and word-of-mouth from friends may dominate. During evaluation, review sites, comparison tools, dealer visits, and expert opinions take over. During buying, pricing pages, promotions, and salesperson interactions become decisive.
+5. **Analyze the transitions between stages**
+   Compare consideration sets and drivers across stages and look for where your brand enters or leaves. The telecom example in the Quirk's article, where drivers shifted from network and value to plan and data, is the kind of finding to look for ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). For each loss point, name the likely cause and the evidence for it. The step is done when you can explain in a few sentences where your brand gains ground, where it loses it, and why.
 
-Map these by asking buyers to reconstruct their journey, cross-referencing with digital analytics and CRM data where available. The goal is not an exhaustive list but a prioritized view of which touchpoints actually moved decisions. A common variation is to weight touchpoints by self-reported influence versus observed behavioral correlation, which often produces different rankings.
+6. **Act on the weakest transition and re-measure**
+   Choose interventions for the stage or transition where the loss is largest, and match each to that stage's drivers and touchpoints. SKIM recommends socializing journey findings internally, for example through cross-functional workshops and dashboards ([SKIM six steps](https://skimgroup.com/blog/6-steps-untangling-mapping-consumer-decision-journeys/)). Set a date to repeat the consideration measurement so you can see whether the transition improved. A map that is never re-measured decays as the market changes.
 
-4. **Step 4: Analyze Cross-Stage Transitions and Drop-Off Points**
-   This is where the framework produces its most distinctive insights. For each transition (latent to evaluation, evaluation to buying), analyze what percentage of potential buyers advance, what triggers their advancement, and what causes them to stall or exit. Look specifically at brands that enter or leave the consideration set at each transition. If your brand is in 55% of evaluation-stage consideration sets but only 25% of buying-stage sets, that 30-point drop is the single most important finding in your analysis.
+## Choosing Among SKIM's Four Journey Frameworks
 
-Diagnose the cause: is it price shock during the buying stage, a poor dealer or sales experience, a competitor running strong promotions, or a gap in information that creates uncertainty? You know this step is complete when you can tell a clear, evidence-backed story about where and why your brand gains or loses ground across the journey.
+Zhu's article presents the planned journey alongside three alternatives. Use this table to confirm the planned journey is the right one before mapping.
 
-5. **Step 5: Design Stage-Specific Interventions**
-   Based on your analysis, design interventions tailored to each stage and each transition. For the latent stage, this might mean investing in brand-building content that shapes future consideration before active research begins. For the latent-to-evaluation transition, it might mean trigger-based campaigns that activate when signals (life events, behavioral cues) suggest a buyer is entering active mode. For the evaluation stage, it might mean strengthening comparison content, review presence, or product experience.
-
-For the buying stage, it might mean simplifying pricing, improving the purchase experience, or addressing final-stage objections. The key discipline is resisting the temptation to apply the same intervention everywhere. A gotcha: organizations often over-invest in buying-stage interventions because they are closest to revenue, while the root cause of underperformance lies in latent-stage brand salience or evaluation-stage content gaps.
-
-6. **Step 6: Establish Stage-Boundary Metrics and Monitoring**
-   Define metrics that track performance at each stage and, critically, at each transition between stages. Latent-stage metrics might include unaided brand awareness, brand salience in category entry points, and consideration propensity among non-active shoppers. Evaluation-stage metrics might include share of search, content engagement depth, and consideration-to-shortlist conversion rate. Buying-stage metrics include shortlist-to-purchase conversion, win/loss rates, and deal cycle length.
-
-The most important metrics are the transition rates: what percentage of latent-stage considerers become active evaluators, and what percentage of evaluators become buyers. Set up measurement cadence (quarterly at minimum for most high-involvement categories) and define clear thresholds that trigger strategy review. Without ongoing measurement, the journey map becomes a one-time artifact that decays as markets and buyer behavior shift.
+| Framework | Fits | Distinctive focus |
+|---|---|---|
+| Planned journey | Infrequent, researched purchases such as cars, financial services, electronics ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)) | Latent, evaluation and buying stages, with shifts in consideration between them |
+| (Disrupted) habitual journey | Frequent, low-involvement CPG and OTC purchases ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)) | The shopping trigger and the moments when routine buyers double-check or switch |
+| Ecosystem journey | B2B decisions with internal clients, distribution partners and end users ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)) | Every stakeholder's involvement, read through the dominant decision-maker's journey, and disruptions that reopen automated purchases |
+| Patient-centric journey | Healthcare ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)) | Patient need-states, emotions and behaviors, prioritized as sub-journeys and key moments |
 
 ## When to Use
 
-- When your product category involves purchase decisions that typically unfold over weeks or months, such as automobiles, financial services, insurance, higher education, or enterprise technology, and your existing funnel models cannot explain why strong awareness is not translating into proportional conversion.
-- When your brand tracking shows healthy unaided awareness but declining share of final purchase, suggesting that consideration set dynamics are working against you somewhere between initial interest and final decision, and you need a structured way to diagnose where the leakage occurs.
-- When you are planning a major reallocation of marketing budget across channels and need evidence for how different touchpoints contribute at different stages of a long decision process, rather than relying on last-click attribution that systematically favors bottom-of-funnel tactics.
-- When you are entering a new geographic market or customer segment for a high-involvement product and need to understand the local decision journey from scratch, including category-specific triggers, information sources, and evaluation criteria that may differ significantly from your home market.
-- When multiple teams across your organization (brand marketing, digital, retail/dealer experience, CRM) are optimizing their piece of the customer journey independently and you need a shared framework to align their efforts around a unified view of how buyers actually move through stages.
-- When you have access to or can commission longitudinal research (panel studies, CRM journey logs, multi-wave surveys) that can track how the same buyers or buyer cohorts change their preferences and consideration sets over time, giving you the data infrastructure the framework requires.
+- The category is bought rarely and researched heavily, such as cars, mortgages, insurance or premium electronics, which are the conditions under which Zhu says the framework works best.
+- Brand tracking shows healthy awareness but a weak share of final choices, and you need to know at which stage buyers drop your brand.
+- Different teams own advertising, digital, retail or sales experience, and they need one shared view of how a buyer moves from not shopping to buying.
+- You are planning budget across long-lead brand work and short-lead conversion work and need evidence of what each stage responds to.
+- You are entering a new market or segment for a considered purchase and do not yet know what triggers buyers there or which sources they trust.
 
 ## When Not to Use
 
-- When your product is a low-involvement, habitual purchase (groceries, toiletries, commodity SaaS with free trials) where decisions happen in seconds or minutes. The Planned Journey Framework assumes an extended deliberation period with distinct stages. For impulse or habit-driven categories, the three-stage model adds unnecessary complexity, and simpler models like Ehrenberg's repeat-purchase theory or basic conversion funnels will serve you better.
-- When you lack the data infrastructure or research budget to study buyers across multiple stages over time. The framework's core value comes from connecting insights across stages, which requires longitudinal or cross-sectional data. If you can only measure a single point in time (e.g., a post-purchase survey), you will end up guessing at stage transitions rather than observing them, and the resulting map will be fiction dressed as strategy.
-- When your purchase process is highly commoditized and price-driven, with minimal brand differentiation and no meaningful evaluation stage. In markets where buyers treat all options as interchangeable and decide almost entirely on price and availability, mapping latent and evaluation stages adds little insight because the consideration set is effectively 'whoever is cheapest right now.'
-- When your decision-making unit is a single individual making a quick, emotionally driven purchase (concert tickets, fashion impulse buys, mobile game subscriptions). The framework was designed for deliberate, research-heavy processes. Applying it to emotional or spontaneous purchases forces a rational-sequential model onto behavior that is better explained by affect heuristics or social influence models.
-- When your team needs a quick, tactical answer rather than a strategic journey map. If the question is 'which landing page headline converts better,' the Planned Journey Framework is the wrong tool. It is designed for strategic customer journey understanding, not for tactical A/B testing or campaign optimization.
+- The purchase is frequent and routine, such as groceries or over-the-counter products. SKIM's habitual journey fits these better, because the decision is about routine and switching rather than staged deliberation.
+- The decision is made by many stakeholders whose roles matter more than any one person's stages, which is where SKIM places the ecosystem journey.
+- You can collect data at only one point, such as a single post-purchase survey, and cannot reach stalled buyers or competitors' buyers. The cross-stage comparison would be guesswork.
+- You need a tactical answer, such as which landing page converts better. A controlled test answers that faster than a journey study.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Defining the Latent, Evaluation, and Buying Stages](../../skills/defining-latent-evaluation-buying-stages/SKILL.md) — How to identify and structure the three distinct stages of a planned purchase journey—latent need recognition, active evaluation, and buying—to map high-involvement customer decisions.
-- [Optimizing Touchpoints at Each Journey Stage](../../skills/optimizing-touchpoints-per-stage/SKILL.md) — How to identify and improve specific customer touchpoints within each planned journey stage to reduce friction and increase conversion in long purchase cycles.
-- [Adapting the Planned Journey Framework for B2B Purchases](../../skills/adapting-planned-journeys-for-b2b/SKILL.md) — How to apply the planned journey stages to complex B2B buying processes involving multiple stakeholders, extended timelines, and committee-based decisions.
-- [Tracking Brand Consideration Shifts Across Stages](../../skills/tracking-brand-consideration-shifts/SKILL.md) — How to measure and visualize changes in brand consideration sets as customers move from latent awareness through evaluation to purchase decision.
-- [Connecting Insights Across Journey Stages](../../skills/connecting-cross-stage-insights/SKILL.md) — How to synthesize research findings from the latent, evaluation, and buying stages to reveal hidden patterns and optimization opportunities across the full decision journey.
-- [Building Planned Journey Funnel Visualizations](../../skills/building-planned-journey-funnel-visualizations/SKILL.md) — How to translate the latent-evaluation-buying stage model into funnel diagrams and journey maps that communicate drop-off rates and conversion opportunities to stakeholders.
-- [Mapping High-Involvement Purchase Journeys](../../skills/mapping-high-involvement-purchase-journeys/SKILL.md) — How to create a detailed customer journey map for deliberate, research-intensive purchases such as automobiles, financial services, and consumer electronics.
+- [Planned Journey Framework Stages: Latent, Evaluation, Buying](../../skills/defining-latent-evaluation-buying-stages/SKILL.md): Define the three stages for your category with entry signals, behaviors and exit criteria.
+- [Touchpoint Optimization for Each Journey Stage](../../skills/optimizing-touchpoints-per-stage/SKILL.md): Score the touchpoints in each stage and fix the ones that cost the most consideration.
+- [Planned Journey Framework for B2B Buying Committees](../../skills/adapting-planned-journeys-for-b2b/SKILL.md): Map each committee role through the stages and find where the group decision stalls.
+- [Brand Consideration Tracking Across Journey Stages](../../skills/tracking-brand-consideration-shifts/SKILL.md): Measure which brands enter and leave the consideration set at each stage and why.
+- [Connecting Cross-Stage Journey Insights](../../skills/connecting-cross-stage-insights/SKILL.md): Link findings from separate stages into one explanation of where the brand wins and loses.
+- [Building a Planned Journey Funnel Diagram](../../skills/building-planned-journey-funnel-visualizations/SKILL.md): Turn stage data into a funnel diagram and journey map that stakeholders can act on.
+- [Research-Intensive Purchase Mapping for Planned Journeys](../../skills/mapping-high-involvement-purchase-journeys/SKILL.md): Build the full journey map for a considered purchase from interviews and behavioral data.
 
 ## FAQ
 
 **What is the Planned Journey Framework in simple terms?**
 
-The Planned Journey Framework is a way of mapping how people make big, researched purchase decisions. It breaks the process into three stages: latent (before the buyer knows they need something), evaluation (when they are actively comparing options), and buying (when they are ready to choose). The main idea is that tracking how brand preferences change between these stages reveals where marketing and experience efforts will have the most impact. It was developed by SKIM Group for categories like cars, financial products, and electronics where decisions take weeks or months.
+It is a way to map big, researched purchases in three stages: latent, when the buyer is not shopping but is absorbing impressions; evaluation, when they research and compare; and buying, when they choose an offer. The framework asks how the brands under consideration, and the reasons for considering them, change between those stages. It was published by SKIM's Alex Xiaoguang Zhu in a [Quirk's article](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys) as one of four journey frameworks. It suits categories such as cars, financial services and consumer electronics.
 
-**How is the Planned Journey Framework different from a traditional marketing funnel?**
+**Who created the Planned Journey Framework?**
 
-A traditional funnel assumes a linear path from awareness to purchase and focuses primarily on conversion rates at each step. The Planned Journey Framework differs in three ways. First, it explicitly models a latent stage before the buyer even recognizes a need, which funnels ignore. Second, it tracks how the consideration set of brands shifts between stages, rather than assuming a fixed set that simply narrows.
+The framework comes from the research company SKIM. It appears in a 2017 [Quirk's article](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys) by Alex Xiaoguang Zhu, then SKIM's senior manager for decision journeys, which SKIM also [republished](https://skimgroup.com/news/4-frameworks-mapping-customer-decision-journeys/). The article does not say who first proposed the latent, evaluation and buying split, so treat SKIM as the publisher of this version of the model. Related ideas, such as the consideration set, come from earlier consumer research.
 
-Third, its primary diagnostic value comes from analyzing transitions between stages, not volume at any single stage. This makes it better suited for high-involvement categories where the decision process is nonlinear and unfolds over months.
+**How is it different from a traditional marketing funnel?**
+
+A classic funnel such as AIDA assumes a linear move from awareness to action, and reviews have found little empirical support for such hierarchical models ([AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing))). The planned journey adds a latent stage before any active shopping and expects the consideration set to change, including brands entering late. Its main diagnostic compares drivers and consideration across stages. The size of each layer matters less than the reasons buyers move between them.
+
+**How does it relate to McKinsey's consumer decision journey?**
+
+Both reject the idea that consideration only narrows. The McKinsey model, published in 2009 ([Purchase funnel](https://en.wikipedia.org/wiki/Purchase_funnel)), is a loop that covers post-purchase experience and loyalty, and it is described on the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey) page. The planned journey is narrower: it stays on the pre-purchase decision in deliberate categories and focuses on how consideration drivers shift between stages. Teams can use the McKinsey loop for the whole relationship and the planned journey to diagnose the purchase decision itself.
 
 **Does the Planned Journey Framework work for B2B purchases?**
 
-Yes, and in many ways B2B is an ideal fit because B2B purchases are inherently high-involvement, infrequent, and research-intensive. The main adaptation required is accounting for buying committees rather than individual consumers. In B2B contexts, different stakeholders (end users, budget holders, IT, procurement) may be in different stages simultaneously, and the latent stage can last years before a formal procurement cycle opens. The consideration set dynamics are also different: vendor lists are often shorter, and switching costs mean incumbents have structural advantages that the framework can help challengers diagnose and address.
+It can, with care. Zhu's article assigns B2B decisions with many stakeholders to a separate ecosystem journey, which looks at when each stakeholder influences the decision ([Quirk's](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)). The planned journey stages still help when you map each member of the buying group separately and then look at how their stages line up. The [B2B skill](../../skills/adapting-planned-journeys-for-b2b/SKILL.md) covers that adaptation.
 
-See the skill on [adapting the Planned Journey Framework for B2B](https://tryhamster.com/skills/adapting-planned-journeys-for-b2b) for detailed guidance.
+**What data does a planned journey study need?**
 
-**Why does the Planned Journey Framework fail in practice?**
+You need consideration and driver data for each stage, collected from recent buyers, buyers who chose competitors and people who stalled. SKIM combines stated survey data with behavioral data from passive metering and digital tracking ([SKIM journey mapping](https://skimgroup.com/services/decision-customer-journey-mapping/)). If you can only start with interviews, keep the questions anchored to specific events and dates to limit recall bias. Add behavioral data as it becomes available.
 
-The most common failure mode is treating the framework as a one-time research exercise rather than an ongoing strategic tool. Teams commission a journey mapping study, produce a beautiful deck, and then never update it as markets shift. The second failure is insufficient data at the latent stage, which is inherently harder to study because buyers do not know they are being buyers yet. Teams end up with rich buying-stage data and speculative latent-stage assumptions, which undermines the cross-stage analysis that gives the framework its value.
+**Why do planned journey studies fail?**
 
-The third failure is organizational: when brand, digital, and sales teams each own a different stage and nobody is accountable for the transitions between them.
+The common failures are a one-off study that is never re-measured, a latent stage described from assumptions because nobody interviewed people before they started shopping, and a sample made only of your own customers. Another is organizational: advertising, digital and sales each own one stage and nobody owns the transitions. Assign an owner to each transition and repeat the measurement on a schedule.
 
-**How does the Planned Journey Framework work alongside customer journey mapping?**
+## Sources
 
-The Planned Journey Framework is a specific type of customer journey map, not a replacement for the broader practice. General customer journey mapping can cover any process (onboarding, support, renewal) and often focuses on experience quality at each touchpoint. The Planned Journey Framework narrows the scope to the pre-purchase decision journey for high-involvement categories and adds a specific analytical layer: consideration set tracking and cross-stage insight connection. Teams often use general journey mapping for post-purchase experience design and the Planned Journey Framework specifically for acquisition strategy.
-
-The two are complementary. See the skill on [mapping high-involvement purchase journeys](https://tryhamster.com/skills/mapping-high-involvement-purchase-journeys) for implementation details.
-
-**What data do I need to implement the Planned Journey Framework?**
-
-At minimum, you need cross-stage buyer research: data that captures what buyers thought, felt, and did at each stage and how their consideration sets changed. This can come from retrospective surveys of recent buyers and lost prospects, longitudinal panel studies that track the same people over time, or behavioral data from CRM systems and digital analytics stitched together with identity resolution. The richest implementations combine all three sources. If you only have one, start with retrospective qualitative interviews of 15-20 recent buyers, which can reveal stage structures and transition triggers even without quantitative scale.
-
-**How long does it take to implement the Planned Journey Framework?**
-
-A first-pass implementation typically takes 6-10 weeks: 2-3 weeks for research design and fieldwork planning, 3-4 weeks for data collection (surveys, interviews, or behavioral data extraction), and 2-3 weeks for analysis and journey map construction. However, the framework's value compounds over time as you establish baseline metrics and track how stage dynamics shift quarter over quarter. Teams that treat the initial map as a final deliverable rather than a living tool miss most of the strategic value. Plan for quarterly refreshes of key metrics and an annual full rebuild.
-
-**Can I use the Planned Journey Framework for digital-only products?**
-
-Yes, if the purchase decision is high-involvement and research-intensive. Enterprise SaaS, B2B platforms, and expensive consumer subscriptions (wealth management apps, premium education platforms) all qualify. The framework is less useful for low-cost digital products with short decision cycles, free trials that bypass the evaluation stage, or products where switching costs are so low that there is no meaningful latent stage. The key question is whether your buyers go through a distinct period of deliberate research and comparison.
-
-If they do, the framework applies regardless of whether the product is physical or digital.
+- [Quirk's: 4 frameworks for mapping customer decision journeys](https://www.quirks.com/articles/4-frameworks-for-mapping-customer-decision-journeys)
+- [SKIM: Frameworks for mapping customer decision journeys](https://skimgroup.com/news/4-frameworks-mapping-customer-decision-journeys/)
+- [SKIM Expert Q&A: customer journey mapping](https://skimgroup.com/blog/what-you-need-to-know-about-customer-journey-mapping/)
+- [SKIM: Decision and customer journey mapping](https://skimgroup.com/services/decision-customer-journey-mapping/)
+- [SKIM: 6 steps to untangle consumer decision journeys](https://skimgroup.com/blog/6-steps-untangling-mapping-consumer-decision-journeys/)
+- [Wikipedia: Consideration set](https://en.wikipedia.org/wiki/Consideration_set)
+- [Wikipedia: AIDA (marketing)](https://en.wikipedia.org/wiki/AIDA_(marketing))
+- [Wikipedia: Purchase funnel](https://en.wikipedia.org/wiki/Purchase_funnel)
+- [Ehrenberg-Bass: 95% of B2B buyers are not in the market](https://marketingscience.info/news-and-insights/ehrenberg-bass-95-of-b2b-buyers-are-not-in-the-market-for-your-products)
+- [Google Analytics Help: Get started with attribution](https://support.google.com/analytics/answer/10596866)
+- [Wikipedia: Recall bias](https://en.wikipedia.org/wiki/Recall_bias)
 
 ---
 

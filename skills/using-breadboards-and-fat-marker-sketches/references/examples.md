@@ -1,53 +1,37 @@
-# Examples: Using Breadboards and Fat-Marker Sketches
+# Examples: Breadboarding Product Design with Fat Marker Sketches
 
-## Example: Breadboarding an invoice approval workflow for a small B2B SaaS team
-
-**Scenario:**
-
-A 4-person product team at a B2B invoicing startup needs to add an approval step to their invoice workflow. The appetite is 3 weeks. The shaper has talked to customers and discovered that invoices over a threshold need a manager's sign-off before sending. The core of the solution is a flow change, not a visual redesign.
-
-**Walkthrough:**
-
-The shaper starts by listing places: Invoice List, Invoice Detail, Approval Request Form, Pending Approval View, and Approval Confirmation. ' Submit connects to Pending Approval View, which shows the invoice status. Under Pending Approval View, the shaper adds 'Approve button' and 'Reject button,' each connecting to Approval Confirmation with different messaging. ' The shaper also notes a rabbit hole: email notifications for the approver.
-
-' The completed breadboard fits on one sheet of paper, took 25 minutes to create, and shows the full flow without specifying any screen layout. The shaper narrates it in the pitch: 'When a user creates an invoice above the configurable threshold, a Request Approval button appears. Clicking it opens a form where they select a manager and submit. ' The betting table can now evaluate the scope, spot the intentional boundaries, and decide whether to bet.
-
-## Example: Fat-marker sketching a dashboard for a real estate analytics startup
+## Breadboarding a sharing flow
 
 **Scenario:**
 
-A 12-person product company wants to add a market overview dashboard for real estate agents. The appetite is 6 weeks. The problem is that agents currently have to visit 4 different screens to see listings, price trends, days-on-market stats, and their pipeline. The solution requires putting these views together on one screen, so spatial arrangement is the core design challenge.
+Illustrative scenario: a shaper and a programmer are shaping a way for users of a document tool to share a read-only link with someone outside their company. They have a big batch appetite.
 
 **Walkthrough:**
 
-The shaper grabs a thick dry-erase marker and a whiteboard. They draw a large rectangle for the screen. ' The entire sketch takes 60 seconds. The shaper photographs it and adds it to the pitch with this narrative: 'The dashboard is a single screen with a filterable map occupying most of the space.
+They start with the place where the need arises, the Document page, and write one affordance under it: Share link. The arrow goes to a Share Settings place with three affordances: Copy link, Expires after, and Turn off link. Playing it through raises a question at once: what does the outside reader see? They add a Public Document place with the document and a note of who shared it.
 
-To the right, three summary widgets show price trends, days on market, and the agent's pipeline count. The map and price trend chart are connected: selecting a map pin filters the chart. ' The fat-marker constraint prevented the shaper from designing the chart style, pin icons, or filter UI. Those decisions belong to the designer and developer during the 6-week cycle.
+The second pass raises a harder question: can the owner see who opened the link? That would need visitor tracking, which neither of them believes fits the appetite. They mark it as a no-go and keep the flow at three places. The elements that go into the pitch are a share affordance on the document, a settings place with copy, expiry and off, and a read-only public page.
 
-## Example: Combining both tools for a B2C onboarding redesign
+## Using a fat marker for a layout problem
 
 **Scenario:**
 
-A consumer fitness app with a 30-person engineering team wants to redesign their onboarding to collect user goals and recommend a personalized plan. The appetite is 6 weeks. The solution involves both a multi-step flow (collecting data) and a visual concept (the recommendation screen).
+Illustrative scenario: a team wants to show a customer's open invoices, recent payments and notes on one account screen. The flow is simple; the question is how three kinds of information fit on one page.
 
 **Walkthrough:**
 
-The shaper breadboards the onboarding flow first. Places: Welcome Screen, Goal Picker, Experience Level, Schedule Preferences, Plan Recommendation, and Confirmation. ' Each Next button connects to the subsequent place. The breadboard takes 20 minutes.
+A breadboard would just be one place with three lists, which misses the problem. The shaper switches to a thick pen and sketches three versions: stacked sections, two columns with notes on the side, and tabs. Each takes a minute.
 
-The shaper then switches to a fat-marker sketch for the Plan Recommendation screen only, because this is the one screen where spatial arrangement matters: the user needs to see their selected goals, a generated plan summary, and a 'Start Plan' action in a way that feels like a payoff, not just another form. ' An annotation reads: 'Schedule Preview shows a simplified week grid, not a full calendar. ' The pitch includes both artifacts. The breadboard proves the flow is simple enough for a 6-week cycle.
+The tabs version hides the overdue invoices that account managers most need to see, so it is dropped. The shaper keeps a two-column sketch with invoices first, labels the blocks, and adds a note to the pitch that designers can change the arrangement as long as open invoices stay visible without clicking.
 
-The fat-marker sketch communicates the one visual concept that matters without designing it. The betting table approves the bet with confidence that the scope is bounded.
-
-## Example: Breadboarding an internal tool for a large enterprise ops team
+## Catching a rabbit hole in the breadboard
 
 **Scenario:**
 
-A 50-person operations team at a logistics company needs a tool for dispatchers to reassign delivery routes when a driver calls in sick. Currently, dispatchers use spreadsheets and phone calls. The appetite is 3 weeks. The shaper is a product manager who sits with the dispatch team and observes the manual process.
+Illustrative scenario: a shaper is breadboarding a feature to let managers approve time-off requests from a mobile app.
 
 **Walkthrough:**
 
-The shaper identifies the flow from observation: find the absent driver's routes, see which nearby drivers have capacity, reassign stops, and notify the affected drivers. The breadboard lists five places: Driver Status Board, Absent Driver's Routes, Available Drivers List, Reassignment Confirmation, and Driver Notification Log. ' Toggling a driver to 'absent' connects to Absent Driver's Routes, which lists all stops assigned to that driver. ' The Reassign Selected button connects to Available Drivers List, which shows drivers with capacity.
+The first breadboard runs from Request to Approve to a Confirmation place. Walking it slowly, the shaper asks what happens if two managers approve the same request at the same moment, and whether a rejected request can be edited and resubmitted.
 
-Under Available Drivers List, the affordance is 'Assign to [Driver Name] button,' which connects to Reassignment Confirmation. Confirm connects to Driver Notification Log. The shaper circles 'Available Drivers List' and annotates: 'Capacity calculated from existing route data. No real-time GPS.
-
-' A second rabbit hole is identified: 'Driver Notification Log shows in-app record only. ' The breadboard reveals a clean 5-step flow with two explicit scope cuts, giving the betting table confidence the team can ship in 3 weeks. The narrative in the pitch walks through a concrete scenario: 'Dispatcher Maria marks Driver Tom as absent. She sees Tom's 8 remaining stops, selects 5 of them, and assigns them to Driver Lisa who has capacity.
+Both questions would be expensive to discover mid-cycle. The shaper decides that only the direct manager can approve, which removes the first case, and declares editing a rejected request out of bounds; the employee submits a new one instead. Both decisions go into the pitch as a rabbit hole and a no-go.

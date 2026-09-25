@@ -1,39 +1,37 @@
-# Examples: Building Awareness in the Reach Stage
+# Examples: Reach Stage
 
-## Example: B2B SaaS Company Launching Awareness for a New Product Category
-
-**Scenario:**
-
-A mid-stage B2B SaaS company has launched a new product in a category where buyer awareness is low. Their target audience (operations managers at mid-market companies) doesn't know the product category exists, let alone this company's solution. They have a $15,000/month awareness budget and a content team of two.
-
-**Walkthrough:**
-
-**Audit:** The team reviews analytics and finds 80% of current traffic comes from branded search and direct—almost no top-of-funnel discovery. Their current content ranks for zero informational queries in the product category.
-
-**Audience:** They define two segments: (1) operations managers at companies with 200-2,000 employees in manufacturing, and (2) VP-level operations leaders at the same companies. Media habits analysis shows both segments are active on LinkedIn, use Google for research, and read industry publications.
-
-**Channel mix:** They select three channels: (1) SEO-focused content targeting informational queries like 'what is [category],' 'how to improve [process],' and comparison queries; (2) LinkedIn paid campaigns targeting their firmographic segments with educational video ads; (3) a sponsored content partnership with an industry newsletter.
-
-**Content:** The content team produces 4 pillar articles per month targeting category-level keywords, plus 2 LinkedIn video ads per month showing real operational challenges. The newsletter partnership features a monthly contributed article.
-
-**KPIs:** New organic sessions, LinkedIn ad impressions and video view rate, newsletter click-throughs, and brand search volume growth.
-
-**Results after 3 months:** Organic traffic from informational queries grows from 0 to 2,400 sessions/month. LinkedIn campaigns deliver 450,000 impressions at $8 CPM with 25% video view-through rate. Brand search volume increases 35%. The team feeds these awareness visitors into Act-stage retargeting campaigns with content downloads, generating 180 qualified leads for the Convert stage.
-
-## Example: DTC E-commerce Brand Expanding Awareness to a New Demographic
+## A regional gym chain rebalances cheap traffic
 
 **Scenario:**
 
-A DTC skincare brand currently reaches women aged 25-34 through Instagram. They want to expand awareness to the 35-50 demographic to grow their total addressable market. Monthly awareness budget: $8,000.
+Illustrative scenario: a regional gym chain spends most of its Reach budget on broad social ads because they deliver the lowest cost per visit. Membership inquiries are flat.
 
 **Walkthrough:**
 
-**Audit:** Instagram drives 60% of current traffic but analytics shows the 35-50 demographic represents only 12% of visitors. Facebook (Meta) audience insights confirm the 35-50 demo is more active on Facebook and YouTube than Instagram.
+The team adds a quality KPI to each channel: the share of visitors who book a free class, which is the gym's main Act interaction. The social ads bring many visits and very few bookings. Local search ads and a partnership with nearby employers bring fewer visits but many more bookings.
 
-**Audience:** They define one new segment: women 35-50 interested in skincare, anti-aging, and wellness. This segment searches Google for ingredient-specific queries and watches YouTube skincare routine videos.
+The Reach plan is rewritten around audience fit. Social ads are narrowed to people near each location, local search gets more budget, and the employer partnership becomes a standing earned channel. Total visits fall, and class bookings rise.
 
-**Channel mix:** (1) YouTube pre-roll and in-stream ads targeting skincare content viewers in the 35-50 demo; (2) Facebook awareness campaigns using video testimonials from customers in the target age range; (3) SEO content targeting ingredient-focused queries ('retinol for mature skin,' 'best peptide serums').
+## A B2B analytics start-up builds owned Reach
 
-**Optimization cycle:** After 3 weeks, YouTube delivers 2x the traffic volume at 40% lower CPM than Facebook. Facebook engagement is strong but reach is limited. The team shifts 60% of budget to YouTube, maintains 25% on Facebook, and allocates 15% to boosting top-performing SEO content through paid distribution.
+**Scenario:**
 
-**Funnel connection:** All awareness-stage visitors are cookied for retargeting. YouTube viewers who watch 50%+ of video ads are served Act-stage product education ads. Within 6 weeks, the 35-50 demographic grows from 12% to 23% of total site traffic, and the Reach-to-Act conversion rate for this segment outperforms the original 25-34 segment by 18%.
+Illustrative scenario: a young B2B analytics company relies entirely on paid search. Costs per click keep rising, and awareness of the brand is low.
+
+**Walkthrough:**
+
+The Reach plan adds an owned channel that compounds: a series of practical guides on problems the target audience searches for, each linking to a free template as the next step. The founders also pitch talks to two industry events as earned and offline Reach.
+
+Paid search continues for the highest-intent terms while the content builds. The team tracks brand searches and the share of guide readers who download a template, and reviews both monthly alongside paid search costs.
+
+## A local bakery connects offline Reach to digital
+
+**Scenario:**
+
+Illustrative scenario: a bakery with two shops runs a stall at weekend markets, which reaches many people who never visit the shops or the website.
+
+**Walkthrough:**
+
+The owner treats the market stall as an offline Reach channel and gives it a next step: a card with a short link to a pre-order page and a newsletter sign-up. The link is tagged so visits from the cards can be counted.
+
+After a few weekends, the tagged visits and sign-ups show that the stall is the bakery's strongest source of new newsletter subscribers. The owner keeps the stall, adds the card to every bag sold there, and plans seasonal content for the newsletter to move those subscribers toward pre-orders.

@@ -1,25 +1,21 @@
-# FAQ: Setting KPIs and Metrics Across Each RACE Stage
+# FAQ: RACE Framework KPIs
 
-## How many KPIs should I set for each RACE stage?
+## How many KPIs should each RACE stage have?
 
-Aim for 2-4 primary KPIs per stage. Fewer than two makes it hard to get a complete picture; more than four creates noise and dilutes focus. You can track additional secondary metrics for diagnostic purposes, but primary KPIs should be limited to what you actively optimize against.
+Keep it small. Smart Insights' RACE dashboard reports four metrics for each stage, which is a sensible ceiling for the headline set. Choose one headline KPI per stage and a few supporting ones. Keep other metrics on a diagnostic list you open only when a headline number moves.
 
-## What's the difference between a KPI and a metric in the RACE Framework?
+## What is the difference between a metric and a KPI?
 
-A metric is any measurable data point (e.g., page views, sessions). A KPI is a metric that has been tied to a specific business objective with a defined target. In customer journey analysis, all KPIs are metrics, but not all metrics are KPIs—only the ones that directly indicate progress toward a RACE stage objective qualify.
+A metric is any number you can measure, such as page views. A KPI is a metric tied to a specific objective, with a baseline, a target and a date. Every KPI is a metric, but most metrics should never become KPIs. If a number would not change any decision, keep it out of the KPI set.
 
-## How often should I review RACE KPIs?
+## How often should RACE KPIs be reviewed?
 
-Review campaign-level metrics weekly, conduct stage-level deep dives monthly, and perform strategic KPI reassessment quarterly. The monthly review is the most critical—it's frequent enough to catch problems before they compound but infrequent enough to show meaningful trends.
+Monthly suits most teams, and it is the cadence Smart Insights designed its RACE dashboard around. Campaign owners may watch their own numbers more often. Revisit the KPI set itself, not just the values, at each planning cycle, because objectives change.
 
-## Can I use the same KPIs for B2B and B2C customer journey analysis?
+## Do B2B and B2C companies use the same RACE KPIs?
 
-The RACE stages apply to both, but specific KPIs differ. B2C often emphasizes e-commerce conversion rate and repeat purchase rate, while B2B focuses on MQL-to-SQL conversion, demo requests, and account expansion revenue. Always select KPIs that reflect your actual sales motion.
+They use the same stages with different KPIs. A retailer's Convert KPIs are usually orders and conversion rate. A B2B company's Convert KPIs are usually opportunities and closed deals in the CRM, often after an offline sales process. Choose KPIs that match how your customers actually buy.
 
-## What tools do I need to track RACE KPIs effectively?
+## How do I set a target when there is no baseline?
 
-At minimum, you need a web analytics platform (Google Analytics 4), an advertising platform's native reporting, and a CRM or email platform. For dashboarding, Google Looker Studio is free and integrates with most sources. Enterprise teams may use Tableau, HubSpot, or Salesforce dashboards.
-
-## How do RACE KPIs fit into broader customer journey analysis?
-
-RACE KPIs provide the quantitative layer of customer journey analysis. While journey maps show qualitative touchpoints and emotions, RACE KPIs measure whether each stage is performing. Together, they give you both the 'what's happening' (KPIs) and the 'why it's happening' (journey insights), enabling targeted optimization.
+Track the KPI for one full period first, and set the target from that. If you must set a target earlier, label it provisional and revisit it after the first review. Do not borrow a number from another company or an industry report without checking that it measures the same thing in the same way.

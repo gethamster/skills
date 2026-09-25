@@ -1,37 +1,37 @@
-# Examples: Running Structured Testing and Verification Phases
+# Examples: Running Waterfall Testing Phases from Unit to Acceptance
 
-## Example: Testing a Payroll System Migration Using the Waterfall Model
-
-**Scenario:**
-
-A mid-size company is migrating from a legacy payroll system to a new platform. The waterfall model was chosen because requirements are stable (payroll calculations are governed by tax law), the system must pass a compliance audit, and the deployment date aligns with the start of a new tax quarter. Development is complete, and the project enters the testing phase with 247 documented requirements.
-
-**Walkthrough:**
-
-The test lead creates a Test Strategy specifying four testing levels with the following approach:
-
-**Unit Testing (2 weeks):** 412 unit test cases validate individual calculation modules — gross pay, federal tax withholding, state tax, deductions, overtime. Entry criteria: all modules code-reviewed and deployed to the unit test environment. Exit criteria: 100% of unit tests pass, zero Critical defects. Result: 8 defects found (3 High — incorrect overtime boundary calculation for salaried exempt employees, 5 Medium). All resolved and retested.
-
-**Integration Testing (1.5 weeks):** 89 integration test cases verify data flows between modules — employee master data feeding into calculation engines, calculation results flowing to the general ledger export, and the tax filing interface. A Critical defect is discovered: the state tax module truncates decimal places when passing data to the GL export, causing penny-level rounding errors that compound across thousands of employees. Defect is fixed, retested, and regression tests confirm no side effects.
-
-**System Testing (3 weeks):** 534 test cases covering end-to-end payroll runs for different employee types, edge cases (new hires mid-pay-period, terminations, retroactive adjustments), performance testing with 10,000 employee records, and security testing of role-based access controls. The RTM is updated daily. 22 defects are found — 1 Critical (system timeout during large batch processing, resolved by optimizing a database query), 6 High, 15 Medium. All Critical and High defects are resolved. Medium defects have documented workarounds.
-
-**Acceptance Testing (1 week):** The payroll manager and HR director execute 45 UAT scenarios using anonymized copies of real employee data. They validate that pay stubs look correct, tax withholdings match manual calculations, and reports satisfy audit requirements. 3 Medium defects are logged (formatting issues on reports). UAT sign-off is obtained.
-
-The Test Summary Report shows: 247/247 requirements traced to test cases, 1,080 test cases executed, 34 total defects found and resolved, 3 remaining Medium defects accepted as known issues with a patch scheduled for the following month. The phase gate review approves deployment.
-
-## Example: Acceptance Testing a Regulated Medical Device in a Waterfall Model Project
+## Claims processing system for an insurer
 
 **Scenario:**
 
-A medical device company is developing embedded software for a patient monitoring system. FDA regulations require documented evidence of verification and validation following a waterfall model lifecycle. There are 182 requirements, 43 of which are safety-critical.
+Illustrative scenario: a team is delivering a new claims processing system under a contract that names acceptance testing by the insurer's claims staff as the release condition.
 
 **Walkthrough:**
 
-The test team creates a separate test plan for safety-critical requirements with enhanced rigor. The RTM flags all 43 safety-critical requirements with a 'Safety' tag, and each receives at minimum three test cases: one positive, one negative, and one boundary condition test.
+The test lead writes the test plan during design, with four levels and entry and exit criteria for each. The traceability matrix links every requirement to at least one system test and, for business rules, to an acceptance test agreed with the claims manager.
 
-Unit testing uses code coverage tools to demonstrate that safety-critical modules achieve 100% branch coverage (compared to 80% for non-safety modules). Integration testing includes fault injection — deliberately simulating sensor failures, communication dropouts, and corrupt data packets to verify the system degrades safely.
+System testing reveals that one rule about partial payments behaves as specified but produces results the claims staff would not accept. The defect is raised as a change request because it changes an approved requirement. After the change is approved and implemented, regression tests run on the payment module, and acceptance testing proceeds with the updated case. The test summary shows full coverage and no open severe defects, and the insurer signs acceptance.
 
-System testing includes a 72-hour continuous operation test monitoring for memory leaks, timing drift, and alarm accuracy. Acceptance testing is conducted with clinical staff in a simulated hospital environment.
+## Firmware update for a medical device accessory
 
-The Test Summary Report becomes a key artifact for the FDA 510(k) submission. The RTM serves as the primary evidence that every requirement has been verified. Defect reports demonstrate that all safety-related defects were resolved and retested. The auditor can trace from any requirement to its test cases, test results, and any associated defects — this traceability is what makes the waterfall model's structured testing phase valuable in regulated industries.
+**Scenario:**
+
+Illustrative scenario: a small device company is releasing a firmware update for a charging accessory. Its quality system requires documented verification of every requirement.
+
+**Walkthrough:**
+
+The team pairs each design document with its test level, following the V-model: module designs with unit tests, the architecture with integration tests, the system specification with system tests. Unit tests are reviewed by a second engineer, and every requirement in the matrix points to a test record.
+
+At the test readiness review, the build is stable but one test fixture is not calibrated. The review holds system testing until calibration is done, because results from an uncalibrated fixture would not count as evidence. Testing starts a few days later and the records go straight into the quality file.
+
+## Internal HR portal
+
+**Scenario:**
+
+Illustrative scenario: an internal team is replacing an HR self-service portal. Earlier phases slipped, and management asks whether testing can be shortened.
+
+**Walkthrough:**
+
+The test lead shows the traceability matrix and which requirements would go untested if the window were cut. Several concern payroll data, where a defect would affect every employee. The sponsor chooses to move the release date and keep the full test window for those areas.
+
+To save some time safely, the team runs lower-risk tests for cosmetic requirements in parallel with system testing of the payroll features. The test summary reports the parallel approach openly so the gate can take it into account.

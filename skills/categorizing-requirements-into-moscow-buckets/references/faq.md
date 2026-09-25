@@ -1,25 +1,21 @@
-# FAQ: Categorizing Requirements into Must, Should, Could, and Won't Have
+# FAQ: Categorizing Requirements into MoSCoW Categories
 
-## What is the difference between must have and should have in MoSCoW?
+## What is the difference between a Must have and a Should have?
 
-A must have means the product literally cannot launch or function without it — there's no workaround. A should have is important and its absence causes pain, but a workaround exists that keeps the product viable for this release. The key test: if you can describe a functional (even if imperfect) product without the feature, it's a should have.
+A Must have belongs to the Minimum Usable SubseT: without it there is no point delivering on the target date, or the result would be illegal, unsafe or not viable. A Should have is important but not vital, and the solution still works without it, perhaps with a workaround. If any workaround exists, even a manual one, DSDM says the requirement is not a Must. Ask what happens if the item is missing and let the answer decide.
 
-## How many requirements should be in each must have, should have, could have, and won't have category?
+## How do I decide between Should have and Could have?
 
-There's no fixed number, but a healthy effort distribution is roughly 60% must have, 20% should have, and 20% could have of your available capacity. If must haves exceed 60% of effort, you're likely miscategorizing or your scope is too ambitious for the timeline.
+DSDM separates them by how much pain the missing requirement causes, measured in business value or the number of people affected. Because that line is subjective, agree a concrete rule before categorizing, such as "affects every user weekly" for a Should. Comparing the cost of the workaround with the cost of building the item now also helps. Record the rule so later disputes refer to it.
 
-## What does 'won't have' mean in MoSCoW prioritization?
+## Does Won't have mean the requirement is rejected?
 
-Won't have means 'won't have this time' — it's an explicit deferral, not a rejection. The requirement is acknowledged as valid but out of scope for the current release. It should be documented with a reason for deferral and revisited in the next planning cycle.
+No. In DSDM it means "Won't have this time": the team has agreed not to deliver it in this timeframe. The item stays on the list to make the scope clear and to stop it being reintroduced informally. It becomes a candidate again when the next increment is planned.
 
-## How do I stop stakeholders from putting everything in the must have category?
+## Can one requirement have different categories?
 
-Apply the binary 'launch failure' test: ask stakeholders to describe what happens if the product ships without that feature. If they can articulate a functional (even painful) interim state, it's not a must have. Also enforce the 60% effort cap — if must haves exceed it, force a re-evaluation of each item against the strict criteria.
+Yes. DSDM gives requirements priorities at three levels: the project, the Project Increment and the Timebox. An archive feature can be a Must before the project ends and a Could for the first increment. Record the level each category applies to so nobody reads a timebox priority as a project priority.
 
-## Can a requirement change MoSCoW categories over time?
+## What if almost everything ends up as a Must?
 
-Absolutely. MoSCoW categories are tied to a specific release context, not permanent labels. A could have might become a must have when regulations change or a competitor launches that feature. Re-categorize whenever constraints, timelines, or strategic priorities shift significantly.
-
-## How is MoSCoW different from simply ranking requirements by priority?
-
-MoSCoW uses qualitatively distinct categories rather than a linear ranking. Instead of debating whether something is priority #7 or #8, you ask binary questions: 'Can we launch without it?' This makes decisions faster and reduces subjective arguments. For numerical scoring approaches, see how MoSCoW compares with frameworks like RICE and ICE.
+The DSDM handbook reads this as a sign that the requirements have not been broken down enough. Split the largest Musts into parts and run the consequence test on each part. Check each Must's dependencies too, since a Must cannot rely on a lower-priority item. If the Must effort is still above the level the team can guarantee, the timeframe or the objective needs to change.
