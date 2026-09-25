@@ -13,7 +13,7 @@ metadata:
 
 # David Bain SEO: What the Method Is and What It Isn't
 
-> Created by **David Bain**
+> Created by **David Bain** - [https://davidbain.com](https://davidbain.com)
 
 ## Overview
 
@@ -131,13 +131,13 @@ The more specific the queries, the harder they are to track. The same [programma
 
 This method includes the following skills:
 
-- [Auditing Topical Gaps Against Competitor Sites](skills/auditing-topical-gaps-against-competitors/SKILL.md) — How to perform a systematic content gap analysis comparing your topical coverage to competitors so you can identify missing sub-topics, questions, and use cases to target.
-- [Designing FAQ-Based Site Architecture for SEO](skills/designing-faq-based-site-architecture/SKILL.md) — How to structure your entire website around question-and-answer pages and FAQ hubs so that each URL targets a specific user question and earns featured snippets.
-- [Building Topical Authority Maps for Niche Domination](skills/building-topical-authority-maps/SKILL.md) — How to research, outline, and structure a comprehensive topical authority map that covers every sub-topic within your niche to signal expertise to search engines.
-- [Clustering Long-Tail Use-Case Keywords into Content Silos](skills/clustering-long-tail-use-case-keywords/SKILL.md) — How to identify and group long-tail, intent-specific keyword variations into use-case clusters that each target a distinct searcher problem or scenario.
-- [Executing Brute-Force Niche Content Targeting at Scale](skills/executing-brute-force-niche-targeting/SKILL.md) — How to systematically produce high volumes of tightly focused pages that blanket a niche with every possible keyword permutation and use-case variation.
-- [Creating SEO Strategy Templates for Full Topical Coverage](skills/creating-seo-strategy-templates-for-topical-coverage/SKILL.md) — How to build reusable planning templates and spreadsheets that track topic clusters, content gaps, publishing cadence, and internal linking across a topical authority campaign.
-- [Implementing Internal Linking Structures Across Topic Clusters](skills/implementing-internal-linking-for-topic-clusters/SKILL.md) — How to design and maintain a strategic internal linking framework that connects pillar pages, cluster posts, and FAQ pages to consolidate topical relevance and PageRank flow.
+- [Auditing Topical Gaps Against Competitor Sites](../../skills/auditing-topical-gaps-against-competitors/SKILL.md): How to perform a systematic content gap analysis comparing your topical coverage to competitors so you can identify missing sub-topics, questions, and use cases to target.
+- [Designing FAQ-Based Site Architecture for SEO](../../skills/designing-faq-based-site-architecture/SKILL.md): How to structure your entire website around question-and-answer pages and FAQ hubs so that each URL targets a specific user question and earns featured snippets.
+- [Building Topical Authority Maps for Niche Domination](../../skills/building-topical-authority-maps/SKILL.md): How to research, outline, and structure a comprehensive topical authority map that covers every sub-topic within your niche to signal expertise to search engines.
+- [Clustering Long-Tail Use-Case Keywords into Content Silos](../../skills/clustering-long-tail-use-case-keywords/SKILL.md): How to identify and group long-tail, intent-specific keyword variations into use-case clusters that each target a distinct searcher problem or scenario.
+- [Executing Brute-Force Niche Content Targeting at Scale](../../skills/executing-brute-force-niche-targeting/SKILL.md): How to systematically produce high volumes of tightly focused pages that blanket a niche with every possible keyword permutation and use-case variation.
+- [Creating SEO Strategy Templates for Full Topical Coverage](../../skills/creating-seo-strategy-templates-for-topical-coverage/SKILL.md): How to build reusable planning templates and spreadsheets that track topic clusters, content gaps, publishing cadence, and internal linking across a topical authority campaign.
+- [Implementing Internal Linking Structures Across Topic Clusters](../../skills/implementing-internal-linking-for-topic-clusters/SKILL.md): How to design and maintain a strategic internal linking framework that connects pillar pages, cluster posts, and FAQ pages to consolidate topical relevance and PageRank flow.
 
 ## FAQ
 
@@ -168,7 +168,7 @@ Published sources give no timeline for this method. Content coverage generally c
 ## Sources
 
 - [David Bain - Podcast Producer \& Content Marketing Expert](https://davidbain.com)
-- [Learn How to Tackle Generative AI in Search – With Jason Barnard - The Brand SERP Guy](https://thebrandserpguy.com/talks/others/learn-how-to-tackle-generative-ai-in-search-with-jason-barnard)
+- [Learn How to Tackle Generative AI in Search - With Jason Barnard - The Brand SERP Guy](https://thebrandserpguy.com/talks/others/learn-how-to-tackle-generative-ai-in-search-with-jason-barnard)
 - [SEO in 2023 Preview](https://blog.majestic.com/training/seo-in-2023-preview)
 - [The Majestic SEO Podcast](https://blog.majestic.com/digital-marketing-webinars/the-majestic-seo-podcast)
 - [David Bain \| LinkedIn](https://linkedin.com/in/david-bain-seo)
