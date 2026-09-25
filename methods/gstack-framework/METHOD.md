@@ -1,174 +1,179 @@
 ---
-category: Development
+name: "gstack-framework"
+category: "Development"
+description: "The gstack framework is Garry Tan's open-source Claude Code skill pack that runs a sprint as slash commands: features, setup, gstack vs other frameworks."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The gstack Framework: Structured AI Coding with Specialist Skills and Multi-Agent Perspectives
+# gstack Framework: Garry Tan's Claude Code Skill Pack
 
-> Created by **Garry Tan** — [https://www.augmentcode.com/learn/garry-tan-gstack-claude-code](https://www.augmentcode.com/learn/garry-tan-gstack-claude-code)
+> Created by **Garry Tan** - [https://github.com/garrytan/gstack](https://github.com/garrytan/gstack)
 
 ## Overview
 
-Most developers working with AI coding agents hit the same wall. The first few sessions feel magical, producing working code from natural language prompts. But as projects grow beyond a single file or a weekend prototype, the lack of structure becomes obvious. Prompts get longer, context windows overflow, the agent forgets earlier decisions, and quality degrades in ways that are hard to diagnose. The gstack framework was created to solve exactly this problem: how do you impose a repeatable, opinionated workflow on top of AI coding agents so that the magic scales?
+The gstack framework is an open-source skill pack for Claude Code, written by Garry Tan, President and CEO of Y Combinator, and published in the [garrytan/gstack repository](https://github.com/garrytan/gstack). It turns a single coding agent into what the README calls a virtual engineering team: a CEO who rethinks the product, an eng manager who locks architecture, a designer, a staff-level reviewer, a QA lead who opens a real browser, a security officer and a release engineer. Each role is a slash command backed by a Markdown skill file. This page covers what the framework is, its features and phases, how to install it, and how gstack vs other frameworks compares when you are choosing how to structure AI-assisted coding.
 
-Garry Tan, best known as president and CEO of Y Combinator, released gstack as an open-source project in mid-2025. It was born from his own experience building software with Claude Code and other AI assistants. The core insight was that AI coding agents need the same kind of role clarity and phase discipline that human engineering teams rely on. Just as a well-run team has someone thinking about strategy, someone writing code, and someone testing it, an AI-assisted workflow benefits from explicitly switching between those perspectives. gstack encodes this idea into a concrete skill pack: 23 specialist skills organized around distinct development phases, plus 8 power tools for cross-cutting concerns like debugging, refactoring, and documentation.
+The pack is organized around a sprint. The README lists the order as Think, Plan, Build, Review, Test, Ship, Reflect, and states that "each skill feeds into the next." `/office-hours` writes a design doc that `/plan-ceo-review` reads, `/plan-eng-review` writes a test plan that `/qa` later picks up, and `/review` catches bugs that `/ship` checks are fixed. The chaining is the core idea. A single prompt carries one conversation, while gstack passes written artifacts from one role to the next so that later steps start from earlier decisions instead of re-deriving them.
 
-What makes gstack distinctive in the growing landscape of AI coding frameworks is its emphasis on multi-agent perspectives rather than multi-agent orchestration. Many frameworks try to run multiple AI agents simultaneously, coordinating them through message passing or shared memory. gstack takes a different approach. It keeps a single agent but shifts its persona and instruction set depending on the phase of work. When you invoke the CEO perspective, the agent thinks about scope, priorities, and tradeoffs. When you switch to the engineer perspective, it focuses on implementation details, code quality, and architecture. The QA perspective triggers adversarial thinking, edge case exploration, and test coverage analysis. This is closer to Edward de Bono's Six Thinking Hats than it is to a microservices architecture for AI.
+The skills themselves are ordinary Claude Code skills. Anthropic's [Claude Code skills documentation](https://code.claude.com/docs/en/skills) describes a skill as a `SKILL.md` file with YAML frontmatter and instructions, stored under `~/.claude/skills/` for personal use or `.claude/skills/` in a project, and invoked by typing its name as a slash command or loaded automatically when its description matches the task. gstack installs into `~/.claude/skills/gstack` and runs a `./setup` script that links each skill into place, according to its [CONTRIBUTING guide](https://github.com/garrytan/gstack/blob/main/CONTRIBUTING.md). The same guide notes that the `SKILL.md` files are generated from `.tmpl` templates, which is how one source produces variants for other agents.
 
-The framework ships as a set of markdown files following the Anthropic Agent Skills specification, which means it slots into Claude Code's native skill system. Skills are accessed through slash commands, making them discoverable and composable. You can invoke `/decide` to get the CEO perspective on a technical decision, then `/implement` to switch into engineering mode, then `/review` to run a QA pass. This gives developers a vocabulary for structuring their AI coding sessions instead of relying on ad-hoc prompting.
+The project moves quickly. The [gstack changelog](https://github.com/garrytan/gstack/blob/main/CHANGELOG.md) dates version 0.0.1 to 2026-03-11 and describes it as the initial release with five skills: `/plan-ceo-review`, `/plan-eng-review`, `/review`, `/ship` and `/browse`. [TechCrunch's March 2026 coverage](https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/) counted 13 skills a few days later. The current README describes "Twenty-three specialists and eight power tools, all slash commands, all Markdown, all free, MIT license," and its tables now list more commands than that headline, including iOS testing, documentation and memory skills. Treat any fixed skill count, including the ones on this page, as a snapshot and check the [repository README](https://github.com/garrytan/gstack) for the current list.
 
-gstack sits at the intersection of several trends: the rise of AI coding agents, the Anthropic skills ecosystem, and the broader movement toward "prompt engineering as software engineering." It is not a replacement for tools like Cursor, Copilot, or Windsurf. Instead, it layers on top of Claude Code to provide the workflow scaffolding those tools lack. Teams that have adopted it report that the biggest benefit is not the individual skills but the discipline of moving through phases, treating AI-assisted development as a structured process rather than a stream-of-consciousness conversation.
+Beyond the commands, gstack carries a written philosophy. Its [Builder Ethos](https://github.com/garrytan/gstack/blob/main/ETHOS.md) is injected into every workflow skill's preamble and sets three rules: do the complete thing when completeness is cheap ("Boil the Ocean"), search for existing solutions before building, and keep the user in charge ("AI models recommend. Users decide."). Those rules explain behavior you will see in practice, such as `/review` flagging shortcut implementations and `/autoplan` stopping to ask about taste decisions it will not settle on its own.
 
-Because it is MIT-licensed and built entirely in markdown, gstack is also designed to be forked and extended. Teams can add their own specialist skills, modify the perspective prompts to match their engineering culture, or integrate it with their existing development workflows. Hamster is one workspace where teams can run methods like gstack with AI agents, composing skills into repeatable workflows without building custom infrastructure. The framework's open nature means it evolves with the community, and the skill pack has already spawned variants tailored to specific languages, frameworks, and team sizes.
+gstack runs on more than Claude Code. The README says it works on ten AI coding agents and that `./setup --host` targets Codex, OpenCode, Cursor, Factory, Kiro and others ([install section](https://github.com/garrytan/gstack)). Each host is a small TypeScript config, per the [host guide](https://github.com/garrytan/gstack/blob/main/docs/ADDING_A_HOST.md). Claude Code is the primary host, and some features, such as the safety hooks, depend on Claude Code's hook system.
+
+Reception has been mixed in a useful way. Augment Code's [developer write-up](https://www.augmentcode.com/learn/garry-tan-gstack-claude-code) calls gstack "a structured bet that opinionated prompts, not custom tooling, are the right abstraction layer for AI-assisted development," and advises checking whether its opinions match yours. TechCrunch reported a vlogger who called it "a bunch of prompts" and summarized a common complaint that developers who use Claude Code already have their own versions. Both points are fair. gstack's value lies in the specific opinions its prompts encode and in the artifacts they hand to each other, so the test for a team is whether those opinions fit how it wants to work. Teams that keep methods like this in Hamster can store their own version of the sprint next to their plans so every agent session starts from it.
 
 ## Core Principles
 
-### Phase Discipline Over Continuous Prompting
+### The Skills Run in Sprint Order
 
-gstack's core claim is that AI coding sessions should move through distinct phases: decision-making, planning, implementation, and review. Each phase activates different skills and perspectives optimized for that kind of thinking. When teams skip phases, they tend to jump straight from a vague idea to code generation, which produces technically functional code that solves the wrong problem or ignores critical edge cases. The tradeoff is speed: enforcing phase transitions adds friction to the workflow, which feels unnecessary on small tasks but pays dividends on anything that takes more than an hour.
+gstack treats a feature as a sprint with a fixed order: think, plan, build, review, test, ship, reflect ([README](https://github.com/garrytan/gstack)). Each command owns one stage, so the question "what should the agent do now" becomes "which stage are we in." Skipping a stage is allowed, but it is a visible choice. When a session jumps from idea to code, the failures that the planning skills exist to catch show up later, in review or in production.
 
-### Perspective Shifting Instead of Multi-Agent Orchestration
+### Every Stage Leaves an Artifact for the Next
 
-Rather than running multiple AI agents in parallel, gstack shifts a single agent's persona and instruction set. This avoids the coordination overhead, context synchronization bugs, and cost multiplication that come with true multi-agent systems. The CEO perspective evaluates scope and priorities. The engineer perspective focuses on architecture and implementation.
+The skills communicate through files. `/office-hours` writes a design doc to `~/.gstack/projects/`, which `/plan-ceo-review` and `/plan-eng-review` read, and the engineering review writes a test plan that `/qa` uses ([skill deep dives](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). This keeps each step grounded in earlier decisions without one enormous conversation. If a later skill behaves as though it has no context, the usual cause is that the earlier artifact was never written or approved.
 
-The QA perspective stress-tests assumptions and coverage. When teams rely on a single undifferentiated prompt for all of these concerns, the agent tends to optimize for the most recent instruction, losing sight of the broader context. Perspective shifting makes the tradeoffs explicit.
+### Rethink the Problem Before Building It
 
-### Skills as Composable Units
+The first two skills are there to challenge the request. `/office-hours` asks six forcing questions in startup mode and pushes back on the framing, and `/plan-ceo-review` asks what the "10-star product" inside the request would be, with four scope modes from expansion to reduction ([skill deep dives](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). The reframe is where a feature request can turn into a different, better product. The scope modes also work in the other direction, so you can ask the CEO review to cut a plan down to its minimum.
 
-Each of the 23 specialist skills is a self-contained markdown file that can be invoked independently or chained together. This composability means teams are not locked into a rigid workflow. A senior engineer might skip the planning skills and jump straight to implementation and review. A less experienced developer might use the full sequence.
+### Review for What CI Cannot Catch
 
-When skills are bundled into monolithic prompts instead of composable units, the agent receives too much instruction at once, diluting the quality of each response. The modular design also makes it possible to add, remove, or customize skills without breaking the rest of the pack.
+`/review` is written as a "paranoid staff engineer" pass that looks for failures tests miss, such as N+1 queries, race conditions, trust-boundary mistakes and forgotten enum handlers ([review deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). It fixes obvious mechanical issues itself and asks about ambiguous ones. The Review Readiness Dashboard tracks which reviews ran, and the engineering review is the only required gate by default. CEO and design reviews are informational.
 
-### Slash Commands as Developer Interface
+### Completeness Is Cheap, So Do the Complete Thing
 
-gstack uses slash commands as its primary interface, making skills discoverable and memorable. Instead of writing multi-paragraph prompts, developers type `/decide`, `/plan`, `/implement`, or `/review`. This lowers the barrier to using the framework consistently. When AI workflows rely on copy-pasted prompt templates or external documentation, adoption drops because the friction of finding and applying the right prompt exceeds the perceived benefit.
+The Builder Ethos argues that AI makes the marginal cost of completeness small, so when the complete implementation costs minutes more than the shortcut, you should build the complete one ([ETHOS.md](https://github.com/garrytan/gstack/blob/main/ETHOS.md)). The ethos calls each bounded unit of work a "lake" and keeps genuinely unrelated work out of scope. In practice this shows up as `/ship` bootstrapping a test framework when a project has none and `/review` flagging [80% solutions where the complete version is cheap](https://github.com/garrytan/gstack/blob/main/docs/skills.md). If you disagree with this principle for a given codebase, expect to push back on those suggestions.
 
-Slash commands turn the framework into something that feels like a CLI tool rather than a prompt library. The tradeoff is that slash commands require a compatible agent environment, which currently means Claude Code or similar systems that support the Anthropic skills spec.
+### The User Decides
 
-### Opinionated Defaults, Open Customization
+"AI models recommend. Users decide." is the ethos rule that overrides the others ([ETHOS.md](https://github.com/garrytan/gstack/blob/main/ETHOS.md)). Two models agreeing, for example Claude and a `/codex` second opinion, counts as a strong signal and still goes to the user before it changes their stated direction. `/autoplan` follows the same rule: it auto-resolves routine questions and saves taste decisions for a final approval gate ([autoplan deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)).
 
-gstack ships with strong opinions about how development should flow: decisions before code, QA perspective on every change, explicit tradeoff analysis before architectural choices. These defaults encode lessons from real projects and prevent the most common failure modes of AI-assisted development. But the MIT license and plain-markdown format mean every opinion can be overridden. Teams that disagree with gstack's review process can modify the QA skill.
+### Guardrails Prevent Accidents
 
-Teams with domain-specific requirements can add new specialist skills. When frameworks are either too opinionated to customize or too flexible to provide guidance, they fail. gstack tries to thread the needle by being prescriptive out of the box and permissive under the hood.
+The safety commands `/careful`, `/freeze` and `/guard` use Claude Code's PreToolUse hooks to warn before destructive commands and to restrict edits to one directory ([safety section](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). The documentation states their limits plainly: `/freeze` blocks the Edit and Write tools only, and the guardrails are "accident prevention, not access control." Use them to keep a debugging session contained. Do not rely on them as a security boundary.
 
-### Context Window Management as a First-Class Concern
+## gstack vs Other Frameworks
 
-AI coding agents have finite context windows, and gstack treats this limitation as a design constraint rather than an afterthought. Each skill is scoped to fit within a reasonable context budget, and the phase structure naturally segments work into chunks that don't overflow the window. When developers ignore context limits, they end up in sessions where the agent has forgotten earlier decisions, produces contradictory code, or hallucinates function signatures. gstack's power tools include explicit mechanisms for summarizing context, checkpointing progress, and resuming work across sessions.
+Most alternatives to gstack customize how an agent writes code. gstack adds a sequence of roles on top. The table compares the mechanisms each tool documents.
 
-Skipping this discipline is the single most common reason AI coding sessions degrade on longer tasks.
+| Approach | What you write | How it loads | What it adds |
+|---|---|---|---|
+| [gstack](https://github.com/garrytan/gstack) | Installed skill pack | Slash commands per role | Sprint order, chained artifacts, review gates |
+| [Claude Code skills](https://code.claude.com/docs/en/skills) | Your own SKILL.md files | Slash command or automatic match | Reusable procedures you define |
+| [Cursor rules](https://cursor.com/docs/context/rules) | .mdc files in .cursor/rules | Always, by file, by agent, or manual | Standing guidance in the model context |
+| [Aider conventions](https://aider.chat/docs/usage/conventions.html) | A CONVENTIONS.md file | Loaded read-only with /read | Coding style and library preferences |
 
-### Quality Gates Between Phases
-
-Each phase transition in gstack includes an implicit quality gate. Before moving from planning to implementation, the plan should be reviewed. Before moving from implementation to deployment, the code should pass the QA perspective. These gates catch errors at the cheapest point in the lifecycle: a flawed plan is cheaper to fix than flawed code, and flawed code is cheaper to fix than a flawed deployment.
-
-Teams that skip quality gates in favor of speed often find they spend more total time debugging and reworking than they would have spent on the review step. The tradeoff is real, though. Strict gates slow down trivial changes that genuinely don't need review.
+The approaches combine. gstack's skills are themselves Agent Skills in the [open format Anthropic released](https://agentskills.io), so they sit next to your own skills, and a rules or conventions file can carry project style while gstack carries the workflow. For a structured evaluation of whether gstack fits your team, see [Evaluating gstack Against Your Current AI Coding Setup](../../skills/comparing-gstack-to-other-ai-coding-frameworks/SKILL.md).
 
 ## Steps
 
-1. **Step 1: Install the gstack Skill Pack**
-   Download or clone the gstack repository and install it into your Claude Code environment. The skill pack consists of markdown files organized by category, following the Anthropic Agent Skills specification. After installation, verify that slash commands are recognized by invoking a simple one like `/help` or `/skills`. A successful installation means all 23 specialist skills and 8 power tools are loaded and accessible.
+1. **Install gstack and register the skills**
+   Check the requirements first: the [README](https://github.com/garrytan/gstack) lists Claude Code, Git and Bun, plus Node.js on Windows. Clone the repository into `~/.claude/skills/gstack` and run `./setup`, then add a gstack section to your project's CLAUDE.md that lists the available skills, as the README's install prompt describes. For a shared repository, the README recommends team mode, which commits a small bootstrap so teammates get gstack and an hourly auto-update check. If a skill does not appear, rerunning `./setup` is the README's first troubleshooting step. See [the gstack setup guide](../../skills/installing-and-configuring-gstack-skill-pack/SKILL.md) for the full procedure.
 
-The most common installation issue is directory structure: the skills must be in the path that Claude Code expects, which varies depending on whether you are using a project-level or global configuration. Check the README for your specific setup. For detailed installation instructions, see [Installing and Configuring the gstack Skill Pack](https://tryhamster.com/skills/installing-and-configuring-gstack-skill-pack).
+2. **Think with /office-hours**
+   Start a new feature or product by describing it to `/office-hours`. In startup mode it asks forcing questions about demand, the status quo and the narrowest wedge, challenges your premises, and proposes two or three implementation approaches with effort estimates ([office hours deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). Builder mode is gentler and suits side projects. The output is a design doc that the planning skills read. Accept, reject or adjust each premise, because accepted premises become load-bearing in the doc.
 
-2. **Step 2: Understand the Skill Map and Phases**
-   Before using gstack, spend time reading the skill map to understand which skills belong to which phase. The 23 skills are not random. They are organized into decision-making, planning, implementation, review, and maintenance phases. Each phase has 3-6 skills that activate different perspectives and address different concerns.
+3. **Plan with the CEO and engineering reviews**
+   Run `/plan-ceo-review` to challenge scope, choosing expansion, selective expansion, hold scope or reduction. Then run `/plan-eng-review` to lock architecture, data flow, edge cases and tests, with diagrams that force hidden assumptions into the open ([skill deep dives](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). Add `/plan-design-review` for user-facing UI and `/plan-devex-review` for APIs, CLIs and SDKs. If you want the whole gauntlet in one pass, `/autoplan` runs CEO, design, DX and engineering review in sequence, engineering last, and asks you only about taste decisions.
 
-Knowing the map prevents the common mistake of reaching for implementation skills before the decision and planning phases are complete. It also helps you identify which skills you can skip for simpler tasks and which are essential for complex ones. For a walkthrough of all 23 skills, see [Navigating gstack's 23 Specialist Skills via Slash Commands](https://tryhamster.com/skills/navigating-gstack-slash-commands-and-specialist-skills).
+4. **Build against the approved plan**
+   Approve the plan and let the agent implement it. gstack has no separate build command in its sprint table; the plan and its test plan are what keep implementation on track. When something breaks and the cause is unclear, use `/investigate`, whose "Iron Law" is no fixes without root-cause investigation, and which stops to question the architecture after three failed fixes ([investigate deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). It also freezes edits to the module under investigation. Use `/careful` or `/guard` when the work touches production.
 
-3. **Step 3: Frame the Problem with the CEO Perspective**
-   Start every non-trivial coding session by invoking the CEO perspective. This shifts the agent into strategic thinking mode, where it evaluates what problem you are solving, who it is for, what the constraints are, and what success looks like. The output is a problem framing document, not code. This step catches the most expensive class of errors: building the wrong thing.
+5. **Review the branch**
+   Run `/review` on the branch before shipping. It audits for production failures that pass CI, auto-fixes mechanical issues and asks about ambiguous ones, and flags completeness gaps. For a second model's view, `/codex` runs an independent OpenAI Codex review in review, challenge or consult mode and reports which findings the two reviewers share ([codex deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). Findings that both reviewers raise deserve the most attention. The final call on each finding stays with you.
 
-You will know you have done this step well when the agent produces a clear problem statement, explicit constraints, and a prioritized list of requirements. Watch out for the temptation to skip this step because you already know what you want to build. The CEO perspective often surfaces assumptions you have not examined. See [Using Multi-Agent Perspectives (CEO, Engineer, QA) in Development](https://tryhamster.com/skills/using-multi-agent-perspectives-for-development) for deeper guidance on each perspective.
+6. **Test in a real browser with /qa**
+   Run `/qa` on a feature branch or a staging URL. On a feature branch it reads the diff, identifies the affected pages and tests them; other modes run a full exploration, a quick smoke test, or a regression comparison against a baseline ([qa deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). Each bug it fixes gets a regression test. Use `/qa-only` when you want a report without code changes.
 
-4. **Step 4: Plan the Implementation**
-   With the problem framed, invoke the planning skills to produce an implementation plan. This includes breaking the work into discrete tasks, identifying dependencies, choosing architectural patterns, and specifying interfaces between components. The plan should be concrete enough that each task can be implemented in a single focused session without requiring the agent to re-derive context. A good plan includes file names, function signatures, and data flow descriptions.
+7. **Ship, deploy and document**
+   `/ship` syncs main, runs tests, audits coverage, pushes and opens the pull request, and it bootstraps a test framework if the project lacks one ([ship deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). It checks the Review Readiness Dashboard first and asks, without blocking, if the engineering review is missing. `/land-and-deploy` merges, waits for CI and the deploy, and verifies production, with a dry run on first use. `/canary` watches production afterward and `/document-release` updates docs that drifted.
 
-' The most common failure mode at this step is over-planning: producing a 20-page document for a feature that needs 50 lines of code. Scale the planning effort to the complexity of the task. See [Structuring AI Coding Sessions from Decision-Making to Execution](https://tryhamster.com/skills/structuring-ai-coding-sessions-with-gstack-phases) for phase-specific guidance.
-
-5. **Step 5: Implement with the Engineer Perspective**
-   Switch to the engineer perspective and work through the plan task by task. Each task should be a focused interaction with the agent, scoped to fit within the context window. The engineer perspective emphasizes code quality, naming conventions, error handling, and adherence to the architectural decisions made in the planning phase. After each task, checkpoint the progress, either by committing the code or by summarizing the state for the next session.
-
-Watch for context drift: if the agent starts producing code that contradicts earlier decisions, it has likely lost context and you need to re-establish it. The power tools for context management and checkpointing are designed for exactly this situation. See [Orchestrating gstack's 8 Power Tools in Complex Workflows](https://tryhamster.com/skills/orchestrating-power-tools-in-gstack-workflows) for tool-specific guidance.
-
-6. **Step 6: Review with the QA Perspective**
-   Before considering any unit of work complete, invoke the QA perspective. This shifts the agent into adversarial mode, where it looks for edge cases, missing error handling, security vulnerabilities, performance bottlenecks, and test coverage gaps. The QA perspective often catches issues that the engineer perspective misses because the engineer is optimizing for the happy path. A good QA review produces a specific list of issues ranked by severity, not a generic 'looks good' response.
-
-If the QA perspective finds no issues, that is more likely a sign that the review was too shallow than that the code is perfect. Push back and ask for deeper analysis. One common gotcha is running QA only at the end of a large implementation rather than after each meaningful chunk, which concentrates risk and makes fixes more expensive.
-
-7. **Step 7: Iterate and Customize**
-   After your first few sessions with gstack, review which skills you used most, which you skipped, and where the workflow felt forced. This is the right time to customize the framework for your team's context. , a security review skill for fintech, a compliance check skill for healthcare). Modify existing skills that don't match your coding standards.
-
-Remove skills that add friction without value for your specific projects. The framework is designed to be forked, and teams that treat it as immutable tend to abandon it when it doesn't fit their workflow perfectly. See [Customizing and Extending gstack with Your Own Skills](https://tryhamster.com/skills/customizing-and-extending-gstack-skills) for extension patterns.
+8. **Reflect and carry lessons forward**
+   Run `/retro` at the end of the week for a commit-based retrospective with per-person breakdowns and test health trends ([retro deep dive](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). Use `/learn` to review, prune and export the project learnings gstack records across sessions. Then decide which skills your team used, which it skipped, and whether any need changing. The pack is MIT licensed and designed to be forked, which [Customizing and Extending gstack](../../skills/customizing-and-extending-gstack-skills/SKILL.md) covers.
 
 ## When to Use
 
-- When you are building a codebase that has grown beyond a single file or module and your AI coding sessions are starting to produce inconsistent results because the agent loses track of earlier architectural decisions, naming conventions, or design constraints established in previous sessions.
-- When your team has multiple developers using Claude Code or similar AI agents, and you need a shared vocabulary and process so that AI-generated code follows consistent patterns regardless of which developer prompted it, reducing the integration friction that comes from everyone prompting in their own style.
-- When you are making consequential technical decisions, such as choosing a database, selecting an API architecture, or deciding between build-vs-buy, and you want to systematically evaluate those decisions from multiple perspectives (business value, technical feasibility, testing complexity) before committing to implementation.
-- When you are onboarding a new developer or a less experienced team member who needs guardrails for AI-assisted development, giving them a structured workflow that prevents the common failure mode of generating code without thinking through requirements, edge cases, or testability first.
-- When your AI coding workflow has become a stream-of-consciousness conversation where you prompt, get code, prompt again to fix bugs, prompt again to add features, and the session drifts further from any coherent plan, resulting in spaghetti code that works but cannot be maintained or extended.
-- When you need to produce auditable development artifacts, such as decision logs, implementation plans, and review checklists, for compliance, team communication, or your own future reference, and you want those artifacts generated as a natural byproduct of the workflow rather than as an afterthought.
+- You are a founder or technical lead who ships product code with Claude Code and wants review, QA and release steps to run on every change, which is the audience the [README](https://github.com/garrytan/gstack) names first.
+- You are new to Claude Code and a blank prompt gives you inconsistent results. Structured roles give each session a defined starting point and a defined output.
+- A feature idea is still fuzzy. `/office-hours` and `/plan-ceo-review` are built to reframe and rescope requests before any code exists, which is cheaper than discovering the wrong scope in review.
+- You run several agent sessions in parallel. The README argues that a shared process keeps each session on a known stage, and it describes running many sprints at once in Conductor.
+- Your web app has a staging URL and little automated coverage. `/qa` and `/ship` add browser testing, regression tests and test bootstrapping as part of the release path.
 
 ## When Not to Use
 
-- When you are writing a quick script, a one-off automation, or a prototype that will be thrown away within a week. gstack's phase discipline adds overhead that is not justified for disposable code. The framework assumes you care about maintainability, and if you genuinely don't, the structure becomes bureaucratic friction without a payoff.
-- When you are not using Claude Code or an agent that supports the Anthropic Agent Skills specification. gstack's slash commands and skill loading depend on a compatible runtime. Trying to replicate it by manually copy-pasting skill prompts into ChatGPT or Copilot loses the composability and discoverability that make the framework useful. You could adapt the ideas, but the tooling won't transfer.
-- When your team has deeply established development workflows with existing code review processes, CI/CD pipelines, and architectural decision records. Layering gstack on top of a mature engineering process can create redundant checkpoints. In this case, you may benefit from cherry-picking specific skills (like the QA perspective) rather than adopting the full framework.
-- When you are working in a domain where AI code generation itself is not viable, such as safety-critical embedded systems, regulated medical device software, or classified environments where AI-generated code is not permitted by policy. gstack structures the AI workflow but does not change the fundamental limitations of AI-generated code in high-stakes contexts.
-- When your primary bottleneck is not workflow structure but domain knowledge. If the AI agent cannot produce correct code because the problem domain is highly specialized (custom hardware drivers, niche scientific computing, proprietary protocols), adding a workflow framework on top of an agent that lacks the underlying knowledge will not fix the core issue.
+- The change is trivial. The README's own example says a typo fix in a README needs no gstack, and running the planning chain on it only adds questions.
+- Your team already has a mature review, testing and release pipeline that the gstack steps would duplicate. Adopt single skills such as `/review` or `/qa` instead of the full sprint.
+- You need guardrails to act as a security boundary. The documentation describes `/careful` and `/freeze` as accident prevention, and `/freeze` does not stop shell commands from editing files.
+- You disagree with the pack's opinions, such as preferring the complete implementation by default. Augment Code's review calls gstack opinionated and workflow-heavy, and fighting the defaults on every run costs more than writing your own smaller skills.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Customizing and Extending gstack with Your Own Skills](../../skills/customizing-and-extending-gstack-skills/SKILL.md) — How to fork, modify, or author new specialist skills and power tools within the gstack open-source framework to fit your team's specific conventions and tech stack.
-- [Orchestrating gstack's 8 Power Tools in Complex Workflows](../../skills/orchestrating-power-tools-in-gstack-workflows/SKILL.md) — How to use gstack's 8 power tools — higher-order commands that combine specialist skills — to manage end-to-end development workflows like feature buildout or codebase migration.
-- [Comparing gstack to Other AI Coding Agent Frameworks](../../skills/comparing-gstack-to-other-ai-coding-frameworks/SKILL.md) — How to evaluate gstack's opinionated multi-agent approach against alternatives like Cursor rules, Aider conventions, or custom system prompts to choose the right AI coding workflow.
-- [Using Multi-Agent Perspectives (CEO, Engineer, QA) in Development](../../skills/using-multi-agent-perspectives-for-development/SKILL.md) — How to leverage gstack's multi-role system — CEO, engineer, and QA perspectives — to structure decision-making, implementation, and quality assurance across a development workflow.
-- [Installing and Configuring the gstack Skill Pack](../../skills/installing-and-configuring-gstack-skill-pack/SKILL.md) — How to install gstack from GitHub, set up slash commands, and configure it for use with Claude Code or other AI coding agents.
-- [Structuring AI Coding Sessions from Decision-Making to Execution](../../skills/structuring-ai-coding-sessions-with-gstack-phases/SKILL.md) — How to follow gstack's opinionated phased workflow — moving from problem framing and architecture decisions through implementation and verification — for disciplined AI-assisted development.
-- [Navigating gstack's 23 Specialist Skills via Slash Commands](../../skills/navigating-gstack-slash-commands-and-specialist-skills/SKILL.md) — How to discover, invoke, and chain gstack's 23 specialist slash commands to handle discrete tasks like planning, scaffolding, refactoring, and debugging.
+- [gstack Setup Guide: Install and Configure the Skill Pack](../../skills/installing-and-configuring-gstack-skill-pack/SKILL.md): Install gstack for Claude Code or another agent, set up its slash commands, and enable team mode.
+- [Navigating gstack Slash Commands and Specialist Skills](../../skills/navigating-gstack-slash-commands-and-specialist-skills/SKILL.md): Find the right command for a task and chain the specialist skills in sprint order.
+- [Structuring AI Coding Sessions with gstack Phases](../../skills/structuring-ai-coding-sessions-with-gstack-phases/SKILL.md): Run one feature through think, plan, build, review, test, ship and reflect.
+- [Using gstack's Role Perspectives: CEO, Engineering, QA](../../skills/using-multi-agent-perspectives-for-development/SKILL.md): Use the CEO, eng manager, staff engineer and QA lead roles, plus a second model, on one piece of work.
+- [Orchestrating gstack Power Tools in Complex Workflows](../../skills/orchestrating-power-tools-in-gstack-workflows/SKILL.md): Combine the safety, second-opinion, browser and deploy tools around risky work.
+- [Customizing and Extending gstack with Your Own Skills](../../skills/customizing-and-extending-gstack-skills/SKILL.md): Fork gstack, edit skill templates, and add skills that encode your team's conventions.
+- [Evaluating gstack Against Your Current AI Coding Setup](../../skills/comparing-gstack-to-other-ai-coding-frameworks/SKILL.md): Run a fair trial of gstack against rules files, conventions files or your own skills.
 
 ## FAQ
 
-**What is the gstack framework in simple terms?**
+**What is the gstack framework?**
 
-The gstack framework is a set of 23 specialist skills and 8 power tools that structure how you work with AI coding agents like Claude Code. Instead of writing ad-hoc prompts, you invoke slash commands that shift the agent into different modes: strategic thinking (CEO), code generation (engineer), or adversarial review (QA). It turns AI-assisted coding from a freestyle conversation into a repeatable process with distinct phases for decisions, planning, implementation, and quality checks.
+gstack is a collection of Claude Code skills, published by Garry Tan in the [garrytan/gstack repository](https://github.com/garrytan/gstack), that assigns a specialist role to each slash command and runs them in sprint order. `/office-hours` and the plan reviews shape the idea, `/review` and `/qa` check the work, and `/ship` and `/land-and-deploy` release it. The skills are Markdown files, and the whole pack is free under the MIT license. Its docs describe it as a process more than a toolbox, because each skill reads what the previous one wrote.
 
-**How does gstack compare to other AI coding frameworks like Cursor rules or Copilot instructions?**
+**How do I install gstack?**
 
-Cursor rules and Copilot instructions customize code generation behavior but don't impose workflow structure. They tell the AI how to write code. gstack tells the AI when to think strategically, when to write code, and when to review it. They address different layers of the problem.
+The [README install section](https://github.com/garrytan/gstack) gives a one-line command that clones the repository into `~/.claude/skills/gstack` and runs `./setup`, followed by adding a gstack section to CLAUDE.md. Team mode adds a bootstrap to a shared repository so teammates get the skills automatically. Other agents are supported through `./setup --host` with a host name. The [installation skill](../../skills/installing-and-configuring-gstack-skill-pack/SKILL.md) walks through each option and the common failures.
 
-You could use Cursor for inline code completion while using gstack for the higher-level workflow around decisions, planning, and review. See [Comparing gstack to Other AI Coding Agent Frameworks](https://tryhamster.com/skills/comparing-gstack-to-other-ai-coding-frameworks) for a detailed breakdown.
+**How does gstack compare with other frameworks such as Cursor rules or Aider conventions?**
 
-**Does gstack work for solo developers or is it only for teams?**
+[Cursor rules](https://cursor.com/docs/context/rules) and [Aider conventions files](https://aider.chat/docs/usage/conventions.html) supply standing guidance that shapes how the model writes code. gstack supplies a sequence of role-specific skills that plan, review, test and ship work, and it passes artifacts between them. The two layers can run together. The comparison table above summarizes the differences.
 
-gstack works well for solo developers, and in some ways it is even more valuable for them. On a team, you naturally get different perspectives from different people: someone asks about testing, someone questions the architecture, someone pushes back on scope. Working solo with an AI agent, all of those perspectives collapse into a single conversation. gstack's multi-agent perspectives restore that cognitive diversity by forcing the agent (and you) to consider the problem from the CEO, engineer, and QA viewpoints.
+**Where are the gstack docs and examples?**
 
-**Why does gstack fail in practice, and what are the common mistakes?**
+The repository has a [skill deep dives page](https://github.com/garrytan/gstack/blob/main/docs/skills.md) with the philosophy, modes and example sessions for each skill, including a worked `/office-hours` reframe and sample `/review`, `/qa` and `/autoplan` output. The README contains an end-to-end example that runs from `/office-hours` to `/ship`. The [Builder Ethos](https://github.com/garrytan/gstack/blob/main/ETHOS.md) explains the principles injected into every skill. Read the deep dive for a skill before relying on its defaults.
 
-The most common failure is over-application: using the full phase sequence for tasks that don't warrant it, like fixing a typo or adding a CSS class. This turns a two-minute task into a ten-minute ceremony and erodes trust in the framework. The second failure mode is treating gstack as a rigid process rather than a toolkit. Teams that refuse to skip steps or customize skills end up fighting the framework.
+**Does gstack only work with Claude Code?**
 
-The third is context window overflow, where developers try to feed the entire project context into a single session instead of using gstack's checkpointing and context management tools.
+Claude Code is the primary host, and the default install targets it. The [README](https://github.com/garrytan/gstack) says gstack works on ten AI coding agents, with `./setup --host` flags for Codex, OpenCode, Cursor, Factory Droid, Kiro and others, and an instruction-only digest for agents that read rules files. Features that rely on Claude Code hooks, such as the safety guardrails, may behave differently elsewhere. Check the host table before assuming a skill works identically in another agent.
 
-**Can I use gstack with AI agents other than Claude Code?**
+**What are the common criticisms of gstack?**
 
-gstack is built on the Anthropic Agent Skills specification, so it works natively with Claude Code. Adapting it to other agents is possible but requires effort. The slash command interface and skill-loading mechanism are specific to the Anthropic ecosystem. For other agents, you could manually load the skill markdown files as system prompts or context, but you would lose the composability and discoverability that make gstack feel like a native tool.
+[TechCrunch](https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/) reported a vlogger calling it "a bunch of prompts" and a common complaint that developers who use Claude Code already have their own versions. Augment Code's [review](https://www.augmentcode.com/learn/garry-tan-gstack-claude-code) says its author does not take Tan's productivity claims at face value and describes the pack as opinionated and workflow-heavy. Both pieces point to the same test: run the skills on your own code and judge the results. A short trial on one real feature is the cheapest way to do that.
 
-The underlying ideas, phase discipline, perspective shifting, composable skills, transfer to any agent, even if the packaging doesn't.
+**Do I have to use every skill?**
 
-**How does gstack work alongside existing development processes like sprints, code reviews, and CI/CD?**
+No. The README's quick start suggests running `/office-hours`, `/plan-ceo-review`, `/review` and `/qa` and stopping there to decide whether the pack suits you. The Review Readiness Dashboard treats only the engineering review as required by default, and you can turn even that off ([dashboard docs](https://github.com/garrytan/gstack/blob/main/docs/skills.md)). You can adopt the review and QA skills on their own and add the planning skills later.
 
-gstack operates at the individual session level, not the team process level. It structures what happens inside a developer's interaction with an AI agent, not how the team plans sprints or reviews pull requests. The two layers complement each other: gstack produces better code and decision artifacts during development, and your existing sprint planning, code review, and CI/CD processes govern how that work flows into production. The decision logs and QA artifacts that gstack generates can feed directly into pull request descriptions and architectural decision records.
+**How do I keep gstack up to date?**
 
-**Is gstack suitable for large enterprise codebases?**
+Run `/gstack-upgrade`, which detects global and vendored installs and shows what changed, or set `auto_upgrade: true` in `~/.gstack/config.yaml`, per the [README troubleshooting notes](https://github.com/garrytan/gstack). Team mode runs an auto-update check at the start of Claude Code sessions, throttled to once an hour. Read the [changelog](https://github.com/garrytan/gstack/blob/main/CHANGELOG.md) after upgrading, because commands are sometimes renamed.
 
-gstack scales well to large codebases because its phase discipline prevents the context overflow problems that plague unstructured AI sessions on complex projects. The planning phase forces decomposition of large tasks into agent-sized chunks. The checkpointing tools maintain continuity across sessions. However, enterprise teams should plan to customize the skill pack extensively, adding domain-specific skills, adjusting the review criteria, and integrating with their existing toolchains.
+## Sources
 
-The default skills are generic by design and will need tailoring for enterprise-specific concerns like compliance, security review depth, and multi-service architectures.
-
-**What are gstack's 8 power tools and how do they differ from the 23 specialist skills?**
-
-The 23 specialist skills are phase-specific: they belong to a particular stage of the development workflow like decision-making, planning, or review. The 8 power tools are cross-cutting utilities that support any phase: context management, debugging, refactoring, documentation generation, checkpoint/resume, dependency analysis, performance profiling, and code search. Think of skills as the what (what kind of thinking to do) and power tools as the how (how to manage the mechanics of working with an AI agent across complex sessions). See [Orchestrating gstack's 8 Power Tools in Complex Workflows](https://tryhamster.com/skills/orchestrating-power-tools-in-gstack-workflows) for detailed guidance.
+- [garrytan/gstack README](https://github.com/garrytan/gstack)
+- [gstack Skill Deep Dives](https://github.com/garrytan/gstack/blob/main/docs/skills.md)
+- [gstack Builder Ethos](https://github.com/garrytan/gstack/blob/main/ETHOS.md)
+- [Contributing to gstack](https://github.com/garrytan/gstack/blob/main/CONTRIBUTING.md)
+- [gstack changelog](https://github.com/garrytan/gstack/blob/main/CHANGELOG.md)
+- [Adding a New Host to gstack](https://github.com/garrytan/gstack/blob/main/docs/ADDING_A_HOST.md)
+- [Augment Code: Garry Tan open-sources gstack](https://www.augmentcode.com/learn/garry-tan-gstack-claude-code)
+- [TechCrunch: Why Garry Tan's Claude Code setup has gotten so much love, and hate](https://techcrunch.com/2026/03/17/why-garry-tans-claude-code-setup-has-gotten-so-much-love-and-hate/)
+- [Claude Code docs: skills](https://code.claude.com/docs/en/skills)
+- [Agent Skills overview](https://agentskills.io)
+- [Cursor docs: rules](https://cursor.com/docs/context/rules)
+- [Aider docs: coding conventions](https://aider.chat/docs/usage/conventions.html)
 
 ---
 

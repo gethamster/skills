@@ -1,31 +1,37 @@
 # Examples: Running Outcome Review Ceremonies and Check-Ins
 
-## Example: SaaS Onboarding Outcome Review Leads to Pivot
+## An execution problem that looked like a failed idea
 
 **Scenario:**
 
-A B2B SaaS company targeting mid-market teams has been running an initiative to improve new user activation. The outcome target was to increase 7-day activation rate (defined as completing at least one project in the tool) from 28% to 40% within 8 weeks. The team shipped an interactive onboarding wizard three weeks ago and redesigned the empty-state experience. It's now the biweekly outcome review and the PM is presenting results.
+Illustrative scenario: a team shipped a redesigned first-run checklist to raise the share of new accounts that complete setup. At the weekly check-in two weeks later, the leading indicator has barely moved, and one engineer suggests dropping the idea.
 
 **Walkthrough:**
 
-The PM pulls up the dashboard showing the 7-day activation rate has moved from 28% to 31% — a 3-percentage-point improvement in three weeks. The leading metric (onboarding wizard completion rate) is at 68%, which is strong. However, the lagging metric hasn't moved as much as expected. In Phase 2, the team discusses: the wizard gets completed, but users who complete it aren't creating projects at the expected rate. An analytics deep-dive reveals users complete the wizard but then hit a confusing permissions screen before they can create a project. The Phase 3 decision: 'Adjust' — keep the outcome target but redirect the next sprint toward simplifying the post-wizard permissions flow. The roadmap is updated to deprioritize the planned email drip campaign (originally the next initiative) and instead focus on removing the permissions friction point. The decision is logged: 'Adjusted onboarding initiative based on funnel drop-off data at permissions step. Will re-evaluate at next biweekly review.'
+The facilitator asks the diagnostic question first: have enough new accounts actually seen the checklist? The analytics note shows that the checklist only appears on desktop, and most new accounts this month signed up on mobile. Only a small fraction of the cohort was exposed.
 
-## Example: E-Commerce Team Stops Underperforming Initiative
+The group records an execution problem: the hypothesis has not yet had a fair test. The decision is to adjust: ship the checklist on mobile and read the indicator again in two check-ins. The owner and date go into the decision log, and the roadmap is unchanged apart from a note on the initiative.
+
+## A pivot after a fair test
 
 **Scenario:**
 
-An e-commerce product team set an outcome target to increase average order value (AOV) by 15% through a product bundling initiative. The pre-committed decision criteria stated: 'If AOV doesn't increase by at least 5% after 6 weeks with bundles live on the top 20 product pages, we stop the initiative.' It's now the monthly outcome review at the 8-week mark. Bundles have been live for 7 weeks across 25 product pages.
+Illustrative scenario: a team has run an in-app tutorial for new users for six weeks to improve second-week retention. Almost every new user has seen it, and the agreed threshold for the leading indicator has not been reached.
 
 **Walkthrough:**
 
-The initiative owner presents the data: AOV has increased by 2.1%, well below the 5% minimum threshold. The leading metric — bundle add-to-cart rate — is only 4%, meaning very few customers are engaging with bundles at all. In Phase 2, the team explores hypotheses: the bundles might be priced too high, the bundle UI might not be prominent enough, or the bundled products might not be complementary enough. Despite these possible explanations, the pre-committed criteria are clear. In Phase 3, the decision is 'Stop.' The team retires the bundling initiative and documents the learnings: low bundle engagement suggests customers in this category prefer choosing individual items. The freed-up engineering capacity is reallocated to the next-priority initiative — a personalized recommendations engine that scored higher in the team's outcome prioritization framework. This example is excellent material for answering product manager interview questions about data-driven prioritization and knowing when to kill a project.
+The data is clear: exposure is high, the tutorial works as designed, and the leading indicator is flat against the pre-set threshold. Interview notes suggest users skip the tutorial because they arrive with a specific task in mind.
 
-## Example: Platform Team Increases Investment Based on Overperformance
+The group records a hypothesis problem and decides to pivot to the next candidate initiative on the map: task-based templates offered at signup. The tutorial is moved to the record of tried initiatives with the learning attached. The product manager sends stakeholders a two-paragraph summary the same day, and the roadmap shows the new bet under the unchanged outcome.
+
+## A quarterly review that changes an outcome
 
 **Scenario:**
 
-A developer tools company has a platform team running an initiative to reduce API response times, with the outcome target of improving developer satisfaction scores (measured via quarterly NPS survey and weekly support ticket volume for performance complaints) by 20 points over a quarter. The initiative was scoped for one engineer spending 50% of their time on infrastructure optimization. It's the monthly outcome review at the midpoint of the quarter.
+Illustrative scenario: at the quarterly outcome review, a team's leading indicator for account expansion has risen steadily for three months, but the lagging metric, expansion revenue, has not moved.
 
 **Walkthrough:**
 
-The initiative owner shows that API p95 response times dropped from 850ms to 320ms — exceeding the technical target. The leading metric (weekly support tickets mentioning 'slow' or 'timeout') has dropped from 47/week to 12/week. Early signals from a mid-quarter pulse survey show developer satisfaction trending up by 15 points already, and they're only halfway through the quarter. In Phase 2, the team recognizes this initiative is outperforming expectations with minimal investment. In Phase 3, the decision is 'Increase investment' — the team assigns a second engineer full-time and expands scope to include database query optimization, which the support ticket analysis revealed as the next major performance bottleneck. The roadmap is updated to reflect the expanded scope and the team sets a new stretch target of 30-point NPS improvement. The rationale is logged: 'Platform performance initiative showing 3x expected impact on leading metrics. Increasing investment to capture additional gains before diminishing returns.'
+The group checks timing first. Expansion deals take a few months to close, so some lag is expected, but three months is past the window the team had agreed. Sales notes show that accounts are adding more users on the free tier and not upgrading.
+
+The review concludes that the leading indicator was measuring the wrong behavior. The team keeps expansion revenue as the lagging outcome, replaces the indicator with "accounts that use a paid-tier feature in a trial," and adjusts the roadmap. The decision and the reasoning go to the head of product, since changing an indicator affects how the outcome will be judged.

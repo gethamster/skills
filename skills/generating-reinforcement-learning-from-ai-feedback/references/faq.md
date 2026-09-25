@@ -1,25 +1,25 @@
 # FAQ: Generating Reinforcement Learning from AI Feedback (RLAIF)
 
-## How does RLAIF differ from RLHF in practice?
+## What is RLAIF?
 
-RLAIF replaces human annotators with an AI evaluator guided by constitutional principles. The core RL pipeline (reward model training → PPO) remains identical. The key difference is that RLAIF scales to millions of comparisons at minimal cost, produces more consistent labels (no inter-annotator disagreement), and allows you to explicitly specify alignment criteria through the constitution rather than relying on implicit human preferences.
+RLAIF, reinforcement learning from AI feedback, is RLHF with the preference labels produced by a model instead of people. The Constitutional AI paper introduced it for harmlessness, with a feedback model choosing between two responses according to a written principle. After the labels exist, reward model training and reinforcement learning run the same way as in RLHF.
 
-## Can RLAIF match the quality of human preference labels?
+## Does RLAIF work as well as RLHF?
 
-Anthropic's research has shown that RLAIF can match or exceed RLHF quality on helpfulness and harmlessness metrics, particularly when the AI evaluator uses chain-of-thought reasoning and the constitution is well-specified. RLAIF labels tend to be more consistent than human labels, though they can have systematic blind spots that human annotators would catch — which is why auditing a sample is essential.
+In the Constitutional AI paper, RLAIF-trained models were less harmful than RLHF models at a given level of helpfulness. Google's later comparison found RLAIF comparable to RLHF on summarization, helpful dialogue and harmless dialogue. Results depend on the labeler, the principles and the task, so validate against human judgments for your own use.
 
-## How many preference comparisons do I need for effective RLAIF?
+## Which model should produce the labels?
 
-For a production-quality reward model, plan on 50,000-200,000 cleaned preference comparisons. Smaller datasets (10,000-30,000) can work for domain-specific applications with narrow scope. The key factor is quality over quantity — 50,000 clean, debiased labels with meaningful quality variation outperform 200,000 noisy labels.
+Use the most capable model you can afford that follows the multiple-choice format and exposes token probabilities. The Constitutional AI paper found models got better at identifying harm as they grew, and Google's study found smaller labelers had much stronger position bias. The Constitutional AI paper used a pretrained model for plain labels and a helpful RLHF model when chain of thought was used.
 
-## What model should I use as the AI evaluator in RLAIF?
+## Why use soft labels instead of picking a winner?
 
-Use the most capable model available to you as the evaluator — it doesn't need to be the same model you're training. A more capable evaluator produces higher-quality preference labels. In Anthropic's work, they often use the same base model family but at the largest available scale. The evaluator only runs during data generation, not during RL training, so its inference cost is a one-time expense.
+The normalized probabilities carry the labeler's uncertainty, and multiple-choice probabilities from language models are fairly well calibrated. The Constitutional AI paper found soft labels gave much better results than hard labels. When chain of thought makes labels overconfident, clamping them to a moderate range recovers some of that benefit.
 
-## How does claude content optimization benefit from RLAIF over traditional fine-tuning?
+## Can I skip the reward model entirely?
 
-RLAIF produces models that are better aligned with specified values because it optimizes for nuanced preference signals rather than just next-token prediction. Traditional fine-tuning on curated data teaches a model what good outputs look like, but RLAIF teaches it to distinguish between good and bad outputs — a more robust learning signal that generalizes better to novel situations.
+Some variants do. Google's study introduced direct RLAIF, which gets rewards from an off-the-shelf model during reinforcement learning without training a separate reward model, and reported it performed better than the standard setup in their experiments. Others build preference pairs and use a direct preference optimization method instead of reinforcement learning, as in the Hugging Face open recipe.
 
-## How do I detect and prevent reward hacking during RLAIF-based RL training?
+## How do I know the labels are good enough?
 
-Monitor three signals: (1) reward model scores increasing while KL divergence spikes sharply, (2) generated outputs becoming formulaic, repetitive, or structurally unusual, and (3) human evaluators rating RL-trained outputs lower despite higher RM scores. Prevent hacking by using adequate KL penalties (β ≥ 0.1), training for fewer steps, and ensembling multiple reward models.
+Compare them with human labels on a sample, overall and per principle, and read the disagreements. Also test for position bias by swapping orders, and check whether labels simply favor longer responses. If agreement is low for one principle, rewrite it; if it is low everywhere, change the labeler or the prompt format.

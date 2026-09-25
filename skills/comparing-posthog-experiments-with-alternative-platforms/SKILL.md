@@ -1,15 +1,20 @@
 ---
-name: comparing-posthog-experiments-with-alternative-platforms
-description: "This skill teaches you how to systematically evaluate eppo vs posthog experiments and other A/B testing platforms by scoring them across analysis methods, integrations, pricing, and team workflow fit so you pick the right tool for your experimentation program."
+name: "comparing-posthog-experiments-with-alternative-platforms"
+description: "Compare Eppo vs PostHog Experiments, plus Statsig, LaunchDarkly and GrowthBook, on data architecture, statistics and workflow to choose a platform."
 category: "Development"
 metadata:
   homepage: https://tryhamster.com
-  method: posthog-experiments-onboarding-a-b-test-method
+  method: "posthog-experiments-onboarding-a-b-test-method"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Eppo vs PostHog Experiments: Comparing A/B Testing Platforms
+# Eppo vs PostHog Experiments: Choosing a Platform
 
-> This skill teaches you how to systematically evaluate eppo vs posthog experiments and other A/B testing platforms by scoring them across analysis methods, integrations, pricing, and team workflow fit so you pick the right tool for your experimentation program.
+> Compare Eppo vs PostHog Experiments, plus Statsig, LaunchDarkly and GrowthBook, on data architecture, statistics and workflow to choose a platform.
 
 ## Before you start
 
@@ -25,147 +30,105 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 |-------|-------|
 | Difficulty | Intermediate |
 | Time to Learn | 2-4 hours |
-| Outcome | You produce a weighted comparison scorecard that maps each platform's strengths and limitations to your specific requirements, giving your team a defensible recommendation instead of a gut-feel tool choice. |
-| Prerequisites | Basic understanding of A/B testing concepts (control vs variant, statistical significance, sample size), Familiarity with your team's current data infrastructure (warehouse, analytics tools, event tracking), Knowledge of your organization's experiment volume and growth plans, Understanding of feature flags and how they relate to experiment assignment |
+| Outcome | You can produce a written, requirement-by-requirement comparison of PostHog Experiments and its alternatives, backed by each vendor's current documentation and a pilot. |
+| Prerequisites | A list of the experiments you expect to run, knowledge of where your event and revenue data lives, access to vendor trials or documentation |
 | Part of | [PostHog Experiments Onboarding A/B Test Method](../../methods/posthog-experiments-onboarding-a-b-test-method/METHOD.md) |
 
 ## Overview
 
-Choosing an experimentation platform is one of the highest-leverage decisions a product or growth team makes, because the tool shapes how quickly you can launch tests, how rigorously you can analyze results, and how deeply experimentation culture embeds into your organization. The landscape spans bundled product analytics suites like PostHog, warehouse-native platforms like Eppo, feature management tools with experimentation add-ons like LaunchDarkly, and dedicated statistics engines like Statsig. Each platform makes different architectural bets, and each bet has consequences for your workflow. Evaluating eppo vs posthog experiments, or any cross-platform comparison, requires more than reading feature matrices. You need to map each tool's capabilities against your data stack, your team's statistical literacy, your experiment volume, and your budget.
+Teams weighing Eppo vs PostHog Experiments are usually deciding where experiment analysis should live: inside a product analytics tool that already has their events, or in a platform that runs analysis on their data warehouse. This skill is a structured way to make that choice, and to include other candidates such as Statsig, LaunchDarkly and GrowthBook. It sits beside the [PostHog Experiments onboarding method](../../methods/posthog-experiments-onboarding-a-b-test-method/METHOD.md), which assumes PostHog, as the check that PostHog is the right home for your program.
 
-This skill sits inside the [PostHog Experiments Onboarding A/B Test Method](https://tryhamster.com/methods/posthog-experiments-onboarding-a-b-test-method) as a decision checkpoint. Before you invest weeks building experiment infrastructure on any platform, you should confirm that the platform actually fits your requirements. Teams that skip this step often discover mismatches six months in, when they need warehouse-native analysis that their bundled tool does not support, or when they realize they are paying for feature flag infrastructure they already built in-house. The comparison scorecard you produce here prevents that costly rework.
+The platforms differ most in data architecture. PostHog Experiments reads the flag that assigns users, the events they send and, optionally, tables loaded into PostHog's data warehouse, so it needs no new data collection if you already use PostHog ([Experiments overview](https://posthog.com/docs/experiments)). Eppo describes a warehouse-native analysis engine tied to your existing data, with an SDK that does no tracking of its own, so no user-level data passes through Eppo ([Eppo docs](https://docs.geteppo.com/)). Statsig offers both a hosted cloud product and a Warehouse Native deployment.
 
-The concrete artifact is a scored evaluation matrix. Each row is a platform (PostHog, Eppo, LaunchDarkly, Statsig, and optionally others). Each column is a weighted evaluation dimension: statistical analysis approach, data integration model, feature flag capabilities, pricing structure, and team workflow fit. You assign numerical scores, weight them by your priorities, and produce a ranked recommendation. The scorecard is shareable with engineering leads, data teams, and finance, giving each stakeholder a clear view of why one platform fits better than another. By the end, you will have a documented, repeatable framework you can revisit whenever your requirements change or a new platform enters the market.
+On statistics, the documented options overlap more than they differ. PostHog, Eppo, LaunchDarkly and GrowthBook all document both Bayesian and frequentist options, and several offer sequential testing and CUPED-style variance reduction. What matters is which defaults you get, which methods your team will use correctly, and whether the advanced options you need are in the plan you can afford.
+
+Because vendors change features, plans and prices often, this skill treats every claim as something to verify in the vendor's current documentation on the day you decide. The output is a short decision document your team can revisit, backed by a pilot on real traffic.
+
+You know the comparison went wrong when the chosen tool cannot compute the metric your team trusts, or when results in the tool disagree with the numbers your data team reports. Both failures trace back to skipping the requirements list or the pilot. The steps below exist to catch them before a contract is signed.
 
 ## How It Works
 
-Platform comparison works because experimentation tools are not interchangeable. They differ along five dimensions that compound over time, and understanding these dimensions lets you predict how a tool will perform as your program scales.
+The comparison starts from your requirements. Begin with the experiments you plan to run in the next year: where they happen (backend, web app, mobile, marketing site), what they measure (product events, revenue in a warehouse, retention), how many run at once, and who reads the results. Each requirement becomes a row in a scorecard, weighted by how much it matters.
 
-The first dimension is **statistical analysis method**. PostHog offers both Bayesian and frequentist engines, letting you choose per experiment. Eppo leans into frequentist methods with sequential testing and CUPED variance reduction, which matters when you need to detect small effects or run experiments on limited traffic. Statsig provides a proprietary Bayesian engine with automatic sample size calculations. LaunchDarkly's experimentation module is thinner statistically, relying on simpler significance calculations. The analysis method determines how fast you can call experiments, how accurately you detect small lifts, and how much statistical expertise your team needs to interpret results correctly. If your team runs the sibling skill [interpreting Bayesian and frequentist results](https://tryhamster.com/skills/interpreting-bayesian-and-frequentist-experiment-results), the analysis engine choice directly affects their daily work.
+Data architecture is usually the deciding row. If your events already flow into PostHog and your key outcomes are product behaviors, running experiments there avoids a second pipeline. If your source of truth for revenue and retention is a warehouse table, a warehouse-native tool such as Eppo or [Statsig Warehouse Native](https://docs.statsig.com/statsig-warehouse-native/introduction) computes metrics where that data lives; Statsig lists Warehouse Native as part of its Enterprise tier. PostHog can also use synced warehouse tables as experiment metrics, which narrows the gap for some teams.
 
-The second dimension is **data integration model**. This is where architectural philosophies diverge most sharply. PostHog captures and stores events in its own infrastructure, meaning your experiment data lives alongside your product analytics. Eppo takes a warehouse-native approach: it reads from your existing data warehouse (Snowflake, BigQuery, Redshift, Databricks) and writes results back, so your experiment data stays in your single source of truth. LaunchDarkly and Statsig fall between these poles, capturing their own event streams but offering warehouse export connectors. The integration model matters because it determines whether you get a unified view of experiment results alongside your other business data, or whether you maintain two parallel data pipelines.
+Statistics come next. PostHog defaults to Bayesian and offers frequentist analysis with sequential testing ([getting started](https://posthog.com/docs/experiments/start-here)). Eppo's [statistics docs](https://docs.geteppo.com/statistics/) list classical frequentist tests, sequential analysis and Bayesian methods, plus CUPED++. LaunchDarkly offers both approaches with frequentist as the default ([LaunchDarkly docs](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist)). GrowthBook defaults to Bayesian and offers frequentist t-tests with CUPED and sequential testing, with its stats engine open source under an MIT license ([GrowthBook docs](https://docs.growthbook.io/statistics/overview)).
 
-The third dimension is **feature flag capabilities**. PostHog includes feature flags as a core product, tightly coupled with experiments. LaunchDarkly is the market leader in feature flag management, with sophisticated targeting rules, percentage rollouts, and flag lifecycle management. Eppo does not provide its own feature flags at all; it integrates with whatever flag system you already use (LaunchDarkly, Unleash, Flagsmith, or homegrown). Statsig bundles flags and experiments together similar to PostHog. If your team already has a mature flag system, a platform that layers on top (like Eppo) avoids duplication. If you are starting from scratch, a bundled platform reduces integration work.
+Workflow fit covers who can run an experiment without help. Product-led teams value creating experiments next to the analytics and session replays they already use; PostHog links each variant to replays of the users who saw it. Marketing teams may want visual editing; PostHog's no-code web experiments are in beta, and Webflow sites can also use [Webflow Optimize](https://webflow.com/optimize).
 
-The fourth dimension is **pricing model**. PostHog uses event-based pricing with a generous free tier (1 million events per month). Eppo prices by the number of experiments or seats depending on tier. LaunchDarkly charges per seat with feature-flag usage tiers, and experimentation is an add-on. Statsig uses event-based pricing similar to PostHog. The pricing model interacts with your growth trajectory: event-based pricing scales with traffic, seat-based pricing scales with team size. A 10-person team running high-traffic experiments faces very different economics than a 50-person team running low-traffic tests.
-
-The fifth dimension is **team workflow fit**. This is the hardest to evaluate from a feature page. It includes how experiments are created (UI vs. code), how results are shared (dashboards, Slack integrations, email digests), how experiments connect to deployment pipelines, and how non-technical stakeholders access insights. The only reliable way to score this dimension is to run a pilot experiment on each shortlisted platform, which the step-by-step process below walks you through.
+Cost is the last row and the hardest to compare, because each vendor prices differently. PostHog bills experiments with feature flag requests and lists the first 1 million requests per month as free on its [getting started page](https://posthog.com/docs/experiments/start-here). Get written quotes from the others for your expected volume, and include the engineering time to integrate and maintain each option.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Document your experimentation requirements
+### Step 1: List the experiments you plan to run
 
-Before looking at any platform, write down what your team actually needs. List your current monthly event volume and projected volume 12 months out. Count how many experiments you expect to run per month. Identify your data warehouse (if any) and the analytics tools already in your stack.
+Write down the next year's likely experiments with their surface, primary metric and expected traffic. Mark which metrics live in product events and which live in a warehouse. Note how many experiments may run at once and who will set them up. This list is the input for every later step.
 
-Note whether you have an existing feature flag system. Record who will create experiments (engineers only, or also PMs and designers), because this affects UI requirements. Finally, list any hard constraints: compliance requirements, data residency rules, or budget ceilings. This requirements document becomes the weighting input for your scorecard.
+### Step 2: Turn the list into a weighted scorecard
 
-> **Pro tip:** Interview at least one person from engineering, product, and data science. Each group has different priorities, and a tool that delights PMs but frustrates data scientists will not stick.
+Make one row per requirement: data architecture, statistical methods, flag and SDK coverage, targeting, workflow for each role, security and data residency, and cost. Give each row a weight that reflects your own list of experiments. Agree the weights before looking at any vendor, so the scoring cannot be tuned to a favorite.
 
-### Step 2: Step 2: Build the evaluation scorecard template
+### Step 3: Check each vendor's current documentation
 
-Create a spreadsheet or table with platforms as rows and evaluation dimensions as columns. Use these five columns: Statistical Analysis (weight: 25%), Data Integration (weight: 25%), Feature Flags (weight: 20%), Pricing (weight: 15%), and Team Workflow (weight: 15%). Adjust weights based on your requirements document. If your team already has a warehouse and wants experiments to query alongside revenue data, increase the Data Integration weight.
+For each candidate, fill each row from the vendor's own docs and link the page you used. Record defaults as well as options, such as which statistical engine is on by default. Note features marked beta or limited to higher plans. Leave a row blank rather than guessing, and turn blanks into questions for the vendor.
 
-If you are budget-constrained, increase the Pricing weight. Each cell will hold a score from 1 to 5, and the weighted total determines your ranking. Include a notes column for each cell to capture the reasoning behind each score.
+### Step 4: Map the data flow for the top two options
 
-> **Pro tip:** Do not assign equal weights to all dimensions. Equal weighting is a decision to not decide. Force-rank your priorities by asking: if two platforms tied on everything else, which single dimension would break the tie?
+Draw how assignment, events and metrics move for each finalist. For PostHog, flags and events stay in PostHog, and warehouse tables can be synced in ([Experiments overview](https://posthog.com/docs/experiments)). For a warehouse-native option, assignment logging goes through your own event pipeline and analysis runs on your warehouse data, as Eppo's [architecture overview](https://docs.geteppo.com/) describes. Mark which team would own each piece.
 
-### Step 3: Step 3: Research each platform's statistical capabilities
+### Step 5: Run a pilot on real traffic
 
-For each platform on your shortlist, document the analysis engine (Bayesian, frequentist, or both), whether sequential testing is supported (letting you peek at results without inflating false positive rates), whether variance reduction methods like CUPED or CUPAC are available, how the platform handles multiple metrics per experiment, and what guardrail metric support looks like. Check whether the platform calculates required sample sizes automatically or requires manual calculation. Score PostHog, Eppo, LaunchDarkly, Statsig, and any other candidates on a 1-5 scale for this dimension. A platform that offers both Bayesian and frequentist engines with sequential testing and variance reduction scores highest.
+Run the same small experiment, or an A/A test with identical variants, on each finalist. Check that assignment is balanced, exposures and metrics match your own counts, and the results page is clear to the people who will read it. Time how long setup took from start to first result.
 
-A platform with only basic significance testing scores lowest.
+### Step 6: Price the whole program
 
-> **Pro tip:** Variance reduction (CUPED) is a sleeper feature. It can cut required experiment runtime by 30-50% by controlling for pre-experiment user behavior. If your traffic is limited, this single feature can be the difference between calling experiments in two weeks vs. six weeks.
+Estimate volume for each vendor's billing unit and get quotes where pricing is not public. Add the engineering time for integration, migration of existing flags and ongoing maintenance. Compare total cost, including that time, against the weighted scores.
 
-### Step 4: Step 4: Map data integration architecture
+### Step 7: Write the decision and set a review date
 
-For each platform, diagram how experiment data flows. Identify where events are captured (client SDK, server SDK, warehouse import), where they are stored (platform's own database vs. your warehouse), and how results are accessed (platform UI, API, SQL queries in your warehouse). Check whether the platform supports your specific warehouse (Snowflake, BigQuery, Redshift, Databricks, ClickHouse).
-
-For Eppo specifically, verify that your warehouse schema matches their expected format, since Eppo reads directly from your tables. For PostHog, check whether you can export experiment results back to your warehouse for deeper analysis. Score each platform based on how well it fits your existing data infrastructure without requiring new pipelines.
-
-> **Pro tip:** Ask yourself: where do I want experiment results to live in two years? If the answer is 'in our warehouse alongside everything else,' warehouse-native tools like Eppo score higher even if they require more setup today.
-
-### Step 5: Step 5: Evaluate feature flag integration
-
-Document each platform's feature flag capabilities. For PostHog, check the flag types supported (boolean, multivariate, JSON payloads), targeting rules (user properties, percentage rollout, cohort-based), and how flags connect to experiments. For LaunchDarkly, review the same plus flag lifecycle management, audit logs, and approval workflows. For Eppo, identify which third-party flag tools it integrates with and how seamless the connection is.
-
-For Statsig, check the same bundled capabilities. If you already run a feature flag system, score platforms that integrate with it higher than those requiring migration. If you have no flag system, score bundled offerings higher for reduced integration effort.
-
-> **Pro tip:** If you use LaunchDarkly for flags and are considering Eppo for experiments, test the integration during your pilot. The two tools complement each other well: LaunchDarkly manages assignment, Eppo handles analysis. But verify that the flag-to-experiment mapping works smoothly with your specific flag configuration.
-
-### Step 6: Step 6: Calculate total cost of ownership
-
-Pricing pages show sticker prices, but total cost of ownership includes engineering time for integration, ongoing maintenance, and the cost of vendor lock-in. For each platform, calculate the monthly platform fee at your current volume and at projected 12-month volume. Add estimated engineering hours for initial setup (SDK integration, warehouse connections, flag migration if needed). Factor in ongoing maintenance: how many engineer-hours per month does each platform require for upkeep?
-
-Include the cost of any required add-ons (LaunchDarkly charges extra for experimentation on top of flag management). Finally, assess switching cost: if you need to leave this platform in 18 months, how much data and workflow would you lose? Score each platform on value relative to your budget, not just on raw price.
-
-> **Pro tip:** PostHog's free tier (1M events/month) is generous for small teams, but event-based pricing can spike unexpectedly as you scale. Model costs at 3x your current volume before committing. Eppo's pricing is less transparent on their public page, so request a quote with your specific experiment count.
-
-### Step 7: Step 7: Run a pilot experiment on each finalist
-
-Narrow your list to two or three platforms and run a real (small) experiment on each one. Use the same experiment hypothesis and the same metrics so you can compare the experience directly. Set up a simple A/B test on a low-risk feature, such as a button color or copy change on a settings page. ' Note every friction point: confusing UI, unclear documentation, SDK bugs, slow result computation, or missing integrations.
-
-Have at least two team members (one technical, one non-technical if possible) use each platform independently and compare notes. This pilot is the only reliable way to score the Team Workflow dimension, because feature pages do not reveal daily-use friction.
-
-> **Pro tip:** Allocate one week per platform for the pilot. Run the experiment for at least three days to see how results update, how alerting works, and how the platform handles the 'waiting for significance' phase. The experience of checking results daily reveals workflow fit that no demo can show.
-
-### Step 8: Step 8: Score, weight, and rank
-
-Fill in every cell of your scorecard with the 1-5 scores gathered from your research and pilots. Multiply each score by its dimension weight. Sum the weighted scores for each platform to get a total. Rank the platforms by total score.
-
-Review the results with your team and check for any dimension where the winning platform scored below 3. A platform that wins overall but scores a 2 on Data Integration may cause problems in six months. 5 points of each other, recheck your weights and consider whether the pilot experience should tip the balance. Document your reasoning in the notes column so the decision is auditable later.
-
-> **Pro tip:** Share the completed scorecard with stakeholders before announcing a decision. Give engineering, product, and data teams a chance to challenge scores. This builds buy-in and sometimes surfaces information you missed, like a data engineer who already evaluated one of the platforms at a previous company.
-
-### Step 9: Step 9: Document the decision and plan migration
-
-Write a one-page decision document that states which platform you chose, the top three reasons, the main tradeoffs you accepted, and the timeline for full adoption. If you are already using PostHog as part of the [PostHog Experiments Onboarding A/B Test Method](https://tryhamster.com/methods/posthog-experiments-onboarding-a-b-test-method) and decide to stay, document what you evaluated and why you chose not to switch, so the question does not resurface in six months. If you decide to migrate to a different platform, create a migration checklist: SDK swaps, flag migration, historical data export, team training, and a parallel-run period where both platforms run simultaneously to validate that the new tool produces consistent results. Set a review date 6 months out to revisit the decision.
-
-> **Pro tip:** Even if PostHog wins your evaluation, the scorecard is valuable. It gives you a documented baseline to revisit when your experiment volume doubles, your team grows, or a competing platform ships a major feature update.
+Record the choice, the top reasons, the trade-offs accepted and the evidence from the pilot. If you stay on PostHog, write down what you evaluated so the question does not return without new information. Set a date to revisit the decision when your data architecture or experiment volume changes.
 
 ## Best Practices
 
-- Weight your scorecard dimensions before researching any platform. Setting weights after you have already formed opinions creates confirmation bias. You will unconsciously inflate the weight of whatever dimension your preferred platform wins. Write down weights based solely on your requirements document, then lock them in.
-- Evaluate at your projected scale, not your current scale. A platform that works beautifully for 5 experiments per month may buckle at 50. Ask each vendor what their largest customer runs, how result computation time scales with event volume, and whether pricing tiers change at higher volumes. Teams that evaluate at current scale often outgrow their tool within a year.
-- Include non-technical stakeholders in the pilot. If product managers and designers cannot independently check experiment results, you create a bottleneck where data scientists become translators. Score the Team Workflow dimension partly based on whether a PM can understand results without asking an analyst to explain the dashboard.
-- Test the documentation, not just the product. When your on-call engineer needs to debug a flag assignment issue at 11 PM, the quality of troubleshooting docs matters more than the quality of the marketing site. During your pilot, intentionally break something (misconfigure a flag, send malformed events) and see how quickly the docs help you fix it.
-- Separate the feature flag decision from the experimentation decision. Some teams conflate these, but they are distinct capabilities. You can use LaunchDarkly for flags and Eppo for experiment analysis. You can use PostHog for both.
-
-Evaluating them as a bundle when your needs are separable hides important tradeoffs. Score each capability independently, then consider the integration cost of split vs. bundled solutions.
-- Record your scoring rationale in writing, not just the numbers. Six months from now, you will not remember why you gave Statsig a 3 on Data Integration. A sentence of reasoning per cell transforms the scorecard from a one-time artifact into a living reference that supports future re-evaluation.
-- Check the platform's update velocity and roadmap transparency. Experimentation tools are evolving rapidly. A platform that ships meaningful improvements monthly and publishes a public changelog signals active development. A platform with a stale changelog may be deprioritizing experimentation in favor of other product lines. Review the last 6 months of release notes for each finalist.
+- Start from your own experiment list. Comparison pages published by vendors tend to favor the vendor that wrote them.
+- Weight data architecture heavily. Where your trusted metrics live usually decides more than any statistical feature.
+- Verify defaults as well as options. A method you must switch on for every experiment will often go unused.
+- Run an A/A test in the pilot. Identical variants should show no significant difference, and PostHog's [troubleshooting guide](https://posthog.com/docs/experiments/troubleshooting) lists what to check if they do.
+- Include the people who will read results in the pilot. A tool the analysts like but product managers misread will produce bad decisions.
+- Date every claim in the scorecard. Features and pricing change, and an undated comparison ages quietly.
 
 ## Common Mistakes
 
-- **Choosing based on a feature checklist instead of workflow fit** — Feature checklists create a false sense of completeness. A platform might technically support sequential testing, but if the UI buries the setting three clicks deep and defaults to fixed-horizon, your team will never use it. The pilot experiment in Step 7 exists specifically to catch these gaps. If you skip the pilot and choose based on a checklist, you will discover workflow friction only after committing engineering time to a full integration.
-
-Always run at least one real experiment on each finalist before deciding.
-- **Comparing sticker price without modeling total cost of ownership** — A free-tier platform with 40 hours of integration work costs more than a paid platform with 4 hours of setup. Teams frequently choose the cheapest platform on paper, then spend weeks on custom integrations, data pipeline adjustments, and workarounds for missing features. Model total cost over 12 months including engineering time, add-on costs, and maintenance hours. The cheapest-looking platform often turns out to be the most expensive when you include labor.
-- **Evaluating only the experimentation feature while ignoring the rest of the platform bundle** — PostHog includes analytics, session replay, and feature flags alongside experiments. If you are already paying for separate analytics and session replay tools, PostHog might replace three subscriptions with one. If you are already happy with your analytics stack and just need better experimentation, Eppo's warehouse-native approach avoids duplicating your analytics infrastructure. Evaluate the full stack overlap, not just the experimentation module.
-
-Failing to do so leads to redundant tooling and fragmented data.
-- **Assuming warehouse-native always beats bundled analytics** — Warehouse-native tools like Eppo are powerful when your data team maintains a clean, well-modeled warehouse. But if your warehouse is messy, poorly documented, or maintained by one person who might leave, warehouse-native experimentation inherits all that fragility. A bundled tool like PostHog that manages its own data pipeline insulates your experimentation program from warehouse instability. Assess your warehouse maturity honestly before scoring the Data Integration dimension.
-
-A warehouse-native tool on a shaky warehouse is worse than a bundled tool with its own pipeline.
-- **Letting one team member make the decision alone** — Platform choice affects engineers (SDK integration, flag management), data scientists (analysis methods, result interpretation), product managers (experiment creation, result sharing), and finance (budgeting). A decision made by engineering alone often overlooks PM workflow needs. A decision made by a PM alone often underestimates integration complexity. Require at least three stakeholders from different functions to review and validate the scorecard before finalizing.
-
-Single-stakeholder decisions get challenged and relitigated within months.
-- **Not setting a review date for the decision** — The experimentation platform market changes rapidly. Eppo, Statsig, and PostHog all ship major features quarterly. A decision that was correct 12 months ago may be wrong today. Set a calendar reminder to revisit your scorecard every 6 months.
-
-Update the scores based on new features, changed pricing, and your own evolving requirements. Without a review date, teams stay on suboptimal platforms for years out of inertia.
+- **Choosing on statistical features alone**: Several candidates offer Bayesian and frequentist analysis, and several offer sequential testing. Decide on data architecture and workflow first.
+- **Comparing list prices only**: Integration and maintenance often cost more than the license. Price the whole program.
+- **Skipping the pilot**: Documentation describes capabilities; only a pilot shows how the tool behaves with your traffic and your team. Run one real test on each finalist.
+- **Relying on third-party comparison posts**: They go out of date and often come from a competitor. Use each vendor's current documentation and your own pilot.
+- **Treating the decision as permanent**: Needs change as volume and data architecture grow. Set a review date.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/posthog-experiments-onboarding-a-b-test-method/METHOD.md) — PostHog Experiments Onboarding A/B Test Method
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/posthog-experiments-onboarding-a-b-test-method/METHOD.md): PostHog Experiments Onboarding A/B Test Method
 
 ## Related Skills
 
-- [Running A/B Tests in the PostHog Experiments Tab](../running-ab-tests-in-posthog-experiments-tab/SKILL.md)
-- [Setting Up PostHog Feature Flags for Experiment Variants](../setting-up-posthog-feature-flags-for-experiments/SKILL.md)
-- [Shipping the Winning Variant and Cleaning Up Feature Flags](../shipping-winning-variants-and-cleaning-up-experiments/SKILL.md)
-- [Designing Experiment Hypotheses and Success Metrics for Onboarding](../designing-onboarding-experiment-hypotheses-and-metrics/SKILL.md)
-- [Segmenting New User Cohorts for Onboarding Experiments](../segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md)
-- [Interpreting Bayesian and Frequentist Results in PostHog](../interpreting-bayesian-and-frequentist-experiment-results/SKILL.md)
-- [Integrating PostHog A/B Tests with Webflow and Marketing Pages](../integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md)
+- [Creating and Launching A/B Tests in PostHog Experiments](../running-ab-tests-in-posthog-experiments-tab/SKILL.md)
+- [Bayesian vs Frequentist Results in PostHog Experiments](../interpreting-bayesian-and-frequentist-experiment-results/SKILL.md)
+- [PostHog Experiment Variant Configuration with Feature Flags](../setting-up-posthog-feature-flags-for-experiments/SKILL.md)
+- [PostHog Experiments on Webflow and Marketing Pages](../integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md)
+- [Onboarding Experiment Hypotheses and Success Metrics](../designing-onboarding-experiment-hypotheses-and-metrics/SKILL.md)
+- [PostHog Experiment Cohort Filters for New Users](../segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md)
+- [Shipping Winning Variants and Cleaning Up Flags](../shipping-winning-variants-and-cleaning-up-experiments/SKILL.md)
+
+## Sources
+
+- [PostHog docs: Experiments](https://posthog.com/docs/experiments)
+- [PostHog docs: Getting started with experiments](https://posthog.com/docs/experiments/start-here)
+- [PostHog docs: Experiment troubleshooting](https://posthog.com/docs/experiments/troubleshooting)
+- [Eppo docs](https://docs.geteppo.com/)
+- [Eppo docs: Statistics](https://docs.geteppo.com/statistics/)
+- [Statsig docs: About Warehouse Native](https://docs.statsig.com/statsig-warehouse-native/introduction)
+- [LaunchDarkly docs: Bayesian versus frequentist statistics](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist)
+- [GrowthBook docs: Statistics overview](https://docs.growthbook.io/statistics/overview)
+- [Webflow Optimize](https://webflow.com/optimize)

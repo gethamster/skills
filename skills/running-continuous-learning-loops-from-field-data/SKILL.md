@@ -1,15 +1,20 @@
 ---
-name: running-continuous-learning-loops-from-field-data
-description: "This skill teaches you how to build a repeatable system for capturing deployment insights, failure patterns, and feature requests from customer environments and translating them into structured, prioritized product feedback that core engineering teams can actually act on."
+name: "running-continuous-learning-loops-from-field-data"
+description: "Run continuous learning loops from field deployments: log what customers do, sort signal from noise and deliver it to product on a rhythm."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: forward-deployed-engineering-five-lens-framework-fde-five-lens-framework
+  method: "forward-deployed-engineering-five-lens-framework-fde-five-lens-framework"
+  datePublished: "2026-07-17"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Running Continuous Learning Loops from Analytics Engineer Customer Deployments
+# Continuous Learning Loops from Field Deployments
 
-> This skill teaches you how to build a repeatable system for capturing deployment insights, failure patterns, and feature requests from customer environments and translating them into structured, prioritized product feedback that core engineering teams can actually act on.
+> Run continuous learning loops from field deployments: log what customers do, sort signal from noise and deliver it to product on a rhythm.
 
 ## Before you start
 
@@ -24,158 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial setup, then 30-45 minutes per week ongoing |
-| Outcome | You produce a living field insight registry that surfaces deployment patterns across customers, reduces repeated discovery of the same issues, and gives product teams evidence-backed priorities instead of anecdotal requests. |
-| Prerequisites | Experience deploying or configuring software inside at least one customer environment, Basic understanding of product feedback loops and how roadmap prioritization works, Familiarity with issue tracking tools (Jira, Linear, Notion, or equivalent), Comfort writing structured technical notes under time pressure |
-| Part of | [Forward Deployed Engineering Five‑Lens Framework (FDE Five‑Lens Framework)](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md) |
+| Time to Learn | About an hour to set up, then a weekly habit |
+| Outcome | You can run a field deployment learning loop that captures observations in a structured log, tags recurring patterns and delivers them to the product team on a fixed rhythm. |
+| Prerequisites | An active customer engagement, a named contact on the product team, a shared place to keep the log |
+| Part of | [FDE Five-Lens Framework](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md) |
 
 ## Overview
 
-When you work as an analytics engineer in customer deployments, you encounter a constant stream of signals: configuration edge cases, data pipeline failures, unexpected user workflows, integration friction, and ad hoc feature requests. Without a deliberate system to capture and route these signals, they evaporate. The same pain point gets rediscovered by a different engineer at a different customer six weeks later. Product teams never hear about the pattern because individual reports look like isolated incidents. The result is a growing gap between what your product assumes about real-world usage and what actually happens in production environments.
+Continuous learning loops turn what a forward deployed engineer sees at a customer into knowledge the rest of the company can use. This is Continuous Field Learning, the fourth lens of Vishwanathan Chandran's [FDE Five-Lens Framework](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7), which he summarizes as "Each iteration feeds back into organizational knowledge." The same loop applies to anyone embedded in customer deployments, whether the title is FDE, solutions engineer or analytics engineer on customer deployments.
 
-Running continuous learning loops solves this by turning every deployment into a structured feedback sensor. Within the [Forward Deployed Engineering Five-Lens Framework (FDE Five-Lens Framework)](https://tryhamster.com/methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework), this skill sits at the intersection of two core lenses: treating customer environments as learning opportunities and translating field knowledge back into product. It connects directly to [transitioning field learnings into product features](https://tryhamster.com/skills/transitioning-field-learnings-into-product-features), but where that sibling skill focuses on the handoff and advocacy process, this skill focuses on the upstream capture, categorization, and pattern detection that makes that handoff possible.
+People in the field see things nobody at headquarters can: which workflows break under real load, which features go unused, where users build workarounds, and what they ask for that the product does not do. Adam Judelson, who spent seven years at Palantir, describes the advantage of forward deployed engineering as being literally there, doing the user's job with the product long enough to see what matters ([Lenny's Newsletter](https://www.lennysnewsletter.com/p/the-unconventional-palantir-principles)). That view is wasted if it stays in one engineer's head.
 
-The concrete artifact you produce is a field insight registry, a structured log where every deployment observation is tagged by type (bug, gap, workaround, pattern, request), severity, customer context, and frequency across accounts. Over weeks of disciplined logging, this registry becomes the single most valuable data source your product team has for understanding real-world usage. It replaces the informal "I heard from a customer that..." conversations with quantified evidence: "This data type coercion issue has appeared in 7 of our 12 active deployments, costs an average of 4 hours per occurrence, and affects customers representing 38% of ARR." That level of specificity changes roadmap conversations from opinion battles into prioritization exercises.
+A field deployment learning loop has four parts: capture observations as they happen, classify them, deliver them to the product team on a rhythm, and close the loop by telling the field what happened. OpenAI's FDE team gives a concrete picture of the delivery part, with regular knowledge-sharing sessions with research, readouts with product leadership, an internal "FDE Field notes" channel, and periodic bootcamps for the whole team ([The Pragmatic Engineer](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers)).
 
-Success looks like a registry that your product manager checks before planning each sprint, that core engineers reference when designing new features, and that new forward deployed engineers read before starting their first customer engagement. When you have that, the learning loop is truly continuous, each deployment makes every future deployment better.
+The loop is also how forward deployed engineer feedback earns trust inside the company. A product team that receives a steady stream of specific, evidenced customer deployment insights starts to plan around them. A team that receives occasional anecdotes learns to ignore them. Consistency is what turns field engineering product feedback into an input the roadmap depends on.
+
+This skill covers building that loop for one engagement and keeping it running. Turning recurring patterns into product proposals is a separate step, covered in [transitioning field learnings into product features](../transitioning-field-learnings-into-product-features/SKILL.md).
 
 ## How It Works
 
-The learning loop operates on a simple but powerful principle: individual deployment observations are nearly worthless in isolation, but identical observations repeated across multiple customer environments become product intelligence. A single customer complaining about a confusing date format configuration is a support ticket. Seven customers independently working around the same date format limitation is a product gap that, once fixed, eliminates hours of deployment friction across every future engagement.
+The loop starts with capture. Observations decay quickly, so the FDE records them on the day in a structured log rather than relying on memory. Each entry records what happened, where, who was affected, whether it was seen or reported, and any evidence such as a screenshot, log line or quote. The seen-or-reported distinction matters most: what users say they need and what the FDE watches them do often differ, and the gaps are where product insight hides.
 
-The mechanism has three layers. The first layer is capture, the raw act of writing down what happened, when, in what customer context, and what you did about it. Capture must happen close to the moment of discovery because field engineers under deployment pressure will forget details within days. The registry format matters here: it needs enough structure to be searchable and aggregatable, but not so much structure that logging an observation takes longer than the observation itself. A good entry takes 3-5 minutes to write. If it regularly takes longer, your template is too heavy and engineers will stop using it.
+Classification comes next. Each entry gets a type (bug, missing capability, usability problem, workaround, integration gap, unexpected use) and a scope tag: specific to this customer, or likely to recur. Recurrence is a judgment at first. It becomes evidence when other FDEs log the same thing at other customers, which is why a shared log across engagements is worth far more than one per engagement.
 
-The second layer is pattern detection. This is where the registry earns its keep. Once you have 30-50 entries across multiple customers, you start tagging and filtering to find clusters. Pattern detection answers the question: "Is this thing I just encountered a one-off quirk of this customer's environment, or is it a systemic issue my product needs to address?" The answer almost always requires cross-customer visibility, which is exactly what individual engineers working in separate customer environments lack unless a shared registry exists. Pattern detection is typically done in a weekly or biweekly review where you scan recent entries, merge duplicates, and update frequency counts.
+Delivery happens on a rhythm. a16z's advice to companies building forward deployed teams is to create the right feedback loops between the front lines and product and to "cut out games of telephone" ([a16z](https://a16z.com/services-led-growth/)). A fixed slot, such as a short review with a named product counterpart, is more reliable than ad hoc messages. Palantir's FDSE describes sharing technical expertise from the field back to business development and product development as a key responsibility, and notes that some of the company's most valuable product additions originated this way ([Palantir blog](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1)).
 
-The third layer is routing, getting the right patterns to the right audience in the right format. Core engineering teams do not want raw field notes. They want summarized patterns with enough context to reproduce the issue and enough evidence to justify prioritizing it. Product managers want impact estimates: how many customers are affected, what is the revenue weight, and what is the deployment time cost. Sales teams want to know which gaps are blocking deals. Routing means translating the same underlying insight into different formats for different consumers. Within the [FDE Five-Lens Framework](https://tryhamster.com/methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework), this routing step is what prevents field learning from becoming a black hole where insights go in but nothing comes out.
+Closing the loop is the part teams skip. When the product team acts on an observation, or decides not to, the FDE who logged it should hear back. Without that, engineers stop logging, because the effort appears to vanish. Chandran lists learning infrastructure, including documentation, communities of practice and field reports, among the traits of organizations where the FDE model works; a loop that reports back is what keeps that infrastructure alive.
 
-The reason this three-layer model works better than ad hoc feedback channels (Slack messages, verbal reports in standups, email threads) is aggregation. Ad hoc channels let individual signals through, but they have no mechanism for detecting that the same signal has appeared five times across five different channels. The registry is the aggregation point that makes patterns visible. Without it, your organization's field knowledge is scattered across individual engineers' memories, buried in Slack threads, and lost when people change roles.
+The loop also needs time. Logging, tagging and presenting take time away from delivery, so the engagement plan has to set that time aside explicitly. A small, fixed allowance each week is easier to protect than a vague expectation.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define your taxonomy of field observations
+### Step 1: Set up a shared field log
 
-Before logging anything, decide on the categories you will use to classify observations. Start with five core types: Bug (product behaves incorrectly), Gap (product lacks a capability the customer needs), Workaround (engineer had to build a custom solution to bridge a product limitation), Pattern (a recurring behavior or configuration challenge across customers), and Request (customer explicitly asks for a feature or change). For each type, define two severity levels: blocking (prevents deployment progress or causes production failures) and friction (slows down deployment or degrades the customer experience without stopping work). Write these definitions in a shared document that every field engineer can reference.
+Create one log that every FDE writes to, across engagements. Give each entry the same fields: date, customer, what happened, seen or reported, evidence, type, scope tag and status. Keep it somewhere the product team can read directly. A shared structure is what lets patterns across customers show up.
 
-Keep the definitions tight, one sentence each, so classification decisions take seconds, not minutes.
+### Step 2: Capture observations on the day
 
-> **Pro tip:** Resist the urge to create more than 5-7 categories at the start. Over-taxonomized registries create classification paralysis. You can always split a category later once you have enough entries to justify the distinction.
+Write entries while the detail is fresh, even if they are rough. Record what you saw users do as well as what they asked for. Include evidence where you can: a quote, a screenshot, a log line, a count. Note workarounds carefully, because each workaround marks a place where the product fell short.
 
-### Step 2: Step 2: Create the field insight registry
+### Step 3: Classify and tag each entry
 
-Set up a structured log in whatever tool your team already uses for project tracking. A Notion database, an Airtable base, a dedicated Linear project, or even a well-structured Google Sheet all work. Each entry needs these fields: date observed, customer name, observer (engineer who logged it), category (from your taxonomy), severity, title (one-line summary), description (2-4 sentences of context including what the engineer was trying to do, what went wrong or was missing, and what they did instead), frequency estimate (first time, seen before at this customer, seen at multiple customers), and status (new, confirmed pattern, routed to product, resolved). The registry must be writable by every field engineer and readable by product and engineering leads.
+Give every entry a type and a scope tag: this customer only, or likely to recur. Search the log for similar entries from other engagements and link them. When the same issue appears at several customers, mark it as a pattern. Be honest about uncertainty; "possibly recurring" is a valid tag.
 
-Set permissions accordingly. Seed the registry with 5-10 entries from recent deployments so it does not start empty, which discourages adoption.
+### Step 4: Agree a delivery rhythm with product
 
-> **Pro tip:** Add a 'time cost' field that estimates how many hours the issue added to the deployment. This single number becomes your most powerful argument when presenting patterns to product teams, because it converts abstract friction into concrete cost.
+Name a product counterpart and agree a fixed slot, such as a short weekly or fortnightly review. Bring the patterns and the most important new entries, and keep the full log for reference. Present each with its evidence and the customers affected. Keep urgent issues, such as a blocking bug, on a separate faster path.
 
-### Step 3: Step 3: Establish a daily capture habit
+### Step 5: Record decisions and close the loop
 
-Block 10 minutes at the end of each deployment day for logging. " Treat it like a pilot's post-flight checklist. During those 10 minutes, review your notes, Slack messages, and commit history from the day and log any observation that matches your taxonomy. If nothing notable happened, log that too, a brief "clean day" entry that confirms you checked.
+For each item discussed, record the product team's response: accepted, planned, declined with a reason, or needs more evidence. Update the entry status and tell the FDEs who logged it. When something ships, tell the customers who asked for it. Closed loops keep people logging.
 
-The goal is to make capture automatic rather than heroic. When capture depends on an engineer remembering to log something three days later, the most valuable observations, the ones that happen during high-pressure firefighting, are exactly the ones that get lost. Daily capture at a fixed time prevents this decay.
+### Step 6: Protect time for the loop
 
-> **Pro tip:** Pair the capture habit with an existing daily ritual like standup or end-of-day commit. Habit stacking reduces the willpower cost of maintaining the practice during high-stress deployment periods.
+Put a fixed weekly allowance for logging and review into the engagement plan and tell the customer's sponsor it exists. Treat it like any other commitment. If delivery pressure keeps eating it, raise that with your lead, because a loop that runs only when things are quiet will not run.
 
-### Step 4: Step 4: Run weekly pattern detection reviews
+### Step 7: Review the loop itself
 
-Once per week, spend 30 minutes scanning the full registry with a focus on the entries added in the past 7 days. Your goal is threefold: first, merge duplicate entries that describe the same underlying issue but were logged by different engineers or at different customers. Second, update frequency counts, if you logged a workaround that matches something already in the registry, increment the count and add the new customer to the list of affected accounts. Third, promote observations to pattern status when they appear at three or more customers or when two or more engineers independently report the same issue.
-
-Patterns are the high-signal entries that will eventually get routed to product teams. This weekly scan is also where you catch misclassified entries (a "request" that is actually a "gap", for instance) and clean up descriptions that are too vague to be actionable.
-
-> **Pro tip:** Sort the registry by category and then by frequency during your scan. This physical grouping makes clusters visible much faster than scrolling chronologically.
-
-### Step 5: Step 5: Score confirmed patterns for routing priority
-
-For each entry that reaches pattern status, assign a routing priority score using three factors: frequency (how many customers are affected, scored 1-5), revenue weight (what percentage of total ARR those customers represent, scored 1-5), and deployment time cost (estimated total engineering hours spent on this pattern across all occurrences, scored 1-5). Multiply the three scores to get a composite priority between 1 and 125. Sort patterns by this composite score to get your prioritized list. This scoring is deliberately simple because precision is not the goal.
-
-The goal is to separate the top 20% of patterns (the ones that will get routed first) from the remaining 80%. Do not spend more than 2 minutes scoring any single pattern. If you need more data to score accurately, that is itself useful information: flag the pattern for more data collection rather than guessing.
-
-> **Pro tip:** When estimating revenue weight, use the customer's ARR tier (small, medium, large) rather than exact dollar amounts. Exact figures are rarely available to field engineers and the tier-level granularity is sufficient for prioritization.
-
-### Step 6: Step 6: Prepare pattern briefings for different audiences
-
-Translate your top-scored patterns into format-specific briefings. For core engineering, write a technical reproduction brief: what the issue is, the minimal steps to reproduce it, the environments where it occurs, and any workaround code that field engineers have written (this code often hints at the right solution). For product management, write an impact brief: how many customers are affected, revenue at risk, deployment hours wasted, and the customer quotes or paraphrased frustrations that convey urgency. For sales and customer success, write a status brief: which customers have been affected, what workarounds are in place, and what the expected timeline for a product fix is (or "not yet prioritized" if that is the truth).
-
-These are not three different reports about three different things. They are three views of the same pattern, tailored to what each audience needs to take action.
-
-> **Pro tip:** Include the actual workaround code or configuration in your engineering brief. Core engineers can often see the right abstraction in a workaround faster than they can from a written description of the problem.
-
-### Step 7: Step 7: Present patterns in a biweekly sync with product and engineering
-
-Schedule a recurring 30-minute meeting every two weeks with your product manager and at least one core engineering lead. In this meeting, present the top 3-5 patterns from your prioritized list. For each pattern, spend 3-4 minutes covering the impact brief, show the frequency and revenue data, play back one or two customer quotes, and state the deployment time cost. Then open 2-3 minutes for questions.
-
-The goal of this meeting is not to get an immediate commitment to build something. " Log that response in the registry against the pattern entry. Over time, the registry becomes a record of what the product team has acknowledged, which prevents the common frustration of field engineers feeling like their feedback disappears into a void.
-
-> **Pro tip:** Limit to 5 patterns per meeting, even if you have more. Information overload causes product teams to defer decisions on everything rather than committing to action on a few items.
-
-### Step 8: Step 8: Close the loop back to field engineers
-
-After each biweekly sync, update the registry with the product team's response for each presented pattern. Then send a brief summary (3-5 bullet points) to all field engineers showing which patterns were discussed, what the product team decided, and what the expected timeline is for any patterns that were accepted. This closing step is the most commonly skipped and the most critical for sustaining the loop. Field engineers who see their logged observations lead to real product decisions will log more and better observations.
-
-Engineers who feel their logs go nowhere will stop logging within 4-6 weeks. The summary does not need to be long. It needs to be consistent, sent after every biweekly sync without exception.
-
-> **Pro tip:** Celebrate wins explicitly. When a product fix ships that originated from a field observation, name the engineer who first logged it and the customer where it was discovered. This recognition reinforces the capture habit across the team.
-
-### Step 9: Step 9: Audit and evolve the registry quarterly
-
-Every quarter, review the registry as a whole. Look at three things. First, volume trends: are entries increasing, stable, or declining? Declining volume usually means the capture habit is eroding, not that there are fewer issues.
-
-Investigate and intervene. Second, resolution rates: what percentage of patterns that were routed to product received a fix or explicit deprioritization? If patterns sit in limbo with no response for more than two cycles, the routing process needs adjustment. Third, taxonomy fit: are your categories still the right ones?
-
-After 100+ entries, you will likely see that one category has become a catch-all. Split it. You may also find a category that has fewer than 5 entries after a full quarter. Merge it.
-
-The quarterly audit is also when you archive resolved patterns, clean up stale entries from customers who have churned, and share a "state of the field" summary with leadership that quantifies the total deployment hours saved by patterns that led to product fixes.
-
-> **Pro tip:** Track a single metric quarter over quarter: median days from pattern confirmation to product team response. This measures the health of your routing pipeline more accurately than total entries logged or total patterns resolved.
+Periodically look at the log as a whole. Are entries specific and evidenced? Are patterns being recognized? Is the product team responding? Adjust fields, rhythm or participants based on what you find, and share a short summary with all FDEs.
 
 ## Best Practices
 
-- Log observations within the same working day they occur, even if your notes are rough. Field insights decay rapidly in memory. Engineers who wait until Friday to batch-log their week's observations consistently omit the most nuanced details, the exact error message, the customer's phrasing of their frustration, the sequence of configuration steps that triggered the issue. Same-day logging preserves the specificity that makes entries actionable.
-- Use the customer's own language in your registry descriptions, not your technical translation of it. When a customer says "the dashboard takes forever to load after we add more than 50 data sources," that phrasing carries information your paraphrase will lose. It tells product teams about the customer's mental model, their threshold of acceptable performance, and the scale at which their usage breaks. Stripping that language into "performance issue with many data sources" discards the very context that drives prioritization decisions.
-- Separate observation from recommendation in every registry entry. The description field captures what happened. If you have a suggestion for how to fix it, put that in a separate "suggested approach" field. Mixing the two causes core engineers to react to your solution proposal rather than understanding the underlying problem.
-
-Keeping them separate lets the product team validate the problem independently and often find better solutions than the field engineer, who was solving under time pressure, could have proposed.
-- Assign a single registry owner even when multiple engineers contribute. The owner is not the only person who logs entries. They are the person responsible for running the weekly pattern detection scan, maintaining taxonomy consistency, and preparing the biweekly briefings. Without a designated owner, the registry becomes a write-only store where entries accumulate but patterns never surface.
-
-Rotate ownership quarterly to prevent burnout and spread institutional knowledge.
-- Never present a pattern to the product team without a frequency count and a revenue-weight estimate. A single data point is an anecdote. Product managers hear anecdotes all day. What changes their behavior is evidence that this anecdote represents a systemic pattern affecting a measurable portion of customers and revenue.
-
-Even rough estimates ("affects at least 4 of our 15 active accounts, representing roughly 30% of deployment ARR") are dramatically more persuasive than unquantified descriptions.
-- Keep workaround code and configuration snippets in the registry alongside the pattern they address. These artifacts serve double duty: they help new field engineers handle the issue faster at their next deployment, and they give core engineering a concrete starting point when designing the product-level fix. Workarounds that live only in individual engineers' local repositories or Slack messages are effectively invisible to the organization.
-- Review your robots.txt and internal documentation access policies to ensure that learnings captured in customer-facing documentation (knowledge bases, setup guides, troubleshooting pages) are accessible for search engines and AI systems. If your analytics engineer customer deployments produce insights that improve public-facing docs, those docs should be structured for discoverability using the principles in the ai-seo and schema-markup disciplines.
+- **Log behavior as well as requests.** What users do is stronger evidence than what they ask for. The gap between the two often points to the real problem.
+- **Keep one log across all engagements.** Patterns only appear when observations from different customers sit side by side. Separate logs hide recurrence.
+- **Attach evidence to every entry.** A quote, screenshot or log line makes an observation credible to a product team that was not there. Entries without evidence are easy to dismiss.
+- **Bring grouped patterns to product.** The product team has limited time. Present grouped patterns with the customers affected and leave the raw log available for detail.
+- **Always report back.** Tell the logger and the customer what happened to each item. Silence teaches people that logging is pointless.
+- **Budget the time explicitly.** A named weekly allowance survives delivery pressure better than good intentions.
 
 ## Common Mistakes
 
-- **Logging solutions instead of problems** — Field engineers, especially experienced ones, often jump straight to describing what they built or configured to fix an issue without first documenting the problem they encountered. This happens because the engineer's mental focus during deployment is on unblocking the customer, not on describing the blockage. The result is a registry full of workarounds with no clear problem statements, making pattern detection nearly impossible because two different workarounds may address the same underlying gap. Catch this by scanning new entries weekly for entries that start with "I did X" rather than "the customer encountered Y." Require every entry to have a problem statement as the first sentence, followed by the workaround if one was applied.
-- **Treating the registry as a bug tracker** — Some teams start strong but gradually let the registry collapse into a secondary bug tracking system where only defects get logged. This happens because bugs feel like the most "legitimate" type of feedback, while gaps, patterns, and requests feel subjective. Over time, the registry loses its most valuable entries: the observations about how customers actually use the product differently than the product team assumed. Prevent this by reviewing the category distribution in your weekly scan.
-
-If more than 60% of entries in any given month are bugs, actively prompt engineers to log at least one gap, pattern, or request per week. The non-bug entries are where the highest-leverage product insights hide.
-- **Presenting raw field notes to product teams instead of synthesized patterns** — Eager field engineers sometimes forward individual registry entries directly to product managers, hoping the urgency of a specific customer's pain will drive action. This almost always backfires. Product teams process dozens of inputs daily and a single field note, no matter how well-written, looks like noise. Worse, it trains the product team to expect that field feedback is unsynthesized and low-signal, making them less likely to pay attention when you do present a properly scored pattern.
-
-Wait until you have confirmed a pattern with cross-customer frequency data and an impact score before routing to product. The biweekly sync is the designated channel. Ad hoc escalation should be reserved for truly blocking, production-down issues.
-- **Abandoning the loop when product teams do not act on early patterns** — The most common failure mode is not a badly designed registry. It is an engineer or team that stops maintaining the loop after two or three biweekly syncs where product teams acknowledge patterns but do not prioritize them. This feels like futility, but it is actually a sequencing problem. Product teams need to see a pattern persist across multiple review cycles before it competes with their existing roadmap commitments.
-
-The field engineer's job is to keep the evidence accumulating and the priority score updated. Patterns that the product team declines in Q1 with a frequency of 3 may become undeniable in Q2 with a frequency of 9. Measure your success by the accuracy and completeness of your registry, not by how quickly product teams act on it.
-- **Building a registry that only one person can query** — Technically proficient engineers sometimes build elegant but complex registry systems, a custom Postgres database with Python scripts for pattern analysis, for example, that only they know how to query. This creates a single point of failure and makes the loop dependent on one person's availability. When that person goes on vacation or changes roles, the loop dies. Build the registry in a tool that non-technical stakeholders can filter and search without writing code.
-
-If you need advanced analysis, build it as a layer on top of an accessible base, not as the only interface. Test accessibility by asking a product manager to find all blocking patterns from the last 30 days without your help.
-- **Not including deployment time cost in pattern entries** — Engineers who come from pure software engineering backgrounds tend to describe problems in technical terms (error types, API limitations, missing abstractions) without quantifying the operational cost. A pattern entry that says "OAuth token refresh fails silently when customer uses a non-standard identity provider" is useful. A pattern entry that adds "resolving this issue takes 3-6 hours per deployment and has occurred at 5 customers" is actionable. The time cost is what converts a technical observation into a business case.
-
-If you are not sure of the exact hours, estimate a range. Product teams can work with ranges.
+- **Relying on memory**: Observations written up at the end of an engagement lose detail and evidence. Write them on the day, even roughly.
+- **Passing on raw requests**: A list of customer asks without context or evidence gives product nothing to prioritize. Classify, link to other customers and show what users actually do.
+- **Keeping the log private**: A log only the FDE can see cannot show patterns across the team. Put it where product and other FDEs can read it.
+- **Never closing the loop**: When logged items disappear without a response, engineers stop logging. Record every decision and tell the people involved.
+- **Letting delivery crowd out learning**: Under pressure, the loop is the first thing dropped. Put its time in the plan and escalate if it keeps getting cut.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md) — Forward Deployed Engineering Five‑Lens Framework (FDE Five‑Lens Framework)
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/forward-deployed-engineering-five-lens-framework-fde-five-lens-framework/METHOD.md): FDE Five-Lens Framework
 
 ## Related Skills
 
-- [Scoping Mission-Driven FDE Engagements](../scoping-mission-driven-engagements/SKILL.md)
+- [Transitioning Field Learnings into Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
 - [Operating Autonomously in Customer Environments](../operating-autonomously-in-customer-environments/SKILL.md)
-- [Shipping Production Systems Inside Client Infrastructure](../shipping-production-systems-inside-client-infrastructure/SKILL.md)
 - [Measuring FDE Success by Business Outcomes](../measuring-fde-success-by-business-outcomes/SKILL.md)
-- [Building Interdisciplinary Forward Deployed Engineer Skills](../building-interdisciplinary-fde-skillsets/SKILL.md)
-- [Transitioning Field Learnings into Core Product Features](../transitioning-field-learnings-into-product-features/SKILL.md)
-- [Preparing for Forward Deployed Engineer Interviews](../preparing-for-forward-deployed-engineer-interviews/SKILL.md)
+
+## Sources
+
+- [Vishwanathan Chandran: The Rise of the Forward Deployed Engineer](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7)
+- [Lenny's Newsletter: The unconventional Palantir principles](https://www.lennysnewsletter.com/p/the-unconventional-palantir-principles)
+- [The Pragmatic Engineer: What are Forward Deployed Engineers?](https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers)
+- [a16z: Trading Margin for Moat](https://a16z.com/services-led-growth/)
+- [Palantir Blog: A Day in the Life of a Palantir Forward Deployed Software Engineer](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1)

@@ -1,15 +1,20 @@
 ---
-name: drafting-ai-constitution-principles
-description: "This skill teaches you how to define, structure, and prioritize a set of clear, actionable ethical principles—a 'constitution'—that guides an AI model's behavior during both training and inference, as used in Anthropic's Constitutional AI approach."
+name: "drafting-ai-constitution-principles"
+description: "Drafting AI constitution principles: write the short critique, revision and comparison rules that steer Constitutional AI training."
 category: "Development"
 metadata:
   homepage: https://tryhamster.com
-  method: constitutional-ai
+  method: "constitutional-ai"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Drafting a Constitution of Ethical Principles for Claude AI
+# Drafting AI Constitution Principles for Constitutional AI
 
-> This skill teaches you how to define, structure, and prioritize a set of clear, actionable ethical principles—a 'constitution'—that guides an AI model's behavior during both training and inference, as used in Anthropic's Constitutional AI approach.
+> Drafting AI constitution principles: write the short critique, revision and comparison rules that steer Constitutional AI training.
 
 ## Before you start
 
@@ -24,159 +29,99 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours |
-| Outcome | You can independently author a complete, internally consistent constitution of ethical principles that meaningfully shapes AI behavior during Constitutional AI training and inference. |
-| Prerequisites | Basic understanding of large language model training, Familiarity with the Constitutional AI framework, Knowledge of AI safety concepts (helpfulness, harmlessness, honesty), Understanding of reinforcement learning from AI feedback (RLAIF) |
+| Time to Learn | A few hours to draft, several pilot rounds to settle |
+| Outcome | You have a tested set of AI constitution principles, written as critique, revision and comparison instructions, ready to drive Constitutional AI training. |
+| Prerequisites | A helpful instruction-following model, a sample of red-team prompts, a clear view of the behaviors you want to change |
 | Part of | [Constitutional AI](../../methods/constitutional-ai/METHOD.md) |
 
 ## Overview
 
-A constitution in the context of Constitutional AI is a curated set of ethical principles that an AI model uses to evaluate, critique, and revise its own outputs. Rather than relying solely on thousands of human preference labels, the constitution encodes human values into explicit rules that the model applies during self-supervision. Drafting this constitution is arguably the most consequential step in the entire Constitutional AI pipeline—it determines what the model considers acceptable, what it refuses, and how it balances competing objectives like helpfulness and safety.
+In Constitutional AI the constitution is the only direct human input on what counts as harmful, so drafting it is the step with the most influence on the result. Every critique, every revision and every AI preference label is produced by a model reading one of your principles. A vague or lopsided principle does not stay contained: it is sampled thousands of times and shapes the whole training set. Background on the method itself is on the [Constitutional AI](../../methods/constitutional-ai/METHOD.md) page.
 
-This skill covers the full lifecycle of constitution drafting: sourcing candidate principles from ethical frameworks and real-world failure modes, writing principles in a format that models can operationalize, stress-testing principles against adversarial edge cases, and iterating based on observed model behavior. The principles you draft here feed directly into the self-critique and revision loop that makes Claude AI and similar systems safe and aligned.
+An AI constitution in this sense is a set of instructions a model can act on. In the original paper it had two kinds: pairs of critique and revision requests for the supervised phase, and comparison instructions for the reinforcement learning phase. The authors wrote 16 of each and describe them as selected "in a fairly ad hoc manner for research purposes" ([Bai et al.](https://arxiv.org/pdf/2212.08073)). Anthropic later published the fuller set it used for Claude and explained how it chose them ([Claude's constitution, 2023](https://www.anthropic.com/news/claudes-constitution)), and ran an experiment drafting one with members of the public ([Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input)). Those three documents are the best evidence of what works.
 
-Whether you are building a safety-critical production system or experimenting with alignment research, learning to draft a robust constitution gives you direct, interpretable control over model behavior—without the cost and latency of massive human annotation campaigns.
+Three lessons from them shape this skill. Broad principles tend to generalize better than long, specific ones. A model trained hard on harmlessness principles can become preachy, so a constitution needs principles that ask for proportionate responses. And the format matters: comparison principles are written as "choose the response that is more X," and anything else has to be translated into that form.
+
+The skill applies whether you are training from scratch, fine-tuning an open model, or writing grading rubrics for an evaluator that uses the same comparison format. The output is a versioned document of principles and few-shot examples, plus notes on why each principle exists and what behavior it was meant to change.
 
 ## How It Works
 
-The constitution works as an intermediate layer between raw model capabilities and aligned model behavior. During Constitutional AI training, the model generates an initial response to a prompt, then is asked to critique and revise that response according to specific constitutional principles. Each principle acts as a decision rule: it tells the model what to look for (e.g., harmful stereotypes, deceptive claims, unhelpful evasions) and how to correct it.
+A principle for the supervised phase has two halves. The critique request asks the model to find a kind of problem in its last response. The paper's first example reads: "Identify specific ways in which the assistant's last response is harmful, unethical, racist, sexist, toxic, dangerous, or illegal." The revision request asks the model to fix what it found: "Please rewrite the assistant response to remove any and all harmful, unethical, racist, sexist, toxic, dangerous, or illegal content" ([Bai et al.](https://arxiv.org/pdf/2212.08073)). Some pairs are general, and others target one area, such as advice that helps with crime or content unsuitable for children.
 
-Conceptually, the constitution translates abstract human values into concrete instructions a language model can follow. A principle like 'be honest' is too vague for a model to operationalize consistently. Instead, an effective constitutional principle might read: 'If the response makes a factual claim, ensure it is well-supported and acknowledge uncertainty where appropriate.' This specificity is what makes the constitution actionable during the self-critique phase.
+A principle for the reinforcement learning phase is one instruction that a feedback model uses to choose between two responses. The paper's examples include "Which of these assistant responses is less harmful? Choose the response that a wise, ethical, polite and friendly person would more likely say." The [Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input) write-up notes that CAI principles are typically formatted as "Choose the response that is more X," and that public statements such as "The AI should not do X" needed subjective mapping into that form.
 
-The constitution also establishes a priority hierarchy. When principles conflict—for example, when being maximally helpful would require sharing potentially dangerous information—the constitution defines which principle takes precedence. This hierarchy is critical because real-world prompts constantly create tension between helpfulness, harmlessness, and honesty. Without explicit prioritization, the model's behavior becomes unpredictable at precisely the moments it matters most.
+Principles are not ranked or applied together. During training one principle is sampled for each critique, revision or comparison, and Anthropic says the model "sees each principle many times during training" ([Anthropic, 2023](https://www.anthropic.com/news/claudes-constitution)). If one concern must outweigh another, the priority has to live inside the wording of the principles themselves or in a separate control outside training.
 
-Finally, the constitution is not static. It evolves through empirical testing: you observe how the model applies each principle, identify gaps or unintended consequences, and refine the language. This iterative loop is what transforms a first draft into a robust behavioral framework.
+On specificity, the evidence points one way with a caveat. Anthropic found that a broad principle "worked remarkably well," while "a much longer and more specific principle" tended to damage generalization and effectiveness. The paper [Specific versus General Principles for Constitutional AI](https://arxiv.org/abs/2310.13798) found the largest models could generalize from a single principle roughly stated as "do what's best for humanity," but that more detailed constitutions still gave finer control over specific harms. A practical constitution mixes a few broad principles with a small number of targeted ones.
+
+Finally, principles also control tone. Anthropic added principles asking for responses without "sounding excessively condescending, reactive, obnoxious, or condemnatory" after its model became "judgmental or annoying." Hugging Face showed the reverse in its [open recipe](https://huggingface.co/blog/constitutional_ai), rewriting two revision requests to produce a sarcastic, Grok-style refusal voice.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify Core Value Categories
+### Step 1: Define what the constitution governs
 
-Begin by defining the high-level value categories your constitution must address. For systems like Claude AI, Anthropic structures these around three pillars: helpfulness (the model should provide genuinely useful, complete answers), harmlessness (the model should avoid generating harmful, dangerous, or discriminatory content), and honesty (the model should be truthful, calibrated in its confidence, and transparent about its limitations).
+Write down the behaviors you want training to change, in plain terms: what the model currently does on red-team prompts that it should stop doing, and what it should do instead. Separate harmlessness concerns from style concerns, since both can be expressed as principles but they are judged differently. Note which behaviors must never appear at all, because those need a control beyond training. This list becomes the checklist for coverage later.
 
-Research existing ethical frameworks relevant to your domain. The Universal Declaration of Human Rights, the ACM Code of Ethics, domain-specific regulations (like HIPAA for healthcare), and Anthropic's published constitutional principles are all rich sources. Don't limit yourself to AI-specific documents—often the most important principles come from established ethical traditions.
+### Step 2: Collect candidate principles
 
-Create a working list of 5-10 value categories. Each category will eventually contain one or more specific principles. Common categories beyond the big three include: privacy protection, fairness and non-discrimination, autonomy and user agency, transparency about AI nature, and appropriate deference to human judgment.
+Draw candidates from published sets first, since they have already been through training runs: the paper's appendix, Anthropic's 2023 list, and the public constitution from the collective experiment. Add candidates from your own failure cases, written from real transcripts of the base model. Anthropic built its list from sources that included the UN Declaration of Human Rights, trust and safety practice, other labs' published rules and its own trial and error ([Anthropic, 2023](https://www.anthropic.com/news/claudes-constitution)). Keep a note of where each candidate came from.
 
-> **Pro tip:** Start with a broad brainstorm and then consolidate. It's easier to merge overlapping categories than to discover gaps after you've already started writing principles.
+### Step 3: Write critique and revision pairs
 
-### Step 2: Step 2: Source Candidate Principles from Failure Modes
+For each concern, write a critique request that names the problem to look for and a revision request that names the fix. Keep the pair aligned: the revision should repair exactly what the critique was asked to find. Use the model's point of view consistently, referring to "the assistant's last response," as the paper does. Write several general pairs and a few targeted ones, and let some be near variants: the paper rewrote principles to stress different aspects of harm, which gave more diverse revisions ([Bai et al.](https://arxiv.org/pdf/2212.08073)).
 
-The most effective constitutional principles are grounded in real failure modes—situations where an AI model actually produced harmful, misleading, or unhelpful output. Collect examples from red-teaming exercises, published AI safety incidents, user feedback, and adversarial prompt datasets.
+### Step 4: Write comparison principles
 
-For each failure mode, write a natural-language description of what went wrong and what the model should have done instead. For example, if a model generated instructions for synthesizing a dangerous chemical, the failure mode is 'providing actionable dangerous information when asked.' The corresponding principle draft might be: 'The response should not provide specific instructions that could enable someone to cause serious harm to others, even if the user frames the request as hypothetical or educational.'
+Rewrite each concern as an instruction that picks one of two responses, in the "Choose the response that is more X" form. Keep each one to a sentence or two. Where a concern came in as a rule ("the AI should not do X"), translate it into a comparison and record the translation, since the collective experiment found that step involves judgment calls ([Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input)). Include at least one principle that asks for the most helpful, honest and harmless response overall.
 
-This failure-mode-driven approach ensures your constitution addresses real risks rather than theoretical ones. It also produces principles that are concrete enough for a model to apply during self-critique. Cross-reference your failure modes with your value categories from Step 1 to ensure coverage across all categories.
+### Step 5: Add proportionality principles
 
-> **Pro tip:** Review the sibling skill on crafting red-team prompts to stress-test AI safety for systematic methods to discover failure modes you might otherwise miss.
+Write principles that penalize overreaction: preachiness, accusations, lectures and needless refusals. The paper's RL set includes "try to avoid choosing responses that are too preachy, obnoxious, or overly-reactive," and the authors report that rewriting principles this way improved behavior. Without these, harmlessness principles alone push the model toward the harsh, boilerplate-heavy answers the paper saw in over-trained models. Check the whole set for balance: count how many principles only push toward caution.
 
-### Step 3: Step 3: Write Principles as Actionable Critique Instructions
+### Step 6: Write few-shot examples
 
-Transform each candidate principle into an instruction the model can use during self-critique. The key test: could a model read this principle and concretely evaluate whether a given response violates it?
+Write a handful of worked examples in exactly the format the model will see: a conversation, a critique request, a critique, a revision request and a revision, and for comparisons, a conversation with two options and the correct choice. The paper used these to stop the model confusing its critique and revision roles. Hugging Face found it had to write its own examples for a different model, because revisions otherwise started with prefixes like "sure, here is a revised response" ([Hugging Face](https://huggingface.co/blog/constitutional_ai)).
 
-Avoid vague language like 'be ethical' or 'don't be biased.' Instead, specify the observable behavior and the correction. A well-written principle follows this pattern: 'If [condition is detected in the response], then [specific action to take].'
+### Step 7: Pilot, read and revise
 
-Examples of well-structured principles:
-- 'If the response contains a claim presented as fact, verify that it is widely accepted or clearly hedge with appropriate uncertainty language.'
-- 'If the response could be used to cause physical harm to a specific individual or group, refuse the request and explain why.'
-- 'If the user asks the assistant to role-play as a human or deny being an AI, the response should politely clarify that it is an AI assistant.'
-
-Each principle should be 1-3 sentences. Longer principles become harder for the model to apply consistently. If a principle requires extensive explanation, split it into two or more focused principles.
-
-> **Pro tip:** Write principles in the second person ('the response should...') rather than first person ('I should...'). This framing works better during the self-critique phase because the model evaluates its output as a separate artifact.
-
-### Step 4: Step 4: Establish a Priority Hierarchy
-
-Not all principles carry equal weight, and in practice, they will conflict. A user might ask Claude AI for detailed medical advice (helpfulness) that could be dangerous if the user self-medicates incorrectly (harmlessness). Your constitution must define which principle wins.
-
-Organize principles into tiers. A common hierarchy for safety-focused systems:
-
-**Tier 1 (Inviolable):** Principles that should never be overridden. These typically address catastrophic harms—helping create weapons of mass destruction, generating child sexual abuse material, or enabling targeted violence against individuals.
-
-**Tier 2 (Strong defaults):** Principles that apply in the vast majority of cases but may be modulated in specific contexts. Examples include refusing to provide medical diagnoses (but offering general health information), or avoiding explicit content (but allowing clinical discussion in educational contexts).
-
-**Tier 3 (Soft preferences):** Principles that improve output quality but yield to higher-priority concerns. Examples include maintaining a friendly tone, providing comprehensive answers, or offering multiple perspectives.
-
-Document the hierarchy explicitly in your constitution. Include 2-3 'conflict resolution examples' that show how the hierarchy applies when principles clash. These examples serve as calibration data during training.
-
-> **Pro tip:** The hardest part of constitution design is Tier 2—where principles are strong defaults but context-dependent. Invest extra time defining the conditions under which Tier 2 principles can be relaxed.
-
-### Step 5: Step 5: Stress-Test Against Adversarial Scenarios
-
-Before finalizing your constitution, run it against a diverse set of adversarial and edge-case prompts. For each prompt, manually trace through your principles and determine what the constitution prescribes.
-
-Create a test matrix that includes:
-- Direct harmful requests ('How do I make a bomb?')
-- Jailbreak attempts that reframe harmful requests as fiction or hypotheticals
-- Ambiguous requests where harmfulness depends on intent
-- Requests that pit helpfulness against harmlessness
-- Culturally sensitive topics where 'harm' is contested
-- Requests for the model to override its own guidelines
-
-For each test case, document: (1) which principles activate, (2) whether the priority hierarchy produces the correct outcome, (3) any gaps where no principle addresses the scenario, and (4) any cases where principles produce an overly cautious or unhelpful response.
-
-This step often reveals that your principles are either too broad (causing unnecessary refusals) or too narrow (missing harmful edge cases). Both problems need correction before the constitution enters training.
-
-> **Pro tip:** Pay special attention to cases where your constitution produces excessive refusals. Over-cautious behavior erodes user trust and incentivizes users to find workarounds, ultimately undermining safety.
-
-### Step 6: Step 6: Iterate Based on Model Behavior
-
-Deploy your draft constitution in a test environment where the model uses it for self-critique and revision (the core loop of Constitutional AI). Evaluate the model's revised outputs against your expectations.
-
-Look for three categories of issues:
-
-**Misinterpretation:** The model applies a principle in ways you didn't intend. This usually means the principle's language is ambiguous. Rewrite it with more specific conditions and examples.
-
-**Under-application:** The model fails to invoke a principle when it should. This can happen when the principle's trigger conditions are too narrow or when the model doesn't recognize the relevant pattern. Broaden the trigger or add supporting examples.
-
-**Over-application:** The model applies a principle too aggressively, producing unnecessarily cautious or unhelpful responses. This is the most common issue and is addressed in the sibling skill on balancing helpfulness and harmlessness tradeoffs.
-
-Plan for at least 3-5 revision cycles. Each cycle should include fresh adversarial testing, quantitative evaluation of helpfulness and safety metrics, and qualitative review of representative outputs. The constitution matures through this empirical process—no amount of armchair reasoning substitutes for observing actual model behavior.
-
-> **Pro tip:** Keep a changelog for your constitution. Documenting why each principle was added, modified, or removed creates institutional knowledge that prevents future contributors from repeating past mistakes.
-
-### Step 7: Step 7: Document Rationale and Scope
-
-A finished constitution should include not just the principles themselves but also documentation explaining each principle's purpose, the failure mode it addresses, its priority tier, and known limitations.
-
-This documentation serves multiple audiences:
-- **Training engineers** need to understand the intended behavior to evaluate whether the model has learned it correctly.
-- **Red-teamers** need to know what the constitution claims to prevent so they can test those claims specifically.
-- **Policy stakeholders** need to trace model behaviors back to explicit design decisions for accountability.
-
-Include a preamble that states the constitution's overall goals, the ethical frameworks it draws from, and the populations it is designed to protect. This preamble provides context that helps resolve ambiguous cases where individual principles don't clearly apply.
-
-Finally, define the constitution's scope: what kinds of interactions it governs, what it explicitly does not address, and how it should be updated as the model's capabilities and deployment context evolve.
-
-> **Pro tip:** Treat the constitution as a living document with version control. As Claude AI and similar systems are deployed in new domains, the constitution will need corresponding updates.
+Run the critique and revision loop and the comparison labeling on a small sample of red-team and ordinary prompts. Read the outputs grouped by principle, and look for principles that produce off-target critiques, over-cautious revisions or inconsistent choices. Rewrite or drop those, then rerun the sample. Version the constitution and keep the pilot outputs, so later changes can be compared against a known baseline.
 
 ## Best Practices
 
-- Write each principle to be independently interpretable—the model may apply principles individually during self-critique, so each one must make sense without requiring reference to other principles.
-- Aim for 10-25 total principles in your initial constitution. Fewer than 10 typically leaves dangerous gaps; more than 25 creates conflicts and makes it harder for the model to apply them consistently.
-- Include at least 2-3 principles that specifically address meta-behaviors: what the model should do when it's uncertain which principle applies, when it encounters a novel scenario, or when the user explicitly asks it to ignore its principles.
-- Ground every principle in at least one concrete failure mode or scenario. If you can't point to a real or plausible situation where the principle matters, it's probably too abstract to be useful.
-- Test your constitution with diverse evaluators—people from different cultural backgrounds, domains, and risk tolerances will surface blind spots that a homogeneous team will miss.
-- Revisit the balance between safety and helpfulness after every revision cycle. Constitutions tend to drift toward over-caution as principles accumulate, so actively prune or soften principles that cause unnecessary refusals.
+- Keep principles short and broad by default. Anthropic reports that longer, more specific principles tended to reduce generalization, so reserve detail for the few harms that need targeted control.
+- Write principles in pairs that match. A revision request that fixes more or less than its critique asked about produces revisions that drift from the stated problem.
+- Balance caution with proportionality. Include explicit principles against preachy or accusatory answers, since the paper found that rewriting principles this way improved behavior qualitatively.
+- Record the reason for every principle. A short note on what failure it targets makes later pruning and review possible, and makes the constitution readable to people outside the training team.
+- Treat the constitution as versioned code. Change one thing at a time, rerun the pilot sample, and keep the old outputs for comparison.
+- Remember that principles are sampled one at a time. Anthropic's model sees one principle at a time, so a principle that only makes sense next to another one will be misapplied.
 
 ## Common Mistakes
 
-- **Writing principles that are too abstract or aspirational (e.g., 'Be fair and unbiased') without specifying what fairness looks like in practice.** — Rewrite each principle with specific, observable criteria. Instead of 'Be fair,' write 'If the response discusses groups of people, avoid generalizations and present perspectives that represent the diversity within those groups.' Test each principle by asking: could two reasonable people disagree about whether a given response violates this?
-- **Treating the constitution as a one-time artifact that doesn't need updating after initial deployment.** — Establish a regular review cadence (e.g., monthly). Feed new red-team findings, user complaints, and capability changes back into the constitution. Version each update and track its impact on model behavior metrics.
-- **Failing to define priority ordering, leading to contradictory model behavior when principles conflict.** — Explicitly assign every principle to a priority tier and include conflict-resolution examples in the constitution. During testing, specifically look for prompts that trigger conflicting principles and verify the hierarchy produces the intended outcome.
-- **Drafting principles in isolation from the model's actual capabilities, resulting in instructions the model cannot follow.** — After drafting, test each principle by having the model attempt self-critique using that principle. If the model consistently misapplies it, the principle needs rewriting—not more training. The constitution should meet the model where its reasoning capabilities are.
-- **Optimizing exclusively for safety, producing a constitution that makes the model refuse or hedge so often it becomes unhelpful.** — Include explicit helpfulness principles with appropriate priority and track refusal rates alongside safety metrics. Refer to the sibling skill on balancing helpfulness and harmlessness tradeoffs for detailed strategies.
+- **Writing values instead of instructions**: A principle such as "be ethical" gives the model nothing specific to look for. Rewrite it as a critique request that names the problem and a revision request that names the fix.
+- **Building a ranked hierarchy and expecting training to honor it**: CAI samples one principle at a time without priority. Put the priority into the wording, or handle absolute limits with a separate control.
+- **Only writing harmlessness principles**: A constitution with no counterweight trains an evasive or preachy model. Add principles that reward engaging, proportionate answers.
+- **Over-specifying**: Long principles that try to cover every case tend to generalize worse. Split them, or keep the broad version and add one narrow principle for the case that matters.
+- **Skipping few-shot examples**: Without examples in the exact format, models mix up critiques and revisions or add chatty prefixes. Write them for the model you are actually using.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/constitutional-ai/METHOD.md) — Constitutional AI
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/constitutional-ai/METHOD.md): Constitutional AI
 
 ## Related Skills
 
+- [Implementing AI Self-Critique and Revision](../implementing-ai-self-critique-and-revision/SKILL.md)
 - [Generating Reinforcement Learning from AI Feedback (RLAIF)](../generating-reinforcement-learning-from-ai-feedback/SKILL.md)
-- [Scaling Constitutional Training Without Human Labels](../scaling-constitutional-training-without-human-labels/SKILL.md)
-- [Implementing Self-Critique and Revision in AI Outputs](../implementing-ai-self-critique-and-revision/SKILL.md)
-- [Evaluating AI Alignment Using Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
 - [Balancing Helpfulness and Harmlessness in AI Responses](../balancing-helpfulness-and-harmlessness-tradeoffs/SKILL.md)
-- [Crafting Red-Team Prompts to Stress-Test AI Safety](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
+- [Constitutional AI Red Teaming with Adversarial Prompts](../crafting-red-team-prompts-for-safety-testing/SKILL.md)
+- [Evaluating AI Alignment with Preference Models](../evaluating-ai-alignment-with-preference-models/SKILL.md)
+- [Scaling Constitutional AI Training Without Human Labels](../scaling-constitutional-training-without-human-labels/SKILL.md)
+
+## Sources
+
+- [Bai et al.: Constitutional AI, Harmlessness from AI Feedback (full paper)](https://arxiv.org/pdf/2212.08073)
+- [Anthropic: Claude's constitution (2023)](https://www.anthropic.com/news/claudes-constitution)
+- [Anthropic: Collective Constitutional AI](https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input)
+- [Kundu et al.: Specific versus General Principles for Constitutional AI](https://arxiv.org/abs/2310.13798)
+- [Hugging Face: Constitutional AI with Open LLMs](https://huggingface.co/blog/constitutional_ai)
