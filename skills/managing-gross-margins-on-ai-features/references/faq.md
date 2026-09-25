@@ -1,29 +1,21 @@
 # FAQ: Managing Gross Margins on AI-Powered Features
 
-## How do I manage gross margins when my AI features are bundled into a flat subscription and I can't attribute revenue per feature?
+## How do I manage margin when AI is bundled into a flat subscription?
 
-Use usage-weighted revenue allocation as your starting framework: if Feature A generates 40% of your total AI inference calls, attribute 40% of the subscription revenue designated as 'AI value' to Feature A. To determine what portion of subscription revenue relates to AI, use customer research data (what percentage of value do customers attribute to AI features?), or if unavailable, use the ratio of AI COGS to total COGS as a proxy. This is imprecise but directionally correct. As you mature, run willingness-to-pay studies that ask customers to allocate value across features — this gives you a more defensible allocation model. The key is to pick a method, document it, and be consistent so trend analysis is meaningful.
+Allocate subscription revenue to features with a written rule, such as share of usage or share of list value, and keep it stable. Then compare each feature's allocated revenue with its metered cost. The absolute numbers depend on the rule, but trends and customer rankings are still reliable.
 
-## Should I manage AI gross margins before or after I've finalized my pricing tiers?
+## Should I set up margin management before or after finalizing tiers?
 
-Both, but start margin management now regardless of pricing maturity. You need cost data to set pricing, and you need margin monitoring to validate that pricing works. Begin with Steps 1-4 (cost mapping, margin calculation, floor setting, and dashboard) even before pricing is finalized — this data directly informs your pricing decisions via sibling skills like [modeling token cost pass-through](https://tryhamster.com/skills/modeling-token-cost-pass-through). Once pricing launches, Steps 5-9 (guardrails, alerting, reviews) become your ongoing operating system. Companies that wait until pricing is 'done' to start margin management typically discover problems 2-3 months into launch when usage patterns reveal that their pricing assumptions were wrong.
+Set up measurement before launch, because the tiers need a margin check at maximum use. The ongoing routine starts once real customers arrive. The first months of data usually lead to adjustments in included usage.
 
-## How long should it take to see results from margin improvement initiatives?
+## Why does margin keep drifting down when nothing changed?
 
-Tier 1 automated guardrails (caching, model routing, prompt optimization) typically show measurable margin improvement within 1-2 weeks of deployment. Caching often produces the fastest results — you'll see cost reduction in your next daily rollup. Model routing takes slightly longer because you need to validate quality isn't degraded. Pricing changes take 1-3 months to flow through, depending on billing cycles and contract terms. Infrastructure changes like model migration or self-hosting take 2-4 months from decision to margin impact. Plan your improvement backlog with these timelines in mind — mix quick wins (caching, prompt optimization) with strategic bets (pricing, infrastructure) so you show continuous progress.
+Something usually did change: customers adopted heavier features, pasted longer inputs, or started using agent workflows more. Cache hit rates can also fall when prompts change. Check tokens per request and feature mix before assuming vendor prices moved.
 
-## Why does my gross margin keep drifting downward even though I haven't changed anything?
+## Won't cheaper models hurt quality?
 
-Three common causes of passive margin drift. First, **usage pattern evolution**: as customers become more sophisticated, they use features in more complex ways (longer documents, more complex queries, more multi-step workflows), increasing average cost per request while revenue per request stays fixed. Check your average tokens per request trending over time. Second, **customer mix shift**: if you're acquiring larger customers with heavier usage patterns, your cost-to-revenue ratio shifts even with unchanged pricing. Review margin by cohort to isolate this. Third, **model provider changes**: some providers adjust pricing or deprecate models, forcing you onto different pricing tiers. Monitor provider changelogs. The fix for all three is the same: the weekly review cadence in Step 7, where you'd catch these trends within 1-2 weeks rather than discovering them in a quarterly P&L.
+They can. Route only the tasks a smaller model handles well, and prove it with evaluations on real examples before switching. Keep a fallback to the larger model for cases the smaller one fails.
 
-## How do I balance margin optimization with AI output quality — won't cheaper models produce worse results?
+## How should I plan for vendor price cuts?
 
-Not necessarily, and the framing of 'cheaper = worse' is the most common misconception in AI cost optimization. Many tasks are over-served by frontier models — using GPT-4 for text classification is like using a Ferrari for grocery shopping. The key is to build a quality measurement framework alongside your cost framework. For each feature, define measurable quality metrics (accuracy on a test set, user satisfaction scores, task completion rates). Then A/B test cheaper alternatives against these metrics. In practice, teams typically find that 40-60% of their inference volume can be served by models 5-10x cheaper with no measurable quality degradation. Only pull optimization levers you can measure the impact of, and roll back immediately if quality metrics decline beyond your tolerance threshold.
-
-## At what usage volume does self-hosting models become more cost-effective than API calls?
-
-The crossover point varies significantly by model size and utilization rate, but a useful rule of thumb: if you're spending more than $15K-$25K per month on API calls for a single model class (e.g., all your GPT-3.5-tier calls), it's worth modeling the self-hosting alternative. The key variable is GPU utilization rate — self-hosted models are only cheaper when GPUs are well-utilized (above 60%). If your traffic is spiky with long idle periods, API calls remain cheaper because you only pay for what you use. Model this in your quarterly strategic review (Step 9): calculate your average requests per second, map it to required GPU capacity, price the infrastructure (including engineering time for MLOps), and compare to your current API spend. Include a 30% overhead factor for the operational complexity of self-hosting.
-
-## How should I account for AI inference cost improvements from providers when planning margins forward?
-
-Historical data shows AI inference costs declining 20-50% annually for comparable capabilities, driven by model efficiency improvements, hardware advances, and provider competition. However, building forward margin plans on expected cost reductions is dangerous — it's the equivalent of spending money you haven't earned yet. Instead, plan pricing and margin targets based on current costs. Treat cost reductions, when they materialize, as a strategic allocation decision: split the windfall between margin improvement (strengthening your P&L), competitive pricing (passing savings to customers), and product investment (upgrading to better models at the same cost). Document this split explicitly in your quarterly review. If a provider has announced future pricing, you can model scenarios, but don't commit to pricing based on costs you haven't locked in contractually.
+Treat them as upside, not as a plan. Budget with current prices, and when a cut arrives, decide deliberately whether to keep the margin, raise included usage or lower price. Cuts vary by model and task, so re-measure rather than applying a headline percentage.

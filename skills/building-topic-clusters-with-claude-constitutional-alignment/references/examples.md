@@ -1,49 +1,37 @@
-# Examples: Building Topic Clusters with Claude's Constitutional Alignment
+# Examples: Claude Topic Clusters with Constitutional Alignment
 
-## Example: B2B SaaS Company Building a Cluster Around Project Management
-
-**Scenario:**
-
-A 50-person project management SaaS company with a DA of 45 wants to build topical authority around project management methodology. Their team has one content marketer and a budget for 2 articles per week. They compete with Asana, Monday.com, and Notion in search results.
-
-**Walkthrough:**
-
-" They prompt Claude to generate 25 candidate subtopics, anchored in this problem statement and targeting awareness through implementation stages. " During intent deduplication, they discover that "agile vs waterfall" and "when to use agile vs waterfall" serve identical intent (same SERPs), merging them into one spoke. Constitutional scoring eliminates "project management certifications" (semantic coherence score of 2, since certification seekers have fundamentally different intent than the pillar audience) and merges "project status reports" and "project status updates" (uniqueness score of 2 for each as standalone pages). The final cluster has 11 spokes.
-
-Search validation confirms volume for 9 of the 11, and the remaining 2 target genuine content gaps where competitors have thin coverage. The linking map connects methodology spokes (agile, kanban, waterfall) laterally and links implementation spokes (sprint planning, retrospectives, standups) to each other. Production briefs specify that the "agile vs waterfall" spoke must include a comparison table, FAQ schema, and a decision framework, not just descriptive paragraphs. The cluster publishes over 6 weeks, with the pillar going live first.
-
-## Example: Solo Consultant Building a Cluster Around Data Analytics
+## A cluster that shrank before it was written
 
 **Scenario:**
 
-A freelance data analytics consultant with a new blog (DA 12) wants to generate inbound leads. They can write one deeply researched post per week. Their audience is marketing directors at mid-market companies who need to build analytics capabilities without hiring a full team.
+Illustrative scenario: a company that sells scheduling software wants a cluster around "employee shift scheduling." Claude's first pass produces a long list of candidate pages, many of them variations such as "shift scheduling tips," "shift scheduling best practices" and "how to schedule shifts better."
 
 **Walkthrough:**
 
-" Claude generates 22 candidates. Constitutional scoring reveals an important pattern: several high-volume candidates like "best analytics tools" and "Google Analytics tutorial" score low on helpfulness (score of 2) because a DA-12 site cannot compete with tool vendors and Google's own documentation for those queries. " These score 4-5 on all three constitutional dimensions because they draw on firsthand expertise competitors cannot replicate. The final cluster has 9 spokes.
+The team asks Claude which candidates a reader would treat as the same question. Claude merges the three variations into one page about building a fair weekly schedule and explains that the three differ only in wording. It also suggests that "what is shift scheduling" belongs on the pillar page as an opening section rather than on its own page.
 
-Search volumes are modest (50-300 monthly searches each), but the intent is highly commercial, and competition is manageable at this domain authority. Each production brief includes a specific client story (anonymized) that the consultant will use as the primary example, giving every spoke genuine first-party perspective that AI-generated competitor content cannot match.
+Search Console data then removes two more candidates with no measurable demand and no internal use. The final plan is a pillar and a handful of cluster pages, each with a distinct reader question and a line of evidence. The writers start with fewer pages and none that compete with each other.
 
-## Example: E-commerce Brand Building a Cluster Around Sustainable Fashion
+## Search data that changed the page type
 
 **Scenario:**
 
-A sustainable clothing brand with a DA of 35 and a small marketing team wants to build organic traffic around sustainable fashion education. They sell directly to consumers aged 25-40 who care about environmental impact but also care about style and price.
+Illustrative scenario: a finance blog plans a cluster page on "how much house can I afford," written as an article.
 
 **Walkthrough:**
 
-" Claude generates 28 candidates. Intent deduplication merges "sustainable fashion brands" with "ethical fashion brands" (identical SERPs) and merges "capsule wardrobe guide" with "minimalist wardrobe" (90% SERP overlap). Constitutional scoring eliminates "history of fast fashion" (helpfulness score of 2, because while interesting, it does not help the audience solve their wardrobe problem and would be thin without original research), and flags "sustainable fabric guide" as borderline (coherence score of 3, since it serves a more technical audience). The team decides to keep the fabric guide as a spoke but narrows its scope to "sustainable fabrics: what to look for on clothing labels," which directly serves their consumer audience.
+When the team checks the live results, the top results are all calculators. Claude had proposed an explanatory article because the prompt asked for articles. The team updates the brief: the page becomes a simple calculator with a short explanation of its assumptions and a link to the pillar on mortgage basics.
 
-The final cluster has 12 spokes organized into three sub-clusters: building a sustainable wardrobe (5 spokes), shopping and evaluating brands (4 spokes), and care and longevity (3 spokes). Lateral links connect sub-clusters: the "how to read clothing labels" spoke in the shopping sub-cluster links to the "fabric care guide" in the longevity sub-cluster. Each production brief includes a product integration note specifying where the brand's own products can be naturally referenced without turning the educational content into a sales page.
+They add a line to the prompt template asking Claude to note when a question is usually answered by a tool, so future plans flag this before the data check. The change came from the data step, which is why that step sits between planning and writing.
 
-## Example: Developer Tools Company Building a Cluster Around API Security
+## Overlap found only after drafting
 
 **Scenario:**
 
-A developer tools startup (DA 28) that sells API security scanning tools wants to rank for API security topics. Their audience is backend engineers and DevOps leads at companies with 50-500 employees. They have two technical writers and access to their engineering team for expert input.
+Illustrative scenario: a developer tools company has drafted a pillar on API authentication and several cluster pages. Two drafts, one on token expiry and one on refresh tokens, turned out longer than planned.
 
 **Walkthrough:**
 
-" Claude generates 24 candidates spanning authentication, authorization, rate limiting, input validation, OWASP API top 10, and API gateway configuration. Constitutional scoring produces decisive results: "what is an API" scores 1 on semantic coherence (too basic for the target audience of working engineers) and is removed. "API security vs web security" scores 2 on helpfulness (the distinction is nuanced enough for a section but too thin for a full page) and is merged into the pillar. 0 implementation guide" scores 5 on all dimensions because it is specific, genuinely helpful, and the existing top-ranking content is outdated.
+Claude compares the drafts side by side and reports that both pages spend most of their length explaining the same token lifecycle. It proposes merging them into one page on the token lifecycle and keeping a short section on expiry errors in the troubleshooting page.
 
-The final cluster has 10 spokes. Search validation reveals that 3 spokes trigger AI Overviews, so those briefs include structured content blocks optimized for extraction: definition paragraphs under 60 words, numbered implementation steps, and FAQ schema. The team decides to publish the OWASP-aligned spokes first because they provide the strongest topical authority signal, then layer in implementation guides that naturally reference their scanning tool. Each brief specifies which engineer will review for technical accuracy, applying the constitutional principle that accuracy is non-negotiable for content that developers will use in production decisions.
+The subject expert agrees, the pages are merged, and the linking plan is updated so every former link points to the combined page. The cluster now has one strong page on the topic instead of two that split attention.

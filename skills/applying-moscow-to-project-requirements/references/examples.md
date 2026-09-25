@@ -1,41 +1,37 @@
 # Examples: Applying MoSCoW to Project and Software Requirements
 
-## Example: E-commerce Platform Relaunch
+## Setting up a requirements list for a system replacement
 
 **Scenario:**
 
-A mid-size retailer is relaunching their e-commerce platform with a hard deadline of Black Friday. The team has 4 months of development capacity with 8 engineers. The product owner has collected 87 requirements from merchandising, marketing, customer support, and the warehouse team.
+Illustrative scenario: a council is replacing its permit application system before the old vendor contract ends. The project has a fixed end date, two increments and a list of requirements gathered from staff and residents.
 
 **Walkthrough:**
 
-The product owner normalizes all 87 requirements to the feature level and brings them into a Jira board with a custom MoSCoW field. The timebox is defined as "Black Friday launch, November 15 ship date."
+The analyst adds three fields to the backlog tool: project priority, increment priority and a link to the objective. Two objectives are recorded: residents can apply and pay online, and staff can process applications without the old system. Every requirement links to one of them.
 
-In a 3-hour workshop with stakeholders from each department, the team classifies each requirement:
+"Online payment" is a project Must and an increment Must. "Staff reporting dashboard" is a project Should: staff can run the reports from exports for a while. "Archive of old applications" is a project Must, because the records must be kept, but a Could for the first increment, since nobody needs the archive until the old system is switched off. Keeping the two priority fields apart means the archive does not quietly fall out of the project.
 
-- **Must-have (23 items, ~55% of capacity)**: Product catalog browsing, shopping cart, checkout with credit card payment, order confirmation emails, basic inventory sync with warehouse, PCI compliance requirements, mobile-responsive product pages.
-- **Should-have (18 items, ~25% of capacity)**: Wish lists, order tracking for customers, promotional discount codes, customer reviews display, PayPal integration.
-- **Could-have (26 items)**: Product recommendations engine, loyalty points program, live chat support widget, social media sharing buttons, advanced search filters.
-- **Won't-have this time (20 items)**: Marketplace for third-party sellers, subscription box service, AR product preview, integration with in-store POS system.
-
-The Must-haves at 55% leave comfortable headroom. During sprint 3, a newly discovered legal requirement for cookie consent pushes a new Must-have in, and a Could-have (social sharing buttons) is removed to compensate. The MoSCoW change log captures this shift with the rationale. On November 15, all Must-haves and 16 of 18 Should-haves ship. The go/no-go decision takes 5 minutes.
-
-## Example: Internal HR System Requirements Prioritization
+## A change request mid-timebox
 
 **Scenario:**
 
-An HR department is working with an internal development team to build a new employee self-service portal. There's no hard deadline, but leadership wants an MVP within one quarter. The team has 3 developers and a designer.
+Illustrative scenario: a software team is halfway through a timebox when the sales director asks for a new export format that a prospective customer wants.
 
 **Walkthrough:**
 
-The HR business analyst creates a requirements spreadsheet with 42 items gathered from employee surveys, HR managers, and compliance. The timebox is set as "Q2 MVP delivery."
+The product owner runs the request through the list before anyone starts it. The consequence test fails: the release is still worth shipping without the format, and the customer can use the existing export with a manual conversion step. The request becomes a Should for the next timebox and a Won't have for the current one.
 
-Rather than a large workshop, the team runs a lightweight Slack-based async classification: the BA proposes a MoSCoW category for each item with a one-line justification, and stakeholders have 48 hours to challenge any classification.
+The sales director asks for it now anyway. The product owner shows the timebox list and asks which current Must or Should would move down to make room. Nobody wants to drop anything already promised, and the decision is recorded on the list with the reason.
 
-- **Must-have (12 items)**: View and download pay stubs, update personal contact info, submit PTO requests, view PTO balance, manager approval workflow for PTO, SSO authentication.
-- **Should-have (10 items)**: View org chart, submit expense reports, upload tax documents, view company holiday calendar.
-- **Could-have (11 items)**: Performance review self-assessment, training course catalog, peer recognition badges, dark mode.
-- **Won't-have this time (9 items)**: Benefits enrollment (staying on current third-party system for now), AI-powered career path suggestions, Slack integration for PTO notifications.
+## Bringing technical work onto the list
 
-Only 3 items were challenged—expense reports (HR wanted it as Must-have, but the team showed a workaround existed via email), performance reviews (engineering felt it was Must-have, but HR confirmed the annual cycle didn't start until Q4), and SSO (initially classified as Should-have but moved to Must-have after IT security flagged compliance policy). The entire classification took 4 days asynchronously with minimal meeting time.
+**Scenario:**
 
-The MoSCoW field was added to Jira, and the team referenced it in every sprint planning session. When the designer was out sick for two weeks in month 2, two Could-haves were dropped instantly without drama because the framework had already pre-authorized that flexibility.
+Illustrative scenario: an engineering lead notices that library upgrades and test automation never make it into timeboxes, because the business sponsor categorizes only features.
+
+**Walkthrough:**
+
+The lead adds each technical item to the main list with an objective and a stated consequence. An upgrade to a library with a published security flaw is tested against the Must criteria: shipping with a known exploitable flaw would be unsafe, so it is a Must. A test automation item has a workaround in manual regression testing, so it is a Should, with the cost of the workaround written next to it.
+
+With technical work on the same list, the sponsor can see the trade-offs. The Must effort check now includes the upgrade, and a lower feature moves to Could to keep the balance.

@@ -1,37 +1,37 @@
 # Examples: Assessing Diversification Risk and Opportunity
 
-## Example: Consumer Electronics Company Evaluating Smart Home Entry
+## A cyclical manufacturer looks for stability
 
 **Scenario:**
 
-A mid-sized consumer electronics company known for premium audio equipment is considering entering the smart home market with connected lighting and climate control products. The marketing management team needs to assess whether this is a viable diversification or an overreach.
+Illustrative scenario: a maker of equipment for new housing construction sees its sales rise and fall with the building cycle. The board asks whether diversification could make results steadier.
 
 **Walkthrough:**
 
-The team begins by inventorying strategic assets: a strong premium brand, established retail partnerships with electronics retailers, a loyal customer base of tech-savvy homeowners, and deep expertise in hardware engineering and Bluetooth/WiFi connectivity.
+The team states the objective as stability, backed by a forecast showing deep sales drops in past downturns. Following Ansoff's matching of objectives to directions, it sets aside vertical options such as making its own motors, since those would rise and fall with the same cycle. Horizontal options, such as equipment for commercial renovation, share know-how but still depend on construction.
 
-They classify the opportunity as **related diversification**: the brand transfers to adjacent home technology, the retail channels overlap significantly, the customer base has high affinity for smart home products, and the engineering capabilities are partially transferable.
+A lateral option, maintenance services for municipal water systems, depends on public budgets rather than housing starts. The capability inventory shows the field service team and engineering skills carry over, while public-sector sales do not. The team rates the potential as moderate and the chance of success as uncertain, and chooses a test: a partnership with an established municipal contractor in one region, with a stop condition tied to contract renewals.
 
-Scoring the option: Synergy Potential = 2 (strong), Capability Gap = 3 (they lack expertise in lighting/HVAC engineering and smart home platform integration), Market Attractiveness = 2 (large, growing market), Investment Requirement = 3 (significant R&D and partnership costs), Time-to-Competence = 3 (12-18 months to bring a credible product to market), Reversibility = 2 (can exit without major write-downs).
-
-Benchmarking against safer quadrants: product development (new premium audio products) scores better on risk but worse on growth potential. Market development (entering Asian markets with existing audio products) scores similarly on risk-adjusted return.
-
-The team recommends a staged approach: partner with an established smart home platform for the first product, launch a connected speaker as a bridge product that leverages existing audio expertise, then expand to lighting and climate control based on Year 1 results. Go/no-go criteria are set at 10,000 units sold and a customer satisfaction score above 4.2/5 within 12 months.
-
-## Example: Regional Grocery Chain Assessing Financial Services Diversification
+## A software company tempted by an unrelated acquisition
 
 **Scenario:**
 
-A successful regional grocery chain with 200 stores considers launching a branded credit card and basic banking services, inspired by competitors who have done so. The marketing management leadership wants to evaluate the opportunity.
+Illustrative scenario: a profitable company that sells scheduling software to salons is offered the chance to buy a small chain of beauty supply stores. The founder likes the deal because the stores are profitable.
 
 **Walkthrough:**
 
-The asset inventory reveals: strong regional brand trust, high-frequency customer visits (2-3x per week), a large first-party data set on spending patterns, extensive physical locations, and operational excellence in retail logistics.
+The team starts with Step 1 and cannot state a diversification objective that the stores serve better than the core options. Classification shows the move is unrelated: retail inventory, store leases and staff management share almost nothing with software, apart from knowing the salon customer.
 
-Classification: **unrelated diversification**. While the customer base overlaps and the physical locations could house banking kiosks, the core competencies of financial services—regulatory compliance, credit risk modeling, fraud detection, financial product design—share zero overlap with grocery retail operations.
+The team compares the deal with the best product development option, a payments feature for existing salon customers. The payments feature reuses the customer relationship and the software team, and scores far higher on the chance of success. The acquisition is declined, and the reasoning is recorded so a similar offer can be assessed quickly next time.
 
-Scoring: Synergy Potential = 4 (minimal beyond customer access), Capability Gap = 5 (every critical competency must be acquired), Market Attractiveness = 3 (mature, heavily regulated market), Investment Requirement = 5 (regulatory compliance and technology infrastructure are extremely expensive), Time-to-Competence = 5 (3-5 years minimum), Reversibility = 4 (regulatory exit is complex).
+## A food producer chooses a related move and a route
 
-Benchmarking shows that market penetration (loyalty program optimization, private label expansion) and market development (new store locations in underserved areas) both offer substantially better risk-adjusted returns with far less capability gap risk.
+**Scenario:**
 
-The team recommends rejecting the financial services diversification. Instead, they propose a partnership with an existing fintech provider to offer co-branded services that capture some of the revenue upside without requiring the organization to develop financial services competencies. This is classified as a product development initiative rather than diversification, moving the opportunity to a safer Ansoff quadrant.
+Illustrative scenario: a dairy cooperative wants to reduce its dependence on liquid milk, where demand is flat. Options include plant-based drinks, cheese for export and animal feed.
+
+**Walkthrough:**
+
+The objective is growth, and the capability inventory shows strong processing, cold-chain logistics and retail relationships. Plant-based drinks share processing and retail channels with the core, which makes them a related move for new customers. Cheese for export is closer to market development, and animal feed shares little with the core.
+
+The team compares routes for plant-based drinks: building a line in-house, acquiring a small brand, or licensing a recipe. Acquisition brings a brand and product know-how the cooperative lacks and scores best on the chance of success. The board approves a staged acquisition process with a budget limit and an exit review after the first year of combined operations.

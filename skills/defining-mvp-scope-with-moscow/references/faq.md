@@ -1,25 +1,21 @@
-# FAQ: Defining MVP Scope Using MoSCoW Categories
+# FAQ: Define MVP Scope with MoSCoW
 
-## How many Must-have items should be in an MVP scope?
+## Is the MoSCoW Must category the same as an MVP?
 
-There's no fixed number — it depends on your product's complexity. The key constraint is capacity: Must-haves should consume no more than 60% of your available development time. If your Must-have list exceeds this, you've likely classified some Should-haves as Must-haves.
+Not exactly. DSDM's Must category is the Minimum Usable SubseT, the requirements a project guarantees to deliver so the solution is usable, legal, safe and viable. Eric Ries defines an MVP by learning: the version that allows the most validated learning about customers with the least effort. A good MVP scope uses both: the features needed to test the hypothesis plus anything the release cannot legally or safely ship without.
 
-## What's the difference between MoSCoW product prioritization and simple high/medium/low priority?
+## How many features should an MVP have?
 
-MoSCoW forces a clear MVP boundary by defining Must-have as 'the product fails without this,' which is far more rigorous than 'high priority.' High/medium/low is relative and subjective; MoSCoW categories have specific, testable definitions that make product prioritization conversations objective.
+There is no fixed number. Include every feature that passes the learning filter or the DSDM Must tests and nothing else inside the Must line. Then check the Must effort against capacity, keeping within DSDM's guideline of typically no more than sixty percent and lower for a first release where estimates are rough.
 
-## Can I use MoSCoW to define MVP scope for non-software products?
+## What do I do with features that stakeholders insist on?
 
-Yes. MoSCoW works for any product or project with a list of requirements and constrained resources. Physical products, service offerings, event planning, and marketing campaigns all benefit from the Must-have litmus test to define a viable minimum scope.
+Run them through the same tests in front of the stakeholder. If a feature fails, place it as Should or Could and write down the reason. If the stakeholder still wants it as a Must, ask which current Must should leave the line to make room. The trade usually settles the question.
 
-## How do I handle stakeholders who insist everything is a Must-have?
+## Can a manual workaround replace an MVP feature?
 
-Apply the litmus test publicly: 'If we remove only this item, would we cancel the launch?' Most stakeholders will concede when forced to answer this question honestly. For persistent cases, use techniques from resolving stakeholder priority disputes with MoSCoW.
+Often, yes. Under DSDM's definition, a requirement with a workaround is not a Must, even if the workaround is manual. For a first release to a small group, doing something by hand behind the scenes can keep the learning intact while removing build effort. Record the workaround in the scope document so everyone knows it is temporary.
 
-## Should technical debt and infrastructure items be included in MoSCoW MVP scoping?
+## When should the MVP scope be revisited?
 
-Yes. If a technical item is required for Must-have features to function (e.g., database setup, CI/CD pipeline), it passes the technical dependency gate and belongs in Must-have. Infrastructure that only supports Should-have features should be categorized accordingly.
-
-## How often should I revisit the MVP scope during development?
-
-At minimum, conduct a formal scope review at the midpoint of your development timeline. If you're running sprints, a lightweight scope check every 2-3 sprints is ideal. The goal is to catch when new information invalidates your original Must-have assumptions.
+After the release, when you know what it taught you. Re-prioritize every Should, Could and Won't have for the next increment using those results. During the build, revisit it only through the same tests, with a trade for every new Must.

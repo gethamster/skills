@@ -1,45 +1,37 @@
-# Examples: Creating Physical Evidence and Proof Points
+# Examples: Physical Evidence in the Marketing Mix
 
-## Example: B2B SaaS Company Redesigning Its Physical Evidence Strategy
-
-**Scenario:**
-
-A mid-market project management SaaS company has strong product features but a 15% trial-to-paid conversion rate—well below their industry benchmark of 25%. Customer interviews reveal that trial users aren't confident the tool will work for teams their size, and they're worried about being locked into an annual contract.
-
-**Walkthrough:**
-
-The team maps the trial user journey and identifies three critical evidence gaps: (1) at signup, there's no proof the tool works for their company size; (2) during the trial, there's no visible evidence of outcomes; (3) at the upgrade prompt, there's no risk reversal.
-
-They address each gap systematically. First, they add segment-specific social proof to the signup flow—when a 50-person company signs up, they see logos and testimonials from similar-sized companies. Second, they create an in-app dashboard that shows the user's trial ROI: 'Your team saved an estimated 12 hours this week by using [Product].' Third, they introduce a '60-day money-back guarantee, no questions asked' displayed prominently on the upgrade page, alongside a case study showing a comparable company's results after 90 days.
-
-Within one quarter, trial-to-paid conversion rises from 15% to 23%. The guarantee is claimed by less than 3% of new subscribers, meaning the net revenue impact is overwhelmingly positive. The team adds this as a standing item in their [7 P's Marketing Mix](https://tryhamster.com/methods/7-p-s-marketing-mix) quarterly audit.
-
-## Example: Boutique Accounting Firm Building Trust Through Environmental and Documentary Evidence
+## A law firm makes its work visible
 
 **Scenario:**
 
-A boutique accounting firm serving owner-operated businesses is losing proposals to larger, better-known competitors. Prospects consistently say they 'went with the safer choice,' despite the boutique firm's superior client satisfaction scores.
+Illustrative scenario: a small employment law firm does careful work, but clients often say they are unsure what they are paying for. The firm's invoices list hours with one-word descriptions.
 
 **Walkthrough:**
 
-The firm conducts lost-prospect interviews and discovers two key anxieties: prospects feel the firm 'looks small' (their office and website are dated) and they can't find proof that the firm handles businesses of their complexity.
+The inventory shows that the invoice and a few emails are the only tangible evidence clients receive during a matter. The firm adds a one-page matter summary at each milestone: what was done, what was decided, and what happens next. Invoices now reference the summary.
 
-The firm undertakes a two-pronged evidence overhaul. For environmental evidence, they redesign their website with modern, professional visuals, invest in a clean, contemporary office refresh with branded signage, and create beautifully formatted proposal templates that match the quality level of larger competitors.
+The firm also updates its website bios with each lawyer's areas of practice and a short plain-language explanation of how a typical matter runs. Client feedback about value becomes more positive, and the partners agree that the summary template belongs to the practice manager, who checks every one before it is sent.
 
-For documentary evidence, they produce six case studies segmented by business type (retail, professional services, construction, etc.), each featuring specific tax savings or audit outcomes with named clients. They also secure and prominently display their industry certifications and create a 'results snapshot' one-pager that summarizes aggregate client outcomes: '$4.2M in tax savings identified across 180 clients last year.'
-
-They deploy these assets strategically: the website homepage features the aggregate statistic and client logos; the services pages include the relevant industry case study; proposals include the matching case study plus the firm's certifications. Within six months, their proposal win rate increases from 30% to 48%.
-
-## Example: E-Commerce Brand Using Packaging as Physical Evidence
+## A cleaning service fixes cues it did not know it had
 
 **Scenario:**
 
-A direct-to-consumer skincare brand has strong online reviews but high return rates. Customer feedback indicates that the product 'didn't feel premium' when it arrived, despite being priced at a premium tier.
+Illustrative scenario: a home cleaning company sells a premium service at a higher price than local competitors. Some new customers cancel after the first visit.
 
 **Walkthrough:**
 
-The brand recognizes that their utilitarian brown-box shipping and minimal packaging contradict their premium positioning. The product itself is effective, but the unboxing experience fails to deliver the physical evidence of quality that justifies the price point.
+Walking the journey reveals several cues that look cheaper than the price: cleaners arrive in their own clothes, the booking confirmation is a plain text message, and nothing is left behind to show what was done. The company introduces simple uniforms, a branded booking confirmation with the cleaner's name, and a short checklist card left after each visit showing the rooms and tasks completed.
 
-They redesign the entire unboxing experience: custom-printed shipping boxes with their brand pattern, tissue paper in their brand color, a printed card explaining the product's key ingredients and sourcing story, and a small sample of a complementary product. They also include a card with a QR code linking to video testimonials from dermatologists and real customers.
+The company adds a question about how professional the service looked to its follow-up message and reviews it monthly. The checklist card also doubles as a prompt to rebook.
 
-The tangible artifacts—premium packaging, the ingredient story card, the professional endorsement—serve as physical evidence that bridges the gap between the online purchase decision and the in-hand experience. Return rates drop by 40% in the first quarter, and social media 'unboxing' posts from customers increase organically, creating a flywheel of new social proof.
+## A software company brings proof to the decision point
+
+**Scenario:**
+
+Illustrative scenario: a company sells security software to mid-sized businesses. Prospects spend a long time on the pricing page and then leave.
+
+**Walkthrough:**
+
+The team finds that its customer stories and security certifications sit on a separate page that few prospects reach. The pricing page, where buyers weigh the risk, has no proof at all.
+
+It moves a short list of certifications, two customer quotes it has permission to use, and a link to its security documentation onto the pricing page. It also redesigns the trial welcome email to match the website. The team tracks whether more visitors move from the pricing page to a trial or a sales call.

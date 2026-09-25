@@ -1,25 +1,21 @@
-# FAQ: Defining Goals, Signals, and Metrics with the HEART Framework
+# FAQ: Defining Goals, Signals, and Metrics for HEART
 
-## How many HEART dimensions should I use for a single feature?
+## What is the difference between a signal and a metric?
 
-Start with 2-3 dimensions most relevant to your feature's goals. Attempting all five often leads to shallow measurement. As the feature matures, you can expand to additional dimensions.
+A signal is the behavior or attitude that would show success or failure, such as "users finish the upload flow." A metric is the exact calculation built on that signal, with a numerator, a denominator, a population and a time window. Keeping them apart lets a team agree on what evidence matters before arguing about how to compute it. One signal can support several metrics.
 
-## What's the difference between a signal and a metric in the HEART Framework?
+## How many goals should one feature have?
 
-A signal is a category of user behavior that indicates progress toward a goal (e.g., 'users return frequently'). A metric is the specific, computable measurement derived from that signal (e.g., 'DAU/MAU ratio, computed daily'). Signals are conceptual; metrics are operational.
+Few. The HEART paper asks teams to decide explicitly which categories to include, and Kerry Rodden's later guidance is to prioritize the top goals because a few well-chosen metrics are better than an overwhelming dashboard. Starting with one to three goals keeps the table small enough to act on. Add more only when the first ones are instrumented and reviewed.
 
-## Can I use HEART GSM for B2B products, not just consumer apps?
+## What if the signal we need is not logged?
 
-Absolutely. HEART applies to any product with users. For B2B, you may weight Task Success and Adoption more heavily, and your Happiness signals might come from quarterly NPS surveys or customer success check-ins rather than in-app micro-surveys.
+Record it anyway, with a note that it needs new instrumentation. The paper tells teams not to worry about measurability while writing goals, and to check at the signal stage whether the relevant actions are logged or could be. If logging is not possible soon, choose a proxy signal and write down its weakness. Revisit the choice when the event exists.
 
-## How often should I update my GSM table?
+## Can a goal belong to more than one HEART category?
 
-Review your GSM table quarterly at minimum, and always after major product changes or strategy shifts. Stale metrics create false confidence and can lead teams to optimize for outcomes that no longer matter.
+Yes, and that is common. A goal about new users becoming regular users touches both Adoption and Retention. Put it under the category that best matches the decision the team is making, and note the overlap. The goal still needs to be clear and to have at least one signal.
 
-## Is defining Goals, Signals, and Metrics a useful product manager skill for interviews?
+## When should we set targets?
 
-Yes—demonstrating that you can translate user experience goals into measurable metrics is one of the most valued product manager skills in interviews. It shows structured thinking and data fluency. See our guide on presenting HEART metrics in product manager interviews for specific frameworks.
-
-## What tools do I need to build a GSM table?
-
-You don't need specialized tools. A shared spreadsheet or whiteboard works perfectly for the GSM table itself. You'll need an analytics platform (Amplitude, Mixpanel, etc.) to instrument and track the metrics you define, but the GSM process is tool-agnostic.
+After you have a baseline. A target written before anyone has seen the metric on real data is a guess. Compute the metric on recent data, look at how much it varies from week to week, and then choose a target that would be a meaningful change for this product.

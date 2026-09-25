@@ -1,25 +1,21 @@
-# FAQ: Running Effective Daily Stand-Up Meetings
+# FAQ: Running the Scrum Daily Standup
 
-## How long should a scrum daily standup take?
+## How long should the daily standup be?
 
-The Scrum Guide time-boxes the daily standup to 15 minutes maximum, regardless of team size. Most effective standups finish in 8-12 minutes. If yours consistently runs longer, reduce the level of detail in updates or move problem-solving to breakout sessions.
+The Scrum Guide defines the Daily Scrum as a 15-minute event. That is a maximum, and many small teams need less. If the meeting regularly runs over, the usual cause is problem-solving during the event; move those discussions to right after it.
 
-## Do you really have to stand up during a scrum daily standup?
+## Do we have to use the three standup questions?
 
-No. Standing was an original technique to encourage brevity, but it's not required by the Scrum Guide. Remote teams obviously can't stand together. The important thing is maintaining the time box and keeping the meeting focused on synchronization, not the physical posture.
+No. The 2020 Scrum Guide removed the Daily Scrum questions and lets the Developers choose any structure, as long as the event stays on progress against the Sprint Goal and ends with a plan the Developers can act on the next day. The three questions are still a valid option. Some teams prefer walking the board, which keeps attention on the work rather than on individual reports.
 
-## Who should attend the scrum daily standup?
+## Who attends the Daily Scrum?
 
-The development team members are the required attendees. The Scrum Master typically facilitates. The Product Owner may attend but shouldn't dominate. Managers and stakeholders can observe silently. Keep active participants to the core Scrum team to protect the time box.
+The Daily Scrum belongs to the team's Developers. A Product Owner or Scrum Master who is also working on Sprint Backlog items joins in as a Developer. The Scrum Master makes sure the event happens and stays within its timebox, but the Developers own it. Others who attend should not turn it into a status report.
 
-## What do you do when no one has blockers at the daily standup?
+## Do we have to stand up?
 
-Celebrate briefly, then probe deeper. Ask whether the sprint burndown matches expectations, or if anyone foresees a blocker emerging. A team that never surfaces blockers may not feel safe doing so — address psychological safety in your next retrospective.
+No. Standing is a traditional way to keep the meeting short, which is where the name "standup" comes from. The Scrum Guide says nothing about posture. Keep the timebox and the focus on the Sprint Goal whether the team stands, sits or meets on video.
 
-## Can you replace the scrum daily standup with a Slack message?
+## What if someone is late or absent?
 
-Async standups via Slack or similar tools can work well for distributed teams, but they lose the real-time interaction that surfaces hidden dependencies. Many teams use a hybrid approach: async updates daily with synchronous standups 2-3 times per week when blockers exist.
-
-## What's the difference between a scrum daily standup and a status meeting?
-
-A status meeting reports progress to a manager or stakeholder. A scrum daily standup is a peer synchronization event owned by the development team. The audience is each other, the focus is the sprint goal, and the purpose is adapting the daily plan — not reporting upward.
+Start on time anyway. Jason Yip's "Same Place, Same Time" pattern advises not waiting for stragglers, because the meeting belongs to the whole team. Someone who misses it can check the board and catch up with a teammate afterward. If absences are frequent, the time may be wrong, which is a topic for the retrospective.

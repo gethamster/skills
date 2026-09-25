@@ -1,15 +1,20 @@
 ---
-name: comparing-now-next-later-to-timeline-roadmaps
-description: "This skill teaches you how to evaluate when a Now-Next-Later roadmap outperforms traditional date-based or quarterly roadmaps, and how to transition between formats without losing alignment or stakeholder confidence."
+name: "comparing-now-next-later-to-timeline-roadmaps"
+description: "Decide whether a Now Next Later or a timeline roadmap fits your team, test the choice against evidence, and plan the switch without losing trust."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: now-next-later-framework
+  method: "now-next-later-framework"
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Now Next Later vs Quarterly Roadmap: Choosing the Right Format
+# Now Next Later vs Timeline Roadmap: Choosing a Format
 
-> This skill teaches you how to evaluate when a Now-Next-Later roadmap outperforms traditional date-based or quarterly roadmaps, and how to transition between formats without losing alignment or stakeholder confidence.
+> Decide whether a Now Next Later or a timeline roadmap fits your team, test the choice against evidence, and plan the switch without losing trust.
 
 ## Before you start
 
@@ -24,136 +29,105 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 1-2 hours |
-| Outcome | You produce a documented recommendation for which roadmap format fits your team's context, along with a transition plan if you are switching formats, so your organization moves to a format that matches its actual planning certainty. |
-| Prerequisites | Basic understanding of the Now-Next-Later Framework and its three horizons, Experience with at least one traditional roadmap format (Gantt chart, quarterly plan, or timeline roadmap), Familiarity with product discovery and delivery workflows |
-| Part of | [Now-Next-Later Framework](../../methods/now-next-later-framework/METHOD.md) |
+| Time to Learn | An afternoon to assess, one or two planning cycles to switch |
+| Outcome | You make a documented, evidence-based choice between a Now Next Later roadmap, a timeline roadmap or a hybrid, with a transition plan your stakeholders have seen. |
+| Prerequisites | Your current roadmap, a record of recent plan changes, access to the people who read the roadmap |
+| Part of | [Now Next Later Framework](../../methods/now-next-later-framework/METHOD.md) |
 
 ## Overview
 
-Every product team eventually faces a format question: should the roadmap show dates and quarters, or should it organize work by priority horizons like Now, Next, and Later? The answer is not a matter of preference. It depends on how much uncertainty your team manages, how often priorities shift, what your stakeholders need to see, and whether your delivery cadence is predictable enough to anchor to calendar dates. Getting this choice wrong creates a cascade of problems. A timeline roadmap in a high-uncertainty environment turns into a fiction that erodes trust every time dates slip. A Now-Next-Later roadmap in a compliance-driven organization can frustrate stakeholders who genuinely need calendar commitments to coordinate their own work.
+Choosing between a Now Next Later roadmap and a timeline roadmap is a decision about what your roadmap can honestly promise. A timeline roadmap places items against dates or quarters, so every item carries an implied delivery date. A Now Next Later roadmap places items by confidence, so only the items that have earned a commitment carry one. Neither format is right everywhere. This skill is a practical roadmap format comparison: it helps you decide when to use a Now Next Later roadmap and when a timeline fits better, using evidence from your own planning history.
 
-This skill, part of the [Now-Next-Later Framework](https://tryhamster.com/methods/now-next-later-framework), gives you a structured way to evaluate the now next later vs quarterly roadmap decision rather than defaulting to whatever your last company used. You will assess your environment across five dimensions: planning certainty, stakeholder expectations, delivery cadence, external dependencies, and organizational culture. The output is a written recommendation document that captures your reasoning, identifies which format to use (or whether a hybrid is the right answer), and outlines a transition plan if you are moving from one format to another.
+The background on the method, and the short version of how it differs from a quarterly plan, is on the parent page under [Now Next Later vs quarterly roadmap](../../methods/now-next-later-framework/METHOD.md). This page is the working version: the questions to ask, the evidence to gather, and how to run the switch if you make it.
 
-The comparison is not binary. Many mature product organizations run a Now-Next-Later view for internal planning and discovery, then translate selected commitments into quarterly or timeline views for external communication. This skill covers that hybrid pattern as well, including how to set up the translation layer so the two views stay synchronized. The concrete artifact you will produce is a Format Decision Worksheet: a one-page document that records your assessment scores, your chosen format, the rationale, and the specific actions needed to implement or transition.
+The argument against timelines comes mostly from the format's creator. Janna Bastow writes that a timeline roadmap assigns a due date to everything on it "just by the nature of it having a date-driven timeline at the top," which sets off a cycle of bigger buffers, slower work and blame ([Trapped in the Vicious Cycle of the Timeline Roadmap](https://www.prodpad.com/blog/timeline-roadmap-issues/)). Independent voices make overlapping points. Teresa Torres writes that date-based roadmaps "set unrealistic expectations and destroy trust" when teams cannot keep them ([Product Talk](https://www.producttalk.org/roadmaps-with-timelines/)).
+
+The case for dates is also real. Marty Cagan notes that roadmaps exist partly because a business sometimes needs date-based commitments, and says any alternative has to meet that need at least as well ([The Alternative to Roadmaps](https://www.svpg.com/the-alternative-to-roadmaps/)). Regulated work, contract deliverables and partner launches have dates that cannot move. So the honest question is how much of your roadmap is truly date-bound and how much only looks that way because the format demands a date.
+
+The output of this skill is a short recommendation document: which format, why, what stays dated, and how you will make the change. Many teams end up with a hybrid, a Now Next Later roadmap for direction plus a release plan or dated objectives for the few commitments that need one.
 
 ## How It Works
 
-The core insight behind comparing roadmap formats is that each format encodes a different relationship between time and certainty. A quarterly roadmap says "we will deliver X in Q3." A Gantt-style timeline roadmap says "we will deliver X by August 15." A Now-Next-Later roadmap says "we are working on X now, planning Y next, and considering Z later." These are fundamentally different promises, and each promise is appropriate in different contexts.
+The comparison rests on one observation from software estimation. Steve McConnell's [Cone of Uncertainty](https://www.construx.com/books/the-cone-of-uncertainty/) shows that estimates made early in a piece of work are the least reliable, and he writes that "meaningful commitments are not possible in the early, wide part of the Cone." A timeline roadmap asks for commitments on work at every point in the cone at once. A Now Next Later roadmap commits only near the narrow end and describes the rest by confidence. Bastow has said the three columns were "sort of taken from the cone of uncertainty" ([Userlist podcast](https://userlist.com/podcast/now-next-later-roadmapping-with-janna-bastow/)).
 
-Timeline and quarterly roadmaps work well when three conditions hold simultaneously: delivery timelines are reasonably predictable (the team has shipped enough similar work to estimate accurately), external coordination requires date commitments (other teams, partners, or customers need to plan around your releases), and scope is relatively stable (priorities do not shift dramatically quarter to quarter). When all three conditions hold, the precision of dates adds value. When any one breaks down, dates become a source of organizational friction rather than clarity.
+That turns the choice into an empirical question. If most of your roadmap items are well understood, the solution is known, and the dates have held in practice, a timeline is doing its job. If items change shape during discovery, dates slip every quarter, and people pad estimates to protect themselves, the format is working against you. ProdPad's [conversion guide](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/) lists the symptoms to check: dates that slip every quarter, sales treating roadmap items as promises, padded estimates, discovery skipped to hit a date, and leaders asking "when?" far more than "why?"
 
-The [Now-Next-Later Framework](https://tryhamster.com/methods/now-next-later-framework) works well under different conditions: when the team is exploring new problem spaces where scope is uncertain, when priorities shift frequently due to market feedback or strategic pivots, and when the organization values outcomes over output. By replacing date commitments with sequence commitments, Now-Next-Later absorbs change without requiring the roadmap to be redrawn. Moving an item from Next to Now does not break a cascade of date dependencies the way moving a Gantt bar does.
+The quarterly roadmap deserves its own check because it is the timeline that looks most like Now Next Later. Bastow argues that a column labeled Q2 is read as "shipping in Q2" whatever the product team meant by it ([Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)). The practical test is simple: ask three stakeholders what an item in the next-quarter column means. If they answer with a date, you have a timeline.
 
-The five assessment dimensions you will score are designed to surface which set of conditions your team actually faces. Planning Certainty measures how accurately you can predict delivery timelines. Stakeholder Expectations captures what your key audiences actually need to see (dates, sequences, or outcomes). Delivery Cadence measures how predictable your shipping rhythm is. External Dependencies captures whether other teams or customers need date-level coordination. Organizational Culture measures whether your company rewards commitment to dates or commitment to outcomes. Each dimension gets scored on a 1 to 5 scale, and the total guides your format recommendation. Scores below 15 strongly favor Now-Next-Later. Scores above 20 favor quarterly or timeline. Scores between 15 and 20 suggest a hybrid approach.
+Dates do not disappear under Now Next Later. They move. ProdPad's glossary says dates should appear only where they are real, externally driven or strategically important, and suggests letting OKRs carry the time-bound commitment ([ProdPad glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/)). Simon Cast adds that delivery schedules belong on a separate release plan ([Roadmaps vs Release Plans](https://www.prodpad.com/blog/difference-between-roadmaps-and-release-plans/)). A hybrid built this way keeps real deadlines visible without dating everything else.
 
-The hybrid model deserves special attention because it is the most common real-world pattern. Teams maintain a Now-Next-Later board as their source of truth for planning and prioritization. They then extract items from the Now and near-Next columns that have enough certainty to receive date estimates, and present those in a quarterly or timeline view for stakeholders who require dates. The key discipline in a hybrid setup is maintaining a clear translation rule: only items that have passed specific graduation criteria (see [Defining Graduation Criteria Between Horizons](https://tryhamster.com/skills/defining-graduation-criteria-between-horizons)) qualify for the timeline view. Without this rule, the timeline view fills up with speculative dates and recreates the same trust problem the team was trying to avoid.
+The switch itself is usually less work than the politics around it. ProdPad estimates that if vision and objectives are in place, the conversion fits in a single workshop, while the stakeholder transition typically takes "a couple of planning cycles." Torres recommends meeting stakeholders where they are rather than fighting "the ideological war" about dates. A parallel period, where both views exist and you compare them, gives skeptics evidence they can judge for themselves.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Inventory Your Current Roadmap Format and Pain Points
+### Step 1: Audit the last few planning cycles
 
-Before you can recommend a new format, document what you are using today and what problems it creates. Write down the current format (Gantt, quarterly grid, kanban, spreadsheet, or informal). Then list the top three to five pain points your team and stakeholders experience with the current format. Common pain points include: dates that slip every quarter, stakeholders who distrust the roadmap, excessive time spent re-estimating timelines, confusion about what is committed versus aspirational, and difficulty accommodating new strategic priorities mid-quarter.
+Pull the roadmaps you published over the last few cycles and compare each with what actually shipped. For each item, note whether it shipped as planned, shipped late, changed scope, or was dropped. Record who asked for dates and what they used them for. This record is your main evidence, and it keeps the decision from becoming a debate about taste.
 
-Interview at least two stakeholders outside your immediate team (a sales leader, an engineering manager, a customer success lead) to capture their specific frustrations. Record direct quotes where possible, because these will be valuable when you present your recommendation later.
+### Step 2: Sort commitments into real and implied
 
-> **Pro tip:** Ask stakeholders 'What do you actually use the roadmap for?' rather than 'Do you like the roadmap?' The first question reveals whether they need dates, sequences, or simply visibility, which directly informs your format choice.
+List every date currently on the roadmap and classify it. A real date has an external source: a regulation, a contract, an event or a dependent partner. An implied date exists only because the item sits in a dated column. ProdPad's [conversion guide](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/) gives examples of hard deadlines, including a race to market and a legal obligation, that are worth keeping.
 
-### Step 2: Step 2: Score Each Assessment Dimension (1-5 Scale)
+### Step 3: Check where your work sits in the cone
 
-Create a simple table with five rows: Planning Certainty, Stakeholder Expectations, Delivery Cadence, External Dependencies, and Organizational Culture. For each dimension, assign a score from 1 to 5 based on specific criteria. Planning Certainty: score 1 if your estimates are routinely off by more than 50%, score 5 if your team consistently delivers within a week of initial estimates. Stakeholder Expectations: score 1 if stakeholders primarily want to know what you are working on and why, score 5 if they need specific dates to coordinate external launches, contracts, or regulatory filings.
+For each current item, ask whether the problem is validated, whether the solution is known, and whether the effort is understood. Items with all three can support a date. Items missing any of them sit in the wide part of McConnell's [cone](https://www.construx.com/books/the-cone-of-uncertainty/), where a date is mostly a guess. The share of your roadmap in each state tells you which format matches your real certainty.
 
-Delivery Cadence: score 1 if you ship irregularly with unpredictable cycle times, score 5 if you ship on a fixed cadence (biweekly, monthly). External Dependencies: score 1 if your team operates independently, score 5 if multiple external teams, partners, or customers depend on your delivery dates. Organizational Culture: score 1 if leadership evaluates teams on outcomes and learning velocity, score 5 if leadership evaluates teams on hitting committed dates. Write a one-sentence justification for each score so the reasoning is reviewable.
+### Step 4: Map what each audience needs
 
-> **Pro tip:** Score each dimension independently. Do not let a high score on one dimension pull another score upward. Teams often conflate stakeholder expectations with organizational culture, but they can diverge significantly.
+List the people who read the roadmap and what decision each one makes with it. Sales may need to know what to say to a prospect, finance may need to plan spend, and engineering needs to know what comes next. Many of these needs can be met by direction plus a few real dates. Write down which needs genuinely require a date and which need confidence and sequence.
 
-### Step 3: Step 3: Calculate Your Total and Map to a Format Recommendation
+### Step 5: Write the recommendation
 
-Sum the five dimension scores. A total of 5 to 14 strongly favors a Now-Next-Later roadmap, because your environment has high uncertainty, flexible stakeholder needs, and an outcome-oriented culture. A total of 15 to 20 suggests a hybrid approach: maintain Now-Next-Later as the internal planning tool, but generate a timeline or quarterly view for specific audiences that need date commitments. A total of 21 to 25 favors a quarterly or timeline roadmap, because your environment has high predictability, date-dependent stakeholders, and a culture that values schedule adherence.
+Choose one of three outcomes: stay on a timeline, move to Now Next Later, or run a hybrid with Now Next Later for direction and a release plan or dated objectives for real commitments. State the evidence from the first four steps, what stays dated, and what the first review will look at. Keep it to a page so stakeholders read it.
 
-Record the total, the recommended format, and any dimensions where your score was at the boundary (a 3 that could reasonably have been a 2 or 4). These boundary scores indicate areas to revisit quarterly as your organization evolves.
+### Step 6: Run a parallel period
 
-> **Pro tip:** If your total is exactly 15 or 20, lean toward the less rigid format. Teams overestimate their planning certainty more often than they underestimate it, so a slight bias toward flexibility tends to produce more accurate roadmaps.
+If you are switching, publish the Now Next Later view next to the old one for a cycle or two. Map existing items across by confidence, and note every item whose position changed from the old priority order so you can explain it. Avoid relabeling quarters as Now, Next and Later, which ProdPad names as the most common migration mistake.
 
-### Step 4: Step 4: Define Your Hybrid Translation Rules (If Applicable)
+### Step 7: Review and decide
 
-If your score fell in the 15 to 20 range, or if any single dimension scored 4 or 5 while others scored 1 or 2, you likely need a hybrid setup. Document three translation rules. First, define which column qualifies for dates: typically only Now items and the top one or two Next items that have completed discovery. Second, define the precision level of dates: use quarters for items still in Next, specific sprints or weeks only for items in Now.
-
-Third, define the update cadence: how often the timeline view gets refreshed from the Now-Next-Later source of truth (weekly or biweekly is typical). Write these rules down explicitly, because ambiguity in translation rules is the number one cause of hybrid roadmap drift. Share the rules with the person responsible for the stakeholder-facing view.
-
-> **Pro tip:** Never put Later items on the timeline view, even with caveats. Stakeholders will interpret any date next to an item as a commitment, regardless of how many asterisks you add.
-
-### Step 5: Step 5: Map Existing Roadmap Items to the New Format
-
-Take your current roadmap and reclassify every item into the chosen format. If you are moving to Now-Next-Later, take each quarterly commitment and assess whether it belongs in Now (actively in progress or about to start), Next (validated and sequenced but not yet started), or Later (strategic intent without validated scope). If you are moving to a timeline format from Now-Next-Later, identify which Now and Next items have enough certainty for date estimates and slot them into quarters. Document items that do not fit cleanly, because these edge cases will surface in stakeholder conversations and you need answers prepared.
-
-For each item, note its current status, the new format placement, and any information gaps that need resolution before the item can be properly placed.
-
-> **Pro tip:** Start with your Now column or current quarter, since those items have the most context and the mapping will be straightforward. Working from high certainty to low certainty builds confidence in the process before you hit ambiguous items.
-
-### Step 6: Step 6: Draft the Communication Plan for the Format Change
-
-Switching roadmap formats is a change management exercise, not a template swap. Identify three to five key stakeholder groups (executive team, engineering, sales, customer success, external partners). For each group, write a brief message that explains what is changing, why it is changing (reference the specific pain points from Step 1), and what the new format means for them specifically. For example, sales teams want to know how to answer customer questions about delivery timing.
-
-Engineering teams want to know if sprint planning changes. Executives want to know how progress will be reported. Address each group's primary concern directly. Plan a rollout sequence: brief your direct team first, then functional leads, then broader stakeholders.
-
-Allow at least two weeks between announcing the change and fully switching over, so people can ask questions before the old format disappears.
-
-> **Pro tip:** Lead with the stakeholder pain point, not the methodology. Say 'we are fixing the problem where Q3 dates slip into Q4 every cycle' rather than 'we are adopting the Now-Next-Later Framework.' People care about their problems being solved, not your process choice.
-
-### Step 7: Step 7: Run a Parallel Period and Validate the Format
-
-For two to four weeks after switching, maintain both the old and new formats side by side. This allows stakeholders to see the same information in both views and build familiarity with the new format before the old one is retired. During this period, actively solicit feedback from each stakeholder group. ).
-
-If comprehension or utility scores are low for any group, you may need to add a supplementary view rather than forcing everyone into one format. Document what you learned and make adjustments before fully retiring the old format.
-
-> **Pro tip:** Set a hard end date for the parallel period and communicate it upfront. Without a deadline, teams will keep maintaining both formats indefinitely, doubling the maintenance burden and defeating the purpose of the switch.
-
-### Step 8: Step 8: Reassess Quarterly and Adjust the Format
-
-Your environment is not static. The assessment dimensions you scored in Step 2 can shift as your team matures, your product enters new markets, or your organization restructures. Set a calendar reminder to re-score all five dimensions every quarter. If the total moves across a threshold (from hybrid range into strong Now-Next-Later territory, or the reverse), evaluate whether a format adjustment is needed.
-
-In practice, most teams adjust once or twice per year, not every quarter. But the quarterly reassessment ensures you catch shifts early rather than clinging to a format that stopped fitting six months ago. Record each quarterly assessment alongside the previous scores so you can see trends over time.
-
-> **Pro tip:** Pay special attention to the External Dependencies score. This is the dimension most likely to change suddenly, for example when a major partnership deal or regulatory requirement introduces new date commitments into your planning process.
+At the end of the parallel period, check what changed: fewer date renegotiations, fewer status questions, better conversations about priorities, or none of these. Ask stakeholders which view they used. Retire the old format if the new one is doing the job, and keep the release plan or dated objectives for real deadlines either way.
 
 ## Best Practices
 
-- Score each assessment dimension with written justification before discussing with your team, because group discussion without individual pre-scoring leads to anchoring bias where the loudest voice sets the score. Individual written scores create a more accurate baseline that the group discussion can then refine.
-- When running a hybrid setup, designate one format as the source of truth and the other as a derived view. The Now-Next-Later board should be the source that gets updated first, with the timeline view regenerated from it. If both formats are treated as equal sources, they will inevitably diverge and stakeholders will lose trust in both.
-- Use the stakeholder pain points from Step 1 as your primary justification when presenting the format recommendation. Abstract arguments about agility versus predictability rarely persuade. Concrete examples like 'we re-estimated Q3 dates four times last quarter' are immediately compelling because stakeholders lived through the pain.
-- Avoid mixing date precision levels on the same roadmap view. If some items show specific weeks and others show quarters, readers will assume the quarter-level items are less important rather than less certain. Use consistent precision within each view and explain the precision level in a legend or header note.
-- When transitioning from a timeline roadmap, explicitly relabel items that were 'committed for Q4' as either Now, Next, or Later based on their actual readiness, not their previous date. Carrying over implied date commitments into a Now-Next-Later format undermines the entire purpose of the switch.
-- Review the related skill for [communicating roadmaps to stakeholders](https://tryhamster.com/skills/communicating-roadmaps-to-stakeholders) before presenting your format recommendation. The format decision itself matters less than how clearly you communicate the change and what it means for each audience.
-- Document your translation rules and assessment scores in a shared, versioned document rather than a slide deck. Slides get lost after the meeting. A living document lets new team members understand why the current format was chosen and under what conditions it should be revisited.
+- Decide from your delivery record. A list of what slipped and why persuades more people than any article about roadmap formats, including the ones cited here.
+- Keep real dates visible. Moving to Now Next Later does not mean hiding a regulatory deadline; attach it to the initiative or objective it constrains, as ProdPad's [glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/) recommends.
+- Separate the roadmap from the release plan. Simon Cast's point that the two are different tools used one after the other resolves many arguments about "where the dates went."
+- Give each column a written definition. Readers bring timeline habits with them, and a one-line definition under each heading stops Next from being read as next quarter.
+- Start where stakeholders are. Torres suggests adding outcomes to the roadmap people already use before replacing it, which makes the change feel small ([Product Talk](https://www.producttalk.org/roadmaps-with-timelines/)).
+- Revisit the choice when circumstances change. A move into a regulated market or a large contract can shift the balance back toward more dated work.
 
 ## Common Mistakes
 
-- **Choosing Now-Next-Later because it seems easier or more modern, without assessing whether your environment actually needs it.** — The format choice should be driven by your assessment scores, not by methodology trends. A team with high planning certainty, date-dependent external partners, and a culture that rewards schedule adherence will be poorly served by Now-Next-Later. The format will feel vague to stakeholders who genuinely need dates, and adoption will fail. Always run the five-dimension assessment before recommending a format, and let the scores drive the decision.
-- **Switching formats without a communication and transition plan, treating it as a template change rather than a change management exercise.** — Roadmap format changes affect how every stakeholder group plans their own work. Sales teams adjust how they set customer expectations. Engineering adjusts how they plan sprints. Executives adjust how they report to the board.
-
-Switching without warning or explanation creates confusion and resistance. The parallel period in Step 7 exists specifically to prevent this. Budget at least two weeks for the transition and brief each stakeholder group individually on what changes for them.
-- **Putting date estimates on Later items in a hybrid setup because a stakeholder asked for a timeline on everything.** — This mistake happens because it feels helpful to give stakeholders what they ask for. But dates on Later items are fiction. They have no validated scope, no discovery work, and no engineering estimates. When those dates inevitably change, it damages trust in the entire roadmap.
-
-Instead, explain that Later items represent strategic intent and will receive date estimates only after they graduate to Next and complete discovery. Point stakeholders to the graduation criteria so they understand the process.
-- **Running both formats permanently without a source-of-truth designation, leading to divergence between the Now-Next-Later board and the timeline view.** — This typically happens when the parallel period from Step 7 never ends. Teams keep both formats because different audiences prefer different views, which is fine, but they update each format independently rather than deriving one from the other. Within a few weeks, the two views show different priorities and different items. Catch this by checking weekly whether the timeline view can be fully reconstructed from the Now-Next-Later board.
-
-If it cannot, the formats have diverged and need to be resynchronized.
-- **Reassessing the format only when things break rather than on a regular quarterly cadence.** — Teams tend to keep using whatever format they adopted until a crisis forces a change. By that point, the mismatch between format and environment has been causing friction for months. The quarterly reassessment in Step 8 catches gradual shifts, like increasing external dependencies or a maturing delivery cadence, before they become acute problems. Set a recurring calendar event and spend 30 minutes re-scoring the five dimensions.
-
-Most quarters nothing will change, but you will catch the quarter where something does.
+- **Relabeling quarters**: Renaming Q1, Q2 and Q3 as Now, Next and Later keeps every implied date. If the columns map neatly onto three fixed periods, redefine them by confidence before going further.
+- **Removing every date**: Stripping genuine deadlines along with the implied ones leaves commercial teams without information they need. Keep real dates on the items or objectives they belong to.
+- **Treating it as a template swap**: The format change takes a workshop, while changing how people read the roadmap takes cycles. Plan the communication as carefully as the board.
+- **Running two roadmaps indefinitely**: A parallel period is useful, but a permanent secret timeline for executives doubles the work and undermines the new format. Set an end date for the parallel run.
+- **Choosing on ideology**: Arguing that timelines are always wrong ignores teams whose work really is date-bound. Let the audit decide, and accept a hybrid when the evidence points there.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/now-next-later-framework/METHOD.md) — Now-Next-Later Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/now-next-later-framework/METHOD.md): Now Next Later Framework
 
 ## Related Skills
 
-- [Defining Graduation Criteria Between Horizons](../defining-graduation-criteria-between-horizons/SKILL.md)
-- [Categorizing Items into Now, Next, and Later Horizons](../categorizing-items-into-now-next-later-horizons/SKILL.md)
-- [Building Now-Next-Later Roadmap Templates](../building-now-next-later-roadmap-templates/SKILL.md)
-- [Reprioritizing and Moving Items Across Horizons](../reprioritizing-across-horizons/SKILL.md)
-- [Applying Now-Next-Later Roadmaps to SaaS Products](../applying-now-next-later-to-saas-products/SKILL.md)
-- [Communicating Now-Next-Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
+- [Communicating Now Next Later Roadmaps to Stakeholders](../communicating-roadmaps-to-stakeholders/SKILL.md)
+- [Now Next Later Categorization: Sorting Work Into Horizons](../categorizing-items-into-now-next-later-horizons/SKILL.md)
+- [Now Next Later Roadmap Template: How to Build One](../building-now-next-later-roadmap-templates/SKILL.md)
+- [Defining Graduation Criteria Between Roadmap Horizons](../defining-graduation-criteria-between-horizons/SKILL.md)
+- [Reprioritizing Roadmap Items Across Now, Next and Later](../reprioritizing-across-horizons/SKILL.md)
+- [Now Next Later Framework for SaaS Product Roadmaps](../applying-now-next-later-to-saas-products/SKILL.md)
+
+## Sources
+
+- [Janna Bastow: Trapped in the Vicious Cycle of the Timeline Roadmap](https://www.prodpad.com/blog/timeline-roadmap-issues/)
+- [ProdPad: Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)
+- [ProdPad: How to Convert a Timeline Roadmap to Now-Next-Later](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)
+- [ProdPad Glossary: What Is a Now-Next-Later Roadmap?](https://www.prodpad.com/glossary/now-next-later-roadmap/)
+- [Simon Cast: Product Roadmaps vs Release Plans](https://www.prodpad.com/blog/difference-between-roadmaps-and-release-plans/)
+- [Teresa Torres: My Leaders Still Want Roadmaps with Timelines](https://www.producttalk.org/roadmaps-with-timelines/)
+- [Marty Cagan: The Alternative to Roadmaps](https://www.svpg.com/the-alternative-to-roadmaps/)
+- [Steve McConnell: The Cone of Uncertainty](https://www.construx.com/books/the-cone-of-uncertainty/)
+- [Userlist podcast: Now/Next/Later Roadmapping with Janna Bastow](https://userlist.com/podcast/now-next-later-roadmapping-with-janna-bastow/)

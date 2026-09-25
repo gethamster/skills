@@ -1,25 +1,21 @@
-# FAQ: Facilitating a 4Ls Retrospective Meeting
+# FAQ: Facilitating a 4Ls Sprint Retrospective Meeting
 
-## How long should a sprint retrospective meeting using the 4Ls take?
+## How long should a 4Ls retrospective meeting be?
 
-A 4Ls sprint retrospective meeting typically takes 60 minutes for a team of 5-8 people on a two-week sprint. For shorter sprints, 45 minutes works. For larger teams (9+), extend to 75-90 minutes or split into smaller groups that merge their top themes.
+Most guides settle on about an hour for a team of up to eight. Atlassian's version of the play budgets an hour of run time, and Retrium describes a range depending on group size. The Scrum Guide caps the Sprint Retrospective at three hours for a one-month Sprint and expects shorter Sprints to have shorter retrospectives. Timebox each phase so the decision phase keeps its share of the time.
 
-## What if my team is quiet and nobody contributes during the retrospective?
+## Who should facilitate?
 
-Start with silent brainstorming rather than open discussion — this removes the social pressure of speaking first. Use targeted guiding prompts for each L category, send a pre-read with sprint highlights before the meeting, and do a mandatory check-in where every person speaks within the first two minutes to break the ice.
+Anyone the team sees as neutral. The Scrum Master often does it, but rotating the role spreads the skill and keeps one person from shaping every session. If the facilitator has a stake in a topic, they should say so or hand facilitation to a peer. A manager who facilitates and argues positions makes it harder for others to disagree.
 
-## Should the Scrum Master always facilitate the sprint retrospective meeting?
+## What if the discussion runs over?
 
-Not necessarily. While the Scrum Master often facilitates by default, rotating facilitation among team members builds shared ownership and prevents the retro from feeling like a management exercise. The Scrum Master can coach new facilitators behind the scenes while still participating as a team member.
+Stop the discussion at its timebox and move to actions, even if the conversation is lively. A retrospective that ends without actions has used its time poorly. Park unfinished topics on the board and review them next time. If this happens often, act on fewer themes or give discussion a larger share of the hour.
 
-## How many action items should come out of a 4Ls retrospective?
+## What if someone dominates the conversation?
 
-Limit action items to 2-3 per sprint retrospective meeting. Teams that commit to fewer, specific actions with named owners have significantly higher completion rates than teams that leave with long lists of vague improvements.
+Silent writing and silent voting already limit how much one voice shapes the board. During discussion, invite others by name and use short rounds where each person speaks once. If the dominant person is senior, consider having less senior people speak first. A private word after the meeting is often more effective than correcting someone in front of the team.
 
-## Can I run a 4Ls sprint retrospective meeting with a remote or hybrid team?
+## Should managers attend?
 
-Absolutely. Use digital whiteboard tools like Miro or FigJam for the 4Ls board, enable anonymous sticky note submission to increase candor, and use built-in voting features. For detailed guidance, see our skill on adapting the 4Ls for remote and hybrid teams.
-
-## What's the difference between 'Lacked' and 'Longed For' in the 4Ls framework?
-
-'Lacked' captures things that were missing or insufficient during the sprint — gaps that were felt. 'Longed For' is aspirational: improvements, tools, or changes the team wishes they had going forward. 'Lacked' is backward-looking (what was absent), while 'Longed For' is forward-looking (what we want next).
+It depends on trust. Some teams are comfortable with their manager in the room, and others speak more freely without them. GitLab's handbook notes that some of its groups choose not to have direct managers attend for that reason. Let the team decide, and revisit the decision if Lacked notes start to thin out.

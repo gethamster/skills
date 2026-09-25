@@ -1,31 +1,37 @@
-# Examples: Aligning Cross-Functional Teams Around a North Star Metric
+# Examples: North Star Metric Cross-Functional Alignment That Sticks
 
-## Example: B2B SaaS Platform Aligning Product, Engineering, and Sales Around 'Weekly Active Teams'
-
-**Scenario:**
-
-A 120-person B2B collaboration platform has identified 'Weekly Active Teams' (teams with 3+ members active in the past 7 days) as their North Star Metric. The product team is excited, but engineering is skeptical ('this is a product metric, not an engineering metric'), sales is confused ('we measure bookings'), and the CEO keeps asking about revenue. The Head of Product needs to align all four groups within a month before annual planning.
-
-**Walkthrough:**
-
-The Head of Product starts by building tailored narratives for each audience. For engineering, she presents data showing that teams who are weekly active have 94% annual retention—meaning engineering's stability and performance work directly enables the revenue the CEO cares about. She maps engineering input metrics collaboratively: 'P95 API latency under 200ms' and 'zero-downtime deployments per month.' For sales, she shows that accounts with 3+ weekly active teams expand 2.3x faster than others—so 'Weekly Active Teams post-onboarding' becomes the handoff metric from sales to customer success. She runs a 90-minute cross-functional workshop where each team lead presents their input metrics, and the group identifies that the biggest cross-functional gap is the onboarding handoff from sales to product. They commit to a joint initiative: a guided team setup flow that both product and sales champion. Within three weeks, the dashboard shows Weekly Active Teams alongside each team's inputs, and the metric is referenced in every Monday standup and Thursday sprint review.
-
-## Example: E-Commerce Company Resolving Marketing vs. Product Conflict Through Input Metrics
+## A workshop result that nearly faded
 
 **Scenario:**
 
-An e-commerce company selling custom merchandise has chosen 'Monthly Repeat Purchasers' as their North Star Metric. Marketing is frustrated because they've been optimizing for new customer acquisition, and their bonus structure rewards first-time purchases. Product is building features to improve reorder UX, but marketing keeps requesting resources for landing pages for new campaigns. The conflict is escalating, and both teams feel the other is ignoring the North Star.
+Illustrative scenario: a software company ran a successful North Star workshop. Six weeks later, team reviews still report each team's old metrics, and the North Star appears only on one slide in the product review.
 
 **Walkthrough:**
 
-The product manager vs project manager distinction is critical here—a project manager would try to split resources evenly, but the product manager recognizes this as a strategic alignment problem. She facilitates a joint session where both teams map their input metrics. Marketing proposes 'repeat purchase rate from email campaigns' and 'returning visitor sessions from paid retargeting,' which lets them continue using their acquisition skills but pointed at re-engagement. Product proposes 'reorder completion rate' and 'time from first to second purchase.' Crucially, they identify a shared dependency: product data on customer purchase patterns needs to flow into marketing's email segmentation tool. This cross-functional workstream becomes a quarterly OKR co-owned by both teams. The product manager also works with the VP of Marketing to adjust the bonus structure to weight repeat purchases at 40%, aligning financial incentives with the North Star. Within one quarter, the conflict transforms into a collaboration where marketing runs targeted reorder campaigns using product data, and Monthly Repeat Purchasers increases by 18%.
+The product lead asks the chief operating officer to sponsor the framework. The sponsor agrees to open each monthly leadership review with the North Star and its inputs, and to ask every funding request which input it targets.
 
-## Example: Startup Founder Aligning a 15-Person Team Without Formal Structure
+The product operations team adds a line on the targeted input to the project kickoff template and a short module to onboarding. After a quarter, the playbook's signals are checked: most team leads can explain how their work connects to an input, and sales has started using "activation input" in pipeline discussions. The weakest signal, engineers tracing their work, gets its own action for the next quarter.
+
+## Two product lines asking for two North Stars
 
 **Scenario:**
 
-A seed-stage startup with 15 people (5 engineers, 3 marketers, 2 designers, 2 support, and 3 in leadership) has chosen 'Weekly Users Completing Core Action' as their North Star. There are no formal team leads, no existing meeting cadence, and people wear multiple hats. The founder wants alignment but is worried about imposing too much process on a scrappy team that values autonomy.
+Illustrative scenario: an HR software company sells a payroll product and a time-tracking product. Both leads want their own North Star.
 
 **Walkthrough:**
 
-The founder takes a lightweight approach suited to startup scale. Instead of formal workshops, she hosts a Friday afternoon 'beer and metrics' session where she tells the customer story behind the North Star—a specific user who churned because they never discovered the core feature. She asks each person: 'What's one thing you could do next week that might help more users complete this action?' The engineer suggests improving the onboarding tooltip. The marketer suggests a welcome email that highlights the core action. The designer suggests simplifying the three-click flow to one click. She creates a shared Notion page with the NSM at the top and each person's self-selected weekly commitment below it. Every Monday in their existing 15-minute standup, each person shares whether they moved their commitment forward. There are no formal input metrics—at 15 people, the direct connection is visible enough. Within a month, the team naturally starts asking 'Does this help users complete the core action?' before starting new work. The founder has achieved alignment without adding any meetings or formal process—just a shared metric, a compelling story, and a lightweight visibility mechanism.
+The sponsor asks the playbook's question about real boundaries. Both products are sold to the same small-business owners, usually together, and customers describe them as one system for paying their staff.
+
+The group keeps one North Star, "businesses that run payroll on time with no corrections," and gives each product an input: accurate hours submitted from time tracking, and payroll runs completed without manual fixes. Both leads now report on inputs that visibly feed the same metric, and resource debates are framed as which input needs more help this quarter.
+
+## Starting small in a resistant organization
+
+**Scenario:**
+
+Illustrative scenario: a large retailer's digital team wants to adopt the framework, but every department already has fixed annual targets and leadership is not ready to change them.
+
+**Walkthrough:**
+
+The team chooses to start small. It builds a North Star for its mobile ordering experience alone, with inputs for app activation, repeat orders and order accuracy, and uses the framework's language in its own reviews and approvals.
+
+After two quarters, the team can show which bets moved which inputs and how the North Star related to mobile revenue. The evidence persuades the head of digital to sponsor the framework for the wider digital organization, with the mobile team's approval template and onboarding module as the starting point.

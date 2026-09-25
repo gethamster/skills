@@ -1,25 +1,21 @@
-# FAQ: Creating Double Diamond Process Diagrams
+# FAQ: How to Create a Double Diamond Diagram
 
-## What tools should I use to create a double diamond diagram?
+## Can I use the Design Council's Double Diamond artwork?
 
-For collaborative team diagrams, use Miro, FigJam, or Mural where team members can contribute annotations. For polished stakeholder presentations, use Figma, Sketch, or even PowerPoint/Keynote with basic shapes. For quick team communication, a whiteboard photo or simple drawing tool works perfectly. The tool matters far less than the content you put in the diagram.
+The Design Council publishes its Framework for Innovation under a Creative Commons Attribution licence, which allows reuse and adaptation as long as you credit it. Check the licence terms on the Design Council's site before publishing, and include an attribution line on your diagram.
 
-## How is a double diamond diagram different from a design thinking diagram?
+## Should both diamonds be the same size?
 
-The double diamond diagram specifically visualizes two connected diamonds representing problem and solution spaces with divergent-convergent rhythm. Design thinking diagrams typically show five sequential stages (Empathize, Define, Ideate, Prototype, Test) in a linear or circular layout. You can explore the differences further in our guide on choosing between Double Diamond and Design Thinking.
+Only if the phases really take similar effort. Sizing each diamond to the planned time or effort gives stakeholders a truer picture and prompts useful questions about where time is going.
 
-## Can I use a double diamond diagram for agile or sprint-based projects?
+## What tools should I use?
 
-Yes. You can either map the overall product discovery to the full double diamond diagram and show how individual sprints fit within specific phases, or use a mini double diamond within each sprint to show the diverge-converge rhythm of weekly work. Many teams adapt the Double Diamond for UX design projects that operate in agile environments.
+Any tool your audience can open and you can update quickly: a whiteboard, a slide, or a shared online board. The tool matters less than keeping the diagram current. Many teams keep a detailed version on a shared board and paste a simplified snapshot into status reports.
 
-## How do I explain a double diamond diagram to non-designers?
+## How detailed should the diagram be?
 
-Focus on the shape's intuitive meaning: 'The wide parts are where we explore many options on purpose, and the narrow parts are where we make decisions.' Avoid jargon like 'divergent thinking.' Instead say 'we cast a wide net first, then focused in.' Relate each phase to business outcomes stakeholders care about, not design methods.
+Detailed enough for its audience to see what matters to them, and no more. Sponsors need outputs, decisions and current position. The working team also needs activities and owners. If the diagram becomes hard to read, group tasks and keep the full plan elsewhere.
 
-## Should the two diamonds in a double diamond diagram be the same size?
+## How do I show that the process is not linear?
 
-Not necessarily. If your project invested significantly more time in research and problem definition, make the first diamond larger. The relative proportions should honestly represent how effort was distributed. Equal-sized diamonds are a fine default, but resizing them tells a more accurate story about your specific project.
-
-## How often should I update my double diamond diagram during a project?
-
-Update the 'current position' marker weekly or at each sprint review. Do a full content update (adding completed activities, adjusting phase boundaries) at each major phase transition. Save versioned snapshots at these milestones so you can reference them during retrospectives and compare planned versus actual process.
+Add return arrows from later phases to earlier ones, labelled with what would trigger them. The Design Council's own framework diagram uses arrows in this way. Record actual loops on the diagram as they happen so the history is visible.

@@ -1,51 +1,37 @@
-# Examples: Running Chapters to Build Discipline-Specific Excellence
+# Examples: Running Chapters for Craft Excellence
 
-## Example: Backend Engineering Chapter in a 40-Person Product Tribe
-
-**Scenario:**
-
-A product tribe with 6 squads and 40 people total has 14 backend engineers scattered across all 6 squads. Code quality varies widely: two squads write thorough tests, two write minimal tests, and two write none. Production incidents are three times more frequent in the low-testing squads. There is no shared coding standard, and each squad has adopted different frameworks for the same problems.
-
-**Walkthrough:**
-
-The tribe lead appoints a staff engineer as chapter lead and gives her 25% time allocation for chapter duties. She starts by surveying all 14 backend engineers on their current testing practices, framework choices, and pain points. ' The first three chapter meetings focus on establishing five foundational standards: minimum test coverage thresholds, a shared API design guide, a code review checklist, an incident response playbook, and a logging convention. Each standard is proposed as a lightweight RFC, discussed in a chapter meeting, and published in the tribe wiki.
-
-Within two months, she sets up mentoring pairs: each of the four junior engineers is paired with a senior from a different squad. After one quarter, production incidents in the low-testing squads drop by 40%, and the chapter's biweekly meetings have a consistent 80% attendance rate. The competency framework is completed by the end of the second quarter and used for the first round of career reviews.
-
-## Example: UX Design Chapter in a B2C E-Commerce Company
+## A backend chapter with the lead as line manager
 
 **Scenario:**
 
-A tribe building the checkout experience has 4 squads with 8 UX designers total. The company's design system exists but is inconsistently applied. Customer research is duplicated across squads because each designer conducts their own usability tests on overlapping user segments. The design manager left three months ago, and nobody is conducting 1:1s or career conversations with the designers.
+Illustrative scenario: a tribe has six squads and nine backend engineers spread across five of them. Code review norms differ by squad, and two newer engineers say they have nobody to ask about service design.
 
 **Walkthrough:**
 
-The tribe lead promotes a senior designer to chapter lead, explicitly assigning people management duties including 1:1s, career reviews, and hiring. The new chapter lead's first action is a design audit: she reviews the last quarter's shipped designs across all four squads and documents every deviation from the design system. ' The chapter agrees on three immediate actions: consolidate research calendars so squads share participant pools, create a shared critique session every two weeks where designers present work-in-progress for peer feedback, and assign each design system gap to a specific designer to resolve. The competency framework is adapted from a public design ladder (Figma's published framework) and customized with the company's specific UX research and accessibility expectations.
+The tribe forms a backend chapter and follows the original design: the chapter lead is the line manager for all nine and spends part of each week in one squad. The charter's conflict rule says the squad's product owner sets day-to-day priorities, the chapter lead owns growth and quality, and the tribe lead decides if they cannot agree.
 
-Within one quarter, duplicate research sessions drop to zero, design system compliance rises from roughly 60% to 90%, and every designer has a clear picture of what their next career level requires.
+The chapter agrees three standards: every public API change gets a written design note, every service has an on-call runbook, and code reviews happen within one working day. Each newer engineer is paired with an experienced one. At the first quarterly review, members say the design notes are the most useful change and the review deadline is too strict, so it is relaxed.
 
-## Example: Data Science Chapter in a B2B Analytics Platform
+## Separating craft leadership from line management
 
 **Scenario:**
 
-A tribe of 5 squads building an analytics platform has 6 data scientists, each embedded in a different squad (one squad has no data scientist). The data scientists use three different ML frameworks, have no shared model validation process, and have never reviewed each other's work. Two of the six are junior hires from the last six months who received no onboarding into the company's data infrastructure.
+Illustrative scenario: a company tried chapter leads as line managers and found product owners frustrated that no one engineer was accountable for delivery in each squad.
 
 **Walkthrough:**
 
-The chapter lead, a principal data scientist, starts with a smaller, more intimate chapter format due to the six-person size. She institutes weekly 45-minute chapter meetings instead of biweekly, recognizing that the discipline needs intensive alignment. The first month's meetings focus entirely on standardization: the chapter selects one ML framework as the default (with documented exceptions), creates a shared model validation checklist, and establishes a peer review requirement for any model going to production. She pairs each junior data scientist with a senior mentor and creates a 90-day onboarding curriculum covering the company's data warehouse, feature store, and deployment pipeline.
+The company keeps chapters but moves line management to an engineering manager for each pair of squads. The chapter lead becomes a craft lead with no direct reports, responsible for standards, reviews and mentoring. The charter says the engineering manager owns delivery and performance, and gathers written input from the chapter lead for each review.
 
-The competency framework distinguishes between research-oriented and production-oriented data science tracks, acknowledging that the discipline has two distinct career paths. After the first quarter, model deployment time drops from an average of three weeks to one week because the standardized tooling eliminates rework. The chapter also identifies that the squad without a data scientist is making product decisions without data support, and recommends to the tribe lead that the next hire be allocated there.
+The change removes the escalation problem, since each squad now has one engineering counterpart for its product owner. The chapter lead's influence now depends on the quality of their reviews and advice, so the chapter invests in a regular design review slot that squads actually use.
 
-## Example: QA Chapter Bootstrapped in a Rapidly Scaling Startup
+## A skill too sparse for a chapter
 
 **Scenario:**
 
-A 60-person startup has just adopted the Spotify Squad Model, organizing into 2 tribes with 4 squads each. Testing has been ad hoc, handled by developers. The company just hired its first 4 dedicated QA engineers and needs to establish quality practices from scratch across all 8 squads, with only one QA engineer per tribe initially and plans to hire more.
+Illustrative scenario: a tribe has one data scientist and two designers across its squads. Leadership asks whether they should form chapters.
 
 **Walkthrough:**
 
-Because there are only 4 QA engineers across 2 tribes, the company creates a single cross-tribe QA chapter rather than one per tribe. The most experienced QA hire becomes chapter lead. Her first deliverable is a minimal viable quality standard: every squad must have at least smoke tests for critical user paths, a regression test suite that runs on every deployment, and a documented process for triaging bugs by severity. She runs the first chapter meeting as a working session where all four QA engineers collaboratively build the smoke test template that squads will adapt.
+The tribe decides not to. One person cannot form a chapter, and the two designers would get little from meeting only each other. Instead, all three join the company-wide guilds for design and data science, which include people from every tribe.
 
-She creates a mentoring structure where each QA engineer is paired with a senior developer in their squad to cross-train on testing. The competency framework is intentionally simple at this stage, covering only three levels (junior, mid, senior) with five skill dimensions. As the team grows to 8 QA engineers over the next two quarters, she splits into two tribe-scoped chapters. The original cross-tribe chapter transitions into a QA guild that meets monthly to maintain consistency across tribes.
-
-Test coverage across the company increases from near zero to 70% of critical paths within the first quarter.
+The tribe lead makes sure their managers know that guild time counts as work. At the next review, the designers report that the design guild's critique sessions give them the peer feedback a chapter was meant to provide.

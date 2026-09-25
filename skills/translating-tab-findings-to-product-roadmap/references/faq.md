@@ -1,25 +1,21 @@
 # FAQ: Translating TAB Findings into Product Roadmap Decisions
 
-## How many TAB findings should I translate into roadmap items per cycle?
+## When are TAB findings ready to drive the roadmap?
 
-Aim for 2-4 'Now' items and 1-2 'Next' items per TAB cycle. Overloading your roadmap with TAB findings dilutes focus. The scoring matrix should naturally narrow your list — if everything scores high, your severity or strategic alignment criteria aren't strict enough.
+After members have validated the synthesis in the second call and you have third-call evidence on how much of each problem must be solved. Before that, the findings are the team's reading of first calls. Acting earlier is possible for small, cheap decisions, but label those as untested.
 
-## How do I handle conflicting feedback from different TAB members?
+## How do I prioritize developer pain points from the TAB?
 
-Segment by persona and use case before resolving conflicts. Two developers may disagree because they have different workflows — one debugging core web vitals devtools in CI, another in local development. Map conflicting feedback to distinct opportunity statements rather than averaging them into one watered-down feature.
+Start from the ranking members validated, which already weighs how strongly people spoke and not only how often. Then use the third-call thresholds: a pain you can address to the level members said would matter ranks above one you cannot. Finally, check each candidate against every persona involved in adoption.
 
-## Should I share the full scoring matrix with my TAB members?
+## What is the third call for?
 
-Share outcomes, not the scoring mechanics. TAB members want to know their feedback mattered, not see your internal prioritization spreadsheet. A simple summary of 'what we're building and why, based on your input' is more effective and avoids debates about your weighting methodology.
+Adam Frankl uses it to find out how much of a problem you need to solve to create value. Some problems are large enough that a small improvement is compelling, and some are useless to address unless you solve them fully. He tests this by describing a real or clearly hypothetical result and asking whether duplicating it would be compelling and why.
 
-## How do core web vitals devtools insights fit into product roadmap planning?
+## Should members see the roadmap?
 
-When TAB members describe pain around core web vitals devtools workflows — debugging LCP, CLS, or INP regressions — these insights map to specific product opportunities around performance tooling, IDE integrations, or CI/CD pipeline features. Score them like any other finding using frequency, severity, and strategic alignment.
+Share the story and the direction rather than a dated list of features. Members give their time because they expect it to help solve their problems, so telling them what you are working on based on their input keeps that promise. Be honest about timing, and never claim results you have not achieved.
 
-## How often should I run the full translation process from TAB findings to roadmap?
+## What if different personas want conflicting things?
 
-Run a full translation cycle after every 2-3 rounds of TAB calls, typically every 4-8 weeks. More frequent cycles risk acting on insufficient data; less frequent cycles allow insights to go stale and lose organizational momentum.
-
-## Can I use this process for go-to-market decisions, not just product roadmap?
-
-Absolutely. The positioning statements generated in Step 6 directly feed landing page copy, sales decks, and content marketing. Many teams find that the GTM insights from this process are even more immediately valuable than the product roadmap decisions because they can be deployed without any engineering effort.
+Record the conflict rather than averaging it away. Decide which persona the next release serves, and check that it does not make a gatekeeper's top pain worse, since one blocking role can stop adoption. Sometimes a small addition, such as an audit trail or an approval step, resolves the conflict.

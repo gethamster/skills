@@ -1,167 +1,172 @@
 ---
-category: Experience
+name: "google-design-sprint"
+category: "Experience"
+description: "The design sprint, created by Jake Knapp at Google and refined at GV, takes a team from a big question to a tested prototype in five days."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The Design Sprint: A Practitioner's Guide to Five Days That Replace Months of Debate
+# Google Design Sprint: The Five-Day Process Explained
 
-> Created by **Jake Knapp** — [https://www.gv.com/sprint/](https://www.gv.com/sprint/)
+> Created by **Jake Knapp** - [https://www.gv.com/sprint/](https://www.gv.com/sprint/)
 
 ## Overview
 
-The design sprint is a five-day structured process for tackling high-stakes product questions without writing a single line of production code. Developed by Jake Knapp during his time at Google and later refined across more than 150 engagements at Google Ventures (GV), the sprint compresses the messy, often months-long cycle of debate, design, build, and launch into a single week of disciplined experimentation. Knapp codified the approach in his 2016 book "Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days," co-authored with John Zeratsky and Braden Kowitz. The book became a touchstone for product teams worldwide, and the method has since been adopted by organizations ranging from early-stage startups to the United Nations.
+The design sprint is a five-day process in which a small team maps a problem, sketches solutions, decides on one, builds a realistic prototype and tests it with target customers. GV describes it as a process "for answering critical business questions through design, prototyping, and testing ideas with customers" and calls it a "greatest hits" of business strategy, innovation, behavior science and design thinking ([GV: The Design Sprint](https://www.gv.com/sprint/)). The name "Google design sprint" comes from where it started: Jake Knapp began running design sprints at Google in 2010, with teams such as Chrome, Google Search and Google X, and brought them to GV in 2012 ([GV](https://www.gv.com/sprint/)).
 
-The mental model behind the design sprint is deceptively simple: most product failures aren't caused by bad execution, they're caused by building the wrong thing. Traditional product development treats certainty as something you earn by shipping. The design sprint inverts that assumption. It treats certainty as something you manufacture cheaply, before you commit engineering resources. By forcing a team to prototype and test within five days, the sprint creates a feedback loop that would otherwise take months and cost orders of magnitude more money. It's not about being fast for the sake of speed. It's about being fast so you can be wrong cheaply.
+Knapp's own account of the early years is in his October 2012 post [The product design sprint: A five-day recipe for startups](https://jakek.medium.com/the-product-design-sprint-a-five-day-recipe-for-startups-84fde3e97d79). There he says he had planned and run over 40 sprints, first at Google and then with GV portfolio companies, and that the model is based on the design thinking structure championed by IDEO and Stanford's d.school. His stages then were Understand, Diverge, Decide, Prototype and Validate. He describes two lessons that shaped the process: in his experience the most successful ideas came from individuals working alone, and choosing ideas by consensus tended to produce compromises.
 
-The design sprint sits at the intersection of design thinking, lean startup methodology, and behavioral science. From design thinking, it borrows the empathy-first approach and the bias toward tangible artifacts. From lean startup, it borrows the concept of the minimum viable experiment, the idea that you should test your riskiest assumption first. From behavioral science, it borrows specific techniques for managing group dynamics, things like silent individual work before group discussion, structured voting instead of open debate, and a clear Decider role to prevent design by committee. What makes the design sprint distinct from all three of those traditions is its rigid time constraint. Where design thinking can sprawl across weeks of ethnographic research and lean startup can devolve into endless pivot cycles, the sprint forces resolution. You must ship a testable prototype by Thursday. You must sit across from real users by Friday.
+At GV the process became a team effort. The GV page credits Braden Kowitz with story-centered design, Michael Margolis with a way to get clear research results in one day, John Zeratsky with starting at the end and measuring results against each business's key metrics, and Daniel Burka with an entrepreneur's view of whether each step made sense. Knapp, Zeratsky and Kowitz published the process in 2016 as the book [Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days](https://www.simonandschuster.com/books/Sprint/Jake-Knapp/9781501121746). The [book page at Character Capital](https://www.character.vc/sprint), where Knapp and Zeratsky are now founders and general partners, gives the same authors and the 2016 date.
 
-Since its introduction, the design sprint has evolved considerably. Jake Knapp and AJ&Smart developed the "Design Sprint 2.0" variation that compresses the five-day format into four days by combining the mapping and sketching phases. Organizations like LEGO, Slack, and the British Museum have adapted the format to their own cadences, sometimes running two-day "mini-sprints" for smaller questions or extending to six days for deeply technical problems. Remote design sprints became a necessity during 2020 and have since become a permanent option, enabled by tools like Miro, Figma, and structured video facilitation. The core philosophy has remained stable, but the specific exercises and timelines are now treated as a flexible kit rather than a rigid prescription.
+The published design sprint process assigns one job to each day. On Monday the team sets a long-term goal, lists the risks as questions, draws a map of how customers move through the problem, interviews experts and picks a target. On Tuesday everyone reviews existing solutions and sketches alone. On Wednesday the team critiques the sketches, the Decider chooses, and the team turns the winners into a storyboard. On Thursday the team builds a prototype that only has to look real. On Friday five customers use it in one-on-one interviews while the rest of the team watches. The current day-by-day checklist, with times and supplies, is in Knapp and Zeratsky's [Design Sprint guide](https://www.character.vc/guide/design-sprint).
 
-The design sprint is most valuable when a team faces a question that is both important and uncertain. If the answer is obvious, you don't need a sprint. If the stakes are low, the overhead isn't justified. But when you're staring at a significant investment of time and money with no clear evidence that users will care, the sprint offers a structured way to derisk that bet. It's particularly well-suited for cross-functional teams who need to align quickly, because the process forces shared understanding. Everyone watches the same user tests. Everyone sees the same reactions. That shared evidence base does more for alignment than any number of slide decks or strategy documents.
+Two roles hold the week together. The Decider makes the calls that would otherwise turn into debate, and the checklist says that without a Decider "decisions won't stick." The Facilitator manages time, conversations and the overall process. The sprint team is seven people or fewer, with different skills plus the people who work on the project day to day, and extra experts who cannot stay all week are booked for short interviews on Monday afternoon ([Design Sprint guide](https://www.character.vc/guide/design-sprint)).
 
-Hamster provides a workspace where teams can plan, facilitate, and document design sprints using AI agents that help structure each day's activities and synthesize user feedback in real time.
+Several versions of the process now circulate, and it helps to know which one a guide describes. The five-day checklist above is the original published method. Google's open-source [Design Sprint Kit](https://designsprintkit.withgoogle.com/) describes a flexible framework built for internal Google teams, organised into six phases, and points readers to the Sprint book for the five-day version. AJ&Smart's Design Sprint 2.0 compresses the week to four days ([AJ&Smart](https://www.facilitator.com/blog/the-ultimate-step-by-step-guide-for-design-sprint-beginners)). The section on variants below compares them.
+
+The method is built for one kind of situation: a question that matters, that the team cannot answer from what it already knows, and that a realistic surface can test before anything is built. GV's framing is that the sprint lets a team see customer reactions to a finished-looking product "before making any expensive commitments." Hamster can hold the sprint's long-term goal, sprint questions and test scorecard as shared context, so the team and its agents work from the same record after the week ends.
 
 ## Core Principles
 
 ### Start at the End
 
-Before generating solutions, the team must agree on what success looks like and which moment in the customer journey carries the most risk. This means defining a long-term goal, listing the assumptions that could derail it, and choosing a specific target for the week. Teams that skip this step tend to produce beautifully crafted prototypes that answer the wrong question entirely. The constraint forces uncomfortable conversations early, when changing direction is free.
+The sprint opens with the long-term goal and the ways the project could fail, before anyone discusses solutions. The checklist asks the team to "get optimistic" about where it wants to be and then "get pessimistic" and turn each fear into a question it could answer that week ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Those sprint questions become the rows of Friday's scorecard, so the test measures what the team said mattered on Monday. A sprint that skips this step tends to test whatever is easiest to prototype.
 
 ### Work Alone Together
 
-Individual ideation before group discussion is not optional. Research on brainstorming consistently shows that groups generate fewer and less diverse ideas when they think out loud together, because social dynamics cause anchoring, conformity, and deference to seniority. The design sprint structures around this by having each person sketch solutions silently before anyone shares. The result is a wider range of ideas, stronger contributions from introverts and junior team members, and less time wasted on the loudest voice winning by default.
+Ideas are generated by individuals working silently, in the same room, before any group discussion. Knapp wrote in 2012 that the ideas from his group brainstorming workshops "didn't go anywhere," and that the most successful ideas tended to come from individuals given heads-down time ([Knapp, 2012](https://jakek.medium.com/the-product-design-sprint-a-five-day-recipe-for-startups-84fde3e97d79)). Sketches are anonymous and must explain themselves, which keeps the loudest or most senior voice from winning by default. Discussion happens later, and it is about ideas that already exist on paper.
 
-### A Decider Decides
+### The Decider Decides
 
-Every sprint requires a single person with the authority to make the final call when the team disagrees. This is usually the CEO, product lead, or whoever owns the business outcome. Without a clear Decider, teams default to consensus, which in practice means the most politically palatable option wins rather than the most ambitious one. The Decider doesn't override the process.
+One person with real authority makes the final calls: the target on Monday, the solutions to prototype on Wednesday and the verdict on each question on Friday. Knapp's early workshops chose winners by consensus, and he found that consensus "tends to compromise" rather than picking the bold or unique idea. The current checklist says that if the Decider cannot attend the whole week, they should appoint a delegate who can ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). The team still votes, and the Decider weighs those votes before choosing.
 
-They participate in the same exercises as everyone else. But when votes split, they break the tie. This avoids the common failure mode where a sprint produces a watered-down compromise that nobody believes in.
+### Prototype a Facade
 
-### Prototype, Don't Build
+Thursday's prototype only has to look real to the customer. GV calls this a "fake it" philosophy: a realistic facade is enough to test with customers, and focusing on the customer-facing surface is what lets a team finish in one day ([GV](https://www.gv.com/sprint/)). The checklist's term is "Goldilocks quality," enough quality to evoke honest reactions and no more. Because the prototype is disposable, a failed test costs one day of work.
 
-The Thursday prototype is a facade. It should look real enough to provoke genuine reactions from test users, but it should take only a single day to construct. Teams that fall into the trap of building something functional defeat the purpose. The sprint's power comes from the disposability of the artifact.
+### Test With Five Target Customers
 
-If users reject it, you've lost one day of prototyping work instead of weeks of engineering. This requires choosing the right fidelity level, high enough visual polish to feel real, zero backend functionality.
+Friday's test uses five one-on-one interviews with people who fit the target profile, all on the same day. The checklist says that after five interviews "big patterns will emerge" ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). The number matches Jakob Nielsen's advice to test with no more than five users and run many small tests, since "the first study with five participants has found 85% of the usability problems" in his analysis ([Nielsen Norman Group](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/)). The whole team watches together, which gives everyone the same evidence.
 
-### Test with Real Humans on Friday
+### Timebox Everything
 
-Five user interviews on the final day isn't an arbitrary number. Jakob Nielsen's research suggests that five participants uncover roughly 85% of usability issues. The interviews serve two purposes: they validate or invalidate the sprint's hypothesis, and they give the entire team firsthand exposure to user reactions. Having decision-makers watch these interviews live is critical.
+Every activity has a fixed duration, from three minutes per Lightning Demo to eight minutes for Crazy 8s, and the checklist recommends a Time Timer to keep that visible ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). The tight schedule forces decisions with incomplete information, which is the condition product decisions are made in anyway. It also protects energy: the checklist asks facilitators to break every sixty to ninety minutes and to hand long debates to the Decider.
 
-Secondhand summaries of user research lose the emotional texture that drives conviction. Teams that run sprints without the Friday test are just having a fancy planning week.
+### Clear the Calendar
 
-### Time Pressure Is a Feature, Not a Bug
-
-The five-day constraint is the engine of the entire method. It prevents scope creep, eliminates the possibility of endless revision cycles, and forces the team to make decisions with imperfect information, which is the same condition they'll face in real product development anyway. Teams that extend their sprints to two weeks or add "pre-sprint research phases" often produce better-polished artifacts but worse learning outcomes, because the urgency that drives creative problem-solving evaporates when deadlines feel soft.
-
-### Small Team, Full Commitment
-
-The ideal sprint team is seven people or fewer, representing a cross-functional slice of the organization: product, design, engineering, marketing, and at least one domain expert or customer-facing team member. Everyone commits to the full five days with no outside meetings, no email, and no "I'll pop in for the afternoon sessions." Partial attendance undermines the shared context that makes the sprint work. If someone misses Monday's problem mapping, their contributions on Tuesday will be disconnected from the team's shared understanding of the challenge.
+The sprint team commits to the full five days and shuts down messaging and media while it works, per the [Design Sprint guide](https://www.character.vc/guide/design-sprint). Google's kit also says participants should be present for the entire sprint, while knowledge experts may join only for specific exercises ([Design Sprint Kit FAQ](https://designsprintkit.withgoogle.com/methodology/faq)). Someone who misses Monday's map will sketch against a problem the rest of the team has already reframed.
 
 ## Steps
 
-1. **Step 1: Map the Problem (Monday)**
-   The sprint begins with creating a shared understanding of the landscape. The team interviews internal experts, stakeholders, and, if possible, a customer or support representative to surface what they collectively know and don't know. "). The team then creates a simple map: a diagram showing how a target customer moves from discovery to the key moment where value is delivered or lost.
+1. **Map the problem and pick a target (Monday)**
+   Start by writing a long-term goal and turning the biggest risks into sprint questions the week could answer. Draw a simple map with the customers and key players on the left, the completed goal on the right, and a flowchart of five to fifteen steps between them ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). In the afternoon, interview experts from the team and outside it for fifteen to thirty minutes each, while everyone writes How Might We notes. Cluster the notes, vote with two dots each, and move the winners onto the map. The Decider then circles one target customer and one target moment, which fixes the scope for the rest of the week.
 
-By the end of Monday, the Decider chooses a specific target on the map, the moment and customer segment the sprint will focus on for the rest of the week. A common mistake here is trying to map everything. The map should be intentionally incomplete, focused only on the journey relevant to the sprint question. If the map takes more than 30 minutes to draw, it's too complex.
+2. **Sketch competing solutions (Tuesday)**
+   The morning is for Lightning Demos: each person shows an existing solution worth borrowing from, three minutes per demo, while the Facilitator captures ideas on the whiteboard. The team then decides whether to divide the target area of the map or have everyone swarm the same part. In the afternoon, each person works through the four-step sketch: notes, rough ideas, Crazy 8s and a three-panel solution sketch that is anonymous and self-explanatory ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Someone also starts recruiting Friday's customers with a screener survey, since recruiting runs alongside the whole week.
 
-2. **Step 2: Sketch Competing Solutions (Tuesday)**
-   Tuesday shifts from problem space to solution space, but with a critical constraint: everyone works individually. The day begins with "Lightning Demos," a structured review of inspiring solutions from other products, competitors, and even unrelated industries. Each person presents a 3-minute walkthrough of something worth borrowing. After the demos, each team member works through a four-step sketching exercise that culminates in a "Solution Sketch," a detailed, three-panel storyboard of their proposed approach.
+3. **Decide on the strongest solutions (Wednesday)**
+   Tape the sketches in a row and run the "sticky decision": a silent heat map with small dots, a speed critique of three minutes per sketch, a nonbinding straw poll, and then the Decider's supervote with three large dots. Sort the chosen sketches from the maybe-laters and decide whether the winners fit one prototype or need competing prototypes in a "Rumble" ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). In the afternoon, draw a grid of about fifteen squares, pick an opening scene, and fill in a storyboard of five to fifteen steps using existing sketches where possible. Tough calls go to the Decider, and small ones wait so the team does not run out of energy.
 
-These sketches are anonymous and self-explanatory, meaning they need to communicate the idea without the creator narrating. This is where the magic happens. You'll typically get 5-7 genuinely different approaches from a team of that size, approaches that would never have surfaced in a group brainstorm because social dynamics would have converged on the first plausible-sounding idea. The facilitator collects the sketches at the end of the day and prepares them for Wednesday's review.
+4. **Build a realistic prototype (Thursday)**
+   Pick tools that are rough, fast and flexible rather than the team's everyday production tools. Assign the roles from the checklist: Makers, a Stitcher who checks quality and makes sure the pieces fit together, a Writer, an Asset Collector, and the Interviewer, who writes Friday's script ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Run a trial run in the afternoon with the Interviewer and the Decider watching, early enough to fix what it finds. Remind every customer about Friday's test before the day ends, by phone if possible.
 
-3. **Step 3: Decide on a Direction (Wednesday)**
-   Wednesday morning, the team reviews all solution sketches using a structured critique method. Each sketch is taped to the wall and examined silently. Team members place small dot stickers on parts they find compelling (a "heat map" vote), then the group discusses standout clusters of dots and raises concerns. After discussion, each team member places a single "supervote" on the solution or component they believe best addresses the sprint target.
+5. **Test with customers and decide next steps (Friday)**
+   Run five interviews in one day, with the sprint team watching a one-way video feed from a separate room. The Interviewer follows the Five-Act Interview: a friendly welcome, context questions, an introduction to the prototype with a request to think aloud, tasks with light nudges, and a debrief ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Observers take notes on a whiteboard grid with a column per customer and a row per sprint question, and after each interview they vote yes or no on each question for that customer. At the end of the day the Decider sets a single yes or no for each question, and each person writes a hot take and proposed next steps before the Decider chooses.
 
-The Decider then makes the final call, either choosing a single solution or combining elements from multiple sketches. The afternoon is spent creating a storyboard, a step-by-step plan for Thursday's prototype. The storyboard should read like a comic strip of the user's experience, roughly 10-15 frames covering the complete interaction from the moment the user encounters the product to the key outcome. Resist the temptation to storyboard two paths.
+## Design Sprint Variants Compared
 
-The sprint works best when the team commits fully to one direction. If there's a strong runner-up idea, consider running a second sprint later rather than diluting this one.
+The table compares the published five-day sprint with the versions teams most often meet. Each row links the source that describes it.
 
-4. **Step 4: Build the Prototype (Thursday)**
-   Thursday is a production day. The team builds a realistic-looking prototype that can fool a user into thinking it's a real product, at least for the 60 minutes of a test session. The key principle is "Goldilocks quality": high enough fidelity that users react authentically (clicking, navigating, reading content), low enough that one day is sufficient. For digital products, tools like Figma, Keynote, or even a series of screenshots stitched together often suffice.
+| Version | Length | How it differs |
+|---|---|---|
+| Five-day sprint in the book [Sprint](https://www.character.vc/guide/design-sprint) | Five days | Map, sketch, decide, prototype, test, one day each; a team of seven or fewer with a Decider and a Facilitator |
+| Knapp's [2012 GV recipe](https://jakek.medium.com/the-product-design-sprint-a-five-day-recipe-for-startups-84fde3e97d79) | "Five days or less" | Earlier stage names: Understand, Diverge, Decide, Prototype, Validate, plus a preparation stage |
+| AJ&Smart's [Design Sprint 2.0](https://www.facilitator.com/blog/design-sprint-101) | Four days | Mapping and sketching share day one, voting and storyboard take day two; experts can leave after day two |
+| Google's [Design Sprint Kit](https://designsprintkit.withgoogle.com/methodology/overview) | 1 to 5 days, per its [planning page](https://designsprintkit.withgoogle.com/planning/overview) | Six phases: Understand, Define, Sketch, Decide, Prototype, Validate; methods chosen to fit the goal |
+| [Remote sprint guide](https://www.jackiecolburn.com/remote-design-sprint-guide) | Same schedule, often longer | Online whiteboard and video; the guide reports remote sprints take longer and adds more breaks |
+| [Foundation Sprint](https://www.character.vc/guide/foundation-sprint) | Two days | Runs before a design sprint to produce a hypothesis the sprint can test |
 
-For physical products, foam models, 3D prints, or modified existing products work. For services, a scripted role-play or a brochure describing the experience can be enough. The team divides roles: Makers (2-3 people building the prototype), a Writer (creating realistic copy, not lorem ipsum), an Asset Collector (finding images, icons, content), and a Stitcher (assembling everything into a coherent flow). The facilitator should check the prototype against the storyboard at lunch and again at 3 PM to catch gaps before it's too late.
-
-The most common failure mode is overbuilding. If it takes longer than a day, you've gone too far.
-
-5. **Step 5: Test with Users (Friday)**
-   Friday is the payoff. Five target users, recruited earlier in the week, each participate in a one-on-one interview lasting roughly 60 minutes. The interviewer (ideally the same person for all five sessions) follows a structured script: a warm-up to understand the user's context, a task-based walkthrough of the prototype where the user thinks aloud, and a debrief to capture overall reactions. The rest of the team watches via live video feed in a separate room, taking notes on a structured grid: one column per user, one row per section of the prototype.
-
-After each interview, the team marks reactions as positive, negative, or neutral. Patterns become visible surprisingly fast. If three out of five users stumble at the same point, that's a strong signal. If all five navigate smoothly through a flow the team was worried about, that concern is retired.
-
-At the end of the day, the team reviews the pattern grid together and determines next steps: iterate and sprint again, move to production with confidence, or pivot to a different approach. The facilitator should explicitly connect findings back to Monday's sprint questions and long-term goal.
+The differences matter for planning. AJ&Smart describes Design Sprint 2.0 as its own four-day version, created after running hundreds of sprints, and as "the only update approved by Sprint-inventor Jake Knapp" ([AJ&Smart](https://www.facilitator.com/blog/the-ultimate-step-by-step-guide-for-design-sprint-beginners)). Knapp and Zeratsky's current guide still answers "Yes" to whether teams need five days, and says teams need the full week especially the first time ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Google's kit notes that "The Google Ventures model outlines a 5 day schedule," and says a one-day version is possible but harder than allocating 3-4 days ([Design Sprint Kit FAQ](https://designsprintkit.withgoogle.com/methodology/faq)).
 
 ## When to Use
 
-- When your team has identified a significant product opportunity or strategic bet, such as entering a new market segment or redesigning a core workflow, and leadership is about to commit 3-6 months of engineering time based mostly on assumptions and slide decks rather than validated user evidence.
-- When a cross-functional team of 4-7 people cannot align on a direction after multiple meetings, and the disagreement stems from different mental models of the user rather than organizational politics. The sprint forces shared observation of real users, which resolves assumption-based conflict faster than any amount of internal debate.
-- When you're an early-stage startup with a new product concept and need to test whether your target users would actually engage with the core value proposition before you invest in building an MVP. The sprint lets you test the riskiest interaction in a week rather than spending two months building something nobody wants.
-- When a mature product team is considering a major redesign or a new feature that would fundamentally change the user experience, and the cost of getting it wrong is high, either in user churn, migration complexity, or brand reputation.
-- When you're responding to a competitive threat or market shift that requires a fast but informed response. A competitor has launched a feature that changes user expectations in your category, and you need to explore your response options with user input rather than reacting purely on instinct.
-- When a team has been stuck in analysis paralysis for weeks, cycling through research decks and strategy documents without converging on a concrete plan. The sprint's rigid structure breaks the deadlock by forcing tangible output within a fixed window.
+- A team is about to commit months of engineering to a new product, market or core workflow, and the case rests on assumptions. A week of prototyping and testing is cheap next to building the wrong thing.
+- A cross-functional team keeps arguing about what customers will do, and the arguments come from different mental pictures of the customer. Watching the same five interviews gives everyone one shared set of evidence.
+- A startup needs to know whether its core value proposition lands with target customers before it builds a first version. A facade prototype can test the riskiest moment in the journey without writing production code.
+- An established product faces a redesign or a new feature where a wrong call is expensive or hard to undo, such as a change that forces customers to relearn a workflow.
+- A project is stuck in circular planning, and the team has the people and the authority to decide. The fixed schedule and the Decider force a concrete choice by Wednesday.
 
 ## When Not to Use
 
-- When the problem is already well-understood and the solution is clear to the team. If you've done extensive prior research, user testing, and competitive analysis, and everyone agrees on the direction, running a five-day sprint adds ceremony without learning. The sprint's value is in resolving uncertainty, and if uncertainty is low, the time is better spent building.
-- When you cannot get a genuine decision-maker to commit to the full five days. A sprint without a Decider (or with a Decider who attends only the final presentation) produces recommendations instead of decisions. The team does the work, then has to re-sell the outcome to someone who wasn't in the room, which defeats the method's core advantage of compressing decision-making and evidence-gathering into a single loop.
-- When the question is primarily technical rather than experiential. If the biggest risk is whether your database can handle the load, whether a particular API integration is feasible, or whether a machine learning model will reach sufficient accuracy, a design sprint won't help. You need a technical spike or proof of concept. Design sprints answer 'would users value this?' not 'can our systems support this?'
-- When the team cannot assemble the right cross-functional mix. A sprint with only designers or only product managers produces blind spots. If engineering can't participate, the prototype will ignore feasibility constraints. If nobody from sales or support attends, the problem map will miss critical real-world context.
-
-Running a sprint with an incomplete team is worse than not running one, because the output carries false confidence.
-- When the stakes are genuinely low. If the feature in question affects a small number of users, takes less than a week to build, and is easily reversible, the overhead of a formal sprint isn't justified. Just build it, ship it behind a flag, and measure. Reserve the sprint process for decisions where being wrong is expensive or hard to undo.
+- The direction is already clear and agreed. Google's kit says that with a clear product direction and an agreed feature set "you probably don't need a Sprint," only dedicated working time ([Design Sprint Kit FAQ](https://designsprintkit.withgoogle.com/methodology/faq)).
+- The team knows too little about its customers to choose a target. The same FAQ recommends doing research first when there is little user research, then planning the sprint.
+- The main risk is technical, such as whether a system can handle the load or a model can reach the needed accuracy. A facade prototype cannot answer that, so a technical spike fits better.
+- No one with real decision rights can take part or appoint a delegate. Without a Decider the week ends with a recommendation that still has to be sold.
+- The change is small, cheap and reversible. Shipping it behind a flag and measuring is faster than a five-day process.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Mapping Problems and Defining the Sprint Challenge on Day 1](../../skills/mapping-and-defining-sprint-challenges/SKILL.md) — How to run the Understand phase by creating a problem map, conducting expert interviews, identifying assumptions, and selecting a focused sprint target for the week.
-- [Conducting User Tests and Synthesizing Feedback on Day 5](../../skills/conducting-sprint-user-tests/SKILL.md) — How to recruit the right test participants, run five moderated usability interviews in one day, capture observations, and identify patterns that validate or invalidate your sprint hypothesis.
-- [Storyboarding the User Journey for Sprint Prototyping](../../skills/storyboarding-sprint-concepts/SKILL.md) — How to create a step-by-step storyboard that translates the winning sketch into a coherent user flow, serving as the blueprint the team follows during prototype day.
-- [Building a Realistic Prototype in One Day](../../skills/building-realistic-sprint-prototypes/SKILL.md) — How to rapidly create a high-fidelity, testable prototype using tools like Figma or Keynote that feels real enough to generate authentic user feedback without writing production code.
-- [Planning and Customizing Your Design Sprint Agenda](../../skills/planning-design-sprint-agendas/SKILL.md) — How to structure the full multi-day sprint agenda, adapt the classic 5-day format into shorter 4-day or Design Sprint 2.0 variations, and prepare all necessary materials and logistics.
-- [Facilitating a Design Sprint as the Sprint Master](../../skills/facilitating-design-sprint-workshops/SKILL.md) — How to effectively facilitate each phase of a design sprint, manage group dynamics, enforce timeboxes, and guide teams through structured exercises from start to finish.
-- [Running Design Sprints Remotely with Distributed Teams](../../skills/running-remote-design-sprints/SKILL.md) — How to adapt the design sprint framework for remote or hybrid teams using tools like Miro, FigJam, and Zoom, including async exercises and strategies to maintain energy and engagement.
-- [Sketching Solutions and Running Structured Voting](../../skills/sketching-and-voting-on-solutions/SKILL.md) — How to guide participants through Crazy 8s, solution sketching, heat-dot voting, and the Decide phase to converge on the strongest ideas without groupthink.
+- [Design Sprint Day 1: Map the Problem and Pick a Target](../../skills/mapping-and-defining-sprint-challenges/SKILL.md): Run design sprint day 1: set the long-term goal and sprint questions, draw the map, interview experts with How Might We notes, and pick a target.
+- [Sprint User Testing: Running Design Sprint Day 5](../../skills/conducting-sprint-user-tests/SKILL.md): Recruit five target customers, run five-act interviews on the prototype, score each sprint question and turn the patterns into a decision.
+- [Sprint Storyboarding: Plan the Prototype Step by Step](../../skills/storyboarding-sprint-concepts/SKILL.md): Turn the winning sketches into a design sprint storyboard of five to fifteen steps that the team can prototype in one day.
+- [Building a Realistic Sprint Prototype in One Day](../../skills/building-realistic-sprint-prototypes/SKILL.md): Split the storyboard across Makers, a Stitcher, a Writer and an Asset Collector to build a facade prototype and trial-run it before Friday.
+- [Planning a Design Sprint Agenda and Schedule](../../skills/planning-design-sprint-agendas/SKILL.md): Choose the format, block the calendar, book people and rooms, recruit customers and prepare a day-by-day design sprint agenda.
+- [Design Sprint Facilitator: How to Facilitate a Sprint](../../skills/facilitating-design-sprint-workshops/SKILL.md): Guide the team through each day as the Facilitator: keep time, capture discussion, manage energy and hand decisions to the Decider.
+- [Running a Remote Design Sprint with Distributed Teams](../../skills/running-remote-design-sprints/SKILL.md): Adapt the sprint for distributed teams with an online whiteboard, time-zone planning, turn-taking and remote customer interviews.
+- [Design Sprint Exercises: Sketching and Voting](../../skills/sketching-and-voting-on-solutions/SKILL.md): Run Lightning Demos, the four-step sketch with Crazy 8s, and the sticky decision that ends in the Decider's supervote.
 
 ## FAQ
 
-**What is a design sprint in simple terms?**
+**What is a design sprint?**
 
-A design sprint is a five-day process where a small team picks a big, risky question, generates solutions individually, picks the best one, builds a fake version of it, and tests that fake version with five real users by Friday afternoon. The point is to learn whether an idea works before spending months building it for real. It was created by Jake Knapp at Google Ventures and has been used by thousands of companies since 2016.
+A design sprint is a five-day process for answering a critical business question by designing, prototyping and testing an idea with customers ([GV](https://www.gv.com/sprint/)). A team of seven or fewer maps the problem, sketches solutions individually, chooses the strongest with a Decider, builds a realistic facade, and watches five target customers use it. The output is evidence about whether the idea works, gathered before the team commits to building it.
 
-**Design sprint vs. design thinking: which should I use?**
+**Why is it called the Google design sprint?**
 
-Design thinking is a broad philosophy and set of principles for human-centered problem-solving. A design sprint is a specific, time-boxed process that borrows from design thinking but adds rigid structure and a deadline. If you need a general approach to embed empathy into your organization's culture over time, design thinking is the broader framework. If you need to answer a specific product question this week, run a design sprint.
+Jake Knapp developed it at Google, where he began running sprints in 2010, and then brought it to GV in 2012 ([GV](https://www.gv.com/sprint/)). His publisher describes the book's authors as former Google Ventures advisers ([Simon and Schuster](https://www.simonandschuster.com/books/Sprint/Jake-Knapp/9781501121746)). The version in the Sprint book was refined at GV with Braden Kowitz, John Zeratsky, Michael Margolis and Daniel Burka. Google later published its own open-source [Design Sprint Kit](https://designsprintkit.withgoogle.com/), which describes a flexible framework developed for internal Google teams, so "Google design sprint" can refer to either lineage.
 
-Many teams use design thinking as their ongoing mindset and design sprints as a tactical tool when they hit a high-stakes decision point.
+**What is the design sprint book?**
 
-**Does a design sprint work for small teams of 2-3 people?**
+The book is Sprint: How to Solve Big Problems and Test New Ideas in Just Five Days, by Jake Knapp, John Zeratsky and Braden Kowitz, published in 2016 ([Character](https://www.character.vc/sprint)). GV calls it "a complete hour-by-hour guide to running your sprint" ([GV](https://www.gv.com/sprint/)). Knapp and Zeratsky keep an updated checklist and a Miro template on their [Design Sprint guide](https://www.character.vc/guide/design-sprint).
 
-It can, but you lose diversity of perspective, which is one of the method's biggest strengths. With only two or three people, the individual sketching phase produces fewer competing ideas, and you're more likely to have blind spots in the problem map because you lack representation from different functions. If you're a small team, consider inviting external participants for specific phases, a customer advisor for Monday's mapping, a developer friend for Thursday's prototype build. The AJ&Smart Design Sprint 2.0 format, compressed into four days, was partly designed to work with leaner teams.
+**What is AJ&Smart's four-day Design Sprint?**
 
-**How much does a design sprint cost to run?**
+Design Sprint 2.0 is a four-day version created by the agency AJ&Smart, which calls it "the only update approved by Sprint-inventor Jake Knapp" ([AJ&Smart](https://www.facilitator.com/blog/the-ultimate-step-by-step-guide-for-design-sprint-beginners)). Day one defines the challenge and produces solutions, day two covers voting and the storyboard, day three is the prototype and day four is testing. AJ&Smart says the format is optimised for large organisations as well as startups, and that experts can go home after day two ([AJ&Smart](https://www.facilitator.com/blog/design-sprint-101)).
 
-The direct cost is primarily the opportunity cost of 4-7 people's time for a full week, plus roughly $500-2,000 for user recruitment and incentives if you use a recruitment service. Materials (whiteboards, sticky notes, dot stickers) are negligible. For remote sprints, you'll need a digital whiteboard tool like Miro or FigJam, which most teams already have. The more meaningful calculation is what the sprint saves: if it prevents even one month of engineering time spent building the wrong feature, it has paid for itself many times over.
+**How is a design sprint different from design thinking?**
 
-**Why do design sprints fail in practice?**
+Knapp's 2012 post says the sprint is based on the design thinking structure championed by IDEO and Stanford's d.school, adapted and tightened for startups ([Knapp, 2012](https://jakek.medium.com/the-product-design-sprint-a-five-day-recipe-for-startups-84fde3e97d79)). Design thinking is a broad approach that can run over any length of time. The sprint fixes the schedule, the roles and the exercises, and ends with a customer test on a set day.
 
-The most common failure mode is running the sprint without a real Decider present, which turns the week's output into a recommendation that has to be re-sold to leadership after the fact. The second most common failure is skipping or weakening Friday's user tests, either by testing with internal colleagues instead of real users, or by running only one or two sessions. Other patterns include trying to solve too broad a problem (the Monday target was "improve the whole onboarding experience" instead of a specific moment), overbuilding the prototype so Thursday bleeds into Friday, and failing to recruit test users early enough, leaving the team scrambling on Thursday afternoon.
+**Can a design sprint be run remotely?**
 
-**How does a design sprint work alongside agile sprints and existing roadmaps?**
+Yes. Knapp and Zeratsky say they now run most of their sprints remotely with a Miro template and Zoom ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Their remote guide, compiled with facilitator Jackie Colburn from the input of more than 100 people, keeps the book's schedule but warns that remote sprints take longer and need more breaks ([Remote Design Sprint Guide](https://www.jackiecolburn.com/remote-design-sprint-guide)).
 
-A design sprint is not a replacement for your development process. It sits upstream of it. You run a design sprint when you face a significant unknown, then feed the findings into your normal planning and execution workflow, whether that's Scrum sprints, Kanban, or something else. The most natural integration point is at the beginning of a new initiative or epic, before the first engineering sprint.
+**How long does a design sprint take to prepare?**
 
-Some teams schedule a design sprint quarterly as a dedicated discovery week, separate from their delivery cadence. The key is to avoid treating the design sprint output as a specification. It's validated direction, not a detailed requirements document.
+Google's kit advises at least one full day of planning for each day of sprinting ([Design Sprint Kit planning](https://designsprintkit.withgoogle.com/planning/overview)). The checklist's own set-up list covers choosing the challenge, getting a Decider, recruiting the team, booking outside experts, picking a Facilitator, blocking five days and booking rooms or online tools ([Design Sprint guide](https://www.character.vc/guide/design-sprint)). Customer recruiting also has to start early enough that five interviews are confirmed for Friday.
 
-**Can I run a design sprint remotely with a distributed team?**
+## Sources
 
-Yes, and many teams now prefer it. Remote design sprints require more preparation from the facilitator, especially in setting up digital whiteboard templates, structuring async time zones, and maintaining energy through video calls. The core exercises translate well to tools like Miro, FigJam, and Figma. The biggest risk in remote sprints is attention drift, so facilitators typically add more frequent breaks, shorter working blocks, and explicit check-ins.
-
-Some teams run a hybrid format where the sketching work is done asynchronously and the critique, decision, and testing phases happen live on video.
-
-**What is Design Sprint 2.0 and how is it different from the original?**
-
-0 was developed by AJ&Smart, a Berlin-based agency, in collaboration with Jake Knapp. It compresses the five-day format into four days by combining Monday's mapping and Tuesday's sketching into a single day using modified exercises. 0 sprint is dedicated entirely to decision-making and storyboarding, Wednesday to prototyping, and Thursday to testing. 0 version also introduces updated facilitation exercises like the "Note and Vote" pattern to speed up group decisions.
-
-The trade-off is less time for expert interviews and problem exploration on the first day, which works well for teams that already have strong domain knowledge but can be a liability if the problem space is genuinely unfamiliar.
+- [GV: The Design Sprint](https://www.gv.com/sprint/)
+- [Jake Knapp and John Zeratsky: Design Sprint guide](https://www.character.vc/guide/design-sprint)
+- [Character: Sprint, the book](https://www.character.vc/sprint)
+- [Simon and Schuster: Sprint by Jake Knapp, John Zeratsky and Braden Kowitz](https://www.simonandschuster.com/books/Sprint/Jake-Knapp/9781501121746)
+- [Jake Knapp: The product design sprint, a five-day recipe for startups](https://jakek.medium.com/the-product-design-sprint-a-five-day-recipe-for-startups-84fde3e97d79)
+- [Google Design Sprint Kit](https://designsprintkit.withgoogle.com/)
+- [Google Design Sprint Kit: Methodology](https://designsprintkit.withgoogle.com/methodology/overview)
+- [Google Design Sprint Kit: FAQ](https://designsprintkit.withgoogle.com/methodology/faq)
+- [Google Design Sprint Kit: Planning](https://designsprintkit.withgoogle.com/planning/overview)
+- [AJ&Smart: What is a Design Sprint](https://www.facilitator.com/blog/design-sprint-101)
+- [AJ&Smart: Step-by-step guide for Design Sprint beginners](https://www.facilitator.com/blog/the-ultimate-step-by-step-guide-for-design-sprint-beginners)
+- [Character: Foundation Sprint guide](https://www.character.vc/guide/foundation-sprint)
+- [The Remote Design Sprint Guide](https://www.jackiecolburn.com/remote-design-sprint-guide)
+- [Nielsen Norman Group: Why You Only Need to Test with Five Users](https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/)
 
 ---
 

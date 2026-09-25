@@ -1,25 +1,21 @@
 # FAQ: Managing Change Requests in Waterfall Projects
 
-## How does change control differ in the waterfall model versus agile?
+## What is a change control board?
 
-In the waterfall model, change control is formal and gate-based because changes to completed phases trigger expensive rework across downstream phases. Agile absorbs changes continuously through backlog reprioritization each sprint. Waterfall's approach is better suited for projects with regulatory requirements, fixed contracts, or environments where baseline stability is critical.
+It is the group with authority to approve or reject changes to the project's baselines. It usually includes the sponsor or a delegate, the project manager, technical leads and, on contract work, a customer representative. The board reviews each change with its impact analysis and records a decision and a reason.
 
-## How many people should be on a Change Control Board?
+## Does every change need to go to the board?
 
-Aim for 3-5 core members: typically the project manager, technical lead, business sponsor, and a QA representative. Larger boards slow decisions and create scheduling conflicts. Invite subject matter experts as non-voting advisors when specific change requests require their domain expertise.
+No. Most projects let the project manager approve small, low-risk changes within limits the board sets in advance, and report them to the board afterwards. Changes that affect the contract, the end date, the budget beyond those limits, or a critical interface go to the board. Writing the limits down stops arguments about which route applies.
 
-## What happens if a change request is submitted after that waterfall phase is complete?
+## How is a change request different from a defect?
 
-Late-phase changes in the waterfall model require rework on already-completed deliverables, making them significantly more expensive. The impact analysis must account for rework in every completed phase the change touches. The CCB should apply a higher approval threshold for late-phase changes, requiring stronger business justification relative to the increased cost.
+A defect is a place where the product does not meet its approved requirements, and fixing it restores agreed behavior. A change request alters the agreed requirements, design, schedule or budget. A fix that changes agreed behavior is a change and should go through the change request process, even if it started as a defect report.
 
-## Can you have too much change control in a waterfall project?
+## How do we stop change control from slowing the project down?
 
-Yes. If trivial clarifications and minor defect fixes must go through full CCB review, the process becomes a bottleneck that frustrates teams and slows delivery. Set clear thresholds: define what constitutes a 'change' versus a 'clarification' or 'defect fix,' and only route true scope changes through the CCB.
+Keep the form short, set thresholds so small changes are approved quickly, meet on a regular cadence and provide an urgent route. Most delay comes from changes waiting for a decision, so track how long requests sit in the log. Good traceability also speeds up impact analysis, which is usually the slowest step.
 
-## How do I handle urgent change requests that can't wait for the next CCB meeting?
+## What should the change log contain?
 
-Establish an expedited approval path in your CCB charter for genuinely urgent changes, such as production-blocking defects or regulatory mandates. Typically, the project sponsor and project manager can jointly approve emergency changes, with the full CCB ratifying the decision at their next scheduled meeting.
-
-## What tools are best for tracking waterfall model change requests?
-
-Any tool that provides a structured log with status tracking works: Jira with a dedicated change request issue type, a SharePoint list, or even a well-maintained Excel spreadsheet. The tool matters less than the discipline of logging every request, attaching impact analyses, and recording CCB decisions with rationale.
+For each request: an identifier, a description, the requester, the date, the affected deliverables, the impact analysis, the decision, the reason and the current status. Link each approved change to the new versions of the documents it changed. The log becomes the history of how and why the project moved from its original baseline.

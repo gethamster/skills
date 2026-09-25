@@ -1,25 +1,25 @@
-# FAQ: Designing Pain-Focused Interview Guides for Developer Calls
+# FAQ: Designing Pain-Focused Interview Guides for Developers
 
-## How many questions should a pain-focused developer interview guide contain?
+## How many questions should a developer interview guide have?
 
-Aim for 12-15 core questions with 2-3 follow-up branches each. In a 45-minute call, you'll realistically cover 8-10 questions with meaningful depth. Having extras gives you flexibility to follow the conversation's natural direction without running out of material.
+Adam Frankl suggests about seven. A thirty-minute call does not leave time for more, and he keeps calls to thirty minutes because in his experience the second half of longer calls adds nothing. If you have more than seven, cut the ones that do not serve a specific learning goal.
 
-## How do I avoid biasing developer responses with my interview questions?
+## What is the magic wand question?
 
-Use open-ended, temporally specific prompts like 'Tell me about the last time...' instead of leading questions. Never mention your product category, specific competitors, or desired answers. Let the developer define problems in their own language before you probe deeper.
+It asks the person what they would change if they could do anything, without worrying about whether it is possible. Frankl's written version is "If you could wave a magic wand and be able to do anything that you can't do today, what would it be? Don't worry about whether it's possible, just anything." He credits it to Cindy Alvarez, author of Lean Customer Development. Scope it to your problem area so the answers stay relevant.
 
-## How often should I update my developer interview guide?
+## Why ask every member the same questions?
 
-Review and revise after every 5 calls. Cut questions that consistently produce shallow or repetitive answers, and add new prompts based on emerging themes from your TAB sessions. Keep a version log so you can track how your guide evolves alongside your understanding.
+Identical questions make answers comparable. Frankl says asking the same questions of many people turns you into a connoisseur of the answers, able to see how different personas respond and which answers are outliers. Varying the questions per person turns the calls into separate conversations that are hard to synthesize.
 
-## Can I use the same interview guide for crawlability testing tools research and other developer pain discovery?
+## Can I change the guide once calls have started?
 
-Yes, a well-designed guide is workflow-focused, not tool-focused. The same friction and workaround questions will surface pain around crawlability testing tools, CI/CD pipelines, monitoring, or any other domain — because you're following the developer's experience, not a predetermined topic list.
+Fix confusing wording after a pilot, then freeze the core questions for the rest of the round. Small clarifications are fine. For a new phase of calls, such as the second call where members react to your synthesis, write a new labeled version rather than editing the old one, and record which version each call used.
 
-## What's the difference between a pain-focused interview guide and a user research script?
+## How do I know if a question is leading?
 
-Traditional user research scripts often focus on usability and task completion for existing products. Pain-focused guides for TAB calls focus on uncovering problems before solutions exist — surfacing frustrations, workarounds, and unmet needs in the developer's current workflow regardless of any specific product.
+A leading question includes or implies the answer you want, for example by assuming a feeling, naming a feature, or rephrasing the member's words in yours. Read each question and ask whether a person could comfortably give the opposite answer. If not, rewrite it as an open question about what they did or experienced.
 
-## How does the interview guide fit into the Technical Advisory Board (TAB) Framework?
+## What if the why-now question gets the same answer from everyone?
 
-The guide is the foundation. It feeds directly into conducting non-pitch discovery calls, and the data it produces flows into synthesizing advisory insights into themes and ultimately translating TAB findings into product roadmap decisions. A weak guide undermines every downstream step.
+That can happen in a field driven by one obvious trend. Keep asking, because the shared answer is itself useful for your story, but try shortening the time frame so members describe recent changes rather than the one headline trend. Scaling DevTools host Jack did this in voice AI, asking about a year or six months ago instead of five or ten years.

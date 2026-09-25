@@ -1,15 +1,20 @@
 ---
-name: mapping-scopes-for-building
-description: "This skill teaches you to organize building-phase work into scopes, which are integrated slices of design, front-end, and back-end work that can be completed and verified independently, replacing traditional task lists with a structure that reveals real progress."
+name: "mapping-scopes-for-building"
+description: "Map Shape Up scopes instead of tasks: organize the building phase into integrated slices of design and code that can be finished independently."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: shape-up
+  method: "shape-up"
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mapping Shape Up Scopes Instead of Tasks During the Building Phase
+# Mapping Shape Up Scopes Instead of Tasks
 
-> This skill teaches you to organize building-phase work into scopes, which are integrated slices of design, front-end, and back-end work that can be completed and verified independently, replacing traditional task lists with a structure that reveals real progress.
+> Map Shape Up scopes instead of tasks: organize the building phase into integrated slices of design and code that can be finished independently.
 
 ## Before you start
 
@@ -24,139 +29,99 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 1-2 hours for initial scope map, then ongoing refinement throughout the cycle |
-| Outcome | Your team replaces a flat task list with a living scope map of 3-8 integrated slices, each independently completable and trackable on a hill chart, giving you honest visibility into progress and enabling scope hammering when time gets tight. |
-| Prerequisites | Familiarity with the Shape Up method and its fixed-time, variable-scope philosophy, A shaped pitch that has been bet on and assigned to a team for a build cycle, Understanding of hill charts for tracking progress (see tracking-progress-with-hill-charts), Basic understanding of front-end and back-end concerns in your product's architecture |
+| Time to Learn | One cycle of practice |
+| Outcome | Your team organizes a project into named scopes that each integrate design and code, can be finished on their own, and give everyone a shared language for progress. |
+| Prerequisites | A shaped pitch, a small team with design and programming skills, a few days of real work on the project |
 | Part of | [Shape Up](../../methods/shape-up/METHOD.md) |
 
 ## Overview
 
-When a shaped project gets bet on and handed to a build team, the first instinct is usually to break it into tasks. Write API endpoint. Build form component. Add database migration. Style the confirmation page. This produces a flat list that looks productive but hides the real question: are we actually finishing things, or just staying busy? Shape up scopes solve this by organizing work into integrated, vertically sliced pieces of functionality. Each scope bundles the design, front-end, and back-end work needed to deliver one meaningful piece of the project. A scope is not a feature spec, not a user story, and not a ticket. It is a named slice of the project that a team member can pick up, work through from unknowns to completion, and demo to the rest of the team within a few days.
+Shape Up scopes are the unit of work in the building phase of the [Shape Up](../../methods/shape-up/METHOD.md) method. A scope is a part of the project that can be built, integrated and finished independently of the rest. Scope mapping is the practice of dividing a project into those parts and tracking tasks inside them, in place of a single task list or separate lists for designers and programmers. [Chapter 12 of Shape Up](https://basecamp.com/shapeup/3.3-chapter-12) introduces the idea: the team breaks the overall scope of the project into separate scopes that can each be finished on their own.
 
-The scope map is the primary artifact this skill produces. It is a short list of 3-8 named scopes, each described in a phrase that captures the user-facing behavior it delivers. "Upload and preview" is a scope. "Send notification on approval" is a scope. "Migrate existing records" is a scope. The scope map replaces the backlog of tasks with a structure that makes real progress visible. When you track each scope on a [hill chart](https://tryhamster.com/skills/tracking-progress-with-hill-charts), you can see at a glance which slices are still being figured out, which are being executed, and which are done. You can also see which scopes are dragging, which lets you decide whether to cut them, simplify them, or reassign them before you run out of cycle time.
+The case for scopes instead of tasks comes from how teams lose track of progress. When work is organized by person or role, people complete tasks, but the tasks do not add up to a finished part of the product until late in the cycle. The book's example outside software is an event organizer who tracks tasks per volunteer and cannot see whether the event is coming together. Lists for Food Menu, Venue Setup and Light/Sound show at a glance which areas are done.
 
-Scope mapping does not happen once at the start of the cycle. The initial scope map is a draft. In [Shape Up](https://tryhamster.com/methods/shape-up), teams discover the real scopes in the first few days of building as they dig into the shaped work and hit the actual edges of the problem. Scopes get renamed, split, merged, and occasionally cut as the team learns what the work actually requires. The scope map is a living document that reflects the team's evolving understanding. This is fundamentally different from a sprint backlog, which is locked at planning and treated as a commitment. Scopes are a thinking tool, not a contract.
+Scopes also become the language of the project. The team talks about finishing Invite Clients or Locate instead of reporting on individual tickets, and those same names become the dots on the [Shape Up hill chart](../tracking-progress-with-hill-charts/SKILL.md). A good scope is bigger than a task and much smaller than the project. The book says scopes reflect meaningful parts of the problem that can be completed in a short period, a few days or less.
 
-The concrete output of this skill is a scope map with 3-8 named scopes, each one independently completable and demoable, ready to be placed on a hill chart. A well-mapped project gives the team autonomy to pick up scopes in any order, makes progress visible without status meetings, and provides the structure needed for [scope hammering](https://tryhamster.com/skills/setting-appetites-and-managing-scope) when time pressure arrives late in the cycle.
+This skill applies after kick-off, once the team has been given the whole project and has started doing real work. Ryan Singer's recent practice with other companies adds a variation: in his [end-to-end case study](https://www.ryansinger.co/end-to-end-with-shape-up-a-real-world-case-study/) he maps at most nine scopes as vertical slices during the kickoff, working from the shaped breadboard, and agrees their order with the team. The output in either case is a set of named scopes, each holding its own must-have and nice-to-have tasks, which the team revises as it learns.
 
 ## How It Works
 
-The core insight behind scopes is that real progress on a product happens when you finish things, not when you start things. A flat task list creates the illusion of progress because you can check off items, but those items might be scattered across different parts of the project. You might have completed 60% of the tasks while having zero pieces of the project that are shippable. Scopes flip this by making the unit of progress a vertically integrated slice. When a scope is done, something works end to end.
+Scopes are discovered. [Chapter 12](https://basecamp.com/shapeup/3.3-chapter-12) is direct about this: scope mapping is not planning, and you need to walk the territory before you can draw the map. At the start of a project the team only has the pitch and a pile of tasks it imagines it will need. As team members do real work, they learn how parts depend on each other, and the natural dividing lines appear. The book expects accurate scopes at the end of the first week or the start of the second, with some renaming and redrawing along the way.
 
-Scopes work because they align with how product work actually unfolds. In practice, the design, front-end, and back-end work for a given piece of functionality are deeply entangled. The API shape depends on what the UI needs. The UI layout depends on what data is available. The database schema depends on how users will interact with the feature. Separating these into independent tasks creates artificial handoffs and coordination overhead. Grouping them into a scope lets one person (or a pair) own the entire slice and make tradeoffs locally without waiting for decisions from other parts of the team.
+The first scope usually comes from getting one piece done. [Chapter 11](https://basecamp.com/shapeup/3.2-chapter-11) asks the team to pick something core, small and novel and to build it end to end, with working UI and working code, early in the cycle. Once that slice works, the team looks at the remaining tasks and groups them by what can be finished together. In the book's message drafts example, a team pulled Start New out first, then Locate, Trash and Save/Edit, and later carved Send, Store and Reply out of the Save/Edit work.
 
-The naming convention matters more than it seems. A good scope name describes user-facing behavior, not implementation. "Upload and preview" tells you what the user will be able to do when the scope is done. "Build S3 integration" tells you about a technology choice but not whether the user can do anything new yet. When scopes are named after user-facing behavior, you can evaluate whether each scope is essential to the shaped solution or whether it could be cut or simplified under time pressure. This is the foundation of scope hammering, which is the [Shape Up](https://tryhamster.com/methods/shape-up) technique for staying within the fixed time box by reducing scope rather than extending deadlines.
+Each scope contains both front-end and back-end tasks. That integration is the reason scopes work: a finished scope is a piece of the product someone can click through, while a finished layer still depends on the other layers. The shape of the work inside varies. Most scopes are layer cakes, with UI and a thin, even layer of code. Some are icebergs, where the back-end is far more complex than the UI or the reverse; the book suggests splitting those into separate scopes and questioning whether the complexity is really necessary.
 
-The right number of scopes for most projects is between 3 and 8. Fewer than 3 means your scopes are too large, each scope will take more than a week, and you will not have enough resolution on your hill chart to see progress. More than 8 means your scopes are too granular, you are essentially back to task-level tracking, and the overhead of managing scope boundaries exceeds the benefit. The sweet spot is scopes that take 1-5 days to complete, which gives you enough granularity to see progress without drowning in coordination.
+The book gives three signs that scopes are right: the team can see the whole project with nothing worrying hidden in the details, conversations flow because the scopes give the right language, and new tasks have an obvious home. It gives three signs that scopes need redrawing: it is hard to say how done a scope is, a name is generic (such as front-end or bugs), or a scope has grown too big to finish soon.
 
-Scopes emerge from the shaped work, not from decomposition of a feature spec. The shaped pitch defines the problem, the solution approach, and the boundaries (rabbit holes to avoid, nice-to-haves that are explicitly out). When the team starts building, they discover the natural joints in the work. These joints are where one piece of the solution can be completed independently of another. Sometimes the joints are obvious from the pitch. Sometimes they only become clear after a day or two of exploration. This is why scope mapping is iterative: you draft an initial map, then refine it as the team learns.
-
-The relationship between scopes and hill charts is symbiotic. Scopes without hill charts are just a different kind of list. Hill charts without well-defined scopes produce meaningless dots. Each scope sits on the hill as a single dot, moving from "figuring it out" (uphill) to "making it happen" (downhill). When you see a scope stuck on the uphill side for more than a few days, that is a signal to investigate. Maybe the scope is too big and needs splitting. Maybe there is an unresolved unknown that needs a spike. Maybe the team needs help. This diagnostic power is what makes scopes the right unit of tracking.
+Two conventions keep the map clean. A Chowder list can hold loose tasks that fit nowhere, but if it grows past three to five items there is probably a scope hiding in it. Nice-to-haves are recorded on the scope with a tilde in front, so the team can always separate what must be done from what can be cut ([Chapter 12](https://basecamp.com/shapeup/3.3-chapter-12)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Re-read the shaped pitch with the whole team
+### Step 1: Start with the whole project and capture tasks as they appear
 
-Before mapping any scopes, the entire build team (designer and programmer, or small team of two to three people) should read through the shaped pitch together. Pay attention to the problem statement, the proposed solution, the explicit boundaries (what is out of scope), and any rabbit holes the shaper flagged. Discuss what the pitch means in terms of the actual product. Identify the parts of the solution that feel clear versus the parts that feel uncertain.
+After kick-off, let each person get oriented in the existing system and write down the tasks they find, without grouping them yet. Early task lists are mostly imagined work, and [Chapter 10](https://basecamp.com/shapeup/3.1-chapter-10) notes that the tasks discovered while doing real work make up the true bulk of a project. Grouping too early creates artificial categories that will not survive contact with the code.
 
-This shared understanding is the foundation for scope discovery. Do not start coding or designing yet. The goal of this step is alignment on what done looks like and where the unknowns are.
+### Step 2: Finish one integrated slice first
 
-> **Pro tip:** Highlight the rabbit holes and boundaries from the pitch on a shared document or whiteboard. These boundaries will directly inform which scopes to cut or simplify later if time gets tight.
+Choose a first piece that is core to the concept, small enough to finish in a few days, and novel enough to remove real uncertainty. Build it with working UI and working code, even if the styling is raw. This first slice becomes the first finished scope and shows the team what a scope looks like in this project.
 
-### Step 2: Step 2: Identify the natural joints in the work
+### Step 3: Factor the remaining tasks into scopes
 
-Walk through the shaped solution and look for places where one piece of functionality can be completed independently of another. Ask: if we finished this part but nothing else, could we demo it? Could a user do something new? These are the natural joints.
+Look at the tasks left over and group them by what can be finished together, based on how the parts depend on each other. Give each group a name taken from the product, such as Locate or Reply, rather than from a role or layer. Put design and programming tasks for the same scope in the same list.
 
-For example, in a project to build a reporting dashboard, the ability to filter by date range might be independent of the ability to export to CSV. Both are part of the solution, but they can be built and verified separately. Sketch these joints on a whiteboard or in a shared doc. Do not worry about perfect boundaries yet.
+### Step 4: Check each scope against the signs
 
-You are looking for the rough shape of 3-8 slices.
+Ask whether each scope can be called done independently, whether its name is unique to this project, and whether it could be finished in a few days. Split scopes that mix unrelated problems or have grown too large, and rename scopes whose names describe a layer. If the Chowder list keeps growing, look for the scope it is hiding.
 
-> **Pro tip:** A useful heuristic: if you can describe the slice with a verb phrase from the user's perspective ('upload a file,' 'see weekly totals,' 'invite a teammate'), it is probably a good scope boundary.
+### Step 5: Handle icebergs deliberately
 
-### Step 3: Step 3: Group related front-end and back-end work into each scope
+When a scope has much more back-end work than UI, or the reverse, split the heavy side into its own scope or scopes so parts can be finished and integrated in stages. Before accepting the complexity, ask whether it is really necessary and whether a different approach would have fewer interdependencies with the rest of the system.
 
-For each joint you identified, list the work involved. This includes the database changes, API endpoints, UI components, validation logic, and any design decisions needed. Group these into the scope they belong to. The critical rule is that each scope must be vertically integrated: it contains everything needed to make that slice work end to end.
+### Step 6: Mark must-haves and nice-to-haves inside each scope
 
-If a scope requires an API endpoint but the UI work is in a different scope, you have split along the wrong axis. Horizontal slices (all the API work, then all the UI work) destroy the benefit of scopes because nothing is completable until everything is done. Vertical slices let you finish and demo one piece at a time.
+Record every task on the scope it belongs to, and put a tilde in front of the ones that are nice-to-haves. A scope is done when its must-haves are done, even if tilde items remain. This is where [scope hammering](../setting-appetites-and-managing-scope/SKILL.md) happens day to day.
 
-> **Pro tip:** If you find that two scopes share a dependency (like a shared database table or component), assign the dependency to whichever scope will be started first, or create a tiny scope just for the shared infrastructure if it takes more than a few hours.
+### Step 7: Track the scopes on a hill chart and redraw as needed
 
-### Step 4: Step 4: Name each scope with user-facing behavior
-
-Give each scope a short, descriptive name that captures what the user will be able to do when the scope is complete. Use plain language, not technical jargon. 'Filter by date range' is better than 'implement DateRangePicker component.' 'Send approval email' is better than 'integrate SendGrid.' The name should make it obvious to anyone on the team, including non-technical stakeholders, what finishing this scope means. Good names also make scope cutting easier later: when you read 'batch import from CSV,' you can quickly evaluate whether that capability is essential to the core value of the project or a nice-to-have that could be cut.
-
-> **Pro tip:** Test your scope name by asking: if I told a customer we shipped this scope, would they understand what they can now do? If the answer is no, the name is too technical.
-
-### Step 5: Step 5: Validate scope size and independence
-
-Review each scope and estimate whether it can be completed in 1-5 days. If a scope feels like it will take more than a week, it is too big and should be split. If a scope feels like it will take less than half a day, it is too small and should be merged with a related scope or treated as a task within a scope. Also check independence: can this scope be started without waiting for another scope to finish?
-
-Some sequencing is natural (you might need the data model before you can build the reporting view), but most scopes in a well-mapped project can be worked on in parallel or in any order. If your scopes have strict sequential dependencies, reconsider whether you have drawn the boundaries in the right places.
-
-> **Pro tip:** Count your scopes. If you have more than 8, you are probably tracking at the task level. If you have fewer than 3, you probably cannot see progress until late in the cycle. Aim for 4-6 scopes on a typical 6-week project.
-
-### Step 6: Step 6: Place scopes on the hill chart
-
-With your scope map drafted, place each scope as a dot on a [hill chart](https://tryhamster.com/skills/tracking-progress-with-hill-charts). Position each dot based on your current understanding: scopes with significant unknowns go on the left (uphill, figuring it out), scopes where the approach is clear go further right (downhill, making it happen). At the start of a cycle, most scopes will be on the left side. This is expected and healthy.
-
-The hill chart gives you a visual dashboard of progress. Update it at least twice per week. Moving a dot is a judgment call by the person working on the scope, not a mechanical calculation.
-
-> **Pro tip:** Do not wait until scopes are perfectly defined to put them on the hill. The act of placing a scope on the hill forces a conversation about how well understood it is, which is the whole point.
-
-### Step 7: Step 7: Refine scopes during the first few days of building
-
-Expect your initial scope map to change. In the first two to three days of actual building, the team will discover things the shaped pitch did not anticipate. A scope that seemed simple might turn out to have a hidden complexity that warrants splitting it into two. Two scopes that seemed separate might share so much work that merging them makes more sense.
-
-A new scope might emerge for work that was not visible in the pitch. Treat the scope map as a living document. Update it, rename scopes, add or remove scopes as needed. The scope map is a thinking tool that reflects your current understanding, not a plan you committed to.
-
-> **Pro tip:** If a scope keeps getting renamed or redefined after the first week, that is a signal the team has not resolved a fundamental unknown. Pause and spike on the unknown before continuing.
-
-### Step 8: Step 8: Use scopes for scope hammering when time gets tight
-
-As the cycle progresses, refer to your scope map to make cutting decisions. If you are in week 4 of a 6-week cycle and a scope is still stuck on the uphill side of the hill, you have a choice: simplify the scope (reduce what it delivers), cut the scope entirely (if it is a nice-to-have), or reassign resources from a completed scope. This is [scope hammering](https://tryhamster.com/skills/setting-appetites-and-managing-scope), and it only works when your project is organized into independent scopes. With a flat task list, cutting is painful because tasks are entangled.
-
-With scopes, you can drop an entire slice without affecting the rest of the project. The scope names (which describe user-facing behavior) make it clear what you are trading away.
-
-> **Pro tip:** Mark scopes as 'must-have' or 'nice-to-have' early in the cycle so that cutting decisions are not emotional debates when time pressure hits.
+Put one dot per scope on a hill chart and use it to sequence the riskiest scopes first. When a dot is hard to place or will not move, check whether the scope needs splitting. Expect the map to change during the first half of the cycle; stable, well-named scopes by the middle of the cycle are a good sign.
 
 ## Best Practices
 
-- Name scopes after user-facing behavior, not implementation details. When scopes are named 'add Stripe webhook handler' instead of 'process payments,' the team loses the ability to evaluate business importance. User-facing names make scope cutting and prioritization conversations productive because everyone can assess the value of what is being traded.
-- Keep the total scope count between 3 and 8 for a standard 6-week cycle. Fewer than 3 scopes means each scope is too large to provide meaningful progress signals. More than 8 means you are back to task-level tracking with all its overhead. The sweet spot is 4-6 scopes, each taking 1-5 days to complete.
-- Always slice vertically, never horizontally. A scope must include all the work needed to make one user-facing slice function end to end: data model, API, UI, and design. If your scopes look like 'all database work' and 'all front-end work,' nothing is independently completable and your hill chart will flatline until the final integration scramble.
-- Treat the initial scope map as a draft that will change. Teams that lock in scopes on day one of the cycle end up with scopes that do not match the actual shape of the work. Plan to revise scopes during the first 2-3 days of building as the team discovers the real boundaries through hands-on exploration.
-- Update hill chart positions at least twice per week. Stale hill charts provide no value. The discipline of moving dots forces team members to honestly assess whether they are still figuring out a scope or actively executing. If moving the dot feels hard, that is diagnostic information that something is stuck.
-- Explicitly mark each scope as must-have or nice-to-have when you create the scope map. This annotation costs nothing at the start of the cycle but saves enormous stress when time pressure arrives. Without it, every cutting decision becomes a negotiation instead of a reference to an earlier decision.
-- Do not create scopes for non-customer-facing infrastructure unless that infrastructure is genuinely independent and takes more than a few hours. Database migrations, deployment setup, and CI configuration should be absorbed into the scopes that need them, not split out into separate 'infrastructure' scopes that distort the hill chart.
+- Organize scopes by the structure of the product. Separate lists for designers and programmers hide whether any part of the product is finished.
+- Use the scope names in every status conversation. When people say "Locate is done, Send is next," the map is working.
+- File bugs and QA findings under the scope they affect, so a scope's done state is honest. The book warns that a separate bugs list is a junk drawer.
+- Keep each scope small enough to finish in a few days. Big scopes turn back into long task lists where hard problems can hide.
+- Let the team own the map. Scopes come from the people doing the work, since they are the ones who see the interdependencies.
+- If you are adapting the method for a less experienced team, consider Singer's later practice of drafting vertical slices together at kickoff from the breadboard, described in his [case study](https://www.ryansinger.co/end-to-end-with-shape-up-a-real-world-case-study/), and refining them as work starts.
 
 ## Common Mistakes
 
-- **Slicing horizontally instead of vertically, creating scopes like 'backend API' and 'frontend UI'** — Horizontal scopes look logical from a technical perspective, but they prevent the team from finishing anything until everything integrates at the end. This mistake usually happens when the developer and designer map scopes separately instead of together. The signal to watch for is scopes that cannot be demoed independently. If completing a scope requires work from another scope to be visible, you have sliced horizontally.
-
-Redraw scope boundaries so each one includes all layers needed to deliver one user-facing slice.
-- **Creating too many scopes, effectively recreating a task list with different labels** — When a team creates 12 or 15 scopes for a project, they have not actually changed their mental model from task tracking to scope tracking. They have just renamed their tasks 'scopes.' This happens when people decompose work by asking 'what are all the things we need to do?' instead of 'what are the 4-6 independently completable slices?' Watch for scope names that describe single implementation steps rather than user-facing capabilities. Merge related micro-scopes until you have 3-8 slices, each taking 1-5 days.
-- **Locking in scopes on day one and never revising them** — Teams coming from Scrum often treat the scope map like a sprint backlog: defined at the start and committed to. In Shape Up, scopes are a thinking tool that evolves. If your scope map on day 10 looks identical to day 1, either your pitch was extraordinarily well-shaped or (much more likely) the team is not updating the map to reflect what they are actually learning. Check in during the first few days specifically to ask whether the scopes still match the real boundaries of the work.
-
-Rename, split, or merge as needed.
-- **Naming scopes with technical jargon that only developers understand** — Scopes named 'refactor polymorphic association' or 'implement WebSocket layer' obscure the user value being delivered. This makes scope cutting nearly impossible because non-technical stakeholders cannot evaluate what is being traded away. It also prevents the team from assessing whether the scope is truly essential or a gold-plating exercise. The fix is simple: restate every scope name as something a user would recognize.
-
-'Real-time status updates' is the scope. The WebSocket layer is an implementation detail within it.
-- **Treating scopes as assignments rather than as units of work anyone can pick up** — Some teams assign each scope to one person and treat them as individual commitments. This defeats the purpose of scopes as a team-level progress tool. When one person's scopes are done and another person is struggling, the team cannot rebalance. Scopes should be owned by the team, not individuals.
-
-Any team member should be able to pick up the next scope when they finish one. The signal that something is wrong is when one hill chart dot is stuck while others are done and nobody shifts to help.
+- **Mapping scopes before any real work**: Scopes drawn on day one reflect guesses about the system. Build something first and let the dividing lines show themselves.
+- **Splitting by layer**: A front-end scope and a back-end scope can never be finished on their own. Each scope should cut through the layers it needs.
+- **Letting a scope become a mini project**: A scope with dozens of tasks hides risk the same way a master task list does. Break it into pieces that can be finished in less time.
+- **Treating every task as a must-have**: Without tildes, the team cannot tell what to drop when time runs short. Mark nice-to-haves as soon as they appear.
+- **Freezing the first map**: Early scopes are drafts. Renaming and redrawing in the first week or two is normal and makes later progress clearer.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/shape-up/METHOD.md) — Shape Up
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/shape-up/METHOD.md): Shape Up
 
 ## Related Skills
 
-- [Managing Six-Week Build Cycles](../managing-six-week-cycles/SKILL.md)
-- [Planning Cool-Down Periods](../planning-cooldown-periods/SKILL.md)
-- [Setting Appetites and Cutting Scope](../setting-appetites-and-managing-scope/SKILL.md)
-- [Shaping Product Pitches](../shaping-product-pitches/SKILL.md)
-- [Tracking Progress with Hill Charts](../tracking-progress-with-hill-charts/SKILL.md)
-- [Running Betting Table Sessions](../running-betting-tables/SKILL.md)
-- [Using Breadboards and Fat-Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
+- [Shape Up Hill Charts: Tracking Progress Uphill and Downhill](../tracking-progress-with-hill-charts/SKILL.md)
+- [Managing Shape Up Six-Week Build Cycles](../managing-six-week-cycles/SKILL.md)
+- [Setting Appetites and Managing Scope in Shape Up](../setting-appetites-and-managing-scope/SKILL.md)
+- [Shaping Product Pitches with a Shape Up Pitch Template](../shaping-product-pitches/SKILL.md)
+- [Breadboarding Product Design with Fat Marker Sketches](../using-breadboards-and-fat-marker-sketches/SKILL.md)
+- [Running a Shape Up Betting Table Session](../running-betting-tables/SKILL.md)
+- [Planning the Shape Up Cooldown Period](../planning-cooldown-periods/SKILL.md)
+
+## Sources
+
+- [Shape Up, Chapter 10: Hand Over Responsibility](https://basecamp.com/shapeup/3.1-chapter-10)
+- [Shape Up, Chapter 11: Get One Piece Done](https://basecamp.com/shapeup/3.2-chapter-11)
+- [Shape Up, Chapter 12: Map the Scopes](https://basecamp.com/shapeup/3.3-chapter-12)
+- [Ryan Singer: End-To-End with Shape Up, a Real-World Case Study](https://www.ryansinger.co/end-to-end-with-shape-up-a-real-world-case-study/)
