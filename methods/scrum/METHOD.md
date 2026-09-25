@@ -16,7 +16,7 @@ metadata:
 
 ## Overview
 
-Scrum is a framework for teams doing complex work, defined by Ken Schwaber and Jeff Sutherland in [the Scrum Guide](https://scrumguides.org/scrum-guide.html). The guide's own definition is short: Scrum is "a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems." A Product Owner orders the work into a Product Backlog, the Scrum Team turns a selection of it into a usable Increment during a Sprint, and the team and its stakeholders inspect the result and adjust for the next Sprint. Then the cycle repeats. The Scrum Master is accountable for making that environment possible.
+Scrum is a framework for teams doing complex work, defined by Ken Schwaber and Jeff Sutherland in [the Scrum Guide](https://scrumguides.org/scrum-guide.html). The guide's own definition is short: Scrum is "a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems." A Product Owner puts the work in order in a Product Backlog. In each Sprint the Scrum Team takes some of that work and turns it into a usable Increment, and then the team and its stakeholders look at the result and adjust the plan for the next Sprint. Then the cycle repeats. The Scrum Master is accountable for making that environment possible.
 
 The name comes from rugby. Hirotaka Takeuchi and Ikujiro Nonaka published [The New New Product Development Game](https://hbr.org/1986/01/the-new-new-product-development-game) in the January 1986 Harvard Business Review. [Wikipedia's history of Scrum](https://en.wikipedia.org/wiki/Scrum_%28software_development%29) summarizes their "rugby approach" as one cross-functional team working across overlapping phases, and traces the term's use in software development to that paper. The Scrum Guide says Schwaber and Sutherland developed Scrum in the early 1990s, first co-presented it at the OOPSLA conference in 1995, and wrote the first version of the guide in 2010 ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). The guide also credits Jeff McKenna, John Scumniotales, Mike Smith and Chris Martin as instrumental at the start. Both men later signed the [Manifesto for Agile Software Development](https://agilemanifesto.org/), so Scrum is one of the frameworks the wider [Agile](https://tryhamster.com/methods/agile) movement grew from.
 
@@ -36,53 +36,53 @@ Scrum assumes that for complex work, planning in detail up front does not work, 
 
 ### Fixed-Length Sprints
 
-Every piece of work in Scrum happens inside a Sprint, which the guide defines as a fixed-length event of one month or less. A new Sprint starts immediately after the previous one ends. The fixed length is what makes Scrum predictable: progress toward the Product Goal is inspected at least once a month. Shorter Sprints give more learning cycles and cap the cost of a wrong turn, and Atlassian's [scrum tutorial for Jira](https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software) recommends starting with two weeks.
+Every piece of work in Scrum happens inside a Sprint, which the guide defines as a fixed-length event of one month or less. The next Sprint begins as soon as one ends. The fixed length is what makes Scrum predictable: progress toward the Product Goal is inspected at least once a month. Shorter Sprints give more learning cycles and cap the cost of a wrong turn, and Atlassian's [scrum tutorial for Jira](https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software) recommends starting with two weeks.
 
 ### One Team, Three Accountabilities
 
-The Scrum Team has no sub-teams or hierarchies. The Product Owner is accountable for maximizing the value of the product and for managing the Product Backlog. The Developers are accountable for the Sprint plan, for quality through the Definition of Done, and for adapting their plan each day. The Scrum Master is accountable for establishing Scrum as the guide defines it and for the team's effectiveness. These are accountabilities, so one person's job title does not have to match any of them.
+The Scrum Team has no sub-teams or hierarchies. The Product Owner answers for getting as much value as possible out of the product and for how the Product Backlog is run. The Developers answer for the plan of each Sprint, for building quality in by meeting the Definition of Done, and for adjusting their plan every day. The Scrum Master answers for putting Scrum in place as the guide describes it and for how effective the team is. These are accountabilities, so one person's job title does not have to match any of them.
 
 ### Self-Managing and Cross-Functional
 
-According to the [Scrum Guide](https://scrumguides.org/scrum-guide.html), Scrum Teams are cross-functional, meaning they have all the skills needed to create value each Sprint, and self-managing, meaning they internally decide who does what, when and how. No one outside the Developers tells them how to turn backlog items into an Increment. The guide notes that adaptation gets harder when the people involved are not empowered or self-managing.
+According to the [Scrum Guide](https://scrumguides.org/scrum-guide.html), Scrum Teams are cross-functional, so between them they hold every skill needed to create value in a Sprint, and self-managing, so the team itself settles who works on what, when and in what way. Nobody outside the Developers tells them how to turn backlog items into an Increment. The guide warns that a team without the power to manage its own work will find it hard to adapt.
 
 ### Commitments Give Each Artifact a Target
 
-The 2020 guide attached one commitment to each artifact ([revision history](https://scrumguides.org/revisions.html)). The Product Goal is the long-term objective the Product Backlog serves. The Sprint Goal is the single objective for the Sprint, and it lets scope flex while the goal holds. The Definition of Done is the quality bar: work that does not meet it is not part of the Increment and cannot be presented at the Sprint Review.
+The 2020 guide attached one commitment to each artifact ([revision history](https://scrumguides.org/revisions.html)). The Product Goal is the longer-range target the Product Backlog works toward. The Sprint Goal is the one objective of a given Sprint, and it lets scope flex while the goal holds. The Definition of Done is the quality bar: work that falls short of it is not part of the Increment and cannot be shown at the Sprint Review.
 
 ### The Five Scrum Values
 
-The guide names five values: commitment, focus, openness, respect and courage. It says the empirical pillars "come to life building trust" when a team and the people around it live these values. In practice the values show up in small decisions: raising a problem at the Daily Scrum instead of hiding it, or telling a stakeholder that a feature is not Done.
+The guide names five values: courage, focus, commitment, respect and openness. It says the empirical pillars "come to life building trust" when a team and the people around it live these values. In practice the values show up in small decisions: raising a problem at the Daily Scrum instead of hiding it, or telling a stakeholder that a feature is not Done.
 
 ### Continuous Improvement Is Built In
 
-Improvement has its own event. The Sprint Retrospective exists "to plan ways to increase quality and effectiveness," and the most helpful changes may be added to the next Sprint Backlog. This is how Scrum treats process change as real work with an owner, rather than a side conversation.
+Improvement has its own event. The Sprint Retrospective exists "to plan ways to increase quality and effectiveness," and the most helpful changes may be added to the next Sprint Backlog. In this way Scrum gives each process change an owner and a place in the plan.
 
 ## Steps
 
 1. **Form the Scrum Team**
-   Name one Product Owner, one Scrum Master and a group of Developers who together have the skills to deliver a usable Increment. Keep the team small; the [Scrum Guide](https://scrumguides.org/scrum-guide.html) says "typically 10 or fewer people," and suggests splitting a larger group into several teams that share one Product Goal, Product Backlog and Product Owner. Agree where the Product Owner's decisions come from and who they answer to. Make sure the Scrum Master has time and standing to work on organizational impediments as well as team ones.
+   Name one Product Owner, one Scrum Master and a group of Developers who together have the skills to deliver a usable Increment. Keep the team small; the [Scrum Guide](https://scrumguides.org/scrum-guide.html) says "typically 10 or fewer people," and suggests splitting a larger group into several teams that work from a single Product Goal, backlog and Product Owner. Agree where the Product Owner's decisions come from and who they answer to. Make sure the Scrum Master has time and standing to work on organizational impediments as well as team ones.
 
 2. **Create the Product Goal and Product Backlog**
-   The Product Owner writes a Product Goal that describes a future state of the product. The Product Backlog is then built as an ordered list of what is needed to reach it. Items near the top should be small and clear enough to be Done within one Sprint; items further down can stay rough. Refinement, which the guide calls "an ongoing activity," breaks items down and adds detail such as description, order and size, and the Developers who will do the work size it.
+   The Product Owner writes a Product Goal describing where the product should end up. The Product Backlog then lists, in order, the work required to get there. Items near the top should be small and clear enough to be Done within one Sprint; items further down can stay rough. Refinement, which the guide calls "an ongoing activity," breaks items down and adds detail such as description, order and size, and the Developers who will do the work size it.
 
 3. **Agree the Definition of Done**
-   Before the first Sprint, the Scrum Team writes down what Done means for this product, or adopts the organization's standard as a minimum. Include every quality measure that must hold before an item is usable, such as review, testing and documentation. Anything that does not meet the Definition of Done goes back to the Product Backlog. Revisit the definition at retrospectives as the team's capability grows.
+   Before the first Sprint, the Scrum Team writes down what Done means for this product, or adopts the organization's standard as a minimum. Include every quality measure that must hold before an item is usable, such as review, testing and documentation. Work that falls short of the Definition of Done returns to the Product Backlog. Revisit the definition at retrospectives as the team's capability grows.
 
 4. **Hold Scrum Sprint Planning**
-   Sprint Planning answers three questions from the [Scrum Guide](https://scrumguides.org/scrum-guide.html): why this Sprint is valuable, what can be Done, and how the chosen work will get done. The whole team crafts a Sprint Goal, the Developers select items with the Product Owner, and they plan the work, often by breaking items into pieces of a day or less. The Sprint Goal, the selected items and the plan together form the Sprint Backlog. The event is timeboxed to a maximum of eight hours for a one-month Sprint and is usually shorter for shorter Sprints.
+   Sprint Planning answers three questions from the [Scrum Guide](https://scrumguides.org/scrum-guide.html): why this Sprint is valuable, what can be Done, and how the chosen work will get done. The whole team crafts a Sprint Goal, the Developers select items with the Product Owner, and they plan the work, often by breaking items into pieces of a day or less. The Sprint Goal, the selected items and the plan together form the Sprint Backlog. The event lasts at most eight hours when the Sprint is a month long, and less for shorter Sprints.
 
 5. **Run the Daily Scrum Every Working Day**
-   The Daily Scrum, often called the scrum daily standup, is "a 15-minute event for the Developers of the Scrum Team," held at the same time and place each working day ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). Its purpose is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog. The Developers choose the structure. Detailed problem solving happens after the event, with the people who need to be there.
+   The Daily Scrum, often called the scrum daily standup, is "a 15-minute event for the Developers of the Scrum Team," held every working day at a fixed time and place ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). The Developers use it to check how they are doing against the Sprint Goal and to adjust the Sprint Backlog. The Developers choose the structure. Detailed problem solving happens after the event, with the people who need to be there.
 
 6. **Refine the Backlog During the Sprint**
    Scrum backlog refinement keeps the next Sprint Planning short and informed. The Product Owner and Developers split large items, clarify what each one must do, and size them, so the top of the backlog is ready for selection. Scrum estimation techniques such as story points are optional; the guide asks only that the Developers do the sizing. Refinement should take a modest share of the team's time so it does not crowd out the Sprint's own work.
 
 7. **Hold the Scrum Sprint Review**
-   The Scrum sprint review inspects the outcome of the Sprint and decides what to do next. The team shows what it accomplished to key stakeholders, discusses what has changed in the environment, and the group collaborates on adjustments to the Product Backlog. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) calls it "a working session" that the team should avoid limiting to a presentation. It is timeboxed to a maximum of four hours for a one-month Sprint.
+   The Scrum sprint review inspects the outcome of the Sprint and decides what to do next. The team shows what it accomplished to key stakeholders, discusses what has changed in the environment, and the group collaborates on adjustments to the Product Backlog. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) calls it "a working session" that the team should avoid limiting to a presentation. It lasts at most four hours for a month-long Sprint.
 
 8. **Close With the Scrum Retrospective**
-   The Scrum retrospective concludes the Sprint. The team inspects how the Sprint went with regard to individuals, interactions, processes, tools and its Definition of Done, then identifies the most helpful changes. The most impactful improvements are addressed as soon as possible, and some go straight into the next Sprint Backlog. It is timeboxed to a maximum of three hours for a one-month Sprint, and the next Sprint starts immediately afterward.
+   The Scrum retrospective concludes the Sprint. The team looks back at how the Sprint went for its people and their interactions, its processes and tools, and its Definition of Done, then picks the changes that would help most. The guide asks for the biggest improvements to be tackled quickly, and some can go straight into the next Sprint Backlog. It lasts at most three hours for a month-long Sprint, and the next Sprint begins right after it.
 
 ## Events, Timeboxes and Artifacts at a Glance
 
@@ -134,7 +134,7 @@ Agile is the set of values and principles in the [Manifesto for Agile Software D
 
 **How long should a Sprint be?**
 
-The [Scrum Guide](https://scrumguides.org/scrum-guide.html) sets a limit of one month or less and says every Sprint should have the same length. Within that limit the team chooses. Shorter Sprints mean more frequent inspection and less risk per Sprint; longer ones leave room for work that is hard to slice. Pick one length, keep it stable, and change it only as a deliberate decision at a retrospective.
+The [Scrum Guide](https://scrumguides.org/scrum-guide.html) describes Sprints as "fixed length events of one month or less to create consistency." Within that limit the team chooses. Shorter Sprints mean more frequent inspection and less risk per Sprint; longer ones leave room for work that is hard to slice. Pick one length, keep it stable, and change it only as a deliberate decision at a retrospective.
 
 **What does a Scrum Master do?**
 

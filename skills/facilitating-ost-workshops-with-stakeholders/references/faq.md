@@ -10,7 +10,7 @@ For a working session that builds the tree, keep it small: the product trio and 
 
 ## How long should the workshop be?
 
-Plan for less content than you think will fit. Product Talk's story about practice sessions at BBC Maestro describes a first agenda that proved ambitious for the time available. It is better to leave with a rough draft of the opportunity space and a target opportunity than to rush through every layer.
+Plan for less content than you think will fit. Product Talk's story about the ProductPlay practice sessions Lily Smith ran as BBC Maestro's CPO describes a first agenda that proved ambitious for the time available. It is better to leave with a rough draft of the opportunity space and a target opportunity than to rush through every layer.
 
 ## How do we stop the session from turning into a feature debate?
 

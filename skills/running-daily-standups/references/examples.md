@@ -34,4 +34,4 @@ Illustrative scenario: a team has Developers in two time zones with a few hours 
 
 The team adopts Atlassian's heuristic of treating everyone as remote: each person joins from their own computer, even those in the office. The board is shared on screen, and the facilitator walks it item by item. The team picks a time inside the overlap and keeps it fixed.
 
-Problems that need discussion are noted and handled right after the standup in a smaller call. The team also agrees that anyone who is blocked outside the overlap posts it in the team channel straight away, since the Daily Scrum is not the only time to ask for help.
+Problems that need discussion are noted and handled right after the standup in a smaller call. The team also agrees that anyone who is blocked outside the overlap posts it in the team channel straight away, since help can be requested at any point in the day, not only at the Daily Scrum.

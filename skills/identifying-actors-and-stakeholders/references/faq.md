@@ -2,7 +2,7 @@
 
 ## What is an actor in impact mapping?
 
-An actor is a person or group whose behavior can affect the business goal. The impactmapping.org drawing page defines actors through four questions: who can produce the desired effect, who can obstruct it, who uses the product and who will be impacted by it. Actors can be customers, internal teams, partners, regulators or decision-makers. What they share is a plausible route to helping or hindering the goal.
+An actor is a person or group whose behavior can affect the business goal. The impactmapping.org drawing page defines actors through four questions about who could bring about the effect, who could block it, who uses the product, and who the work will affect. Actors can be customers, internal teams, partners, regulators or decision-makers. What they share is a plausible route to helping or hindering the goal.
 
 ## How specific should an actor be?
 

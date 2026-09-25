@@ -22,7 +22,7 @@ Illustrative scenario: midway through a Sprint whose goal is "Invoices can be ex
 
 At the Daily Scrum, the Developers ask whether this threatens the goal. It does not have to: they can export the other fields now and add the missing one when the interface is updated. They talk with the Product Owner the same day, who agrees to drop the missing field from this Sprint and add a new item for it to the backlog.
 
-The Sprint Backlog is updated, the goal stays the same, and the team delivers a working export at the Sprint Review. The Product Owner explains the missing field to stakeholders and shows where it sits in the backlog.
+The Sprint Backlog is updated, the goal stays the same, and the team delivers a working export at the Sprint Review, where the Product Owner explains the missing field to stakeholders and shows where it sits in the backlog.
 
 ## A planning session that turned into refinement
 

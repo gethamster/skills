@@ -54,9 +54,9 @@ The second stage is a thin slice: the smallest end-to-end path from real input t
 
 The third stage is hardening. A system that works once is not ready to run without you. Hardening adds monitoring in the customer's tools, alerts routed to the people who will respond, runbooks, backups where data is created, and the security controls the customer requires.
 
-The fourth stage is gradual rollout. Google's SRE workbook defines canarying as a partial and time-limited deployment of a change and its evaluation, which decides whether to continue the rollout ([Google SRE Workbook](https://sre.google/workbook/canarying-releases/)). In a customer environment the canary is often one team, one site or one data feed before everyone. The same workbook notes that releasing more often means fewer changes bundled into each release, which makes each one easier to evaluate and to roll back.
+The fourth stage is gradual rollout. Google's SRE workbook defines canarying as "a partial and time-limited deployment of a change in a service and its evaluation," which decides whether to continue the rollout ([Google SRE Workbook](https://sre.google/workbook/canarying-releases/)). In a customer environment the canary is often one team, one site or one data feed before everyone. The same workbook notes that releasing more often means fewer changes bundled into each release, which makes each one easier to evaluate and to roll back.
 
-The last stage is handover. The system must be runnable by the customer's team, with documentation in their systems and access that does not depend on the FDE's accounts. a16z's advice to services teams to "leave a trail" and document everything is the working standard here ([a16z](https://a16z.com/services-led-growth/)).
+The last stage is handover. The system must be runnable by the customer's team, with documentation in their systems and access that does not depend on the FDE's accounts. a16z tells services teams to "Leave a trail" and document everything so the work can later pass to ecosystem partners; the same standard serves a customer handover ([a16z](https://a16z.com/services-led-growth/)).
 
 ## Step-by-Step Guide
 

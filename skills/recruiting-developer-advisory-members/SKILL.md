@@ -91,7 +91,7 @@ Once a week, count members by persona and compare with the list from Step 1. Shi
 - Recruit for every role that touches adoption. Frankl's lock metaphor explains why: one unrepresented role can block a purchase that every developer wanted ([Scaling DevTools clip](https://www.youtube.com/watch?v=6-zY1JRxjV4)).
 - Praise something real and specific. A reference to a person's own post shows you did the research, and it filters your list toward people who care about the problem.
 - State the commitment and its end date up front. A six-month term is easier to accept than an open-ended relationship, and it gives both sides a clean finish.
-- Keep swag ready. Stickers and t-shirts let members tell peers they sit on your board, which is part of what they get from joining ([Frankl](https://medium.com/@graphmaven/the-1-most-important-process-64c037d9b0c2)).
+- Keep swag ready. Frankl's post suggests stickers, mugs, or t-shirts ([Frankl](https://medium.com/@graphmaven/the-1-most-important-process-64c037d9b0c2)), and in a [Scaling DevTools interview](https://www.youtube.com/watch?v=gdqqovc3REs) he explains that the swag is there so members can brag to their peers that they sit on the startup's technical advisory board.
 - Treat silence as information. If nobody in a persona responds after sustained outreach, the problem may not matter to that role, which is worth knowing before you build for them.
 - Keep one tracker for candidates, invitations, replies, and members, so anyone on the team can see recruiting progress without asking.
 

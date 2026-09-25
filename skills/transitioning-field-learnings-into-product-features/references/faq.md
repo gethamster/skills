@@ -14,7 +14,7 @@ Ask for the reasons and record them. Some declines reflect weak evidence or poor
 
 ## Should the FDE build the product version?
 
-Sometimes. Palantir moved many FDEs back into software engineering on Foundry, bringing field experience into the core product. At minimum the FDE should pair with the product engineers, share the field code as a reference and review the design against real cases. Leaving entirely after acceptance risks repeating mistakes the field version already solved.
+Sometimes. After Palantir launched Foundry, more of its FDEs went back to working as software engineers on it, bringing field experience into the core product, according to The Pragmatic Engineer. At minimum the FDE should pair with the product engineers, share the field code as a reference and review the design against real cases. Leaving entirely after acceptance risks repeating mistakes the field version already solved.
 
 ## What happens to the custom solutions after the feature ships?
 

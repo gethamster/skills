@@ -2,7 +2,7 @@
 
 ## What is the difference between a business outcome and a product outcome?
 
-A business outcome measures the health of the business and is usually financial, such as retention or revenue. A product outcome measures a customer behavior in the product or a customer sentiment about it. Teresa Torres recommends a product outcome at the top of an opportunity solution tree because the team can influence it directly. The product outcome should be a leading indicator of a business outcome.
+A business outcome tracks how the business is doing and is usually financial, such as retention or revenue. A product outcome tracks what customers do in the product or how they feel about it. Teresa Torres prefers a product outcome at the root of the tree because the team can influence it directly. The product outcome should be a leading indicator of a business outcome.
 
 ## Does the outcome have to be measurable before we start?
 

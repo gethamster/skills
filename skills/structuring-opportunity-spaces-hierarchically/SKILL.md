@@ -46,7 +46,7 @@ Opportunity mapping is a skill that improves with practice. Torres expects the f
 
 ## How It Works
 
-Torres breaks the synthesis into four moves ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). First, create an experience map that represents all of the stories collected in interviews. Second, map the key moments in that experience to top-level opportunities. Third, group each individual opportunity from the stories under the moment in which it occurred. Fourth, structure each branch one at a time, creating parent-child and sibling relationships.
+Torres breaks the synthesis into four moves ([Torres, Opportunity Solution Trees](https://www.producttalk.org/opportunity-solution-trees/)). First, draw one experience map that combines the stories heard in interviews. Second, turn the key moments in that experience into top-level opportunities. Third, file each individual opportunity from the stories under the moment where it came up. Fourth, work through the branches one by one, sorting their opportunities into parents, children and siblings.
 
 Using moments in time for the top level has a practical reason. Moments in a customer's experience are naturally distinct from each other, which gives the tree branches that do not overlap. Her book club guide to Chapter 6 of *Continuous Discovery Habits* describes this as identifying distinct branches "using key moments in time" ([Torres, CDH Book Club: Mapping the Opportunity Space](https://www.producttalk.org/cdh-book-club-april-2026-2/)). For a streaming service, the moments might be deciding what to watch, watching, and watching on the go.
 

@@ -6,7 +6,7 @@ A place for the brief and users, a row for activities, a row for high-level task
 
 ## Is a Miro or Mural template better than a wall?
 
-Each works. Walls make moving cards effortless and suit co-located teams. Whiteboard tools suit remote and hybrid groups, and Miro's User Story Map app can link cards to Jira issues. Choose the medium that makes rearranging easiest for the people in the session.
+Each works. Walls make moving cards effortless and suit co-located teams. Whiteboard tools suit remote and hybrid groups, and Miro's User Story Map app lets you drag Jira cards into its releases and convert most of its cards into Jira cards. Choose the medium that makes rearranging easiest for the people in the session.
 
 ## Can I use Google Sheets as a story mapping template?
 

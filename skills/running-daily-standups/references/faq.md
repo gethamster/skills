@@ -6,11 +6,11 @@ The Scrum Guide defines the Daily Scrum as a 15-minute event. That is a maximum,
 
 ## Do we have to use the three standup questions?
 
-No. The 2020 Scrum Guide removed the Daily Scrum questions and lets the Developers choose any structure, as long as the event focuses on progress toward the Sprint Goal and produces an actionable plan for the next day. The three questions are still a valid option. Some teams prefer walking the board, which keeps attention on the work rather than on individual reports.
+No. The 2020 Scrum Guide removed the Daily Scrum questions and lets the Developers choose any structure, as long as the event stays on progress against the Sprint Goal and ends with a plan the Developers can act on the next day. The three questions are still a valid option. Some teams prefer walking the board, which keeps attention on the work rather than on individual reports.
 
 ## Who attends the Daily Scrum?
 
-The Daily Scrum is for the Developers of the Scrum Team. If the Product Owner or Scrum Master are working on items in the Sprint Backlog, they take part as Developers. The Scrum Master makes sure the event happens and stays within its timebox, but the Developers own it. Others who attend should not turn it into a status report.
+The Daily Scrum belongs to the team's Developers. A Product Owner or Scrum Master who is also working on Sprint Backlog items joins in as a Developer. The Scrum Master makes sure the event happens and stays within its timebox, but the Developers own it. Others who attend should not turn it into a status report.
 
 ## Do we have to stand up?
 

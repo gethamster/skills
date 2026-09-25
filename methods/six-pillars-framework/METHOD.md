@@ -58,7 +58,7 @@ Transformation narrows the scenarios to the future you want and works backward t
 
 ### Let the architecture carry the strategy
 
-Strategy that lives only in a slide deck does not reach search engines. The site's structure has to express it: pillar pages for the topics you chose, cluster pages for their subtopics, and internal links that show how they relate. Google's [link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) say every page you care about should have a link from at least one other page on your site, and that descriptive anchor text helps people and Google understand it. If the architecture does not match the preferred future, the strategy has not been carried out.
+Strategy that lives only in a slide deck does not reach search engines. The site's structure has to express it: pillar pages for the topics you chose, cluster pages for their subtopics, and internal links that show how they relate. Google's [link best practices](https://developers.google.com/search/docs/crawling-indexing/links-crawlable) say each page you want found needs at least one link from another page on the same site, and that descriptive anchor text helps people and Google understand it. If the architecture does not match the preferred future, the strategy has not been carried out.
 
 ## Pillars and Their SEO Uses
 

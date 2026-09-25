@@ -38,7 +38,7 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 Actors are the first branch of an impact map, the level that answers "who". In [impact mapping](../../methods/impact-mapping/METHOD.md), the actors are the people whose behavior can move the business goal. The [Drawing impact maps](https://www.impactmapping.org/drawing.html) page frames them with four questions: "Who can produce the desired effect? Who can obstruct it? Who are the consumers or users of our product? Who will be impacted by it?" The book adds one more at the start: "Whose behaviour do we want to impact?" ([book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf)).
 
-The list is usually wider than the product's users. Gojko Adzic argues that software "rarely controls all the actors who are involved with it", and that most requirements models ignore the people who will be worse off when the work is delivered or who can make decisions that affect it. His warning is concrete: a new actor appears mid-work "and everything changes fundamentally", or someone with enough influence "just stops the delivery in its tracks." Mapping actors early is how a team avoids that surprise.
+The list is usually wider than the product's users. Gojko Adzic argues in the [Impact Mapping book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf) that software "rarely controls all the actors who are involved with it", and that requirements models tend to overlook the people who will be worse off when the work is delivered or who can make decisions that affect it. His warning in the [same chapter](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf) is concrete: a new actor appears mid-work "and everything changes fundamentally", or someone with enough decision-making influence "just stops the delivery in its tracks" ([Adzic](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf)). Mapping actors early is how a team avoids that surprise.
 
 The level also drives prioritization. With actors listed, a team can decide which group to serve first and what it can skip. In the site's music website example, super-fans with mobile devices are the most promising group, so the map lists their impacts first; if the team reaches the goal through them alone, it does not need to deliver anything for the other two groups ([example maps](https://www.impactmapping.org/example.html)).
 
@@ -68,7 +68,7 @@ Start with the goal written where everyone can see it, since every actor is judg
 
 ### Step 2: Brainstorm with the five questions
 
-Ask the questions from the [Drawing impact maps](https://www.impactmapping.org/drawing.html) page and the book one at a time: whose behavior do we want to impact, who can produce the desired effect, who can obstruct it, who uses the product and who will be affected by it. Give people a few minutes to write candidates silently before sharing, so the loudest voices do not set the list. Capture everything first and filter later.
+Ask the questions from the [Drawing impact maps](https://www.impactmapping.org/drawing.html) page and the book one at a time: whose behavior the team wants to change, who could bring about the effect, who could block it, who uses the product, and who the work will affect. Give people a few minutes to write candidates silently before sharing, so the loudest voices do not set the list. Capture everything first and filter later.
 
 ### Step 3: Check coverage with the three actor types
 

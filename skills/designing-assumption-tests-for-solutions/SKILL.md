@@ -88,7 +88,7 @@ Run the tests, record the results against the criteria, and mark each assumption
 
 ## Best Practices
 
-- Test across the set. The [Chapter 10 guide](https://www.producttalk.org/ch-10-testing-assumptions/) recommends testing assumptions across sets of ideas to guard against cognitive biases, and ties single-idea testing to confirmation bias and escalation of commitment.
+- Test across the set. The [Chapter 10 guide](https://www.producttalk.org/ch-10-testing-assumptions/) recommends testing assumptions across sets of ideas to guard against cognitive biases, and its team discussion questions ask whether testing one idea at a time affects a team's susceptibility to confirmation bias and escalation of commitment.
 - Generate more assumptions than feels necessary. Teams tend to list only the obvious desirability assumptions and miss viability, feasibility, and ethical risk.
 - Start without waiting for permission. [Torres](https://www.producttalk.org/assumption-testing/) points out that data mining on analytics, support tickets, or sales notes can often start right away.
 - Simulate the moment. A good prototype test puts the customer in the specific moment the assumption concerns and watches what they do, rather than asking what they would do.

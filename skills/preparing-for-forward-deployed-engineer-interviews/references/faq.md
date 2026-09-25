@@ -14,7 +14,7 @@ Start with questions about the customer's environment: data sources, access, com
 
 ## Do I need consulting or customer-facing experience?
 
-It helps but is not required. Strong software engineering is the common baseline, and The Pragmatic Engineer notes that Palantir hires people with limited work experience and that Ramp hires some exceptional new graduates. What you need is evidence that you can work with users and handle ambiguity, which can come from internal projects, support work or side projects.
+It helps but is not required. Strong software engineering is the common baseline, and The Pragmatic Engineer notes that Palantir hires people with as little as a year of post-college work experience and that Ramp hires some exceptional new graduates. What you need is evidence that you can work with users and handle ambiguity, which can come from internal projects, support work or side projects.
 
 ## How do I explain why I want an FDE role instead of a product engineering role?
 

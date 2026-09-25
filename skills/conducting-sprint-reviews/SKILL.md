@@ -36,11 +36,11 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 ## Overview
 
-The sprint review meeting is the Scrum event where the team and its stakeholders look at what the Sprint produced and decide what to do next. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) states its purpose as "to inspect the outcome of the Sprint and determine future adaptations." The Scrum Team presents the results of its work to key stakeholders, progress toward the Product Goal is discussed, and the attendees collaborate on what to do next. The Product Backlog may be adjusted on the spot.
+The sprint review meeting is the Scrum event where the team and its stakeholders look at what the Sprint produced and decide what to do next. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) states its purpose as "to inspect the outcome of the Sprint and determine future adaptations." The Scrum Team shows key stakeholders what it produced, the group talks about how far the product has moved toward the Product Goal, and together they decide what should come next. Changes to the Product Backlog can be made in the meeting.
 
 Some teams run the event as a demo: the team shows slides or clicks through features while stakeholders watch. The guide asks for something more active. It calls the Sprint Review "a working session" and says the team "should avoid limiting it to a presentation." The demonstration is one input. The discussion about what the demonstration means for the product, the market and the backlog is the part that produces adaptation.
 
-The event sits near the end of the Sprint. It is the second to last event, before the Sprint Retrospective, and the guide timeboxes it to a maximum of four hours for a one-month Sprint, usually shorter for shorter Sprints. Only work that meets the Definition of Done can be presented as part of the Increment. The guide also says the review "should never be considered a gate to releasing value," so a team that releases during the Sprint still reviews those Increments here.
+The event sits near the end of the Sprint. It is the second to last event, before the Sprint Retrospective, and the guide caps it at four hours for a month-long Sprint, with shorter Sprints usually needing less. Only work that meets the Definition of Done can be presented as part of the Increment. The guide also says the review "should never be considered a gate to releasing value," so a team that releases during the Sprint still reviews those Increments here.
 
 This skill covers preparing the review, running it as a working session, and turning what stakeholders say into backlog changes. For Scrum's accountabilities and the other events, see the [Scrum method page](../../methods/scrum/METHOD.md).
 
@@ -68,7 +68,7 @@ The Product Owner picks attendees based on what the Sprint changed and what deci
 
 ### Step 3: Build a short sprint review agenda
 
-A workable scrum sprint review agenda has four parts: the Sprint Goal and whether it was met, a hands-on look at the Increment, a discussion of what has changed in the market and the organization, and a review of the Product Backlog and the likely next steps. Put most of the time into the last three parts. Decide who will show each item, and rotate presenters so the Developers who built the work explain it. Keep the whole event well inside the guide's maximum of four hours for a one-month Sprint.
+A workable scrum sprint review agenda has four parts: the Sprint Goal and whether it was met, a hands-on look at the Increment, a discussion of what has changed in the market and the organization, and a review of the Product Backlog and the likely next steps. Put most of the time into the last three parts. Decide who will show each item, and rotate presenters so the Developers who built the work explain it. Keep the whole event well inside the guide's four-hour ceiling for a month-long Sprint.
 
 ### Step 4: Let stakeholders use the Increment
 

@@ -12,7 +12,7 @@ metadata:
 
 # Impact Mapping: Goal-Driven Strategic Planning
 
-> Created by **Gojko Adzic (building on InUse effect mapping)** - [https://gojko.net/](https://gojko.net/)
+> Created by **Gojko Adzic (building on InUse effect mapping)** - [https://www.impactmapping.org/book_credit.html](https://www.impactmapping.org/book_credit.html)
 
 ## Overview
 
@@ -40,7 +40,7 @@ Actors are the people whose behavior can help or block the goal, including peopl
 
 ### Describe impacts as changes in behavior
 
-An impact is a change in what an actor does, stated so that someone could observe it. The book's guidance is that "Impacts are not product features" and that an impact should "show a change in actor behaviour, not just the behaviour", with the example of "selling tickets five times faster" instead of "selling tickets" ([book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf)). Adzic's later [Votito summary](https://www.votito.com/methods/impact-mapping/) adds that impacts should ideally be objective, externally observable and measurable quickly after the work is delivered. Hindering impacts belong on the map too.
+An impact is a change in what an actor does, stated so that someone could observe it. The book's guidance is that "Impacts are not product features" and that an impact should "show a change in actor behaviour, not just the behaviour", with the example of "selling tickets five times faster" instead of "selling tickets" ([book sample](https://www.impactmapping.org/assets/impact_mapping_20121001_sample.pdf)). Adzic's later [Votito summary](https://www.votito.com/methods/impact-mapping/) adds that impacts should ideally be "objective, externally observable and measurable quickly after the work is delivered." Hindering impacts belong on the map too.
 
 ### Treat deliverables as options
 
@@ -75,12 +75,12 @@ An impact map is created "collaboratively by senior technical and business peopl
    Choose the actors and impacts that matter most first, and only then the deliverables beneath them. The [impactmapping.org home page](https://www.impactmapping.org/) says to "Prioritise from the goals down to impacts." In the site's music example, the team lists impacts for the most promising actor first, and if those impacts achieve the goal it does not need to deliver anything for the other actors ([example maps](https://www.impactmapping.org/example.html)). Attach a target to each chosen impact so the team will know when that branch is done.
 
 7. **Deliver, measure and re-plan**
-   Ship the smallest deliverable that could produce the chosen impact, then measure the actor's behavior and the goal. The [impactmapping.org overview](https://www.impactmapping.org/about.html) describes re-evaluating the strategy once a deliverable ships: continue on the same part of the map or move on. Adzic's [Votito summary](https://www.votito.com/methods/impact-mapping/) adds that once an impact's target metric is achieved, the team can move to another part of the map. Revisit the map at each milestone, remove branches that were disproved, and start a new map when the goal changes.
+   Ship the smallest deliverable that could produce the chosen impact, then measure the actor's behavior and the goal. The [impactmapping.org overview](https://www.impactmapping.org/about.html) describes re-evaluating the strategy once a deliverable ships: keep working on that branch or shift to another part of the map. Adzic's [Votito summary](https://www.votito.com/methods/impact-mapping/) adds that once an impact's target metric is achieved, the team can move to another part of the map. Revisit the map at each milestone, remove branches that were disproved, and start a new map when the goal changes.
 
 ## When to Use
 
 - A delivery team receives a shopping list of features from a client or sponsor with no stated objective. The [facilitation guide](https://www.impactmapping.org/facilitation.html) names this as a typical case for using a map to set a vision before scope is agreed.
-- An ongoing initiative has a full backlog of epics that are hard to prioritize, or the team finds it hard to stop work that did not pay off. Linking each epic to an impact gives a reason to rank it and a signal for when to stop.
+- An initiative already under way has a backlog of epics nobody can rank, or the team finds it hard to stop work that did not pay off. Linking each epic to an impact gives a reason to rank it and a signal for when to stop.
 - Several stakeholders with competing priorities share one team. A map built with all of them in the room shows which impacts each person cares about and forces an explicit choice among them.
 - A project has stalled or its objectives are unclear, and one person holds most of the business knowledge. The facilitation guide describes collecting that knowledge in small meetings and presenting it back as maps so stakeholders can decide.
 - For a product manager planning a new milestone where the behavior of users, partners or internal teams is uncertain, the map turns those uncertainties into named assumptions the team can test during delivery.
@@ -125,7 +125,7 @@ Goal, actors, impacts and deliverables, which answer why, who, how and what. The
 
 **Who created impact mapping?**
 
-Gojko Adzic named and popularized the method, most fully in his 2012 book ([impactmapping.org](https://www.impactmapping.org/book.html)). He describes it as a variant of the InUse effect mapping method introduced by Mijo Balic and Ingrid Domingues (Ottersten), combined with ideas from Robert O. Brinkerhoff, Chris Matts and Tom Gilb ([credits](https://www.impactmapping.org/book_credit.html)). Craig Larman suggested the name "impact maps". Domingues and Johan Berndtsson of InUse later wrote with Adzic about how to use the method in different contexts.
+Gojko Adzic named and popularized the method, most fully in his 2012 book ([impactmapping.org](https://www.impactmapping.org/book.html)). In the book's credits he calls it a variant of the effect mapping method that Mijo Balic and Ingrid Domingues (Ottersten) introduced at InUse, mixed with ideas from Robert O. Brinkerhoff, Chris Matts and Tom Gilb ([credits](https://www.impactmapping.org/book_credit.html)). Craig Larman suggested the name "impact maps". Domingues and Johan Berndtsson of InUse later wrote with Adzic about how to use the method in different contexts.
 
 **How is an impact map different from a product roadmap?**
 

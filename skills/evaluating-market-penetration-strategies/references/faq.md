@@ -6,7 +6,7 @@ Any tactic that grows sales of your existing products in your existing market. T
 
 ## Is penetration pricing the same as a market penetration strategy?
 
-No. Penetration pricing is one tactic, setting low prices to reach many buyers quickly, and a market penetration strategy can use many other levers. Joel Dean's work suggests penetration pricing fits best when demand is highly sensitive to price, costs fall with volume and competitors are about to enter. Outside those conditions, other levers often grow share more cheaply.
+No. Penetration pricing is one tactic, setting low prices to reach many buyers quickly, and a market penetration strategy can use many other levers. Joel Dean lists the conditions that indicate an early low-price policy: sales that respond strongly to price cuts in the short run, a product that will not seem bizarre in consumers' spending, and "a strong threat of potential competition." Savings in production costs from greater volume also help, although Dean calls them "not a necessary condition" when demand is elastic enough. Outside those conditions, other levers often grow share more cheaply.
 
 ## How do I know when my current market is saturated?
 

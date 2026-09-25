@@ -2,7 +2,7 @@
 
 ## What assumptions does an impact map contain?
 
-Two on every branch, according to the impactmapping.org overview. The first is that a deliverable will support a change in an actor's behavior. The second is that once the behavior changes, the actor will contribute to the goal. Testing a branch means checking both links, since either can fail independently.
+Two on every branch, according to the impactmapping.org overview. The first is that the deliverable will change how an actor behaves. The second is that once the behavior changes, the actor will contribute to the goal. Testing a branch means checking both links, since either can fail independently.
 
 ## Do we need to test every branch?
 

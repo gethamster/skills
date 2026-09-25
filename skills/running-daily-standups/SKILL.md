@@ -1,6 +1,6 @@
 ---
 name: "running-daily-standups"
-description: "Run the scrum daily standup as the Scrum Guide's Daily Scrum: a short daily event where Developers inspect progress toward the Sprint Goal and replan."
+description: "Run the scrum daily standup as the Scrum Guide's Daily Scrum: a short daily event where Developers check progress against the Sprint Goal and replan."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
@@ -14,7 +14,7 @@ metadata:
 
 # Running the Scrum Daily Standup (Daily Scrum)
 
-> Run the scrum daily standup as the Scrum Guide's Daily Scrum: a short daily event where Developers inspect progress toward the Sprint Goal and replan.
+> Run the scrum daily standup as the Scrum Guide's Daily Scrum: a short daily event where Developers check progress against the Sprint Goal and replan.
 
 ## Before you start
 
@@ -30,15 +30,15 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 |-------|-------|
 | Difficulty | Beginner |
 | Time to Learn | About a week of daily practice |
-| Outcome | Your Developers hold a short Daily Scrum at the same time each day that ends with an updated plan for the next day of work toward the Sprint Goal. |
+| Outcome | Your Developers hold a short Daily Scrum at the same time each day that ends with an updated plan for the coming day's work toward the Sprint Goal. |
 | Prerequisites | A Sprint Goal, a visible Sprint Backlog or board, the Developers of one Scrum Team |
 | Part of | [Scrum](../../methods/scrum/METHOD.md) |
 
 ## Overview
 
-The scrum daily standup is the everyday name for the Daily Scrum, one of Scrum's five events. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) defines its purpose as "to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work." It is "a 15-minute event for the Developers of the Scrum Team," held at the same time and place every working day of the Sprint. If the Product Owner or Scrum Master are working on Sprint Backlog items, they take part as Developers.
+The scrum daily standup is the everyday name for the Daily Scrum, one of Scrum's five events. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) defines its purpose as "to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work." It is "a 15-minute event for the Developers of the Scrum Team," held every working day of the Sprint at a fixed time and place. A Product Owner or Scrum Master who is working on Sprint Backlog items joins in as a Developer.
 
-The guide leaves the format to the team. The Developers "can select whatever structure and techniques they want," as long as the Daily Scrum focuses on progress toward the Sprint Goal and "produces an actionable plan for the next day of work." That freedom is recent. The [Scrum Guide revision history](https://scrumguides.org/revisions.html) records that the 2020 edition removed the Daily Scrum questions, part of a move to make the guide less prescriptive. The familiar three questions about yesterday, today and impediments are now one option among many.
+The guide leaves the format to the team. The Developers "can select whatever structure and techniques they want," as long as the Daily Scrum stays on progress against the Sprint Goal and "produces an actionable plan for the next day of work." That freedom predates the current edition. The [Scrum Guide revision history](https://scrumguides.org/revisions.html) records that the 2017 guide already said the Development Team sets the structure and offered the three questions only as an example, and that the 2020 edition removed the Daily Scrum questions as part of a move to make the guide less prescriptive. The familiar three questions about yesterday, today and impediments are now one option among many.
 
 The event is often misused as a status report to a manager or Scrum Master. The 2013 revision already noted of the Daily Scrum, "Too often it is seen as a status event," and reinforced it as a planning event. An effective daily standup is a short working conversation among the people doing the work, about whether they are on track for the goal and what they will do next.
 
@@ -60,7 +60,7 @@ Remote and hybrid teams need extra care. Atlassian's heuristic for remote teams 
 
 ### Step 1: Fix the time, place and timebox
 
-Agree a time that works for every Developer and hold it at the same time and place every working day, as the [Scrum Guide](https://scrumguides.org/scrum-guide.html) asks. Start on time even if someone is late. Keep the event within the guide's "15-minute" limit; a small team often needs less. For distributed teams, choose a time that overlaps everyone's working hours and use the same video link every day.
+Agree a time that works for every Developer and hold it every working day at a fixed time and place, as the [Scrum Guide](https://scrumguides.org/scrum-guide.html) asks. Start on time even if someone is late. Keep the event within the guide's "15-minute" limit; a small team often needs less. For distributed teams, choose a time that overlaps everyone's working hours and use the same video link every day.
 
 ### Step 2: Open with the Sprint Goal
 
@@ -97,7 +97,7 @@ Every few Sprints, ask in the retrospective whether the Daily Scrum is helping. 
 
 ## Common Mistakes
 
-- **Turning it into a status report**: When each person justifies their day to a manager, the team stops planning together. Keep the focus on progress toward the Sprint Goal and the next day's plan.
+- **Turning it into a status report**: When each person justifies their day to a manager, the team stops planning together. Keep attention on how the work is moving toward the Sprint Goal and on tomorrow's plan.
 - **Solving problems in the meeting**: Long technical discussions make the event run over and lose everyone not involved. Take them offline with only the people who need to be there.
 - **Running over the timebox**: A Daily Scrum that routinely runs long becomes something people dread. Enforce the timebox and move detail to follow-ups.
 - **Holding it without a Sprint Goal**: Without a goal, the meeting becomes a list of unrelated updates. Make sure every Sprint has a clear goal.

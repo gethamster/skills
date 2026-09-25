@@ -34,4 +34,4 @@ Illustrative scenario: a team's Sprint Goal was to publish a new pricing page. A
 
 The Scrum Master points out that the review is where stakeholders learn what happened and decide what to do next, which matters more when the goal was missed. The team shows the finished design and copy, explains the billing dependency in two minutes, and asks the finance lead what options exist.
 
-The discussion changes the plan: finance agrees to a manual invoicing step for the first customers, which removes the dependency for launch. The Product Owner adds that item to the top of the backlog and splits the automated billing work into a later item. The review ends with a realistic next step instead of an apology.
+The discussion changes the plan: finance agrees to a manual invoicing step for the first customers, which removes the dependency for launch. The Product Owner adds that item to the top of the backlog and splits the automated billing work into a later item. The review ends with a realistic next step that everyone in the room has agreed.

@@ -36,7 +36,7 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 ## Overview
 
-FDE engagement scoping is the work of deciding, before anyone deploys, what a forward deployed engineer is there to achieve and when the engagement is finished. It is the practical side of Mission Clarity, the first lens in Vishwanathan Chandran's [FDE Five-Lens Framework](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7), which says every FDE engagement begins with a sharply defined mission but with enough flexibility to adapt. The artifact this skill produces is a mission brief: a short document naming the outcome, the time box, the constraints, the exit criteria and the handoff plan.
+FDE engagement scoping is the work of deciding, before anyone deploys, what a forward deployed engineer is there to achieve and when the engagement is finished. It is the practical side of Mission Clarity, the first lens in Vishwanathan Chandran's [FDE Five-Lens Framework](https://medium.com/@vishwanathan.chandran/the-rise-of-the-forward-deployed-engineer-from-code-to-context-in-the-age-of-ai-102aec328db7), which says every FDE engagement "begins with a sharply defined mission" while keeping "enough flexibility to adapt." The artifact this skill produces is a mission brief: a short document naming the outcome, the time box, the constraints, the exit criteria and the handoff plan.
 
 Scoping matters more for FDEs than for most engineers because the job puts them inside an environment full of problems. A Palantir FDSE describes the hardest part of the role as directing focus, because there is a near-infinite number of problems to be solved and the engineer has to keep choosing the most valuable one ([Palantir blog](https://blog.palantir.com/a-day-in-the-life-of-a-palantir-forward-deployed-software-engineer-45ef2de257b1)). Without a written mission, each new request looks reasonable in isolation, and the engagement drifts from one fix to the next until nobody can say whether it worked.
 
@@ -76,7 +76,7 @@ List what the engagement will deliver and, just as explicitly, what it will not.
 
 ### Step 5: Plan the handoff
 
-Name who at the customer will own the system after you leave and what they need to run it: documentation, runbooks, access, training. a16z's advice to "leave a trail" and document everything applies directly ([a16z](https://a16z.com/services-led-growth/)). A handoff plan written at the start shapes how you build, because you will choose tools the customer's team can maintain.
+Name who at the customer will own the system after you leave and what they need to run it: documentation, runbooks, access, training. a16z's advice to "Leave a trail" and document everything was written for companies that will later hand services work to ecosystem partners, and it applies just as well to a customer handover ([a16z](https://a16z.com/services-led-growth/)). A handoff plan written at the start shapes how you build, because you will choose tools the customer's team can maintain.
 
 ### Step 6: Agree the brief with all three parties
 

@@ -2,11 +2,11 @@
 
 ## How long should a sprint planning meeting be?
 
-The Scrum Guide sets a maximum of eight hours for a one-month Sprint and says the event is usually shorter for shorter Sprints. Atlassian's tutorial suggests about two hours per week of Sprint as a rule of thumb. End the meeting when the team has a Sprint Goal, a forecast and enough of a plan to start.
+The Scrum Guide caps it at eight hours for a month-long Sprint and says it is usually shorter when the Sprint is shorter. Atlassian's sprint planning guide gives the duration as usually about two hours per week of iteration, so a two-week Sprint starts with a planning meeting of about four hours. End the meeting when the team has a Sprint Goal, a forecast and enough of a plan to start.
 
 ## Who attends Sprint Planning?
 
-The whole Scrum Team: the Product Owner, the Scrum Master and the Developers. The Scrum Guide says the team may also invite other people to provide advice. The Product Owner brings the proposal for the Sprint's value, the Developers select the work and plan it, and the Scrum Master helps the event stay focused and within its timebox.
+The whole Scrum Team: the Product Owner, the Scrum Master and the Developers. The Scrum Guide lets the team bring in other people to give advice. The Product Owner brings the proposal for the Sprint's value, the Developers select the work and plan it, and the Scrum Master helps the event stay focused and within its timebox.
 
 ## What makes a good Sprint Goal?
 
@@ -14,7 +14,7 @@ A good Sprint Goal is a single objective that tells stakeholders why the Sprint 
 
 ## Does the team commit to finishing every selected item?
 
-No. The Scrum Guide treats the selected items as a forecast and the Sprint Goal as the Developers' commitment. If the work turns out different than expected, the Developers negotiate the scope of the Sprint Backlog with the Product Owner without affecting the Sprint Goal.
+No. The Scrum Guide treats the selected items as a forecast and the Sprint Goal as the Developers' commitment. If the work turns out differently than expected, the Developers and the Product Owner agree a new scope for the Sprint Backlog while keeping the Sprint Goal.
 
 ## What should we do if we finish early?
 

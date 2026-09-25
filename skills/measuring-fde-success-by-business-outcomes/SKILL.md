@@ -42,7 +42,7 @@ Palantir, where the role started, frames its FDEs the same way. In a Palantir po
 
 Output measures are tempting because they are easy to count: features shipped, integrations completed, tickets closed. They say whether the FDE was busy. They do not say whether the customer is better off. A pipeline that runs perfectly but changes no decision is a failed engagement under this lens, however much code it took.
 
-Outcome measurement also protects the FDE function itself. Embedding engineers with customers is expensive, and critics of the services-heavy model argue that it limits scalability ([a16z](https://a16z.com/services-led-growth/)). A record of engagements that moved business results is the strongest answer to that argument inside your own company.
+Outcome measurement also protects the FDE function itself. Embedding engineers with customers is expensive, and a16z notes that for the past decade product-led growth has been broadly assumed to be superior to implementation-heavy software because it promises greater scalability and higher margins ([a16z](https://a16z.com/services-led-growth/)). A record of engagements that moved business results is the strongest answer to that argument inside your own company.
 
 This skill turns the outcome statement in the mission brief into a scorecard: a baseline taken before the work starts, a target, a small set of leading indicators the FDE can watch weekly, and a reporting rhythm with the sponsor. It also covers attribution, since outcomes depend on things the FDE does not control, and how to use the result at the end of the engagement.
 

@@ -54,7 +54,7 @@ Choose the test by cost and by what the context allows. When uncertainty is high
 
 Decide what each result will mean before running the test. A success threshold taken from the impact's target range, and a decision rule for each outcome, stop results from being reinterpreted after the fact. Typical decisions are to continue with the branch, try the next deliverable under the same impact, reconsider the impact, or move to another part of the map.
 
-Feed results back into the map. The [impactmapping.org overview](https://www.impactmapping.org/about.html) describes measuring the actual change in behavior and the effect on the objective after a deliverable ships, then deciding whether to continue on the same part of the map or move on. Itamar Gilad's GIST framework takes a similar stance on ideas: on the [GIST board](https://itamargilad.com/the-gist-board/), ICE scores are updated based on experiment results and failed ideas are removed along with their steps.
+Feed results back into the map. The [impactmapping.org overview](https://www.impactmapping.org/about.html) describes measuring the actual change in behavior and the effect on the objective after a deliverable ships, then deciding whether to keep working on that branch or shift to another part of the map. Itamar Gilad's GIST framework takes a similar stance on ideas: on the [GIST board](https://itamargilad.com/the-gist-board/), ICE scores are updated based on experiment results and failed ideas are removed along with their steps.
 
 ## Step-by-Step Guide
 

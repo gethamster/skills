@@ -2,7 +2,7 @@
 
 ## How long should a sprint review meeting take?
 
-The Scrum Guide sets a maximum of four hours for a one-month Sprint and says the event is usually shorter for shorter Sprints. Treat that as a ceiling. Atlassian's guide to sprint reviews suggests half an hour to an hour per iteration for its own teams. Pick a length that leaves real time for discussion after the demonstration, and end early when the purpose is met.
+The Scrum Guide caps the event at four hours for a month-long Sprint and says it is usually shorter when the Sprint is shorter. Treat that as a ceiling. Atlassian's guide to sprint reviews recommends 30 minutes to an hour for each iteration as a best practice. Pick a length that leaves real time for discussion after the demonstration, and end early when the purpose is met.
 
 ## Who runs the sprint review?
 
@@ -14,7 +14,7 @@ The sprint review inspects the product and its environment with stakeholders, an
 
 ## Should we show work that is almost done?
 
-No. The Scrum Guide says an item that does not meet the Definition of Done cannot be released or presented at the Sprint Review, and returns to the Product Backlog. You can mention that it is unfinished and why, so stakeholders are not surprised, but do not demonstrate it as progress.
+No. The Scrum Guide says an item that falls short of the Definition of Done cannot be released or shown at the Sprint Review; it goes back to the Product Backlog. You can mention that it is unfinished and why, so stakeholders are not surprised, but do not demonstrate it as progress.
 
 ## What if key stakeholders never come?
 

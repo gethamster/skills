@@ -12,7 +12,7 @@ metadata:
 
 # User Story Mapping: See the Whole Product Story
 
-> Created by **Jeff Patton** - [https://jpattonassociates.com/](https://jpattonassociates.com/)
+> Created by **Jeff Patton** - [https://jpattonassociates.com/jeff-pattons-book-released-user-story-mapping/](https://jpattonassociates.com/jeff-pattons-book-released-user-story-mapping/)
 
 ## Overview
 
@@ -24,7 +24,7 @@ The map has a small vocabulary. Patton calls the big things at the top user acti
 
 The release slice is where story mapping changes planning. Patton writes that he does not prioritize the backbone at all. He prioritizes the cards hanging below it, and the cards placed highest across every column describe the smallest system that works end to end, which he identifies with Alistair Cockburn's "walking skeleton" ([Patton, 2008](https://jpattonassociates.com/the-new-backlog/)). Building across the backbone a little at a time, in his words, means "we never release a car without brakes." A team that picks the highest-value features from a flat list can ship impressive parts that do not add up to a usable product, which is the failure his first article on the idea opens with.
 
-Story mapping is a conversation tool first. The quick reference warns that "A story map will take lots of conversation to use effectively," and that anyone who wants the precision of a workflow model, flow chart or UML model should use one of those instead. The Nielsen Norman Group, which credits Patton with popularizing the method, describes story maps in [Mapping User Stories in Agile](https://www.nngroup.com/articles/user-story-mapping/) as lightweight representations that replace lengthy requirements documents and keep an Agile team from losing sight of the product as a whole.
+Story mapping is a conversation tool first. The quick reference warns that "A story map will take lots of conversation to use effectively," and that a team needing the exactness of a flow chart, workflow model or UML diagram is better served by one of those. The Nielsen Norman Group, which credits Patton with popularizing the method, describes story maps in [Mapping User Stories in Agile](https://www.nngroup.com/articles/user-story-mapping/) as lightweight representations that replace lengthy requirements documents and keep an Agile team from losing sight of the product as a whole.
 
 The map is also meant to last. Patton hangs it as an information radiator and uses it as the iteration planning board once the project is running, marking the stories for the next iteration directly on it ([The New User Story Backlog is a Map](https://jpattonassociates.com/the-new-backlog/)). NN/g likewise notes that teams maintain their map over time, adding to it and changing it to reflect the actual state of the product. A map that is built in a workshop and then abandoned for a flat list loses most of its value.
 
@@ -152,6 +152,20 @@ It is the thinnest version of the product that still works from start to finish.
 **Is there one correct story mapping template?**
 
 No single template is official. Patton's material uses sticky notes or cards on a wall, with a backbone row, columns of tasks, tape lines for releases, and outcome cards to the left of each slice ([Quick Reference](https://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf)). Whiteboard templates from Miro and Mural reproduce that layout. A useful template keeps the narrative order, lets cards move freely, and has a place for users and release outcomes.
+
+## Sources
+
+- [Jeff Patton: Story Mapping](https://jpattonassociates.com/story-mapping/)
+- [Jeff Patton: The New User Story Backlog is a Map](https://jpattonassociates.com/the-new-backlog/)
+- [Jeff Patton: It's All in How You Slice It, Better Software, January 2005](https://www.jpattonassociates.com/wp-content/uploads/2015/01/how_you_slice_it.pdf)
+- [Jeff Patton: Story Mapping Quick Reference](https://jpattonassociates.com/wp-content/uploads/2015/03/story_mapping.pdf)
+- [Jeff Patton: User Story Mapping book announcement](https://jpattonassociates.com/jeff-pattons-book-released-user-story-mapping/)
+- [Google Books: User Story Mapping, Jeff Patton with Peter Economy](https://books.google.com/books/about/User_Story_Mapping.html?id=4YZyBAAAQBAJ)
+- [Nielsen Norman Group: Mapping User Stories in Agile](https://www.nngroup.com/articles/user-story-mapping/)
+- [Atlassian: User story mapping](https://www.atlassian.com/agile/product-management/story-mapping)
+- [Miro Help Center: User story mapping](https://help.miro.com/hc/en-us/articles/360020712554-User-story-mapping)
+- [Miro: User story map template](https://miro.com/templates/user-story-map/)
+- [Mural: User story map template](https://www.mural.co/templates/user-story-map)
 
 ---
 

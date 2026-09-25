@@ -10,7 +10,7 @@ Yes. The Product Owner is a member of the Scrum Team, and the Scrum Guide descri
 
 ## How long should a retrospective be?
 
-The Scrum Guide's maximum is three hours for a one-month Sprint, usually shorter for shorter Sprints. Atlassian suggests planning for at least thirty minutes and up to an hour depending on Sprint length. Leave enough time for the insight and decision phases, since those produce the actions.
+The Scrum Guide caps it at three hours for a month-long Sprint, and shorter Sprints usually need less. Atlassian suggests planning for at least thirty minutes and up to an hour, depending on how long the Sprint is and how much there is to cover. Leave enough time for the insight and decision phases, since those produce the actions.
 
 ## What is a good scrum retrospective format for beginners?
 
