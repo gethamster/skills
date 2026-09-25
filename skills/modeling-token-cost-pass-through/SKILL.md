@@ -1,15 +1,20 @@
 ---
-name: modeling-token-cost-pass-through
-description: "Teaches you to build a financial model that translates raw LLM token costs into customer-facing prices with sustainable markups, and to forecast how margin shifts when token prices or usage volumes change."
+name: "modeling-token-cost-pass-through"
+description: "Model token cost pass-through: turn LLM token costs into customer prices with a set markup, then test margins against price and usage shifts."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: ai-pricing-playbook
+  method: "ai-pricing-playbook"
+  datePublished: "2026-05-19"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Modeling Token Cost Pass-Through and Markup Strategy
+# Modeling Token Cost Pass-Through and Markup
 
-> Teaches you to build a financial model that translates raw LLM token costs into customer-facing prices with sustainable markups, and to forecast how margin shifts when token prices or usage volumes change.
+> Model token cost pass-through: turn LLM token costs into customer prices with a set markup, then test margins against price and usage shifts.
 
 ## Before you start
 
@@ -23,124 +28,113 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial model; 30 minutes per quarterly update |
-| Outcome | A working financial model that tells you exactly what markup to charge per AI action, how your gross margin responds to token price changes and usage spikes, and when you need to renegotiate provider contracts or adjust customer pricing. |
-| Prerequisites | Basic spreadsheet or financial modeling skills (pivot tables, scenario tables, named ranges), Understanding of your product's LLM call patterns — which features call which models and roughly how many tokens per request, Familiarity with your LLM provider's pricing page (OpenAI, Anthropic, Google, or self-hosted inference costs), Completion of or familiarity with the sibling skill: Calculating AI Inference Unit Economics |
-| Part of | [AI Pricing Playbook: Unit Economics & Tiering](../../methods/ai-pricing-playbook/METHOD.md) |
+| Difficulty | Advanced |
+| Time to Learn | About a day for the first model |
+| Outcome | A pricing model that converts cost per request into customer prices at a target margin and shows how margin moves when token prices, tokens per task or volume change. |
+| Prerequisites | Cost per request by feature, a target margin range, the chosen pricing model, basic spreadsheet modeling |
+| Part of | [AI Pricing Playbook](../../methods/ai-pricing-playbook/METHOD.md) |
 
 ## Overview
 
-Every AI-powered product sits on top of a volatile cost layer: LLM inference. Unlike a traditional SaaS product where compute costs are relatively fixed per user, an AI feature's marginal cost scales with every request, and the unit price of that cost — the token — changes unpredictably as providers compete on price. If you don't model this cost pass-through explicitly, you end up either overcharging (losing deals to competitors who price more aggressively) or undercharging (watching margins erode as adoption grows). This skill teaches you to build the financial model that prevents both outcomes.
+Token cost pass-through is the part of AI pricing that links what you pay model vendors to what customers pay you. At one extreme, a product passes token costs straight through, as Cursor's Pro plan does when it includes [a fixed amount of frontier model usage at API pricing and lets users buy more at cost](https://cursor.com/blog/june-2025-pricing). At the other, a product charges for a value unit and never mentions tokens. Most products sit in between: they price a customer-facing unit and need to know how much markup over token cost that price carries.
 
-Inside the [AI Pricing Playbook: Unit Economics & Tiering](https://tryhamster.com/methods/ai-pricing-playbook), token cost pass-through modeling is the bridge between raw unit economics (what each AI call actually costs you) and customer-facing pricing (what you charge). The sibling skill [Calculating AI Inference Unit Economics](https://tryhamster.com/skills/calculating-ai-inference-unit-economics) tells you what a single request costs today. This skill extends that number forward in time and across scenarios: what happens to your margin when OpenAI drops prices 50% next quarter? What happens when your power users send 10× the tokens you forecasted? What markup absorbs those shocks without requiring an emergency pricing change?
+The markup has to survive change. Token prices fall fast: a16z estimated the cost of equivalent LLM performance is [dropping about 10x per year](https://a16z.com/llmflation-llm-inference-cost/), and Epoch AI found declines [ranging from 9x to 900x per year depending on the task](https://epoch.ai/data-insights/llm-inference-price-trends). At the same time, tokens per task can rise as products run longer agent loops or switch to models whose tokenizers count differently. A markup set once and never modeled can drift far from its target in either direction.
 
-The concrete artifact you'll produce is a multi-tab spreadsheet (or equivalent model) with four components: a token cost inventory mapping every AI feature to its token consumption, a markup and pricing calculator that translates cost into customer price, a scenario engine that stress-tests margin under different token price and usage volume assumptions, and a trigger dashboard that flags when margin crosses thresholds requiring action. A well-built model takes 2–4 hours the first time and becomes the single source of truth your product, finance, and engineering teams reference every time a pricing decision is on the table.
+This skill builds a model with three parts: a per-request cost calculator for each AI feature, a markup calculation that turns cost into price at a target margin, and a scenario engine that shows margin under changes in token price, tokens per task, feature mix and volume. It ends with triggers: the conditions under which you will reprice, raise included usage, or do nothing. The wider context for these choices is in the [AI Pricing Playbook](https://tryhamster.com/methods/ai-pricing-playbook).
 
-This is a core component of any serious AI pricing strategy because it forces you to separate the things you can control (markup, tier design, rate limits) from the things you can't (provider pricing, customer usage patterns) and to build explicit plans for responding to both. Without it, your pricing is a guess that gets staler every quarter.
+A good model answers two questions quickly: what should this feature cost the customer to hit our margin, and what happens to that margin if the vendor changes prices next quarter?
 
 ## How It Works
 
-The mental model behind token cost pass-through is a three-layer stack: the provider layer (what you pay per token), the infrastructure layer (your overhead on top of tokens), and the value layer (what the customer perceives and pays). Your financial model must capture all three, because your markup isn't just a multiplier on token cost — it also needs to cover non-token expenses like prompt engineering, caching infrastructure, monitoring, and the R&D that makes your AI features useful in the first place.
+The cost calculator takes the unit economics table and expresses each feature as tokens in, tokens out, cached tokens and extra costs, multiplied by the current rates. Rates change, so they live in one input sheet. Discounts matter here: Anthropic prices [cache reads at 0.1x base input on most models and batch processing at a 50% discount](https://platform.claude.com/docs/en/about-claude/pricing), so the same feature can carry very different cost depending on how it is built.
 
-**Why a simple percentage markup fails.** Many teams start by applying a flat 3× or 5× markup on token cost and calling it done. This breaks in two directions. First, when token prices drop (as they reliably have — GPT-4 class models have seen 90%+ price reductions in 18 months), your revenue per request drops proportionally even though your non-token costs stay fixed. Second, when usage spikes, your absolute cost grows but your infrastructure costs grow sublinearly, meaning a flat markup leaves money on the table at scale and undercharges at low volume.
+The markup calculation uses gross margin rather than cost-plus. If a feature costs C per unit and the target margin is M, the price is C divided by one minus M. Working from margin keeps pricing consistent with how finance reports results. Targets vary widely: Kyle Poyar's survey found a [median target AI margin of about 50%, with only 12% of companies aiming for 80% or more](https://www.growthunhinged.com/p/the-state-of-b2b-monetization-in-2026). Choose your own range from your business model and write it down.
 
-**The right model separates fixed and variable cost layers.** Token cost is purely variable — it scales linearly with usage. Infrastructure cost (caching, monitoring, orchestration) is semi-variable — it grows in steps. R&D cost is fixed — your prompt engineering team's salary doesn't change with request volume. Your markup formula should therefore be: `customer_price_per_request = (token_cost × variable_markup) + (fixed_cost_allocation_per_request)`. The variable markup covers token cost plus margin. The fixed cost allocation amortizes your infrastructure and R&D across expected request volume. This structure means that when token prices drop, your variable component shrinks but your fixed allocation holds, protecting overall margin.
+When the customer-facing unit bundles several requests, the model rolls feature costs up into that unit before applying the markup. When the product sells credits, it converts each feature into a credit cost so that the credit price carries the markup and the conversion table absorbs cost differences between features.
 
-**Scenario modeling is the real value.** The static model tells you today's margin. The scenario engine tells you whether your pricing survives contact with reality. You need to stress-test at least four scenarios: token price drops 50% (you keep current customer pricing — margin expands), token price drops 50% and you pass savings to customers (margin holds, volume grows), usage per customer doubles (variable costs spike, fixed allocation dilutes), and a new model generation forces migration (temporary cost spike during transition). Each scenario produces a margin forecast and a trigger point — the moment at which you must act.
+The scenario engine changes one input at a time and then combinations: token price down, token price up, tokens per task up, heavier feature mix, lower volume. For each it shows margin per feature and overall. The most useful output is often the break-even line: how far tokens per task can rise before a feature falls below the margin floor.
 
-**Input and output tokens are separate cost lines.** This is a detail that many models get wrong. LLM providers charge different rates for input (prompt) tokens and output (completion) tokens, and the ratio between them varies wildly by feature. A summarization feature might use 2,000 input tokens and 200 output tokens. A content generation feature might use 200 input tokens and 2,000 output tokens. Since output tokens typically cost 2–4× more per token than input tokens, a model that uses a blended average will systematically misprice features with skewed ratios. Always model input and output token costs separately for each feature.
+Triggers turn the scenarios into decisions. For example, if a vendor price cut raises margin well above target, the default response might be to raise included usage rather than cut price. If tokens per task grow and margin approaches the floor, the response might be to route simpler requests to a cheaper model before touching price. Writing these rules down in advance prevents reactive repricing.
 
-**The [AI Pricing Playbook](https://tryhamster.com/methods/ai-pricing-playbook) recommends rebuilding this model quarterly** — not because the math is complex, but because the inputs change fast. Provider pricing shifts, your product adds new AI features, usage patterns evolve, and your infrastructure costs change as you optimize caching and prompt engineering. A quarterly cadence catches drift before it becomes a margin crisis.
+Remember that tokens themselves are not a stable unit. Anthropic notes that its newer tokenizer [produces approximately 30% more tokens for the same text](https://platform.claude.com/docs/en/about-claude/pricing). A model switch that looks cheaper per token can cost more per task, so the scenario engine works in cost per unit of value, not per token.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Inventory Every AI Feature and Its Token Profile
+### Step 1: Inventory Features and Token Profiles
 
-Create a table listing every feature in your product that makes an LLM call. For each feature, record: the model used (e.g., GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro), the average input token count per request, the average output token count per request, the P95 (95th percentile) input and output token counts, and the current monthly request volume. Get these numbers from your LLM provider dashboard, your logging infrastructure, or by sampling 100–500 requests per feature if you don't have aggregate data. If the feature is pre-launch, estimate by running 50 representative prompts through a token counter and logging the results. Separate system prompts, user input, and retrieved context (RAG) in your input token count — system prompts are fixed cost per request, while user input and context vary. This inventory is the foundation of every downstream calculation, so precision here saves you from compounding errors later.
+List every AI feature with its model, measured tokens in and out, cached share and extra costs. Take these from the unit economics table rather than estimating. Mark which features are included in plans and which are billed separately.
 
-> **Pro tip:** Most teams undercount input tokens by 30-50% because they forget to include system prompts and RAG context. Run a trace on 10 live requests per feature and compare actual token usage to your estimates — the gap is usually sobering.
+### Step 2: Build the Cost Calculator
 
-### Step 2: Step 2: Build the Per-Request Cost Calculator
+Put current vendor rates in one input sheet, dated and linked to the vendor's pricing page. Compute cost per request for each feature from the token profile and rates. Roll requests up into the customer-facing unit where one unit uses several requests.
 
-For each feature in your inventory, calculate the fully-loaded cost per request. Start with the token cost: `(input_tokens × input_price_per_token) + (output_tokens × output_price_per_token)`. Use your provider's current pricing, and if you have a negotiated rate, use that instead of list price. Then add non-token variable costs: API gateway fees, logging/monitoring cost per request (typically $0.0001–$0.001), and any embedding or retrieval costs for RAG features. Finally, calculate a fixed cost allocation per request by dividing your monthly fixed AI infrastructure costs (prompt engineering salaries, caching infrastructure, model evaluation tools) by your total monthly request volume across all features. The output of this step is a cost-per-request for each feature broken into three components: token cost, variable overhead, and fixed allocation. Keep these separate — collapsing them into one number makes scenario modeling impossible.
+### Step 3: Set the Target Margin Range
 
-> **Pro tip:** If you use caching (semantic or exact match), calculate cost-per-request as a weighted average: `(cache_hit_rate × cached_cost) + ((1 - cache_hit_rate) × uncached_cost)`. A 40% cache hit rate on a feature with $0.02 uncached cost and $0.001 cached cost drops effective cost to $0.0124 — a 38% reduction that directly impacts your markup math.
+Agree a target and a floor with finance. The target is what you price to; the floor is the level that triggers action. Record the reasoning, such as the margin needed to fund sales and support.
 
-### Step 3: Step 3: Determine Your Target Gross Margin Range
+### Step 4: Calculate Price From Cost and Margin
 
-Set the gross margin band you need to sustain. For venture-backed SaaS, the standard target is 70–80% gross margin. AI-native products often run lower — 50–65% is common in early stages, with a roadmap to 70%+ as token costs decline and efficiency improves. Talk to your finance team or investors about the acceptable range. Define three thresholds: the target margin (where you want to be, e.g., 65%), the floor margin (below which you must act immediately, e.g., 45%), and the ceiling margin (above which you're likely overcharging and leaving growth on the table, e.g., 80%). These thresholds become the trigger points in your scenario model. Document why you chose each number — the reasoning matters when you're defending pricing decisions to the board or renegotiating with providers.
+For each unit, divide cost by one minus the target margin. Round to a price the customer can understand. The worked example shows the calculation and two scenario checks.
 
-> **Pro tip:** Don't benchmark against traditional SaaS margins without adjusting for AI cost structure. A 60% gross margin on an AI product with declining input costs is strategically healthier than a 75% margin on a legacy product with flat costs, because your margin naturally expands over time as token prices fall.
+Illustrative scenario: a feature costs $0.025 per request and the target margin is 75%.
 
-### Step 4: Step 4: Calculate the Required Markup Per Feature
+| Case | Cost per request | Price | Margin |
+|------|------------------|-------|--------|
+| Today | $0.025 | $0.10 | 75% |
+| Token price halves | $0.0125 | $0.10 | 87.5% |
+| Tokens per task double | $0.05 | $0.10 | 50% |
 
-For each feature, work backward from your target gross margin to the required customer price. The formula is: `customer_price = total_cost_per_request / (1 - target_gross_margin)`. If a request costs $0.015 fully loaded and your target margin is 65%, the customer price is $0.015 / 0.35 = $0.043 per request. Express this as a markup multiple as well: $0.043 / $0.015 = 2.86×. Calculate the markup at all three thresholds (target, floor, ceiling) so you know your pricing band. Compare the resulting customer prices to what competitors charge for similar capabilities — if your 65%-margin price is 3× what competitors charge, either your cost structure is wrong or your margin target is unrealistic. Also compare the markup multiples across features. If your summarization feature requires a 2.5× markup but your content generation feature requires a 6× markup to hit the same margin, you may need feature-specific pricing rather than a single per-request rate.
+### Step 5: Build the Scenario Engine
 
-> **Pro tip:** When markup multiples vary widely across features (more than 2× difference between lowest and highest), consider bundling high-margin and low-margin features into composite pricing units rather than pricing each call individually. This simplifies customer communication while averaging margin across the portfolio.
+Add inputs for token price change, tokens per task change, feature mix and volume. Show margin by feature and overall for each scenario. Add a break-even view that shows how far each input can move before margin hits the floor.
 
-### Step 5: Step 5: Build the Scenario Engine
+### Step 6: Write Pricing Triggers
 
-Create a scenario table that stress-tests your pricing under different conditions. Build at minimum six scenarios: (1) token prices drop 30%, you hold customer pricing — shows margin expansion; (2) token prices drop 50%, you pass 50% of savings to customers — shows margin hold with volume upside; (3) usage per customer doubles with current pricing — shows whether fixed cost allocation dilutes or concentrates; (4) you migrate to a newer, cheaper model — shows one-time cost and steady-state improvement; (5) a competitor undercuts your price by 40% — shows whether you can match and survive; (6) token prices increase 20% (unlikely but possible with new model generations) — shows margin compression. For each scenario, calculate: new cost per request, new gross margin at current customer price, new gross margin if you adjust customer price, and the number of months until your margin hits the floor threshold. Present this as a table with conditional formatting — green above target, yellow between target and floor, red below floor.
+For each scenario, write the response in advance: raise included usage, add a cheaper tier, route to a smaller model, reprice, or hold. Include who decides and how much notice customers get. Put the triggers in the pricing specification.
 
-> **Pro tip:** Add a 'breakeven usage' row to each scenario showing how many requests per customer per month you need to cover your fixed costs. This number is the most useful signal for your sales team — if a customer's projected usage is below breakeven, the deal is margin-negative regardless of markup.
+### Step 7: Translate to the Customer-Facing Price
 
-### Step 6: Step 6: Set Pricing Triggers and Response Playbooks
+Express the result in the unit the customer buys: per document, per credit, or per plan with included usage. Check the result against competitor prices and buyer expectations. If the market price is well below your calculated price, the problem is cost or product, not markup.
 
-Define the specific conditions under which you'll change pricing, and document what you'll do when each trigger fires. A pricing trigger has three parts: the metric being watched (e.g., blended gross margin, cost per request, provider list price), the threshold that fires the trigger (e.g., gross margin drops below 50% for two consecutive months), and the response playbook (e.g., increase per-request price by 15%, switch to cheaper model for non-premium tiers, implement stricter caching). Create at least four triggers: margin floor breach, provider price drop greater than 25%, usage per customer exceeding 150% of forecast, and new model availability from your provider. For each trigger, specify who owns the decision (product, finance, engineering), the maximum response time (e.g., 'pricing change within 30 days of trigger'), and the customer communication plan. This step transforms your model from a passive report into an active management system.
+### Step 8: Review Quarterly and on Vendor Changes
 
-> **Pro tip:** The most commonly missed trigger is the 'good news' trigger: when token prices drop significantly and you DON'T need to pass savings through to customers immediately. Document this scenario explicitly — your default should be to bank the margin improvement for 1–2 quarters before adjusting customer pricing, giving you a buffer for future cost increases.
-
-### Step 7: Step 7: Model the Customer-Facing Price Translation
-
-Your internal cost model uses per-request pricing, but customers rarely want to buy individual requests. Translate your per-request economics into the pricing structure your customers will actually see. If you use credit-based pricing, define what one credit equals in token terms (e.g., 1 credit = up to 1,000 input tokens + 500 output tokens) and price credits with your markup baked in. If you use tier-based pricing, calculate the token budget each tier supports and set the tier price to cover the expected usage at your target margin plus 10–15% headroom for usage variance within the tier. If you use per-seat pricing with AI features included, calculate the average AI usage per seat per month and embed that cost in the seat price, then model what happens when AI-heavy users are 3× the average. Document the translation formula explicitly: anyone on your team should be able to trace from a customer's monthly bill back to the underlying token cost and verify the margin.
-
-> **Pro tip:** Build a 'customer bill simulator' tab in your model that takes a specific customer's usage pattern and outputs their monthly bill under different pricing structures. Run it against your top 10 customers by usage — you'll immediately see which pricing structure produces the most predictable revenue and which creates outlier bills that will trigger churn.
-
-### Step 8: Step 8: Validate Against Competitive Benchmarks and Customer Willingness to Pay
-
-Your model now tells you what you NEED to charge. This step checks whether you CAN charge it. Gather competitor pricing for equivalent AI capabilities — check their pricing pages, API documentation, and any published case studies with cost examples. Use the sibling skill [Benchmarking AI Product Pricing Against Competitors](https://tryhamster.com/skills/benchmarking-ai-product-pricing) for a structured approach. Create a comparison table showing your calculated price, competitor prices, and the delta. If you're more than 30% above the cheapest competitor for comparable quality, you need to either reduce your cost base (better caching, cheaper models, more efficient prompts) or justify the premium with differentiated value. Also validate against customer willingness-to-pay data: what do sales calls and customer interviews tell you about price sensitivity for AI features? If customers consistently balk at your calculated price, the model is technically correct but commercially useless — you need to find cost reductions rather than pushing a price the market won't bear.
-
-> **Pro tip:** When comparing to competitors, normalize for output quality. A competitor charging 50% less but delivering noticeably worse AI output isn't a true comparable. Build a simple quality scorecard (accuracy, latency, relevance) and price-adjust: if your output is 2× better on a blind evaluation, a 30% price premium is justifiable and should be communicated to sales.
-
-### Step 9: Step 9: Schedule Quarterly Model Reviews
-
-Lock in a quarterly review cadence by scheduling four recurring meetings for the next year. Each review should take 60–90 minutes and include product, finance, and engineering leads. The agenda is fixed: update the token cost inventory with actual usage data from the past quarter, refresh provider pricing (check for announced or rumored price changes), re-run all six scenarios with current numbers, check each pricing trigger against current metrics, and decide on any pricing adjustments for the next quarter. After each review, update the model file, write a one-page summary of findings and decisions, and distribute to stakeholders. The quarterly cadence is non-negotiable in the current AI pricing environment — provider prices have changed every 3–6 months for the past two years, and a model that's two quarters stale is actively misleading.
-
-> **Pro tip:** Create a 'model changelog' tab that logs every update with date, what changed, why, and who approved it. This audit trail is invaluable when a pricing decision is questioned six months later and nobody remembers the context.
+Refresh rates and token profiles every quarter and whenever a vendor changes prices or you change models. Compare modeled margin with actual margin from invoices. Update the triggers if the gap keeps recurring.
 
 ## Best Practices
 
-- Always model input and output tokens as separate cost lines, because LLM providers price them differently (output tokens often cost 2–4× more) and your features have varying input/output ratios. Blending them into an average token cost introduces systematic pricing errors that compound across your feature portfolio, leading to cross-subsidization where some features secretly subsidize others.
-- Include non-token variable costs in every per-request calculation — API gateway fees, logging, monitoring, embedding generation for RAG, and any third-party API calls triggered by the LLM response. Teams that model only token cost typically understate true per-request cost by 15–30%, which translates directly into margin shortfalls once you scale past a few hundred customers.
-- Build the model with named variables and clear cell references rather than hardcoded numbers. When OpenAI announces a price change at 9 AM, you should be able to update one cell (the token price) and immediately see the impact on every feature's margin, every scenario, and every trigger. Hardcoded numbers require a full audit every time an input changes, which means the model either drifts out of date or someone introduces an update error.
-- Price in bands, not points. Set a target margin with a floor and ceiling rather than optimizing for a single number. A target of 65% with a floor of 50% and ceiling of 80% gives you room to absorb cost fluctuations without triggering an emergency pricing change every quarter. Point targets create false precision — your usage forecasts aren't accurate enough to justify optimizing for 65% versus 63%.
-- Separate your pass-through model from your customer-facing pricing model. The pass-through model is an internal cost tool; the customer-facing model translates those costs into credits, tiers, or seat prices. Conflating them leads to pricing structures that are economically sound but commercially incomprehensible — customers don't care about your token cost structure, they care about predictable bills.
-- Stress-test every pricing decision against your highest-usage customer, not your average customer. The average customer is a statistical fiction — your actual margin is determined by the distribution of usage, and power users (top 5%) typically account for 40–60% of your total token spend. If your pricing doesn't work for them, your blended margin will miss target even if the average-customer math looks perfect.
-- Document your markup rationale in writing, not just in spreadsheet formulas. When a new VP of Finance or a board member asks why you're charging 4× token cost, you need a narrative that explains the fixed cost allocation, the margin buffer for price volatility, and the competitive positioning. A spreadsheet without context is an argument waiting to happen.
-- Track the actual margin per customer cohort monthly, not just the modeled margin. Your model is a forecast; reality will differ because of usage variance, caching hit rates, prompt efficiency changes, and provider pricing shifts. A monthly actual-vs-modeled comparison is the fastest way to catch model drift before it becomes a margin problem.
+- **Price to margin, not to a multiple.** A fixed multiple over cost gives different margins at different cost levels. Margin targets keep pricing consistent with financial reporting.
+- **Keep rates in one dated input sheet.** Vendor prices change often. One sheet, linked to the [vendor's pricing page](https://developers.openai.com/api/docs/pricing), makes updates fast and auditable.
+- **Model tokens per task, not only price per token.** Agent loops, longer contexts and new tokenizers change tokens per task. Those shifts can outweigh per-token price cuts.
+- **Decide your response to price cuts in advance.** Raising included usage or adding a cheaper tier keeps price stable and shares savings on your terms.
+- **Use credits to absorb feature cost differences.** A credit table lets expensive features cost more credits without changing the credit price, which keeps the markup in one place.
+- **Show the break-even line to product teams.** Knowing how many more tokens a feature can use before it breaches the floor helps engineers make cost-aware design choices.
 
 ## Common Mistakes
 
-- **Using blended average token cost instead of separating input and output tokens** — This mistake happens because LLM pricing pages often lead with a single headline number or teams average for simplicity. In practice, a content generation feature might have a 1:10 input-to-output ratio, meaning output tokens dominate cost — and output tokens cost 2–4× more. You'll catch this by comparing your modeled cost per request against actual provider invoices; if the model consistently underestimates cost for generation-heavy features and overestimates for analysis-heavy features, you have a blending problem. Fix it by adding separate input_tokens and output_tokens columns for every feature in your inventory, each multiplied by its specific per-token price.
-- **Setting markup as a fixed multiple and never adjusting it as token prices change** — Teams set a 5× markup at launch and then treat it as permanent policy. When token prices drop 50%, the customer price drops proportionally — and the fixed cost allocation (R&D, infrastructure) that the markup was supposed to cover no longer does. The symptom is margin compression despite falling input costs, which seems paradoxical until you realize the fixed cost layer didn't shrink with tokens. Prevent this by separating your markup into a variable component (applied to token cost) and a fixed component (per-request allocation of infrastructure and R&D), and by reviewing the split quarterly.
-- **Modeling only the average request and ignoring the distribution of token usage across users** — This mistake comes from using aggregate data (total tokens / total requests = average) without examining the spread. AI usage is almost always heavy-tailed: a small percentage of users or features consume a disproportionate share of tokens. If your pricing is calibrated to the average but your top 10% of users consume 5× the average, those users are margin-negative and growing faster than your other segments. Detect this by adding P50, P90, and P99 columns to your token inventory alongside the mean. If P99 is more than 3× the mean, you need either per-request pricing, usage caps, or tiered pricing that charges more at higher volumes.
-- **Ignoring caching impact on effective cost** — Many teams build their cost model on uncached request costs and then implement caching as an afterthought. This means your model overstates cost — sometimes by 30–50% if you have good semantic or exact-match caching on common queries. The downstream effect is overpricing: your customer-facing price has headroom you don't realize you have, making you look expensive against competitors who've factored caching into their pricing. Add a cache_hit_rate column to each feature and calculate effective cost as the weighted average of cached and uncached costs. Update cache hit rates monthly as your caching infrastructure improves.
-- **Building the model once and not scheduling quarterly reviews** — The initial model gets built during a pricing project, produces great outputs, and then sits untouched for 6–12 months. In that time, the LLM provider has changed pricing twice, three new features have shipped without being added to the token inventory, and actual usage patterns have diverged 40% from the original forecast. The model becomes a historical artifact rather than a management tool. The fix is mechanical: schedule four recurring quarterly reviews on the day you complete the initial model. Put them on the calendar of the product lead, finance lead, and engineering lead. No agenda flexibility — the review happens even if 'nothing has changed,' because that assumption is almost always wrong.
-- **Passing through 100% of token cost savings to customers immediately when provider prices drop** — When a provider announces a 50% price cut, the instinct is to immediately lower customer prices to stay competitive and drive adoption. This destroys the margin buffer you need for the inevitable quarter when costs go up (new model generation, usage spike, or provider pricing correction). Instead, adopt a delayed pass-through policy: bank the margin improvement for 1–2 quarters, use the period to validate that the cost reduction is durable, and then pass through 50–70% of the savings while retaining the rest as permanent margin improvement. Announce the price reduction as a 'price improvement' rather than a cost adjustment — customers see it as a benefit, not an admission that you were overcharging.
+- **Pricing directly in tokens for non-technical buyers**: Most buyers cannot predict token use, so a token price reads as a risk. Keep tokens internal unless you sell to developers who already think in tokens.
+- **Assuming costs only go down**: Per-token prices tend to fall, but agentic features and model switches can raise cost per task. Model both directions.
+- **Passing every cost cut through immediately**: Frequent price cuts train customers to wait for the next one and erode perceived value. Share savings deliberately, through included usage or new tiers.
+- **Ignoring discounts you are not using**: If cache or batch pricing could cut a feature's cost substantially, the markup model should show that option before anyone raises the price.
+- **Leaving the model unreconciled**: A markup model that is never compared with actual invoices can drift far from reality. Reconcile at least quarterly.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ai-pricing-playbook/METHOD.md) — AI Pricing Playbook: Unit Economics & Tiering
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ai-pricing-playbook/METHOD.md): AI Pricing Playbook
 
 ## Related Skills
 
-- [Designing Usage-Based Pricing Tiers for AI Products](../designing-usage-based-pricing-tiers/SKILL.md)
-- [Choosing Between AI Pricing Models: Seat vs. Usage vs. Outcome](../choosing-ai-pricing-models/SKILL.md)
 - [Calculating AI Inference Unit Economics](../calculating-ai-inference-unit-economics/SKILL.md)
-- [Managing Gross Margins on AI-Powered Features](../managing-gross-margins-on-ai-features/SKILL.md)
-- [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
-- [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
-- [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
+- [Managing Gross Margins on AI Features](../managing-gross-margins-on-ai-features/SKILL.md)
+- [Designing Usage-Based Pricing Tiers](../designing-usage-based-pricing-tiers/SKILL.md)
+- [Benchmarking AI Product Pricing](../benchmarking-ai-product-pricing/SKILL.md)
+
+## Sources
+
+- [Cursor: Clarifying our pricing](https://cursor.com/blog/june-2025-pricing)
+- [a16z: Welcome to LLMflation](https://a16z.com/llmflation-llm-inference-cost/)
+- [Epoch AI: LLM inference price trends](https://epoch.ai/data-insights/llm-inference-price-trends)
+- [Claude API docs: Pricing](https://platform.claude.com/docs/en/about-claude/pricing)
+- [OpenAI API pricing](https://developers.openai.com/api/docs/pricing)
+- [Kyle Poyar: 2026 State of B2B SaaS and AI Monetization](https://www.growthunhinged.com/p/the-state-of-b2b-monetization-in-2026)

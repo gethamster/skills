@@ -1,29 +1,37 @@
 # Examples: Running Periodic Four Fits Audits
 
-## Example: B2B SaaS Company Quarterly Four Fits Audit
+## A regular audit that catches a slipping channel
 
 **Scenario:**
 
-A B2B SaaS company at $15M ARR has been growing 60% YoY but notices growth decelerating over the last two quarters. The VP of Product decides to institute a quarterly reforge four fits audit to diagnose whether the deceleration is a fit issue rather than a simple execution problem.
+Illustrative scenario: a B2B software company runs its audit on a fixed schedule. Top-line growth is on plan, and the group expects a short meeting.
 
 **Walkthrough:**
 
-The team builds a scorecard with indicators for each fit. During the first audit, scores come in as: Market-Product Fit: 4, Product-Channel Fit: 2.5, Channel-Business Model Fit: 3, Business Model-Market Fit: 4.
+The pre-read shows Market Product Fit and Model Market Fit steady. Product Channel Fit has slipped from strong to moderate over the last two audits: conversion from the primary content channel is falling as competitors publish on the same topics. Channel Model Fit is still strong, but payback in that channel has lengthened each period.
 
-The low Product-Channel Fit score surprises leadership. Digging in, the team discovers that their primary growth channel (content marketing + demo requests) works well for SMB customers but poorly for the mid-market segment they've been targeting. Mid-market prospects discovered them through content but expected a self-serve trial—which the product didn't offer. The channel was attracting the right audience, but the product experience didn't fit the channel's expectation.
+The group spends the stress-test on the channel. They agree the decline is gradual decay rather than a sudden break, assign the content lead to test a new format, and assign the growth lead to scope a second channel. Both actions get an indicator and a date, and the next audit opens by reviewing them.
 
-The stress-test reveals that doubling down on mid-market content without fixing the self-serve gap would further degrade Product-Channel Fit and eventually drag down Channel-Business Model Fit (as sales-assisted mid-market deals were 3x more expensive to close). The team assigns two remediation actions: (1) the product lead owns a lightweight self-serve trial MVP by next quarter, and (2) the growth lead owns a channel-specific landing page experiment to better qualify mid-market intent. At the next quarterly audit, Product-Channel Fit scores improve to 3.5, and the growth deceleration begins to reverse.
-
-## Example: Consumer Marketplace Detects Business Model-Market Fit Erosion
+## A marketplace sees its model weakening
 
 **Scenario:**
 
-A two-sided consumer marketplace at $8M in GMV is running its third quarterly four fits audit. Previous audits showed all fits at 3+, but the finance representative notices concerning trends in the pre-populated data.
+Illustrative scenario: a services marketplace takes a commission on each booking. Bookings are growing, and the team runs its audit as usual.
 
 **Walkthrough:**
 
-The finance lead highlights that while GMV is growing, average order value has dropped 22% over two quarters and take rate compression from competitor pressure has reduced net revenue margin from 18% to 13%. When the team scores Business Model-Market Fit, independent scores range from 1.5 to 3.5—the widest spread they've seen.
+The Model Market Fit indicators stand out. Average booking value has fallen for several periods as more buyers choose smaller jobs, and repeat buyers are increasingly arranging jobs directly with providers after the first booking. Revenue per customer is falling even as volume grows.
 
-In discussion, the product team had rated it a 3.5 because supply and demand liquidity metrics looked healthy. The finance team rated it a 1.5 because the current take rate no longer supports the CAC required to grow. The stress-test surfaces that a competitor's recent funding round likely means further take rate pressure within 6 months.
+The group rates the fit moderate and declining. They assign one owner to interview providers about why they move clients off the platform and another to model a subscription option for frequent buyers. They also schedule a triggered audit for when the results are in, rather than waiting for the next regular one.
 
-Using the [Validating Business Model-Market Fit](https://tryhamster.com/skills/validating-business-model-market-fit) lens, the team realizes they need to either introduce a premium tier (increasing ARPU) or shift to a channel with lower CAC (improving Channel-Business Model Fit). They assign the GM to run a willingness-to-pay analysis for premium features and the growth lead to test a referral loop that could reduce blended CAC by 30%. The audit caught what would have been a slow-motion growth stall 2-3 quarters before it became a crisis.
+## A triggered audit after a price change
+
+**Scenario:**
+
+Illustrative scenario: a self-serve product raises its entry price to improve margins. The company's audit policy lists a pricing change as a trigger for an extra audit.
+
+**Walkthrough:**
+
+The team runs the triggered audit a few weeks after the change. Trial signups are stable, but trial-to-paid conversion has dropped, and support tickets show buyers asking for a sales call. The new price has moved the product toward the middle of the ARPU to CAC spectrum.
+
+The group scores Channel Model Fit as weak and checks the options against the other fits. They choose to restore a lower entry plan and move the higher price to a team plan, and set trial-to-paid conversion as the indicator to watch before the next regular audit.

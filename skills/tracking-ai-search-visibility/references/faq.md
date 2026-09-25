@@ -1,25 +1,21 @@
-# FAQ: Tracking and Measuring Your Visibility in AI Search Results
+# FAQ: Tracking Your Visibility in AI Search Results
 
-## What are the best AI SEO tools for tracking visibility in AI search results?
+## Which tools should I use to track AI search visibility?
 
-The best AI SEO tools for tracking AI search visibility include Otterly.ai, Profound, Peec AI, and Scrunch AI for dedicated AI monitoring. Traditional platforms like SEMrush and Ahrefs are also adding AI tracking features. Choose based on which AI platforms matter most to your audience and your query volume needs.
+Start with the free first-party reports: Google Search Console's Generative AI performance report and Bing Webmaster Tools' AI Performance report. Add sampled answers for assistants without reports, either by running a fixed question set manually or with a third-party tool. Google notes that third-party tools have no access to its internal systems, so treat their numbers as samples.
 
-## How often should I track my AI search visibility?
+## How often should I measure?
 
-Run automated monitoring weekly or bi-weekly, with manual audits monthly. AI models update frequently and competitors constantly publish new content, so point-in-time snapshots quickly become outdated. Consistent cadence lets you distinguish real trends from normal response variation.
+Monthly works for most teams, with an extra run after major model or product releases. Export first-party reports on a fixed schedule so you keep a history. More frequent sampling helps only if you have the capacity to act on what it shows.
 
-## Can I track AI search visibility without paid tools?
+## Can I track AI visibility without paid tools?
 
-Yes, but it's time-intensive. You can manually query AI platforms with your target queries, log results in a spreadsheet, and track changes over time. This works for small query sets (under 20 queries) but becomes impractical at scale. Start manually to learn the process, then invest in tools as you scale.
+Yes. The first-party reports are free, and a spreadsheet with a fixed question set run by hand covers other assistants. Manual sampling takes time, so keep the question set focused on the questions that matter most to the business.
 
-## How do I measure ROI of AI search visibility improvements?
+## Why do answers differ for the same question?
 
-Correlate AI visibility gains with referral traffic from AI platforms (trackable via UTM parameters and referrer data in analytics), brand search volume increases, and direct conversion attribution. While direct measurement is still maturing, rising AI visibility consistently correlates with increased brand search demand.
+Assistants generate answers anew each time, retrieval results change, and systems differ in the sources they favor and how sensitive they are to wording. Research comparing AI search engines found significant differences in freshness, domain diversity and phrasing sensitivity. That is why the method keeps wording fixed, runs questions more than once and reports trends.
 
-## Why do AI search results show different answers for the same query?
+## How do I show the return on this work?
 
-AI-generated results are non-deterministic—they're influenced by model temperature settings, conversation context, user location, model version, and real-time data access. This is why single-query snapshots are unreliable and you need multiple runs per monitoring cycle to establish reliable visibility patterns.
-
-## How is tracking AI search visibility different from traditional rank tracking?
-
-Traditional rank tracking measures a fixed position on a SERP. AI visibility tracking measures whether you're mentioned at all, where in a synthesized response, with what accuracy, and in what sentiment. There's no fixed 'position 1'—you're tracking presence and quality of mention across probabilistic, non-deterministic outputs.
+Report outcomes next to visibility: sessions referred by AI assistants, their engagement and conversions, and branded search trends. Keep a change log so you can show which content changes preceded which movements. Be clear about what the data can and cannot attribute.

@@ -1,15 +1,20 @@
 ---
-name: conducting-discovery-research
-description: "This skill teaches you how to use divergent research methods—user interviews, desk research, and observation—to broadly explore the problem space in the first diamond of the double diamond design process."
+name: "conducting-discovery-research"
+description: "Plan and run discovery research for the Double Diamond Discover phase: interviews, field observation and desk research that map the problem space."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: double-diamond
+  method: "double-diamond"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Conducting Discovery Research in the Double Diamond Design Process
+# Conducting Discovery Research in the Double Diamond
 
-> This skill teaches you how to use divergent research methods—user interviews, desk research, and observation—to broadly explore the problem space in the first diamond of the double diamond design process.
+> Plan and run discovery research for the Double Diamond Discover phase: interviews, field observation and desk research that map the problem space.
 
 ## Before you start
 
@@ -24,130 +29,108 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 1-4 weeks per project |
-| Outcome | You'll be able to systematically explore a problem space using multiple research methods, generating a rich body of raw insights that feeds directly into the Define phase. |
-| Prerequisites | Basic understanding of the double diamond framework and its four phases, Familiarity with the concept of divergent vs. convergent thinking, Introductory knowledge of qualitative research methods |
+| Time to Learn | a few days of practice alongside one real project |
+| Outcome | You can plan and run a Discover phase that produces evidence about users, context and constraints, ready for synthesis in Define. |
+| Prerequisites | Familiarity with the four Double Diamond phases, access to users or the people affected, basic interviewing skills |
 | Part of | [Double Diamond](../../methods/double-diamond/METHOD.md) |
 
 ## Overview
 
-The Discover phase is the opening movement of the double diamond design process, and it's where most teams either set themselves up for breakthrough insights or doom themselves to solving the wrong problem. Discovery research is the practice of deliberately broadening your understanding of users, context, and the wider landscape before narrowing down. It's uncomfortable by design—you're actively resisting the urge to jump to solutions.
+Discovery research is the work of the Discover phase, the opening half of the first diamond in the [Double Diamond](../../methods/double-diamond/METHOD.md). Its job is to replace assumptions about a problem with evidence. The Design Council describes the first diamond as helping people "understand, rather than simply assume, what the problem is," and says it involves speaking to and spending time with the people affected by the issue ([Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)).
 
-This skill covers the core divergent research techniques used in the Discover phase: user interviews, desk research (secondary research), contextual observation, and stakeholder engagement. You'll learn when to deploy each method, how to plan a research sprint that balances depth with breadth, and how to capture findings in a way that makes the subsequent [Define phase](https://tryhamster.com/skills/synthesizing-problem-definitions) dramatically more effective.
+The phase is divergent. You are widening your picture of the problem, so you collect more than you will use and hold off on deciding what matters. The Design Council's own study of design in large companies called Discover a "phase of divergent thought" in which the team keeps its perspectives wide, and listed market research, user research, managing information and design research groups among its activities ([Eleven lessons](https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/ElevenLessons_Design_Council%2520%25282%2529.pdf)).
 
-Discovery research matters because the quality of your problem definition—and ultimately your solution—is bounded by the quality of your exploration. Teams that skip or rush this phase consistently report higher rates of rework, misaligned stakeholder expectations, and products that technically work but don't resonate with real users.
+The inputs are a challenge statement (usually someone's first guess at the problem), whatever data the organisation already holds, and access to users and staff. The outputs are raw findings: interview notes, observation logs, photos, analytics extracts, quotes and a list of open questions, all tagged by source. You do not produce a problem statement in this phase. That belongs to Define, where the synthesis skill turns findings into an agreed problem.
+
+Discovery research matters because every later decision rests on it. If Discover only confirms what the sponsor already believed, the problem definition inherits the same blind spots, and the second diamond produces good solutions to the wrong problem. A useful test at the end of the phase is whether the team learned something that changed its mind. If nothing surprised anyone, the research probably went too narrow or too shallow.
+
+This skill covers how to frame the research, which methods to combine, how many sessions to plan, how to capture findings so they survive into synthesis, and how to decide the phase is done.
 
 ## How It Works
 
-The Discover phase operates on the principle of divergent thinking: you intentionally cast a wide net before filtering. Think of it as building a rich, messy map of the territory before choosing which route to take.
+Discovery research works by triangulation. Each method sees part of the problem and misses the rest, so you combine methods whose blind spots differ.
 
-Conceptually, discovery research works by triangulating multiple sources of evidence. No single method gives you the full picture. User interviews reveal motivations and pain points, but people are unreliable narrators of their own behavior. Observation shows you what people actually do, but not why. Desk research gives you scale and context, but lacks the nuance of firsthand contact. By combining these methods, you cross-check assumptions and surface patterns that no single lens would reveal.
+Interviews reveal motivations, mental models and attitudes. They are weak on behaviour, because people report what they remember and what sounds reasonable. The Nielsen Norman Group notes that interviews capture self-reported behaviour and are limited by faulty memory and social desirability bias, and recommends pairing them with observation or behavioural data ([NN/g on user interviews](https://www.nngroup.com/articles/user-interviews/)).
 
-The key mental model is the **research funnel within the diamond**. Even within the divergent Discover phase, you move from broad scanning (what's happening in this space?) to increasingly targeted inquiry (what's really going on for these specific users in this specific context?). But you're still expanding your understanding—not yet narrowing to a single problem statement. That convergence happens in the Define phase, which is the second half of the first diamond in the [Double Diamond](https://tryhamster.com/methods/double-diamond) framework.
+Observation in context shows what people actually do: the workarounds, interruptions and tools they rely on. Field studies take place in the user's own environment and expose problems that never come up in a meeting room ([NN/g on field studies](https://www.nngroup.com/articles/field-studies/)). Diary studies extend observation over days or weeks when the behaviour you care about is spread out in time ([NN/g on diary studies](https://www.nngroup.com/articles/diary-studies/)).
 
-Discovery research also serves a critical organizational function: it builds shared empathy across the team. When designers, product managers, and engineers all hear the same user stories and see the same field observations, alignment happens naturally rather than through persuasion.
+Desk research covers what already exists: analytics, support tickets, previous studies, policy and regulation, and how other organisations handle similar problems. It is cheap and should come first, so interviews spend their time on questions the data cannot answer.
+
+Stakeholder and staff conversations surface constraints. The UK government's service guidance tells discovery teams to learn about constraints from legislation, contracts, legacy technology and existing processes as well as about users ([GOV.UK discovery phase](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works)). Those constraints shape what Define can realistically choose.
+
+Two rules keep the phase divergent. First, collect before you judge: record what you saw and heard without deciding yet which parts are important. Second, go past the obvious users. People who abandoned the service, people who use a competitor, and front-line staff who absorb the service's failures often explain more than satisfied regular users.
+
+The phase ends on evidence, not on a date alone. You stop when new sessions mostly repeat what you have already heard across each segment, and when the open questions you listed at the start have at least partial answers. Guest, Bunce and Johnson found that themes stabilised within about 12 interviews in a fairly homogeneous group, while later work found cross-site studies needed 20-40 ([Bath SDR summary](https://bathsdr.org/sampling/)). Use those figures as a planning guide, and let the repetition you observe make the final call.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Frame the Research Brief
+### Step 1: Write a one-page research brief
 
-Before you start any research, write a one-page research brief that articulates the design challenge, what you already know (and assume), what you need to learn, and who the key stakeholders are. This isn't a hypothesis to prove—it's a compass bearing.
+State the challenge as you received it, what the team already knows, what it assumes, and what it needs to learn. Phrase the open questions as "how" and "what" questions, such as "How do patients get from a referral to a booked appointment today?", since "Do users want X?" invites people to validate an idea instead of describing their lives. List the segments you need to hear from, the constraints on access and time, and who will make the call that Discover is finished. Share the brief with the sponsor before fieldwork so disagreements about scope appear now instead of in the readout.
 
-The brief should include: the business context triggering the project, 3-5 open research questions (e.g., 'How do parents currently manage their children's screen time?' rather than 'Do parents want a screen time app?'), known constraints (timeline, budget, access), and success criteria for the Discover phase itself.
+### Step 2: Start with desk research
 
-Share this brief with your team and stakeholders before research begins. It prevents scope creep and gives everyone a shared reference point.
+Pull what the organisation already has: analytics, support tickets, complaint logs, previous research and any policy or contract that limits the service. Add external material such as published studies and examples from other sectors facing a similar problem. Record each finding with its source so it can be traced later. Use what you learn to sharpen the interview guide and to drop questions the data already answers. Stop when the new material mostly repeats what you have, since desk research can expand without limit.
 
-> **Pro tip:** Write your research questions as 'how' and 'what' questions, not 'do' or 'should' questions. The former invite exploration; the latter invite premature validation.
+### Step 3: Recruit across segments, including edge cases
 
-### Step 2: Step 2: Conduct Desk Research to Map the Landscape
+Decide which differences between people are likely to change their experience, such as frequency of use, channel, ability, role or region, and recruit a few people from each. Include people who dropped out or never started, because they show where the current service fails. Recruit staff who deliver the service as well. Plan more sessions for segments you understand least. Book fewer sessions than you think you need and add more if the first ones keep surprising you.
 
-Start with secondary research before spending time and budget on primary research. Review existing data: analytics, support tickets, previous research reports, competitor analyses, industry reports, academic papers, and market data. This gives you a baseline understanding and helps you avoid asking users questions you could have answered yourself.
+### Step 4: Run interviews about past behaviour
 
-Organize your desk research into themes: user demographics and behaviors, market trends, competitive landscape, analogous domains (industries facing similar challenges), and technology constraints. Use a simple spreadsheet or Miro board to capture sources, key findings, and open questions that emerge.
+Use a short semi-structured guide organised by theme rather than a questionnaire. Ask about specific recent events, for example "Tell me about the last time you did this," which the [NN/g interview guidance](https://www.nngroup.com/articles/user-interviews/) recommends over hypothetical questions. Follow unexpected answers, since they are often where the insight is. Work in pairs when you can, with one person leading and one taking notes, and record with consent. Write a short debrief straight after each session while the details are fresh.
 
-Desk research typically takes 2-5 days depending on the domain. The goal is not exhaustive coverage but sufficient context to make your primary research conversations much sharper.
+### Step 5: Observe people in their own context
 
-> **Pro tip:** Don't just research your direct competitors. Look at analogous experiences in adjacent industries—they often reveal more innovative patterns than your immediate competitive set.
+Watch the task happen where it normally happens: at the desk, on the phone line, in the clinic, on a mobile device on the move. Note tools, workarounds, interruptions and hand-offs between people, since these rarely come up in interviews. [Field studies](https://www.nngroup.com/articles/field-studies/) reveal the gap between what people say and what they do. If the behaviour happens over days or weeks, use a diary study instead of a single visit. Record observations as facts first and interpretations second, clearly separated.
 
-### Step 3: Step 3: Plan and Conduct User Interviews
+### Step 6: Capture findings in one shared, tagged format
 
-User interviews are the backbone of discovery research. Plan for 8-15 interviews across different user segments to reach thematic saturation. Recruit participants who represent the diversity of your user base, including edge cases and non-users who chose alternatives.
+Put every finding in one place, one observation per note or row, with the source, the segment and the date. Keep quotes verbatim. Tag loosely by theme but do not cluster or rank yet, because clustering is the start of Define. Invite the wider team to read or listen to raw material, since shared exposure to users builds agreement faster than a summary does. Keep a running list of open questions and new assumptions you spotted.
 
-Write a semi-structured interview guide with 8-12 open-ended questions organized around your research themes. Start broad ('Tell me about the last time you...') and progressively drill deeper. Leave room for follow-up questions—the best insights often come from the unexpected tangents.
+### Step 7: Decide the phase is done and hand over to Define
 
-Conduct interviews in pairs when possible: one person leads the conversation, the other takes detailed notes. Record sessions (with consent) so you can revisit exact quotes later. Each interview should run 45-60 minutes. Debrief immediately after each session to capture top-of-mind observations while they're fresh.
-
-> **Pro tip:** Ask about specific past experiences, not hypothetical futures. 'Tell me about the last time you had this problem' yields far richer data than 'Would you use a product that does X?'
-
-### Step 4: Step 4: Observe Users in Context
-
-Contextual observation (sometimes called ethnographic fieldwork or contextual inquiry) means watching people in their natural environment as they encounter the problem you're exploring. This method reveals the gap between what people say they do and what they actually do.
-
-Depending on your domain, this might mean visiting a workplace, shadowing a customer through a service journey, or conducting a diary study where users document their experiences over days or weeks. If in-person observation isn't feasible, remote methods like screen recordings, photo diaries, or video ethnography can substitute.
-
-During observation, capture everything: the environment, tools and artifacts in use, workarounds, interruptions, emotional cues, and interactions with others. Avoid interpreting in the moment—just record. You'll make sense of it later in the Define phase.
-
-> **Pro tip:** Bring a camera (with permission). Photos and short video clips are far more persuasive to stakeholders than written notes, and they help the team remember context weeks later.
-
-### Step 5: Step 5: Engage Stakeholders and Subject Matter Experts
-
-Don't limit your discovery to end users. Interview internal stakeholders (product owners, customer support leads, sales teams, engineers) and external subject matter experts. Each group holds a different piece of the puzzle.
-
-Customer support and sales teams are goldmines—they hear user complaints and requests daily. Engineers often understand technical constraints that shape what's possible. Business stakeholders articulate the strategic context and success metrics.
-
-Prepare different interview guides for each group. With stakeholders, focus on business goals, known pain points, and what success looks like. With subject matter experts, explore domain nuances, emerging trends, and historical context that shapes user behavior.
-
-> **Pro tip:** Stakeholder interviews early in discovery also build buy-in. People who feel heard during research are far more likely to champion the findings later.
-
-### Step 6: Step 6: Capture and Organize Raw Findings
-
-As research progresses, you'll accumulate a large volume of raw data: interview transcripts, observation notes, screenshots, quotes, statistics, and artifacts. Resist the urge to synthesize prematurely—that's the Define phase's job—but do organize your data so it's accessible.
-
-Create a research repository using tools like Notion, Dovetail, or even a shared Google Drive. Tag findings by source, participant, theme, and research question. Pull out verbatim quotes and notable observations onto sticky notes (physical or digital) for later affinity mapping.
-
-At the end of each research week, write a brief 'research pulse' update for stakeholders: what you've done, emerging themes (explicitly labeled as preliminary), and what's coming next. This keeps the team engaged and prevents the 'research black hole' problem where weeks pass with no visible output.
-
-> **Pro tip:** Use a consistent tagging system from day one. Retrofitting tags onto hundreds of notes after the research is complete is painful and error-prone.
-
-### Step 7: Step 7: Assess Coverage and Close the Discover Phase
-
-Before transitioning to the Define phase, review your research against the original brief. Have you explored each research question from multiple angles? Are there user segments or contexts you haven't reached? Are you hearing new themes, or have responses started to repeat (thematic saturation)?
-
-If gaps remain, prioritize and fill them with targeted follow-up—a few more interviews, a specific piece of desk research, or a quick observational session. If you've reached saturation across your key questions, you're ready to move into [synthesizing insights to define the problem](https://tryhamster.com/skills/synthesizing-problem-definitions).
-
-End the Discover phase with a research share-out: a 30-60 minute session where the team presents raw findings, favorite quotes, surprising moments, and open questions. This isn't a polished presentation—it's a shared immersion experience that prepares everyone for synthesis.
-
-> **Pro tip:** Create a 'parking lot' for interesting findings that fall outside your current scope. They're valuable for future projects and prevent you from expanding scope in the current one.
+Review coverage against the brief: which segments you heard from, which open questions have answers, and where the evidence is thin. If new sessions in each segment are mostly repeating what you have, move on. Present raw findings, not conclusions, to the team that will synthesise them, and flag the gaps honestly. The GOV.UK guidance notes that ending a discovery by deciding not to proceed is a valid outcome when the research supports it ([GOV.UK discovery phase](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works)).
 
 ## Best Practices
 
-- Triangulate every important finding across at least two different research methods before treating it as a strong signal—interviews, observation, and data should corroborate each other.
-- Recruit for diversity, not convenience. Seek out extreme users, non-users, and edge cases alongside your core audience—they reveal design opportunities that mainstream users can't articulate.
-- Timebox your Discover phase explicitly (typically 2-4 weeks) and communicate the timeline to stakeholders. Open-ended research without a deadline leads to analysis paralysis.
-- Separate data collection from interpretation. During interviews and observation, focus on capturing what people say and do. Save your 'what it means' analysis for dedicated synthesis sessions.
-- Involve at least one non-researcher team member (engineer, PM, or business stakeholder) in live research sessions. First-hand exposure to users builds empathy that no report can replicate.
-- Document your assumptions before starting research. Revisit them at the end of discovery to see which were confirmed, challenged, or completely overturned—this makes the value of research tangible to stakeholders.
+- **Treat the brief's problem as a hypothesis.** The person who commissioned the work described the problem as they see it. Research that only tests that description cannot find the problem they missed.
+- **Combine at least one method for what people say with one for what they do.** Interviews and observation correct each other. A finding that appears in both is far stronger than one that appears in either alone.
+- **Talk to non-users and people who left.** They show where the current offer fails, which satisfied users cannot tell you.
+- **Include delivery staff and partners.** Front-line staff see the failures users experience every day, and they know constraints no dashboard shows.
+- **Separate observation from interpretation in your notes.** "She printed the form and filled it by hand" is a finding. "She distrusts online forms" is a guess to check in synthesis.
+- **Share raw material early.** Clips, quotes and photos seen by engineers and managers build shared understanding that a slide summary cannot.
 
 ## Common Mistakes
 
-- **Jumping to solutions during discovery conversations—asking users 'Would you like feature X?' instead of exploring their actual behaviors and pain points.** — Keep your interview guide focused on past experiences and current behaviors. Ban solution-oriented questions from the Discover phase entirely. You'll ideate in the Develop phase.
-- **Relying on a single research method, typically just user interviews, and treating those findings as the complete picture.** — Use at least three different research methods (e.g., interviews + observation + desk research) to triangulate findings. Each method has blind spots that others compensate for.
-- **Interviewing only the most accessible or vocal users, which creates a skewed understanding of the problem space.** — Build a deliberate recruitment screener that ensures representation across user segments, including reluctant participants, churned users, and people who chose competitor products.
-- **Synthesizing too early—clustering findings into themes after just 3-4 interviews and then using remaining interviews to confirm those early patterns.** — Stay in divergent mode throughout the Discover phase. Do post-session debriefs to capture reactions, but save formal synthesis (affinity mapping, theme creation) for the Define phase after all research is complete.
-- **Producing a 50-page research report that no one reads, effectively wasting the research investment.** — Favor lightweight, shareable formats: a wall of categorized sticky notes, a 10-minute video highlight reel of user quotes, or a 2-page summary with links to the raw data repository.
+- **Asking people to design the solution**: Questions such as "Would you use an app that..." produce polite, unreliable answers. Ask about what people did recently and what got in the way, and leave solution ideas for the second diamond.
+- **Skipping desk research**: Teams that go straight to interviews spend sessions on questions the support logs already answer. Spend a short time on existing data first.
+- **Recruiting only easy-to-reach users**: Regular, satisfied, digitally confident users are the easiest to book and the least informative about failure. Recruit deliberately for the edges.
+- **Synthesising while still collecting**: Clustering and naming themes mid-phase makes later sessions confirm the themes. Tag loosely and hold the clustering for Define.
+- **Ending on the calendar alone**: A fixed end date is useful, but if the last sessions are still surprising you, the problem space is not yet mapped. Extend, or flag the gap explicitly in the handover.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/double-diamond/METHOD.md) — Double Diamond
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/double-diamond/METHOD.md): Double Diamond
 
 ## Related Skills
 
-- [Converging on Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
 - [Synthesizing Insights to Define the Problem](../synthesizing-problem-definitions/SKILL.md)
-- [Facilitating Divergent Ideation in the Develop Phase](../facilitating-divergent-ideation/SKILL.md)
-- [Mapping Divergent and Convergent Thinking Modes](../mapping-divergent-convergent-thinking/SKILL.md)
-- [Creating Double Diamond Process Diagrams](../diagramming-the-double-diamond/SKILL.md)
-- [Choosing Between Double Diamond and Design Thinking](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
-- [Adapting the Double Diamond for UX Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+- [Facilitating Divergent Ideation in the Double Diamond](../facilitating-divergent-ideation/SKILL.md)
+- [Converging on Final Solutions in the Deliver Phase](../converging-on-final-solutions/SKILL.md)
+- [Double Diamond Thinking: Divergent and Convergent Modes](../mapping-divergent-convergent-thinking/SKILL.md)
+- [How to Create a Double Diamond Diagram](../diagramming-the-double-diamond/SKILL.md)
+- [Double Diamond vs Design Thinking: Choosing a Framework](../choosing-between-double-diamond-and-design-thinking/SKILL.md)
+- [Adapting the Double Diamond UX Framework for Design Projects](../adapting-double-diamond-for-ux-projects/SKILL.md)
+
+## Sources
+
+- [Design Council: Framework for Innovation](https://www.designcouncil.org.uk/resources/framework-for-innovation/)
+- [Design Council: Eleven lessons, managing design in eleven global brands](https://www.designcouncil.org.uk/fileadmin/uploads/dc/Documents/ElevenLessons_Design_Council%2520%25282%2529.pdf)
+- [NN/g: User Interviews 101](https://www.nngroup.com/articles/user-interviews/)
+- [NN/g: Field Studies](https://www.nngroup.com/articles/field-studies/)
+- [NN/g: Diary Studies](https://www.nngroup.com/articles/diary-studies/)
+- [GOV.UK Service Manual: How the discovery phase works](https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works)
+- [Bath SDR: How many interviews are enough](https://bathsdr.org/sampling/)

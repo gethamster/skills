@@ -1,25 +1,21 @@
-# FAQ: Evaluating Market-Product Fit
+# FAQ: Evaluating Market Product Fit
 
-## How is market product fit different from product-market fit?
+## Why does Balfour say "Market Product Fit" instead of product-market fit?
 
-In the Four Fits Framework, market product fit specifically emphasizes that the market comes first—you start with market characteristics and needs, then evaluate whether your product satisfies them. Traditional 'product-market fit' often starts with the product and asks if anyone wants it. The order matters because it forces you to deeply understand market dynamics before assessing your product's alignment.
+He reverses the words so the market comes first. The problem exists in the market before any product does, and starting from the product tends to produce a solution looking for a problem. The reversal is a reminder to write the market definition before judging the product. In practice the two phrases describe the same relationship.
 
-## How long does it take to achieve market product fit?
+## What evidence counts as strong fit?
 
-There's no standard timeline. Some teams validate market product fit in weeks if they have deep domain expertise and existing customer access. Others iterate for months or years. The key is to evaluate fit continuously rather than treating it as a binary milestone. Strong fit can also degrade over time as markets evolve.
+Look for agreement across signal types. Retention curves that flatten for a segment, growth that continues through referrals and direct traffic when paid marketing slows, and customers describing the value in their own words are the core signals. A survey where many recently activated users would be very disappointed to lose the product adds weight. Any one signal alone can mislead.
 
-## Can I have market product fit with multiple market segments simultaneously?
+## Can a product have fit with several segments at once?
 
-Technically yes, but practically it's risky for early-stage companies. Each segment requires separate audience hypotheses and potentially different value propositions. Spreading validation efforts across segments dilutes your evidence. Start by achieving strong fit with one segment, then expand to adjacent segments once the first is solidified.
+It can, but early on it is hard to prove, because evidence spread across segments is thin and mixed. Most teams do better finding strong fit in one segment first and then expanding outward. Rate each segment separately so a strong segment is not hidden by weak ones.
 
-## What metrics best indicate strong market product fit?
+## How often should the assessment be updated?
 
-No single metric is definitive. The strongest indicators are high segment-specific retention rates, organic word-of-mouth referrals, and the Sean Ellis 'very disappointed' score above 40% within your target segment. Use these metrics together alongside qualitative evidence from customer interviews for a complete picture.
+Update it whenever the market definition, the product, or the evidence changes materially, and review it as part of a regular four fits audit. Markets shift and competitors arrive, so a strong rating can weaken without any change on your side. Keeping the dated evidence alongside the rating makes each review quicker.
 
-## How does market product fit relate to the other fits in the Four Fits Framework?
+## Should I evaluate this before launch?
 
-Market product fit is the foundational first fit that constrains all others. Your market category determines which channels are available (product-channel fit), viable channels influence business model options (channel-business model fit), and your business model must be sustainable within your market's willingness to pay (business model-market fit). A weakness in market product fit cascades through the entire system.
-
-## Should I evaluate market product fit before or after launching my product?
-
-Both. Pre-launch, validate your market category and audience hypotheses using interviews, competitive analysis, and prototyping. Post-launch, validate value propositions using actual usage data and retention metrics. The evaluation becomes richer and more reliable with real customer behavior data, but waiting until launch to start means you've potentially built the wrong product.
+Yes, in part. Before launch you can test the market definition through interviews and prototype reactions. The product side, especially retention and time to value, needs real usage, so the evaluation gets sharper after launch. Starting early reduces the chance of building for a market that is not there.
