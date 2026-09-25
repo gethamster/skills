@@ -1,25 +1,25 @@
-# FAQ: Facilitating Start Stop Continue Retrospectives
+# FAQ: Facilitating a Start Stop Continue Retrospective
 
 ## How long should a start stop continue retrospective take?
 
-A well-facilitated start stop continue retrospective typically takes 45–60 minutes for a team of 4–8 people. Smaller teams (3–4) can finish in 30 minutes. For larger teams (10+), budget 75 minutes or split into smaller breakout groups to keep the session productive.
+Retrium's guide suggests 30 to 60 minutes depending on team size. A small team after a quiet sprint can finish at the short end. A larger team, or one reviewing a difficult period, needs the longer end and may need more time for the review of what happened. Set the timebox before you start and keep it visible.
 
-## What tools work best for running a remote start stop continue retrospective?
+## Should the facilitator also write notes?
 
-Popular digital tools include Miro, FigJam, EasyRetro, and Parabol. Any tool that supports sticky notes, columns, and dot-voting works well. The key requirement is that all participants can add notes simultaneously and anonymously during the silent brainstorming phase.
+Yes, if the facilitator is a member of the team. Write your notes during the silent writing phase like everyone else, before you start grouping. When you read and group, treat your own notes like anyone else's and avoid giving them extra attention. If you are an outside facilitator, stay out of the content.
 
-## Should the manager or team lead facilitate the retrospective?
+## What if nobody writes anything in the Stop column?
 
-Ideally, no. When a manager facilitates, team members may self-censor—especially in the Stop column. Have a Scrum Master, agile coach, or a rotating team member facilitate instead. If the manager must facilitate, explicitly reinforce psychological safety ground rules and consider using anonymous input.
+An empty Stop column is a signal to look at safety. Try anonymous notes, remind the group of the ground rules, and ask whether there are topics people feel they cannot raise. If the team is new, a low-stakes warm-up round can help before the real session.
 
-## How many action items should come out of a start stop continue retrospective?
+## How many actions should a session produce?
 
-Aim for 2–3 action items maximum. Research on habit change and team improvement consistently shows that fewer, well-owned commitments lead to higher follow-through than long lists. If your team completes all action items before the next retro, you can always take on more.
+Produce as many as the team can finish before the next session, which is usually a small number. Each action needs a volunteer owner and a review date. If the vote leaves many strong themes, keep the rest on the board and revisit them next time.
 
-## How often should a team run a start stop continue retrospective?
+## Can we run it asynchronously?
 
-Most agile teams run retrospectives at the end of each sprint—typically every 1–2 weeks. Teams not using sprints can run them monthly or after major milestones. The key is consistency: regular retrospectives create a rhythm of continuous improvement that occasional sessions cannot match.
+Yes. Collect notes on a shared board before the meeting, keep them hidden until a set time, and use the call for grouping, voting and deciding. The decision step benefits from live discussion, so keep at least that part synchronous if you can.
 
-## What's the difference between a start stop continue retrospective and other retrospective formats?
+## How is this different from other retrospective formats?
 
-The start stop continue retrospective is simpler and more action-oriented than formats like the sailboat or 4Ls. Its three categories map directly to behavioral changes—start new things, stop harmful things, keep good things. This directness makes it ideal for teams new to retrospectives or when you want to move quickly from reflection to committed action items.
+Start Stop Continue asks directly for decisions, while formats such as the 4Ls or Mad Sad Glad are better for reflection and feelings. Many teams gather data with another format and use Start Stop Continue to decide. The parent method page compares the formats in more detail.

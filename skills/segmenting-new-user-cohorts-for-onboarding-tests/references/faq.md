@@ -1,35 +1,21 @@
-# FAQ: Segmenting New User Cohorts for Onboarding Experiments
+# FAQ: PostHog Experiment Cohort Filters for New Users
 
-## How do I define 'new user' if my product does not have a clear registration event?
+## Can I target a PostHog experiment at a cohort?
 
-Use PostHog's `$initial_referrer`, `$initial_current_url`, or the automatically captured `$created_at` person property as proxies. If users can access your product without registering (for example, a freemium tool with anonymous usage), set a custom `first_meaningful_action_at` property when the user performs their first significant action, such as creating a project or saving a file. Use this timestamp as your cohort filter instead of a registration date. The key is choosing a moment that reliably distinguishes first-time engagement from return usage.
+Yes, through the release conditions of the experiment's flag, which you edit after saving the draft. The cohort must be usable as a flag target: dynamic cohorts built only from person properties work, and static cohorts work. Dynamic cohorts with behavioral or lifecycle criteria do not, so snapshot them as static or use a person property instead.
 
-## Should I create the cohort before or after setting up the feature flag?
+## What is the most reliable way to define a new user?
 
-Create the cohort first. The feature flag configuration screen lets you select an existing cohort as a release condition, but you cannot create a new cohort inline during flag setup. Building the cohort first also lets you verify its membership count and spot-check profiles before anything is connected to the experiment. If the cohort looks wrong, you can fix it without risk of accidentally exposing a broken experiment to users.
+A person property your code sets at signup, such as a signup date or an onboarding version. It can be matched directly in a release condition and does not wait for cohort recalculation. Make sure the property is available to the client when the flag is read, for example by passing it to `identify()`.
 
-## How long should I wait after instrumenting new person properties before launching the experiment?
+## Why do some new users get no variant?
 
-Wait at least 48 to 72 hours after deploying the tracking code that sets new person properties. This buffer lets you verify that properties are being set consistently, catch any instrumentation bugs in production, and accumulate enough profiles to validate your cohort filters against real data. Check that the property appears on 95%+ of new sign-ups during this window. If the hit rate is lower, investigate missing code paths (such as social login flows or mobile app sign-ups that bypass your main registration handler).
+Usually because the flag was evaluated before the property it depends on was available, which PostHog's troubleshooting guide says is most likely for new users in onboarding. The exposure then carries no valid variant and the user is dropped. Pass the property with the flag request, bootstrap the value, or evaluate on the server.
 
-## Can I use PostHog's built-in 'first seen' or 'initial properties' instead of custom person properties?
+## Is a release condition enough on its own?
 
-PostHog automatically sets `$initial_referrer`, `$initial_current_url`, `$initial_browser`, and similar properties on first identification. However, PostHog does not automatically set a `$created_at` property in all configurations. If your setup does capture `$created_at` automatically, you can use it for temporal filtering. Check a few recent profiles to confirm.
+It controls assignment, but the code controls exposure. Check eligibility in code before reading the flag so users who match the condition but will not see the change are not exposed. PostHog's best practices show this ordering.
 
-The advantage of custom properties like `created_at` or `has_completed_onboarding` is that you control exactly when they are set and what they mean. Built-in properties may be set at unexpected times, such as when a user is first seen as anonymous rather than when they register.
+## How often do dynamic cohorts update?
 
-## What happens if a user qualifies for the cohort, gets assigned a variant, and then later stops qualifying?
-
-PostHog's feature flag assignment is sticky by default. Once a user receives a variant, they keep that variant for the duration of the experiment even if their person properties change. For example, if a user completes onboarding and `has_completed_onboarding` flips to true, they remain in the experiment with their original variant. This is correct behavior.
-
-You want to track their full journey from first exposure through conversion, not drop them mid-experiment. However, they will not be included in the cohort's current member count, which can cause confusion during monitoring. Track experiment participation through PostHog's experiment results page rather than the cohort member count.
-
-## How do I handle PostHog experiments targeting new users across both web and mobile platforms?
-
-Use a server-side person property set during registration that is platform-agnostic. If you set `created_at` from your backend API when the account is created, the property exists regardless of whether the user signed up on web, iOS, or Android. Your cohort filters on this property will work across all platforms. The feature flag evaluation then happens per-platform using the same underlying person profile.
-
-Avoid setting the cohort-defining property from the client SDK because different platforms may have different initialization timing, leading to inconsistent property availability.
-
-## Why does my PostHog experiments cohort for new users include users I did not expect?
-
-The most common causes are: person property values with unexpected formats (for example, a `created_at` stored as a Unix timestamp integer rather than an ISO 8601 string, which breaks date comparison operators), OR logic on the cohort filters instead of AND logic, or anonymous user profiles that received properties during pre-identification tracking. Open the cohort, click on a few unexpected members, and examine their person properties. Compare the actual property values to your filter conditions character by character. Also check whether PostHog has merged multiple anonymous profiles into one identified profile, which can carry over properties from unexpected sessions.
+PostHog updates dynamic cohorts once every 24 hours. That delay is another reason to avoid them for targeting brand new users, who may not appear in a cohort until well after they finish onboarding. Realtime cohorts are described as an early beta that most projects do not have yet.

@@ -1,15 +1,20 @@
 ---
-name: mining-customer-language-for-copy
-description: "This skill teaches you how to extract the exact words, phrases, and emotional triggers your customers already use—then weave them into copy that converts because it sounds like their own inner monologue."
+name: "mining-customer-language-for-copy"
+description: "Mine customer language for copy: collect the exact words buyers use in reviews, interviews and tickets, then build voice of customer copy from them."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: copywriting-framework
+  method: "copywriting-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mining Customer Language for Persuasive Copy: Copywriting for Beginners
+# Mining Customer Language for Persuasive Copy
 
-> This skill teaches you how to extract the exact words, phrases, and emotional triggers your customers already use—then weave them into copy that converts because it sounds like their own inner monologue.
+> Mine customer language for copy: collect the exact words buyers use in reviews, interviews and tickets, then build voice of customer copy from them.
 
 ## Before you start
 
@@ -24,156 +29,102 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Beginner |
-| Time to Learn | 45-90 minutes |
-| Outcome | You'll stop guessing what language resonates with your audience and start writing copy that mirrors exactly how they think and speak, leading to measurably higher engagement and conversions. |
-| Prerequisites | Access to customer reviews, support tickets, or interview transcripts, Basic understanding of what conversion copy is, A spreadsheet or note-taking tool for organizing findings |
+| Time to Learn | A few hours for the first swipe file |
+| Outcome | You have a file of verbatim customer quotes, grouped by theme and tagged by source, that you can draw headlines, benefits and objections from. |
+| Prerequisites | Access to reviews, support tickets, call notes or interview recordings, a spreadsheet or document to collect quotes |
 | Part of | [Copywriting Framework](../../methods/copywriting-framework/METHOD.md) |
 
 ## Overview
 
-Most copywriting advice tells you to "know your audience." But what does that actually mean in practice? Mining customer language is the concrete, repeatable process behind that vague instruction. Instead of inventing clever phrases at your desk, you go directly to the source—reviews, interviews, support tickets, forum posts, and sales call transcripts—and extract the exact words your customers already use to describe their problems, desires, and objections.
+Mining customer language for copy means collecting the exact words customers use to describe their problem, the outcome they want and the doubts that slowed them down, then writing copy from those words. It is the research step of the [copywriting framework](../../methods/copywriting-framework/METHOD.md), and it is where voice of customer copywriting starts. Copy built from those phrases reads as if it were written for the reader, because in a sense the reader wrote it.
 
-This is arguably the single most important skill in copywriting for beginners because it removes the biggest obstacle new copywriters face: the blank page. When you have a spreadsheet full of real customer phrases organized by theme, writing persuasive copy becomes an assembly job rather than a creative one. You're not trying to be clever; you're reflecting your customer's own thoughts back to them.
+The reason is simple. Product teams describe the product in the terms they built it with. Customers describe the problem in the terms they lived it with. Copy written in the team's words asks the reader to translate, and scanning readers rarely do. Copy written in the customer's words lets the reader recognize the situation at once.
 
-Within the [Copywriting Framework](https://tryhamster.com/methods/copywriting-framework), mining customer language is the foundational research step that feeds every other skill—from [writing benefit-driven headlines](https://tryhamster.com/skills/writing-benefit-driven-headlines) to [crafting CTAs](https://tryhamster.com/skills/crafting-high-converting-ctas). Master this, and every piece of copy you write becomes more specific, more believable, and more persuasive.
+Corey Haines's [customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md) makes one rule central: capture exact quotes instead of paraphrases. A paraphrase quietly turns a vivid customer phrase back into company language, which loses the thing you went looking for. The same skill lists what to extract from each source: the job the customer is trying to get done, pain points, trigger events, desired outcomes, exact vocabulary, and the alternatives they considered.
+
+You do not need your own customers to start. Joanna Wiebe of Copyhackers teaches [Amazon review mining](https://copyhackers.com/write-copy-amazon-review-mining/) as a reliable way to find messages that communicate with prospects, and the Copyhackers [rapid-fire method](https://copyhackers.com/how-to-do-rapid-fire-review-mining/) explicitly covers reviews across your whole category as well as your own product. Reviews of competing and adjacent products, community threads and a handful of interviews can fill a first file before launch.
+
+The output is a working document: quotes grouped by theme, each with its source, and a short list of phrases you plan to use in specific places on the page. Every other skill in the method draws on it, from [writing benefit-driven headlines](../writing-benefit-driven-headlines/SKILL.md) to handling objections on a landing page.
 
 ## How It Works
 
-Customer language mining works because of a psychological principle called **the mirror effect**: when people see their own words and thoughts reflected back to them, they feel instantly understood. That feeling of "this company gets me" is the single strongest driver of conversion.
+The process has three parts: collect, sort and place.
 
-The technique operates on a simple insight: your customers have already written your best copy for you. They've described their frustrations in Amazon reviews. They've articulated their dream outcomes in forum posts. They've revealed their real objections in support tickets. Your job isn't to invent persuasive language—it's to find it, organize it, and deploy it strategically.
+Collecting starts with the sources closest to buying decisions. Sales call notes and recordings show the words people use while they are still deciding. Support tickets show where the product surprised or frustrated them. Interviews let you ask why someone bought and what almost stopped them. Reviews and community threads show how people talk when nobody from the company is listening. For reviews, the Copyhackers method uses a search that restricts results to review pages and adds a trigger phrase such as "tired of", then swaps in other phrases like "frustrated by" or "wanting" to widen the net ([Copyhackers](https://copyhackers.com/how-to-do-rapid-fire-review-mining/)). The same article lists what to look for: problems, the solutions people tried instead, motivations, features they praise, and anxieties that held them back.
 
-Here's why this matters mechanically: professional copywriters and amateurs use different vocabularies. Amateurs write from their own perspective ("Our solution leverages AI to optimize workflows"). Professionals write from the customer's perspective ("I was spending 3 hours every Monday on reports that nobody read"). The difference in conversion rates between these two approaches is often 2-5x. Mining customer language bridges that gap instantly, even for beginners, because you're borrowing your customer's voice rather than projecting your own.
+Sorting turns a pile of quotes into themes. Group quotes that describe the same pain, outcome or objection, even when the wording differs. Haines's [customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md) suggests scoring each theme by how often it appears and how strongly it is felt, and labeling each insight with a confidence level based on how many independent sources support it. It also warns about sample bias: online reviewers skew toward power users and people with strong opinions, and support tickets skew toward problems. A theme that appears in only one kind of source needs a second look before it heads the page.
 
-The process follows a funnel: **Collect → Categorize → Prioritize → Deploy**. You gather raw language from multiple sources, sort it into themes (pain points, desired outcomes, objections, emotional triggers), identify the phrases that appear most frequently or carry the most emotional weight, and then place them strategically in your headlines, subheads, body copy, and calls to action.
+Placing is where research becomes copy. The strongest pain phrases are candidates for headlines and problem sections. Outcome phrases feed benefit statements and calls to action. Objection phrases become FAQ questions and the microcopy next to buttons. Trigger events tell you what the reader was doing just before they arrived, which shapes the opening line of an email or ad.
+
+Two cautions apply throughout. First, jargon is relative: NN/g's article on [technical jargon](https://www.nngroup.com/articles/technical-jargon/) notes that whether a word counts as jargon depends on who is reading it, so a term your buyers use among themselves may be exactly right for them. Second, quoting a person in your copy is different from learning from them. A research quote used as a testimonial needs permission, and the FTC's [Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) require that endorsements reflect the endorser's honest opinion.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify Your Best Language Sources
+### Step 1: List your language sources
 
-Before you start collecting, map out where your customers are already talking about their problems and desires. The richest sources are typically:
+Write down every place customers describe the problem in their own words: call recordings, sales notes, support tickets, onboarding surveys, cancellation reasons, interviews, reviews of your product, reviews of competing products, and community threads. Mark which ones you can access this week. Aim for at least three different kinds of source so no single bias dominates. If the product is new, lean on competitor reviews and a few short interviews with people who have the problem.
 
-- **Product reviews** (yours and competitors') on Amazon, G2, Capterra, or app stores
-- **Support tickets and chat logs** where customers describe problems in their own words
-- **Sales call recordings or transcripts** where prospects reveal objections and goals
-- **Reddit threads, Facebook groups, and forums** where your audience discusses challenges
-- **Customer interviews** (even 5-10 are gold)
-- **Survey open-text responses**
+### Step 2: Collect verbatim quotes with their source
 
-Prioritize sources where customers write at length and with emotion. A 3-star Amazon review with two paragraphs of specific complaints is worth more than a hundred 5-star "Great product!" reviews.
+Copy each useful quote word for word into one document, with the source, the date and anything you know about the speaker's role or situation. Do not tidy the grammar. Use the [Copyhackers review mining searches](https://copyhackers.com/how-to-do-rapid-fire-review-mining/) to find review passages that start with frustration phrases. Keep going until new sources mostly repeat themes you already have.
 
-> **Pro tip:** Competitor reviews are often more valuable than your own because customers are more candid about what's missing—and that's exactly the language you can use to position your offering.
+### Step 3: Sort quotes into themes
 
-### Step 2: Step 2: Collect Raw Language in a Structured Swipe File
+Group the quotes under problems, desired outcomes, alternatives tried, objections and trigger events. Within each group, cluster quotes that say the same thing in different words. Note how many sources support each cluster and how strongly people express it, following the frequency and intensity scoring in Haines's [customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md). Flag clusters that come from only one kind of source.
 
-Create a spreadsheet with these columns: **Source**, **Exact Quote**, **Theme**, **Emotion**, and **Potential Use** (headline, body, CTA, testimonial, etc.).
+### Step 4: Pick the phrases you will use
 
-Read through your sources and copy-paste any phrase that jumps out. You're looking for:
+From each strong cluster, choose the one or two quotes that say it most vividly and most plainly. Prefer phrases that name a concrete situation over general complaints. Check that the phrase would make sense to a stranger reading it in a headline. Keep the shortlist small enough that each phrase has a job.
 
-- **Vivid pain descriptions**: "I was drowning in spreadsheets every Friday afternoon"
-- **Desired outcomes stated emotionally**: "I just want to feel confident when I hit publish"
-- **Specific before/after language**: "Before I found this, I was spending 4 hours on something that now takes 20 minutes"
-- **Objections and hesitations**: "I almost didn't buy because I thought it was just another…"
-- **Surprising word choices**: unusual metaphors or phrases that feel authentic
+### Step 5: Map phrases to places on the page
 
-Don't filter yet. Collect everything that feels real and specific. Aim for at least 50-100 phrases in your initial pass.
+Assign each chosen phrase to a location: headline, subhead, problem section, benefit bullets, objection answers, button microcopy or email subject lines. Pain phrases usually suit headlines and problem sections, outcome phrases suit benefits and calls to action, and objection phrases suit FAQs. Write the map down so other writers and agents use the same language.
 
-> **Pro tip:** Copy the exact words, including grammatical imperfections. "I was literally pulling my hair out" is more persuasive than any polished version you'd write.
+### Step 6: Draft with the phrases as the skeleton
 
-### Step 3: Step 3: Categorize Phrases by Theme and Emotion
+Write the first draft by placing the chosen phrases first and building the connecting sentences around them. Edit the phrases only as much as clarity requires. When you need a sentence the research does not cover, write it in the same plain register the customers used. Keep the source of any quote you plan to show as a testimonial and ask for permission before publishing it.
 
-Once you have a critical mass of phrases, sort them into categories. Common categories include:
+### Step 7: Refresh the file on a schedule
 
-- **Pain points** (what's frustrating, broken, or time-consuming)
-- **Desired outcomes** (what they wish would happen)
-- **Objections** (reasons they almost didn't buy or are hesitant)
-- **Trigger events** (what made them start looking for a solution)
-- **Emotional states** (fear, frustration, hope, relief, pride)
-- **Competitor complaints** (what they hate about current alternatives)
-
-As you categorize, you'll start seeing patterns. Maybe 15 different customers all describe the same problem using variations of the same phrase. Those repeated phrases are your highest-value copy assets.
-
-> **Pro tip:** Highlight any phrase that appears three or more times across different sources. Frequency = resonance, and resonance = conversion.
-
-### Step 4: Step 4: Identify Your Top 10-15 Power Phrases
-
-From your categorized swipe file, select the 10-15 phrases that are most specific, most emotional, and most frequently repeated. These are your "power phrases"—the language that will do the heavy lifting in your copy.
-
-Rank them by a simple scoring method:
-- **Frequency**: How often does this phrase (or close variations) appear? (+1 for each occurrence)
-- **Specificity**: Does it include concrete details like numbers, timeframes, or scenarios? (+1 if yes)
-- **Emotion**: Does reading it make you feel something? (+1 if yes)
-
-A phrase like "I stopped dreading Monday mornings" scores high on all three. A phrase like "It's pretty good" scores zero. Your power phrases become the backbone of your copy—especially your headlines, subheads, and opening lines.
-
-### Step 5: Step 5: Map Power Phrases to Copy Locations
-
-Now connect your best language to specific places it will appear. This is where mining becomes writing.
-
-- **Headlines and subheads**: Use pain-point phrases or desired-outcome phrases. "Stop drowning in spreadsheets every Friday" is a headline pulled directly from customer language.
-- **Opening paragraphs**: Use trigger-event language. "If you're spending more time formatting reports than actually analyzing data…"
-- **Benefit sections**: Use before/after language. "Go from 4 hours of manual work to a 20-minute automated workflow."
-- **Objection handling**: Use the exact objections you collected, then answer them.
-- **CTAs**: Use desired-outcome language. "Start feeling confident when you hit publish."
-- **Testimonials**: Select real quotes that contain your power phrases.
-
-This mapping exercise transforms your swipe file from a research document into a copy outline.
-
-> **Pro tip:** When working on [page-specific copy](https://tryhamster.com/skills/writing-page-specific-website-copy), match the emotional intensity of your customer language to the page context. Homepage copy uses aspirational outcome language; pricing page copy addresses objection language.
-
-### Step 6: Step 6: Write Your First Draft Using Customer Language as the Skeleton
-
-With your phrases mapped to locations, write your draft by building sentences and paragraphs around the customer language. The technique is simple: use their exact phrase as the core, then add just enough context to make it flow.
-
-For example, if your power phrase is "I was literally spending my entire Sunday doing bookkeeping," your copy might read:
-
-> *You shouldn't have to spend your entire Sunday doing bookkeeping. [Product] automates the tedious parts so you can close your laptop by Friday afternoon.*
-
-Notice how the customer's phrase does the emotional work. You're not inventing persuasion—you're framing it. This approach aligns perfectly with the [Copywriting Framework's](https://tryhamster.com/methods/copywriting-framework) emphasis on clarity over cleverness and customer language over jargon.
-
-> **Pro tip:** Read your draft out loud. If any sentence sounds like it came from a marketing department rather than a real person, replace it with a phrase from your swipe file.
-
-### Step 7: Step 7: Validate and Iterate with Fresh Customer Data
-
-Customer language mining isn't a one-time exercise. After publishing your copy, continue collecting new phrases from incoming reviews, support interactions, and sales calls. Compare your copy's language against the latest customer data.
-
-Set up a simple feedback loop:
-1. Track which headlines and CTAs convert best (these likely contain the most resonant customer language)
-2. Add new phrases to your swipe file monthly
-3. Watch for shifts in language—customers may start describing new pain points or using different words as your market evolves
-4. A/B test new customer phrases against your current copy
-
-Over time, your swipe file becomes a living asset that makes every new piece of copy faster and more effective to produce.
+Add new quotes from calls, tickets and tests as they come in, and review the themes whenever the product, price or audience changes. Retire phrases tied to problems the product no longer has. When a test shows a phrase outperforming the old copy, note that next to the quote so the evidence stays with the language.
 
 ## Best Practices
 
-- Always preserve the original phrasing—don't 'improve' customer language with corporate synonyms. "I hated doing payroll" converts better than "Payroll administration was a pain point."
-- Mine negative reviews of competitors specifically for unmet needs—these gaps become your strongest positioning angles and headline material.
-- Create a dedicated "Voice of Customer" document that your entire team can access, tagging phrases by persona, use case, and funnel stage for reuse across all marketing channels.
-- Prioritize 3-star reviews over 1-star or 5-star reviews. Three-star reviewers provide the most balanced, detailed, and nuanced language about both problems and benefits.
-- When conducting customer interviews, ask "Can you tell me about the last time you tried to solve this problem?" Stories yield dramatically richer language than direct questions like "What features do you want?"
-- Cross-reference your mined language with your analytics data. If customers keep mentioning a specific pain point and your landing page addressing it has the highest conversion rate, double down on that language across all touchpoints.
+- Record quotes verbatim with their source. Haines's [customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md) treats exact quotes as the point of the exercise, because paraphrase erases the customer's wording.
+- Mix source types. Reviews, tickets and interviews each carry a different bias, and a theme that shows up in all three is far safer to lead with than one that shows up in one.
+- Read reviews of competing products as well as your own. The [Copyhackers method](https://copyhackers.com/how-to-do-rapid-fire-review-mining/) covers the whole category, which is also how you find the language of people who have not heard of you yet.
+- Capture objections with the same care as pains. The doubts that nearly stopped a purchase are the raw material for FAQs, guarantees and the microcopy next to buttons.
+- Keep domain vocabulary your buyers really use. As NN/g's article on [technical jargon](https://www.nngroup.com/articles/technical-jargon/) explains, a term is jargon only relative to its reader.
+- Share the file. One maintained document keeps every writer, page and agent using the same words.
 
 ## Common Mistakes
 
-- **Paraphrasing customer language into professional-sounding copy** — Use the customer's exact words, even if they're grammatically imperfect or colloquial. "I couldn't figure out how to get my team on the same page" converts better than "Achieving team alignment was challenging." The rawness is what makes it persuasive.
-- **Mining only positive reviews and testimonials** — Negative reviews and support complaints are where the real gold is. Pain-point language is more persuasive than praise because it triggers recognition ("That's exactly my problem!"). Mine complaints, frustrations, and objections just as aggressively as success stories.
-- **Collecting phrases but never organizing them into a usable system** — A giant unsorted document of customer quotes is useless under deadline pressure. Invest 30 minutes categorizing your phrases by theme (pain, outcome, objection, trigger) and tagging them by potential use (headline, CTA, body). This turns research into a ready-to-use copywriting toolkit.
-- **Relying on a single source of customer language** — Reviews, support tickets, and interviews each reveal different facets of the customer experience. Reviews show outcomes and emotions; support tickets show specific friction points; interviews reveal deeper motivations. Use at least three different source types to get a complete picture.
-- **Using customer language without context or framing** — Dropping a customer phrase into copy without connecting it to your product's solution creates empathy but not conversion. Always pair the customer's problem language with your specific, concrete solution. The formula is: [Their pain in their words] → [Your solution with a specific outcome].
+- **Paraphrasing while collecting**: Summaries such as "users find setup hard" lose the exact wording that makes copy land. Copy the sentence as written and summarize only in the theme label.
+- **Mining only happy customers**: Testimonials and five-star reviews tell you what people praise and say little about what almost stopped them. Include critical reviews, cancellation reasons and support tickets.
+- **Treating one loud quote as a theme**: A single vivid comment can be an outlier. Check how many independent sources support it before it becomes a headline.
+- **Publishing research quotes as testimonials**: A quote collected for research is not permission to feature the person. Ask first, and follow the FTC's rule that an endorsement must reflect the endorser's honest opinion.
+- **Letting the file go stale**: Language shifts as the market and the product change. A file built for last year's buyer can steer this year's copy wrong.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/copywriting-framework/METHOD.md) — Copywriting Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/copywriting-framework/METHOD.md): Copywriting Framework
 
 ## Related Skills
 
-- [Translating Product Features into Customer Benefits](../translating-features-into-benefits/SKILL.md)
-- [Crafting High-Converting Call-to-Action Copy](../crafting-high-converting-ctas/SKILL.md)
-- [Writing Clarity-First Web Copy That Eliminates Jargon](../writing-clarity-first-web-copy/SKILL.md)
-- [Writing Email Copy Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
-- [Structuring Landing Page Copy for Maximum Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
+- [How to Translate Features into Benefits](../translating-features-into-benefits/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
-- [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
+- [Writing Clarity-First Web Copy Without Jargon](../writing-clarity-first-web-copy/SKILL.md)
+- [Structuring Landing Page Copy for Conversion](../structuring-landing-page-copy-for-conversion/SKILL.md)
+- [Call-to-Action Copywriting: Writing High-Converting CTAs](../crafting-high-converting-ctas/SKILL.md)
+- [Email Copywriting: Writing Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
+- [Page-Specific Website Copy: Homepage, Landing, Pricing](../writing-page-specific-website-copy/SKILL.md)
+
+## Sources
+
+- [Corey Haines: customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md)
+- [Copyhackers: Rapid-fire review mining](https://copyhackers.com/how-to-do-rapid-fire-review-mining/)
+- [Copyhackers: Amazon review mining](https://copyhackers.com/write-copy-amazon-review-mining/)
+- [NN/g: Dealing with Technical or Professional Jargon](https://www.nngroup.com/articles/technical-jargon/)
+- [FTC: Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking)

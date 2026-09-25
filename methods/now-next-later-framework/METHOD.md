@@ -1,177 +1,182 @@
 ---
-category: Product
+name: "now-next-later-framework"
+category: "Product"
+description: "The Now Next Later framework from Janna Bastow sorts roadmap work by confidence instead of dates. How it works and how it compares to a quarterly roadmap."
+metadata:
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Now Next Later Framework: How to Build Roadmaps Without False Deadlines
+# Now Next Later Framework: A Product Roadmap Without Dates
 
-> Created by **Janna Bastow** — [https://www.prodpad.com/blog/invented-now-next-later-roadmap/](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)
+> Created by **Janna Bastow** - [https://www.prodpad.com/blog/invented-now-next-later-roadmap/](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)
 
 ## Overview
 
-Product teams have a trust problem with roadmaps. Traditional timeline roadmaps promise delivery dates that sound precise but aren't. A feature slated for "Q3" becomes a commitment the moment a stakeholder sees it on a slide, even if the team scoped it on a napkin over lunch. When that date slips, credibility erodes. The Now Next Later framework was designed to solve exactly this pattern. Instead of plotting work on a calendar, it sorts initiatives into three columns based on how well understood they are and how soon the team intends to act on them.
+The Now Next Later framework is a product roadmap format that replaces the calendar with three columns. Now holds the work the team is confident about and is actively doing. Next holds the problems it expects to pick up once the current work wraps up. Later holds the larger, fuzzier problems the team wants to keep in view without committing to them. Janna Bastow, co-founder of ProdPad, describes the idea in her post [Why I Invented the Now-Next-Later Roadmap](https://www.prodpad.com/blog/invented-now-next-later-roadmap/), which opens by saying the format "exists because timeline roadmaps aren't effective, simple as that." The question this page answers most often, how a Now Next Later roadmap differs from a quarterly roadmap, has its own section below.
 
-Janna Bastow, co-founder of ProdPad, introduced the Now Next Later roadmap in 2012 after years of watching product managers struggle under the weight of date-driven commitments. Bastow's core observation was simple: most teams don't actually lack a sense of priority. They lack a format that lets them communicate priority without implying a deadline. The three-horizon model gave PMs a way to say "this is what matters most, this is what comes after, and this is where we're thinking long-term" without anyone pulling out a calendar. The framework gained traction quickly in the lean and agile product communities, partly because it required no new tooling and partly because it mapped naturally onto how product discovery actually works.
+Bastow tells the origin story twice. In the recent version she writes that at her previous companies product planning ran out of Jira and a release planner, which nobody outside the team could read, and that she "needed something a stakeholder could understand in about ten seconds." So she "dropped the dates and drew three columns: Now, Next, and Later." Her longer account, [The Birth of the Modern Roadmap](https://www.prodpad.com/blog/the-birth-of-the-modern-roadmap/), adds the detail. She and fellow product manager Simon Cast were building the first version of ProdPad, which at the time had a timeline roadmap. Early users most wanted a way to shift many roadmap items at once, and asking why revealed that nobody was delivering to their timelines. At a cafe in Wandsworth, south London, "nearing the end of 2012," Cast sketched three columns on a napkin: Current, Near term and Future. Those were the first column names, and Now, Next and Later came later.
 
-The mental model underneath the framework is a confidence gradient. Items in "Now" are high-confidence. The problem is validated, the solution is scoped, the team has capacity, and the work is underway or about to start. "Next" items sit in the middle of the gradient. The problem is real and probably validated, but the solution still needs discovery work, dependencies need to be resolved, or capacity isn't available yet. "Later" items are low-confidence by design. They represent strategic bets, customer requests worth tracking, or ideas the team believes in but hasn't validated. The further right on the board an item sits, the less detail it should have, and that's the point. Forcing detailed specs on a "Later" item is wasted effort because the world will change before the team gets there.
+The model underneath the columns is a confidence gradient. In a [podcast interview with Userlist](https://userlist.com/podcast/now-next-later-roadmapping-with-janna-bastow/), Bastow says the three buckets "were sort of taken from the cone of uncertainty," the software estimation idea that estimates are least reliable at the start of a piece of work. Steve McConnell's description of [the Cone of Uncertainty](https://www.construx.com/books/the-cone-of-uncertainty/) puts the error at the initial concept stage at up to four times too high or too low, and says the cone narrows only as decisions remove variability. ProdPad's glossary therefore calls the columns [confidence horizons](https://www.prodpad.com/glossary/confidence-horizons/): Now is high confidence, Next is moderate and Later is low. Items move toward Now because the team has learned enough, and the passing of time on its own does not move them.
 
-Compared to quarterly roadmaps, the Now Next Later framework avoids the fiction of precise scheduling while still offering directionality. Compared to kanban boards, it adds a strategic layer that goes beyond "to-do, doing, done" by explicitly including future thinking. It sits somewhere between the two, borrowing kanban's visual simplicity and the quarterly roadmap's forward-looking scope. Some teams layer it on top of frameworks like RICE or MoSCoW. RICE helps score individual items, and Now Next Later provides the container for sequencing them once scored.
+The format changes what goes on the roadmap as well as how it is laid out. Bastow's advice is to [prioritize problems rather than ideas](https://www.prodpad.com/blog/prioritize-problems-not-product-ideas/): agree on the main problems and objectives first, then choose which solutions or experiments to try within each problem. Each card on the roadmap is an initiative framed as a problem to solve, and each initiative should connect to a business objective. Bastow calls initiatives the forgotten "middle child" of OKRs, the game plan that links an objective to its key results. Detail follows confidence. Now items are specified and broken down, Next items are sketched, and Later items are, in her words, "big boulder blocks that you can see in the distance."
 
-The framework has evolved since its introduction. Early adopters used it as a literal three-column board. Over time, teams began adding sub-horizons, tagging items by theme or objective, and connecting horizons to OKRs or strategic pillars. Some organizations run separate Now Next Later boards per team or product area, then roll them up into a portfolio view. The format has also become a communication tool as much as a planning tool. PMs present it to executives to show strategic direction, to engineers to clarify what's coming, and to customers to set expectations without making promises.
+The format is not anti-date. The [ProdPad glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/) says dates belong on the roadmap when they are real, externally driven or strategically important, such as an audit or a contractual commitment, and that overusing them turns the roadmap back into a timeline. Its rule of thumb is that "roadmaps communicate direction, while OKRs communicate commitment." Simon Cast makes the same split between a [roadmap and a release plan](https://www.prodpad.com/blog/difference-between-roadmaps-and-release-plans/): the roadmap shows direction, and the release plan puts finished work on a timeline so marketing, sales and support can coordinate the launch.
 
-The framework works best for teams that operate in environments where customer needs shift, technical constraints evolve, and business priorities change faster than a quarterly plan can absorb. SaaS product teams, early-stage startups iterating on product-market fit, and platform teams juggling competing stakeholder requests all tend to benefit. It's less suited for teams with hard regulatory deadlines or fixed-scope contract work, where dates genuinely matter and aren't arbitrary. The key question is whether your team's biggest roadmap problem is "we don't know what to build" or "we don't know when it'll ship." If it's the latter, and the dates are real, a timeline roadmap may serve you better. If it's the former, Now Next Later gives you a structure that matches your actual level of certainty.
+Practitioners outside ProdPad have adopted and credited the format. Scrum.org introduces Bastow as [the inventor of the Now/Next/Later roadmap](https://www.scrum.org/resources/blog/janna-bastow-lean-roadmapping-and-okrs), and a [Mind the Product event recap](https://www.mindtheproduct.com/giving-direction-in-product-mtp-engage-hamburg-2022/) refers to "the Now, Next, Later format she introduced." Teresa Torres writes that she is [a fan of Bastow's Now Next Later roadmaps](https://www.producttalk.org/roadmaps-with-timelines/) and uses the format for her own Product Talk roadmap. Marty Cagan's [alternative to roadmaps](https://www.svpg.com/the-alternative-to-roadmaps/) makes a compatible argument from a different starting point: roadmaps exist to focus teams on the most valuable work and to track the date commitments a business really needs, and any replacement has to serve both purposes.
+
+The framework suits teams whose priorities change as they learn, which covers most software product teams doing continuous discovery. It works less well when most of the work is bound to fixed external dates or when the organization cannot yet accept a roadmap without dates. The skills listed below cover each part of the practice: sorting items into horizons, setting graduation criteria, building a template, running reprioritization reviews, adapting the format for SaaS, communicating it to stakeholders and choosing between it and a timeline roadmap.
 
 ## Core Principles
 
-### Sequence over dates
+### Confidence Sets the Column
 
-The framework communicates the order in which work will happen, not when it will ship. This distinction matters because dates create implied commitments that cascade through organizations. A sales team sees "Q3" and tells a prospect. A marketing team plans a launch around it.
+An item's column reflects how much the team knows about it. Importance and urgency are separate questions. ProdPad's glossary puts it plainly: "Now, Next and Later are confidence horizons, not time horizons" ([Confidence horizons](https://www.prodpad.com/glossary/confidence-horizons/)). A strategically important bet can sit in Later because the problem has not been validated, while a small, well-understood fix sits in Now. Keeping importance and confidence apart is what lets the roadmap stay honest when a stakeholder argues that their item matters too much to sit in Later.
 
-When teams skip this principle and attach dates to Now Next Later items, they recreate exactly the problem the framework was designed to solve. The tradeoff is real: some stakeholders genuinely need dates for coordinating dependencies. The answer isn't to ban dates entirely, but to reserve them for "Now" items where confidence justifies the precision.
+### Problems on the Roadmap, Solutions Underneath
 
-### Detail decreases with distance
+Each roadmap item names a problem or opportunity, and candidate solutions sit beneath it as ideas or experiments. Bastow's advice is to prioritize at the problem level first and only then choose which ideas or experiments to try within each problem ([Prioritize Problems, Not Ideas](https://www.prodpad.com/blog/prioritize-problems-not-product-ideas/)). A roadmap of named features locks in solutions before discovery has tested them. When the headings on your board are still feature names, the conversion is not finished.
 
-"Now" items should have clear acceptance criteria, assigned owners, and understood scope. "Next" items need a validated problem statement and rough solution direction but not a full spec. "Later" items might be a single sentence describing a customer problem or strategic bet. Teams that violate this principle by writing detailed requirements for "Later" items waste effort on work that will change before it's relevant.
+### Detail Decreases With Distance
 
-They also create a false sense of readiness that makes stakeholders wonder why the team isn't already building it. The gradient of detail is what keeps the roadmap honest.
+Now items are specified and broken into deliverable pieces, Next items are broken down less finely, and Later items stay broad. Bastow's reason is economy: "It doesn't make sense to go into detail about big, far-off ideas" ([Why I Invented It](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)), just as it makes no sense to give them deadlines. Detailed specs for Later items go stale before the team reaches them, and they also signal a readiness the team does not have. If a Later item has a full spec, either it belongs further left or the spec was premature.
 
-### Horizons reflect confidence, not importance
+### Every Initiative Ties to an Objective
 
-A common misconception is that "Later" means "less important." It doesn't. A major strategic initiative might sit in "Later" because the team hasn't done enough discovery to move it forward, while a small bug fix sits in "Now" because it's fully understood and ready. Confusing confidence with importance leads teams to push half-baked strategic items into "Now" prematurely, which clogs the pipeline and degrades execution quality. When this principle is clear, stakeholders stop lobbying to move their pet projects into "Now" and start asking what needs to happen for an item to graduate.
+Bastow lists "ties back to objectives" as one of the format's main benefits, and ProdPad's conversion guide suggests questioning whether an initiative that cannot be linked to an objective belongs on the roadmap at all ([Convert a Timeline Roadmap](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)). The link does two jobs. It explains why each item is there, and it gives leaders a way to check progress against outcomes rather than dates. If every initiative serving a year-end target sits in Later, the gap is visible without a status meeting.
 
-### Explicit graduation criteria
+### Dates Only Where They Are Real
 
-Items should not drift between horizons based on gut feel or stakeholder pressure. Each transition, from Later to Next and from Next to Now, should have clear criteria: what evidence is needed, what dependencies must be resolved, what capacity is required. Without graduation criteria, the board becomes a wish list where items move forward because someone asked loudly enough. This principle requires the most discipline to maintain because it demands that PMs articulate why something isn't ready to move, which can be a harder conversation than just saying yes.
+The framework removes dates from work that is not certain enough to commit to and keeps them where a real obligation exists. Examples in ProdPad's guidance include a regulatory deadline, a contractual commitment and a launch tied to a market window ([Convert a Timeline Roadmap](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)). Bastow's advice for dated work is to plan it properly, with buffer, and to clear other work out of its way if needed ([Mind the Product podcast](https://www.mindtheproduct.com/rerun-roadmaps-are-dead-long-live-roadmaps-janna-bastow-on-the-product-experience/)). Stripping every date, including genuine ones, is its own failure mode.
 
-### The roadmap is a living document
+### Evidence Moves Work Forward
 
-A Now Next Later board that gets updated once a quarter is just a timeline roadmap in disguise. The value of the framework comes from continuous reprioritization as new information arrives, whether from customer feedback, competitive shifts, technical discoveries, or business changes. Teams that treat the board as static lose the agility benefit entirely. The practical implication is that someone needs to own the cadence of review, whether that's weekly, biweekly, or tied to sprint boundaries.
+Items graduate from Later to Next to Now because discovery has raised the team's confidence. Seniority or persistence should not be what moves them. ProdPad's guidance is blunt: "If confidence hasn't increased, the Initiative shouldn't move left" ([Convert a Timeline Roadmap](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)). The same logic applies in reverse, so an item whose evidence weakens moves back or leaves the roadmap. Writing down what would have to be true for each move is how teams keep this principle from depending on one person's judgment.
 
-A stale roadmap is worse than no roadmap because it gives false confidence.
+### The Roadmap Is a Communication Tool
 
-### Communication is the primary function
-
-The Now Next Later board is not primarily a project management tool. It's a communication device. Its job is to align different audiences, executives, engineers, designers, customers, around a shared understanding of direction without requiring everyone to agree on every detail. When teams use it purely as an internal planning artifact and never show it to stakeholders, they miss half the value.
-
-The board should be presentable at any moment, not polished, but coherent enough that anyone looking at it can understand what the team is focused on and why.
-
-### Limit work in "Now"
-
-If everything is in "Now," nothing is prioritized. The "Now" column should contain only what the team is actively working on or will start within the current cycle. Overloading "Now" defeats the purpose because it recreates the overwhelm of an undifferentiated backlog. Most teams find that 3-5 initiatives in "Now" is the practical ceiling for a single product team.
-
-This constraint forces the hard prioritization conversations that the framework is designed to enable, and it's often where teams feel the most discomfort when first adopting the approach.
+Bastow calls a roadmap "a prototype for your strategy," something to put in front of people to gather feedback before code is written ([Mind the Product podcast](https://www.mindtheproduct.com/rerun-roadmaps-are-dead-long-live-roadmaps-janna-bastow-on-the-product-experience/)). That makes readability a requirement. The same board should work for executives, engineers, sales and, in a filtered version, customers. A roadmap that only the product team can interpret has lost most of its value.
 
 ## Steps
 
-1. **Step 1: Audit your existing backlog and incoming requests**
-   Before building the board, gather everything: feature requests, bug reports, strategic initiatives, tech debt items, customer feedback, internal stakeholder asks. Pull from whatever sources your team uses, whether that's a product management tool, a spreadsheet, a Slack channel full of requests, or a pile of sticky notes from the last offsite. The goal is a single, comprehensive list with no duplicates. Resist the urge to prioritize during this step.
+1. **Anchor on Vision and Objectives**
+   Start from the product vision and a small set of current objectives or OKRs before touching the backlog. ProdPad's [conversion guide](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/) puts these first because every later placement decision refers back to them. If objectives are missing or vague, fix that first, since a Now Next Later roadmap without objectives has no basis for ordering. Keep the objectives visible throughout the session. Each one needs a label or color so initiatives can be tagged later.
 
-You're collecting, not deciding. A common mistake is skipping this audit and only putting "the things we already planned" on the board, which defeats the purpose because it excludes the competing priorities that make the framework necessary in the first place.
+2. **Turn Features Into Problems**
+   Gather everything competing for the roadmap: the current plan, feature requests, strategic bets and technical work. Group the items by the customer or business problem each one addresses, an exercise the conversion guide runs as affinity mapping. Write each group as a short problem statement, often phrased as a question such as "How can we help our customers collaborate with other departments?" Keep the problem broader than any single solution, and move the specific features underneath as candidate ideas.
 
-2. **Step 2: Define what each horizon means for your team**
-   "Now," "Next," and "Later" need concrete definitions that your specific team agrees on. For some teams, "Now" means "in the current sprint." For others, it means "actively being worked on this month." "Next" might mean "validated and ready to start when capacity opens" or "in active discovery." "Later" might mean "strategic direction for the next 6 months" or "interesting ideas we haven't validated." Write these definitions down and share them. Without shared definitions, two people looking at the same board will interpret it differently, and that misalignment will surface as conflict later. One variation: some teams add a fourth column, "Not Doing" or "Parked," for items they've explicitly decided against, which prevents those items from being re-raised every planning session.
+3. **Link Each Initiative to an Objective**
+   Tag every initiative with the objective or objectives it serves. An initiative can serve more than one. Initiatives that fit no objective are candidates for removal, or evidence that an objective is missing. This tagging is what later lets you filter the roadmap by goal and answer "are we on track for this target?" without a separate report.
 
-3. **Step 3: Establish graduation criteria for each transition**
-   Define what needs to be true for an item to move from Later to Next, and from Next to Now. ). Write these criteria as a checklist that anyone can reference. The criteria don't need to be rigid, they can include judgment calls, but they need to exist so that "moving something to Now" is a conscious decision with documented reasoning rather than a reaction to whoever asked most recently.
+4. **Define the Horizons for Your Team**
+   Write down what Now, Next and Later mean in your context before placing anything. ProdPad's [glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/) describes Now as validated work in motion, Next as problems being validated with solution exploration under way, and Later as strategic bets still under consideration. You may rename the columns; the conversion guide lists alternatives such as Doing, Discovering and Dreaming. Define the columns by confidence, and agree whether any real dates will appear and where they attach.
 
-Teams that skip this step find their "Now" column overflowing within weeks.
+5. **Place Initiatives by Confidence**
+   Put each initiative in the column that matches the evidence behind it. A problem with a validated solution and understood effort goes in Now. A validated problem with open solutions goes in Next, and an unexplored bet goes in Later. Keep Now small: ProdPad's glossary calls a long Now column "a sign of weak prioritization" and says the whole roadmap should fit "in a scroll or two." Then order the items within each column.
 
-4. **Step 4: Sort your backlog into the three horizons**
-   Take the comprehensive list from Step 1 and place each item into Now, Next, or Later based on the definitions and graduation criteria you established. Start with "Now" because it's the most constrained. Limit it to what the team is genuinely working on or will start within the current cycle, typically 3-5 initiatives for a single product team. Then populate "Next" with items that meet most but not all graduation criteria for "Now," usually 5-10 items.
+6. **Scale Detail to the Horizon**
+   Add scope, owner and success measures to Now items. Give Next items a clear problem statement and the open questions discovery must answer. Leave Later items as a sentence or two. Note dependencies as a short remark on the initiative rather than drawing them as a chart, as Bastow suggests on the [Mind the Product podcast](https://www.mindtheproduct.com/rerun-roadmaps-are-dead-long-live-roadmaps-janna-bastow-on-the-product-experience/).
 
-Everything else goes into "Later" or gets discarded. This step should involve the cross-functional team, not just the PM, because engineers and designers often have context about technical readiness and design feasibility that changes where items land. " If your "Now" column has more than 5-7 items, you're not prioritizing, you're listing.
+7. **Review and Reprioritize Continuously**
+   Review the roadmap every planning cycle and whenever new evidence shifts confidence in an item, which is ProdPad's own recommendation. In each review, check what finished, what is blocked, what gained or lost evidence and what new problems arrived. Move items in both directions and record why. The conversion guide warns that a roadmap which has not changed in a quarter usually means discovery has stalled.
 
-5. **Step 5: Add context and appropriate detail to each item**
-   Apply the detail gradient. For "Now" items, ensure each has a clear problem statement, defined scope, an owner, and acceptance criteria or a definition of done. " For "Later" items, a brief problem statement or strategic hypothesis is sufficient, often just one or two sentences. Resist the urge to write detailed specs for "Later" items.
+8. **Share It With Every Audience**
+   Present the board with a short explanation of what each column means, because readers used to timelines will read columns as dates. Tailor the view: leaders need the objective links, engineering needs Now and Next detail, and customers need a filtered, problem-level version. Separate the roadmap from the release plan so launch dates live where they belong. Expect the stakeholder transition to take longer than building the board.
 
-It feels productive but it's waste. If an item in "Later" has a three-page spec, either it belongs in "Next" or the spec will be outdated by the time the team gets to it. Some teams tag items by theme, objective, or customer segment at this stage, which helps with filtering and stakeholder presentations.
+## Now Next Later vs Quarterly Roadmap
 
-6. **Step 6: Establish a review cadence**
-   Set a regular rhythm for reviewing and updating the board. Weekly or biweekly reviews work for most teams. During each review, ask: Has anything in "Now" been completed or blocked? Has new information changed the priority of anything in "Next"?
+A quarterly roadmap and a Now Next Later roadmap can look alike, since both have a few wide columns and no exact dates. Bastow calls the quarterly roadmap "the friendliest trap" because "a quarterly roadmap organizes work by when" while Now Next Later orders problems by confidence ([Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)). The same post cites the [2026 State of B2B Product Management survey](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/) as finding that 41% of teams use quarterly time-based roadmaps and that only 27% have moved to Now-Next-Later. The table compares the two formats with a feature timeline and an outcome-based roadmap.
 
-Have any "Later" items been validated enough to graduate? Has anything been added that needs to be sorted? The review should involve the core product team and optionally key stakeholders. Keep it short, 15-30 minutes, and focused on changes rather than re-debating settled decisions.
+| Question | Now Next Later | Quarterly roadmap | Outcome roadmap |
+|---|---|---|---|
+| What sets an item's column | Confidence and problem priority ([ProdPad glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/)) | The quarter it is planned for ([ProdPad](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)) | Outcome goals for the coming months ([Roman Pichler](https://romanpichler.medium.com/how-to-get-started-with-outcome-based-product-roadmaps-68f30098175a)) |
+| How readers treat a column | As a statement of confidence | As a ship date, in Bastow's account | As a goal to reach in that period |
+| Where commitments live | On OKRs and genuinely dated items | On every item in the column | On the goals and their metrics |
+| What happens when plans change | Items move between columns | Items slip into the next quarter | Features are chosen to serve a stable goal |
+| Main risk | Columns quietly become quarters ([ProdPad](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)) | Backlog gravity and padded estimates | Often still laid out on a timeline |
 
-A common failure mode is treating the review as a status meeting rather than a prioritization conversation. The goal isn't to report progress on "Now" items. That's what standups and sprint reviews are for. The goal is to keep the horizons accurately reflecting the team's current understanding.
-
-7. **Step 7: Communicate the roadmap to different audiences**
-   Present the board to stakeholders with framing appropriate to each audience. For executives, emphasize the strategic themes across horizons and how they connect to business objectives. For engineering teams, focus on what's in "Now" and what's coming in "Next" so they can anticipate upcoming work. For customers or external stakeholders, share a curated view that shows direction without overcommitting.
-
-" Always pair the board with a brief explanation of what each horizon means, especially for audiences seeing this format for the first time. Stakeholders accustomed to date-based roadmaps will initially push back.
+Many teams run both. Torres suggests not fighting "the ideological war" with leaders who want dates, and instead introducing outcomes gradually into the roadmap they already use ([Product Talk](https://www.producttalk.org/roadmaps-with-timelines/)). The GO Product Roadmap, another outcome-based format covered at [tryhamster.com/methods/go-product-roadmap](https://tryhamster.com/methods/go-product-roadmap), is a closer relative than the quarterly plan. The step-by-step choice between formats is covered in [Now Next Later vs Timeline Roadmap: Choosing a Format](../../skills/comparing-now-next-later-to-timeline-roadmaps/SKILL.md).
 
 ## When to Use
 
-- When your team has 20 or more competing feature requests from customers, internal stakeholders, and strategic goals, and every conversation about roadmaps devolves into timeline debates rather than priority discussions. The framework gives you a shared vocabulary for "this matters but we're not ready to commit" that a timeline roadmap can't express.
-- When you're building a SaaS product and your roadmap needs to serve multiple audiences, including an engineering team that wants clarity on what's next, executives who want strategic direction, and customers who want to know their request was heard. The three-horizon format lets you present the same board to each audience with different emphasis without maintaining three separate documents.
-- When your product discovery process regularly invalidates assumptions, making date-based commitments unreliable. If your team runs experiments, prototypes, or beta tests before committing to full builds, the Now Next Later framework maps directly onto your discovery workflow: "Later" items are hypotheses, "Next" items are validated problems, and "Now" items are solutions ready for delivery.
-- When you're an early-stage startup iterating toward product-market fit and your priorities shift every few weeks based on customer conversations, churn data, or competitive moves. Quarterly roadmaps break down in this context because the world changes faster than the planning cycle. The framework absorbs change without requiring a formal replan.
-- When cross-functional teams need alignment without rigid scheduling. If design, engineering, data science, and marketing all have different cycle times and planning rhythms, the framework provides a shared view of priority without forcing everyone onto the same sprint cadence or quarterly calendar.
+- When roadmap conversations keep turning into arguments about dates. The format moves the discussion to which problems matter and how much is known about each, which is where the product decision actually sits.
+- When your team runs discovery and the evidence regularly changes what gets built. Columns defined by confidence absorb those changes without a formal replan, while a timeline has to be redrawn.
+- When one roadmap must serve executives, engineers, sales and customers. The same board can be filtered by objective or by audience instead of maintaining separate decks that drift apart.
+- When you want a public or customer-facing roadmap. ProdPad recommends a horizon format for public roadmaps because it communicates direction without promising dates or exact features ([The Public Roadmap](https://www.prodpad.com/blog/the-public-roadmap/)).
+- When you already set OKRs and need a view of the initiatives behind them. The format places initiatives between objectives and delivery, which is the gap OKRs alone leave open.
 
 ## When Not to Use
 
-- When you're working against hard external deadlines that cannot move, such as regulatory compliance dates, contractual delivery obligations, or coordinated launches with hardware partners. The framework's core assumption is that sequence matters more than dates, and that assumption breaks when missing a date has legal, financial, or partnership consequences. In these cases, a timeline or Gantt-based roadmap gives stakeholders the date-specific accountability they actually need.
-- When your organization's culture demands date commitments and you don't have the political capital to change that expectation. Introducing Now Next Later into an organization that evaluates PM performance based on hitting quarterly delivery targets will create friction without solving the underlying cultural problem. The framework requires leadership buy-in that "we'll ship the right things in the right order" is more valuable than "we'll ship what we promised by the date we promised."
-- When you're managing a small, well-understood backlog with fewer than 10 items and a single team. The overhead of maintaining three horizons doesn't add value when the team can simply look at a prioritized list and know what to do next. The framework solves a communication and prioritization problem at scale. For a two-person team with a clear mission, a simple ordered backlog is faster and clearer.
-- When detailed project planning and resource allocation across multiple teams is the primary need. The framework intentionally avoids granularity around timelines and dependencies, which makes it a poor fit for program management scenarios where you need to coordinate handoffs between teams, manage shared resources, or sequence work across a critical path. Tools like Gantt charts or dependency-mapped project plans serve that need better.
-- When the team's primary challenge is execution speed rather than prioritization. If you already know exactly what to build and the bottleneck is shipping velocity, adopting a new roadmap format won't help. The framework is a prioritization and communication tool, not a delivery acceleration tool.
+- When most of the work is bound to fixed external dates, such as contract deliverables or a hardware launch with partners. A timeline or release plan gives those dates the planning attention they need; Now Next Later can still frame the discovery work around them.
+- When the main need is coordinating dependencies and shared resources across many teams on a critical path. That is program management, and a dependency-mapped plan does it better than three columns.
+- When leadership evaluates the team on hitting feature dates and there is no appetite to change that yet. Introducing the format without buy-in risks a Now Next Later board for the team and a separate timeline for executives, which doubles the work.
+- When the backlog is small, the direction is clear and one team decides everything. An ordered list is quicker and says the same thing.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Comparing Now-Next-Later to Quarterly and Timeline Roadmaps](../../skills/comparing-now-next-later-to-timeline-roadmaps/SKILL.md) — When to choose a Now-Next-Later approach over traditional date-based or quarterly roadmaps, and how to transition between them.
-- [Defining Graduation Criteria Between Horizons](../../skills/defining-graduation-criteria-between-horizons/SKILL.md) — How to establish clear criteria and confidence thresholds that determine when an initiative is ready to move from Later to Next, or from Next to Now.
-- [Categorizing Items into Now, Next, and Later Horizons](../../skills/categorizing-items-into-now-next-later-horizons/SKILL.md) — How to evaluate and sort initiatives into the three time horizons based on certainty, urgency, and strategic alignment.
-- [Building Now-Next-Later Roadmap Templates](../../skills/building-now-next-later-roadmap-templates/SKILL.md) — How to set up visual roadmap templates in tools like Miro, Notion, ProductBoard, or spreadsheets to represent the three horizons effectively.
-- [Reprioritizing and Moving Items Across Horizons](../../skills/reprioritizing-across-horizons/SKILL.md) — How to run regular reviews that promote, demote, or remove items between Now, Next, and Later as new information and priorities emerge.
-- [Applying Now-Next-Later Roadmaps to SaaS Products](../../skills/applying-now-next-later-to-saas-products/SKILL.md) — How to adapt the Now-Next-Later framework for SaaS environments, including continuous delivery cycles, feature requests, and customer-driven prioritization.
-- [Communicating Now-Next-Later Roadmaps to Stakeholders](../../skills/communicating-roadmaps-to-stakeholders/SKILL.md) — How to present a timeline-free, horizon-based roadmap to executives, customers, and cross-functional teams without creating false deadline expectations.
+- [Now Next Later vs Timeline Roadmap: Choosing a Format](../../skills/comparing-now-next-later-to-timeline-roadmaps/SKILL.md): Decide between a Now Next Later roadmap and a timeline or quarterly plan, and plan the switch.
+- [Defining Graduation Criteria Between Roadmap Horizons](../../skills/defining-graduation-criteria-between-horizons/SKILL.md): Write the evidence an item needs before it moves from Later to Next or from Next to Now.
+- [Now Next Later Categorization: Sorting Work Into Horizons](../../skills/categorizing-items-into-now-next-later-horizons/SKILL.md): Sort a backlog of initiatives into the three horizons by confidence and priority.
+- [Now Next Later Roadmap Template: How to Build One](../../skills/building-now-next-later-roadmap-templates/SKILL.md): Build a reusable board or sheet that shows the three horizons at the right level of detail.
+- [Reprioritizing Roadmap Items Across Now, Next and Later](../../skills/reprioritizing-across-horizons/SKILL.md): Run regular reviews that promote, demote or remove items as evidence changes.
+- [Now Next Later Framework for SaaS Product Roadmaps](../../skills/applying-now-next-later-to-saas-products/SKILL.md): Adapt the roadmap to continuous delivery, customer feedback and SaaS release habits.
+- [Communicating Now Next Later Roadmaps to Stakeholders](../../skills/communicating-roadmaps-to-stakeholders/SKILL.md): Present a horizon-based roadmap to executives, sales, customers and teams without implying dates.
 
 ## FAQ
 
-**What is the Now Next Later framework in simple terms?**
+**What is a Now Next Later roadmap in simple terms?**
 
-It's a way to organize your product roadmap into three buckets based on how soon and how confidently you plan to work on something. "Now" is what you're actively building. "Next" is what you've validated but haven't started yet. "Later" is where you track strategic ideas and customer requests you haven't fully explored.
+It is a roadmap with three columns instead of a timeline. Now is what the team is confident about and working on, Next is what it expects to pick up once the current work wraps up, and Later is larger problems it wants to keep in view. The columns express how much the team knows, so detail and commitment shrink from left to right. Each item is a problem tied to an objective rather than a feature with a date.
 
-Instead of promising dates, you communicate sequence and confidence level, which is usually more honest about what your team actually knows.
+**Who created the Now Next Later framework?**
 
-**Now Next Later framework vs quarterly roadmap: which should I use?**
+Janna Bastow, co-founder of ProdPad and of Mind the Product, created it and writes that she [invented the format](https://www.prodpad.com/blog/invented-now-next-later-roadmap/). Her account of its origin credits Simon Cast, her ProdPad co-founder according to [Userlist's show notes](https://userlist.com/podcast/now-next-later-roadmapping-with-janna-bastow/), with sketching the first three columns, Current, Near term and Future, in late 2012 ([The Birth of the Modern Roadmap](https://www.prodpad.com/blog/the-birth-of-the-modern-roadmap/)). In a later post she describes the first version as the one "that Simon and I sketched out in 2012" ([Why I Invented It](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)). Independent sources such as Scrum.org and Mind the Product credit Bastow.
 
-It depends on whether your biggest problem is false precision or genuine scheduling. Quarterly roadmaps work when you have stable requirements, predictable capacity, and stakeholders who need date-specific commitments for coordination. The Now Next Later framework works when priorities shift frequently, discovery regularly changes your plans, or you've lost stakeholder trust because of repeated missed deadlines. Many teams use both: Now Next Later for strategic communication and quarterly plans for execution-level scheduling within the "Now" horizon.
+**Is a Now Next Later roadmap the same as a quarterly roadmap with new labels?**
 
-**Does the Now Next Later framework work for small teams of 3-5 people?**
+No. A quarterly roadmap sorts work by the period it is planned for, so every item in a column reads as due in that quarter. Now Next Later sorts work by confidence, so an item moves only when evidence changes. Relabeling Q1, Q2 and Q3 as Now, Next and Later is the most common migration mistake in ProdPad's [conversion guide](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/). If your columns map neatly to three fixed periods, you still have a timeline.
 
-It can, but it's often more structure than a small team needs. If your team has a short, clear backlog and everyone already knows the priorities, a simple ordered list is faster and easier. The framework adds the most value when there are competing stakeholders, multiple sources of requests, or ambiguity about what should come first. If your 5-person team is juggling input from customers, investors, and internal stakeholders, the framework helps.
+**Can a Now Next Later roadmap have dates?**
 
-If it's a small team with a clear mission and a single decision-maker, keep it simple.
+Yes, where the date is real. A regulatory deadline, a contractual commitment or a launch tied to an event can carry a date on the specific initiative or objective ([ProdPad glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/)). What the format removes is the implied date on everything else. Bastow's advice is to separate a hard launch, which needs a date, from work that ships when it is ready.
 
-**How does the Now Next Later framework work alongside OKRs?**
+**How does Now Next Later work with OKRs?**
 
-OKRs define what outcomes you're trying to achieve. Now Next Later organizes the work that delivers those outcomes. The connection works best when each item on the roadmap is tagged to an objective, so stakeholders can see how current work maps to strategic goals. "Now" items should map directly to current-quarter OKRs.
+OKRs state the outcomes and hold the time-bound commitment, and the roadmap shows the initiatives meant to move them, placed by confidence. Bastow calls initiatives the missing middle of OKRs. ProdPad's [OKR guide](https://www.prodpad.com/resources/guides/ditch-the-timeline-roadmap/okrs-and-lean-roadmapping/) notes that team OKRs are usually reviewed quarterly while the roadmap itself is not time-bound. Tagging each initiative with its objective lets leaders check progress against targets rather than feature dates.
 
-"Next" items often connect to the same OKRs or the next quarter's. "Later" items may connect to annual or aspirational objectives. This pairing gives you both the "why" (OKRs) and the "what and when-ish" (roadmap).
+**How often should a Now Next Later roadmap change?**
 
-**Why does the Now Next Later framework fail in practice?**
+Continuously, in small moves. ProdPad recommends reviewing it every planning cycle and whenever new evidence shifts confidence in an item. Items move toward Now as they are validated, move back when evidence weakens, and leave when they no longer serve an objective. A board that has not changed for a whole quarter usually means discovery has stopped.
 
-The most common failure is overloading the "Now" column. When everything is "Now," nothing is prioritized, and the framework becomes an undifferentiated backlog with a new label. The second failure is treating it as a one-time exercise instead of a living document. Teams create the board in a workshop, then never update it, which makes it stale and ignored within weeks.
+**Does Now Next Later work with Scrum, Kanban or waterfall delivery?**
 
-The third failure is organizational: stakeholders who are used to date-based roadmaps refuse to accept the format, so the PM maintains a Now Next Later board for the team and a secret timeline roadmap for executives, which doubles the work and defeats the purpose.
+Bastow writes that it works with almost any methodology, including Kanban, Scrum and waterfall, because it sits above delivery ([Why I Invented It](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)). The roadmap holds problems and direction. Once an idea is validated and specified, it moves into the delivery backlog or sprint plan, where estimates and dates belong.
 
-**How do I decide when to move an item from Later to Next?**
+## Sources
 
-Define graduation criteria before you need them. Common triggers for the Later-to-Next transition include: the problem has been validated through customer research, the initiative aligns with a current strategic objective, initial discovery has been completed, and no critical blockers remain. " If yes, it graduates. If not, it stays in Later until more evidence accumulates.
-
-Avoid moving items based on stakeholder pressure alone. If someone is lobbying hard for a Later item, ask what new evidence supports the move.
-
-**Can I use the Now Next Later framework for non-product work like marketing or operations?**
-
-Yes, and teams regularly do. Marketing teams use it to sequence campaigns, content initiatives, and channel experiments. Operations teams use it for process improvements and tooling investments. The underlying mental model, organizing work by confidence and readiness rather than arbitrary dates, applies anywhere that priorities shift and planning precision decreases over time.
-
-The only adaptation needed is redefining what each horizon means for your domain.
-
-**How many items should be in each horizon?**
-
-There's no universal number, but practical constraints exist. "Now" should be limited to what your team can realistically execute in the current cycle, typically 3-7 initiatives depending on team size. "Next" usually holds 5-15 items that are validated and waiting for capacity. "Later" can be larger, 10-30 items, because it functions partly as a strategic holding area.
-
-If "Later" grows beyond 30 items, it becomes unmanageable and starts to look like an ungroomed backlog. Periodically prune "Later" by archiving items that have been there for months without anyone championing them.
+- [Janna Bastow: Why I Invented the Now-Next-Later Roadmap](https://www.prodpad.com/blog/invented-now-next-later-roadmap/)
+- [Janna Bastow: The Birth of the Modern Roadmap](https://www.prodpad.com/blog/the-birth-of-the-modern-roadmap/)
+- [ProdPad Glossary: What Is a Now-Next-Later Roadmap?](https://www.prodpad.com/glossary/now-next-later-roadmap/)
+- [ProdPad Glossary: What Are Confidence Horizons?](https://www.prodpad.com/glossary/confidence-horizons/)
+- [ProdPad: Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)
+- [ProdPad: How to Convert a Timeline Roadmap to Now-Next-Later](https://www.prodpad.com/blog/convert-timeline-roadmap-to-now-next-later/)
+- [ProdPad: The Public Roadmap](https://www.prodpad.com/blog/the-public-roadmap/)
+- [Simon Cast: Product Roadmaps vs Release Plans](https://www.prodpad.com/blog/difference-between-roadmaps-and-release-plans/)
+- [Janna Bastow: Prioritize Problems, Not Ideas](https://www.prodpad.com/blog/prioritize-problems-not-product-ideas/)
+- [ProdPad: How OKRs and lean roadmapping work together](https://www.prodpad.com/resources/guides/ditch-the-timeline-roadmap/okrs-and-lean-roadmapping/)
+- [Userlist podcast: Now/Next/Later Roadmapping with Janna Bastow](https://userlist.com/podcast/now-next-later-roadmapping-with-janna-bastow/)
+- [Mind the Product podcast: Roadmaps are dead. Long live roadmaps](https://www.mindtheproduct.com/rerun-roadmaps-are-dead-long-live-roadmaps-janna-bastow-on-the-product-experience/)
+- [Mind the Product: Giving direction in product](https://www.mindtheproduct.com/giving-direction-in-product-mtp-engage-hamburg-2022/)
+- [Scrum.org: Janna Bastow, Lean Roadmapping and OKRs](https://www.scrum.org/resources/blog/janna-bastow-lean-roadmapping-and-okrs)
+- [Teresa Torres: My Leaders Still Want Roadmaps with Timelines](https://www.producttalk.org/roadmaps-with-timelines/)
+- [Marty Cagan: The Alternative to Roadmaps](https://www.svpg.com/the-alternative-to-roadmaps/)
+- [Steve McConnell: The Cone of Uncertainty](https://www.construx.com/books/the-cone-of-uncertainty/)
+- [Roman Pichler: How to Get Started with Outcome-Based Product Roadmaps](https://romanpichler.medium.com/how-to-get-started-with-outcome-based-product-roadmaps-68f30098175a)
 
 ---
 

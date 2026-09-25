@@ -1,177 +1,192 @@
 ---
-category: Development
+name: "posthog-experiments-onboarding-a-b-test-method"
+category: "Development"
+description: "How to run PostHog Experiments on onboarding: feature flag variants, a pre-set hypothesis and metrics, sample size, Bayesian or frequentist reads."
+metadata:
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# PostHog Experiments: A Practical Method for Onboarding A/B Tests
+# PostHog Experiments: A Method for Onboarding A/B Tests
 
-> Created by **PostHog growth team, demonstrated by Joshua** — [https://www.youtube.com/watch?v=WyYPPSyKmXo](https://www.youtube.com/watch?v=WyYPPSyKmXo)
+> Created by **PostHog growth team, demonstrated by Joshua** - [https://www.youtube.com/watch?v=WyYPPSyKmXo](https://www.youtube.com/watch?v=WyYPPSyKmXo)
 
 ## Overview
 
-PostHog experiments emerged from the PostHog growth team's own work improving their product's onboarding funnel. The method was demonstrated publicly by Joshua, a member of the growth team, in a walkthrough that showed the end-to-end workflow of hypothesizing an onboarding improvement, wiring up feature flags, launching the experiment, and reading the results. While A/B testing as a discipline stretches back to Ronald Fisher's agricultural trials in the 1920s and was refined by internet companies like Google and Amazon in the 2000s, PostHog's contribution is a tightly integrated open-source implementation that bundles feature flags, event tracking, experiment configuration, and statistical analysis into a single platform. This removes the duct-tape layer that teams historically needed between separate tools for flagging, analytics, and experiment evaluation.
+PostHog Experiments is the A/B testing product inside PostHog, and this page describes a method for using it on onboarding flows: how to run experiments in PostHog from the first hypothesis to the cleanup of the feature flag. According to [PostHog's Experiments docs](https://posthog.com/docs/experiments), you define variants, pick the metrics you care about, and PostHog randomizes users, tracks their exposures, and runs the statistics, either Bayesian or frequentist. Each experiment is backed by a feature flag, so the same flag that decides who sees which onboarding screen also records who was exposed.
 
-The underlying mental model is straightforward but often misapplied. You form a hypothesis about a specific change to your product experience, typically phrased as "If we change X, then metric Y will improve by Z%." You then use a feature flag to randomly assign incoming users to either the control (unchanged experience) or one or more test variants. Both groups use the product simultaneously under identical external conditions. After enough users have passed through each variant, you evaluate whether the observed difference in your target metric is statistically meaningful or just noise. PostHog offers both Bayesian analysis, which gives you a probability that one variant is better, and frequentist analysis, which tests against a null hypothesis with a p-value. The Bayesian approach tends to be more intuitive for product teams because it answers "what's the probability that variant B beats control?" rather than the more convoluted "can we reject the hypothesis that there's no difference?"
+The workflow comes from a short PostHog tutorial, [How to A/B test your onboarding flow](https://www.youtube.com/watch?v=WyYPPSyKmXo), published on PostHog's YouTube channel in September 2025. In it, Joshua from the PostHog growth team shows how the team changes onboarding: instead of replacing a screen and shipping it, they keep the old and new versions side by side behind a flag and run an experiment. He creates an experiment for a new installation step, checks the flag's test variant in code, previews both variants with the PostHog toolbar, and ships with a 50/50 split. PostHog presents this as its own team's practice. It does not publish it as a named method, and this page is an independent write-up that fills in the steps around the video from PostHog's documentation.
 
-What separates PostHog experiments from generic A/B testing advice is the tight coupling between feature flags and experiment lifecycle. In many organizations, the flag system and the analytics system are operated by different teams or even different vendors. This creates friction: engineers toggle flags in LaunchDarkly or a homegrown system, analysts query Amplitude or Mixpanel separately, and the mapping between flag state and metric movement is maintained manually or not at all. PostHog collapses these into one workflow. You create the experiment, PostHog generates the feature flag, you instrument your code to read the flag, PostHog tracks the events, and the experiments tab shows results in context. This integration is especially valuable for onboarding flows, where the experiment lifecycle tends to be short (days to weeks, not months) and the number of simultaneous tests can be high.
+The result shown in the video is a useful model of what the method produces. The onboarding completion rate was 64% in control and about 70% in the test variant, which Joshua calls "a 9% increase", and the team also tracked a second metric, whether users ingested an event, as a check that the extra completions were real setups ([PostHog tutorial video](https://www.youtube.com/watch?v=WyYPPSyKmXo)). That pairing of a primary metric with a supporting metric is the core habit of the method, and PostHog's own [analyzing results guide](https://posthog.com/docs/experiments/analyzing-results) uses an onboarding test to show why supporting metrics matter.
 
-Compared to dedicated experimentation platforms like Eppo, Statsig, or Optimizely, PostHog experiments occupy a pragmatic middle ground. Eppo and Statsig offer deeper statistical rigor, warehouse-native architectures, and advanced features like CUPED variance reduction or sequential testing. Optimizely and VWO provide visual editors for marketing teams who want to test without writing code. PostHog's strength is that experimentation is one capability inside a broader product analytics suite, so teams that already use PostHog for event tracking, session replays, or feature flags get experiments essentially for free, with no data integration overhead. For onboarding specifically, this means you can define your experiment, watch session replays of users in each variant, check funnel dropoff by variant, and review the statistical outcome all in one place.
+The mechanics are simple. PostHog's [creation wizard](https://posthog.com/docs/experiments/creating-an-experiment) walks through three steps: a description with the hypothesis and flag key, a variant rollout with the split and rollout percentage, and analytics with inclusion criteria and metrics. Your code then calls `getFeatureFlag()` to decide what each user sees, and that call records the exposure event the analysis is built on ([adding experiment code](https://posthog.com/docs/experiments/adding-experiment-code)). Metrics can be funnels, means, ratios or retention, and only events after a user's first exposure are counted ([experiment metrics](https://posthog.com/docs/experiments/metrics)).
 
-The method has evolved as PostHog itself has matured. Early versions required more manual instrumentation and lacked the guided experiment creation flow that exists today. The addition of minimum sample size calculators, automatic significance detection, and the ability to set multiple metrics per experiment (a primary goal metric plus secondary guardrail metrics) addressed common failure modes where teams either called experiments too early or measured the wrong thing. The growth team's public documentation and tutorial videos also reflect a broader industry shift toward transparency in experimentation methodology, making it easier for smaller teams to adopt practices that were previously gatekept by dedicated data science functions at large tech companies.
+Onboarding is a natural fit because the audience is well defined and the outcome is close in time. Every new signup passes through the flow, the change under test usually sits on one screen, and completion or activation can be measured within days. PostHog's [best practices](https://posthog.com/docs/experiments/best-practices) use onboarding as their main example, including the warning that a new onboarding flow should not be shown to users who have already completed the old one.
 
-Teams that benefit most from this method are product and growth teams at early-to-mid stage companies with enough traffic to reach statistical significance in a reasonable timeframe, who are already using PostHog or considering it, and who want to test changes to high-impact user journeys like onboarding, activation, and upgrade flows. If you have fewer than a few hundred users per week flowing through the funnel you want to test, the math gets slow and the method loses its advantage over qualitative approaches. If you have tens of millions of daily active users and a dedicated data science team, you may outgrow PostHog's built-in analysis and want a warehouse-native platform. For the broad middle of the market, the integrated approach works well.
+The discipline around the tool matters as much as the tool. Evan Miller's essay [How Not To Run an A/B Test](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) shows that checking an experiment repeatedly and stopping at the first significant result can push the false positive rate far above the level the dashboard reports, and David Robinson's [simulations](http://varianceexplained.org/r/bayesian-ab-testing/) show that a Bayesian decision rule does not make that problem go away. The method therefore fixes the hypothesis, metrics and sample size before launch, or switches on PostHog's sequential testing when the team knows it will watch results as they come in ([frequentist statistics](https://posthog.com/docs/experiments/statistics-frequentist)).
+
+The method is for product and growth teams who already capture onboarding events in PostHog, or are adopting it, and who have enough signups to reach a decision within a few weeks. It sits alongside the broader practice described in [Trustworthy Online Controlled Experiments](https://experimentguide.com/) by Ron Kohavi, Diane Tang and Ya Xu, and it deliberately stays small: one hypothesis, one flag, a short list of related metrics and a clean exit.
 
 ## Core Principles
 
-### One hypothesis per experiment
+### Every variant is a flag value
 
-Each experiment should test a single, well-defined hypothesis. When you bundle multiple changes into one variant, you cannot attribute the result to any individual change. Teams often fall into this trap when redesigning onboarding because there are so many things they want to fix simultaneously. The discipline of isolating one variable forces clarity about what you actually believe will move the metric.
+Each experiment in PostHog is backed by a multivariate feature flag, and users are assigned to a variant based on their distinct ID so they keep the same variant across sessions and devices ([traffic allocation](https://posthog.com/docs/experiments/traffic-allocation)). Building the change behind the flag lets old and new versions run at the same time, which is what the growth team does in the [tutorial video](https://www.youtube.com/watch?v=WyYPPSyKmXo). It also gives you a switch: pausing an experiment disables the flag, and the [lifecycle docs](https://posthog.com/docs/experiments/managing-lifecycle) show users then see the control variant. Pete Hodgson's [feature toggles article](https://martinfowler.com/articles/feature-toggles.html) calls these experiment toggles and notes they should stay in place, with the same configuration, only as long as needed for significant results.
 
-If you skip this, a winning result teaches you nothing about why it won, and a losing result doesn't tell you which change hurt.
+### Write the hypothesis and metrics before launch
 
-### Feature flags are the experiment backbone
+PostHog's [best practices](https://posthog.com/docs/experiments/best-practices) say a good hypothesis names the goal metric, how the change should improve it, and any important context, and PostHog's guides recommend defining metrics upfront to avoid biasing the analysis. The launch checklist also asks for secondary metrics and counter metrics before launch. Writing these down first stops the team from choosing, after the fact, whichever metric happens to look good.
 
-Every experiment variant must be controlled by a feature flag, not a deploy. This ensures that variant assignment is consistent per user across sessions, that you can kill a bad variant instantly without rolling back a deployment, and that the mapping between who saw what and what they did is tracked automatically. When teams run experiments through deploy-and-measure approaches instead, they introduce time-based confounds (Monday users vs. Friday users, pre-launch excitement vs.
+### Only affected users enter the experiment
 
-steady-state behavior) and lose the ability to do a clean rollback.
+An onboarding test should include only users who will actually see the onboarding change. PostHog's [best practices](https://posthog.com/docs/experiments/best-practices) show filtering out ineligible users in code before the flag is checked, because checking the flag is what records exposure. Existing users who already finished onboarding add noise without any chance of being affected. Targeting new users through release conditions or cohorts does the same job at the flag level.
 
-### Define success metrics before launching
+### Size the test before it starts
 
-Lock in your primary metric, any secondary metrics, and any guardrail metrics before the experiment goes live. The primary metric is what you're trying to improve. Secondary metrics capture related outcomes you want to monitor. Guardrail metrics are things you don't want to break, like overall retention or support ticket volume.
+PostHog's [running time calculator](https://posthog.com/docs/experiments/sample-size-running-time) estimates the sample size and running time from your baseline, the minimum detectable effect (MDE) and daily exposures, with a default MDE of 30%. A smaller MDE needs much more data, because the required sample grows with the inverse square of the effect you want to detect. If the estimate runs longer than the team can wait, test a bolder change or pick a different way to learn.
 
-If you pick metrics after seeing results, you'll unconsciously cherry-pick the metric that shows the variant winning. This is the experimentation equivalent of drawing the bullseye around the arrow.
+### Decide how you will stop
 
-### Respect the sample size requirement
+Stopping the first time a result looks significant inflates false positives; Miller's [worked example](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) gets a 26.1% false positive rate from a test run at a nominal 5% level when it is checked after every observation. Either wait for the planned sample, or enable [sequential testing](https://posthog.com/docs/experiments/statistics-frequentist) in PostHog's frequentist engine, which is designed for teams that monitor results continuously. Choosing the Bayesian engine does not remove this concern, as Robinson's [analysis](http://varianceexplained.org/r/bayesian-ab-testing/) explains.
 
-Calculate the minimum sample size needed to detect the effect size you care about, and do not peek at results or call the experiment before reaching it. PostHog provides a sample size calculator during experiment setup. Peeking inflates your false positive rate dramatically. A team that checks daily and stops the moment results look significant will "find" effects that don't exist roughly 30-40% of the time.
+### Read metrics as a system
 
-If your traffic is too low to reach the required sample in a reasonable timeframe, that's a signal to test a bigger change or use a different evaluation method entirely.
+PostHog tests each metric independently, and its [Bayesian statistics docs](https://posthog.com/docs/experiments/statistics-bayesian) note that with 5 metrics the chance that at least one shows a false positive is about 23%. The answer PostHog gives is to choose related metrics tied to the hypothesis and look for a coherent pattern. An onboarding win is more believable when completion rises and a downstream signal, such as the first ingested event in the tutorial, rises with it.
 
-### Run control and variant simultaneously
+### Clean up after the decision
 
-Both the control experience and the variant must be live at the same time, serving real users under the same external conditions. This is the entire point of a controlled experiment: eliminating time-based and environment-based confounds. A before-and-after comparison (ship the change, compare this week to last week) is not an experiment. It's a vibe check.
-
-Seasonality, marketing campaigns, press coverage, and app store featuring can all change user behavior between periods, making it impossible to attribute metric changes to your product change.
-
-### Measure the full funnel, not just the step you changed
-
-When testing an onboarding change, track the impact downstream through activation, retention, and ideally early revenue or engagement. It is common for a change to improve completion of one step while degrading a later outcome. For example, removing a required profile setup step might increase the percentage of users who reach the dashboard, but those users may be less engaged because they skipped the context-setting that the step provided. If you only measure step completion, you'll ship a change that hurts the business.
-
-### Clean up after every experiment
-
-When an experiment concludes, ship the winning variant to 100% of users and remove the feature flag from your codebase. Feature flags left permanently in code create technical debt that compounds quickly. After a year of experimentation, a codebase can accumulate dozens of dead flags, each with conditional logic paths that no one remembers the purpose of. PostHog's experiment archiving workflow helps track which flags are still active, but the engineering discipline of removing the code branch is on you.
+When an experiment ends, PostHog recommends sharing results, documenting them, removing the experiment and losing variant's code, archiving the experiment and then disabling or deleting the flag ([managing lifecycle](https://posthog.com/docs/experiments/managing-lifecycle)). Hodgson describes toggles as [inventory with a carrying cost](https://martinfowler.com/articles/feature-toggles.html) that teams should keep low. Every experiment you leave behind is a branch someone will have to read later.
 
 ## Steps
 
-1. **Step 1: Identify the onboarding bottleneck and form a hypothesis**
-   Start by reviewing your onboarding funnel in PostHog (or whatever analytics you have) to find the step with the largest dropoff. Look at session replays of users who abandon at that step to understand why. Common reasons include confusion about what to do next, a step that requires too much effort, or a step whose value isn't clear to the user. ' A good hypothesis is falsifiable and specific enough that you'll know exactly what to measure.
+1. **Find the onboarding step to test**
+   Open your onboarding funnel and find the step where the most users stop. Watch session replays of users who drop off there to form a view of why, since PostHog links every experiment variant to the replays of the people who saw it ([Experiments overview](https://posthog.com/docs/experiments)). Note the current conversion rate for that step, because it becomes the baseline for sizing. Pick one change that addresses the cause you observed. If the funnel is not instrumented yet, fix that first.
 
-Watch out for vague hypotheses like 'improving the UX will increase signups,' which give you no clear success criterion.
+2. **Write the hypothesis and choose metrics**
+   State the change, the metric it should move and why, following the format in PostHog's [best practices](https://posthog.com/docs/experiments/best-practices). Choose one primary metric, usually a funnel from exposure to onboarding completion or activation. Add a few secondary metrics that should move with it, and at least one counter metric that must not get worse. Set a conversion window that matches how long onboarding normally takes, since without one, trend metrics count conversions through the end of the experiment ([experiment metrics](https://posthog.com/docs/experiments/metrics)).
 
-2. **Step 2: Define your primary metric, secondary metrics, and guardrails**
-   Choose one primary metric that your hypothesis directly predicts will change. This is typically a conversion rate at a specific funnel step or an activation metric. Then pick 1-3 secondary metrics that you want to monitor for additional insight, such as time-to-complete or downstream engagement. Finally, set guardrail metrics: things you do not want to regress, like overall 7-day retention or support ticket creation rate.
+3. **Size the test**
+   Enter the baseline, the MDE and expected daily signups into the running time calculator ([running time and sample size](https://posthog.com/docs/experiments/sample-size-running-time)). The calculator's formula is the power rule of thumb Evan Miller also gives, so you can check it by hand. Decide the stopping rule now: a fixed sample, or sequential testing if you will check results often. Write the planned end date next to the hypothesis.
 
-Write all of these down before you touch the experiment configuration. The most common mistake here is choosing a vanity metric (like page views) instead of a meaningful outcome metric (like percentage of users who send their first message). Another pitfall is having no guardrails and accidentally shipping a variant that improves step completion but degrades long-term retention.
+4. **Create the experiment and its flag**
+   Click New experiment and complete the three wizard steps: description, variant rollout and analytics ([creating an experiment](https://posthog.com/docs/experiments/creating-an-experiment)). The wizard creates the flag with `control` and `test` variants by default, split evenly. After saving the draft, use Manage release conditions to target new users, for example by a signup property or a cohort. Keep the default exposure event unless the flag is checked well before the onboarding screen appears, in which case use a custom exposure event.
 
-3. **Step 3: Create the experiment and feature flag in PostHog**
-   Navigate to the Experiments tab in PostHog and create a new experiment. PostHog will generate a linked feature flag automatically. Configure the flag with your variants (typically 'control' and 'test', though you can add more for A/B/n tests). Set the traffic allocation, usually 50/50 for two variants.
+5. **Add the variant code and test it**
+   In the onboarding code, check eligibility first, then call `getFeatureFlag()` and render control or test ([adding experiment code](https://posthog.com/docs/experiments/adding-experiment-code)). Reading the value with that call, or its SDK equivalent, records the exposure; methods such as `getAllFlags()` do not. Force yourself into each variant with an optional override on the flag's release conditions, or with the toolbar as the video shows ([testing and launching](https://posthog.com/docs/experiments/testing-and-launching)). Confirm the metric events arrive for both variants before launch.
 
-Use PostHog's sample size calculator to determine how many users you need per variant, based on your baseline conversion rate and the minimum detectable effect you care about. If the required sample size means the experiment will run longer than 4 weeks, consider whether you can increase traffic to the funnel, test a larger change with a bigger expected effect, or accept that experimentation isn't the right tool for this decision. Set targeting rules on the feature flag if you want to limit the experiment to specific user segments, like new users only.
+6. **Launch and check validity**
+   Launch from the experiment page. PostHog's [launch checklist](https://posthog.com/docs/experiments/best-practices) asks you to confirm, one or two days after launch, that each variant receives the expected volume, logging works in the right ratios and errors have not risen. If PostHog reports a sample ratio mismatch, work through the causes in its [troubleshooting guide](https://posthog.com/docs/experiments/troubleshooting), such as bot traffic, changes to flag conditions and identity fragmentation. Leave the primary metric alone until the planned end, unless you enabled sequential testing.
 
-4. **Step 4: Instrument your code to read the feature flag and render variants**
-   In your application code, use PostHog's SDK to check the feature flag value for each user and render the appropriate experience. For a frontend onboarding change, this typically means a conditional block where 'control' renders the existing flow and 'test' renders the new version. Make sure the flag check happens early enough in the user journey that users are assigned before they see any part of the experience being tested. A common bug is checking the flag too late, which means users see a flash of the control experience before being switched to the variant, contaminating the data.
+7. **Read the results and decide**
+   When the planned sample is reached, read the primary metric first: a variant is significant when its interval does not cross zero ([analyzing results](https://posthog.com/docs/experiments/analyzing-results)). Then check that the secondary and counter metrics tell the same story. A null result is a valid finding, and the analyzing results guide suggests checking sample size, implementation and effect size before concluding the change does nothing. Record the decision and the reason in the experiment description.
 
-Test both variants manually in a development or staging environment before going live. Verify that PostHog is receiving the correct events for each variant by checking the live events stream.
+8. **Ship the winner and clean up**
+   Use End experiment to pick the variant to keep and roll it out to all users ([managing lifecycle](https://posthog.com/docs/experiments/managing-lifecycle)). Then remove the flag check and the losing code path; with the GitHub integration connected, PostHog can open a draft pull request that does this. Deploy the code before disabling the flag, the order PostHog's [stale flag guide](https://posthog.com/docs/feature-flags/cleaning-up-stale-flags) recommends. Archive the experiment so its history stays available.
 
-5. **Step 5: Launch the experiment and resist peeking**
-   Activate the experiment in PostHog. From this point, users are randomly assigned to variants as they enter the onboarding flow. Monitor the experiment for technical issues in the first few hours: are events firing correctly, is the flag resolving as expected, are there errors in either variant? Once you've confirmed that the infrastructure is working, step away.
+## PostHog vs Eppo and Other Platforms
 
-Do not check results daily. Set a calendar reminder for when you expect to reach the required sample size. If you absolutely must peek (to check for catastrophic regressions), look only at guardrail metrics, not at the primary metric. The reason for this discipline is well-documented: repeated significance testing without correction inflates your false positive rate far beyond the nominal 5%.
+Teams comparing Eppo vs PostHog Experiments are usually choosing between an experiment tool built into their analytics and a dedicated or warehouse-native platform. The table summarizes what each vendor's documentation says; check each vendor's current docs and pricing before deciding.
 
-6. **Step 6: Analyze results after reaching sample size**
-   When the experiment reaches the pre-calculated sample size, open the results in PostHog's experiments tab. Review the primary metric first: is there a statistically significant difference? If you chose Bayesian analysis, look for a probability of 95% or higher that one variant beats the other. 05.
-
-Then review secondary metrics and guardrails. A variant that improves the primary metric but degrades a guardrail metric is usually not worth shipping. If results are inconclusive (neither variant is clearly better), that is a valid and informative outcome. It means the change you tested doesn't matter enough to users to produce a measurable difference, which frees you to focus on something else.
-
-Do not extend the experiment hoping for significance. That's the same as peeking.
-
-7. **Step 7: Ship the winner and clean up**
-   If the variant won, roll the feature flag to 100% of users so everyone gets the improved experience. Then remove the flag check from your codebase entirely and delete the conditional code path for the control. If the control won (the change made things worse), roll back the variant, remove the code, and document what you learned. Archive the experiment in PostHog.
-
-This cleanup step is non-negotiable. Every feature flag left in your code is a branch of conditional logic that future developers have to understand and maintain. Teams that skip cleanup end up with codebases where no one knows which flags are still active, which were experiments, and which are permanent feature toggles. Document the experiment's hypothesis, results, and decision in a shared location where future team members can learn from it.
+| Platform | What its docs describe |
+|---|---|
+| PostHog Experiments | Runs on PostHog flags and events; [Bayesian by default, frequentist optional](https://posthog.com/docs/experiments/start-here) |
+| Eppo | [Warehouse-native analysis engine](https://docs.geteppo.com/) with an SDK that does no tracking of its own; [frequentist, sequential and Bayesian](https://docs.geteppo.com/statistics/) options |
+| Statsig | Cloud product plus [Warehouse Native](https://docs.statsig.com/statsig-warehouse-native/introduction) (Enterprise tier), with CUPED and switchback tests |
+| LaunchDarkly | [Bayesian and frequentist](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist) experimentation; frequentist is the default |
+| GrowthBook | Open source; [Bayesian by default](https://docs.growthbook.io/statistics/overview), frequentist with CUPED and sequential testing |
+| Webflow Optimize | [A/B testing and personalization](https://webflow.com/optimize) for marketing sites |
 
 ## When to Use
 
-- When you have a specific, testable hypothesis about your onboarding flow, like 'moving the team invite step from position 3 to position 5 will increase the percentage of users who complete setup,' and enough weekly signups (typically 200+ per variant per week) to reach statistical significance within 2-4 weeks. The method works best when you have a clear before/after measurement point and the change is scoped to one step or screen.
-- When your onboarding funnel analytics show a sharp dropoff at a specific step (for example, 60% of users abandon at the 'connect your data source' screen) and you have a concrete alternative design to test against the current experience. The experiment structure forces you to define exactly what 'better' means before you ship the change, which prevents the common failure mode of redesigning a step, noticing a different metric looks good, and declaring victory.
-- When you are running PostHog (or planning to adopt it) for product analytics and want experimentation without integrating a separate A/B testing vendor. The value here is the zero-integration-cost path: your events, feature flags, and experiment analysis all live in one system. If you already have PostHog tracking onboarding events, you can launch an experiment in under an hour without any new instrumentation.
-- When you want to test onboarding variants across different user segments, such as new users from organic search versus those from a paid campaign, and you need feature flags that respect cohort-based targeting. PostHog's flag targeting lets you run segment-specific experiments so you can learn whether an onboarding improvement that works for self-serve signups also works for users who arrive via a sales-assisted invite.
-- When your team has been making onboarding changes based on intuition or qualitative feedback alone and you want to introduce a repeatable, evidence-based process. The method provides enough structure (hypothesis, flag, metrics, sample size, analysis, cleanup) that even teams without a dedicated data scientist can run credible experiments. It is particularly useful as a first experimentation framework before scaling to more complex setups.
-- When you need to run multiple concurrent onboarding experiments, like testing a new welcome modal on step 1 while also testing a different activation prompt on step 4, and you need a system that handles mutual exclusion or independent flag assignment correctly. PostHog's experiment setup lets you control whether users can be in multiple experiments simultaneously.
+- You have a specific change to one onboarding step and a funnel that shows users stopping there. The method turns that observation into a controlled comparison with a pre-agreed definition of success.
+- Your product already sends onboarding events to PostHog. Any event, funnel or warehouse table you already have can become an experiment metric, so there is little new instrumentation ([Experiments overview](https://posthog.com/docs/experiments)).
+- Enough new users reach the step for the running time calculator to give an end date the team will accept. The estimate tells you before launch whether the test is worth running.
+- You want to learn whether an onboarding change holds up for a specific group, such as self-serve signups, and you can express that group as a flag release condition or cohort.
+- The team has been changing onboarding on intuition and wants a repeatable process with a written hypothesis, a decision rule and a record of each result.
 
 ## When Not to Use
 
-- When your weekly signup volume is too low to reach statistical significance in a reasonable timeframe. If you get 50 new users per week and you need 400 per variant for a detectable effect size, you are looking at a 16-week experiment. Over that duration, so many external factors change (product updates, seasonality, marketing shifts) that the result becomes unreliable. In low-traffic situations, you are better served by qualitative user testing, session replay analysis, or larger, more dramatic changes that don't require statistical validation to evaluate.
-- When the change you want to test is a fundamental architectural shift, like moving from a self-serve onboarding model to a guided setup wizard with human touchpoints. These changes affect so many variables simultaneously that an A/B test cannot isolate what is working. The method assumes you are testing a scoped change within a stable system. If the system itself is being redesigned, use a phased rollout with cohort-based analysis instead, or simply ship the new approach and compare cohort-level retention over time.
-- When you don't yet know what your onboarding funnel looks like. Running experiments before you have reliable funnel instrumentation means you'll measure the wrong things or miss key dropoff points entirely. If you can't confidently say 'X% of users complete step 3 and Y% reach activation,' your priority is building that measurement foundation, not layering experiments on top of noisy data.
-- When the experiment could cause real harm to a subset of users. For example, if you are in a healthcare, financial, or safety-critical product context and the variant might degrade a user's ability to complete a critical task, the ethical risk of randomly assigning users to a potentially worse experience outweighs the learning. In these cases, staged rollouts with monitoring and rapid rollback are safer than true randomized experiments.
-- When your team lacks the discipline to wait for results. If stakeholders will pressure you to call the experiment after three days because the early numbers look good, you will get false positives and make decisions based on noise. The method only works if you commit to the pre-calculated sample size and the pre-defined success criteria. Without that commitment, you are adding process overhead without gaining decision quality.
+- Signups are too few for the calculator to give a usable duration. Session replays, interviews and bolder changes are better sources of learning at that volume.
+- The change reworks the whole onboarding model, such as adding human-led setup. A single A/B test cannot say which of the many changes caused the result, so a staged rollout with close monitoring fits better.
+- The onboarding funnel is not reliably instrumented. An experiment built on missing or broken events produces confident numbers about the wrong thing.
+- Stakeholders will not wait for the planned sample and will not accept sequential testing. Calling results early turns noise into decisions, which defeats the purpose of running the test.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Running A/B Tests in the PostHog Experiments Tab](../../skills/running-ab-tests-in-posthog-experiments-tab/SKILL.md) — Step-by-step walkthrough of creating, launching, and monitoring an A/B test using PostHog's Experiments UI, including variant allocation and goal setup.
-- [Setting Up PostHog Feature Flags for Experiment Variants](../../skills/setting-up-posthog-feature-flags-for-experiments/SKILL.md) — How to create and configure feature flags in PostHog to assign users to control and test variants in an A/B experiment.
-- [Comparing PostHog Experiments with Eppo, LaunchDarkly, and Other Platforms](../../skills/comparing-posthog-experiments-with-alternative-platforms/SKILL.md) — How to evaluate PostHog's experimentation capabilities against dedicated tools like Eppo, Statsig, and LaunchDarkly based on analysis methods, integrations, and pricing.
-- [Shipping the Winning Variant and Cleaning Up Feature Flags](../../skills/shipping-winning-variants-and-cleaning-up-experiments/SKILL.md) — How to roll out the winning experiment variant to 100% of users, remove the losing variant's code, and archive feature flags to keep your codebase clean after an experiment concludes.
-- [Designing Experiment Hypotheses and Success Metrics for Onboarding](../../skills/designing-onboarding-experiment-hypotheses-and-metrics/SKILL.md) — How to formulate a clear hypothesis, choose primary and secondary conversion metrics, and define what winning looks like before launching an onboarding A/B test.
-- [Segmenting New User Cohorts for Onboarding Experiments](../../skills/segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md) — How to target experiments specifically to new users or sign-up cohorts using PostHog's person properties and cohort filters to avoid contaminating results with existing users.
-- [Interpreting Bayesian and Frequentist Results in PostHog](../../skills/interpreting-bayesian-and-frequentist-experiment-results/SKILL.md) — How to read PostHog's experiment results dashboard, understand credible intervals vs p-values, and decide when an experiment has reached statistical significance.
-- [Integrating PostHog A/B Tests with Webflow and Marketing Pages](../../skills/integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md) — How to implement PostHog experiments on no-code or marketing landing pages using the JavaScript snippet, Webflow custom code, and anti-flicker techniques.
+- [Creating and Launching A/B Tests in PostHog Experiments](../../skills/running-ab-tests-in-posthog-experiments-tab/SKILL.md): Create an experiment in PostHog's Experiments tab, set its variants and metrics, launch it and monitor it to a decision.
+- [PostHog Experiment Variant Configuration with Feature Flags](../../skills/setting-up-posthog-feature-flags-for-experiments/SKILL.md): Configure the multivariate flag behind an experiment: keys, variants, split, release conditions and exposure code.
+- [Eppo vs PostHog Experiments: Choosing a Platform](../../skills/comparing-posthog-experiments-with-alternative-platforms/SKILL.md): Compare PostHog Experiments with Eppo, Statsig, LaunchDarkly and GrowthBook against your own requirements.
+- [Shipping Winning Variants and Cleaning Up Flags](../../skills/shipping-winning-variants-and-cleaning-up-experiments/SKILL.md): End an experiment, roll out the winner, remove the losing code and retire the flag in the right order.
+- [Onboarding Experiment Hypotheses and Success Metrics](../../skills/designing-onboarding-experiment-hypotheses-and-metrics/SKILL.md): Write a testable onboarding hypothesis and choose primary, secondary and counter metrics before launch.
+- [PostHog Experiment Cohort Filters for New Users](../../skills/segmenting-new-user-cohorts-for-onboarding-tests/SKILL.md): Restrict an onboarding experiment to new signups with release conditions, person properties and cohorts.
+- [Bayesian vs Frequentist Results in PostHog Experiments](../../skills/interpreting-bayesian-and-frequentist-experiment-results/SKILL.md): Read chance to win, credible intervals, p-values and confidence intervals, and turn them into a decision.
+- [PostHog Experiments on Webflow and Marketing Pages](../../skills/integrating-posthog-experiments-with-webflow-and-marketing-pages/SKILL.md): Run PostHog experiments on Webflow and other marketing pages with the web snippet, custom code or the no-code toolbar.
 
 ## FAQ
 
-**What are PostHog experiments in simple terms?**
+**What are PostHog Experiments?**
 
-PostHog experiments let you test two or more versions of a product experience on real users at the same time. Users are randomly assigned to a version using a feature flag, and PostHog tracks how each group behaves. After enough users have gone through the experience, PostHog tells you which version performed better with statistical confidence. It is essentially an A/B testing system built directly into PostHog's product analytics platform, so you don't need separate tools for flagging, event tracking, and analysis.
+PostHog Experiments is PostHog's A/B testing product. You define variants and metrics, and PostHog randomizes users, tracks exposures and runs the analysis with Bayesian or frequentist statistics ([Experiments docs](https://posthog.com/docs/experiments)). Every experiment is backed by a feature flag, and your code reads that flag to decide what each user sees. Because it uses the events you already send to PostHog, metrics usually need no new tracking.
 
-**How is PostHog A/B testing different from Optimizely or VWO?**
+**How do I run experiments in PostHog on an onboarding flow?**
 
-Optimizely and VWO are primarily designed for marketing and content teams, with visual editors that let you modify page elements without writing code. PostHog experiments are designed for product and engineering teams who are making code-level changes to their application. The key difference is integration depth: PostHog experiments use the same event stream and feature flag system you already use for analytics and rollouts, while Optimizely and VWO operate as separate layers. If your experiments involve changing application logic, API responses, or backend behavior (not just button colors), PostHog's approach is more natural.
+Write a hypothesis and pick metrics, then create the experiment through the three-step wizard and target new users with release conditions. Add code that checks eligibility and calls `getFeatureFlag()` to render each variant, test both variants with overrides, and launch. Wait for the planned sample, read the primary metric alongside supporting ones, and end the experiment by shipping a variant. The [getting started guide](https://posthog.com/docs/experiments/start-here) walks through the same sequence.
 
-**PostHog experiments vs Eppo: which should I use?**
+**Should I use Bayesian or frequentist statistics in PostHog?**
 
-Eppo is a warehouse-native experimentation platform built for teams with dedicated data scientists and a modern data stack (Snowflake, BigQuery, or Databricks). It offers advanced statistical methods like CUPED variance reduction, sequential testing, and experiment-level holdout groups. PostHog experiments are better suited for product and growth teams that want experimentation integrated into their existing PostHog analytics without managing a separate data pipeline. If you have a data team and a warehouse, Eppo gives you more statistical rigor.
+Bayesian is the default, and it reports a chance to win and a credible interval ([Bayesian statistics](https://posthog.com/docs/experiments/statistics-bayesian)). The frequentist engine uses Welch's t-test and reports p-values and confidence intervals, and it is where PostHog offers sequential testing ([frequentist statistics](https://posthog.com/docs/experiments/statistics-frequentist)). PostHog's Bayesian engine uses non-informative priors, so its posterior is approximately the observed effect and its variance. LaunchDarkly.s [comparison of the two approaches](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist) notes that with enough data the results are nearly identical, so the two engines mostly differ in how the result is expressed. Choose the one your team will read correctly, and pick sequential testing if you know you will check results often.
 
-If you want to go from hypothesis to running experiment in under an hour without touching your data warehouse, PostHog is the faster path.
+**How long should an onboarding experiment run?**
 
-**Does the PostHog experiments method work for small teams with low traffic?**
+Long enough to reach the sample size the running time calculator recommends for your baseline and MDE ([running time and sample size](https://posthog.com/docs/experiments/sample-size-running-time)). PostHog's worked example needs 3,600 users per variant to detect a 20% relative change on a 10% conversion rate. PostHog also needs at least 50 exposures per variant before it shows results ([troubleshooting](https://posthog.com/docs/experiments/troubleshooting)). If the estimate is longer than you can wait, test a larger change.
 
-It depends on how low your traffic is. If you have at least a few hundred users per week entering the flow you want to test, you can run meaningful experiments on large effect sizes (20%+ improvement). If you have fewer than 100 users per week, experiments will take too long to reach significance and the results will be unreliable. Small teams in this situation should focus on qualitative research (user interviews, session replays, usability testing) and save experimentation for when traffic grows.
+**Can I run PostHog experiments on Webflow marketing pages?**
 
-You can still use feature flags for phased rollouts without the statistical analysis layer.
+Yes. PostHog's [Webflow installation guide](https://posthog.com/docs/experiments/installation/webflow) adds the web snippet to the Head code in Webflow's site settings, which needs at least the Basic site plan, and then reads the experiment flag in custom code. PostHog also offers no-code web experiments built in the toolbar, which are in beta and suited to simple text and layout changes ([no-code web experiments](https://posthog.com/docs/experiments/no-code-web-experiments)). Code-based experiments remain the option for anything deeper in the product.
 
-**Should I use Bayesian or frequentist analysis in PostHog experiments?**
+**What is the difference between PostHog and Eppo for experiments?**
 
-Bayesian analysis is generally better for product teams because it gives you a direct probability statement: 'There is a 96% chance that variant B is better than control.' This is intuitively easier to act on than a frequentist p-value, which answers a different and more confusing question. Frequentist analysis is more established in academic and enterprise contexts where teams have specific false positive rate requirements. If your team doesn't have strong statistical training, start with Bayesian. If you're in a regulated industry or working with a data science team that prefers frequentist methods, PostHog supports both.
+PostHog runs experiments on its own flags and event data inside a broader analytics product. Eppo describes itself as a feature flagging and experimentation platform with a [warehouse-native analysis engine](https://docs.geteppo.com/) whose SDK sends no user data through Eppo, and it offers [frequentist, sequential and Bayesian analysis](https://docs.geteppo.com/statistics/). Teams whose source of truth is a data warehouse tend to look at Eppo or Statsig Warehouse Native. Teams already sending events to PostHog avoid a second data pipeline by staying in PostHog.
 
-**Why do PostHog experiments fail in practice?**
+**What should happen to the feature flag after an experiment ends?**
 
-The most common failure mode is calling experiments too early, before reaching the required sample size. Teams see early results that look promising, ship the variant, and later discover the effect was noise. The second most common failure is testing changes that are too small to produce a detectable effect, leading to weeks of experimentation with inconclusive results. Third, teams sometimes instrument events incorrectly, so the experiment tracks the wrong thing.
+End the experiment and keep the winning variant, then remove the flag check and the losing code path from your codebase ([managing lifecycle](https://posthog.com/docs/experiments/managing-lifecycle)). Deploy that change before disabling the flag, because disabling a flag that code still checks turns the feature off for everyone ([cleaning up stale flags](https://posthog.com/docs/feature-flags/cleaning-up-stale-flags)). PostHog notes that every active flag counts toward feature flag billing even when it is rolled out to all users. Archive the experiment afterward so the record stays available.
 
-Finally, some teams skip the hypothesis step and run experiments as a discovery tool rather than a validation tool, which leads to cherry-picked metrics and confirmation bias.
+## Sources
 
-**Can I run PostHog experiments on marketing pages built with Webflow?**
-
-Yes, but the implementation is different from in-app experiments. You embed PostHog's JavaScript snippet in your Webflow site, then use the feature flag to conditionally show or hide page elements using custom code or Webflow's conditional visibility features. The tradeoff is that Webflow experiments are limited to frontend, visual changes. You cannot test backend logic, API behavior, or deep application flows through a Webflow integration.
-
-For landing page and signup flow experiments on marketing sites, this works well. For anything deeper in the product, you need the SDK integrated into your application code.
-
-**How does this method work alongside product roadmaps and sprint planning?**
-
-Experiments should be treated as first-class items in your sprint backlog, not side projects. Each experiment requires engineering time for instrumentation, QA time for testing both variants, and a waiting period for data collection. Plan for the full lifecycle: 1-2 days for setup and instrumentation, 1-3 weeks of data collection, a few hours for analysis, and a few hours for cleanup. If you're running continuous onboarding experiments, build this into your team's capacity planning.
-
-The worst pattern is treating experiments as something that happens 'on the side,' which leads to abandoned experiments, unarchived flags, and wasted effort.
+- [PostHog: How to A/B test your onboarding flow (tutorial video)](https://www.youtube.com/watch?v=WyYPPSyKmXo)
+- [PostHog docs: Experiments](https://posthog.com/docs/experiments)
+- [PostHog docs: Getting started with experiments](https://posthog.com/docs/experiments/start-here)
+- [PostHog docs: Creating an experiment](https://posthog.com/docs/experiments/creating-an-experiment)
+- [PostHog docs: Adding experiment code](https://posthog.com/docs/experiments/adding-experiment-code)
+- [PostHog docs: Experiment metrics](https://posthog.com/docs/experiments/metrics)
+- [PostHog docs: Running time and sample size](https://posthog.com/docs/experiments/sample-size-running-time)
+- [PostHog docs: Analyzing results](https://posthog.com/docs/experiments/analyzing-results)
+- [PostHog docs: Bayesian statistics](https://posthog.com/docs/experiments/statistics-bayesian)
+- [PostHog docs: Frequentist statistics](https://posthog.com/docs/experiments/statistics-frequentist)
+- [PostHog docs: Experiments best practices](https://posthog.com/docs/experiments/best-practices)
+- [PostHog docs: Managing lifecycle](https://posthog.com/docs/experiments/managing-lifecycle)
+- [PostHog docs: Traffic allocation](https://posthog.com/docs/experiments/traffic-allocation)
+- [PostHog docs: Testing and launching an experiment](https://posthog.com/docs/experiments/testing-and-launching)
+- [PostHog docs: Experiment troubleshooting](https://posthog.com/docs/experiments/troubleshooting)
+- [PostHog docs: Cleaning up stale feature flags](https://posthog.com/docs/feature-flags/cleaning-up-stale-flags)
+- [PostHog docs: Webflow experiments installation](https://posthog.com/docs/experiments/installation/webflow)
+- [PostHog docs: No-code web experiments](https://posthog.com/docs/experiments/no-code-web-experiments)
+- [Evan Miller: How Not To Run an A/B Test](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
+- [David Robinson: Is Bayesian A/B Testing Immune to Peeking? Not Exactly](http://varianceexplained.org/r/bayesian-ab-testing/)
+- [Pete Hodgson on martinfowler.com: Feature Toggles](https://martinfowler.com/articles/feature-toggles.html)
+- [Kohavi, Tang and Xu: Trustworthy Online Controlled Experiments](https://experimentguide.com/)
+- [Eppo docs](https://docs.geteppo.com/)
+- [Eppo docs: Statistics](https://docs.geteppo.com/statistics/)
+- [Statsig docs: About Warehouse Native](https://docs.statsig.com/statsig-warehouse-native/introduction)
+- [LaunchDarkly docs: Bayesian versus frequentist statistics](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist)
+- [GrowthBook docs: Statistics overview](https://docs.growthbook.io/statistics/overview)
+- [Webflow Optimize](https://webflow.com/optimize)
 
 ---
 

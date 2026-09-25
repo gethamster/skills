@@ -1,31 +1,37 @@
 # Examples: Defining Measurable Outcomes for Product Roadmaps
 
-## Example: SaaS Onboarding Conversion — From Feature List to Outcome
+## Turning a revenue objective into a trial outcome
 
 **Scenario:**
 
-A B2B project management tool has a business objective to 'Grow self-serve revenue by 50% this year.' The product team's roadmap currently lists features: 'Redesign onboarding wizard,' 'Add template gallery,' 'Build in-app tooltips,' and 'Create setup checklist.' The PM needs to convert this feature-based roadmap into an outcome-driven one. Current data shows that trial-to-paid conversion is 6%, and users who complete 3 or more core actions in their first week convert at 24%.
+Illustrative scenario: a self-serve collaboration tool has a company objective to grow self-serve revenue this year. The product team's roadmap lists four features: an onboarding wizard, a template gallery, in-app tips and a setup checklist. The product manager is asked to rewrite the roadmap around outcomes.
 
 **Walkthrough:**
 
-The PM identifies that the highest-leverage outcome is 'Increase trial-to-paid conversion rate from 6% to 12% by end of Q3.' This is decomposed into a leading outcome: 'Increase percentage of trial users completing 3+ core actions in week 1 from 18% to 40% by end of Q2.' The '3+ core actions in week 1' metric becomes the team's primary focus. The previous feature list (onboarding wizard, templates, tooltips, checklist) becomes a backlog of potential initiatives — hypotheses about what might move the metric. The team runs a discovery sprint and learns that the biggest drop-off happens before users invite a teammate, so they prioritize the invite flow over the template gallery. After 6 weeks, the week-1 activation metric moves from 18% to 29%, and trial-to-paid conversion ticks up to 8.4%. The outcome framework let the team find a better solution than the original feature list would have prescribed.
+The product manager starts from the objective and asks which customer behaviors drive self-serve revenue. Trial users who invite a teammate in their first week convert far more often than those who do not, according to the team's own funnel data. The team cannot move revenue directly, but it can influence how many trial accounts invite a teammate.
 
-## Example: E-Commerce Platform Reducing Support Load
+The outcome becomes: increase the share of new trial accounts that invite at least one teammate in week one, from a baseline of 2 in 10 to 3 in 10 by the end of the quarter, owned by the onboarding team. The four features move under that outcome as candidate initiatives. Discovery interviews then show that users do not know who to invite, which points to an initiative none of the four features covered.
+
+## Replacing a support-cost target with a behavior
 
 **Scenario:**
 
-An e-commerce platform's VP of Product has set a business objective to 'Improve operational efficiency by reducing support costs 25% without impacting customer satisfaction.' The product team responsible for the seller experience currently has a roadmap packed with features: 'Build FAQ chatbot,' 'Redesign help center,' 'Add order tracking page,' and 'Create automated refund flow.' Support ticket volume is 12,000 per month, with 34% related to order status inquiries and 22% related to refund requests.
+Illustrative scenario: a marketplace's leadership wants lower support costs without hurting satisfaction. The seller-experience team is handed "reduce support costs" as its goal, along with a list of help-center features.
 
 **Walkthrough:**
 
-Instead of committing to four features, the PM defines two measurable outcomes: (1) 'Reduce order-status-related support tickets from 4,080/month to under 1,500/month by end of Q2' and (2) 'Reduce refund-related support tickets from 2,640/month to under 1,200/month by end of Q3,' with a guardrail metric: 'Maintain seller satisfaction score (CSAT) above 4.2/5.0.' The first outcome is prioritized because it's the larger volume. The team discovers through user research that 60% of order-status tickets come from a 48-hour window after shipping, when tracking data exists but isn't surfaced to sellers. Rather than building the originally planned chatbot, they implement proactive shipping notification emails with tracking links — a much smaller initiative. Order-status tickets drop to 1,800 in the first month. The outcome-driven approach saved two months of chatbot development effort and achieved a better result.
+The team runs the influence test. Support cost depends on staffing, tooling and contract rates, most of which the product team does not control. Ticket data shows that a large share of seller tickets ask where an order is. That is a behavior the product can change.
 
-## Example: Mobile App Retention for a Fitness Product
+The team proposes an outcome of fewer order-status tickets per hundred orders, with seller satisfaction held at its current level as a counterweight. Leadership keeps support cost as the business outcome above it. The team writes down its assumption that fewer order-status tickets will lower cost, so the link can be checked at the quarterly review.
+
+## Catching an output in disguise
 
 **Scenario:**
 
-A fitness app has a business objective to 'Achieve 1 million monthly active users by year-end,' currently sitting at 620,000 MAU. The growth team's roadmap lists 'Social features,' 'Gamification badges,' 'AI workout recommendations,' and 'Apple Watch integration.' The PM knows that 30-day retention is 31%, meaning they're losing most new users within a month. New user acquisition is steady at 180,000/month, but the leaky bucket means growth is flat.
+Illustrative scenario: a learning platform's content team proposes the outcome "increase the number of lesson reviews," and it passes a first check because it is a metric.
 
 **Walkthrough:**
 
-The PM reframes the roadmap around an outcome: 'Increase 30-day retention from 31% to 48% by end of Q3.' A quick analysis shows that reaching 48% retention with current acquisition rates would push MAU to approximately 980,000 — nearly hitting the business objective without any increase in acquisition spend. The leading indicator becomes 'Percentage of new users who log 3+ workouts in their first 14 days,' currently at 22%. The team's outcome statement: 'Increase first-14-day workout completion (3+) from 22% to 45% by end of Q2.' With this focus, the team deprioritizes Apple Watch integration (which analytics shows existing power users want, not new users) and instead builds a personalized first-week workout plan that adapts to reported fitness level and available equipment. The 14-day metric reaches 38% after one iteration, and 30-day retention climbs to 41%. A second initiative adding workout reminders tuned to each user's preferred time pushes 14-day completion to 44% and retention to 46% — close to the target and far more progress than shipping four unrelated features would have produced.
+The product manager applies the output test from Torres's course-review example. Reviews are something users produce, and more of them does not help anyone unless other learners read them before choosing a lesson. The team could raise the count with a pop-up that nags every learner, without improving a single decision.
+
+The outcome is rewritten as the share of lesson-page visits where the learner sees at least one review before enrolling. The team adds enrollment completion as the behavior it expects to follow, and keeps review count on the dashboard as a traction metric.

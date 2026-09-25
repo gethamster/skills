@@ -1,15 +1,20 @@
 ---
-name: designing-role-based-time-allocation
-description: "This skill teaches you how to structure your weekly schedule so you intentionally divide hours between doing the work (technician), building systems and managing people (manager), and thinking about vision and growth (entrepreneur), instead of letting urgency decide for you."
+name: "designing-role-based-time-allocation"
+description: "Role-based time allocation for business owners: turn a target Technician, Manager and Entrepreneur balance into protected weekly calendar blocks."
 category: "Ops"
 metadata:
   homepage: https://tryhamster.com
-  method: technician-manager-entrepreneur-framework
+  method: "technician-manager-entrepreneur-framework"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Designing Role-Based Time Allocation Across Technician vs Manager vs Entrepreneur
+# Role-Based Time Allocation for Business Owners
 
-> This skill teaches you how to structure your weekly schedule so you intentionally divide hours between doing the work (technician), building systems and managing people (manager), and thinking about vision and growth (entrepreneur), instead of letting urgency decide for you.
+> Role-based time allocation for business owners: turn a target Technician, Manager and Entrepreneur balance into protected weekly calendar blocks.
 
 ## Before you start
 
@@ -23,158 +28,109 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 2-3 hours for initial design, 30 minutes per biweekly review |
-| Outcome | You produce a weekly calendar template with labeled, protected time blocks for each role, a target allocation percentage, and a biweekly review habit that keeps your actual time within five points of your targets. |
-| Prerequisites | Completed a baseline assessment of your current technician/manager/entrepreneur balance (see Assessing Your Technician, Manager, and Entrepreneur Balance), Access to your calendar tool with at least 4 weeks of historical data, Basic understanding of the three roles from the E-Myth framework |
-| Part of | [Technician, Manager, Entrepreneur Framework](../../methods/technician-manager-entrepreneur-framework/METHOD.md) |
+| Difficulty | Beginner |
+| Time to Learn | An afternoon to design, a few weeks to settle |
+| Outcome | You run a weekly calendar with protected blocks for Technician, Manager and Entrepreneur work, sized to your target balance and reviewed on a fixed rhythm. |
+| Prerequisites | A current picture of where your time goes, a target balance for the three roles, control over your own calendar |
+| Part of | [Technician Manager Entrepreneur Framework](../../methods/technician-manager-entrepreneur-framework/METHOD.md) |
 
 ## Overview
 
-Most business owners and product leaders know they should spend less time doing the work and more time leading, strategizing, and building systems. The problem is that knowing this changes nothing without a concrete mechanism to enforce it. Designing role-based time allocation is that mechanism. It translates the abstract insight from the [Technician, Manager, Entrepreneur Framework](https://tryhamster.com/methods/technician-manager-entrepreneur-framework) into a weekly calendar you can actually follow, with labeled blocks for each of the three roles, target percentages based on your business stage, and a review cadence that catches drift before it compounds.
+Role-based time allocation is the calendar side of Michael Gerber's [technician manager entrepreneur framework](../../methods/technician-manager-entrepreneur-framework/METHOD.md). The framework says a business owner has to cover three roles: the Technician who does the work, the Manager who builds order, and the Entrepreneur who sets direction. Knowing that is not enough, because urgent delivery work wins every unplanned hour. This skill gives each role a place on the calendar so the balance you intend is the balance you live.
 
-The specific artifact this skill produces is a role-labeled weekly calendar template paired with a one-page allocation scorecard. The calendar shows exactly which hours belong to technician tasks (client work, coding, design, writing), which belong to manager responsibilities (hiring, process documentation, team meetings, quality checks), and which belong to entrepreneurial thinking (market research, strategic planning, partnership exploration, product vision). The scorecard tracks your target versus actual split each review period, giving you a quantitative feedback loop instead of a vague feeling that you "should be more strategic."
+The three roles want different kinds of time. [Shortform's guide to The E-Myth Revisited](https://www.shortform.com/blog/startup-roles/) describes the Technician as someone who "lives in the present" and likes "to work on one thing at a time", while the Entrepreneur "is always thinking of the future." Paul Graham makes a related point about schedules: people who make things "generally prefer to use time in units of half a day at least", while the manager's schedule is cut into "one hour intervals" ([Maker's Schedule, Manager's Schedule](http://www.paulgraham.com/makersschedule.html)). Mixing the two in the same morning tends to spoil both.
 
-This skill sits between two adjacent capabilities in the framework. Before you design your allocation, you need an honest assessment of where your time currently goes, which is covered in [Assessing Your Technician, Manager, and Entrepreneur Balance](https://tryhamster.com/skills/assessing-your-technician-manager-entrepreneur-balance). After you have your allocation running, you will notice that your manager blocks surface the need for repeatable systems, which is covered in [Building Repeatable Systems as the Manager Role](https://tryhamster.com/skills/building-systems-as-the-manager-role). Time allocation is the bridge between diagnosis and action. Without it, the framework remains theoretical.
+The skill starts from a target balance. If you have not set one, run the [E-Myth self-assessment](../assessing-your-technician-manager-entrepreneur-balance/SKILL.md) first. The target is yours to set; Gerber's commonly quoted split describes the typical owner and is not a prescription (see the parent method). A solo practitioner will keep a large Technician share for a long time, while a founder with a team should move steadily toward Manager and Entrepreneur work.
 
-Success looks specific: within four weeks of implementation, your actual time split matches your target split within five percentage points per role, you have zero weeks where entrepreneur time gets completely zeroed out, and you can point to at least one strategic decision that emerged directly from protected entrepreneur-mode thinking. The goal is not perfection. It is consistent intentionality about which hat you wear and when you wear it.
+The output is a weekly template: named blocks for each role on fixed days and times, rules for what may interrupt them, and a review rhythm. It is a design you can change, and the review is where you change it.
+
+Business owner time allocation fails most often at the edges, when a client call lands in the middle of a strategy block or a team question arrives during deep work. Much of this skill is about those edges: how to start and end blocks, what counts as an emergency, and how to catch the calendar drifting back to all-Technician weeks.
 
 ## How It Works
 
-The core insight behind role-based time allocation is that the three roles, technician vs manager vs entrepreneur, compete for the same finite resource: your weekly hours. Without explicit boundaries, the technician role wins by default. This happens because technician work has the shortest feedback loops, the clearest deliverables, and the most immediate emotional reward. You finish a task, you see the result, you feel productive. Manager work (building a checklist, documenting a process, giving feedback) feels less urgent. Entrepreneur work (thinking about where the market is heading, sketching a new product line) feels almost indulgent when there is a client deliverable due tomorrow.
+The design turns proportions into hours and hours into blocks. Take your working hours for a normal week, split them by your target balance, and round to whole blocks. Then place each role's blocks where they fit the kind of attention the role needs.
 
-Time allocation works because it converts role priority from a willpower problem into a scheduling problem. Willpower is unreliable. Calendars are structural. When your Tuesday morning from 9 to 11 says "Entrepreneur: market research and product vision," you do not need motivation to do strategic work. You need motivation to violate a commitment you already made. The activation energy flips direction.
+Illustrative scenario: an owner works about forty hours a week and sets a target for the next quarter.
 
-The formula for target allocation depends on your business stage and is not one-size-fits-all. A solo practitioner in year one might target 70% technician, 20% manager, 10% entrepreneur. A founder with a team of five should be closer to 30% technician, 40% manager, 30% entrepreneur. A CEO scaling past twenty people might target 10% technician, 30% manager, 60% entrepreneur. The key is that the direction of travel always moves away from technician dominance. If your technician percentage is rising quarter over quarter, something is structurally wrong, usually a hiring gap, a trust deficit with your team, or an identity attachment to the craft.
+| Role | Hours per week | Blocks |
+|---|---|---|
+| Technician | 24 | Three full delivery days |
+| Manager | 10 | Two afternoons plus short daily check-ins |
+| Entrepreneur | 6 | One protected morning |
 
-The biweekly review is essential because allocation drift is invisible in real time. You skip one entrepreneur block for a "quick" client fix. Then another. Within a month your 30% entrepreneur target has silently become 8%. The review catches this by comparing logged hours against targets and asking one question: which role lost time, and what structural change would prevent the same loss next period? Notice this is not about guilt. It is about system design. If your entrepreneur blocks keep getting invaded, the fix might be moving them to early morning before Slack opens, not trying harder to protect them at 2 PM.
+Placement follows the kind of work. Entrepreneur work needs long, uninterrupted time and a fresh head, so it usually goes early in the week and early in the day. Technician work also benefits from long blocks when it is making something. Manager work fits the hour-by-hour schedule: reviews, one-to-ones and process fixes. Graham's device for protecting maker time applies here: he clusters meetings into office hours "at the end of my working day" so they never interrupt it ([Graham](http://www.paulgraham.com/makersschedule.html)).
 
-One important nuance: some activities span roles. A product roadmap session involves entrepreneur thinking (vision, opportunity assessment) and manager thinking (prioritization, resource planning). The rule of thumb is to categorize by primary intent. If the purpose of the session is to decide where the company is headed, it is entrepreneur time. If the purpose is to sequence and resource the work, it is manager time. Do not overthink the categorization. Directional accuracy beats false precision.
+Each block needs an agenda and an output. A Manager block without an agenda becomes inbox time, and an Entrepreneur block without one becomes browsing. Birkinshaw and Cohen give the same advice for any freed time: "Write down two or three things you should be doing but aren't" ([Birkinshaw and Cohen, HBR](https://hbr.org/2013/09/make-time-for-the-work-that-matters)). The agenda can be short, but it must name what the block will produce.
+
+Rules for interruptions keep blocks intact. Decide in advance what counts as an emergency, who handles everything else, and where non-urgent requests go until the next Manager block. Tell the team and clients when you are reachable. Without these rules every block becomes negotiable.
+
+A review rhythm closes the loop. Every week or two, compare what the calendar said with what happened, note which blocks were broken and why, and fix the cause. Each quarter, revisit the target itself, since the right balance moves as the business passes through what Gerber calls infancy, adolescence and maturity ([StoryShots summary](https://www.getstoryshots.com/books/the-e-myth-revisited-summary/)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit Your Current Time Split
+### Step 1: Start from your current split and target
 
-Before you can design a target allocation, you need an honest baseline. Pull up your calendar from the last four weeks. Go through every block and label it T (technician), M (manager), or E (entrepreneur). Technician time includes any activity where you are personally doing the deliverable work: writing code, designing mockups, handling customer support tickets, writing copy, building the thing.
+Take your current role split from a time audit and your target for the next quarter. If you have no audit, track one real week first. Write both down side by side so the gap is visible. Keep the target to a shift you can make with the people and systems you have now.
 
-Manager time includes hiring meetings, one-on-ones, process documentation, quality reviews, team standups, and any activity focused on organizing people or systems. Entrepreneur time includes strategic planning, market research, competitive analysis, vision documents, partnership conversations, and anything oriented toward future opportunity rather than current operations. For unlabeled time or ambiguous meetings, use the primary intent rule: ask yourself what the purpose of that hour was, and label accordingly. Tally the hours per role and calculate the percentage split.
+### Step 2: Convert the target to weekly hours
 
-Write it down as your baseline.
+Multiply your usual working hours by each role's share and round to blocks of at least half a day for Technician and Entrepreneur work. Manager work can use shorter blocks. Check the total against your real week, including travel and admin, so the plan does not assume hours you do not have.
 
-> **Pro tip:** If you do not calendar-block your work and instead work reactively, spend one week logging your time in 30-minute increments using a simple spreadsheet or time tracker. Retrospective calendar audits only work if your calendar reflects reality.
+### Step 3: Place the blocks on the calendar
 
-### Step 2: Step 2: Determine Your Target Allocation by Business Stage
+Put Entrepreneur blocks where your attention is best and interruptions are fewest. Group Technician work into full or half days so you are not switching all day. Cluster Manager work, such as one-to-ones, reviews and approvals, into set windows, in the spirit of [Graham's office hours](http://www.paulgraham.com/makersschedule.html). Make the blocks recurring so you do not have to defend them from scratch each week.
 
-Your target allocation should reflect where your business needs you most, not where you feel most comfortable. Use these reference ranges as starting points. Solo operator or pre-revenue: 60-70% technician, 20-25% manager, 10-15% entrepreneur. Small team (2-5 people): 35-45% technician, 30-35% manager, 20-30% entrepreneur.
+### Step 4: Give each block an agenda
 
-Growing team (6-20 people): 15-25% technician, 35-40% manager, 30-40% entrepreneur. Scaled organization (20+ people): 5-15% technician, 25-35% manager, 45-60% entrepreneur. Write down the range that matches your stage, then pick a specific number for each role that sums to 100%. Compare this target to your baseline from Step 1.
+Write one or two named outputs for each Manager and Entrepreneur block, such as "finish the invoicing system document" or "decide which market to test next quarter". Keep a running list of candidate topics for each role so you never start a block wondering what to do. End each block by writing what you produced and what comes next.
 
-The gap between baseline and target is your design challenge. If your baseline is 80% technician and your target is 40%, you cannot flip overnight. Set an interim target that moves 10-15 percentage points toward your goal over the next quarter.
+### Step 5: Set interruption rules
 
-> **Pro tip:** If you are unsure about your stage, look at headcount and revenue, not aspiration. A founder with two contractors and $15K MRR is in the small-team stage regardless of their growth ambitions.
+Define what counts as an emergency and who handles everything else during your protected blocks. Give the team a place to queue non-urgent questions for the next Manager block. Tell clients your availability windows. Write the rules down and share them, because unwritten rules are renegotiated every time.
 
-### Step 3: Step 3: Convert Percentages to Weekly Hour Blocks
+### Step 6: Review every week or two
 
-Take your total working hours per week, and multiply by each role's target percentage. 5 hours entrepreneur. Round to the nearest hour for practical scheduling. Now determine the minimum block size for each role.
+Compare the planned calendar with what actually happened. Count the protected blocks that survived, list the ones that did not and name the cause of each. Fix causes with changes to the design, such as moving a block, changing a rule or handing off the task that keeps breaking in.
 
-Technician work can run in blocks as short as one hour if tasks are discrete. Manager work benefits from 60-90 minute blocks to allow for meaningful process design or feedback sessions. Entrepreneur work requires the longest uninterrupted blocks, ideally 2-3 hours minimum, because strategic thinking needs warm-up time and suffers most from context switching. Calculate how many blocks of each minimum size you need.
+### Step 7: Revisit the target each quarter
 
-5-hour blocks, you need five blocks per week.
-
-> **Pro tip:** Entrepreneur blocks shorter than 90 minutes rarely produce meaningful strategic output. You spend the first 20 minutes clearing your head from operational noise, leaving almost no time for deep thinking. Protect block length even if it means fewer total blocks.
-
-### Step 4: Step 4: Map Blocks to Your Weekly Calendar
-
-Open a blank weekly calendar template. Place your entrepreneur blocks first, because they are the most fragile and most likely to get displaced. Choose times when you have the most mental energy and the fewest interruptions. For many people, this is early morning before the team comes online, or a dedicated half-day on a specific weekday.
-
-Next, place your manager blocks. These often need to align with team availability, so schedule them during core hours when your reports and collaborators are reachable. One-on-ones, team meetings, and process review sessions go here. Finally, fill remaining time with technician blocks.
-
-These are the most flexible because operational work is usually available whenever you are. " Color-code if your calendar supports it. This visual labeling serves as both a scheduling constraint and a mindset trigger.
-
-> **Pro tip:** Place entrepreneur blocks at the beginning of the week (Monday or Tuesday morning) rather than Friday afternoon. By Friday, the accumulated urgency of the week almost always cannibalizes strategic thinking time.
-
-### Step 5: Step 5: Define Entry and Exit Rituals for Each Role
-
-The biggest failure mode in time allocation is physical compliance without mental compliance. You sit in your entrepreneur block but check Slack, answer support tickets, and review a team member's pull request. To prevent this, create a simple entry ritual for each role. For entrepreneur blocks: close Slack, close email, open your strategic planning document or a blank page, and write one sentence about the question you want to answer in this session.
-
-For manager blocks: open your team dashboard, pull up your one-on-one notes or process documentation folder, and review what was decided or delegated last session. For technician blocks: open the task list, pick the highest-priority deliverable, and set a visible timer. Exit rituals are equally important. At the end of each block, spend 2-3 minutes capturing what you decided, what you completed, or what needs to carry forward.
-
-This prevents the next block from bleeding backward into the previous role's concerns.
-
-> **Pro tip:** The entry ritual does not need to be elaborate. Even 60 seconds of intentional transition, closing one set of tools and opening another, cuts role bleed by more than half compared to just switching tasks without any transition.
-
-### Step 6: Step 6: Establish Guardrails for Block Violations
-
-No schedule survives contact with reality perfectly. Client emergencies happen. Team crises arise. The question is not whether blocks will be violated but what happens when they are.
-
-Establish two rules. First, a replacement rule: if you cannibalize a block from one role, you must reschedule an equivalent block within the same week. If your Wednesday entrepreneur block gets consumed by a production outage, you move it to Thursday or Friday. It does not simply disappear.
-
-Second, a threshold rule: define the maximum percentage any role can deviate from its target before triggering a structural review. A five-percentage-point deviation in any given two-week period is normal variance. A ten-point deviation sustained for a month signals a structural problem that needs a process change, not more discipline. Write these rules down and keep them visible.
-
-> **Pro tip:** Track violations in a simple tally. If the same role's blocks get violated three or more times in a two-week period, the problem is almost never a lack of willpower. It is a scheduling conflict, a team capacity gap, or a missing delegation. Fix the system, not the behavior.
-
-### Step 7: Step 7: Conduct Your First Biweekly Review
-
-After two weeks of running your new allocation, sit down for a 30-minute review. Pull your calendar and re-audit using the same T/M/E labeling method from Step 1. Calculate your actual split for the period. Compare actual to target.
-
-For each role, note the deviation. If any role deviated by more than five points, identify the specific blocks that were violated and the reason. Categorize reasons into three buckets: external disruption (client emergency, outage), internal pull (you chose to do technician work instead of entrepreneur work because it felt more productive), or structural conflict (the block was scheduled at a time that repeatedly conflicts with recurring obligations). External disruptions require better contingency planning.
-
-Internal pull requires examining your identity attachment to the technician role. Structural conflicts require moving the blocks. Adjust your template for the next two weeks based on what you learned. Document one specific change you are making and why.
-
-> **Pro tip:** The most honest signal in your review is the "internal pull" bucket. If you repeatedly choose to abandon entrepreneur or manager blocks voluntarily, you are likely experiencing the technician identity trap described in the E-Myth framework. This is the most important pattern to surface and discuss.
-
-### Step 8: Step 8: Evolve Your Allocation Quarterly
-
-Every quarter, revisit your target percentages. Your business stage may have changed. You may have hired someone who absorbs technician work. You may have promoted a team lead who handles manager tasks.
-
-Each of these shifts should move your target allocation further from technician and toward manager and entrepreneur. Compare your current quarter's average actual split to your target. If you consistently hit your target, consider shifting 5-10 percentage points toward the next stage's allocation. If you consistently missed your target, diagnose whether the target was aspirational but premature, or whether the miss was caused by fixable structural issues.
-
-Adjust the target or the structure accordingly. Document your quarterly allocation evolution in a running log. Over time, this log becomes a powerful artifact showing your progression from operator to leader.
-
-> **Pro tip:** Quarterly evolution is also the right time to reconsider which specific activities belong in each role bucket. An activity you classified as technician work six months ago (like writing product specs) might now be manager work (reviewing and approving specs your team writes). Update your classifications as your role evolves.
+Once a quarter, repeat the time audit and reset the target for the next quarter. A key hire, a new system or a new market can all change the right balance. Adjust the template to match and tell the team what changed.
 
 ## Best Practices
 
-- Label calendar blocks with role prefixes ([T], [M], [E]) and use color coding so you can visually scan your week and immediately see the ratio. Without visual labeling, you will unconsciously fill manager and entrepreneur blocks with technician tasks because there is no friction to crossing role boundaries.
-- Schedule entrepreneur blocks during your peak cognitive hours, not leftover slots. Strategic thinking requires the most mental energy and suffers the most from fatigue. If you put entrepreneur time at 4 PM on Friday, you are signaling to yourself that vision is the lowest priority. The calendar placement communicates your real values regardless of what you say.
-- Keep a "role capture" note open throughout the day where you jot down ideas, tasks, or issues that belong to a different role than the one you are currently in. This prevents the common failure of interrupting a manager block to pursue a technician impulse. Capture it, park it, and address it in the correct block later.
-- Start with a conservative interim target rather than jumping straight to your ideal allocation. If you are at 80% technician today, targeting 40% next week will fail and create learned helplessness about the whole system. A shift of 10-15 percentage points per quarter is aggressive but sustainable. Consistent directional movement matters far more than hitting an ambitious number once.
-- Batch similar activities within each role's blocks to minimize context-switching costs. Within your manager blocks, group all one-on-ones on the same day rather than scattering them. Within technician blocks, focus on one project rather than task-switching. Context switching between tasks within a role is already costly. Switching between roles mid-block compounds the cost dramatically.
-- Share your allocation targets with your team or a peer accountability partner. When your team knows that Tuesday morning is protected entrepreneur time, they stop scheduling meetings in that slot. When a peer checks in biweekly on your actual split, you maintain the review habit even when it feels inconvenient. External accountability outperforms internal discipline for habit formation.
-- Treat the biweekly review as a non-negotiable calendar block itself, labeled [M] since it is a management activity, reviewing your own operational system. If the review is not scheduled, it will not happen. And without the review, allocation drift compounds silently until your entire system collapses back to technician-dominant defaults.
+- Protect Entrepreneur time first. It is the easiest to cancel because nothing external depends on it, so schedule it before anything else.
+- Keep blocks long enough to matter. Graham's observation that makers need "units of half a day at least" ([Graham](http://www.paulgraham.com/makersschedule.html)) holds for strategy work too.
+- Batch Manager work. Reviews, approvals and one-to-ones fit together in set windows and interrupt less when grouped.
+- Name an output for every block. "Strategy" is a topic; "a decision on pricing for the new service" is an output you can check.
+- Share the calendar with the team. People respect blocks they know about and can plan around.
+- Track broken blocks. The pattern of what breaks them tells you which system or handoff to build next.
 
 ## Common Mistakes
 
-- **Treating allocation as a rigid rule rather than a directional system** — Some people design their allocation, miss it in week one, declare the system broken, and abandon it entirely. This is an all-or-nothing thinking trap. The allocation is a guidance system, not a straitjacket. The biweekly review exists precisely because perfect adherence is impossible.
-
-' Watch for the urge to quit after two imperfect weeks. That urge is itself a symptom of technician-mode thinking: wanting a clear, pass-fail deliverable from something that is inherently iterative.
-- **Scheduling entrepreneur time but filling it with operational planning** — This is the most common form of role bleed. You block two hours for entrepreneur thinking, but you spend it prioritizing next sprint's backlog, reviewing team performance metrics, or updating project timelines. All of those are manager activities, not entrepreneur activities. Entrepreneur time is specifically about external-facing, future-oriented thinking: where is the market going, what new product lines could you pursue, what partnerships would change your trajectory, what customer segments are you ignoring.
-
-The diagnostic signal is simple. If your entrepreneur block produces a to-do list of operational tasks, you were not in entrepreneur mode. If it produces questions, hypotheses, or strategic bets, you were.
-- **Setting a target allocation based on aspiration rather than capacity** — A solo founder with no employees who sets a target of 50% entrepreneur time is not being strategic. They are being unrealistic. If all client work depends on you and you have no systems or team to absorb it, you cannot halve your technician time overnight. The target must account for current constraints.
-
-The way to reduce technician percentage is not to simply stop doing the work. It is to build manager-mode systems and hire people who can absorb it, which itself requires manager and entrepreneur time. Start with a target you can actually hit, and use the quarterly evolution to ratchet toward your ideal.
-- **Categorizing ambiguous activities to inflate the 'entrepreneur' count** — There is a natural ego incentive to categorize more of your time as entrepreneur work because the framework implicitly suggests that entrepreneur is the aspirational role. Product roadmap discussions, investor calls, and even sales calls get labeled entrepreneur when they are often manager activities (roadmap prioritization, investor relations management) or even technician activities (doing the sales pitch yourself). Use the primary intent test honestly. If the activity is about executing or managing current operations, it is not entrepreneur time regardless of how strategic it feels.
-
-If you notice your self-reported entrepreneur percentage is significantly higher than what a neutral observer would score, you are likely miscategorizing.
-- **Designing the allocation in isolation without considering team and stakeholder rhythms** — Your allocation exists within a system of other people's schedules. If you place your entrepreneur block at 10 AM Tuesday but your entire team has standup at 10 AM Tuesday, you have created a structural conflict that will fail every week. Before finalizing your template, map your recurring obligations, your team's core collaboration hours, and your external commitments. Design around these constraints rather than pretending they do not exist.
-
-The best allocation is one that works within your real environment, not the ideal environment you wish you had.
-- **Skipping the biweekly review because 'things feel about right'** — Feelings are unreliable indicators of time allocation. Research on time perception consistently shows that people overestimate time spent on aspirational activities and underestimate time spent on habitual ones. Without a quantitative review comparing logged hours to targets, you will almost certainly believe your allocation is closer to target than it actually is. The review takes 30 minutes.
-
-The cost of skipping it is months of invisible drift back toward technician dominance. If you have gone three or more review cycles without a review, assume your allocation has degraded significantly and re-audit from scratch.
+- **Designing an ideal week you cannot keep**: A calendar that assumes no delivery work when you are still the main practitioner collapses in days. Set a target you can reach with today's team.
+- **Blocks with no agenda**: Unplanned protected time drifts into email and small tasks. Decide the output before the block starts.
+- **Letting clients book anywhere**: If anyone can schedule into any hour, protected blocks will not survive. Offer specific availability windows.
+- **Treating every request as urgent**: Without an emergency definition, every question interrupts. Write down what counts and who covers the rest.
+- **Never revisiting the target**: The right balance changes as the business grows. A quarterly review keeps the template matched to the stage you are in.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/technician-manager-entrepreneur-framework/METHOD.md) — Technician, Manager, Entrepreneur Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/technician-manager-entrepreneur-framework/METHOD.md): Technician Manager Entrepreneur Framework
 
 ## Related Skills
 
 - [Shifting from Working In to Working On Your Business](../shifting-from-working-in-to-working-on-your-business/SKILL.md)
-- [Building Repeatable Systems as the Manager Role](../building-systems-as-the-manager-role/SKILL.md)
-- [Assessing Your Technician, Manager, and Entrepreneur Balance](../assessing-your-technician-manager-entrepreneur-balance/SKILL.md)
+- [Building Business Systems as the E-Myth Manager Role](../building-systems-as-the-manager-role/SKILL.md)
+- [E-Myth Self-Assessment: Find Your Dominant Role](../assessing-your-technician-manager-entrepreneur-balance/SKILL.md)
 - [Developing Your Entrepreneurial Vision](../developing-your-entrepreneurial-vision/SKILL.md)
-- [Transitioning from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
-- [Applying the E-Myth Framework to Agencies and Service Businesses](../applying-the-e-myth-framework-to-agencies/SKILL.md)
+- [How to Emerge from Technician to Entrepreneur](../transitioning-from-technician-to-entrepreneur/SKILL.md)
+- [Applying the E-Myth Framework to Agencies](../applying-the-e-myth-framework-to-agencies/SKILL.md)
+
+## Sources
+
+- [Paul Graham: Maker's Schedule, Manager's Schedule](http://www.paulgraham.com/makersschedule.html)
+- [Shortform: the three startup roles](https://www.shortform.com/blog/startup-roles/)
+- [Birkinshaw and Cohen: Make Time for the Work That Matters (HBR)](https://hbr.org/2013/09/make-time-for-the-work-that-matters)
+- [StoryShots: The E-Myth Revisited summary](https://www.getstoryshots.com/books/the-e-myth-revisited-summary/)
