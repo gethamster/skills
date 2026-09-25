@@ -5,12 +5,15 @@ description: "Human-centered design is a design process that grounds every decis
 metadata:
   datePublished: "2026-09-24"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/after-rain-colour-light.webp"
 ---
 
 # Human-Centered Design: The People-First Design Process
 
-> Created by **IDEO, with major popularization by Tim Brown** — [https://www.ideo.com/about](https://www.ideo.com/about)
+> Created by **IDEO, with major popularization by Tim Brown** - [https://www.ideo.com/about](https://www.ideo.com/about)
 
 ## Overview
 
@@ -131,14 +134,14 @@ A [2022 eHealth analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC9582917) note
 
 This method includes the following skills:
 
-- [Building Rapid Prototypes](skills/building-rapid-prototypes/SKILL.md) — Learn to make ideas tangible through low- and high-fidelity prototypes, storyboards, service models, and mock-ups that can be shared, examined, and tested with real users.
-- [Conducting Contextual User Research](skills/conducting-contextual-user-research/SKILL.md) — Learn to investigate people's real behaviors, needs, and lived experiences through observation, interviews, immersion, and contextual inquiry in their natural environments.
-- [Planning Human-Centered Implementation](skills/planning-human-centered-implementation/SKILL.md) — Learn to move validated design concepts toward real-world delivery by addressing feasibility, stakeholder alignment, adoption strategies, operational constraints, and impact measurement.
-- [Conducting User-Centered Evaluation](skills/conducting-user-centered-evaluation/SKILL.md) — Learn to plan and perform usability tests, prototype evaluations, and design reviews with representative users to assess desirability, usefulness, usability, and accessibility.
-- [Synthesizing Qualitative Research into Insights](skills/synthesizing-qualitative-research-into-insights/SKILL.md) — Learn to organize research evidence, identify patterns and tensions, develop themes, and distinguish observed behavior from assumptions to generate actionable design insights.
-- [Facilitating Participatory Ideation](skills/facilitating-participatory-ideation/SKILL.md) — Learn to generate and develop diverse ideas collaboratively with users, stakeholders, and multidisciplinary teams while deferring judgment and building on identified opportunities.
-- [Defining User Needs and Design Requirements](skills/defining-user-needs-and-design-requirements/SKILL.md) — Learn to translate research insights into clearly framed user needs, opportunity areas, design principles, and measurable success criteria that guide solution development.
-- [Iterating Design Solutions with Users](skills/iterating-design-solutions-with-users/SKILL.md) — Learn to use evaluation findings and emerging evidence to revise assumptions, prototypes, and requirements through repeated design cycles that keep users at the center.
+- [Building Rapid Prototypes](../../skills/building-rapid-prototypes/SKILL.md): Learn to make ideas tangible through low- and high-fidelity prototypes, storyboards, service models, and mock-ups that can be shared, examined, and tested with real users.
+- [Conducting Contextual User Research](../../skills/conducting-contextual-user-research/SKILL.md): Learn to investigate people's real behaviors, needs, and lived experiences through observation, interviews, immersion, and contextual inquiry in their natural environments.
+- [Planning Human-Centered Implementation](../../skills/planning-human-centered-implementation/SKILL.md): Learn to move validated design concepts toward real-world delivery by addressing feasibility, stakeholder alignment, adoption strategies, operational constraints, and impact measurement.
+- [Conducting User-Centered Evaluation](../../skills/conducting-user-centered-evaluation/SKILL.md): Learn to plan and perform usability tests, prototype evaluations, and design reviews with representative users to assess desirability, usefulness, usability, and accessibility.
+- [Synthesizing Qualitative Research into Insights](../../skills/synthesizing-qualitative-research-into-insights/SKILL.md): Learn to organize research evidence, identify patterns and tensions, develop themes, and distinguish observed behavior from assumptions to generate actionable design insights.
+- [Facilitating Participatory Ideation](../../skills/facilitating-participatory-ideation/SKILL.md): Learn to generate and develop diverse ideas collaboratively with users, stakeholders, and multidisciplinary teams while deferring judgment and building on identified opportunities.
+- [Defining User Needs and Design Requirements](../../skills/defining-user-needs-and-design-requirements/SKILL.md): Learn to translate research insights into clearly framed user needs, opportunity areas, design principles, and measurable success criteria that guide solution development.
+- [Iterating Design Solutions with Users](../../skills/iterating-design-solutions-with-users/SKILL.md): Learn to use evaluation findings and emerging evidence to revise assumptions, prototypes, and requirements through repeated design cycles that keep users at the center.
 
 ## FAQ
 
@@ -193,7 +196,7 @@ The sources give no fixed number, and depth matters more than headcount. Aim for
 - [Human-Centered Design Toolkit - Umbrex](https://umbrex.com/resources/frameworks/design-thinking-frameworks/human-centered-design-toolkit)
 - [CCDF Human-Centered Design Toolkit](https://childcareta.acf.hhs.gov/sites/default/files/new-occ/resource/files/CCDF_Human_Centered_Design_Toolkit_0.pdf)
 - [IDEO Human-Centered Design Process](https://umbrex.com/resources/frameworks/design-thinking-frameworks/ideo-human-centered-design-process)
-- [The Field Guide to Human-Centered DesignBy IDE.docx](https://slideshare.net/slideshow/the-field-guide-to-humancentered-designby-idedocx/254207561)
+- [slideshare.net](https://slideshare.net/slideshow/the-field-guide-to-humancentered-designby-idedocx/254207561)
 
 ---
 
