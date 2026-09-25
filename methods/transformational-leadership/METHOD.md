@@ -93,14 +93,14 @@ Positive findings are real, but [the construct lacks a clear definition and its 
 
 This method includes the following skills:
 
-- [Providing Individualized Consideration and Coaching](skills/providing-individualized-consideration/SKILL.md) — Practices for recognizing each team member's unique needs, strengths, and development goals to mentor and support their personal growth.
-- [Building Idealized Influence as a Role Model Leader](skills/building-idealized-influence/SKILL.md) — How to cultivate trust, credibility, and ethical behavior that inspires followers to identify with and emulate your leadership.
-- [Comparing Transformational Leadership to Servant and Authentic Leadership](skills/comparing-transformational-to-other-leadership-models/SKILL.md) — How to evaluate and integrate transformational leadership alongside servant leadership, authentic leadership, and other modern leadership frameworks.
-- [Applying Transformational Leadership in Industry-Specific Contexts](skills/applying-transformational-leadership-in-practice/SKILL.md) — How to adapt transformational leadership principles to specific settings such as healthcare, education, and organizational change initiatives.
-- [Stimulating Intellectual Challenge and Creative Problem-Solving](skills/stimulating-intellectual-challenge/SKILL.md) — How to encourage followers to question assumptions, reframe problems, and approach work with innovation and critical thinking.
-- [Differentiating Transformational from Transactional Leadership](skills/differentiating-transformational-from-transactional-leadership/SKILL.md) — How to recognize when to use transformational versus transactional approaches and understand the full range leadership model.
-- [Assessing Transformational Leadership Effectiveness](skills/assessing-transformational-leadership-effectiveness/SKILL.md) — How to use the Multifactor Leadership Questionnaire \(MLQ\) and other tools to measure and improve your transformational leadership behaviors.
-- [Crafting and Communicating an Inspirational Vision](skills/crafting-inspirational-vision/SKILL.md) — Techniques for articulating a compelling future vision that energizes teams and aligns individual motivation with organizational goals.
+- [Providing Individualized Consideration and Coaching](../../skills/providing-individualized-consideration/SKILL.md): Practices for recognizing each team member's unique needs, strengths, and development goals to mentor and support their personal growth.
+- [Building Idealized Influence as a Role Model Leader](../../skills/building-idealized-influence/SKILL.md): How to cultivate trust, credibility, and ethical behavior that inspires followers to identify with and emulate your leadership.
+- [Comparing Transformational Leadership to Servant and Authentic Leadership](../../skills/comparing-transformational-to-other-leadership-models/SKILL.md): How to evaluate and integrate transformational leadership alongside servant leadership, authentic leadership, and other modern leadership frameworks.
+- [Applying Transformational Leadership in Industry-Specific Contexts](../../skills/applying-transformational-leadership-in-practice/SKILL.md): How to adapt transformational leadership principles to specific settings such as healthcare, education, and organizational change initiatives.
+- [Stimulating Intellectual Challenge and Creative Problem-Solving](../../skills/stimulating-intellectual-challenge/SKILL.md): How to encourage followers to question assumptions, reframe problems, and approach work with innovation and critical thinking.
+- [Differentiating Transformational from Transactional Leadership](../../skills/differentiating-transformational-from-transactional-leadership/SKILL.md): How to recognize when to use transformational versus transactional approaches and understand the full range leadership model.
+- [Assessing Transformational Leadership Effectiveness](../../skills/assessing-transformational-leadership-effectiveness/SKILL.md): How to use the Multifactor Leadership Questionnaire \(MLQ\) and other tools to measure and improve your transformational leadership behaviors.
+- [Crafting and Communicating an Inspirational Vision](../../skills/crafting-inspirational-vision/SKILL.md): Techniques for articulating a compelling future vision that energizes teams and aligns individual motivation with organizational goals.
 
 ## FAQ
 
@@ -135,13 +135,13 @@ Most research uses surveys; [most studies using the Multifactor Leadership Quest
 ## Sources
 
 - [Leadership and performance beyond expectations : Bass](https://archive.org/details/leadershipperfor0000bass)
-- [Microsoft Word - 751 Smith](https://aeasseincludes.assp.org/proceedings/2012/docs/751.pdf)
+- [aeasseincludes.assp.org](https://aeasseincludes.assp.org/proceedings/2012/docs/751.pdf)
 - [Instructional and Transformational Leadership: Burns, Bass](https://files.eric.ed.gov/fulltext/EJ843441.pdf)
 - [1 Transformational leadership: origins and main features](https://open.edu/openlearncreate/mod/oucontent/view.php?id=105478&section=1)
-- [81507\_CH06\_CH06\_083\_100\_4PGS.indd](https://is.muni.cz/el/fss/podzim2017/MVZ502/um/81507_CH06_Printer.pdf)
+- [is.muni.cz](https://is.muni.cz/el/fss/podzim2017/MVZ502/um/81507_CH06_Printer.pdf)
 - [Advancing the democratization of work: A new intellectual history of transformational leadership theory - Lauren Eaton, Todd Bridgman, Stephen Cummings, 2024](https://journals.sagepub.com/doi/full/10.1177/17427150241232705)
 - [What Is Transformational Leadership? Theory and Traits](https://scu.edu/business/blog/leadership-ethics/what-is-transformational-leadership)
-- [A Critical Assessment of Charismatic—Transformational Leadership Research: Back to the Drawing Board?](https://journals.aom.org/doi/10.5465/19416520.2013.759433)
+- [A Critical Assessment of Charismatic - Transformational Leadership Research: Back to the Drawing Board?](https://journals.aom.org/doi/10.5465/19416520.2013.759433)
 - [An Evaluation of Conceptual Weaknesses in](https://dl.icdst.org/pdfs/files4/707d99a3fac5a0d94c58794462f64f75.pdf)
 - [Transformational vs. Transactional Leadership Theories](https://irmbrjournal.com/papers/1371451049.pdf)
 - [THE LIMITATIONS OF TRANSFORMATIONAL LEADERSHIP Trish Chaplin](https://thescopes.org/assets/Uploads/SCOPE-LT-10-Chaplin-Cheyne-v2.pdf)
