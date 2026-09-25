@@ -1,15 +1,20 @@
 ---
-name: measuring-adoption-and-task-success
-description: "This skill teaches you how to track new user onboarding funnels, feature adoption curves, and task-completion rates to evaluate the Adoption and Task Success dimensions of the HEART Framework."
+name: "measuring-adoption-and-task-success"
+description: "Measure the Adoption and Task Success parts of HEART: define who counts as adopted, then track completion, errors and time on the tasks that matter."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: heart-framework
+  method: "heart-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Measuring Adoption Rates and Task Success: Essential Product Manager Skills
+# Measuring Adoption and Task Success with HEART
 
-> This skill teaches you how to track new user onboarding funnels, feature adoption curves, and task-completion rates to evaluate the Adoption and Task Success dimensions of the HEART Framework.
+> Measure the Adoption and Task Success parts of HEART: define who counts as adopted, then track completion, errors and time on the tasks that matter.
 
 ## Before you start
 
@@ -24,143 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 60-90 minutes |
-| Outcome | You will be able to design, instrument, and interpret adoption and task success metrics that give your team clear evidence of whether new features are being used effectively. |
-| Prerequisites | Basic understanding of the HEART Framework and its five dimensions, Familiarity with product analytics tools (e.g., Amplitude, Mixpanel, Google Analytics), Experience defining Goals, Signals, and Metrics (see: Defining Goals, Signals, and Metrics with the HEART Framework), Understanding of funnel analysis and event tracking concepts |
+| Time to Learn | A few hours |
+| Outcome | You can define what adoption means for a product or feature, measure how many new users reach it, and track whether users complete key tasks efficiently and without errors. |
+| Prerequisites | Agreed HEART goals for the feature, event logging you can extend, a list of the tasks the feature exists to support |
 | Part of | [HEART Framework](../../methods/heart-framework/METHOD.md) |
 
 ## Overview
 
-Adoption and Task Success are two of the most actionable dimensions in the [HEART Framework](https://tryhamster.com/methods/heart-framework). Adoption tells you whether users are discovering and starting to use a new feature; Task Success tells you whether they can actually accomplish what the feature was designed to help them do. Together, they answer a question every product manager must face after a launch: *Is this feature working?*
+Measuring adoption and task success covers two of the five categories in the [HEART framework](../../methods/heart-framework/METHOD.md). Adoption asks how many new users start using a product or feature. Task success asks whether people can do what they came to do, efficiently, effectively and without errors. The two fit together for new features and redesigns: adoption tells you whether people arrive, and task success tells you whether the experience works once they do.
 
-Many teams track vanity metrics like page views or button clicks and assume their feature is succeeding. But without structured adoption curves and task-completion funnels, you can't distinguish between a feature that users try once and abandon versus one that becomes part of their workflow. This skill gives you the methods to tell the difference.
+The HEART paper by Rodden, Hutchinson and Fu defines Adoption metrics as tracking "how many new users start using a product during a given time period," with the example of accounts created in the last seven days ([CHI paper](https://research.google.com/pubs/archive/36299.pdf)). It stresses that what counts as "using" depends on the product. A visit might be enough for one product, while for another you might count someone as adopted only after they complete a key task. The paper also notes that Adoption and Retention are especially useful for new products and features and for redesigns, and tend to stabilize for established products.
 
-Mastering adoption and task success measurement is one of the most valuable product manager skills you can develop. It connects directly to roadmap prioritization, experiment design, and stakeholder communication. Whether you're launching a new onboarding flow, a collaborative editing feature, or a payment workflow, the techniques here will help you evaluate impact with rigor.
+Task success is the older of the two ideas. The paper says the category "encompasses several traditional behavioral metrics of user experience," and names three: efficiency, such as time to complete a task; effectiveness, such as the percent of tasks completed; and error rate. Kerry Rodden later wrote that this category "often yields the most useful metrics for UX changes, provided that task-specific data is available" ([Rodden](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)). The difficulty is knowing which task a user was attempting, which logs do not always reveal.
+
+This skill gives you a way to handle both. You will write an adoption definition that reflects real use, build a count of newly adopted users per period, pick the tasks that matter, and measure completion, errors and time for each. The output is a small set of metrics that a team can review after launch to decide whether to invest further, fix the flow, or leave the feature alone.
 
 ## How It Works
 
-Adoption measurement works by defining an **activation event** — the moment a user has meaningfully engaged with a feature — and then tracking what percentage of eligible users reach that event within a defined time window. You plot this over time as an adoption curve, which reveals the velocity and ceiling of uptake. Cohort analysis lets you compare adoption across different user segments or release dates.
+Adoption starts with a definition. Pick the action that shows someone has really started using the feature, sometimes called an activation event. It should be something a person would only do if they meant to use the feature, such as saving a first report rather than opening the reports page. Then count new adopters in a fixed time window and divide by the relevant population, such as weekly active users or new signups that week, so the metric does not rise just because traffic did. The [paper](https://research.google.com/pubs/archive/36299.pdf) advises that raw counts need to be normalized, with ratios, percentages or averages per user often more useful.
 
-Task Success measurement works by modeling the intended user workflow as a funnel or task flow, then instrumenting each step with analytics events. You track three core metrics: **completion rate** (what percentage of users who start the task finish it), **error rate** (how often users encounter failures or dead ends), and **time-on-task** (how long successful completion takes). Together, these reveal not just whether users *can* complete a task, but how efficiently and painlessly they do so.
+Separating new users from existing ones is what adoption adds to an active-user count. The paper's Google Finance example shows why. In the stock market meltdown of September 2008 ([CHI paper](https://research.google.com/pubs/archive/36299.pdf)), page views and seven-day active users surged, but those counts could not show whether new visitors or existing users were driving the surge. The team looked at Adoption and Retention metrics to separate the two groups.
 
-Both dimensions follow the HEART Framework's Goals-Signals-Metrics (GSM) process. You start by articulating what success looks like for adoption and task success specifically, identify the user behaviors that signal progress toward those goals, and then choose metrics that quantify those signals. This structured approach prevents you from drowning in data and keeps your measurement aligned with actual product objectives.
+Task success has three standard measures. Completion rate is the share of attempts that end in success. Nielsen Norman Group calls success rate "the simplest usability metric" and argues that "User success is the bottom line of usability" ([NN/g](https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/)). Error rate counts failed or corrected attempts. Time on task measures efficiency, and is best reported as a median because a few very long sessions skew averages. When a task has an optimal path, such as a multi-step sign-up, the paper notes you can measure how closely users follow it.
+
+Logs cannot always say what a user was trying to do. The paper suggests remote usability or benchmarking studies, where people are given specific tasks, as a way to measure task success at scale. A post-task rating adds the user's view of difficulty. The [Single Ease Question](https://measuringu.com/seq10/) is a single 7-point question asked right after a task attempt, and MeasuringU reports that its ratings correlate with task time and completion at around r = .5, so no single measure replaces the others.
+
+An A/B test compares designs on task success directly, with other changes held constant. In the paper's Google Maps example, the team tested removing a separate local search box and compared error rates, finding that users adapted their searches successfully, which gave them confidence to remove the second box ([CHI paper](https://research.google.com/pubs/archive/36299.pdf)).
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Adoption and Task Success Goals Using GSM
+### Step 1: Write the adoption definition
 
-Before you instrument anything, use the Goals-Signals-Metrics process from the [HEART Framework](https://tryhamster.com/methods/heart-framework) to articulate what Adoption and Task Success mean for your specific feature.
+State what action counts as adopting the feature and why. Choose an action that requires intent and delivers some value; a page view is too weak. Write the population and window with it, for example "new adopters this week as a share of weekly active users." Check the definition with the team, since the [paper](https://research.google.com/pubs/archive/36299.pdf) makes clear that what counts as using a product depends on its nature and goals.
 
-For **Adoption**, your goal might be: *New users discover and activate the collaborative editing feature within their first week.* The signal is a user performing a specific activation action (e.g., creating their first shared document). The metric is the percentage of new users who complete that action within 7 days of signup.
+### Step 2: List the key tasks
 
-For **Task Success**, your goal might be: *Users can successfully share a document with a collaborator without encountering errors.* The signal is a completed share flow. The metrics are completion rate, error rate, and median time-on-task.
+Name the few tasks the feature exists to support, and for each one define where it starts and what counts as success. A task needs a clear start event and a clear success event, or it cannot be measured from logs. If a task has an optimal path, write down its steps. Drop tasks nobody would change the design for.
 
-Write these down in a GSM table. Be specific about the user population (new users? all users? a specific segment?) and the time window.
+### Step 3: Instrument start, success and failure events
 
-> **Pro tip:** Involve your engineering and design partners in the GSM exercise. They often know about edge cases and failure modes that affect what signals you should track.
+Confirm that each start, success and error state is logged with the user identifier and a timestamp. Add failure events, such as validation errors, abandonment after a timeout, or undo, because failures are often clearer than successes. Filter automated traffic from the data, one of the accuracy problems the [HEART paper](https://research.google.com/pubs/archive/36299.pdf) names. Test the events in staging before release.
 
-### Step 2: Step 2: Identify Your Activation Event and Funnel Steps
+### Step 4: Build the adoption metric
 
-For adoption, choose a single **activation event** that represents meaningful engagement — not just exposure. Viewing a tooltip about a feature is exposure; actually using the feature to accomplish something is activation. The distinction matters because exposure-based metrics inflate your numbers and hide adoption problems.
+Compute new adopters per period divided by the chosen population. Track it from launch day and plot it by week or by signup cohort. Split it by user segment if the feature is meant for a particular group, since a low overall rate may hide strong adoption where it matters. Keep the definition fixed once reporting starts, or note every change.
 
-For task success, map out the complete task flow as a sequence of steps. For example, a document-sharing flow might be: (1) Click share button → (2) Enter collaborator's email → (3) Set permissions → (4) Confirm share → (5) Collaborator receives and opens document. Each step becomes a funnel stage.
+### Step 5: Build the task success metrics
 
-Document both the happy path and known alternative paths. If users can share via a link instead of email, that's a separate funnel branch you may want to track.
+For each task, compute completion rate, error rate and median time to complete. Report partial success as its own level if it matters, following NN/g's advice to report each level as a separate percentage rather than averaging them ([NN/g](https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/)). Where logs cannot show intent, run a benchmarking study with assigned tasks and a post-task rating.
 
-> **Pro tip:** If you're unsure what the right activation event is, look at your retention data. Users who perform certain early actions tend to retain at higher rates — that action is often your best activation event candidate.
+### Step 6: Baseline and compare
 
-### Step 3: Step 3: Instrument Events in Your Analytics Platform
+Measure the metrics before a change ships, or on the old design, so later numbers can be judged. Where possible, compare designs in an A/B test rather than before and after, which mixes the change with seasonality and other releases. Look at adoption and task success together: rising adoption with falling completion means more people are arriving at a flow that does not work for them.
 
-Work with engineering to add event tracking for each activation event and funnel step. Each event should include:
+### Step 7: Review and decide
 
-- **Event name**: a clear, consistent naming convention (e.g., `feature.share.started`, `feature.share.completed`)
-- **Properties**: user ID, timestamp, feature variant (if A/B testing), device type, user segment, and any relevant context (e.g., number of collaborators added)
-- **Error events**: track specific failure points (e.g., `feature.share.error.invalid_email`, `feature.share.error.permission_denied`)
-
-Validate your instrumentation before launch by testing the full flow in a staging environment and confirming events appear correctly in your analytics tool. Missing or malformed events are the most common source of measurement failures.
-
-> **Pro tip:** Create a tracking plan spreadsheet that maps each event to its trigger, required properties, and the metric it feeds. Share this with QA so they can verify instrumentation during testing.
-
-### Step 4: Step 4: Build Adoption Curves and Funnel Reports
-
-Once data starts flowing, build two core visualizations:
-
-**Adoption curve**: Plot the cumulative percentage of eligible users who have activated over time (days since feature launch or days since user signup). This S-curve reveals adoption velocity (how quickly uptake is happening), the adoption ceiling (what percentage of users ultimately adopt), and any inflection points that correlate with marketing pushes, UI changes, or other interventions.
-
-**Task success funnel**: Build a step-by-step funnel showing drop-off at each stage. Most analytics tools (Amplitude, Mixpanel, Google Analytics) have built-in funnel visualization. Look for steps with disproportionate drop-off — these are your usability bottlenecks.
-
-Segment both reports by user cohort (signup week, user plan, device type) to reveal whether adoption and success patterns vary across your user base.
-
-> **Pro tip:** Overlay your adoption curve with product events (launches, feature announcements, onboarding changes) to understand what drives adoption inflection points.
-
-### Step 5: Step 5: Calculate Task Success Metrics
-
-From your funnel data, compute three task success metrics:
-
-1. **Completion rate**: Users who finished the task ÷ Users who started it. This is your headline metric. A well-designed core workflow should target 85%+ completion.
-
-2. **Error rate**: Task attempts that encountered at least one error ÷ Total task attempts. Break this down by error type to prioritize fixes.
-
-3. **Time-on-task**: Measure the median time (not mean — outliers skew averages) from task start to completion. Compare against your design team's expected time. If the median is significantly higher, users are struggling even when they succeed.
-
-Track all three over time. A rising completion rate paired with declining time-on-task indicates genuine improvement in user experience.
-
-> **Pro tip:** Set up automated alerts for sudden drops in completion rate or spikes in error rate — these often indicate bugs introduced in a new release.
-
-### Step 6: Step 6: Establish Baselines and Set Targets
-
-Metrics without context are meaningless. Establish baselines by measuring adoption and task success for your existing features or for the first 2-4 weeks after launch. Then set targets.
-
-For adoption, a reasonable approach is to benchmark against similar past feature launches. If your last three features reached 30% adoption within 30 days, a new feature targeting 40% should be justified by specific improvements in discoverability or value.
-
-For task success, industry benchmarks can help: core workflows (signup, checkout) typically target 90%+ completion rates, while complex or optional features might target 70-80%. The key is to set a number, measure against it, and iterate.
-
-Document your baselines and targets in your team's metrics dashboard (see [Building HEART Metric Dashboards for Product Teams](https://tryhamster.com/skills/building-heart-dashboards)) so they're visible to the whole team.
-
-> **Pro tip:** Revisit targets quarterly. As your product matures and your user base shifts, what counts as good adoption or task success will evolve.
-
-### Step 7: Step 7: Analyze, Iterate, and Communicate Results
-
-With dashboards and baselines in place, run a regular review cadence (weekly during launch, biweekly after stabilization). In each review:
-
-- Compare current adoption and task success metrics to targets
-- Identify the biggest funnel drop-off or adoption blocker
-- Formulate a hypothesis about the cause (e.g., "Users drop off at the permissions step because the options are confusing")
-- Design an experiment or fix to address it
-- Track the impact of the change on your metrics
-
-Communicate results to stakeholders using the Adoption and Task Success framing from the HEART Framework. This language is intuitive for non-technical audiences: "35% of new users activated this feature in their first week, up from 22% last month" is far more compelling than raw event counts.
-
-For interview or review contexts, see [Presenting HEART Metrics in Product Manager Interviews](https://tryhamster.com/skills/presenting-heart-metrics-in-interviews) for storytelling techniques.
+Bring the metrics to a review with the product and design owners, along with a few session recordings or usability clips that show what the numbers mean. Decide whether to promote the feature, fix the task flow, or leave it. Record the decision next to the metrics so the next review starts from it.
 
 ## Best Practices
 
-- Always define your activation event based on meaningful engagement, not mere exposure — a user who clicks a feature but immediately bounces is not an adopter.
-- Segment adoption and task success metrics by user cohort (new vs. returning, free vs. paid, mobile vs. desktop) to uncover patterns hidden in aggregate data.
-- Use time-bounded adoption windows (e.g., 7-day or 30-day adoption rate) rather than all-time cumulative metrics, which only go up and mask slowdowns.
-- Track task success with both completion rate AND time-on-task — a high completion rate with excessive time-on-task signals a confusing but not impossible workflow.
-- Pair quantitative adoption and task success data with qualitative signals from user happiness surveys (see Measuring User Happiness Through Surveys and Satisfaction Scores) to understand the *why* behind the numbers.
-- Automate metric collection and dashboard updates rather than relying on manual queries — manual processes create staleness and inconsistency.
+- Define adoption by a meaningful action. Counting page visits inflates adoption with curious clicks, while a value-bearing action shows real use.
+- Normalize adoption by the relevant population. The [HEART paper](https://research.google.com/pubs/archive/36299.pdf) warns that raw counts rise with the user base, so use a share of active users or of new signups.
+- Measure failure directly. Error events, abandonment and undo are often easier to capture than success and point straight at the problem.
+- Use medians for time on task. A handful of sessions left open for hours will distort a mean, and the median better reflects a typical attempt.
+- Pair behavior with a quick rating. A post-task question such as the [Single Ease Question](https://measuringu.com/seq10/) shows how hard a task felt, which completion rates alone do not.
+- Keep partial success separate. NN/g notes that success levels form an ordinal scale, so averaging them into one score gives a number with no real meaning.
 
 ## Common Mistakes
 
-- **Counting feature page views or button clicks as adoption** — Define adoption as a meaningful activation event that indicates the user derived value. A user who clicks a feature tab but never completes the core action hasn't adopted it. Set your activation threshold at the point where the user has actually used the feature for its intended purpose.
-- **Using mean instead of median for time-on-task** — Time-on-task distributions are heavily right-skewed (a few users take extremely long due to distractions or edge cases). Use median or p75/p90 percentiles instead of mean to get a representative picture of typical user experience.
-- **Measuring adoption without a defined time window** — An all-time adoption metric can only go up and gives no sense of velocity or recent trend. Always bound adoption by a time window (e.g., '% of users who signed up in Week 3 and activated within 14 days') to enable cohort comparison and trend analysis.
-- **Not accounting for feature discoverability when interpreting low adoption** — Low adoption doesn't always mean the feature is bad — it might mean users don't know it exists. Separate your funnel into discovery (user saw the feature) and activation (user used the feature) to diagnose whether the problem is awareness or value.
-- **Setting identical task success targets for all features regardless of complexity** — A simple toggle should have near-100% completion; a multi-step configuration wizard might reasonably target 75%. Calibrate targets to the inherent complexity and importance of each task.
+- **Counting a visit as adoption**: A feature page that gets many views can still be one nobody uses. Choose an action that shows intent and value, and report visits separately if needed.
+- **Measuring tasks without a clear start**: Without a logged start event, completion rate has no denominator. Add the event before launch, or use a benchmarking study with assigned tasks.
+- **Reading adoption alone**: Adoption can rise because of a marketing push while the flow itself fails. Always read it next to task success and, later, retention.
+- **Judging success by before-and-after numbers**: Other releases and seasonality change metrics too. Use an A/B test where you can, as the Google Maps team did in the [HEART paper](https://research.google.com/pubs/archive/36299.pdf).
+- **Averaging success levels**: Scoring partial success as a half and averaging it with full successes hides what happened. Report each level as its own percentage.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/heart-framework/METHOD.md) — HEART Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/heart-framework/METHOD.md): HEART Framework
 
 ## Related Skills
 
-- [Tracking Engagement and Retention Metrics at Scale](../tracking-engagement-and-retention-metrics/SKILL.md)
-- [Measuring User Happiness Through Surveys and Satisfaction Scores](../measuring-user-happiness-surveys/SKILL.md)
-- [Defining Goals, Signals, and Metrics with the HEART Framework](../defining-heart-goals-signals-metrics/SKILL.md)
-- [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
-- [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
+- [Defining Goals, Signals, and Metrics for HEART](../defining-heart-goals-signals-metrics/SKILL.md)
+- [Tracking Engagement and Retention Metrics](../tracking-engagement-and-retention-metrics/SKILL.md)
+- [Measuring User Happiness Through Satisfaction Surveys](../measuring-user-happiness-surveys/SKILL.md)
 - [Building HEART Metric Dashboards for Product Teams](../building-heart-dashboards/SKILL.md)
+- [Running HEART Framework Workshops](../running-heart-framework-workshops/SKILL.md)
+- [HEART Framework Interview Answers for PM Metrics Questions](../presenting-heart-metrics-in-interviews/SKILL.md)
+
+## Sources
+
+- [Rodden, Hutchinson and Fu: Measuring the User Experience on a Large Scale (CHI 2010, PDF)](https://research.google.com/pubs/archive/36299.pdf)
+- [Kerry Rodden: How to make HEART metrics work in practice](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)
+- [Nielsen Norman Group: Success Rate, The Simplest Usability Metric](https://www.nngroup.com/articles/success-rate-the-simplest-usability-metric/)
+- [MeasuringU: 10 Things To Know About The Single Ease Question](https://measuringu.com/seq10/)
