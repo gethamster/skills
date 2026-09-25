@@ -153,7 +153,7 @@ SOSTAC, created by PR Smith, is a general planning structure: Situation, Objecti
 
 **How do I build a customer journey map with RACE?**
 
-Use the four stages as the columns of the map and fill each with the customer's goals, questions, touchpoints and your KPIs. Base it on research with real customers, not on internal opinion. The [RACE framework journey map skill](../../skills/creating-race-customer-journey-maps/SKILL.md) gives the full process, and the [RACE framework optimization skill](../../skills/optimizing-the-full-funnel-customer-journey/SKILL.md) covers using the map's data to improve the funnel.
+Use the four stages as the columns of the map and fill each with the customer's goals, questions, touchpoints and your KPIs. Base it on research with real customers, and treat internal opinion as a hypothesis to check. The [RACE framework journey map skill](../../skills/creating-race-customer-journey-maps/SKILL.md) gives the full process, and the [RACE framework optimization skill](../../skills/optimizing-the-full-funnel-customer-journey/SKILL.md) covers using the map's data to improve the funnel.
 
 ## Sources
 

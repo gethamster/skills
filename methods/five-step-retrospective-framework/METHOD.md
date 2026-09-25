@@ -51,7 +51,7 @@ People arrive at a retrospective with their heads still in the sprint. The first
 
 ### Agree on what happened before explaining it
 
-The gather-data phase builds one shared account of the sprint. Each person remembers different events, and arguing about causes before the facts are on the wall turns the meeting into a contest of memories. Data includes events and metrics as well as how people felt, since frustration and energy are facts about the sprint too. Research on retrospective activities found that most rely on team members' experiences and "neglect to take existing project data into account" ([Matthies and Dobrigkeit](https://arxiv.org/abs/2101.01528)), so bringing a few numbers to the meeting is worth the preparation.
+The gather-data phase builds one shared account of the sprint. Each person remembers different events, and arguing about causes before the facts are on the wall turns the meeting into a contest of memories. Data includes events and metrics as well as how people felt, since frustration and energy are facts about the sprint too. [Matthies and Dobrigkeit](https://arxiv.org/abs/2101.01528) argue that most retrospective activities rely on team members' experiences and "neglect to take existing project data into account", so bringing a few numbers to the meeting is worth the preparation.
 
 ### Look for causes and patterns behind the first explanation
 

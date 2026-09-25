@@ -114,7 +114,7 @@ Redraw breadboards cleanly for the pitch, and embed a labelled fat marker sketch
 - **Jumping to wireframes**: Detailed mockups lock in layout choices before the flow is proven and bias the designers who come later. Stay at breadboard or fat marker level while shaping.
 - **Staying at the level of words**: A one-line description such as a calendar view leaves the team guessing. Draw the places and elements until the solution is specific.
 - **Sketching only the happy path**: Flows that skip existing states, errors or how to turn a feature off hide rabbit holes. Play through the whole use case.
-- **Getting attached to a layout detail**: Fat marker sketches can still suggest a sidebar or panel that is not core. Mark what is essential and what is incidental.
+- **Getting attached to a layout detail**: Fat marker sketches can still suggest a sidebar or panel that is not core. Mark which elements are core and which are incidental.
 - **Handing raw whiteboard photos to the betting table**: Unlabelled breadboards read as a soup of words and arrows. Redraw and label them for the pitch.
 
 ## References

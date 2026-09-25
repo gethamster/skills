@@ -91,7 +91,7 @@ Pick the cheapest candidate whose evidence would be strong enough to change your
 
 ### Step 6: Plan the next type in the sequence
 
-Most products move through several MVP types as questions are answered. A passed landing page test often leads to a concierge MVP, and a passed concierge MVP to a Wizard of Oz or single-feature product. Note which type you expect to use next if this one passes, so the team knows what the result unlocks.
+Most products move through several MVP types as questions are answered. A passed landing page test often leads to a concierge MVP, and a passed concierge MVP to a Wizard of Oz or single-feature product. Note which type you expect to use next if this one passes, so the team knows what a pass leads to.
 
 ## Best Practices
 

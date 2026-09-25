@@ -88,7 +88,7 @@ Run the interviews on a video call with the observers hidden from the customer's
 
 ## Best Practices
 
-- Plan for longer, not shorter. The [Remote Design Sprint Guide](https://www.jackiecolburn.com/remote-design-sprint-guide) reports that remote sprints take longer, so keep the full schedule and add breaks.
+- Budget extra time. The [Remote Design Sprint Guide](https://www.jackiecolburn.com/remote-design-sprint-guide) reports that remote sprints take longer, so keep the full schedule and add breaks.
 - Test the tools with the team before the sprint. A short practice session prevents access and sign-in problems from eating Monday morning.
 - Use a co-facilitator. One person runs the process while the other watches engagement and follows up with anyone who drifts.
 - Keep sketching on paper. Pen and paper make sketches quick and equal, and a photo is enough to put them on the board.

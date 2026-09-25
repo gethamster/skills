@@ -93,7 +93,7 @@ If the change would help other gstack users, open a pull request from your fork,
 - **Prefer the lightest change that works.** Settings sit outside the skill files, team skills need light upkeep, and forks need regular merging. Choose the lowest level that solves the problem.
 - **Keep team conventions in your own skills.** A skill in your repository is reviewed with your code and moves with your project. Folding team rules into a gstack fork mixes your decisions with upstream's.
 - **Name team skills so they cannot collide.** A shared prefix for team skills avoids setup reporting collisions and makes their origin obvious. Switching gstack to prefixed names works too.
-- **Edit templates, not generated files.** The CONTRIBUTING guide warns that direct edits to `SKILL.md` are overwritten on the next build. Always change the `.tmpl` and regenerate.
+- **Edit the templates.** The CONTRIBUTING guide warns that direct edits to `SKILL.md` are overwritten on the next build. Always change the `.tmpl` and regenerate.
 - **Write descriptions for automatic loading.** Claude uses a skill's description to decide when to load it. A precise description of when the skill applies keeps it from firing at the wrong time.
 - **Use gstack's learnings before editing.** Project quirks often belong in the learnings that gstack records and reuses. Review them with `/learn` before deciding a skill needs changing.
 
