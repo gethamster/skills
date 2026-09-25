@@ -13,7 +13,7 @@ metadata:
 
 # Scaled Agile Framework: What SAFe Is and How It Works
 
-> Created by **Dean Leffingwell** — [https://scaledagile.com](https://scaledagile.com)
+> Created by **Dean Leffingwell** - [https://scaledagile.com](https://scaledagile.com)
 
 ## Overview
 
@@ -136,14 +136,14 @@ The 2023 ([source](https://arxiv.org/html/2310.06599v1)) comparison study advise
 
 This method includes the following skills:
 
-- [Managing a Lean Portfolio in SAFe](skills/managing-lean-portfolio-with-safe/SKILL.md) — How to apply Lean Portfolio Management practices including strategy and investment funding, Lean budgets, and portfolio Kanban to connect strategy to execution.
-- [Splitting Features into User Stories and Enablers](skills/splitting-features-into-stories/SKILL.md) — How to decompose epics into features and features into implementable user stories and enablers using SAFe's hierarchical backlog structure.
-- [Launching and Running Agile Release Trains](skills/launching-agile-release-trains/SKILL.md) — How to form, launch, and operate an Agile Release Train \(ART\) as the primary value delivery mechanism that aligns cross-functional teams to a shared mission.
-- [Running Inspect and Adapt Workshops](skills/running-inspect-and-adapt-workshops/SKILL.md) — How to facilitate the Inspect and Adapt \(I\&A\) event at the end of each Program Increment to demonstrate value, assess metrics, and conduct structured problem-solving.
-- [Implementing the SAFe Continuous Delivery Pipeline](skills/implementing-devops-with-continuous-delivery-pipeline/SKILL.md) — How to build and operate the four-stage continuous delivery pipeline—continuous exploration, integration, deployment, and release on demand—within a SAFe environment.
-- [Coordinating Multiple ARTs with Solution Trains](skills/coordinating-multiple-agile-release-trains/SKILL.md) — How to use Solution Trains and the Large Solution level to synchronize multiple Agile Release Trains and suppliers building complex, multi-ART solutions.
-- [Prioritizing Work Using WSJF](skills/prioritizing-with-wsjf/SKILL.md) — How to calculate and apply Weighted Shortest Job First \(WSJF\) to sequence features, enablers, and epics for maximum economic benefit.
-- [Planning Program Increments \(PI Planning\)](skills/planning-program-increments/SKILL.md) — How to organize and facilitate PI Planning events to align teams on shared objectives, dependencies, and delivery commitments across an Agile Release Train.
+- [Managing a Lean Portfolio in SAFe](../../skills/managing-lean-portfolio-with-safe/SKILL.md): How to apply Lean Portfolio Management practices including strategy and investment funding, Lean budgets, and portfolio Kanban to connect strategy to execution.
+- [Splitting Features into User Stories and Enablers](../../skills/splitting-features-into-stories/SKILL.md): How to decompose epics into features and features into implementable user stories and enablers using SAFe's hierarchical backlog structure.
+- [Launching and Running Agile Release Trains](../../skills/launching-agile-release-trains/SKILL.md): How to form, launch, and operate an Agile Release Train \(ART\) as the primary value delivery mechanism that aligns cross-functional teams to a shared mission.
+- [Running Inspect and Adapt Workshops](../../skills/running-inspect-and-adapt-workshops/SKILL.md): How to facilitate the Inspect and Adapt \(I\&A\) event at the end of each Program Increment to demonstrate value, assess metrics, and conduct structured problem-solving.
+- [Implementing the SAFe Continuous Delivery Pipeline](../../skills/implementing-devops-with-continuous-delivery-pipeline/SKILL.md): How to build and operate the four-stage continuous delivery pipeline—continuous exploration, integration, deployment, and release on demand—within a SAFe environment.
+- [Coordinating Multiple ARTs with Solution Trains](../../skills/coordinating-multiple-agile-release-trains/SKILL.md): How to use Solution Trains and the Large Solution level to synchronize multiple Agile Release Trains and suppliers building complex, multi-ART solutions.
+- [Prioritizing Work Using WSJF](../../skills/prioritizing-with-wsjf/SKILL.md): How to calculate and apply Weighted Shortest Job First \(WSJF\) to sequence features, enablers, and epics for maximum economic benefit.
+- [Planning Program Increments \(PI Planning\)](../../skills/planning-program-increments/SKILL.md): How to organize and facilitate PI Planning events to align teams on shared objectives, dependencies, and delivery commitments across an Agile Release Train.
 
 ## FAQ
 
@@ -179,7 +179,7 @@ Deployment moves [validated functionality from staging into production](https://
 - [SAFe Distilled - Scaled Agile](https://scaledagile.com/resources/safe-distilled)
 - [Safe Lean-Agile Principles](https://framework.scaledagile.com/safe-lean-agile-principles)
 - [Business Agility Value Stream in Applying SAFe](https://scaledagile.com/podcast/navigate-the-future-with-a-business-agility-value-stream)
-- [SAFe History 알아보기 — 2. SAFe 1.0 이전에는..](https://medium.com/safe-community-kr/safe-history-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-2-safe-1-0-%EC%9D%B4%EC%A0%84%EC%97%90%EB%8A%94-e3476bfc512c)
+- [SAFe History 알아보기 - 2. SAFe 1.0 이전에는..](https://medium.com/safe-community-kr/safe-history-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0-2-safe-1-0-%EC%9D%B4%EC%A0%84%EC%97%90%EB%8A%94-e3476bfc512c)
 - [SAFe and Agile for Business Transformation \| Scaled Agile](https://scaledagile.com/what-is-safe/safe-and-agile)
 - [17th State of Agile \| 1](https://2288549.fs1.hubspotusercontent-na1.net/hubfs/2288549/RE-SA-17th-Annual-State-Of-Agile-Report.pdf)
 - [18th State of Agile Report - Scrum.org](https://scrum.org/resources/blog/18th-state-agile-report)
@@ -188,7 +188,7 @@ Deployment moves [validated functionality from staging into production](https://
 - [Implementing Large-Scale Agile Frameworks](https://arxiv.org/pdf/1901.08130)
 - [State of Safe Report 2025 - Scaled Agile](https://scaledagile.com/resources/state-of-safe-report)
 - [Agile adoption accelerates across the enterprise](https://agilizing.com/wp-content/uploads/2022/12/SOA15.pdf)
-- [\[PDF\] versionone-12th-annual-state-of-agile-report.pdf](https://eg.bucknell.edu/~cs479/common-files/resources/versionone-state-of-agile/versionone-12th-annual-state-of-agile-report.pdf)
+- [eg.bucknell.edu](https://eg.bucknell.edu/~cs479/common-files/resources/versionone-state-of-agile/versionone-12th-annual-state-of-agile-report.pdf)
 - [In-Depth: Is SAFe® Really That Bad? \| by Christiaan Verwijs](https://medium.com/the-liberators/in-depth-is-safe-really-that-bad-ed5c5c706e42)
 - [Do Agile Scaling Approaches Make A Difference? An](https://arxiv.org/html/2310.06599v1)
 - [Almeida, Large-Scale Agile Frameworks: A Comparative Review 16](https://ejurnal.itats.ac.id/jasmet/article/download/1832/1581)
