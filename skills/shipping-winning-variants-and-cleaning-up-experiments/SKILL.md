@@ -42,7 +42,7 @@ PostHog's [lifecycle docs](https://posthog.com/docs/experiments/managing-lifecyc
 
 Order matters because a flag that code still checks is live wiring. PostHog's [stale flag guide](https://posthog.com/docs/feature-flags/cleaning-up-stale-flags) states that disabling a flag your code still checks turns the feature off for everyone, and lays out the safe sequence: identify the flag, remove the references from code, deploy, and only then disable it. Doing those last two steps in the wrong order is the mistake the guide warns about.
 
-There is also a cost reason to finish the job. PostHog notes that every active flag counts toward feature flag billing even when it is rolled out to all users and no longer doing anything useful. Pete Hodgson's [feature toggles article](https://martinfowler.com/articles/feature-toggles.html) makes the engineering version of the argument: toggles are inventory with a carrying cost, and teams should keep that inventory low.
+There is also a cost reason to finish the job. A flag left active can keep feature flag requests billable even when it is rolled out to all users and no longer doing anything useful. Pete Hodgson's [feature toggles article](https://martinfowler.com/articles/feature-toggles.html) makes the engineering version of the argument: toggles are inventory with a carrying cost, and teams should keep that inventory low.
 
 The output is a codebase with one path where there used to be two, a flag that is disabled or deleted, an archived experiment with a written record, and no change in what users see during the transition. The steps below keep those in a safe order.
 
@@ -100,7 +100,7 @@ Once a month or so, filter PostHog's flag list for stale flags and check which o
 ## Common Mistakes
 
 - **Disabling the flag before removing the code**: Code that still checks the flag falls back to its default, which can turn the winning feature off for everyone. Remove code and deploy first.
-- **Leaving the winner behind a flag indefinitely**: The flag keeps being evaluated and billed, and the dead branch confuses future readers. Finish the removal within a sprint of the decision.
+- **Leaving the winner behind a flag indefinitely**: The flag keeps being evaluated, its requests can stay billable, and the dead branch confuses future readers. Finish the removal within a sprint of the decision.
 - **Deleting only the obvious reference**: A flag checked in several places leaves stray branches behind. Search for the key everywhere, including tests and configuration.
 - **Forgetting old mobile clients**: Released app versions keep calling the flag. Leave it serving the winner until those versions age out.
 - **Skipping the written record**: Without it, the same idea returns months later with no memory of the result. Write the entry in the experiment description.

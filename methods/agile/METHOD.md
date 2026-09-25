@@ -94,7 +94,7 @@ Agile sits at the level of values. Scrum and Kanban are frameworks that put thos
 |---|---|---|
 | Agile | Four values and twelve principles, no fixed process | [Agile Manifesto](https://agilemanifesto.org/) |
 | Scrum | Roles, events and Sprints of one month or less | [Scrum Guide](https://scrumguides.org/scrum-guide.html) |
-| Kanban | Visualized workflow, explicit WIP control, flow measures, no roles | [Kanban Guide](https://kanbanguides.org/english/) |
+| Kanban | Visualized workflow, explicit WIP control, flow measures; the Kanban Guide does not define roles | [Kanban Guide](https://kanbanguides.org/english/) |
 | Waterfall | Sequential phases, which Royce's 1970 paper called "risky" | [Royce](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf) |
 | SAFe | Agile Release Trains of 50-125 people planning in PIs | [SAFe ART](https://framework.scaledagile.com/agile-release-train) |
 | LeSS | Up to eight teams sharing one backlog and one Product Owner | [LeSS](https://less.works/less/framework/index) |

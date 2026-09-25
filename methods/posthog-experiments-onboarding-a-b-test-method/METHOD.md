@@ -139,7 +139,7 @@ Write a hypothesis and pick metrics, then create the experiment through the thre
 
 **Should I use Bayesian or frequentist statistics in PostHog?**
 
-Bayesian is the default, and it reports a chance to win and a credible interval ([Bayesian statistics](https://posthog.com/docs/experiments/statistics-bayesian)). The frequentist engine uses Welch's t-test and reports p-values and confidence intervals, and it is where PostHog offers sequential testing ([frequentist statistics](https://posthog.com/docs/experiments/statistics-frequentist)). PostHog's Bayesian engine uses non-informative priors, so its posterior is approximately the observed effect and its variance. LaunchDarkly.s [comparison of the two approaches](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist) notes that with enough data the results are nearly identical, so the two engines mostly differ in how the result is expressed. Choose the one your team will read correctly, and pick sequential testing if you know you will check results often.
+Bayesian is the default, and it reports a chance to win and a credible interval ([Bayesian statistics](https://posthog.com/docs/experiments/statistics-bayesian)). The frequentist engine uses Welch's t-test and reports p-values and confidence intervals, and it is where PostHog offers sequential testing ([frequentist statistics](https://posthog.com/docs/experiments/statistics-frequentist)). PostHog's Bayesian engine uses non-informative priors, so its posterior is approximately the observed effect and its variance. LaunchDarkly's [comparison of the two approaches](https://launchdarkly.com/docs/guides/experimentation/bayesian-frequentist) notes that with enough data the results are nearly identical, so the two engines mostly differ in how the result is expressed. Choose the one your team will read correctly, and pick sequential testing if you know you will check results often.
 
 **How long should an onboarding experiment run?**
 
@@ -155,7 +155,7 @@ PostHog runs experiments on its own flags and event data inside a broader analyt
 
 **What should happen to the feature flag after an experiment ends?**
 
-End the experiment and keep the winning variant, then remove the flag check and the losing code path from your codebase ([managing lifecycle](https://posthog.com/docs/experiments/managing-lifecycle)). Deploy that change before disabling the flag, because disabling a flag that code still checks turns the feature off for everyone ([cleaning up stale flags](https://posthog.com/docs/feature-flags/cleaning-up-stale-flags)). PostHog notes that every active flag counts toward feature flag billing even when it is rolled out to all users. Archive the experiment afterward so the record stays available.
+End the experiment and keep the winning variant, then remove the flag check and the losing code path from your codebase ([managing lifecycle](https://posthog.com/docs/experiments/managing-lifecycle)). Deploy that change before disabling the flag, because disabling a flag that code still checks turns the feature off for everyone ([cleaning up stale flags](https://posthog.com/docs/feature-flags/cleaning-up-stale-flags)). A flag left active can keep feature flag requests billable even when it is rolled out to all users. Archive the experiment afterward so the record stays available.
 
 ## Sources
 

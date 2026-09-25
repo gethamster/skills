@@ -90,7 +90,7 @@ Bastow calls a roadmap "a prototype for your strategy," something to put in fron
 
 A quarterly roadmap and a Now Next Later roadmap can look alike, since both have a few wide columns and no exact dates. Bastow calls the quarterly roadmap "the friendliest trap" because "a quarterly roadmap organizes work by when" while Now Next Later orders problems by confidence ([Why Time-Based Roadmaps Are Promises You Can't Keep](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)). The same post cites the [2026 State of B2B Product Management survey](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/) as finding that 41% of teams use quarterly time-based roadmaps and that only 27% have moved to Now-Next-Later. The table compares the two formats with a feature timeline and an outcome-based roadmap.
 
-| Question | Now Next Later | Quarterly roadmap | Outcome roadmap |
+| Question | Now Next Later | Quarterly roadmap | [Outcome roadmap](https://tryhamster.com/methods/outcome-driven-roadmapping-odr) |
 |---|---|---|---|
 | What sets an item's column | Confidence and problem priority ([ProdPad glossary](https://www.prodpad.com/glossary/now-next-later-roadmap/)) | The quarter it is planned for ([ProdPad](https://www.prodpad.com/blog/honesty-scales-better-than-certainty/)) | Outcome goals for the coming months ([Roman Pichler](https://romanpichler.medium.com/how-to-get-started-with-outcome-based-product-roadmaps-68f30098175a)) |
 | How readers treat a column | As a statement of confidence | As a ship date, in Bastow's account | As a goal to reach in that period |

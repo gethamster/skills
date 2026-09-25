@@ -18,4 +18,4 @@ No. PostHog lets you delete flags linked to experiments that are not running wit
 
 ## Why bother cleaning up a flag that is already at 100%?
 
-It still costs something. PostHog notes that every active flag counts toward feature flag billing even when fully rolled out, and a flag check that always returns the same value is dead code for future readers. Removing it keeps both the bill and the codebase smaller.
+It still costs something. A flag left active can keep feature flag requests billable even when fully rolled out, and a flag check that always returns the same value is dead code for future readers. Removing it keeps both the bill and the codebase smaller.

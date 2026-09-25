@@ -2,7 +2,7 @@
 
 ## Which statistics engine does PostHog use by default?
 
-Bayesian. PostHog's getting started guide lists Bayesian as the default with frequentist as the alternative. You can set the default for all experiments in the experiments settings and override it per experiment in its statistics section.
+Bayesian. PostHog's getting started guide lists Bayesian as the default with frequentist as the alternative.
 
 ## What does win probability mean in PostHog?
 

@@ -12,7 +12,7 @@ metadata:
 
 # Outcome-Driven Roadmapping: Plan Around Results
 
-> Created by **Product practitioners including Josh Seiden, Melissa Perri, C. Todd Lombardo and Bruce McCarthy (no single originator)** - [https://www.amazon.com/Product-Roadmaps-Relaunched-Direction-Uncertainty/dp/149197172X](https://www.amazon.com/Product-Roadmaps-Relaunched-Direction-Uncertainty/dp/149197172X)
+> Created by **Practice drawn from Seiden, Perri, Lombardo et al. and Cagan (no single originator)** - [https://www.amazon.com/Product-Roadmaps-Relaunched-Direction-Uncertainty/dp/149197172X](https://www.amazon.com/Product-Roadmaps-Relaunched-Direction-Uncertainty/dp/149197172X)
 
 ## Overview
 
@@ -63,7 +63,7 @@ Stakeholder debates on a feature roadmap turn into contests over whose feature g
 ## Steps
 
 1. **Collect the strategic objectives**
-   Start from the objectives the business has already set, usually in company OKRs, a strategy document or board priorities. The product manager's job here is translation, so align to existing objectives rather than inventing new ones. Pichler recommends deriving roadmap goals from the product strategy instead of letting stakeholders dictate roadmap content ([OKRs and Product Roadmaps](https://www.romanpichler.com/blog/okrs-and-product-roadmaps/)). If the company has no clear objectives, raise that with leadership before building the roadmap, because every later step depends on them. Keep the list short enough that everyone on the team can name the objectives from memory.
+   Start from the objectives the business has already set, usually in company OKRs, a strategy document or board priorities. The product manager's job here is translation, so align to existing objectives rather than inventing new ones. Pichler recommends deriving roadmap goals from the product strategy ([OKRs and Product Roadmaps](https://www.romanpichler.com/blog/okrs-and-product-roadmaps/)). If the company has no clear objectives, raise that with leadership before building the roadmap, because every later step depends on them. Keep the list short enough that everyone on the team can name the objectives from memory.
 
 2. **Define measurable outcomes for each objective**
    For each objective, write one or a few outcomes, each with a metric, a current baseline, a target, a timeframe and an owner. Test each candidate by asking why it matters, which is Pichler's check for features in disguise ([Pichler](https://www.romanpichler.com/blog/get-the-outcomes-on-your-product-roadmap-right/)). "Launch the enterprise dashboard" is an output. A change in how many enterprise users complete a weekly task is an outcome. Prefer product outcomes the team can influence over business outcomes it cannot.
@@ -109,7 +109,7 @@ Two of these have their own pages in this catalog: the [Now-Next-Later framework
 
 - The work is fixed-scope with a contractual or regulatory deadline, such as a compliance change or a mandated migration. The solution is already decided, so a project plan serves better.
 - The product has no instrumentation and building it would take months. Outcomes nobody can observe turn the roadmap back into a feature list with aspirational headings, so start with one measurable outcome or fix measurement first.
-- Leadership evaluates the product team on features delivered and will not change that. Cagan's observation is that outcome techniques are a cultural mismatch with feature teams ([Team Objectives](https://www.svpg.com/team-objectives-overview/)), so the review model has to change first or in parallel.
+- Leadership evaluates the product team on features delivered and will not change that. Cagan's observation is that the OKR technique is a cultural mismatch with feature teams ([Team Objectives](https://www.svpg.com/team-objectives-overview/)), so the review model has to change first or in parallel.
 - A very early product has no users and no baselines. Early work is about learning what to measure, and discovery methods such as the Lean Startup's build-measure-learn loop fit better until there is a baseline to improve.
 
 ## Skills

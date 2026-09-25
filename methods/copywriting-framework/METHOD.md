@@ -18,7 +18,7 @@ metadata:
 
 The copywriting framework is a set of working rules for conversion copywriting: website and email copy whose job is to get a specific reader to take a specific next step. [Wikipedia defines copywriting](https://en.wikipedia.org/wiki/Copywriting) as writing persuasive text for advertising or other forms of marketing. This framework narrows that to the pages a software or service company actually ships (homepages, landing pages, pricing pages, feature pages and email sequences) and gives each one a short list of rules to write and review against. It applies to B2B copywriting and sales copywriting as much as to consumer sites, and it suits copywriting for beginners because every rule can be checked against the draft.
 
-The version on this page follows the copywriting skill that Corey Haines published in his open-source [marketingskills repository](https://github.com/coreyhaines31/marketingskills), a free collection of marketing instructions for AI coding agents. The repository's README describes Conversion Factory as Haines's agency for conversion optimization, landing pages and growth strategy. His [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md) sets out four paired principles (Clarity Over Cleverness, Benefits Over Features, Specificity Over Vagueness, and Customer Language Over Company Language), a formula for call-to-action buttons, and separate guidance for each page type. Hamster's page arranges those rules into an order of work and adds the research behind each one.
+The version on this page follows the copywriting skill that Corey Haines published in his open-source [marketingskills repository](https://github.com/coreyhaines31/marketingskills), a free collection of marketing instructions for AI coding agents. The repository's README describes Conversion Factory as Haines's agency for conversion optimization, landing pages and growth strategy. His [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md) sets out five principles (Clarity Over Cleverness, Benefits Over Features, Specificity Over Vagueness, Customer Language Over Company Language, and One Idea Per Section), a formula for call-to-action buttons, and separate guidance for each page type. Hamster's page arranges those rules into an order of work and adds the research behind each one.
 
 None of the individual rules is new, and the framework does not claim to be. Written advertising formulas are more than a century old. The attention, interest, desire and action sequence is commonly attributed to E. St. Elmo Lewis, and C. P. Russell first used the AIDA acronym in 1921, according to [Wikipedia's history of AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing)). Claude Hopkins argued that advertising should be tested and measured in [Scientific Advertising](https://en.wikipedia.org/wiki/Scientific_Advertising), published in 1923. The framework's contribution is a practical sequence and a checklist that a writer, an editor or an AI agent can apply one page at a time.
 
@@ -40,7 +40,7 @@ Replace general claims with the task, the timeframe, the named outcome or the co
 
 ### Benefits Over Features
 
-A feature says what the product does, and a benefit says what the customer gets from it. The best-known version of the idea is the saying that people want a quarter-inch hole, and [Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/) traces it to Leo McGivena, noting that Theodore Levitt himself credited McGivena even though the line is often credited to Levitt. Benefits persuade better when the feature stays beside them as the reason to believe. Haines's guidance for feature pages follows the same chain: connect the feature to the benefit and the benefit to the outcome.
+A feature says what the product does, and a benefit says what the customer gets from it. The best-known version of the idea is the saying that people want a quarter-inch hole, and [Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/) traces its earliest known appearance to a 1942 insurance advertisement run by C. C. Wagner. Leo McGivena may be credited with popularizing it, and Theodore Levitt, to whom it is often credited, himself attributed it to McGivena. Benefits persuade better when the feature stays beside them as the reason to believe. Haines's guidance for feature pages follows the same chain: connect the feature to the benefit and the benefit to the outcome.
 
 ### Customer Language Over Company Language
 
@@ -56,7 +56,7 @@ A button label is a small promise about the next screen. Haines lists Submit, Si
 
 ### Honest Proof
 
-Proof makes specific claims believable, and false proof destroys the trust the rest of the page builds. Haines's skill lists honesty among its style rules and warns that fabricated statistics or testimonials erode trust and create legal liability. The FTC's [Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) require that endorsements reflect the endorser's honest opinion and that ads featuring exceptional results disclose what people can generally expect. Use real customer quotes with permission, real counts you can defend, and plain statements where you have no proof yet.
+Proof makes specific claims believable, and false proof destroys the trust the rest of the page builds. Haines's skill lists honesty among its style rules and warns that invented numbers or quotes damage trust and can expose the company legally. The FTC's [Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) require that endorsements reflect the endorser's honest opinion and that ads featuring exceptional results disclose what people can generally expect. Use real customer quotes with permission, real counts you can defend, and plain statements where you have no proof yet.
 
 ## Older Formulas Behind the Framework
 
@@ -66,7 +66,7 @@ The framework borrows from older copywriting formulas. The table shows where eac
 |---|---|---|
 | AIDA | Attention, interest, desire, action, commonly attributed to E. St. Elmo Lewis ([Wikipedia](https://en.wikipedia.org/wiki/AIDA_(marketing))) | The order of landing page sections |
 | Problem-Agitate-Solve | State the problem, agitate the pain, introduce the solution, then the call to action ([Haines's ad templates](https://github.com/coreyhaines31/marketingskills/blob/main/skills/ads/references/ad-copy-templates.md)) | Problem sections and email openings |
-| Features to benefits | The quarter-inch hole saying, traced to Leo McGivena ([Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/)) | Step 4 |
+| Features to benefits | The quarter-inch hole saying, first found in a 1942 ad by C. C. Wagner and popularized by Leo McGivena ([Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/)) | Step 4 |
 | Testing and measuring | Claude Hopkins's case for testing ads ([Scientific Advertising](https://en.wikipedia.org/wiki/Scientific_Advertising)) | Step 8 |
 | Concise, scannable, objective | Web writing that readers can scan and trust ([NN/g](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/)) | Step 6 |
 
@@ -134,7 +134,7 @@ A copywriting framework is a repeatable set of rules and steps for writing persu
 
 **Who created this copywriting framework?**
 
-The principles and page-specific guidance come from the copywriting skill Corey Haines published in his [marketingskills repository](https://github.com/coreyhaines31/marketingskills). The underlying ideas are older. AIDA is commonly attributed to E. St. Elmo Lewis ([Wikipedia](https://en.wikipedia.org/wiki/AIDA_(marketing))), and the feature-versus-benefit saying about quarter-inch holes goes back to Leo McGivena ([Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/)). This page arranges those ideas into steps and cites the research behind them.
+The principles and page-specific guidance come from the copywriting skill Corey Haines published in his [marketingskills repository](https://github.com/coreyhaines31/marketingskills). The underlying ideas are older. AIDA is commonly attributed to E. St. Elmo Lewis ([Wikipedia](https://en.wikipedia.org/wiki/AIDA_(marketing))), and the feature-versus-benefit saying about quarter-inch holes first appears in a 1942 advertisement by C. C. Wagner, with Leo McGivena credited with popularizing it ([Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/)). This page arranges those ideas into steps and cites the research behind them.
 
 **How is conversion copywriting different from brand or creative copywriting?**
 

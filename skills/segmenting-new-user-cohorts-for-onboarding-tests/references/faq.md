@@ -10,7 +10,7 @@ A person property your code sets at signup, such as a signup date or an onboardi
 
 ## Why do some new users get no variant?
 
-Usually because the flag was evaluated before the property it depends on was available, which PostHog's troubleshooting guide says is most likely for new users in onboarding. The exposure then carries no valid variant and the user is dropped. Pass the property with the flag request, bootstrap the value, or evaluate on the server.
+Usually because the flag was evaluated before the property it depends on was available, which PostHog's troubleshooting guide calls the most damaging version of a flag-timing problem. The exposure then carries no valid variant and the user is dropped. Pass the property with the flag request, bootstrap the value, or evaluate on the server.
 
 ## Is a release condition enough on its own?
 

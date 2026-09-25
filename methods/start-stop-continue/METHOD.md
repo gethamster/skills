@@ -12,7 +12,7 @@ metadata:
 
 # Start Stop Continue: Retrospective and Feedback Method
 
-> Created by **Retrium (technique guide; origin undocumented)** - [https://www.retrium.com/retrospective-techniques/start-stop-continue](https://www.retrium.com/retrospective-techniques/start-stop-continue)
+> Created by **Origin undocumented (reference guide: Retrium)** - [https://www.retrium.com/retrospective-techniques/start-stop-continue](https://www.retrium.com/retrospective-techniques/start-stop-continue)
 
 ## Overview
 

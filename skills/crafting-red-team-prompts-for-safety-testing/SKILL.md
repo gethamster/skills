@@ -89,7 +89,7 @@ After each training round, run the held-out pool again and commission fresh huma
 ## Best Practices
 
 - Keep training and test prompts separate. A model evaluated on its own training prompts will look safer than it is.
-- Mix human and model-written prompts. People find new attack styles, and models add the volume and variety that [Perez et al.](https://arxiv.org/abs/2202.03286) showed hand-writing cannot.
+- Mix human and model-written prompts. People find new attack styles, and models add volume and variety; [Perez et al.](https://arxiv.org/abs/2202.03286) note that human annotation is expensive, which limits the number and diversity of hand-written test cases.
 - Test attack styles as well as topics. Jailbreak framing, long prompts and odd formatting can bypass behavior that holds on direct requests.
 - Include multi-turn conversations. Some harms and some evasive behavior only appear several turns into a conversation.
 - Score over-refusal too. Pair unsafe prompts with safe contrasts, so a safer model that refuses everything does not pass.
