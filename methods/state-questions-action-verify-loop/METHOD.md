@@ -5,12 +5,15 @@ description: "The State–Questions–Action–Verify Loop: build state, ask typ
 metadata:
   datePublished: "2026-09-24"
   dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
   image: "/images/scenes/graphite/sunflower-rows-colour-light.webp"
 ---
 
 # What Is the State–Questions–Action–Verify Loop?
 
-> Created by **TypeSafe AI** — [https://typesafe.ai](https://typesafe.ai)
+> Created by **TypeSafe AI** - [https://typesafe.ai](https://typesafe.ai)
 
 ## Overview
 
@@ -135,13 +138,13 @@ Decide in advance what done means, when to stop, and which actions need human ap
 
 This method includes the following skills:
 
-- [Recovering from Verification Failures](skills/recovering-from-verification-failures/SKILL.md) — Responding to failed verification checks by revising the plan, retrying safely with adjusted parameters, restoring a prior state, or escalating to human oversight.
-- [Checking Post-Action Results](skills/checking-post-action-results/SKILL.md) — Inspecting the resulting state after action execution and comparing it against expected outcomes rather than assuming the operation succeeded.
-- [Defining Verifiable Success Criteria](skills/defining-verifiable-success-criteria/SKILL.md) — Specifying objective tests, evidence thresholds, or conditions that clearly distinguish successful task completion from partial progress or outright failure.
-- [Applying Loop Termination and Continuation Rules](skills/applying-loop-termination-and-continuation-rules/SKILL.md) — Determining whether the SQAV loop should iterate again, terminate successfully, halt with failure, or pause for human intervention based on accumulated state and verification results.
-- [Formulating Typed Decision Questions](skills/formulating-typed-decision-questions/SKILL.md) — Translating goals and current state information into explicit, typed questions and decision criteria that constrain and guide the agent's next action selection.
-- [Representing Current Agent State](skills/representing-current-agent-state/SKILL.md) — Maintaining a structured, accurate snapshot of task status, accumulated evidence, constraints, and execution history to ground all downstream decisions in the SQAV loop.
-- [Selecting and Executing Bounded Actions](skills/selecting-and-executing-bounded-actions/SKILL.md) — Choosing an appropriate next operation that respects scope, permissions, and risk constraints, then carrying it out while recording its observable effects on the environment.
+- [Recovering from Verification Failures](../../skills/recovering-from-verification-failures/SKILL.md): Responding to failed verification checks by revising the plan, retrying safely with adjusted parameters, restoring a prior state, or escalating to human oversight.
+- [Checking Post-Action Results](../../skills/checking-post-action-results/SKILL.md): Inspecting the resulting state after action execution and comparing it against expected outcomes rather than assuming the operation succeeded.
+- [Defining Verifiable Success Criteria](../../skills/defining-verifiable-success-criteria/SKILL.md): Specifying objective tests, evidence thresholds, or conditions that clearly distinguish successful task completion from partial progress or outright failure.
+- [Applying Loop Termination and Continuation Rules](../../skills/applying-loop-termination-and-continuation-rules/SKILL.md): Determining whether the SQAV loop should iterate again, terminate successfully, halt with failure, or pause for human intervention based on accumulated state and verification results.
+- [Formulating Typed Decision Questions](../../skills/formulating-typed-decision-questions/SKILL.md): Translating goals and current state information into explicit, typed questions and decision criteria that constrain and guide the agent's next action selection.
+- [Representing Current Agent State](../../skills/representing-current-agent-state/SKILL.md): Maintaining a structured, accurate snapshot of task status, accumulated evidence, constraints, and execution history to ground all downstream decisions in the SQAV loop.
+- [Selecting and Executing Bounded Actions](../../skills/selecting-and-executing-bounded-actions/SKILL.md): Choosing an appropriate next operation that respects scope, permissions, and risk constraints, then carrying it out while recording its observable effects on the environment.
 
 ## FAQ
 
