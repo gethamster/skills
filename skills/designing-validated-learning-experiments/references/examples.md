@@ -1,57 +1,37 @@
 # Examples: Designing Validated Learning Experiments
 
-## Example: B2C Landing Page Test for a Meal Planning App
+## A landing page test before any build
 
 **Scenario:**
 
-A two-person founding team believes busy parents will pay $9.99/month for a personalized weekly meal plan delivered to their inbox. They have no product, no audience, and a $500 experiment budget. They need to validate demand before investing three months in building the app.
+Illustrative scenario: a team wants to offer a paid course that teaches small restaurant owners to manage their online reviews. The riskiest assumption is that owners will pay for training rather than look for free advice.
 
 **Walkthrough:**
 
-' They build a single landing page in three hours using a no-code tool. 99. They run Facebook ads targeting parents with young children in three mid-sized US cities, spending $400 over 14 days. The ads drive 620 visitors to the page.
+The Test Card reads: we believe restaurant owners will pay for a short course on managing reviews. To verify that, we will run a landing page describing the course with a price and a "reserve your place" button that takes a small deposit. We will measure deposits as a share of visitors from targeted ads. We are right if at least one visitor in fifty pays a deposit within two weeks, and wrong if fewer than one in two hundred do.
 
-1% purchase rate). 1% is below their 5% threshold. 99 price point. 99 price point and a revised value proposition emphasizing time savings rather than healthy eating.
+After two weeks, the rate falls between the lines. The team reads the ad comments and finds owners asking whether the course covers delivery apps. They run a second landing page that names delivery apps in the headline, with the same criteria, before deciding anything.
 
-They refund the 19 purchasers and explain the product is not yet available, offering early access when it launches.
-
-## Example: B2B Concierge MVP for an Automated Reporting Tool
+## Concierge first, then Wizard of Oz
 
 **Scenario:**
 
-A product manager at a small SaaS company hypothesizes that marketing directors at mid-market companies will pay $199/month for an automated dashboard that pulls data from their ad platforms and generates weekly performance summaries. The engineering team is busy for six weeks. The PM wants to validate the hypothesis before requesting engineering time.
+Illustrative scenario: a startup believes busy parents want weekly meal plans matched to what is on sale at their local supermarket.
 
 **Walkthrough:**
 
-' 14 respond with interest. She asks each one for read-only access to their Google Ads and Facebook Ads accounts. 10 grant access. Each week for two weeks, she manually pulls data from their accounts, builds a summary in Google Slides, and emails it with commentary.
+The first experiment is a concierge MVP. A team member meets five parents, learns their preferences and emails each one a plan by hand every week. The pass line is that at least three of the five still use the plan after a month and agree to pay a small fee. Four do.
 
-After the trial, she asks each participant to subscribe at $199/month. 7 out of 10 say yes and provide payment information. The 70% conversion rate dramatically exceeds her 60% threshold. She documents the learning and presents it to the engineering team with the seven paying customers as evidence.
+The next question is whether parents will use the product without a personal relationship. The team designs a Wizard of Oz test: a simple sign-up form and a plan that appears to be generated automatically, still assembled by hand behind the scenes. The criteria are set before launch, and this time the audience is recruited from ads rather than personal contact.
 
-The team prioritizes building the automated version. The PM also notes which summary sections each customer found most valuable, informing the feature prioritization for the real product.
-
-## Example: Wizard of Oz Test for an AI-Powered Customer Support Chatbot
+## Fixing a serial comparison
 
 **Scenario:**
 
-A startup team wants to build an AI chatbot that handles tier-1 support tickets for e-commerce companies. They believe the chatbot can resolve 60% of tickets without human intervention. Building the AI model will take four months. They want to test whether e-commerce support teams will adopt and trust an automated solution before investing in the AI.
+Illustrative scenario: a subscription app changed its pricing page on the first of the month and compared sign-ups with the previous month. Sign-ups fell, and the team is ready to revert.
 
 **Walkthrough:**
 
-' They build a simple chat widget that can be embedded on a customer's support page. When a customer submits a question, it routes to the startup team's Slack channel. A team member reads the question, writes a response, and sends it back through the widget within 5 minutes, simulating an AI response. They recruit 5 e-commerce companies for a free two-week pilot.
+A reviewer points out that the previous month included a holiday promotion by a partner. The comparison mixes the page change with that promotion. The team redesigns the experiment as a split test, randomly assigning visitors to the old and new pages at the same time for the same period.
 
-During the pilot, the team handles 847 tickets across the five companies. They resolve 71% of tickets through the chat widget without the customer needing to escalate. 4 out of 5 companies ask to continue the service after the trial. Both metrics exceed their thresholds.
-
-The team documents the learning and secures the four companies as beta customers for the real AI-powered version. They also discover that 40% of tickets are about order tracking, which helps them prioritize which AI capability to build first.
-
-## Example: Large Company Internal Feature Experiment
-
-**Scenario:**
-
-A product team at a 2,000-person project management SaaS company wants to add a time-tracking feature. The feature has been requested by 15% of support tickets, but the team is unsure whether users would actually adopt it. Engineering estimates three months of development. The VP of Product wants evidence before committing a squad.
-
-**Walkthrough:**
-
-' Rather than building real time tracking, they create a feature announcement modal that appears when Pro users log in. ' Clicking 'Enable' shows a message: 'Thanks! Time tracking is currently in early access. ' They track the enable rate.
-
-Over 21 days, 12,400 Pro users see the modal. 2,976 click 'Enable Time Tracking' (24%), exceeding the 20% threshold. The team also surveys 200 of the users who clicked 'Enable,' asking which aspect of time tracking matters most. The top answer (68%) is tracking time per task for client billing, not tracking employee hours.
-
-This qualitative insight reshapes the feature specification from an employee monitoring tool to a client billing tool, a fundamentally different product direction that the team would not have discovered without the experiment.
+They write the criteria first: the new page passes if paid conversion is no worse than the old page and average plan value is higher. With both versions running in parallel, the difference between them can be attributed to the page.

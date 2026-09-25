@@ -1,25 +1,21 @@
-# FAQ: Comparing MoSCoW with RICE, ICE, WSJF, and Other Frameworks
+# FAQ: MoSCoW vs RICE, ICE and WSJF
 
-## When should I use MoSCoW instead of RICE as my prioritization technique?
+## Is MoSCoW better than RICE?
 
-Use MoSCoW when you need to define scope (what's in vs. out), when you lack quantitative data for RICE inputs, or when you need broad stakeholder alignment quickly. MoSCoW is faster and more accessible for cross-functional groups, while RICE is better for ranking an established backlog with usage data.
+They answer different questions. MoSCoW decides what a fixed timeframe will include and what it guarantees. RICE ranks ideas by reach, impact, confidence and effort. Use MoSCoW when stakeholders must agree scope for a date, and RICE when a product team needs an order across many ideas, often inside the MoSCoW categories.
 
-## Can I use MoSCoW and RICE together in the same planning process?
+## When should I use ICE instead of MoSCoW?
 
-Yes, and this is one of the most effective approaches. Use MoSCoW first to categorize items into scope buckets, then apply RICE scoring within the Should-have and Could-have categories to determine build sequence. Must-haves are built first regardless of RICE score, and Won't-haves are excluded entirely.
+When you need fast triage of many small bets with no fixed release to protect, such as growth experiments. ICE rates impact, confidence and ease and multiplies them, which takes minutes per idea. Its weakness is subjectivity, so agree what each rating level means. Switch to MoSCoW when a release date and a stakeholder commitment appear.
 
-## What is the main difference between MoSCoW and WSJF?
+## How does WSJF relate to MoSCoW?
 
-MoSCoW produces categorical groupings (Must/Should/Could/Won't) based on stakeholder judgment, answering 'what must we include?' WSJF produces a ranked sequence based on Cost of Delay divided by job duration, answering 'what order maximizes economic value?' They solve fundamentally different prioritization problems.
+WSJF sequences jobs by relative cost of delay divided by relative job duration, and suits a continuous flow of work. MoSCoW sets the scope of one timeframe. A team can use WSJF to order its queue and a MoSCoW pass for a specific fixed-date release that the queue must serve.
 
-## Is MoSCoW less rigorous than quantitative scoring frameworks?
+## Can I combine MoSCoW with a scoring framework?
 
-Not inherently. MoSCoW is rigorous when facilitators enforce honest categorization and limit Must-haves to genuine necessities. A well-run MoSCoW session with informed stakeholders produces more honest results than RICE scoring with fabricated data. Rigor comes from process discipline, not from numbers.
+Yes. Use MoSCoW to draw the scope line with stakeholders and a score to order work inside the Should and Could categories. Give each framework its own decision so they do not produce competing answers.
 
-## How do I handle stakeholders who insist on using only one prioritization framework?
+## What if a score and a MoSCoW category disagree?
 
-Run a pilot comparison: apply both frameworks to 15-20 real backlog items and show where they agree and diverge. The divergence points make a compelling case for layering methods, because they reveal blind spots that neither framework catches alone.
-
-## Which prioritization technique works best for early-stage startups with no user data?
-
-MoSCoW is typically the best starting point for early-stage products because it relies on stakeholder judgment and customer discovery insights rather than quantitative metrics. As you gain users and data, gradually introduce ICE (lighter data requirements) or RICE (heavier data requirements) to refine your sequencing.
+Decide which question is at stake. If it is whether an item must be in the release, apply the DSDM consequence test: a legal or safety requirement stays a Must however it scores. If it is which of two lower items to build first, let the score guide the order.

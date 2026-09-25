@@ -1,25 +1,21 @@
-# FAQ: Evaluating AI Alignment Using Preference Models
+# FAQ: Evaluating AI Alignment with Preference Models
 
-## How many comparison pairs do I need to train an effective preference model for Constitutional AI?
+## What is a preference model in Constitutional AI?
 
-A minimum of 10,000 pairwise comparisons produces a functional preference model, but 50,000-100,000 pairs are recommended for production use. The key is not just quantity but diversity—at least 15-20% of pairs should come from adversarial or edge-case prompts where alignment distinctions are subtle.
+It is a model trained on pairs of responses and labels saying which is better, which then scores any single response. In Constitutional AI the harmlessness labels come from an AI feedback model guided by the constitution, and in the original paper the helpfulness labels came from people. The policy is trained with reinforcement learning to produce responses the preference model scores highly.
 
-## Can I use a smaller model as a preference model for a larger generative model?
+## How do I know the preference model is good?
 
-Yes. Preference models only need to evaluate text, not generate it, so a 3B parameter preference model can effectively score outputs from a 70B generative model. Ensure the smaller model was pretrained on a sufficiently diverse corpus to understand the range of topics the larger model handles.
+Measure its accuracy on held-out comparisons that people have labeled, overall and by category, and check its calibration. Include hard cases such as evasive answers that should lose to helpful, harmless ones. Then confirm during RL that rising reward still matches human judgments of the policy.
 
-## How do I measure whether my preference model is well-calibrated for claude topical authority evaluation?
+## What is reward model overoptimization?
 
-Run isotonic regression on a held-out calibration set to map raw scores to probabilities. Then measure expected calibration error (ECE) across score bins. A well-calibrated model has ECE below 0.05, meaning its scores reliably predict the probability of constitutional adherence.
+It is what happens when a policy is optimized so hard against an imperfect reward model that real quality falls while the reward keeps rising. Research on scaling laws for reward model overoptimization measured this effect, and the Constitutional AI paper saw it as over-harsh answers and repeated boilerplate in over-trained models.
 
-## What is the difference between a preference model and a reward model in RLAIF?
+## Should I use a public benchmark?
 
-In practice, they are the same model used at different stages. During training, it is called a preference model because it learns from pairwise comparisons. During RL fine-tuning, it is called a reward model because it provides scalar reward signals. The architecture and weights are identical.
+Public reward model benchmarks such as RewardBench are useful for comparing approaches and spotting general weaknesses, including a tendency to favor refusals. They do not test your constitution, so build your own held-out sets from your principles and use a public benchmark as a second view.
 
-## How often should I retrain my preference model during RLAIF training?
+## How often should the preference model be retrained?
 
-Retrain every 2-4 RL policy updates, or whenever you observe reward scores increasing without corresponding improvement in human evaluation. Generate fresh comparison data from the current policy model's outputs to keep the preference model calibrated to the evolving output distribution.
-
-## How do preference models handle tradeoffs between helpfulness and harmlessness?
-
-The preference model learns tradeoff priorities from its training data. If your comparison pairs consistently label safe-but-helpful responses above safe-but-unhelpful refusals, the model learns that helpfulness matters when harmlessness is satisfied. Encode tradeoff priorities in your scoring rubric and ensure training data reflects them. See our guide on [balancing helpfulness and harmlessness](https://tryhamster.com/skills/balancing-helpfulness-and-harmlessness-tradeoffs) for details.
+When the policy's outputs have moved enough that the preference model's judgments start to disagree with people. Anthropic's earlier RLHF work updated preference models weekly with fresh data, and the Constitutional AI paper proposed the same kind of iterated training with AI feedback. Tie retraining to evaluation signals rather than a fixed calendar alone.

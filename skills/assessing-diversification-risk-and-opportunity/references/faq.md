@@ -1,25 +1,21 @@
 # FAQ: Assessing Diversification Risk and Opportunity
 
-## What is the difference between related and unrelated diversification in the Ansoff Matrix?
+## What is the difference between related and unrelated diversification?
 
-Related diversification enters new product-market spaces that share significant strategic assets with your existing business—such as brand equity, distribution channels, or technical capabilities. Unrelated diversification moves into domains with little or no overlap with current competencies. Related diversification typically carries moderate risk, while unrelated diversification is the highest-risk growth strategy in the Ansoff Matrix.
+Related diversification shares something important with the current business, such as technology, customers, channels or know-how. Unrelated diversification shares little or nothing. Related moves usually carry less execution risk because they reuse existing strengths, while unrelated moves can spread exposure across industries but ask the company to learn almost everything anew.
 
-## When should a company choose diversification over other Ansoff Matrix strategies?
+## How do Ansoff's vertical, horizontal and lateral directions map to modern terms?
 
-Diversification is appropriate when safer strategies (market penetration, market development, product development) offer insufficient growth potential, when the core market is in structural decline, or when a time-limited opportunity with strong strategic fit emerges. Always benchmark diversification's risk-adjusted return against other quadrants before committing resources.
+Ansoff's vertical diversification moves into components, parts or materials for your own products, which today is often discussed as vertical integration. His horizontal diversification adds products for missions within your existing know-how, which is close to related diversification. Lateral diversification moves beyond your industry and corresponds to conglomerate or unrelated diversification.
 
-## How does diversification risk assessment fit into marketing management planning?
+## Is diversification always the riskiest Ansoff quadrant?
 
-In marketing management, diversification assessment ensures that growth ambitions are grounded in capability reality. It provides a structured framework for evaluating whether the marketing team can build brand relevance, acquire customers, and sustain competitive positioning in an entirely new product-market space—preventing costly overextension.
+It is usually described that way, because both the product and the market are new to the company. The actual risk of a specific option depends on how much it reuses and on the route chosen. A related acquisition of a proven business can be less risky than an ambitious internal product development project.
 
-## What are common examples of successful related diversification?
+## Can diversification reduce risk?
 
-Apple moving from computers to smartphones (shared design expertise, brand, and retail channels), Amazon expanding from e-commerce to cloud computing (shared infrastructure and engineering culture), and Disney moving from films to theme parks (shared intellectual property and brand storytelling) are classic examples of related diversification where existing capabilities created significant advantage in new markets.
+It can reduce the company's exposure to one industry or cycle, which is why Ansoff listed stability as one of the objectives of diversification. That benefit only arrives if the new business succeeds, so it has to be weighed against the risk of entering an unfamiliar market with an unfamiliar product.
 
-## How do I reduce the risk of a diversification strategy?
+## Should we build, buy or partner?
 
-Stage investments through phased entry—pilots, partnerships, or minority acquisitions—rather than committing full resources upfront. Define explicit go/no-go milestones and exit triggers before launching. Focus on related diversification where transferable capabilities reduce the learning curve, and conduct honest capability gap analysis to avoid underestimating what must be built or acquired.
-
-## Can the Ansoff Matrix be used alongside other strategic frameworks for diversification decisions?
-
-Yes. The Ansoff Matrix identifies diversification as a strategic option, but you should complement it with Porter's Five Forces (to assess target market competitiveness), core competency analysis (to evaluate transferability), and financial modeling (to quantify risk-adjusted returns). The Ansoff Matrix provides the strategic classification; other frameworks provide the depth of analysis.
+It depends on the capability gap and the time available. Building keeps control but is slow when the gap is large. Acquiring buys capability and customers quickly but brings integration risk and a price premium. Partnering or licensing tests the market with less commitment and can be a first stage before a larger move.

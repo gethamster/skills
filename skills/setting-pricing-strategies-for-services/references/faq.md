@@ -1,25 +1,21 @@
-# FAQ: Setting Pricing Strategies for Products and Services
+# FAQ: Pricing Strategy in the Marketing Mix for Services
 
-## How does pricing strategy fit into the marketing mix?
+## How do I set pricing for services?
 
-Pricing is the second P in the 7 P's Marketing Mix and directly influences how customers perceive your product's value. It must align with your product positioning, distribution channels, promotional messaging, and service delivery. A pricing strategy marketing mix approach ensures price reinforces rather than contradicts the story told by your other six P's.
+Start with the value the service creates for the customer, which sets the ceiling. Work out the cost to serve, which sets the floor. Look at competitor prices to understand what customers will compare you with, then choose a model and a level between the floor and the ceiling that fits your positioning. Test before rolling out widely.
 
-## When should I use value-based pricing instead of cost-plus?
+## What is value-based pricing?
 
-Use value-based pricing when you can quantify the economic impact your product or service creates for customers and when your differentiation is strong enough that customers aren't simply comparing you on price. Cost-plus works best for commoditized products where differentiation is minimal and operational efficiency is your competitive advantage.
+Value-based pricing sets the price according to the value the customer perceives, their willingness to pay, instead of the cost of production. It is often recommended and often misunderstood. In practice it means doing customer research to learn what outcomes are worth, then pricing to capture a fair share of that value.
 
-## How often should I review and adjust my pricing?
+## When does a tiered pricing strategy make sense?
 
-Review pricing quarterly at minimum, and monthly during the first 90 days after any pricing change. Trigger an off-cycle review if you see significant shifts in win rates, competitive pricing, customer acquisition costs, or product capabilities. Markets move faster than most pricing review cycles.
+Tiers work when customers differ in how much of the service they need or in which features they value. Each tier should be clearly different, and the number of tiers should be small enough to choose without help. Every tier also needs the people and process to deliver what it promises.
 
-## What is the best pricing model for a service business?
+## Should a new service use penetration or skimming pricing?
 
-Most service businesses benefit from tiered or value-based pricing rather than hourly billing. Tiered pricing lets you serve multiple customer segments, while value-based pricing aligns your revenue with the outcomes you deliver. The best choice depends on how easily you can quantify client value and how standardized your service delivery is.
+Penetration pricing starts low to win share quickly and suits markets where scale matters and customers switch easily. Skimming starts high for the most eager buyers and lowers the price over time, which suits offers with a clear advantage and customers who value being first. For many services, a starting price that reflects the positioning is easier to keep than one that must be raised later.
 
-## How do I price a new product with no competitive reference?
+## Why does price need to match the other Ps?
 
-Start by quantifying the value your product creates for customers—time saved, revenue generated, or costs avoided. Use customer interviews and willingness-to-pay surveys to establish a value ceiling, then set your price to capture 10-30% of that value. Launch with the expectation that you'll iterate within the first two quarters based on real market feedback.
-
-## Can I use different pricing strategies for different customer segments?
-
-Yes, and you should. Tiered pricing is the most common way to serve multiple segments with different price points and feature sets. The key is ensuring each tier has a clear value proposition and that customers self-select into the appropriate tier based on their needs, not just their budget.
+Customers use price as a signal of quality, especially for services they cannot inspect before buying. A premium price raises expectations of the people, process and physical evidence. If delivery does not meet them, customers feel overcharged even when the service is good.

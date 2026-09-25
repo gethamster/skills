@@ -1,25 +1,21 @@
-# FAQ: Running HEART Framework Workshops with Cross-Functional Teams
+# FAQ: Running HEART Framework Workshops
 
-## How long should a HEART Framework workshop take?
+## Who should facilitate the workshop?
 
-Plan 2-3 hours for a workshop covering 2-4 HEART dimensions. Sessions under 90 minutes tend to produce shallow outputs, while sessions over 3 hours suffer from participant fatigue. If you need all five dimensions, split across two sessions.
+Someone who understands HEART and does not own the final decision. A researcher, analyst or product operations person often works well. The product owner should attend and sponsor the session, but facilitating and deciding at the same time makes it harder to draw out disagreement.
 
-## Who should attend a HEART workshop?
+## Should we define metrics in the workshop?
 
-At minimum, include one PM, one designer, one engineer, and one data analyst. Cap attendance at 8-10 people. Stakeholders who need to approve the output should receive the summary document rather than attend the session.
+Mostly no. The workshop is for agreeing goals and brainstorming signals, the first part of the Goals-Signals-Metrics process. Precise metric definitions need someone to check the data, which is easier after the session. Sketching one metric as an example is fine if it helps people see where the work is heading.
 
-## Can I run a HEART workshop remotely?
+## How many people should attend?
 
-Yes—remote HEART workshops work well with collaborative tools like Miro or FigJam. Add extra time for 'gallery walks' where participants silently read all contributions, and use built-in voting features for prioritization instead of verbal debate.
+Enough to cover the decisions, few enough for everyone to talk. The core is usually product, design, engineering and research, plus data or support if they hold key signals. Collect input from others before the session rather than inviting them all.
 
-## How does running HEART workshops help me learn how to become a product manager?
+## What if the team cannot agree on goals?
 
-Facilitating HEART workshops demonstrates three core PM competencies: cross-functional leadership, metrics-driven thinking, and user-centered framing. Many PM hiring managers specifically look for candidates who can lead alignment sessions like these, making it a powerful portfolio and interview skill.
+Name the disagreement and write each position down. Ask what each goal would imply for the product and the metrics, which often shows that one is a business goal outside the user experience. If the group still cannot choose, the sponsor decides, and the reasons go in the notes.
 
-## What if our team doesn't have data for baselines during the workshop?
+## How often should we run a HEART workshop?
 
-That's completely normal. Document the metric definition and formula, mark the baseline as 'TBD,' and assign an owner to pull the baseline within 1-2 weeks. Don't let missing baselines stall the workshop—capturing what to measure is more important than knowing today's number.
-
-## Should we cover all five HEART dimensions in one workshop?
-
-Usually not. Pre-scope to 2-4 dimensions based on your product's maturity and strategic priorities. Attempting all five in a single session produces shallow coverage. A new feature might only need Adoption and Task Success, while a mature product might focus on Engagement and Retention.
+Run one when a project starts or its goals change, such as before a launch or a redesign. Revisit the table after launch once there is data, since the metrics usually need refining. Some teams also repeat the exercise on a regular cycle to check that the goals still fit the product.

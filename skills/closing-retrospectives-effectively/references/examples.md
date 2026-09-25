@@ -1,27 +1,37 @@
-# Examples: Closing Retrospectives Effectively
+# Examples: Closing a Retrospective Meeting Effectively
 
-## Example: Closing a Two-Week Sprint Retro for a Product Team
-
-**Scenario:**
-
-A product team of seven has just finished the 'Decide What to Do' phase of their retrospective meeting. They've identified two action items: (1) the tech lead will set up an automated deploy notification in Slack by Wednesday, and (2) the product manager will create a shared FAQ doc for the new pricing model by Friday. The facilitator has 10 minutes left.
-
-**Walkthrough:**
-
-The facilitator says: 'Let's move into our close—we have 10 minutes.' She pulls up the shared board and reads each action item aloud: 'Marcus, you're setting up automated deploy notifications in Slack by Wednesday. Does that sound right?' Marcus confirms. 'Priya, you're creating the pricing FAQ doc by Friday.' Priya confirms and asks for the doc to be linked in the sprint backlog—facilitator notes this.
-
-Next, the facilitator says: 'These will go into our sprint backlog today, and I'll check in during Thursday's standup.' She then opens the appreciation round: 'Before we wrap, anything you want to call out from today?' One engineer thanks the designer for sharing customer complaint screenshots—it made the data gathering phase concrete. Another appreciates Marcus for being candid about deploy pain points.
-
-Finally, the facilitator holds up five fingers: 'Quick ROTI—how valuable was this retro from 1 to 5?' The team averages a 4. She notes one person held up a 3 and asks if they'd share why. They mention the data gathering felt rushed. The facilitator records this: 'Good feedback—I'll extend that phase next time. Thanks everyone, we're done. See you at standup tomorrow.'
-
-## Example: Ultra-Quick Close When Time Is Tight
+## A close that catches a vague action
 
 **Scenario:**
 
-A remote team's retrospective meeting ran long during the insight generation phase. Only 3 minutes remain. The facilitator needs to close without skipping essential elements.
+Illustrative scenario: a team of six has agreed two actions. One reads "improve the handoff to QA." The retrospective has a few minutes left.
 
 **Walkthrough:**
 
-The facilitator unmutes and says: 'We're tight on time so let me do a rapid close. I'm screen-sharing our two action items. Jess owns the API documentation update by next Tuesday. Dev owns scheduling the cross-team sync by Thursday. Jess, Dev—thumbs up in chat if these are correct.' Both confirm with 👍.
+The facilitator reads the first action aloud and asks the owner what will be different next sprint. The owner says testers will get a short checklist with each story. Another developer thought the action meant moving testers into planning. The facilitator rewrites the action as "add a handoff checklist to each story before it moves to testing," confirms the owner, and agrees that the next retrospective will check whether it was used.
 
-The facilitator continues: 'Quick one-word close—drop a single word in chat describing this retro.' Words appear: 'productive,' 'rushed,' 'needed,' 'long.' The facilitator says: 'I see some of you felt rushed—I'll plan more time for insights next sprint. Thanks for a great session, everyone. Action items are in Jira. Done!' Total close time: 2 minutes 45 seconds.
+She reads the second action, which is already clear. Both go onto the team board while everyone watches. She thanks a tester who raised the handoff problem, runs a quick ROTI, and ends on time.
+
+## Using ROTI to improve the next retrospective
+
+**Scenario:**
+
+Illustrative scenario: a team of eight has run the same retrospective format for several sprints. The facilitator suspects people are losing interest.
+
+**Walkthrough:**
+
+At the close he asks everyone to score the session from 1 to 5 on a sticky note without discussion. The scores cluster at 2 and 3. He asks each person to write one thing within their control that would raise their score by a point.
+
+Most notes say the data phase takes too long and the team runs out of time for actions. He thanks the team, promises one change, and ends on time. At the next retrospective he opens by saying he has shortened the data phase and reserved more time for deciding. The next ROTI scores are higher, and he keeps the change.
+
+## Closing a remote retrospective across time zones
+
+**Scenario:**
+
+Illustrative scenario: a distributed team of seven meets on a video call. Two members could not join because of their time zone.
+
+**Walkthrough:**
+
+The facilitator reads back the single action and its owner, then records it in the team's tracker during the call. She asks each person on the call for one appreciation, typed into the chat so the absent members can read it later.
+
+She collects feedback with an anonymous poll. After the call she posts a short summary in the team channel with the action, the owner, the main insight and a link to the board. She asks the two absent members to add any comments before the next planning meeting.

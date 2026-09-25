@@ -1,15 +1,20 @@
 ---
-name: managing-change-requests-in-waterfall
-description: "This skill teaches you how to evaluate, document, and process scope change requests through a formal change control board so you can handle inevitable changes without derailing your sequential waterfall model project plan."
+name: "managing-change-requests-in-waterfall"
+description: "Run the change request process in a waterfall project: log each change, analyze its impact, take it to a change control board and update the baseline."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: waterfall
+  method: "waterfall"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Managing Change Requests in Waterfall Model Projects
+# Managing Change Requests in Waterfall Projects
 
-> This skill teaches you how to evaluate, document, and process scope change requests through a formal change control board so you can handle inevitable changes without derailing your sequential waterfall model project plan.
+> Run the change request process in a waterfall project: log each change, analyze its impact, take it to a change control board and update the baseline.
 
 ## Before you start
 
@@ -24,120 +29,90 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You will be able to receive, evaluate, and formally process change requests through a structured change control process that protects your waterfall project's baseline while accommodating genuinely necessary changes. |
-| Prerequisites | Understanding of the waterfall model and its sequential phases, Experience with writing requirements documents, Familiarity with project baselines (scope, schedule, budget), Basic knowledge of phase gate reviews |
+| Time to Learn | A few hours to set up, a few cycles to run smoothly |
+| Outcome | You can take any proposed change to an approved waterfall baseline through logging, impact analysis, a recorded decision and a baseline update, so scope stays controlled and visible. |
+| Prerequisites | Approved baselines for scope, schedule and cost, a named decision-maker or board, a place to keep the change log |
 | Part of | [Waterfall](../../methods/waterfall/METHOD.md) |
 
 ## Overview
 
-In the waterfall model, requirements are locked early and each phase depends on the outputs of the one before it. But reality rarely cooperates—stakeholders discover new needs, regulations shift, or market conditions change. Without a disciplined change control process, even a single unmanaged scope change can cascade through design, development, and testing phases, blowing up timelines and budgets.
+Waterfall change management starts from the fact that the plan is built on approved baselines. The [Waterfall method](../../methods/waterfall/METHOD.md) freezes the requirements, design, schedule and budget at each gate so the next phase can build on them. Changes will still come: a regulation is updated, a stakeholder finds a gap, a test reveals that a requirement cannot be met as written. Royce described exactly this situation in his paper, where a problem found in testing means "either the requirements must be modified, or a substantial change in the design is required" ([Royce](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf)).
 
-Managing change requests in waterfall projects is the discipline of capturing proposed changes, rigorously analyzing their downstream impact across every remaining phase, routing them through a formal approval body, and—only then—updating the project baseline. It's the mechanism that lets a waterfall model project absorb necessary changes without abandoning its core strength: predictability.
+Managing scope changes in waterfall means running a change request process so those changes happen deliberately. Each proposed change is written down, its effect on scope, schedule, cost, quality and risk is analyzed, and someone with authority decides. The PMP Cert Guide, following PMI, describes Perform Integrated Change Control as "the process of reviewing, approving, and managing all changes on a project," states that any change to the baseline must go through a change control process, and names the change control board as generally "the authority to approve or reject requested changes" ([Pearson IT Certification](https://www.pearsonitcertification.com/articles/article.aspx?p=3178907&seqNum=7)).
 
-This skill sits at the intersection of stakeholder management, risk analysis, and project governance. When done well, it gives your team a clear, auditable trail of every decision, protects developers from scope creep, and gives leadership the confidence that approved changes have been fully thought through. It complements related skills like [conducting phase gate reviews](https://tryhamster.com/skills/conducting-phase-gate-reviews) and [writing comprehensive requirements documents](https://tryhamster.com/skills/writing-waterfall-requirements-documents) to form a complete governance framework for waterfall projects.
+The goal is control, and control does not mean refusal. A process that rejects everything pushes changes underground, where they are made informally and never reflected in the plan. A process that accepts everything without analysis lets scope grow while the dates stay fixed on paper. A good process makes the cost of each change visible and lets the right people choose.
+
+The output of the process is a change log that records every request and its decision, plus updated baselines for the approved ones. That record is also the project's defense when a customer later asks why a date moved or a feature appeared.
 
 ## How It Works
 
-Change control in the waterfall model works by creating a formal checkpoint between "someone wants something different" and "the team starts building something different." This checkpoint exists because in a sequential methodology, changes are exponentially more expensive the later they arrive—a requirements change discovered during testing may force rework across design, development, and testing phases.
+The process has a small number of stages that most descriptions share. The [Wikipedia summary of change control](https://en.wikipedia.org/wiki/Change_control) lists planning and scoping the change, assessing and analyzing it, review and approval, building and testing, implementing, and closing. For a waterfall project, the important ones are logging the request, analyzing its impact, deciding, updating the baseline and tracking it to closure.
 
-The core mechanism is the **Change Control Board (CCB)**, a small group of decision-makers (typically the project manager, technical lead, business sponsor, and sometimes a QA representative) who have the authority to approve, defer, or reject change requests. No change to the approved baseline happens without CCB authorization.
+The change request form captures what is changing and why: a description, the requester, the reason, the deliverables affected and the urgency. It should be short enough that people actually use it. Requests come from anywhere, including the customer, the team, testers and regulators. Requests can also be corrective actions, preventive actions or defect repairs, which the PMP guide lists as types of change request ([Pearson](https://www.pearsonitcertification.com/articles/article.aspx?p=3178907&seqNum=7)).
 
-The process follows a predictable lifecycle: **submission → impact analysis → CCB review → decision → implementation (or rejection)**. Each stage produces documentation that becomes part of the project record. The impact analysis is the most critical step—it traces the proposed change through every downstream phase to surface hidden costs, schedule risks, and technical dependencies. Without this analysis, the CCB is making decisions in the dark.
+Impact analysis is where most of the value sits. The analyst traces the change through every affected deliverable: which requirements, design elements, code, tests and documents it touches, which phases must be partly reopened, and what that does to the schedule, cost and risk. The Wikipedia article notes that changes are often categorized by risk as high, moderate or low ([Wikipedia: Change control](https://en.wikipedia.org/wiki/Change_control)). A traceability matrix makes this analysis much faster, because it already links each requirement to its design and tests.
 
-This formal approach may seem heavyweight compared to agile change management, but it's precisely what makes the waterfall model viable for projects with regulatory requirements, fixed contracts, or multi-vendor coordination where baseline stability is non-negotiable.
+The change control board decides. It usually includes the sponsor or a delegate, the project manager, technical leads and a customer representative. Its options are to approve, reject, defer to a later release, or ask for more analysis. Small, low-risk changes can be delegated to the project manager under thresholds the board sets in advance, so the board's time goes to the changes that matter.
+
+After approval, the baselines are updated: the requirements specification, the design, the schedule and the budget, each with a new version. The decision is recorded in the change log, affected teams are told, and the change is tracked until it is implemented and verified.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Establish the Change Control Board and Charter
+### Step 1: Set up the change control board and its rules
 
-Before your first change request arrives, define who sits on the CCB, how decisions are made (majority vote, consensus, or sponsor has final say), and how often the board convenes. Write a brief CCB charter that covers membership, quorum requirements, escalation paths, and decision criteria.
+Name the board members, the chair and the decision rules before the first baseline is approved. Write down which changes the project manager may approve alone, based on thresholds of impact that the board agrees, and which must go to the board. Set a regular meeting cadence and a route for urgent changes. Record all of this in a short change management plan.
 
-The charter should explicitly state the threshold for what constitutes a 'change' versus a 'clarification.' A common rule: if it modifies any approved baseline document (requirements spec, design doc, project schedule, or budget), it's a change and must go through the CCB. If it merely clarifies ambiguity within existing requirements, the project manager can approve it directly.
+### Step 2: Create the change request form and log
 
-Assign a Change Control Manager—often the project manager or a dedicated governance role—who owns the change log and shepherds each request through the process.
+Make a simple form with an identifier, description, requester, reason, affected deliverables and urgency. Keep a single change log listing every request with its status and decision, as the [PMP guide](https://www.pearsonitcertification.com/articles/article.aspx?p=3178907&seqNum=7) describes. Make it easy for anyone on the project to submit a request, so changes are not made informally instead.
 
-> **Pro tip:** Keep the CCB small (3-5 people). Larger boards create scheduling nightmares and slow decisions. If you need broader input, invite subject matter experts as non-voting advisors for specific requests.
+### Step 3: Analyze the impact
 
-### Step 2: Step 2: Create a Standardized Change Request Form
+For each request, trace the change through the requirements, design, code, tests and documents it affects. Estimate the effect on schedule, cost, quality and risk, and note which approved deliverables would need to be revised. Offer options where they exist, such as doing the change now, deferring it, or doing a smaller version. Categorize the risk so the board can prioritize.
 
-Design a change request (CR) template that captures everything the CCB needs to make a decision. At minimum, include: a unique CR ID, date submitted, requester name and role, description of the proposed change, business justification, affected baseline documents, affected waterfall phases, and the requester's perceived urgency.
+### Step 4: Decide at the change control board
 
-Make the form accessible to all stakeholders—a shared document template, a form in your project management tool, or even a simple web form that feeds into a tracking spreadsheet. The key is that every change enters the system through the same door.
+Present each request with its impact analysis and options. The board approves, rejects, defers or asks for more information, and records the reason. Where the change affects the contract, involve the customer's representative so the decision is binding on both sides. Send rejected and deferred requests back to the requester with the reason.
 
-Number each request sequentially (CR-001, CR-002, etc.) and timestamp it. This creates the audit trail that regulatory and compliance teams will thank you for later.
+### Step 5: Update the baselines
 
-> **Pro tip:** Include a field for 'alternatives considered' on the form. It forces requesters to think beyond their first idea and sometimes they solve their own problem before the CCB even meets.
+For approved changes, update every affected baseline: requirements, design, test cases, schedule and budget. Version each document and note the change request identifier in its history. Update the traceability matrix so the change can be followed from requirement to test. Communicate the new baseline to everyone who works from it.
 
-### Step 3: Step 3: Conduct a Thorough Impact Analysis
+### Step 6: Implement, verify and close
 
-This is where change control in the waterfall model either succeeds or becomes rubber-stamping theater. For each submitted change request, the Change Control Manager assigns a technical lead (or leads) to trace the change's impact through every remaining phase.
-
-The impact analysis should answer: What requirements documents change? What design artifacts are affected? How much development rework is needed? What test cases must be rewritten or added? Does the change affect any external interfaces or vendor deliverables? What is the schedule impact in days or weeks? What is the cost impact?
-
-Document the analysis in a structured format attached to the original CR. Be specific—'this will delay testing by approximately 2 weeks' is useful; 'this may have schedule impact' is not. If the change touches work that's already been completed in a prior phase, explicitly call out the rework cost, since this is where waterfall changes get truly expensive.
-
-> **Pro tip:** Use a simple impact matrix that maps the change against each waterfall phase (Requirements → Design → Development → Testing → Deployment) and marks each as 'No Impact,' 'Minor Impact,' or 'Major Impact.' This gives the CCB a visual at-a-glance summary.
-
-### Step 4: Step 4: Present to the CCB for Decision
-
-Schedule the change request for CCB review, attaching the original CR form and the completed impact analysis. The Change Control Manager presents each request, the technical lead answers questions about the impact analysis, and the requester (or their proxy) explains the business case.
-
-The CCB makes one of four decisions: **Approved** (proceed with implementation), **Approved with Conditions** (proceed but with modifications or constraints), **Deferred** (revisit at a later phase gate or milestone), or **Rejected** (change is not justified given the impact). Every decision is recorded with the rationale.
-
-For approved changes, the CCB should also specify which phase the change will be introduced in, who is responsible for implementing it, and whether the project schedule or budget baseline needs formal re-baselining.
-
-> **Pro tip:** Batch non-urgent change requests and review them weekly or bi-weekly. For truly urgent requests (production defects, regulatory mandates), have an expedited path that requires only the project sponsor and PM to approve, with ratification by the full CCB at the next meeting.
-
-### Step 5: Step 5: Update the Project Baseline and Communicate
-
-For every approved change, update the affected baseline documents: the requirements specification, the project plan and Gantt chart, the design documents, and the budget tracker. Version-control these documents so that you can always trace back to the pre-change baseline.
-
-Notify all affected team members and stakeholders of the approved change. Be explicit about what changed, why, and what it means for their work. The design team needs to know if requirements shifted. The testing team needs to know about new or modified acceptance criteria. The development team needs updated specs.
-
-Update your [waterfall project plan and Gantt chart](https://tryhamster.com/skills/creating-waterfall-project-plans) to reflect any schedule changes. If the change is significant enough to shift a major milestone, this may trigger a conversation with the project sponsor about revised commitments.
-
-> **Pro tip:** Maintain a running 'Change Log Summary' document that lists all CRs with their status and cumulative schedule/budget impact. Present this at every phase gate review so leadership always has a clear picture of scope evolution.
-
-### Step 6: Step 6: Track Implementation and Close the Change Request
-
-An approved change request isn't done when the CCB signs off—it's done when the change has been successfully implemented and verified. Track the implementation through your normal waterfall phase activities and confirm that the change was built as specified, tested appropriately, and integrated without breaking existing functionality.
-
-Once verified, formally close the change request in your change log. Record the actual effort and schedule impact versus the estimated impact from the analysis phase. This historical data is gold for improving future impact estimates.
-
-Periodically audit closed change requests to identify patterns. Are most changes coming from one stakeholder group? Are they concentrated in a particular area of the system? These patterns may indicate upstream problems in your [requirements documentation](https://tryhamster.com/skills/writing-waterfall-requirements-documents) process that you can fix on future projects.
-
-> **Pro tip:** At project close, compile a change control retrospective that summarizes total changes requested, approved, rejected, and deferred, plus cumulative schedule and budget impact. This becomes a key input for estimating contingency on your next waterfall project.
+Schedule the work for the approved change like any other work package. Verify it with the affected tests, including regression tests on areas that might be disturbed. Close the request in the change log once verification passes. Review the log periodically for patterns, such as many changes from one area, that point at a weak requirement or design.
 
 ## Best Practices
 
-- Freeze the baseline before accepting any change requests—you cannot manage 'change' if there is no agreed-upon starting point to change from. Ensure your requirements and project plan are formally signed off before opening the change control process.
-- Quantify every impact analysis in concrete units (hours, dollars, days of delay) rather than vague risk ratings. CCB members make better decisions when they see 'CR-017 adds 12 development days and $8,400 in cost' versus 'medium impact.'
-- Maintain a single, centralized change log accessible to all stakeholders. Whether it's a spreadsheet, a Jira board, or a dedicated tool, there should be one source of truth for every change request's status, decision, and rationale.
-- Set explicit SLAs for each step in the change control process (e.g., impact analysis completed within 3 business days, CCB review within 5 business days). Without time-boxing, change requests languish in queues and requesters lose trust in the process.
-- Require the project sponsor to co-sign any change that increases the project budget by more than 5% or extends the timeline by more than 10%. This prevents scope creep by committee and ensures executive visibility into cumulative change impact.
-- Distinguish between corrective changes (fixing defects against the approved spec) and scope changes (adding or modifying requirements). Only scope changes need full CCB review; defect fixes should flow through your standard defect management process.
+- Set thresholds in advance. Letting the project manager approve small changes within agreed limits keeps the board focused on the decisions that matter.
+- Analyze before deciding. A decision without impact analysis is a guess, and the cost usually appears later in the schedule.
+- Use the traceability matrix. Linking requirements to design and tests makes impact analysis faster and more complete.
+- Record every decision with its reason. The change log, as the [PMP guide](https://www.pearsonitcertification.com/articles/article.aspx?p=3178907&seqNum=7) describes it, is what explains to a customer or auditor why the plan moved.
+- Treat defect fixes that change requirements as changes. A fix that alters agreed behavior goes through the same process, as the [change control](https://en.wikipedia.org/wiki/Change_control) model applies to any change to the product.
+- Offer options. Presenting a smaller version or a later release often lets the board say yes to the need without the full cost.
 
 ## Common Mistakes
 
-- **Skipping the impact analysis and letting the CCB make gut-feel decisions** — Always complete a documented impact analysis before presenting a CR to the CCB. Even for seemingly small changes, trace the impact through every downstream phase. A 'simple' field addition in requirements can cascade into database schema changes, API modifications, UI updates, and dozens of new test cases.
-- **Treating change control as optional during later phases because 'we're almost done'** — Change control is most critical in later waterfall phases because that's when changes are most expensive. A change during testing that requires design rework can cost 10-50x more than the same change caught during requirements. If anything, increase rigor as the project progresses.
-- **Allowing stakeholders to go directly to developers with 'quick changes' that bypass the CCB** — Enforce a strict policy that no baseline change happens without a CR number. Train developers to redirect informal requests back to the change control process. Even well-intentioned side-channel changes erode the baseline and make the project plan fiction.
-- **Approving every change request to avoid stakeholder conflict** — A CCB that approves everything is worse than no CCB—it creates the illusion of governance while allowing unchecked scope growth. Use the impact analysis data to have honest conversations about trade-offs. Rejecting or deferring changes is a core function of the board, not a failure.
-- **Failing to update the project baseline after approving a change** — An approved change that isn't reflected in the requirements spec, project schedule, and budget tracker creates a gap between what the team is building and what the documents say. Immediately update all affected baseline documents and re-communicate the updated plan to the full team.
+- **Making changes informally**: A developer agreeing to a stakeholder's request in a hallway conversation changes the product without changing the plan. Route every change through the log, however small.
+- **Rejecting changes by default**: Blocking every request pushes people to work around the process. Evaluate each one on its merits and make the trade-off visible.
+- **Skipping the baseline update**: Approving a change without updating the requirements, schedule and budget leaves the team working from documents that no longer match the plan.
+- **Analyzing only cost**: A change can be cheap and still risky, for example when it touches a critical interface late in testing. Include quality and risk in every analysis.
+- **Letting the board meet too rarely**: Changes waiting weeks for a decision stall the team. Set a regular cadence and an urgent route.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/waterfall/METHOD.md) — Waterfall
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/waterfall/METHOD.md): Waterfall
 
 ## Related Skills
 
-- [Conducting Phase Gate Reviews](../conducting-phase-gate-reviews/SKILL.md)
-- [Defining and Sequencing Waterfall Phases](../defining-waterfall-phases/SKILL.md)
-- [Building Content Waterfall Strategies](../building-content-waterfall-strategies/SKILL.md)
-- [Running Structured Testing and Verification Phases](../running-waterfall-testing-phases/SKILL.md)
-- [Creating Waterfall Project Plans and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
-- [Analyzing SEO Waterfall Charts for Page Performance](../analyzing-seo-waterfall-charts/SKILL.md)
-- [Writing Comprehensive Requirements Documents](../writing-waterfall-requirements-documents/SKILL.md)
+- [Writing Waterfall Requirements Specification Documents](../writing-waterfall-requirements-documents/SKILL.md)
+- [Conducting Phase Gate Reviews in a Waterfall Project](../conducting-phase-gate-reviews/SKILL.md)
+- [Creating Waterfall Project Plans with WBS and Gantt Charts](../creating-waterfall-project-plans/SKILL.md)
+
+## Sources
+
+- [Pearson IT Certification: Monitoring and Controlling the Project](https://www.pearsonitcertification.com/articles/article.aspx?p=3178907&seqNum=7)
+- [Wikipedia: Change control](https://en.wikipedia.org/wiki/Change_control)
+- [Winston W. Royce: Managing the Development of Large Software Systems](https://github.com/tpn/pdfs/blob/master/Managing%20the%20Development%20of%20Large%20Software%20Systems%20-%201970%20%28waterfall%29.pdf)

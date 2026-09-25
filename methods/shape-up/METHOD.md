@@ -1,187 +1,184 @@
 ---
-category: Workflows
+name: "shape-up"
+category: "Workflows"
+description: "Shape Up is Basecamp's product development method: shape work to a fixed-time appetite, bet on it at a betting table, and build it in six-week cycles."
+metadata:
+  datePublished: "2026-07-07"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Shape Up: The Product Manager's Guide to Fixed-Time, Variable-Scope Development
+# Shape Up: Fixed Time, Variable Scope Product Development
 
-> Created by **Basecamp (formerly 37Signals)** — [https://basecamp.com](https://basecamp.com)
+> Created by **Ryan Singer** - [https://basecamp.com/shapeup](https://basecamp.com/shapeup)
 
 ## Overview
 
-Shape Up is a product development framework that emerged from nearly two decades of practice at Basecamp (formerly 37Signals). Ryan Singer, Basecamp's Head of Strategy, codified the approach in his 2019 book *Shape Up: Stop Running in Circles and Ship Work that Matters*, published freely online. The framework was born from a specific frustration: traditional project management methods either gave teams too little direction ("build something related to notifications") or too much (a pixel-perfect spec with 47 Jira tickets). Shape Up carves out a middle path. Work gets shaped to the right level of abstraction before anyone writes code, then a small team owns the entire execution without a product manager hovering over daily standups.
+Shape Up is the product development method Ryan Singer wrote down from his work at Basecamp. It rests on one idea: fix the time, vary the scope. Before a team starts, a small senior group shapes a problem into a rough but solved concept with a fixed time budget, called the appetite. Decision makers then bet a cycle of team time on the best shaped pitches at a betting table. A small team of a designer and one or two programmers builds the work in a six-week cycle, and a cool-down period follows before the next cycle starts. The whole book, [Shape Up: Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup), is free to read online.
 
-The core claim of Shape Up is deceptively simple: fix the time, flex the scope. Most product teams do the opposite. They define exactly what they want built, then ask "how long will this take?" and watch the timeline stretch. Shape Up flips that relationship. A product manager sets an appetite, say six weeks, and the team figures out what version of the solution fits inside that boundary. This forces real tradeoffs upfront instead of letting scope creep happen quietly over months. It also means every cycle has a hard deadline. Work ships or it doesn't. There is no "just two more sprints."
+The book came out in 2019. The [REWORK episode on the print edition](https://37signals.com/podcast/shape-up-print-edition/) says Basecamp released it that year as a digital book by its head of product strategy, and that Singer later added sections in response to reader feedback and published a print edition. In the [foreword](https://basecamp.com/shapeup/0.1-foreword), Jason Fried describes the approach as developed over nearly 15 years of trial and error, and lists what Basecamp does not do: no daily stand ups, no backlogs, no Kanban and no velocity tracking. Singer himself [writes](https://www.ryansinger.co/) that he wrote the book in 2019 to formalize how the company did product development over his 17 years at 37signals, the company behind Basecamp.
 
-The framework divides work into four distinct phases that repeat on a cadence. First, **shaping** happens before any cycle begins. Senior people (often a product manager working with a technical partner) define the problem, sketch a solution at the right altitude, and identify rabbit holes that could blow up the timeline. Second, the **betting table** is where leadership decides which shaped pitches deserve a full cycle of team time. This replaces the traditional backlog. There is no groomed list of hundreds of tickets. If a pitch doesn't get bet on, it's not kept around as organizational debt. Third, **building** is the execution phase where a small, integrated team (usually one or two designers and one or two programmers) takes the shaped pitch and figures out the implementation details themselves. Fourth, **cool-down** is a one-to-two week breather between cycles for bug fixes, technical exploration, and recharging.
+The method grew out of specific pressures. In [Chapter 1](https://basecamp.com/shapeup/0.3-chapter-01), Singer says he prototyped breadboarding and scope mapping on a 2009 project to bundle Basecamp's products into one suite. By 2015, [the same chapter](https://basecamp.com/shapeup/0.3-chapter-01) continues, the product team had quadrupled and worked remotely, and the company switched from ad-hoc project lengths to repeating cycles, formalized pitching and betting, and Singer began using the word "shaping" for the up-front design work that sets boundaries and reduces risk before a project goes to a team.
 
-Shape Up sits in an interesting position relative to other product development methods. It shares Scrum's love of timeboxing but rejects the sprint-by-sprint micromanagement, the daily standups, the velocity tracking, and the product backlog. It shares Kanban's respect for flow and autonomy but imposes hard boundaries that Kanban deliberately avoids. It's philosophically closer to Basecamp's own company values: small teams, high autonomy, minimal meetings, and a bias toward shipping. Critics point out that Shape Up was designed for a bootstrapped company of roughly 50 people building one product, and that its assumptions about team trust, skill level, and organizational flatness don't always transfer to larger or more regulated environments. Those critics have a point. But the underlying mental model, that appetite should drive scope rather than the other way around, has proven useful far beyond Basecamp's walls. Teams at Intercom, Notion community builders, and dozens of mid-stage startups have adapted elements of Shape Up even when they don't adopt the full framework.
+Shape Up works in three phases that the book treats as its three parts. Shaping happens on a separate track from building, in private, and turns a raw idea into a pitch with a problem, an appetite, a sketched solution, rabbit holes and no-gos. Betting happens at the betting table during cool-down, where a handful of senior people choose what to build next from a few shaped pitches. There is no central backlog. Building belongs to the team: they get the whole project instead of a list of tasks, discover the real work, split it into scopes, report progress on a hill chart, and hammer scope until the work fits the time.
 
-For a product manager, Shape Up represents a significant shift in role. You spend less time writing detailed requirements and managing a backlog. You spend more time thinking deeply about problems before committing resources, writing compelling pitches that frame the opportunity and boundary conditions, and then stepping back during execution. The product manager's leverage moves upstream, to the shaping and betting phases, where decisions have the highest impact. Hamster provides a workspace where teams can run Shape Up cycles with AI agents handling the coordination, from shaping pitches to tracking hill chart progress.
+The book is explicit about which risk it targets. [Chapter 1](https://basecamp.com/shapeup/0.3-chapter-01) says every step addresses the risk of not shipping on time, and that the book is not about the risk of building the wrong thing. Shaping removes open questions before a project is committed. Capping each bet at six weeks, with no extension by default, stops a project from consuming several times its appetite. Integrating design and programming early inside the cycle surfaces unknowns while there is still time to act on them.
+
+Compared with Scrum, Shape Up uses longer time boxes, puts shaping on its own track before the build, and replaces the ordered backlog with a small set of pitches that are either bet on or let go. The comparison table below lays out the differences using the Scrum Guide's own definitions. Shape Up still shares Scrum's reliance on time boxes and on teams that decide how to do the work.
+
+The method has also moved on since the book. Singer now consults with other companies, and in a [case study talk](https://www.ryansinger.co/end-to-end-with-shape-up-a-real-world-case-study/) he notes that Basecamp was unusual: everyone was technical, designers wrote code, and the founders were hands-on. In his [Shaping in Real Life series](https://www.ryansinger.co/pitfalls-when-adopting-shape-up/) he separates framing (agreeing the problem and outcome) from shaping (working out the technical solution), recommends shaping with senior engineers in the room, and names undershaped work as the number one failure mode when teams adopt the method. Read the book for the mechanics and his later articles for how teams that are unlike Basecamp adapt them.
 
 ## Core Principles
 
-### Fixed Time, Variable Scope
+### Fixed time, variable scope
 
-The single most important principle in Shape Up is that time is the constraint and scope is the lever. A product manager sets an appetite (how much time a problem is worth), and the team sculpts the solution to fit inside that window. This inverts the typical dynamic where scope is fixed and timelines slip. When teams skip this principle, they end up in the familiar trap of three-month projects that become six-month projects.
+The appetite fixes how long the team will spend, and the solution changes to fit it. [Chapter 3](https://basecamp.com/shapeup/1.2-chapter-03) puts it this way: estimates start with a design and end with a number, while appetites start with a number and end with a design. The fixed deadline forces the trade-offs that open-ended projects postpone. Variable scope gives the team permission to make them. When the principle is missing, a team either overruns the date or ships everything half-finished.
 
-The tradeoff is real: you will ship a smaller version of the feature than you might have imagined. But you will actually ship it.
+### Shape work at the right level of abstraction
 
-### Shape Before You Build
+Shaped work sits between a wireframe and a one-line request. [Chapter 2](https://basecamp.com/shapeup/1.1-chapter-02) calls wireframes too concrete because they leave designers no room and hide complexity, and calls words too abstract because the team cannot tell what to include or leave out. Good shaped work has three properties: it is rough, it is solved at the macro level, and it is bounded by an appetite and explicit exclusions. If the team has to invent the concept during the cycle, the work was not shaped.
 
-Shaping is the act of defining work at the right level of abstraction, concrete enough that the team knows what problem they're solving and what the rough solution looks like, but abstract enough that they have room to make implementation decisions. A good pitch includes a problem statement, a sketched solution (often as breadboards or fat-marker sketches), identified rabbit holes, and explicit boundaries of what's out of scope. When teams skip shaping and throw half-formed ideas into a cycle, the building team burns days just figuring out what they're supposed to do. The tradeoff is that shaping requires dedicated senior time before a cycle begins, time that doesn't feel "productive" in the traditional sense.
+### Bets instead of backlogs
 
-### Betting, Not Backlogs
+A pitch that is not chosen at the betting table is let go, and nothing is kept in a central queue. [Chapter 7](https://basecamp.com/shapeup/2.1-chapter-07) argues that backlogs grow into a weight that makes everyone feel behind and wastes time on grooming. People can still keep their own lists of requests, bugs and ideas, and lobby for them again later. Important ideas come back on their own, carried by someone with a reason to raise them now.
 
-Shape Up replaces the traditional product backlog with a betting table. At the start of each cycle, decision-makers review a small number of shaped pitches and decide which ones to bet on. Pitches that don't get selected are not carried forward automatically. They can be re-pitched later if they still matter.
+### Honor the bet with uninterrupted time
 
-This eliminates the psychological weight of a 200-item backlog that never shrinks and forces prioritization to happen through real commitment rather than ranking exercises. Teams that maintain shadow backlogs alongside Shape Up undermine the framework's core feedback loop: if an idea keeps coming back to the betting table, it's genuinely important.
+A bet commits the whole cycle to one project. [Chapter 8](https://basecamp.com/shapeup/2.2-chapter-08) says Basecamp does not let a team be pulled away during a cycle, because losing a day also costs the momentum built before it. Only a real crisis breaks the commitment, and the book says true crises are rare. Anything else waits for the next betting table, which is at most one cycle away.
 
-### Small Autonomous Teams
+### Cap the downside with a circuit breaker
 
-During a build cycle, a small integrated team (typically one designer and one or two programmers) owns the entire project. They decide how to break down the work, what to build first, and how to handle the inevitable surprises. The product manager is not assigning tasks or running daily check-ins. This only works if the shaping was done well enough to provide clear boundaries.
+If a project does not ship by the end of its cycle, it does not get an extension by default. The circuit breaker described in [Chapter 8](https://basecamp.com/shapeup/2.2-chapter-08) limits the loss to the appetite, treats a miss as a sign that the shaping was wrong, and sends the problem back to the shaping track instead of feeding more time into a bad approach. It also gives the team a reason to make hard scope calls throughout the cycle. [Chapter 14](https://basecamp.com/shapeup/3.5-chapter-14) allows a short extension only in rare cases where the remaining work is all must-haves and all downhill.
 
-When teams skip the autonomy principle, either by micromanaging the build or by staffing too many people onto one project, they lose the speed and ownership that makes Shape Up effective. The tradeoff is that you need to trust your team deeply, which means hiring and shaping standards both have to be high.
+### Give the whole project to a small team
 
-### Appetite Over Estimates
+Teams receive the whole project instead of a set of tickets. [Chapter 10](https://basecamp.com/shapeup/3.1-chapter-10) compares splitting a pitch into tasks up front to putting it through a paper shredder. The team defines its own tasks, discovers the work that no one could predict, and organizes it into scopes. The shaping sets the boundaries, and the team fills in the outline with real design and implementation decisions.
 
-Instead of asking "how long will this take?" Shape Up asks "how much time is this worth?" That question, what Basecamp calls setting the appetite, reframes the entire conversation. A product manager might decide that improving the onboarding flow is worth six weeks but not more, or that a small quality-of-life fix is worth a two-week small batch but not a full cycle. This prevents the common failure mode where teams spend three months perfecting something that wasn't strategically important enough to justify that investment. The tradeoff is that you must be comfortable with "good enough" when the appetite runs out.
+### Make unknowns visible
 
-### Uphill and Downhill Work (Hill Charts)
-
-Shape Up tracks progress using hill charts rather than burndown charts or percentage-complete metrics. A hill chart shows each scope of work as a dot on a hill. The left side (uphill) represents the figuring-out phase, where unknowns dominate. The right side (downhill) represents execution, where the path is clear and work just needs to be done.
-
-This distinction matters because traditional progress tracking can show 80% of tasks complete while the remaining 20% contains all the risk. Hill charts make the ambiguity visible. When teams skip this and rely on task completion rates, they consistently underestimate the risk remaining in a project.
-
-### Cool-Down Is Non-Negotiable
-
-Between every cycle, Shape Up inserts a one-to-two week cool-down period. This is not a sprint retrospective squeezed into an afternoon. It is dedicated time for fixing bugs that surfaced during the cycle, exploring new technical possibilities, writing pitches for the next betting table, or simply recovering. Teams that skip cool-down to "move faster" end up with compounding technical debt, burned-out people, and pitches that are poorly shaped because nobody had time to think.
-
-The tradeoff is that you lose one or two productive weeks per cycle, but you gain sustainability and quality over quarters and years.
+Counting tasks hides risk because task lists grow as the team learns. Shape Up tracks each scope on a hill: uphill while the approach is still being figured out, downhill once only execution remains ([Chapter 13](https://basecamp.com/shapeup/3.4-chapter-13)). The team pushes the riskiest, least familiar scopes uphill first, so a late surprise cannot sink the cycle. A dot that stops moving is treated as a raised hand.
 
 ## Steps
 
-1. **Step 1: Set the Appetite**
-   Before any shaping begins, a product manager decides how much time a particular problem is worth. This is the appetite: a time budget that constrains the solution rather than an estimate that predicts the timeline. Common appetites are "small batch" (one to two weeks) and "big batch" (six weeks). The appetite is not arbitrary.
+1. **Set the appetite and narrow the problem**
+   Start with a raw idea and decide how much time it deserves before discussing solutions. The book uses two sizes: a small batch that a designer and one or two programmers can build in one or two weeks, and a big batch that takes the same team the full six weeks ([Chapter 3](https://basecamp.com/shapeup/1.2-chapter-03)). Narrow the request by asking when and why the customer needs it, which often turns a large feature into a specific pain point. Reject grab-bag projects such as "redesign the Files section" until someone can name the problem driving them.
 
-It reflects the strategic importance of the problem, the opportunity cost of committing a team, and the risk tolerance for the solution. " If the answer is no, either the problem isn't important enough or it needs to be broken into smaller bets. Watch out for setting appetites based on what someone thinks the solution should look like rather than what the problem is worth. The appetite should come before the solution, not after.
+2. **Rough out the elements of a solution**
+   Working alone or with one trusted partner, sketch the solution at a level of detail that moves fast. Use breadboards for flows and fat marker sketches for visual layouts, and stop once you have a short list of concrete elements that solve the problem inside the appetite. The details are covered in the [breadboards and fat marker sketches](../../skills/using-breadboards-and-fat-marker-sketches/SKILL.md) skill. Keep this work private, because unshaped work is easy to drop and should not create expectations.
 
-2. **Step 2: Shape the Work**
-   Shaping is the most intellectually demanding phase. A product manager (often working with a senior designer or technical lead) takes a raw idea and develops it into a pitch with the right level of abstraction. Start by clearly defining the problem, ideally grounded in real user behavior or business data. Then sketch a solution using [breadboards and fat-marker sketches](https://tryhamster.com/skills/using-breadboards-and-fat-marker-sketches) that show the flow and key elements without prescribing visual design or implementation details.
+3. **Remove risks and rabbit holes**
+   Walk through the use case slowly and question each part: is there new technical work, an assumption about how parts fit, or a design problem nobody has solved? Patch each hole with a decision, declare tempting extensions out of bounds, and cut nice-to-haves from the core. Then check the concept with technical experts, asking whether it is possible within the appetite, which is a different question from whether it is possible at all ([Chapter 5](https://basecamp.com/shapeup/1.4-chapter-05)). The result should be thin-tailed: a slight chance of running a week over and little chance of worse.
 
-Identify rabbit holes: technical uncertainties, edge cases, or scope traps that could blow up the timeline. Call them out explicitly and either solve them during shaping or declare them out of scope. A well-shaped pitch answers three questions: what are we solving, what does the rough solution look like, and what are we deliberately not doing? " for any major scenario.
+4. **Write the pitch**
+   Package the shaped concept in a pitch with five ingredients: problem, appetite, solution, rabbit holes and no-gos ([Chapter 6](https://basecamp.com/shapeup/1.5-chapter-06)). Present the problem as one specific story that shows why the status quo fails, so the solution can be judged against it. Add enough sketching for someone without context to see the idea, without drawing wireframes that box in the designers. Post the pitch where the people at the betting table can read it in advance, as described in [shaping product pitches](../../skills/shaping-product-pitches/SKILL.md).
 
-3. **Step 3: Write the Pitch**
-   The pitch is the artifact that carries the shaped work into the betting table. It is a structured document, not a Jira epic or a Slack message. A strong pitch includes five elements: the problem (why this matters now), the appetite (how much time it's worth), the solution (breadboards or fat-marker sketches), rabbit holes (risks identified and addressed), and no-gos (what is explicitly excluded). Write pitches with enough context that someone who wasn't in the shaping conversation can evaluate the bet.
+5. **Bet at the betting table**
+   During cool-down, the people with authority over the product meet to choose the next cycle's work from a few shaped pitches. At Basecamp that meant the CEO, the CTO, a senior programmer and the product strategist, and the call rarely went past an hour or two ([Chapter 8](https://basecamp.com/shapeup/2.2-chapter-08)). They weigh whether the problem matters, whether the appetite is right, whether the solution is attractive, whether the timing fits and whether the right people are free. The output is a cycle plan with named teams, which the [betting table skill](../../skills/running-betting-tables/SKILL.md) covers step by step.
 
-Avoid two common failure modes: writing too abstractly ("improve onboarding") so the team has no direction, or writing too concretely (detailed wireframes and task lists) so the team has no room to maneuver. The pitch should be shareable asynchronously. Teams that only pitch verbally lose the ability to evaluate bets thoughtfully. See [shaping product pitches](https://tryhamster.com/skills/shaping-product-pitches) for detailed templates and examples.
+6. **Hand over the project and build in scopes**
+   Kick off by walking the team through the pitch, then leave them to get oriented; the first days may look quiet, and [Chapter 10](https://basecamp.com/shapeup/3.1-chapter-10) suggests stepping in only if the silence lasts past three days. The team integrates one small, core, novel slice early, then maps the rest of the work into scopes that can be finished independently. They track each scope on a hill chart and sequence the riskiest scopes first. See [mapping scopes](../../skills/mapping-scopes-for-building/SKILL.md) and the [Shape Up hill chart](../../skills/tracking-progress-with-hill-charts/SKILL.md) skills.
 
-4. **Step 4: Run the Betting Table**
-   The betting table is a short meeting (typically one to two hours) where a small group of decision-makers reviews the available pitches and decides which ones get a team for the next cycle. This is not backlog grooming. There is no ranked list of 50 items. Only fully shaped pitches are eligible.
+7. **Hammer scope and ship, or let the circuit breaker trip**
+   As the end nears, compare the work to the customer's current baseline instead of an ideal version, and cut anything that is not a must-have. Mark nice-to-haves with a tilde so they are easy to drop. Done means deployed within the cycle. If the work cannot ship, the project does not continue by default; it goes back to shaping, and a new pitch competes at a later betting table. The cycle mechanics are in [managing six-week cycles](../../skills/managing-six-week-cycles/SKILL.md) and the cutting tactics in [setting appetites and managing scope](../../skills/setting-appetites-and-managing-scope/SKILL.md).
 
-" Pitches that aren't selected are dropped, not deferred into a backlog. If a pitch is genuinely important, someone will re-pitch it in a future cycle. This is intentional. It prevents organizational debt and forces the product manager to fight for what matters most right now.
+8. **Cool down, then move on**
+   After each six-week cycle comes a cool-down with no scheduled work. Programmers and designers fix bugs, explore ideas and try technical possibilities, while the betting table meets to plan the next cycle. Treat feedback on what just shipped as raw ideas: say a gentle no, let the first wave pass, and shape anything important before betting on it ([Chapter 15](https://basecamp.com/shapeup/3.6-chapter-15)). The [cool-down skill](../../skills/planning-cooldown-periods/SKILL.md) covers how to use this time.
 
-A common mistake is treating the betting table as a formality where the highest-paid person's favorite pitch always wins. For the process to work, there must be genuine deliberation and the possibility of saying no. See [running betting table sessions](https://tryhamster.com/skills/running-betting-tables) for facilitation approaches.
+## Shape Up Compared with Scrum
 
-5. **Step 5: Kick Off the Build Cycle**
-   Once bets are placed, a small integrated team (one designer and one or two programmers) receives the pitch and begins the cycle. The first few days are critical. The team reads the pitch, asks clarifying questions, and then starts mapping scopes, which are meaningful slices of the project that can be completed independently. Scopes are not tasks.
+Shape Up and Scrum both use time boxes and small teams that decide how to do their work, but they organize the time differently. The rows below use the book and the [Scrum Guide](https://scrumguides.org/scrum-guide.html).
 
-A scope like "invitation flow" contains design, front-end, and back-end work bundled together. The team decides the order of scopes based on risk: tackle the scariest, most uncertain scope first to reduce the chance of a late-cycle surprise. The product manager's role during the build is to be available for scope questions and boundary decisions but not to run standups or review daily progress. Progress is tracked via [hill charts](https://tryhamster.com/skills/tracking-progress-with-hill-charts) where each scope is a dot on a hill, showing whether it's in the figuring-out phase (uphill) or the execution phase (downhill).
-
-If a scope gets stuck uphill for too long, that's a signal for the team to cut scope or escalate.
-
-6. **Step 6: Manage Scope During the Cycle**
-   As the cycle progresses, the team will inevitably encounter things that don't fit, edge cases, nice-to-haves, and unexpected complexity. Shape Up handles this through deliberate scope management. " The team actively trims scope to protect the deadline rather than extending the timeline to include everything. This requires a product manager who has clearly communicated the boundaries in the pitch and who supports the team's decisions to cut.
-
-A common anti-pattern is a product manager who shaped the pitch with explicit no-gos but then adds them back as "quick additions" mid-cycle. If scope management feels painful, it usually means the shaping was too abstract or the appetite was too tight for the problem. See [setting appetites and cutting scope](https://tryhamster.com/skills/setting-appetites-and-managing-scope) for tactics.
-
-7. **Step 7: Ship at the End of the Cycle**
-   At the end of the cycle, the work either ships or it doesn't. There is no "carry-over" into the next cycle. This is the hard boundary that makes Shape Up work. If the team didn't finish, the work is evaluated fresh: was the shaping insufficient?
-
-Was the appetite wrong? Should it be re-pitched with a different approach? Sometimes the answer is to pitch a smaller follow-up. Sometimes the answer is to let it go.
-
-This binary outcome eliminates the zombie projects that haunt traditional product teams, features that are perpetually "almost done" for months. Shipping doesn't necessarily mean releasing to all users. It can mean deploying behind a feature flag or to a beta group. The point is that the team has built something complete and coherent within the boundary.
-
-8. **Step 8: Run the Cool-Down Period**
-   After every cycle, a one-to-two week cool-down period begins. During cool-down, there are no shaped projects and no deadlines. Team members use this time for activities that don't fit neatly into a cycle: fixing bugs that surfaced during the build, addressing small quality-of-life improvements, exploring new technologies, writing pitches for the next betting table, or simply resting. Cool-down is where a product manager often does their best shaping work, because they have uninterrupted time to think deeply about the next set of problems.
-
-Resist the temptation to fill cool-down with "quick projects" or to shorten it when there's pressure to ship faster. The cool-down is what makes the cadence sustainable over years, not just quarters. See [planning cool-down periods](https://tryhamster.com/skills/planning-cooldown-periods) for structuring this time effectively.
+| Topic | Shape Up | Scrum |
+|-------|----------|-------|
+| Time box | Six-week cycles, then a two-week cool-down ([Chapter 8](https://basecamp.com/shapeup/2.2-chapter-08)) | Sprints of one month or less, each starting right after the last ([Scrum Guide](https://scrumguides.org/scrum-guide.html)) |
+| Source of work | A few shaped pitches, and no central backlog ([Chapter 7](https://basecamp.com/shapeup/2.1-chapter-07)) | An emergent, ordered Product Backlog managed by the Product Owner ([Scrum Guide](https://scrumguides.org/scrum-guide.html)) |
+| Daily coordination | No daily meetings; progress shown on a hill chart ([Chapter 1](https://basecamp.com/shapeup/0.3-chapter-01)) | A 15-minute Daily Scrum every working day ([Scrum Guide](https://scrumguides.org/scrum-guide.html)) |
+| Unfinished work | No extension by default; the idea returns to shaping ([Chapter 8](https://basecamp.com/shapeup/2.2-chapter-08)) | Items not meeting the Definition of Done return to the Product Backlog ([Scrum Guide](https://scrumguides.org/scrum-guide.html)) |
+| Up-front design | A separate shaping track defines the solution before the bet ([Chapter 2](https://basecamp.com/shapeup/1.1-chapter-02)) | Backlog items are refined as needed, and scope can be renegotiated during the Sprint ([Scrum Guide](https://scrumguides.org/scrum-guide.html)) |
 
 ## When to Use
 
-- When your team is drowning in a backlog of hundreds of tickets and every sprint planning session feels like rearranging deck chairs. Shape Up replaces that accumulated decision debt with a clean betting table where only fully shaped pitches compete for real commitment, giving a product manager a way to reset the prioritization conversation entirely.
-- When you have a small-to-medium product team (roughly 3-15 builders) that is skilled enough to own execution decisions, and you want to give them meaningful autonomy rather than prescribing daily tasks. Shape Up's model of shaping the boundaries upfront and then stepping back during the build requires trust but rewards it with speed and ownership.
-- When your product has entered a phase of sustained development, past the initial launch where everything is urgent, and the product manager needs a repeatable cadence for evaluating, committing to, and shipping improvements. The six-week cycle creates a rhythm that makes stakeholder communication predictable and reduces the constant re-negotiation of priorities.
-- When scope creep is your team's chronic failure mode. If past projects consistently ballooned from "two weeks" to "three months" because nobody enforced boundaries, the fixed-time constraint in Shape Up acts as a structural intervention. The appetite forces hard scoping decisions before engineering time is spent.
-- When your organization values shipping tangible outcomes over generating output metrics like velocity or story points. Shape Up measures progress by whether scopes move over the hill, not by how many tickets get closed. This is a good fit for teams that have tried Scrum and found the ceremony-to-value ratio too high.
+- A product team has grown past the point where founders can direct every project, and work keeps dragging past its expected finish. Chapter 1 of the book describes exactly this growing pain, and the method's structure is aimed at restoring the ability to ship.
+- An existing product needs new features that can be defined in advance. The book's standard process assumes the surrounding product already sets the space a feature fits into, which makes shaping to a fixed appetite realistic.
+- The team has senior, product-minded engineers and designers who can own a whole project. Handing over a project instead of tasks only works when the builders can make sound design and implementation calls on their own.
+- Scope creep is the recurring failure. A fixed appetite and a circuit breaker force the trade-offs that open-ended estimates let a team avoid.
+- Leadership wants control over direction without running the daily work. The betting table gives senior people one short, decisive meeting per cycle instead of constant reprioritization.
 
 ## When Not to Use
 
-- When your team is in the first weeks of building a brand-new product and doesn't yet know what the product should be. Shape Up assumes you have a clear enough problem space to shape specific solutions. In a zero-to-one phase, you need rapid experimentation, user interviews, and throwaway prototypes more than six-week build cycles. The shaping process can actually slow you down when the entire product direction is still open.
-- When you operate in a heavily regulated industry (healthcare, finance, defense) where detailed upfront specifications, traceability matrices, and sign-off processes are legally required. Shape Up's deliberately abstract pitches and variable scope conflict with environments where you need to document exactly what will be built before a single line of code is written. The "cut scope to fit the appetite" principle may violate compliance requirements.
-- When your team is very large (50+ engineers) and works on a monolithic product with deep cross-team dependencies. Shape Up was designed for small, autonomous teams working on relatively independent scopes. If shipping a feature requires coordinated changes across six teams, the six-week cycle becomes a synchronization nightmare. You may need something more like SAFe or a custom coordination layer, even if those approaches feel heavier.
-- When your product primarily requires ongoing maintenance, infrastructure work, or support-driven bug fixes rather than new feature development. Shape Up's shaping and betting process is designed for discretionary product work, problems worth investing weeks into. If 80% of your team's time goes to keeping the lights on, the overhead of shaping pitches for the remaining 20% may not be justified.
-- When your team lacks the seniority or trust to work autonomously during a build cycle. Shape Up gives the building team significant freedom, and if your team includes mostly junior developers who need daily guidance, or if your organization's culture requires managers to approve granular decisions, the autonomy model will either be performative or chaotic. Build the team's capability first.
+- The work is mostly reactive, such as incidents, support escalations or on-call. Singer's [pitfalls article](https://www.ryansinger.co/pitfalls-when-adopting-shape-up/) recommends separate capacity for reactive work, and says project work waiting on third parties suits a kanban better than a cycle.
+- A brand-new product has no settled architecture yet. The book says well-shaped bets are not possible in this phase and describes an R&D mode where senior people spike ideas and do not expect to ship; the standard process only applies once the foundation exists.
+- Leadership cannot commit to uninterrupted cycles. If the team will be pulled onto other work mid-cycle, the bet means nothing, and the method's main protection against runaway projects is gone.
+- The team is two or three people. The book's appendix on size says a tiny team can drop cycles, cool-down, formal pitches and the betting table, and simply alternate between shaping and building.
+- Regulation or contract requires a fixed specification signed off before work starts. Variable scope and deliberately rough pitches conflict with that kind of commitment.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Managing Six-Week Build Cycles](../../skills/managing-six-week-cycles/SKILL.md) — How to structure and execute fixed-time build cycles including setting appetites, forming small teams, and enforcing the circuit breaker when time runs out.
-- [Planning Cool-Down Periods](../../skills/planning-cooldown-periods/SKILL.md) — How to structure the cool-down period between cycles for bug fixes, technical debt, exploration, and preparing the next round of shaped work.
-- [Setting Appetites and Cutting Scope](../../skills/setting-appetites-and-managing-scope/SKILL.md) — How to set a time appetite for a project and then deliberately cut scope and identify must-haves versus nice-to-haves to fit within the fixed timebox.
-- [Shaping Product Pitches](../../skills/shaping-product-pitches/SKILL.md) — How to define problems, set appetites, and craft shaped pitches with fat-marker sketches and breadboarding before committing engineering resources.
-- [Tracking Progress with Hill Charts](../../skills/tracking-progress-with-hill-charts/SKILL.md) — How to use hill charts to visualize whether scopes are in the uphill (figuring it out) or downhill (executing) phase and communicate progress without status meetings.
-- [Running Betting Table Sessions](../../skills/running-betting-tables/SKILL.md) — How to facilitate the betting table meeting where stakeholders review shaped pitches and decide which projects to commit to in the next cycle.
-- [Mapping Scopes Instead of Tasks](../../skills/mapping-scopes-for-building/SKILL.md) — How to organize work into meaningful scopes — integrated slices of front-end and back-end work — instead of traditional task lists during the building phase.
-- [Using Breadboards and Fat-Marker Sketches](../../skills/using-breadboards-and-fat-marker-sketches/SKILL.md) — How to use breadboarding for flow design and fat-marker sketching for visual concepts to define solutions at the right level of abstraction during shaping.
+- [Managing Shape Up Six-Week Build Cycles](../../skills/managing-six-week-cycles/SKILL.md): Run a six-week build cycle from kick-off to ship, protect the team's time, and use the circuit breaker when work will not fit.
+- [Planning the Shape Up Cooldown Period](../../skills/planning-cooldown-periods/SKILL.md): Use the two weeks between cycles for bugs, exploration, shaping and the betting table.
+- [Setting Appetites and Managing Scope in Shape Up](../../skills/setting-appetites-and-managing-scope/SKILL.md): Set a fixed time appetite, then hammer scope so the work ships inside it.
+- [Shaping Product Pitches with a Shape Up Pitch Template](../../skills/shaping-product-pitches/SKILL.md): Turn a raw idea into a pitch with a problem, appetite, solution, rabbit holes and no-gos.
+- [Shape Up Hill Charts: Tracking Progress Uphill and Downhill](../../skills/tracking-progress-with-hill-charts/SKILL.md): Show each scope as uphill or downhill so anyone can see progress without a status meeting.
+- [Running a Shape Up Betting Table Session](../../skills/running-betting-tables/SKILL.md): Choose which shaped pitches get a team in the next cycle.
+- [Mapping Shape Up Scopes Instead of Tasks](../../skills/mapping-scopes-for-building/SKILL.md): Organize the building phase into integrated slices that can be finished independently.
+- [Breadboarding Product Design with Fat Marker Sketches](../../skills/using-breadboards-and-fat-marker-sketches/SKILL.md): Sketch flows and layouts at the right level of abstraction while shaping.
 
 ## FAQ
 
 **What is Shape Up in simple terms?**
 
-Shape Up is a way of building products where you decide how much time to spend before deciding what to build, then give a small team full ownership to figure out the details. Work happens in six-week cycles. Before each cycle, senior people shape problems into pitches, a betting table decides which pitches get a team, and then the team builds with autonomy. Between cycles, everyone gets a cool-down period for bugs, exploration, and rest.
+Shape Up is a way to run product development in fixed time boxes. Senior people shape a problem into a rough but solved concept with a set appetite, leaders bet a cycle of team time on the best of those concepts, and a small team builds it with full responsibility for the details. Basecamp's cycles last six weeks, with cool-down between them. If the work does not ship in time, it goes back to shaping instead of getting more time.
 
-The key idea is that time is fixed and scope adjusts to fit.
+**Who created Shape Up?**
 
-**Shape Up vs Scrum: which should a product manager choose?**
+Ryan Singer, who led product strategy at Basecamp, wrote the book, and both [his own site](https://www.ryansinger.co/) and [Lenny's Podcast](https://www.lennysnewsletter.com/p/shape-up-ryan-singer) describe him as the creator of Shape Up. The [REWORK podcast](https://37signals.com/podcast/shape-up-print-edition/) describes the book as released by Basecamp in 2019 and written by its head of product strategy. The [introduction](https://basecamp.com/shapeup/0.3-chapter-01) traces the practices back to how Singer, Jason Fried and David Heinemeier Hansson built the first version of Basecamp under tight time constraints.
 
-Scrum works well when you need tight feedback loops (two-week sprints), your team benefits from structured ceremonies (standups, retros, reviews), and you're comfortable with the overhead of backlog grooming and velocity tracking. Shape Up is better when your team is senior enough to work autonomously, you want longer uninterrupted build time, and you find that sprint-by-sprint planning creates more churn than progress. Many product managers find Scrum useful early in a product's life when direction changes frequently, and Shape Up more effective once the product matures and the team needs deeper focus. They are not mutually exclusive.
+**How is Shape Up different from Scrum?**
 
-Some teams use Shape Up's shaping and betting process with shorter build cycles.
+Scrum runs back-to-back Sprints of one month or less from an ordered Product Backlog, with a daily 15-minute Daily Scrum, according to the [Scrum Guide](https://scrumguides.org/scrum-guide.html). Shape Up runs longer cycles with a break in between, picks work from a few shaped pitches instead of a backlog, and has no daily meeting. It also puts the solution design on a separate shaping track before the team is committed. The comparison table above sets the two side by side.
 
-**Does Shape Up work for small teams of three to five people?**
+**Do you have to use six-week cycles?**
 
-Small teams are actually the sweet spot for Shape Up. The framework was designed at Basecamp, which kept teams deliberately small. With three to five people, the product manager or founder can shape pitches, one or two people can form the building team, and the betting table might be a 30-minute conversation between two decision-makers. The main challenge is that with only one building team, you can only bet on one project per cycle, which means the shaping and betting discipline becomes even more important because the opportunity cost of a bad bet is a full six weeks.
+No. The [appendix on adjusting to your size](https://basecamp.com/shapeup/4.1-appendix-02) says six weeks might not be the exact time frame for every team, while the need to cap the downside of each bet holds everywhere. In his [case study](https://www.ryansinger.co/end-to-end-with-shape-up-a-real-world-case-study/), Singer refers to teams running six weeks or four weeks. What matters is a cycle long enough to finish something meaningful and short enough that the deadline feels close from the start.
 
-**Does Shape Up work at enterprise scale with 50+ engineers?**
+**What happens to bugs in Shape Up?**
 
-Shape Up's principles scale, but its practices need adaptation. The main challenge at scale is cross-team dependencies. If five teams are building features that touch the same codebase or platform, the autonomous-team model can create integration problems. Larger organizations that use Shape Up successfully tend to run multiple betting tables (one per product area), invest heavily in API boundaries between teams so they can work independently, and sometimes shorten cycles to four weeks to increase the cadence of coordination points.
+Real crises, such as lost data or an app grinding to a halt, get fixed right away. The book suggests three routes for everything else: fix bugs during cool-down, pitch a large bug at the betting table like any other project, or dedicate a cycle once a year to a bug smash ([Chapter 8](https://basecamp.com/shapeup/2.2-chapter-08)). Singer's later advice for other companies is to give reactive work its own capacity so it does not leak into cycle projects.
 
-The shaping and appetite-setting practices are valuable at any scale. The "no backlog" principle is hardest to maintain when you have regulatory or contractual commitments.
+**Why do Shape Up adoptions fail?**
 
-**Why does Shape Up fail in practice?**
+Singer names undershaped work as the number one failure mode: pitches shaped without technical depth leave unanswered questions that blow up during the build ([Common Pitfalls](https://www.ryansinger.co/pitfalls-when-adopting-shape-up/)). The same article lists blurred framing, where the team never agreed on the problem, and mixing reactive work into cycle projects. The book adds a mechanical failure: if people keep interrupting the team, the bet and the circuit breaker stop meaning anything.
 
-The most common failure mode is weak shaping. If pitches go to the betting table half-baked, the building team spends the first two weeks of a six-week cycle just figuring out what they're building. The second failure is treating the betting table as a formality where the CEO's pet project always wins, which erodes team trust. Third, teams struggle when they can't bring themselves to cut scope.
+**What does a product manager do in Shape Up?**
 
-If every feature is "must-have," the fixed-time constraint becomes meaningless and you're back to deadline-driven crunch. Fourth, skipping cool-down to squeeze in more features creates the burnout and tech debt that Shape Up was designed to prevent.
+Most of the product manager's effort moves upstream into framing and shaping: narrowing problems, setting appetites, working out solutions with technical partners and writing pitches. During the cycle the team owns the tasks, so the product manager answers questions, watches the hill chart for stuck scopes and shapes the next round of work. The summary of Singer's interview on [Lenny's Podcast](https://www.lennysnewsletter.com/p/shape-up-ryan-singer) lists this upstream shift of the PM role as one of its topics.
 
-**How does Shape Up work alongside OKRs and roadmaps?**
+## Sources
 
-Shape Up and OKRs can complement each other well. OKRs set the strategic direction ("reduce time-to-first-value by 30% this quarter"), and shaped pitches become the specific bets the product manager makes toward those objectives. The betting table evaluates pitches partly on how well they serve the current OKRs. For roadmaps, Shape Up requires a philosophical shift.
-
-Instead of committing to specific features on specific dates, you communicate the problems you plan to address in upcoming cycles. This is sometimes called a "now, next, later" roadmap. Stakeholders see what's being built this cycle, what's being shaped for the next betting table, and what's in the research phase for later.
-
-**Can you use Shape Up with a two-week cycle instead of six weeks?**
-
-Yes, and many teams do. Basecamp uses six weeks because they found it long enough to build something meaningful but short enough to maintain urgency. But the framework's principles work at different cycle lengths. Two-week cycles are closer to sprints but still benefit from shaping, betting, and the no-backlog approach.
-
-The tradeoff is that shorter cycles mean you can only tackle smaller scopes, so you either need to break problems into smaller bets or accept that some projects span multiple cycles (which Shape Up explicitly discourages). Four weeks is a popular middle ground that many teams settle on.
-
-**What does a product manager actually do during a Shape Up build cycle?**
-
-During the build, a product manager's day-to-day involvement drops significantly compared to Scrum. You are not running standups, assigning tasks, or reviewing pull requests. " You also monitor hill charts to spot scopes that are stuck uphill, which might signal that the shaping missed something. Most of your proactive work during a build cycle is shaping the next round of pitches for the upcoming betting table.
-
-This shift in rhythm is one of the biggest adjustments for product managers coming from Scrum.
+- [Shape Up: Stop Running in Circles and Ship Work that Matters](https://basecamp.com/shapeup)
+- [Shape Up, Foreword by Jason Fried](https://basecamp.com/shapeup/0.1-foreword)
+- [Shape Up, Chapter 1: Introduction](https://basecamp.com/shapeup/0.3-chapter-01)
+- [Shape Up, Chapter 2: Principles of Shaping](https://basecamp.com/shapeup/1.1-chapter-02)
+- [Shape Up, Chapter 3: Set Boundaries](https://basecamp.com/shapeup/1.2-chapter-03)
+- [Shape Up, Chapter 5: Risks and Rabbit Holes](https://basecamp.com/shapeup/1.4-chapter-05)
+- [Shape Up, Chapter 6: Write the Pitch](https://basecamp.com/shapeup/1.5-chapter-06)
+- [Shape Up, Chapter 7: Bets, Not Backlogs](https://basecamp.com/shapeup/2.1-chapter-07)
+- [Shape Up, Chapter 8: The Betting Table](https://basecamp.com/shapeup/2.2-chapter-08)
+- [Shape Up, Chapter 10: Hand Over Responsibility](https://basecamp.com/shapeup/3.1-chapter-10)
+- [Shape Up, Chapter 13: Show Progress](https://basecamp.com/shapeup/3.4-chapter-13)
+- [Shape Up, Chapter 14: Decide When to Stop](https://basecamp.com/shapeup/3.5-chapter-14)
+- [Shape Up, Chapter 15: Move On](https://basecamp.com/shapeup/3.6-chapter-15)
+- [Shape Up, Appendix: Adjust to Your Size](https://basecamp.com/shapeup/4.1-appendix-02)
+- [REWORK: Shape Up, The Print Edition](https://37signals.com/podcast/shape-up-print-edition/)
+- [Ryan Singer](https://www.ryansinger.co/)
+- [Ryan Singer: Common Pitfalls When Adopting Shape Up](https://www.ryansinger.co/pitfalls-when-adopting-shape-up/)
+- [Ryan Singer: End-To-End with Shape Up, a Real-World Case Study](https://www.ryansinger.co/end-to-end-with-shape-up-a-real-world-case-study/)
+- [Lenny's Podcast: Ryan Singer on Shape Up](https://www.lennysnewsletter.com/p/shape-up-ryan-singer)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
 
 ---
 

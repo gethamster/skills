@@ -1,45 +1,37 @@
-# Examples: Designing Product Strategy Within the 7 P's Framework
+# Examples: 7 Ps Marketing Mix Product Strategy
 
-## Example: SaaS Project Management Tool Repositioning
-
-**Scenario:**
-
-A mid-stage SaaS company offers a project management tool that has reached maturity in the general small-business market. Growth has stalled at $8M ARR, churn is increasing, and three well-funded competitors have entered the space with similar feature sets. The marketing team needs to redesign their product strategy within the 7 Ps framework.
-
-**Walkthrough:**
-
-**Step 1 — Core Benefit**: Through customer interviews, the team discovers that their most loyal users are creative agencies who value the tool's visual timeline and client collaboration features. The core benefit is redefined from 'project tracking for small businesses' to 'helping creative teams deliver client work on time and on brand.'
-
-**Step 2 — Feature Mapping**: The team maps 47 features and finds that 30 are table stakes (task lists, file sharing), 5 are differentiators for creative agencies (visual timelines, client portals, brand asset libraries), and 2 are delighters (automated status reports for clients). They deprioritize 10 features that serve general small businesses but not creative agencies.
-
-**Step 3 — Differentiation**: Competitive analysis reveals no competitor specifically targets creative agencies. The positioning statement becomes: 'For creative agencies managing client projects, [Product] is the project management platform that makes client collaboration effortless because it's built specifically for how creative teams work.'
-
-**Step 4 — Branding**: The team redesigns the website, in-app experience, and marketing materials to speak directly to creative professionals. They introduce three packaging tiers: Studio (freelancers), Agency (small teams), and Enterprise (large agencies).
-
-**Step 5 — Lifecycle**: The product is mature in the general market but effectively at the introduction stage for the creative agency niche. This means investing in education, partnerships with creative industry communities, and iterating based on early adopter feedback.
-
-**Step 6 — Extensions**: A creative brief template library and client approval workflow are added to the roadmap. Three features used only by non-agency users are deprecated.
-
-**Step 7 — Cross-P Alignment**: Pricing shifts from per-user to per-project to match agency billing models. Distribution adds partnerships with creative industry platforms. The support team receives training on common agency workflows.
-
-## Example: Local Accounting Firm Service Redesign
+## An accounting practice defines its core and its extras
 
 **Scenario:**
 
-A small accounting firm with 200 clients has been offering generic bookkeeping, tax preparation, and advisory services. Revenue growth has flatted and the firm is losing clients to automated solutions like QuickBooks and online tax filing. They need to rethink their product (service) strategy.
+Illustrative scenario: a small accounting practice offers tax returns, bookkeeping and ad hoc advice. Prospects compare it mainly on price, and the partners feel the firm looks like every other practice in town.
 
 **Walkthrough:**
 
-**Step 1 — Core Benefit**: Client interviews reveal that the firm's most profitable clients—small business owners earning $500K-$2M—value proactive tax planning advice far more than basic bookkeeping. The core benefit shifts from 'keeping your books accurate' to 'helping small business owners keep more of what they earn.'
+Interviews show that clients hire the firm to "stop worrying about the tax office." The team marks the tax return as the core service. Facilitating elements include document collection and the filing confirmation. Supporting elements include a reminder calendar and a short call before each deadline.
 
-**Step 2 — Feature-Benefit Mapping**: The firm maps its services and finds that basic bookkeeping is now a table-stakes commodity (and better handled by software), monthly tax planning calls are a differentiator, and quarterly 'financial health check' reports are a delighter.
+Comparing with alternatives shows that competitors offer the same core but few offer the reminder calendar or the pre-deadline call. The practice chooses those two elements as its differentiation, writes them into every proposal, and asks the service lead to make sure every client actually receives them. Price, promotion and the client portal are then checked against that positioning.
 
-**Step 3 — Differentiation**: They position as a proactive tax strategy partner rather than a reactive compliance service. The positioning: 'For small business owners earning $500K-$2M, [Firm] is the accounting partner that proactively finds tax savings because we specialize in owner-operated businesses.'
+## A software tool finds it is in maturity
 
-**Step 4 — Packaging**: Services are restructured into three tiers: Compliance (tax filing only), Growth (tax filing + monthly planning), and Strategic (tax filing + planning + quarterly reviews + CFO-on-call). Each tier has clear deliverables and branding.
+**Scenario:**
 
-**Step 5 — Lifecycle**: Basic bookkeeping is in decline; proactive tax advisory is in growth. The firm decides to phase out standalone bookkeeping within 12 months.
+Illustrative scenario: a company sells an online form builder to small businesses. New sign-ups have flattened and several free alternatives have appeared.
 
-**Step 6 — Extensions**: A new 'Year-End Tax Savings Sprint' productized service is added for Q4. A referral partnership with a bookkeeping automation tool replaces the in-house bookkeeping offering.
+**Walkthrough:**
 
-**Step 7 — Alignment**: Pricing moves from hourly to fixed monthly retainers. The firm invests in staff training on advisory skills. Physical evidence is upgraded with branded quarterly reports and a client portal showing real-time tax savings tracked.
+The team reviews the evidence: slowing category growth, new low-cost entrants and customers describing the product as "one of many." It concludes the product is in maturity. The strategy shifts from adding features to defending the base and extending into one adjacent job that customers already mention, collecting payments through forms.
+
+The team also prunes two rarely used templates that generate support tickets. The one-page strategy records the job, the chosen extension and the removed elements, and the pricing and promotion owners adjust their plans to match.
+
+## A cleaning company redesigns its offer around a job
+
+**Scenario:**
+
+Illustrative scenario: a commercial cleaning company sells cleaning by the hour to offices. Clients churn when a cheaper provider appears.
+
+**Walkthrough:**
+
+Client interviews show office managers hire a cleaner to avoid complaints from staff. Hours of cleaning are only the means. The company restructures the offer around that job. The core remains the cleaning itself, but it adds a supporting element: a short weekly check-in and a simple issue log the office manager can see.
+
+The differentiation becomes "you will hear about problems from us first." That claim depends on People and Process, so the company trains supervisors on the check-in and adds the issue log to its process. Price moves from hourly to a fixed monthly fee that matches the new promise.

@@ -1,25 +1,21 @@
-# FAQ: Analyzing SEO Waterfall Charts for Page Performance
+# FAQ: Analyzing SEO Waterfall Charts for Page Load Speed
 
-## What is an SEO waterfall chart and why does it matter for rankings?
+## What is an SEO waterfall chart?
 
-An SEO waterfall chart is a visual timeline showing every resource a browser downloads when loading a page, displayed as horizontal bars along a time axis. It matters for rankings because Google uses Core Web Vitals (LCP, INP, CLS) as ranking signals, and the waterfall chart is the most direct way to identify what's causing slow metric scores.
+It is the browser's network waterfall looked at with search performance in mind: a timeline of every request made while loading a page, one bar per request. Each bar shows when the request started and how its time split between connecting, waiting for the server and downloading. SEO practitioners use it to explain why a page scores poorly on loading metrics such as Largest Contentful Paint. The chart itself is the same one developers use for performance work.
 
-## What is the best free tool for generating SEO waterfall charts?
+## Do waterfall fixes improve rankings?
 
-WebPageTest (webpagetest.org) is the best free tool for SEO-focused waterfall analysis. It lets you test from real locations and devices, provides filmstrip views, connection analysis, and Core Web Vitals overlays that Chrome DevTools doesn't offer. For quick checks, Chrome DevTools Network tab is also excellent and requires no setup.
+They can help, but indirectly and without guarantees. Google says Core Web Vitals are used by its ranking systems and also that it will show the most relevant content even when page experience is weak. Speed work matters most when your page is already a strong answer and competes with similar pages. Measure success by field Core Web Vitals and user behavior first, and treat ranking changes as a possible side effect.
 
-## How do I find render-blocking resources in a waterfall chart?
+## Should I use Chrome DevTools or WebPageTest?
 
-In Chrome DevTools, render-blocking resources appear in the waterfall before the blue DOMContentLoaded line. They're typically CSS files loaded with standard `<link>` tags and JavaScript files without `async` or `defer` attributes. In WebPageTest, look at resources that load between navigation start and the Start Render marker.
+Use both for different jobs. DevTools is quickest for checking a change on your own machine, with cache disabled and throttling on. WebPageTest runs from remote locations and devices, repeats tests and adds a filmstrip and vertical milestone lines, which makes it better for shareable evidence. Many teams diagnose in DevTools and confirm in WebPageTest.
 
-## How does the SEO waterfall relate to Largest Contentful Paint (LCP)?
+## How do I spot render-blocking resources in the waterfall?
 
-The waterfall shows you the complete dependency chain leading to your LCP element. Trace from the HTML document through every render-blocking resource to the LCP element's resource (usually an image or font). The total time of this chain, including TTFB, blocking scripts, and the LCP resource download, determines your LCP score.
+Look for stylesheets and scripts that load before the Start Render line and hold it back. In the HTML source, scripts in the head without `defer` or `async` and stylesheets without a matching `media` attribute are the usual suspects, and Lighthouse lists them explicitly. Confirm each one is really needed for the first paint before removing or deferring it, since some CSS must block to avoid a flash of unstyled content.
 
-## Should I optimize the SEO waterfall for first visit or repeat visit?
+## Why does my waterfall look fine while field data is poor?
 
-Prioritize first-visit waterfall optimization because this is how Googlebot experiences your page, and it represents the experience of new users from search results. Repeat-visit optimization matters for user retention but has less direct impact on search rankings.
-
-## How often should I run waterfall analysis on my pages?
-
-Run waterfall analysis after every significant code deployment, monthly as a routine audit for top-traffic pages, and immediately when Google Search Console reports Core Web Vitals regressions. Automated monitoring tools like SpeedCurve can run daily tests and alert you to changes.
+A lab waterfall records one load on one device and connection, while field data covers real visitors on many devices and networks. Slower phones spend longer running JavaScript, and distant visitors see longer connection times. Throttle more aggressively, test from locations near your audience, and check whether the failing pages are a different template from the one you tested.

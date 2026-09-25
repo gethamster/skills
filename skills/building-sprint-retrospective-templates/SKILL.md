@@ -1,15 +1,20 @@
 ---
-name: building-sprint-retrospective-templates
-description: "This skill teaches you how to design reusable sprint retrospective templates that assign specific activities to each of the five retrospective phases, enabling consistent and time-efficient facilitation across sprints."
+name: "building-sprint-retrospective-templates"
+description: "Build a reusable retrospective template that maps activities, timings and facilitator cues to the five phases, so anyone can run a solid sprint retro."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: five-step-retrospective-framework
+  method: "five-step-retrospective-framework"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Building a Sprint Retrospective Template for Consistent Facilitation
+# Building a Reusable Sprint Retrospective Template
 
-> This skill teaches you how to design reusable sprint retrospective templates that assign specific activities to each of the five retrospective phases, enabling consistent and time-efficient facilitation across sprints.
+> Build a reusable retrospective template that maps activities, timings and facilitator cues to the five phases, so anyone can run a solid sprint retro.
 
 ## Before you start
 
@@ -24,141 +29,108 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You can quickly prepare and facilitate well-structured retrospectives using a library of reusable templates tailored to your team's needs. |
-| Prerequisites | Understanding the Five-Step Retrospective Framework and its five phases, Familiarity with common retrospective activities and exercises, Experience facilitating at least 2-3 retrospectives |
+| Time to Learn | A few hours to build a first template, refined over several sprints |
+| Outcome | You have a small library of retrospective templates, each mapping activities, timings and facilitator cues to the five phases, that any facilitator on the team can pick up and run. |
+| Prerequisites | Experience running a few retrospectives, familiarity with activities for each phase, a shared place to store templates |
 | Part of | [Five-Step Retrospective Framework](../../methods/five-step-retrospective-framework/METHOD.md) |
 
 ## Overview
 
-A sprint retrospective template is a pre-designed facilitation plan that assigns specific activities, time boxes, and materials to each phase of the [Five-Step Retrospective Framework](https://tryhamster.com/methods/five-step-retrospective-framework). Rather than improvising your retrospective format each sprint, a template gives you a repeatable blueprint you can pull off the shelf, customize lightly, and run with confidence.
+A reusable retrospective template is a written plan for a retrospective that a facilitator can pick up and run with little preparation. It follows the five phases of the [Five-Step Retrospective Framework](../../methods/five-step-retrospective-framework/METHOD.md) and specifies, for each phase, an activity, a timebox, the materials needed and what the facilitator says to start and finish it. A good template turns the framework from something one skilled facilitator knows into something the whole team can use.
 
-Without templates, facilitators face two common traps: either they run the same tired format every sprint (killing engagement) or they spend too long preparing a bespoke session each time (burning out). A well-designed sprint retrospective template solves both problems. You build a library of varied templates — each mapping activities to the five phases — and rotate them based on team context, sprint events, or maturity.
+Templates solve three problems. Preparing a retrospective from scratch every sprint takes time, and busy facilitators cut corners. Retrospectives run by different people vary widely in quality. And a new facilitator, without a plan, tends to fall back on an open discussion that skips the insight and decision phases. A template with the phases built in prevents all three.
 
-This skill is especially valuable for Scrum Masters facilitating multiple teams, new facilitators who want a safety net, and experienced facilitators who want to scale their practice. The output is a concrete artifact — a document, card, or digital board — that anyone on the team could pick up and use to run a solid retrospective.
+Many organizations publish their own. GitLab's engineering handbook recommends an agenda of introduction, gather data, generate insights, decide what to do and close, and points groups to a retrospective issue template for collecting feedback asynchronously ([GitLab Handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/)). Atlassian's retrospective play is itself a template: a one-hour session in five timed steps, with preparation time, group size and follow-up guidance ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)).
+
+A retrospective facilitation template needs more than a list of activities. Retromat, which generates random plans with one activity per phase, warns that the activities in such a plan rarely fit together until someone adjusts them ([Retromat](https://retromat.org/en/about)). A template is that adjustment written down: activities chosen so each phase's output feeds the next, timings that add up to the session length, and cues that help a facilitator move between phases.
+
+A small library works better than one template. Most teams need a standard sprint template, a short version for weeks with little time, a longer one for releases or incidents, and a remote version. This skill covers how to design, test and maintain them.
 
 ## How It Works
 
-The core principle behind building a sprint retrospective template is **phase-activity mapping**. Each of the five retrospective phases — Set the Stage, Gather Data, Generate Insights, Decide What to Do, and Close the Retrospective — serves a distinct purpose. A template assigns one or two specific activities to each phase and packages them into a cohesive session plan.
+Every template has the same skeleton: the five phases, each with an activity, a timebox, materials and cues. Two published one-hour plans show how the time can be split:
 
-Think of a template like a recipe card. The five phases are your meal courses (appetizer through dessert), and the activities are the specific dishes you serve in each course. A good recipe card also tells you how long each course takes, what ingredients you need, and any chef's notes. A sprint retrospective template works the same way: it includes time boxes, required materials (sticky notes, a Miro board, dot votes), participant count guidance, and facilitator cues.
+| Phase | Retrium sample plan | Atlassian play |
+|-------|---------------------|----------------|
+| Set the stage | 10 minutes ([Retrium](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)) | 5 minutes ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)) |
+| Gather data | 10 minutes ([Retrium](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)) | 15 minutes ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)) |
+| Generate insights | 20 minutes ([Retrium](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)) | 20 minutes ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)) |
+| Decide what to do | 15 minutes ([Retrium](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)) | 15 minutes ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)) |
+| Close | 5 minutes ([Retrium](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)) | 5 minutes ([Atlassian](https://www.atlassian.com/team-playbook/plays/retrospective)) |
 
-The power of templates comes from **composability**. Since you're selecting activities per phase, you can mix and match. You might pair a high-energy opener from [Setting the Stage](https://tryhamster.com/skills/setting-the-stage-for-retrospectives) with a deeper analytical exercise from [Generating Insights](https://tryhamster.com/skills/generating-insights-from-retrospective-data). Over time, you build a template library with variants for different situations — a quick 30-minute template for stable sprints, a deep-dive 90-minute template for post-incident reflection, or a fun theme-based template to break routine.
+Both give the largest share to insights and decisions, where the actions come from. Treat the splits as starting points and adjust them after running the template. For session length, the Scrum Guide caps the retrospective at a maximum of three hours for a one-month Sprint and says it is usually shorter for shorter Sprints ([Scrum Guide](https://scrumguides.org/scrum-guide.html)); the Agile Alliance describes retrospectives as typically lasting between one and three hours ([Agile Alliance](https://www.agilealliance.org/glossary/heartbeat-retrospective/)).
+
+The activity slot for each phase is where templates differ. Choose activities that connect: a timeline in the data phase produces events that a 5 Whys can analyze; a prompt board produces notes that cluster easily. Include one activity that brings in project data, since research by Matthies and Dobrigkeit found most retrospective activities "neglect to take existing project data into account" ([Matthies and Dobrigkeit](https://arxiv.org/abs/2101.01528)).
+
+Facilitator cues make the template usable by someone else. For each phase, write the opening sentence, the instructions for the activity, and the transition to the next phase. Add notes on what to watch for, such as a check-in that shows low energy or a data phase running long.
+
+Metadata makes a library searchable: the situation each template suits, its length, whether it works remotely, and when it was last run. A template that has not been used or reviewed for a long time should be retired or refreshed.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Template Structure
+### Step 1: Define the template's purpose and length
 
-Start by creating a consistent template skeleton that you'll reuse across all your retrospective plans. At minimum, include these fields for each of the five phases:
+Decide what situation the template is for: a regular sprint, a short week, a release or incident, a new team, or a remote session. Set the total length. Write the purpose in one sentence at the top of the template so a facilitator can tell at a glance whether it fits.
 
-- **Phase name** and its purpose (one sentence reminder)
-- **Activity name** and brief description
-- **Time box** (in minutes)
-- **Materials needed** (physical or digital tools)
-- **Facilitator notes** (setup instructions, key questions to ask, transitions)
+### Step 2: Choose an activity for each phase
 
-Also include header-level metadata: template name, recommended team size, total duration, best-suited context (e.g., "after a difficult sprint" or "new team formation"), and a difficulty rating for the facilitator.
+Pick one activity per phase that suits the template's purpose. Start with the data activity, then choose the others to connect to it. Check that each activity's output is the input the next one needs. Name a simpler backup activity for the phases most likely to run into trouble.
 
-Use whatever format fits your workflow — a Notion page, a Confluence template, a Miro board layout, a simple markdown file, or even an index card. The key is that the structure is identical across templates so you can scan and compare them quickly.
+### Step 3: Assign timeboxes
 
-> **Pro tip:** Add a "Last Used" date field to each template so you can avoid repeating the same format too frequently with any given team.
+Split the total time across the phases, giving the largest share to insights and decisions. Include the time needed to explain each activity. Leave a small buffer for discussion that runs long. Check that the timeboxes add up to the session length.
 
-### Step 2: Step 2: Select Activities for Each Phase
+### Step 4: Write facilitator cues and transitions
 
-For each of the five phases, choose one or two activities that fit the template's intended context. Pull from your knowledge of [retrospective activities and exercises](https://tryhamster.com/skills/choosing-retrospective-activities-and-exercises) or established catalogs like Retromat or the activities in *Agile Retrospectives: Making Good Teams Great*.
+For each phase, write the opening line, the activity instructions and the transition sentence. Add notes on what to watch for and how to adapt. Write for a facilitator who has not run this template before. Keep the cues short enough to read at a glance during the session.
 
-When selecting activities, consider the **flow** of the entire session. Activities should build on each other — a lightweight check-in during Set the Stage should lead naturally into the data-gathering format. If you're using a timeline in Gather Data, your insight-generation activity should reference that timeline. This narrative coherence is what separates a template from a random list of activities.
+### Step 5: List materials and preparation
 
-Aim for variety across your template library. If one template uses "Mad/Sad/Glad" for Gather Data, build another that uses "4Ls" or a sprint timeline. This ensures you have options when you need to rotate formats.
+List what needs to exist before the session: a board layout, prompts, data to pull, the previous actions, and any digital tools. Note how far in advance each item is needed. For remote templates, include instructions for asynchronous data collection and anonymous input.
 
-> **Pro tip:** For each activity, note whether it works better in-person, remote, or both. This lets you quickly filter templates when your facilitation context changes.
+### Step 6: Tag and store the template
 
-### Step 3: Step 3: Assign Realistic Time Boxes
+Record the template's purpose, length, format and date. Store it where every facilitator on the team can find it. Link related templates, such as the short and long versions of the same plan. Keep the library small enough that people know what is in it.
 
-Allocate a specific number of minutes to each phase and activity. A common mistake is under-allocating time for Gather Data and Generate Insights while over-allocating to Set the Stage. Use these rough proportions as a starting point for a 60-minute retrospective:
+### Step 7: Run it, review it and refine it
 
-- Set the Stage: 5-7 minutes (8-12%)
-- Gather Data: 15-20 minutes (25-33%)
-- Generate Insights: 15-20 minutes (25-33%)
-- Decide What to Do: 10-15 minutes (17-25%)
-- Close the Retrospective: 5 minutes (8%)
-
-Include buffer time (2-3 minutes) between phases for transitions. Write the time boxes directly into the template so the facilitator can glance at them during the session.
-
-For templates designed for shorter or longer sessions, scale proportionally. A 30-minute template might use one lightweight activity per phase, while a 90-minute deep-dive template might include two activities in the Gather Data and Generate Insights phases.
-
-> **Pro tip:** Write the cumulative elapsed time alongside each phase (e.g., "Generate Insights — 15 min [elapsed: 40 min]") so facilitators can check if they're on track at a glance.
-
-### Step 4: Step 4: Write Facilitator Cues and Transitions
-
-A template's real value shows up when someone other than you tries to use it. Write short facilitator cues for each phase: the exact question to ask, how to introduce the activity, and how to transition to the next phase.
-
-For example, for a "Sailboat" activity in Gather Data, your cue might read: *"Draw a sailboat on the whiteboard. Explain: the wind represents what's pushing us forward, the anchors represent what's holding us back, the rocks ahead are risks, and the island is our goal. Give the team 5 minutes to add sticky notes silently. Then read clusters aloud."*
-
-Transition cues are especially important. Write a single sentence that bridges phases, such as: *"Now that we've mapped our data, let's dig into why these patterns are showing up."* These keep the session flowing and prevent awkward pauses that kill momentum.
-
-> **Pro tip:** Bold the key question or prompt in each facilitator note so it's easy to spot during a live session.
-
-### Step 5: Step 5: Tag and Categorize the Template
-
-Once your template is complete, give it descriptive tags that make it easy to find later. Useful tag dimensions include:
-
-- **Mood/energy**: high-energy, reflective, creative, structured
-- **Team context**: new team, established team, post-incident, post-release, mid-project
-- **Duration**: 30 min, 60 min, 90 min
-- **Format**: in-person, remote, hybrid
-- **Phase emphasis**: data-heavy, insight-heavy, action-heavy
-
-Also give each template a memorable name (e.g., "The Sailboat Sprint," "Deep Dive After Incidents," "Quick Pulse Check"). This makes it easy to reference in sprint planning or when discussing facilitation with other Scrum Masters.
-
-Store all templates in a single, searchable location — a shared folder, a wiki page, or a template library tool. The goal is to be able to open your library, filter by tags, and select a template in under two minutes.
-
-> **Pro tip:** Create a one-page "template index" that lists all your templates with their names, tags, and one-line descriptions. This becomes your go-to reference when planning sprints.
-
-### Step 6: Step 6: Test and Iterate the Template
-
-Run the template in a real retrospective and pay attention to what works and what doesn't. After the session, spend five minutes making notes directly on the template:
-
-- Did any phase run over or under its time box?
-- Were the facilitator cues clear enough?
-- Did the activities flow well together or feel disconnected?
-- What would you change next time?
-
-Update the template based on these observations. After two or three uses, your template will be battle-tested and reliable. Mark it as "validated" in your library so you and other facilitators know it's ready for confident reuse.
-
-This iterative approach is essential. Your first draft of a sprint retrospective template will almost certainly need adjustments — and that's the point. Templates are living documents, not static artifacts.
-
-> **Pro tip:** Ask a teammate to facilitate using your template without any additional context from you. Their experience will reveal gaps in your facilitator notes that you'd never notice yourself.
+Use the template in a real retrospective and note where the timing slipped, which cues were unclear and how the team responded. Use the closing feedback as evidence. Update the template and record what changed. Retire templates that nobody uses or that consistently get poor feedback.
 
 ## Best Practices
 
-- Build at least 4-5 templates before you start rotating them — this gives you enough variety to avoid repetition without overwhelming your library.
-- Always include a one-sentence purpose statement for each phase in the template, even if you know the framework by heart. This helps guest facilitators and keeps you honest about why each activity is there.
-- Design templates as pairs: one for a 'normal' sprint and one for a 'tough' sprint. Teams in distress need different activities (more psychological safety, more structured data gathering) than teams cruising along.
-- Include a 'Materials Prep Checklist' at the top of each template so the facilitator can set up boards, timers, and supplies before the session starts — not during it.
-- Review and archive templates quarterly. Remove templates that consistently underperform and note which ones get the best team feedback. A lean, high-quality library beats a bloated one.
-- Share templates across facilitators in your organization. A shared template library builds facilitation consistency and lets less experienced facilitators learn from proven formats.
+- Build the five phases into every template. A template that skips a phase teaches facilitators to skip it too.
+- Give the most time to insights and decisions. Both published plans in the table above put the largest blocks there.
+- Write cues for someone who is not you. A template only one person can run is a personal plan.
+- Include real data in at least one activity, which [Matthies and Dobrigkeit](https://arxiv.org/abs/2101.01528) argue is advantageous and underused.
+- Keep a short and a remote version of the standard template. They are the variants teams reach for most often.
+- Review templates using the team's closing feedback, and record what you changed and why.
 
 ## Common Mistakes
 
-- **Creating templates that skip one or more of the five phases — typically omitting Set the Stage or Close the Retrospective to 'save time.'** — Every phase exists for a reason in the Five-Step Retrospective Framework. Even a two-minute check-in for Set the Stage and a one-minute appreciation round for Close are better than nothing. Design short-form activities for time-constrained templates rather than dropping phases entirely.
-- **Building highly detailed templates that prescribe every word the facilitator should say, making them rigid and unnatural to use.** — Templates should be guides, not scripts. Include key questions, transition prompts, and setup instructions, but leave room for the facilitator to adapt tone and pacing to the room. Think 'recipe' not 'assembly instructions.'
-- **Using the same sprint retrospective template for every sprint because it worked well the first time.** — Even the best template loses effectiveness through overuse. Teams stop engaging when the format is predictable. Build a rotation of at least four templates and track which ones you've used recently to ensure variety.
-- **Designing templates around activities you personally enjoy rather than activities suited to the phase's purpose.** — Start with the phase objective (e.g., 'Generate Insights' needs analytical, pattern-finding activities) and then select activities that serve that objective. Cross-reference with resources on choosing retrospective activities to ensure fit.
-- **Not including time boxes in the template and instead relying on 'feel' during facilitation.** — Without explicit time boxes, retrospectives consistently run long on early phases and rush through Decide What to Do — the most actionable phase. Always include per-phase and per-activity time allocations in your template.
+- **Building one template and using it forever**: The same plan every sprint produces the same answers. Keep a small library and rotate.
+- **Timeboxes that do not add up**: A template that is ten minutes too long cuts the close every time. Check the arithmetic and include explanation time.
+- **Activities that do not connect**: If the insight activity cannot use the data collected, both phases lose value. Check the flow before saving a template.
+- **Missing facilitator cues**: A list of activity names leaves a new facilitator guessing. Write the opening, instructions and transition for each phase.
+- **Never retiring templates**: A library full of unused plans is hard to search. Remove templates that no longer fit.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/five-step-retrospective-framework/METHOD.md) — Five-Step Retrospective Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/five-step-retrospective-framework/METHOD.md): Five-Step Retrospective Framework
 
 ## Related Skills
 
-- [Closing Retrospectives Effectively](../closing-retrospectives-effectively/SKILL.md)
-- [Deciding What to Do: Prioritizing Retrospective Action Items](../deciding-what-to-do-in-retrospectives/SKILL.md)
 - [Choosing Retrospective Activities and Exercises](../choosing-retrospective-activities-and-exercises/SKILL.md)
-- [Tracking Retrospective Action Items Across Sprints](../tracking-retrospective-action-items-across-sprints/SKILL.md)
-- [Setting the Stage for Effective Retrospectives](../setting-the-stage-for-retrospectives/SKILL.md)
-- [Generating Insights from Retrospective Data](../generating-insights-from-retrospective-data/SKILL.md)
-- [Gathering Data During Sprint Retrospectives](../gathering-data-in-retrospectives/SKILL.md)
+- [Setting the Stage in a Sprint Retrospective](../setting-the-stage-for-retrospectives/SKILL.md)
+- [Closing a Retrospective Meeting Effectively](../closing-retrospectives-effectively/SKILL.md)
+
+## Sources
+
+- [GitLab Handbook: Group Retrospectives](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/)
+- [Atlassian Team Playbook: Sprint Retrospective](https://www.atlassian.com/team-playbook/plays/retrospective)
+- [Retromat: About](https://retromat.org/en/about)
+- [Retrium: The Five Phases of a Successful Retrospective](https://www.retrium.com/ultimate-guide-to-agile-retrospectives/five-phases-of-a-successful-retrospective)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [Agile Alliance Glossary: Heartbeat Retrospective](https://www.agilealliance.org/glossary/heartbeat-retrospective/)
+- [Matthies and Dobrigkeit: Experience vs Data](https://arxiv.org/abs/2101.01528)

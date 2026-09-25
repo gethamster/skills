@@ -1,21 +1,37 @@
-# Examples: Designing Product Development Growth Paths
+# Examples: Product Development Strategy: Designing Growth Paths
 
-## Example: B2B SaaS Company Expanding Its Analytics Suite
-
-**Scenario:**
-
-A B2B SaaS company sells a project management tool to mid-market marketing teams. Customer feedback consistently shows that users export data to spreadsheets for reporting — a clear unmet need. The company's marketing strategy focuses on becoming the single platform for marketing operations.
-
-**Walkthrough:**
-
-The team audits support tickets and finds that 40% of enterprise customers have requested built-in reporting. They generate five concepts: a basic dashboard, an advanced analytics module, automated report scheduling, custom report builder, and a data export API. They score each against strategic alignment (does it support the 'single platform' marketing strategy?), demand strength, feasibility, and revenue potential. The advanced analytics module and automated scheduling score highest. Customer validation confirms strong willingness to pay for analytics — 8 out of 12 interviewed customers say they'd upgrade their plan. The roadmap places the analytics dashboard in Horizon 1 (3-month build, launched with existing customer campaigns) and the automated scheduling in Horizon 2 (9-month build, positioned as a premium add-on). Success metrics include adoption rate within 90 days of launch, incremental ARPU, and reduction in churn among enterprise accounts.
-
-## Example: Direct-to-Consumer Brand Adding a Subscription Tier
+## An accounting tool follows its customers' next job
 
 **Scenario:**
 
-A DTC skincare brand sells individual products through its e-commerce store. Repeat purchase data shows that 30% of customers reorder the same products every 6-8 weeks. The brand's marketing strategy emphasizes customer lifetime value over acquisition volume.
+Illustrative scenario: a bookkeeping product serves small retail businesses. Growth from new customers has slowed, and leadership wants a product development strategy for the existing base.
 
 **Walkthrough:**
 
-The team maps demand signals: repeat purchase patterns, customer emails asking about auto-replenishment, and competitor subscription offerings. They generate concepts including a basic replenishment subscription, a curated monthly box, a personalized skincare routine subscription, and a loyalty rewards program. Scoring against their LTV-focused marketing strategy, they find the replenishment subscription scores highest (direct alignment, high feasibility, strong demand signal) while the curated box scores lower (higher operational complexity, less clear demand). They validate with 15 repeat customers — 11 say they'd subscribe for a 10% discount and free shipping. The roadmap places the replenishment subscription in Horizon 1 with a launch campaign targeting existing repeat purchasers, and the personalized routine subscription in Horizon 2 pending quiz/recommendation engine development. Success is measured by subscription conversion rate, average subscription duration, and change in customer lifetime value.
+Interviews with customers show that the job right after bookkeeping is preparing for tax filing, which most customers do by exporting data to a spreadsheet and emailing an outside accountant. The job matters a great deal and is done badly. A second job, forecasting cash for the next few months, comes up often among larger customers.
+
+The team generates concepts for both jobs, including an accountant collaboration portal and a cash forecast add-on. Both reuse the transaction data the product already holds. A clickable prototype of the accountant portal, shown to a small group of customers and their accountants, leads to several requests for early access. The roadmap puts the portal first as a core extension and the cash forecast second as an adjacent bet, with adoption among targeted customers as the stage gate.
+
+## A pet food brand tests before building
+
+**Scenario:**
+
+Illustrative scenario: a subscription pet food brand has loyal customers and is considering new products. Ideas from the team include treats, supplements, grooming products and pet insurance.
+
+**Walkthrough:**
+
+The team scores the ideas against customer jobs gathered from support conversations and a short survey. Treats and supplements match the job of keeping a pet healthy with little effort, and they fit the existing subscription and delivery. Pet insurance scores low on capability fit and is flagged as closer to diversification.
+
+The team tests treats and supplements as optional add-ons in the subscription with a small share of customers before committing to manufacturing. Treats show strong uptake while supplements attract little interest. The roadmap launches treats to all subscribers, drops supplements for now, and records insurance as a separate diversification question for the leadership team.
+
+## A roadmap that was overweighted toward one customer
+
+**Scenario:**
+
+Illustrative scenario: an industrial sensor company's largest customer requests a custom analytics dashboard. The sales team wants it on the roadmap as a new product.
+
+**Walkthrough:**
+
+Before committing, the product team checks how many customers share the underlying job. Interviews show most customers want alerts on abnormal readings sent to their existing maintenance systems, while few want a separate dashboard.
+
+The team builds the alerting integration as the first stage of the path, since it serves the wider base and reuses the sensor data. The dashboard is offered to the large customer as a paid services project instead. The roadmap records the reason, so the decision is not reopened without new evidence.

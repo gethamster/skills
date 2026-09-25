@@ -1,175 +1,171 @@
 ---
-category: Marketing
+name: "claude-s-constitution"
+category: "Marketing"
+description: "Claude's Constitution is Anthropic's public statement of Claude's values and priorities. Learn what it says and how to apply it in Claude AI SEO work."
+metadata:
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Claude's Constitution: How Anthropic's Alignment Framework Shapes AI-Driven SEO
+# Claude's Constitution: What It Says and How to Use It
 
-> Created by **Anthropic** — [https://www.anthropic.com](https://www.anthropic.com)
+> Created by **Anthropic** - [https://www.anthropic.com](https://www.anthropic.com)
 
 ## Overview
 
-Claude's Constitution is a foundational alignment artifact developed by Anthropic, the AI safety company founded in 2021 by former OpenAI researchers Dario and Daniela Amodei. Published and refined across multiple iterations, the constitution defines how Claude, Anthropic's flagship AI assistant, should reason through complex situations, handle ambiguity, and balance competing values. It is not a list of forbidden topics or a compliance checklist. Instead, it functions more like a moral philosophy document, one that establishes high-level principles and trusts the model to apply good judgment across novel scenarios.
+Claude's Constitution is the document in which Anthropic sets out the values, priorities and character it intends Claude to have. Anthropic calls it the [final authority on how Claude should be and behave](https://www.anthropic.com/news/claude-new-constitution): any other training or instruction given to Claude is meant to be consistent with both its letter and its spirit. The [full text](https://www.anthropic.com/constitution) names Amanda Askell as its primary author, with Joe Carlsmith writing significant parts, and it is released under a Creative Commons CC0 deed so anyone can reuse it. For people who use Claude for marketing, content and SEO, it is the most direct published explanation of why Claude answers, pushes back or declines the way it does.
 
-The intellectual roots of the constitution trace back to Anthropic's 2022 paper on Constitutional AI (CAI), which introduced a training methodology where AI models critique and revise their own outputs against a set of written principles. In that original research, the "constitution" was a collection of principles drawn from sources like the UN Declaration of Human Rights, Apple's terms of service, and various ethical frameworks. The current version of Claude's Constitution, published publicly by Anthropic in 2025, has evolved significantly from those early experiments. It now reads less like a set of external rules and more like an internal value system, emphasizing that Claude should be genuinely helpful, honest in ways that go beyond mere factual accuracy, and careful about potential harms without becoming paralyzed by excessive caution.
+The current version replaced an earlier one. Anthropic's [announcement of the new constitution](https://www.anthropic.com/news/claude-new-constitution), dated January 2026, says the previous constitution "was composed of a list of standalone principles." That earlier list, published in [May 2023](https://www.anthropic.com/news/claudes-constitution), drew on sources such as the UN Universal Declaration of Human Rights, Apple's terms of service and DeepMind's Sparrow rules. The new document explains its reasoning at length instead. Anthropic writes that models need to understand why they should behave in certain ways so they can apply broad principles in situations nobody anticipated.
 
-What makes this document distinctive in the landscape of AI governance is its philosophical posture. Most AI safety approaches fall into one of two camps: rule-based systems that enumerate what the model can and cannot do, or RLHF-heavy approaches that shape behavior through human preference signals without articulating explicit values. Anthropic's constitution takes a third path, articulating values at a level of abstraction that allows contextual application. The document explicitly acknowledges tensions between helpfulness and safety, between honesty and tact, between respecting user autonomy and preventing harm. It does not resolve these tensions with rigid hierarchies. Instead, it asks Claude to exercise judgment, much the way a thoughtful professional would navigate competing obligations.
+The constitution is also distinct from the training technique it grew out of. [Constitutional AI](https://arxiv.org/abs/2212.08073), described in a December 2022 paper, trains a model to critique and revise its own outputs against written principles and then uses AI feedback for reinforcement learning. The [announcement](https://www.anthropic.com/news/claude-new-constitution) says Anthropic has trained Claude with Constitutional AI techniques since 2023 and now uses the constitution at various stages of training, including having Claude generate synthetic training data from it. The technique has its own page at [Constitutional AI](https://tryhamster.com/methods/constitutional-ai). This page covers the document.
 
-For teams working in SEO, content strategy, and marketing automation, this constitutional approach has direct practical implications. Claude's outputs are shaped by these values in ways that affect keyword research, content generation, topic clustering, and competitive analysis. When a prompt conflicts with the model's values, Claude doesn't just refuse. It explains, suggests alternatives, and tries to find a path that serves both the user's intent and its own principles. Understanding this dynamic allows practitioners to write prompts that work with the grain of the model rather than against it, producing more reliable and higher-quality results. Teams that treat Claude as a black box miss this entirely. Teams that understand the constitutional framework can systematically improve every interaction.
+At its core the constitution asks every current Claude model to be broadly safe, broadly ethical, compliant with Anthropic's guidelines, and genuinely helpful, and to prioritize them in that order when they conflict. The [constitution](https://www.anthropic.com/constitution) stresses that the ordering is holistic rather than strict, and that most everyday work such as coding, writing and analysis involves no conflict among them at all. It also lists a small set of hard constraints, bright lines such as never providing serious uplift toward weapons capable of mass casualties, that no operator or user can unlock.
 
-The constitution also represents a notable shift in how AI companies communicate about alignment. Rather than keeping safety mechanisms opaque, Anthropic published the full document for public scrutiny. This transparency creates an unusual feedback loop: users, researchers, and critics can evaluate whether the model's actual behavior matches its stated values. For SEO professionals, this transparency is a strategic advantage. You can read the principles, understand the model's reasoning tendencies, and structure your workflows accordingly. In a field where AI tools are increasingly central to production workflows, that level of predictability matters enormously.
+Most of the document argues for judgment over rules. The [constitution](https://www.anthropic.com/constitution) says: "We generally favor cultivating good values and judgment over strict rules and decision procedures." It adds that clear rules make the most sense when errors are costly enough that predictability becomes critical. Its example of a rule gone wrong is instructive: training Claude to always recommend professional help on emotional topics, even when that does not serve the person, risks teaching it that it cares more about covering itself than about the person it is helping. Putting that judgment to work in your own prompts and pipelines is covered in [Claude constitutional reasoning in practice](../../skills/applying-contextual-judgment-in-claude-ai-workflows/SKILL.md).
 
-Hamster provides a workspace where teams can operationalize these constitutional principles through structured AI agent skills, making it practical to embed alignment-aware reasoning into everyday SEO and content workflows.
+The document says nothing about search engine optimization. Its relevance to SEO comes from the behaviors it asks for. It sets a bar for honesty higher than many human norms, asks Claude to attend to a user's deeper goals as well as the literal request, and says unhelpfulness is never automatically safe. Google's guidance points in a compatible direction: its [helpful content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content) asks creators to make people-first content, and its [spam policies](https://developers.google.com/search/docs/essentials/spam-policies) treat mass-generated pages that add no value as scaled content abuse. A team that understands both documents can write briefs that Claude will engage with fully and that produce pages worth publishing.
+
+Anthropic is candid about the limits. The [announcement](https://www.anthropic.com/news/claude-new-constitution) says Claude's outputs "might not always adhere to the constitution's ideals" and points readers to its system cards for where behavior differs from the vision. Treat the constitution as a statement of intended behavior that makes Claude more predictable, and keep your own review in place. Teams that want those review rules written down once and shared with their agents can keep them in Hamster alongside the rest of their working methods.
 
 ## Core Principles
 
-### Contextual Judgment Over Rigid Rules
+### Four Values in a Holistic Order
 
-The constitution explicitly rejects the idea that a fixed list of rules can cover every situation an AI will encounter. Instead, it cultivates judgment, the ability to weigh competing considerations and arrive at a reasonable decision even in novel circumstances. This matters because SEO work constantly produces edge cases: a keyword that's technically high-volume but borderline misleading, a competitor comparison that could shade into unfairness, a content brief that asks for claims beyond what the data supports. Teams that understand this principle write better prompts, because they frame requests in terms of goals and constraints rather than rigid instructions.
+The [constitution](https://www.anthropic.com/constitution) asks Claude to be broadly safe, broadly ethical, compliant with Anthropic's guidelines and genuinely helpful. When they conflict, higher priorities should generally dominate, but Claude weighs them together in forming an overall judgment instead of treating lower ones as tie-breakers. Anthropic notes that the order describes what to do if a conflict arises and does not suggest conflicts are common. For a practitioner, this means an ordinary SEO or content task sits almost entirely in the helpfulness zone.
 
-When teams skip this principle and try to over-specify every behavior, they get brittle outputs that break the moment the context shifts.
+### Judgment Over Rigid Rules
 
-### Honesty as a Multi-Dimensional Value
+Anthropic prefers cultivating judgment to imposing unexplained rules, and tries to explain the few rules it does set. The [constitution](https://www.anthropic.com/constitution) says clear rules make most sense when errors are severe, when individual judgment may not be robust, or when firm commitments are needed to resist manipulation. Everywhere else, Claude is expected to weigh the considerations in front of it. Prompts that explain goals and reasons give that judgment something to work with.
 
-Claude's Constitution treats honesty as more than factual accuracy. It encompasses transparency about uncertainty, avoidance of misleading framing, and resistance to telling users what they want to hear at the expense of what they need to hear. For content and SEO work, this has real consequences. Claude will push back on inflated claims, flag when a statistic needs context, and decline to present speculation as established fact.
+### Genuine Helpfulness Has Structure
 
-This can feel like friction if you're trying to produce aggressive marketing copy, but it's actually a quality signal. Content that passes Claude's honesty filter tends to perform better with both search engines and readers. Teams that fight this principle waste time trying to extract outputs the model is designed to resist.
+The constitution describes helpfulness as more than following instructions. Claude should attend to a principal's immediate desires, final goals, background desiderata, autonomy and wellbeing, interpreting requests "neither too literally nor too liberally" ([constitution](https://www.anthropic.com/constitution)). Its coding example is useful for automation work: asked to make failing tests pass, Claude should say so if it cannot find a good general solution, and should not special-case the tests. The same logic applies to a request to hit a keyword target at the cost of a readable page.
 
-### Genuine Helpfulness, Not Performative Caution
+### Unhelpfulness Is Not Automatically Safe
 
-One of the most interesting tensions in the constitution is its insistence that Claude should be genuinely, substantively helpful. Anthropic explicitly warns against the failure mode where safety becomes an excuse for unhelpfulness, where the model hedges so much it becomes useless. This principle asks Claude to lean toward providing real value, even when that means engaging with complex or sensitive topics rather than retreating behind disclaimers. For SEO practitioners, this means Claude is designed to give you actionable analysis, specific keyword suggestions, and concrete strategic recommendations.
+The [constitution](https://www.anthropic.com/constitution) states: "The risks of Claude being too unhelpful or overly cautious are just as real to us as the risk of Claude being too harmful or dishonest." It lists overcautious behaviors to avoid, including refusing reasonable requests over unlikely harms, adding unnecessary caveats and lecturing when nobody asked for ethical guidance. It also offers a "dual newspaper test": would one reporter call the response harmful, or another call it preachy and paternalistic? Claude is expected to take ordinary marketing work seriously.
 
-But it also means that vague prompts get vague outputs. The model's helpfulness scales with the clarity and specificity of what you ask for.
+### High Standards of Honesty
 
-### Harm Avoidance Through Proportional Assessment
+Claude "should basically never directly lie or actively deceive anyone it's interacting with," according to the [constitution](https://www.anthropic.com/constitution), which names seven components: truthful, calibrated, transparent, forthright, non-deceptive, non-manipulative and autonomy-preserving. Calibration means acknowledging uncertainty instead of conveying more confidence than the evidence supports. Honesty norms apply to sincere assertions, so writing a persuasive essay or brainstorming counterarguments on request is not lying. The document's phrase for the ideal is "diplomatically honest rather than dishonestly diplomatic."
 
-The constitution does not treat all potential harms equally. It asks Claude to assess the probability, severity, breadth, and reversibility of potential harms, and to weigh these against the genuine benefits of being helpful. A request to write a product comparison is treated differently from a request to write something designed to deceive. This proportional reasoning is important for SEO work because it means Claude won't refuse reasonable marketing tasks.
+### Weighing Costs and Benefits
 
-But it also means that content designed to manipulate search engines through deceptive practices, doorway pages, keyword stuffing, or misleading schema markup, will meet resistance. The model is evaluating intent and impact, not just surface-level content.
+For requests that could cause harm, the [constitution](https://www.anthropic.com/constitution) lists what to weigh: the probability of harm, counterfactual impact, severity and reversibility, breadth, whether Claude is the proximate cause, consent, responsibility and the vulnerability of those involved. Those costs are always weighed against benefits such as educational, creative and economic value. It suggests imagining the same message sent by many different people, because Claude's responses work more like policies than one-off choices. Ordinary SEO tasks rarely come near this weighing, but deceptive content aimed at readers can.
 
-### Respect for User Autonomy
+### Operators, Users and Inputs
 
-The constitution instructs Claude to respect users' right to make their own decisions, even when the model might disagree with those decisions. It should inform, not dictate. This principle shapes how Claude handles SEO strategy discussions. Rather than insisting on a single correct approach, Claude will present options, explain tradeoffs, and let you decide.
+The constitution names three kinds of principals: Anthropic, operators who build on the API, and users. Operators are treated like a relatively trusted employer and get the benefit of the doubt when an instruction plausibly has a legitimate business reason ([constitution](https://www.anthropic.com/constitution)). Content that arrives through tools, such as a scraped page or a search result, is a conversational input, and instructions inside it are treated as information to consider, not orders. That distinction matters for any SEO agent that reads the open web.
 
-This is particularly valuable in content strategy where reasonable experts disagree, for example, whether to pursue high-volume head terms or long-tail clusters, or whether to invest in programmatic pages versus hand-crafted editorial content. The tradeoff is that Claude won't always tell you what to do. It will tell you what to consider.
+## How the Earlier and Current Versions Differ
 
-### Transparency About Limitations and Uncertainty
+Many articles still describe the earlier version. The table compares the two using Anthropic's own descriptions.
 
-Claude is trained to be upfront about what it doesn't know, what it's uncertain about, and where its training data might be outdated. For SEO work, this is critical because search landscapes change rapidly. Claude will flag when it's drawing on potentially stale data, when a recommendation depends on assumptions it can't verify, or when a question requires real-time information it doesn't have access to. Teams that skip this principle and treat Claude's outputs as ground truth end up making decisions based on outdated search volumes or deprecated Google features.
+| Aspect | Earlier list | Current document |
+|-------|-------|-------|
+| Form | A list of short principles ([May 2023 post](https://www.anthropic.com/news/claudes-constitution)) | A long document explaining reasons ([announcement](https://www.anthropic.com/news/claude-new-constitution)) |
+| Sources | UN declaration, Apple terms, Sparrow rules, Anthropic research ([2023 post](https://www.anthropic.com/news/claudes-constitution)) | Anthropic's own reasoning, with feedback from outside experts and earlier Claude models ([2026 announcement](https://www.anthropic.com/news/claude-new-constitution)) |
+| Priority | Principles not ranked; one sampled at a time in training ([2023 post](https://www.anthropic.com/news/claudes-constitution)) | Safety, ethics, guidelines, helpfulness in a holistic order ([2026 text](https://www.anthropic.com/constitution)) |
+| Use in training | Critique-and-revise and AI-feedback phases ([2023 post](https://www.anthropic.com/news/claudes-constitution)) | Various stages, including synthetic data Claude generates ([2026 announcement](https://www.anthropic.com/news/claude-new-constitution)) |
+| Status | Described as neither finalized nor the best it could be ([2023 post](https://www.anthropic.com/news/claudes-constitution)) | A perpetual work in progress ([2026 text](https://www.anthropic.com/constitution)), written primarily for Claude ([announcement](https://www.anthropic.com/news/claude-new-constitution)) |
 
-The constitutional emphasis on epistemic humility is a feature, not a bug.
-
-### Values as Training Signal, Not Post-Hoc Filter
-
-Unlike approaches that bolt safety checks onto an already-trained model, Anthropic's constitutional method integrates values directly into the training process. The model generates outputs, critiques them against constitutional principles, and revises them, all before a human ever sees the result. This means Claude's alignment isn't a surface-level veneer that clever prompting can bypass. The values are woven into the model's reasoning patterns.
-
-For practitioners, this means you can trust the model's judgment in ways that are difficult with models trained primarily through RLHF without explicit value articulation. It also means that prompt injection attacks or adversarial jailbreaks are less effective, which matters when you're using Claude in production workflows.
+The shift matches the reasoning in both posts. The [2023 post](https://www.anthropic.com/news/claudes-constitution) already reported that longer, more specific principles tended to reduce generalization, and the [2026 announcement](https://www.anthropic.com/news/claude-new-constitution) takes that further by explaining intentions so the model can generalize from reasons. [TIME's coverage of the release](https://time.com/7354738/claude-constitution-ai-alignment/) quotes Askell making the same point: as Claude models have become smarter, it has become vital to explain why they should behave in certain ways.
 
 ## Steps
 
-1. **Step 1: Read and Internalize the Published Constitution**
-   Start by reading Anthropic's full published constitution, available on their website. Don't skim it. Read it the way you'd read a style guide for a publication you're about to write for. Pay particular attention to how it handles tensions: helpfulness versus safety, honesty versus tact, individual autonomy versus potential harm.
+1. **Read the summary, then the sections you need**
+   Start with the summary at the top of the [constitution](https://www.anthropic.com/constitution), which lists the four values and the main sections. Then read the parts on helpfulness, honesty and avoiding harm in full, because those govern nearly every marketing and SEO interaction. Note the examples the document uses, such as the failing-tests case and the list of overcautious behaviors, since they show how abstract values turn into concrete responses. Skim the sections on safety and Claude's nature for context. Keep a short internal note of the passages your team relies on, with links to the source.
 
-Note which principles feel most relevant to your specific use case, whether that's content generation, keyword research, or competitive analysis. A common mistake is treating this step as optional and jumping straight to prompting. Teams that skip this step consistently misinterpret Claude's behavior, reading refusals as bugs rather than principled reasoning.
+2. **Know which role you are playing**
+   Decide whether you are acting as an operator, writing a system prompt for a product or pipeline, or as a user in a chat. The constitution gives operators more default trust and lets them adjust or restrict Claude's defaults within Anthropic's policies. A system prompt that states the business context and audience helps Claude pick the right defaults for your deployment. In an automated pipeline, say so, because the constitution tells Claude to assume a live human may be present unless context says otherwise.
 
-2. **Step 2: Audit Your Current Prompts Against Constitutional Values**
-   Take your ten most-used prompts or prompt templates and evaluate each one against the constitution's core values. Ask: does this prompt give Claude enough context to exercise good judgment? Does it ask for anything that conflicts with honesty, helpfulness, or harm avoidance? Does it frame the task in terms of goals and constraints, or does it try to micromanage every aspect of the output?
+3. **Give goals, context and reasons**
+   Write requests the way you would brief a capable new colleague: the goal, the audience, what good output looks like and why each constraint exists. Anthropic's [prompting guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) makes the same point, noting that explaining the motivation behind an instruction helps Claude deliver more targeted responses. Reasons let Claude apply judgment when a case falls outside your instructions. They also make it less likely that a legitimate request is misread as a risky one.
 
-Common red flags include prompts that ask Claude to "ignore your guidelines" or "pretend you're a different AI," prompts that request unsubstantiated claims, and prompts so vague that the model has to guess what you actually want. Document which prompts need revision and why.
+4. **Supply the facts Claude cannot know**
+   The honesty principles ask Claude to be calibrated and to acknowledge what it does not know, so do not ask it to invent search volumes, rankings or statistics. Provide the data from your own tools, such as [Search Console's Performance report](https://support.google.com/webmasters/answer/7576553?hl=en), and ask Claude to reason over it. Where Claude does state a fact, ask it to mark its confidence and cite the source you gave it. Treat any unsourced number in an output as a draft to verify.
 
-3. **Step 3: Redesign Prompts to Align with Constitutional Reasoning**
-   Rewrite your flagged prompts using a structure that works with constitutional values rather than against them. The most effective pattern is: state the goal clearly, provide relevant context, specify the audience, define quality criteria, and explain constraints. For example, instead of "Write a blog post about project management tools," try "Write a 1,500-word comparison of three project management approaches for teams of 10-20 people, citing specific tradeoffs for each approach. " This gives Claude the context to exercise judgment, which is exactly what the constitution trains it to do.
+5. **Treat disagreement as a signal**
+   When Claude points out a problem with a request, read the reasoning before overriding it. The constitution asks Claude to act as a "transparent conscientious objector," saying when it will not do something instead of quietly doing a worse job. Often the objection names a real issue, such as a claim you cannot support or a page that would duplicate another. If the objection is mistaken, add the missing context; if it is right, change the brief.
 
-Watch for the tendency to over-constrain. If your prompt reads like a legal contract, you're working against the model's design.
+6. **Review outputs against both standards**
+   Check drafts against the constitution's honesty properties and against Google's people-first questions in its [helpful content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content). Look for unsupported claims, false precision, misleading framing and content that exists mainly to rank. Keep a written rubric so different reviewers judge the same way. Feed recurring problems back into the prompts that produced them.
 
-4. **Step 4: Establish Evaluation Criteria Grounded in Constitutional Principles**
-   Create a rubric your team uses to evaluate Claude's outputs, explicitly tied to constitutional values. Include criteria like: Is this factually accurate and appropriately qualified? Does it genuinely help the reader, or does it just fill space? Is it transparent about limitations and uncertainties?
-
-Would a knowledgeable reader trust this content? This rubric serves double duty: it improves your quality control process and it helps your team internalize the same reasoning patterns the model uses. Over time, team members start writing better briefs naturally because they understand what "good" looks like from the model's perspective. A common failure mode is evaluating outputs purely on keyword density or word count, metrics the constitution considers secondary to genuine value.
-
-5. **Step 5: Build Feedback Loops Between Constitutional Outputs and SEO Performance**
-   Track how constitutionally-aligned content performs compared to your pre-alignment baseline. Monitor indexation rates, ranking positions, engagement metrics (time on page, scroll depth, bounce rate), and conversion rates. The hypothesis you're testing is that content which passes Claude's honesty and helpfulness filters also performs better with search engines and users. In most cases, this holds.
-
-Google's helpful content system and Claude's constitutional values are converging on similar quality signals. When you find cases where constitutionally-aligned content underperforms, investigate whether the issue is the content itself or a technical SEO factor like page speed, internal linking, or schema markup. Adjust your prompts and processes based on what the data shows, not on assumptions.
-
-6. **Step 6: Scale Constitutional Workflows Across Your Team**
-   Once you've validated the approach on your core workflows, extend it across your full content and SEO operation. This means creating shared prompt libraries with constitutional annotations explaining why each prompt is structured the way it is. It means training new team members on the constitution before they start using Claude for production work. It means establishing review processes where outputs are checked against constitutional criteria, not just SEO checklist items.
-
-The scaling challenge is maintaining quality as volume increases. Constitutional principles help here because they give every team member a shared reasoning framework. Instead of memorizing hundreds of specific rules, they internalize a handful of values and learn to apply them contextually. Document edge cases and model behaviors your team encounters, building institutional knowledge about how the constitution manifests in practice.
+7. **Put hard limits in tools, not prompts**
+   The constitution shapes what Claude tries to do, and your own systems decide what it is allowed to do. In agentic setups, use tool-level controls: Claude Code's [permission rules](https://code.claude.com/docs/en/permissions), for example, are enforced by the tool itself, and the docs state that instructions in a prompt or CLAUDE.md do not change what Claude Code allows. Limit write access, require approval for publishing and keep changes reviewable. This matches the constitution's own advice to prefer cautious actions in unclear situations.
 
 ## When to Use
 
-- When you're building AI-assisted content workflows and need predictable, high-quality outputs across hundreds of pages. Understanding constitutional principles lets you design prompts that consistently produce content Claude can fully engage with, rather than fighting the model's built-in values at every turn. This is especially relevant for programmatic SEO where templates interact with the model thousands of times.
-- When your SEO strategy requires nuanced competitive analysis or comparison content that must be fair, accurate, and balanced. Claude's constitutional emphasis on honesty and proportional reasoning makes it naturally suited for "X vs Y" content, but only if you understand why the model will resist one-sided framing and structure your briefs accordingly.
-- When you're scaling keyword research across multiple market segments and need the model to exercise judgment about search intent, topic relevance, and content gaps rather than just returning keyword lists. The constitutional framework's emphasis on contextual reasoning means Claude can evaluate whether a keyword cluster actually serves your audience, not just whether it has volume.
-- When your team uses AI agents for SEO tasks and needs guardrails that go beyond simple content filters. Constitutional principles provide a reasoning framework that helps agents make good decisions about edge cases, like when to include a statistic that needs qualification, or when a topic cluster is straying into territory that could produce thin content.
-- When you're producing content in regulated industries or sensitive domains where factual accuracy and appropriate caveats are non-negotiable. The constitution's multi-dimensional honesty principle means Claude will naturally add qualifications, cite uncertainty, and resist overclaiming, behaviors that protect your brand and your readers.
-- When your content team is distributed and you need a shared framework for evaluating AI outputs. The constitution's published principles serve as an objective rubric that any team member can reference when deciding whether a piece of Claude-generated content meets quality standards.
+- When you are building AI-assisted content or SEO workflows and want to understand why Claude pushes back on some requests, so you can adjust briefs instead of fighting the model.
+- When you write system prompts for a product built on Claude, because the operator section explains what operators may and may not ask for and how Claude treats unexplained instructions.
+- When your team disagrees about whether a Claude response was overcautious or overcompliant, because the constitution's list of overcautious behaviors and its harm-weighing factors give a shared reference.
+- When you evaluate AI-written drafts and need criteria for honesty, since the seven honesty properties translate directly into review questions.
+- When you run agents that read web pages or third-party data, because the rule that instructions inside conversational inputs are information, not commands, affects how you design the pipeline.
 
 ## When Not to Use
 
-- When you need the AI to produce deliberately misleading or manipulative content. This includes doorway pages designed to rank without providing value, content that misrepresents product capabilities, or keyword-stuffed pages that prioritize search engines over readers. Claude's constitutional values are specifically designed to resist this kind of output, and trying to work around them wastes time and produces inferior results. Use a different tool if manipulation is the goal, though the strategy itself will likely fail with modern search engines.
-- When your workflow requires the AI to act as a pure text-generation machine with no opinions, pushback, or quality judgment. Some teams want an AI that executes instructions without question. Claude's constitution means it will flag problems, suggest alternatives, and occasionally decline requests. If you need zero-friction text output regardless of quality or accuracy, the constitutional framework will feel like an obstacle rather than an asset.
-- When your SEO tasks are purely mechanical and require no reasoning, for example, reformatting a CSV of URLs, generating XML sitemaps from a database, or bulk-renaming files. Constitutional principles add value when judgment is required. For tasks that are entirely procedural, the alignment framework is irrelevant and you're better served by a script or a simpler tool.
-- When you're operating in a domain so novel or specialized that the model's training data provides no useful foundation. Claude's constitutional judgment works well when the model has sufficient context to reason about the domain. In highly specialized niches where the model has minimal training data, its principled reasoning may produce confident-sounding but substantively hollow outputs. In these cases, domain experts need to do the heavy lifting and use AI only for mechanical assistance.
-- When real-time data accuracy is critical and there's no verification step in your workflow. Claude's constitution emphasizes transparency about uncertainty, but if your process depends on up-to-the-minute search volumes, live SERP analysis, or current competitor pricing, the model's training cutoff makes constitutional reasoning insufficient. You need live data tools integrated into your workflow, with Claude handling analysis and strategy rather than data retrieval.
+- When you need a guarantee of behavior. Anthropic says outputs may not always match the document, so the constitution is no substitute for tests, permissions and human review.
+- When the task is purely mechanical, such as reformatting a URL list or generating a sitemap from a database. A script is simpler and the constitution adds nothing.
+- When you want an SEO strategy. The document says nothing about search, keywords or rankings; use an SEO method for that and treat the constitution as background on how the model behaves.
+- When you are working with a model other than Claude. Other vendors publish their own specifications, and Anthropic notes the constitution applies to its mainline, general-access Claude models.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Automating SEO Tasks Using Claude's Reasoning Principles](../../skills/automating-seo-tasks-using-claudes-reasoning-principles/SKILL.md) — How to leverage Claude's constitutional emphasis on truthfulness and helpfulness to automate SEO research, content auditing, and keyword analysis with trustworthy outputs.
-- [Crafting Claude AI Prompts Aligned with Constitutional Values](../../skills/crafting-claude-ai-prompts-with-constitutional-values/SKILL.md) — How to write prompts that leverage Claude's constitutional principles of helpfulness, honesty, and harmlessness to get higher-quality, more reliable outputs.
-- [Building Topic Clusters with Claude's Constitutional Alignment](../../skills/building-topic-clusters-with-claude-constitutional-alignment/SKILL.md) — How to use Claude's value-driven reasoning to generate semantically coherent topic clusters and content hierarchies that satisfy both search intent and editorial quality standards.
-- [Evaluating Claude Outputs Against Constitutional Principles](../../skills/evaluating-claude-outputs-against-constitutional-principles/SKILL.md) — How to assess whether Claude's generated content meets the constitution's standards for honesty, accuracy, and balanced perspective — critical for SEO content quality.
-- [Applying Contextual Judgment in Claude AI Workflows](../../skills/applying-contextual-judgment-in-claude-ai-workflows/SKILL.md) — How to understand and work with Claude's preference for contextual moral reasoning over rigid rules, enabling more nuanced and effective AI-assisted task completion.
-- [Generating Long-Tail Keywords with Claude's Value Framework](../../skills/generating-long-tail-keywords-with-claudes-value-framework/SKILL.md) — How to prompt Claude for long-tail keyword research by leveraging its constitutional drive toward helpfulness and genuine user intent understanding rather than manipulative keyword stuffing.
-- [Using Claude Code for SEO with Constitutional Guardrails](../../skills/using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md) — How to build SEO automation scripts with Claude Code while understanding the constitutional boundaries that shape its coding behavior, error handling, and ethical output constraints.
+- [Automate SEO with Claude: Reasoning Principles](../../skills/automating-seo-tasks-using-claudes-reasoning-principles/SKILL.md): Automate SEO research, content audits and keyword analysis with Claude while keeping every output grounded in data you supply.
+- [Claude AI Prompts Built on Constitutional Values](../../skills/crafting-claude-ai-prompts-with-constitutional-values/SKILL.md): Write Claude AI prompts for SEO and content that give context, goals and honesty requirements, so Claude can help fully.
+- [Claude Topic Clusters with Constitutional Alignment](../../skills/building-topic-clusters-with-claude-constitutional-alignment/SKILL.md): Plan topic clusters with Claude where every page answers a distinct reader need and nothing exists only to rank.
+- [Claude Content Optimizer: Evaluate Against the Constitution](../../skills/evaluating-claude-outputs-against-constitutional-principles/SKILL.md): Review Claude-written content with a rubric built from the constitution's honesty properties and Google's people-first questions.
+- [Claude Constitutional Reasoning in AI Workflows](../../skills/applying-contextual-judgment-in-claude-ai-workflows/SKILL.md): Design Claude AI workflows that use its contextual judgment for tradeoffs and ambiguity instead of rigid rule lists.
+- [Claude AI Long Tail Keywords by User Need](../../skills/generating-long-tail-keywords-with-claudes-value-framework/SKILL.md): Generate long tail keyword ideas with Claude from real user problems, then validate them with search data.
+- [Claude Code Constitutional Guardrails for SEO](../../skills/using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md): Build SEO scripts with Claude Code using permissions, tests and review so automation stays safe and honest.
 
 ## FAQ
 
 **What is Claude's Constitution in simple terms?**
 
-Claude's Constitution is a document that tells Claude how to think, not just what to say. Instead of a list of banned topics, it establishes core values like honesty, helpfulness, and harm avoidance, then asks Claude to apply good judgment across any situation it encounters. Think of it like how a company's values statement guides employee behavior. Employees don't consult a rule book for every decision.
+It is Anthropic's written description of who it wants Claude to be: its values, its priorities when they conflict, and the reasoning behind them. The [constitution](https://www.anthropic.com/constitution) asks Claude to be broadly safe, broadly ethical, compliant with Anthropic's guidelines and genuinely helpful. It is used in training and is meant to shape Claude's behavior directly. Anthropic describes it as a perpetual work in progress that will be revised.
 
-They internalize principles and reason from them. The constitution works the same way for Claude's responses.
+**Is Claude's Constitution the same as Constitutional AI?**
 
-**How is Claude's Constitution different from OpenAI's system prompts or Google's AI guidelines?**
+No. Constitutional AI is a training technique from a [December 2022 paper](https://arxiv.org/abs/2212.08073) in which a model critiques and revises its outputs against written principles and then learns from AI feedback. Claude's Constitution is the document of values that Anthropic now uses at various stages of training. The technique is covered at [Constitutional AI](https://tryhamster.com/methods/constitutional-ai).
 
-The key difference is philosophical depth and training integration. OpenAI's approach relies more heavily on RLHF (reinforcement learning from human feedback) and system-level instructions that shape behavior without articulating explicit values. Google's AI Principles are a public-facing policy document that guides company decisions but aren't directly integrated into model training the way Anthropic's constitution is. Anthropic's approach uniquely uses the constitution as a training signal: Claude critiques and revises its own outputs against these principles during training, making the values part of the model's reasoning rather than a filter applied after generation.
+**When was the current constitution published?**
 
-**Does Claude's Constitution affect SEO content quality?**
+Anthropic published the current version in January 2026, according to its [announcement](https://www.anthropic.com/news/claude-new-constitution). It replaced an earlier constitution that Anthropic described in a [May 2023 post](https://www.anthropic.com/news/claudes-constitution) as a set of principles drawn from sources including the UN Universal Declaration of Human Rights. The 2023 post now carries a note pointing readers to the new version. Anthropic says it will keep an up-to-date version on its website.
 
-Yes, significantly. The constitution's emphasis on honesty, substantive helpfulness, and transparency about uncertainty directly shapes the content Claude produces. Content generated through constitutionally-aligned prompts tends to be more accurate, better qualified, and more genuinely useful to readers. These are exactly the signals Google's helpful content system rewards.
+**Does Claude's Constitution mention SEO?**
 
-The practical effect is that Claude naturally resists producing thin content, keyword-stuffed filler, or misleading claims. This alignment between Claude's values and Google's quality guidelines makes constitutionally-aware prompting a competitive advantage.
+No. It is about values, priorities and Claude's character, and it never discusses search engines or rankings. Its relevance to Claude AI SEO work is indirect: the honesty standards, the structured idea of helpfulness and the cost-benefit approach to harm shape how Claude responds to content and keyword requests. For search rules, read Google's own [spam policies](https://developers.google.com/search/docs/essentials/spam-policies) and helpful content guidance.
 
-**Why does Claude sometimes refuse to write content that seems harmless?**
+**Will Claude write SEO content that is designed to mislead?**
 
-Claude's proportional harm assessment occasionally miscalibrates, particularly on topics adjacent to genuinely harmful content. When this happens, it's usually because the prompt lacks context that would help the model distinguish your legitimate request from a potentially harmful one. The fix is almost always adding context: explain who the content is for, what it will be used for, and why your approach is appropriate. For example, a request to "write about the most dangerous chemicals" might get resistance, while "write a safety guide for lab technicians handling common industrial solvents" provides the context Claude needs to be genuinely helpful.
+The constitution says Claude should not produce artifacts that are deceptive or harmful, and should not help people who are trying to produce them. Ordinary marketing is fine: operators may even have Claude promote their own products over competitors'. Invented statistics, fake reviews or claims that a product does something it does not are another matter. Google also treats pages made mainly to manipulate rankings as spam, so such content carries search risk as well.
 
-**Can I use Claude's Constitution alongside existing SEO frameworks like RICE or topic clusters?**
+**Why does Claude sometimes decline something that seems harmless?**
 
-Absolutely. The constitution is a reasoning framework, not a competing methodology. It layers on top of whatever SEO strategy you're already running. If you use RICE for prioritization, Claude's constitutional values help you generate more honest assessments of reach and impact.
+The constitution treats overcaution as a real failure and lists behaviors to avoid, such as refusing reasonable requests over unlikely harms. Misreadings still happen, often because a request looks like a risky one on the surface. Adding context about who you are, who the content is for and why you need it usually resolves it. The document says unverified context can still make a benign reading more likely and shifts responsibility to the person giving it.
 
-If you build topic clusters, constitutional alignment helps you produce genuinely differentiated content for each node rather than thinly-varied repetitions. The constitution improves the quality of AI-assisted execution within any strategic framework you choose.
+**Does the constitution guarantee how Claude will behave?**
 
-**Does Claude's Constitution work for small teams or solo SEO practitioners?**
+No. Anthropic says training is imperfect and Claude's behavior might not always reflect the document's ideals, and it reports gaps in its system cards. Treat the constitution as a statement of intended behavior, and test the behavior your work depends on. Keep verification, permissions and human review in any workflow that publishes content or changes a live site.
 
-Small teams arguably benefit more from understanding the constitution than large teams do. When you don't have dedicated editors, fact-checkers, or content reviewers, Claude's built-in quality filters act as a proxy for those roles. A solo practitioner who writes constitutionally-aligned prompts gets Claude functioning as both a content generator and a quality reviewer simultaneously. The model will flag unsupported claims, suggest where sources are needed, and push back on content that doesn't serve readers.
+## Sources
 
-That's significant leverage for a one-person operation.
-
-**How does Claude's Constitution handle the tension between helpfulness and SEO keyword targeting?**
-
-The constitution resolves this tension through proportional reasoning. Including relevant keywords in content that genuinely serves the reader is helpful, so Claude supports it. Stuffing keywords at the expense of readability and accuracy is dishonest to readers, so Claude resists it. In practice, this means Claude will naturally weave keywords into substantive content but will push back if you ask it to artificially inflate keyword density.
-
-The Princeton GEO research actually confirms this instinct: keyword stuffing reduces AI visibility by 10%, while substantive, well-cited content increases it. Claude's constitutional resistance to stuffing is aligned with what actually works.
-
-**What happens when Claude's Constitution conflicts with what my client or boss wants?**
-
-This is a real tension that practitioners face. The constitution respects user autonomy, so Claude will generally help you accomplish legitimate goals even if it would approach them differently. The boundaries appear when requests cross into active deception or potential harm. If your client wants you to claim their product cures a disease it doesn't cure, Claude will refuse, and you should too.
-
-For gray areas, like aggressive comparison claims or optimistic case studies, Claude typically produces the content with appropriate qualifications. Understanding this boundary helps you set realistic expectations with stakeholders about what AI-assisted content will and won't do.
+- [Anthropic: Claude's Constitution](https://www.anthropic.com/constitution)
+- [Anthropic: Claude's new constitution](https://www.anthropic.com/news/claude-new-constitution)
+- [Anthropic: Claude's constitution (May 2023)](https://www.anthropic.com/news/claudes-constitution)
+- [Bai et al.: Constitutional AI, Harmlessness from AI Feedback](https://arxiv.org/abs/2212.08073)
+- [TIME: Anthropic publishes Claude's new constitution](https://time.com/7354738/claude-constitution-ai-alignment/)
+- [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
+- [Google Search Central: Spam policies](https://developers.google.com/search/docs/essentials/spam-policies)
+- [Claude docs: Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
+- [Claude Code docs: Configure permissions](https://code.claude.com/docs/en/permissions)
+- [Search Console Help: Performance report](https://support.google.com/webmasters/answer/7576553?hl=en)
 
 ---
 

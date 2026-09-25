@@ -1,15 +1,20 @@
 ---
-name: applying-contextual-judgment-in-claude-ai-workflows
-description: "This skill teaches you how to structure prompts and workflows that leverage Claude AI's preference for contextual moral reasoning, producing outputs that handle ambiguity and competing priorities with genuine nuance rather than mechanical rule-following."
+name: "applying-contextual-judgment-in-claude-ai-workflows"
+description: "Claude constitutional reasoning in practice: design Claude AI workflows that give Claude the context to weigh tradeoffs and handle ambiguity."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: claude-s-constitution
+  method: "claude-s-constitution"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Applying Contextual Judgment in Claude AI Workflows
+# Claude Constitutional Reasoning in AI Workflows
 
-> This skill teaches you how to structure prompts and workflows that leverage Claude AI's preference for contextual moral reasoning, producing outputs that handle ambiguity and competing priorities with genuine nuance rather than mechanical rule-following.
+> Claude constitutional reasoning in practice: design Claude AI workflows that give Claude the context to weigh tradeoffs and handle ambiguity.
 
 ## Before you start
 
@@ -24,139 +29,95 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You produce Claude AI outputs that weigh competing priorities, adapt to situational nuance, and handle edge cases gracefully, rather than outputs that mechanically apply rules and break down when reality gets messy. |
-| Prerequisites | Basic familiarity with prompting Claude AI (system prompts, user prompts, multi-turn conversations), Understanding of Claude's Constitution and its emphasis on values over rigid rules (review /methods/claude-s-constitution), A real workflow or task where outputs need to navigate tradeoffs, ambiguity, or competing stakeholder interests |
-| Part of | [Claude’s Constitution](../../methods/claude-s-constitution/METHOD.md) |
+| Time to Learn | An afternoon to learn, a few workflow revisions to get right |
+| Outcome | You can design Claude AI workflows that hand Claude the goals, reasons and priorities it needs to make sound judgment calls, and keep firm rules for the few cases that need them. |
+| Prerequisites | Experience prompting Claude, a recurring workflow with real tradeoffs, the authority to change its prompts |
+| Part of | [Claude's Constitution](../../methods/claude-s-constitution/METHOD.md) |
 
 ## Overview
 
-Most people interact with Claude AI the same way they would interact with a search engine or a strict command-line tool: give it a rule, expect compliance. 'Always use active voice.' 'Never exceed 200 words.' 'List exactly five options.' This approach works for trivial tasks. But the moment your work involves genuine complexity, competing stakeholders, ethical gray areas, or real-world tradeoffs, rigid rules produce brittle, unhelpful outputs. The skill of applying contextual judgment is the practice of structuring your interactions with Claude so that its constitutional training in contextual moral reasoning actually activates. [Claude's Constitution](https://tryhamster.com/methods/claude-s-constitution) was deliberately designed to cultivate good judgment rather than mechanical rule-following. When you provide the right kind of context, Claude can weigh competing values, identify when a general principle needs to bend for a specific situation, and surface tradeoffs you may not have considered.
+Claude constitutional reasoning is the way Claude is meant to decide what to do when a request is ambiguous, when goals conflict, or when no instruction covers the case. Anthropic's [constitution](https://www.anthropic.com/constitution) describes two broad ways to guide a model: clear rules and decision procedures, or good judgment and sound values applied in context. It says Anthropic generally favors the second and wants Claude to understand its situation well enough that it "could construct any rules we might come up with itself." This skill turns that design choice into a workflow habit: give Claude the context a thoughtful professional would need, and it can apply judgment where a rule list would break.
 
-The concrete artifact this skill produces is a "context-rich prompt framework" for any recurring workflow where judgment matters. Instead of a flat list of instructions, you end up with a structured prompt that includes the situation, the stakeholders affected, the constraints in tension, and the values at stake. The result is Claude outputs that read like the advice of a thoughtful colleague rather than the output of a checklist engine. This applies to content strategy decisions, code review prioritization, policy drafting, customer communication, editorial judgment, and any domain where "it depends" is the honest answer to most questions.
+The practical case is simple. Rule lists fail at the edges. A content brief that says "always include three competitor comparisons" produces a strange article when the topic has one real competitor. A support prompt that says "never discuss pricing" fails the customer asking where to find the pricing page. The constitution makes the same argument about its own design, noting that rules "often fail to anticipate every situation and can lead to poor outcomes when followed rigidly in circumstances where they don't actually serve their goal."
 
-This skill sits at the center of the constitutional workflow. Before you get here, you should have a working understanding of how to [craft prompts aligned with constitutional values](https://tryhamster.com/skills/crafting-claude-ai-prompts-with-constitutional-values). After mastering contextual judgment, you can move to [evaluating Claude outputs against constitutional principles](https://tryhamster.com/skills/evaluating-claude-outputs-against-constitutional-principles) with much sharper criteria, because you will understand what kind of reasoning you are evaluating for. The difference between a mediocre Claude workflow and an excellent one almost always comes down to whether the operator provided enough situational context for Claude's judgment to engage, or whether they starved it of context and got generic output in return.
+Contextual judgment is not a license to drop structure. The constitution keeps a short list of hard constraints and says rules make the most sense when errors are costly, when judgment may not be robust, or when firm commitments are needed to resist manipulation. Your workflows should follow the same split: a few explicit, explained rules for the cases where predictability matters most, and rich context everywhere else.
+
+Anthropic's own [prompting guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) arrives at the same place from the engineering side. It advises treating Claude like a brilliant new employee who lacks context on your norms, and says explaining the motivation behind an instruction helps Claude deliver more targeted responses. Its example: rather than "never use ellipses," say the output will be read by a text-to-speech engine that cannot pronounce them. Claude can then generalize from the reason.
+
+The skill applies to any Claude AI workflow where the right answer depends on context: content briefs, editorial review, customer replies, research summaries and agentic tasks. For background on the document itself, see the [parent method](../../methods/claude-s-constitution/METHOD.md).
 
 ## How It Works
 
-Claude's constitutional training doesn't work like a rule engine. Traditional AI safety approaches involve hard-coded rules: "never generate content about X," "always include disclaimer Y." [Claude's Constitution](https://tryhamster.com/methods/claude-s-constitution) took a fundamentally different approach. It trained Claude to internalize high-level values and then apply those values to novel situations using contextual reasoning. The analogy is the difference between a new employee who follows a 400-page policy manual word-by-word and a seasoned professional who understands the principles behind the policies and can navigate situations the manual never anticipated.
+The constitution gives Claude a structured way to think about what a person needs. It names five things to attend to: immediate desires, final goals, background desiderata, autonomy and wellbeing ([constitution](https://www.anthropic.com/constitution)). Immediate desires are what was literally asked, read "neither too literally nor too liberally." Final goals are the deeper purpose, such as wanting the whole program to work when asking for one bug fix. Background desiderata are unstated standards, such as staying in the same programming language. Autonomy means respecting the person's right to decide, even after voicing a concern. A workflow that states these explicitly gives Claude much less to guess.
 
-When you provide Claude with a rigid rule and nothing else, you are asking it to operate in "manual mode." It will comply, but it cannot exercise judgment because you have given it nothing to judge. When you provide rich situational context, you activate the contextual reasoning that Claude's training was designed to support. The model evaluates the specific circumstances: who benefits, who might be harmed, what constraints are in tension, what information is uncertain, and what outcomes matter most. This is not anthropomorphism. It is a description of what the training process optimized for.
+Second, the constitution treats instructions from operators, the people who write system prompts, like instructions from a relatively trusted employer. Claude should follow an unexplained instruction when there is plausibly a legitimate business reason for it. Its example is an airline assistant told not to discuss weather: out of context this looks like withholding information, but a new employee would guess the aim is to avoid seeming to predict flight delays. You get more consistent behavior if you state the reason anyway, because Claude then knows how far the instruction extends.
 
-The mental model that makes this skill work is "values plus situation equals judgment." Values alone are too abstract to act on. ('Be helpful' does not tell you whether to prioritize speed or thoroughness for a specific request.) Situation alone is just raw data with no direction. But when you supply both, Claude can reason about what the right output looks like for this particular case. The key insight is that you, the operator, control the "situation" input. The quality of Claude's contextual judgment is directly proportional to the quality of the context you provide.
+Third, the constitution asks Claude to resolve ambiguity by finding the most plausible interpretation, and to ask for clarification "in cases of genuine ambiguity." It also warns against checking in more than necessary on simple agentic tasks. Your workflow should tell Claude which of the two you prefer for this task and what to do when it has to choose.
 
-This has practical implications for prompt design. Instead of writing "write a professional email," you describe the relationship between sender and recipient, the history of the conversation, the outcome you need, and the risks of getting the tone wrong. Instead of "generate five marketing headlines," you describe the audience segment, the stage of awareness, the brand voice constraints, and the competitive positioning you are trying to achieve. Each additional layer of genuine context gives Claude more material to reason with, and the outputs become correspondingly more nuanced.
+Fourth, the document suggests thinking about responses as policies. It proposes imagining the same message sent by many different people with different intentions, and asking what response works best across all of them ([constitution](https://www.anthropic.com/constitution)). This is a useful lens for any prompt template that will run many times: write the template for the whole range of inputs it will see, not only the example you tested.
 
-There is an important boundary to understand. Contextual judgment does not mean Claude will do anything you ask if you provide enough justification. The constitutional values act as anchors. Claude will weigh your context against those values and may push back, suggest alternatives, or flag concerns. This is a feature, not a limitation. When Claude raises a concern you had not considered, that is the contextual judgment system working correctly. Treating those moments as useful signal rather than obstacles is part of mastering this skill.
+Finally, the constitution describes how Claude should act when something looks wrong mid-task. It asks Claude to keep "a strong prior towards conventional, expected behavior and cooperation with its principal hierarchy" and to prefer raising concerns, asking for clarification or declining over dramatic unilateral action. It adds that concerns are best raised before starting a task, much as a surgeon should decline an operation rather than stop partway. Workflows that give Claude an explicit way to raise concerns early get those concerns at the moment they are cheapest to act on.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Identify where your workflow requires judgment, not just execution
+### Step 1: Map where Claude constitutional reasoning applies
 
-Before touching a prompt, audit your current workflow for the specific moments where a rigid instruction fails. These are the points where the right answer depends on context: the audience's sophistication, the stakes of the decision, the relationship between parties, or the presence of competing goals. Open your most recent 5-10 Claude interactions and look for places where the output was technically correct but missed the point, felt generic, or required extensive manual revision. Write down each instance and note what contextual information would have changed the output.
+List the decisions inside your workflow and mark each one as mechanical or judgment-based. Mechanical steps have one correct output given the input, such as extracting a title tag. Judgment steps weigh competing goods, such as deciding how candid a comparison page should be about your product's gaps. Put your effort into the judgment steps. Mechanical steps can keep tight instructions or move to a script.
 
-This inventory becomes your target list for applying contextual judgment. You are not trying to change every prompt. You are identifying the high-value points where judgment matters most.
+### Step 2: State the goal behind each request
 
-> **Pro tip:** A useful heuristic: if you find yourself adding "but not too formal" or "make it sound more natural" in follow-up messages, that is a judgment point. The initial prompt lacked the context Claude needed to calibrate tone on the first pass.
+For every judgment step, write the final goal in one or two sentences, not only the deliverable. "Draft a comparison page" becomes "help evaluators who already know our competitor decide whether we fit their use case, so fewer poor-fit trials start." Add the audience and what they already know. Claude uses this to fill gaps your instructions do not cover. Without it, Claude has to infer the goal from the deliverable alone.
 
-### Step 2: Step 2: Map the stakeholders and their competing interests for each judgment point
+### Step 3: Explain the reason for every constraint
 
-For each judgment point you identified, write down who is affected by the output and what each party cares about. A marketing email affects the brand (reputation), the recipient (time and trust), the sales team (pipeline quality), and potentially regulators (compliance). A code review comment affects the author (learning, morale), the team (code quality standards), the project (timeline), and future maintainers (clarity). Document 2-4 stakeholders per judgment point with one sentence about what each cares about most.
+Go through the existing constraints and attach a reason to each one. "Keep it under a page" becomes "keep it under a page because it will be pasted into a sales email." A reason tells Claude how strict to be and when an exception makes sense, the same way the [prompting guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) describes. Delete any constraint whose reason nobody can state. Keep the few true bright lines, write them plainly, and explain those too.
 
-This stakeholder map is the raw material you will feed into your prompts. Claude's contextual reasoning performs best when it can see the humans involved and the values in tension, not just the task in isolation.
+### Step 4: Name the tensions and your priorities
 
-> **Pro tip:** Do not skip stakeholders you consider secondary. Claude's contextual reasoning often produces its most valuable output when it surfaces a consideration you had deprioritized. Listing a stakeholder does not mean their interests always win. It means Claude can weigh them.
+Where two goals pull against each other, say so in the prompt and say which wins by default. For example, "honesty about our limits matters more than conversion on this page; if a claim cannot be supported, leave it out and tell me." Naming the conflict lets Claude reason about it openly instead of silently choosing one side. The constitution uses the same structure for its own values, with a default order that is weighed holistically.
 
-### Step 3: Step 3: Articulate the constraints that are genuinely in tension
+### Step 5: Tell Claude how to handle ambiguity
 
-Constraints in tension are the heart of contextual judgment. "Be thorough AND be brief." "Be honest AND be diplomatic." "Move fast AND ensure quality." For each judgment point, write down the 2-3 constraints that pull in different directions. Be specific: not "be good" but "the client expects a complete deliverable by Friday, but the data quality issues mean a complete deliverable will contain inaccuracies we cannot verify in time." When you present these tensions explicitly in your prompt, Claude can reason about how to balance them rather than arbitrarily picking one. The output shifts from a single rigid approach to a nuanced response that acknowledges the tradeoff and proposes a path through it.
+Decide whether this workflow should ask questions or proceed on a stated assumption, and write that down. Interactive tasks usually benefit from one clarifying question when the request is genuinely ambiguous. Unattended pipelines should proceed on the most plausible reading and record the assumption in the output. Either way, ask Claude to raise concerns before it starts, since that is when a change of plan costs least.
 
-> **Pro tip:** If you cannot find constraints in tension, the task probably does not need contextual judgment. Use a straightforward prompt instead. Forcing artificial complexity into simple tasks wastes tokens and muddies the output.
+### Step 6: Read pushback as information
 
-### Step 4: Step 4: Construct context-rich prompts using the Situation-Stakes-Tension format
+When Claude questions an instruction or declines part of a task, read its reasoning before changing anything. The constitution asks Claude to be a "transparent conscientious objector," so a decline should come with an explanation or at least a clear statement of what it will not do. If the reasoning rests on a misreading, add the missing context to the prompt. If it names a real problem, fix the workflow.
 
-Now assemble your stakeholder map and constraint tensions into a structured prompt. Use this format: open with the Situation (2-3 sentences describing the specific circumstances, not the generic task category), then the Stakes (who is affected and what they care about), then the Tension (which constraints are pulling in different directions), and finally the Ask (what you need Claude to produce, with explicit permission to navigate the tensions rather than ignore them). For example, instead of 'Write an email declining a client request,' you would write: 'Situation: Our agency has worked with Meridian Corp for 18 months. They are requesting a full brand audit within a 2-week timeline, but our team is at capacity through Q1.
+### Step 7: Test the template across its range of inputs
 
-Stakes: The client relationship is strong but they have been increasing demands. Our team is already showing signs of burnout. Losing this client would affect 15% of revenue. Tension: We need to protect the relationship without overcommitting the team.
-
-' This format gives Claude everything it needs to exercise judgment about tone, specificity, and emphasis.
-
-> **Pro tip:** Include what you have already tried or considered, if applicable. 'We considered proposing a phased approach but are unsure if that reads as a real alternative or a polite rejection' gives Claude a concrete judgment call to address.
-
-### Step 5: Step 5: Explicitly invite Claude to reason about tradeoffs rather than just execute
-
-Add a sentence to your prompt that explicitly invites Claude to surface its reasoning about the tradeoffs involved. ' This matters because Claude's default behavior is to comply with instructions. Without an explicit invitation to reason, it will pick a direction and execute without explaining why. When you invite reasoning, you get a window into how Claude is interpreting your context, which lets you course-correct before the full output is generated.
-
-You may discover that Claude identified a stakeholder concern you overlooked or weighted a constraint differently than you would. This reasoning step is not overhead. It is where the highest-value insight comes from.
-
-> **Pro tip:** If you are building a reusable system prompt for a recurring workflow, embed this reasoning invitation into the system prompt itself: 'For any request involving competing priorities, surface the tradeoffs you see before generating the primary output.' This ensures judgment happens automatically every time.
-
-### Step 6: Step 6: Evaluate the output on judgment quality, not just task completion
-
-When you review Claude's output, evaluate it on a different axis than you would for a simple task. Ask: Did the output acknowledge the real complexity of the situation, or did it flatten everything into a generic response? Did it calibrate tone and emphasis based on the stakeholder map you provided, or did it default to a one-size-fits-all approach? Did it handle the constraint tension gracefully, or did it just pick one constraint and ignore the other?
-
-Create a simple rubric with three criteria: contextual calibration (did the output reflect the specific situation, not a generic template), tradeoff handling (did the output balance competing constraints rather than ignoring some), and edge case awareness (did the output flag anything you did not consider). Score each on a 1-3 scale. If your total is 5 or below, your context input needs enrichment. If it is 7 or above, you have a working contextual judgment prompt.
-
-> **Pro tip:** Keep a log of your rubric scores across iterations. You will start to see patterns in which types of context input produce the highest judgment quality and which types Claude struggles with. This log becomes your personal calibration guide.
-
-### Step 7: Step 7: Iterate on context depth, not instruction specificity
-
-When the output falls short, resist the instinct to add more rules. Instead, add more context. ' Each iteration should enrich the situation description rather than extend the instruction list. After 2-3 rounds of context enrichment, you will typically arrive at a prompt that produces outputs requiring minimal revision.
-
-Document the final version as your template for this judgment point.
-
-> **Pro tip:** A useful test: if you could hand your prompt to a thoughtful human colleague and they would produce a good result without asking clarifying questions, your context is sufficient. If they would need to ask questions, those unanswered questions are exactly the context Claude is also missing.
-
-### Step 8: Step 8: Build a context library for recurring judgment scenarios
-
-Once you have iterated your way to effective prompts for several judgment points, extract the reusable context patterns into a library. Group them by scenario type: client communication (relationship history, power dynamics, communication preferences), content strategy (audience segment, awareness stage, competitive positioning, brand voice), code review (team experience level, project timeline pressure, technical debt tolerance), hiring decisions (role seniority, team composition, culture priorities). Each library entry should contain the stakeholder map template, the common constraint tensions, and 2-3 examples of context descriptions at the right depth. This library accelerates future work because you no longer start from scratch.
-
-You pull the relevant context template, fill in the specifics of the current situation, and produce a judgment-quality prompt in minutes rather than going through the full iteration cycle.
-
-> **Pro tip:** Store your context library in the same format you use for system prompts, whether that is a markdown file, a Notion database, or a prompt management tool. The goal is to make it trivially easy to paste the right context block into a new conversation.
+Run the prompt on the easy case, the edge cases and the cases most likely to be misread. Include inputs where the right answer is to refuse, to ask a question, or to say "I don't know." Compare outputs against the goal you wrote in Step 2, since many different texts can meet it. Revise the context, then rerun the whole set so a fix for one case does not break another.
 
 ## Best Practices
 
-- Provide real relationship history and power dynamics in any prompt involving interpersonal communication. Claude's contextual reasoning uses these signals to calibrate tone, directness, and formality. Without them, every email sounds like it was written to a stranger, because from Claude's perspective, it was.
-- State your uncertainty explicitly when you are unsure about the right approach. Saying 'I am not sure whether to prioritize speed or thoroughness here, and I want you to help me think through which matters more in this case' produces better judgment than pretending you have already decided. Claude's reasoning works best when given the honest shape of the problem, including the parts you have not figured out yet.
-- Use the constraint tension as a prompt design diagnostic. If you cannot articulate two constraints that are pulling in different directions, the task is probably straightforward enough for a simple instruction. Save contextual judgment prompts for situations where the right answer genuinely depends on weighing competing factors. Overusing this technique on simple tasks adds noise without value.
-- Revisit and update your context library every quarter. Relationships change, team dynamics shift, and organizational priorities evolve. A context block that described your client relationship accurately six months ago may now be misleading. Stale context is worse than no context because it directs Claude's judgment toward a situation that no longer exists.
-- When Claude pushes back on a request or flags a concern, treat it as signal rather than friction. Claude's constitutional training means it will sometimes surface tensions you did not include in your prompt. These moments are often the most valuable part of the interaction. Document the concern, evaluate whether it changes your approach, and update your context template if it revealed a blind spot.
-- Keep your situation descriptions factual and specific rather than evaluative. 'The client has missed three deadlines and communication has slowed to one email per week' gives Claude better material for judgment than 'The client is difficult and unresponsive.' Factual descriptions let Claude form its own assessment. Evaluative labels short-circuit that reasoning.
-- Separate the reasoning request from the execution request in your prompt structure. Ask Claude to outline its reasoning about the tradeoffs first, review that reasoning, and then ask for the final output. This two-step approach catches misalignments in how Claude interpreted your context before it produces a full deliverable you then have to discard.
+- Write context the way you would brief a capable colleague on their first day. The [prompting guide](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) suggests showing the prompt to someone with little background: if they would be confused, Claude will be too.
+- Keep hard rules few and explained. The constitution's own hard constraints are a short list with reasons given, and everything else is left to judgment. A long list of unexplained rules is harder for Claude to apply and harder for your team to maintain.
+- Put business reasons in the system prompt, since operators are the principals whose instructions Claude treats like an employer's. A stated reason tells Claude how far the instruction reaches and when it does not apply.
+- Ask for reasoning when the stakes are high. A short explanation of which tradeoff Claude made and why lets a reviewer check the judgment, not only the output.
+- Keep a record of the judgment calls that went wrong and the context that fixed them. Over time this record becomes the most useful part of your prompt library.
+- Enforce anything that truly must never happen outside the model, with permissions, validation or human approval. Context guides judgment; controls guarantee limits.
 
 ## Common Mistakes
 
-- **Providing more rules instead of more context when the output is not right** — This is the most common failure pattern. ' These are instructions, not context. They tell Claude what to do but not why or for whom. The signal that you have fallen into this trap is a prompt that has grown to 15+ instruction lines but still produces unsatisfying output.
-
-The fix is to delete the instruction pile and replace it with 2-3 sentences of situational context: who will read this, what they already know, what outcome matters, and what constraints are in play. One paragraph of good context outperforms twenty lines of instructions.
-- **Treating Claude's pushback as a malfunction rather than useful judgment** — When Claude raises a concern, qualifies a recommendation, or suggests an alternative approach, some operators interpret this as the model being 'difficult' or 'too cautious' and rephrase their prompt to force compliance. This strips away the contextual judgment you are trying to leverage. Claude's constitutional training means it will weigh ethical and practical considerations that may not be in your prompt. ' Instead, read the pushback carefully.
-
-If Claude is wrong, add context that addresses the concern. If Claude is right, update your approach. The pushback is the judgment system working.
-- **Providing context that is too abstract or philosophical rather than situationally specific** — Writing 'we value transparency and customer trust' in a prompt feels like useful context, but it is too abstract for Claude to act on. Every company claims to value transparency. The question is what transparency looks like in this specific situation. The signal is Claude producing outputs that reference your stated values in a general way without actually changing the substance of the output.
-
-' Specific behavioral examples give Claude anchors for judgment that abstract value statements cannot.
-- **Using contextual judgment prompts for tasks that are actually straightforward** — Not every task benefits from rich context. Formatting a CSV, translating a phrase, summarizing a document, or generating boilerplate code are execution tasks where a clear instruction is faster and more reliable than a contextual judgment prompt. The signal is spending 10 minutes crafting a nuanced context block for a task that a simple 'convert this JSON to a markdown table' would handle in seconds. Reserve contextual judgment for tasks where the right answer genuinely depends on situational factors.
-
-If there is only one reasonable output regardless of context, skip the context.
-- **Providing conflicting context without acknowledging the conflict** — Sometimes your stakeholder map contains genuine contradictions: the client wants speed, your team needs time, and the budget supports neither. If you present these as parallel facts without flagging the tension, Claude may arbitrarily resolve the conflict in a direction you did not intend, or produce an output that tries to satisfy everyone and satisfies no one. The signal is Claude producing outputs that feel evasive or overly hedged. The fix is to explicitly name the conflict: 'These priorities are in tension.
-
-The client timeline and team capacity do not align. ' Naming the conflict gives Claude permission to make a judgment call rather than trying to paper over the contradiction.
-- **Never closing the loop by telling Claude how its judgment landed in the real world** — In multi-turn workflows, many operators take Claude's output, use it in the real world, and then start a fresh conversation for the next task. This wastes the opportunity for Claude to refine its contextual reasoning based on outcomes. The signal is that your prompts stay the same quality over weeks despite frequent use. In ongoing conversations or projects, circle back: 'The email you drafted landed well, but the client pushed back on the timeline portion, saying it felt dismissive.
-
-' This feedback updates the context and improves future judgment within the same conversation thread.
+- **Answering a bad output with another rule**: Adding "never do X" after each failure produces a brittle prompt that fails on the next unexpected case. Ask what context was missing that would have let Claude see X was wrong, and add that instead.
+- **Writing reasons nobody checked**: A reason that is wrong steers Claude confidently in the wrong direction. Confirm the business reason with whoever owns it before it goes into a shared template.
+- **Treating every step as a judgment call**: Deterministic tasks such as extracting fields or formatting data do not benefit from open-ended context. Give them tight instructions or a script and save judgment for steps that need it.
+- **Overriding pushback without reading it**: A reflexive "just do it" discards information Claude found, such as an unsupported claim or a conflicting instruction. Read the objection first; it is often right.
+- **Expecting judgment to replace controls**: The constitution itself says Claude is not the only safeguard against misuse and that training is imperfect. Keep approvals and checks on anything with real consequences.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/claude-s-constitution/METHOD.md) — Claude’s Constitution
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/claude-s-constitution/METHOD.md): Claude's Constitution
 
 ## Related Skills
 
-- [Automating SEO Tasks Using Claude's Reasoning Principles](../automating-seo-tasks-using-claudes-reasoning-principles/SKILL.md)
-- [Crafting Claude AI Prompts Aligned with Constitutional Values](../crafting-claude-ai-prompts-with-constitutional-values/SKILL.md)
-- [Building Topic Clusters with Claude's Constitutional Alignment](../building-topic-clusters-with-claude-constitutional-alignment/SKILL.md)
-- [Evaluating Claude Outputs Against Constitutional Principles](../evaluating-claude-outputs-against-constitutional-principles/SKILL.md)
-- [Generating Long-Tail Keywords with Claude's Value Framework](../generating-long-tail-keywords-with-claudes-value-framework/SKILL.md)
-- [Using Claude Code for SEO with Constitutional Guardrails](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
+- [Claude AI Prompts Built on Constitutional Values](../crafting-claude-ai-prompts-with-constitutional-values/SKILL.md)
+- [Claude Content Optimizer: Evaluate Against the Constitution](../evaluating-claude-outputs-against-constitutional-principles/SKILL.md)
+- [Claude Code Constitutional Guardrails for SEO](../using-claude-code-for-seo-with-constitutional-guardrails/SKILL.md)
+
+## Sources
+
+- [Anthropic: Claude's Constitution](https://www.anthropic.com/constitution)
+- [Claude docs: Prompting best practices](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices)
