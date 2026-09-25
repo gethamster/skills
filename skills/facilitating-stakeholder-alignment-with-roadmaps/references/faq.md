@@ -10,7 +10,7 @@ For roadmap decisions, Pichler suggests consent: nobody has a meaningful objecti
 
 ## What if agreement cannot be reached?
 
-The person in charge of the product makes the final decision and explains it. Pichler describes this role as first among equals: empowered to decide when no agreement can be reached. Collaborative goal-setting does not mean everyone gets their way.
+The person in charge of the product makes the final decision and explains it. Pichler describes this role as [first among equals](https://www.romanpichler.com/blog/self-managing-product-teams/): empowered to decide when no agreement can be reached. Collaborative goal-setting does not mean everyone gets their way.
 
 ## Why use a separate facilitator?
 

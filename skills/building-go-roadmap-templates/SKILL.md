@@ -80,7 +80,7 @@ Build the external view from the master rather than as a separate file. In the e
 
 ### Step 6: Add attribution and a version line
 
-The template is published under a Creative Commons Attribution-ShareAlike licence, and Pichler asks people who adapt it to state the author, the source, and the licence ([The GO Portfolio Roadmap](https://www.romanpichler.com/blog/the-go-portfolio-roadmap/)). Add a small footer with that information. Add a version line or last-updated date as well, so readers know whether they are looking at the current plan.
+The template is published under a Creative Commons Attribution-ShareAlike 4.0 licence ([GO Product Roadmap checklist](https://www.romanpichler.com/downloads/tools/GO-Product-Roadmap-with-Checklist.pdf)), and Pichler asks people who adapt it to state the author, the source, and the licence ([The GO Portfolio Roadmap](https://www.romanpichler.com/blog/the-go-portfolio-roadmap/)). Add a small footer with that information. Add a version line or last-updated date as well, so readers know whether they are looking at the current plan.
 
 ### Step 7: Fill one column as a worked example
 
