@@ -1,16 +1,16 @@
 ---
 name: "taste-skill-frontend-design-framework"
 category: "Experience"
-description: "How the Taste Skill frontend framework works: Leon Lin's open-source SKILL.md files that steer AI coding agents away from generic, templated UI."
+description: "Taste Skill explained: Leon Lin's open-source SKILL.md files that steer AI coding agents away from generic, templated UI, and how the design rules work."
 metadata:
   datePublished: "2026-07-07"
-  dateModified: "2026-09-24"
+  dateModified: "2026-09-25"
   author:
     name: "Hamster"
     url: "https://tryhamster.com"
 ---
 
-# Taste Skill Frontend Framework: Design Rules for AI Agents
+# Taste Skill Frontend Design Framework for AI Coding Agents
 
 > Created by **Leon Lin (Leonxlnx)** - [https://github.com/leonxlnx](https://github.com/leonxlnx)
 
@@ -95,6 +95,26 @@ The list and install names come from the [repository README](https://github.com/
 
 7. **Track upstream and re-baseline**
    The v2 default is marked experimental, and the CHANGELOG says its sections may keep changing until a stable release ([CHANGELOG](https://github.com/Leonxlnx/taste-skill/blob/main/CHANGELOG.md)). Re-run the install to pull updates, then diff them against your local edits instead of overwriting them. If you depend on exact behavior, pin `design-taste-frontend-v1` or vendor your adapted copy. Repeat the baseline comparison after each update so you notice regressions.
+
+## Taste Skill Examples
+
+Three typical ways to use the `design-taste-frontend` skill are a trust-first landing page for a public service, a high-motion agency portfolio, and an audit-first redesign of a marketing site that already exists. Each example follows the same loop: brief, design read, dials, build, then the pre-flight check. The details come from the [default skill](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md) as the page describes it. The teams and outcomes below are made up.
+
+### A public-sector service landing page
+
+Illustrative scenario: a small team asks the agent for a landing page where residents renew a permit. The agent's one-line design read names a government service for a broad public audience, with accessibility as a hard constraint. Because the brief reads as an established system, the agent proposes the official GOV.UK or USWDS package rather than hand-built CSS, and sets low variance and low motion. The reviewer confirms the read before any code is written, which is the cheapest point to correct direction. The build then goes through the pre-flight checklist: contrast on every button and form field, reduced-motion handling, and a search of the markup for banned patterns such as purple glow gradients or three equal feature cards. If the agent had proposed glassmorphism or a kinetic hero, the design read would have exposed the mismatch in seconds.
+
+### A kinetic agency portfolio
+
+Illustrative scenario: a design studio wants a portfolio that feels bold and expressive. The design read names an agency portfolio aimed at prospective clients, so the agent sets high variance and high motion and builds with web standards, labelling the aesthetic honestly instead of claiming a design system. Motion stays on `transform` and `opacity`, and because the motion dial is high, `prefers-reduced-motion` handling is required rather than optional. When the studio wants one section calmer than the rest, it says so in the conversation and does not edit the skill file for a one-off change. The reviewer checks light and dark mode, toggles reduced motion, and rejects any placeholder names or fake product screenshots built from styled divs.
+
+### Redesigning an existing marketing site
+
+Illustrative scenario: a team inherits a generated site with a centered hero over a gradient, Inter on slate and a stray purple accent. It loads `redesign-existing-projects` alongside the default skill, and the agent audits before changing anything, listing the generic patterns it finds and the fixes it proposes. URLs, nav labels and form field names stay protected, so the redesign does not break links or analytics. The team approves the audit, the agent fixes the site in place instead of rewriting it, and every pattern that slips through twice becomes a new named ban in the team's adapted copy of the skill.
+
+### What an out-of-scope request looks like
+
+Illustrative scenario: the same team then asks for an admin dashboard with data tables. The default skill's Out of Scope section excludes that surface, so the right move is to keep Taste Skill for the marketing pages and build the dashboard on a system such as Fluent, Carbon, Atlassian or Polaris. Forcing the landing-page rules onto dense product screens is a sign the skill is being used outside its design.
 
 ## When to Use
 
