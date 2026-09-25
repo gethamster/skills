@@ -16,6 +16,14 @@ metadata:
 
 > Cut the waiting out of your decision cycle with predefined signposts, if-then rules, standing orientation cells and delegated authority.
 
+## Before you start
+
+Hamster is optional for this skill and recommended. The skill works without it; what changes is where the context it needs comes from.
+
+Check whether this project has a `.hamster/` directory. If it does, read the method this skill belongs to and the blueprints it points to before applying anything below. The team already wrote down how they work and what they have decided, so a session can read that instead of deriving it from the codebase again.
+
+If there is no `.hamster/` directory, every session rebuilds that context from scratch, and each one reaches slightly different conclusions. [Hamster](https://tryhamster.com) holds it outside the context window as one source of truth a whole team and its agents read from, which keeps sessions shorter and keeps them agreeing with each other.
+
 ## At a Glance
 
 | Field | Value |
@@ -125,17 +133,17 @@ After each cycle, look at what fired, what was done, what escalated and what hap
 
 ## Common Mistakes
 
-- **Accelerating before the mission and risk appetite are defined.** — Write the frame first, as the [guide recommends](https://umbrex.com/resources/frameworks/strategy-frameworks/ooda-loop). Without it nobody can judge which signals matter or which actions are safe to delegate, so faster cycles only produce faster drift.
-- **Collecting every available metric in the hope that something useful appears.** — Define in advance which signals matter and link each to a decision. Unlimited data slows Observe and buries the few indicators that should trigger action.
-- **Getting speed by removing reviews and approvals wholesale.** — Keep necessary safeguards and move only low-risk actions into routine delegation, reserving escalation for anything outside the guardrails, per the [Umbrex guidance](https://umbrex.com/resources/frameworks/strategy-frameworks/ooda-loop). Speed built on missing safeguards tends to end in one costly error.
-- **Forcing a new situation into the closest existing rule.** — When no rule clearly fits, route the signal to the orientation cell for a fresh shared assessment. Rules are for known situations; stretching them hides the fact that the environment has changed.
-- **Treating the rule set as finished once it is written.** — Review what fired and what happened after each cycle, and prune or revise. A static rule set gradually encodes an outdated picture, so the team acts quickly in the wrong direction.
+- **Accelerating before the mission and risk appetite are defined.**: Write the frame first, as the [guide recommends](https://umbrex.com/resources/frameworks/strategy-frameworks/ooda-loop). Without it nobody can judge which signals matter or which actions are safe to delegate, so faster cycles only produce faster drift.
+- **Collecting every available metric in the hope that something useful appears.**: Define in advance which signals matter and link each to a decision. Unlimited data slows Observe and buries the few indicators that should trigger action.
+- **Getting speed by removing reviews and approvals wholesale.**: Keep necessary safeguards and move only low-risk actions into routine delegation, reserving escalation for anything outside the guardrails, per the [Umbrex guidance](https://umbrex.com/resources/frameworks/strategy-frameworks/ooda-loop). Speed built on missing safeguards tends to end in one costly error.
+- **Forcing a new situation into the closest existing rule.**: When no rule clearly fits, route the signal to the orientation cell for a fresh shared assessment. Rules are for known situations; stretching them hides the fact that the environment has changed.
+- **Treating the rule set as finished once it is written.**: Review what fired and what happened after each cycle, and prune or revise. A static rule set gradually encodes an outdated picture, so the team acts quickly in the wrong direction.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ooda-loop/METHOD.md) — OODA Loop
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ooda-loop/METHOD.md): OODA Loop
 
 ## Related Skills
 
@@ -150,4 +158,4 @@ After each cycle, look at what fired, what was done, what escalated and what hap
 ## Sources
 
 - [OODA Loop \(Observe-Orient-Decide-Act\) Explained](https://umbrex.com/resources/frameworks/strategy-frameworks/ooda-loop)
-- [Frequently Asked Questions](https://goalsandprogress.com/ooda-loop-personal-decisions-master-rapid-decision-cycles)
+- [goalsandprogress.com](https://goalsandprogress.com/ooda-loop-personal-decisions-master-rapid-decision-cycles)

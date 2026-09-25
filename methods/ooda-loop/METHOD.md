@@ -13,7 +13,7 @@ metadata:
 
 # What Is the OODA Loop? Observe, Orient, Decide, Act
 
-> Created by **John Boyd**
+> Created by **John Boyd** - [https://coljohnboyd.com](https://coljohnboyd.com)
 
 ## Overview
 
@@ -113,14 +113,14 @@ OODA was derived from [air-to-air combat](https://tandfonline.com/doi/full/10.10
 
 This method includes the following skills:
 
-- [Detecting and Correcting Cognitive Biases in Orientation](skills/detecting-and-correcting-orientation-biases/SKILL.md) — How to identify confirmation bias, anchoring, and other cognitive traps that distort the Orient phase and lead to flawed decisions.
-- [Scanning the Environment for Relevant Signals](skills/scanning-environment-for-signals/SKILL.md) — How to systematically gather raw information from your competitive environment, filtering noise from meaningful data during the Observe phase.
-- [Accelerating Decision Tempo Under Uncertainty](skills/accelerating-decision-tempo/SKILL.md) — Techniques for making faster, higher-quality decisions by reducing analysis paralysis and leveraging pattern recognition in the Decide phase.
-- [Building Mental Models for Rapid Orientation](skills/building-orientation-mental-models/SKILL.md) — How to synthesize observations using cultural traditions, previous experience, genetic heritage, and new information to form accurate situational awareness in the Orient phase.
-- [Shortening Feedback Loop Cycles for Competitive Advantage](skills/shortening-feedback-loop-cycles/SKILL.md) — How to compress the time between each OODA iteration so you can adapt faster than competitors or adversaries.
-- [Executing Actions with Implicit Guidance and Control](skills/executing-with-implicit-guidance/SKILL.md) — How to move from decision to swift, coordinated action while maintaining flexibility to feed results back into the next observation cycle.
-- [Applying the OODA Loop to Business and Product Strategy](skills/applying-ooda-to-business-strategy/SKILL.md) — How to translate the military-origin OODA framework into practical business contexts like product development, marketing pivots, and startup iteration.
-- [Disrupting an Opponent's Decision Cycle](skills/disrupting-opponent-ooda-loops/SKILL.md) — Strategies for creating ambiguity, surprise, and tempo changes that force adversaries into slower or broken decision loops.
+- [Detecting and Correcting Cognitive Biases in Orientation](../../skills/detecting-and-correcting-orientation-biases/SKILL.md): How to identify confirmation bias, anchoring, and other cognitive traps that distort the Orient phase and lead to flawed decisions.
+- [Scanning the Environment for Relevant Signals](../../skills/scanning-environment-for-signals/SKILL.md): How to systematically gather raw information from your competitive environment, filtering noise from meaningful data during the Observe phase.
+- [Accelerating Decision Tempo Under Uncertainty](../../skills/accelerating-decision-tempo/SKILL.md): Techniques for making faster, higher-quality decisions by reducing analysis paralysis and leveraging pattern recognition in the Decide phase.
+- [Building Mental Models for Rapid Orientation](../../skills/building-orientation-mental-models/SKILL.md): How to synthesize observations using cultural traditions, previous experience, genetic heritage, and new information to form accurate situational awareness in the Orient phase.
+- [Shortening Feedback Loop Cycles for Competitive Advantage](../../skills/shortening-feedback-loop-cycles/SKILL.md): How to compress the time between each OODA iteration so you can adapt faster than competitors or adversaries.
+- [Executing Actions with Implicit Guidance and Control](../../skills/executing-with-implicit-guidance/SKILL.md): How to move from decision to swift, coordinated action while maintaining flexibility to feed results back into the next observation cycle.
+- [Applying the OODA Loop to Business and Product Strategy](../../skills/applying-ooda-to-business-strategy/SKILL.md): How to translate the military-origin OODA framework into practical business contexts like product development, marketing pivots, and startup iteration.
+- [Disrupting an Opponent's Decision Cycle](../../skills/disrupting-opponent-ooda-loops/SKILL.md): Strategies for creating ambiguity, surprise, and tempo changes that force adversaries into slower or broken decision loops.
 
 ## FAQ
 
@@ -160,15 +160,15 @@ No. Diagrams often show it as observe, then orient, then decide, then act, but B
 - [John Boyd on competition and conflict](https://tandfonline.com/doi/full/10.1080/01495933.2022.2057733)
 - [The OODA Loop -- Observe, Orient, Decide, Act](https://lesswrong.com/posts/hgttKuASB55zjoCKd/the-ooda-loop-observe-orient-decide-act)
 - [Patterns of Conflict](https://ooda.de/media/john_boyd_-_patterns_of_conflict.pdf)
-- [1](https://apps.dtic.mil/sti/tr/pdf/ADA465834.pdf)
+- [apps.dtic.mil](https://apps.dtic.mil/sti/tr/pdf/ADA465834.pdf)
 - [The Dynamic OODA Loop: Amalgamating Boyd’s OODA Loop and the](https://ooda.de/media/berndt_brehmer_-_the_dynamic_ooda_loop.pdf)
 - [What is the OODA loop? \| Definition from TechTarget](https://techtarget.com/it-strategy/definition/OODA-loop)
-- [Paper Title \(use style: paper title\)](https://thinkmind.org/articles/achi_2024_3_30_20026.pdf)
-- [References](https://en.wikipedia.org/wiki/OODA_loop)
+- [thinkmind.org](https://thinkmind.org/articles/achi_2024_3_30_20026.pdf)
+- [en.wikipedia.org](https://en.wikipedia.org/wiki/OODA_loop)
 - [The OODA Loop - HiPerformance Culture](https://hiperformanceculture.com/decisions/ooda-loop/decisions-ooda-loop-guide)
 - [Shaping and Adapting - OODA-Loop](https://ooda.de/media/pj_tremblay_-_shaping_and_adapting.pdf)
 - [OODA Loop \(Observe-Orient-Decide-Act\) Explained](https://umbrex.com/resources/frameworks/strategy-frameworks/ooda-loop)
-- [Frequently Asked Questions](https://goalsandprogress.com/ooda-loop-personal-decisions-master-rapid-decision-cycles)
+- [goalsandprogress.com](https://goalsandprogress.com/ooda-loop-personal-decisions-master-rapid-decision-cycles)
 - [OODA Loop - ModelThinkers](https://modelthinkers.com/mental-model/ooda-loop)
 
 ---
