@@ -1,15 +1,20 @@
 ---
-name: drafting-frequently-asked-questions-documents
-description: "This skill teaches you to write external and internal FAQ sections that systematically stress-test every assumption in your PR/FAQ document, surfacing the hardest questions before a single line of code is written."
+name: "drafting-frequently-asked-questions-documents"
+description: "How to write the external and internal FAQs of a PR/FAQ so they test the press release against customer doubts, costs, risks and open problems."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: working-backwards
+  method: "working-backwards"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Drafting the FAQ Section of a PR/FAQ Document
+# Drafting the FAQ Section of a PR/FAQ
 
-> This skill teaches you to write external and internal FAQ sections that systematically stress-test every assumption in your PR/FAQ document, surfacing the hardest questions before a single line of code is written.
+> How to write the external and internal FAQs of a PR/FAQ so they test the press release against customer doubts, costs, risks and open problems.
 
 ## Before you start
 
@@ -24,125 +29,105 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours |
-| Outcome | You produce a complete FAQ section containing 10-25 external and 10-25 internal questions with honest, data-informed answers that expose weak assumptions, clarify scope, and give leadership the information they need to make a go/no-go decision. |
-| Prerequisites | A drafted internal press release (the PR half of the PR/FAQ), Familiarity with the Working Backwards framework and its purpose, Basic understanding of your target customer segment and their pain points, Access to stakeholders or subject-matter experts who can validate technical and business assumptions |
+| Time to Learn | A day or two for a first FAQ, longer to answer the hard questions well |
+| Outcome | You can write an FAQ that answers what customers will ask, anticipates what every department will ask, and states plainly what is still unknown. |
+| Prerequisites | A draft internal press release, access to people in finance, engineering, legal and operations |
 | Part of | [Working Backwards](../../methods/working-backwards/METHOD.md) |
 
 ## Overview
 
-The FAQ section is the most intellectually demanding part of the [Working Backwards](https://tryhamster.com/methods/working-backwards) PR/FAQ document. While the press release paints an optimistic picture of the customer experience, the FAQ section exists to dismantle that optimism methodically, question by question, until only defensible claims remain. The FAQ is where you prove you have actually thought through the hard parts: the edge cases customers will encounter, the technical constraints engineers will face, the unit economics finance will scrutinize, and the competitive responses your strategy team will worry about. Without a rigorous FAQ, even a beautifully written press release is just marketing fiction.
+The FAQ is the second and longer half of a PR/FAQ, the document at the center of the [Working Backwards method](../../methods/working-backwards/METHOD.md). The press release says what the product is and why a customer would want it. The FAQ works out what it would take to deliver that, and whether it is worth it. Colin Bryar and Bill Carr describe the split this way: the press release gives the highlights of the customer experience, and the FAQ gives the salient details plus a clear-eyed assessment of how expensive and challenging the product will be to build ([Amazon's excerpt from Working Backwards](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). They cap it at five pages or less.
 
-The FAQ section splits into two distinct halves. External FAQs adopt the voice of a skeptical customer. They ask about pricing, ease of use, data privacy, compatibility, and why this product is better than what already exists. Internal FAQs adopt the voice of a skeptical executive or cross-functional partner. They ask about development cost, timeline, required headcount, technical feasibility, cannibalization risk, regulatory exposure, and how success will be measured. Both halves require different thinking modes: empathy for the customer, rigor for the business. This dual structure is what makes the PR/FAQ uniquely powerful compared to slide decks or one-page briefs, because it forces the author to argue both sides of every important question.
+The FAQ has two sections. The external FAQ answers questions customers and the press would ask, such as how it works, what it costs, and how to get help. The internal FAQ answers questions from senior leaders and every department: finance, marketing, customer support, operations, HR and others. It also covers the hard problems that must be solved to build the product, whether technical, financial, legal or operational ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)).
 
-The concrete artifact you produce is a written document containing 20-50 questions and answers, organized into external and internal sections, with each answer grounded in data, research, or clearly labeled assumptions. This artifact becomes the centerpiece of [PR/FAQ review sessions](https://tryhamster.com/skills/running-pr-faq-review-meetings) and is refined through [multiple feedback cycles](https://tryhamster.com/skills/iterating-pr-faq-documents-through-feedback). A well-crafted FAQ section will save weeks of circular debate later, because every hard question has already been asked, answered, and pressure-tested in writing. Product managers who master this skill often report that it is also the single best preparation for product manager interview questions, because it trains you to anticipate objections, reason through tradeoffs, and communicate uncertainty with precision.
+Bryar and Carr use a metaphor for the relationship. A good press release defines a destination with a treasure, and "Think of the FAQ section as the map to that destination and a detailed description of the dragons you will need to slay along your journey." The FAQ is where an attractive idea meets its costs, and where most ideas that should stop do stop.
+
+Amazon's CTO described the same step in 2006 as adding meat to the skeleton of the press release, with questions that came up while writing it, questions other people asked when it was shared, and questions that define what the product is good for ([Werner Vogels, Working Backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html)). That is a practical way to collect questions: keep a list while you write the press release, and add every question reviewers raise.
+
+The tone matters. The authors want an FAQ that is "optimistic but also realistic," one that shows the authors are not in love with their own idea. A good FAQ includes a data-based assessment of the market, a firm grasp of what building the product requires, the risks, and the conditions under which the product would succeed or fail.
 
 ## How It Works
 
-The FAQ section works because it converts implicit assumptions into explicit, written claims that can be examined and challenged. Every product concept carries dozens of hidden assumptions: that customers will pay a certain price, that the technology can be built on schedule, that a market exists at sufficient scale, that regulatory requirements are manageable. When these assumptions stay implicit, they become invisible risks. The FAQ format forces each assumption into the open by framing it as a question a real person would ask.
+The external FAQ is a conversation with the customer in plain language. Bryar and Carr's standard external questions are short: what is the price, how does it work, how do I get help or support, and where can I buy it ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). Add the questions your specific customer would ask: whether it works with what they already use, what happens to their data, how they switch from the current solution. The answers have to be as concrete as the press release, since vague answers here usually mean the product is not yet defined.
 
-The external/internal split is not arbitrary. It reflects two fundamentally different risk categories. External questions probe product-market fit: Will customers want this? Will they understand it? Will they pay for it? Will they trust it? Internal questions probe organizational feasibility: Can we build it? Can we afford it? Does it align with strategy? What happens if it fails? These two risk categories require different evidence, different expertise, and different decision-makers. By separating them, you ensure neither category gets buried under the other.
+The internal FAQ is longer and harder. The authors' standard list works through a sequence of questions that a skeptical leader would ask:
 
-The mechanism of the FAQ is adversarial by design. You are writing the questions a hostile reviewer would ask. The best FAQ authors adopt the mindset of someone trying to kill the project, then switch to the mindset of someone defending it with evidence. This adversarial dynamic is what produces genuine intellectual honesty. If you find yourself writing softball questions with easy answers, you are doing it wrong. The questions should make you uncomfortable. The answers should require research you have not yet done, conversations you have not yet had, and decisions you have not yet made.
+- **Customer and problem**: what customers use today, what problem this solves, and in what way the product is better, cheaper or faster than the alternatives.
+- **Market**: how large the demand and the total addressable market are, how many people have the problem badly enough to pay to solve it, and how many can actually use the product.
+- **Hard problems**: the business model, engineering, legal and UI problems that must be solved, the new capabilities needed, and dependencies on partners and third-party technology.
+- **Economics**: per-unit economics, the upfront investment in people, technology and inventory, how that risk will be managed, and how long until the product is profitable.
+- **Assumptions and failure**: what must be true for the product to succeed, and the top three reasons it will not succeed.
 
-Within the [Working Backwards](https://tryhamster.com/methods/working-backwards) framework, the FAQ section is where the real intellectual work happens. The press release is relatively easy to write because it is aspirational. The FAQ is where aspirations meet constraints. A common pattern is that writing the FAQ causes you to rewrite the press release, because answering hard questions reveals that the original vision was too broad, too expensive, or targeted at the wrong customer. This iterative tension between the PR and the FAQ is the engine that drives clarity. The FAQ also serves as institutional memory. Six months into development, when someone asks why a certain scope decision was made, the FAQ provides the documented reasoning. This makes the FAQ one of the most referenced artifacts across a product's lifecycle.
+Not every question applies to every product, but skipping one should be a decision. The authors also warn against discounting the competition: "there is always a current solution," so the FAQ should say whether the product is compelling enough for customers to switch. They suggest asking "What needs to be true for this product to be successful?" to keep the document focused on finding the truth instead of winning approval.
+
+Unknowns belong in the FAQ, stated as unknowns. An answer that says the team does not yet know, and explains how it will find out, is more useful to a decision maker than a confident guess. Each open question becomes work before the next review or a condition on the decision.
+
+Complicated products can need more than one FAQ. The authors note that Fulfillment by Amazon was developed with two PR/FAQs, one from the seller's point of view and one from the buyer's. If your product serves two very different customers, consider separate documents instead of one FAQ that tries to answer both.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Re-read the press release with a skeptic's eye
+### Step 1: Collect the questions
 
-Before writing a single question, read your completed press release from start to finish as though you are a customer who has never heard of your company, then read it again as though you are a VP being asked to fund this initiative. Underline or highlight every claim that could be challenged, every number that could be questioned, and every benefit that could be dismissed as vague. Mark sentences where you used superlatives like 'best,' 'fastest,' or 'easiest' because those are guaranteed to generate questions. Also note anywhere the press release implies technical capability that does not currently exist.
+Reread the press release as a skeptical customer, then as a skeptical finance lead, then as the engineer who has to build it. Write down every question each would ask, without answering yet. Add the questions you noted while writing the press release and any that early readers raised. Start from the authors' standard list and cross out only the questions that clearly do not apply.
 
-This read-through produces a raw list of 15-30 potential question topics, which becomes your working inventory for the next steps.
+### Step 2: Write the external FAQ
 
-> **Pro tip:** Print the press release on paper and use two different colored highlighters: one for customer-facing claims, one for business or technical claims. This physical separation primes you to think in the two FAQ categories from the start.
+Answer the customer questions first, in the same plain language as the press release. Cover price, how it works, where to get it, support, compatibility with what the customer uses today, and what happens to their data. Keep each answer short and specific. If an answer needs a paragraph of caveats, the product definition probably needs work.
 
-### Step 2: Step 2: Generate external (customer-facing) questions
+### Step 3: Write the internal FAQ on customer and market
 
-Working from your highlighted claims, write 10-25 questions phrased in the voice of a real customer. Use natural, conversational language. Avoid questions a customer would never actually think to ask. ').
+Answer who has the problem, what they use now, and why they would switch. Estimate the size of the market and show how you got there, including the assumptions. Say how the product is better, faster or cheaper than the alternatives, and be honest if it is only better on one dimension. These answers decide whether the rest of the FAQ is worth writing.
 
-Order the questions from most likely to be asked to least likely. Each question should map to a specific claim or gap in your press release. If you cannot generate at least 10 genuine customer questions, your press release may be too vague to trigger real curiosity.
+### Step 4: Write the internal FAQ on building and economics
 
-> **Pro tip:** Interview 2-3 people who match your target customer profile and ask them to read the press release. Record every question they ask, including the ones that seem obvious. Customers often ask questions that product teams forget to address because the answer seems self-evident internally.
+Answer what must be built, which problems are unsolved, which partners or third-party technologies you depend on, and what legal or regulatory issues apply. Then answer the economics: per-unit costs and margins, the upfront investment, and when the product would pay back. Get engineering, legal and finance to check their sections before any review. Name the parts that are estimates.
 
-### Step 3: Step 3: Generate internal (stakeholder-facing) questions
+### Step 5: Write the failure questions
 
-Now shift to the perspective of the executive, finance lead, engineer, or legal counsel who will review this proposal. '). Internal questions should feel uncomfortable to answer. If every answer comes easily, you are not asking hard enough questions.
+Answer "what needs to be true for this product to be successful" with a short list of assumptions. Then answer the top three reasons the product will not succeed. These two answers are the most useful part of the FAQ for a decision maker, because they show where to look for risk. If they are easy to write, you have probably been too gentle with the idea.
 
-Include at least two questions about what could go wrong and at least one about what you would do if initial results are poor.
+### Step 6: Mark the unknowns
 
-> **Pro tip:** Think about the last product review meeting you attended. What questions did leadership actually ask? Use those real patterns. Common executive questions include 'What is the opportunity cost of doing this instead of something else?' and 'What assumptions would need to be wrong for this to fail?'
+Go through every answer and label the ones that rest on guesses. For each, say what would resolve it and when. Do not hide unknowns inside confident prose; reviewers will find them, and finding them in the meeting costs more trust than listing them yourself.
 
-### Step 4: Step 4: Write honest, specific answers to each question
+### Step 7: Order, cut and circulate
 
-For each question, write an answer that is specific, honest, and useful. ') in favor of direct statements ('Our research shows X' or 'We assume Y, and here is why'). Every answer should be 2-6 sentences. Short answers signal a shallow question that should be cut or combined.
-
-Answers longer than 6 sentences usually contain multiple claims and should be split into separate Q&A pairs. Where you have supporting data, cite it with specifics: exact numbers, study names, customer quotes, or competitor benchmarks. Where you do not have data, say so explicitly and describe how you plan to get it. Label every key assumption with the word 'assumption' so reviewers can find them easily.
-
-> **Pro tip:** Use this structure for answers with uncertain data: 'Our current assumption is [X]. This is based on [source/reasoning]. We plan to validate this by [method] before [milestone].' This format gives reviewers both the claim and the path to verification.
-
-### Step 5: Step 5: Identify and fill gaps in your question coverage
-
-Review your complete list of questions against a checklist of standard risk categories: customer desirability, technical feasibility, business viability, regulatory compliance, competitive response, and operational readiness. For each category, verify you have at least two questions. If a category is missing entirely, it usually indicates a blind spot, not the absence of risk. Also check for the 'second-order question' pattern: if you have a question about pricing, do you also have a question about what happens if the price point does not work?
-
-If you have a question about technical architecture, do you also have a question about what happens if the technology vendor raises prices or shuts down? These follow-up questions are where the most valuable insights often hide.
-
-> **Pro tip:** Share your draft FAQ with someone from a function you do not represent (engineering if you are in product, finance if you are in engineering). Ask them to identify the question they expected to see but did not find. Cross-functional blind spots are the most dangerous.
-
-### Step 6: Step 6: Order and group questions for readability
-
-Organize external questions into logical groups: product experience, pricing, trust and security, compatibility, and support. Organize internal questions into groups: feasibility, cost and resources, timeline, measurement, risk, and strategic fit. Within each group, place the most fundamental question first and the most nuanced question last. This ordering helps reviewers build context progressively.
-
-Add a brief heading or label before each group so readers can navigate quickly. The total FAQ should read as a coherent document, not a random collection of Q&A pairs. If two questions have very similar answers, combine them into one question with a broader scope.
-
-> **Pro tip:** A good ordering test: read only the questions in sequence, ignoring the answers. If the questions alone tell a logical story about what this product is, who it is for, what it will cost, and what could go wrong, the ordering is working.
-
-### Step 7: Step 7: Stress-test answers for intellectual honesty
-
-' If the answer is yes and you are not acknowledging the uncertainty, revise it. Look specifically for three patterns of dishonesty that creep into FAQ answers. First, false precision: stating '15% conversion rate' when you have no conversion data. Second, cherry-picked comparisons: comparing your best feature to a competitor's worst feature.
-
-Third, hidden dependencies: answers that assume ideal conditions without stating those conditions. For each answer, verify that the strongest counterargument has been acknowledged. An FAQ that presents only favorable evidence will be torn apart in review sessions and will damage your credibility.
-
-> **Pro tip:** Apply the 'newspaper test': if a journalist quoted your answer in an article about your product launch, would you stand behind every word? If not, revise until you would.
-
-### Step 8: Step 8: Review with stakeholders and iterate
-
-Share the complete FAQ with 2-4 trusted reviewers who represent different perspectives: a customer-facing team member, a technical lead, a finance or business operations person, and ideally someone senior enough to challenge strategic assumptions. Ask each reviewer two specific questions: 'What question is missing that you expected to see?' and 'Which answer do you not believe?' Collect their feedback, add any missing questions, and revise answers that were not convincing. This review step often generates 5-10 additional questions and significantly strengthens 3-5 existing answers. The FAQ is typically ready for a formal [PR/FAQ review session](https://tryhamster.com/skills/running-pr-faq-review-meetings) after two rounds of informal review.
-
-> **Pro tip:** Do not ask reviewers if the FAQ 'looks good.' That question invites politeness. Instead, ask them to rank the three weakest answers. Forced ranking produces much more useful feedback.
+Put the external FAQ first and order internal questions from the most decision-relevant down. Cut answers that repeat the press release, and keep the whole FAQ within five pages. Circulate the draft for review, following [Running PR/FAQ Review Meetings](../running-pr-faq-review-meetings/SKILL.md), and add every new question reviewers raise.
 
 ## Best Practices
 
-- Write external questions in the exact language your customers use, not in product jargon. If customers say 'Does it work with my Shopify store?' do not rephrase it as 'What e-commerce platform integrations are supported?' Customer language makes the FAQ feel authentic, and the language mismatch is immediately obvious to anyone who talks to customers regularly.
-- Label every assumption explicitly with the word 'Assumption' in bold or brackets. This makes assumptions scannable during review sessions. Without explicit labels, reviewers will spend half their time trying to figure out which claims are facts and which are guesses, and some assumptions will pass through unexamined.
-- Include at least two 'pre-mortem' questions in the internal FAQ, such as 'What would cause this product to fail in the first year?' and 'What is the most likely reason a customer would stop using this after the first month?' These questions force you to confront failure scenarios while there is still time to adjust scope, pricing, or positioning.
-- Keep each answer self-contained so it can be read without context from other answers. Readers rarely read FAQs sequentially. If an answer says 'As mentioned above...' you have created a dependency that will confuse readers who skip around. Repeat key context briefly rather than cross-referencing.
-- Update the FAQ every time a significant assumption is validated or invalidated during development. An FAQ that was written six months ago and never updated becomes a historical artifact rather than a living decision document. Assign a specific team member to own FAQ maintenance through launch.
-- Aim for a roughly equal number of external and internal questions. A large imbalance usually signals a blind spot. Too many external questions with few internal ones suggests the team has not thought about feasibility. Too many internal questions with few external ones suggests the team is building for themselves rather than for customers.
-- Write the hardest question first in each section. If the toughest question has a strong answer, it sets the tone for the entire section and gives reviewers confidence that you have done serious thinking. If the toughest question has a weak answer, you learn immediately where to invest more research.
+- Answer the hardest question first while you still have energy. The top three reasons the product will fail often reshape the rest of the FAQ.
+- Show your reasoning for every estimate. A market size or cost with its assumptions written out can be corrected in review; a bare number can only be believed or doubted.
+- Name the current solution in every competitive answer. Customers always have some way of dealing with the problem today, even if it is a spreadsheet or doing nothing.
+- Get each department's questions from someone in that department. The questions finance or legal will ask are hard to guess from outside, and asking early brings them into the process.
+- Keep a question log as you go. Every question raised in a review should appear in the next draft with an answer or an open marker.
+- Write for a reader who missed the meeting. Answers should stand alone without verbal context.
 
 ## Common Mistakes
 
-- **Writing softball questions with obvious answers to make the FAQ look thorough** — This happens when authors treat the FAQ as a marketing document rather than a stress test. The symptom is answers that are all confident and positive, with no uncertainty, no tradeoffs, and no acknowledged risks. Catch it by reading only the questions in sequence: if none of them make you nervous, they are too easy. Replace each softball with the hardest version of that question. Instead of 'Is the product easy to use?' try 'Why would a user who already has a working solution switch to this product and accept the cost of changing their workflow?'
-- **Answering questions you do not actually have data for as though you do** — Product managers often feel pressure to appear prepared, which leads to fabricating specificity. The symptom is precise numbers without cited sources, such as 'We expect 20% adoption in the first quarter' with no basis for that estimate. Watch for round numbers and projections that lack supporting evidence. Instead, write 'We estimate 15-25% adoption based on [comparable product X's launch data], with the caveat that our distribution channel differs in [specific way]. We plan to validate this estimate through [method] by [date].'
-- **Including only product-focused questions and ignoring business model, operational, and organizational questions** — This happens when the FAQ author works in isolation without consulting cross-functional partners. The FAQ covers features and customer experience thoroughly but says nothing about unit economics, support staffing, infrastructure costs, or legal review. The signal is an internal FAQ section that reads like an extended product spec. Fix it by sharing the draft with finance, legal, operations, and engineering and explicitly asking each function for their top three concerns about this initiative.
-- **Writing answers that are too long and contain multiple arguments, making them impossible to challenge in review** — When an answer runs longer than 6 sentences, it usually bundles several distinct claims together. Reviewers cannot easily agree with one part and challenge another, so the entire answer gets a vague 'looks fine.' Split compound answers into separate Q&A pairs. A useful test: if you could summarize the answer in one sentence without losing essential information, the answer is the right length. If you need three sentences to summarize it, it should be three separate questions.
-- **Treating external and internal FAQs as the same type of document with the same voice** — External questions should sound like a real customer talking. Internal questions should sound like a sharp executive in a review meeting. When both sections use the same formal product-management language, the external section loses its customer empathy and the internal section loses its rigor. Read each section aloud.
-
-If the external questions do not sound like something you have heard in a user interview, rewrite them. If the internal questions do not sound like something you have heard in a leadership review, rewrite those too.
-- **Writing the FAQ before the press release is complete** — The FAQ exists to interrogate the claims made in the press release. If the press release is still changing, the FAQ will be interrogating a moving target and you will waste effort answering questions about claims that get removed. The press release does not need to be perfect, but it should be complete enough that the core value proposition, target customer, and key benefits are stable. Write the FAQ after the press release has been through at least one round of review.
+- **Writing only easy questions**: An FAQ full of questions with flattering answers looks complete and tells reviewers nothing. Include the questions you would least like to be asked.
+- **Answering with assertions**: "We believe this is feasible" gives a reviewer nothing to check. Give the reason, the evidence, or the spike that would provide it.
+- **Hiding unknowns**: Confident answers built on guesses collapse in review and damage trust in the rest of the document. Label guesses and say how you will resolve them.
+- **Letting the FAQ grow without limit**: Long FAQs push the real issues into places nobody reads. Cut to what a decision maker needs and keep the rest in an appendix or elsewhere.
+- **Leaving the press release unchanged**: If the FAQ uncovers that the product must change, the press release has to change too, or the document contradicts itself.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/working-backwards/METHOD.md) — Working Backwards
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/working-backwards/METHOD.md): Working Backwards
 
 ## Related Skills
 
-- [Iterating PR/FAQ Documents Through Multiple Feedback Cycles](../iterating-pr-faq-documents-through-feedback/SKILL.md)
-- [Running PR/FAQ Review and Critique Sessions](../running-pr-faq-review-meetings/SKILL.md)
-- [Identifying Minimum Requirements by Working Backwards from Launch](../identifying-minimum-lovable-requirements/SKILL.md)
-- [Using Working Backwards Thinking in Product Manager Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
-- [Writing Internal Press Releases for Product Concepts](../writing-internal-press-releases/SKILL.md)
-- [Defining the Desired Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
+- [Writing an Internal Press Release for a Product Idea](../writing-internal-press-releases/SKILL.md)
+- [Running PR/FAQ Review Meetings](../running-pr-faq-review-meetings/SKILL.md)
+- [Iterating PR/FAQ Documents Through Feedback](../iterating-pr-faq-documents-through-feedback/SKILL.md)
+- [Identifying Minimum Lovable Requirements](../identifying-minimum-lovable-requirements/SKILL.md)
+- [Defining the Customer Experience Before Building](../defining-the-customer-experience-backwards/SKILL.md)
+- [Using Working Backwards in PM Interviews](../using-working-backwards-in-product-interviews/SKILL.md)
+
+## Sources
+
+- [Working Backwards LLC: PR/FAQ Instructions and Template](https://workingbackwards.com/resources/working-backwards-pr-faq/)
+- [About Amazon: excerpt from Working Backwards](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
+- [Werner Vogels: Working Backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html)

@@ -1,59 +1,37 @@
-# Examples: Interpreting Bayesian and Frequentist Results in PostHog
+# Examples: Bayesian vs Frequentist Results in PostHog Experiments
 
-## Example: Onboarding tooltip experiment for a B2B SaaS tool (Bayesian, small team)
-
-**Scenario:**
-
-A 5-person product team at a B2B project management tool tested whether adding contextual tooltips to the onboarding checklist would increase checklist completion from 34% to 40%. They used PostHog's Bayesian mode, targeting new signups only. After 3 weeks, they had 1,200 users per variant. The primary metric was checklist completion rate. The guardrail metric was 7-day retention.
-
-**Walkthrough:**
-
-2% for the tooltip variant. 8 percentage points. 1%, meaning the interval excluded zero. The guardrail metric, 7-day retention, showed a win probability of 62% for the test variant (essentially neutral, no degradation).
-
-The team had set a minimum meaningful effect of 2 percentage points before the experiment started. 4%) was below the 2pp minimum, which gave the PM slight pause. 8pp was well above the threshold, and the credible interval was still moderately wide because of the sample size. They decided to extend the experiment one more week.
-
-8%. They wrote the interpretation memo, recommended shipping, and handed off to the engineer to follow the variant cleanup process.
-
-## Example: Pricing page CTA experiment for a B2C subscription app (frequentist, high traffic)
+## A clear Bayesian win with an honest range
 
 **Scenario:**
 
-A consumer subscription app with 50,000 new signups per month ran a frequentist experiment testing two CTA button texts on the pricing page shown during onboarding. The minimum detectable effect was calculated at 1.5pp, requiring 8,400 users per variant. The primary metric was subscription start rate. The guardrail was bounce rate on the pricing page.
+Illustrative scenario: an onboarding experiment reaches its planned sample. On the Bayesian engine at the default confidence level, the test variant's chance to win on onboarding completion is above the threshold and the variant shows green.
 
 **Walkthrough:**
 
-After 10 days, the experiment reached 9,100 users per variant, surpassing the minimum sample. The team opened PostHog and checked the frequentist results. 05 threshold. 2% subscription start rate).
+The analyst reads the credible interval before writing anything. It sits entirely above zero, but its lower end is a small improvement and its upper end a large one. In the write-up she reports the chance to win and the full interval, and says the change very likely helps while its size is uncertain.
 
-8%. The confidence interval excluded zero, confirming significance. 72). 1pp was above, and they had pre-committed to using point estimate for the practical threshold check), and clean guardrails, they wrote the memo and recommended shipping.
+She then checks the supporting metrics. First data received is also up, though not significantly, and support contacts are flat. The pattern is coherent, so the team ships, and the product manager uses the lower end of the interval when forecasting the effect.
 
-5pp practical threshold, leading to a brief discussion. They decided the evidence was strong enough given the cost of the change was negligible (a single text string), and shipped the variant.
-
-## Example: Onboarding flow redesign experiment (Bayesian, inconclusive result)
+## A frequentist result misread as a probability
 
 **Scenario:**
 
-A mid-stage startup redesigned their entire 5-step onboarding flow and ran a Bayesian experiment comparing the old flow (control) to the new flow (test). They targeted 2,000 users per variant over 4 weeks. The primary metric was activation (completing at least one core workflow within 48 hours of signup). Guardrails were support ticket creation rate and 14-day retention.
+Illustrative scenario: a team runs a frequentist experiment on a new setup wizard. At the planned end, the primary metric's p-value is just under alpha and the variant is marked significant.
 
 **Walkthrough:**
 
-After 4 weeks, the experiment had 2,100 users per variant. 4%. The interval included zero, meaning the data had not ruled out that the new flow was actually worse. 7 percentage points.
+A stakeholder summarizes the result as "a high chance the wizard is better". The analyst corrects the wording: the p-value is the probability of a difference at least this large if the wizard had no effect, which is a different statement. The confidence interval does not cross zero but comes close to it.
 
-3% for ticket creation rate. Fourteen-day retention was neutral at 54% win probability. The team wrote a memo documenting the inconclusive primary result and the potentially negative guardrail signal. Their decision: kill the experiment and not ship the redesign as-is.
+The team agrees the evidence supports shipping but that the effect may be small. They ship, note the uncertainty in the description, and plan a follow-up test of a larger change to the same step.
 
-The interpretation was that the new flow might produce a small conversion lift, but the effect was too small to detect confidently at their traffic level, and the support ticket increase suggested the new flow introduced confusion. They extracted the two individual steps from the redesign that user session recordings suggested were most effective, and planned two smaller, more focused experiments to test each step independently.
-
-## Example: Multi-variant onboarding email sequence test (Bayesian, B2B, three variants)
+## A lone significant secondary metric
 
 **Scenario:**
 
-A developer tools company ran an A/B/N experiment with three email sequence variants for post-signup onboarding: Variant A (existing 5-email sequence, control), Variant B (3-email sequence, shorter and more actionable), and Variant C (5-email sequence with personalized content based on signup role). They used Bayesian mode and ran for 6 weeks, collecting 3,400 users across the three variants. The primary metric was "first project created within 7 days."
+Illustrative scenario: an experiment on onboarding copy shows no significant change in completion, the primary metric. One of several secondary metrics, visits to the pricing page, is significant.
 
 **Walkthrough:**
 
-The results page showed three variants with their respective win probabilities. Variant B (short sequence) had a 14% probability of being best. Variant C (personalized) had an 82% probability of being best. Control had a 4% probability of being best.
+The team is tempted to claim the copy change increased purchase intent. The analyst points out that the primary metric did not move, the other secondary metrics are flat, and PostHog's docs note that each extra metric adds another chance of a false positive.
 
-9%, excluding zero but with a wide range. 4%, solidly including zero. The team noted that Variant C was promising but had not crossed the 95% threshold. They decided to extend the experiment for 2 more weeks with a hard cutoff.
-
-8%. This was close to but did not reach 95%. The team discussed the tradeoff: the personalized sequence required ongoing maintenance of role-based content, which had a real engineering cost. At 91% probability, there was roughly a 1-in-11 chance the variant was not actually better.
-
-They decided to ship Variant C but scheduled a follow-up check at 12 weeks to verify the lift held with a larger sample in production. The memo documented the 91% threshold decision, the reasoning for accepting slightly higher uncertainty, and the follow-up plan.
+They keep control, record the null result for completion, and log the pricing visit signal as a hypothesis for a separate experiment where it would be the primary metric.

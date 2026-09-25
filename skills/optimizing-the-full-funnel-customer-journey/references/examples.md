@@ -1,21 +1,37 @@
-# Examples: Optimizing the Full-Funnel Customer Journey with RACE
+# Examples: RACE Framework Optimization
 
-## Example: E-Commerce Brand Discovers the Real Bottleneck
-
-**Scenario:**
-
-An online fashion retailer using the RACE Framework is spending 65% of its budget on paid social and influencer campaigns (Reach stage). The marketing team assumes they need more traffic to grow revenue. Monthly data shows: 500,000 unique visitors (Reach), 40,000 engaged sessions with add-to-cart or wishlist actions (Act), 2,800 purchases (Convert), and 420 repeat purchasers within 90 days (Engage).
-
-**Walkthrough:**
-
-The team builds a unified dashboard and calculates transition rates: Reach→Act = 8%, Act→Convert = 7%, Convert→Engage = 15%. The Act→Convert transition at 7% is the weakest link. Segmenting by device reveals that mobile Act→Convert is just 3.5% versus 12% on desktop. Session recordings show a clunky mobile checkout with 5 steps and no guest checkout option. The team hypothesizes that simplifying mobile checkout to 2 steps with a guest option will improve Act→Convert for mobile users. They reallocate 15% of Reach-stage budget to fund a mobile checkout redesign and retargeting ads for cart abandoners. After 6 weeks, mobile Act→Convert improves to 8.2%, adding an estimated $47,000 in monthly revenue — more than the cost of the redesign in a single month. The next cycle reveals Convert→Engage is now the biggest opportunity, leading to a post-purchase email and loyalty program initiative.
-
-## Example: B2B SaaS Company Fixes a Leaky Engage Stage
+## A fashion retailer finds its constraint in Engage
 
 **Scenario:**
 
-A B2B SaaS company maps its RACE funnel: 80,000 monthly site visitors (Reach), 6,400 free trial sign-ups (Act), 640 paid subscriptions (Convert), and only 192 customers retained after 12 months (Engage). The Convert→Engage rate is 30%, and customer acquisition cost is high.
+Illustrative scenario: an online fashion retailer has hit its Reach and Convert targets for several months, but revenue growth is slowing. The team's instinct is to spend more on acquisition.
 
 **Walkthrough:**
 
-The team recognizes that a 30% Convert→Engage rate means they're losing 70% of hard-won customers. Cohort analysis shows that customers who complete the onboarding checklist within the first 7 days have a 65% retention rate, while those who don't complete it retain at only 18%. The root cause is clear: poor onboarding, not poor product-market fit. The team designs a 7-day automated onboarding sequence with in-app prompts, a personalized setup call for accounts over $500 MRR, and a 'quick win' tutorial email series. They reallocate $3,000/month from paid search to fund a customer success specialist focused on onboarding. After one quarter, the Convert→Engage rate improves from 30% to 44%, increasing annual recurring revenue by $86,000 from the existing customer base alone — a far higher return than acquiring net-new customers at the same cost.
+The monthly review adds a transition rate the dashboard had not shown before: the share of first-time buyers who buy again within the period. It has been falling. Segmenting by acquisition channel shows the drop is concentrated in customers who arrived through a heavy discount promotion.
+
+The team does not raise acquisition spend. It moves part of the promotion budget to a post-purchase program for first-time buyers and changes the promotion's success measure to second purchases. The next reviews track both the repeat rate and first-order volume, to make sure Convert does not suffer.
+
+## A SaaS company segments a weak Act to Convert transition
+
+**Scenario:**
+
+Illustrative scenario: a B2B software company generates plenty of trial sign-ups, but the share that become paying customers has slipped.
+
+**Walkthrough:**
+
+The stage-level rate hides the cause. Segmenting by device shows that trials started on mobile convert far less often than those on desktop, and a closed funnel for the trial steps shows most mobile users never complete setup.
+
+The hypothesis is that setup is hard to finish on a phone. The team tests a version that lets mobile users postpone setup and sends a link to finish it on a computer. They check both the trial-to-paid rate and the next stage, early cancellations, before rolling it out.
+
+## A local services firm shifts budget between stages
+
+**Scenario:**
+
+Illustrative scenario: a home repair firm spends almost all of its marketing budget on paid search. Leads are steady, but many never become booked jobs.
+
+**Walkthrough:**
+
+The funnel view shows the weak point between Act (quote requests) and Convert (booked jobs). Call records reveal that requests arriving in the evening wait until the next afternoon for a reply, and many customers book someone else by then.
+
+The team moves part of the paid search budget into an evening call-back service, recording the reason for the move. At the next review, the share of quote requests that become booked jobs has risen, and the firm keeps the new split while watching whether lead volume holds.

@@ -1,15 +1,20 @@
 ---
-name: choosing-between-scrum-and-kanban
-description: "This skill teaches you how to evaluate your team's workflow characteristics, work arrival patterns, and organizational constraints to select the right kanban agile framework, whether that is Scrum, Kanban, Scrumban, or a custom hybrid."
+name: "choosing-between-scrum-and-kanban"
+description: "Choose between Scrum, Kanban and Scrumban by reading how your team's work arrives, then confirm the choice with a short, measured trial."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: agile
+  method: "agile"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Choosing Between Scrum, Kanban, and Hybrid Kanban Agile Approaches
+# Choosing Between Scrum, Kanban, and Scrumban
 
-> This skill teaches you how to evaluate your team's workflow characteristics, work arrival patterns, and organizational constraints to select the right kanban agile framework, whether that is Scrum, Kanban, Scrumban, or a custom hybrid.
+> Choose between Scrum, Kanban and Scrumban by reading how your team's work arrives, then confirm the choice with a short, measured trial.
 
 ## Before you start
 
@@ -24,146 +29,103 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-3 hours for initial assessment, plus 1-2 weeks for a trial run |
-| Outcome | You produce a scored framework-fit assessment that gives your team a defensible, context-specific recommendation for which agile framework to adopt, along with a concrete 2-week trial plan to validate the choice. |
-| Prerequisites | Basic understanding of Scrum ceremonies (sprint planning, daily standup, retrospective), Familiarity with Kanban board concepts (columns, WIP limits, pull-based flow), Access to 4-6 weeks of historical work data (ticket counts, cycle times, or at minimum a rough sense of how work arrives) |
+| Time to Learn | A few hours, plus a trial of about a month |
+| Outcome | You can pick Scrum, Kanban or Scrumban for a specific team from evidence about its work, and confirm or reverse the choice with a measured trial. |
+| Prerequisites | A few weeks of the team's work history, a basic grasp of both frameworks, the team's agreement to run a trial |
 | Part of | [Agile](../../methods/agile/METHOD.md) |
 
 ## Overview
 
-Selecting the right agile framework is one of the most consequential decisions a product team makes, yet most teams skip the evaluation entirely. They default to Scrum because it is popular, or drift into Kanban because someone read a blog post. The result is a framework mismatch that creates friction for months: Scrum ceremonies that feel pointless for a support team handling unpredictable tickets, or a Kanban board with no cadence that leaves a product team unable to plan releases. This skill, rooted in [Agile](https://tryhamster.com/methods/agile) principles, gives you a structured way to make the choice deliberately.
+Scrum and Kanban are two widely used ways teams put agile into practice, and both come from the same values. They differ in how they organize time and work. Choosing between them is a question about your team's work: how predictably it arrives, how much it varies in size, and whether stakeholders need a regular planning rhythm.
 
-The core artifact you produce is a framework-fit scorecard. You evaluate your team across five dimensions: work predictability, batch size consistency, scope stability, cadence need, and organizational coupling. Each dimension gets a 1-5 score based on concrete evidence from your workflow history. The total points you toward Scrum (high predictability, clear batches), Kanban (continuous flow, variable work types), or a hybrid approach (mixed signals). The scorecard is not a personality quiz. It is a diagnostic tool that forces you to gather real data about how work actually arrives and moves through your team, rather than how you wish it did.
+Scrum organizes work into Sprints, "fixed length events of one month or less", with defined accountabilities (Product Owner, Scrum Master, Developers) and a fixed set of events: Sprint Planning, the Daily Scrum, the Sprint Review and the Sprint Retrospective ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). The team commits to a Sprint Goal and protects it while the Sprint runs.
 
-The output goes beyond a label. After scoring, you design a 2-week trial configuration: the specific ceremonies to keep or drop, the board structure to use, the WIP limits to set, and the metrics to track. At the end of the trial, you run a lightweight retrospective against those metrics and decide whether to commit, adjust, or pivot. This approach eliminates the common failure mode of adopting a framework wholesale from a textbook and then abandoning it three months later because it never fit. The goal is not framework purity. The goal is a sustainable workflow that helps your team deliver value predictably and with low friction.
+Kanban describes itself as "a strategy for optimizing the flow of value through a process" built on three practices: defining and visualizing a workflow, actively managing items in it, and improving it ([Kanban Guide](https://kanbanguides.org/english/)). It prescribes no roles and no sprints. Its central rule is that the team must "explicitly control the number of work items in a workflow", and it tracks work in progress, throughput, work item age and cycle time.
+
+Scrumban sits between them. Corey Ladas described it in his 2008 book as incrementally enhancing Scrum with pull-like features ([Agile Alliance, Scrumban](https://www.agilealliance.org/glossary/scrumban/)). In practice, teams keep some of Scrum's cadence, such as regular planning and retrospectives, and add Kanban's WIP limits and flow measures.
+
+Henrik Kniberg and Mattias Skarin, in a short book on both frameworks, compare them "for understanding, not for judgement", and add that "There is no such thing as a good or bad tool" ([Kanban and Scrum](https://www.infoq.com/minibooks/kanban-scrum-minibook/)). This skill follows that stance: read the team's work, pick the tool that fits, and test the pick. The [Scrum](https://tryhamster.com/methods/scrum) and [Kanban](https://tryhamster.com/methods/kanban) methods cover each framework in full.
 
 ## How It Works
 
-The mental model behind this skill is dimensional analysis of workflow characteristics. Every team's work has a shape, and different kanban agile frameworks are optimized for different shapes. Scrum assumes work can be grouped into time-boxed batches of roughly equal size, that scope can be frozen for 1-4 weeks, and that the team benefits from structured reflection points. Kanban assumes work arrives continuously, items vary widely in size and urgency, and the team benefits from limiting concurrent work rather than time-boxing it. Hybrids like Scrumban keep the cadence of Scrum but relax the scope-freeze constraint and add Kanban-style WIP limits.
+The choice rests on a handful of properties of the work, each observable from the team's recent history.
 
-The five dimensions you score capture the key differences:
+**How work arrives.** If most work is known a week or more ahead and can be planned in batches, Scrum's Sprint Planning has something to plan. If a large share arrives unannounced, as in support, operations or platform teams, a Sprint plan is out of date within days, and Kanban's continuous pull fits better.
 
-**Work predictability** measures how well you can forecast what work will arrive next week. A product team building a roadmap feature scores high. An incident-response team scores low. **Batch size consistency** asks whether work items are roughly the same effort. If most items are 2-5 story points, Scrum sprints plan cleanly. If items range from 30-minute fixes to 3-week projects, Kanban handles the variance better. **Scope stability** captures how often priorities shift mid-cycle. Teams that can commit to a 2-week sprint without major scope changes score high. Teams that get pulled into urgent requests daily score low. **Cadence need** measures whether your stakeholders and dependent teams need regular delivery checkpoints or whether continuous deployment is acceptable. **Organizational coupling** captures how many external dependencies (other teams, vendors, compliance reviews) gate your work. High coupling favors Scrum-style planning; low coupling favors Kanban-style pull.
+**How much items vary in size.** Scrum selects items that can be finished within one Sprint; the Scrum Guide calls items that can be Done within one Sprint "ready for selection" ([Scrum Guide](https://scrumguides.org/scrum-guide.html)). If items vary wildly, from one-hour fixes to multi-week investigations, splitting them to fit a Sprint may cost more than it gains, and flow measures such as cycle time may describe the work better.
 
-Each dimension scores 1-5. A total of 20-25 points strongly favors Scrum. A total of 5-12 strongly favors Kanban. Scores of 13-19 land in hybrid territory, and the specific dimension breakdown tells you which hybrid elements to borrow from each side. The reason scoring works is that it decomposes a single subjective question ("which framework?") into five observable, arguable sub-questions. This prevents the loudest voice in the room from winning and surfaces disagreements productively. Two teammates who disagree on the framework often agree on four of five dimensions and disagree on one, which is a much easier conversation.
+**How stable priorities are.** Scrum asks the team not to make changes "that would endanger the Sprint Goal" during a Sprint. If priorities genuinely change several times a week, that rule will be broken constantly. Kanban lets the team re-order the queue at any time while limiting what is in progress.
 
-The second half of the model is the trial configuration. Rather than committing permanently, you design a 2-week experiment with explicit success metrics: cycle time variance, throughput, number of unplanned items, and team satisfaction (a simple 1-5 survey). This aligns with the [Agile](https://tryhamster.com/methods/agile) principle of inspecting and adapting. If the trial metrics improve over your baseline, you commit. If they do not, you adjust the configuration or try a different framework. The trial approach de-risks the decision and gives the team ownership of the outcome.
+**Whether stakeholders need a rhythm.** Some organizations need predictable planning and review dates to coordinate with other teams or customers. Scrum provides them by design. Kanban teams can add regular reviews, but the guide does not require them.
+
+**How much structure the team needs.** A team new to agile often benefits from Scrum's defined events and accountabilities. A mature team with good habits may find Kanban's lighter structure enough.
+
+Scrumban is a reasonable answer when the signals are mixed: planned product work with a steady stream of interrupts, or a Scrum team whose Sprints keep being broken by urgent work.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Gather 4-6 Weeks of Workflow History
+### Step 1: Pull the recent work history
 
-Pull data from your project tracker (Jira, Linear, Asana, Trello, or even a shared spreadsheet) covering the last 4-6 weeks of completed work. For each item, note: the date it entered the backlog, the date work started, the date it was done, a rough size estimate (story points, t-shirt size, or hours), and whether it was planned or unplanned. If you do not have formal tracking, reconstruct from memory with 2-3 teammates, focusing on the last 20-30 work items. The goal is a simple table with columns for item name, arrival date, start date, done date, size, and planned/unplanned.
+Export the items the team finished over the last several weeks, with the date each was created, started and finished, and whether it was planned or arrived unannounced. If the tracker lacks those fields, reconstruct them roughly from memory and notes. The history replaces impressions with a picture of how work really flows.
 
-This raw data feeds every scoring dimension.
+### Step 2: Describe the arrival pattern
 
-> **Pro tip:** Do not clean the data too aggressively. Items that were abandoned, deprioritized, or split mid-stream are signal, not noise. They reveal scope instability and batch size inconsistency.
+Count how many finished items were known at the start of each week versus added mid-week. Note which sources the unplanned work came from, such as incidents, sales requests or other teams. A team that believes it does planned work and discovers that much of it was unplanned has learned the most important fact for this decision.
 
-### Step 2: Step 2: Score Work Predictability (1-5)
+### Step 3: Describe size and priority stability
 
-Look at the ratio of planned to unplanned items in your dataset. If 80% or more items were planned before the week they were started, score 5. If 60-79% were planned, score 4. If 40-59%, score 3.
+Sort the finished items into rough size buckets, such as small, medium and large, and look at the spread. Then count how often the top priorities changed within a week. Wide size variation and frequent priority changes both point toward flow. Consistent sizes and stable weekly priorities point toward Sprints.
 
-Below 40% planned, score 2. If nearly everything is reactive or interrupt-driven, score 1. Write down the actual percentage and the score. If teammates disagree on the score, each person scores independently first, then compare.
+### Step 4: Check the organization's needs
 
-Use the median score and record the spread. , one person says 2, another says 4) itself is useful information: it usually means different people experience different workloads.
+Ask stakeholders and neighboring teams what planning and review rhythm they depend on. If a release calendar, a customer demo cycle or a shared planning event exists, note it. This is where a team that would prefer Kanban may still need some Scrum-like cadence.
 
-> **Pro tip:** Count items, not effort. One large planned feature and ten small unplanned bugs is a low-predictability pattern even though the planned item consumed more hours.
+### Step 5: Choose the framework and write the reasons
 
-### Step 3: Step 3: Score Batch Size Consistency (1-5)
+Pick Scrum, Kanban or Scrumban, and write down the two or three observations that decided it. For Scrum, choose a Sprint length within the guide's limit of one month and agree the events. For Kanban, map the workflow states and set explicit WIP limits. For Scrumban, name which Scrum events you keep and where the WIP limits go.
 
-Calculate the coefficient of variation (standard deviation divided by mean) of your item sizes. If you do not have numeric sizes, bucket items into small, medium, and large. If 70%+ items are the same bucket, score 5. If items span all three buckets roughly equally, score 2 or 3.
+### Step 6: Run a time-boxed trial with baseline measures
 
-If you have extreme outliers (some items 10x larger than others), score 1. The point is to assess whether sprint-sized batches would contain a predictable amount of work. High consistency favors Scrum because sprint planning is reliable. Low consistency favors Kanban because variable-sized items flow better through a pull system with WIP limits.
+Record baseline measures before the trial: cycle time, throughput, the share of work that was unplanned, and a quick team satisfaction check. Run the new setup for a few weeks, long enough for several Sprints or for cycle times to settle. Agree in advance what result would count as better and what would send you back.
 
-> **Pro tip:** If you discover that batch sizes are inconsistent because large items are not being broken down, that is a backlog refinement problem, not a framework problem. See [managing product backlogs](https://tryhamster.com/skills/managing-product-backlogs) before scoring this dimension too low.
+### Step 7: Review and decide
 
-### Step 4: Step 4: Score Scope Stability, Cadence Need, and Organizational Coupling (1-5 Each)
-
-For scope stability, count how many times priorities shifted significantly during your 4-6 week window. Zero or one shift scores 5. Two or three shifts score 3. Weekly or more frequent shifts score 1.
-
-For cadence need, ask stakeholders and dependent teams how they consume your output. , biweekly demos to sales), score 5. , API updates, content publishing), score 1. For organizational coupling, count external dependencies that blocked or delayed work items.
-
-If fewer than 10% of items had external blockers, score 1 (low coupling). If more than 40% did, score 5 (high coupling). Write all three scores with supporting evidence.
-
-> **Pro tip:** Organizational coupling is the most commonly misjudged dimension. Teams in large companies almost always undercount their dependencies because they have normalized the waiting. Look for items whose cycle time was more than double the median and ask why.
-
-### Step 5: Step 5: Total the Scores and Identify the Framework Zone
-
-Add the five dimension scores. A total of 20-25 strongly favors Scrum: your work is predictable, batches are consistent, scope holds, stakeholders want cadence, and external dependencies require coordination. A total of 5-12 strongly favors Kanban: work is unpredictable, sizes vary widely, priorities shift often, and downstream consumers prefer continuous delivery. A total of 13-19 places you in hybrid territory.
-
-Within the hybrid zone, look at which dimensions pulled the score in each direction. If cadence need is 5 but scope stability is 1, Scrumban (sprint cadence with flexible scope and WIP limits) is a natural fit. Document your total, the breakdown, and your initial recommendation.
-
-> **Pro tip:** If two teammates arrive at different totals that land in different zones, do not average. Instead, discuss the specific dimensions where you diverged. The conversation is more valuable than the number.
-
-### Step 6: Step 6: Design the 2-Week Trial Configuration
-
-Based on your framework zone, define the concrete setup for a 2-week trial. For Scrum: set sprint length (start with 2 weeks), define ceremonies (planning, daily standup, review, retrospective), create a board with To Do, In Progress, Done. For Kanban: define columns matching your workflow stages, set initial WIP limits (start with number of team members minus one per column), skip sprint planning, keep daily standups. , new urgent items can enter mid-sprint if they replace an equal-sized item).
-
-Write the configuration as a one-page document the whole team can reference.
-
-> **Pro tip:** Set WIP limits slightly tighter than feels comfortable. If you have 5 developers, try a WIP limit of 4 on In Progress. Tight limits surface bottlenecks quickly during the trial, which is exactly what you want.
-
-### Step 7: Step 7: Define Baseline Metrics and Trial Success Criteria
-
-Before starting the trial, calculate baseline metrics from your historical data: average cycle time (start to done), throughput (items completed per week), percentage of unplanned items, and average team satisfaction (run a quick 1-5 anonymous survey asking "How well does our current workflow support your ability to do good work?"). Then set success criteria for the trial. A reasonable bar is: cycle time does not increase by more than 20%, throughput stays within 10% of baseline, unplanned work percentage decreases or stays flat, and satisfaction improves by at least 0.5 points. Write these numbers down before the trial starts so you are not cherry-picking success metrics after the fact.
-
-> **Pro tip:** If your team has never measured cycle time, the act of starting to measure it will itself change behavior. Expect cycle times to appear worse in the first week simply because you are now counting items that previously sat untracked.
-
-### Step 8: Step 8: Run the Trial and Collect Data
-
-Execute the 2-week trial using the configuration from Step 6. Track the same metrics daily or at minimum at the end of each week. The team lead or scrum master should note qualitative observations: ceremonies that felt productive, moments of friction, items that violated WIP limits or sprint scope, and any external events that disrupted the trial. At the end of two weeks, compile the metrics and run the satisfaction survey again.
-
-This is a data collection phase, not a judgment phase. , a WIP limit of 2 is causing developers to sit idle daily).
-
-> **Pro tip:** If a major incident or company event disrupts the trial (holiday week, major outage, leadership change), extend the trial by one week rather than drawing conclusions from an unusual period.
-
-### Step 9: Step 9: Evaluate Results and Decide
-
-Compare trial metrics to your baseline success criteria. If all criteria are met, commit to the framework for the next quarter with a scheduled review at the end. If some criteria are met but others are not, identify the specific dimensions causing friction and adjust the configuration. For example, if cycle time increased because WIP limits were too tight, relax them by one and run another week.
-
-If no criteria are met, go back to Step 5 and consider the adjacent framework zone. " The retrospective output feeds directly into your configuration adjustments. See [running retrospectives](https://tryhamster.com/skills/running-retrospectives) for how to facilitate this effectively.
-
-> **Pro tip:** Teams often want to abandon a framework after one uncomfortable trial. Push for at least one adjustment cycle before pivoting. The discomfort of a new workflow is not the same as framework mismatch.
+At the end of the trial, compare the measures with the baseline and hold a retrospective on the experience. Keep the framework, adjust it, or switch. Record the decision and schedule a later check, because the team's work can change as the product matures.
 
 ## Best Practices
 
-- Score each dimension independently before discussing as a group. When you discuss scores aloud first, the first number stated anchors everyone else. Independent scoring followed by comparison reveals genuine disagreement and produces a more accurate assessment.
-- Use real data, not aspirations. Score based on how work actually flows today, not how you hope it will flow once the new framework is in place. Teams that score based on aspirations pick Scrum (because they wish they could plan) and then fail at sprint commitments because their reality is Kanban-shaped.
-- Start with the lightest viable configuration. For Scrum, you can add ceremonies later, but removing them creates resistance. For Kanban, you can tighten WIP limits incrementally. For hybrids, start with two Scrum ceremonies (planning and retrospective) plus WIP limits, then add or remove based on trial results.
-- Re-evaluate the framework choice every quarter. Teams evolve, products mature, and organizational context shifts. A team that needed Kanban during a chaotic product-market fit phase may benefit from Scrum once priorities stabilize. Build a quarterly 30-minute review into your team calendar.
-- Document your framework-fit scorecard and share it with stakeholders. When a manager asks "why aren't you doing Scrum like the other teams," a scored assessment with real data is far more persuasive than "it doesn't feel right." The scorecard also helps new team members understand why the current approach was chosen.
-- Do not conflate framework choice with tool choice. You can run Kanban in Jira or Scrum in Trello. Pick the framework first based on workflow fit, then configure whatever tool you already have. Switching tools and frameworks simultaneously introduces too many variables to learn from the trial.
-- Accept that different teams in the same company may need different frameworks. A platform engineering team and a product feature team have fundamentally different work arrival patterns. Forcing a single framework across all teams is one of the most common causes of agile adoption failure. See [scaling agile across teams](https://tryhamster.com/skills/scaling-agile-across-teams) for how to manage this.
+- Decide from the work history rather than from preference. Teams often choose the framework their last company used, which may not fit the work in front of them.
+- Keep WIP limits explicit whichever framework you choose. The [Kanban Guide](https://kanbanguides.org/english/) makes controlling work in progress mandatory, and Scrum teams benefit from the same discipline within a Sprint.
+- Protect the Sprint Goal if you choose Scrum. The [Scrum Guide](https://scrumguides.org/scrum-guide.html) allows scope to be "clarified and renegotiated" as the team learns, but not changes that endanger the goal.
+- Handle interrupts deliberately. If unplanned work is real but smaller than planned work, a Scrum team can reserve capacity for it or route it through a separate flow lane.
+- Keep retrospectives in any setup. Kanban does not mandate them, but regular reflection is one of the [agile principles](https://agilemanifesto.org/principles.html) and is how the team will know if the choice is wrong.
+- Treat the choice as reversible. A short trial and a later check keep the team from defending a framework that no longer fits.
 
 ## Common Mistakes
 
-- **Choosing Scrum by default because it is the most popular agile framework** — Scrum's popularity does not mean it fits every context. Teams that handle continuous support requests, incident response, or highly variable work types will struggle with fixed-length sprints and scope commitments. The signal to watch for is consistently failing to complete sprint goals, which teams often blame on estimation skill when the real issue is a framework mismatch. Run the five-dimension scoring before committing to any framework.
-- **Treating Kanban as 'Scrum without the meetings' or 'no process at all'** — Kanban has its own discipline: explicit WIP limits, pull-based flow, defined policies for each column, and regular metrics review. Teams that adopt Kanban as a way to avoid process end up with a chaotic task board and no improvement mechanism. The diagnostic sign is a Kanban board with no WIP limits and dozens of items in progress simultaneously. If your Kanban has no constraints, it is not Kanban.
-
-It is a to-do list.
-- **Scoring dimensions based on one person's perspective instead of gathering independent scores** — A team lead or product manager often has a different experience of work predictability than individual contributors. The lead may think scope is stable because they absorb the scope changes themselves. The ICs experience constant context switching. When one person fills out the scorecard alone, the resulting framework choice optimizes for one role's experience.
-
-Have at least three team members score independently, then compare and discuss divergences.
-- **Abandoning the trial after the first difficult week** — Any new workflow creates friction in the first few days because habits are disrupted. Teams mistake normal adjustment discomfort for framework mismatch. The signal that distinguishes real mismatch from adjustment discomfort is whether friction decreases over the two-week trial. If daily standups feel awkward on day 2 but smoother by day 8, that is adjustment.
-
-If WIP limits cause developers to block each other every single day of the trial, that is a configuration problem worth addressing. Run the full trial and adjust before pivoting.
-- **Building an elaborate hybrid without understanding why each element is included** — Some teams create a Frankenstein process that includes sprint planning, daily standups, WIP limits, kanban boards, retrospectives, release trains, and more, with no clear rationale for each element. Every ceremony and constraint should map to a specific problem your scorecard identified. If scope stability is low, WIP limits address that. If stakeholder communication is the issue, sprint reviews address that.
-
-If you cannot explain why a ceremony exists in terms of your scored dimensions, remove it.
-- **Ignoring the organizational coupling dimension and then being surprised by cross-team friction** — Teams often focus on internal workflow dimensions (predictability, batch size) and forget that external dependencies shape which framework succeeds. A team with heavy cross-team dependencies benefits from Scrum's planning ceremonies because they create natural coordination points. Without them, dependencies surface as surprises mid-flow. If your coupling score was 4 or 5, ensure your chosen framework includes explicit planning or sync points, even if other dimensions favor Kanban.
+- **Choosing Kanban to avoid planning**: Kanban still requires an ordered queue, WIP limits and attention to flow. Without them it becomes an unmanaged to-do list.
+- **Forcing interrupt-driven work into Sprints**: If most work arrives unannounced, Sprint plans become fiction and the team stops trusting them. Look at the arrival data before committing to Sprints.
+- **Running Scrumban as "Scrum with fewer rules"**: Dropping Scrum events without adding WIP limits and flow measures loses the structure of both. Name exactly what you keep and what you add.
+- **Comparing frameworks on velocity**: Velocity and throughput measure different things and depend on how each team sizes work. Compare cycle time, predictability and team experience instead.
+- **Never revisiting the decision**: A new product team may start with Scrum and later move to flow as the product stabilizes. Schedule a review.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/agile/METHOD.md) — Agile
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/agile/METHOD.md): Agile
 
 ## Related Skills
 
 - [Comparing Agile and Waterfall for Project Selection](../comparing-agile-and-waterfall/SKILL.md)
-- [Running Sprint Planning and Execution](../running-sprint-planning-and-execution/SKILL.md)
-- [Scaling Agile Across Multiple Teams and Departments](../scaling-agile-across-teams/SKILL.md)
-- [Managing and Refining a Product Backlog](../managing-product-backlogs/SKILL.md)
-- [Coaching Teams Through Agile Adoption and Transformation](../coaching-agile-team-adoption/SKILL.md)
+- [Running Sprint Planning and Agile Sprint Execution](../running-sprint-planning-and-execution/SKILL.md)
+- [Facilitating the Daily Standup Meeting](../facilitating-daily-standups/SKILL.md)
 - [Running Sprint Retrospectives for Continuous Improvement](../running-retrospectives/SKILL.md)
-- [Facilitating Effective Daily Stand-Up Meetings](../facilitating-daily-standups/SKILL.md)
+
+## Sources
+
+- [Ken Schwaber and Jeff Sutherland: The Scrum Guide](https://scrumguides.org/scrum-guide.html)
+- [The Kanban Guide](https://kanbanguides.org/english/)
+- [Henrik Kniberg and Mattias Skarin: Kanban and Scrum, Making the Most of Both](https://www.infoq.com/minibooks/kanban-scrum-minibook/)
+- [Agile Alliance: Scrumban](https://www.agilealliance.org/glossary/scrumban/)
+- [Principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html)

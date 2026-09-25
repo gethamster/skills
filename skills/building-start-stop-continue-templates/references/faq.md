@@ -1,25 +1,21 @@
-# FAQ: Building Start Stop Continue Templates and Worksheets
+# FAQ: Building a Start Stop Continue Retrospective Template
 
-## What's the best tool for a start stop continue template?
+## Which tool should I build the template in?
 
-There's no single best tool—it depends on your team's workflow. Miro and FigJam are best for synchronous visual sessions, Google Docs or Sheets work well for async or small-team use, and Notion excels when you want to track feedback across multiple sessions over time. Use whatever tool your team already opens daily.
+Use a tool the team already uses. Online whiteboards such as Miro suit live remote sessions with sticky notes and voting. A shared document in Google Docs, Notion or Confluence suits asynchronous input. A printed worksheet suits in-person sessions and 1-on-1s.
 
-## Can I use a start stop continue template for individual self-reflection?
+## Can I use a ready-made start stop continue template?
 
-Absolutely. Simplify the template to a single-user format with three sections and an action items list. A Google Doc or Notion page works well for personal use. Add date fields and review your entries monthly to spot patterns in what you consistently want to start or stop.
+Yes. Miro and Confluence both offer one, and dedicated retrospective tools such as Parabol and Retrium include the format. Check that it has column definitions, a place for last session's actions, a voting method, an action table and a free text box, and add whichever of those are missing.
 
-## How often should I update my start stop continue template?
+## Should notes be anonymous?
 
-Review your template after every 3-4 uses. Rotate prompts to prevent fatigue, adjust section sizes based on where participants write the most, and refine the action items structure based on whether commitments are actually being followed through.
+It depends on the team. Anonymous notes help when trust is new or hierarchy is steep. Named notes make it easier to ask the author a clarifying question. Some tools let you hide notes during writing and reveal them together, which gives much of the benefit either way.
 
-## Should the start stop continue template allow anonymous feedback?
+## How often should I change the template?
 
-For teams still building psychological safety, anonymous input significantly improves honesty—especially in the Stop category. Miro supports anonymous sticky notes, and you can use Google Forms feeding into a shared sheet. As trust grows, you can transition to attributed feedback.
+Change the prompts to fit each session's scope, and keep the structure stable. Review the template itself every few sessions and fix anything that consistently confuses people. Save the revised version as the new master copy.
 
-## How many prompts should I include in each section of the template?
+## What should a start stop continue worksheet include?
 
-Include 2-3 prompts per section. Fewer than two leaves participants staring at a blank space; more than four feels prescriptive and overwhelming. Choose prompts that are specific to your current project phase or team challenge rather than generic questions.
-
-## What's the difference between a start stop continue template and a retrospective template?
-
-A start stop continue template is a specific type of retrospective template that uses the three-category framework from the Start Stop Continue method. Other retrospective formats include Mad Sad Glad, 4Ls, and Sailboat. The SSC format is popular because its categories map directly to concrete behavioral changes.
+At minimum: the scope and date, the three headings with a prompt under each, a line for an example per item, a box for anything else, and space to record agreed actions. For 1-on-1 use, add a box for feedback to the manager.

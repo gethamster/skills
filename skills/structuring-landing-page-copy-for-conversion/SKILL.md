@@ -1,15 +1,20 @@
 ---
-name: structuring-landing-page-copy-for-conversion
-description: "This skill teaches you how to sequence landing page copy sections — from headline through social proof, objection handling, and CTA — using a proven conversion copywriting framework that guides visitors toward a single action."
+name: "structuring-landing-page-copy-for-conversion"
+description: "A landing page copy structure for conversion: order the sections from headline to final call to action so one page makes one argument for one action."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: copywriting-framework
+  method: "copywriting-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Structuring Landing Page Copy for Maximum Conversion Copywriting Results
+# Structuring Landing Page Copy for Conversion
 
-> This skill teaches you how to sequence landing page copy sections — from headline through social proof, objection handling, and CTA — using a proven conversion copywriting framework that guides visitors toward a single action.
+> A landing page copy structure for conversion: order the sections from headline to final call to action so one page makes one argument for one action.
 
 ## Before you start
 
@@ -24,128 +29,108 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You can architect a complete landing page copy structure that systematically moves visitors from attention to action, resulting in measurably higher conversion rates. |
-| Prerequisites | Understanding of your target audience's pain points and desires, Basic knowledge of benefit-driven headlines, A defined conversion goal (signup, purchase, demo request, etc.), Customer research or voice-of-customer data |
+| Time to Learn | A few hours, plus one full page to practice on |
+| Outcome | You can outline and write a landing page whose sections answer the reader's questions in order and lead to one action. |
+| Prerequisites | A single conversion goal, the traffic source, a customer quote file, a feature-benefit table, real proof |
 | Part of | [Copywriting Framework](../../methods/copywriting-framework/METHOD.md) |
 
 ## Overview
 
-Most landing pages fail not because the copy is poorly written, but because it's poorly *structured*. Individual sections might be compelling in isolation, but the page as a whole doesn't build a coherent argument that moves visitors toward a decision. Conversion copywriting for landing pages is fundamentally about sequencing — putting the right message in front of the right reader at the right stage of their decision process.
+A landing page is a page built for one audience arriving from one source to take one action. This skill shows how to structure a landing page: which sections to include, in what order, and what each one must do, so the page reads as a single argument that ends at the call to action. It is the page-level application of the [copywriting framework](../../methods/copywriting-framework/METHOD.md).
 
-This skill teaches you a proven section-by-section framework for structuring landing page copy. You'll learn why certain elements must come before others, how each section creates psychological momentum, and how to adapt the framework for different offer types — from SaaS free trials to ecommerce product pages to lead magnets. The framework draws from the broader [Copywriting Framework](https://tryhamster.com/methods/copywriting-framework) methodology, which prioritizes clarity, specificity, and customer language over cleverness and jargon.
+The structure follows the questions a reader has as they scroll. What is this, and is it for me? Do you understand my problem? How does this solve it? Why should I believe you? What about my doubts? What do I do now? Corey Haines's [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md) turns those questions into core sections: an above-the-fold headline, subheadline and primary call to action, then social proof, the problem, the solution and its benefits, how it works, objection handling, and a final call to action that recaps the value.
 
-Once you internalize this structure, you'll stop staring at a blank page wondering what comes next. Instead, you'll have a repeatable blueprint that you can execute confidently — and test methodically — for any landing page you build.
+The same order echoes older formulas. The attention, interest, desire and action sequence commonly attributed to E. St. Elmo Lewis ([Wikipedia](https://en.wikipedia.org/wiki/AIDA_(marketing))) moves a reader from noticing to acting, and the Problem-Agitate-Solve pattern in Haines's [ad copy templates](https://github.com/coreyhaines31/marketingskills/blob/main/skills/ads/references/ad-copy-templates.md) shapes the problem and solution sections. These formulas describe the argument. They are not proven models of how buyers decide, and Wikipedia's summary of research on AIDA notes it has been found a poor predictor of actual consumer behaviour.
+
+Two rules keep a conversion-focused landing page on track. First, one page, one job: Haines's guidance for landing pages calls for a single message and a single call to action. Second, match the traffic: the headline should continue the promise of the ad, email or search result that brought the reader, so they know at once they are in the right place.
+
+The output of this skill is a section-by-section outline with the job of each section, followed by the copy written into that outline.
 
 ## How It Works
 
-The landing page copy structure works by mirroring the natural psychology of how people make decisions. Visitors arrive with a need or curiosity (your headline must match this), then they need to feel understood (problem agitation), then they want to see a solution (your offer), then they need proof that the solution works (social proof), then they raise internal objections (which you preemptively address), and finally they're ready to act (your CTA).
+Start with the goal and the traffic source, because they decide how much the page has to do. A reader who clicked an ad about a specific problem already knows the problem, so the problem section can be short. A reader arriving from a broad search may need the problem framed first. Haines's context questions ask where traffic comes from and what visitors already know before arriving, and those answers set the length and emphasis of each section.
 
-This isn't arbitrary — it follows the same persuasion sequence that skilled salespeople use in one-on-one conversations. The key insight from conversion copywriting research is that skipping or reordering these stages creates friction. For example, placing a CTA before establishing credibility triggers resistance. Showing social proof before the visitor understands the offer makes testimonials meaningless. Each section earns the right to present the next section.
+The top of the page carries the most weight. NN/g's eyetracking work on the [F-shaped pattern](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/) found that the first lines of text on a page get more gazes than later ones. The hero therefore has to state the offer and its main benefit in the headline, add specificity in the subhead, and show the primary action. Some readers decide right there, and the rest of the page is for the ones who need more.
 
-The framework also works because it controls attention. A well-structured landing page is a single-path experience — there's one argument being made, one action being requested, and every section either advances that argument or removes a barrier to that action. This is fundamentally different from a homepage or blog post, which serve multiple audiences and goals. The landing page structure is ruthlessly focused, and that focus is what drives conversion.
+The middle landing page copy sections each answer one question. The problem section shows the reader you understand their situation, ideally in their own words from research. The solution and benefits section connects the product to outcomes; Haines suggests a handful of key benefits. A how-it-works section reduces perceived complexity with a few steps. Social proof, such as logos, testimonials and results, supports the claims, and the FTC's [Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) require that testimonials reflect honest opinions and that exceptional results come with a disclosure of what people generally achieve.
+
+Objection handling comes near the end, when the reader is weighing the decision. Take the objections from sales calls, support tickets and reviews, and answer each directly in an FAQ, a comparison, or a guarantee. The final call to action restates the value, repeats the same primary action, and removes any remaining risk with a true statement about cost or commitment.
+
+Throughout, give each section one idea and put its main point first, following NN/g's [inverted pyramid](https://www.nngroup.com/articles/inverted-pyramid/) advice. Section order is a starting point. If research shows proof matters most to your audience, move social proof higher. The structure serves the reader's questions, so reorder when those questions come in a different order.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define the Single Conversion Goal and Visitor Intent
+### Step 1: Define the one goal and the traffic source
 
-Before writing a single word, get absolute clarity on two things: what action you want the visitor to take, and what state of mind they're in when they arrive. The conversion goal determines every structural decision you'll make. A page requesting a $5,000 enterprise demo needs far more copy sections than a page offering a free PDF download.
+Write the single action the page exists for and the source that sends readers to it. Note what those readers already know and what they were promised in the ad, email or result they clicked. If the page must serve two goals or two very different sources, plan two pages. Pick the metric you will judge the page by.
 
-Document the traffic source (paid ad, email, organic search, social) because it tells you the visitor's awareness level. Someone clicking a Google ad for 'best project management software' is solution-aware — they know tools exist and are comparing options. Someone arriving from a blog post about productivity struggles is problem-aware but may not know your category exists. This awareness level determines where your structure begins.
+### Step 2: Outline the sections and their jobs
 
-Write a one-sentence brief: 'This page converts [visitor type] from [traffic source] into [specific action] by convincing them that [core argument].' Every structural decision flows from this sentence.
+List the sections in order and write one line for each saying what question it answers. Start from Haines's core set in his [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md): hero, social proof, problem, solution and benefits, how it works, objection handling, final call to action. Drop sections the traffic does not need and move proof higher if your audience is skeptical. Keep the outline to one page.
 
-> **Pro tip:** If you can't define a single conversion goal, you don't have a landing page — you have a webpage. Split it into separate pages with separate goals.
+### Step 3: Write the hero to match the traffic
 
-### Step 2: Step 2: Open with a Headline + Subheadline That Match Visitor Intent
+Write a headline that continues the promise of the traffic source and states the main benefit. Add a subhead that says who it is for or how it works, and a primary button that names what the reader gets. Check that a reader who saw only this screen would know what the page offers and what to do. Use a [five-second test](https://www.lyssna.com/guides/five-second-testing/) to confirm it.
 
-Your headline section (headline, subheadline, and optional hero image) has one job: confirm to the visitor that they're in the right place and give them a reason to keep reading. This is not the place for brand storytelling or clever wordplay. It's pattern-matching — the visitor had an expectation when they clicked, and your headline must fulfill it.
+### Step 4: Write the problem and solution sections
 
-For most landing pages, the headline should state the primary benefit or outcome. The subheadline should add specificity — how the benefit is delivered, who it's for, or what makes it different. Together, they answer the visitor's unconscious question: 'Is this for me, and is it worth my time to keep reading?'
+Describe the problem in the customer's words from your research, briefly if the traffic already knows it. Follow with the solution and its key benefits, each paired with the feature that delivers it. Use the Problem-Agitate-Solve shape where the reader needs to feel the cost of the problem, and keep the agitation honest.
 
-If you're driving traffic from ads, echo the ad's language in the headline. This creates message match, which is one of the strongest conversion levers available. If the ad says 'Get 3x more qualified leads without cold calling,' the landing page headline should reinforce that exact promise, not introduce a completely new angle. For more on headline techniques, see [Writing Benefit-Driven Headlines That Convert](https://tryhamster.com/skills/writing-benefit-driven-headlines).
+### Step 5: Add how it works and the proof
 
-> **Pro tip:** Test your headline by reading it aloud and asking: 'Would I keep scrolling, or would I bounce?' If there's any ambiguity about what's being offered or who it's for, rewrite.
+Explain how the product works in a few simple steps so it feels manageable. Place testimonials, logos and results near the claims they support. Use only real, permitted proof, and add context where a result is not typical, as the FTC's [Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) require.
 
-### Step 3: Step 3: Agitate the Problem to Create Emotional Urgency
+### Step 6: Answer the objections
 
-After the headline confirms relevance, the next section should deepen the visitor's emotional connection to the problem your product solves. This isn't about being manipulative — it's about demonstrating that you genuinely understand their situation. When visitors feel understood, they trust you more.
+List the objections that come up in sales calls, tickets and reviews, and answer the most common ones directly. Use an FAQ for several short answers, a comparison for alternatives, and a guarantee or trial terms for risk. Keep answers specific and true.
 
-Describe the problem in specific, vivid terms using the language your customers actually use. Don't say 'managing projects is hard.' Say 'You're juggling Slack messages, email threads, and spreadsheets just to figure out who's doing what — and things still fall through the cracks.' The specificity signals expertise and builds the emotional case for why the status quo isn't acceptable.
+### Step 7: Close with the final call to action
 
-This section works best as 2-4 short paragraphs or a series of bullet points that enumerate the frustrations, costs, or risks of not solving the problem. The goal is to make the visitor nod and think 'yes, that's exactly my situation.' You can mine this language directly from customer interviews, support tickets, and review sites — see [Mining Customer Language for Persuasive Copy](https://tryhamster.com/skills/mining-customer-language-for-copy) for techniques.
+Restate the core benefit in a sentence, repeat the same primary action used in the hero, and add a short line that removes the last doubt, such as cost or commitment. Repeat the primary action wherever a reader might be ready, but keep it the same action. Click through to confirm the next screen delivers what the button says.
 
-> **Pro tip:** Use the 'before and after' mental model. This section paints the 'before' picture. The next section will paint the 'after.' The contrast between them is what creates desire.
+### Step 8: Review the page as one argument
 
-### Step 4: Step 4: Present Your Solution with Benefits, Not Features
-
-Now that the visitor is emotionally engaged with the problem, introduce your product or service as the solution. This is the section where many landing pages go wrong — they dump a feature list instead of explaining what those features mean for the visitor's life or business.
-
-Structure this section around 3-5 key benefits, each supported by the feature that delivers it. For each benefit, answer: 'So what? Why does this matter to the visitor?' A project management tool's 'automated task assignment' feature becomes 'Never manually assign tasks again — the system routes work to the right person automatically, so nothing gets lost.' For a deep dive on this translation, see [Translating Product Features into Customer Benefits](https://tryhamster.com/skills/translating-features-into-benefits).
-
-Use a clear visual hierarchy: benefit-focused subheadings, short explanatory paragraphs, and optional screenshots or illustrations. This section often works well as a series of alternating image-text blocks, each focused on one benefit. Keep the copy scannable — visitors will often skim this section before deciding whether to read the details.
-
-> **Pro tip:** Lead with your most differentiated benefit — the one thing you do that competitors don't, or do significantly better. This is your strongest conversion lever.
-
-### Step 5: Step 5: Stack Social Proof Strategically
-
-After presenting your solution, the visitor's internal response is often 'sounds great, but does it actually work?' Social proof answers this question. The key to effective social proof in conversion copywriting is strategic placement and specificity — generic logos and vague testimonials won't move the needle.
-
-Layer multiple types of social proof in order of persuasive power for your audience. For B2B, the hierarchy is typically: specific case studies with metrics > named testimonials with titles and photos > recognizable company logos > aggregate stats ('10,000+ teams use...'). For B2C, it's often: star ratings and review counts > specific customer testimonials > media mentions > user-generated content.
-
-Each testimonial or proof point should address a specific benefit or objection, not just say 'great product!' Curate proof that reinforces the benefits you just described. If your key benefit is saving time, feature a testimonial that says 'We cut our project planning time by 60% in the first month.' Relevance beats volume — three targeted testimonials outperform twenty generic ones.
-
-> **Pro tip:** Place your strongest single testimonial immediately after the benefits section, then add a fuller social proof section (logos, case study snippets, metrics) lower on the page. This creates two proof touchpoints.
-
-### Step 6: Step 6: Handle the Top 3-5 Objections Directly
-
-Every visitor who's still reading at this point is interested but not yet convinced. They have specific objections — reasons they're hesitating. Your job is to surface and address the most common objections before the visitor reaches the CTA.
-
-Identify objections from three sources: sales team feedback ('what questions come up on every call?'), customer support data ('what do trial users struggle with?'), and competitor comparison points ('what makes people choose competitors instead?'). The most common objection categories are: price/value, implementation difficulty, risk/commitment, and timing ('not right now').
-
-Address objections directly, not defensively. An FAQ format works well for this section because it lets you state the objection in the visitor's own words and then answer it concisely. Alternatively, use a 'How it works' mini-section for implementation concerns, a pricing comparison for value objections, or a guarantee/free trial offer for risk objections. The key is to be honest and specific — vague reassurances ('we make it easy!') don't resolve real objections.
-
-> **Pro tip:** If price is a top objection but you don't want to lower prices, reframe value. Show the cost of *not* solving the problem, or break the price into a per-day/per-user figure that feels manageable.
-
-### Step 7: Step 7: Close with a Clear, Compelling CTA Section
-
-The CTA section is not just a button — it's a complete closing argument. By the time visitors reach this point, they've been persuaded intellectually and emotionally, and they've had their objections addressed. The CTA section gives them the final push and makes taking action feel easy and safe.
-
-Structure the CTA section with three elements: a benefit-restating headline ('Start getting 3x more qualified leads today'), a brief reinforcement of the key value proposition or guarantee (1-2 sentences), and a high-contrast button with action-oriented copy. The button text should describe the outcome, not the action — 'Get My Free Analysis' outperforms 'Submit,' and 'Start My Free Trial' outperforms 'Sign Up.' For CTA copy techniques, see [Crafting High-Converting Call-to-Action Copy](https://tryhamster.com/skills/crafting-high-converting-ctas).
-
-For high-commitment offers (purchases, demos, annual subscriptions), add a risk-reversal element directly next to the CTA: a money-back guarantee, a 'no credit card required' note, or a 'cancel anytime' assurance. Reducing perceived risk at the moment of decision is one of the most reliable conversion lifts you can get. On longer pages, repeat the CTA in a secondary location — typically after the benefits section — for visitors who are ready to convert early.
-
-> **Pro tip:** Never end a landing page with a section that isn't a CTA. If you add a footer FAQ or additional details, follow them with another CTA block. The last thing the visitor sees should always be the action you want them to take.
+Read the page top to bottom and check that each section answers its question and leads to the next. Cut sections that repeat others. Confirm the headline, body and button all make the same promise. Then launch, measure the chosen metric, and test the hero first.
 
 ## Best Practices
 
-- Maintain one CTA per page — every section should support a single conversion action, even if the CTA button appears in multiple locations
-- Match your copy length to the commitment level: free offers need shorter pages (headline, benefit bullets, CTA), while high-ticket offers need the full structure with extensive proof and objection handling
-- Write section transitions that create forward momentum — the last sentence of each section should make the next section feel like a natural continuation, not a topic change
-- Use subheadings as a standalone persuasion track — a visitor who only reads your subheadings should still understand your core argument and feel compelled to act
-- Place your first CTA above the fold for low-commitment offers, but resist the urge to make it the only CTA — always include a full closing CTA section after building the complete argument
-- Test your page structure before optimizing individual copy — moving sections (e.g., putting social proof before benefits) often produces bigger conversion lifts than rewriting headlines
+- Build around one goal. Haines's landing page guidance in his [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md) calls for a single message and a single call to action.
+- Match the headline to the traffic source. Readers who see the promise they clicked on know at once they are in the right place.
+- Front-load every section. With early lines getting the most attention on the [F-shaped pattern](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), each section should open with its point.
+- Put proof next to the claim it supports. A testimonial about speed belongs beside the speed claim, where it does its work.
+- Take objections from real conversations. Answers to objections nobody raises add length without adding persuasion.
+- Reorder sections when the research says so. The order is a default for common reader questions, and your readers may ask them in another order.
 
 ## Common Mistakes
 
-- **Leading with features or company information instead of visitor-focused benefits** — Always open with the outcome the visitor wants. Nobody cares about your founding story or tech stack until they believe you can solve their problem. Move company info to a supporting position after benefits and proof.
-- **Placing the CTA too early without building the argument, then not repeating it at the end** — For anything beyond a simple free offer, the CTA needs context to work. Build headline → problem → solution → proof → objections → CTA. Then add an earlier CTA button after the benefits section for ready-to-act visitors.
-- **Using generic social proof that doesn't connect to specific benefits or objections** — Curate testimonials and case studies that directly reinforce your key benefits or counter your top objections. A testimonial saying 'setup took 15 minutes' is worth ten that say 'love this product' if implementation difficulty is a common objection.
-- **Including navigation menus, sidebar links, and multiple competing CTAs on the landing page** — Remove all navigation and competing links. A landing page is a closed environment with one exit: the conversion action. Every additional link is a leak in your funnel. If you must include a secondary option, make it visually subordinate (text link, not a button).
-- **Writing the page top-down and running out of energy on the objection-handling and CTA sections** — Start by writing the CTA section and objection-handling section first — these are where conversions actually happen. Then work backward through proof, solution, problem, and headline. The bottom of the page matters more than most copywriters realize.
+- **Serving several goals on one page**: A page that asks for a demo, a newsletter sign-up and a download dilutes each. Choose one and move the others.
+- **Breaking the promise of the ad**: A headline that does not echo what the reader clicked on makes them wonder if they are in the right place. Continue the same promise.
+- **Padding with sections the traffic does not need**: Long problem sections for readers who already know the problem slow them down. Size each section to what the reader already knows.
+- **Using proof you cannot stand behind**: Invented numbers or unapproved testimonials risk trust and, under FTC rules, legal trouble. Use real, permitted proof.
+- **Changing the action at the bottom**: A final button that asks for something different from the hero button confuses readers. Repeat the same primary action.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/copywriting-framework/METHOD.md) — Copywriting Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/copywriting-framework/METHOD.md): Copywriting Framework
 
 ## Related Skills
 
-- [Mining Customer Language for Persuasive Copy](../mining-customer-language-for-copy/SKILL.md)
-- [Translating Product Features into Customer Benefits](../translating-features-into-benefits/SKILL.md)
-- [Crafting High-Converting Call-to-Action Copy](../crafting-high-converting-ctas/SKILL.md)
-- [Writing Clarity-First Web Copy That Eliminates Jargon](../writing-clarity-first-web-copy/SKILL.md)
-- [Writing Email Copy Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
+- [Page-Specific Website Copy: Homepage, Landing, Pricing](../writing-page-specific-website-copy/SKILL.md)
 - [Writing Benefit-Driven Headlines That Convert](../writing-benefit-driven-headlines/SKILL.md)
-- [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../writing-page-specific-website-copy/SKILL.md)
+- [Call-to-Action Copywriting: Writing High-Converting CTAs](../crafting-high-converting-ctas/SKILL.md)
+- [How to Translate Features into Benefits](../translating-features-into-benefits/SKILL.md)
+- [Mining Customer Language for Persuasive Copy](../mining-customer-language-for-copy/SKILL.md)
+- [Writing Clarity-First Web Copy Without Jargon](../writing-clarity-first-web-copy/SKILL.md)
+- [Email Copywriting: Writing Sequences That Drive Action](../writing-email-sequences-that-sell/SKILL.md)
+
+## Sources
+
+- [Corey Haines: copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md)
+- [Corey Haines: ad copy templates](https://github.com/coreyhaines31/marketingskills/blob/main/skills/ads/references/ad-copy-templates.md)
+- [Wikipedia: AIDA (marketing)](https://en.wikipedia.org/wiki/AIDA_(marketing))
+- [NN/g: F-Shaped Pattern of Reading on the Web](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/)
+- [NN/g: Inverted Pyramid](https://www.nngroup.com/articles/inverted-pyramid/)
+- [FTC: Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking)
+- [Lyssna: Five-second testing](https://www.lyssna.com/guides/five-second-testing/)

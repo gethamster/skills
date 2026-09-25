@@ -1,37 +1,37 @@
-# Examples: Building Content Waterfall Strategies
+# Examples: Building a Content Waterfall Strategy for Repurposing
 
-## Example: B2B SaaS company launches a content waterfall from a benchmark report
-
-**Scenario:**
-
-A project management SaaS company publishes an annual "State of Project Delivery" report based on a survey of 500 project managers. The marketing team has 2 content producers and needs to generate 3 months of content from this single investment.
-
-**Walkthrough:**
-
-**Phase 1 — Pillar Production (Weeks 1–3):** The team produces a 6,000-word benchmark report with 12 sections covering trends, challenges, tool adoption, methodology preferences, and forecasts. It goes through two rounds of internal review and one SME review before passing the pillar gate.
-
-**Phase 2 — Derivative Planning (Week 4):** The team maps 42 derivatives: 8 blog posts (one per major finding), 20 social posts (stat cards, quote graphics, mini-frameworks), 3 email sequences (one for each audience segment), 4 short videos (animating key charts), 2 infographics (process maps), and 5 LinkedIn articles (opinion pieces building on the data). Each is mapped to its source section, assigned an owner, and given a deadline.
-
-**Phase 3 — Derivative Production (Weeks 5–7):** Blog posts are produced first (Week 5), then social assets and infographics (Week 6), then emails and video scripts (Week 7). Each batch passes a consistency check against the pillar before the next batch starts.
-
-**Phase 4 — Distribution (Weeks 5–16):** The pillar publishes in Week 5 with a launch email. Blog derivatives roll out 1–2 per week over Weeks 6–13. Social content drips 3–4 posts per week for 10 weeks. Email sequences trigger based on pillar download. Videos release bi-weekly.
-
-**Phase 5 — Review (Week 17):** The team measures total pipeline influence attributed to the waterfall, identifies that stat-card social posts outperformed quote posts 3:1, and documents that the email nurture sequence had a 34% higher click rate than standalone promotional emails. These learnings shape the next quarterly content waterfall.
-
-## Example: Content agency builds a content waterfall for a client's webinar
+## A research report for a B2B software company
 
 **Scenario:**
 
-A content agency manages a client's thought leadership program. The client hosts a monthly 60-minute webinar with an industry expert. The agency needs to maximize the content value of each session without requiring additional client time.
+Illustrative scenario: a small marketing team publishes an annual survey report on how finance teams close their books. Previous reports were released once and then forgotten.
 
 **Walkthrough:**
 
-**Pillar:** The recorded webinar plus its transcript and slide deck serve as the pillar asset. The agency has the recording edited, the transcript cleaned, and the slide deck exported within 3 days of the live event. The client approves the package as the locked pillar.
+This time the team maps the report before writing it. It has five findings, so the matrix has five rows. Each finding gets a standalone blog post, a single-stat graphic and a short post for the company's main social channel. Two findings that the sales team hears about often also get a short explainer video. The team leaves the video column empty for the other three.
 
-**Derivative Map:** From each webinar, the agency plans: 1 long-form blog recap (2,000 words), 3 short blog posts (one per key insight), 1 audiogram series (5 × 60-second clips), 10 social posts (pull quotes, stat callouts, framework visuals), 1 email featuring the replay, and 1 downloadable one-pager summarizing key takeaways.
+The report goes live first with a launch email. The five posts follow one per week, each linking back to the report, and the graphics are spread across the weeks after that. After the first month, the team sees that one finding drew far more comments than the rest, so the second round is a webinar and a set of clips on that finding alone.
 
-**Production:** The blog recap is written first from the transcript (Day 4–5). Social assets and audiograms are produced in parallel by the design team using approved templates (Day 5–7). The email and one-pager are built last (Day 7–8). All pass a gate review on Day 9.
+## A podcast episode for a consultancy
 
-**Distribution:** The replay email sends on Day 3. The blog recap publishes Day 5. Short blogs drip over the following 2 weeks. Social content runs for 3 weeks. The one-pager is gated as a lead-gen asset on the webinar landing page permanently.
+**Scenario:**
 
-The content waterfall turns a single 60-minute investment from the client into 20+ content assets distributed over 3 weeks—a 20:1 derivative ratio that the agency tracks and reports monthly.
+Illustrative scenario: a two-person consultancy records a long podcast conversation with a client-side operations leader about vendor selection.
+
+**Walkthrough:**
+
+While editing, the producer marks the handful of moments where the guest makes a clear, self-contained point. Each becomes a short audio or video clip with captions. The host writes one article that summarizes the conversation in the consultancy's own words, and a newsletter issue that pulls out a practical checklist.
+
+The clips are released over two weeks, with the article in between. The team tracks which clip was shared most and turns that point into the topic of the next episode, so the cascade feeds the next pillar.
+
+## A conference talk for a developer tools startup
+
+**Scenario:**
+
+Illustrative scenario: an engineer gives a talk about debugging a hard production incident. The recording will be public a few weeks later.
+
+**Walkthrough:**
+
+The team does not wait for the recording. The engineer writes a long blog post version of the talk first, which becomes the pillar because it can be searched and linked. The slides become a short carousel post, the key diagram becomes a standalone image with an explanation, and the most surprising finding becomes a short thread.
+
+When the recording arrives, it is added to the blog post and cut into three short clips that link back to it. The team notes that the diagram outperformed everything else and plans to make diagrams a standard part of future pillars.

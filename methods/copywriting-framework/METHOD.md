@@ -1,128 +1,188 @@
 ---
-category: Marketing
+name: "copywriting-framework"
+category: "Marketing"
+description: "A copywriting framework for conversion copy on websites and email: mine customer language, then write clear, specific, benefit-led copy for every page."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The Copywriting Framework: A Conversion-Focused Methodology for Every Page
+# Copywriting Framework: Conversion Copy for Every Page
 
-> Created by **Hamster** — [https://tryhamster.com](https://tryhamster.com)
+> Created by **Corey Haines (compiled from older copywriting rules)** - [https://github.com/coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 
 ## Overview
 
-## A Methodology for Copy That Converts
+The copywriting framework is a set of working rules for conversion copywriting: website and email copy whose job is to get a specific reader to take a specific next step. [Wikipedia defines copywriting](https://en.wikipedia.org/wiki/Copywriting) as writing persuasive text for advertising or other forms of marketing. This framework narrows that to the pages a software or service company actually ships (homepages, landing pages, pricing pages, feature pages and email sequences) and gives each one a short list of rules to write and review against. It applies to B2B copywriting and sales copywriting as much as to consumer sites, and it suits copywriting for beginners because every rule can be checked against the draft.
 
-The copywriting framework is a systematic approach to writing persuasive, results-driven copy for digital products and services. Unlike traditional creative writing or brand storytelling approaches, this framework treats every sentence as a conversion asset. It was synthesized from decades of direct-response copywriting wisdom and adapted for modern SaaS, e-commerce, and B2B contexts where attention is scarce and competition for clicks is fierce.
+The version on this page follows the copywriting skill that Corey Haines published in his open-source [marketingskills repository](https://github.com/coreyhaines31/marketingskills), a free collection of marketing instructions for AI coding agents. The repository's README describes Conversion Factory as Haines's agency for conversion optimization, landing pages and growth strategy. His [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md) sets out five principles (Clarity Over Cleverness, Benefits Over Features, Specificity Over Vagueness, Customer Language Over Company Language, and One Idea Per Section), a formula for call-to-action buttons, and separate guidance for each page type. Hamster's page arranges those rules into an order of work and adds the research behind each one.
 
-At its core, the framework resolves four tensions that plague most marketing copy: the temptation to be clever instead of clear, the habit of writing vague claims instead of specific proof, the instinct to list features instead of articulating benefits, and the reflex to use internal jargon instead of the language customers actually use. By systematically choosing the right side of each tension, teams produce copy that resonates immediately and compels action.
+None of the individual rules is new, and the framework does not claim to be. Written advertising formulas are more than a century old. The attention, interest, desire and action sequence is commonly attributed to E. St. Elmo Lewis, and C. P. Russell first used the AIDA acronym in 1921, according to [Wikipedia's history of AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing)). Claude Hopkins argued that advertising should be tested and measured in [Scientific Advertising](https://en.wikipedia.org/wiki/Scientific_Advertising), published in 1923. The framework's contribution is a practical sequence and a checklist that a writer, an editor or an AI agent can apply one page at a time.
 
-What makes this framework particularly powerful is its page-specific application layer. A homepage headline serves a fundamentally different purpose than a pricing page CTA or a feature comparison section. The framework provides distinct guidance, templates, and formulas for each page type — homepages, landing pages, pricing pages, feature pages, and email sequences — so copywriters never face a blank page without direction.
+Research on how people read web pages explains why clarity carries so much weight. In Jakob Nielsen's study of [how users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/), 79 percent of test users always scanned a new page and only 16 percent read word by word. A related NN/g experiment found that a version of a site rewritten to be concise, scannable and objective scored [124% higher in measured usability](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/) than a promotional version full of exaggeration and boasting. Readers who scan decide from headlines, first words and button labels, so those are where the framework puts most of its effort.
 
-Whether you're a solo founder writing your first landing page, a marketing team scaling content production, or an agency managing copy across dozens of clients, this copywriting framework provides the guardrails to produce consistently high-performing copy. When paired with AI agents in Hamster Studio, teams can operationalize these principles at scale while maintaining the human judgment that separates good copy from great.
+The framework works in two layers. The first layer is a set of principles that apply to every line: be clear, be specific, lead with what the reader gains, use the reader's own words, back claims with honest proof, and label every button with what happens after the click. The second layer is page-specific. Haines's guidance gives a homepage the job of serving several audiences with clear paths for each, gives a landing page a single message and a single call to action, and gives a pricing page the job of helping visitors choose a plan. Email copywriting carries the same rules into the inbox, where his [emails skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/emails/SKILL.md) gives each email one job and one main call to action.
+
+Measurement closes the loop. A rewrite is a hypothesis until real visitors respond to it, so the framework ends with testing headlines and calls to action and feeding what you learn back into the next draft. Benchmarks give rough context: Unbounce's [2024 Conversion Benchmark Report](https://unbounce.com/conversion-benchmark-report/) puts the median landing page conversion rate across industries at 6.6% and reports that pages written at a 5th to 7th grade reading level converted at 11.1%. Judge your own rewrite against the page's previous version, because traffic source, offer and price move conversion rates more than any benchmark can capture.
 
 ## Core Principles
 
 ### Clarity Over Cleverness
 
-The fastest path to conversion is comprehension. If a visitor has to decode your headline, you've already lost them. This principle demands that every piece of copy passes the 'five-second test' — can a first-time visitor understand what you offer, who it's for, and why it matters within five seconds of landing on the page? Puns, wordplay, and abstract metaphors are replaced with direct, unambiguous statements that immediately communicate value.
+A first-time visitor should understand what you offer, who it is for and what to do next without decoding anything. Haines's [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md) states the rule as a choice: if you have to pick between clear and creative, pick clear. NN/g's guidance on [how users read on the web](https://www.nngroup.com/articles/how-users-read-on-the-web/) makes the same call for sub-headings, asking for meaningful ones and warning against clever ones. Wordplay can stay when it survives a comprehension check. A quick way to run that check is a [five-second test](https://www.lyssna.com/guides/five-second-testing/), in which people see a page briefly and then say what it was about and who it was for.
 
 ### Specificity Over Vagueness
 
-Vague claims like 'boost your productivity' trigger skepticism. Specific claims like 'save 4.5 hours per week on status meetings' trigger belief. This principle requires writers to replace every generality with a concrete number, timeframe, outcome, or scenario. Specificity builds credibility because it signals that you've actually measured results rather than invented marketing language.
+Replace general claims with the task, the timeframe, the named outcome or the concrete scenario a reader can picture and check. Haines contrasts a vague line about saving time with one that names the report being cut and the time it used to take. Specific claims have to be true, and the NN/g study that tested writing styles found objective language, free of exaggeration and boasting, improved measured usability on its own ([Morkes and Nielsen](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/)). If a number would help but you do not have one, describe the scenario instead of inventing a figure.
 
 ### Benefits Over Features
 
-Features describe what your product does; benefits describe what your customer gains. This principle mandates a systematic translation layer: for every feature mentioned, the copy must articulate the tangible outcome the customer experiences. 'Real-time collaboration' becomes 'Stop waiting on email replies — edit together and ship the same day.' The customer's life after using the product is always more compelling than the product's technical specifications.
+A feature says what the product does, and a benefit says what the customer gets from it. The best-known version of the idea is the saying that people want a quarter-inch hole, and [Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/) traces its earliest known appearance to a 1942 insurance advertisement run by C. C. Wagner. Leo McGivena may be credited with popularizing it, and Theodore Levitt, to whom it is often credited, himself attributed it to McGivena. Benefits persuade better when the feature stays beside them as the reason to believe. Haines's guidance for feature pages follows the same chain: connect the feature to the benefit and the benefit to the outcome.
 
-### Customer Language Over Jargon
+### Customer Language Over Company Language
 
-The most persuasive copy sounds like it was written by the customer, not the product team. This principle requires active research into how customers describe their problems, desired outcomes, and decision criteria — through reviews, support tickets, sales calls, and surveys. The exact phrases customers use become the raw material for headlines, subheads, and CTAs. When prospects see their own words reflected back, trust forms instantly.
+The words customers use in reviews, interviews and support tickets are usually clearer than the words the product team uses internally. Haines's [customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md) asks for exact quotes rather than paraphrases. A paraphrase tends to turn a vivid customer phrase back into company language. Joanna Wiebe of Copyhackers teaches [Amazon review mining](https://copyhackers.com/write-copy-amazon-review-mining/) as a reliable way to find messages that land with prospects. The research is the raw material for headlines, subheads and button labels.
 
-### Page-Specific Intent Matching
+### One Page, One Job
 
-Every page on a website serves a different visitor intent and occupies a different position in the buyer journey. Homepage copy must orient and qualify. Landing page copy must persuade and convert. Pricing page copy must resolve objections and justify value. Feature page copy must educate and differentiate. This principle ensures copy is architected for the specific job each page performs rather than using a one-size-fits-all approach.
+Each page type serves a different visitor at a different point in the decision. Haines's page-specific guidance gives the homepage the job of offering clear paths for different visitor intents, the landing page one message and one call to action matched to its traffic source, and the pricing page the job of answering which plan is right for the visitor. NN/g's [homepage guidelines](https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/) add that a homepage should open with a one-sentence tagline that says what the company does. Writing every page to the same template produces copy that fits none of them well.
 
-### CTA Formulas That Earn the Click
+### Calls to Action That Say What Happens Next
 
-A call-to-action is not a button label — it's a micro-commitment proposition. This principle replaces generic CTAs like 'Submit' or 'Learn More' with value-driven formulas that complete the sentence 'I want to...' from the customer's perspective. Effective CTAs communicate the outcome of clicking ('Start my free trial,' 'Get my custom report,' 'See pricing for my team') and reduce perceived risk through specificity about what happens next.
+A button label is a small promise about the next screen. Haines lists Submit, Sign Up, Learn More, Click Here and Get Started as weak labels and offers the formula of an action verb plus what the visitor gets, with a qualifier if needed. NN/g's research on [Get Started buttons](https://www.nngroup.com/articles/get-started/) found the phrase ambiguous enough to send people into flows they did not expect, and its article on [Learn More links](https://www.nngroup.com/articles/learn-more-links/) recommends descriptive, front-loaded labels. A clear label also filters out visitors who would click and then leave.
+
+### Honest Proof
+
+Proof makes specific claims believable, and false proof destroys the trust the rest of the page builds. Haines's skill lists honesty among its style rules and warns that invented numbers or quotes damage trust and can expose the company legally. The FTC's [Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking) require that endorsements reflect the endorser's honest opinion and that ads featuring exceptional results disclose what people can generally expect. Use real customer quotes with permission, real counts you can defend, and plain statements where you have no proof yet.
+
+## Older Formulas Behind the Framework
+
+The framework borrows from older copywriting formulas. The table shows where each one appears in the steps below, so a writer who already knows one of them can map it across.
+
+| Formula | What it prescribes | Where it appears here |
+|---|---|---|
+| AIDA | Attention, interest, desire, action, commonly attributed to E. St. Elmo Lewis ([Wikipedia](https://en.wikipedia.org/wiki/AIDA_(marketing))) | The order of landing page sections |
+| Problem-Agitate-Solve | State the problem, agitate the pain, introduce the solution, then the call to action ([Haines's ad templates](https://github.com/coreyhaines31/marketingskills/blob/main/skills/ads/references/ad-copy-templates.md)) | Problem sections and email openings |
+| Features to benefits | The quarter-inch hole saying, first found in a 1942 ad by C. C. Wagner and popularized by Leo McGivena ([Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/)) | Step 4 |
+| Testing and measuring | Claude Hopkins's case for testing ads ([Scientific Advertising](https://en.wikipedia.org/wiki/Scientific_Advertising)) | Step 8 |
+| Concise, scannable, objective | Web writing that readers can scan and trust ([NN/g](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/)) | Step 6 |
+
+Treat these formulas as checklists for the argument a page makes. They do not predict behavior: the [Wikipedia article on AIDA](https://en.wikipedia.org/wiki/AIDA_(marketing)) summarizes research finding the model a poor predictor of actual consumer behaviour, with little empirical support for hierarchical models of this kind. The Haines templates present Problem-Agitate-Solve without naming an originator, and this page does not assign one.
 
 ## Steps
 
-1. **Step 1: Mine Customer Language and Pain Points**
-   Before writing a single word of copy, collect the raw material. Review customer support tickets, sales call transcripts, online reviews, social media comments, survey responses, and competitor reviews. Build a 'voice of customer' swipe file organized by: **problems they describe**, **outcomes they desire**, **objections they raise**, and **exact phrases they repeat**. This research becomes the foundation for every headline, bullet point, and CTA you write.
+1. **Collect customer language**
+   Before drafting, gather how customers describe the problem, the outcome they want, the alternatives they tried and the doubts that slowed them down. Good sources are sales call notes, interviews, support tickets, survey answers, and reviews of your product and competing products. [Copyhackers' review mining method](https://copyhackers.com/how-to-do-rapid-fire-review-mining/) uses targeted searches for phrases such as "tired of" in reviews across your category. Record exact quotes with their source, grouped by theme. This file feeds every later step.
 
-2. **Step 2: Define the Page's Single Job and Visitor Intent**
-   For each page you're writing, articulate one primary job: What should the visitor **know, feel, and do** after reading this page? A homepage's job might be 'Understand what we do in 5 seconds and click to explore further.' A pricing page's job might be 'Feel confident in the value and select a plan.' Document the visitor's likely awareness level (problem-aware, solution-aware, product-aware) and map copy intensity accordingly.
+2. **Define the page's job and the reader's starting point**
+   Write one sentence that says what the page must get the reader to do. Then note where the traffic comes from and what readers already know when they arrive, two of the context questions in Haines's [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md). A visitor from a comparison search needs different copy from one who clicked an ad about a specific problem. If you cannot write the job in one sentence, the page is probably trying to do two jobs and should be split.
 
-3. **Step 3: Draft the Benefit-Driven Headline and Subhead**
-   Write 10-20 headline variations using customer language from Step 1. Each headline should pass three tests: (1) Does it communicate a specific benefit or outcome? (2) Would a visitor understand what we offer without reading anything else? (3) Does it use words the customer would actually say? Select the strongest headline and pair it with a subhead that adds specificity — who it's for, how it works, or what makes it different.
+3. **Write the headline and subhead**
+   Draft many headline options from the customer language, then cut to the ones that say what the reader gets in words the reader would use. Check each against NN/g's finding that people [scan the first words](https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/) of headlines and links, and move the information-carrying words to the front. Pair the chosen headline with a subhead that adds who it is for, how it works or what makes it different. Keep two or three alternatives with a one-line rationale each, as Haines's output format suggests, so they can be tested later.
 
-4. **Step 4: Translate Every Feature into a Customer Benefit**
-   List every feature or capability relevant to the page. For each one, complete this translation formula: **[Feature]** → so that → **[Functional benefit]** → which means → **[Emotional benefit]**. Example: 'Real-time sync' → so that → 'your whole team sees updates instantly' → which means → 'you never make a decision based on outdated information.' Use the functional benefit in body copy and the emotional benefit in headlines and CTAs.
+4. **Translate features into benefits**
+   List the features relevant to this page. For each one, ask what it lets the customer do, and then what that means for their work or life, until you reach an outcome the customer would name. Keep the feature in the copy as evidence for the benefit. Check each benefit against the customer language file, and drop benefits no customer has mentioned or would recognize.
 
-5. **Step 5: Write the Body Copy with a Clarity-First Pass**
-   Draft the full page copy, then apply a ruthless clarity edit. Remove every instance of jargon, replace abstract nouns with concrete examples, break compound sentences into simple ones, and ensure each paragraph makes exactly one point. Read the copy aloud — if you stumble or need to re-read a sentence, rewrite it. Every section should answer the reader's implicit question: 'What's in it for me?'
+5. **Draft the body in the page's section order**
+   Lay out the sections the page type needs. For a landing page, Haines's list of core sections covers social proof, the problem, the solution and its benefits, how it works, objection handling and a final call to action. Give each section one idea, which also matches NN/g's advice of [one idea per paragraph](https://www.nngroup.com/articles/how-users-read-on-the-web/) for readers who scan. Put the most important point first in each section, since many readers never reach the rest.
 
-6. **Step 6: Inject Specificity and Social Proof**
-   Audit the draft for vague claims and replace each one with a specific data point, customer quote, case study reference, or concrete example. 'Trusted by thousands' becomes 'Used by 4,200+ teams including Stripe, Notion, and Linear.' 'Fast results' becomes 'Average time to first result: 14 minutes.' Specificity is the single highest-leverage edit you can make to increase copy credibility and conversion rate.
+6. **Edit for clarity and add proof**
+   Cut the draft hard, replace jargon with the customer's words, and prefer active verbs, as [Digital.gov's plain language guide](https://digital.gov/guides/plain-language/writing) recommends. Read it aloud and rewrite any sentence you stumble over. Then go through every claim and attach proof where you have it: a customer quote, a count you can defend, a named integration, a guarantee. Where you have no proof, make the claim smaller rather than inventing support.
 
-7. **Step 7: Craft Value-Driven CTAs for Each Conversion Point**
-   Replace every generic CTA with a customer-outcome CTA. Use the formula: **Action verb + Desired outcome** (e.g., 'Start saving 5 hours a week,' 'Get my personalized plan,' 'See how it works in 2 minutes'). Ensure the CTA copy reduces anxiety by signaling what happens next ('No credit card required,' 'Takes 30 seconds,' 'Cancel anytime'). Place primary and secondary CTAs based on the page's scroll depth and content structure.
+7. **Write the calls to action**
+   Label every button with the action and what the visitor gets, and add a line of microcopy when the visitor needs to know what happens next, such as whether a card is required. Follow the [GOV.UK guidance on links](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/), which asks for descriptive, front-loaded text over generic labels like "click here". Make the primary action on each page obvious and keep secondary actions quieter. Check that the button promise matches what the next screen actually shows.
 
-8. **Step 8: Test, Measure, and Iterate with Data**
-   Publish the copy and establish baseline conversion metrics. Identify the highest-impact element to test first — typically the headline, then the CTA, then the hero section layout. Run A/B tests with one variable changed at a time, using the framework's principles to generate test hypotheses. Document winning variants and update your voice-of-customer swipe file with new insights from analytics, heatmaps, and session recordings.
+8. **Test and iterate**
+   Publish, record the current conversion rate for the page's one job, and test the element most likely to move that rate first, usually the headline or the main call to action. Change one element per test so the result points at a cause. Decide the sample size before the test starts, because [Evan Miller shows](https://www.evanmiller.org/how-not-to-run-an-ab-test.html) that stopping as soon as a result looks significant makes the reported significance meaningless. Add what each test teaches you to the customer language file.
 
 ## When to Use
 
-- When launching or redesigning a website and you need a systematic approach to writing homepage, landing page, pricing, and feature page copy that converts visitors into customers.
-- When your current copy is technically accurate but underperforming on conversion metrics — high traffic but low sign-ups, demo requests, or purchases — indicating a messaging rather than a traffic problem.
-- When scaling a marketing team or onboarding freelance copywriters who need a shared methodology to produce consistent, on-brand, conversion-focused copy without constant revision cycles.
-- When transitioning from founder-written or engineering-written copy to professional marketing copy that speaks the customer's language instead of internal product terminology.
-- When running A/B tests on copy and you need a principled framework for generating hypotheses about which messages, headlines, and CTAs to test rather than making random guesses.
+- You are launching or rewriting a website and need homepage, landing page, pricing and feature page copy that each do a defined job, with one shared set of rules for everyone who writes.
+- Traffic is healthy but sign-ups, demo requests or purchases are low, and visitors' comments or five-second test answers suggest they do not understand the offer.
+- Several people or AI agents write copy for the same product and you need a checklist that makes their drafts consistent and reviewable.
+- A founder or engineering team wrote the current site in internal product terms, and you want to rewrite it in the customer's words.
+- You run copy tests and want hypotheses that come from a principle and customer research instead of guesses.
 
 ## When Not to Use
 
-- When the primary goal is long-form thought leadership, brand journalism, or narrative content marketing where storytelling, nuance, and voice take priority over direct conversion optimization.
-- When you haven't validated product-market fit yet — no amount of copywriting craft will save a product that doesn't solve a real problem for an identifiable audience. Fix the offer first.
-- When writing for highly regulated industries (pharma, finance, legal) where compliance requirements may override conversion-optimization principles and every claim requires legal review.
-- When your audience is deeply technical (developers, engineers, scientists) and actually prefers feature-dense, specification-heavy documentation over benefit-driven marketing language.
+- The piece is long-form thought leadership or brand storytelling, where voice, argument and narrative matter more than a single conversion action.
+- The product has not yet found buyers who want it. Clearer copy will make a weak offer easier to understand but will not make it wanted, so fix the offer first.
+- The copy is in a regulated field such as health, finance or law, where legal review of every claim takes precedence over conversion rules and specific benefit claims may not be allowed.
+- The readers are domain experts reading documentation or technical references. NN/g's research on [writing for domain experts](https://www.nngroup.com/articles/writing-domain-experts/) found they want facts, citations and precise shared vocabulary, which benefit-led marketing copy tends to strip out.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Mining Customer Language for Persuasive Copy](../../skills/mining-customer-language-for-copy/SKILL.md) — Techniques for extracting exact phrases, pain points, and desired outcomes from reviews, interviews, and support tickets to use as high-converting copy.
-- [Translating Product Features into Customer Benefits](../../skills/translating-features-into-benefits/SKILL.md) — A systematic technique for converting technical features and jargon into clear, specific benefit statements using customer language.
-- [Crafting High-Converting Call-to-Action Copy](../../skills/crafting-high-converting-ctas/SKILL.md) — How to write CTAs using value-driven formulas that emphasize outcomes over actions, with specific patterns for buttons, forms, and page contexts.
-- [Writing Clarity-First Web Copy That Eliminates Jargon](../../skills/writing-clarity-first-web-copy/SKILL.md) — How to audit and rewrite vague, clever, or jargon-heavy copy into specific, scannable, and immediately understandable messaging that builds trust.
-- [Writing Email Copy Sequences That Drive Action](../../skills/writing-email-sequences-that-sell/SKILL.md) — How to apply clarity-over-cleverness and benefit-driven principles to email subject lines, body copy, and CTAs across nurture and sales sequences.
-- [Structuring Landing Page Copy for Maximum Conversion](../../skills/structuring-landing-page-copy-for-conversion/SKILL.md) — How to sequence copy sections — from headline to social proof to objection handling to CTA — using a proven conversion-focused framework.
-- [Writing Benefit-Driven Headlines That Convert](../../skills/writing-benefit-driven-headlines/SKILL.md) — How to transform feature-focused headlines into customer-centric benefit statements that immediately communicate value and drive action.
-- [Writing Page-Specific Website Copy for Homepages, Landing Pages, and Pricing](../../skills/writing-page-specific-website-copy/SKILL.md) — How to tailor copy structure, messaging hierarchy, and persuasion techniques to the distinct goals of homepages, landing pages, pricing pages, and feature pages.
+- [Mining Customer Language for Persuasive Copy](../../skills/mining-customer-language-for-copy/SKILL.md): Collect the exact words customers use in reviews, interviews and support tickets and turn them into copy.
+- [How to Translate Features into Benefits](../../skills/translating-features-into-benefits/SKILL.md): Turn each product feature into a specific customer outcome while keeping the feature as proof.
+- [Call-to-Action Copywriting: Writing High-Converting CTAs](../../skills/crafting-high-converting-ctas/SKILL.md): Write button labels and microcopy that say what the visitor gets and what happens next.
+- [Writing Clarity-First Web Copy Without Jargon](../../skills/writing-clarity-first-web-copy/SKILL.md): Audit and rewrite vague, clever or jargon-heavy website copy so first-time visitors understand it.
+- [Email Copywriting: Writing Sequences That Drive Action](../../skills/writing-email-sequences-that-sell/SKILL.md): Plan and write nurture and sales email sequences in which each email has one job.
+- [Structuring Landing Page Copy for Conversion](../../skills/structuring-landing-page-copy-for-conversion/SKILL.md): Order landing page sections from headline to final call to action around one argument.
+- [Writing Benefit-Driven Headlines That Convert](../../skills/writing-benefit-driven-headlines/SKILL.md): Write headlines and subheads that state the reader's gain in words they would use.
+- [Page-Specific Website Copy: Homepage, Landing, Pricing](../../skills/writing-page-specific-website-copy/SKILL.md): Match the copy on homepages, landing pages, pricing pages and feature pages to each page's job.
 
 ## FAQ
 
-**How is the copywriting framework different from traditional creative copywriting?**
+**What is a copywriting framework?**
 
-Traditional creative copywriting often prioritizes brand voice, clever wordplay, and emotional storytelling. The copywriting framework prioritizes measurable conversion outcomes through clarity, specificity, benefit-driven messaging, and customer language. It doesn't eliminate creativity — it channels it toward persuasion and action rather than entertainment.
+A copywriting framework is a repeatable set of rules and steps for writing persuasive copy, so that quality does not depend on inspiration. Older frameworks such as AIDA describe the order of an argument. This one covers the whole job: research customer language, define the page's job, write headlines, benefits, body and calls to action, then test. It follows the principles in Corey Haines's open-source [copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md).
 
-**Can I use AI tools with this copywriting framework?**
+**Who created this copywriting framework?**
 
-Yes, and they're a powerful combination. AI tools excel at generating headline variations, translating features into benefits, and drafting initial copy at speed. The framework provides the quality criteria and principles that ensure AI-generated copy meets conversion standards. In Hamster Studio, you can operationalize each principle as an agent skill for consistent, scalable output.
+The principles and page-specific guidance come from the copywriting skill Corey Haines published in his [marketingskills repository](https://github.com/coreyhaines31/marketingskills). The underlying ideas are older. AIDA is commonly attributed to E. St. Elmo Lewis ([Wikipedia](https://en.wikipedia.org/wiki/AIDA_(marketing))), and the feature-versus-benefit saying about quarter-inch holes first appears in a 1942 advertisement by C. C. Wagner, with Leo McGivena credited with popularizing it ([Quote Investigator](https://quoteinvestigator.com/2019/03/23/drill/)). This page arranges those ideas into steps and cites the research behind them.
 
-**How long does it take to write a landing page using this framework?**
+**How is conversion copywriting different from brand or creative copywriting?**
 
-For a skilled practitioner, a full landing page takes 4-8 hours: 1-2 hours for customer language research, 1-2 hours for drafting, and 2-4 hours for editing, specificity injection, and CTA refinement. With AI assistance and established voice-of-customer data, this can be reduced to 2-4 hours while maintaining quality.
+Conversion copywriting judges a line by whether the intended reader understands it and takes the intended action. Brand copywriting often puts voice and memorability first, and some pieces never ask for an action. The two can coexist on one site: a campaign line can live in brand work while the landing page it points to follows the conversion rules. When the two conflict on a page whose job is a sign-up or purchase, this framework chooses clarity.
 
-**What's the most common copywriting mistake this framework fixes?**
+**Does the framework work for B2B copywriting?**
 
-Writing about the product instead of the customer. Most copy describes features, technology, and company credentials. The framework systematically shifts every sentence to address what the customer gains, feels, and achieves. This single reorientation — from product-centric to customer-centric — typically produces the largest conversion lift.
+Yes. B2B buyers scan like everyone else, and NN/g's research found business buyers look for [price as their top information need](https://www.nngroup.com/articles/show-price/) and leave sites that hide it. B2B pages often suffer most from internal jargon, so the customer language and clarity steps usually pay off first. Adjust for longer buying cycles by giving each page a realistic next step, such as seeing pricing or booking a demo, instead of pushing for a purchase.
 
-**Does this copywriting framework work for B2B and SaaS companies?**
+**Can AI tools write copy with this framework?**
 
-Absolutely. B2B buyers are still humans making decisions, and they respond to clarity, specificity, and benefit-driven messaging just like B2C buyers. The framework is especially effective for B2B because it eliminates the enterprise jargon and buzzwords that plague most B2B websites, replacing them with concrete outcomes and customer-validated language.
+AI tools are good at producing many headline variants, drafting benefit statements and rewriting for plain language, and Haines wrote his skills as instructions for AI coding agents ([README](https://github.com/coreyhaines31/marketingskills)). The risk is fluent copy with no customer evidence behind it and invented numbers or testimonials. Give the tool your customer language file and your real proof, ask for alternatives with a rationale for each, and check every claim before it ships.
 
-**How do I measure whether my copywriting is actually working?**
+**How do I know if the new copy is working?**
 
-Track page-level conversion rates (visitor to desired action), scroll depth, time on page, and CTA click-through rates. Compare metrics before and after applying the framework. For landing pages, aim for 3-10% conversion rates depending on traffic source. Run A/B tests on headlines and CTAs to isolate which framework principles drive the biggest lifts for your specific audience.
+Pick one metric per page that matches the page's job, such as trial starts on a landing page or plan selections on a pricing page, and record it before the change. Compare against that baseline, and use A/B tests with a sample size fixed in advance when traffic allows ([Evan Miller](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)). Five-second tests and customer interviews tell you whether people understand the page even when traffic is too low for a test.
+
+**Is this copywriting framework useful for beginners?**
+
+Yes, because each step produces something you can check: a quotes file, a one-sentence page job, a shortlist of headlines, a feature-to-benefit table, and labeled buttons. Beginners tend to write about the product and reach for clever lines, and the principles give a concrete test for both. The [NN/g guidance on web reading](https://www.nngroup.com/articles/how-users-read-on-the-web/) is a short, practical companion to the steps.
+
+## Sources
+
+- [Corey Haines: marketingskills repository](https://github.com/coreyhaines31/marketingskills)
+- [Corey Haines: copywriting skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/copywriting/SKILL.md)
+- [Corey Haines: emails skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/emails/SKILL.md)
+- [Corey Haines: customer-research skill](https://github.com/coreyhaines31/marketingskills/blob/main/skills/customer-research/SKILL.md)
+- [Corey Haines: ad copy templates](https://github.com/coreyhaines31/marketingskills/blob/main/skills/ads/references/ad-copy-templates.md)
+- [Wikipedia: Copywriting](https://en.wikipedia.org/wiki/Copywriting)
+- [Wikipedia: AIDA (marketing)](https://en.wikipedia.org/wiki/AIDA_(marketing))
+- [Wikipedia: Scientific Advertising](https://en.wikipedia.org/wiki/Scientific_Advertising)
+- [Quote Investigator: the quarter-inch hole](https://quoteinvestigator.com/2019/03/23/drill/)
+- [NN/g: How Users Read on the Web](https://www.nngroup.com/articles/how-users-read-on-the-web/)
+- [NN/g: Concise, Scannable, and Objective](https://www.nngroup.com/articles/concise-scannable-and-objective-how-to-write-for-the-web/)
+- [NN/g: First 2 Words](https://www.nngroup.com/articles/first-2-words-a-signal-for-scanning/)
+- [NN/g: Get Started buttons](https://www.nngroup.com/articles/get-started/)
+- [NN/g: Learn More links](https://www.nngroup.com/articles/learn-more-links/)
+- [NN/g: Top 10 Guidelines for Homepage Usability](https://www.nngroup.com/articles/top-ten-guidelines-for-homepage-usability/)
+- [NN/g: State the Price on B2B Sites](https://www.nngroup.com/articles/show-price/)
+- [NN/g: Writing Digital Copy for Domain Experts](https://www.nngroup.com/articles/writing-domain-experts/)
+- [Unbounce: Conversion Benchmark Report](https://unbounce.com/conversion-benchmark-report/)
+- [Lyssna: Five-second testing](https://www.lyssna.com/guides/five-second-testing/)
+- [Copyhackers: Rapid-fire review mining](https://copyhackers.com/how-to-do-rapid-fire-review-mining/)
+- [Copyhackers: Amazon review mining](https://copyhackers.com/write-copy-amazon-review-mining/)
+- [Digital.gov: Plain language writing](https://digital.gov/guides/plain-language/writing)
+- [GOV.UK: Write effective links](https://guidance.publishing.service.gov.uk/writing-to-gov-uk-standards/writing-guidelines/add-links/)
+- [FTC: Endorsement Guides](https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking)
+- [Evan Miller: How Not To Run an A/B Test](https://www.evanmiller.org/how-not-to-run-an-ab-test.html)
 
 ---
 
