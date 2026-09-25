@@ -1,31 +1,44 @@
 # Examples: Mapping the Initial Consideration Set
 
-## Example: B2B SaaS Company Mapping Project Management Tool Consideration Sets
+## A project tool that is known but not recalled
 
 **Scenario:**
 
-A mid-market project management SaaS company (similar to Monday.com or Asana) wants to understand its consideration stage position among teams of 50-200 employees. They suspect they're losing deals before prospects even start evaluating because they're not making the initial shortlist.
+Illustrative scenario: a project management software company suspects it loses deals before evaluation starts. Sales hears prospects say they "only looked at the usual names." The team wants to know whether prospects have heard of the product and simply do not think of it, or have never heard of it.
 
 **Walkthrough:**
 
-The team identifies five category entry points from sales call transcripts: 'team outgrowing spreadsheets,' 'current tool too complex,' 'new team lead wants to standardize,' 'remote work coordination challenges,' and 'contract renewal trigger.' They survey 400 target buyers (operations managers and team leads at 50-200 person companies) using Wynter panels.
+The team lists four entry points from sales call notes: outgrowing spreadsheets, a new team lead standardizing tools, a current tool that feels too complex, and a contract renewal. It surveys 400 operations leads at companies in its target size range, asking unaided recall for each entry point before any brand names appear. It then shows a brand list for aided awareness and asks why each named brand came to mind.
 
-Results reveal an average consideration set of 2.8 brands. For the 'outgrowing spreadsheets' entry point, the most-included brands are Asana (67%), Monday.com (54%), and Trello (48%). Their brand appears at just 14% inclusion. However, for the 'current tool too complex' entry point, their inclusion rate jumps to 31%—respondents associate them with simplicity.
+Illustrative scenario: the results for two of the entry points look like this.
 
-Diagnostic follow-ups reveal that 62% of non-includers have heard of the brand (aided awareness) but didn't recall it at the consideration stage. The primary exclusion reason: 'didn't think of them for teams our size.' This signals a positioning problem, not an awareness problem.
+| Entry point | Named the brand unaided | Recognized it when shown |
+|-------------|-------------------------|--------------------------|
+| Outgrowing spreadsheets | 56 of 400 | 240 of 400 |
+| Current tool too complex | 120 of 400 | 240 of 400 |
 
-The team shifts their strategy: instead of broad awareness campaigns, they invest in content and case studies specifically targeting the 'outgrowing spreadsheets' and 'new team lead' entry points with messaging that emphasizes mid-market fit. Six months later, inclusion rate for 'outgrowing spreadsheets' moves from 14% to 28%, and pipeline from that segment increases proportionally.
+Recognition is the same across both entry points, but recall is much lower for outgrowing spreadsheets. Respondents who knew the brand but did not name it most often said they thought it was built for larger companies. The team treats this as a relevance and perception gap and writes an action for the product marketing owner: content and customer stories aimed at teams leaving spreadsheets, with proof that the product suits smaller teams. The next survey wave uses the same questions so the change can be read against this baseline.
 
-## Example: DTC Skincare Brand Analyzing Consideration Stage Drivers
+## A skincare brand that wins search but not memory
 
 **Scenario:**
 
-A direct-to-consumer skincare brand competes in the crowded 'anti-aging serum' subcategory. They rank well on Google for key search terms but notice that consumers who reach their site often already have strong preferences—suggesting the consideration stage is being won elsewhere.
+Illustrative scenario: a direct-to-consumer skincare brand ranks well for product searches, yet most visitors who reach its site already have a preferred brand in mind. The team suspects the shortlist is being set before anyone searches.
 
 **Walkthrough:**
 
-The brand conducts 150 unaided recall interviews with women aged 30-45 who purchased an anti-aging serum in the past 6 months. The primary category entry point is 'noticing signs of aging and deciding to try a serum.' Average set size is 2.2 brands.
+The team runs 150 short interviews with recent serum buyers, asking what they considered when they first decided to buy and where each brand came from. Unaided, the brand is named by very few respondents. The most common reasons other brands were named are a recommendation from a dermatologist or friend and creator videos seen before the purchase.
 
-The top three brands by inclusion rate are CeraVe (58%), The Ordinary (52%), and a prestige brand (41%). The DTC brand appears at 9% inclusion. Touchpoint analysis reveals the dominant drivers of inclusion: dermatologist recommendations (38%), TikTok/Instagram content (31%), and friend recommendations (24%). Traditional advertising drives just 7% of consideration stage inclusion in this category.
+The team concludes that its search strength helps during active evaluation but does little for the initial set. It moves part of its budget to sampling through dermatologists and to creators who cover the specific skin concerns its customers mention. It adds unaided recall to a quarterly tracking survey so it can see whether the change moves the brand onto the list.
 
-The brand realizes their SEO strength captures demand during active evaluation, but they're missing the consideration stage entirely. They invest in a dermatologist partnership program (getting product into dermatologist offices with samples) and a micro-influencer seeding campaign targeting skincare-focused creators. They track consideration set inclusion quarterly using a 300-person brand tracking panel. Within two quarters, their unaided recall rises from 9% to 19%, and they observe a corresponding increase in branded search volume—a leading indicator that more consumers now enter active evaluation with their brand already in mind.
+## A B2B service mapping by buyer role
+
+**Scenario:**
+
+Illustrative scenario: a payroll services firm sells to companies where the finance lead and the HR lead both influence the choice. Marketing has one recall number and it has been flat for a year.
+
+**Walkthrough:**
+
+The team splits the survey by role and by entry point: hiring in a new country, a failed payroll run with the current provider, and a finance system change. The split shows that finance leads recall the firm for the finance system change but HR leads almost never do, and HR leads drive the choice after a failed payroll run.
+
+The single flat number had been averaging a strong position with one role and a weak one with the other. The team assigns separate actions: HR-focused content and events for the failed-run entry point, and no change for finance. The next wave reports results by role so each owner can see their own trend.

@@ -1,15 +1,20 @@
 ---
-name: identifying-touchpoints-across-cdj-stages
-description: "This skill teaches you how to systematically audit, catalog, and prioritize every brand touchpoint across the four buyer journey stages of the McKinsey Consumer Decision Journey, revealing gaps and high-impact interaction opportunities."
+name: "identifying-touchpoints-across-cdj-stages"
+description: "Identify touchpoints across the four CDJ stages: inventory every interaction, tag who drives it, score its influence and find the gaps."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: mckinsey-consumer-decision-journey
+  method: "mckinsey-consumer-decision-journey"
+  datePublished: "2026-04-29"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Identifying Touchpoints Across Buyer Journey Stages
+# Identifying Touchpoints Across CDJ Stages
 
-> This skill teaches you how to systematically audit, catalog, and prioritize every brand touchpoint across the four buyer journey stages of the McKinsey Consumer Decision Journey, revealing gaps and high-impact interaction opportunities.
+> Identify touchpoints across the four CDJ stages: inventory every interaction, tag who drives it, score its influence and find the gaps.
 
 ## Before you start
 
@@ -23,132 +28,87 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial audit |
-| Outcome | A comprehensive touchpoint inventory scored by impact and mapped to each CDJ phase, enabling you to allocate resources toward interactions that actually shift consumer decisions. |
-| Prerequisites | Familiarity with the McKinsey Consumer Decision Journey framework and its four phases, Access to marketing analytics data (web, social, CRM, ad platforms), Basic understanding of channel attribution |
+| Difficulty | Beginner |
+| Time to Learn | 2-3 hours |
+| Outcome | You have a complete touchpoint inventory mapped to the four CDJ stages, scored for reach and influence, with a short list of gaps and priorities. |
+| Prerequisites | Knowledge of your marketing, sales and service channels, access to buyer interviews or surveys, basic analytics |
 | Part of | [McKinsey Consumer Decision Journey](../../methods/mckinsey-consumer-decision-journey/METHOD.md) |
 
 ## Overview
 
-Most marketing teams know their channels but can't articulate how each interaction actually influences a buyer across different journey stages. A social ad, a review site listing, an in-store display, and a customer service call are all touchpoints—but they play radically different roles depending on whether a consumer is forming an initial consideration set, actively evaluating alternatives, standing at the moment of purchase, or deciding whether to rebuy.
+A touchpoint is any moment where a buyer forms an impression of a brand, whether through an ad, a review, a conversation, a store visit, a support call or use of the product itself. Identifying touchpoints across CDJ stages means listing all of them, assigning each one to the phase of the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey) where it matters, and judging how much each one influences the buyer's decision.
 
-Identifying touchpoints across buyer journey stages is the foundational audit that makes the [McKinsey Consumer Decision Journey](https://tryhamster.com/methods/mckinsey-consumer-decision-journey) actionable. Without it, you're optimizing channels in isolation rather than orchestrating experiences along the actual path consumers take. This skill gives you a structured method to catalog every brand interaction, assign it to the correct CDJ phase, score its influence, and surface the gaps where you're losing consumers to competitors.
+The CDJ adds one distinction that most channel audits miss. [The original McKinsey research](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) separated company-driven touchpoints, such as advertising, direct marketing and sponsorships, from consumer-driven ones, such as internet reviews, word of mouth, in-store interactions and recollections of past experience. It found that two-thirds of touchpoints during active evaluation were consumer-driven. An inventory built from the marketing budget lists only the company-driven third.
 
-The output is a touchpoint map—a living document that becomes the basis for budget allocation, content strategy, and experience design. Teams that complete this audit consistently find that 20-30% of their touchpoints are misallocated to the wrong journey phase, and that critical phases (often active evaluation) are dramatically under-invested.
+The result of this skill is a touchpoint inventory: a table of every touchpoint with its stage, who drives it, how many buyers encounter it and how much it influences them. From the table you can see stages that are crowded with low-value touchpoints, stages with almost no presence, and influential touchpoints nobody owns.
+
+This inventory is the raw material for most other CDJ work. The consideration set analysis uses it to trace where recall comes from, the evaluation analysis uses it to code additions and eliminations, and the journey map uses it to fill each phase. Build it once carefully and keep it current.
 
 ## How It Works
 
-The McKinsey Consumer Decision Journey models buying as a circular loop with four phases: initial consideration (the brands that first come to mind), active evaluation (researching and comparing), moment of purchase (the final trigger), and post-purchase experience (use, satisfaction, and loyalty). Each phase has distinct consumer needs, and different touchpoints carry different weight in each.
+Customers today interact with firms through a large number of touchpoints across multiple channels and media, and their experiences are increasingly social, as [Lemon and Verhoef](https://research.rug.nl/en/publications/understanding-customer-experience-throughout-the-customer-journey/) note in their review of customer journey research in the Journal of Marketing. They also observe that delivering a good experience requires integrating multiple business functions and even external partners. That is why a complete inventory reaches beyond marketing into sales, service, product and third parties.
 
-A touchpoint is any interaction where a consumer encounters your brand—paid, owned, earned, or experiential. The key insight is that a single channel can serve multiple phases. Your website, for example, might function as a consideration touchpoint (homepage brand impression), an evaluation touchpoint (comparison page), a purchase touchpoint (checkout), and a post-purchase touchpoint (account dashboard) simultaneously.
+The inventory works in four passes. The first pass lists touchpoints from every source you can find: marketing plans, sales process documents, support channels, product flows, partner and retailer channels, and above all the buyer's own account of what they saw and heard. The second pass assigns each touchpoint to one or more CDJ stages. The third pass tags who drives it. The fourth pass scores reach and influence.
 
-The audit works by first generating an exhaustive inventory of every possible interaction, then mapping each to one or more CDJ phases, and finally scoring each touchpoint on two dimensions: influence (how much it shifts decisions) and frequency (how many consumers encounter it). The intersection of high influence and high frequency reveals your most strategic touchpoints. The intersection of high influence and low frequency reveals your biggest opportunities—touchpoints that matter enormously but aren't reaching enough people.
+Stage assignment follows where the touchpoint changes the buyer's mind. A television ad seen months before a need arises works on initial consideration. A comparison site works in active evaluation. Packaging, the checkout page and the last sales call work at the moment of purchase. Onboarding, support and the product itself work in postpurchase. Some touchpoints, such as reviews, appear in several stages, and the inventory should show each role separately.
 
-This approach differs from traditional funnel-based touchpoint mapping because it accounts for the non-linear, looping nature of modern buyer behavior. A consumer in active evaluation might loop back to initial consideration after discovering a new brand on a review site. The CDJ touchpoint map captures these loops rather than forcing interactions into a rigid linear sequence.
+The driver tag uses the McKinsey distinction. Company-driven touchpoints are ones you create and pay for. Consumer-driven touchpoints are ones buyers seek out or create, such as reviews, peer recommendations, community discussions and their own past experience. Many real touchpoints sit between the two, such as a retailer's product page or a partner's recommendation, and it helps to mark those as partner-driven.
+
+Scoring needs two separate numbers. Reach is how many buyers encounter the touchpoint, which you can often estimate from analytics or surveys. Influence is how much it changes decisions, which you mostly learn from interviews by asking what made buyers add, drop or choose a brand. A touchpoint with high reach and low influence is where money often goes to waste. A touchpoint with low reach and high influence is often where the best opportunities lie.
+
+The [Nielsen Norman Group](https://www.nngroup.com/articles/customer-journeys-omnichannel/) points out that experience work tends to stay siloed within individual products and channels even though buyers move across them. The inventory makes those silos visible by showing which team owns each touchpoint and where ownership is missing.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your CDJ Phase Criteria
+### Step 1: Define the Stages for Your Business
 
-Before cataloging anything, establish clear definitions for what constitutes each buyer journey stage in your specific market. Initial consideration is when a consumer first recognizes a need and a set of brands comes to mind—touchpoints here are about awareness and mental availability. Active evaluation is when they're actively researching, comparing, reading reviews, and narrowing or expanding their set. Moment of purchase is the immediate trigger environment—what's happening at the point of transaction. Post-purchase covers everything from onboarding to advocacy to repurchase.
+Write a short definition of each CDJ stage for your context: what event starts initial consideration, what counts as active evaluation, what the moment of purchase covers and when postpurchase ends. Use buyer behavior to define the boundaries, not internal team handoffs. Agree the definitions with the teams involved before collecting touchpoints. Clear definitions prevent arguments about where a touchpoint belongs.
 
-Write these definitions in plain language and include 2-3 examples specific to your product category. For a B2B SaaS company, initial consideration might include seeing a brand mentioned in a podcast, while active evaluation might include reading a G2 review. For a consumer packaged good, initial consideration could be a shelf display at eye level, while active evaluation could be scanning the nutrition label.
+### Step 2: Collect Touchpoints from Every Source
 
-> **Pro tip:** Create a shared reference document with your phase definitions. Teams consistently misclassify touchpoints when phases aren't crisply defined—especially the boundary between initial consideration and active evaluation.
+Gather touchpoints from marketing plans, sales playbooks, support channels, product flows and partner channels. Then interview recent buyers and ask them to list everything they saw, read, heard or did before and after buying. Add the touchpoints buyers mention that no team listed, since these are often consumer-driven and influential. Aim for completeness in this pass and leave judgment for later.
 
-### Step 2: Step 2: Generate an Exhaustive Touchpoint Inventory
+### Step 3: Assign Stages and Drivers
 
-Catalog every possible brand interaction across all channels. Don't filter or prioritize yet—the goal is completeness. Work through each channel category systematically:
+Place each touchpoint in the stage or stages where it influences the buyer. Tag each one as company-driven, consumer-driven or partner-driven, using the distinction from [the McKinsey article](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey). Note the internal owner of each touchpoint, or mark it as unowned. Unowned consumer-driven touchpoints, such as reviews on third-party sites, are common and important.
 
-**Paid**: Search ads, display ads, social ads, sponsorships, influencer partnerships, retargeting, affiliate placements, TV/radio/print, out-of-home.
+### Step 4: Score Reach and Influence
 
-**Owned**: Website (break into specific page types), app, email campaigns, blog content, social media profiles, packaging, physical stores/offices, product itself, documentation, onboarding flows, customer portal.
+Estimate reach from analytics, survey data or sales records, using a simple scale if exact numbers are unavailable. Estimate influence from interviews and surveys by asking which touchpoints caused buyers to add, drop or choose a brand. Keep the two scores separate. Record the evidence behind each score so others can challenge it.
 
-**Earned**: Press mentions, review sites, social media mentions, word of mouth, forum discussions, user-generated content, analyst reports, awards.
+### Step 5: Find Gaps and Imbalances
 
-**Shared/Experiential**: Events, webinars, community forums, customer success calls, support interactions, sales conversations, partner co-marketing.
+Look for stages with few touchpoints or weak ones, influential touchpoints where you are absent, and stages where spending is concentrated on low-influence touchpoints. Compare with what you know about competitors' presence at the same touchpoints. Check whether the ratio of company-driven to consumer-driven touchpoints in your plan matches what buyers report. The mismatches are your gaps.
 
-For each touchpoint, record: the channel, the specific format or interaction type, who owns it internally, and whether you have data on its performance.
+### Step 6: Prioritize and Assign
 
-> **Pro tip:** Interview people from sales, customer success, support, and product teams—not just marketing. They'll surface touchpoints marketing often forgets, like the onboarding email sequence or the invoice PDF that includes a referral link.
+Rank opportunities by influence and reach, and by how feasible they are to act on. Favor high-influence touchpoints where you are weak or absent. Assign an owner to every priority, including touchpoints that currently have none. Set a measure for each, such as presence, sentiment or the share of buyers who mention it.
 
-### Step 3: Step 3: Map Each Touchpoint to CDJ Phases
+### Step 7: Keep the Inventory Current
 
-Take your inventory and assign each touchpoint to one or more buyer journey stages. Use your phase definitions from Step 1 as the rubric. Many touchpoints will map to a single phase clearly—a Google Shopping ad is primarily a moment-of-purchase touchpoint. Others will span multiple phases—your blog might serve initial consideration (brand awareness articles) and active evaluation (comparison posts).
-
-When a touchpoint spans phases, create separate entries for each phase-specific use. Your blog isn't one touchpoint; it's potentially four, each with different content types and different influence levels. A comparison article on your blog serves active evaluation differently than a thought leadership piece serves initial consideration.
-
-Organize the mapping in a matrix with CDJ phases as columns and touchpoints as rows. Mark each cell where a touchpoint is active in that phase. This matrix is the core artifact of the audit.
-
-> **Pro tip:** Color-code or tag each mapping by confidence level: green for touchpoints you have data to confirm, yellow for reasonable assumptions, red for guesses. This tells you where you need more research before making investment decisions.
-
-### Step 4: Step 4: Score Touchpoints for Influence and Frequency
-
-For each touchpoint-phase combination, assign two scores on a 1-5 scale:
-
-**Influence Score (1-5)**: How much does this touchpoint shift the consumer's decision at this phase? A 5 means it's a decisive factor (e.g., a peer recommendation during active evaluation). A 1 means it's noticed but doesn't change behavior (e.g., a generic banner ad during consideration).
-
-**Frequency Score (1-5)**: What percentage of your target consumers encounter this touchpoint at this phase? A 5 means nearly everyone sees it. A 1 means very few do.
-
-Use data wherever possible—attribution models, survey data, analytics. Where data is unavailable, use informed estimates from customer-facing teams. Mark data-backed scores differently from estimated scores so you can prioritize filling knowledge gaps.
-
-Multiply influence × frequency to create a composite impact score (1-25) for each touchpoint-phase combination.
-
-> **Pro tip:** Don't average influence scores across the team—discuss disagreements. When sales says a touchpoint is a 5 and marketing says it's a 2, that gap usually reveals important insight about a segment or scenario you haven't considered.
-
-### Step 5: Step 5: Identify Gaps and Imbalances
-
-With your scored matrix complete, analyze the distribution across buyer journey stages. Sum the composite impact scores for each phase column. In most audits, you'll find dramatic imbalances—often initial consideration and moment of purchase are heavily invested while active evaluation and post-purchase are sparse.
-
-Look for three patterns:
-
-**Phase deserts**: CDJ stages with few touchpoints or low total impact scores. These are phases where consumers are making decisions with little brand influence—meaning competitors or third-party sources are filling the void.
-
-**High-influence/low-frequency gaps**: Touchpoints that powerfully shift decisions but reach too few consumers. These are your biggest investment opportunities.
-
-**Redundancy clusters**: Multiple touchpoints in the same phase delivering similar influence to the same audience. These may represent consolidation opportunities to free up budget for underserved phases.
-
-> **Pro tip:** Compare your touchpoint density across phases against your budget allocation across phases. If 60% of budget goes to initial consideration but only 20% of purchase-influencing touchpoints live there, you've found a major misallocation.
-
-### Step 6: Step 6: Prioritize Opportunities with an Action Matrix
-
-Create a 2×2 matrix plotting each gap or opportunity on two axes: potential impact (based on influence scores and consumer volume) and implementation effort (cost, time, organizational complexity). This gives you four quadrants:
-
-**Quick wins** (high impact, low effort): Implement immediately. Often these are existing touchpoints that need optimization—like adding comparison content to your blog for the active evaluation phase.
-
-**Strategic investments** (high impact, high effort): Plan for next quarter. These might include building a community platform for post-purchase or launching a review generation program.
-
-**Easy additions** (low impact, low effort): Batch and delegate. Adding schema markup to product pages, creating a FAQ section.
-
-**Deprioritize** (low impact, high effort): Consciously set aside. Building a custom tool for a niche evaluation need with limited audience.
-
-For each priority item, assign an owner, a timeline, and a success metric tied to the specific CDJ phase it serves.
-
-> **Pro tip:** Revisit this audit quarterly. Consumer behavior shifts, new channels emerge, and competitors change their touchpoint strategies. The first audit takes 2-4 hours; subsequent updates should take under an hour.
+Review the inventory on a fixed schedule, adding new touchpoints buyers mention and retiring ones they no longer use. Update scores as new research comes in. Share it with the teams working on other CDJ skills so they use the same list. A stale inventory leads every downstream analysis to miss the same things.
 
 ## Best Practices
 
-- Break multi-function channels into phase-specific touchpoints. Your website isn't one touchpoint—it's a dozen, each serving different buyer journey stages with different content and different conversion goals.
-- Always include earned and experiential touchpoints, not just paid and owned. Review sites, Reddit threads, and word-of-mouth recommendations often carry the highest influence scores in active evaluation, yet teams routinely omit them from audits.
-- Score touchpoints using real data first—attribution reports, post-purchase surveys, session recordings—and fill gaps with team estimates only where data doesn't exist. Flag estimated scores visually so you know where to invest in measurement.
-- Map competitor touchpoints alongside your own. For each CDJ phase, note where competitors have touchpoints you don't. This competitive overlay transforms the audit from an internal exercise into a strategic weapon.
-- Involve cross-functional stakeholders in the mapping session. Product, sales, support, and customer success teams each see touchpoints that marketing doesn't—and they experience the consumer's journey from different angles.
-- Connect your touchpoint map to your content strategy and programmatic SEO efforts. High-impact evaluation-phase gaps often translate directly into content opportunities—comparison pages, use-case content, and template libraries that can be built at scale.
+- Start from the buyer's account, then add internal lists. Buyers mention the touchpoints that shaped their decision, including many the company does not track, while internal lists mainly capture what the company pays for.
+- Keep reach and influence as separate scores. Combining them into one number hides the most useful findings, such as heavily funded touchpoints that change few decisions.
+- Tag every touchpoint with an owner. Influential touchpoints with no owner are common, especially consumer-driven ones, and naming an owner is the first step toward managing them.
+- Record the evidence behind each score. Scores based on interviews and data can be defended and updated, while scores from opinion tend to confirm existing budgets.
+- Show multi-stage touchpoints in each stage separately. A review can drive consideration for one buyer and reassurance at purchase for another, and the inventory should show both roles.
 
 ## Common Mistakes
 
-- **Treating channels as touchpoints instead of breaking them into phase-specific interactions** — A single channel like email contains many touchpoints: welcome sequences (post-purchase), re-engagement campaigns (consideration), promotional offers (purchase trigger). Map each interaction separately to its CDJ phase, or you'll miss where a channel is overserving one phase and absent from another.
-- **Mapping touchpoints to a linear funnel instead of the circular CDJ model** — The McKinsey CDJ is non-linear—consumers loop between phases, and loyalty loops skip directly from post-purchase back to purchase. Map touchpoints to the circular model and identify where consumers re-enter loops. A post-purchase referral program is also an initial consideration touchpoint for the referred consumer.
-- **Scoring all touchpoints equally without distinguishing influence from frequency** — A touchpoint that reaches everyone but influences no one (generic banner ads) and one that reaches few but is decisive (a peer recommendation) look identical if you use a single score. Always separate influence and frequency—your strategy depends on whether you need to increase reach of high-influence touchpoints or increase the influence of high-reach ones.
-- **Completing the audit once and never updating it** — Consumer behavior, competitive landscapes, and channel effectiveness shift constantly. Schedule quarterly reviews of your touchpoint map. Major product launches, competitor moves, or market shifts should trigger an immediate re-audit of affected buyer journey stages.
-- **Ignoring post-purchase touchpoints because they don't drive 'new' acquisition** — In the CDJ, post-purchase experience directly feeds the loyalty loop—which either triggers repeat purchases or sends consumers back to initial consideration for a competitor. Post-purchase touchpoints often have the highest ROI because they reduce churn and generate word-of-mouth that serves as a consideration touchpoint for new buyers.
+- **Listing only company-driven touchpoints**: An inventory built from the marketing plan misses most evaluation touchpoints. Interview buyers and add reviews, peers, communities and past experience.
+- **Stopping at the purchase**: Onboarding, support, billing and product use are touchpoints too, and they shape the next decision. Include the postpurchase stage in full.
+- **Confusing reach with influence**: A touchpoint seen by many buyers is not necessarily one that changes their minds. Ask buyers what actually moved their decision.
+- **Scoring by opinion**: Scores agreed in a meeting tend to reflect current spending. Base them on interviews, surveys and data, and note the evidence.
+- **Treating the inventory as a one-off**: New channels and communities appear and old ones fade. Schedule reviews so the inventory stays accurate.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/mckinsey-consumer-decision-journey/METHOD.md) — McKinsey Consumer Decision Journey
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/mckinsey-consumer-decision-journey/METHOD.md): McKinsey Consumer Decision Journey
 
 ## Related Skills
 
@@ -158,3 +118,9 @@ For each priority item, assign an owner, a timeline, and a success metric tied t
 - [Building Post-Purchase Loyalty Loops](../building-post-purchase-loyalty-loops/SKILL.md)
 - [Creating Circular Consumer Journey Maps](../creating-circular-journey-maps/SKILL.md)
 - [Replacing Funnel Thinking with the Decision Journey](../replacing-funnel-thinking-with-cdj/SKILL.md)
+
+## Sources
+
+- [The consumer decision journey, McKinsey Quarterly](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
+- [Understanding Customer Experience Throughout the Customer Journey, Lemon and Verhoef](https://research.rug.nl/en/publications/understanding-customer-experience-throughout-the-customer-journey/)
+- [Customer Journeys and Omnichannel User Experience, Nielsen Norman Group](https://www.nngroup.com/articles/customer-journeys-omnichannel/)

@@ -1,15 +1,20 @@
 ---
-name: mapping-the-four-fits-ecosystem
-description: "This skill teaches you how to diagram and audit the dependencies across all four fits in Brian Balfour's framework so you can pinpoint exactly where a misalignment in one fit is constraining growth across the entire system."
+name: "mapping-the-four-fits-ecosystem"
+description: "Mapping the Four Fits ecosystem lays out how market, product, channel, and model depend on each other and turns each tension into a decision."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: four-fits-framework
+  method: "four-fits-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mapping the Four Fits Brian Balfour Framework as an Interconnected Ecosystem
+# Mapping the Four Fits Ecosystem
 
-> This skill teaches you how to diagram and audit the dependencies across all four fits in Brian Balfour's framework so you can pinpoint exactly where a misalignment in one fit is constraining growth across the entire system.
+> Mapping the Four Fits ecosystem lays out how market, product, channel, and model depend on each other and turns each tension into a decision.
 
 ## Before you start
 
@@ -24,146 +29,100 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Advanced |
-| Time to Learn | 2-4 hours |
-| Outcome | You gain the ability to see your growth engine as a single interconnected system, diagnose cascading misalignments across fits, and prioritize the exact constraint that will unlock the most growth when resolved. |
-| Prerequisites | Understanding of each individual fit (Market-Product, Product-Channel, Channel-Business Model, Business Model-Market), Access to current growth metrics and unit economics, Familiarity with Brian Balfour's Four Fits Framework concepts, Experience with at least one growth audit or strategy review |
+| Time to Learn | A half-day workshop, then updates as things change |
+| Outcome | You have a one-page map of your market, product, channel, and model, the assumptions linking them, and a list of tensions with an owner and a decision for each. |
+| Prerequisites | A written market definition, current channel and pricing data, people from product, marketing, sales, and finance |
 | Part of | [Four Fits Framework](../../methods/four-fits-framework/METHOD.md) |
 
 ## Overview
 
-Most teams evaluate each of Brian Balfour's four fits in isolation—checking Market-Product Fit here, Product-Channel Fit there—and wonder why fixing one area doesn't move the growth needle. The reality is that the four fits operate as a closed-loop ecosystem where a weakness in any single fit cascades through the entire system. A brilliant product with no viable channel is as doomed as a perfect channel strategy targeting an unprofitable market.
+Mapping the Four Fits ecosystem is the skill of putting all four elements of the [Four Fits Framework](../../methods/four-fits-framework/METHOD.md) on one page so the team can see how they depend on each other. Brian Balfour's central claim is that the fits influence each other and cannot be thought about in isolation ([Balfour, Four Fits For $100M+ Growth](https://brianbalfour.com/four-fits-growth-framework)). A map makes those dependencies visible, which is hard to do when each function owns one element and discusses it in its own meetings.
 
-Mapping the four fits Brian Balfour ecosystem means creating a visual, auditable diagram that captures not just the state of each fit, but the directional dependencies between them. When you map Business Model-Market Fit as feeding into Market-Product Fit, and Market-Product Fit as shaping Product-Channel Fit, you start to see how a misaligned ARPU (a Business Model-Market issue) can silently kill your ability to acquire customers profitably through paid channels (a Channel-Business Model issue), even though your product is excellent.
+The map has four nodes and four links. The nodes are the market (category, customer, problem, motivation), the product (value proposition, hook, time to value, stickiness), the channel (the primary way customers arrive), and the model (how you charge and what each customer pays). The links are the four fits. For each link, the map records the assumption that makes it hold and the evidence behind it.
 
-This skill is essential for growth leaders, founders, and product strategists who have already validated individual fits and need to understand why their growth is plateauing despite seemingly strong fundamentals. It transforms the [Four Fits Framework](https://tryhamster.com/methods/four-fits-framework) from a checklist into a diagnostic system.
+The most useful output is the list of tensions: places where the answer for one element undermines another. A market that expects a low price combined with a product that only sells through a salesperson is a tension. So is a viral channel paired with a paywall that blocks the people being invited. Each tension becomes a decision with an owner. Without the map, these tensions tend to surface as arguments between teams that each see only their own part.
+
+The map is also the starting point for other work in the framework. Diagnosing a stall, planning a new product line, or running a recurring audit all go faster when an up-to-date map already exists.
 
 ## How It Works
 
-Brian Balfour's four fits form a loop, not a linear sequence. Market-Product Fit determines what you build, which constrains Product-Channel Fit (certain products only work through certain channels), which constrains Channel-Business Model Fit (certain channels only support certain economics), which constrains Business Model-Market Fit (certain price points only work in certain markets)—and Business Model-Market Fit loops back to shape what market you can serve and therefore what product you need.
+Balfour's rule for change is the reason the map exists: when one fit evolves, changes, or breaks, you revisit all of them rather than trying to fix one ([Applying the Four Fits](https://brianbalfour.com/essays/key-lessons-for-100m-growth)). The map turns that rule into a routine. For any proposed change, you mark which node it touches and follow the links to see which assumptions it affects.
 
-The key insight is that this loop creates **binding constraints**. Like a chain, the system is only as strong as its weakest link. But unlike a simple chain, the fits have directional dependencies—fixing a downstream fit without addressing the upstream cause will only produce temporary improvement.
+His HubSpot Sales case study shows why the links matter ([HubSpot case study](https://brianbalfour.com/essays/hubspot-growth-framework-100m)). A pricing tier chosen from customer research landed in the danger zone of the channel spectrum and had to be replaced. Later, when the team chose to focus on mid-market customers, it changed the product packaging, the channels, and the model together. Each change was a response to a tension between two nodes, and each one forced a re-check of the others.
 
-When you map the ecosystem, you're doing three things simultaneously: (1) documenting the current state of each fit with evidence, (2) drawing explicit dependency arrows that show how each fit enables or constrains the next, and (3) scoring each connection to identify where the weakest link sits. The result is a systems-level view that replaces guesswork with a clear diagnostic path.
+The links carry specific assumptions. Market to product: this customer has this problem and our product solves it well. Product to channel: this product's traits suit this channel's rules. Channel to model: this channel's cost is recovered from this price in a tolerable time. Model to market: this price times the customers we can win reaches our goal. Writing the assumptions in these terms makes them testable and shows which ones rest on evidence and which on belief.
 
-This approach works because growth stalls are almost never caused by a single factor—they emerge from compounding misalignments. A 20% misalignment in Channel-Business Model Fit combined with a 15% misalignment in Product-Channel Fit doesn't produce a 35% problem; it produces a multiplicative drag that can stall growth entirely.
+Some businesses run more than one set of fits. Balfour points to LinkedIn layering free, premium, and enterprise products, each with its own channel and model fit ([Channel Model Fit](https://brianbalfour.com/essays/channel-model-fit-for-user-acquisition)). If your business has distinct tiers or product lines that reach customers through different channels, draw a separate map for each and note where they share elements.
+
+Independent summaries such as [Antoine Buteau's notes on Balfour](https://www.antoinebuteau.com/lessons-from-brian-balfour/) emphasize the same point: the fits form one ecosystem and need constant revisiting. The map is a practical way to keep that ecosystem in view between reviews.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Inventory Your Current Four Fits Assumptions
+### Step 1: Write the four nodes
 
-Before you can map the ecosystem, you need to explicitly document what you believe to be true about each fit today. Create a structured document with four sections—one per fit—and for each, write down:
+On one page, write the current answer for each element: the market definition, the product hypothesis, the primary channel, and the pricing model with revenue per customer. Use what is true today, not the plan. If different people give different answers for a node, record the disagreement; it is often the first tension.
 
-- **Market-Product Fit**: Who is your target market? What is the core problem? What is your product's value proposition against that problem? What evidence (retention rates, NPS, usage frequency) supports this fit?
-- **Product-Channel Fit**: What channels are you using to distribute the product? Why does the product's form factor work for these channels? What evidence (channel-specific conversion rates, virality coefficients) supports this?
-- **Channel-Business Model Fit**: What does it cost to acquire a customer through each channel? What is your LTV? What is your payback period? Does the channel economics support the business model?
-- **Business Model-Market Fit**: What is your ARPU? What is the market's willingness to pay? Does the business model support the market size needed for your growth targets?
+### Step 2: Write the assumption on each link
 
-Be ruthlessly honest. Write down what you *actually know* versus what you *assume*. Mark each claim as 'validated' (with data), 'assumed' (with logic), or 'unknown'.
+For each of the four links, write one or two sentences stating the assumption that makes the fit hold, following the forms in [Balfour's essays](https://brianbalfour.com/four-fits-growth-framework). Keep them specific: name the customer, the channel, the price. Vague assumptions cannot be checked and will not reveal tensions.
 
-> **Pro tip:** Use a shared spreadsheet or Notion database so cross-functional team members can challenge assumptions in real time. The most dangerous assumptions are the ones nobody questions.
+### Step 3: Attach evidence and rate each link
 
-### Step 2: Step 2: Draw the Four Fits Loop Diagram
+Next to each assumption, list the evidence that supports or contradicts it: retention curves, channel conversion and cost, payback, market counts. Rate each link as strong, moderate, or weak based on that evidence. Mark any link that rests mostly on belief rather than data, since those are the ones most likely to break.
 
-Create a visual diagram that positions the four fits as nodes in a clockwise loop. You can use a whiteboard, Miro, FigJam, or even a simple drawing tool. The standard layout following Brian Balfour's four fits model is:
+### Step 4: List the tensions
 
-1. **Market-Product Fit** (top) → connects to →
-2. **Product-Channel Fit** (right) → connects to →
-3. **Channel-Business Model Fit** (bottom) → connects to →
-4. **Business Model-Market Fit** (left) → connects back to → Market-Product Fit
+Look for places where two nodes pull in different directions. Common patterns are a price that does not suit the channel, a channel that requires product features the roadmap does not include, and a market too small for the model. Write each tension in one sentence naming the two elements involved.
 
-For each node, include a summary card with: the key metric(s), current score (strong/moderate/weak), and the most critical assumption. Between each node, draw a dependency arrow and label it with *what specifically flows from one fit to the next*. For example, the arrow from Market-Product to Product-Channel might be labeled 'product form factor and usage patterns determine viable channels.'
+### Step 5: Trace the knock-on effects
 
-> **Pro tip:** Don't just draw arrows—label them with the specific mechanism of dependency. 'Influences' is too vague. 'Product's self-serve nature enables viral and content-led channels but excludes enterprise sales' is actionable.
+For each tension, write how resolving it in either direction would affect the other links. Lowering price to suit a viral channel may improve Product Channel Fit and weaken Model Market Fit. Moving to sales may fix Channel Model Fit and require a different product. This is the step where [Balfour's rule](https://brianbalfour.com/essays/key-lessons-for-100m-growth) about revisiting all fits becomes concrete.
 
-### Step 3: Step 3: Score Each Fit and Each Connection
+### Step 6: Assign decisions and owners
 
-Now assign a health score to each fit and to each dependency connection. Use a simple 1-5 scale:
+Turn each tension into a decision with an owner and a date. Some decisions will be quick, and some will need an experiment first. Rank them by how much each tension limits growth, so the weakest link gets attention first.
 
-- **5 (Strong)**: Evidence clearly supports alignment; metrics are healthy and trending correctly.
-- **4 (Good)**: Mostly aligned with minor gaps; metrics are acceptable but could improve.
-- **3 (Moderate)**: Some misalignment signals; metrics are mixed or stagnant.
-- **2 (Weak)**: Clear misalignment with evidence; metrics are declining or below benchmarks.
-- **1 (Broken)**: Fundamental misalignment; this fit is actively constraining growth.
+### Step 7: Keep the map current
 
-Score each of the four fits individually, then score each of the four connections between them. This gives you eight scores total. The connection scores are often more revealing than the fit scores themselves—you might have strong Market-Product Fit and strong Product-Channel Fit individually, but the *connection* between them might be weak because your product's best features aren't the ones driving channel performance.
-
-Document the reasoning behind each score with 2-3 bullet points of evidence. This prevents score inflation and creates an audit trail.
-
-> **Pro tip:** Have different team members score independently before comparing. Discrepancies in scores often reveal the most important blind spots.
-
-### Step 4: Step 4: Trace Constraint Cascades
-
-With your scored diagram in hand, identify the lowest-scoring fit or connection—this is your primary binding constraint. Then trace how that weakness cascades through the loop.
-
-For example, if Channel-Business Model Fit scores a 2 because your CAC through paid social exceeds your LTV, trace upstream: Is this because the product isn't well-suited to paid social (a Product-Channel issue)? Or because the business model's ARPU is too low for paid channels (a Business Model-Market issue)? Then trace downstream: How does this CAC problem affect your ability to invest in market expansion (a Business Model-Market issue)?
-
-Draw these cascade paths on your diagram with a different color. You'll often find that what looks like a Channel-Business Model problem is actually rooted in a Market-Product misalignment two steps upstream. The upstream root cause is where you should focus your fix, not the downstream symptom.
-
-Document each cascade as a narrative: 'Because [upstream cause], this leads to [midstream effect], which manifests as [downstream symptom].'
-
-> **Pro tip:** The rule of thumb from Brian Balfour's four fits work: always look at least one fit upstream from where the problem appears. The symptom and the cause are rarely in the same fit.
-
-### Step 5: Step 5: Identify the Binding Constraint and Hypothesize Fixes
-
-From your cascade analysis, identify the single most impactful constraint—the one whose resolution would unlock improvement across multiple fits. This is your binding constraint.
-
-Formulate 2-3 hypotheses for how to resolve it. Each hypothesis should:
-- State the specific misalignment being addressed
-- Propose a concrete change (to product, channel, pricing, or market positioning)
-- Predict the downstream effects across other fits if the hypothesis is correct
-- Define a measurable success criteria
-
-For example: 'If we shift from a freemium model to a $49/month entry price (Business Model change), we predict our ARPU will support paid search acquisition at a 6-month payback (Channel-Business Model improvement), which will allow us to scale to the SMB market segment we've validated (Business Model-Market improvement), without degrading the product-market fit we've established (Market-Product maintained).'
-
-Rank these hypotheses by expected impact and ease of validation.
-
-> **Pro tip:** Resist the temptation to fix multiple constraints simultaneously. The ecosystem nature of the four fits means fixing one constraint often shifts the binding constraint elsewhere—so you need to re-map after each major change.
-
-### Step 6: Step 6: Build a Monitoring Dashboard for Cross-Fit Health
-
-Your ecosystem map is only useful if it's a living document. Create a lightweight dashboard (even a spreadsheet works) that tracks 1-2 leading indicators for each fit and each connection on a weekly or monthly cadence.
-
-For each fit, choose metrics that are *leading indicators* of alignment, not lagging outcomes:
-- **Market-Product Fit**: Week 1 retention, activation rate, NPS
-- **Product-Channel Fit**: Channel-specific conversion rate, time-to-value by acquisition source
-- **Channel-Business Model Fit**: Blended CAC, payback period, channel contribution margin
-- **Business Model-Market Fit**: ARPU trend, expansion revenue rate, market penetration %
-
-Set threshold alerts: if any metric crosses into the 'weak' zone, trigger a re-mapping exercise. This prevents slow degradation from going unnoticed.
-
-Schedule a quarterly re-mapping session where you update scores, re-draw cascades, and reassess the binding constraint. This connects directly to the practice of [running periodic four fits audits](https://tryhamster.com/skills/running-four-fits-audits).
-
-> **Pro tip:** The most dangerous scenario is when all four fits score a 3 (moderate). It feels okay but masks systemic mediocrity. Set your thresholds high enough that 'moderate across the board' triggers a review.
+Store the map where the whole team can find it and update it whenever a node changes: a new price, a new channel, a redefined market, a major product change. Review it in each regular audit. Record the date of each change so the history of decisions is visible.
 
 ## Best Practices
 
-- Always map the full loop before diagnosing any single fit—isolated analysis misses the cascading dependencies that the four fits Brian Balfour model is designed to reveal.
-- Use evidence-based scoring rather than gut feel: require at least two data points for any score above a 3, and flag unsupported assumptions explicitly on the diagram.
-- Label dependency arrows with specific mechanisms, not vague 'influences' language—this forces clarity about exactly how one fit constrains the next.
-- Involve cross-functional stakeholders (product, marketing, finance, sales) in the mapping session because each fit typically 'belongs' to a different team and no single person has the full picture.
-- Treat the ecosystem map as a living artifact that gets updated quarterly, not a one-time strategy exercise—the binding constraint shifts as you grow and the market evolves.
-- When presenting findings to leadership, lead with the cascade narrative ('this upstream cause creates this downstream symptom') rather than individual fit scores—it communicates urgency better.
+- Build the map with people from every function. Each sees one node most clearly, and tensions between nodes are often tensions between teams.
+- Write assumptions, not labels. "Paid social" is a label; "finance managers at mid-sized firms respond to paid social at a cost we recover within a year" is an assumption you can test.
+- Map what is true today before mapping the plan. Starting from the plan hides the tensions the current business already has.
+- Draw a separate map for each distinct tier or product line, as Balfour's [LinkedIn example](https://brianbalfour.com/essays/channel-model-fit-for-user-acquisition) suggests, and note shared elements between them.
+- Treat every proposed change as a change to the map. Before approving a new price or channel, follow the links and check each affected assumption.
+- Keep the map to one page. If it needs more, the assumptions are probably too vague or too many.
 
 ## Common Mistakes
 
-- **Treating each fit as an independent checkbox rather than mapping the directional dependencies between them.** — Always draw and label the dependency arrows between fits. The connections are where the most actionable insights live. A strong fit in isolation means nothing if it's being undermined by an upstream misalignment.
-- **Trying to fix all weak fits simultaneously instead of identifying the single binding constraint.** — Use cascade analysis to find the root upstream cause. Fix that one constraint first, then re-map the ecosystem—you'll often find that resolving one misalignment automatically improves downstream fits.
-- **Scoring fits based on optimism or desired state rather than current evidence, leading to an inaccurate map.** — Require data-backed justification for every score. Mark anything without evidence as 'unknown' rather than giving it a passing score. Independent scoring by multiple team members helps counteract bias.
-- **Creating the ecosystem map once and never updating it, treating it as a static strategy document.** — Schedule quarterly re-mapping sessions and build a monitoring dashboard with threshold alerts. The binding constraint shifts as you grow, enter new markets, or change your product.
-- **Mapping fits at too high a level of abstraction (e.g., 'we have product-market fit') without specifying for which segment, use case, and time period.** — Be specific about the market segment, product version, channel mix, and business model parameters you're evaluating. If you serve multiple segments, create separate ecosystem maps for each.
+- **Drawing the diagram without assumptions**: Four boxes and arrows teach nothing. The value is in the written assumption and evidence on each link.
+- **Letting each function map its own node**: When marketing writes the channel node and finance writes the model node separately, the tensions between them stay hidden. Build the map together.
+- **Listing tensions without decisions**: A list of problems with no owners becomes a document nobody reads. Every tension needs a person and a date.
+- **Mapping once and filing it**: The fits change as markets, channels, and prices change. A map that is not updated after changes misleads the next decision.
+- **Forcing one map onto a business with distinct tiers**: Free, self-serve, and enterprise offerings often need different channels and models. One combined map blurs the tensions within each.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/four-fits-framework/METHOD.md) — Four Fits Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/four-fits-framework/METHOD.md): Four Fits Framework
 
 ## Related Skills
 
-- [Evaluating Market-Product Fit](../evaluating-market-product-fit/SKILL.md)
-- [Validating Business Model-Market Fit](../validating-business-model-market-fit/SKILL.md)
-- [Diagnosing Growth Stalls Using Four Fits Analysis](../diagnosing-growth-stalls-with-four-fits/SKILL.md)
+- [Evaluating Market Product Fit](../evaluating-market-product-fit/SKILL.md)
+- [Validating Model Market Fit](../validating-business-model-market-fit/SKILL.md)
+- [Diagnosing Growth Stalls with the Four Fits](../diagnosing-growth-stalls-with-four-fits/SKILL.md)
 - [Aligning Product-Channel Fit](../aligning-product-channel-fit/SKILL.md)
 - [Sequencing the Four Fits for Early-Stage Growth](../sequencing-fits-for-early-stage-growth/SKILL.md)
-- [Matching Channel to Business Model Fit](../matching-channel-to-business-model/SKILL.md)
-- [Running Periodic Four Fits Audits](../running-four-fits-audits/SKILL.md)
+- [Matching Channel to Business Model](../matching-channel-to-business-model/SKILL.md)
+- [Running Four Fits Audits](../running-four-fits-audits/SKILL.md)
+
+## Sources
+
+- [Brian Balfour: Four Fits For $100M+ Growth](https://brianbalfour.com/four-fits-growth-framework)
+- [Brian Balfour: Applying the Four Fits](https://brianbalfour.com/essays/key-lessons-for-100m-growth)
+- [Brian Balfour: HubSpot Sales case study](https://brianbalfour.com/essays/hubspot-growth-framework-100m)
+- [Brian Balfour: Channel Model Fit](https://brianbalfour.com/essays/channel-model-fit-for-user-acquisition)
+- [Antoine Buteau: Lessons from Brian Balfour](https://www.antoinebuteau.com/lessons-from-brian-balfour/)

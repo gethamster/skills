@@ -1,15 +1,20 @@
 ---
-name: adapting-4ls-for-remote-and-hybrid-teams
-description: "This skill teaches you how to run engaging, equitable 4Ls retrospective sessions with distributed teams by combining async collaboration tools, timeboxed video calls, and anonymous input methods to capture honest feedback across time zones."
+name: "adapting-4ls-for-remote-and-hybrid-teams"
+description: "Run a 4Ls retrospective for remote and hybrid teams with async input, a short video session, hidden voting and equal footing for everyone."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: 4ls-retrospective
+  method: "4ls-retrospective"
+  datePublished: "2026-07-02"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Sprint Retrospective Ideas: Adapting the 4Ls Retrospective for Remote and Hybrid Teams
+# Running a 4Ls Retrospective for Remote and Hybrid Teams
 
-> This skill teaches you how to run engaging, equitable 4Ls retrospective sessions with distributed teams by combining async collaboration tools, timeboxed video calls, and anonymous input methods to capture honest feedback across time zones.
+> Run a 4Ls retrospective for remote and hybrid teams with async input, a short video session, hidden voting and equal footing for everyone.
 
 ## Before you start
 
@@ -24,128 +29,94 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes per retrospective (including async prep) |
-| Outcome | You can consistently run 4Ls retrospectives that produce honest, actionable feedback from distributed team members regardless of location, time zone, or communication style. |
-| Prerequisites | Basic understanding of the 4Ls Retrospective framework (Liked, Learned, Lacked, Longed For), Familiarity with at least one digital whiteboard tool (Miro, FigJam, MURAL, etc.), Experience facilitating at least one in-person or co-located retrospective |
-| Part of | [4Ls Retrospective](../../methods/4ls-retrospective/METHOD.md) |
+| Time to Learn | A few retrospectives of practice |
+| Outcome | You can run a 4Ls retrospective for remote and hybrid teams where everyone contributes on equal terms, across time zones, and the team still leaves with owned actions. |
+| Prerequisites | Experience facilitating a 4Ls retrospective in person, a digital board tool, a video call tool |
+| Part of | [4Ls Sprint Retrospective](../../methods/4ls-retrospective/METHOD.md) |
 
 ## Overview
 
-Running a retrospective with a fully co-located team is straightforward—sticky notes on a wall, a marker, and eye contact do most of the heavy lifting. But when your team is spread across time zones or split between office and home, those natural collaboration cues disappear. The 4Ls Retrospective format (Liked, Learned, Lacked, Longed For) is already one of the best **sprint retrospective ideas** for structured reflection, but it needs deliberate adaptation to work for remote and hybrid teams.
+The 4Ls format moves well to distributed teams. Its four categories map directly onto columns in a digital board, and its core step, silent individual writing, does not need anyone in the same room or even online at the same time. [Ben Linders calls it](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) a suitable exercise for remote or distributed retrospectives using a shared editable document. What changes is the facilitation: time zones, uneven connections, cameras and the gap between people in a room and people on a screen.
 
-This skill covers the practical techniques for translating each phase of the [4Ls Retrospective](https://tryhamster.com/methods/4ls-retrospective) into a distributed-friendly format. You'll learn how to set up async brainstorming windows so team members in different time zones contribute equally, how to use anonymous input to surface honest feedback that people might not share on camera, and how to structure a timeboxed synchronous call that respects everyone's calendar while still producing real action items.
+The main adaptation is to split the retrospective in two. The divergent part, writing notes under each L, happens asynchronously over a day or two, so everyone can contribute at a time that suits them. The convergent part, discussing themes and agreeing on actions, happens live when the notes call for it. [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) takes a similar approach for its own groups: collect feedback asynchronously in an issue so people can think on their own time, and hold a video call only when necessary, for example after a difficult iteration or when emotions are likely to run high.
 
-The goal isn't to replicate the in-person experience—it's to design a better one. Teams that master remote 4Ls retrospectives often report higher participation rates and more candid feedback than their co-located counterparts, precisely because the process is more intentionally designed for inclusion.
+Hybrid teams, where some people share a room and others dial in, need the most care. The people in the room hear side conversations, read body language and reach the board first. Remote people get a camera view of a wall and a delayed audio feed. The fix is to run a hybrid retrospective as if everyone were remote. The [method page](../../methods/4ls-retrospective/METHOD.md) covers the categories and the standard session; this skill covers what to change when the team is distributed.
 
 ## How It Works
 
-The core adaptation splits the traditional single-session retrospective into two distinct phases: **async divergence** and **synchronous convergence**.
+A remote 4Ls retrospective has three parts: an async writing window, a pre-processing pass by the facilitator, and a live session.
 
-During **async divergence** (typically 24–48 hours before the live call), every team member independently adds their items to a shared digital board under the four L categories. This phase uses anonymous or semi-anonymous input so that junior team members, introverts, and people in different cultural contexts feel safe contributing honestly. The async window also removes the time-zone penalty—a developer in Tokyo contributes with the same weight as a designer in Berlin.
+The async window replaces silent writing. The facilitator opens a board with the four columns and prompts, shares the sprint facts, and gives the team a window, often a working day or two, to add notes. Writing alone at their own pace gives people more time to think than a timer in a meeting, and it removes the pressure of typing while others watch. Anonymous notes are easier to offer in a tool than in a room, and they help when trust is uncertain.
 
-During **synchronous convergence** (a timeboxed 45–60 minute video call), the facilitator guides the team through clustering similar items, dot-voting on the most impactful themes, and converting top-voted items into concrete action items. Because the brainstorming already happened async, the live session is purely about discussion and decision-making, which makes it dramatically more efficient.
+The pre-processing pass saves live time. Before the call, the facilitator reads all notes, groups obvious duplicates and drafts theme names, leaving everything editable. The live session then starts from a mostly clustered board and spends its time on judgment calls, not on reading notes aloud.
 
-The bridge between these two phases is a **facilitation layer**: clear instructions, a well-designed board template, and nudge reminders that keep participation high during the async window. This two-phase model works because it maps to how distributed teams actually communicate—asynchronous by default, synchronous by intention.
+The live session covers the phases that need conversation: confirming clusters, voting, discussing the top themes and agreeing on actions. It follows the later phases of [Derby and Larsen's structure](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/), generate insights, decide what to do and close, and it can be shorter than an in-person retrospective because the data is already on the board. Voting works best in the tool with results hidden until everyone is done, which the [Nielsen Norman Group points out](https://www.nngroup.com/articles/dot-voting/) removes the pull of seeing where others' votes went.
+
+Time zones shape the live session. If there is no hour that works for everyone, GitLab suggests scheduling the meeting twice, once for each group of time zones. Some GitLab groups also choose not to record the meeting so people feel free to speak, and some leave out direct managers for the same reason. Each of these is a trade-off the team should agree on openly.
+
+Hybrid sessions add one rule: everyone joins from their own device, including people in the room. That puts every face in the same size box, every voice on the same microphone, and every note on the same board.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Choose Your Toolstack and Set Up the Board
+### Step 1: Set Up the Board and the Tools
 
-Select a digital whiteboard tool that your team already uses or can access without friction. Miro, FigJam, MURAL, and EasyRetro are all strong choices. Create a board with four clearly labeled columns—Liked, Learned, Lacked, and Longed For—and include brief prompts under each heading to guide contributions. For example, under 'Lacked' you might write: *'What resource, process, or support was missing this sprint?'*
+Choose one digital board tool the whole team can use and create the four columns with prompts under each. Turn on anonymous notes if the team wants them, and check that hidden voting is available. Add a header with the sprint goal, what shipped, incidents and last retrospective's actions with their status. Test the board link with someone outside the facilitator's own setup. Book the live session and share both links in one message.
 
-If your team uses Slack or Teams, create a dedicated channel or thread for the retrospective and pin the board link there. For guidance on designing effective board layouts, see [Building 4Ls Retrospective Templates and Boards](https://tryhamster.com/skills/building-4ls-retrospective-boards).
+### Step 2: Open the Async Writing Window
 
-> **Pro tip:** Enable anonymous sticky notes if your tool supports it. In Miro, use the 'Hide authors' feature. In EasyRetro, anonymous mode is built in. This single setting can dramatically increase the candor of feedback.
+Send a short message explaining the purpose, the four categories, the deadline for notes and roughly how long writing should take. Give a window long enough to cover everyone's working hours, often a day or two before the live session. Ask for one idea per note and for specific events rather than general moods. Remind people once, midway through the window, without singling anyone out. Close the window before you start pre-processing, so nobody adds notes to a board you are reorganizing.
 
-### Step 2: Step 2: Open the Async Brainstorming Window
+### Step 3: Pre-Process the Board
 
-Send a clear message to the team announcing that the async phase is open, with a specific deadline (e.g., 'Add your items by Thursday 5 PM UTC'). Include:
+Read every note. Group clear duplicates, draft a short name for each cluster, and leave everything editable. Flag notes that seem to be in the wrong column, but do not move them; ask during the live session. Note any theme that looks sensitive so you can plan how to open it. Share the pre-processed board with the team before the call so people arrive already oriented.
 
-- A direct link to the board
-- A brief reminder of what each L category means
-- An example sticky note for each category to lower the barrier to entry
-- The expected time commitment (10–15 minutes)
+### Step 4: Run the Live Session
 
-Give the team 24–48 hours to contribute. This window should span at least one full business day so that every time zone has a comfortable window for participation.
+Open with purpose, scope and a quick check-in in which everyone speaks, cameras on if the team is comfortable. Review last retrospective's actions. Walk through the clusters, asking the team to confirm or fix the grouping and names. Run a silent vote in the tool with results hidden until everyone has voted, then discuss the top themes in order. Watch the participant list and invite quieter people by name, since remote silence is easy to miss.
 
-> **Pro tip:** Send a midpoint nudge 12–24 hours before the deadline. A simple 'Friendly reminder: 6 items so far—let's aim for at least 2 per person' creates gentle social accountability without pressure.
+### Step 5: Close the Hybrid Gap
 
-### Step 3: Step 3: Pre-Process the Board Before the Live Session
+If some people share a room, ask each of them to join from their own laptop with their own headset. Keep the board on everyone's screen, not on a wall display. Ask in-room people to keep side conversations out of the session, and repeat any comment the remote people might have missed. Rotate who speaks first so the room does not always set the frame. If the imbalance persists, run the next retrospective fully remote.
 
-Before the synchronous call, the facilitator should spend 10–15 minutes reviewing the board. Look for duplicate items and loosely group them into clusters without removing anything. Flag any items that are ambiguous and might need clarification during the call. Count the distribution across categories—if 'Lacked' has 15 items and 'Liked' has 2, that tells you something about team morale that's worth naming.
+### Step 6: Record and Follow Through
 
-Don't over-organize. The goal is to make the live session efficient, not to pre-decide the outcomes. Leave room for the team to rearrange clusters during the call.
-
-> **Pro tip:** Create a simple facilitator cheat sheet: total items per category, obvious theme clusters, and any items that seem especially charged or surprising. This helps you manage time during the live session.
-
-### Step 4: Step 4: Facilitate the Timeboxed Synchronous Session
-
-Structure the live video call with strict timeboxes:
-
-- **Opening & context setting (5 min):** Thank contributors, share high-level stats ('We collected 34 items across all four categories'), and set the agenda.
-- **Cluster review & discussion (20–25 min):** Walk through each L category. Read representative items aloud, invite brief clarification or storytelling, and let the team confirm or adjust clusters.
-- **Dot voting (5 min):** Give each person 3–5 votes to place on the clusters they think are most important to address. Use your tool's built-in voting feature.
-- **Action item creation (10–15 min):** For the top 2–3 voted themes, collaboratively define a specific action item with an owner and a deadline.
-- **Close (5 min):** Recap actions, thank the team, and share where the results will be stored.
-
-For hybrid teams where some people are in a conference room and others are remote, enforce a 'remote-first' rule: everyone joins from their own laptop, even if they're in the same building. This levels the playing field for video presence and chat participation.
-
-> **Pro tip:** Use a visible countdown timer (there are free browser-based ones) shared on screen. Timeboxes only work when everyone can see the clock.
-
-### Step 5: Step 5: Handle the Hybrid Gap Intentionally
-
-Hybrid teams have a specific failure mode: the people in the room talk to each other and remote participants become passive spectators. Combat this by:
-
-- Having the facilitator explicitly call on remote participants first during each discussion segment
-- Using the chat as a first-class channel—ask people to drop reactions or short comments in chat before opening verbal discussion
-- Positioning the camera so remote participants can see faces, not the backs of heads
-- Assigning a 'remote advocate' in the room whose job is to monitor the chat and interrupt politely when a remote person has a comment
-
-These aren't nice-to-haves—they're structural necessities. Without them, your hybrid retrospective will consistently favor the loudest voices in the room.
-
-> **Pro tip:** Rotate the 'remote advocate' role each sprint. It builds empathy and ensures everyone understands the remote experience.
-
-### Step 6: Step 6: Document, Share, and Follow Through
-
-Within 24 hours of the live session, publish a retrospective summary that includes:
-
-- The full board (screenshot or link with view access)
-- The top-voted themes with brief context
-- Each action item with its owner, deadline, and success criteria
-- A link to the previous sprint's action items and their status
-
-Post this in your team's shared workspace (Confluence, Notion, a shared drive, or your project management tool). Tag action item owners directly. This documentation step is what separates teams that actually improve from teams that just talk about improving. For more on converting retrospective insights into trackable work, see [Converting 4Ls Insights into Sprint Action Items](https://tryhamster.com/skills/converting-4ls-insights-into-action-items).
-
-> **Pro tip:** Add a standing agenda item to your next sprint planning meeting: 'Review retro action items.' This creates accountability without requiring a separate follow-up meeting.
+Agree on actions with one owner and a date each, and add them to the sprint backlog during the call. Post a written summary within the day in the team's usual channel: themes, votes, actions and owners. [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) asks for actions assigned with clear expectations for completion, which the summary should show. Keep the board archived with the same naming scheme each sprint. Start the next async window by linking to the previous actions.
 
 ## Best Practices
 
-- Always default to 'remote-first' facilitation even if only one team member is remote—run the entire session through the digital board and video call rather than mixing physical and digital artifacts.
-- Use anonymous input during the async phase and reveal authorship only if the contributor voluntarily claims an item during discussion. This consistently produces more honest 'Lacked' and 'Longed For' feedback.
-- Timebox ruthlessly: async windows should have hard deadlines, and the synchronous session should never exceed 60 minutes. Distributed teams have even less tolerance for meetings that run long.
-- Vary your prompting questions each sprint to prevent retro fatigue. Pair this skill with techniques from [Crafting Effective Questions for Each L Category](https://tryhamster.com/skills/crafting-4ls-retrospective-questions) to keep sessions fresh.
-- Record the synchronous session (with consent) and share it for anyone who couldn't attend live. A 45-minute recording is more useful than a paragraph of meeting notes for absent team members.
-- Track participation rates across sprints. If the same people consistently skip the async phase, reach out individually—low participation is usually a signal about psychological safety, not laziness.
+- Split writing from discussion. Async writing gives everyone time to think and removes time-zone pressure; the live session keeps the parts that need conversation.
+- Treat hybrid as remote. Everyone on their own device, on the same board and the same audio, removes most of the advantage in-room people have.
+- Hide votes until everyone has voted. Digital tools make this easy, and it keeps early votes from steering the rest.
+- Pre-process the board before the call. A mostly clustered board lets the live session spend its time on decisions instead of reading notes.
+- Agree as a team on recording and attendance. Whether the call is recorded and whether managers attend both affect how freely people speak, so decide openly.
+- Keep the live session short and focused. Long video calls wear people down, so move the reading work into the async window.
 
 ## Common Mistakes
 
-- **Skipping the async phase and trying to do all brainstorming live on the video call** — Live brainstorming on video calls produces shallow results because people self-censor, multitask, and defer to whoever speaks first. Always run an async brainstorming phase of at least 24 hours before the live session. The live call should be for discussion and decision-making, not ideation.
-- **Using non-anonymous input for sensitive categories like 'Lacked' and 'Longed For'** — When names are attached to critical feedback, team members—especially junior ones—will soften or withhold their most important observations. Enable anonymous mode for the async phase. You can always discuss items openly during the live call, but the initial capture must feel safe.
-- **Letting hybrid meetings default to 'room-first' dynamics where in-office participants dominate the conversation** — Enforce a remote-first protocol: everyone joins from their own device, chat is a first-class channel, and the facilitator calls on remote participants before opening the floor. Assign a rotating 'remote advocate' in the room to monitor chat and amplify remote voices.
-- **Not pre-processing the board before the live session, leading to the facilitator reading 40+ sticky notes aloud** — Spend 10–15 minutes before the call grouping obvious duplicates and identifying theme clusters. Present clusters rather than individual items during the live session, and only drill into specific items when the team wants to discuss them.
-- **Ending the retrospective without assigning owners and deadlines to action items** — Every action item needs a named owner (not 'the team') and a specific deadline. If you can't commit to an owner and deadline during the session, the item isn't actionable yet—reframe it as a discussion topic for the next sprint's planning meeting instead.
+- **Copying the in-person agenda onto a video call**: Running silent writing, clustering, voting and discussion live makes the call long and tiring. Move writing and first-pass clustering into the async window.
+- **A camera pointed at a whiteboard**: Remote people cannot read or move notes on a wall. Use a digital board for everyone.
+- **One time slot that suits only part of the team**: The same people end up joining late at night every sprint. Rotate the time or run the session twice.
+- **Leaving the async window open during pre-processing**: New notes arrive on a board you are reorganizing and get lost. Close the window first, then cluster.
+- **Letting remote silence go unnoticed**: A quiet participant on video is easy to overlook. Watch the participant list and invite people by name.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/4ls-retrospective/METHOD.md) — 4Ls Retrospective
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/4ls-retrospective/METHOD.md): 4Ls Sprint Retrospective
 
 ## Related Skills
 
-- [Building 4Ls Retrospective Templates and Boards](../building-4ls-retrospective-boards/SKILL.md)
-- [Facilitating a 4Ls Retrospective Meeting](../facilitating-4ls-retrospective-sessions/SKILL.md)
-- [Tracking 4Ls Trends Across Multiple Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
-- [Categorizing and Sorting Team Feedback into the 4Ls](../categorizing-feedback-into-4ls/SKILL.md)
-- [Crafting Effective Questions for Each L Category](../crafting-4ls-retrospective-questions/SKILL.md)
-- [Converting 4Ls Insights into Sprint Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
+- [Building a 4Ls Retrospective Board and Template](../building-4ls-retrospective-boards/SKILL.md)
+- [Facilitating a 4Ls Sprint Retrospective Meeting](../facilitating-4ls-retrospective-sessions/SKILL.md)
+- [Tracking 4Ls Retrospective Trends Across Sprints](../tracking-retrospective-trends-across-sprints/SKILL.md)
+- [Sorting Team Feedback into the 4Ls Categories](../categorizing-feedback-into-4ls/SKILL.md)
+- [Writing 4Ls Retrospective Questions for Each Category](../crafting-4ls-retrospective-questions/SKILL.md)
+- [Turning 4Ls Retrospective Insights into Action Items](../converting-4ls-insights-into-action-items/SKILL.md)
+
+## Sources
+
+- [Ben Linders: Four L's, a classic retrospective exercise](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/)
+- [GitLab Handbook: Group retrospectives](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/)
+- [Derby, Larsen and Horowitz: Agile Retrospectives, Second Edition](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/)
+- [Nielsen Norman Group: Dot voting](https://www.nngroup.com/articles/dot-voting/)

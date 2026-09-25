@@ -1,49 +1,37 @@
 # Examples: Identifying Underserved Outcome Opportunities
 
-## Example: B2B SaaS for Project Management (Small Team, 60 Respondents)
+## Accounts payable software
 
 **Scenario:**
 
-A 15-person project management SaaS startup wants to decide which features to build next. They have defined the core functional job as 'manage a cross-functional project from kickoff to delivery' and have written 35 desired outcome statements. They survey 60 customers on a 1-to-5 scale and normalize to a 2-to-20 range.
+Illustrative scenario: a team surveys 200 office managers who pay supplier invoices, using a tested list of outcome statements grouped by job step.
 
 **Walkthrough:**
 
-The team distributes the survey to customers who completed a project in the last 60 days. After collecting 60 responses, they calculate averages and opportunity scores. 2). Four of the five cluster around the 'monitor and control' step of the job map.
+For "minimize the likelihood of paying to outdated bank details", 160 of the 200 respondents rate importance 4 or 5, which is 80%, so importance is 8.0. Only 60 rate satisfaction 4 or 5, which is 30%, so satisfaction is 3.0. The opportunity score is 8.0 + (8.0 - 3.0) = 13.0.
 
-6 respectively, confirming they have been over-investing in task creation UX. Follow-up interviews reveal that customers use spreadsheets to track dependencies because the product's dependency feature is hidden and unreliable. The team decides to rebuild the dependency tracking system and add a real-time blocking-task dashboard, shelving planned improvements to the task creation flow.
+For "minimize the time it takes to archive a paid invoice", importance is 4.0 and satisfaction is 7.0, so the score is 4.0 with no gap added. Several confirm-step outcomes score above ten, so the team treats confirm as the priority area and goes back to its interview notes, where fraud worries came up repeatedly.
 
-## Example: Consumer Health App (B2C, 120 Respondents)
+## Recipe app
 
 **Scenario:**
 
-A consumer health app company has defined the job as 'manage a chronic health condition day-to-day' and written 50 desired outcome statements. They survey 120 users on a 1-to-10 scale, producing scores on a 2-to-20 range. The team wants to find innovation targets for their next major release.
+Illustrative scenario: a recipe app team surveys 100 home cooks on outcomes for the job "prepare a weeknight dinner for the household".
 
 **Walkthrough:**
 
-Survey responses come from users managing diabetes, hypertension, and asthma. 3). When the team segments by condition, a striking pattern emerges. 3).
+Outcomes about cooking technique score low: most respondents rate them moderately important and are already satisfied. Outcomes in the define step, such as choosing a meal everyone will eat, score highest. The landscape shows the execute stage as largely overserved.
 
-6 masked a massive segment-specific opportunity. The team decides to build a food-tracking and glucose-impact correlation feature targeted at the diabetes segment, rather than a generic medication reminder that would serve all segments equally but not deeply. This segment-specific approach creates a defensible wedge in the diabetes management market. 1), confirm that their existing logging UX is already good enough and should not receive further investment.
+Splitting by profile, the team sees that households with young children rate the define outcomes much higher than other households. It flags this for segmentation rather than acting on the market-wide ranking alone.
 
-## Example: B2B Manufacturing Equipment (Enterprise, 85 Respondents)
+## A result that needed a second look
 
 **Scenario:**
 
-An industrial equipment manufacturer defines the job as 'maintain production equipment to minimize unplanned downtime' and writes 42 desired outcome statements. They survey 85 maintenance managers at customer facilities on a 1-to-5 scale (normalized to 2-to-20). The equipment is expensive, and each hour of downtime costs customers $50,000-200,000.
+Illustrative scenario: a platform team surveys 50 product engineers, and one outcome about build speed tops the ranking.
 
 **Walkthrough:**
 
-The survey reveals a sharp bifurcation. 0). 2 respectively, firmly in the overserved bucket. The company had been planning to improve their maintenance scheduling portal.
+Before acting, the team checks the interview notes and finds build speed mentioned only in passing. It looks at the raw distribution and sees that ratings are split: one group of engineers rates it very important and another barely cares. The composite score hides that split.
 
-The data redirects them toward predictive maintenance: IoT sensors on critical components paired with an AI model that predicts failure windows and automatically triggers parts orders. Follow-up interviews confirm that maintenance managers currently rely on vibration readings taken manually once per week, which is too infrequent to catch fast-developing failures. The opportunity landscape gives the product team a clear, quantified case for an IoT-first roadmap.
-
-## Example: Financial Services Platform (Mid-Market, 95 Respondents)
-
-**Scenario:**
-
-A fintech startup serving mid-market CFOs defines the job as 'close the monthly financial books accurately and on time' and writes 28 desired outcome statements. They survey 95 finance professionals on a 1-to-5 scale (normalized to 2-to-20). The team is exploring how to become a product manager's best friend by building with data rather than opinions.
-
-**Walkthrough:**
-
-The top outcomes form two clusters. 4). 8). The reconciliation cluster scores higher, so the team targets automated reconciliation as the core product value proposition.
-
-8, confirming that data entry automation, a feature their competitor leads with, is overserved in the market. Instead of competing on data entry speed, they differentiate on reconciliation intelligence. The opportunity landscape becomes the centerpiece of their Series A pitch, showing investors a quantified demand gap that no competitor is addressing directly.
+The team treats build speed as a possible segment-specific need and prioritizes the next outcome down, which was consistently important and poorly satisfied across the whole sample and matched what engineers said in interviews.

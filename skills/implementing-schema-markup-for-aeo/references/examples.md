@@ -1,34 +1,43 @@
 # Examples: Implementing Schema Markup for Answer Engine Optimization
 
-## Example: SaaS Company Implementing Schema for Their Knowledge Base
+## Fixing entity confusion with Organization markup
 
 **Scenario:**
 
-A project management SaaS company has a knowledge base with 200+ articles covering features, workflows, and troubleshooting. They want their help content to appear in AI-generated answers when users ask questions like "How do I set up Gantt charts in [product]?"
+Illustrative scenario: a software company's brand audit shows AI assistants mixing it up with an older company that has a similar name. The site has no Organization markup, and a CMS plugin outputs an Article publisher with a different spelling of the company name.
 
 **Walkthrough:**
 
-First, they audit their knowledge base and categorize articles: 85 are how-to tutorials (→ HowTo schema), 45 contain FAQ sections (→ FAQPage schema), and 30 are feature overview pages (→ SoftwareApplication + Article schema with `about` linking to relevant Wikidata entities like Q180711 for project management).
+The team adds a single Organization block to the home page with the official name, logo, URL and a stable @id, plus sameAs links to its official company profiles and its Wikidata item, which it creates with accurate, sourced facts following that site's rules.
 
-For a tutorial like "Setting Up Gantt Charts," they implement HowTo schema with each step named and described, plus `tool` properties referencing their app and `estimatedTime` of 10 minutes. They also add Speakable schema targeting the opening summary paragraph that answers "How do I set up a Gantt chart in [product]?" in two sentences.
+It reconfigures the plugin so every Article's publisher references the same @id and uses the same name. Validation passes, and URL Inspection confirms Google sees the rendered markup.
 
-For FAQ pages, they restructure the content so each question is an H3 heading with a concise answer paragraph directly below, then implement FAQPage schema mirroring those exact pairs. They validate every page using Google's Rich Results Test, fix three pages where the plugin was generating empty answer fields, and deploy.
+The team also updates its About page to state the company's location and founding clearly, since markup should reflect visible content. The brand audit prompts that test for confusion are rerun on the usual schedule.
 
-Within 6 weeks, they see their knowledge base articles appearing in Perplexity answers for product-specific queries and a 23% increase in organic traffic from Google's AI Overviews citing their how-to content.
-
-## Example: Local Service Business Optimizing for Voice AI
+## Cleaning up FAQ markup after the rich result was retired
 
 **Scenario:**
 
-A plumbing company wants to appear in AI assistant responses when users ask questions like "How do I fix a running toilet?" or "What does a plumber charge for a water heater install?"
+Illustrative scenario: a help center added FAQPage markup to hundreds of articles to win FAQ rich results. Many of the marked-up questions are not visible on the page, and FAQ rich results no longer appear in Google Search.
 
 **Walkthrough:**
 
-They identify their top 15 blog posts that answer common plumbing questions. For each, they implement a combination of schemas:
+The team audits the markup against the visible content. Where an article has a real, visible FAQ section, the FAQPage markup stays and is regenerated from the same data as the page. Where the markup describes questions the page does not show, it is removed.
 
-- **HowTo schema** on DIY guides, with each step including a name, description, and image. For "How to Fix a Running Toilet," they list 6 steps with tools (adjustable wrench, replacement flapper valve) and estimated time (20 minutes).
-- **FAQPage schema** on their pricing and services pages, with questions like "How much does a water heater installation cost?" and concise answers like "A standard water heater installation typically costs $800-$2,500 depending on the type and local labor rates."
-- **Speakable schema** on the opening paragraph of each guide, written in natural conversational language suitable for voice assistants.
-- **LocalBusiness schema** enhanced with `areaServed`, `priceRange`, and `hasOfferCatalog` to help AI systems connect their content to local intent queries.
+The team adds Article markup with author and modified date to help center articles, since they are editorial content with named authors. It documents in the release notes that the change is about accuracy, not a new search feature.
 
-They validate all markup, ensure every schema element has a visible on-page counterpart, and set up a quarterly review process. The combination of structured local data with answer-optimized content schema gives AI systems confidence in both the content quality and the local relevance.
+The change log records the date so the tracking skill can check for any change in visibility.
+
+## Adding author markup for an expert-led publication
+
+**Scenario:**
+
+Illustrative scenario: a finance education site has articles written by credentialed contributors, but bylines are plain text and there are no author pages.
+
+**Walkthrough:**
+
+The editor creates an author page for each contributor with their role, credentials and areas of expertise, and links every byline to it. Each author page gets Person markup with a stable @id and sameAs links to the contributor's professional profiles.
+
+Article markup on each piece lists every author by name with the URL of their author page, following Google's author markup best practices. Published and modified dates in the markup match the dates shown on the page.
+
+The editor adds a template check so any new article without a linked author fails review before publishing.
