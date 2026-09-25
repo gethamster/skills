@@ -1,15 +1,20 @@
 ---
-name: using-start-stop-continue-in-one-on-ones
-description: "This skill teaches you how to adapt the Start Stop Continue framework for individual performance conversations, manager check-ins, and self-reflection—turning vague feedback into structured, actionable dialogue outside of team retrospectives."
+name: "using-start-stop-continue-in-one-on-ones"
+description: "Use start stop continue in a 1-on-1 or performance review: both people prepare items, talk through behaviors, and agree on one or two changes to review."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: start-stop-continue
+  method: "start-stop-continue"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Using Start Stop Continue in Your Next 1-on-1 or Performance Review Meeting
+# Start Stop Continue in 1-on-1s and Performance Reviews
 
-> This skill teaches you how to adapt the Start Stop Continue framework for individual performance conversations, manager check-ins, and self-reflection—turning vague feedback into structured, actionable dialogue outside of team retrospectives.
+> Use start stop continue in a 1-on-1 or performance review: both people prepare items, talk through behaviors, and agree on one or two changes to review.
 
 ## Before you start
 
@@ -24,123 +29,99 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 30-60 minutes per meeting |
-| Outcome | You consistently transform ambiguous performance conversations into focused, three-category discussions that produce documented action items both parties commit to. |
-| Prerequisites | Basic understanding of the Start Stop Continue framework, Experience giving or receiving workplace feedback, An existing 1-on-1 or performance review cadence |
+| Time to Learn | About an hour to learn, then practice across a few meetings |
+| Outcome | You can run a start stop continue 1-on-1 or review in which both people prepare, discuss behaviors, and leave with one or two changes you will check next time. |
+| Prerequisites | A regular 1-on-1 or review cadence, a shared place for notes, some examples of recent work to refer to |
 | Part of | [Start Stop Continue](../../methods/start-stop-continue/METHOD.md) |
 
 ## Overview
 
-The [Start Stop Continue](https://tryhamster.com/methods/start-stop-continue) framework is widely known as a team retrospective tool, but its simplest and most powerful application may be in individual settings: 1-on-1 meetings, performance reviews, and self-reflection. When two people sit down with a shared structure, conversations shift from vague impressions ('You're doing great, keep it up') to specific, categorized feedback that both parties can act on.
+A start stop continue 1-on-1 uses the three questions of the [Start Stop Continue method](../../methods/start-stop-continue/METHOD.md) in a conversation between two people, usually a manager and a direct report. Each person prepares a few items: what the report could start doing, stop doing and continue doing, and often what the manager could change too. The meeting walks through those items and ends with one or two agreed changes that the next meeting reviews. The same structure works for a performance review and for self-reflection.
 
-Using a start stop continue meeting format in 1-on-1s solves a persistent problem: most performance conversations lack structure, which means they lack follow-through. Managers default to recent events. Direct reports either overshare or clam up. By asking both sides to prepare across three categories, you ensure the conversation covers new behaviors to adopt, existing habits to drop, and strengths to sustain—every single time.
+BetterUp recommends the framework [during performance reviews](https://www.betterup.com/blog/start-stop-continue) as well as after sprints and projects, and presents it as a method for self-reflection. Its advice includes setting clear expectations beforehand, recording responses, and using the results as a foundation for SMART goals. The structure helps because it gives both people the same three headings, so the conversation covers what to add, what to drop and what to protect, instead of drifting toward whatever happened most recently.
 
-This skill goes beyond simply running the framework in a group setting. Individual conversations require different facilitation dynamics: psychological safety is more fragile in a 1-on-1, power dynamics are explicit, and the feedback is personal rather than team-level. Mastering this adaptation means learning how to frame prompts for individuals, manage two-way feedback between manager and report, and create accountability loops that carry forward between meetings.
+There is some evidence that the structured form draws out better written comments than an open box. In higher education, [Hoon and colleagues](https://www.tandfonline.com/doi/full/10.1080/02602938.2014.956282) found a Stop, Start, Continue form was associated with student feedback of greater depth than free text entry. That study was about course feedback, so treat it as supporting evidence for structured prompts in general.
+
+A 1-on-1 differs from a team session in ways that change the technique. The feedback is personal, the power difference is explicit, and there is no group to dilute a hard message. The manager's job is to make the Stop column safe to use in both directions, to describe behaviors rather than traits, and to keep the number of agreed changes small enough to act on.
 
 ## How It Works
 
-In a team retrospective, Start Stop Continue collects broad input from many voices and synthesizes themes. In a 1-on-1 or performance review, the mechanism is different: it structures a two-way dialogue between two people who have an ongoing professional relationship.
+The core of the method stays the same: three headings, prepared in advance, discussed, then turned into a few commitments. What changes is who writes, who speaks first and how items are phrased.
 
-The framework works by constraining the conversation to three actionable categories. **Start** surfaces new behaviors, skills, or habits the individual should begin. **Stop** identifies patterns that are counterproductive, wasteful, or harmful—this is the hardest category because it requires candor. **Continue** reinforces what's already working, which is critical for morale and for preventing regression during change.
+Both people prepare. The report writes their own start, stop and continue items about their work, and the manager writes theirs. A manager can also invite items about themselves, such as "stop rescheduling our 1-on-1s at short notice," which shows that the format is two-way. Preparation takes a few minutes if the manager shares the three questions a day or two before.
 
-The key adaptation for individual meetings is **dual preparation**: both the manager and the direct report fill out all three categories independently before the conversation. This creates a natural comparison mechanism. Where their lists overlap, there's strong alignment. Where they diverge, the most valuable coaching conversations happen. The manager might flag a behavior the report doesn't see; the report might surface a blocker the manager didn't know about.
+Have the report speak first. Hearing the report's view before the manager's reduces the chance that the report simply agrees with the manager's framing, and it often reveals that the report already sees the issue. The manager then adds items the report did not raise.
 
-Unlike team retrospectives where anonymity can help, the 1-on-1 context demands direct attribution and mutual vulnerability. The framework provides psychological scaffolding—it's easier to say 'I think I should stop overcommitting to deadlines' than to bring it up unprompted. Similarly, it's easier for a manager to say 'I'd like you to start leading standup' when it sits alongside 'I want you to continue your excellent documentation work.'
+Items are phrased as behaviors with context and effect. The Center for Creative Leadership's [Situation-Behavior-Impact model](https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/) is a good template: name the situation, describe the specific behavior observed, and explain its impact. The extended version adds a question about intent, such as "What were you hoping to accomplish with that?" A Stop item written this way, such as "in last week's planning meeting you committed to a date before checking with the team, which put them under pressure," gives the report something concrete to discuss.
+
+The meeting ends with one or two agreed changes, recorded where both people can see them, and a date to review them. BetterUp suggests turning the feedback into SMART goals. The next 1-on-1 opens by reviewing those changes before any new items.
+
+For a performance review, use the same structure over a longer period. Ask both people to bring examples from across the review period, not just the last few weeks, and keep Continue items as prominent as Stop items so the review records what the person does well.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Set expectations before the first start stop continue meeting
+### Step 1: Share the three questions in advance
 
-Before your first start stop continue meeting, explain the framework to your direct report (or your manager, if you're initiating upward). Share that both of you will independently prepare feedback across three categories: things to start doing, things to stop doing, and things to continue doing. Emphasize that this is two-way—both parties give and receive feedback.
+A day or two before the meeting, send both parties the three questions and the period they cover. Say that items should describe behaviors, with an example from recent work. Invite the report to include items for the manager as well. This gives the report time to think and avoids putting them on the spot.
 
-Frame the purpose explicitly: 'I want our 1-on-1s to produce clearer action items. This structure helps us both prepare and ensures we cover what's working, what isn't, and what's missing.' Send this framing at least 48 hours before the meeting so neither person feels ambushed.
+### Step 2: Prepare your own items as the manager
 
-> **Pro tip:** If your report seems nervous about the 'stop' category, normalize it by sharing one of your own 'stop' items first—something you, as the manager, should stop doing.
+Write a small number of items per column, each tied to a specific situation. Use the situation, behavior and impact structure so each item points to something observable. Check the balance: if every item is a Stop, look harder for what should continue. Leave out anything you cannot illustrate with an example.
 
-### Step 2: Step 2: Prepare your own three lists independently
+### Step 3: Open the 1-on-1 with the last agreed changes
 
-Set aside 15-20 minutes before the meeting to fill out your own Start, Stop, and Continue lists. Be specific: instead of 'start communicating better,' write 'start sending a Friday async update to stakeholders summarizing sprint progress.' Instead of 'stop being late,' write 'stop joining standup after the first two updates have already happened.'
+Start the start stop continue 1-on-1 by reviewing the changes you agreed last time. Ask what happened, what helped and what got in the way. Record whether each change stuck. This keeps the format from becoming a list that nobody revisits.
 
-For performance reviews, anchor each item in observable behavior and, where possible, specific instances. For regular 1-on-1s, focus on the period since your last check-in. Aim for 2-4 items per category. If you can't think of anything for 'stop,' push harder—this is usually the category where the most valuable insights hide.
+### Step 4: Let the report go first
 
-> **Pro tip:** Use a consistent template or shared doc so both parties write in the same format. This makes comparison easier during the meeting. Check out [building Start Stop Continue templates](https://tryhamster.com/skills/building-start-stop-continue-templates) for ready-made formats.
+Ask the report to walk through their items, one column at a time. Ask questions to understand each item before responding. Where you agree, say so plainly. Where the report is harder on themselves than the evidence suggests, say that too.
 
-### Step 3: Step 3: Open the meeting by sharing 'Continue' items first
+### Step 5: Add your items and invite feedback on yourself
 
-Begin the start stop continue meeting by having both parties share their 'Continue' lists. Starting with what's working sets a positive, psychologically safe tone. It also prevents the common failure mode where the entire meeting becomes a critique session.
+Add the items the report did not raise, using specific situations. Then ask for the report's items about you, and listen without defending. Acknowledge anything you will change. Showing that you take Stop items about yourself seriously makes it easier for the report to accept theirs.
 
-As you share, look for overlaps: if both of you listed 'continue the detailed code review comments,' that's a strong signal of aligned values. Call out these overlaps explicitly—they build confidence. Spend about 20% of your meeting time here. Acknowledge each item, but don't linger; the most productive work happens in the next two categories.
+### Step 6: Agree on one or two changes
 
-> **Pro tip:** If you're the manager, let the direct report share their 'continue' items first. This signals that their perspective matters and that you're listening, not just delivering a verdict.
+From everything discussed, agree on one or two changes for the report and, if relevant, one for the manager. Make each change specific, name when it will start, and decide how you will both know it happened. Keep the rest of the items in the notes for later.
 
-### Step 4: Step 4: Discuss 'Stop' items with curiosity, not judgment
+### Step 7: Record and review next time
 
-Move to the 'Stop' category next—while psychological safety is still high from the 'Continue' discussion. This is where most 1-on-1 start stop continue meetings either produce breakthroughs or break down.
-
-Share your items one at a time. For each, describe the specific behavior, its impact, and—critically—ask for the other person's perspective before prescribing a solution. 'I noticed you've been staying late to fix bugs solo. The impact is that the team doesn't learn from those fixes. What's driving that pattern?' This invites dialogue rather than defensiveness.
-
-If the direct report has 'stop' feedback for the manager (e.g., 'stop rescheduling our 1-on-1s'), receive it genuinely. Your reaction to upward feedback determines whether they'll ever give it again.
-
-> **Pro tip:** If an item is emotionally charged, use the phrase 'I'm sharing this because I want you to succeed at [specific goal]' to anchor the feedback in their interests, not your frustration.
-
-### Step 5: Step 5: Explore 'Start' items and connect them to growth goals
-
-The 'Start' category is forward-looking and often the most energizing part of the conversation. Share items from both lists and discuss which new behaviors, skills, or practices would have the highest impact.
-
-Connect 'start' items to the individual's career goals or the team's current challenges. 'I'd like you to start presenting your own designs in stakeholder reviews' is much more motivating when paired with 'because you've told me you want to grow into a senior role, and visibility is part of that path.'
-
-Be realistic about capacity: if you're asking someone to start three new things, something probably needs to come off their plate. Cross-reference with the 'stop' list to create space.
-
-> **Pro tip:** Let the direct report propose their own 'start' items before you add yours. Self-identified growth areas have dramatically higher follow-through than manager-imposed ones.
-
-### Step 6: Step 6: Prioritize and commit to 1-2 actions per category
-
-After discussing all three categories, you'll likely have more items than anyone can act on. Prioritize ruthlessly. Together, select 1-2 items per category that will have the most impact before your next meeting.
-
-For each selected item, define: the specific behavior change, who owns it, how progress will be measured, and when you'll check in. Write these down in a shared document during the meeting—not after. Unwritten commitments evaporate.
-
-This prioritization step is what separates a productive start stop continue meeting from a pleasant but forgettable conversation.
-
-> **Pro tip:** If you're using this in a formal performance review, tie the prioritized actions to the review's goal-setting section so they become part of the official record.
-
-### Step 7: Step 7: Follow up at the next meeting by reviewing previous commitments
-
-At your next 1-on-1, open by reviewing the action items from the previous start stop continue meeting. What actually changed? What didn't? Why?
-
-This follow-up loop is what makes the framework compound over time. Without it, each meeting exists in isolation and the same issues resurface. With it, you build a longitudinal record of growth, which is invaluable for performance reviews, promotion cases, and self-awareness.
-
-You don't need to run the full Start Stop Continue exercise every single 1-on-1. Many managers use it monthly or quarterly, reviewing previous actions in the meetings between. Find the cadence that keeps momentum without causing framework fatigue.
-
-> **Pro tip:** Keep a running shared document with dated entries. Over a quarter, you'll have a clear narrative of progress that practically writes the performance review for you.
+Write the agreed changes in a shared note with the date. Put the review on the agenda for the next 1-on-1. For a performance review, keep the notes from each 1-on-1 so the review can draw on the whole period.
 
 ## Best Practices
 
-- Always have both parties prepare independently before the meeting—asymmetric preparation creates a lecture, not a dialogue.
-- Limit to 2-4 items per category per person to keep the conversation focused and the resulting action list achievable.
-- Use the same shared document or template across meetings to create a running record that shows patterns and progress over time.
-- Rotate who shares first between categories to prevent one person from always anchoring the conversation.
-- Schedule your start stop continue meeting with enough time (minimum 30 minutes) so you don't rush through the 'stop' category, which is where the most valuable but uncomfortable feedback lives.
-- When adapting for self-reflection, write your three lists at the end of each week and review them monthly to spot recurring themes you haven't addressed.
+- Keep the format two-way. Inviting items about the manager makes the Stop column feel fair, and it surfaces problems the manager cannot see.
+- Anchor every item in a situation. The [SBI model](https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/) keeps feedback on behavior and its effect, which is easier to act on than a judgment about personality.
+- Limit the number of changes. One or two agreed changes that happen are worth more than a long list that fades by the next meeting.
+- Use Continue items to name strengths explicitly. People often do not know which of their habits are valued until someone says so.
+- Keep a running note across meetings. It shows patterns over time and gives the performance review real examples.
+- Use the same three questions for self-reflection between meetings. BetterUp presents the model as a method for [self-reflection](https://www.betterup.com/blog/start-stop-continue).
 
 ## Common Mistakes
 
-- **Using the framework only for downward feedback (manager to report) instead of making it bidirectional** — Explicitly ask your direct report to prepare feedback for you in all three categories. Model vulnerability by sharing your own 'stop' items about your management style. The framework's power in 1-on-1s depends on two-way trust.
-- **Listing vague items like 'start being more proactive' or 'stop being disorganized'** — Every item should pass the 'camera test'—could a camera observe this behavior? Rewrite as specific, observable actions: 'start proposing solutions in the Slack thread before escalating to me' or 'stop leaving Jira tickets in the backlog without acceptance criteria.' See [writing effective Start Stop Continue feedback](https://tryhamster.com/skills/writing-effective-start-stop-continue-feedback) for detailed guidance.
-- **Skipping the 'Continue' category to save time and jumping straight to problems** — The 'Continue' category isn't filler—it's the psychological foundation of the conversation. Skipping it signals that the meeting is only about what's wrong, which makes people defensive and less receptive to 'Stop' feedback. Always spend at least 5 minutes here.
-- **Generating a long list of action items and then never revisiting them** — Prioritize to 1-2 items per category maximum. Document them in a shared, persistent location. Open the next meeting by reviewing progress on previous commitments before generating new ones. Accountability is the framework's compounding mechanism.
-- **Running the full Start Stop Continue exercise every single weekly 1-on-1, causing framework fatigue** — Use the full framework monthly or quarterly. In intervening 1-on-1s, simply review the action items from the last session. Over-use dulls the exercise and makes preparation feel like busywork.
+- **Springing the questions on the report in the meeting**: Without preparation, the report reacts rather than reflects. Share the questions a day or two ahead.
+- **Using it only for criticism**: If every meeting is a list of Stop items, the report will dread it. Give Continue items real attention and specific examples.
+- **Writing traits instead of behaviors**: "Stop being disorganized" invites defensiveness and gives no direction. Name the situation and the specific behavior instead.
+- **Agreeing on too many changes**: A long list spreads effort thin and makes follow-up impossible. Pick one or two and review them.
+- **Never revisiting the agreed changes**: If the next meeting ignores last time's changes, the format loses credibility. Open every meeting with the review.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/start-stop-continue/METHOD.md) — Start Stop Continue
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/start-stop-continue/METHOD.md): Start Stop Continue
 
 ## Related Skills
 
-- [Facilitating Start Stop Continue Retrospectives](../facilitating-start-stop-continue-retrospectives/SKILL.md)
-- [Running Start Stop Continue as a Team Icebreaker Activity](../running-start-stop-continue-icebreakers/SKILL.md)
-- [Categorizing and Prioritizing Feedback Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
-- [Building Start Stop Continue Templates and Worksheets](../building-start-stop-continue-templates/SKILL.md)
 - [Writing Effective Start Stop Continue Feedback](../writing-effective-start-stop-continue-feedback/SKILL.md)
-- [Crafting Actionable Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
+- [Writing Start Stop Continue Questions and Prompts](../crafting-actionable-feedback-prompts/SKILL.md)
+- [Facilitating a Start Stop Continue Retrospective](../facilitating-start-stop-continue-retrospectives/SKILL.md)
+- [Building a Start Stop Continue Retrospective Template](../building-start-stop-continue-templates/SKILL.md)
+- [Categorizing and Prioritizing Start Stop Continue Items](../categorizing-and-prioritizing-feedback-items/SKILL.md)
+- [Running a Start Stop Continue Icebreaker](../running-start-stop-continue-icebreakers/SKILL.md)
+
+## Sources
+
+- [BetterUp: Start, Stop, Continue](https://www.betterup.com/blog/start-stop-continue)
+- [Center for Creative Leadership: Situation-Behavior-Impact-Intent](https://www.ccl.org/articles/leading-effectively-articles/closing-the-gap-between-intent-vs-impact-sbii/)
+- [Hoon et al.: Stop, Start, Continue and constructive student feedback](https://www.tandfonline.com/doi/full/10.1080/02602938.2014.956282)

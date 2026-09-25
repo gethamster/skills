@@ -1,25 +1,21 @@
-# FAQ: Building Sprint Retrospective Templates
+# FAQ: Building a Reusable Sprint Retrospective Template
 
-## What should a sprint retrospective template include?
+## What should a retrospective template include?
 
-A sprint retrospective template should include an activity for each of the five retrospective phases, time boxes per phase, required materials, facilitator cues and transition prompts, and metadata like recommended team size and session context. This ensures any facilitator can pick up the template and run a structured session.
+The five phases, each with an activity, a timebox, the materials needed and facilitator cues for opening, running and closing the phase. Add a header that says what situation the template suits, how long it runs and whether it works remotely. List the preparation that must happen before the session, such as pulling data and the previous actions.
 
-## How many sprint retrospective templates should I create?
+## How many templates does a team need?
 
-Aim for at least 4-5 templates to start, covering different durations (30, 60, 90 minutes) and contexts (standard sprint, post-incident, new team). This gives you enough variety to rotate formats and keep retrospectives fresh without overwhelming your library.
+A few. A standard sprint template, a short version, a longer version for releases or incidents, and a remote version cover most situations. More than that becomes hard to maintain. Add a new one only when a situation keeps coming up that the existing templates do not fit.
 
-## How often should I change my sprint retrospective template?
+## How do we split time across the phases?
 
-Avoid using the same template more than two sprints in a row. Rotating templates keeps team engagement high and surfaces different types of insights. Track your usage with a "Last Used" date on each template to ensure variety.
+Give the most time to generating insights and deciding what to do. Published one-hour plans from Retrium and Atlassian both put their largest blocks there and keep the opening and close short. Use those as a starting point and adjust after running the template with your team.
 
-## Can I use a sprint retrospective template for remote teams?
+## Will templates make retrospectives repetitive?
 
-Absolutely. Tag each template as in-person, remote, or hybrid and specify digital tool requirements (Miro, FigJam, Trello). Remote templates should favor silent writing activities over verbal brainstorming and include explicit facilitation cues for managing digital collaboration.
+Only if the team uses one template forever. Keep the structure stable and rotate activities within it, or keep several templates and choose between them. The closing feedback will tell you when a template has gone stale.
 
-## Where can I find activities to include in a sprint retrospective template?
+## Who should own the template library?
 
-Start with the activities in *Agile Retrospectives: Making Good Teams Great*, then explore online catalogs like Retromat and FunRetrospectives. You can also learn more about selecting activities in our guide on choosing retrospective activities and exercises.
-
-## What's the difference between a sprint retrospective template and an agenda?
-
-An agenda lists topics and time slots. A sprint retrospective template goes further — it maps specific facilitation activities to each of the five retrospective phases, includes facilitator notes, materials lists, and transition prompts. Templates are reusable and designed for consistent facilitation, while agendas are typically one-off documents.
+Usually the Scrum Master or whoever facilitates most often, with every facilitator able to suggest changes. Store templates where the whole team can find them. Review the library every few months and remove templates nobody uses.

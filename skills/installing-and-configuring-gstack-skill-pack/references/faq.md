@@ -1,43 +1,25 @@
-# FAQ: Installing and Configuring the gstack Skill Pack
+# FAQ: gstack Setup Guide
 
-## How do I install gstack framework if my AI coding agent is not Claude Code?
+## What do I need installed before I set up gstack?
 
-The core mechanism is the same for any agent: place markdown instruction files where the agent expects to find custom commands. cursor/rules/`. For Windsurf, check its documentation for the custom instructions directory. The gstack files themselves are agent-agnostic markdown.
+The README lists Claude Code, Git and Bun, plus Node.js on Windows. On Windows, gstack runs through Git Bash or WSL. The `/cso` security skill has extra build prerequisites, and setup leaves it unavailable when they are missing. Everything else installs without them.
 
-You may need to adjust file naming conventions or flatten subdirectories depending on what the specific agent supports. Test with one skill file first before copying the entire pack.
+## Why does a gstack slash command not appear after installation?
 
-## How long should the initial gstack installation and configuration take?
+The usual causes are an incomplete setup run, a name collision with a skill you already have, or a missing gstack section in the project's CLAUDE.md. Rerun `./setup` from `~/.claude/skills/gstack` and read the final summary, which names any skill it did not register and why. If a name collides, rename your own skill or switch to prefixed names. Then confirm the CLAUDE.md section lists the current skills.
 
-For a solo developer with a straightforward project, expect 15 to 30 minutes. The cloning and file placement takes 5 minutes. Writing a thorough project context file takes 10 to 15 minutes. Verification takes another 5 minutes.
+## Should I use short or prefixed command names?
 
-For a team setup with multiple agents, budget 30 to 60 minutes for the lead and 10 minutes per additional team member. The most time-consuming part is always the context file, and it is also the part that pays the highest return.
+Short names such as `/qa` are quicker to type. Prefixed names such as `/gstack-qa` avoid collisions when you run other skill packs, which is the case the README calls out. Pick one per team and record it in CLAUDE.md, because mixed naming makes shared instructions unreliable. Setup remembers the choice across upgrades.
 
-## Should I install gstack framework before or after setting up my project's basic structure?
+## What does team mode change?
 
-Install gstack after you have at least a basic project structure, a chosen tech stack, and an initialized repository. The context file needs real information about your project to be useful. If you install gstack into an empty directory with a blank context file, the skills will work but produce generic output. That said, you do not need a complete project.
+Team mode bootstraps a shared repository so teammates get gstack automatically, without vendoring gstack files into the repo. Each Claude Code session then runs a quick update check, throttled to once an hour. With `required`, teammates without gstack are blocked until they install it; with `optional`, they are nudged. It is the simplest way to keep everyone on the same version.
 
-json provides enough context to get meaningful agent behavior.
+## Can I install gstack for Codex, Cursor or other agents?
 
-## Can I use gstack with multiple AI coding agents on the same project simultaneously?
+Yes. Rerun setup with a `--host` flag, such as `--host codex` or `--host cursor`, or let setup auto-detect installed agents. Each host gets generated versions of the skills in its own skills directory. For agents that only read rules files, the README provides an instruction-only digest you can copy into a file such as AGENTS.md.
 
-Yes. ) and populate each one with gstack's files. Symlinks pointing to a single gstack source directory are the cleanest approach because updates propagate to all agents at once. The project context file is shared across agents since it lives at the project root.
+## How do I update or remove gstack?
 
-Test each agent independently because they parse markdown instructions differently, and some may require adjusted formatting.
-
-## Why does my gstack slash command return generic responses instead of the structured skill workflow?
-
-This almost always means the agent cannot find the command file. First, verify the file exists in the exact directory your agent looks in. Second, check that the filename matches what the agent expects, some agents require specific naming patterns. Third, restart your agent session to clear any command cache.
-
-Fourth, ask the agent to list the files in its command directory to confirm it can see them. If the file is found but the behavior is still generic, the skill file may have a syntax issue or the context path reference may be broken.
-
-## How do I update gstack without losing my customizations to the project context file?
-
-The project context file is yours and should never be overwritten by gstack updates, because it lives outside the gstack source directory. If you cloned gstack into a staging directory or submodule, running `git pull` there only updates gstack's own files. Your context file, any custom perspectives, and any override files remain untouched. If you edited gstack's skill files directly (not recommended), you will need to merge those changes manually.
-
-This is why the best practice is to keep customizations in separate files or clearly marked blocks.
-
-## Do I need all 23 specialist skills installed, or can I pick a subset?
-
-You can absolutely install a subset. Only copy or symlink the skill files relevant to your work. A frontend developer might skip infrastructure and database skills. A solo developer might skip the team coordination skills.
-
-The skills are independent, each one is a self-contained markdown file with no runtime dependency on the others. The only exception is power tools that reference specific skills. If you install a power tool, check which skills it invokes and ensure those are present. You can always add more skills later by copying additional files.
+Run `/gstack-upgrade`, or set `auto_upgrade: true` in `~/.gstack/config.yaml`. To remove it, run the uninstall script at `~/.claude/skills/gstack/bin/gstack-uninstall`, which also removes gstack's hooks and state. The script does not edit CLAUDE.md, so delete the gstack sections from each project by hand.

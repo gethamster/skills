@@ -1,15 +1,20 @@
 ---
-name: mapping-input-metrics-to-north-star
-description: "This skill teaches you how to identify, define, and validate the 3-5 input metrics that causally drive your North Star Metric, turning an abstract guiding star into a concrete product manager roadmap of measurable levers your teams can actually move."
+name: "mapping-input-metrics-to-north-star"
+description: "Mapping input metrics in the North Star Framework: name the inputs, then trace each one down through opportunities to the work that moves it."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: north-star-framework
+  method: "north-star-framework"
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mapping Input Metrics That Drive Your North Star
+# Mapping Input Metrics From the North Star to the Work
 
-> This skill teaches you how to identify, define, and validate the 3-5 input metrics that causally drive your North Star Metric, turning an abstract guiding star into a concrete product manager roadmap of measurable levers your teams can actually move.
+> Mapping input metrics in the North Star Framework: name the inputs, then trace each one down through opportunities to the work that moves it.
 
 ## Before you start
 
@@ -24,107 +29,100 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial mapping, plus 1-2 weeks for validation |
-| Outcome | You produce a validated input metric map—a documented set of 3-5 measurable, team-ownable metrics with demonstrated causal links to your North Star—that becomes the operating backbone of your product manager roadmap and weekly team rituals. |
-| Prerequisites | A defined North Star Metric (see Identifying Your Product's North Star Metric), Access to product analytics data (event-level or aggregated), Basic understanding of correlation vs. causation, Familiarity with your product's core user journey and key touchpoints |
+| Time to Learn | One or two working sessions, then refinement over a few weeks |
+| Outcome | You produce a map that runs from the North Star Metric through named input metrics, opportunities and interventions, so every piece of planned work can be traced to the input it is meant to move. |
+| Prerequisites | A drafted North Star Metric and statement, product analytics access, the current roadmap |
 | Part of | [North Star Framework](../../methods/north-star-framework/METHOD.md) |
 
 ## Overview
 
-Once you've identified your North Star Metric using the North Star Framework, the next critical step is figuring out what actually moves it. A North Star Metric alone is a compass heading—it tells you where you want to go, but not which levers to pull to get there. Input metrics are those levers. They represent the specific, measurable user behaviors and product outcomes that causally drive your North Star. Without them, teams stare at a single number they can't directly influence, and the metric becomes a vanity scoreboard instead of a working tool.
+Input metrics are the part of the [North Star Framework](../../methods/north-star-framework/METHOD.md) that teams actually work on. Amplitude's [North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) describes them as "a small set of influential, complementary factors" that you believe most directly affect the North Star Metric, and says they are as important to the framework as the metric itself. The North Star is an outcome that depends on the inputs, and teams influence the inputs with their day-to-day work.
 
-Mapping input metrics is the bridge between strategy and execution. It transforms your product manager roadmap from a list of features into a system of bets—each initiative tied to a specific input metric, each input metric connected to measurable progress on your North Star. When Spotify chose weekly active listeners as their North Star, for instance, they needed to identify inputs like 'new playlists created,' 'tracks added to library,' and 'listening sessions per user per week' to give individual squads something concrete to optimize.
+This skill maps the whole chain below the North Star. The playbook's statement worksheet has four layers: the North Star, the inputs it is a function of, the opportunities that could influence each input, and the interventions that make tangible progress on those opportunities. Mapping all four is what connects a metric on a dashboard to a ticket in a sprint. A companion page on [North Star input metrics mapping](https://tryhamster.com/skills/identifying-input-metrics) covers decomposing the metric and testing the input set in more depth; this page follows the map downward to the work.
 
-This skill is where the North Star Framework becomes genuinely operational. You'll learn to decompose your North Star into candidate inputs, stress-test causal relationships, avoid vanity sub-metrics, and assign ownership so every team knows exactly which number they're responsible for moving. Done well, this mapping exercise eliminates the 'but what should we actually build?' paralysis that plagues product teams who have a North Star but no idea how to steer toward it.
+The reason for the extra layers is practical. Amplitude's Ibrahim Bashir explains in the playbook that a good North Star is hard for a team to move directly, given the many inputs and the time results take, so teams are better served moving one component that ladders up to the larger metric. The same logic applies one level down: an input is still too broad for a sprint, so teams need opportunities and interventions underneath it.
+
+Each link in the map is a causal belief. John Cutler writes in a post on [cascades](https://cutlefish.substack.com/p/tbm-2452-beware-of-the-cascade) that the North Star Framework is not a cascade, because there is no hierarchical relationship between the metric and the inputs, only a presumed leading and lagging relationship and a positive causal one. That is why each layer of the map is written as a belief to test instead of a goal handed down.
+
+Input metrics are a common idea outside the framework too. Lenny Rachitsky calls the North Star an output metric and describes the next step as breaking it into its component parts, the [input metrics](https://future.com/north-star-metrics/). Amazon's weekly business review uses the same split, with controllable input metrics that teams can act on directly and output metrics such as revenue that are discussed only in a reporting sense ([Commoncog](https://commoncog.com/the-amazon-weekly-business-review/)).
 
 ## How It Works
 
-The mental model behind input metric mapping is causal decomposition. Your North Star Metric is an outcome—it's the result of multiple upstream behaviors and conditions. Input metrics capture those upstream drivers. Think of it like a river system: your North Star is the flow volume at the mouth of the river, and your input metrics are the tributaries feeding it. If you want more flow at the mouth, you need to understand which tributaries contribute the most and which ones you can actually influence.
+Each layer has its own character. The [playbook's worksheet](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) describes inputs as more addressable than the North Star, "part of the formula," persistent, and lasting quarters or years. Opportunities are leverage points that inspire several options, last months or quarters, and are solution agnostic but directional. Interventions are more work-like and experiment-like, time bound, and expected to change. Keeping these differences clear stops a team from writing a feature as an input.
 
-The key distinction is between correlation and causation. Many metrics will move in tandem with your North Star, but only a subset actually cause it to move. For example, if your North Star is 'weekly meals cooked using the app,' you might notice that users who connect their grocery list also cook more. But does connecting the grocery list cause more cooking, or do already-motivated users simply do both? This distinction matters because you'll invest engineering time and product manager roadmap priority based on these relationships.
+Inputs often follow a pattern. The workshop guide suggests breadth, depth, frequency and efficiency as a heuristic, and applies it to an ecommerce North Star of total monthly items received on time: breadth is customers placing orders, depth is items per order, frequency is orders per customer, and efficiency is the share of orders delivered on time ([workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)). The pattern is a starting point. Some products need an input it does not cover.
 
-Input metrics must pass three tests. First, they must be influenceable—your team can take specific actions to move them. 'GDP growth' is not an input metric. Second, they must be leading indicators, meaning they change before your North Star changes, giving you an early signal. Third, they must be non-redundant—each input should capture a distinct dimension of what drives the North Star. If two candidate inputs are 95% correlated with each other, you likely only need one.
+Mind mapping builds the structure. The playbook's process is to put the North Star, or a candidate, on a whiteboard, note related concepts in clusters, then combine, prune and rename them until each cluster is a named input with a high-level definition. Only after that does each input get an exact metric. Naming comes before measuring at every layer.
 
-The typical sweet spot is 3-5 input metrics. Fewer than three usually means you're oversimplifying and missing an important driver. More than five creates focus problems—teams can't meaningfully prioritize across too many competing inputs, and your product manager roadmap becomes fragmented. The goal is a compact, complete model: together, your inputs should explain the majority of variance in your North Star.
+Every input needs a name and a definition. The playbook applies the same rule to inputs as to the North Star, and warns against inputs that are too broad or lagging, which make impact hard to measure, or too specific and prescriptive, which leave no room for new solutions. Its example is that "satisfied customers" may be too broad and "positive reviews on social media" too narrow.
+
+Non-feature work gets its own input. The playbook suggests a system health indicator input covering factors users may not see but that affect quality and the team's ability to work, such as system uptime, cycle times, testing and deployment processes, up-to-date tooling, and ramp-up time for new team members. It recommends visualizing non-feature work as opportunities on the roadmap and reframing technical debt as drag on value.
+
+The map ends at the work. Each intervention should name the opportunity it serves, and each opportunity the input it should move. When an intervention cannot be traced upward, either the map is missing a piece or the work is not valuable, which is the same conclusion the playbook draws from its roadmap check.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Decompose your North Star into candidate drivers
+### Step 1: Write the function in words
 
-Start with your North Star Metric and work backward through the user journey. Ask: 'What has to happen for this number to go up?' Write down every user behavior, product event, and system condition that could plausibly influence it. Don't filter yet—aim for 10-20 candidates. If your North Star is 'weekly active projects,' candidates might include new projects created, collaborators invited, templates used, files uploaded, comments posted, and integrations connected. Use journey maps, funnel data, and team brainstorms to generate a comprehensive list.
+Start from the North Star statement and complete the sentence the worksheet uses for the second layer: the North Star "is a function of our ability to" do a few things. Write a handful of phrases in plain words, such as "match customers with the right projects." Check that each phrase describes customer behavior or a result for the customer; phrases about a team or a feature belong lower down. These phrases are your draft inputs.
 
-> **Pro tip:** Run this as a cross-functional exercise with engineering, design, data, and customer-facing teams. Each function sees different parts of the user journey and will surface candidates others miss.
+### Step 2: Cluster and name the inputs
 
-### Step 2: Step 2: Filter for influenceability and directness
+Run a mind-mapping session with the North Star in the middle. Let the group add concepts freely, then merge related ones, remove extras and rename each cluster. Test the result against breadth, depth, frequency and efficiency from the [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) to see whether a dimension is missing. Give each input a short name and a one-line description.
 
-Review each candidate and apply two filters. First, can your product team directly influence this metric through product changes, experiments, or campaigns? Remove anything outside your control (e.g., 'user's internet speed'). Second, is the relationship direct or does it pass through multiple intermediate steps? Prefer metrics that are one causal step from your North Star rather than two or three steps removed. A metric like 'onboarding completion rate' is more direct than 'blog visits' when your North Star is activation-related.
+### Step 3: Define each input metric
 
-> **Pro tip:** If you're unsure whether something is influenceable, ask: 'Can I design an experiment in the next quarter that would move this number by 10%?' If the answer is no, it's probably not a useful input metric.
+For each named input, write the exact measure: the event or state, the population, the threshold and the time window. Check the scope against the playbook's warning about inputs that are too broad or too narrow. Confirm that the inputs have some independence, so a change in one is not immediately felt in the others. Record where a measure is a proxy and what it stands in for.
 
-### Step 3: Step 3: Test for leading indicator behavior
+### Step 4: Add a system health input
 
-For each remaining candidate, examine whether changes in the candidate precede changes in your North Star. Pull 6-12 months of historical data and look at time-lagged correlations. If inviting a collaborator this week predicts the user having an active project next week, that's a leading indicator. If the candidate only moves simultaneously with or after the North Star, it's a lagging indicator or a side-effect and won't help you steer. Use cohort analysis—compare users who did and didn't perform the candidate behavior and track their subsequent North Star contribution.
+Decide whether the product needs an input for non-feature factors. If reliability, delivery speed or tooling limits what teams can do, define a composite health input from a few measures, such as uptime and cycle time, following the [playbook's](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) suggestion. This gives infrastructure and debt work a place on the map. Keep it to one input so it does not crowd out customer-facing ones.
 
-> **Pro tip:** You don't need rigorous statistical modeling at this stage. A simple cohort comparison in a spreadsheet (users who did X in week 1 vs. those who didn't, then tracking North Star behavior in weeks 2-4) is often sufficient to validate or disqualify a candidate.
+### Step 5: Map opportunities under each input
 
-### Step 4: Step 4: Check for redundancy and coverage
+For each input, list the leverage points that could move it, written as problems or openings rather than solutions. The playbook's example for a do-it-yourself app lists opportunities such as "expand project selection" and "connect like-minded DIY-ers." Aim for a few per input that each inspire several possible solutions. Note what you would measure to see each opportunity progressing.
 
-Plot your surviving candidates against each other. If two candidates are highly correlated (e.g., 'files uploaded' and 'storage used'), keep the one that's more actionable and drop the other. Then check for coverage: together, do your candidates represent the major pathways to your North Star? A common framework is to ensure you have at least one input from acquisition/activation, one from engagement/depth, and one from retention/expansion. If all your candidates cluster around engagement and none touch activation, you have a blind spot.
+### Step 6: Attach current and candidate interventions
 
-> **Pro tip:** Arrange your input metrics as a simple causal diagram on a whiteboard. Draw arrows from each input to the North Star. If you see two inputs that would always move together, that's a redundancy signal.
+Place today's roadmap items and experiments under the opportunities they serve. Add new ideas where an opportunity has none. Items that fit nowhere go on a separate list for discussion, since they may reveal a missing input or work with no clear value. Give each intervention the measure it should move in the short term.
 
-### Step 5: Step 5: Define each input metric precisely
+### Step 7: Review the map on a rhythm
 
-For each of your 3-5 selected inputs, write a metric specification: the exact name, the calculation formula, the data source, the time window (daily, weekly, monthly), and any filters or segments. 'Collaborators invited' is ambiguous—does it mean invitations sent, invitations accepted, or unique projects with at least one collaborator? Precision matters because different definitions lead to different product decisions. Document edge cases: does a user re-inviting someone who already declined count? Getting this right now prevents months of confusion later.
-
-> **Pro tip:** Use a metric spec template with fields for Name, Definition, Formula, Data Source, Owner, Time Grain, and Known Limitations. Share it in your team wiki so everyone references the same document.
-
-### Step 6: Step 6: Assign team ownership for each input
-
-Each input metric needs a single team or squad that is primarily responsible for moving it. This doesn't mean other teams can't influence it, but one team holds accountability. Map your organizational structure against the inputs: if your 'activation' input is 'first project created within 7 days,' the onboarding team owns it. If 'weekly collaboration events' is an engagement input, the collaboration features team owns it. Without clear ownership, input metrics become shared dashboards that everyone watches and nobody acts on.
-
-> **Pro tip:** When multiple teams could own an input, assign ownership to the team with the most direct influence over the user experience that drives it. Shared ownership almost always means no ownership.
-
-### Step 7: Step 7: Validate with a pilot period
-
-Before locking in your input metric map and restructuring your product manager roadmap around it, run a 4-6 week pilot. Have each owning team propose one initiative specifically designed to move their input metric, execute it, and measure whether the input moved and whether the North Star followed. This is your causal validation in practice. If a team successfully moves their input by 15% but the North Star doesn't budge, the causal link is weaker than you assumed and you may need to revisit your mapping.
-
-> **Pro tip:** Set explicit success criteria before the pilot: 'If we increase [input] by X% and see [North Star] move by at least Y% within Z weeks, we'll confirm this input.' Without pre-committed thresholds, you'll rationalize ambiguous results.
-
-### Step 8: Step 8: Document and integrate into team rituals
-
-Finalize your input metric map as a living document that shows each input, its definition, its owner, its current value, its target, and its relationship to the North Star. Integrate these metrics into your weekly product review, sprint planning, and quarterly roadmap planning. Each roadmap initiative should be tagged with the input metric it's designed to move. This closes the loop between strategy (North Star), tactics (input metrics), and execution (roadmap items), making your product manager roadmap a coherent system rather than a feature wishlist.
-
-> **Pro tip:** Create a one-page visual—sometimes called a 'metric tree' or 'North Star constellation'—that shows the North Star at the center with input metrics radiating outward. Post it where the team can see it daily. Visual proximity to the work keeps the framework alive.
+Revisit the map when bets finish and when the roadmap changes. Interventions will change often, opportunities less often, and inputs rarely, which matches the time horizons the playbook gives each layer. Update definitions when you learn a measure was misleading. Retire inputs that stop showing any link to the North Star, and record why.
 
 ## Best Practices
 
-- Limit yourself to 3-5 input metrics. Every additional metric above five dilutes team focus and makes it harder to attribute cause and effect. If you have six strong candidates, force-rank them and drop or combine the weakest—you can always rotate inputs in later quarters as your product manager roadmap evolves.
-- Ensure each input metric is owned by exactly one team with the authority and capacity to run experiments against it. Shared ownership leads to diffused accountability. If no single team can own a metric, it's probably defined at the wrong level of abstraction.
-- Revisit your input metric map quarterly. Products evolve, user behavior shifts, and what drove your North Star six months ago may not be the dominant driver today. Schedule a quarterly review alongside your roadmap planning to assess whether each input still demonstrates a causal link.
-- Favor behavioral metrics over proxy metrics. 'Projects with 3+ collaborators' is better than 'invitations sent' because it measures the outcome you care about rather than an action that may or may not lead to it. The closer your input is to real user value, the more reliable your model.
-- Document your reasoning, not just your choices. Write down why you selected each input metric and what evidence supports the causal link. When new team members join or leadership questions the framework, this documentation prevents the entire mapping exercise from being relitigated from scratch.
-- Use input metrics to say no. One of the most valuable functions of a well-mapped input metric set is giving you principled reasons to decline feature requests or initiatives that don't connect to any input. If a proposed project doesn't plausibly move one of your 3-5 inputs, it doesn't belong on the product manager roadmap this quarter.
+- Name before you measure. Clusters with clear names produce better metrics than formulas chosen first, and the playbook follows this order at every layer.
+- Keep inputs about customers. The worksheet describes inputs as "not work related," so an input like "features shipped" belongs further down the map, if anywhere.
+- Look for independence. The playbook's input template asks you to state that movements in one input are not immediately felt in the others; overlapping inputs double-count the same lever.
+- Write opportunities as problems. A solution-agnostic opportunity lets teams try several interventions, which is what makes the bottom of the map a set of bets.
+- Give non-feature work a visible home. A system health input stops platform and debt work from looking like a distraction from the North Star.
+- Treat the map as a set of hypotheses. As Cutler's [post on cascades](https://cutlefish.substack.com/p/tbm-2452-beware-of-the-cascade) explains, the links are causal beliefs, so review them against data instead of defending them.
 
 ## Common Mistakes
 
-- **Choosing vanity metrics as inputs because they're easy to measure** — Page views, sign-ups, or app downloads feel satisfying to track but rarely have a direct causal link to your North Star. They're top-of-funnel volume metrics, not drivers of the core value your product delivers. To catch this mistake, ask: 'If we doubled this number overnight, would our North Star reliably increase?' If the answer is uncertain—perhaps more sign-ups just means more churn—the metric isn't a valid input. Replace it with something closer to the moment of value delivery, like 'users who complete their first workflow within 48 hours.'
-- **Confusing correlated metrics with causal inputs** — This is the most dangerous mistake because it leads you to invest roadmap resources in levers that don't actually work. Teams often see that users who perform behavior X also have high North Star values and conclude X drives the North Star. But the relationship might be reversed (high-value users just naturally do X) or both might be driven by a third factor. Always test directionality: do a cohort analysis where you compare users who started doing X in a specific period against those who didn't, and track whether the X-cohort's North Star contribution increased. If you can run an experiment that encourages X and measure the North Star impact, even better.
-- **Mapping too many input metrics to avoid making hard choices** — Teams frequently end up with 8-12 input metrics because every function wants their work represented. This defeats the purpose—when everything is a priority, nothing is. The symptom is that weekly reviews become status update marathons with no clear action items, and teams can't tell which metric matters most this quarter. Force yourself to a maximum of five. If stakeholders push back, remind them that omitting a metric from the input map doesn't mean ignoring it—it means it's not one of the primary levers for this phase. You can rotate inputs as your product matures.
-- **Defining input metrics ambiguously so different teams interpret them differently** — If engineering counts 'active users' as anyone who triggers an API call and product counts it as anyone who logs in to the UI, you'll spend meetings arguing about numbers instead of making decisions. This happens because teams skip the metric specification step and assume everyone shares the same mental model. Write a formal definition for each input with the exact event, filters, time window, and edge case handling. Circulate it, get sign-off from data engineering and analytics, and reference it in every dashboard. When in doubt, query the production database together to confirm you're counting the same thing.
-- **Setting input metrics once and never revisiting them** — Products change. A metric that was a powerful driver at the growth stage may plateau or become table stakes as you mature. Teams that treat input metrics as permanent fixtures end up optimizing for diminishing returns—pouring effort into an input that's already saturated while a new, untracked driver emerges. Build a quarterly review into your operating rhythm: check whether each input still moves the North Star, whether any input has hit a ceiling, and whether new user behaviors suggest an unlisted driver. Treat your input metric map as a living part of your product manager roadmap, not a constitutional amendment.
+- **Stopping at the inputs**: A North Star with four inputs and nothing underneath still leaves teams guessing what to build. Map opportunities and interventions so the link reaches the sprint.
+- **Writing features as inputs**: "Launch the mobile app" is an intervention. Inputs describe persistent customer behavior that lasts quarters or years.
+- **Inputs that are really the North Star again**: If an input moves exactly with the North Star and nothing else, it adds no lever. Break it down further or replace it.
+- **Treating the map as a cascade of targets**: Handing each team an input as a quota invites gaming. Present each link as a belief and ask teams how their work could move it.
+- **Leaving non-feature work off the map**: When reliability and tooling work has no input, it is either ignored or done quietly, and both hurt the North Star over time.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/north-star-framework/METHOD.md) — North Star Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/north-star-framework/METHOD.md): North Star Framework
 
 ## Related Skills
 
-- [Identifying Your Product's North Star Metric](../identifying-your-north-star-metric/SKILL.md)
-- [Building Dashboards to Track Your North Star and Inputs](../building-north-star-metric-dashboards/SKILL.md)
-- [Running a North Star Framework Workshop with Stakeholders](../running-north-star-workshops/SKILL.md)
-- [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
-- [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
-- [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
+- [Identifying Your North Star Metric: Words Before Numbers](../identifying-your-north-star-metric/SKILL.md)
+- [Using the North Star Framework for Roadmap Prioritization](../using-north-star-for-roadmap-prioritization/SKILL.md)
+- [Building North Star Metric Dashboards That Trace the Work](../building-north-star-metric-dashboards/SKILL.md)
+
+## Sources
+
+- [Amplitude: The North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)
+- [Amplitude: How-to Guide, Running Your North Star Workshop](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)
+- [John Cutler: Beware of the Cascade](https://cutlefish.substack.com/p/tbm-2452-beware-of-the-cascade)
+- [Lenny Rachitsky: Choosing Your North Star Metric](https://future.com/north-star-metrics/)
+- [Commoncog: The Amazon Weekly Business Review](https://commoncog.com/the-amazon-weekly-business-review/)

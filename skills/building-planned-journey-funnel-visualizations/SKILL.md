@@ -1,15 +1,20 @@
 ---
-name: building-planned-journey-funnel-visualizations
-description: "This skill teaches you to translate the latent, evaluation, and buying stage model into funnel diagrams and journey maps that communicate drop-off rates, conversion opportunities, and stage-specific insights to stakeholders and decision-makers."
+name: "building-planned-journey-funnel-visualizations"
+description: "Build a planned journey funnel diagram that shows stakeholders how buyers flow through each stage, where drop-off happens and why."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: planned-journey-framework
+  method: "planned-journey-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Building Customer Journey Funnel Visualizations for Planned Journeys
+# Building a Planned Journey Funnel Diagram
 
-> This skill teaches you to translate the latent, evaluation, and buying stage model into funnel diagrams and journey maps that communicate drop-off rates, conversion opportunities, and stage-specific insights to stakeholders and decision-makers.
+> Build a planned journey funnel diagram that shows stakeholders how buyers flow through each stage, where drop-off happens and why.
 
 ## Before you start
 
@@ -24,151 +29,98 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial build, 1 hour per refresh cycle |
-| Outcome | You produce a stakeholder-ready funnel visualization that quantifies where customers enter, drop off, and convert across planned journey stages, making it immediately clear where the largest revenue opportunities and experience gaps exist. |
-| Prerequisites | Familiarity with the Planned Journey Framework's three-stage model (latent, evaluation, buying), Access to customer volume or traffic data at each journey stage, Basic understanding of conversion rate calculation, A diagramming or presentation tool (slide software, whiteboard tool, or dedicated visualization platform) |
+| Time to Learn | A day for the first diagram, less for updates |
+| Outcome | You produce a funnel diagram and a companion journey map that show stakeholders how many buyers keep your brand at each stage, where the largest losses are and what causes them. |
+| Prerequisites | Stage definitions, consideration or volume data per stage, cross-stage findings, a basic charting tool |
 | Part of | [Planned Journey Framework](../../methods/planned-journey-framework/METHOD.md) |
 
 ## Overview
 
-A customer journey funnel visualization is the primary artifact that makes the [Planned Journey Framework](https://tryhamster.com/methods/planned-journey-framework) actionable for cross-functional teams. Without it, the three-stage model (latent, evaluation, buying) remains an abstract concept that sits in a strategy document. With it, every stakeholder from the CMO to the UX designer can see exactly where customers accumulate, where they abandon the journey, and where small conversion improvements would yield outsized revenue gains. The visualization turns qualitative journey mapping into a quantitative communication tool.
+A planned journey funnel diagram shows how buyers move through the stages of a long, deliberate purchase and how many keep your brand at each step. It is the picture that turns consideration data and cross-stage analysis into something a leadership team can read in a minute. This skill covers building that diagram and the journey map that goes with it.
 
-The specific problem this skill solves is the translation gap between research insights and organizational action. Teams that map high-involvement purchase journeys often produce rich qualitative findings about customer motivations and pain points, but struggle to communicate the magnitude of each problem. A well-built funnel diagram solves this by anchoring every insight to a number. When you can show that 62% of customers who enter the evaluation stage never reach a purchase decision, and that the primary drop-off happens between the second and third comparison touchpoint, you give stakeholders both the "what" and the "where." The visualization becomes the shared reference that aligns marketing spend, content strategy, and sales enablement around the same priorities.
+The diagram rests on the stage model from the [Planned Journey Framework](../../methods/planned-journey-framework/METHOD.md). The stages themselves, and how to define them for a category, are covered in the skill on the [latent, evaluation and buying stages](../defining-latent-evaluation-buying-stages/SKILL.md). This skill assumes those definitions exist and focuses on showing the flow between them.
 
-The concrete artifact you produce is a layered funnel diagram with three tiers corresponding to the latent, evaluation, and buying stages. Each tier displays the volume of customers who enter the stage, the percentage who transition to the next stage, and the internal drop-off rate within the stage. Annotations call out the specific touchpoints, channels, or moments where losses concentrate. A companion narrative (either as slide notes or a one-page summary) explains the "why" behind each major drop-off, linking back to qualitative research. This artifact is designed to be presented in a 10-minute stakeholder review and revisited quarterly as fresh data comes in. Success looks like a room full of people debating which drop-off point to fix first, not whether drop-off is happening at all.
+A customer journey funnel visualization for a planned journey differs from an ecommerce conversion funnel in two ways. First, the stages are defined by buyer state, and the volume at each stage usually comes from research as well as analytics. Second, buyers do not only narrow their options: brands are added during evaluation, and buyers drop back to latent when a trigger fades. Even general descriptions of the purchase funnel now note that modern funnels have many entrance points and that people can leave and enter again ([Purchase funnel](https://en.wikipedia.org/wiki/Purchase_funnel)). A good diagram shows those flows instead of hiding them.
+
+The diagram is for funnel visualization stakeholders: executives who fund the work, stage owners who act on it and analysts who maintain it. Each group needs a different level of detail, so the output is usually a simple headline funnel plus a more detailed flow diagram and journey map for working sessions. SKIM's decision journey approach includes visualizing the journeys landscape and then socializing findings internally, for example through dashboards and workshops ([SKIM six steps](https://skimgroup.com/blog/6-steps-untangling-mapping-consumer-decision-journeys/)).
 
 ## How It Works
 
-The mental model behind a customer journey funnel visualization is simple but often misapplied. Traditional marketing funnels treat stages as a linear pipeline where the only question is "how many people moved from stage A to stage B." The Planned Journey Framework adds a critical layer: within each stage, customers engage in distinct behaviors (passive awareness in latent, active research in evaluation, deliberate comparison and purchase in buying) that create internal friction points, not just stage-to-stage transitions. Your funnel visualization needs to capture both the macro flow between stages and the micro friction within them.
+The headline funnel shows your brand's share of buyers at each stage: in the latent consideration set, in the evaluation set, chosen at buying. Bar widths are proportional to the numbers, so the eye reads the size of each loss directly. Each bar is labelled with the absolute number as well as the share of the previous stage, because a small percentage of a large stage can be more buyers than a large percentage of a small one.
 
-The core formula at each stage boundary is straightforward: stage conversion rate equals the number of customers who enter the next stage divided by the number who entered the current stage. But the real analytical value comes from decomposing each stage into its constituent touchpoints and measuring where internal attrition concentrates. In the evaluation stage, for example, customers might visit a comparison page, read reviews, check pricing, and then either proceed to buying or abandon. Your funnel should show the sub-steps within evaluation as nested layers, so stakeholders can see that the drop-off is not evenly distributed. Perhaps 80% of evaluation-stage attrition happens between the pricing page and the purchase intent signal. That specificity is what makes the visualization useful.
+The flow diagram adds the movements the headline funnel hides. A Sankey diagram suits this well, because the width of each flow is proportional to its quantity ([Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram)). Flows can show buyers keeping your brand, buyers switching to named competitors, buyers adding your brand late and buyers dropping back to latent. Showing losses by destination makes the competitive story visible, because the diagram names the rival that won each group of lost buyers and the stage where it happened.
 
-The width of each funnel tier should be proportional to customer volume, not arbitrary. This is where many visualizations fail. If your latent stage captures 100,000 potential customers and only 12,000 enter evaluation, the evaluation tier should be visibly narrower. Proportional width creates an instant visceral reaction in stakeholders. They see the magnitude of the drop-off before reading a single number. The annotations and percentages then provide the precise data to anchor the discussion.
+The journey map adds the reasons. Nielsen Norman Group defines a journey map as "a visualization of the process that a person goes through in order to accomplish a goal," built from an actor, a scenario, journey phases, actions, mindsets and emotions, and opportunities ([NN/g Journey Mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)). For a planned journey, the phases are the three stages, and the map sits under the funnel so each drop-off lines up with what buyers were doing and thinking at that moment. NN/g also stresses that the actions on the map should be rooted in data, ideally with customer quotes.
 
-One important assumption to surface: funnel visualizations imply a sequential, top-to-bottom flow, but real customer journeys in high-involvement categories are messy. Customers loop back from evaluation to latent when they deprioritize the purchase. They re-enter evaluation after months of dormancy. Your visualization handles this by including "re-entry" arrows or annotations that quantify how many customers in each stage are first-time entrants versus returning. This prevents the common misread where a team assumes all evaluation-stage volume is fresh demand, when in reality 30% may be customers who bounced back from a previous evaluation attempt. The [Planned Journey Framework](https://tryhamster.com/methods/planned-journey-framework) specifically accounts for these loops, and your visualization should reflect that structural honesty rather than forcing a clean linear narrative.
+The narrative layer ties the three together. Each major drop-off gets a short annotation: the size of the loss, where the buyers went and the cross-stage reason. Stakeholders who read only the annotations should come away with the main finding. The diagram should also say where the data comes from and how confident the team is, since stage volumes drawn from recall surveys are estimates.
 
-Finally, the visualization must separate the "what" layer (the numbers) from the "why" layer (the qualitative insights). The diagram itself shows volumes, rates, and drop-off points. The narrative annotations explain the causes: "Customers drop off at the pricing comparison step because competitor X offers transparent pricing while our pricing requires a sales call." This dual-layer approach ensures the funnel is both analytically rigorous and strategically actionable.
+Journey map drop-off rates are only useful if they can be compared over time. The diagram therefore keeps the same stages, definitions and layout from wave to wave, and the first version becomes the template for every update.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Your Stage Boundaries and Entry Criteria
+### Step 1: Confirm the stages and the data behind each
 
-Before you can count anything, you need crisp definitions of when a customer enters and exits each stage. For the latent stage, the entry signal is typically a category-level behavior: the customer visits category content, searches a broad keyword, or encounters an awareness-level ad. The exit signal is the first deliberate research action (visiting a product page, clicking a comparison link, or downloading a guide). For the evaluation stage, entry is that first deliberate research action and exit is a purchase-intent signal (adding to cart, requesting a quote, booking a demo).
+List the stages using the agreed definitions and, for each, the source of the numbers: survey, analytics, CRM or a combination. Note where numbers are estimates. Decide whether the funnel shows your brand's share of all category buyers or the flow of your own prospects, and keep that choice throughout. Mixing the two produces a misleading picture.
 
-For the buying stage, entry is the purchase-intent signal and exit is either completed purchase or final abandonment. Write these definitions into a one-page reference document that every stakeholder agrees on before you pull any data. Ambiguous boundaries are the single most common cause of funnel numbers that nobody trusts.
+### Step 2: Calculate stage volumes and flows
 
-> **Pro tip:** If your CRM or analytics platform does not have clean events for stage transitions, define proxy signals. For example, "visited 3+ product pages in a single session" might proxy for evaluation entry. Document the proxy and its known limitations so you can refine it later.
+For each stage, calculate how many buyers had your brand in consideration. Between stages, calculate how many kept it, how many dropped it and where they went, and how many added it late. Keep absolute numbers alongside percentages. Flag any flow resting on a small base.
 
-### Step 2: Step 2: Collect Volume Data for Each Stage
+### Step 3: Build the headline funnel
 
-Pull the raw customer counts for each stage over a defined time window. A quarterly window works well for high-involvement purchases because the full journey often spans weeks or months. For latent, count unique users who triggered the latent-entry signal. For evaluation, count unique users who triggered the evaluation-entry signal.
+Draw one bar per stage with widths proportional to the numbers. Label each with the count and the share kept from the previous stage. Highlight the largest drop in a single accent color. Keep it simple enough for an executive to read without explanation.
 
-For buying, count unique users who triggered the buying-entry signal, and separately count completed purchases. If you have a CRM with lifecycle stages, query it directly. If you rely on web analytics, use event tracking or goal funnels. Record both the absolute numbers and the date range.
+### Step 4: Build the flow diagram
 
-You will also need the count of customers who exited each stage without advancing (the drop-offs), which is simply the stage entry count minus the next stage entry count, adjusted for any customers still in-stage at the period end.
+Use a Sankey-style diagram to show flows between stages, including losses to named competitors, late additions and returns to latent ([Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram)). Limit the number of competitors shown by name and group the rest. Order flows consistently so the same competitor sits in the same place in every version.
 
-> **Pro tip:** Exclude bot traffic and internal employee sessions before counting. In high-involvement categories, even a 2-3% contamination from bots can skew latent-stage numbers significantly because the latent pool is large and the signal is weak.
+### Step 5: Add the journey map
 
-### Step 3: Step 3: Calculate Stage-to-Stage Conversion Rates and Internal Drop-Off Rates
+Under the funnel, add a journey map with the three stages as phases and rows for buyer actions, questions, touchpoints and mood, following the structure in [NN/g's journey mapping guidance](https://www.nngroup.com/articles/journey-mapping-101/). Use buyer quotes for the questions and mood rows. Align each major drop-off with the row entries that explain it.
 
-For each stage transition, divide the next-stage entry count by the current-stage entry count. Latent-to-evaluation conversion rate equals evaluation entrants divided by latent entrants. Evaluation-to-buying conversion rate equals buying entrants divided by evaluation entrants. Buying-to-purchase conversion rate equals completed purchases divided by buying entrants.
+### Step 6: Write the annotations
 
-Then calculate the overall funnel conversion rate (completed purchases divided by latent entrants). Next, decompose each stage internally. List the key touchpoints within the stage (for evaluation, this might be: product page visit, feature comparison, pricing page, demo request). For each touchpoint, calculate the percentage of stage entrants who reached it and the percentage who proceeded to the next touchpoint.
+For each major drop-off, write one or two sentences: how many buyers were lost, to whom and why, with the evidence source. Add a line on data confidence. Read the diagram with only the annotations visible and check that the main finding comes through.
 
-This internal decomposition reveals where friction concentrates within each stage, which is the insight stakeholders actually need to act on.
+### Step 7: Test with a stakeholder and set the template
 
-> **Pro tip:** Present rates as percentages but always show the absolute numbers alongside them. A 5% drop-off sounds minor, but if it represents 6,000 customers who were actively evaluating your product, the revenue impact may be substantial.
-
-### Step 4: Step 4: Choose a Visualization Format That Matches Your Audience
-
-Select a format based on who will consume the visualization and what decisions it needs to support. For executive audiences who need a high-level view, a classic three-tier funnel with proportional widths and annotated conversion percentages works well. For product or UX teams who need to act on specific friction points, a Sankey diagram that shows flow volumes between touchpoints within each stage is more useful. For cross-functional workshops, a horizontal journey map with a stacked bar chart showing volume at each touchpoint provides a narrative reading experience.
-
-Decide whether the visualization will be static (a slide or PDF) or interactive (a dashboard). Static is fine for quarterly reviews and board presentations. Interactive is better for teams who need to filter by segment, channel, or time period. Sketch the layout on paper or a whiteboard before touching any tool.
-
-> **Pro tip:** Resist the urge to build an elaborate interactive dashboard for the first version. Start with a static slide. You will learn what questions stakeholders ask, and those questions will tell you what interactivity to add in version two.
-
-### Step 5: Step 5: Build the Funnel Diagram with Proportional Widths
-
-Open your chosen tool and create three horizontal bars or trapezoids stacked vertically, each labeled with its stage name (Latent, Evaluation, Buying). Set the width of each bar proportional to the volume of customers who entered that stage. If latent has 100,000, evaluation has 15,000, and buying has 4,000, the evaluation bar should be roughly 15% the width of the latent bar. Most presentation tools let you set exact shape widths in pixels or percentages.
-
-On each bar, display the entry volume as a large number and the conversion rate to the next stage as a percentage annotation at the transition arrow. Between each bar, add a transition zone that shows both the conversion rate and the absolute number of customers who transitioned. On the sides of each bar, add a drop-off annotation showing the number and percentage of customers who left the funnel at that stage.
-
-> **Pro tip:** Use a consistent color scheme: cool or neutral colors for the funnel bars, a warm accent (orange or red) for drop-off annotations. This draws the eye to problems without requiring the reader to parse numbers first.
-
-### Step 6: Step 6: Annotate Internal Stage Detail and Friction Points
-
-For each stage, add a secondary layer that breaks down the internal touchpoints. This can be a nested sub-funnel within each tier, a set of bullet annotations alongside the bar, or a companion detail slide per stage. For each major touchpoint within the stage, show the volume that reached it and the percentage that proceeded to the next touchpoint. Highlight the single biggest internal drop-off point per stage with a callout box that includes both the quantitative data and a one-sentence qualitative explanation.
-
-For example, within the evaluation stage, you might annotate: "Pricing page: 8,200 visitors, 42% bounce. " These annotations transform the funnel from a reporting artifact into a diagnostic tool.
-
-> **Pro tip:** Limit each stage to 3-5 annotated touchpoints. If you include every micro-interaction, the visualization becomes unreadable. Focus on the touchpoints where the largest absolute volume of customers is lost.
-
-### Step 7: Step 7: Add Re-Entry Flows and Non-Linear Paths
-
-High-involvement purchase journeys are not strictly linear. Customers loop back, pause for months, and re-enter stages. Your visualization should acknowledge this honestly. Add curved arrows or dotted flow lines that show re-entry from a later stage back to an earlier one.
-
-Label each re-entry flow with the volume and reason. " If your data allows it, distinguish between first-time entrants and returning entrants at each stage, since these groups behave differently and may require different interventions. Position re-entry arrows on the sides of the funnel to keep the primary top-to-bottom flow visually dominant.
-
-> **Pro tip:** If you do not have reliable data on re-entry, use a qualitative estimate based on sales team input and label it as an estimate. A rough number is better than pretending the journey is perfectly linear.
-
-### Step 8: Step 8: Write the Narrative Layer
-
-The visualization carries the numbers. The narrative carries the meaning. Write a one-paragraph summary for each stage transition that answers three questions: What is the conversion rate? Where specifically do customers drop off?
-
-Why do they drop off based on your qualitative research? This narrative can live as speaker notes on a presentation slide, as a sidebar on a dashboard, or as a standalone one-page companion document. Lead each paragraph with the most actionable finding. For example: "The largest single opportunity is the evaluation-to-buying transition, where 73% of actively researching customers fail to reach a purchase-intent signal.
-
-" Close the narrative with a prioritized recommendation that links directly to the data.
-
-> **Pro tip:** Write the narrative in plain language that a non-analyst can act on. Replace "conversion rate decreased by 12 basis points" with "we lost 1,200 more customers at this step compared to last quarter." Stakeholders remember impact, not statistical jargon.
-
-### Step 9: Step 9: Review, Validate, and Prepare for Presentation
-
-Before presenting, run three validation checks. First, confirm that the numbers add up: the sum of customers who converted to the next stage plus customers who dropped off plus customers still in-stage should equal the stage entry count for each stage. If it does not balance, you have a data quality issue to investigate. Second, have a colleague who was not involved in building the funnel look at it for 30 seconds and describe what they see.
-
-If their description does not match your intended message, the visual hierarchy or annotations need adjustment. " Have backup slides or data ready for each. Schedule a 10-minute dry run to practice walking through the funnel from top to bottom, spending 2-3 minutes per stage.
-
-> **Pro tip:** Number your funnel as "v1" with a date. This sets the expectation that the visualization will be updated and prevents stakeholders from treating a single snapshot as a permanent truth.
+Show the draft to someone who was not involved and ask them to describe the main finding. Fix anything they misread. Save the final version as a template with fixed stages, colors and layout, so future waves update the numbers without redesign.
 
 ## Best Practices
 
-- Always use proportional widths so the visual impact of each drop-off is immediately apparent. When funnel tiers are all the same width, stakeholders underestimate the magnitude of early-stage attrition. A latent stage with 100,000 entrants and an evaluation stage with 12,000 should look dramatically different in size.
-- Show absolute numbers alongside percentages on every annotation. A 5% drop-off rate sounds manageable in isolation, but when it represents 5,000 potential customers in a high-involvement category where average order value is $30,000, the revenue impact reframes the entire conversation. Missing the absolute number is the fastest way to lose stakeholder urgency.
-- Update the funnel on a fixed cadence, typically quarterly for high-involvement categories where the purchase cycle spans weeks or months. Each refresh should include a comparison to the prior period so stakeholders can see whether interventions are working. If you only build the funnel once, it becomes a historical curiosity rather than an operational tool.
-- Keep the primary funnel view to three tiers (latent, evaluation, buying) with internal touchpoint detail available as a drill-down, not embedded in the top-level diagram. Executive stakeholders need the macro story in under 60 seconds. Product and UX teams need the micro story in a separate view they can study at their own pace.
-- Label every qualitative annotation with its source (exit survey, session replay, sales call notes, support tickets). Unattributed qualitative claims erode trust in the entire visualization, because stakeholders cannot distinguish between data-backed insights and assumptions. Attribution makes the narrative auditable.
-- Include a "what-if" scenario on the final slide or section of your presentation. For example: "If we improve the evaluation-to-buying conversion rate from 27% to 35%, we add approximately 1,200 purchases per quarter, representing $X in revenue." This frames the funnel as an investment case, not just a diagnostic report, which is what unlocks budget allocation.
-- Design the color palette for accessibility, including colorblind-safe palettes. Approximately 8% of men have some form of color vision deficiency. If your drop-off annotations rely solely on red vs. green, a significant portion of your audience may miss the visual cue entirely. Use pattern fills, labels, or high-contrast color pairs (blue/orange) as alternatives.
+- Show absolute numbers with percentages. A percentage alone can hide that a small rate at a large stage loses more buyers than a large rate at a small one.
+- Show where lost buyers went. Losses by destination tell a competitive story that an anonymous drop-off cannot.
+- Show non-linear flows. Late additions and returns to latent are part of a planned journey, and leaving them out makes the funnel look cleaner and less true ([Purchase funnel](https://en.wikipedia.org/wiki/Purchase_funnel)).
+- Keep one accent color for the key finding. When everything is highlighted, nothing is.
+- Label data sources and confidence. Recall-based volumes are estimates, and saying so protects the diagram's credibility when numbers shift.
+- Keep the layout stable across waves. Readers compare versions by position, so moving elements makes real changes harder to see.
 
 ## Common Mistakes
 
-- **Using equal-width funnel tiers regardless of actual volume differences** — This happens because most funnel templates in presentation tools default to uniform widths, and resizing feels like extra work. The result is that a 90% drop-off between latent and evaluation looks identical to a 10% drop-off between evaluation and buying. Stakeholders glance at the slide and see a balanced funnel, which communicates the opposite of reality. Catch this by checking whether the visual proportions match the data proportions before finalizing.
-
-Set widths manually based on the actual ratios, even if it means the funnel looks dramatically top-heavy.
-- **Forcing a linear top-to-bottom flow and ignoring re-entry loops** — This mistake stems from applying a standard e-commerce funnel mental model to a high-involvement category where customers frequently pause, loop back, and re-enter stages after weeks or months. The signal is a stage entry count that is higher than the prior-stage exit count, which indicates customers are entering the stage from somewhere other than the stage above. If you ignore this, your conversion rates will be artificially deflated because the denominator includes returning customers who behave differently from first-time entrants. Add re-entry flow annotations and, where possible, segment first-time versus returning cohorts.
-- **Presenting the funnel without a narrative explanation of why drop-offs happen** — Teams often assume the numbers speak for themselves. They do not. A funnel showing 73% drop-off in evaluation tells stakeholders there is a problem but gives them no direction on what to fix. This leads to scattered brainstorming rather than focused action.
-
-The root cause is usually that the person who built the visualization did not also own the qualitative research, so they present data without context. Pair every major drop-off annotation with a one-sentence causal explanation sourced from qualitative data. If no qualitative data exists for a specific drop-off point, flag it as a research gap rather than leaving it blank.
-- **Building one funnel for all customer segments and treating the average as representative** — Aggregated funnels hide critical segment differences. In automotive purchases, for example, first-time buyers and repeat buyers have radically different evaluation-stage behaviors and conversion rates. A blended average masks the fact that first-time buyers convert at 12% while repeat buyers convert at 45%, which demands completely different interventions. Watch for this when the overall conversion rate does not change despite targeted optimizations, which often means improvements in one segment are being offset by declines in another.
-
-Build the aggregated funnel first for executive alignment, then create segment-specific versions for operational teams.
-- **Overloading the funnel with every possible touchpoint and data point on a single view** — This comes from a desire to be thorough, but it produces an unreadable artifact that overwhelms stakeholders. The tell is when people in a meeting squint at the screen or ask you to zoom in. The funnel should operate at two levels of detail: a macro view with three tiers and stage-transition metrics, and a detail view per stage with internal touchpoints. If your single-slide funnel has more than 12 data annotations, it is too dense.
-
-Move internal stage detail to companion slides or an appendix, and keep the top-level view clean enough to read from the back of a conference room.
-- **Treating the funnel as a one-time deliverable rather than a living operational tool** — This happens when the funnel is built for a specific presentation or strategy offsite and then never updated. The underlying data changes every quarter, and interventions shift the drop-off points over time. A stale funnel trains stakeholders to ignore it. Set a calendar reminder to refresh the data quarterly.
-
-Store the funnel file and its data sources in a shared location with a version history. Each refresh should include a one-paragraph changelog noting what shifted since the last version and why.
+- **Drawing a generic sales funnel**: A funnel built on pipeline stages or web events loses the latent stage and the buyer's view. Build on the journey stages.
+- **Using a funnel shape with fixed widths**: Decorative funnel graphics with equal steps misstate the size of each loss. Make widths proportional.
+- **Hiding competitors**: A drop-off without destinations invites internal explanations. Showing which rival won makes the discussion concrete.
+- **Overloading one slide**: Putting funnel, flows, map and notes on one slide for executives loses them. Give executives the headline funnel and keep the detail for working sessions.
+- **Changing definitions between versions**: If stage definitions or data sources change, note it prominently, or the comparison between versions will mislead.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/planned-journey-framework/METHOD.md) — Planned Journey Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/planned-journey-framework/METHOD.md): Planned Journey Framework
 
 ## Related Skills
 
-- [Defining the Latent, Evaluation, and Buying Stages](../defining-latent-evaluation-buying-stages/SKILL.md)
-- [Optimizing Touchpoints at Each Journey Stage](../optimizing-touchpoints-per-stage/SKILL.md)
-- [Adapting the Planned Journey Framework for B2B Purchases](../adapting-planned-journeys-for-b2b/SKILL.md)
-- [Tracking Brand Consideration Shifts Across Stages](../tracking-brand-consideration-shifts/SKILL.md)
-- [Connecting Insights Across Journey Stages](../connecting-cross-stage-insights/SKILL.md)
-- [Mapping High-Involvement Purchase Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
+- [Planned Journey Framework Stages: Latent, Evaluation, Buying](../defining-latent-evaluation-buying-stages/SKILL.md)
+- [Brand Consideration Tracking Across Journey Stages](../tracking-brand-consideration-shifts/SKILL.md)
+- [Connecting Cross-Stage Journey Insights](../connecting-cross-stage-insights/SKILL.md)
+- [Research-Intensive Purchase Mapping for Planned Journeys](../mapping-high-involvement-purchase-journeys/SKILL.md)
+- [Touchpoint Optimization for Each Journey Stage](../optimizing-touchpoints-per-stage/SKILL.md)
+- [Planned Journey Framework for B2B Buying Committees](../adapting-planned-journeys-for-b2b/SKILL.md)
+
+## Sources
+
+- [Wikipedia: Sankey diagram](https://en.wikipedia.org/wiki/Sankey_diagram)
+- [Nielsen Norman Group: Journey Mapping 101](https://www.nngroup.com/articles/journey-mapping-101/)
+- [Wikipedia: Purchase funnel](https://en.wikipedia.org/wiki/Purchase_funnel)
+- [SKIM: 6 steps to untangle consumer decision journeys](https://skimgroup.com/blog/6-steps-untangling-mapping-consumer-decision-journeys/)

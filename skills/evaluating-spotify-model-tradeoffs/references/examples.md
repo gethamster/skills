@@ -1,53 +1,37 @@
-# Examples: Evaluating Spotify Model Tradeoffs and Common Pitfalls
+# Examples: Evaluating Spotify Model Tradeoffs and Failure Modes
 
-## Example: 40-person startup evaluating a full adoption
-
-**Scenario:**
-
-A Series B startup with 40 engineers, 6 product managers, and a monolithic Rails application. The CTO read the Spotify whitepaper and proposed adopting the model to support growth from 40 to 120 engineers over the next 18 months. The current structure is five feature teams with shared backend engineers.
-
-**Walkthrough:**
-
-The team listed five elements: squads, tribes, chapters, guilds, and the PO/Chapter Lead role structure. The current-state map revealed a monolithic deployment pipeline where all five teams deploy through a single CI/CD process, with shared database schemas coupling most features. Squads scored 2 on feasibility (monolith coupling prevents independent deployment), 4 on benefit (teams are blocked by cross-team dependencies weekly), and 4 on risk (without architectural decoupling, squads would be cosmetic). Net score: 2.
-
-Tribes scored 1 on feasibility (40 engineers is one tribe at most), 1 on benefit (no multi-tribe coordination problem exists yet), and 2 on risk (low because there is nothing to get wrong). Net score: 0. Chapters scored 3 on feasibility (enough backend and frontend engineers to form chapters), 3 on benefit (some inconsistency in code quality across teams), and 3 on risk (dual reporting is confusing at this size). Net score: 3.
-
-Guilds scored 4 on feasibility (small enough that voluntary cross-team collaboration is easy), 3 on benefit (knowledge sharing is decent but could improve), and 1 on risk (low downside to trying). Net score: 6. The final recommendation was: start a service decomposition initiative as the prerequisite for squads, launch two guilds immediately (testing practices and frontend architecture), defer tribes entirely, and revisit chapters and squads after the first three services are extracted from the monolith. The CTO adjusted the 18-month roadmap to include architectural work before organizational restructuring.
-
-## Example: 300-person enterprise division assessing a partial adoption
+## A growing startup with a shared release pipeline
 
 **Scenario:**
 
-A financial services company with a 300-person technology division organized into 25 teams across three departments. Teams are discipline-specific (separate backend, frontend, QA, and ops teams). Leadership wants to adopt squads and tribes to improve delivery speed, but regulatory compliance requires formal approval chains for production deployments.
+Illustrative scenario: a startup has five feature teams and one monolithic application released through a single pipeline. The CTO proposes adopting the whole Spotify model ahead of planned hiring.
 
 **Walkthrough:**
 
-The evaluation team scored squads at 3 on feasibility (cross-functional teams are achievable but require significant reorganization of discipline-based teams), 5 on benefit (handoffs between discipline teams are the single biggest source of delay), and 4 on risk (the regulatory approval chain means squads cannot deploy independently without a compliance automation layer). Net score: 4. Tribes scored 4 on feasibility (natural product-area groupings exist), 4 on benefit (the three departments create silos that would benefit from tribe-level coordination), and 3 on risk (tribe leads may conflict with existing department heads). Net score: 5.
+The problem list shows two real issues: teams waiting on shared backend engineers, and inconsistent frontend practices. The element ratings show squads as high benefit but poor fit, because no team can release on its own; the architecture failure mode applies directly. Tribes rate low on benefit, since five teams can still coordinate by talking to each other.
 
-Chapters scored 5 on feasibility (plenty of specialists in each discipline), 4 on benefit (discipline quality is inconsistent across teams), and 2 on risk (chapter lead role maps well to existing tech lead positions). Net score: 7. Guilds scored 4 on feasibility, 2 on benefit (existing communities of practice already serve this function), and 1 on risk. Net score: 5.
+The recommendation is to adopt guilds now for frontend practice, to start decoupling the release pipeline as a precondition for squads, and to skip tribes and chapters for now. The evaluation is scheduled for review once the first services can be released independently.
 
-The recommendation was to adopt chapters first, since they scored highest and required the least disruption. Squads would follow after a compliance automation workstream made independent deployment possible within regulatory constraints. Tribes would come third, with tribe leads positioned as product-area directors to avoid conflicting with existing department structure. Guilds were skipped because existing communities of practice already filled the need.
-
-## Example: B2C product team recovering from a failed Spotify adoption
+## A regulated company weighing partial adoption
 
 **Scenario:**
 
-A consumer mobile app company with 80 engineers had adopted the full Spotify Model 12 months ago. Squads were formed, tribes were declared, chapters were created, and guilds were launched. After a year, delivery speed had not improved, chapter meetings were poorly attended, two of three guilds were inactive, and engineers reported confusion about whether they reported to their squad lead or chapter lead.
+Illustrative scenario: a financial services technology group has separate teams for backend, frontend, testing and operations. Production releases require documented approval, and leadership wants faster delivery.
 
 **Walkthrough:**
 
-The team used the tradeoff scorecard retroactively to diagnose what went wrong. Squads scored 4 on original feasibility (the app had a microservices architecture), but the risk score was recalculated at 5 because squad autonomy was undermined by a centralized architecture review board that approved all technical decisions, a failure mode the original evaluation missed. Chapters scored 2 on feasibility in retrospect because the company only had 15 frontend engineers across 8 squads, making chapter meetings too small and too frequent to be useful. The chapter lead role created confusion because it was layered on top of existing engineering manager roles without clarifying which role owned performance reviews and career development.
+Cross-functional squads rate high on benefit, because hand-offs between the discipline teams cause most of the delay. The compliance requirement adds risk to letting each squad choose its own process, so the recommendation keeps squad-level freedom for internal process while standardizing the release approval steps as an enabling constraint.
 
-Guilds scored 1 on benefit because the company had never had a knowledge-sharing problem, so guilds solved nothing. The retrospective scorecard showed that only squads and tribes had net scores above 4, and even squads required a prerequisite (dissolving the architecture review board in favor of squad-level architectural guidelines). The recovery recommendation was: keep the squad structure but give squads real deployment authority by replacing the review board with published architecture principles, dissolve chapters and return discipline management to engineering managers, dissolve guilds, and keep tribes as a lightweight coordination layer. Within three months of simplifying, the team reported a measurable improvement in deployment frequency.
+Chapters are adopted for craft, but line management stays with engineering managers, to avoid the delivery accountability gap critics describe. Tribes are deferred until squads have been running for a few quarters and real dependency data exists.
 
-## Example: Distributed remote company evaluating guilds and chapters only
+## Reviewing an adoption that went wrong
 
 **Scenario:**
 
-A fully remote company with 60 engineers across four time zones. Teams are already cross-functional and autonomous, operating with a team-topologies approach. The VP of Engineering is not interested in squads or tribes but wants to improve cross-team knowledge sharing and discipline consistency by adopting guilds and chapters from the Spotify Model.
+Illustrative scenario: a company renamed its teams as squads and tribes a year ago. Product owners complain that nobody owns engineering delivery, and squads block each other on shared components.
 
 **Walkthrough:**
 
-Because the scope was narrow, the evaluation focused only on guilds and chapters. Guilds scored 4 on feasibility (the company already used Slack channels for cross-team topics, providing a cultural foundation), 4 on benefit (engineers in exit interviews cited professional isolation as a concern), and 3 on risk (time zone spread makes synchronous guild meetings difficult, and asynchronous guilds historically decay faster). Net score: 5. Chapters scored 3 on feasibility (enough engineers in key disciplines, but the four-timezone spread means chapter leads would need to run meetings at inconvenient times for someone), 3 on benefit (some inconsistency in code review standards and testing practices), and 4 on risk (chapter lead as people manager is impractical when direct reports are in four time zones, and the dual-reporting confusion risk is high).
+The team runs the evaluation backwards, checking which failure modes occurred. Two are clear: teams were renamed without changing who made decisions, and chapter leads became line managers without anyone owning each squad's delivery. The dependency survey shows most blocking dependencies sit on two shared components.
 
-Net score: 2. The recommendation was to adopt guilds with a specific adaptation: each guild designates an async-first communication format using written RFCs and recorded demos instead of live meetings, with one optional synchronous session per month rotated across time zones. Chapters were replaced by a lighter-weight alternative: discipline-specific style guides and review checklists maintained by a rotating 'craft steward' role, without the formal chapter lead management structure. This gave the company the knowledge-sharing benefit without the management overhead that would have been dysfunctional in a remote-first context.
+The recommendation keeps squads but gives each an accountable engineering lead, moves the two shared components into a platform team with a published interface, and adds a short set of shared collaboration practices. The company schedules squad health checks to see whether the changes help.

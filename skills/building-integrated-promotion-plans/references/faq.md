@@ -1,25 +1,21 @@
-# FAQ: Building Integrated Promotion Plans
+# FAQ: Promotion Strategy in the Marketing Mix
 
-## How does the promotion strategy marketing mix fit within the 7 P's framework?
+## What is promotion in the marketing mix?
 
-Promotion is the fourth P in the 7 P's Marketing Mix framework, sitting alongside Product, Price, Place, People, Process, and Physical Evidence. Your promotion strategy should be informed by and consistent with decisions made across all other P's—for instance, premium pricing requires premium-feeling promotional materials, and your promotional messaging should align with what your people deliver in service interactions.
+Promotion is the marketing communication that makes the offer known and persuades people to investigate it. Its main elements are advertising, public relations, personal or direct selling and sales promotions, plus digital forms such as content, search and email.
 
-## What's the difference between an integrated promotion plan and a multichannel marketing plan?
+## What is an integrated marketing communications plan?
 
-A multichannel plan simply uses multiple channels, which may operate independently with different messages and goals. An integrated promotion plan ensures all channels share a unified messaging architecture, coordinated timing, and shared KPIs so they deliberately reinforce each other and create a compounding brand effect.
+It is a plan that coordinates all promotional channels around one consistent message, with a shared calendar and shared measures. The aim is that customers experience the brand as one coherent whole rather than a set of unrelated campaigns.
 
-## How much budget should I allocate to each promotional channel?
+## How is promotion different for services?
 
-There's no universal split. Start by allocating based on where your audience engages and your campaign objectives. A common starting framework is 50-60% to your two primary channels, 25-30% across secondary channels, and 10-20% as a flexible reserve for optimization. Adjust based on performance data after the first 2-4 weeks.
+Customers cannot inspect a service before buying, so they rely more on what they are told and on evidence from others, such as reviews and referrals. Promotion also sets the expectations the service is judged against, so overpromising can lower perceived quality even when delivery is good.
 
-## How do I maintain message consistency without making every channel feel identical?
+## How do I choose the promotional mix?
 
-Use a messaging architecture that separates 'what to say' from 'how to say it.' Your key messages and proof points remain constant across channels, but the format, tone intensity, and creative execution adapt to each platform's native style. A formal press release and a casual Instagram Story can convey the same core message in very different ways.
+Start from the audience and the stage of their decision. Awareness channels such as advertising and PR reach people who do not yet know you, content and search help people evaluating options, and direct selling and promotions help them decide. Choose the few channels that reach your audience at each stage and fit the budget.
 
-## How often should I update my integrated promotion strategy marketing mix plan?
+## How do I measure an integrated promotion plan?
 
-Review performance data weekly during active campaigns and conduct formal optimization checkpoints every 2-4 weeks. The overall promotion strategy should be comprehensively reviewed quarterly, aligned with your broader 7 P's Marketing Mix audit cycle. Major market shifts, competitive moves, or significant performance deviations warrant immediate plan adjustments.
-
-## Can small businesses with limited budgets create an integrated promotion plan?
-
-Absolutely. Integration is about strategic coordination, not big budgets. A small business might integrate just three channels—social media, email, and in-store materials—with a shared messaging framework. The key is consistency and coordination. A $5,000 campaign with three well-integrated channels will outperform a $20,000 campaign with five uncoordinated ones.
+Tie measures to the objectives you set at the start, such as qualified enquiries, trials, conversions or renewals. Look at the plan as a whole as well as at each channel. Watch service quality and complaints too, because they show when promotion is promising more than delivery.

@@ -1,37 +1,37 @@
-# Examples: Synthesizing Advisory Call Insights into Actionable Themes
+# Examples: Synthesizing Developer Advisory Insights into Themes
 
-## Example: Synthesizing 25 Advisory Calls for a CI/CD DevTool Startup
-
-**Scenario:**
-
-A seed-stage devtools company building a CI/CD platform has completed 25 advisory calls over 6 weeks through their Technical Advisory Board. The founder has notes from each call in a shared Google Doc. The team needs to decide what to build for their v1 launch and how to position it in the market.
-
-**Walkthrough:**
-
-The founder and head of product spend a half-day on extraction, pulling 187 discrete observations from the 25 call transcripts. They apply open codes like `pipeline-debug-opacity`, `yaml-config-complexity`, `ci-flakiness-distrust`, `slow-feedback-loop`, `env-setup-onboarding`, and `vendor-lock-in-fear`.
-
-During affinity mapping (done in Miro), they cluster codes into 8 candidate themes. After writing theme statements with evidence, they score each theme:
-
-1. **Pipeline debugging is opaque and time-consuming** (Freq: 5, Severity: 5, Opportunity: 4 = 100) — 18 of 25 advisors described spending significant time debugging CI failures with inadequate tooling.
-2. **YAML-based configuration creates maintenance burden at scale** (Freq: 4, Severity: 4, Opportunity: 3 = 48) — 14 advisors described configuration as a persistent pain point.
-3. **CI flakiness erodes team trust in automated testing** (Freq: 4, Severity: 5, Opportunity: 3 = 60) — 12 advisors described skipping or ignoring CI results due to flakiness.
-
-They validate against devtools technical SEO signals: "debug CI pipeline" gets 1,200 monthly searches with weak existing content; "YAML CI config" gets 800 monthly searches dominated by docs from existing vendors. This confirms both themes have organic search demand.
-
-The team decides to focus v1 on pipeline debugging visibility (Theme #1) and positions their content strategy around the exact language advisors used — terms like "CI black box" and "pipeline forensics" that they discovered during coding.
-
-## Example: Rolling Synthesis Revealing an Emerging Theme Over Three Batches
+## Collapsing personas after the first round
 
 **Scenario:**
 
-A developer tools company running an ongoing TAB process synthesizes insights in batches of 10 calls each month. During the first batch, a code about "AI-generated code review friction" appears only twice and doesn't make it into any theme. By the third batch, it's appeared in 8 of 30 total calls.
+Illustrative scenario: a startup building a feature-flag service started its TAB with five personas: frontend developers, backend developers, QA engineers, product managers, and engineering managers. The first round of calls is complete.
 
 **Walkthrough:**
 
-In Month 1, the team codes 10 calls and identifies 5 themes. Two advisors mention friction with AI-assisted code generation tools, but it doesn't cluster into a strong theme. The team notes it as a "weak signal" in their outliers section.
+The team highlights pains, gains, and jobs in every transcript and clusters them within each persona. When they compare the ranked lists, frontend and backend developers share the same top pains: fear of breaking production during a release and flags nobody remembers to remove. They merge them into one "developer" persona.
 
-In Month 2, 4 of the next 10 advisors independently raise problems with reviewing AI-generated pull requests — code that technically works but is hard to understand, debug, or maintain. The team creates a new candidate theme: "AI-generated code creates downstream review and maintenance burden."
+QA engineers and product managers turn out to differ sharply. QA talks about reproducing a bug when flags vary by user, and product managers talk about knowing which customers see what. Engineering managers produced little that was distinctive, so the team keeps them on the list but flags the persona for another look after round two. They go into the second round with four personas instead of five.
 
-By Month 3, this theme has become the #2 priority across all 30 calls, with advisors using phrases like "AI code debt" and "review fatigue." The team checks search trends and finds "review AI generated code" is trending upward rapidly with almost no quality content addressing it.
+## Weighing intensity against frequency
 
-This example shows why rolling synthesis beats one-time analysis: emerging problems surface gradually, and batch synthesis lets you catch them before they become obvious to everyone in the market. The team updates their devtools technical SEO strategy to target this emerging topic while competition is still low.
+**Scenario:**
+
+Illustrative scenario: in a TAB about test infrastructure, most developers mention slow test suites, while two members describe losing a full day hunting flaky tests before a release.
+
+**Walkthrough:**
+
+A simple count puts slow tests first. When the team rereads the transcripts, the slow-test mentions are brief and usually followed by "but we live with it." The flaky-test stories are long, specific, and include missed releases and weekend work.
+
+The team ranks flaky tests first and slow tests second for the developer persona, and writes a sentence under each explaining why. In the second calls they show members this ranking and ask directly whether it matches their experience. Several members who had mentioned only slow tests say flaky tests are the bigger problem once asked, and one strongly disagrees. The team records both reactions.
+
+## A validation call that changes the ranking
+
+**Scenario:**
+
+Illustrative scenario: a team building a code review tool presents its synthesis to a staff engineer in her second TAB call.
+
+**Walkthrough:**
+
+The founder shares one page for the reviewer persona: slow review turnaround first, unclear ownership of files second, noisy automated comments third. The engineer agrees with the first two and says the third is minor. She adds something missing: reviews of generated code, which her team now spends much of its review time on.
+
+The founder notes the correction and checks the transcripts. Two other members had mentioned generated code in passing, but the team had clustered it under noisy comments. After several more second-round calls raise the same point, the team splits it into its own cluster and moves it into the top three.

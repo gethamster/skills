@@ -1,33 +1,41 @@
-# Examples: Categorizing and Prioritizing Feedback Items
+# Examples: Categorizing and Prioritizing Start Stop Continue Items
 
-## Example: Sprint Retrospective for a 7-Person Engineering Team
-
-**Scenario:**
-
-A software team has just finished a two-week sprint. During their Start Stop Continue retrospective, they collected 34 sticky notes: 12 Start items, 11 Stop items, and 11 Continue items. The board feels overwhelming and several items look similar.
-
-**Walkthrough:**
-
-The facilitator reads each item aloud. Two Start items ('start writing acceptance criteria before sprint planning' and 'start defining done criteria upfront') are nearly identical — they're merged into one card marked ×2. After clarification, the team clusters the remaining items:
-
-**Start clusters:** (A) 'Upfront requirements clarity' (4 items), (B) 'Automated testing' (3 items), (C) 'Cross-team syncs' (2 items), (D) 'Documentation' (2 items).
-**Stop clusters:** (E) 'Scope creep mid-sprint' (4 items), (F) 'Unnecessary meetings' (3 items), (G) 'Manual deployments' (3 items).
-**Continue clusters:** (H) 'Pair programming' (5 items), (I) 'Daily standups format' (4 items), (J) 'Friday demos' (2 items).
-
-Each person gets 4 votes across all 10 clusters (28 total votes in the room). Results: Scope creep mid-sprint (E) gets 9 votes, Upfront requirements clarity (A) gets 7, Pair programming (H) gets 5, everything else gets 2 or fewer.
-
-The team selects two commitments: (1) 'Product owner will lock the sprint scope after planning — any new requests go to backlog. Owner: Maria. Check-in: next retro.' (2) 'Dev leads will draft acceptance criteria in the ticket template before refinement. Owner: James. Check-in: next Wednesday standup.' The Continue item (pair programming) is acknowledged and celebrated but doesn't need an action — it's already working.
-
-## Example: Quarterly Marketing Team Review (Remote)
+## A crowded board after a release
 
 **Scenario:**
 
-A 12-person marketing team runs a quarterly start stop continue exercise using Miro. They've collected 52 items across three columns. The remote format makes clustering harder because people can't physically move sticky notes as a group.
+Illustrative scenario: a team of eight has written about thirty notes after a difficult release. The facilitator has a short block of time to get from the notes to a few actions.
 
 **Walkthrough:**
 
-The facilitator shares their screen and reads items column by column, asking for brief clarifications via chat (not voice, to save time). For clustering, the facilitator proposes groups and the team reacts with thumbs up/down emojis. This keeps 12 people from talking over each other.
+Each author reads their notes. Several Stop notes say almost the same thing about last-minute changes to release scope, so they are stacked, with the stack size left visible. The Start notes split into two groups: better release checklists and earlier involvement of support staff.
 
-After 15 minutes, they have 14 clusters. The facilitator recognizes this is too many and asks: 'Can we combine any of these?' The team merges 'social media calendar' and 'content planning' into one cluster, and 'vendor management' and 'agency communication' into another. Down to 12 clusters.
+The facilitator labels the themes, for example "scope changes after code freeze" and "support hears about features on release day." There are eight themes in total, so each person gets two votes, roughly a quarter of the number of themes.
 
-Each person gets 4 anonymous votes via Miro's voting feature. The top result is clear: 'Stop saying yes to every stakeholder request' with 15 votes — nearly double the runner-up. The team creates one strong commitment: 'All campaign requests must use the intake form and be prioritized by the marketing ops lead weekly. Requests without the form are returned. Owner: Lisa. Starts Monday. Check-in: next month's team meeting.'
+The top theme is the code freeze problem, followed closely by support involvement. The team agrees on one action for each, with volunteer owners. The other themes stay on the saved board.
+
+## A vote that splits evenly
+
+**Scenario:**
+
+Illustrative scenario: a team's dot vote leaves two themes with the same number of votes and nothing close behind. Only one action fits the time the team has before the next sprint.
+
+**Walkthrough:**
+
+Instead of arguing, the facilitator asks the two questions from the skill for each theme: can the team act on it, and would acting make a noticeable difference before the next session?
+
+One theme, slow approvals from another department, is mostly outside the team's control. The other, flaky tests in the build, is fully within it. The group agrees to act on the tests and turns the approvals theme into a request that the team lead will raise with the other department.
+
+Both outcomes are recorded, and the approvals request is checked at the next session like any other action.
+
+## A theme that keeps coming back
+
+**Scenario:**
+
+Illustrative scenario: a team saves its board after every session. Over several sessions, a Stop theme about meetings without agendas never wins a vote but appears each time.
+
+**Walkthrough:**
+
+When reviewing past boards, the facilitator notices the pattern and raises it at the start of the next session. The group agrees that the theme keeps losing to more urgent problems even though it costs time every week.
+
+The team decides to pick it deliberately this time, alongside the top-voted theme. A volunteer drafts a simple rule: any recurring meeting without an agenda by the day before is cancelled. At the following session the theme is gone from the board.
