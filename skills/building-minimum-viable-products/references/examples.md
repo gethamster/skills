@@ -1,49 +1,37 @@
-# Examples: Building a Minimum Viable Product (MVP)
+# Examples: How to Build a Minimum Viable Product (MVP)
 
-## Example: B2B SaaS for Invoice Automation (Small Team, 3 People)
-
-**Scenario:**
-
-A three-person team believes that freelance consultants waste significant time creating and sending invoices manually. Their riskiest assumption is that consultants will enter their client details and billing rates into a new tool rather than continuing to use spreadsheet templates they already have. They have a two-week build window and a $500 budget for recruiting testers.
-
-**Walkthrough:**
-
-" They build a Bubble-based MVP with three screens: a signup form, a client/rate entry form, and a one-click invoice generator that emails a PDF. There is no dashboard, no recurring invoice feature, and no payment integration. They recruit 60 freelance consultants from two relevant Slack communities by offering early access. After two weeks, 54 people sign up.
-
-Of those, 22 (41%) create and send at least one invoice. Qualitative feedback reveals that the top request is recurring invoices, but the core assumption, willingness to enter data and use the tool, is validated above threshold. The team decides to proceed with a second cycle testing willingness to pay, adding a $9/month gate after the third invoice.
-
-## Example: Consumer Fitness App (Larger Team, 8 People)
+## An invoicing tool for freelancers
 
 **Scenario:**
 
-A product team at a mid-size health company hypothesizes that casual gym-goers will follow AI-generated workout plans if the plans adapt weekly based on logged workouts. The riskiest assumption is not whether AI can generate plans, but whether users will actually log their workouts consistently enough for the AI to have useful data. The team has four weeks and access to a 2,000-person email list of gym members from a partnership.
+Illustrative scenario: a team of three believes freelance consultants would switch from spreadsheet invoices to a simple tool. Their riskiest assumption is that consultants will enter their clients and rates into a new product at all. They give themselves two weeks to build.
 
 **Walkthrough:**
 
-" They build a React Native MVP with three features: receive a weekly plan via push notification, log a workout with one tap per exercise (sets and reps only), and view next week's adjusted plan. There is no social feed, no progress photos, and no integration with wearables. The AI adaptation is handled manually by a trainer reviewing logs each Sunday and adjusting plans in a spreadsheet that feeds the app. They email 2,000 gym members and get 310 signups.
+The team maps the core flow as sign up, add one client, send one invoice. They build three screens with a no-code tool and generate the invoice PDF by hand from a template for the first users, so no invoice engine is written yet. The pass mark, written before launch, is that at least half of the people who sign up send one invoice within a week.
 
-After three weeks, 58 users (19%) logged workouts three or more times per week for two consecutive weeks, falling short of the 25% threshold. Qualitative interviews reveal that users forgot to log because they do not carry their phone on the gym floor. The team decides to iterate, not pivot. The next MVP adds an Apple Watch companion for one-tap logging, and the team reruns the test with fresh users.
+They recruit forty consultants from two online communities where freelancers discuss billing. Twenty-four send an invoice, which clears the mark. Follow-up calls show that the most common request is recurring invoices. The team records the result, puts recurring invoices on the later list, and moves on to its next riskiest assumption, which is whether consultants will pay.
 
-## Example: B2B Marketplace for Corporate Event Venues (Solo Founder)
+## A workout planner that depends on logging
 
 **Scenario:**
 
-A solo founder believes corporate event planners struggle to find and compare venue options because information is scattered across venue websites, broker emails, and outdated directories. The riskiest assumption is that event planners will submit their event requirements through an online form rather than continuing to email their existing network of venue contacts. The founder has no engineering skills, a one-week build window, and access to 15 event planners from previous networking.
+Illustrative scenario: a product team at a fitness company wants to offer plans that adapt each week to what members actually did. The riskiest assumption is that members will log their workouts often enough for the adaptation to work.
 
 **Walkthrough:**
 
-" She builds a Carrd landing page describing the service, with a Typeform embedded for venue requests (event date, guest count, budget, location preference, and style). When a form is submitted, she manually searches venues, calls them, and emails the planner a curated list of three options within 48 hours. This is a classic concierge MVP. She emails her 15 contacts and asks each to share with one colleague, reaching approximately 30 planners.
+The team resists building the adaptation engine. The MVP is a one-tap logging screen and a weekly plan that a trainer adjusts by hand from the logs. The pass mark is that at least a quarter of active users log three sessions a week for two weeks in a row.
 
-Over two weeks, 28 people visit the page and 14 submit the form (50%), exceeding the 40% threshold. However, qualitative follow-up reveals that only 3 of the 14 found the curated list useful, because most wanted venues in cities the founder did not have contacts in. The founder identifies geographic coverage as the next assumption to test and begins recruiting venue partners in the five most-requested cities before building any technology.
+After the test window, fewer than a quarter reach that level. Short interviews explain why: members leave their phones in the locker. The team records a miss on the current flow and treats it as an iteration problem, because the assumption about wanting adaptive plans has not been tested yet. The next build tests logging from a watch before anything else is added.
 
-## Example: B2C Meal Planning Subscription (Small Team, Pre-Seed Startup)
+## A marketplace for small event venues
 
 **Scenario:**
 
-A four-person startup believes busy parents will pay for a weekly meal plan customized to their family's dietary restrictions and grocery store preferences. The riskiest assumption is willingness to pay, since free meal planning content is abundant online. They have a three-week window and a $1,000 ad budget for testing.
+Illustrative scenario: a solo founder believes office managers struggle to book small venues for team events. The riskiest assumption is that managers will submit a booking request through a new site instead of calling venues they already know.
 
 **Walkthrough:**
 
-99. Upon payment, customers receive a questionnaire via email, and a team member manually creates a PDF meal plan within 24 hours. They spend $1,000 on Instagram ads targeting parents in three metro areas, driving 1,200 visitors over three weeks. 6% of visitors, 37% of quiz completers).
+The founder builds a single page listing ten venues, collected by hand, with a request form. Each request goes to the founder's inbox, and the founder calls the venue and confirms the booking personally. Nothing about the marketplace is automated.
 
-6% visitor conversion falls below the 5% threshold, but the 37% quiz-to-payment rate is strong. 99 felt expensive for a single week without seeing a sample. The team iterates by adding a free sample plan on the landing page and retesting, rather than pivoting away from the concept entirely.
+Over a month, requests arrive steadily, and several managers book a second time. The calls also reveal that managers care most about catering, which the founder had not listed. The pass mark on requests is met, and the founder adds catering details to the listings before testing whether venues will pay a commission.

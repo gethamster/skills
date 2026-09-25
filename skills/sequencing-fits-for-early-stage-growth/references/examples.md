@@ -1,33 +1,37 @@
 # Examples: Sequencing the Four Fits for Early-Stage Growth
 
-## Example: B2B SaaS Project Management Tool Entering the SMB Market
+## A B2B tool that checked market size first
 
 **Scenario:**
 
-A two-person founding team wants to build a project management tool for small marketing agencies (5-20 people). They have experience in the agency world and believe there's a gap between enterprise tools like Monday.com and basic tools like Trello.
+Illustrative scenario: two founders plan a workflow tool for in-house legal teams at mid-sized companies. They have strong domain knowledge and a prototype.
 
 **Walkthrough:**
 
-**Fit 1 — Market-Product Fit:** The founders interview 30 agency owners and identify a consistent pain point: agencies struggle to connect project timelines to client billing. They build an MVP that ties task completion to invoicing triggers. After 8 weeks with 40 agencies, 52% report they'd be 'very disappointed' without the tool. Market-Product Fit is validated.
+Before building further, they write the market definition and run a rough size check: a bottom-up count of companies with an in-house legal team, multiplied by the price they intend to charge. The estimate is well short of their goal. They widen the definition to include compliance teams with the same document review problem, confirm through interviews that the problem and motivation carry over, and re-run the estimate.
 
-**Fit 2 — Product-Channel Fit:** The product is moderately complex (requires setup per client), has a $49/month price point, and agencies discover tools through peer recommendations and industry blogs. The team tests content marketing (SEO-driven guides on agency operations) and a referral program. Content marketing shows traction—agencies find them through 'agency billing workflow' searches. Product-Channel Fit is established via content/SEO.
+With a market that could plausibly support the model, they move into stage one properly and set an exit criterion: retention that flattens for a named set of pilot teams. Only once that holds do they choose a channel, and because the buyers are teams with a budget, they plan an inside sales motion fed by content.
 
-**Fit 3 — Channel-Business Model Fit:** Content/SEO has near-zero marginal acquisition cost but long time-to-convert (3-6 months). At $49/month with 18-month average retention, LTV is ~$882. CAC through content is approximately $80 (writer costs amortized). LTV:CAC ratio is ~11:1—strong. The team validates that this channel supports their subscription model.
-
-**Fit 4 — Business Model-Market Fit:** There are approximately 120,000 marketing agencies in the US with 5-20 employees. At $49/month, a 5% penetration rate yields $35M ARR—meaningful but not venture-scale. The team decides to expand their market definition to include other professional services firms (design, development, consulting), tripling the TAM. They validate that the billing-project connection resonates across these adjacent segments before expanding.
-
-The loop completes—and the team now has a coherent product market fit framework guiding their next phase of growth.
-
-## Example: Consumer App That Discovers a Sequencing Problem
+## A consumer app that scaled a channel too early
 
 **Scenario:**
 
-A startup builds a habit-tracking app and immediately invests $200K in paid Instagram and TikTok ads. They acquire 50,000 users in 3 months but see 90% churn by Day 30.
+Illustrative scenario: a small team launches a meal planning app and gets an early burst of downloads from a social video that spread widely. They raise money and spend it on paid social ads.
 
 **Walkthrough:**
 
-**The diagnosis:** This team skipped straight to Product-Channel Fit (paid social acquisition) without first establishing Market-Product Fit. The 90% churn rate reveals that the product doesn't deliver enough value to retain users—the market either doesn't need another habit tracker, or this particular implementation doesn't solve the problem well enough.
+Paid installs grow, but most users leave within the first weeks, and the cost per retained user climbs. Looking back at the sequence, the team sees it skipped stage one: it never confirmed which segment kept using the app.
 
-**The correction:** The team pauses paid acquisition entirely. They identify their 5,000 retained users and interview 50 of them. They discover that retained users all share one behavior: they use the app to track medication adherence, not general habits. The team pivots to focus specifically on medication adherence, redesigns the onboarding around this use case, and re-validates Market-Product Fit with a new cohort. Day-30 retention jumps to 45%.
+They pause most of the ad spend and return to Market Product Fit. Interviews and cohort retention show that parents planning weekly family meals stay, while others churn. The team rewrites the market definition around that segment, adjusts the product, and sets a new exit criterion before spending on channels again.
 
-Only then do they return to channel strategy—and discover that paid social isn't ideal for this more specific use case. Instead, partnerships with pharmacies and telehealth platforms prove far more effective. By re-sequencing correctly within their product market fit framework, they avoid burning another $200K on the wrong channel for an unvalidated product.
+## A developer product that looped back through the model
+
+**Scenario:**
+
+Illustrative scenario: a developer tool has strong adoption among individual engineers through a free tier and word of mouth. The team adds a paid plan priced per seat for teams.
+
+**Walkthrough:**
+
+Stage one and the viral channel are working. The model is the problem: few teams convert, because the per-seat price sits between what individuals pay on their own and what companies expect to discuss with a vendor.
+
+The team treats this as a return to stage two. They test a usage-based team plan that individuals can start on a card, and a separate annual plan for larger companies with a small sales effort. Each option is checked against the channel that brings users in, and the team re-runs the Model Market Fit estimate with the new pricing before committing.

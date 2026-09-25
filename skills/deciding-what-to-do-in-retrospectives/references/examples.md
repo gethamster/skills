@@ -1,40 +1,37 @@
-# Examples: Deciding What to Do: Prioritizing Retrospective Action Items
+# Examples: Decide What to Do in a Retrospective
 
-## Example: A Backend Team Prioritizes After a Painful Deploy
-
-**Scenario:**
-
-A backend team of 6 has just completed the 'Generate Insights' phase and has 8 improvement ideas on the board, ranging from 'automate database migration scripts' to 'pair program more often' to 'get the PM to write clearer acceptance criteria.' The facilitator has 15 minutes to guide the team through deciding what to do.
-
-**Walkthrough:**
-
-The facilitator first clusters the 8 items, finding that 'automate DB migrations' and 'add rollback scripts' are related — she groups them under 'Deploy Safety.' This leaves 7 distinct clusters.
-
-She gives each person 3 dot votes. Results: 'Deploy Safety' (9 dots), 'Clearer acceptance criteria' (5 dots), 'Pair programming' (4 dots), everything else (0–2 dots).
-
-She takes the top 3 through the feasibility filter:
-- **Deploy Safety**: Within control? Yes. One sprint? The full automation isn't, but 'write rollback scripts for the 3 most critical migrations' is. Definable done? Yes — scripts exist and have been tested.
-- **Clearer acceptance criteria**: Within control? Partially — it requires PM behavior change. The team reframes it as 'Create an AC template and propose it to the PM by Wednesday.'
-- **Pair programming**: Within control? Yes. But the team realizes they can only realistically commit to 2 items this sprint.
-
-Final commitments:
-1. 'Marcus will write rollback scripts for the auth, billing, and user migrations by end of Sprint 12. Done = scripts in repo and dry-run tested in staging.'
-2. 'Priya will draft an acceptance criteria template by Wednesday and schedule a 15-minute review with the PM. Done = template shared and PM feedback received.'
-
-Pair programming goes to the parking lot. Both owners verbally confirm. The facilitator screenshots the board and posts it to the team Slack channel.
-
-## Example: A Cross-Functional Team Uses the Sprint Retrospective Format with Effort/Impact Matrix
+## Narrowing eight ideas to one action
 
 **Scenario:**
 
-A cross-functional product team is struggling with retrospective follow-through. They've been averaging 5–6 action items per retro and completing only 1. The Scrum Master decides to change the sprint retrospective format for the 'Decide What to Do' phase.
+Illustrative scenario: a team of six leaves the insight phase with two insights and eight candidate improvements on the board. Everyone wants their idea taken forward.
 
 **Walkthrough:**
 
-Instead of simple dot voting, the Scrum Master introduces a 2x2 effort/impact matrix. After the team generates 6 improvement ideas, she draws a grid on the whiteboard: high impact / low effort (top-left), high impact / high effort (top-right), low impact / low effort (bottom-left), low impact / high effort (bottom-right).
+The facilitator gives each person two votes, about a quarter of the candidates, and asks for silent voting on the shared board with votes hidden until everyone is done. Two candidates get most of the votes: "pair on every story that touches the billing service" and "add a checklist to the definition of ready."
 
-The team collaboratively places each item on the grid. Two items land in the 'high impact, low effort' quadrant: 'Add a PR description template to GitHub' and 'Move standup from 9am to 9:30am.' One item — 'Refactor the notification service' — lands in high impact but also high effort.
+She runs a quick control and effort check. Both are within the team's control. The pairing change would take noticeable capacity in a sprint that is already full, so the team chooses the checklist. A developer volunteers to draft it before the next planning meeting, and the team agrees that the next retrospective will check whether stories entered the sprint with acceptance criteria. The pairing idea goes on the improvement backlog.
 
-The Scrum Master proposes committing only to the two quick wins this sprint. The team agrees. For the refactor, they create a spike story: 'Anika will spend 2 hours documenting the current notification service architecture and identifying the smallest valuable refactor. Done = document in Confluence by Friday.'
+## Turning an outside dependency into a request
 
-This sprint retrospective format shift results in 3/3 action items completed — the team's first 100% completion rate in months. The visible success builds momentum for the next retro.
+**Scenario:**
+
+Illustrative scenario: a team of five agrees that its biggest problem is slow responses from the platform team, which owns the deployment pipeline.
+
+**Walkthrough:**
+
+The facilitator draws three circles for what the team controls, what it can influence and what it can only respond to. The pipeline itself goes in the outer ring. The way the team raises requests goes in the middle, and how the team plans around waiting goes in the center.
+
+The team chooses two actions. The tech lead volunteers to meet the platform team's lead this week and agree a single channel and an expected response time. The team also agrees to raise pipeline requests at the start of the sprint instead of when they become urgent. Both actions go on the team board with the tech lead's name and a check-in date.
+
+## Writing an uncertain change as an experiment
+
+**Scenario:**
+
+Illustrative scenario: a team of seven believes its daily standup runs too long, but people disagree about whether a shorter format would lose useful information.
+
+**Walkthrough:**
+
+Instead of arguing, the facilitator suggests an experiment. The team agrees to try a board-driven standup for one sprint, walking the board from right to left and skipping individual status updates.
+
+They write the action with a hypothesis, an owner and a check: the standup should finish within its timebox on most days, and nobody should report missing information at the next retrospective. The Scrum Master volunteers to track both. At the next retrospective the team will keep, adjust or drop the format based on what it saw.

@@ -1,25 +1,21 @@
-# FAQ: Tracking Developer Sentiment and Problem Evolution Across Sessions
+# FAQ: Tracking Developer Sentiment Across Advisory Sessions
 
-## What tools work best for building a developer sentiment tracking CRM?
+## Do I need a CRM to track developer advisory board members?
 
-Airtable and Notion work well for teams under 50 advisory members because they support relational data, tagging, and filtered views without requiring engineering effort. For larger boards, a lightweight CRM like HubSpot with custom properties works. The tool matters less than consistent usage — pick whatever your team will actually update after every call.
+No. A shared spreadsheet with a member tab and a call tab is enough for a small board, as long as every entry links to its recording and transcript. A research repository tool helps once there are many recordings and several people reading them. The format matters more than the tool: fixed fields, one entry per call.
 
-## How often should I cross-reference advisory data with google search console devtools?
+## What counts as sentiment in a TAB?
 
-Monthly is the right cadence for most teams. Google search console devtools data updates continuously but trends need 30+ days to become meaningful. Align your search data review with your advisory call cycles so you're looking at search signals while the qualitative data is still fresh.
+What the member said about each problem, how strongly they said it, and whether that changed since their last call. Record strength in plain terms, such as mentioned in passing or raised unprompted with a recent story. Keep the member's own words next to it so anyone can check the judgement.
 
-## How many advisory sessions do I need before sentiment trends become reliable?
+## Can I use automated sentiment analysis on the transcripts?
 
-Three sessions per developer is the minimum for meaningful trend data. With fewer than three data points, you can't distinguish a trend from noise. Most teams find that after 4-5 sessions spanning 3-4 months, patterns become clear and actionable.
+You can try it as a helper, but do not rely on it alone. Scaling DevTools host Jack found AI summaries of his TAB calls did not feel accurate and suspected that tone and emotion lost in transcripts were part of the reason. The interviewer's same-day notes capture what the text misses.
 
-## Should I share sentiment tracking data with advisory board members?
+## Who should see the record?
 
-Share aggregated, anonymized trends — never individual scores. Telling your board 'authentication was the top rising pain point this quarter' builds trust and shows you're listening. Sharing individual sentiment scores risks making members feel evaluated rather than consulted, which damages candor.
+Everyone inside the company who needs to learn from members, and nobody outside it. Adam Frankl recommends keeping transcripts confidential inside the company while making sure all founders can see what is happening with every member. Short clips help the wider team listen without watching full recordings.
 
-## How do I handle developers who leave the advisory board mid-cycle?
+## What happens to a member's record after their six months?
 
-Keep their historical data in your tracker — it remains valuable for trend analysis. Tag their profile as 'inactive' with the departure date and reason if known. When onboarding replacements via your [board membership rotation process](https://tryhamster.com/skills/rotating-and-managing-board-membership), try to recruit developers with similar profiles to maintain segment coverage.
-
-## Can google search console devtools data replace advisory board sentiment tracking?
-
-No. Google search console devtools shows what developers search for but not why, how intensely they feel, or what workarounds they've built. Search data is a validation layer for qualitative insights, not a replacement. The highest-confidence signals come from convergence between both data sources.
+Keep it. Add a closing note with their main problems at the start and end and whether they want to hear from you again, and mark them as alumni. Frankl says a surprising number of former members want to pick up the conversation when you come back with something new, and the closing note makes that reconnection easier.

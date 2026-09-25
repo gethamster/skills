@@ -1,25 +1,21 @@
-# FAQ: Building Prioritized Roadmaps from MoSCoW Outputs
+# FAQ: Building a MoSCoW Roadmap for Phased Delivery
 
-## How does MoSCoW in project management help create better roadmaps?
+## Should all Must haves go in the first release?
 
-MoSCoW in project management provides a pre-validated priority framework that directly maps to roadmap phases. Must-haves define your first release, Should-haves populate your second phase, and Could-haves become later enhancements. This priority-driven sequencing ensures your roadmap reflects genuine stakeholder consensus rather than arbitrary ordering.
+No. A project Must has to be delivered before the project ends, but DSDM expects it can be a Should, Could or even Won't have for an early increment if it is not needed yet. Schedule each Must into the increment where the business first needs it. That keeps the first increment's guarantee small enough to be credible.
 
-## What do I do when a Should-have item is a dependency for a Must-have?
+## How do MoSCoW priorities work at different levels?
 
-Promote the Should-have item into the same phase as the Must-have it supports. Dependencies override MoSCoW category when it comes to sequencing. Document why the item was moved so stakeholders understand the phasing logic and don't assume other Should-haves should also be in Phase 1.
+DSDM gives a requirement a priority for the project, for the Project Increment and for the Timebox. The increment priority is set when the increment is planned, and the timebox priority at the start of each timebox. At timebox level most requirements are Won't have for that timebox. Keep the levels in separate fields or lists so one does not overwrite another.
 
-## How many phases should a MoSCoW-based roadmap have?
+## How far ahead should a MoSCoW roadmap go?
 
-Three to four phases works best for most projects. More than four phases creates false precision and becomes hard for stakeholders to track. If you need granularity within a phase, use sub-milestones rather than adding more phases.
+Plan the next increment in detail and keep later increments at the level of objectives and candidate requirements. The DSDM handbook distinguishes a Delivery Plan looking to the end of the project from a Timebox Plan looking only to the end of the current timebox, and warns that detailed plans tend to resist change. A horizon format such as Now, Next and Later suits this.
 
-## Should Won't-have items appear on the roadmap at all?
+## What happens to requirements that were not delivered in an increment?
 
-Yes, include them in a clearly labeled 'Future Considerations' section. This shows stakeholders their items weren't forgotten and provides a formal place to revisit them. Schedule quarterly reviews to re-evaluate Won't-have items as conditions change.
+They are re-prioritized for the next increment. DSDM notes that a Could that missed one increment may become a Won't have for the next, or a Must if its low priority was only because it was not yet needed. Treat them like any other candidate and run them through the same tests.
 
-## How often should I update a roadmap built from MoSCoW outputs?
+## Can a roadmap show dates?
 
-Review and update the roadmap at every phase boundary, after major scope changes, and at minimum quarterly. Use phase transition points as formal decision gates where stakeholders can adjust upcoming phase scope based on what was learned during delivery.
-
-## Can I combine MoSCoW roadmapping with other prioritization frameworks like RICE?
-
-Absolutely. MoSCoW provides the macro-level phasing structure, while frameworks like RICE or WSJF can help sequence items within a phase. For example, use MoSCoW to decide what goes in Phase 2, then use RICE scores to determine the build order within that phase.
+Yes, for the current increment and its timeboxes, which have fixed lengths in DSDM. For later increments, show objectives and possible dates with a clear note that they will be re-prioritized. Label what is guaranteed, since only the current increment's Musts carry a delivery commitment.

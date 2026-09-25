@@ -1,15 +1,20 @@
 ---
-name: setting-wip-limits
-description: "This skill teaches you how to calculate, set, and enforce WIP limits for each stage of your kanban board so work flows smoothly, bottlenecks surface early, and your team stops context-switching between too many items at once."
+name: "setting-wip-limits"
+description: "Setting WIP limits in kanban: choose, enforce and tune work in progress limits per column so bottlenecks surface early and started work gets finished."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: kanban
+  method: "kanban"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Setting and Enforcing Work-in-Progress Limits: How to Use Kanban for Better Flow
+# Setting WIP Limits in Kanban to Reduce Bottlenecks
 
-> This skill teaches you how to calculate, set, and enforce WIP limits for each stage of your kanban board so work flows smoothly, bottlenecks surface early, and your team stops context-switching between too many items at once.
+> Setting WIP limits in kanban: choose, enforce and tune work in progress limits per column so bottlenecks surface early and started work gets finished.
 
 ## Before you start
 
@@ -24,148 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 1-2 hours for initial setup, then 2-4 weeks of tuning |
-| Outcome | Your team completes work faster with less context-switching because each workflow stage has a tested, enforced cap on concurrent items that makes bottlenecks visible the moment they form. |
-| Prerequisites | A working kanban board with defined workflow columns (see designing-kanban-boards), Basic understanding of kanban flow concepts and pull-based systems, Access to historical data on how long items spend in each stage, or willingness to collect it for 1-2 weeks, Authority or team agreement to enforce limits (not just display them) |
+| Time to Learn | An hour to set, a few weeks of observation to tune |
+| Outcome | Your board has written WIP limits and exception rules the team follows, and you adjust them from observed flow. |
+| Prerequisites | A kanban board that reflects the real workflow, agreement from the team to try limits, a way to see how long items sit in each column |
 | Part of | [Kanban](../../methods/kanban/METHOD.md) |
 
 ## Overview
 
-Work-in-progress limits are the single most important mechanism in [Kanban](https://tryhamster.com/methods/kanban). Without them, a kanban board is just a to-do list with columns. WIP limits are the constraint that transforms a passive visualization into an active management system. They cap the number of items allowed in any given workflow stage at any given time, forcing the team to finish existing work before pulling in new work. This simple rule creates a pull system where work flows downstream based on capacity rather than being pushed in based on demand or wishful thinking.
+Setting WIP limits in kanban means deciding the maximum number of work items allowed in a part of the workflow at one time, then treating that number as a rule the team follows. Kanban work in progress limits are the mechanism that turns a board into a pull system. The Kanban Guide requires that team members "explicitly control the number of work items in a workflow from started to finished" and start new work only when there is a clear signal of capacity ([The Kanban Guide](https://kanbanguides.org/english/)). Without that control, a board records work but does not change how it flows. For the wider method, see the [Kanban method page](../../methods/kanban/METHOD.md).
 
-The problem WIP limits solve is deceptively common: teams take on more work than they can actually process. A developer might have six items "in progress," a designer might be juggling four reviews, and a QA analyst might be testing three features simultaneously. Each individual feels busy, but the system is clogged. Items age in queues, context-switching drains productivity, and lead times balloon. Setting WIP limits makes this invisible overload visible and actionable. When a column hits its limit, no new items can enter until something exits. This forces conversations about priorities, surfaces bottlenecks in real time, and creates the productive tension that drives continuous improvement.
+A limit can apply to a column, a group of columns, a swimlane, a person, a work type or the whole system. Kanban University lists all of these as valid places to limit WIP and describes a limit as a policy that prevents starting new work "when downstream capacity is already utilized and unable to complete the work" ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). The right choice depends on where the team loses time. Per-column limits on the active stages make an easy starting point because they are simple to see and discuss.
 
-The concrete artifact you produce when applying this skill is a set of per-column WIP numbers displayed on your board, along with a written enforcement policy the team has agreed to. The WIP numbers themselves are the easy part. The hard part, and the real skill, is choosing the right starting numbers, adjusting them based on flow data, and building the team discipline to respect them when pressure mounts. This skill walks through all three. By the end, your board will have calibrated WIP limits that match your team's actual throughput, and your team will have clear protocols for what happens when a limit is reached. You will see measurable reductions in cycle time and a noticeable decrease in the number of stale items sitting untouched in intermediate columns.
+Limits do two jobs. First, they reduce the number of things each person is juggling, which cuts the cost of switching between them. Second, they make bottlenecks visible: when a downstream column is full, cards pile up upstream, and the team can see exactly where flow stops. That visibility is how kanban bottleneck reduction starts. The response to a full column is to help finish what is in it, which is why limits change behavior as well as numbers.
+
+The skill is mostly about the conversation around the number. A limit nobody respects does nothing, and a limit set without the team's agreement tends to be quietly ignored. The work here is choosing a sensible starting point, agreeing on what happens when a limit is reached, and tuning the limits from what the board shows over the following weeks.
 
 ## How It Works
 
-WIP limits work because of a principle from queuing theory called Little's Law: the average number of items in a system equals the average arrival rate multiplied by the average time each item spends in the system. In plain language, if you want items to move through your board faster (lower cycle time), you have two options: increase throughput capacity or reduce the number of items in the system. Adding capacity is expensive and slow. Reducing WIP is immediate and free. That is why WIP limits are the highest-leverage change you can make to a [Kanban](https://tryhamster.com/methods/kanban) workflow.
+The reasoning behind WIP limits comes from queuing theory. Little's Law, which John Little proved in 1961, states that the average number of items in a queuing system equals their average arrival rate multiplied by the average time each spends in the system ([Little, Little's Law at 50](https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf)). Applied to a stable kanban system, it means that if throughput stays the same, more items in progress means each item takes longer. Capping WIP is the lever the team controls directly.
 
-The mental model is a highway. A highway has a maximum throughput at a specific density of cars. Below that density, adding more cars increases total throughput because there is unused capacity. Above that density, every additional car slows everyone down, throughput drops, and you get gridlock. Your kanban board behaves the same way. There is an optimal number of concurrent items per stage. Below that number, people have idle capacity. Above it, context-switching and handoff delays choke the flow. WIP limits keep you at the productive sweet spot.
+A limit creates the pull signal. When a column holds fewer items than its limit, someone may pull the next item in. When it is at the limit, nobody starts new work there; instead people help move items out, by reviewing, testing, unblocking or pairing. The Kanban Guide says members "should refrain from selecting more than the number of work items into a given part of the workflow beyond the WIP control."
 
-The formula for a starting WIP limit is straightforward: count the number of people who actively work in a given stage, then add a small buffer. The buffer exists because real workflows have natural variation. Sometimes a developer finishes a task and the next one is not quite ready for pull. A buffer of one or two items prevents that developer from sitting idle while still keeping the system constrained. A common starting formula is: WIP limit = (number of workers in that stage × 1) + 1. For a team of three developers, the "Development" column would start with a WIP limit of 4.
+Where you place limits shapes what they reveal. Per-column limits show which stage is the constraint. A limit across several columns, such as development through testing, lets people shift between those stages while still capping total work. A per-person limit protects individuals who serve several teams. A lane for expedited work often carries a limit of its own, so urgent items do not become a way around the system. Kanban University's guide describes an expedite class of service that may pass even when a limit is exhausted, under agreed rules.
 
-Why not just set the limit to the exact number of workers? Because a zero-buffer system assumes perfect synchronization, which does not exist in knowledge work. Items are different sizes, people get pulled into meetings, dependencies create wait states. The small buffer absorbs this variance without opening the floodgates. But the buffer should stay small. A buffer of three or four items per person means you effectively have no limit at all.
+Exceptions must be written down. The Kanban Guide states that "any acceptable exceptions to controlling WIP should be made explicit." A team that allows unlimited exceptions has no limit. A team that allows none may block genuine emergencies. The usual answer is a narrow, visible exception path with its own cap.
 
-WIP limits also serve as a forcing function for systemic improvement. When a column consistently hits its limit, it reveals a bottleneck. The team must then decide: should we add capacity to that stage, simplify the work entering it, or improve the handoff from the upstream stage? Without WIP limits, bottlenecks hide beneath the surface. Work piles up invisibly, and the team compensates by starting more new items upstream, which makes the problem worse. WIP limits make the pain visible and create urgency to address root causes rather than symptoms.
+Tools vary in how they enforce limits. In Jira, column constraints turn the column header red when the maximum is exceeded but do not change how many items are shown ([Atlassian, Configure columns](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/)). GitHub Projects highlights a column over its limit but does not stop people or automations from adding cards ([GitHub Docs, board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)). In both cases, the limit holds only because the team agrees to honor it.
 
-Finally, WIP limits create accountability for the whole team, not just individuals. When the "Code Review" column is full, the developers writing new code are responsible for helping clear the review queue before pulling in new development work. This shared ownership of flow is what separates a kanban team from a group of individuals working in parallel columns.
+Limits are hypotheses. After a few weeks you look at how often each column hit its limit, how long items waited upstream, and whether cycle time moved. A limit that is never reached is too loose to change behavior. A limit that is always hit may be marking a real constraint, which is useful to know before loosening it.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Map your workflow stages and identify who works in each
+### Step 1: Map the stages and who works in each
 
-Before you can set WIP limits, you need a clear picture of which people do work in which columns. Open your kanban board and list every active column that represents real work being done, not waiting states or buffers. For each active column, write down the names or roles of team members who pull items into that column and do the work. If your board has both active and waiting sub-columns (for example, "Development: Active" and "Development: Waiting for Review"), treat the active sub-column as the constrained stage.
+List the active columns on your board and the people who usually work items in each stage. Note which stages are waiting states, such as "Ready for review," and which are active work. Record how many items are in each column today. This gives you a baseline and shows where work is already piling up.
 
-Some people will appear in multiple columns, especially on small teams where a developer also does code review. Note those overlaps because they affect your capacity calculations.
+### Step 2: Choose where to apply limits
 
-> **Pro tip:** If you are unsure whether a column represents active work or a queue, ask: does someone need to take an action for an item to leave this column? If yes, it is an active stage. If items sit here until someone from the next stage pulls them, it is a queue, and you should still limit it but with a different logic.
+Decide whether to limit individual columns, groups of columns, lanes or people. Per-column limits on active stages are the simplest starting point. If people move freely between two stages, consider one limit across both. If an expedite lane exists, give it a small separate limit.
 
-### Step 2: Step 2: Calculate starting WIP limits using the n+1 formula
+### Step 3: Pick starting numbers
 
-For each active column, apply the starting formula: WIP limit = number of people who work in that stage + 1. If three developers work in the "Development" column, set the initial WIP to 4. If two designers handle "Design," set it to 3. For queue or buffer columns between active stages (like "Ready for Review"), set the WIP limit to 1 or 2 items.
+Base each limit on the stage's capacity and treat today's count only as the baseline. A reasonable first guess ties the limit to the number of people working in the stage; for example, a review stage staffed by two people might start with a limit of two. If today's count is far above the new limit, plan to let the column drain rather than moving cards backward. Expect the numbers to change.
 
-Queues should be small because their purpose is to prevent downstream starvation, not to stockpile work. 5 in each stage. A person who splits time between Design and Development contributes half a unit to each column's capacity.
+### Step 4: Write the rules for reaching a limit
 
-> **Pro tip:** If your team has fewer than four people total, consider using a single WIP limit for the entire board (a global WIP limit) rather than per-column limits. Per-column limits on a three-person team can create artificial rigidity because one person often spans multiple stages.
+Before announcing limits, agree on what people do when a column is full: help finish items in that column or downstream, then pull. Write the exception path, who may use it and how many items it allows at once. Decide how blocked items count, and make that rule visible. The Kanban Guide asks that exceptions be explicit, so put them on or beside the board.
 
-### Step 3: Step 3: Write down your enforcement rules before announcing the limits
+### Step 5: Apply the limits and brief the team
 
-WIP limits without enforcement rules are suggestions, and suggestions get ignored under pressure. Before you reveal the numbers to the team, draft a short written policy that answers three questions: What happens when a column reaches its WIP limit? Who is allowed to grant an exception, and under what conditions? How does the team signal that a column is blocked?
+Show each limit at the top of its column and post the rules next to the board. Walk the team through a few scenarios, such as a full review column when a developer finishes a task. Ask for objections now, because a limit the team does not accept will be bypassed. Agree on a date to review the limits together.
 
-For the first question, the default answer should be: "No new items may be pulled into a column that has reached its WIP limit. " For exceptions, designate a single person, usually the team lead or product owner, who can temporarily allow a limit breach with a documented reason. For signaling, use a visual indicator such as turning the column header red or adding a "blocked" tag to the item causing the constraint.
+### Step 6: Observe flow at the limits
 
-> **Pro tip:** Write the enforcement policy as three bullet points, not a page-long document. If people have to look it up, they will not follow it. Pin it next to the board or in the team's chat channel.
+For a few weeks, note each time a column hits its limit and what people did next. Watch for cards piling up in front of a full column, people working around the limits, and items aging in place. A [cumulative flow diagram](../measuring-kanban-flow-metrics/SKILL.md) makes these patterns easy to see.
 
-### Step 4: Step 4: Apply the limits to your board and brief the team
+### Step 7: Adjust one limit at a time
 
-Add the WIP numbers to your kanban board. Most digital tools have a dedicated WIP limit field per column. " Then hold a brief 15-minute team meeting to explain three things: what the numbers mean, what happens when a limit is hit, and why you are doing this (faster delivery, less context-switching, fewer stale items). Be transparent that the starting numbers are estimates and will be adjusted.
+Change the limit where the evidence is clearest, and change only that one so you can see its effect. Tighten a limit that is never reached. For a column that is always full, look at the stage's capacity and policies before raising its limit, because the full column may be the system's real constraint. Record each change and the reason for it.
 
-Ask the team to commit to respecting the limits for a two-week trial period. Do not debate the exact numbers in this meeting because you do not have flow data yet. Promise to revisit and adjust based on evidence.
+### Step 8: Review limits in your regular cadence
 
-> **Pro tip:** Frame WIP limits as a team experiment, not a management mandate. Teams resist limits that feel imposed. Teams rally around limits they helped test and tune.
-
-### Step 5: Step 5: Observe flow for two weeks and record what happens at the limits
-
-For the next two weeks, track every time a column hits its WIP limit. Record the date, which column was full, how long it stayed full, and what the team did in response. Did they swarm to help clear the bottleneck? Did they wait idle?
-
-Did someone override the limit? Also track your basic flow metrics during this period: how many items were completed per week (throughput), how long items took from start to finish (cycle time), and how many items were in progress at any given time (total WIP). You will need this data to make informed adjustments. Pay special attention to columns that never come close to their limit because these are candidates for tightening.
-
-> **Pro tip:** Keep a simple log in a shared spreadsheet with columns: Date, Column Name, Event ("limit hit" / "limit breached" / "swarming occurred"), Notes. This log is your evidence base for the tuning conversation in Step 6.
-
-### Step 6: Step 6: Adjust limits based on observed flow patterns
-
-After two weeks, review your log and flow metrics with the team. Look for four patterns. First, a column that hits its limit frequently while the column downstream is usually empty. This means the bottleneck is real and in the right place, so keep the limit and invest in improving that stage's throughput.
-
-Second, a column that hits its limit but items are aging because they are blocked, not because the team is actively working on the maximum number. This means blocked items are consuming WIP capacity, so add an explicit "blocked" sub-state and consider whether blocked items should count against the limit. Third, a column that never reaches its limit. Tighten it by reducing the WIP by one.
-
-Continue tightening until you feel mild tension. Fourth, a column where the team routinely overrides the limit with justification. Consider whether the limit is too tight or whether the override reasons reveal a process problem to fix. Make one adjustment at a time, wait another one to two weeks, and measure again.
-
-> **Pro tip:** The right WIP limit feels slightly uncomfortable. If the team never bumps up against it, the limit is too generous. If the team is constantly fighting the limit and work stalls completely, the limit is too tight. Aim for the zone where the limit surfaces problems without paralyzing progress.
-
-### Step 7: Step 7: Handle common resistance and exception requests
-
-Within the first month, someone will ask to exceed a WIP limit. This is expected and healthy because it means the limits are working. The correct response is not to refuse outright but to make the cost visible. When someone requests an exception, ask: which of the items currently in progress should we deprioritize or pause to make room?
-
-This forces a priority conversation rather than just adding more work. If a stakeholder or executive pushes for a WIP override, show them the data from your observation log. Explain that adding an item to a full column will slow everything in that column, not just the new item. If they still insist, grant the exception, document it, and track the impact on cycle time.
-
-Over time, the data will show that exceptions consistently increase lead time, which makes the case for limits stronger.
-
-> **Pro tip:** Create a visible "exception count" metric on the board. Teams that track exceptions publicly tend to reduce them naturally because the social visibility creates gentle accountability.
-
-### Step 8: Step 8: Institutionalize limits with regular review cadences
-
-WIP limits are not set-and-forget. As your team size changes, as work types shift, and as process improvements take effect, the optimal WIP limit changes too. Build a WIP limit review into your regular [cadences](https://tryhamster.com/skills/running-kanban-cadences). In your retrospective or service delivery review, look at your cumulative flow diagram to spot where work accumulates.
-
-If a stage's average WIP has drifted well below its limit for several weeks, tighten it. If a stage is constantly at its limit and you have verified the bottleneck is genuine, either invest in that stage's capacity or accept it as the system's constraint and protect it from interruptions. Document any changes to WIP limits and the reasoning behind them. This creates a historical record that helps new team members understand why the limits are set where they are.
-
-> **Pro tip:** A quarterly WIP limit review is sufficient for stable teams. Teams going through significant changes (new members, new product areas, reorganizations) should review monthly until flow stabilizes.
+Make limits a standing item in a retrospective or service delivery review. Check exception use, limit breaches and cycle time trends since the last change. Retire rules nobody needs and write down the ones the team keeps relying on.
 
 ## Best Practices
 
-- Start with limits that feel slightly too tight rather than too loose. A generous limit will never reveal problems because you will never hit it. A tight limit creates productive friction that surfaces bottlenecks and forces the team to collaborate on clearing them. You can always loosen a limit that proves genuinely too tight, but teams rarely voluntarily tighten limits that are too loose because comfort feels like success.
-- Apply WIP limits to the team, not to individuals. Setting a per-person WIP of two items might seem logical, but it defeats the purpose. Kanban WIP limits constrain the system to create flow, and when a column is full, anyone on the team should pitch in to clear it. Per-person limits turn a team system into individual task management and prevent the swarming behavior that makes kanban effective.
-- Make WIP limits physically visible on the board, not buried in tool settings. A WIP limit that you have to click into a settings menu to see will be forgotten within a week. Whether you use a digital or physical board, the limit number should be visible at a glance next to the column name. Many teams use the format "Column Name [3]" or color the column header yellow when it reaches 80% of its limit and red when full.
-- Count blocked items against WIP limits. Teams sometimes argue that a blocked item should not count because "we are not actively working on it." But blocked items consume the team's attention, carry context-switching costs, and occupy space in the workflow. Counting them against the limit creates urgency to unblock them. If blocked items routinely eat up WIP capacity, create a separate "blocked" swim lane and add an explicit escalation policy for unblocking.
-- Set WIP limits on queue columns too, not just active work columns. Unlimited queues between stages defeat the purpose of WIP limits on the active stages. If your "Ready for Development" queue can hold 20 items, then upstream stages will keep feeding it, and developers will cherry-pick easy items instead of pulling the highest priority one. Cap queue columns at one to three items to maintain pull discipline.
-- Never change WIP limits in the middle of a crisis. The temptation to raise the limit when the team is under pressure is strong, but this is exactly the moment when limits provide the most value. The limit is telling you that your system cannot absorb more work at its current capacity. Adding items will make the crisis worse, not better.
-
-Changing limits should be a deliberate, data-informed decision made during a retrospective, not a reactive move during a crunch.
-- Use WIP limits as a conversation starter, not a conversation ender. When someone asks "why can't I start this new item?", the answer is not "because the WIP limit says no." The answer is "because we have four items in progress and finishing any one of them will free up capacity. Which of those four should we focus on first?" Limits should redirect energy toward completion, not create frustration.
+- Start slightly tighter than feels comfortable. A small amount of tension shows where work waits, while a loose limit changes nothing about how the team behaves.
+- Treat a full column as a signal to swarm. When work cannot move downstream, the most useful thing is usually to help finish what is already there.
+- Make exceptions visible and capped. The [Kanban Guide](https://kanbanguides.org/english/) requires acceptable exceptions to be explicit, and a capped expedite lane keeps urgent work from swamping the system.
+- Limit waiting states as well as active ones. Queues such as "Ready for review" hide a lot of delay, and limiting them exposes it.
+- Keep limits where everyone can see them. [Kanban University](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf) typically shows a limit as a number above the column, and a limit only on a settings page is easy to forget.
+- Decide changes from observed flow. Change one limit at a time and watch the effect on cycle time and aging items before changing another.
 
 ## Common Mistakes
 
-- **Setting WIP limits too high to avoid team pushback** — A WIP limit of 10 on a column where five people work is not a limit. It is decoration. This happens because teams negotiate the limit upward until it never triggers. " If that conversation has never happened, your limits are too high.
-
-Lower each column's limit by one every two weeks until the team hits the limit at least twice per week. That is the zone where limits start revealing real flow problems.
-- **Applying WIP limits without enforcement, treating them as guidelines** — Teams often set WIP limits in their tool but then routinely exceed them without discussion. Digital tools typically allow you to add items past the limit with no friction beyond a color change. This creates what practitioners call "decorative WIP limits," numbers on the board that nobody respects. The cause is usually a missing enforcement protocol.
-
-Fix this by requiring that any WIP limit breach be announced in the team's standup or chat channel with a stated reason. Track breaches as a metric. Teams that make breaches visible reduce them by 60-80% within a month because social accountability is a powerful motivator.
-- **Setting a single global WIP limit instead of per-column limits** — A global WIP limit (for example, "no more than 12 items in progress across the whole board") is a useful starting point for very small teams, but for teams of five or more it hides the location of bottlenecks. You might have 12 items total, which sounds fine, but 8 of them could be stuck in code review while the other columns sit empty. Per-column limits make the distribution of work visible. The exception is teams of three or fewer, where per-column limits can create artificial gridlock because one person often spans multiple stages.
-
-For these micro-teams, a global limit of n+1 where n is the team size works better.
-- **Never adjusting WIP limits after the initial setup** — Teams set WIP limits once and treat them as permanent fixtures. But your optimal WIP depends on team size, work type, and process maturity, all of which change. The sign that your limits are stale is that your cycle time has plateaued despite process improvements, or a team member has joined or left without the limits being recalculated. Build a WIP review into your retrospective cycle.
-
-Look at your cumulative flow diagram: if bands are consistently thin and even, your limits are working. If one band is widening steadily, that column's limit may be too high or its throughput is degrading.
-- **Exempting "small" or "quick" items from WIP limits** — Teams often argue that a tiny bug fix or a quick config change should not count against the WIP limit because it will be done in minutes. But small items still consume attention, still require context switches, and still carry risk of expanding scope. Once you allow exceptions for "small" items, the definition of small creeps upward until half the work bypasses the limit. Instead, if truly trivial items are a category, create an explicit expedite lane with its own small WIP limit (typically one item).
-
-Anything that does not qualify for the expedite lane follows normal WIP rules regardless of estimated size.
-- **Focusing WIP limits only on development stages and ignoring upstream columns** — Product teams frequently set WIP limits on "Development" and "Testing" but leave "Backlog Refinement" or "Design" unconstrained. This creates an imbalance where upstream stages overproduce refined or designed items that pile up waiting for development capacity. The result is wasted design effort when priorities change and a false sense of productivity in upstream stages. Apply WIP limits to every active column on the board, from the earliest refinement stage through to the final review before done.
-
-The entire system must be constrained for pull to work end-to-end.
+- **Setting limits from today's overloaded state**: If a column holds a large backlog and you set the limit to match, nothing changes. Set it from the stage's capacity and let the column drain.
+- **Letting managers bypass limits routinely**: Frequent overrides teach the team that limits are optional. Route urgent work through a capped expedite lane with a written policy.
+- **Counting only some work**: Leaving support tickets or side requests off the board makes limits look respected while real WIP stays high. Everything the team works on belongs on the board.
+- **Raising a limit every time it is hit**: A limit that is often reached may be marking the true constraint. Investigate the stage's capacity and policies first.
+- **Relying on the tool to enforce limits**: Tools such as [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout) display limits without blocking cards. Enforcement comes from the team's agreement.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/kanban/METHOD.md) — Kanban
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/kanban/METHOD.md): Kanban
 
 ## Related Skills
 
-- [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
-- [Running Kanban Cadences and Feedback Loops](../running-kanban-cadences/SKILL.md)
-- [Designing Effective Kanban Boards](../designing-kanban-boards/SKILL.md)
+- [Designing Kanban Boards](../designing-kanban-boards/SKILL.md)
+- [Creating Kanban Pull Policies](../creating-kanban-pull-policies/SKILL.md)
 - [Measuring Kanban Flow Metrics](../measuring-kanban-flow-metrics/SKILL.md)
-- [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
-- [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
-- [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
+- [Running Kanban Cadences](../running-kanban-cadences/SKILL.md)
+- [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
+- [Comparing Kanban and Scrum](../comparing-kanban-and-scrum/SKILL.md)
+- [Choosing Kanban Software](../choosing-kanban-tools-and-software/SKILL.md)
+
+## Sources
+
+- [The Kanban Guide](https://kanbanguides.org/english/)
+- [The Official Guide to The Kanban Method (PDF)](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)
+- [John D. C. Little: Little's Law as Viewed on Its 50th Anniversary](https://people.cs.umass.edu/~emery/classes/cmpsci691st/readings/OS/Littles-Law-50-Years-Later.pdf)
+- [Atlassian Support: Configure columns](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/)
+- [GitHub Docs: Customizing the board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)

@@ -1,31 +1,37 @@
 # Examples: Matching Channel to Business Model Fit
 
-## Example: B2B SaaS Tool Discovering a Paid Search Structural Mismatch
+## Paid search for a low-priced tool
 
 **Scenario:**
 
-A project management SaaS tool charges $12/user/month with an average of 5 users per account ($60/month ARPU). Average customer lifetime is 18 months, giving an LTV of $648 at 60% gross margin (LTV = $60 × 0.6 × 18 = $648). The team is spending heavily on Google Ads for keywords like 'project management software' with a CPC of $15 and 2% visitor-to-trial conversion rate, and 15% trial-to-paid conversion rate.
+Illustrative scenario: a self-serve note-taking tool charges a small monthly fee. Most new customers come from paid search, and the blended numbers look acceptable because many customers also arrive through referrals.
 
 **Walkthrough:**
 
-First, calculate the fully-loaded CAC for Google Ads: at $15 CPC, you need 50 clicks per trial (2% conversion), costing $750 per trial. At 15% trial-to-paid, each paying customer costs $750 / 0.15 = $5,000 in ad spend alone. Adding the paid media manager's salary allocation ($2,000/month managing this channel, acquiring ~8 customers/month) brings fully-loaded CAC to roughly $5,250.
+The team splits CAC and customer value by channel. Referral customers cost almost nothing to acquire and retain well. Paid search customers cost several times what they pay back within a year, and they churn faster than referral customers.
 
-The LTV:CAC ratio is $648 / $5,250 = 0.12:1. This is catastrophically negative. Even if the team could 4x their conversion rates through aggressive optimization (an unrealistic best case), CAC would drop to ~$1,312, yielding a 0.49:1 ratio—still deeply unprofitable.
+The team asks whether a well-run search campaign could pay back at this price, and concludes it cannot, because the keywords are contested by larger competitors. The mismatch is structural. They cut search to a small branded budget and move the saved effort into the sharing features that drive referrals.
 
-This is a structural mismatch: competitive paid search for project management software is too expensive for a $60/month ARPU product. The team should redirect budget to channels with lower CAC floors—content marketing targeting long-tail keywords, a product-led viral loop where users invite teammates, or integration partnerships with complementary tools. These channels have cost structures that can produce CAC under $200, making the 3:1 threshold achievable.
-
-## Example: E-commerce Brand Validating Instagram as a Scalable Channel
+## A mid-priced tier drifting into the danger zone
 
 **Scenario:**
 
-A direct-to-consumer skincare brand sells products at $45 average order value with 55% gross margin. Repeat purchase rate is 2.8x per year for returning customers, with an average customer lifetime of 2.5 years. They're currently spending $8,000/month on Instagram ads, acquiring about 200 customers per month.
+Illustrative scenario: a B2B scheduling product has a cheap self-serve plan and wants more revenue per customer. Finance proposes a new middle plan at several times the self-serve price.
 
 **Walkthrough:**
 
-Calculate channel-specific LTV: First-purchase gross margin is $45 × 0.55 = $24.75. Annual revenue per customer after year one: $45 × 2.8 = $126, with $69.30 gross margin. Over 2.5 years (with year one at $45 and 1.5 subsequent years at $126/year): total revenue = $45 + ($126 × 1.5) = $234. Total gross margin LTV = $234 × 0.55 = $128.70.
+Before launch, the team places the proposed price on the ARPU to CAC spectrum. At that price, self-serve buyers hesitate and ask to talk to someone, but the plan does not produce enough revenue to pay for a salesperson's time.
 
-Current CAC: $8,000 / 200 = $40 per customer. LTV:CAC ratio: $128.70 / $40 = 3.2:1. Payback period: $40 CAC / $24.75 first-purchase margin = 1.6 purchases, roughly 7 months. Both metrics are in healthy territory.
+They look at two alternatives: keep the self-serve plan and add paid add-ons, or create a clearly higher team plan with annual contracts that can support a small inside sales motion. They model payback for each, choose the team plan, and write down the channel it depends on so later price changes are checked against it.
 
-Now stress-test at 3x: at $24,000/month, CPMs typically increase 25-30% and conversion rates drop 15-20% as the algorithm targets broader audiences. Modeled CAC at 3x: approximately $58. LTV:CAC drops to 2.2:1 and payback extends to about 10 months. This is marginal but improvable.
+## A consumer brand scaling one social channel
 
-At 10x ($80,000/month): projected CAC of $85, yielding 1.5:1—below the viability threshold. The team should scale Instagram to roughly 4-5x current spend (the point where ratio stays above 3:1) and invest in email/SMS retention marketing to increase LTV rather than pushing the channel past its economic ceiling.
+**Scenario:**
+
+Illustrative scenario: a direct-to-consumer brand acquires most customers through one social platform's ads, with healthy payback at current spend. The plan calls for several times more spend next year.
+
+**Walkthrough:**
+
+The team runs incremental spend tests and sees CAC rise steadily as spend grows, because the most responsive audiences are reached first. At the planned spend, payback would stretch well beyond what the business can fund.
+
+They treat this as a constraint on the plan rather than a tactical problem. The revised plan keeps social spend at the level where payback holds, raises repeat purchase through a subscription option to lift customer value, and tests one additional channel with a separate budget.

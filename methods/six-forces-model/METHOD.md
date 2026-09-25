@@ -1,187 +1,176 @@
 ---
-category: Marketing
+name: "six-forces-model"
+category: "Marketing"
+description: "The six forces model adds complementary products to Porter's five forces, giving teams an industry analysis that shows who grows and who captures value."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# The Six Forces Model: Market Analysis Beyond Porter's Five Forces
+# Six Forces Model: Porter's Five Forces Plus Complements
 
-> Created by **Michael E. Porter** — [https://en.wikipedia.org/wiki/Michael_Porter](https://en.wikipedia.org/wiki/Michael_Porter)
+> Created by **Michael E. Porter, extended by Adam Brandenburger and Barry Nalebuff** - [https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis)
 
 ## Overview
 
-The Six Forces Model is a structural extension of one of the most influential frameworks in business strategy. Michael Porter introduced his Five Forces framework in 1979, published in the Harvard Business Review article "How Competitive Forces Shape Strategy." The original model identified five forces that determine industry profitability: rivalry among existing competitors, the threat of new entrants, the threat of substitute products, the bargaining power of buyers, and the bargaining power of suppliers. For decades, this was the default lens for market analysis. But as industries became more interconnected, especially in technology and platform markets, strategists noticed a gap. The role of complementary products, goods or services that increase the value of your offering when used together, was absent from the model. Andrew Grove, then CEO of Intel, was one of the most vocal proponents of adding a sixth force. In his 1996 book "Only the Paranoid Survive," Grove argued that complementors fundamentally alter industry dynamics in ways the original five forces cannot capture. Adam Brandenburger and Barry Nalebuff formalized similar thinking in their 1996 work "Co-opetition," introducing the concept of the "value net" where complementors sit alongside competitors, customers, and suppliers. The resulting Six Forces Model does not replace Porter's original framework. It layers on top of it. The sixth force, complementary products, captures how adjacent markets and ecosystem partners raise or lower the value of your product. Think of how the availability of quality apps affects demand for smartphones, or how the strength of a consulting ecosystem shapes the adoption of enterprise software. Without analyzing this force, a market analysis can miss the single biggest driver of value creation in platform-based or networked industries.
+The six forces model is an industry analysis that takes Michael Porter's five competitive forces and adds a sixth: complementary products, the goods and services that make your offering more valuable when customers use them together. The [six forces model entry](https://en.wikipedia.org/wiki/Six_forces_model) lists the forces as competition, new entrants, buyers, suppliers, substitutes and complementary products, and describes the model as a way to find the structural drivers of profitability and competition in an industry. It is a competitive analysis framework for one question: how is value created in this industry, and who gets to keep it?
 
-The mental model behind the Six Forces framework is structural. It claims that long-run profitability in any industry is not primarily determined by product quality or operational efficiency, but by the configuration of external forces pressing on every player. Each force acts as a constraint or an enabler. Rivalry compresses margins. New entrants threaten market share. Substitutes cap what you can charge. Buyer and supplier power determine how value is distributed. And complementors, the sixth force, determine how much total value exists to be distributed in the first place. This is the critical insight: complementors can expand the pie, not just change how it is sliced. In industries where complements are strong and abundant, total addressable market grows, buyer willingness to pay increases, and switching costs may rise because customers become locked into an ecosystem, not just a product.
+The first five forces are Porter's. He introduced them in the Harvard Business Review article [How Competitive Forces Shape Strategy](https://hbr.org/1979/03/how-competitive-forces-shape-strategy) in 1979 and restated them in [The Five Competitive Forces That Shape Strategy](https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy) in 2008. His argument is that managers define competition too narrowly. Competition for profits includes established rivals plus four other forces: customers, suppliers, potential entrants and substitute products. Harvard's [Institute for Strategy and Competitiveness](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx) summarizes the claim: the five forces determine an industry's competitive structure and its profitability, and industry structure together with a company's relative position are the two basic drivers of company profitability.
 
-Compared to other strategic frameworks, the Six Forces Model occupies a specific niche. SWOT analysis is broader and more internal, looking at strengths, weaknesses, opportunities, and threats without the structural discipline of force analysis. PESTEL analysis examines macro-environmental factors like political, economic, social, and technological trends, but does not zero in on industry-level competition. The Value Net model from Brandenburger and Nalebuff covers complementors but frames everything through game theory and co-opetition rather than structural forces. The Six Forces Model sits between these, offering a more complete structural view than Porter's original five while remaining more focused and actionable than broader environmental scans. For teams conducting market analysis, it is the right tool when you need to understand how your industry is structured and where profit pools concentrate or leak.
+The sixth force did not come from Porter. According to the [Wikipedia article on Porter's five forces](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis), Adam Brandenburger (Harvard Business School) and Barry Nalebuff (Yale) used game theory in the mid-1990s to add the concept of complementors, also called the sixth force, and the idea that complementors are the sixth force "has often been credited to Andrew Grove, former CEO of Intel Corporation," a line the article marks as needing a citation. Brandenburger and Nalebuff developed the idea in their book Co-opetition, which [Brandenburger's site](https://www.adambrandenburger.com/) dates to 1996. People sometimes search for "Porter's six forces", but the label is misleading, because Porter treats complements as a factor that works through the other five forces.
 
-Since its emergence in the mid-1990s, the Six Forces Model has gained traction particularly in technology strategy, platform economics, and ecosystem-driven markets. The rise of cloud computing, SaaS integrations, app marketplaces, and API-first businesses has made the sixth force more relevant than ever. A company evaluating entry into a market today cannot ignore the state of its complement ecosystem, because in many sectors, the complement landscape determines adoption more than the core product itself. Teams that skip this force risk building products that are technically superior but strategically stranded, lacking the ecosystem support that drives customer acquisition and retention.
+Brandenburger and Nalebuff give the cleanest definition of the new player. In [The Added-Value Theory of Business](https://www.strategy-business.com/article/12669) they write that "A complementor is the opposite of a competitor. It is someone who makes your products and services more rather than less valuable." Their example is Microsoft and Intel, where part of Microsoft's added value comes from the existence of Intel's complementary products. The practical consequence for strategic analysis is that the five forces mostly describe how a fixed pool of value is divided, while complements can change the size of the pool.
 
-The framework benefits strategists, product leaders, investors, and competitive intelligence teams most. It is especially useful for anyone conducting a thorough market analysis before making investment decisions, entering new markets, or re-evaluating competitive positioning. The output is not a score or a ranking but a structural map of where power and value concentrate in your industry, and where they are likely to shift. Hamster provides a workspace where teams can run a Six Forces analysis collaboratively with AI agents, structuring the research, data collection, and synthesis across all six dimensions.
+Complements matter most where a product is useless or weak on its own. Ron Adner's [HBR article on innovation ecosystems](https://hbr.org/2006/04/match-your-innovation-strategy-to-your-innovation-ecosystem) describes high-definition televisions whose technology was ready by the early 1990s, while "critical complements such as studio production equipment, signal compression technologies, and broadcasting standards were not developed or adopted in time." The sets were, in his phrase, "a Ferrari in a world without gasoline or highways." A five forces analysis of that market would have looked at rival TV makers and buyer power and missed the reason adoption stalled.
+
+The model has limits worth stating early. Porter himself disagreed with adding the sixth force: the [six forces model entry](https://en.wikipedia.org/wiki/Six_forces_model) reports his view that complements "are not an additional force that determine the competitive intensity or profitability of an industry, but rather can be seen as a factor that influences the other five forces." The same entry notes a common criticism of the framework: it describes pressure on an industry but does not tell you what to do about it. The steps below close that gap by ending in strategic options. Hamster can hold the scope, evidence and force ratings as shared context, so the next analysis starts from the last one.
+
+The output is a structural map: for each force, a rating backed by evidence, a note on where it is heading, and a short narrative of how the forces combine. That map feeds market entry decisions, partnership strategy, pricing and investment cases. The market research process behind it is ordinary market research (secondary sources, interviews, surveys, filings), organized so that every piece of evidence is attached to a force.
 
 ## Core Principles
 
-### Structure determines profitability, not effort
+### Industry structure sets the ceiling on profits
 
-The core claim of the Six Forces Model is that an industry's structure, not the quality of individual companies within it, is the primary determinant of long-run profitability. A brilliant team in a structurally unattractive industry will struggle more than an average team in a structurally favorable one. When teams skip this principle, they overinvest in execution improvements while ignoring the ceiling imposed by powerful buyers, low switching costs, or intense rivalry. The tradeoff is time: structural analysis takes weeks and requires discipline, but it prevents years of misallocated effort.
+Porter's central claim, as summarized by [Harvard's strategy institute](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx), is that industry structure and a company's relative position are the two basic drivers of profitability. Execution still matters, but it operates under a ceiling set by rivals, buyers, suppliers, entrants and substitutes. A team that ignores structure tends to over-invest in product polish in a market where powerful buyers will take the gains. The analysis tells you which ceiling you are under before you decide how hard to push against it.
 
-### Complements expand or contract total value
+### Complements change the size of the pie
 
-The sixth force exists because complementary products change the size of the value pool, not just how it is divided. Strong complements increase willingness to pay, drive adoption, and raise switching costs. Weak or absent complements can make even a superior product irrelevant. Teams that ignore complements often build products in ecosystem vacuums, launching a hardware device without a software library, or a platform without integrations.
+The five forces describe who captures value. Complements affect how much value exists to capture, which is why [Brandenburger and Nalebuff](https://www.strategy-business.com/article/12669) define a complementor as someone who makes your products more valuable. Strong complements raise willingness to pay and speed adoption. Missing complements can stall a good product, as [Adner's HDTV example](https://hbr.org/2006/04/match-your-innovation-strategy-to-your-innovation-ecosystem) shows. Treat the sixth force as a question about demand and adoption, separate from the questions about margin.
 
-The tradeoff: investing in complement relationships means sharing control and sometimes revenue, but the alternative is a smaller market that you own alone.
+### Complements work through the other forces
 
-### Forces interact, they do not act in isolation
+Porter's objection to the sixth force is useful even if you use the model. He sees complements as a factor that acts on the other five forces, according to the [Wikipedia summary of his view](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis). A dominant complement provider can become a powerful supplier, a complement bundle can raise switching costs and so reduce buyer power, and a complementor that expands its scope can turn into a rival or a substitute. Record these links explicitly instead of scoring the sixth force as if it stood alone.
 
-No single force operates independently. High supplier power combined with low barriers to entry creates a different strategic reality than high supplier power in a consolidated market. The Six Forces Model is most useful when you map interactions between forces, not just score each one in isolation. Teams that treat the model as a checklist, rating each force from one to five and averaging the scores, miss the point entirely.
+### Define the industry narrowly enough to mean something
 
-The power of the framework is in the narrative it produces about how forces combine to shape your specific competitive landscape.
+The five forces analysis is meant for a line of business, where an industry is "a market in which similar or closely related products and/or services are sold to buyers," as the [five forces article](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis) puts it. A scope such as "software" mixes markets with different buyers, rivals and complements, and every rating becomes an average of unlike things. Define the product, customer segment, geography and time horizon first. If the scope feels uncomfortably narrow, run a second analysis at the broader level and compare them.
 
-### Forces are dynamic, not static snapshots
+### Rate each force from evidence
 
-A common mistake is treating a Six Forces analysis as a one-time exercise. Industry structure shifts over time as technology changes, regulation evolves, and new players enter or exit. The threat of substitutes in 2015 may bear no resemblance to the threat in 2025. Teams should revisit their analysis periodically, especially when significant market events occur like major acquisitions, regulatory changes, or the emergence of new technologies.
+Each force has observable indicators: concentration measures such as the [Herfindahl-Hirschman Index](https://www.justice.gov/atr/herfindahl-hirschman-index) for rivalry, switching costs and buyer concentration for buyer power, input differentiation for supplier power, price-performance trends for substitutes, and the health of partner ecosystems for complements. Opinions still enter the analysis, but each one should point to something a colleague could check. A rating with no evidence behind it is a guess, and a guess recorded in a table looks more certain than it is.
 
-The tradeoff is analytical overhead versus strategic relevance. A stale analysis is worse than no analysis because it creates false confidence.
+### Forces interact and change over time
 
-### Seek structural asymmetry, not just attractiveness
+A force rarely matters on its own. High buyer power in a fragmented industry means something different from high buyer power in a concentrated one, and a new substitute can weaken a complement ecosystem at the same time. Structure also shifts as regulation, technology and ownership change; the [strategy institute's summary](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx) notes that changes in regulation can change the intensity of rivalry or affect barriers to entry. Record the direction each force is moving, and revisit the analysis when a trigger event happens.
 
-The goal of the Six Forces analysis is not simply to determine whether an industry is "attractive" or "unattractive." It is to find structural asymmetries, positions where the forces affect you differently than they affect your competitors. A company with proprietary access to a critical supplier faces different supplier power than its competitors. A company with a dominant complement ecosystem faces different substitution threats. The most valuable output of the analysis is identifying these asymmetries and building strategy around defending or exploiting them.
+### Finish with strategic options
 
-### Ground every force assessment in evidence, not intuition
+The criticism that the model "does not provide any actions to help deal with high or low force threats," recorded in the [six forces model entry](https://en.wikipedia.org/wiki/Six_forces_model), is fair when teams stop at the ratings. For each force that works against you, ask how to weaken it, avoid it or position around it. For each force that works for you, ask how to reinforce it. The analysis is finished when it has produced a short list of options with the forces each one addresses.
 
-Each force should be assessed using observable data: buyer concentration ratios, supplier switching costs, patent filings by potential entrants, adoption curves for substitute technologies, and the health of complement ecosystems. Teams that rely on gut feeling often overestimate threats they fear and underestimate forces they do not understand. The discipline of evidence-based assessment is what separates a useful Six Forces analysis from a brainstorming session. It takes longer and requires data collection, but the output is a strategic map you can actually trust.
+## Five Forces, Six Forces and the Value Net
 
-### Use the framework to generate strategic options, not just describe reality
+Three related frameworks cover this ground, and teams often mix them up. The table compares what each one covers and where it comes from.
 
-The purpose of a Six Forces analysis is not to produce a report. It is to generate actionable strategic options. Every force that works against you is a prompt: how can we weaken this force, avoid it, or turn it into an advantage? Every force that works for you is a prompt: how can we reinforce this structural advantage?
+| Framework | Who and when | What it covers | How it treats complements |
+|---|---|---|---|
+| Five forces | Porter, [HBR 1979](https://hbr.org/1979/03/how-competitive-forces-shape-strategy), updated [2008](https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy) | Rivalry, entrants, substitutes, buyer and supplier power | A factor acting on the five, per the [five forces article](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis) |
+| Six forces model | Sixth force proposed in the 1990s, per the [six forces entry](https://en.wikipedia.org/wiki/Six_forces_model) | The five forces plus complementary products | A separate force rated alongside the others |
+| Value Net and co-opetition | Brandenburger and Nalebuff, [HBR 1995](https://hbr.org/1995/07/the-right-game-use-game-theory-to-shape-strategy) and [Co-opetition, 1996](https://www.adambrandenburger.com/) | Customers, suppliers, substitutors and complementors as players in a game | Central: complementors are one of the four player types in the Value Net described in [The Right Game](https://hbr.org/1995/07/the-right-game-use-game-theory-to-shape-strategy) |
 
-Teams that stop at description produce excellent slide decks. Teams that push through to strategy produce competitive advantage. The tradeoff is that prescriptive output requires more senior judgment and debate, but it is where the real value of the exercise lives.
+Use the five forces when complements are minor and the question is about margins. Use the six forces model when adoption depends on products you do not make. Use the Value Net when the decision is about how to cooperate with or bargain against specific players, which is the question Brandenburger and Nalebuff return to in [The Rules of Co-opetition](https://hbr.org/2021/01/the-rules-of-co-opetition).
 
 ## Steps
 
-1. **Step 1: Define the industry boundaries and scope of analysis**
-   Before analyzing any forces, you need to precisely define the industry you are examining. This sounds obvious, but it is where most analyses go wrong. "Software" is not an industry. "Cloud-based project management tools for mid-market B2B companies" is closer to a useful boundary.
+1. **Define the industry and scope**
+   Write down the product category, customer segment, geography and time horizon you are analyzing. Name what is out of scope as well, such as adjacent segments or regions. Check the definition against the line-of-business standard: similar or closely related products sold to the same buyers. If two segments have different buyers or different complements, split them into two analyses. The step is done when a colleague can read the scope and say whether a given company is a rival, a substitute, a complementor or out of scope.
 
-Define the product category, the geographic scope, the customer segments included, and the time horizon you are analyzing. A common mistake is drawing boundaries too broadly, which dilutes every subsequent force assessment because the competitive dynamics differ across segments. You know you have done this well when a colleague can read your scope definition and immediately understand what is included and excluded. One variation: some teams run parallel analyses at different scope levels, for example one at the broad industry level and one at the specific segment level, to see how structural dynamics differ.
+2. **Collect evidence for all six forces**
+   Build an evidence list per force before rating anything. Use secondary sources first (annual reports, industry data, patent and trademark records, analyst coverage) and then fill gaps with primary research such as interviews and short surveys, the split the [SBA's market research guide](https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis) describes. Record the source and date of every item. Mark each force where the evidence is thin so the rating that follows can say so.
 
-2. **Step 2: Assess the intensity of competitive rivalry**
-   Map the existing competitors within your defined industry boundaries and assess how intensely they compete. Look at the number of competitors, their relative size and market share distribution, industry growth rate, product differentiation levels, switching costs, and exit barriers. High rivalry compresses margins because competitors compete on price, features, or service to win the same customers. A common mistake is listing competitors without assessing rivalry intensity.
+3. **Assess rivalry, entrants and substitutes**
+   For rivalry, look at the number and size of competitors, concentration, industry growth, differentiation, switching costs and exit barriers. For new entrants, check the barriers Porter lists, from economies of scale and network effects to capital needs, channel access and government policy. For substitutes, look for products outside your category that meet the same need, and compare their price-performance and trajectory. A substitute that is weaker today but improving fast deserves more attention than a mature one.
 
-" Indicators of high rivalry include frequent price wars, rapid feature matching, high customer churn between competitors, and significant marketing spend as a percentage of revenue. Document evidence for each indicator, not just opinions. You know this step is done well when you can explain not just how intense rivalry is, but what structural factors drive that intensity.
+4. **Assess buyer and supplier power**
+   Segment buyers and suppliers first, since a few large accounts and many small ones face different power balances. For buyers, look at concentration, switching costs, price sensitivity, information availability and the threat of backward integration. For suppliers, look at concentration, how differentiated and critical their inputs are, the availability of substitute inputs and the threat of forward integration. Rate each segment separately, and note which segment drives most of your revenue or cost.
 
-3. **Step 3: Evaluate the threat of new entrants**
-   Assess how easy or difficult it is for new players to enter your industry and compete for the same customers. Key factors include capital requirements, economies of scale, brand loyalty and switching costs, access to distribution channels, regulatory barriers, and proprietary technology or data. High barriers to entry protect incumbents and support higher margins. Low barriers mean that any profitable market will attract new competitors who compress margins over time.
+5. **Map the complementary products force**
+   List the products, services and partners customers rely on to get full value from your offering. For each, judge how necessary it is, how available and good it is, and who controls it. Note complements that are missing or lagging, since they limit adoption, and complementors that are gaining power, since they may later act like suppliers or rivals. The [complementary products force skill](../../skills/mapping-complementary-products-force/SKILL.md) covers the mapping in detail.
 
-A frequent error is underestimating the threat from adjacent markets. New entrants often do not come from startups building the same product from scratch. They come from established companies in adjacent spaces expanding into your market. The rise of vertical SaaS competitors built on horizontal platforms is a classic example.
+6. **Rate each force and record its direction**
+   Give each force a rating on a simple scale, such as low, medium and high, with a written definition of each level. Attach the evidence that justifies the rating and an arrow for where the force is heading over your time horizon. Where the team disagrees, record both positions and the evidence each relies on. Keep the ratings separate; averaging them hides the one force that dominates.
 
-Assess both traditional entry barriers and the likelihood of adjacent-market entry.
-
-4. **Step 4: Analyze the threat of substitutes**
-   Identify products or services outside your industry that solve the same customer problem in a fundamentally different way. Substitutes are not competitors within your category. They are alternatives from outside it. Spreadsheets substituting for project management software.
-
-AI-generated content substituting for human copywriting agencies. Video calls substituting for business travel. Assess the price-performance tradeoff of each substitute, switching costs for customers, and the trend direction. A substitute that is inferior today but improving rapidly is a bigger threat than one that is already mature and stable.
-
-The most dangerous substitutes are those customers do not consciously consider, they just drift toward over time. To assess this well, talk to customers who recently left your category entirely, not just those who switched to a competitor.
-
-5. **Step 5: Assess buyer and supplier bargaining power**
-   Evaluate how much power buyers (your customers) and suppliers (your input providers) have to capture value from the industry. Buyer power is high when buyers are concentrated, purchase in large volumes, face low switching costs, have full price transparency, or can credibly threaten backward integration. Supplier power is high when suppliers are concentrated, offer differentiated inputs, face few substitutes for their product, or can credibly threaten forward integration. Assess each factor with data: what percentage of your revenue comes from your top five customers?
-
-How many viable suppliers exist for your critical inputs? A common mistake is treating "buyers" and "suppliers" as monolithic groups. In practice, different buyer segments and different supplier categories may have very different power levels. Segment your analysis accordingly.
-
-6. **Step 6: Map the complementary products force**
-   This is the force that distinguishes the Six Forces Model from Porter's original framework. Identify the products, services, and platforms that increase the value of your offering when customers use them alongside it. Assess the availability, quality, and trajectory of these complements. Strong complements raise willingness to pay, increase adoption, and can create ecosystem lock-in.
-
-Weak or absent complements limit your market size and make substitution easier. Key questions include: how dependent are customers on complements to get full value from your product? How healthy is the complement ecosystem, is it growing or shrinking? Do you control the complement relationship, or do complement providers have the power?
-
-A critical nuance: complements can shift from allies to threats. A complement provider that grows powerful enough may integrate your functionality into their product, turning a complement into a substitute. Map not just the current state but the trajectory. See the skill page on [mapping the complementary products force](https://tryhamster.com/skills/mapping-complementary-products-force) for detailed techniques.
-
-7. **Step 7: Synthesize forces into a structural narrative and strategic options**
-   Bring the six individual force assessments together into a coherent structural narrative. This is not a summary slide with six scores. It is an analytical story that explains how the forces interact to create the profit landscape you observe. Which forces are the primary constraints on profitability?
-
-Which forces create opportunities? Where are structural asymmetries that specific players can exploit? From this narrative, generate three to five strategic options that address the most critical forces. For each option, articulate what structural dynamic it addresses, what it would require to execute, and what risks it carries.
-
-A common mistake is treating synthesis as averaging. An industry with low rivalry but extremely high buyer power is not "moderate" in attractiveness. The buyer power dominates the story. Synthesis requires judgment about which forces matter most and how they interact.
-
-The skill page on [synthesizing Six Forces into strategic recommendations](https://tryhamster.com/skills/synthesizing-six-forces-into-strategic-recommendations) provides frameworks for this step.
+7. **Synthesize the forces into strategic options**
+   Identify the two or three forces that most constrain or enable profitability and describe how they interact. Look for asymmetries, positions where a force affects you differently from your rivals, since those are where strategy has room to act. Draft a few options that address the dominant forces, each with what it requires and what could go wrong. Set a review date and the trigger events, such as a major acquisition or a regulation change, that would prompt an earlier update.
 
 ## When to Use
 
-- When you are evaluating entry into a new market where platform dynamics and ecosystem health matter as much as direct competition. For example, a SaaS company considering a move into an adjacent vertical where the strength of integration partners, APIs, and complementary tools will determine whether customers adopt your product or stay with incumbents who have richer ecosystems.
-- When your industry is undergoing structural disruption and you need to understand which forces are shifting and in what direction. If new substitutes are emerging from an adjacent technology category, or if supplier consolidation is changing bargaining dynamics, a Six Forces analysis maps where the structural landscape is headed, not just where it stands today.
-- When you have 20 or more potential strategic initiatives competing for resources and need a shared framework for evaluating which market positions are structurally defensible. Instead of debating opinions in a strategy meeting, the Six Forces Model gives the team a common vocabulary and evidence-based criteria for comparing options.
-- When your product's value depends heavily on complementary products and you need to assess the health of your complement ecosystem relative to competitors. This is common in hardware plus software markets, platform businesses, and any industry where customers buy bundles of related products from multiple vendors.
-- When preparing an investment thesis or due diligence analysis and you need to explain why a specific market is structurally attractive or unattractive to stakeholders who may not have deep industry knowledge. The Six Forces Model provides a rigorous, communicable structure that goes beyond revenue projections to explain the underlying dynamics that drive margins.
+- You are deciding whether to enter a market where adoption depends on partners, integrations or content you do not control, because the sixth force is where those dependencies show up.
+- A platform or ecosystem shift is changing your industry, such as a new standard or a dominant marketplace, and you need to see which forces it strengthens and which it weakens.
+- You are building an investment case or due diligence memo and need to explain why margins in a market are structurally high or low, beyond revenue projections.
+- Your team is split on partnership strategy, and a structured view of complementors and their power would ground the debate in evidence.
+- A previous five forces analysis looks stale because complements, such as app stores, integrations or charging networks, now shape demand.
 
 ## When Not to Use
 
-- When you are making a tactical decision that needs to happen this week, like choosing between two ad creatives or setting a short-term price promotion. The Six Forces Model is a structural, strategic-level framework. It takes weeks of data collection and analysis to do well. Applying it to short-cycle tactical decisions wastes time and produces analysis that is too high-level to inform the choice at hand.
-- When your market is so new that none of the forces have stabilized. In genuinely nascent markets where there are fewer than five competitors, no established buyer patterns, and no identifiable complement ecosystem, the Six Forces framework produces vague, speculative output because there is not enough structural data to anchor the analysis. In these cases, discovery-oriented approaches like customer development or lean experimentation are more appropriate.
-- When you need to analyze internal capabilities, culture, or operational efficiency. The Six Forces Model is entirely externally focused. It says nothing about whether your team can execute, whether your technology architecture scales, or whether your organizational design supports your strategy. For internal analysis, frameworks like VRIO or a capabilities audit are better fits.
-- When you are analyzing a highly regulated monopoly or duopoly where government policy, not market structure, determines profitability. In industries like utilities, defense contracting, or government healthcare, the forces that shape profitability are primarily political and regulatory rather than competitive. PESTEL analysis or regulatory mapping will give you more useful output.
-- When the team lacks the discipline or data access to assess each force rigorously and would end up producing a superficial checklist. A poorly executed Six Forces analysis is worse than none because it creates false confidence in conclusions that are not grounded in evidence. If you cannot commit to real data collection for each force, use a lighter-weight tool and be honest about the limitations.
+- The decision is tactical and short-term, such as an ad test or a promotion, because an industry analysis moves too slowly and is too coarse for it.
+- The market is so new that there are few rivals, no settled buyer behavior and no complement ecosystem, because the ratings would be guesses; customer discovery work will teach you more.
+- The question is about your own capabilities, culture or operations, because the six forces model looks only outward at industry structure.
+- You cannot spend time on evidence for each force, because a quick version with gut ratings creates false confidence; a lighter tool used honestly is better.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Selecting Tools and Templates for Six Forces Research](../../skills/selecting-tools-for-six-forces-research/SKILL.md) — How to choose and configure market research tools, visualization software, and scoring templates to streamline and standardize a Six Forces analysis.
-- [Mapping the Complementary Products Force](../../skills/mapping-complementary-products-force/SKILL.md) — How to identify, evaluate, and analyze the sixth force—complementary products and services—that distinguishes the Six Forces Model from Porter's Five Forces.
-- [Collecting Data for a Six Forces Analysis](../../skills/collecting-data-for-six-forces-analysis/SKILL.md) — How to design and execute a structured market research process—including surveys, secondary sources, and industry databases—to populate each of the six forces with reliable data.
-- [Synthesizing Six Forces into Strategic Recommendations](../../skills/synthesizing-six-forces-into-strategic-recommendations/SKILL.md) — How to combine findings from all six forces into a cohesive strategic positioning map that guides investment, partnership, and competitive strategy decisions.
-- [Conducting an Industry Rivalry Assessment](../../skills/conducting-industry-rivalry-assessment/SKILL.md) — How to systematically research and evaluate the intensity of competitive rivalry within an industry using both qualitative and quantitative market research methods.
-- [Evaluating Buyer and Supplier Bargaining Power](../../skills/evaluating-buyer-and-supplier-power/SKILL.md) — How to gather primary and secondary market research data to assess the bargaining power of buyers and suppliers as distinct forces shaping industry profitability.
-- [Assessing Threats of New Entrants and Substitutes](../../skills/assessing-threat-of-new-entrants-and-substitutes/SKILL.md) — How to use consumer market research and competitive intelligence to quantify the threats posed by new market entrants and substitute products or services.
+- [Six Forces Analysis Tools and Scoring Templates](../../skills/selecting-tools-for-six-forces-research/SKILL.md): Choose the research tools, scoring template and visual format that keep every force rated the same way.
+- [Mapping the Complementary Products Force](../../skills/mapping-complementary-products-force/SKILL.md): Inventory complements, rate how necessary and healthy they are, and track who holds power in the ecosystem.
+- [Collecting Six Forces Model Data: A Research Process](../../skills/collecting-data-for-six-forces-analysis/SKILL.md): Plan and run the secondary and primary research that fills an evidence list for each force.
+- [Synthesizing Six Forces into Strategic Recommendations](../../skills/synthesizing-six-forces-into-strategic-recommendations/SKILL.md): Turn six force ratings into a narrative about dominant forces and a short list of strategic options.
+- [Industry Rivalry Assessment Using Qualitative Research](../../skills/conducting-industry-rivalry-assessment/SKILL.md): Rate the intensity of competitive rivalry from market data and qualitative interviews.
+- [Evaluating Buyer and Supplier Bargaining Power](../../skills/evaluating-buyer-and-supplier-power/SKILL.md): Rate buyer and supplier power by segment, using secondary data and primary market research.
+- [Assessing Threats of New Entrants and Substitutes](../../skills/assessing-threat-of-new-entrants-and-substitutes/SKILL.md): Identify likely entrants and substitutes and rate the threat each one poses, using consumer market research.
 
 ## FAQ
 
-**What is the Six Forces Model in simple terms?**
+**What is the six forces model?**
 
-The Six Forces Model is a way to understand why some industries are more profitable than others by examining six external pressures: competition between existing players, the threat of new competitors entering, the threat of customers switching to completely different solutions, how much bargaining power your customers have, how much bargaining power your suppliers have, and how much the availability of complementary products affects your market. It adds that sixth force, complements, to Porter's original Five Forces framework because in many modern industries, especially technology and platform markets, the health of your ecosystem of complementary products determines more about your success than any other single factor.
+It is an industry analysis with six parts: rivalry among existing competitors, the threat of new entrants, the threat of substitutes, buyer power, supplier power, and complementary products. The first five come from Michael Porter's [five forces framework](https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy). The sixth asks how products that customers use alongside yours affect demand and value. The result is a map of where value is created in an industry and who captures it.
 
-**What is the difference between the Six Forces Model and Porter's Five Forces?**
+**Did Michael Porter create the sixth force?**
 
-The only structural difference is the addition of the sixth force: complementary products. Porter's Five Forces examines rivalry, new entrants, substitutes, buyer power, and supplier power. The Six Forces Model adds an explicit analysis of how complementary products and services, things customers use alongside your offering, affect industry dynamics and profitability. This matters most in technology, platform, and ecosystem-driven industries where the strength of complements directly shapes customer adoption, willingness to pay, and switching costs.
+No. Porter created the five forces and has argued that complements are a factor influencing those five rather than a sixth force, as the [six forces model entry](https://en.wikipedia.org/wiki/Six_forces_model) reports. The [five forces article](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis) credits Adam Brandenburger and Barry Nalebuff with adding complementors in the mid-1990s, and notes, in a line it marks as needing a citation, that the sixth-force idea has often been credited to Andrew Grove of Intel. That is why "Porter's six forces" is a misleading name.
 
-If you are in an industry where complements are not significant, the Five Forces framework may be sufficient. If complements matter, the sixth force is not optional.
+**How is the six forces model different from the five forces?**
 
-**Does the Six Forces Model work for small teams and startups?**
+The only structural difference is the complementary products force. The five forces explain how a pool of value is split between a company, its rivals, buyers, suppliers, entrants and substitutes. Complements can change how large that pool is, because they affect whether and how much customers want the product at all. In markets where complements matter little, the five forces are enough.
 
-Yes, but with caveats. Small teams benefit from understanding industry structure before committing resources, because structural headwinds can kill a startup regardless of how good the product is. However, the depth of data collection required for a rigorous Six Forces analysis can be impractical for a three-person team with limited budget. The practical approach for small teams is to run a lighter version: spend one to two days per force using publicly available data, customer interviews, and competitor observation.
+**What is a complementor?**
 
-You will not get the precision of a consulting firm's analysis, but you will identify the one or two forces that most constrain or enable your opportunity, which is enough to make better strategic decisions.
+A complementor is a company whose product makes yours more valuable to a customer who has both. [Brandenburger and Nalebuff](https://www.strategy-business.com/article/12669) call it "the opposite of a competitor," and use Microsoft and Intel as the example. The [Wikipedia definition](https://en.wikipedia.org/wiki/Complementors) stresses adding value to mutual customers. A complementor can also be a competitor in another part of the business, which is the situation co-opetition describes.
 
-**How is the Six Forces Model different from SWOT analysis?**
+**Is the six forces model a type of market research?**
 
-SWOT analysis looks at internal strengths and weaknesses alongside external opportunities and threats. It is broader but less rigorous. The Six Forces Model is purely external and purely structural. " The Six Forces Model is more disciplined because it forces you to assess specific, named forces with evidence, rather than brainstorming open-ended lists.
+It is a framework for structuring market research. The types of market research it draws on are the usual ones: secondary research from filings, industry data and public statistics, and primary research such as interviews, surveys and focus groups, as the [SBA guide](https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis) describes. The model tells you which questions to answer and how to organize the answers by force.
 
-In practice, teams often use both: the Six Forces Model to understand external structure, and a capabilities framework to assess internal readiness. Using SWOT alone risks producing vague outputs that mix internal and external factors without the structural precision needed for strategy.
+**How long does a six forces analysis take?**
 
-**Why does the Six Forces analysis fail in practice?**
+It depends on scope and data access, and no source sets a standard duration. A small team with public data can produce a first version, with gaps marked, fairly quickly; a full analysis with interviews for each force takes longer. The useful rule is to spend time in proportion to the decision: a market entry decision justifies more research than a quick check of a partner's bargaining power.
 
-The most common failure mode is superficiality. Teams treat it as a checklist, spend thirty minutes per force, assign a subjective high/medium/low rating, and produce a diagram that tells them nothing they did not already believe. The framework requires real data collection: customer concentration ratios, patent filing trends, substitute technology adoption curves, complement ecosystem health metrics. Without this evidence, the output is opinions dressed up as analysis.
+**How does it compare with SWOT and PESTEL?**
 
-The second failure mode is treating it as static. Teams produce one analysis, present it, and never revisit it. Industry structure changes, and a Six Forces analysis from eighteen months ago may be dangerously outdated. The third failure is stopping at description.
+SWOT lists internal strengths and weaknesses alongside external opportunities and threats, without a fixed structure for the external part. PESTEL scans political, economic, social, technological, environmental and legal trends across the wider environment. The six forces model sits between them: external like PESTEL, but focused on one industry and its players. Teams often use PESTEL to spot trends and the six forces model to see how those trends change industry structure.
 
-The analysis should generate strategic options, not just a map of the current state.
+**How often should the analysis be updated?**
 
-**How does the Six Forces Model work alongside OKRs and product roadmaps?**
+Revisit it on a schedule that matches how fast the industry moves, and whenever a trigger event happens: a major acquisition, a regulation change, a new platform or standard, or a complementor changing its terms. Keep the dated evidence so the next update can show what moved. A stale analysis is risky because it looks authoritative.
 
-The Six Forces Model operates at the strategic level, informing which markets to play in and what positions to pursue. OKRs and product roadmaps operate at the execution level, defining what to build and measure in the near term. The connection is that your Six Forces analysis should shape which OKRs matter most and which roadmap bets are structurally sound. If your analysis reveals that buyer power is the dominant constraint, your roadmap should prioritize features that increase switching costs, and your OKRs should measure customer lock-in metrics.
+## Sources
 
-If the complement force is weak, your roadmap might prioritize building integrations and partnerships. Run the Six Forces analysis annually or when major market events occur, and use the output to pressure-test your quarterly OKRs and roadmap priorities.
-
-**Can you use the Six Forces Model for a market you have not entered yet?**
-
-Absolutely. In fact, this is one of the framework's strongest use cases. Before entering a new market, you want to understand whether the structural dynamics will allow you to earn attractive returns. A market might have growing demand and excited customers, but if buyer power is extreme, rivalry is intense, and substitutes are abundant, you may never achieve sustainable margins.
-
-The challenge with pre-entry analysis is data access. You will rely more heavily on public data sources, industry reports, expert interviews, and analogies from adjacent markets. Accept that the precision will be lower, but the directional insight, understanding which forces are favorable and which are hostile, is extremely valuable for go/no-go decisions and for shaping your entry strategy to address the most unfavorable forces.
-
-**What industries benefit most from the sixth force, complementary products?**
-
-The sixth force has the most impact in industries where the customer's total experience depends on products from multiple providers working together. Technology platforms are the obvious example: the value of a smartphone is inseparable from its app ecosystem. Enterprise software depends on integrations, consulting partners, and training ecosystems. Gaming hardware depends on game titles.
-
-Electric vehicles depend on charging infrastructure. Financial services increasingly depend on fintech integrations. But complements also matter in less obvious industries. A hotel's value depends on nearby restaurants, attractions, and transportation options.
-
-A coworking space's value depends on the community and services available within it. Any time your customer's experience is shaped by adjacent products you do not control, the sixth force deserves serious analysis.
+- [Michael E. Porter: How Competitive Forces Shape Strategy (HBR, 1979)](https://hbr.org/1979/03/how-competitive-forces-shape-strategy)
+- [Michael E. Porter: The Five Competitive Forces That Shape Strategy (HBR, 2008)](https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy)
+- [Harvard Institute for Strategy and Competitiveness: The Five Forces](https://www.isc.hbs.edu/strategy/business-strategy/Pages/the-five-forces.aspx)
+- [Wikipedia: Six forces model](https://en.wikipedia.org/wiki/Six_forces_model)
+- [Wikipedia: Porter's five forces analysis](https://en.wikipedia.org/wiki/Porter%27s_five_forces_analysis)
+- [Wikipedia: Complementors](https://en.wikipedia.org/wiki/Complementors)
+- [Brandenburger and Nalebuff: The Added-Value Theory of Business](https://www.strategy-business.com/article/12669)
+- [Brandenburger and Nalebuff: The Right Game (HBR, 1995)](https://hbr.org/1995/07/the-right-game-use-game-theory-to-shape-strategy)
+- [Brandenburger and Nalebuff: The Rules of Co-opetition (HBR, 2021)](https://hbr.org/2021/01/the-rules-of-co-opetition)
+- [Adam Brandenburger: books and articles](https://www.adambrandenburger.com/)
+- [Ron Adner: Match Your Innovation Strategy to Your Innovation Ecosystem (HBR, 2006)](https://hbr.org/2006/04/match-your-innovation-strategy-to-your-innovation-ecosystem)
+- [U.S. SBA: Market research and competitive analysis](https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis)
+- [U.S. Department of Justice: Herfindahl-Hirschman Index](https://www.justice.gov/atr/herfindahl-hirschman-index)
 
 ---
 

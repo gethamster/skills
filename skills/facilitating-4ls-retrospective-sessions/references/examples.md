@@ -1,31 +1,43 @@
-# Examples: Facilitating a 4Ls Retrospective Meeting
+# Examples: Facilitating a 4Ls Sprint Retrospective Meeting
 
-## Example: Facilitating a 60-Minute 4Ls Retro for a 6-Person Scrum Team
-
-**Scenario:**
-
-A Scrum Master is facilitating a sprint retrospective meeting at the end of a two-week sprint. The team of six developers and one designer shipped a new checkout flow feature but encountered deployment issues mid-sprint. Morale is mixed — the feature was well-received by users but the deployment stress left people frustrated.
-
-**Walkthrough:**
-
-The facilitator opens with a weather-report check-in: each person picks a weather metaphor for their sprint experience. Results range from 'partly cloudy' to 'thunderstorms clearing up,' which signals mixed emotions that the retro needs to address.
-
-After reviewing last sprint's two action items (one completed, one still in progress), the facilitator sets a 12-minute silent brainstorming timer. The team writes sticky notes on a Miro board across all four quadrants. The guiding prompts are: Liked — 'What went well that we should keep doing?', Learned — 'What new insight did we gain?', Lacked — 'What was missing or held us back?', Longed For — 'What do we wish we had?'
-
-After brainstorming yields 28 total notes, the facilitator moves category by category. In 'Liked,' three people independently noted positive user feedback on the checkout flow, which gets clustered as 'User validation.' In 'Lacked,' four notes cluster around 'Deployment process reliability.' In 'Longed For,' a theme of 'staging environment parity' emerges.
-
-Dot voting with 3 votes each results in 'Deployment process reliability' (11 votes) and 'Staging environment parity' (7 votes) as clear winners. The team crafts two action items: (1) 'Sarah will document the current deployment runbook and identify the three riskiest manual steps — due by Wednesday' and (2) 'Marcus will spike a staging environment config check for 2 story points next sprint.' Both owners restate their commitments aloud.
-
-The meeting closes with a 1-5 rating of the retro itself (average: 4.2) and the facilitator posts a summary in Slack within 20 minutes.
-
-## Example: Recovering a Derailed Sprint Retrospective Meeting
+## A two-week sprint with a rough release
 
 **Scenario:**
 
-Midway through a 4Ls retro, two senior engineers get into a heated debate about a technical decision from the sprint. The conversation has gone off-track for 4 minutes and the rest of the team has gone silent. The facilitator needs to redirect without dismissing anyone's concerns.
+Illustrative scenario: a team of six finishes a two-week sprint in which a feature shipped but the release needed a rollback. The facilitator expects frustration and has one hour.
 
 **Walkthrough:**
 
-The facilitator uses a three-step redirect technique. First, they acknowledge: 'This is clearly an important technical discussion and I can see you both feel strongly about it.' Second, they name the dynamic: 'I want to make sure we capture this as a theme but also hear from everyone else — we're running low on our discussion timebox.' Third, they take concrete action: they write 'Technical decision-making process' as a cluster label on the board, add both engineers' points as sub-notes, and say 'Let's dot-vote on this along with everything else and if it rises to the top, we'll dedicate action-planning time to it.'
+The facilitator opens by stating the scope, reading the Prime Directive and reviewing last sprint's two actions: one done, one still open. A one-word check-in surfaces words like "tired" and "relieved", which confirms the mood. Silent writing runs on a visible timer, and the facilitator keeps the room quiet even when someone starts to talk about the rollback.
 
-This works because it validates the engineers without letting one conversation consume the meeting. The topic did receive the most votes, and the resulting action item was: 'Team will trial a 15-minute architecture decision record (ADR) review before starting implementation on stories over 5 points — Alex to create the ADR template by Friday.' The key facilitation principle: never suppress conflict, channel it into the structure.
+The board fills fastest under Lacked, with several notes about the release checklist. Clustering produces a theme named "release checklist unclear" and a Longed For theme named "rehearsal before release". The facilitator links the two because they describe the same gap. Liked has a strong theme too: "fast help from the platform team during the rollback".
+
+After a silent vote, the team discusses the release theme first and agrees on one action: a named engineer drafts a release checklist and walks the team through it before the next release. A second action protects the Liked theme: the lead thanks the platform team and asks to keep a shared channel open. The meeting closes on time with a short round about the retrospective itself.
+
+## A quiet team that says little
+
+**Scenario:**
+
+Illustrative scenario: a newly formed team of five has had two retrospectives where most people said very little. The facilitator wants more input without forcing anyone.
+
+**Walkthrough:**
+
+Before the meeting, the facilitator adds one concrete prompt under each L on the board, tied to events from the sprint. The session opens with a check-in round where everyone answers a light question, so each person has spoken once early.
+
+Silent writing gets a slightly longer timebox and anonymous notes are turned on. The board ends up with more notes than in previous retrospectives, including a Lacked note about unclear ownership of code reviews. During discussion, the facilitator invites people by name, gently, and does not add opinions of their own.
+
+The team agrees on one action for code review ownership. At the close, two people say anonymous notes made it easier to write honestly, so the facilitator keeps them on for the next retrospective.
+
+## A facilitator who is also the team lead
+
+**Scenario:**
+
+Illustrative scenario: a team lead usually facilitates and suspects people hold back when the topic is workload. They want a fairer session this sprint.
+
+**Walkthrough:**
+
+The lead asks a peer from another team to facilitate and joins as a participant. The guest facilitator explains the change at the start and states that the lead will write notes like everyone else.
+
+Workload shows up as a Lacked theme with several notes, more than in earlier retrospectives. The guest facilitator keeps discussion on conditions rather than people and asks what would change the situation. The team agrees on an action owned by a team member: bring a proposal for limiting work in progress to the next planning session.
+
+The lead notes afterward that rotating facilitation made the topic easier to raise, and the team decides to rotate the role every few sprints.

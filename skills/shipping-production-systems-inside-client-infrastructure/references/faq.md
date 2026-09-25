@@ -1,37 +1,21 @@
 # FAQ: Shipping Production Systems Inside Client Infrastructure
 
-## How do I handle a customer environment where there is no CI/CD pipeline or infrastructure-as-code?
+## Should I ever deploy in my own cloud instead of the customer's?
 
-This happens more often than you would expect, especially with smaller customers or legacy enterprises. Establish a minimal viable deployment pipeline before building your application. Set up a simple CI pipeline that builds, tests, and packages your code, and a basic infrastructure-as-code setup for the components you need. Keep it simple enough that the customer can maintain it.
+Sometimes a short prototype in your own environment is useful for exploring an idea, as long as it uses synthetic or approved data. Production should live where the customer will run it, under their controls and tools. If there is a real reason to host in your environment, such as a managed service your company operates, make that an explicit decision with the customer and log it. Hidden hosting arrangements create surprises at handover.
 
-Frame this work as part of the engagement scope during [mission scoping](https://tryhamster.com/skills/scoping-mission-driven-engagements), not as a surprise addition.
+## What if the customer's tooling is weaker than ours?
 
-## How long should the infrastructure discovery sprint take?
+Use theirs by default anyway, because their team will run the system after you leave. If a gap puts reliability or security at risk, raise it as a decision with the customer, propose the smallest addition that closes the gap, and make sure their team can operate it. Log the choice so the next engineer understands why it exists.
 
-Two to three days for a typical engagement. If the customer has a complex environment with multiple security zones, legacy systems, or multi-cloud infrastructure, budget up to five days. The discovery sprint should never exceed one week because diminishing returns set in quickly. You will discover additional constraints during integration work regardless of how thorough your discovery was.
+## How do I get through the customer's security review faster?
 
-The goal is to catch the big blockers early, not to document every detail.
+Bring the security team in during mapping instead of at the end. Share the data flows, access model and controls you plan to use, and ask which requirements apply. Build those into the thin slice. A review of a design the security team already shaped usually goes faster than one they see for the first time.
 
-## Should I ship the production system before or after completing the handoff runbook?
+## What does a good handover include?
 
-Start the runbook during development and complete it before the production deployment. Writing the runbook after deployment is a common mistake because you are under pressure to move on to the next engagement and details get lost. The deployment procedure itself should be documented in the runbook before you execute it, which forces you to make the process explicit and repeatable. You will update the runbook based on the actual deployment experience and the post-deployment support window.
+Documentation in the customer's systems, runbooks for the failure modes you saw, monitoring and alerts routed to their on-call people, and credentials and schedules owned by their accounts. It also includes a live exercise where their team deploys and handles an alert while you watch. List remaining risks and temporary workarounds with the condition for removing each.
 
-## How do I manage conflicting priorities between moving fast on features and passing the customer's security review?
+## How is this different from normal product deployment?
 
-Submit your architecture for security review during the first week and continue building features in parallel. Structure your work so that security-sensitive components, such as authentication, data storage, and network configuration, are built first and can be reviewed independently. If the security team requests changes, you want those changes to affect foundational components before you have built features on top of them. Treat security requirements as design constraints, not post-build patches.
-
-## What do I do when the customer's existing systems have undocumented behavior that breaks my integration?
-
-This is normal and expected. Build integration adapters with extensive logging at the debug level so you can capture actual request and response payloads during development. When you discover undocumented behavior, document it in your adapter code with comments, add specific test cases for it, and share your findings with the customer's team. Often you will be the first person to formally document how their own systems actually behave.
-
-This documentation becomes part of your handoff artifacts and is one of the most valued contributions a forward deployed engineer makes.
-
-## How do I balance using the customer's tools versus introducing better alternatives?
-
-Default to the customer's tools unless they create a genuine technical blocker for your deployment. 'Better' is subjective and often reflects your familiarity rather than objective superiority. If you must introduce a new tool, choose one the customer has already evaluated or that has strong community adoption in their ecosystem. Propose it with a clear rationale tied to their goals, not yours.
-
-Get buy-in from the team members who will maintain it after you leave. If they are not enthusiastic, find a way to use their existing tools instead.
-
-## Why does my deployment keep failing in the customer's environment when it works in staging?
-
-The most common causes are environment-specific configuration differences that staging does not replicate: different network policies, different resource limits, different secret values, different DNS resolution, or different versions of shared dependencies. Audit the differences between staging and production systematically. Create a checklist of every environment-specific parameter and verify each one matches production requirements. Also check whether staging has the same traffic load, data volume, and concurrent connections as production, since many failures only manifest under realistic conditions.
+The engineering practices are the same: tests, reviews, monitoring, staged releases. The difference is that someone else owns the environment, the tools and the approvals, and you are a guest in it. That shifts effort toward access, coordination and handover. It also means production incidents involve the customer's team, your product team and you at once.

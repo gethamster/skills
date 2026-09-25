@@ -1,25 +1,21 @@
-# FAQ: Building RACE Digital Marketing Planning Templates
+# FAQ: RACE Planning Template
 
-## What is the best customer journey template format for the RACE Framework?
+## Should the template be a spreadsheet or a document?
 
-A spreadsheet (Google Sheets or Excel) with separate tabs for each RACE stage — Reach, Act, Convert, and Engage — plus a summary dashboard tab is the most flexible and widely used format. Each tab should include columns for objectives, channels, tactics, KPIs, targets, owners, budgets, and timelines.
+Use whatever your team already opens every week. Spreadsheets make it easy to total budgets and track KPIs by stage. Documents are easier to read as a narrative plan. Many teams keep the stage tables in a spreadsheet and a short narrative Plan section in a document that links to it.
 
-## How many tactics should I include per RACE stage in my customer journey template?
+## Why include a Plan section if RACE has four stages?
 
-Aim for 3-7 tactics per stage for a focused, executable plan. Fewer than 3 suggests you're underinvesting in that stage; more than 7 typically means you're spreading resources too thin. Prioritize based on expected impact and available resources.
+Smart Insights treats Plan as an initial phase that comes before Reach, Act, Convert and Engage. It holds the audit, objectives and strategy choices that explain why the stage sections contain what they do. Without it, the template becomes a list of tactics with no way to prioritize them.
 
-## Can I use a customer journey template in Notion or Airtable instead of a spreadsheet?
+## How long should the plan cover?
 
-Absolutely. Notion and Airtable offer linked databases, kanban views, and calendar views that can enhance a RACE planning template. The key is maintaining the four-stage RACE structure regardless of tool. Use database properties to tag each tactic with its RACE stage, then create filtered views per stage.
+Smart Insights recommends starting with a 90-day prioritized plan and then building a longer-term annual plan. A short first horizon gets a usable plan live quickly and gives you real results before you commit to a year. Use the same template for both, so they can be compared.
 
-## How often should I update my RACE planning template?
+## Can one template serve several products or markets?
 
-Update tactical statuses weekly, review KPI progress and reallocate budgets monthly, and do a full strategic review of objectives and channel mix quarterly. The template should be a living document — if it's not being edited at least weekly, it's not serving its purpose.
+Yes, if each filled-in copy has a clear scope. Keep the structure identical and create one copy per product or market, then roll the summaries up. Mixing several products in one copy usually makes the KPIs impossible to read.
 
-## How does a RACE customer journey template differ from a regular marketing plan?
+## What if a stage has nothing in it?
 
-A RACE customer journey template explicitly organizes every activity by funnel stage, ensuring balanced coverage across awareness, consideration, conversion, and retention. Traditional marketing plans often organize by channel or campaign, which can create blind spots where entire lifecycle stages are underserved.
-
-## Should my customer journey template include budget breakdowns per RACE stage?
-
-Yes. Allocating budget by RACE stage forces you to make conscious investment decisions about each part of the funnel. A common starting split is 30% Reach, 20% Act, 35% Convert, 15% Engage, but adjust based on your business maturity and current funnel bottlenecks.
+Treat it as a finding. An empty Engage section often means repeat business is left to chance, and an empty Act section often means content is judged only on immediate sales. Decide deliberately whether to fill the gap this period or leave it, and write the decision down.

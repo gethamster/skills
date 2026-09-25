@@ -1,25 +1,21 @@
-# FAQ: Connecting Your North Star Metric to Product Roadmap Decisions
+# FAQ: Connecting Your North Star Metric to the Product Roadmap
 
-## How do I prioritize product roadmap items when multiple initiatives have similar North Star impact scores?
+## Does every roadmap item have to map to an input metric?
 
-When composite scores are close, use tiebreakers: prefer higher-confidence initiatives over speculative ones, favor lower-effort items for faster learning, and consider which input metric is most constrained. You can also sequence tied items as an A/B test or run the lower-effort one first to free capacity.
+Most should. Items that cannot be linked to any input are either missing an input on the map or are not valuable, as Amplitude's roadmap check points out. The exception is supporting work such as security, reliability and compliance, which protects the North Star indirectly. Label it clearly and give it an explicit budget so it neither hides in other estimates nor gets squeezed out.
 
-## What if a critical product roadmap initiative doesn't connect to any input metric?
+## Can we keep using RICE or another scoring model?
 
-Some work — compliance, infrastructure, security — is genuinely non-metric-driven. Acknowledge this openly and allocate a fixed percentage of capacity (typically 15-25%) for foundational work. Don't force-fit these items into input metric scoring, as it undermines the framework's credibility.
+Yes. The North Star gives the scoring model a shared definition of impact: the expected effect on a named input, weighted by that input's link to the North Star. Reach, confidence and effort work as before. The main change is that every team scores impact against the same map.
 
-## How often should I re-prioritize my product roadmap using North Star input metrics?
+## How does this work with OKRs?
 
-Run a full re-scoring at least quarterly, aligned with your planning cycle. Do lightweight check-ins monthly to see if input metric trends have shifted dramatically. If an input metric suddenly declines, it may warrant an ad-hoc reprioritization rather than waiting for the next quarter.
+Amplitude's playbook suggests framing OKRs as the impact that opportunity-level bets will have on one or more inputs. That keeps quarterly goals tied to the input map. It also warns against packing a quarter with deliverables instead of outcomes, and against holding on to a quarterly goal that no longer makes sense.
 
-## Can I use this approach alongside RICE, ICE, or other prioritization frameworks?
+## What if the North Star changes mid-year?
 
-Yes — the North Star connection layer is complementary, not competing. Use input metric mapping as the 'Impact' dimension within RICE or ICE. This makes the impact score specific and measurable rather than subjective. The rest of the framework (confidence, effort, reach) works as usual.
+Remap the roadmap to the new inputs as soon as the new map is published. Some items will still fit, some will need new expected effects, and some will lose their reason to exist. Treat the remapping as a planning event with the same rigor as the original one, and tell stakeholders which commitments changed and why.
 
-## How do I get stakeholder buy-in for a metric-driven product roadmap?
+## How long should we wait before judging whether an item worked?
 
-Transparency is your strongest tool. Share the scoring criteria before the exercise, invite stakeholders to score alongside you, and make the spreadsheet visible. When people can see the reasoning — and can challenge specific scores rather than just the outcome — trust builds quickly, even when their preferred initiative gets deprioritized.
-
-## What's the difference between using a North Star Metric and OKRs to drive product roadmap decisions?
-
-OKRs typically reset quarterly and can drift across cycles. A North Star Metric provides a persistent strategic anchor that remains stable across quarters, while OKRs can operationalize specific input metric targets within each cycle. The two work well together: your OKRs target specific input metric improvements, which in turn drive the North Star.
+Set the check date when you plan the item, based on how quickly the input can respond. A change to onboarding may show up in activation within weeks, while a change aimed at retention needs longer. Checking too early produces false misses, and never checking produces no learning.

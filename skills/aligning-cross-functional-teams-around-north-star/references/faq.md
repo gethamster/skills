@@ -1,25 +1,21 @@
-# FAQ: Aligning Cross-Functional Teams Around a Shared North Star
+# FAQ: Aligning Cross-Functional Teams Around a North Star
 
-## How do you align cross functional teams when they report to different leaders?
+## How is this different from running a North Star workshop?
 
-Start by getting executive alignment—every leader must publicly endorse the North Star Metric and agree that their team's input metrics ladder up to it. Then create a shared dashboard and regular cross-functional rituals where teams present progress in North Star terms. The metric becomes the common language that transcends org chart boundaries.
+A workshop produces the North Star and its first input map. Alignment is what happens afterwards: assigning inputs to teams, translating the metric for each function, building it into planning and reviews, and checking that it holds. A team can run a good workshop and still let the metric fade if the second part never happens.
 
-## How many input metrics should cross functional teams track in a North Star framework?
+## What should each function's goal look like?
 
-Keep the total across all teams to 5-8 input metrics, with each team owning no more than 2-3. More than that dilutes focus and makes the causal relationship between inputs and the North Star impossible to track. If you have too many, consolidate or identify which ones have the strongest causal link.
+Ideally an input metric, or a clear contribution to one, stated in the function's own terms. For marketing that might be new customers who reach the value moment rather than raw leads. For support it might be customers who stay active after a support contact. Health metrics such as response times can stay, as long as they do not conflict with the input.
 
-## What if a cross functional team doesn't believe the North Star Metric is relevant to their work?
+## Who should sponsor the rollout?
 
-This usually signals a narrative problem, not a structural one. Work with that team to map the specific causal chain from their daily activities to an input metric to the North Star. If you genuinely cannot draw that chain, either the team's work needs strategic re-examination or the North Star Metric may be too narrow.
+Someone with influence and authority across functions, usually the CEO or a senior product or operating leader. Amplitude's playbook lists a sponsor with both influence and authority first among the traits of teams that stuck with the framework. Without one, functions that disagree with the metric can quietly keep their old targets.
 
-## How long does it take to align cross functional teams around a North Star Metric?
+## How do we handle a team whose work does not map to any input?
 
-Expect 2-4 weeks for the initial rollout (audit, workshop, metric formalization, dashboard setup) and at least one full quarter before alignment feels natural in daily work. True cultural embedding—where teams reflexively frame decisions in North Star terms—typically takes 2-3 quarters of consistent reinforcement.
+First check whether the input map is missing something that team affects. If it is, add the input. If the work is genuinely supporting work, such as security or finance operations, recognize it as such and give it health metrics instead of forcing a link. Forced links make the map less credible to everyone.
 
-## Should cross functional teams have their own dashboards or share one North Star dashboard?
+## How do we know alignment is working?
 
-Both. Create one shared dashboard showing the North Star and all input metrics for cross-functional visibility. Then let each team maintain their own operational dashboard with more granular metrics. The shared dashboard creates alignment; team dashboards enable execution. See Building Dashboards to Track Your North Star and Input Metrics for details.
-
-## How do you prevent the North Star from being gamed by cross functional teams?
-
-Pair the North Star with 2-3 guardrail metrics that catch gaming behavior (e.g., if your North Star is 'Weekly Active Users,' track retention and session quality as guardrails). Also, require teams to present the reasoning behind metric movements, not just the numbers—stories are harder to game than dashboards.
+Look for the signals Amplitude's playbook lists: team members can explain how their daily work connects to the North Star, non-product colleagues use words like "inputs" and "our North Star," people say no more easily and with more evidence, and debates move toward impact and experiments. A short quarterly survey asking people to name their input gives a simple measure.

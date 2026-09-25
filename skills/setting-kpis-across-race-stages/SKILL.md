@@ -1,15 +1,20 @@
 ---
-name: setting-kpis-across-race-stages
-description: "This skill teaches you how to define measurable objectives and key performance indicators for each RACE stage—Reach, Act, Convert, and Engage—so you can quantify performance across the entire customer journey."
+name: "setting-kpis-across-race-stages"
+description: "Set RACE framework KPIs: pick a few metrics for each of Reach, Act, Convert and Engage, record baselines, and set targets tied to SMART objectives."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: race-framework
+  method: "race-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Setting KPIs and Metrics Across Each RACE Stage for Customer Journey Analysis
+# RACE Framework KPIs: Setting Metrics for Each Stage
 
-> This skill teaches you how to define measurable objectives and key performance indicators for each RACE stage—Reach, Act, Convert, and Engage—so you can quantify performance across the entire customer journey.
+> Set RACE framework KPIs: pick a few metrics for each of Reach, Act, Convert and Engage, record baselines, and set targets tied to SMART objectives.
 
 ## Before you start
 
@@ -24,122 +29,110 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You will have a complete, measurable KPI framework mapped to each RACE stage, enabling data-driven decision-making and continuous optimization of your customer journey. |
-| Prerequisites | Basic understanding of the RACE Framework and its four stages, Familiarity with digital marketing metrics (CTR, CPA, LTV, etc.), Access to web analytics tools (Google Analytics, CRM, or similar), Mapping Customer Journey Stages to the RACE Funnel |
+| Time to Learn | A few hours, plus one review cycle to calibrate |
+| Outcome | You have a short KPI set for each RACE stage, each with a baseline, a target, a date, an owner and a data source. |
+| Prerequisites | Agreed business objectives, access to web analytics and the CRM, a rough map of your customer journey |
 | Part of | [RACE Framework](../../methods/race-framework/METHOD.md) |
 
 ## Overview
 
-Effective digital marketing requires more than setting vague goals like 'increase traffic' or 'get more sales.' The RACE Framework—Reach, Act, Convert, Engage—gives you a structured funnel, but without stage-specific KPIs, you're flying blind. Setting KPIs and metrics across each RACE stage transforms your customer journey analysis from guesswork into a rigorous, measurable practice.
+RACE framework KPIs are the measures that tell you whether each stage of the funnel is doing its job. The [RACE Framework](../../methods/race-framework/METHOD.md) splits marketing into Reach, Act, Convert and Engage, and Smart Insights says the model defines KPIs that marketers should include at each stage for setting targets, reviewing results in analytics and dashboards, and optimizing ([Smart Insights: The RACE Framework](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/)). This skill turns that principle into a working KPI set.
 
-This skill teaches you to identify the right metrics for each funnel stage, set realistic targets based on historical benchmarks, and connect individual KPIs to overarching business objectives. Whether you're running a startup's first paid campaign or managing enterprise-level multi-channel programs, aligning KPIs to the RACE model ensures every team member knows what success looks like at each stage of the customer lifecycle.
+The discipline is to keep the set small. Smart Insights' own [RACE dashboard](https://www.smartinsights.com/guides/race-digital-marketing-dashboard/) reports on just four metrics for each of Reach, Act, Convert and Engage, reviewed monthly and compared month on month and year on year. A short list forces a choice about what matters for each stage, and a monthly review of a short list ends in decisions rather than a tour of charts.
 
-When KPIs are correctly mapped to the RACE stages, you gain the ability to pinpoint exactly where your funnel leaks, which channels deliver the best ROI at each stage, and how improvements in one stage cascade through to downstream conversion and retention. This is the foundation of professional-grade customer journey analysis.
+Each stage needs different kinds of measure. Reach measures whether the right audience is arriving: visits, audience size and the sources of traffic. Act measures whether visitors do something meaningful: the key interactions and leads that Chaffey suggests setting up as goals in analytics. Convert measures sales, conversion rate and value per sale, online and offline. Engage measures the long-term relationship; Dave Chaffey lists repeat sales, sharing, the percentage of active customers, and customer satisfaction and recommendation ([Chaffey: RACE marketing model](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)).
+
+A metric becomes a KPI only when it is tied to an objective and given a target. The output of this skill is a one-page table: for each stage, the objective it serves, a few KPIs, the current baseline, the target and its date, the owner, and where the number comes from. That table feeds the planning template and the monthly review.
 
 ## How It Works
 
-The RACE Framework divides the customer lifecycle into four stages, and each stage represents a distinct marketing objective. KPIs work by translating those objectives into numbers you can track, compare, and improve.
+Start from objectives rather than from the metrics your tools happen to report. Smart Insights recommends SMART objectives, defined as specific, measurable, actionable, relevant and time-bound, and gives example objectives for each of Plan, Reach, Act, Convert and Engage in its [guide to SMART marketing objectives](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/). Each stage objective then gets the KPIs that show progress toward it.
 
-**Reach** is about building awareness—getting your brand in front of relevant audiences. KPIs here measure volume and visibility: impressions, unique visitors, share of voice. **Act** focuses on encouraging meaningful interactions—getting visitors to engage rather than bounce. Metrics include pages per session, time on site, email sign-ups, and social engagement rates. **Convert** is where value is exchanged—purchases, lead form submissions, or free trial activations. KPIs center on conversion rate, cost per acquisition, average order value, and revenue. **Engage** measures long-term relationship health: repeat purchase rate, customer lifetime value, NPS, and churn rate.
+Pick KPIs by stage:
 
-The conceptual power of this approach lies in the cascade effect. Improving Reach KPIs feeds more prospects into Act; optimizing Act metrics pushes more qualified leads toward Convert; and strengthening Engage KPIs increases the long-term value of every customer acquired. By measuring each stage independently, you can diagnose problems precisely—rather than simply knowing 'revenue is down,' you know whether the issue is awareness, engagement, conversion, or retention. This stage-by-stage customer journey analysis is what separates data-informed marketers from those who optimize blindly.
+| Stage | What to measure | Typical KPIs |
+|---|---|---|
+| Reach | The right audience arriving | Visits by channel, new users, brand searches, paid impressions |
+| Act | Meaningful interaction | Key interactions, leads, email sign-ups, product views |
+| Convert | Sales, online and offline | Conversion rate, sales or qualified opportunities, value per sale, cost per acquisition |
+| Engage | Loyalty and advocacy | Repeat purchase, active customers, satisfaction, recommendation |
+
+In web analytics, Act and Convert KPIs usually come from events. In Google Analytics 4 you create or identify the event that measures an important interaction and then mark it as a key event ([Google Analytics Help: key events](https://support.google.com/analytics/answer/13128484)). Deciding which events count is part of this skill, because it determines what the dashboard will show.
+
+For the recommendation part of Engage, many teams use Net Promoter Score. Bain describes it as a single question, "How likely are you to recommend us to a friend or colleague?", answered on a 0-10 scale, with the score calculated as the percentage of promoters minus the percentage of detractors ([Bain: Measuring your Net Promoter Score](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/)).
+
+Test each candidate KPI before adopting it. The Smart Insights guide adds Andy Neely's measure design tests to SMART, including the "so-what test" (can and will the data be acted upon?) and the gaming test (is the measure likely to encourage undesirable behavior?). Move a KPI that fails the so-what test to a diagnostic report.
+
+Targets come last. Set each one from the baseline and from what the planned tactics can plausibly change, and give each a date. A target with no baseline is a guess, and a target with no date is never missed.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define Business Objectives for Each RACE Stage
+### Step 1: Write one objective per stage
 
-Before selecting metrics, articulate what success means at each stage in business terms. For Reach, your objective might be 'increase brand awareness among our target demographic by 25% this quarter.' For Act, it could be 'increase consideration-stage engagement by improving content interaction rates.' Convert might target 'grow monthly recurring revenue by 15%,' while Engage could aim to 'reduce churn rate below 5% annually.'
+Take the business goals for the period and write one objective for each of Reach, Act, Convert and Engage. Use the SMART test from [Smart Insights](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/) on each one. Check that the four objectives connect: more Reach should feed Act, and so on. If a stage has no objective, decide whether it is truly out of scope this period or has been forgotten.
 
-Write these objectives using the SMART framework (Specific, Measurable, Achievable, Relevant, Time-bound). Each objective should connect directly to a broader business goal—revenue growth, market expansion, or profitability improvement. This alignment ensures your KPIs aren't just marketing vanity metrics but genuine business performance indicators.
+### Step 2: List candidate KPIs for each objective
 
-> **Pro tip:** Involve stakeholders from sales, product, and finance when defining objectives. KPIs that only marketing cares about rarely survive budget reviews.
+For each objective, list every metric that could show progress. Include offline measures where the sale or the relationship happens offline, such as sales calls booked or renewals signed. Mark which candidates you can already collect and which need new tracking. Expect the list to be too long at this point.
 
-### Step 2: Step 2: Select 2-4 Primary KPIs Per Stage
+### Step 3: Cut to a few KPIs per stage
 
-For each RACE stage, choose a small number of primary KPIs that directly measure progress toward your stage objective. Resist the temptation to track everything—focus creates clarity.
+Apply the so-what and gaming tests and keep only the KPIs that would change a decision. Aim for a short set per stage, in the spirit of the four-metric [RACE dashboard](https://www.smartinsights.com/guides/race-digital-marketing-dashboard/). Keep one KPI per stage as the headline and treat the others as supporting. Move the rejected metrics to a diagnostic list for when a headline KPI moves.
 
-**Reach KPIs:** Unique visitors, organic search impressions, social reach, share of voice, branded search volume.
+### Step 4: Define each KPI precisely
 
-**Act KPIs:** Bounce rate (inverse), pages per session, average session duration, email newsletter sign-ups, content downloads, social engagement rate.
+Write a definition for every KPI: the formula, the data source, the date range, and any filters. For Act and Convert, name the analytics events or CRM stages that count, and mark the events as key events where your tool supports it. Two people reading the definition should get the same number. Ambiguous definitions are a common reason stage reviews turn into arguments about data.
 
-**Convert KPIs:** Conversion rate, cost per acquisition (CPA), average order value (AOV), revenue per visitor, lead-to-customer rate.
+### Step 5: Record baselines
 
-**Engage KPIs:** Customer lifetime value (CLV), repeat purchase rate, Net Promoter Score (NPS), email open/click rates for existing customers, churn rate.
+Pull the current value of each KPI over a recent, representative period, and note anything unusual about that period, such as a sale or an outage. Where a KPI is new, record that there is no baseline and plan to set the target after the first full period. Store the baseline next to the definition. Without it, next quarter's review has nothing to compare against.
 
-Select KPIs that you can actually measure with your current analytics stack. A beautiful KPI that requires a data pipeline you don't have is useless.
+### Step 6: Set targets, owners and dates
 
-> **Pro tip:** Distinguish between leading indicators (predictive, like email sign-ups) and lagging indicators (outcome-based, like revenue). Each stage should have at least one of each.
+Set a target and a date for each headline KPI, based on the baseline and the planned tactics. Assign one owner per stage who answers for its KPIs. Check that the targets add up: a Convert target that assumes more leads than the Act target produces cannot be met. Record the reasoning behind each target so it can be revisited.
 
-### Step 3: Step 3: Establish Baselines and Benchmarks
+### Step 7: Put the KPIs on a stage-by-stage dashboard and review monthly
 
-Pull historical data for each selected KPI to establish your current baseline. Look at the last 3-6 months of performance data to account for seasonality and variability. If you're launching a new channel or campaign with no historical data, use industry benchmarks as a starting point.
-
-For example, if your current organic search impressions are 500,000/month (Reach), your bounce rate is 62% (Act), your e-commerce conversion rate is 2.1% (Convert), and your repeat purchase rate is 18% (Engage), these become your baselines. Without baselines, you cannot set meaningful targets or measure improvement.
-
-Document where each data point comes from—Google Analytics, CRM, email platform, ad platforms—so your measurement is reproducible and auditable.
-
-> **Pro tip:** Use median values rather than averages for baselines if your data has outliers (e.g., a viral post inflating one month's reach). Medians give more stable benchmarks.
-
-### Step 4: Step 4: Set Targets Using Incremental Improvement Logic
-
-With baselines in hand, set specific, time-bound targets for each KPI. A common approach is to target 10-20% improvement per quarter for established metrics, and more aggressive targets for new initiatives where low-hanging fruit is abundant.
-
-Use the 'waterfall' method to ensure stage targets are internally consistent: if you plan to increase Reach by 20% (more visitors), your Act stage should be prepared to handle that additional traffic. If your Convert stage conversion rate stays flat, a 20% increase in qualified visitors from Act should translate into roughly 20% more conversions.
-
-Map these targets into a simple table: Stage → KPI → Baseline → Target → Timeline. This becomes your customer journey analysis scorecard.
-
-> **Pro tip:** Set both a target (your goal) and a threshold (the minimum acceptable performance). If a KPI drops below the threshold, it triggers an immediate investigation.
-
-### Step 5: Step 5: Map KPIs to Data Sources and Reporting Tools
-
-For each KPI, document the exact data source, calculation method, and reporting cadence. This eliminates ambiguity and prevents 'metric definition drift' where different team members calculate the same KPI differently.
-
-Create a KPI reference sheet that includes: KPI name, formula (e.g., 'Conversion Rate = Orders / Unique Sessions × 100'), data source (e.g., 'Google Analytics 4 > Conversions report'), reporting frequency (weekly/monthly), and the person responsible for reporting it.
-
-If you're using dashboards (Google Looker Studio, Tableau, or similar), build a single RACE dashboard with one section per stage. Automated reporting saves time and ensures consistency.
-
-> **Pro tip:** Schedule a 15-minute 'data sanity check' each month to verify your tracking is working correctly. Broken UTM tags, missing conversion pixels, or analytics configuration changes can silently corrupt your data.
-
-### Step 6: Step 6: Implement a Review and Optimization Cadence
-
-KPIs are only useful if you act on them. Establish a regular review rhythm: weekly check-ins for campaign-level metrics, monthly deep dives for stage-level performance, and quarterly strategic reviews to reassess targets and objectives.
-
-During monthly reviews, ask three questions per stage: (1) Are we on track to hit the target? (2) What's driving performance up or down? (3) What's the single highest-leverage action we can take next month?
-
-When a KPI consistently exceeds its target, raise the bar. When a KPI consistently underperforms, investigate root causes before simply increasing spend. Often, an Act-stage problem (poor landing page experience) masquerades as a Convert-stage problem (low conversion rate).
-
-> **Pro tip:** Use the RACE funnel as a diagnostic sequence: always troubleshoot from the top of the funnel down. A Convert-stage problem might actually originate in Reach (wrong audience) or Act (poor engagement qualifying bad leads).
+Build a single view with one section per RACE stage and review it on a fixed cadence, monthly for most teams, as Smart Insights does. Compare each KPI with its target and with the same period last year. When a KPI misses, open the diagnostic list for that stage before changing tactics. Revisit the KPI set itself at each planning cycle.
 
 ## Best Practices
 
-- Limit each RACE stage to 2-4 primary KPIs. More than that creates dashboard clutter and dilutes focus—if everything is a priority, nothing is.
-- Always pair volume metrics with quality metrics at each stage. For example, pair 'unique visitors' (volume) with 'percentage of target demographic' (quality) at the Reach stage.
-- Use cohort analysis when measuring Engage-stage KPIs. Aggregate averages hide whether recent customers behave differently from older ones, which is critical for customer journey analysis.
-- Align KPI ownership with team accountability. Each KPI should have a single named owner who is responsible for reporting and improvement, even if multiple people contribute.
-- Revisit and recalibrate KPI targets quarterly. Markets shift, channels mature, and what was ambitious last quarter may be conservative now—or vice versa.
-- Document your KPI definitions in a shared glossary. When someone says 'conversion rate,' does that include assisted conversions? Shared definitions prevent misalignment across teams.
+- Start from objectives. KPIs chosen because a tool reports them tend to measure activity instead of progress, and they rarely survive the so-what test from the [Smart Insights objectives guide](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/).
+- Keep each stage's headline set short. The Smart Insights RACE dashboard uses four metrics per stage, and a short set keeps monthly reviews focused on decisions.
+- Pair a volume KPI with a quality KPI in each stage. Visits without engagement, or leads without conversion, can rise while the business gets worse.
+- Include offline outcomes in Convert and Engage when that is where sales and renewals happen, because Chaffey built offline interaction into RACE ([Chaffey](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)).
+- Write the definition down before the first review. Many disagreements about performance turn out to be disagreements about how a number was calculated.
+- Check that targets chain across stages. A Convert target must be reachable from the Act target and your current conversion rate.
 
 ## Common Mistakes
 
-- **Tracking vanity metrics like total page views or social media followers without connecting them to business outcomes.** — Replace vanity metrics with actionable ones. Instead of 'page views,' track 'unique visitors from target segments.' Instead of 'followers,' track 'social engagement rate' or 'social-driven site visits.' Every KPI should answer: 'If this number improves, does the business measurably benefit?'
-- **Using the same KPIs for every RACE stage, such as tracking conversion rate at the Reach stage.** — Match the metric to the stage's purpose. Reach is about visibility (impressions, reach), not conversion. Applying Convert metrics to Reach creates misleading signals and causes teams to optimize awareness campaigns for the wrong outcome.
-- **Setting targets without historical baselines, leading to either unachievably ambitious or embarrassingly easy goals.** — Always establish a baseline from at least 3 months of historical data before setting targets. If no historical data exists, use industry benchmarks and explicitly label targets as provisional until you have 90 days of your own data.
-- **Treating KPIs as static after initial setup and never revising them as the business, market, or strategy evolves.** — Build a quarterly KPI audit into your marketing calendar. Review whether each KPI is still relevant, whether targets need recalibration, and whether new data sources or tools have made better metrics available.
-- **Siloing RACE-stage KPIs so that each team only sees their own stage, missing cross-stage dependencies and cascade effects.** — Create a unified RACE dashboard that shows all stages together. In reviews, explicitly discuss how upstream changes (e.g., a Reach campaign shift) are impacting downstream metrics (e.g., Convert quality). Customer journey analysis requires a full-funnel view.
+- **Tracking everything**: A dashboard with dozens of metrics per stage hides the few that matter. Cut to a short headline set and keep the rest for diagnosis.
+- **Only measuring Reach and Convert**: Leaving Act and Engage unmeasured removes the two stages that explain why traffic does or does not turn into repeat revenue. Give every stage at least one KPI.
+- **Vanity metrics as headlines**: Impressions or followers can grow while sales fall. Use them only alongside a KPI that shows whether the audience does anything.
+- **Targets without baselines**: A target picked from ambition alone cannot be judged. Record the baseline first, then set the target.
+- **Measures that invite gaming**: A lead-count target with no quality check encourages low-quality leads. Apply Neely's gaming test and pair the KPI with a quality measure.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/race-framework/METHOD.md) — RACE Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/race-framework/METHOD.md): RACE Framework
 
 ## Related Skills
 
-- [Building RACE Digital Marketing Planning Templates](../building-race-planning-templates/SKILL.md)
-- [Mapping Customer Journey Stages to the RACE Funnel](../mapping-customer-journey-stages-to-race/SKILL.md)
-- [Building Awareness in the Reach Stage](../building-awareness-in-the-reach-stage/SKILL.md)
-- [Driving Interactions in the Act (Consideration) Stage](../driving-interactions-in-the-act-stage/SKILL.md)
-- [Optimizing the Full-Funnel Customer Journey with RACE](../optimizing-the-full-funnel-customer-journey/SKILL.md)
-- [Creating Customer Journey Maps Using the RACE Framework](../creating-race-customer-journey-maps/SKILL.md)
-- [Optimizing Conversions in the Convert (Decision) Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
+- [RACE Planning Template: Build a Digital Marketing Plan](../building-race-planning-templates/SKILL.md)
+- [RACE Funnel Mapping: Align Journey Stages to RACE](../mapping-customer-journey-stages-to-race/SKILL.md)
+- [RACE Framework Optimization Across the Full Funnel](../optimizing-the-full-funnel-customer-journey/SKILL.md)
+- [RACE Framework Journey Map: How to Build One](../creating-race-customer-journey-maps/SKILL.md)
+- [Reach Stage: Building Awareness in the RACE Framework](../building-awareness-in-the-reach-stage/SKILL.md)
+- [Act Stage: Driving Interactions in the Consideration Stage](../driving-interactions-in-the-act-stage/SKILL.md)
+- [Convert Stage: Optimizing Conversions at the Decision Stage](../optimizing-conversions-in-the-convert-stage/SKILL.md)
+
+## Sources
+
+- [Smart Insights: The RACE Framework](https://www.smartinsights.com/digital-marketing-strategy/race-a-practical-framework-to-improve-your-digital-marketing/)
+- [Smart Insights: How to define SMART marketing objectives](https://www.smartinsights.com/goal-setting-evaluation/goals-kpis/define-smart-marketing-objectives/)
+- [Smart Insights: RACE digital marketing dashboard](https://www.smartinsights.com/guides/race-digital-marketing-dashboard/)
+- [Dave Chaffey: RACE marketing model](https://www.davechaffey.com/digital-marketing-glossary/race-marketing-planning-model/)
+- [Google Analytics Help: Mark events as key events](https://support.google.com/analytics/answer/13128484)
+- [Bain: Measuring your Net Promoter Score](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/)

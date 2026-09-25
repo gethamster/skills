@@ -1,25 +1,25 @@
-# FAQ: Writing Email Copy Sequences That Drive Action
+# FAQ: Email Copywriting: Writing Sequences That Drive Action
 
-## How many emails should be in a sales or nurture sequence?
+## How many emails should a sequence have?
 
-Most effective nurture sequences are 4-7 emails, while sales sequences typically run 3-5 emails. The right number depends on your audience's decision complexity and your conversion goal. Start with the minimum emails needed to address key benefits, objections, and the final CTA—then add only if data shows drop-off at specific stages.
+As many as the goal needs, with each email doing a distinct job. A welcome sequence might need only a few emails, while a nurture sequence for a long sales cycle might need more. If two emails do the same job, merge or cut one.
 
-## What's the ideal length for email copy in a sequence?
+## How long should each email be?
 
-For most B2B and SaaS sequences, 100-250 words of body copy per email performs best. The goal is one idea communicated clearly, not a comprehensive argument. If you need more words to make your point, you likely need to split the email into two.
+Long enough to do its one job. A transactional or reminder email can be a few lines, while an email that teaches or tells a story needs more room. Keep paragraphs short either way, because most readers scan email on a phone.
 
-## How do I write email subject lines that get opened without being clickbaity?
+## How do I write subject lines that get opened without being clickbait?
 
-Lead with a specific benefit, outcome, or insight the reader will find inside. Use concrete numbers, names, or results when possible. 'How we reduced churn by 34% in one quarter' is clear and compelling without being misleading. Avoid vague curiosity gaps that don't deliver.
+Say plainly what is inside and why it matters to the reader, using their words where you can. Specific, descriptive subject lines set the right expectation, and for commercial email the subject line must accurately reflect the content. Test variations against each other, and judge them by clicks and conversions as well as opens.
 
-## Should I use the same CTA in every email in the sequence?
+## Should every email in a sequence use the same call to action?
 
-Not necessarily. While the sequence should drive toward one ultimate conversion goal, individual CTAs can escalate in commitment level. Early emails might CTA to a resource or quick win, middle emails to a demo or case study, and final emails to the purchase or signup. The key is one CTA per email, all supporting the sequence goal.
+Not necessarily. Each email's call to action should match its job and the reader's readiness at that point. Early emails might ask the reader to use what you sent, and later ones might ask them to buy or book a call. Within one email, keep one primary action.
 
 ## How is email copywriting different from website copywriting?
 
-Email copywriting operates in a more intimate, permission-based context—the reader gave you access to their inbox. This means you can use a more conversational tone, address the reader directly, and build narrative across multiple touchpoints. However, the core principles of clarity, benefit-driven language, and single-focus CTAs apply equally to both.
+The principles are the same: clarity, benefits, customer language and specific calls to action. The differences are the format and the reader's state. Email lands in an inbox the reader did not choose to open at that moment, so the subject line has to earn the open, and the email can build on earlier messages in a way a single web page cannot.
 
-## How do I know if my email sequence is working or needs to be rewritten?
+## How do I know if a sequence is working?
 
-Track three metrics per email: open rate (subject line effectiveness), click rate (body copy + CTA effectiveness), and sequence completion rate (arc effectiveness). If opens are low, rewrite subject lines. If opens are high but clicks are low, the body copy isn't connecting benefit to CTA. If early emails convert but later emails don't, your arc has a gap.
+Measure each email against its job and the whole sequence against its goal. Opens point to subject line problems, clicks to body and button problems, and the goal metric shows whether the sequence works as a whole. Rewrite the weakest email first, then check again.
