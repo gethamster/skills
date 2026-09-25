@@ -1,25 +1,21 @@
 # FAQ: Applying MoSCoW to Project and Software Requirements
 
-## How is MoSCoW requirements prioritization different from using High/Medium/Low priority?
+## Where should MoSCoW categories live?
 
-MoSCoW is anchored to a specific timebox and carries clear definitions—Must-have means the project fails without it, not just that someone thinks it's important. High/Medium/Low is subjective and tends to cluster at the top. MoSCoW also explicitly includes Won't-have, which forces teams to document what's out of scope rather than leaving it ambiguous.
+On the same list that holds the requirements, whether that is a backlog tool, a spreadsheet or DSDM's Prioritised Requirements List. The handbook describes the PRL as the equivalent of a product backlog. Store a category per level (project, increment, timebox), a short rationale and a link to the objective. A separate priority document drifts out of date quickly.
 
-## Can I use MoSCoW requirements prioritization in agile and Scrum workflows?
+## When in the project should requirements be categorized?
 
-Yes. MoSCoW integrates naturally with agile. Use it during backlog refinement to classify stories for the upcoming sprint or release. Must-haves become sprint commitments, Should-haves fill remaining capacity, and Could-haves are stretch goals. Reclassify at each sprint boundary as priorities evolve.
+DSDM sets most priorities during Foundations, before development starts, and then reviews them continually. Categorize for the project first, again when each increment is planned, and again at the start of each timebox. Review unfinished requirements at least at the end of each timebox and increment.
 
-## How many requirements should be Must-haves in MoSCoW?
+## How do non-functional requirements fit into MoSCoW?
 
-Must-haves should consume no more than 60% of your available delivery capacity for the timebox. This leaves buffer for Should-haves, estimation errors, and unforeseen issues. If your Must-haves exceed 60%, either demote some to Should-have or extend your timebox.
+The same tests apply. A security or legal requirement that would make the solution unsafe or illegal to ship is a Must under the DSDM definition. Performance and availability requirements often split well, with a Must threshold and a stricter Should target on the acceptance criteria. Put them on the same list as features so they compete under the same rules.
 
-## What happens to Won't-have requirements after the project ships?
+## How do I handle a new requirement that arrives mid-project?
 
-Won't-have items should be preserved in a visible backlog and explicitly fed into the next planning cycle. They're not rejected—they're deferred. Review them at the start of each new timebox to see if any have become Must-haves or Should-haves given new context.
+Categorize it with the Must tests before work starts. If it is a Must, show which existing items move down so the Must effort stays within the agreed level. DSDM warns specifically against letting new requirements push the Must share up. Record the decision on the list.
 
-## How do I handle stakeholder disagreements during MoSCoW requirements prioritization?
+## Should priorities be set on epics or on stories?
 
-Use objective criteria like business impact, regulatory obligation, and user dependency to resolve disputes. If disagreement persists, the product owner or project sponsor makes the final call. For detailed facilitation techniques, see the related skill on resolving stakeholder priority disputes using MoSCoW.
-
-## Should I use MoSCoW or RICE for requirements prioritization?
-
-MoSCoW is better for scope-based decisions within a fixed timebox, especially when you need stakeholder consensus. RICE is better for quantitative ranking of a large backlog when you have reliable data on reach, impact, confidence, and effort. Many teams use MoSCoW at the release level and RICE for individual story prioritization within a category.
+On the smallest items that can be estimated and tested on their own. A large requirement usually contains parts of different priority, and DSDM treats an everything-is-Must list as a sign of too little breakdown. Categorizing an epic as a single item hides parts that could be deferred.

@@ -1,125 +1,176 @@
 ---
-category: Product
+name: "north-star-metric"
+category: "Product"
+description: "A North Star Metric is the one number that captures the value customers get. Learn to choose it, split it into inputs, and run the business on it."
+metadata:
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# North Star Metric: The Product Manager's Guide to Company-Wide Alignment
+# North Star Metric: How to Choose, Decompose, and Run It
 
-> Created by **Sean Ellis** — [https://www.seancreates.com/](https://www.seancreates.com/)
+> Created by **Sean Ellis** - [https://www.seanellis.me/](https://www.seanellis.me/)
 
 ## Overview
 
-The North Star Metric (NSM) framework is a product management model popularized by Sean Ellis that rallies an entire organization around one defining measure of customer value. Rather than tracking dozens of disconnected KPIs, a product manager identifies the single metric that best reflects the moment customers experience real value from the product — and then cascades every team's goals downward from that beacon. For Spotify, it might be time spent listening; for Airbnb, nights booked. The power lies in its simplicity: one number that everyone from engineering to marketing can understand, influence, and optimize toward.
+A North Star Metric is the single measure a company uses to track whether customers are getting the value its product promises. The definition most often quoted is Sean Ellis's: "the single metric that best captures the core value that your product delivers to customers," as reproduced in [Stream's explainer](https://getstream.io/blog/north-star-metric/), which credits Ellis, founder of GrowthHackers, with coining the term. In a [2018 Intercom interview](https://www.intercom.com/blog/podcasts/sean-ellis-growth/), Ellis put it more simply: the North Star Metric "is really trying to quantify that value over time." This page is about the metric itself: how to choose it, how to break it into inputs teams can move, and how to operate it week to week.
 
-The framework operates on a simple hierarchy. At the top sits the North Star Metric itself — a leading indicator of sustainable revenue that is rooted in customer value, not vanity. Beneath it are three to five input metrics: the levers teams can directly move through product improvements, experiments, and operational changes. This structure gives every product manager a clear line of sight from daily sprint work to long-term product strategy, eliminating the ambiguity that kills alignment in scaling organizations.
+Ellis is a growth practitioner. His [own site](https://www.seanellis.me/) describes him as the first marketer at Dropbox and says he coined "growth hacking" while leading early growth at LogMeIn. He later co-wrote [Hacking Growth](https://www.penguinrandomhouse.com/books/545936/hacking-growth-by-sean-ellis-founder-of-growthhackerscom-and-morgan-brown/) with Morgan Brown, a book about cross-functional growth teams running rapid tests. In the Intercom interview he illustrates the idea with LogMeIn, where the North Star was growing remote control sessions and the team found that [95% of new signups](https://www.intercom.com/blog/podcasts/sean-ellis-growth/) never had a single one. Signups alone hid that gap. Ellis says the business took off only after engineering, product and marketing pulled together on the signup-to-usage rate.
 
-What makes the North Star Metric enduringly relevant is its dual nature. It serves as both a strategic compass and an accountability mechanism. When a product manager faces a roadmap tradeoff — should we invest in onboarding or retention? — the NSM provides an empirical tiebreaker. When leadership asks whether the company is winning, the NSM provides a single, honest answer. And when teams drift into local optimization, the NSM pulls them back to what actually matters: delivering value to customers in a way that drives the business forward.
+The best-known examples are short. Ellis cites Airbnb's nights booked and Facebook's daily active users in the [same interview](https://www.intercom.com/blog/podcasts/sean-ellis-growth/). Nights booked works because it rises only when a guest and a host both get something out of the product. Signups or app installs can rise while nobody books a stay, so they make a weaker North Star. Ellis also separates the North Star from the "one metric that matters" right now: he calls the North Star "a persistent overall success metric," while the one metric that matters is whatever most needs improving right now in order to drive it.
 
-Adopted by growth-stage startups and mature enterprises alike, the North Star Metric framework has become a foundational product manager skill. It intersects with product vision, data analytics, stakeholder management, and agile execution — making it one of the most cross-cutting frameworks in the modern PM toolkit.
+Amplitude's [North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf), co-authored by John Cutler, turns the metric into an operating model. It defines the metric by three qualities: it represents the value users get, it sits within product and marketing's sphere of influence, and it is a leading indicator of revenue. The playbook pairs the metric with a small set of inputs, the factors teams can move with their daily work, and it states the rule that sets the structure: "If you can move your North Star directly, it's probably not a good North Star." Teams work on inputs, and the North Star shows whether that work added up.
+
+Practitioners have since measured how companies apply it. Lenny Rachitsky surveyed people at [over 40 growth-stage companies](https://future.com/north-star-metrics/) for a16z and sorted their North Stars into six categories, from revenue to user experience. He found that revenue was common but warned that it is spiky and hard to make operational, and that about a quarter of the companies had recently changed their North Star or were about to. His summary on [Lenny's Newsletter](https://www.lennysnewsletter.com/p/choosing-your-north-star-metric) is that the North Star Metric is your strategy and your strategy is your North Star Metric.
+
+The method on this page covers the full life of the metric. You identify the moment customers get value, pick the metric that counts it, decompose it into input metrics with owners, put it on a dashboard with a review cadence, tie roadmap decisions to it, check it against what customers actually say, and change it when the strategy changes. The metric is only useful if it keeps being used, so the operating steps carry as much weight as the choice.
+
+A separate page covers the [North Star Framework](https://tryhamster.com/methods/north-star-framework) as a whole, including the workshop format and the product-led organizational model around it. Read that page for how to run the framework as an organizational program. This page stays with the metric: the choice, the decomposition, and the weekly operation.
 
 ## Core Principles
 
-### Customer Value at the Core
+### Measure Delivered Value
 
-The North Star Metric must reflect genuine value delivered to customers, not internal business vanity metrics like raw revenue or page views. A product manager selects a metric that rises when customers are getting what they need — ensuring the company grows by making users successful, not by extracting value from them.
+The metric should rise only when customers get what they came for. Amplitude's checklist opens with "Does it express customer value?" and names daily active users and registered users as weak choices because they say nothing about what customers value ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). A count of completed value moments, such as nights booked or remote control sessions, is harder to inflate. If the metric can go up while customers are unhappy, it measures activity rather than value.
 
-### Leading Indicator of Revenue
+### Lead Revenue Instead of Reporting It
 
-While the NSM is customer-centric, it must also correlate with long-term, sustainable revenue growth. It acts as a leading indicator: if this metric goes up, revenue will follow. This dual requirement prevents teams from choosing feel-good metrics that don't connect to business outcomes.
+A North Star should move before the business result does. The playbook calls monthly recurring revenue and average revenue per user lagging indicators and recommends finding the customer behavior that correlates with renewal instead ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Rachitsky adds that revenue is spiky: at Airbnb it moved with exchange rates, length of stay, and host pricing, so teams tracked nights booked, one level removed ([Choosing Your North Star Metric](https://future.com/north-star-metrics/)). Revenue still matters, and the North Star is the earlier signal of it.
 
-### Measurable and Actionable
+### Work on Inputs
 
-The North Star Metric must be something the organization can actually measure with existing or buildable instrumentation, and teams must be able to influence it through their work. An unmeasurable or uncontrollable metric fails as a coordination tool no matter how conceptually elegant it is.
+The North Star is an outcome, and inputs are the variables teams control. The playbook describes the metric as a dependent variable whose value depends on the inputs and advises never trying to move the North Star directly ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Amazon draws the same line between controllable input metrics and output metrics in its weekly business review ([Commoncog](https://commoncog.com/the-amazon-weekly-business-review/)). A team that argues about the North Star in a sprint review has skipped a level.
 
-### Input Metrics as Levers
+### One Metric per Product and Customer Base
 
-Beneath the North Star sit three to five input metrics that decompose the NSM into actionable components. Each cross-functional team owns one or more input metrics, creating clear accountability. A product manager maps these inputs to ensure complete coverage: if all inputs improve, the North Star must improve.
+Keep one North Star unless you really run separate businesses. The playbook recommends a single metric per product when the team shares one profit and loss statement and one customer base, and lists "insisting you need more than one" among the common traps ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Rachitsky found that companies with more than one usually add a quality metric or run distinct products with different goals ([Choosing Your North Star Metric](https://future.com/north-star-metrics/)). Two competing North Stars bring back the argument the metric was meant to settle.
 
-### Organizational Alignment Over Local Optimization
+### Define It Precisely
 
-The framework's primary purpose is alignment. Every team — product, engineering, design, marketing, support — should be able to articulate how their work connects to the North Star. This shared language eliminates siloed optimization where one team's win is another team's loss.
+A name gets the metric remembered, and a definition gets it measured the same way every week. The playbook's template is "Our North Star Metric is called X, which we define as Y," and its example counts subscribers who share an average of two or more articles a week over the previous twelve weeks ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). The definition fixes the unit, the threshold, and the time window. Without them, two dashboards will show two different numbers under the same name.
 
-### Evolve with the Product Lifecycle
+### Treat It as a Hypothesis
 
-A North Star Metric is not permanent. As a product matures from early traction to growth to retention, the metric that best captures customer value may shift. A skilled product manager revisits and potentially redefines the NSM as the product and market evolve.
+The first version of the metric is a guess about what drives growth. Cutler says in the playbook that a first pass at the North Star "is literally a hypothesis about the levers of growth," and that "powerful ideas imperfectly measured are better than perfect measures for less powerful ideas" ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Check the hypothesis against history, against customer research, and against what happens when inputs move. Keep it, refine it, or replace it based on that evidence.
+
+### Change It When the Strategy Changes
+
+Ellis says the metric should remain consistent over the long term ([StartUs interview](https://magazine.startus.cc/sean-ellis-on-the-backbone-of-successful-growth-teams-the-north-star-metric/)), and companies still change it when their strategy shifts. Amplitude says it changes its own North Star whenever the company makes a significant shift in strategy, and moved to a collaboration metric when it focused on usage within teams ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Change it rarely and deliberately, and treat each change as a strategy decision.
 
 ## Steps
 
-1. **Step 1: Define the Core Value Your Product Delivers**
-   Before selecting a metric, articulate the fundamental value exchange between your product and your customers. A product manager should ask: *What is the moment when a customer gets real value?* For a collaboration tool, it might be when a team completes a project together. For a streaming service, it might be when a user finishes a piece of content they love. Document this value moment precisely — it becomes the foundation for everything that follows.
+1. **Find the value moment**
+   Write down the moments where a customer's time, attention or money is rewarded, which the playbook calls key value exchanges and says most products can narrow to a handful ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Include moments that happen outside the product, such as a package arriving intact. Decide which game the product plays: attention, transaction or productivity. The output is a short list of value moments and one sentence on the game, which the candidate metrics must reflect.
 
-2. **Step 2: Brainstorm Candidate North Star Metrics**
-   Generate a list of five to ten metrics that could represent customer value. Use data analytics and user research to ground your candidates. Good North Stars tend to follow patterns: they measure frequency of value delivery (e.g., weekly active projects), depth of engagement (e.g., messages sent per team), or breadth of adoption (e.g., teams with 3+ active members). Avoid revenue-only metrics or metrics teams cannot influence.
+2. **Generate and screen candidates**
+   List candidate metrics that count those value moments, then ask Rachitsky's question: which metric, if it increased today, would most accelerate the business's flywheel ([Choosing Your North Star Metric](https://future.com/north-star-metrics/))? Screen each candidate against the playbook's seven-item checklist, including "understandable to non-technical partners" and "not a vanity metric." Drop candidates that fail on value or on leading revenue. Keep two or three finalists for testing.
 
-3. **Step 3: Evaluate and Select Your North Star Metric**
-   Score each candidate against the core criteria: Does it reflect customer value? Is it a leading indicator of revenue? Can teams influence it? Is it measurable today? Use historical data to test correlation between each candidate and business outcomes. A product manager should facilitate this evaluation with cross-functional stakeholders to build early buy-in. Select the metric that best balances all criteria.
+3. **Test finalists and define the winner**
+   Pull historical data for each finalist and check whether movements preceded changes in retention or revenue. Ask the playbook's converging questions: what the metric will not tell you, how seasonality affects it, and what signal would tell you to revisit it. Pick the finalist with the strongest link to value and write its name and precise definition. Publish the definition with the query or event logic behind it.
 
-4. **Step 4: Identify Three to Five Input Metrics**
-   Decompose the North Star into the levers that drive it. For example, if your NSM is 'weekly active teams completing projects,' inputs might include: new team activation rate, feature adoption depth, return visit frequency, and project completion rate. Map each input to the teams that can influence it. Validate the relationship: if all inputs improve simultaneously, the North Star should move.
+4. **Decompose it into input metrics**
+   Write the North Star as a function of a few inputs, using the playbook's template: "I believe that [North Star] is a function of [X, Y, and Z]" ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Airbnb's inputs for nights booked included guest conversion, the number of homes, and visitors to the site ([Choosing Your North Star Metric](https://future.com/north-star-metrics/)). Test each input with the playbook's Greenfield test and roadmap check. The output is an input map with a name, a definition and an owner for every input; the skill on [north star input metrics mapping](../../skills/identifying-input-metrics/SKILL.md) walks through it.
 
-5. **Step 5: Align Teams and Assign Ownership**
-   Assign each input metric to a specific cross-functional team or squad. Hold an alignment workshop where every team articulates how their current roadmap contributes to their input metric and, by extension, the North Star. A product manager acts as the connective tissue here — resolving conflicts, identifying gaps, and ensuring no input metric is unowned.
+5. **Put it on a dashboard with a cadence**
+   Build one view that shows the North Star beside its inputs and a short trend history. Review each input weekly with the team that owns it, and review the North Star with leadership. Amplitude reports its North Star weekly within product and leadership teams and shares progress quarterly at company All Hands ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Make metric owners explain unusual movements, the way Amazon's weekly review is run ([Commoncog](https://commoncog.com/the-amazon-weekly-business-review/)).
 
-6. **Step 6: Build Dashboards and Reporting Cadence**
-   Create a shared dashboard that visualizes the North Star and all input metrics in real time. Make it visible — on monitors, in Slack channels, in weekly standups. Establish a reporting cadence: weekly input metric reviews at the team level, monthly North Star reviews at the leadership level. Transparency drives accountability and surfaces problems early.
+6. **Tie the roadmap to the inputs**
+   For each roadmap item, name the input it should move and the expected size of the effect. The playbook recommends weighing both the input's influence on the North Star and the chance that the work moves the input, and following up on completed items to see if they had the expected effect ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Items that link to no input need a reason to stay. The output is a roadmap where every item points at an input, built the way the [North Star metric roadmap](../../skills/connecting-north-star-to-product-roadmap/SKILL.md) skill describes.
 
-7. **Step 7: Connect the North Star to Roadmap Prioritization**
-   Use the NSM framework to evaluate every roadmap decision. When a product manager faces a tradeoff, ask: *Which option has a higher expected impact on our North Star or its input metrics?* Integrate this question into your product roadmap prioritization frameworks — whether you use RICE scoring, impact mapping, or opportunity trees. The North Star becomes the tiebreaker.
+7. **Check the metric against customers**
+   Numbers show what customers do, and research shows whether that behavior is the value they care about. Interview customers and ask what they would miss, then compare their words with the metric's definition. The playbook's delivery example shows the payoff: research showed customers valued deliveries with no issues, and "Happy Deliveries" became the North Star ([North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)). Record where the metric and customer language disagree.
 
-8. **Step 8: Review, Validate, and Evolve**
-   Quarterly, revisit whether the North Star still represents your core value proposition. Use user research to validate that the metric hasn't drifted from actual customer experience. As the product matures — moving from acquisition-heavy growth to retention and expansion — the NSM may need to evolve. A product manager should treat the framework as a living system, not a one-time exercise.
+8. **Revisit it when the business changes**
+   Set explicit triggers for a review: a new business model, a move upmarket, a new product line, or a North Star that stops predicting revenue. Ted Clark of Amplitude puts the last trigger plainly in the playbook: if the North Star is not directionally indicating where revenue is going, it is time to revise it. When you change it, rebuild the inputs and the dashboard and announce the change with the reasons. Keep the old metric on the dashboard long enough to compare.
+
+## North Star Metric Types
+
+Rachitsky's survey for a16z grouped the North Stars of growth-stage companies into six types. The shares add up to more than 100%, because some companies use more than one. Each row cites [Choosing Your North Star Metric](https://future.com/north-star-metrics/).
+
+| Type | What it counts | Share of companies surveyed |
+|---|---|---|
+| Revenue | Money generated, such as ARR or GMV | ~50% ([Rachitsky](https://future.com/north-star-metrics/)) |
+| Customer growth | Users who are paying | ~35% ([Rachitsky](https://future.com/north-star-metrics/)) |
+| Consumption growth | Intensity of use, such as nights booked | ~30% ([Rachitsky](https://future.com/north-star-metrics/)) |
+| Engagement growth | Users who are active, such as MAU or DAU | ~30% ([Rachitsky](https://future.com/north-star-metrics/)) |
+| Growth efficiency | Spend versus return, such as LTV/CAC | ~10% ([Rachitsky](https://future.com/north-star-metrics/)) |
+| User experience | How enjoyable the product is, such as NPS | ~10% ([Rachitsky](https://future.com/north-star-metrics/)) |
+
+The categories line up with business models in the same article. Marketplaces tend to use consumption, performance-marketing businesses use growth efficiency, and freemium team products use engagement or paid customers, such as Slack's Number of Paid Teams.
 
 ## When to Use
 
-- Your organization has grown past a single team and multiple squads need a shared definition of success to coordinate product roadmap priorities without constant top-down intervention.
-- You are a product manager struggling with misaligned KPIs across departments — engineering optimizes for velocity, marketing for leads, sales for bookings — and need a unifying metric to resolve conflicting priorities.
-- Your product has achieved initial product-market fit and you need a durable, growth-oriented product strategy that connects daily execution to long-term business outcomes.
-- Leadership demands a single, honest health indicator they can track to understand whether the company is winning with customers, beyond lagging financial metrics.
-- You are building a data-driven product culture and need a simple, intuitive framework that makes analytics accessible to non-technical stakeholders across cross-functional teams.
+- Several teams ship into one product and argue about priorities because each reports a different success metric. A shared North Star with inputs gives them one outcome and separate levers.
+- The company has early product-market fit and needs to move from "does anyone want this" to "how do we grow the value people get." Before product-market fit, Rachitsky recommends focusing on cohort retention instead.
+- Leadership reviews revenue and pipeline but has no early signal of whether customers are getting value. A leading metric can show a problem before it reaches revenue.
+- The roadmap is full of features that nobody can connect to an outcome. Mapping each item to an input shows which work has a theory of impact.
+- The strategy has just changed, such as a move from individual users to teams or from self-serve to sales. The existing metric probably measures the old strategy and needs a deliberate review.
 
 ## When Not to Use
 
-- You are in the earliest discovery phase before product-market fit — the product is still changing too rapidly and the core value proposition hasn't stabilized enough to define a meaningful North Star.
-- Your product is a multi-sided platform with fundamentally different value propositions for each side (e.g., marketplace sellers vs. buyers), and forcing a single metric would obscure critical dynamics that need separate attention.
-- The organization lacks basic data infrastructure and instrumentation — without the ability to reliably measure the metric and its inputs, the framework becomes an aspirational poster rather than an operational tool.
-- You are managing a portfolio of unrelated products with distinct customer bases; each product needs its own North Star rather than sharing a single metric at the portfolio level.
+- The product is still searching for product-market fit and its value proposition changes monthly. Measure retention by cohort and talk to users instead of fixing a metric that will be outdated soon.
+- The company runs unrelated products with separate customers and separate profit and loss statements. Give each product its own North Star rather than forcing one number across all of them.
+- Basic instrumentation is missing and nobody can count the value moment even roughly. Instrument the core event first, or the metric will be a slide with no data behind it.
+- The team wants a single number to judge individual performance or set bonuses. Hard targets on one number invite gaming, as Amazon found when a detail-page target led teams to add low-demand items that raised inventory costs without raising sales ([Commoncog case](https://commoncog.com/c/cases/amazon-incentives-category-expansion/)).
 
 ## Skills
 
 This method includes the following skills:
 
-- [Connecting Your North Star Metric to Product Roadmap Decisions](../../skills/connecting-north-star-to-product-roadmap/SKILL.md) — How to use your North Star Metric and its input metrics to prioritize roadmap initiatives and justify strategic trade-offs.
-- [Building Dashboards to Track Your North Star and Input Metrics](../../skills/building-north-star-dashboards/SKILL.md) — How to set up real-time dashboards and reporting cadences that make your North Star Metric and its supporting inputs visible and actionable across the organization.
-- [Validating Your North Star Metric with User Research](../../skills/validating-north-star-with-user-research/SKILL.md) — How to use qualitative user research and customer insights to confirm that your chosen North Star Metric truly reflects the value customers experience.
-- [Selecting the Right North Star Metric for Your Product](../../skills/selecting-your-north-star-metric/SKILL.md) — How to evaluate candidate metrics and choose the single metric that best captures the core value customers get from your product.
-- [Evolving Your North Star Metric Across Product Growth Stages](../../skills/evolving-north-star-across-growth-stages/SKILL.md) — When and how to revisit, refine, or replace your North Star Metric as your product matures from MVP through scaling and beyond.
-- [Aligning Cross-Functional Teams Around a Shared North Star](../../skills/aligning-cross-functional-teams-around-north-star/SKILL.md) — Techniques for communicating, cascading, and embedding the North Star Metric across engineering, design, marketing, and other cross-functional teams to drive shared accountability.
-- [Identifying and Mapping Input Metrics to Your North Star](../../skills/identifying-input-metrics/SKILL.md) — How to decompose your North Star Metric into actionable input metrics that teams can directly influence through their day-to-day work.
+- [Selecting Your North Star Metric](../../skills/selecting-your-north-star-metric/SKILL.md): Choose the one metric that counts the value customers get and define it precisely.
+- [Identifying and Mapping North Star Input Metrics](../../skills/identifying-input-metrics/SKILL.md): Break the North Star into input metrics that teams can own and move.
+- [Building a North Star Metric Dashboard](../../skills/building-north-star-dashboards/SKILL.md): Show the North Star and its inputs in one view and review them on a set cadence.
+- [Connecting Your North Star Metric to the Product Roadmap](../../skills/connecting-north-star-to-product-roadmap/SKILL.md): Tie every roadmap item to an input and prioritize by expected impact.
+- [Aligning Cross-Functional Teams Around a North Star](../../skills/aligning-cross-functional-teams-around-north-star/SKILL.md): Give every function an input to own and a place in the review rhythm.
+- [Validating Your North Star Metric with User Research](../../skills/validating-north-star-with-user-research/SKILL.md): Check that the metric matches the value customers describe.
+- [Evolving Your North Star Metric Across Growth Stages](../../skills/evolving-north-star-across-growth-stages/SKILL.md): Decide when to change the metric and how to move the organization to a new one.
 
 ## FAQ
 
-**How does a product manager choose between multiple candidate North Star Metrics?**
+**What is a North Star Metric?**
 
-Score each candidate against four criteria: reflects customer value, leads revenue growth, is measurable with current data infrastructure, and can be influenced by teams. Use historical data to test correlation with business outcomes. The best NSM satisfies all four — but when candidates tie, prioritize the one that best captures the customer's 'aha moment.'
+It is the one metric a company uses to track the value customers get from its product, chosen so that it also predicts long-term revenue. Sean Ellis's definition calls it the metric that best captures the core value a product delivers to customers ([Stream](https://getstream.io/blog/north-star-metric/)). Examples Ellis gives include Airbnb's nights booked and Facebook's daily active users. A good one is paired with a few input metrics that teams can move directly.
 
-**What is the difference between a North Star Metric and a KPI?**
+**How is a North Star Metric different from a KPI?**
 
-A KPI is any key performance indicator a team tracks. A North Star Metric is a specific, singular KPI elevated to company-wide status because it best represents customer value delivery. All North Stars are KPIs, but most KPIs are not North Stars — they typically serve as input metrics or team-level health indicators beneath the NSM.
+A KPI is any metric a team tracks to judge performance, and most companies track many. The North Star is the single metric the whole company agrees best reflects delivered value, and the other KPIs either feed it as inputs or monitor health around it. Ellis also separates it from the "one metric that matters," which is a short-term focus used to move the North Star ([Intercom](https://www.intercom.com/blog/podcasts/sean-ellis-growth/)).
 
-**Can a company have more than one North Star Metric?**
+**What is the difference between the North Star Metric and the North Star Framework?**
 
-Purists argue no — the power of the framework comes from singular focus. However, multi-product companies may need one NSM per product line. Within a single product, having two North Stars defeats the purpose and reintroduces the alignment problems the framework solves. If you feel you need two, your actual North Star is likely a level above both candidates.
+The metric is the number and its inputs. The framework, as Amplitude's playbook describes it, is the wider product management model around the metric, including the workshops, the checklist, and how the metric connects to the organization's work. This page covers choosing, decomposing and operating the metric, and the [North Star Framework](https://tryhamster.com/methods/north-star-framework) page covers the framework as a program.
 
-**How often should a product manager revisit or change the North Star Metric?**
+**Can revenue be a North Star Metric?**
 
-Review the NSM quarterly, but change it rarely — typically only at major inflection points like achieving product-market fit, entering a new market, or shifting from growth to retention. Frequent changes destroy organizational trust in the framework. If the metric needs adjustment, treat it as a strategic event with full cross-functional communication.
+Some companies use it: revenue was the most common type in Rachitsky's survey of [over 40 companies](https://future.com/north-star-metrics/). He still recommends a metric one step removed because revenue is spiky, hard to make operational, and uninspiring as a team goal. Amplitude's playbook calls revenue metrics lagging indicators for the same reason. If you do use revenue, make sure the inputs underneath it are customer behaviors.
 
-**What are common mistakes product managers make when implementing the North Star Metric?**
+**How many input metrics should a North Star have?**
 
-The most common mistakes are choosing a vanity metric that doesn't connect to revenue, selecting a lagging indicator that teams can't influence in their sprint cycles, failing to define input metrics so the NSM becomes abstract and unactionable, and not investing in dashboards and reporting cadence so the metric fades from organizational consciousness within weeks.
+Few enough that each has a clear owner. Amplitude's guidance on its blog is [three to five](https://amplitude.com/blog/product-north-star-metric) influential, complementary factors, and its playbook's examples use three or four. Test the set by asking whether improving all of them would move the North Star, and whether each one can move somewhat independently of the others.
 
-**How does the North Star Metric framework work with agile sprints and product backlogs?**
+**How often should the North Star Metric change?**
 
-Each sprint's work should connect to an input metric, which in turn connects to the NSM. During sprint planning, a product manager evaluates backlog items by their expected impact on the relevant input metric. During retrospectives, teams review whether completed work actually moved the input metric. This creates a continuous feedback loop from daily execution to strategic outcomes.
+Rarely, and for a reason tied to strategy. About a quarter of the companies in Rachitsky's survey had recently changed their North Star or were about to, and Dropbox moved from monthly active users to paid customers as it shifted from consumer to business ([Choosing Your North Star Metric](https://future.com/north-star-metrics/)). Review the metric on a regular schedule, and change it when the business model, the customer, or the strategy changes.
+
+**What are the most common mistakes?**
+
+Choosing a vanity metric that rises without delivered value, trying to move the North Star directly instead of its inputs, and keeping two competing North Stars. Others are skipping the precise definition, so teams measure it differently, and letting the metric fade because nobody reviews it. The playbook also warns against rejecting a strong idea too early because nobody knows yet how to measure it.
+
+## Sources
+
+- [Sean Ellis: personal site](https://www.seanellis.me/)
+- [Intercom: Sean Ellis on charting a path toward sustainable growth](https://www.intercom.com/blog/podcasts/sean-ellis-growth/)
+- [Stream: What Is Your North Star Metric](https://getstream.io/blog/north-star-metric/)
+- [StartUs Magazine: Sean Ellis on growth teams and the North Star Metric](https://magazine.startus.cc/sean-ellis-on-the-backbone-of-successful-growth-teams-the-north-star-metric/)
+- [Penguin Random House: Hacking Growth](https://www.penguinrandomhouse.com/books/545936/hacking-growth-by-sean-ellis-founder-of-growthhackerscom-and-morgan-brown/)
+- [Amplitude: The North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)
+- [Amplitude: Every Product Needs a North Star Metric](https://amplitude.com/blog/product-north-star-metric)
+- [Lenny Rachitsky: Choosing Your North Star Metric (a16z Future)](https://future.com/north-star-metrics/)
+- [Lenny's Newsletter: Choosing Your North Star Metric](https://www.lennysnewsletter.com/p/choosing-your-north-star-metric)
+- [Commoncog: The Amazon Weekly Business Review](https://commoncog.com/the-amazon-weekly-business-review/)
+- [Commoncog: Amazon's category expansion and the right incentives](https://commoncog.com/c/cases/amazon-incentives-category-expansion/)
 
 ---
 

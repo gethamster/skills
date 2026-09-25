@@ -1,25 +1,21 @@
 # FAQ: Generating Insights from Retrospective Data
 
-## How long should the insight generation phase take in an agile retrospective?
+## What is the difference between an observation and an insight?
 
-In a typical 60-90 minute agile retrospective, plan 15-30 minutes for insight generation. This is roughly 25-30% of total time. If you have a complex or emotionally charged topic, you may need more time — consider extending the overall retrospective rather than shortening this critical phase.
+An observation describes something that happened: reviews took several days. An insight explains why and points to a condition the team could change: reviews wait because nobody is responsible for picking them up. A good insight usually connects several observations. If a statement does not explain anything, it is still an observation.
 
-## What's the difference between retrospective observations and insights?
+## How do we run a five whys retrospective without blaming people?
 
-An observation describes what happened ('deployments were slow this sprint'). An insight explains why it happened at a systemic level ('we lack automated smoke tests, so every deployment requires a 45-minute manual verification cycle'). Insights point to specific levers for change, while observations only describe symptoms.
+Frame each question around the process and conditions, and redirect any answer that ends in a person's name. Ask what made the outcome likely. Check each answer against the data on the board. The Lean Enterprise Institute notes the number five is not the point, so stop when the team reaches a cause it can change.
 
-## How many root causes should a team analyze per retrospective?
+## Which root cause analysis technique should we use?
 
-Focus on 2-4 themes for deep analysis. It's far more valuable to thoroughly understand two root causes than to superficially discuss six. Use dot voting to prioritize which themes to analyze, and park the rest for future retrospectives or async discussion.
+Use the 5 Whys for a clear chain of events with one main path. Use a fishbone diagram when several kinds of cause may be involved and the team risks fixating on one. Use force field analysis when the question is what helped and what hindered a change. Pick one technique per theme to keep the time manageable.
 
-## What if the team keeps identifying the same root cause every sprint?
+## How many insights should we leave with?
 
-A recurring root cause usually means either the previous action item wasn't effective, wasn't completed, or the problem is beyond the team's direct control. Escalate structural issues to management, revisit whether past actions actually addressed the real root cause, and use [action item tracking](https://tryhamster.com/skills/tracking-retrospective-action-items-across-sprints) to ensure follow-through.
+A few. The decide phase will turn only one or two of them into actions, so a long list of insights mostly goes unused. Aim for insights the whole team agrees with and that are strong enough to act on.
 
-## Can the Five Whys technique be used remotely in virtual retrospectives?
+## What if the team disagrees about the cause?
 
-Yes — the Five Whys works well in virtual settings. Use a shared whiteboard tool (Miro, FigJam, or a retrospective platform) and have team members type answers simultaneously. The facilitator then guides the group to converge on the most accurate causal chain. Virtual tools actually help by making the written chain visible and permanent.
-
-## How do I prevent the loudest person from driving all the insights?
-
-Use structured techniques that equalize participation: silent affinity mapping before discussion, written Five Whys where everyone contributes answers before debating, and explicit turn-taking during analysis. As facilitator, directly invite quieter members by name: 'Alex, you worked on that feature — what's your take on why this happened?'
+Ask each side what data supports its view. If the data does not settle it, record both as hypotheses and consider an action that tests one of them. Disagreement is often a sign that the team needs more data, which can itself become an action for the next sprint.

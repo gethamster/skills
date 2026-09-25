@@ -1,25 +1,21 @@
-# FAQ: Writing Comprehensive Requirements Documents
+# FAQ: Writing Waterfall Requirements Specification Documents
 
-## How long should a requirements document be in the waterfall model?
+## What is a software requirements specification?
 
-Length depends on project complexity, not a page target. A simple internal tool might need 15-20 pages; an enterprise system with regulatory requirements might need 100+. Focus on completeness and clarity rather than length. Every requirement should be necessary and traceable to a stakeholder need.
+It is a document that describes the software to be built: its purpose, its users and environment, and its functional and non-functional requirements. In a waterfall project it is approved and baselined before design starts, and all later work traces back to it. The ISO/IEC/IEEE 29148 standard, which replaced IEEE 830, describes its usual content.
 
-## What happens if requirements change after baselining in the waterfall model?
+## What makes a requirement testable?
 
-Changes after baselining must go through a formal change request process. The change control board evaluates impact on scope, timeline, and budget, then approves or rejects the change. This is a core discipline of the waterfall model — not resistance to change, but managed change with documented impact analysis.
+A testable requirement states a specific behavior or quality under specific conditions, so a tester can design a test with a clear pass or fail result. Vague words like fast, easy or robust make a requirement untestable until they are replaced with measurable criteria. A useful check is to ask how you would prove the requirement is met.
 
-## What is the difference between a business requirements document and a software requirements specification in the waterfall model?
+## Should the specification describe how the system works?
 
-A Business Requirements Document (BRD) captures high-level business needs and objectives — the 'why.' A Software Requirements Specification (SRS) details specific system behaviors and constraints — the 'what.' In the waterfall model, the BRD typically feeds into the SRS, with traceability linking business needs to detailed technical requirements.
+It should describe what the system must do and under what constraints, and leave how to the design phase. Stating a solution, such as a particular screen layout or technology, removes options the designers may need. Include a design constraint only when it is a real requirement, for example an interface the system must use.
 
-## How do you ensure requirements are truly complete before starting design?
+## How detailed should a waterfall requirements document be?
 
-Use a completeness checklist covering all requirement categories (functional, non-functional, interface, data, constraint). Cross-reference against stakeholder needs, conduct structured walkthroughs with each stakeholder group, and perform boundary analysis. No document is ever 100% perfect, but systematic checks dramatically reduce gaps.
+Detailed enough that designers can design from it and testers can write tests from it without guessing. Because changes after the baseline go through change control, gaps found later are costly. At the same time, avoid padding: each statement should be necessary and traceable to a real source.
 
-## Can I use user stories instead of formal requirements in a waterfall model project?
+## What happens to the document after it is baselined?
 
-User stories alone are typically insufficient for the waterfall model because they lack the specificity needed for upfront design. However, you can use user stories during elicitation as a starting point, then decompose them into formal, testable requirement statements with acceptance criteria, priorities, and traceability for the requirements document.
-
-## What tools work best for writing and managing waterfall requirements documents?
-
-For small projects, structured Word templates with a spreadsheet-based traceability matrix work well. For larger or regulated projects, dedicated tools like IBM DOORS, Jama Connect, or Helix RM provide requirement versioning, traceability, and change tracking. The key is choosing a tool that supports unique IDs, traceability links, and version control.
+It becomes the reference for design, testing and acceptance, and it is changed only through approved change requests. Each approved change produces a new version with a record of what changed and why. The traceability matrix is updated so the change can be followed through design and tests.

@@ -1,25 +1,21 @@
-# FAQ: Mapping Customer Journey Stages to the RACE Funnel
+# FAQ: RACE Funnel Mapping
 
-## What are the main customer journey stages that map to the RACE funnel?
+## What is the default way to map journey stages to RACE?
 
-The primary customer journey stages—Awareness, Consideration, Decision, and Loyalty/Advocacy—map to Reach, Act, Convert, and Engage respectively. However, your specific business may have additional sub-stages that bridge two RACE phases, so the mapping should be customized to your actual buyer behavior.
+Awareness maps to Reach, consideration to Act, the purchase decision to Convert, and everything after purchase to Engage. Treat this as a starting point. Trials, long evaluations and repeat purchases often need a deliberate decision about which RACE stage owns them.
 
-## How is mapping customer journey stages to RACE different from a standard funnel?
+## How is this different from building a customer journey map?
 
-A standard marketing funnel focuses on the marketer's actions. Mapping customer journey stages to RACE overlays the buyer's perspective (their needs, emotions, and actions) onto the operational framework, ensuring your tactics are driven by what customers actually experience rather than what's convenient for your team.
+RACE funnel mapping produces an alignment matrix: which journey stages and touchpoints sit in which RACE stage, with KPIs and owners. A customer journey map goes deeper into the customer's goals, questions and feelings at each stage, based on research. The matrix is often the skeleton the journey map is built on.
 
-## Can customer journey stages overlap multiple RACE stages?
+## What if one journey stage fits two RACE stages?
 
-Yes. Customer behavior is rarely perfectly linear. A prospect might revisit the Act stage after entering Convert, or a loyal customer (Engage) might need re-reaching with a new product launch. Your mapping should explicitly note these overlaps and plan content for the transitions.
+Split it into smaller stages if you can, for example "request a demo" in Act and "evaluate proposal" in Convert. If you cannot, record the overlap and decide which RACE stage owns the KPI, so nothing is counted twice.
 
-## How often should I update my customer journey stage mapping?
+## Should offline touchpoints be included?
 
-Review your mapping quarterly at minimum. Update it whenever you launch a new product, enter a new market, observe a significant change in funnel metrics, or receive qualitative feedback suggesting customer behavior has shifted.
+Yes. Dave Chaffey built offline interaction into RACE, particularly in Convert, where offline contact is often needed to make a sale. Sales calls, showrooms, events and phone support all belong in the stage they serve.
 
-## What tools can I use to map customer journey stages to RACE?
+## How often should the mapping be updated?
 
-You can start with a simple spreadsheet or whiteboard. For more sophisticated mapping, tools like Miro, Lucidchart, or dedicated customer journey platforms like Smaply or UXPressia work well. The tool matters less than the rigor of the analysis behind it.
-
-## Do I need personas before mapping customer journey stages to RACE?
-
-Personas are helpful but not strictly required. You need a clear understanding of your target audience's behavior, motivations, and decision process. If you have documented personas, layer them into the mapping. If not, use analytics data and customer interviews as a substitute.
+At each planning cycle, and whenever the journey changes: a new channel, a new product, a pricing change or a new segment. Keep dated versions so you can see how coverage changed over time.
