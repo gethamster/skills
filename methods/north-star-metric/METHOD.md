@@ -12,7 +12,7 @@ metadata:
 
 # North Star Metric: How to Choose, Decompose, and Run It
 
-> Created by **Sean Ellis** - [https://www.seanellis.me/](https://www.seanellis.me/)
+> Created by **Sean Ellis (coined the term)** - [https://www.seanellis.me/](https://www.seanellis.me/)
 
 ## Overview
 
