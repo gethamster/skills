@@ -52,7 +52,7 @@ Trust signals shape which specific claims get used. Google's people-first conten
 
 Third-party corroboration matters as much as what you publish yourself. A comparative study of AI search engines found a systematic bias toward earned media, meaning independent third-party sources, over brand-owned content ([Chen et al.](https://arxiv.org/abs/2509.08919)). A claim that appears on your site and is confirmed by an independent publication is more likely to reach an answer than one that exists only on your blog.
 
-Access is the precondition for all of it. OpenAI separates OAI-SearchBot, which surfaces sites in ChatGPT search, from GPTBot, which collects content for model training; a site that disallows OAI-SearchBot will not be shown in ChatGPT search answers ([OpenAI crawler docs](https://platform.openai.com/docs/bots)). Perplexity runs PerplexityBot to surface and link sites in its results and says it does not use that crawler for training ([Perplexity crawler docs](https://docs.perplexity.ai/guides/bots)). A blanket block on every AI crawler can remove a site from AI search answers without anyone intending it.
+Access is the precondition for all of it. OpenAI separates OAI-SearchBot, which surfaces sites in ChatGPT search, from GPTBot, which collects content for model training; a site that disallows OAI-SearchBot will not be shown in ChatGPT search answers ([OpenAI crawler docs](https://developers.openai.com/api/docs/bots)). Perplexity runs PerplexityBot to surface and link sites in its results and says it does not use that crawler for training ([Perplexity crawler docs](https://docs.perplexity.ai/guides/bots)). A blanket block on every AI crawler can remove a site from AI search answers without anyone intending it.
 
 ## Step-by-Step Guide
 
@@ -62,7 +62,7 @@ List the questions in your category where your team has something others do not:
 
 ### Step 2: Check crawler access for each AI search system
 
-Read your robots.txt and any CDN or firewall rules for the search crawlers of the systems you care about, such as OAI-SearchBot for ChatGPT search and PerplexityBot for Perplexity. Decide separately whether to allow training crawlers such as GPTBot, since OpenAI treats the two settings as [independent](https://platform.openai.com/docs/bots). For Google, confirm that target pages are indexed and snippet-eligible, because Google's AI features only link to such pages ([Google Search Central](https://developers.google.com/search/docs/appearance/ai-features)). Check that key content is in the HTML text and not only inside images or scripts that fail to render. Record the decisions so a later firewall change does not silently undo them.
+Read your robots.txt and any CDN or firewall rules for the search crawlers of the systems you care about, such as OAI-SearchBot for ChatGPT search and PerplexityBot for Perplexity. Decide separately whether to allow training crawlers such as GPTBot, since OpenAI treats the two settings as [independent](https://developers.openai.com/api/docs/bots). For Google, confirm that target pages are indexed and snippet-eligible, because Google's AI features only link to such pages ([Google Search Central](https://developers.google.com/search/docs/appearance/ai-features)). Check that key content is in the HTML text and not only inside images or scripts that fail to render. Record the decisions so a later firewall change does not silently undo them.
 
 ### Step 3: Publish original data with its method
 
@@ -123,6 +123,6 @@ Track the target questions over time and record which of your pages are cited, w
 - [Google Search Central: Creating helpful, reliable, people-first content](https://developers.google.com/search/docs/fundamentals/creating-helpful-content)
 - [Google Search Central: Article structured data](https://developers.google.com/search/docs/appearance/structured-data/article)
 - [Chen et al.: Generative Engine Optimization: How to Dominate AI Search](https://arxiv.org/abs/2509.08919)
-- [OpenAI: Overview of OpenAI crawlers](https://platform.openai.com/docs/bots)
+- [OpenAI: Overview of OpenAI crawlers](https://developers.openai.com/api/docs/bots)
 - [Perplexity: Perplexity crawlers](https://docs.perplexity.ai/guides/bots)
 - [Bing Webmaster Blog: AI Performance in Bing Webmaster Tools](https://blogs.bing.com/webmaster/February-2026/Introducing-AI-Performance-in-Bing-Webmaster-Tools-Public-Preview)

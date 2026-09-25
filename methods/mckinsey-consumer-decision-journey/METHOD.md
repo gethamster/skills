@@ -28,7 +28,7 @@ David Edelman, who later coauthored McKinsey's 2015 update, restated the model f
 
 McKinsey revised the idea in 2015. In [The new consumer decision journey](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey), Edelman and Marc Singer argue that companies can now shape the journey on purpose, through automation, proactive personalization, contextual interaction and journey innovation, and in doing so compress or even remove the consideration and evaluation phases. The original model describes how people decide. The update describes what a company can build in response.
 
-The CDJ sits alongside other journey models rather than replacing them. Google's work on [the messy middle](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) zooms into the stretch between trigger and purchase and describes buyers looping between exploration and evaluation, which is a closer look at the CDJ's active evaluation phase. Staged frameworks such as the [five-stage customer journey](https://tryhamster.com/methods/five-stage-customer-journey-framework) are useful for aligning content and channels to a sequence of stages. The CDJ is the better choice when the question is where brands enter and leave consideration and whether customers come back without shopping around.
+The CDJ sits alongside other journey models rather than replacing them. Google's work on [the messy middle](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/) zooms into the stretch between trigger and purchase and describes buyers looping between exploration and evaluation, which is a closer look at the CDJ's active evaluation phase. Staged frameworks such as the [five-stage customer journey](https://tryhamster.com/methods/five-stage-customer-journey-framework) are useful for aligning content and channels to a sequence of stages. The CDJ is the better choice when the question is where brands enter and leave consideration and whether customers come back without shopping around.
 
 Use the CDJ as a diagnostic. It tells you which phase is losing customers and which touchpoints carry the most weight in that phase, so budget and effort can move to where decisions are actually made. It does not prescribe tactics for any single touchpoint, and the skills below cover the working methods for each phase.
 
@@ -40,7 +40,7 @@ When a need appears, people name a short list of brands from memory. That list c
 
 ### Evaluation can expand the set
 
-Active evaluation is where the funnel metaphor breaks. Shoppers research, compare and ask others, and a brand that was absent at the start can enter and even push a rival out. Google's research on [the messy middle](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) describes the same behavior as a loop between exploration and evaluation that repeats until the shopper is ready to decide. For a challenger brand, this phase is often the most realistic way in.
+Active evaluation is where the funnel metaphor breaks. Shoppers research, compare and ask others, and a brand that was absent at the start can enter and even push a rival out. Google's research on [the messy middle](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/) describes the same behavior as a loop between exploration and evaluation that repeats until the shopper is ready to decide. For a challenger brand, this phase is often the most realistic way in.
 
 ### Consumers pull more than brands push
 
@@ -145,7 +145,7 @@ The four phases apply, but the buyer is usually a group, the evaluation is longe
 
 **Is the original model still valid now that most research happens online?**
 
-The core structure has held up, and later research describes the same non-linear middle. Google's [messy middle study](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) found shoppers loop between exploring and evaluating, and simulated 310,000 purchase scenarios to test which cognitive biases shift preference. McKinsey's own update kept the loop and added the idea that companies can now compress it. What has changed most is the mix of touchpoints, so the touchpoint inventory needs regular refreshing.
+The core structure has held up, and later research describes the same non-linear middle. Google's [messy middle study](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/) found shoppers loop between exploring and evaluating, and simulated 310,000 purchase scenarios to test which cognitive biases shift preference. McKinsey's own update kept the loop and added the idea that companies can now compress it. What has changed most is the mix of touchpoints, so the touchpoint inventory needs regular refreshing.
 
 **How do you find out which phase needs the most investment?**
 
@@ -157,7 +157,7 @@ Survey recent buyers, including people who chose a competitor, about what they c
 - [Branding in the Digital Age, Harvard Business Review (Edelman)](https://hbr.org/2010/12/branding-in-the-digital-age-youre-spending-your-money-in-all-the-wrong-places)
 - [The new consumer decision journey, McKinsey (Edelman, Singer)](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-new-consumer-decision-journey)
 - [Competing on Customer Journeys, Harvard Business Review (Edelman, Singer)](https://hbr.org/2015/11/competing-on-customer-journeys)
-- [How people decide what to buy lies in the messy middle, Think with Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/)
+- [How people decide what to buy lies in the messy middle, Think with Google](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/)
 - [Category Entry Points Dissected, Ehrenberg-Bass Institute](https://marketingscience.info/news-and-insights/category-entry-points-dissected-how-they-really-contribute-to-growth)
 - [Measuring Your Net Promoter Score, Bain & Company](https://www.netpromotersystem.com/about/measuring-your-net-promoter-score/)
 

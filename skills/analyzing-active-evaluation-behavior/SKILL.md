@@ -48,7 +48,7 @@ The skill combines two kinds of evidence. Interviews with recent buyers give you
 
 Buyers in active evaluation pull information more than they receive it. [McKinsey's authors](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey) found that two-thirds of the touchpoints in this phase were consumer-driven, such as internet reviews, word of mouth from friends and family, in-store interactions and recollections of past experience. Only a third were company-driven marketing. A brand that measures only its own channels therefore sees a minority of what shapes the decision.
 
-The path through this phase is rarely a straight line. Google's research on [the messy middle](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) describes two mental modes, exploration and evaluation, that buyers loop between as many times as they need. Exploration widens the set by surfacing new options. Evaluation narrows it by comparing them. A single buyer can go through several rounds, and a brand can be added in one round and dropped in the next.
+The path through this phase is rarely a straight line. Google's research on [the messy middle](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/) describes two mental modes, exploration and evaluation, that buyers loop between as many times as they need. Exploration widens the set by surfacing new options. Evaluation narrows it by comparing them. A single buyer can go through several rounds, and a brand can be added in one round and dropped in the next.
 
 The same research identifies six cognitive biases that shape choices in this loop: category heuristics, the power of now, social proof, scarcity, authority and the power of free. These give you a vocabulary for why a touchpoint worked. A review page that tips a buyer is usually working through social proof. A comparison that lays out key specifications in a few words is working through category heuristics. Naming the mechanism helps you design a response instead of copying a competitor's tactic.
 
@@ -82,7 +82,7 @@ Repeat the ranking for your two or three closest competitors using the same path
 
 ### Step 6: Design Interventions
 
-For each priority trigger, decide what would change the outcome. Addition triggers you win call for more presence at that touchpoint. Elimination triggers call for fixing the underlying reason: missing information, a weak comparison, a pricing surprise or a product gap. [Google's research](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) suggests giving buyers the information and reassurance they need to decide, rather than trying to force them out of the loop. Assign each intervention an owner and a metric.
+For each priority trigger, decide what would change the outcome. Addition triggers you win call for more presence at that touchpoint. Elimination triggers call for fixing the underlying reason: missing information, a weak comparison, a pricing surprise or a product gap. [Google's research](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/) suggests giving buyers the information and reassurance they need to decide, rather than trying to force them out of the loop. Assign each intervention an owner and a metric.
 
 ### Step 7: Track Changes Over Time
 
@@ -122,5 +122,5 @@ Set up a small number of recurring measures: share of buyers who add your brand 
 ## Sources
 
 - [The consumer decision journey, McKinsey Quarterly](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
-- [How people decide what to buy lies in the messy middle, Think with Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/)
+- [How people decide what to buy lies in the messy middle, Think with Google](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/)
 - [Understanding Customer Experience Throughout the Customer Journey, Lemon and Verhoef](https://research.rug.nl/en/publications/understanding-customer-experience-throughout-the-customer-journey/)

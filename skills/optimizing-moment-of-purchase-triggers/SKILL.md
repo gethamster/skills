@@ -50,7 +50,7 @@ Start from the observation that not every abandoned purchase is a lost sale. The
 
 Fixable problems usually come from one of four sources. The first is cost surprises, where the total at the end differs from what the buyer expected. The second is choice overload, where too many plans, options or add-ons make the buyer unsure which one is right. The third is missing confidence, where the buyer lacks reassurance about returns, security, support or fit at the moment it matters. The fourth is effort, where forms, account creation or approval steps make the purchase harder than the decision.
 
-On the other side are triggers that help a ready buyer commit. Google's [messy middle research](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/) names six biases that shape purchase choices, several of which apply here: the power of now, where a shorter wait strengthens the offer, social proof from reviews, authority from trusted sources, scarcity when availability is genuinely limited, and the power of free, where a free extra motivates the purchase. In [Google's simulated purchase experiment](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/), a fictional cereal brand with five-star reviews and an extra-for-free offer won 28% of preference from shoppers' established favorites. Use these as ways to present true information well, not as tricks.
+On the other side are triggers that help a ready buyer commit. Google's [messy middle research](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/) names six biases that shape purchase choices, several of which apply here: the power of now, where a shorter wait strengthens the offer, social proof from reviews, authority from trusted sources, scarcity when availability is genuinely limited, and the power of free, where a free extra motivates the purchase. In [Google's simulated purchase experiment](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/), a fictional cereal brand with five-star reviews and an extra-for-free offer won 28% of preference from shoppers' established favorites. Use these as ways to present true information well, not as tricks.
 
 The diagnostic loop combines three kinds of evidence. Funnel data for the final step shows where buyers drop and how often. Session recordings, sales call notes and support tickets show what they encountered. Short exit questions or post-loss interviews give the reason in the buyer's words. When all three point at the same cause, you have a strong candidate for a change.
 
@@ -78,7 +78,7 @@ Show the full price, including shipping, taxes and fees, as early as the buyer a
 
 ### Step 5: Add Confidence at the Point of Doubt
 
-Place reassurance where hesitation happens: return terms next to the purchase button, security details next to payment fields, relevant reviews next to the product choice. Use evidence buyers trust, such as reviews from similar buyers or recognized certifications, which work through the social proof and authority biases described in [Google's research](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/). Keep it short, because long blocks of reassurance can add doubt instead of removing it.
+Place reassurance where hesitation happens: return terms next to the purchase button, security details next to payment fields, relevant reviews next to the product choice. Use evidence buyers trust, such as reviews from similar buyers or recognized certifications, which work through the social proof and authority biases described in [Google's research](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/). Keep it short, because long blocks of reassurance can add doubt instead of removing it.
 
 ### Step 6: Reduce Effort
 
@@ -123,5 +123,5 @@ Run each change as a controlled test where you can, and measure completed purcha
 ## Sources
 
 - [The consumer decision journey, McKinsey Quarterly](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-consumer-decision-journey)
-- [How people decide what to buy lies in the messy middle, Think with Google](https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/navigating-purchase-behavior-and-decision-making/)
+- [How people decide what to buy lies in the messy middle, Think with Google](https://business.google.com/us/think/consumer-insights/navigating-purchase-behavior-and-decision-making/)
 - [Cart Abandonment Rate Statistics, Baymard Institute](https://baymard.com/lists/cart-abandonment-rate)

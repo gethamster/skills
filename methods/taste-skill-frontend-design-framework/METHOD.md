@@ -48,7 +48,7 @@ Variance, motion and density are set per project from the brief, with presets fo
 
 When a brief reads as Material, Fluent, Carbon, GOV.UK or another established system, the skill tells the agent to install the official package and keep to one system per project. When the brief is an aesthetic such as bento, brutalism or editorial, it tells the agent to build with web standards and label the result honestly. This stops the agent from recreating a design system's CSS by hand and drifting from it.
 
-### Accessibility and performance are gates, not polish
+### Accessibility and performance are release gates
 
 The skill makes contrast checks on every button and form field mandatory, requires dark mode for consumer pages, restricts animation to `transform` and `opacity`, and requires `prefers-reduced-motion` handling for anything with a motion dial above 3. Those rules line up with published guidance: WCAG sets a 4.5:1 minimum contrast for body text ([W3C, Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)), and web.dev recommends keeping animation on the compositor ([web.dev animations guide](https://web.dev/articles/animations-guide)). A page that looks good and fails these checks is not finished.
 

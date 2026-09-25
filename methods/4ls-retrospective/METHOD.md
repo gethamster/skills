@@ -18,7 +18,7 @@ metadata:
 
 The 4Ls sprint retrospective asks a team four questions about the period that just ended: what they Liked, what they Learned, what they Lacked, and what they Longed For. Each person writes answers on their own, the team posts them under the four headings, small groups look for themes, and the whole team decides what to do with them. The four words are easy to remember, which is part of why the format has spread from software teams to training debriefs and management groups.
 
-Mary Gorman and Ellen Gottesdiener of EBG Consulting published the technique in [their June 2010 write-up](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). They describe it as a way to elicit feedback, share it collectively, and explore action possibilities, and they apply it to iteration and project retrospectives as well as to training classes and conference sessions. It began as a variation of the World Café, in which different areas of a room each hold one topic. An earlier version had only three Ls, Liked, Lacked and Longed For, and Learned was added later. The authors single out Longed For as the one category not to drop, because it tends to produce the most useful data.
+Mary Gorman and Ellen Gottesdiener of EBG Consulting published the technique in [their June 2010 write-up](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). They describe it as a way to elicit feedback, share it collectively, and explore action possibilities, and they apply it to iteration and project retrospectives as well as to training classes and conference sessions. It began as a variation of the World Café, in which different areas of a room each hold one topic. They normally use all four Ls. When Mary Gorman later mentioned a three-L variation (Liked, Lacked, Longed For) at a Deep Agile event, it spread online, and the authors advise that whichever set a team uses, it keep Longed For, which they say can provide some very powerful data.
 
 Each category does a different job. Liked names what worked, so the team knows what to protect. Learned captures technical and interpersonal discoveries before they fade. Lacked looks back at what was missing: information, people, tools, time. Longed For looks forward at what the team wishes it had, which often turns a complaint into a proposal. Ben Linders, who has used the exercise with Scrum, Kanban and non-software teams, [writes that the words steer people](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) toward thinking about possibilities instead of blaming each other.
 
@@ -103,7 +103,7 @@ A retrospective that ends with themes and no commitments teaches the team that t
 | Format | Categories | Best for |
 |--------|-----------|----------|
 | [4Ls (EBG)](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) | Liked, Learned, Lacked, Longed For | Balanced fact-finding over an iteration or project |
-| [3Ls (EBG, earlier form)](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) | Liked, Lacked, Longed For | Short sessions that do not need a learning record |
+| [3Ls (EBG, later variation)](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/) | Liked, Lacked, Longed For | Short sessions that do not need a learning record |
 | [Atlassian variant](https://www.atlassian.com/team-playbook/plays/4-ls-retrospective-technique) | Loved, Loathed, Longed for, Learned | Teams that want stronger emotional language |
 | [Start, Stop, Continue](https://www.parabol.co/templates/sprint-retrospectives/4ls-liked-learned-lacked-longed/) | Start, Stop, Continue | Teams ready to decide on behavior changes |
 | [Derby and Larsen phases](https://pragprog.com/titles/dlret2/agile-retrospectives-second-edition/) | Five meeting phases | The meeting structure any of the above plugs into |
@@ -124,7 +124,7 @@ This method includes the following skills:
 
 **Who created the 4Ls retrospective?**
 
-Mary Gorman and Ellen Gottesdiener of EBG Consulting published it in [a June 2010 blog post](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). It grew out of a World Café variation and an earlier three-L version (Liked, Lacked, Longed For), with Learned added later. The authors used it for iteration and project retrospectives and for training and conference debriefs. Most retrospective tools and guides that include it credit them.
+Mary Gorman and Ellen Gottesdiener of EBG Consulting published it in [a June 2010 blog post](https://ebgconsulting.com/blog/the-4ls-a-retrospective-technique/). It grew out of a World Café variation. A three-L variation (Liked, Lacked, Longed For) came later, after Mary Gorman mentioned it at a Deep Agile event. The authors used it for iteration and project retrospectives and for training and conference debriefs. Practitioner write-ups such as Ben Linders' credit them, though some tool vendors present the format without attribution.
 
 **What is the difference between Lacked and Longed For?**
 
@@ -140,7 +140,7 @@ Start, Stop, Continue asks people to propose behavior changes directly. The 4Ls 
 
 **Does the 4Ls retrospective work for remote teams?**
 
-Yes. [Ben Linders](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) calls it suitable for distributed retrospectives with a shared editable document, and the four categories map directly onto columns in any digital board. Many distributed teams collect notes asynchronously before a shorter video call, a pattern [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) recommends for its own groups. Hybrid teams should have everyone join from their own device so remote people are not second-class participants.
+Yes. [Ben Linders](https://www.benlinders.com/2017/four-ls-a-classic-retrospective-exercise/) calls it suitable for distributed retrospectives with a shared editable document, and the four categories map directly onto columns in any digital board. Many distributed teams collect notes asynchronously and meet live only when needed, the pattern [GitLab's handbook](https://handbook.gitlab.com/handbook/engineering/management/group-retrospectives/) describes for its own groups. Hybrid teams should have everyone join from their own device so remote people are not second-class participants.
 
 **Why do the same issues keep coming back in our retrospectives?**
 
