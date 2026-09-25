@@ -1,41 +1,21 @@
-# FAQ: Mapping Problems and Defining the Sprint Challenge on Day 1
+# FAQ: Design Sprint Day 1: Map the Problem and Pick a Target
 
-## How many expert interviews should I schedule for Day 1?
+## What happens on day 1 of a design sprint?
 
-Three to five interviews of 15-30 minutes each is the sweet spot. Fewer than three does not generate enough diverse perspective to challenge the team's existing assumptions. More than five compresses the time available for mapping and target selection, and the team's note-taking quality degrades after the fourth interview. If an expert has deep knowledge that warrants more time, schedule a 30-minute slot rather than letting a 15-minute interview run over.
+The team sets a long-term goal, lists the risks as sprint questions, draws a simple map of the customer journey, interviews experts while writing How Might We notes, votes on the notes, and ends with the Decider picking one target customer and moment. The [Design Sprint guide](https://www.character.vc/guide/design-sprint) by Jake Knapp and John Zeratsky lays these out as a timed checklist. The target is the day's most important output, because it sets the scope for the sketches, the prototype and the test.
 
-## What if the Decider cannot attend the full Day 1 session?
+## What are How Might We notes?
 
-The Decider must be present for the goal-setting (Step 1), sprint questions (Step 2), and target selection (Steps 6-7). These three activities require their authority and strategic judgment. If the Decider absolutely cannot attend expert interviews or mapping, they can rejoin for voting and target selection, but the facilitator should brief them on key insights before voting begins. If the Decider cannot attend any of Day 1, postpone the sprint.
+They are sticky notes that reframe a problem as an opportunity, written as a question that starts with "How might we." Each person writes them silently while experts talk, one idea per note. The team later groups the notes by theme and votes on them, and the winners are placed on the map. They turn a long afternoon of interviews into a short list of opportunities the team can act on.
 
-Running Day 1 without a Decider produces a target that gets overridden later, wasting the team's time.
+## How big should the sprint target be?
 
-## Should I define the sprint target before or after sketching solutions?
+Small enough to prototype in one day and to test in five interviews. GV describes the target as "an ambitious but manageable piece of the problem that you can solve in one week" ([GV](https://www.gv.com/sprint/)). In practice that usually means one customer and one moment on the map, chosen where the riskiest sprint questions come into play.
 
-Always before. The target must be selected on Day 1 before any solution work begins on Day 2. The entire purpose of target selection is to constrain the solution space so that sketching is focused and comparable. If you let sketching happen first, each team member sketches for a different problem, and [comparing and voting on solutions](https://tryhamster.com/skills/sketching-and-voting-on-solutions) becomes impossible.
+## How is the Understand phase in Google's Design Sprint Kit different?
 
-The design sprint process is sequential for this reason: understand before you solve.
+Google's kit covers the same ground with prepared Lightning Talks, in which experts present on business, user, competitor and technology angles ([Design Sprint Kit](https://designsprintkit.withgoogle.com/methodology/phase1-understand)). The kit then has a separate Define phase for choosing the focus, goals and success signals. The published five-day sprint does both in one day, using live interviews rather than prepared talks.
 
-## How do I handle a team that wants to pick multiple sprint targets?
+## What if the experts cannot attend on Monday?
 
-Resist this firmly. The sprint's power comes from focus, and splitting attention across two targets halves the quality of everything that follows: sketches, the prototype, and the user test. If the team genuinely cannot choose between two targets, ask the Decider to pick the one with higher risk or higher potential impact. The other target can become the focus of a future sprint.
-
-If the Decider insists on both, the facilitator should explain that a split target means two prototypes, two test scripts, and half the learning on each.
-
-## Can I run the Understand phase remotely with a distributed team?
-
-Yes, but it requires more preparation. Use a shared digital whiteboard (Miro, FigJam, or similar) with pre-built templates for the map, HMW notes, and voting. Expert interviews work well over video call with everyone's cameras on. The biggest challenge is silent activities like HMW note-taking and clustering, which need explicit facilitation cues ("Everyone mute and write for 5 minutes, I will call time").
-
-Allow 20-30% more time than in-person because digital tools add friction. See [running remote design sprints](https://tryhamster.com/skills/running-remote-design-sprints) for detailed remote facilitation techniques.
-
-## What if expert interviews reveal that our initial problem framing is completely wrong?
-
-This is actually the best possible outcome for Day 1. It means the sprint is already saving you months of building the wrong thing. If interviews fundamentally reframe the problem, update the map to reflect the new understanding. Adjust your sprint questions.
-
-Then select a target based on the reframed problem. Do not try to preserve the original framing out of sunk-cost attachment. The [Google Design Sprint](https://tryhamster.com/methods/google-design-sprint) is designed to surface exactly these reframes early, when changing direction is cheap.
-
-## How detailed should the problem map be?
-
-Five to fifteen steps, each described in one to five words. The map should be readable from across the room (or in a single screen view for remote sprints). If your map has more than 15 steps, you are mapping sub-processes that belong in annotations, not on the main flow. If it has fewer than 5 steps, you are probably too abstract and the team will struggle to pick a specific target.
-
-A good rule: each step should represent a moment where the customer does something or something happens to the customer, not an internal system event.
+Record short interviews in advance, or have them join remotely for a fixed slot. Google's kit notes that Lightning Talk speakers do not need to be present in person ([Design Sprint Kit](https://designsprintkit.withgoogle.com/planning/logisitics)). The team loses the chance to ask follow-up questions with a recording, so keep at least one live expert if you can.

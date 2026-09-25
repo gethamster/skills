@@ -1,15 +1,20 @@
 ---
-name: mapping-growth-options-to-the-ansoff-grid
-description: "This skill teaches you how to systematically classify and plot current and proposed initiatives onto the Ansoff Matrix's four quadrants so you can visualize your growth portfolio and construct a risk-balanced marketing plan."
+name: "mapping-growth-options-to-the-ansoff-grid"
+description: "Map every growth initiative onto the Ansoff grid with clear definitions of new and existing, then read the portfolio balance to shape the marketing plan."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: ansoff-matrix
+  method: "ansoff-matrix"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Mapping Growth Options to the Ansoff Grid for a Balanced Marketing Plan
+# Mapping Growth Options to the Ansoff Grid
 
-> This skill teaches you how to systematically classify and plot current and proposed initiatives onto the Ansoff Matrix's four quadrants so you can visualize your growth portfolio and construct a risk-balanced marketing plan.
+> Map every growth initiative onto the Ansoff grid with clear definitions of new and existing, then read the portfolio balance to shape the marketing plan.
 
 ## Before you start
 
@@ -23,133 +28,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You gain a single visual map showing exactly where your growth bets sit across the Ansoff Grid, enabling you to rebalance your marketing plan toward an optimal risk-reward mix. |
-| Prerequisites | Basic understanding of the Ansoff Matrix and its four quadrants, An inventory of your current and proposed growth initiatives, Clarity on which products/services and markets your organization currently serves |
+| Difficulty | Beginner |
+| Time to Learn | About an hour |
+| Outcome | You produce one agreed map of all current and proposed growth initiatives on the Ansoff grid, with the reasoning for each placement and a clear view of where the portfolio is thin or overloaded. |
+| Prerequisites | A list of current and proposed initiatives, knowledge of the products and markets the business serves today, a planning owner |
 | Part of | [Ansoff Matrix](../../methods/ansoff-matrix/METHOD.md) |
 
 ## Overview
 
-Every organization pursues multiple growth initiatives simultaneously—new campaigns, product launches, geographic expansions, line extensions. Without a structured view, it's easy to over-invest in one type of growth while neglecting others. Mapping these initiatives onto the Ansoff Grid gives you that structure.
+Ansoff grid mapping is the first practical step in using the [Ansoff Matrix](../../methods/ansoff-matrix/METHOD.md). You take every growth initiative the business is running or considering, decide whether each involves a new product, a new market, both or neither, and place it in one of the four quadrants. The result is a single picture of the growth portfolio that a leadership team or a marketing team can argue about productively.
 
-The Ansoff Matrix (also called the Product/Market Expansion Grid) organizes growth strategies into four quadrants based on two dimensions: product newness and market newness. By plotting each initiative into the correct quadrant, you create a visual portfolio that reveals risk concentration, strategic gaps, and resource allocation imbalances. This becomes the analytical backbone of a well-informed marketing plan.
+The map matters because initiatives are usually proposed one at a time, by different people, with different vocabulary. A product manager's "new feature," a sales leader's "new vertical," and a founder's "new line of business" may all be described as growth. Placed on one grid, they become comparable. You can see whether most effort is going into the core, whether anything is preparing the next stage of growth, and whether several teams are betting on the same unfamiliar market without knowing it.
 
-This skill bridges the gap between having a list of growth ideas and having a coherent strategy. Rather than evaluating initiatives in isolation, you see how they relate to one another and to your overall risk appetite. Teams that master this mapping exercise make faster prioritization decisions and build marketing plans that leadership can confidently fund.
+Ansoff expected a mix. In the article that introduced the four alternatives, he wrote that "in most actual situations a business would follow several of these paths at the same time" ([Ansoff, 1957](https://archive.org/details/strategiesfordiversificationansoff1957hbr)). Mapping is how you see that mix and decide whether it is the one you want.
+
+The hard part is the definitions. Whether something is new depends on the firm, and critics of the matrix point out that "new" is open to interpretation: a genuinely new product often takes a firm into a new market at the same time ([Wikipedia: Ansoff matrix](https://en.wikipedia.org/wiki/Ansoff_matrix)). This skill therefore spends as much effort on agreeing what "existing" means as on plotting. The output feeds the rest of the method: each quadrant then gets its own analysis, target market work and channel plan.
 
 ## How It Works
 
-The Ansoff Grid works on a simple but powerful insight: growth risk increases as you move away from what you already know. Selling existing products to existing customers (market penetration) is the lowest-risk play. Selling new products to new markets (diversification) is the highest.
+The grid has products on one axis and markets on the other, each split into existing and new. Ansoff's own exhibit put markets across the top and product lines down the side, with market penetration in the existing-existing cell. Orientation matters less than consistency, so pick one layout and keep it in every planning document.
 
-When you map initiatives onto this grid, you're essentially tagging each one with a risk profile. The grid's two axes—product (existing vs. new) and market (existing vs. new)—force a binary classification that cuts through ambiguity. An initiative either targets customers you already serve or it doesn't. It either leverages a product you already have or it doesn't.
+A simple Ansoff matrix template looks like this:
 
-Once every initiative is plotted, patterns emerge. You might discover that 80% of your planned marketing spend sits in market penetration, meaning you're optimizing for short-term safety but underinvesting in future growth. Or you might find three diversification bets running simultaneously with no clear prioritization—a sign of unmanaged risk. The grid doesn't tell you what to do, but it makes the trade-offs impossible to ignore, which is exactly what a rigorous marketing plan requires.
+| | Existing markets | New markets |
+|---|---|---|
+| Existing products | Market penetration | Market development |
+| New products | Product development | Diversification |
+
+Each initiative gets a short card: its name, owner, the product involved, the market involved, and a one-line reason for the placement. The reason is the most useful field. "New market because we have no sales motion for hospitals" tells the reviewer exactly what the team believes, and it can be challenged.
+
+Placement uses two questions. Is the product new to us, meaning it needs capabilities, technology or a value proposition we do not have today? Is the market new to us, meaning buyers, needs, channels or geography we do not serve today? Ansoff defined markets through product missions, the job a product does for its buyer, which helps with borderline cases: selling the same software to a new department that uses it for a different job is closer to market development than to penetration ([Ansoff, 1957](https://archive.org/details/strategiesfordiversificationansoff1957hbr)).
+
+Real initiatives are often partly new. Bansi Nagji and Geoff Tuff's refinement of the grid replaces the binary old-versus-new choice with a range of values, because novelty is a matter of degree ([HBR](https://hbr.org/2012/05/managing-your-innovation-portfolio)). You can keep the four cells and still show this by placing a card near the border of a cell, or by adding a note on which axis is only partly new.
+
+Once everything is placed, you read the map. Count initiatives and, more importantly, budget and headcount per quadrant. Look for clusters, gaps and duplicates. Compare the picture with the growth target: if the forecast from the core falls short of the target, the map should show credible bets further from the core. For fairly new businesses, Annmarie Hanlon suggests it may be wise to focus on no more than two strategies ([Smart Insights](https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/)), which is a useful check on a young company's map that spreads across all four.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Build a Complete Initiative Inventory
+### Step 1: Build a complete initiative inventory
 
-Gather every growth-related initiative your team is currently running or considering. This includes active campaigns, product launches in the pipeline, market expansion proposals, partnership explorations, and even informal ideas that haven't been formalized yet. Use a simple spreadsheet with columns for initiative name, brief description, owner, estimated budget, and expected timeline.
+Collect every growth initiative that is funded, in progress or seriously proposed, from product, marketing, sales, partnerships and leadership. Include small ones, since several small bets in one market can add up to a large commitment. Record the owner, the budget or headcount, and the expected result for each. Use one list with consistent fields so nothing is mapped from memory.
 
-Don't filter at this stage. The goal is completeness, not judgment. Pull from marketing plans, product roadmaps, sales team wish lists, and leadership strategy decks. If an initiative has any growth intent, it belongs on the list.
+### Step 2: Define "existing" for both axes
 
-Aim for 15-40 items for a mid-size organization. Fewer than 10 usually means you're missing things; more than 50 suggests you need to consolidate related efforts before mapping.
+Write down the product lines you sell today and the markets you serve today, by segment, geography and the job the product does. Agree the threshold for "new" on each axis, for example a product needing a new core technology, or a buyer group with no current sales motion. Get the planning group to sign off on these definitions before any placement. This is where most later disagreements are prevented.
 
-> **Pro tip:** Schedule a 30-minute brainstorm with cross-functional leads (marketing, product, sales, partnerships) to surface initiatives that may not appear in any single team's documentation.
+### Step 3: Classify each initiative on both axes
 
-### Step 2: Step 2: Define Your 'Existing' Boundaries
+For each card, answer the product question and the market question and write a one-line reason for each answer. Where an answer is "partly," say which part is new. Have a second person classify independently for any initiative that is expensive or contested, and discuss differences using the written definitions. Keep the reasons on the card so reviewers can see the logic.
 
-Before you can classify anything, you need crisp definitions of what counts as an 'existing product' and an 'existing market' for your organization. This is the step most teams skip—and the one that causes the most mapping errors.
+### Step 4: Plot the initiatives on the grid
 
-For products, define your current portfolio explicitly. List every product or service line you currently sell. A minor feature update to an existing product is still 'existing.' A fundamentally new product category, even if it uses shared technology, is 'new.'
+Place each card in its quadrant, and size or annotate it by budget or headcount so the picture reflects commitment as well as count. Mark whether each initiative is running or proposed. Put borderline cards near the edge of their cell with a note. A shared board or slide works well, as long as everyone can see the whole grid at once.
 
-For markets, define your current segments by geography, customer type, industry vertical, or use case—whatever dimensions are most meaningful. Selling to enterprise customers in North America is your existing market. Expanding to SMBs or entering Southeast Asia would be a 'new' market.
+### Step 5: Read the portfolio balance
 
-> **Pro tip:** Write these boundary definitions on a shared document before the mapping session so every participant works from the same frame of reference. Revisit and refine them annually as your business evolves.
+Look at where money and people sit, and compare that with the growth target and the forecast from the core. Ask whether anything is preparing the next phase of growth, whether the diversification cell holds more bets than the company can staff, and whether initiatives in the same new market are coordinated. Note clusters, gaps and duplicates in writing. This reading is the main output of the session.
 
-### Step 3: Step 3: Classify Each Initiative Along Both Axes
+### Step 6: Rebalance and feed the marketing plan
 
-Go through your inventory line by line. For each initiative, answer two questions: (1) Does this involve an existing product or a new product? (2) Does this target an existing market or a new market?
+Decide which initiatives to add, merge, stop or re-scope so the portfolio matches the strategy. For each initiative that stays, record the quadrant in the marketing plan, since the quadrant shapes the target market, the channel mix and the kind of evidence needed. Hand penetration items to penetration analysis, new-segment items to market development planning, and so on. Assign an owner for each follow-up.
 
-This gives you a quadrant assignment:
-- Existing product + Existing market = **Market Penetration**
-- Existing product + New market = **Market Development**
-- New product + Existing market = **Product Development**
-- New product + New market = **Diversification**
+### Step 7: Set the review rhythm
 
-Some initiatives will feel ambiguous. A product refresh that adds significant new capabilities might straddle the line. When in doubt, ask: 'Would our current customers immediately recognize this as the same product?' If yes, it's existing. If they'd see it as something fundamentally different, it's new. Apply the same logic to markets: 'Are we reaching people we already know how to reach, or are we learning a new audience?'
-
-> **Pro tip:** Use color-coded tags or labels in your spreadsheet—green for market penetration, blue for market development, orange for product development, red for diversification—to make the classification instantly scannable.
-
-### Step 4: Step 4: Plot Initiatives onto the Visual Grid
-
-Create your 2x2 Ansoff Grid on a whiteboard, digital canvas (Miro, FigJam, Mural), or presentation slide. Label the axes and quadrants clearly. Then place each initiative in its assigned quadrant.
-
-For each initiative, include the name, estimated budget or effort level (small/medium/large), and a status indicator (active, planned, or proposed). You can use sticky notes, cards, or circles sized by budget to add a resource dimension to the visualization.
-
-Step back and look at the distribution. Count the number of initiatives in each quadrant and the total resource allocation per quadrant. This is your growth portfolio snapshot—the visual foundation your marketing plan will be built on.
-
-> **Pro tip:** Size your sticky notes or circles proportionally to budget. This makes resource concentration immediately visible without needing to read numbers.
-
-### Step 5: Step 5: Analyze Portfolio Balance and Risk Exposure
-
-With everything plotted, conduct a structured analysis. Ask these questions:
-
-1. **Concentration risk**: Is more than 60-70% of your budget in a single quadrant? That's a warning sign regardless of which quadrant it is.
-2. **Growth ambition gap**: Do you have zero initiatives in market development or product development? If so, your marketing plan may be optimized only for short-term extraction.
-3. **Diversification overload**: Multiple high-budget diversification bets running in parallel dramatically increases organizational risk. Most companies should have no more than 1-2 active diversification initiatives.
-4. **Stage alignment**: Are your quadrant investments appropriate for your company's maturity? Early-stage companies often lean toward product development and market development, while mature companies anchor in market penetration.
-
-Document these findings as observations, not yet as recommendations. You're building the evidence base.
-
-> **Pro tip:** Calculate a simple 'risk-weighted score' by assigning 1 point to market penetration initiatives, 2 to market development, 3 to product development, and 4 to diversification, then multiply by budget share. A higher aggregate score means a higher-risk portfolio.
-
-### Step 6: Step 6: Rebalance and Prioritize for Your Marketing Plan
-
-Based on your analysis, make deliberate rebalancing decisions. This is where mapping translates into marketing plan action. If your grid reveals over-concentration in penetration, consider allocating a defined percentage of budget to development or expansion quadrants. If diversification risk is too high, decide which bet to defer.
-
-Prioritize within each quadrant as well. Not every market penetration initiative deserves equal investment. Rank initiatives by expected impact, feasibility, and strategic alignment. Move the top-priority items into your active marketing plan and place others into a backlog or watchlist.
-
-The resulting marketing plan should reflect a deliberate quadrant allocation—for example, 50% market penetration, 25% market development, 20% product development, 5% diversification. These ratios will vary by company, but they should be intentional, not accidental.
-
-> **Pro tip:** Present the before-and-after grid to stakeholders. Showing how you moved from an unbalanced portfolio to a deliberate allocation makes the strategic logic of your marketing plan immediately persuasive.
-
-### Step 7: Step 7: Establish a Review Cadence
-
-A mapped Ansoff Grid is not a one-time artifact. Markets shift, products evolve, and new opportunities emerge. Set a quarterly review to update the grid: add new initiatives, remove completed or cancelled ones, reclassify any that have changed scope, and reassess portfolio balance.
-
-Tie this review to your marketing plan refresh cycle. Each quarter, the updated grid should inform budget reallocation discussions and initiative prioritization. Over time, you'll build a historical view of how your growth portfolio has evolved, which is invaluable for strategic retrospectives and board-level reporting.
-
-> **Pro tip:** Keep archived versions of each quarterly grid. Comparing them over 4-6 quarters reveals strategic drift or intentional pivots that aren't visible in any single snapshot.
+Agree when the map will be reviewed, at least as part of annual planning and after major changes such as a new competitor or a failed launch. At each review, update placements, since a market development bet that succeeds becomes part of the core. Keep dated versions so the team can see how the portfolio moved. Retire cards that are finished or stopped.
 
 ## Best Practices
 
-- Always define 'existing' and 'new' boundaries before classifying initiatives—ambiguity in definitions cascades into unreliable mapping and a misleading marketing plan.
-- Include initiatives from all growth-contributing functions (marketing, product, sales, partnerships), not just the marketing department, to get a true portfolio view.
-- Size visual elements by resource allocation (budget or headcount) so the grid communicates investment intensity, not just initiative count.
-- Limit diversification quadrant to 1-2 active bets at any time—spreading resources across multiple high-risk initiatives dilutes focus and increases failure probability.
-- Use the grid as a communication tool with leadership: present your marketing plan as a portfolio with deliberate risk allocation rather than a list of disconnected tactics.
-- Revisit and reclassify initiatives as they evolve—a market development initiative that gains traction may effectively become market penetration once that market becomes 'existing' for your org.
+- Write the definitions of "existing" and "new" on the same page as the grid. People forget them within a meeting, and placements drift without them.
+- Size cards by budget or headcount. A grid that shows only counts can make a portfolio look balanced when almost all money sits in one cell.
+- Keep the one-line reason for every placement. It turns disagreements about labels into disagreements about facts, which can be settled.
+- Map proposed and running work together. A proposal only looks risky or safe in the context of everything else the company is already betting on.
+- Coordinate initiatives that share a new market. Two teams entering the same unfamiliar segment separately double the learning cost.
+- Use Ansoff's idea of product missions for borderline market calls. A new use for the same product in the same company can be a new market.
 
 ## Common Mistakes
 
-- **Treating minor product updates as 'new products' and inflating the product development quadrant.** — Reserve the 'new product' classification for offerings that represent a fundamentally different value proposition. Feature enhancements, UX improvements, and packaging changes to existing products belong in the existing product column.
-- **Mapping initiatives based on aspiration rather than current reality—for example, classifying a market you've barely entered as 'existing.'** — A market is 'existing' only when you have established distribution, revenue, and customer relationships there. Pilot programs and early tests still belong in the 'new market' column until they've demonstrated traction.
-- **Counting initiatives instead of weighting by resource allocation, which makes a $10K experiment look equal to a $2M campaign.** — Always layer budget or effort data onto the grid. A quadrant with 8 small experiments and a quadrant with 1 major initiative may have very different strategic weight.
-- **Mapping once and never revisiting, causing the grid to become stale and disconnected from the actual marketing plan.** — Build Ansoff Grid review into your quarterly planning cadence. Treat it as a living document, not a workshop deliverable that gets filed away.
-- **Forcing every initiative into exactly one quadrant when some genuinely span two—such as launching a modified product into an adjacent segment.** — For hybrid initiatives, split them into their component growth bets. A modified product for a new segment contains both a product development and a market development element. Map each component separately for clearer risk assessment.
+- **Mapping from memory**: Plotting only the initiatives people remember in the room leaves out small bets and side projects. Build the inventory from budgets and roadmaps first.
+- **Letting everyone use their own definition of new**: Without written thresholds, the same initiative lands in different cells depending on who places it. Agree definitions before plotting.
+- **Treating the map as the decision**: The grid shows the shape of the portfolio. Each initiative still needs its own business case, target market work and review.
+- **Forcing partly new initiatives into a cell without comment**: A card placed confidently in one cell hides what is actually new about it. Note which axis is only partly new.
+- **Never updating the map**: Successful bets move toward the core and failed ones should leave the grid. A stale map misleads the next planning cycle.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ansoff-matrix/METHOD.md) — Ansoff Matrix
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ansoff-matrix/METHOD.md): Ansoff Matrix
 
 ## Related Skills
 
-- [Evaluating Market Penetration Strategies for Existing Products](../evaluating-market-penetration-strategies/SKILL.md)
+- [Evaluating Market Penetration Strategies](../evaluating-market-penetration-strategies/SKILL.md)
 - [Assessing Diversification Risk and Opportunity](../assessing-diversification-risk-and-opportunity/SKILL.md)
-- [Planning Market Development Initiatives for New Segments](../planning-market-development-initiatives/SKILL.md)
+- [Planning a Market Development Strategy](../planning-market-development-initiatives/SKILL.md)
 - [Defining Target Markets for Expansion Strategies](../defining-target-markets-for-expansion-strategies/SKILL.md)
-- [Designing Product Development Growth Paths](../designing-product-development-growth-paths/SKILL.md)
-- [Selecting Digital Marketing Channels per Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
+- [Product Development Strategy: Designing Growth Paths](../designing-product-development-growth-paths/SKILL.md)
+- [Digital Marketing Channels for Each Ansoff Quadrant](../selecting-digital-channels-per-growth-quadrant/SKILL.md)
+
+## Sources
+
+- [H. Igor Ansoff: Strategies for Diversification, Harvard Business Review, 1957](https://archive.org/details/strategiesfordiversificationansoff1957hbr)
+- [Wikipedia: Ansoff matrix](https://en.wikipedia.org/wiki/Ansoff_matrix)
+- [Nagji and Tuff: Managing Your Innovation Portfolio, Harvard Business Review](https://hbr.org/2012/05/managing-your-innovation-portfolio)
+- [Smart Insights: The Ansoff Model](https://www.smartinsights.com/marketing-planning/create-a-marketing-plan/ansoff-model/)

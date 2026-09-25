@@ -1,15 +1,20 @@
 ---
-name: calculating-ai-inference-unit-economics
-description: "This skill teaches you how to measure and model the real per-request cost of AI inference—including token consumption, GPU compute, API call expenses, and infrastructure overhead—so you can set pricing floors and build profitable machine learning pricing models."
+name: "calculating-ai-inference-unit-economics"
+description: "Calculate AI inference unit economics: the fully loaded cost per request and per unit of customer value that every AI price and tier rests on."
 category: "Marketing"
 metadata:
   homepage: https://tryhamster.com
-  method: ai-pricing-playbook
+  method: "ai-pricing-playbook"
+  datePublished: "2026-05-19"
+  dateModified: "2026-09-24"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Calculating AI Inference Unit Economics for Machine Learning Pricing Models
+# Calculating AI Inference Unit Economics
 
-> This skill teaches you how to measure and model the real per-request cost of AI inference—including token consumption, GPU compute, API call expenses, and infrastructure overhead—so you can set pricing floors and build profitable machine learning pricing models.
+> Calculate AI inference unit economics: the fully loaded cost per request and per unit of customer value that every AI price and tier rests on.
 
 ## Before you start
 
@@ -24,124 +29,106 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial model; 30-60 minutes to refresh with new data |
-| Outcome | You produce a validated cost-per-request model that gives you the exact dollar amount it costs to serve each AI-powered interaction, enabling you to set price floors, forecast COGS at scale, and make confident decisions about your machine learning pricing models. |
-| Prerequisites | Basic understanding of how LLM tokenization works (input tokens vs. output tokens), Access to your AI provider's billing dashboard or invoices (OpenAI, Anthropic, AWS Bedrock, etc.), Familiarity with spreadsheet modeling or a tool like Google Sheets / Excel, Knowledge of your current request volume or a reasonable estimate of projected usage, Understanding of gross margin concepts (revenue minus COGS divided by revenue) |
-| Part of | [AI Pricing Playbook: Unit Economics & Tiering](../../methods/ai-pricing-playbook/METHOD.md) |
+| Time to Learn | About half a day for the first model |
+| Outcome | A cost table that states, per request type and per unit of customer value, what it costs you to serve one customer, checked against real invoices. |
+| Prerequisites | Access to request logs with token counts, provider invoices, a list of the product's AI features |
+| Part of | [AI Pricing Playbook](../../methods/ai-pricing-playbook/METHOD.md) |
 
 ## Overview
 
-Every AI-powered product has a cost structure that looks nothing like traditional SaaS. In a classic software product, the marginal cost of serving one more user is effectively zero—your servers handle another request and the incremental expense is fractions of a penny. With AI inference, every single request burns real money: tokens are consumed, GPU cycles spin, API meters tick. If you don't know your cost-to-serve with precision, you're either leaving money on the table or quietly bleeding margin on every interaction. Calculating AI inference unit economics is the foundational skill in the [AI Pricing Playbook: Unit Economics & Tiering](https://tryhamster.com/methods/ai-pricing-playbook) because every downstream pricing decision—tier design, markup strategy, overage pricing—depends on a reliable cost floor.
+AI inference unit economics is the cost side of every AI pricing decision. The question it answers is narrow and concrete: when a customer completes one unit of value in your product, such as one document reviewed or one support ticket answered, how much did that cost you? Tier limits, overage rates, margin floors and markups all depend on that number, so it comes first in the [AI Pricing Playbook](https://tryhamster.com/methods/ai-pricing-playbook).
 
-This skill walks you through building a per-request cost model from scratch. You'll decompose a single AI-powered interaction into its component costs: the tokens consumed by the language model (both input and output), the compute time on GPUs or inference endpoints, any orchestration overhead like retrieval-augmented generation (RAG) lookups or embedding calls, and the amortized share of fixed infrastructure like vector databases, caching layers, and monitoring. The output is a single spreadsheet or model that maps request types to their fully-loaded cost, giving you numbers like '$0.0023 per summarization request' or '$0.018 per complex agentic workflow.' These numbers are the bedrock of sound machine learning pricing models.
+The number is harder to get than it looks. Model vendors publish per-token rates, but a single user action can trigger several model calls, a retrieval step, retries and tool calls. Input and output tokens are priced separately, and [output tokens cost several times more than input on Anthropic's published rate card](https://platform.claude.com/docs/en/about-claude/pricing). Tool definitions and system prompts add input tokens to every request. Caching and batch processing lower the cost of some requests and not others.
 
-The reason this skill exists as a standalone practice—rather than a back-of-napkin estimate—is that AI costs are deceptively variable. A request that generates 50 output tokens costs radically less than one that generates 2,000. A cached prompt is cheaper than a fresh one. A batch-processed request at off-peak hours on a reserved GPU instance is a different economic animal than a real-time request on on-demand compute. Without a structured model, teams routinely underestimate costs by 2-5x, discover they're underwater only after scaling, and then face the painful choice of raising prices or cutting features. The artifact you'll produce here—a cost model with per-request granularity—prevents that surprise and gives you the confidence to price aggressively where margins allow and conservatively where they don't.
+Andreessen Horowitz's study of AI businesses found companies often spending [25% or more of revenue on cloud resources](https://a16z.com/the-new-business-of-ai-and-how-its-different-from-traditional-software/), and advised founders to track down real variable costs rather than letting them hide in R&D. That is the discipline this skill applies. You measure costs from logs, allocate shared costs honestly, and check the model against the invoices your providers actually send.
 
-When done well, this model becomes a living document. You'll update it quarterly as model providers change pricing, as you shift between models or providers, and as your request mix evolves. It feeds directly into sibling skills like [modeling token cost pass-through](https://tryhamster.com/skills/modeling-token-cost-pass-through) and [managing gross margins on AI features](https://tryhamster.com/skills/managing-gross-margins-on-ai-features), and it's the first thing you'll reference when [designing usage-based pricing tiers](https://tryhamster.com/skills/designing-usage-based-pricing-tiers).
+The output is a cost table. Each row is a request type with its measured tokens, model, retry rate, extra costs and cost per request. A second view rolls those rows up into cost per unit of customer value, which is the number pricing uses. A short list of assumptions sits next to the table so that anyone can see what would change it. The table is refreshed when you change models, prompts or providers, and on a fixed schedule in between.
 
 ## How It Works
 
-The core mental model behind AI inference unit economics is **full-cost decomposition per logical request**. Instead of looking at your monthly AI bill as a single number and dividing by total requests (which gives you an average that obscures the variance), you break each type of request your product serves into its atomic cost components, model each independently, then reassemble them into a fully-loaded cost figure.
+The model has three layers. The first is direct inference cost: for each request type, measured input tokens times the input rate plus measured output tokens times the output rate, with cached input priced at its own rate. Both major API vendors price per million tokens with separate input and output rates, and [OpenAI prices cached input below standard input](https://developers.openai.com/api/docs/pricing). Anthropic charges [cache reads at 0.1x the base input price on most models and gives a 50% discount on batch processing](https://platform.claude.com/docs/en/about-claude/pricing), so the same prompt can have very different costs depending on how it is sent.
 
-Think of it like a restaurant costing a dish. You don't just divide total food spend by dishes served. You cost the protein, the vegetables, the sauce, the gas for cooking, the plate depreciation, and the labor—per dish, per variant. A steak dinner has different unit economics than a salad. Similarly, a simple classification request has different unit economics than a multi-step agentic workflow with tool calls, RAG retrieval, and streaming output.
+The second layer is everything around the model call. Retrieval adds embedding and vector search costs. Agent loops add more model calls per user action. Failed calls that you retry still cost money. Logging, evaluation and guardrail checks add their own calls or compute. Some products also pay for human review on a share of outputs, which a16z identified as a lasting cost in many AI products. Each of these is measured per request type where possible and allocated where not.
 
-**Why decomposition matters more than averaging:** AI cost structures have extremely high variance between request types. In a typical AI product, the most expensive 10% of requests might consume 60-70% of total cost. If you average, you'll underprice heavy requests and overprice light ones. Machine learning pricing models that use blended averages create adverse selection—power users flock to your underpriced heavy features, and light users leave because they're subsidizing everyone else.
+The third layer is fixed costs divided over volume: vector database hosting, self-hosted GPU capacity, observability tools, and the share of engineering time spent keeping prompts and evaluations working. These fall per request as volume grows, so the model shows the cost at current volume and at target volume.
 
-The model works in three layers:
+Rolling up means mapping request types to value units. One "document reviewed" might be one classification call, three retrieval calls and one long generation. The cost per value unit is the sum over that recipe. This is also where the distribution matters: the median document costs one thing, the longest documents cost several times more, and heavy customers skew toward the expensive end. Keep percentiles, not only averages.
 
-**Layer 1: Variable costs per request.** These scale linearly (or near-linearly) with each request. Token costs are the biggest variable: input tokens (what you send to the model) and output tokens (what the model generates) are priced differently by every provider, with output tokens typically costing 3-5x more per token. Compute time matters if you're running self-hosted models—each second of GPU time has a known cost. API orchestration costs include embedding calls for RAG, vector database queries, tool-use calls, and any chained model calls in agentic workflows.
-
-**Layer 2: Semi-variable costs.** These scale with usage but not linearly per request. Caching infrastructure costs more as your cache grows, but each cached hit avoids a full model call—so caching is both a cost and a savings. Logging and monitoring scale with request volume but are often tiered. Bandwidth costs for streaming responses scale with output size.
-
-**Layer 3: Fixed costs amortized per request.** These exist regardless of volume: vector database hosting, fine-tuning amortization, GPU reserved instances, prompt engineering labor, evaluation pipeline costs. You amortize these across your projected monthly request volume to get a per-request share. This is where the model gets tricky—if you project 1M requests/month and only hit 200K, your per-request fixed cost is 5x higher than planned.
-
-The formula for a single request type becomes:
-
-**Cost per request = (input_tokens × input_price) + (output_tokens × output_price) + (embedding_calls × embedding_price) + (retrieval_cost) + (compute_time × compute_rate) + (fixed_monthly_costs / projected_monthly_requests)**
-
-This is the number that feeds into every machine learning pricing model you build. It's your cost floor. Your price must sit above this number by enough to hit your target gross margin (typically 60-80% for software, though many early AI products operate at 40-60% while optimizing). Understanding why each component exists and how it behaves at different scales is what separates teams that price profitably from those that discover margin problems at scale. The [AI Pricing Playbook](https://tryhamster.com/methods/ai-pricing-playbook) treats this number as the gravitational constant of your pricing universe—everything else orbits around it.
+Two things make the model drift. Usage changes, as customers adopt heavier features or longer inputs. And the vendor side changes, both in price and in how tokens are counted: Anthropic notes that its newer tokenizer [produces approximately 30% more tokens for the same text](https://platform.claude.com/docs/en/about-claude/pricing). A model switch can therefore change cost even when the per-token price looks similar, which is why the model is re-measured after every change rather than adjusted by hand.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Catalog Your AI Request Types
+### Step 1: List Request Types
 
-Before you can cost anything, you need to know exactly what you're costing. Open your product and list every distinct type of AI-powered interaction a user can trigger. Be specific—'summarization' and 'question answering over documents' are different request types even if they use the same model, because their token profiles differ dramatically. For each request type, note: which model it calls (GPT-4o, Claude 3.5 Sonnet, a fine-tuned model, etc.), whether it involves RAG retrieval, how many chained calls it makes (e.g., an agentic workflow might call the model 3-5 times per user request), and whether responses are streamed or batched. The output of this step is a simple table with one row per request type and columns for model, chain depth, RAG involvement, and average frequency (what percentage of total requests does this type represent). Most products have 3-8 distinct request types. If you have more than 15, look for types you can group—the cost model needs to be maintainable.
+Go through the product and list every distinct kind of AI call: classification, short answer, long generation, summarization, agent run, embedding. Group calls that share a model, prompt shape and output length. Most products end up with a handful of types. Map each user-facing action to the request types it triggers, because that mapping becomes the recipe for each value unit. Note which features are on which plans, since plan mix changes the blend later.
 
-> **Pro tip:** Check your application logs or API call logs, not your product spec. Engineers often add model calls that PMs don't know about—retry logic, fallback models, pre-classification calls to route requests. These hidden calls are real costs that must be in your model.
+### Step 2: Measure Tokens From Logs
 
-### Step 2: Step 2: Measure Token Consumption Per Request Type
+Pull a sample of real requests for each type and record input tokens, output tokens, cached tokens, model and retries. Record the median and an upper percentile, not only the mean. Use the usage fields the provider returns with each response instead of estimating from word counts. If the product is pre-launch, run a realistic test set and mark the numbers as provisional. Look for outliers, such as very long pasted documents, and decide whether they need their own request type.
 
-For each request type, you need the actual token counts—not estimates, not what the prompt 'should' use, but real measured data. Pull a sample of 100-500 requests per type from your logs. For each request, record input tokens and output tokens separately (your API provider's response headers or billing API will have these). Calculate the median, mean, P75, and P95 for both input and output tokens per request type. The median is your planning number; the P95 is your risk number. If you're using RAG, also count the tokens consumed by the retrieved context—these are input tokens but they vary based on how many chunks you retrieve and how large they are. If you have agentic or multi-step workflows, sum all model calls in the chain. A single user-facing request that triggers 4 model calls consumes 4x the tokens of a single call. Record this multiplier per request type. The output is a table: request type, median input tokens, median output tokens, P95 input tokens, P95 output tokens, average chain depth.
+### Step 3: Apply Current Rates
 
-> **Pro tip:** Output tokens are the most volatile cost driver. A summarization request might produce 50-500 output tokens depending on document length and user instructions. If your P95 output tokens are more than 3x your median, you likely have a bimodal distribution—investigate whether you actually have two distinct request types hiding in one bucket.
+Take per-million-token rates from the vendor's own pricing page, such as [Anthropic's](https://platform.claude.com/docs/en/about-claude/pricing) or [OpenAI's](https://developers.openai.com/api/docs/pricing), on the day you build the model, and record that date. Price input, output and cached input separately. Apply batch pricing only to requests you actually send through a batch endpoint. Keep the rates in one input sheet so a price change updates every row. Do not copy rates from blog posts, which go stale quickly.
 
-### Step 3: Step 3: Map Current Provider Pricing to Each Request Type
+### Step 4: Add the Costs Around the Model Call
 
-Pull the current pricing from every AI provider you use. Create a pricing reference table with columns for provider, model, input price per 1K tokens (or per 1M tokens—just be consistent), and output price per 1K tokens. Include all models you call, including embedding models, and any per-call fees (some providers charge a flat fee per API call on top of token costs). For self-hosted models, calculate the effective per-token cost by dividing your GPU costs (instance cost per hour) by the throughput of that instance (tokens per second × 3,600 seconds). This is less precise than API pricing because throughput varies with batch size, sequence length, and model, so use your measured throughput from production, not the vendor's benchmarks. Now multiply: for each request type, take the median token counts from Step 2 and multiply by the per-token prices. This gives you the raw model cost per request type. Write it down with four decimal places—these numbers are small individually but massive at scale.
+For each request type, add retrieval, embedding, tool calls, extra agent steps, guardrail checks and the cost of retries. Add per-request infrastructure such as serverless compute or queue processing. If a share of outputs gets human review, add that cost weighted by the share. Then list fixed monthly costs and divide them by current and target volume. Write each allocation rule down so finance can check it.
 
-> **Pro tip:** Watch for pricing that differs between cached and uncached tokens. Anthropic and OpenAI both offer prompt caching that can cut input token costs by 50-90% for repeated system prompts. If you use caching, you need two cost figures per request type: cache-hit cost and cache-miss cost, then weight them by your actual cache hit rate.
+### Step 5: Roll Up to Cost per Value Unit
 
-### Step 4: Step 4: Add Orchestration and Infrastructure Costs
+Combine request types into the recipe for each value unit and sum the costs. Show the median case and the heavy case side by side. The worked arithmetic below shows the shape of the calculation.
 
-The model call is rarely the only cost. List every other service that gets invoked during a request: vector database queries (Pinecone, Weaviate, pgvector on a database), embedding generation for the query, re-ranking model calls, web search API calls, tool-use endpoints, image processing, or any other external service. For each, find the per-call or per-query cost. Vector database costs are often a combination of storage (per GB/month) and query costs (per query or per compute unit). Embedding costs are typically per-token, just like LLM calls but much cheaper. Sum all of these per-request-type. Then add compute overhead: if your orchestration layer (LangChain, your custom agent framework, etc.) runs on application servers, estimate the compute time per request and multiply by your server cost per second. For most cloud-hosted applications, this is $0.00001-$0.0005 per request—small but not zero, and it adds up. The output is an updated cost table with a new column: 'orchestration and infra cost per request.'
+Illustrative scenario: one "contract reviewed" uses one classification call and one long generation, at hypothetical rates of $2 per million input tokens and $10 per million output tokens.
 
-> **Pro tip:** Don't forget egress and bandwidth costs. If you're streaming large responses or serving results that include retrieved document chunks, cloud egress fees can be $0.01-0.05 per GB. At high volumes with large payloads, this becomes material.
+| Line | Tokens | Cost |
+|------|--------|------|
+| Classification input | 2,000 | $0.004 |
+| Classification output | 100 | $0.001 |
+| Generation input | 5,000 | $0.010 |
+| Generation output | 1,000 | $0.010 |
+| Total per contract | 8,100 | $0.025 |
 
-### Step 5: Step 5: Amortize Fixed Monthly Costs Across Projected Volume
+### Step 6: Reconcile With Invoices
 
-List every fixed cost that exists regardless of request volume: GPU reserved instances or committed-use discounts, vector database base hosting fees, fine-tuning costs (amortized over the useful life of the fine-tune, typically 3-6 months before retraining), monitoring and observability tool subscriptions, prompt engineering and evaluation labor (if you have dedicated staff), and any minimum spend commitments with providers. Sum these into a total monthly fixed cost. Now divide by your projected monthly request volume. This is the trickiest number in the model because it's a forecast, not a measurement. Use three scenarios: pessimistic (50% of target volume), expected (your planning number), and optimistic (150% of target). Calculate the per-request fixed cost allocation under each scenario. The spread between pessimistic and optimistic shows your volume risk—if the pessimistic scenario makes your unit economics unprofitable, you need to rethink your fixed cost structure or your volume assumptions before you price anything.
+Multiply cost per request by last month's request counts and compare the total with the provider invoice for the same month. If the model is well below the invoice, look for missing request types, retries, long-tail inputs or background jobs. If it is above, check caching and batch usage. Adjust the model until the gap is small and explained. Repeat this check monthly.
 
-> **Pro tip:** For early-stage products with low volume, fixed cost amortization can dominate your unit economics and make per-request costs look terrifying. Separate your model into 'at current volume' and 'at target volume (12 months out)' views. Price for where you're going, not where you are—but track actuals monthly to make sure you're getting there.
+### Step 7: Publish the Table and Set Refresh Triggers
 
-### Step 6: Step 6: Build the Fully-Loaded Cost-Per-Request Model
-
-Now assemble everything into a single spreadsheet or model. Create one row per request type. Columns: request type, median input tokens, median output tokens, model cost (tokens × price), orchestration cost, fixed cost allocation, and total fully-loaded cost per request. Add a weighted average row at the bottom that weights each request type by its share of total volume—this gives you a blended cost per request that's useful for back-of-envelope checks but should never be used for actual pricing decisions (use the per-type costs instead). Add a sensitivity analysis: what happens to costs if output tokens increase 50%? If your provider raises prices 20%? If volume drops 30%? Build these as toggleable scenarios. Finally, add a column for your target gross margin (start with 70% as a benchmark) and calculate the minimum price per request type that achieves that margin. This is your price floor. The output of this step is the artifact: a cost model spreadsheet with per-request-type costs, scenarios, and price floors.
-
-> **Pro tip:** Color-code the cells: green for request types where your current pricing exceeds the price floor by 2x+ (healthy margin), yellow for 1-2x (tight), red for below the floor (losing money). This visual makes it immediately obvious where you have pricing problems.
-
-### Step 7: Step 7: Validate Against Actual Spend
-
-A model is only useful if it matches reality. Take your last full month of actual AI provider invoices, infrastructure bills, and any other costs included in the model. Calculate what your model would have predicted for that month's spend given the actual request volume and mix. Compare predicted vs. actual. If they're within 10%, your model is solid. If they diverge by more than 15%, investigate: Are there request types you missed? Is your token measurement sample unrepresentative? Are there costs not captured (support, incident response, model evaluation)? Reconcile until the model predicts last month within 5-10% accuracy. Then run it forward: predict next month's cost based on your growth trajectory and see if the prediction feels reasonable. This validation step is what separates a useful cost model from a theoretical exercise. Document the validation date and accuracy so you know when it's time to revalidate.
-
-> **Pro tip:** The most common source of divergence is retries and error handling. If 5% of your requests fail and get retried, you're consuming tokens on the failed attempts too. Check your error rate and add a retry multiplier (e.g., 1.05x for a 5% retry rate) to your token consumption estimates.
-
-### Step 8: Step 8: Establish a Refresh Cadence and Cost Monitoring
-
-AI inference costs are not stable. Model providers change pricing (often downward, but not always). Your request mix shifts as users adopt new features. Your engineering team optimizes prompts, adds caching, or switches models. Set a calendar reminder to refresh this model monthly for the first quarter, then quarterly once it's stable. Create a simple dashboard or alert that tracks your actual cost-per-request against the model's prediction—if they diverge by more than 15%, trigger an immediate refresh. Also monitor your cost-per-request trend over time: is it going up (more complex features, larger contexts) or down (prompt optimization, caching, cheaper models)? This trend line is critical input for your pricing strategy. If costs are declining 10% per quarter, you can either improve margins or pass savings to customers to drive adoption. If costs are rising, you need to adjust pricing or optimize before margins erode.
-
-> **Pro tip:** Set up a Slack or email alert when your daily average cost-per-request exceeds 120% of the modeled value. This catches problems like a prompt regression (someone accidentally removed caching), a model version change with different token economics, or a sudden shift in usage patterns—before they show up on your monthly invoice.
+Share the cost table with product, finance and whoever owns pricing. List the triggers that force a re-measure: a model change, a prompt change that alters length, a new feature, a vendor price change, or a monthly reconciliation gap you cannot explain. Tag the table with its build date. Feed it into margin monitoring and tier design, which both depend on it.
 
 ## Best Practices
 
-- **Measure tokens from production, not development.** Development prompts are shorter, simpler, and more predictable than production prompts with real user inputs. Always base your cost model on production log samples of at least 100 requests per type. Teams that cost from development data consistently underestimate production costs by 30-60%, and the gap grows as users discover creative (expensive) ways to use your product.
-- **Model input and output tokens separately with distinct distributions.** Input tokens are relatively stable (your system prompt + retrieved context is predictable) while output tokens are highly variable (model verbosity, user request complexity). Treating them as a single number hides the variance that drives your cost risk. If your output token P95 is 4x+ your median, that tail is where your margin disappears.
-- **Always include a 'worst case request' analysis.** Identify the single most expensive possible request a user could make in your product—maximum context window, maximum output, multiple tool calls, full RAG retrieval. Cost it out fully. This number tells you your maximum exposure per request and informs decisions about rate limiting, output caps, and whether you need guardrails. If your worst-case request costs $0.50 and your pricing charges $0.01, one adversarial or pathological user can destroy your margins.
-- **Use the per-request-type costs, never the blended average, for pricing decisions.** The blended average is a vanity metric that hides cross-subsidization. A product with two request types—one costing $0.001 and another costing $0.05—has a blended average that depends entirely on mix, which you don't control. Price each tier or feature against its specific cost, not the average. This prevents the adverse selection spiral where heavy users get subsidized by light users until the light users leave.
-- **Build your model to be provider-swappable.** Structure the spreadsheet so that changing the model provider's pricing is a single cell edit, not a full rebuild. AI providers change pricing frequently, new models launch monthly, and your team will want to model 'what if we switch from GPT-4o to Claude 3.5 Sonnet?' quickly. A provider-agnostic structure also makes it easy to model multi-provider strategies where you route different request types to different models based on cost-quality tradeoffs.
-- **Include the cost of quality: evaluation, monitoring, and guardrails.** Running an AI feature in production requires evaluating output quality, monitoring for regressions, content filtering, and safety checks. These are real per-request costs (or per-batch costs that amortize per request) that teams routinely omit from cost models. If your evaluation pipeline runs a second model call on 10% of responses, that's a cost. If your guardrail check adds latency that requires higher-tier compute, that's a cost. Omitting quality costs leads to the painful discovery that 'making it good enough for production' costs 20-40% more than the raw inference.
-- **Document your assumptions explicitly in the model.** Every cost model contains assumptions: projected volume, cache hit rate, average chain depth, retry rate. Write each assumption in a dedicated cell or section with the date and source. When assumptions change (and they will), you can trace exactly which parts of the model are affected. Without this, refreshing the model becomes a full rebuild because nobody remembers why a particular number was chosen.
+- **Measure, then estimate.** Token counts from real logs beat any calculation from word counts, because system prompts, tool schemas and conversation history add input you do not see in the user's text. Estimates are acceptable only before launch, and should be replaced as soon as data exists.
+- **Keep percentiles next to averages.** Heavy customers and long inputs drive most of the cost. A table with only means will tell you a plan is profitable when its heaviest users are not.
+- **Separate input, output and cached tokens.** They are priced differently and move differently when you change prompts. Collapsing them into one blended token rate hides the effect of caching and of longer answers.
+- **Record the source and date of every rate.** Vendor prices change often, as [a16z's LLMflation analysis](https://a16z.com/llmflation-llm-inference-cost/) shows. A dated rate sheet makes it obvious when the model needs refreshing.
+- **Re-measure after model switches.** Tokenizers differ between model generations, so the same prompt can produce more or fewer tokens. Compare cost per value unit before and after, not per-token price.
+- **Include the costs that feel like overhead.** Evaluation runs, prompt maintenance time and observability are real costs of serving the feature. Leaving them out flatters margin and misleads pricing.
 
 ## Common Mistakes
 
-- **Using the API provider's published 'average cost per request' instead of measuring your own token consumption.** — Provider averages are based on their entire customer base, which has a completely different request mix than your product. A provider might quote $0.002 average per request, but your product's RAG-augmented requests with large context windows might cost $0.02-$0.08 each. Always measure your own token distributions from production logs. The signal that you've made this mistake is that your modeled monthly cost is consistently 2-5x lower than your actual invoice. Pull a sample of 200+ real requests, measure tokens, and re-baseline.
-- **Ignoring the cost of multi-step and agentic workflows by counting only the 'main' model call.** — Modern AI features often involve chains: a classifier routes the request, RAG retrieves context, the main model generates a response, and a second model validates or reformats it. Each step consumes tokens and compute. Teams frequently cost only the 'main' generation call and miss 40-70% of actual token consumption. The diagnostic sign is a cost model that predicts accurately for simple requests but wildly underestimates complex ones. Trace one complete request through your system, log every external API call, and sum them all.
-- **Building the cost model once and never refreshing it, even as models, providers, and request patterns change.** — AI inference economics shift faster than almost any other cost input in software. Model providers change pricing quarterly, your engineering team optimizes prompts and adds caching, and your user base shifts toward different features. A model built in January can be 30-50% inaccurate by June. The warning sign is a growing gap between your modeled cost-per-request and your actual invoice divided by requests. Set a quarterly refresh cadence at minimum, and revalidate immediately after any model migration, major prompt change, or provider pricing update.
-- **Amortizing fixed costs across optimistic volume projections, making unit economics look artificially good.** — When you divide $10,000/month in fixed infrastructure costs by a projected 1M requests, it's only $0.01 per request. But if you're currently at 100K requests, your actual fixed cost allocation is $0.10 per request—10x higher. This mistake makes early-stage unit economics look profitable on paper while the company loses money in practice. Always model at current actual volume alongside projected volume, and be honest about which number you're using for pricing decisions. If your product can't achieve target margins at current volume with fixed costs included, acknowledge that gap and plan for it explicitly rather than hiding it behind a forecast.
-- **Treating all requests as equal cost when designing machine learning pricing models, leading to a single blended price.** — This is the most strategically dangerous mistake. If your product offers both a lightweight autocomplete feature ($0.001/request) and a deep document analysis feature ($0.05/request), a single blended price creates a massive cross-subsidy. Users of the expensive feature get a bargain, users of the cheap feature overpay, and as your user base shifts toward the expensive feature (which they will, because it's underpriced), your blended cost rises but your blended price doesn't. The fix is to cost each request type independently and use those per-type costs as inputs to your tiering and pricing strategy. You can still present a simple price to users, but the internal model must understand the cost structure per feature.
-- **Forgetting to account for prompt caching economics, leading to either over- or under-estimation.** — If you've implemented prompt caching (where repeated system prompts are cached by the provider at reduced cost), but your model uses the full uncached token price, you're overestimating costs. Conversely, if you assume caching for all requests but your actual cache hit rate is only 40%, you're underestimating. The fix is to measure your actual cache hit rate from API response headers (most providers indicate cache hits), then calculate a weighted average: (cache_hit_rate × cached_price) + (cache_miss_rate × full_price). Update this monthly as your cache behavior changes with new prompt versions or user patterns.
+- **Counting only the headline model call**: Retrieval, retries, agent steps and guardrail calls often add as much as the main call. Trace a full user action through the logs and add every call it triggers.
+- **Using one blended cost for all requests**: A blend hides the fact that long documents or agent runs cost far more than short answers. When the mix shifts toward heavy features, a blended number will be wrong without warning. Keep request types separate and blend only at the end.
+- **Skipping the invoice check**: A model that has never been reconciled against a real invoice is a hypothesis. The gap between model and invoice is where missing costs show up.
+- **Assuming costs only fall**: Per-token prices tend to drop, but tokens per task can rise as features become more agentic or inputs grow. Track cost per value unit over time instead of assuming it declines.
+- **Leaving fixed costs out of the per-unit view**: Fixed costs matter at low volume, which is exactly when early pricing is set. Show cost at current and target volume so the price does not assume scale you do not have yet.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/ai-pricing-playbook/METHOD.md) — AI Pricing Playbook: Unit Economics & Tiering
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/ai-pricing-playbook/METHOD.md): AI Pricing Playbook
 
 ## Related Skills
 
-- [Designing Usage-Based Pricing Tiers for AI Products](../designing-usage-based-pricing-tiers/SKILL.md)
-- [Choosing Between AI Pricing Models: Seat vs. Usage vs. Outcome](../choosing-ai-pricing-models/SKILL.md)
-- [Modeling Token Cost Pass-Through and Markup Strategy](../modeling-token-cost-pass-through/SKILL.md)
-- [Managing Gross Margins on AI-Powered Features](../managing-gross-margins-on-ai-features/SKILL.md)
-- [Setting Rate Limits and Overage Pricing for AI APIs](../setting-rate-limits-and-overage-pricing/SKILL.md)
-- [Benchmarking AI Product Pricing Against Competitors](../benchmarking-ai-product-pricing/SKILL.md)
-- [Migrating from Flat Subscription to Usage-Based AI Pricing](../migrating-from-flat-to-usage-based-pricing/SKILL.md)
+- [Modeling Token Cost Pass-Through](../modeling-token-cost-pass-through/SKILL.md)
+- [Managing Gross Margins on AI Features](../managing-gross-margins-on-ai-features/SKILL.md)
+- [Designing Usage-Based Pricing Tiers](../designing-usage-based-pricing-tiers/SKILL.md)
+- [Choosing Between AI Pricing Models](../choosing-ai-pricing-models/SKILL.md)
+
+## Sources
+
+- [Claude API docs: Pricing](https://platform.claude.com/docs/en/about-claude/pricing)
+- [OpenAI API pricing](https://developers.openai.com/api/docs/pricing)
+- [a16z: The New Business of AI](https://a16z.com/the-new-business-of-ai-and-how-its-different-from-traditional-software/)
+- [a16z: Welcome to LLMflation](https://a16z.com/llmflation-llm-inference-cost/)

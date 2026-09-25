@@ -1,25 +1,21 @@
-# FAQ: Facilitating Divergent Ideation in the Develop Phase
+# FAQ: Facilitating Divergent Ideation in the Double Diamond
 
-## How many ideas should a Develop phase ideation session produce?
+## How many ideas should an ideation session aim for?
 
-Aim for 80-150 raw ideas in a 2-hour session with 5-8 participants. Quantity matters because research shows idea quality increases with volume — the best ideas typically appear after the first 40-50 obvious ones are exhausted. If you're consistently below 50, add more structured techniques or increase individual ideation time.
+Aim for volume rather than a target number. IDEO.org's brainstorm guidance says a good session can produce a very large number of ideas in an hour. The practical signal is that later ideas become less obvious than the first ones. If every idea looks like the first, keep going or change technique.
 
-## What is the Develop phase in double diamond design thinking?
+## Who should be in the room?
 
-The Develop phase is the third stage of the Double Diamond framework, where teams diverge again after defining the problem. It focuses on generating a wide range of potential solutions through brainstorming, co-design, and prototyping before converging on the best options in the Deliver phase.
+People with different angles on the problem: designers, engineers, delivery or operations staff, subject experts and, where you can, users. Keep the group small enough that everyone contributes. Several small groups working in parallel usually beat one large one.
 
-## How do I run divergent ideation with a remote team?
+## How do I stop senior people dominating?
 
-Use digital whiteboard tools like Miro or FigJam with built-in timers. Start with individual ideation on physical paper (photograph and upload), use breakout rooms for small-group exercises, and enforce cameras-on during share-backs. Schedule shorter sessions (90 minutes max) with more breaks, as remote ideation is more mentally taxing.
+Start every round with silent individual generation, and ask senior people to share last. Make the rule about deferring judgement explicit and apply it to everyone equally. Brief senior participants beforehand on why this matters.
 
-## What's the difference between brainstorming and brainwriting?
+## Can ideation work remotely?
 
-Brainstorming is verbal group ideation where participants call out ideas. Brainwriting is silent, individual ideation where participants write ideas on paper or sticky notes simultaneously. Brainwriting consistently outperforms brainstorming in research because it eliminates production blocking and reduces social pressure to conform.
+Yes. Use a shared board, keep live sessions short, and add an asynchronous period in between so people across time zones can contribute. Silent generation works especially well online. Watch for people who never unmute and invite their contributions directly.
 
-## When should I use co-design workshops versus team-only ideation?
+## When should ideation stop?
 
-Use co-design workshops when your problem affects diverse user groups, when your team lacks domain expertise, or when stakeholder buy-in is critical for implementation. Team-only sessions work well for incremental improvements where the team has deep domain knowledge. For complex or novel problems in double diamond design thinking, co-design almost always produces better results.
-
-## How do I prevent the loudest person from dominating the ideation session?
-
-Structure solves this problem. Start with individual brainwriting before any group discussion, use round robin sharing so every voice is heard, and employ techniques like Crazy 8s that are inherently individual. As a facilitator, actively invite quieter participants to share and redirect dominant voices by saying 'Let's hear from someone who hasn't shared yet.'
+Stop when new rounds mostly repeat earlier ideas and the group has several concepts that take genuinely different approaches. Then cluster, shape a handful of concepts, and hand them to Deliver for testing. Continuing past that point tends to produce variations rather than alternatives.

@@ -1,21 +1,37 @@
 # Examples: Defining Scrum Roles and Accountabilities
 
-## Example: Launching a New Scrum Team at a Mid-Size SaaS Company
+## Replacing a Product Owner committee
 
 **Scenario:**
 
-A SaaS company is moving from waterfall to Scrum. They have a 15-person engineering group, a VP of Product, and no prior Scrum experience. They need to set up their first Scrum team.
+Illustrative scenario: a team building an internal analytics tool has three "product owners": a finance lead, a sales lead and an engineering manager. Each adds items to the top of the backlog, and the Developers start most Sprints unsure which item matters most.
 
 **Walkthrough:**
 
-The VP of Product designates a senior product manager, Sarah, as the Product Owner for the team's product area. Sarah has deep customer knowledge and is given authority to make backlog priority decisions without committee approval. The company hires an experienced scrum master, Marcus, whose sole responsibility is serving this team—he has no development tasks. They form a Development Team of 6: 3 backend engineers, 1 frontend engineer, 1 QA specialist, and 1 UX designer. The team drafts a one-page working agreement clarifying that Sarah decides *what* to build, the Development Team decides *how*, and Marcus facilitates all Scrum events and addresses impediments. In their first sprint, the CTO bypasses Sarah and asks a developer to fix something 'real quick.' The developer acknowledges the request and redirects it to Sarah, who adds it to the backlog. Marcus follows up with the CTO to explain the process. By sprint 3, stakeholders understand the flow and the team is hitting its stride.
+The Scrum Master brings the Scrum Guide's line that the Product Owner is one person and not a committee to the managers who sponsor the tool. They agree that the finance lead, whose team uses the tool daily, becomes the Product Owner. The sales lead and engineering manager become stakeholders who bring requests to her and attend the Sprint Review.
 
-## Example: Resetting Role Clarity in a Struggling Team
+The team writes a one-page decision list: backlog order belongs to the Product Owner, how to build belongs to the Developers, and cancelling a Sprint is the Product Owner's call alone. After a few Sprints, the retrospective notes that planning is shorter because the top of the backlog no longer changes daily.
+
+## A line manager who wants to be the Scrum Master
 
 **Scenario:**
 
-An existing Scrum team has been underperforming for months. The scrum master spends most of their time writing status reports for leadership. The Product Owner attends sprint planning but is unreachable the rest of the sprint. Two senior developers make all priority decisions informally.
+Illustrative scenario: an engineering manager with six direct reports volunteers to be their Scrum Master to save headcount. Two Developers privately tell a colleague they would not raise problems in front of him.
 
 **Walkthrough:**
 
-The team's manager brings in an Agile coach to diagnose the problem. The coach identifies three role violations: the scrum master has become a project manager, the Product Owner is absentee, and the Development Team has an informal hierarchy. The fix: First, the scrum master stops writing status reports—leadership is invited to attend sprint reviews instead. The scrum master's time is redirected to facilitating retrospectives and removing the team's top three impediments. Second, the Product Owner commits to being available 4 days per week and joins daily standups twice weekly to answer questions. Third, the team adopts planning poker for estimation to equalize voices, and rotates who presents at sprint reviews. The coach facilitates a role-reset workshop using the Scrum Guide as the source of truth. Within two sprints, the team's velocity stabilizes and sprint goal completion improves from 40% to 80%.
+The group discusses the options openly. The manager keeps responsibility for hiring, career growth and budget, and a senior tester with coaching experience takes the Scrum Master accountability part-time. The manager agrees to stop assigning individual tasks during Sprints and to send new requests to the Product Owner.
+
+At the next retrospective, the Developers raise a recurring build problem they had worked around for months. The Scrum Master takes it to the platform group as an organizational impediment, which is part of the role's service to the organization.
+
+## Filling a skills gap inside the team
+
+**Scenario:**
+
+Illustrative scenario: a team's Developers are all web engineers. Every item needs a database change, and a single database specialist in another department reviews them, so items wait days before they can be Done.
+
+**Walkthrough:**
+
+The team lists the skills needed to take an item to Done and marks database changes as the gap. The Product Owner and Scrum Master ask the specialist's manager to have her join the Scrum Team as a Developer for the next few months. She pairs with two engineers on each change so the skill spreads.
+
+The team also updates its Definition of Done to include the database review, so "Done" means the same thing to everyone. The hand-off disappears from the board, and the retrospective tracks whether the pairing continues after she moves back.

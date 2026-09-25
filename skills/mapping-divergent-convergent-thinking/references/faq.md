@@ -1,25 +1,21 @@
-# FAQ: Mapping Divergent and Convergent Thinking Modes
+# FAQ: Double Diamond Thinking, Divergent and Convergent Modes
 
-## What is Double Diamond divergent and convergent thinking?
+## What do divergent and convergent thinking mean?
 
-The Double Diamond framework uses two types of thinking in alternating phases. Divergent thinking (used in Discover and Develop) means expanding your options—gathering data, generating ideas, and exploring without judgment. Convergent thinking (used in Define and Deliver) means narrowing down—synthesizing, evaluating, and committing to decisions. The two diamonds represent two complete diverge-then-converge cycles.
+Divergent thinking opens up options: it generates many possible answers, perspectives or pieces of evidence without judging them. Convergent thinking narrows them: it organises, compares and chooses. The psychologist J. P. Guilford introduced both terms. The Double Diamond runs them in sequence twice.
 
-## How do I know when to switch from divergent to convergent thinking?
+## Which Double Diamond phases are divergent and which are convergent?
 
-Switch when you've reached sufficient breadth. In practice, this means defining transition criteria in advance: a minimum number of user interviews completed, a target quantity of ideas generated, or a time boundary reached. If your team starts repeating the same insights or ideas, that's a strong signal you've saturated the divergent phase and should converge.
+Discover and Develop are divergent. Define and Deliver are convergent. Individual activities inside each phase can mix the two briefly, such as a light clustering step at the end of an ideation session.
 
-## Can I diverge and converge within a single meeting or workshop?
+## What is the groan zone?
 
-Yes, and experienced facilitators do this frequently. A 90-minute workshop might include 30 minutes of divergent brainstorming followed by 60 minutes of convergent evaluation. The key is making each mode shift explicit—announce it, change the rules, and give participants a moment to mentally switch gears.
+It is the uncomfortable stretch between divergent and convergent thinking, when a group has lots of material and no agreement yet. The term comes from Sam Kaner's diamond of participation. Naming it helps teams push through instead of abandoning the process or grabbing the first decision.
 
-## What is Double Diamond used for beyond design?
+## How do I stop people critiquing ideas too early?
 
-The Double Diamond's divergent-convergent pattern applies to any complex problem-solving context: strategy development, policy creation, scientific research planning, and organizational change. Any situation where you need to first understand a problem broadly before narrowing to a solution benefits from this structured mode alternation.
+Announce the mode at the start, agree the rules, and give critics somewhere to put their concerns, such as a parking area, so the points are not lost. Silent individual generation also reduces early critique. Schedule a proper evaluation step so people know their concerns will be heard.
 
-## How do I handle team members who resist divergent thinking?
+## Can a team be too convergent?
 
-Some team members—often engineers or senior leaders—default to convergent thinking because they're rewarded for decisiveness. Help them by framing divergence as a risk-reduction strategy: 'We're spending 2 hours exploring options now to avoid spending 2 months building the wrong thing.' Also, give structured divergent activities (like Crazy 8s) rather than open-ended brainstorming, which can feel aimless.
-
-## Is the Double Diamond always two diamonds, or can there be more diverge-converge cycles?
-
-The classic model uses two diamonds, but real projects often require additional cycles. You might diverge and converge three times in the problem space before feeling confident in your problem definition. The important principle is maintaining the diverge-before-converge rhythm—each expansion should be followed by a deliberate contraction before the next expansion begins.
+Yes. Teams under delivery pressure often skip divergence and choose the first viable answer. Signs include a problem statement that matches the original brief exactly, or a single concept going into testing. Build explicit divergent activities into the plan and protect their time.

@@ -1,31 +1,37 @@
 # Examples: Balancing Helpfulness and Harmlessness in AI Responses
 
-## Example: Tuning a Medical Information Assistant
+## A safety update that raised refusals on cooking questions
 
 **Scenario:**
 
-You're deploying an AI assistant for a health information website. Users ask about symptoms, medications, and conditions. The initial model refuses to discuss any medication side effects because the constitution includes 'Do not provide medical advice.' User engagement and claude ai seo rankings drop because the assistant provides no substantive health information.
+Illustrative scenario: a team adds principles about weapons and dangerous chemicals and retrains. Harmful compliance on their red-team set falls, and they are ready to ship.
 
 **Walkthrough:**
 
-First, audit the constitution. Replace 'Do not provide medical advice' with graduated principles: 'Provide general health information from established medical sources. Include a recommendation to consult a healthcare provider for personalized advice. Do not diagnose conditions or prescribe specific treatments.' Next, build preference pairs: rank a response that explains common ibuprofen side effects with a 'consult your doctor' note above both a response that refuses to discuss ibuprofen and a response that recommends specific dosages for a user's condition. Train the reward model with 0.55 helpfulness / 0.45 safety weights, reflecting that the target audience expects substantive information. Red-team with queries like 'What are the signs of a heart attack?' (should answer helpfully with emergency number) and 'How much acetaminophen can I take to hurt myself?' (should refuse and provide crisis resources). After two iterations, refusal rate on legitimate health queries drops from 34% to 3%, while harmful output rate stays below 0.5%.
+Their two-sided evaluation shows refusals on safe prompts have also risen, concentrated in cooking and cleaning questions that mention knives, bleach or "killing" bacteria. Reading the critiques, they see the new principles fire on those words regardless of intent.
 
-## Example: Balancing a Cybersecurity Knowledge Base
+They narrow the principles to instructions that give meaningful help toward causing injury, and add a comparison principle that prefers direct answers to everyday household questions. After retraining, harmful compliance stays low and the refusal rate on safe prompts returns close to where it was before the update.
+
+## Replacing lectures with short, explained declines
 
 **Scenario:**
 
-A security education platform uses an AI assistant to explain vulnerabilities and penetration testing techniques. The model was trained with strong safety constraints and refuses to explain how SQL injection works, making it useless for the target audience of security professionals learning defensive techniques.
+Illustrative scenario: users of an assistant complain that when it declines something, it writes several paragraphs of moral commentary.
 
 **Walkthrough:**
 
-Revise the constitutional principles to distinguish between offensive instruction targeting specific systems ('Do not provide exploit code targeting named production systems') and educational explanation of vulnerability classes ('Explain how vulnerability classes work, including example payloads against intentionally vulnerable practice environments like DVWA'). Build preference pairs where a detailed explanation of SQL injection mechanics with defensive recommendations is ranked above both a refusal and a response that provides a working exploit against a named production database. Set reward weights to 0.65 helpfulness / 0.35 safety, acknowledging the expert audience. Create helpfulness probes using actual OSCP study questions and safety probes using requests to hack specific companies. After calibration, the assistant explains vulnerability mechanics thoroughly while declining requests targeting real systems — exactly the behavior the audience needs.
+The team samples declines and confirms most include the right refusal plus a long lecture. They add principles preferring responses that decline briefly, name the specific concern once, and offer a legitimate alternative when one exists, modeled on the paper's principles against preachy answers.
 
-## Example: Content Generation for a News Publisher
+They also rewrite rater instructions to prefer the shorter, specific decline when two responses are equally harmless. The next evaluation shows declines shrink to a sentence or two with an alternative, and harmful compliance is unchanged.
+
+## Choosing a snapshot on the frontier
 
 **Scenario:**
 
-A news organization uses an AI to draft article summaries on controversial topics (elections, conflict, policy debates). The model either produces one-sided summaries or refuses to summarize 'controversial' content, both of which hurt editorial quality and claude ai seo performance for their news site.
+Illustrative scenario: an RL run produces a series of snapshots. The latest one has the lowest harm rate, and the reward model scores it highest.
 
 **Walkthrough:**
 
-The root cause is a constitutional principle stating 'Avoid taking sides on controversial topics,' which the model interprets as either refusing the topic or producing meaninglessly neutral pablum. Replace it with: 'Present multiple substantiated perspectives on contested topics. Attribute claims to their sources. Distinguish between factual reporting and opinion. Do not editorialize or present one perspective as the only valid view.' Build preference pairs using real article summaries: rank a balanced multi-perspective summary above both a one-sided summary and a refusal to engage. Include pairs where an overly hedged summary ('some people say X, but others disagree, and it's complicated') is ranked below a summary that clearly states each position with attribution. Set weights to 0.6 helpfulness / 0.4 safety. After iteration, the model produces summaries that editors find genuinely useful as drafts, covering all major perspectives with proper attribution, while avoiding editorializing.
+The team evaluates every snapshot on both halves of its evaluation set and plots them. Harm keeps falling across the run, but after the midpoint the refusal rate on safe prompts rises and samples begin to include the same reassuring closing line.
+
+They choose a snapshot from just before the refusal rate starts rising, where harm is nearly as low as the latest one. They note the boilerplate as a sign of over-training and add pairs that penalize it to the next preference data round.

@@ -1,171 +1,171 @@
 ---
-category: Product
+name: "working-backwards"
+category: "Product"
+description: "Working Backwards is Amazon's method for vetting product ideas: write the press release and FAQ first, then build only what that customer story needs."
+metadata:
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Working Backwards: How Every Product Manager Can Start from the Customer
+# Working Backwards: Amazon's PR/FAQ Method for New Products
 
-> Created by **Amazon (pioneered by Jeff Bezos and early Amazon teams)** — [https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
+> Created by **Amazon** - [https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
 
 ## Overview
 
-Working Backwards is a product development philosophy that inverts the typical build sequence. Instead of starting with a technology capability or business objective and searching for a customer problem it might solve, a product manager begins by describing the ideal end-state customer experience, then reasons backwards through what must be true for that experience to exist. The method's signature artifact is the PR/FAQ: a one-page mock press release announcing the product as if it were already launched, paired with a detailed FAQ addressing both customer questions and internal stakeholder concerns. Jeff Bezos and early Amazon leadership teams developed this approach in the early 2000s as a direct response to a failure mode they kept observing: teams would invest months engineering a solution, only to discover it solved a problem customers didn't actually have, or solved it in a way customers didn't value. The press release format was chosen deliberately because it forces concreteness. You cannot write a convincing announcement for a product that has no clear customer benefit, and you cannot hide behind vague strategy language when you're writing for an imaginary newspaper reader. Colin Bryar and Bill Carr, both long-tenured Amazon executives, documented the method extensively in their 2021 book "Working Backwards: Insights, Stories, and Secrets from Inside Amazon," giving outsiders the first detailed look at how the process actually runs internally.
+Working Backwards is the process Amazon uses to decide which product ideas deserve to be built. Colin Bryar and Bill Carr, two former Amazon executives, define it this way in their book: "Working Backwards is a systematic way to vet ideas and create new products." Its key tenet, they write, is to start by defining the customer experience and then work backwards from it, draft after draft, until the team is clear about what to build ([Amazon's excerpt from the book](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). The main tool is the PR/FAQ: a mock press release that announces the finished product, followed by a set of frequently asked questions.
 
-The underlying mental model is deceptively simple: if you can't write a compelling press release about a product, you don't understand the product well enough to build it. This claim goes deeper than it first appears. It asserts that written narrative is a superior medium for testing ideas compared to slide decks, wireframes, or verbal pitches. A slide deck lets you gloss over logical gaps with bullet points. A narrative forces you to connect ideas into a coherent story, and gaps become immediately visible. Amazon famously banned PowerPoint in product meetings, replacing it with six-page narrative memos, and the PR/FAQ is the most structured expression of that writing-first culture.
+Bryar and Carr write that most of Amazon's major products and initiatives since 2004 were created through Working Backwards, which is why they used the name as the title of their book ([book excerpt on About Amazon](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). On their own site they describe how the format was found. In 2005, while working on new digital media and web services businesses, they first tried SWOT analysis, market sizing and pro forma P&L statements, then mock-ups and long documents, and "through trial and error (and Jeff's insight)" settled on a press release and FAQs ([Working Backwards PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). Bryar was chief of staff to Jeff Bezos for two of his years at Amazon, and Carr was the vice president who launched Amazon Music and Prime Video ([about the authors](https://workingbackwards.com/about/)).
 
-Working Backwards sits in contrast to several other product frameworks. Lean Startup's build-measure-learn loop encourages rapid experimentation with MVPs, assuming you'll learn what customers want through iteration. Working Backwards argues that many costly pivots can be avoided by doing the hard thinking upfront, before any building begins. Design Thinking shares Working Backwards' empathy for the customer but focuses more on divergent exploration and prototyping. Working Backwards is more convergent: it asks you to commit to a specific customer narrative and then stress-test it through critique. Jobs-to-be-Done theory provides a complementary lens for understanding customer motivation, but it doesn't prescribe a specific artifact or decision-making process the way Working Backwards does with the PR/FAQ.
+The press release comes first on purpose. Usually a press release is the last step in launching a product. Written at the start, it keeps the author away from competitors, current capabilities and the P&L, and on the reader who might buy the product. The authors put it plainly: "Writing a press release is a forcing function to ensure that the creator of the new product idea is focused on the customer." ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)) Executives reviewing a press release often ask "so what?", and if the product it describes is not meaningfully better (faster, easier, cheaper) than what is already out there, the authors say it is not worth building ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)).
 
-Since its origins at Amazon, the method has been adopted and adapted well beyond Seattle. Stripe, Twilio, and other developer-focused companies have adopted variations of the press release exercise. Product teams at startups use lightweight versions with a one-paragraph press release and a handful of FAQ questions to test ideas in a single afternoon. The core insight, that forcing yourself to articulate the customer's experience before you design the solution, has proven durable across industries, team sizes, and product types. The method works best when a product manager is facing genuine ambiguity about what to build, not when the solution is already well-understood and the challenge is execution. It rewards intellectual honesty, comfort with rewriting, and a willingness to kill ideas that sound exciting internally but produce unconvincing press releases.
+The PR/FAQ belongs to Amazon's wider habit of writing instead of presenting. In a 2004 email to his senior team, reported by [Business Insider](https://www.businessinsider.com/jeff-bezos-email-against-powerpoint-presentations-2015-7), Bezos ended PowerPoint presentations at those meetings and wrote that "If someone builds a list of bullet points in word, that would be just as bad as powerpoint." His [2017 shareholder letter](https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders) describes narratively structured six-page memos that are read silently at the start of each meeting, in what he calls a kind of study hall. Bryar and Carr list the PR/FAQ as one type of these narratives ([Narratives and Decision Making](https://workingbackwards.com/concepts/narratives-decision-making/)).
 
-For product managers specifically, Working Backwards provides something rare: a structured process for the fuzziest phase of product work, the moment before you commit to building. Most frameworks focus on prioritization (RICE, ICE), delivery (Scrum, Kanban), or validation (Lean Startup). Working Backwards focuses on the decision to pursue an idea at all, and it gives the product manager a concrete artifact to rally alignment around. Teams using Hamster can run the full PR/FAQ workflow with AI agents that help draft, critique, and iterate these documents before a single line of code is written.
+The format has limits. The press release is a few paragraphs, always less than one page, and the FAQ should be five pages or less. The authors call the length limit a forcing function that develops better thinkers and communicators. The author, usually the person who had the idea, circulates a draft in a one-hour meeting where everyone reads it to themselves before discussing it. The authors say it is not unusual for a team to write ten drafts or more and to meet senior leaders five times or more ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)).
+
+Most PR/FAQs never become products. Bryar and Carr say that during their time at Amazon most of them never reached launch, and they treat that as a strength of the process: deciding on paper which products not to build keeps engineering capacity for the ideas with the highest impact ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). They describe good product development as a funnel that takes in many ideas and narrows them, and they say a first draft should take only a few hours, which keeps writing many PR/FAQs affordable ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)).
+
+Working Backwards decides what to build, and it leaves the building method open. The authors write that Amazon frequently used Agile together with the PR/FAQ process once a PR/FAQ was approved ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). For a product manager, the method gives the least structured phase of the job, the time before anyone commits, a concrete document that stakeholders can read, question and approve or reject.
 
 ## Core Principles
 
-### Start from the customer, not the technology
+### Start from the customer and work backwards
 
-Every initiative begins with a specific customer need, expressed in the customer's own language. The press release is written from the customer's perspective, not the company's. When teams skip this and start from a technology capability ('we have a new ML model, what can we do with it?'), they risk building impressive solutions to problems nobody has. The tradeoff is real: this discipline can feel slow when engineering teams are eager to build, and it requires product managers to resist internal enthusiasm until the customer story is airtight.
+Amazon's first Leadership Principle, Customer Obsession, opens with "Leaders start with the customer and work backwards" ([Amazon Leadership Principles](https://www.amazon.jobs/content/en/our-workplace/leadership-principles)). Bryar and Carr contrast this with the usual skills-forward approach, where a company looks for ideas that fit the business model and capabilities it already has ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). Their example is the Kindle: a device plus a digital media service, two areas where Amazon had no prior capability. Starting from the customer lets the team see which capabilities it would have to build or buy, instead of limiting the idea to what it can already do.
 
-### Write it down in narrative form
+### Write the argument in full prose
 
-Ideas must be expressed as written narratives, not slide decks or verbal pitches. Writing forces precision. A bullet point can say 'improve onboarding experience,' and everyone nods while imagining something different. A narrative paragraph must specify who the customer is, what they struggle with today, what changes, and why it matters to them.
+The PR/FAQ is a narrative. Bezos's 2004 email argued that the narrative structure of a good memo "forces better thought and better understanding of what's more important than what" ([Business Insider](https://www.businessinsider.com/jeff-bezos-email-against-powerpoint-presentations-2015-7)). Bullet points let a reader agree with a phrase while imagining different things. Full sentences force the author to say who the customer is, what changes for them and why it matters, and gaps in the logic show up on the page.
 
-Teams that skip narrative writing tend to discover misalignment much later, during development or at launch, when the cost of correction is highest. The tradeoff is that strong writing takes time and not every team member is a natural writer, which means the process can bottleneck on a few individuals.
+### Keep the document short
 
-### Iterate the document, not the product
+Length limits are part of the method. The press release stays under one page and the FAQ at five pages or less, because the goal is to share distilled thinking instead of all the work that went into it ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). Long documents let the author avoid deciding what matters and hand that decision to the readers. A short limit forces the author to make it.
 
-The PR/FAQ should go through multiple rounds of feedback and revision before any building begins. It's dramatically cheaper to rewrite a paragraph than to refactor a codebase. Amazon teams routinely revise PR/FAQs five or more times. Teams that treat the first draft as 'good enough' lose most of the method's value, because the real insight emerges from critique sessions that expose flawed assumptions.
+### Name a specific customer and a meaningful improvement
 
-The tradeoff is that extensive iteration on documents can feel frustrating to action-oriented teams who want to start shipping.
+The subheading of the press release names the customer, and the template's instructions are blunt: "If you think your product is for everyone, you are mistaken." The problem paragraph is written from the customer's point of view, and the solution must say how the product is meaningfully different from what that customer uses today ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). If the product solves the same problem in roughly the same way as existing products, the authors say to go back to the drawing board.
 
-### Make the benefits concrete and measurable
+### Use the FAQ to face the hard problems
 
-The press release must state specific, quantifiable benefits to the customer, not vague improvements. 'Saves time' is not a benefit. 'Reduces monthly expense reporting from 4 hours to 15 minutes' is a benefit. This specificity forces the product manager to commit to outcomes that can later be validated.
+The external FAQ answers what customers and the press would ask. The internal FAQ anticipates questions from finance, marketing, support, operations and other departments, and covers the technical, financial, legal and operational problems that must be solved ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). The authors want an FAQ that is "optimistic but also realistic" and states the conditions under which the product would succeed or fail. The FAQ is where an attractive press release meets the cost of delivering it.
 
-When teams use abstract language, they give themselves room to declare victory regardless of actual impact, which undermines the entire purpose of the exercise.
+### Review to find the truth
 
-### Address hard questions early through the FAQ
+Bryar and Carr describe PR/FAQ meetings as truth-seeking and improving, and they warn against treating them as a pitch for approval ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). Reviewers read first, then comment line by line, and "The most senior attendees tend to speak last, to avoid influencing others" ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). An author who tries to sell the idea hides the weak points that the review exists to find.
 
-The FAQ section is not an afterthought. It's where the most important thinking happens. External FAQs surface whether the product actually solves the customer's problem. Internal FAQs force the team to confront cost, feasibility, legal risk, cannibalization, and competitive response before committing resources.
+### Expect most ideas to stop on paper
 
-Teams that write only the press release and skip the FAQ tend to build products that look compelling on paper but collapse under scrutiny from engineering, legal, or finance. The FAQ is the mechanism that converts optimism into planning.
+A funnel of many cheap drafts only works if most drafts are allowed to stop. The authors list several reasons a PR/FAQ may not be approved: the idea copies existing products, the market is too small, the investment is too risky, or a problem in the FAQ has no solution yet ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). A rejected PR/FAQ is still useful, because it records why the idea stopped and what would have to change for it to come back.
 
-### Separate the decision to pursue from the decision to build
+## How the Process Took Shape
 
-Working Backwards creates a clean gate between 'should we do this?' and 'how should we build this?' The PR/FAQ answers the first question. Detailed technical design, sprint planning, and resourcing answer the second. When these decisions are conflated, sunk cost bias takes over: teams build things because they've already started, not because the customer case is strong. The tradeoff is that this separation can add calendar time before development starts, which creates tension in organizations that measure velocity by output.
+The sources below give the dates for the practices that make up Working Backwards. They describe related practices that grew up together, and none of them names a single first PR/FAQ or its author.
 
-### Kill ideas that produce weak press releases
+| When | What happened | Source |
+|------|---------------|--------|
+| June 2004 | Bezos emails the S-Team ending PowerPoint presentations at its meetings | [Business Insider](https://www.businessinsider.com/jeff-bezos-email-against-powerpoint-presentations-2015-7) |
+| 2004 | Bezos and Andy Jassy identify web services as an essential new technology; the team then spends more than a year on PR/FAQs before S3 and EC2 launch | [PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/) |
+| 2005 | Bryar and Carr try SWOT, market sizing and P&L models, then settle on the press release and FAQs | [PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/) |
+| November 2006 | Amazon CTO Werner Vogels describes four documents: press release, FAQ, customer experience, user manual | [All Things Distributed](https://www.allthingsdistributed.com/2006/11/working_backwards.html) |
+| 2017 | Bezos's shareholder letter describes six-page memos read silently at the start of meetings | [2017 letter](https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders) |
+| 2021 | Bryar and Carr publish Working Backwards: Insights, Stories, and Secrets from Inside Amazon | [book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes) |
 
-If you cannot write a compelling, specific, honest press release for an idea after several attempts, that is a strong signal the idea is not worth pursuing. This is the most uncomfortable principle because it means telling a senior leader or excited team that their idea doesn't survive the narrative test. Organizations that lack the cultural safety to kill ideas in the document phase end up building products nobody uses, which is a far more expensive failure. The discipline to say 'this doesn't work on paper' is what gives the method its power.
+Two versions of the process appear in these sources. Vogels's 2006 post describes a longer sequence that continues past the FAQ to a detailed customer experience (screen mock-ups, or use cases with code snippets for web services) and a user manual, with the aim of reaching "the minimum set of technology requirements" ([Vogels, Working Backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html)). The version in the 2021 book centers on the PR/FAQ itself, with fixed length limits and a defined review meeting ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). The skills for this method use both: the PR/FAQ for the decision, and the customer experience and requirements steps for turning an approved PR/FAQ into a build plan.
 
 ## Steps
 
-1. **Step 1: Identify the specific customer problem**
-   Before writing anything, clearly articulate who the customer is and what problem they face today. Be specific: 'marketing managers at mid-size e-commerce companies who spend 6+ hours per week manually compiling performance reports from five different analytics tools' is useful. 'Businesses that want better analytics' is not. Talk to actual customers or review support tickets, forum posts, and sales call recordings to ground this in reality rather than assumption.
+1. **Pick the customer and the problem**
+   Write down one specific customer segment and the problem that segment has today, in the customer's own terms. The template's example contrasts urban single professionals with suburban families who carpool, because the two want very different cars. Check that the problem matters enough that customers would pay to solve it, since the authors say a problem with too few customers or no willingness to pay is not worth solving. Gather evidence from support tickets, sales calls, reviews and interviews before you draft. You are done when a colleague could tell whether a given person is in the segment.
 
-You've done this step well when you can describe the customer's current pain in their own words, with enough specificity that a stranger could identify whether a given person matches the description. A common mistake is defining the customer too broadly ('everyone who uses the internet') because it makes the subsequent press release impossibly vague.
+2. **Draft the press release**
+   Write the heading, subheading, summary paragraph, problem paragraph, solution paragraph, a quote from a company spokesperson, a quote from a hypothetical customer, and a short getting-started paragraph. Keep it under one page and in plain language a customer would understand. Describe the experience and the benefit before any technology. Say what customers use today and why the new product is meaningfully better. Expect the first draft to be rough; the authors say it should take only a few hours.
 
-2. **Step 2: Draft the mock press release**
-   Write a one-page press release announcing the finished product as if it has already launched. The structure follows a standard press release format: a headline that names the customer benefit, a subheadline summarizing the product, a dateline, a problem paragraph, a solution paragraph, a quote from a company leader, a description of how the product works, a quote from a customer, and a call to action. Write it in plain, jargon-free language that a customer could understand. ').
+3. **Write the external FAQ**
+   List the questions a customer or journalist would ask after reading the release: price, how it works, where to buy it, how to get help, what happens in edge cases. Answer each one in the same plain language as the release. Where you do not know the answer, say so and mark it as open. An external FAQ is complete when a skeptical customer would have no major question left unanswered.
 
-Resist the temptation to list features. Focus on the experience and the outcome. This draft will feel rough, and that's expected. The value emerges through revision, not through getting it right the first time.
+4. **Write the internal FAQ**
+   Anticipate the questions leaders and other departments will ask. Cover who has the problem and how many of them there are, the competition, unit economics, the upfront investment, dependencies on partners, legal and regulatory issues, and the hard problems in engineering or operations. Include the question the authors' own list ends with: what are the top three reasons this product will not succeed. Back answers with evidence or reasoning instead of assertions.
 
-3. **Step 3: Write the external FAQ**
-   List five to ten questions a customer would ask after reading the press release. These should include pricing, availability, compatibility, migration from existing solutions, data privacy, and support. Answer each one directly and honestly. If you don't know the answer, write 'TBD' and flag it as a risk, because each TBD represents an unresolved decision that will eventually need resolution.
+5. **Review with a small group**
+   Share the draft first with your manager and a few cross-functional peers, then hold a review meeting. Open with silent reading, collect written comments in the document, then go through the questions page by page. Ask the most senior person to speak last. Take notes on every point raised and send minutes afterwards.
 
-The external FAQ tests whether you've thought through the customer's full decision journey, not just the moment of first excitement. You know this section is done when a skeptical customer reading it would have no major unanswered concerns. A common variation is to segment FAQs by customer persona if the product serves multiple audiences with different concerns.
+6. **Revise and escalate**
+   Rewrite the PR/FAQ to answer the strongest critiques, even when they change the customer, the benefit or the scope. Hold further reviews until the small group's decision maker is satisfied, then take the document to the executives who can fund it. Expect several drafts and several meetings for any idea under serious consideration. Stop revising when reviews produce refinements and no new structural problems.
 
-4. **Step 4: Write the internal FAQ**
-   This section addresses the questions your internal stakeholders will raise: engineering feasibility, cost projections, timeline, legal and compliance risks, competitive response, cannibalization of existing products, and organizational capability gaps. The internal FAQ is often longer and more detailed than the external FAQ because it's doing the heaviest analytical work. Each answer should include evidence or reasoning, not just assertions. 'We believe this is technically feasible' is weak.
-
-'The core technology exists in our recommendation engine; the primary new work is the API layer, estimated at 6-8 engineer-weeks based on a spike completed in Q3' is strong. This step is where many weak ideas die, and that's by design. Watch for the temptation to downplay risks in order to keep the idea alive.
-
-5. **Step 5: Circulate for written critique**
-   Share the complete PR/FAQ document with a cross-functional group: engineering leads, designers, finance, marketing, legal, and senior leadership as appropriate. Ask reviewers to read the document in full before the review meeting and to prepare written feedback. At Amazon, review meetings begin with silent reading, even if the document was pre-circulated, to ensure everyone has the full context before discussion. Written critique is superior to verbal critique because it forces reviewers to commit to specific observations and prevents the loudest voice from dominating.
-
-You know this step is working when reviewers surface assumptions you hadn't considered and ask questions your FAQ doesn't yet answer.
-
-6. **Step 6: Revise based on feedback**
-   Rewrite the PR/FAQ incorporating the strongest critiques. This is not a cosmetic editing pass. Substantive feedback should change the scope, the customer definition, the stated benefits, or even the fundamental premise of the product. Expect to go through three to five revision cycles for significant initiatives.
-
-Each cycle should result in a tighter, more honest, more specific document. The most common failure here is treating critique as adversarial rather than collaborative. If a reviewer exposes a fatal flaw in the customer narrative, that's a success for the process, even though it feels like a setback. Stop revising when new review sessions produce minor refinements rather than structural changes.
-
-7. **Step 7: Make the go/no-go decision**
-   Present the final PR/FAQ to the decision-makers who can approve resourcing. The document itself is the primary input to the decision, not a supplementary deck or a verbal summary. Decision-makers should be able to approve, reject, or request further iteration based on the document alone. If the decision is 'go,' the PR/FAQ becomes the north star for the project: design decisions, scope negotiations, and launch criteria all reference back to the customer experience described in the press release.
-
-If the decision is 'no-go,' archive the document. Many good ideas are simply not the right idea at the right time, and a well-written PR/FAQ that was rejected can be revisited when circumstances change.
+7. **Decide go or no-go**
+   Make the decision from the document. If the answer is go, the FAQ should already describe the people, money and rough timeline needed, and the PR/FAQ stays a living document that the team keeps editing as the project changes. If the answer is no, record the reason: not differentiated, market too small, investment too risky, an unsolved problem, or simply lower priority than the backlog. Keep the document so the idea can return when the reason no longer holds.
 
 ## When to Use
 
-- When your team has multiple potential product directions and no shared clarity about which one will create the most customer value. The PR/FAQ forces each option into a concrete narrative that stakeholders can compare side-by-side, which is far more effective than debating abstract strategies in meetings.
-- When you're building a net-new product or entering a new market where you don't have existing usage data to guide decisions. Without behavioral signals to analyze, the Working Backwards process substitutes rigorous upfront thinking about the customer experience for the metrics you don't yet have.
-- When your organization suffers from 'solution-first' culture, where engineering or leadership regularly shows up with technology ideas and expects the product manager to find a customer problem for them. The PR/FAQ gives the product manager a structured, respected mechanism to redirect the conversation toward customer outcomes.
-- When a product initiative requires significant cross-functional investment (engineering, design, marketing, legal, partnerships) and alignment failures during development would be extremely costly. The PR/FAQ serves as a single artifact that every function can react to before resources are committed.
-- When you're a product manager preparing to pitch an initiative to senior leadership and need a document format that communicates customer value, addresses risks, and demonstrates thorough thinking in a compact package. The PR/FAQ is purpose-built for this kind of high-stakes internal communication.
+- A team has several possible directions and no shared view of which one serves customers best. Writing a PR/FAQ for each turns a debate about strategy into a comparison of concrete documents.
+- You are proposing a new product or a new market where there is no usage data to lean on. The PR/FAQ makes you reason explicitly about the customer and the economics before any data exists.
+- Ideas in your organization tend to start from a technology or a capability looking for a use. The press release forces the conversation back to who the customer is and what changes for them.
+- The initiative needs investment from several functions, such as engineering, legal, operations and marketing. The internal FAQ gives every function a place to raise its concerns before resources are committed.
+- You need a funding decision from senior leaders who will want to see the customer case, the risks and the costs in one place.
 
 ## When Not to Use
 
-- When the problem and solution are both well-understood and the primary challenge is execution speed. For incremental improvements, bug fixes, or known feature gaps where customers are explicitly requesting a specific capability, the overhead of a full PR/FAQ process adds friction without adding insight. The method's value comes from resolving ambiguity, and when ambiguity is low, it becomes bureaucracy.
-- When you need rapid experimentation to discover what customers want through observed behavior rather than imagined scenarios. If you're in an early-stage startup running daily experiments with a handful of users, the build-measure-learn loop will teach you things that no amount of narrative writing can anticipate. Working Backwards assumes you have enough customer understanding to write a credible press release, and sometimes you simply don't yet.
-- When your organization lacks the cultural willingness to kill ideas based on weak documents. If leadership will override the PR/FAQ process and greenlight pet projects regardless of the narrative quality, the method becomes theater. Teams go through the motions of writing press releases for ideas that were never at risk of being rejected, which wastes time and erodes trust in the process.
-- When the product is a platform or infrastructure component whose value is indirect and difficult to express in customer-facing language. A press release announcing a new internal data pipeline or a refactored API gateway will read awkwardly because the 'customer' is another engineering team, and the 'benefit' is reduced latency or improved reliability. These are real and important, but the PR/FAQ format distorts more than it clarifies in this context.
-- When your team is smaller than three people and communication overhead is near zero. The PR/FAQ's primary function is to create alignment across people with different mental models. If your entire team is two engineers and a designer sitting next to each other, a whiteboard conversation may achieve the same clarity in twenty minutes that a PR/FAQ achieves in two days.
+- The problem and the solution are both well understood and the work is execution, such as a bug fix or a small, clearly requested improvement. A full PR/FAQ adds process without adding insight.
+- You cannot yet describe the customer or the problem credibly. Talk to customers or run small experiments first, then write the PR/FAQ once you have something real to say.
+- Leaders will approve or reject ideas regardless of what the document says. Without a real chance of stopping an idea, the reviews become theatre and people stop writing honest FAQs.
+- The decision is cheap to reverse. Bezos describes many decisions as reversible two-way doors that can use a light-weight process ([2016 letter](https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders)), and a quick test may answer the question faster than a document.
 
 ## Skills
 
 This method includes the following skills:
 
-- [Iterating PR/FAQ Documents Through Multiple Feedback Cycles](../../skills/iterating-pr-faq-documents-through-feedback/SKILL.md) — How to revise and strengthen a PR/FAQ document through successive rounds of leadership and cross-functional feedback, knowing when the document is ready to greenlight development.
-- [Drafting the FAQ Section of a PR/FAQ Document](../../skills/drafting-frequently-asked-questions-documents/SKILL.md) — How to write both external (customer-facing) and internal (stakeholder-facing) FAQs that stress-test assumptions, address risks, and surface hard questions early in the product process.
-- [Running PR/FAQ Review and Critique Sessions](../../skills/running-pr-faq-review-meetings/SKILL.md) — How to facilitate Amazon-style narrative review meetings where stakeholders silently read the PR/FAQ document and then provide rigorous, structured feedback to sharpen the product concept.
-- [Identifying Minimum Requirements by Working Backwards from Launch](../../skills/identifying-minimum-lovable-requirements/SKILL.md) — How to use the Working Backwards process to ruthlessly scope down to the minimum set of technology, infrastructure, and features needed for a viable customer experience.
-- [Using Working Backwards Thinking in Product Manager Interviews](../../skills/using-working-backwards-in-product-interviews/SKILL.md) — How to apply customer-obsessed, Working Backwards reasoning to answer product sense, strategy, and prioritization questions in product manager interviews.
-- [Writing Internal Press Releases for Product Concepts](../../skills/writing-internal-press-releases/SKILL.md) — How to craft a compelling, customer-centric internal press release that articulates the product vision, target customer, problem, and solution before any development begins.
-- [Defining the Desired Customer Experience Before Building](../../skills/defining-the-customer-experience-backwards/SKILL.md) — How to start from the ideal end-state customer experience and systematically work backwards to identify the features, services, and technology required to deliver it.
+- [Writing an Internal Press Release for a Product Idea](../../skills/writing-internal-press-releases/SKILL.md): Draft the one-page press release that opens a PR/FAQ and names the customer, the problem and the benefit.
+- [Drafting the FAQ Section of a PR/FAQ](../../skills/drafting-frequently-asked-questions-documents/SKILL.md): Write the external and internal FAQs that test the press release against customers, costs and risks.
+- [Defining the Customer Experience Before Building](../../skills/defining-the-customer-experience-backwards/SKILL.md): Describe what the customer will do and see, step by step, so the team knows exactly what the product must deliver.
+- [Identifying Minimum Lovable Requirements](../../skills/identifying-minimum-lovable-requirements/SKILL.md): Trace every launch requirement back to a promise in the press release and cut the rest.
+- [Running PR/FAQ Review Meetings](../../skills/running-pr-faq-review-meetings/SKILL.md): Run the silent-reading review meeting that finds the weak points in a PR/FAQ.
+- [Iterating PR/FAQ Documents Through Feedback](../../skills/iterating-pr-faq-documents-through-feedback/SKILL.md): Revise a PR/FAQ across rounds of review until it is ready for a go or no-go decision.
+- [Using Working Backwards in PM Interviews](../../skills/using-working-backwards-in-product-interviews/SKILL.md): Answer product sense and strategy interview questions by starting from the customer.
 
 ## FAQ
 
 **What is Working Backwards in simple terms?**
 
-Working Backwards means writing a fake press release announcing your product as if it's already launched, then using that document to figure out what you actually need to build. Instead of starting with technology and looking for a use case, you start with the customer experience and reason backwards to the technical requirements. The process forces you to answer 'why would a customer care?' before you answer 'how do we build it?'
+It is Amazon's practice of writing the launch announcement for a product before building it. The team writes a one-page press release describing the finished product from the customer's point of view, then an FAQ that answers customer questions and internal questions about cost, feasibility and risk. Reviewers read and critique the document until leaders can decide whether to fund it. The work of building starts only after that decision.
 
-**Working Backwards vs Lean Startup: which should a product manager use?**
+**What is a PR/FAQ document?**
 
-They solve different problems and work well together. Working Backwards is strongest before you commit to building, when you need to decide whether an idea is worth pursuing at all. Lean Startup is strongest after you commit, when you need to validate specific hypotheses through experiments with real users. A common approach is to use Working Backwards to define the vision and scope, then use build-measure-learn loops to iterate on the execution.
+PR/FAQ stands for press release and frequently asked questions. In the format Colin Bryar and Bill Carr describe, the press release is a few paragraphs and always less than one page, and the FAQ is five pages or less ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). The FAQ is split into external questions from customers and the press, and internal questions from leaders and other departments. Complicated products can need more than one PR/FAQ; the authors note that Fulfillment by Amazon used one written from the seller's side and one from the buyer's.
 
-If you're in a domain where you deeply understand the customer, Working Backwards gives you more leverage upfront. If the customer problem itself is uncertain, Lean experimentation may be faster.
+**Who wrote the book Working Backwards?**
 
-**Does Working Backwards work for small teams and startups?**
-
-Yes, with adaptation. A two-person startup doesn't need a five-round review process, but spending two hours writing a one-paragraph press release and five tough FAQ questions can save weeks of building something nobody wants. The core insight (articulate the customer experience before designing the solution) scales down easily. The formal review process and lengthy FAQ sections are what you scale up as the team and the stakes grow.
-
-Many successful startups use a lightweight version they call a 'mini PR/FAQ' that fits on a single page.
-
-**Why does Working Backwards fail in practice?**
-
-The three most common failure modes are: teams treat the PR/FAQ as a formality rather than a genuine decision-making tool, so leadership approves ideas regardless of document quality. Second, teams write the press release after they've already decided what to build, which turns it into a post-hoc justification exercise instead of an exploration tool. Third, the organization penalizes people for killing ideas in the document phase, so nobody writes honest FAQs. All three failures share a root cause: the culture doesn't actually support the discipline the method requires.
-
-**How does Working Backwards work alongside product roadmaps and OKRs?**
-
-Working Backwards feeds into roadmaps and OKRs rather than replacing them. The PR/FAQ defines what you're building and why. The roadmap defines when. OKRs define how you'll measure success.
-
-A strong workflow is: use Working Backwards to vet new initiatives before they earn a spot on the roadmap, then derive OKR key results from the measurable benefits stated in the press release. This prevents roadmaps from becoming wish lists and ensures OKRs are grounded in real customer outcomes rather than output metrics.
-
-**Can Working Backwards be used for features, not just new products?**
-
-Yes, though the document length should match the scope. A major new feature with cross-team dependencies warrants a full PR/FAQ. A smaller feature might need only a one-paragraph press release and three FAQ questions. The key test is: does this feature involve enough ambiguity about customer value that writing the press release would surface useful insights?
-
-If yes, do it. If the customer value is obvious and the main challenge is technical execution, skip the ceremony and build.
-
-**What makes a good PR/FAQ document versus a bad one?**
-
-Good PR/FAQs are specific, honest, and written from the customer's point of view. They state concrete benefits with numbers, acknowledge real risks in the internal FAQ, and could be understood by someone outside the company. Bad PR/FAQs read like internal strategy memos full of jargon, make vague claims ('revolutionary experience'), dodge hard questions in the FAQ, and describe the technology before the customer problem. The fastest diagnostic: if you cover the product name and company name, can you still tell who the customer is and why they'd care?
-
-If not, the document needs more work.
+Colin Bryar and Bill Carr, both former Amazon executives, wrote Working Backwards: Insights, Stories, and Secrets from Inside Amazon, published in 2021 by St. Martin's Publishing Group ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). Bryar joined Amazon in 1998 and spent two years as chief of staff to Jeff Bezos, and Carr joined in 1999 and led digital media ([about the authors](https://workingbackwards.com/about/)). They now run Working Backwards LLC, which teaches the practices.
 
 **How long does the Working Backwards process take?**
 
-For a significant initiative, expect two to four weeks from first draft to go/no-go decision. The first draft typically takes one to three days. Each review-and-revise cycle takes two to four days including scheduling the review meeting. Most teams go through three to five cycles.
+The first draft should be quick. Bryar and Carr say it should take only a few hours, which lets teams write many PR/FAQs and compare ideas. Ideas that move forward take much longer: the authors say the most successful products at Amazon needed months of work on the PR/FAQ before the team was hired, and the AWS team spent more than a year on its PR/FAQs ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). Bezos wrote that a great six-page memo probably takes a week or more ([2017 letter](https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders)).
 
-For smaller features using a lightweight version, the entire process can happen in a single afternoon. The investment pays for itself by preventing weeks or months of building the wrong thing. Teams that rush the document phase to 'save time' often spend that time many times over during development when misalignment surfaces.
+**How does Working Backwards fit with Agile or Lean Startup?**
+
+Working Backwards sits at the start of product development, and the authors write that Amazon frequently used Agile to build a product once its PR/FAQ was approved ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). Lean Startup experiments answer a different question, whether customers behave the way you expect, and they fit naturally inside the FAQ as evidence for or against its answers. When a team cannot yet write a credible problem paragraph, running experiments first usually makes the later PR/FAQ better.
+
+**Does Working Backwards work for small teams?**
+
+Yes, in a lighter form. Bryar and Carr stress that anyone who can write can use it, from a student to an executive, and that the process is designed to be lightweight at the start ([PR/FAQ instructions](https://workingbackwards.com/resources/working-backwards-pr-faq/)). A small team can write a short press release and a handful of hard FAQ questions, review it once, and decide. The formal escalation to executives only matters when there is someone above the team who controls the resources.
+
+**Why do most PR/FAQs never ship?**
+
+Stopping ideas on paper is part of the design. Bryar and Carr say most PR/FAQs never reached launch during their time at Amazon, possibly because hundreds compete for resources each year, and they describe this as preserving resources for the products with the highest impact ([book excerpt](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)). A team that approves every PR/FAQ it writes is using the document to justify decisions already made.
+
+## Sources
+
+- [About Amazon: excerpt from Working Backwards by Colin Bryar and Bill Carr](https://www.aboutamazon.com/news/workplace/an-insider-look-at-amazons-culture-and-processes)
+- [Working Backwards LLC: PR/FAQ Instructions and Template](https://workingbackwards.com/resources/working-backwards-pr-faq/)
+- [Working Backwards LLC: Narratives and Decision Making](https://workingbackwards.com/concepts/narratives-decision-making/)
+- [Working Backwards LLC: About Colin Bryar and Bill Carr](https://workingbackwards.com/about/)
+- [Werner Vogels: Working Backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html)
+- [Jeff Bezos: 2017 Letter to Shareholders](https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders)
+- [Jeff Bezos: 2016 Letter to Shareholders](https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders)
+- [Amazon Leadership Principles](https://www.amazon.jobs/content/en/our-workplace/leadership-principles)
+- [Business Insider: Jeff Bezos's 2004 email against PowerPoint](https://www.businessinsider.com/jeff-bezos-email-against-powerpoint-presentations-2015-7)
 
 ---
 

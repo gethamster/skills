@@ -1,15 +1,20 @@
 ---
-name: running-north-star-workshops
-description: "This skill teaches you how to facilitate a structured, collaborative workshop where cross-functional teams define or refine their North Star Metric and supporting input metrics—one of the most common product manager interview questions about strategic alignment."
+name: "running-north-star-workshops"
+description: "How to run a North Star framework workshop: who to invite, a two-hour agenda, silent drafting, convergence, and the follow-up sessions after it."
 category: "Product"
 metadata:
   homepage: https://tryhamster.com
-  method: north-star-framework
+  method: "north-star-framework"
+  datePublished: "2026-04-19"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Running a North Star Framework Workshop with Stakeholders
+# Running a North Star Framework Workshop
 
-> This skill teaches you how to facilitate a structured, collaborative workshop where cross-functional teams define or refine their North Star Metric and supporting input metrics—one of the most common product manager interview questions about strategic alignment.
+> How to run a North Star framework workshop: who to invite, a two-hour agenda, silent drafting, convergence, and the follow-up sessions after it.
 
 ## Before you start
 
@@ -24,105 +29,104 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for preparation and facilitation |
-| Outcome | You can confidently facilitate a workshop that produces a clearly defined North Star Metric with 3-5 supporting input metrics, documented with owner assignments and a review schedule—all with genuine cross-functional buy-in. |
-| Prerequisites | Basic understanding of the North Star Framework and what makes a good North Star Metric, Familiarity with your product's business model and key user segments, Access to product analytics data (usage metrics, retention, revenue indicators), Workshop facilitation basics (timeboxing, managing group dynamics, diverge-converge techniques) |
+| Time to Learn | A few hours to prepare, about two hours to run |
+| Outcome | You run a North Star workshop that leaves a small cross-functional group with strong candidates for the metric and its inputs, agreed open questions, and dates for the follow-up sessions. |
+| Prerequisites | A sponsor, a facilitator who has read the playbook, a rough view of current product data, a room or shared whiteboard |
 | Part of | [North Star Framework](../../methods/north-star-framework/METHOD.md) |
 
 ## Overview
 
-Defining a North Star Metric in isolation—whether by a product leader in a spreadsheet or an executive in a board deck—almost always fails. The metric either lacks buy-in from the teams who need to move it, or it misses critical context that only surfaces when engineering, design, marketing, and data sit in the same room. Running a North Star Framework workshop solves this by turning metric selection into a collaborative, structured exercise. It's also one of the most frequently asked product manager interview questions because it tests both strategic thinking and facilitation skill simultaneously.
+A North Star framework workshop is the session where a cross-functional group first drafts its North Star Metric and the inputs that produce it. The [North Star Framework](../../methods/north-star-framework/METHOD.md) treats this session as the starting point of the whole model: the metric, the inputs and the link to everyday work all begin as sticky notes in one room. This skill covers how to plan, facilitate and close that workshop, and what to schedule after it, which is how most teams define a North Star metric for the first time.
 
-The workshop format matters because the North Star Metric isn't just a number—it's an alignment tool. When stakeholders participate in defining it, they understand the reasoning behind the choice, they've surfaced and resolved disagreements in real-time, and they leave with shared ownership of the outcome. This is fundamentally different from presenting a metric for approval. The [North Star Framework](https://tryhamster.com/methods/north-star-framework) depends on organizational alignment, and the workshop is the mechanism that creates it.
+Amplitude publishes the reference format. Its [How-to Guide: Running Your North Star Workshop](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) lays out a typical agenda of about two hours in eight parts, from an opening discussion to drafting and converging on candidates. The [North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf) says Amplitude has facilitated hundreds of these workshops and has run many successful ones in less than two hours.
 
-A well-run workshop typically takes 2-3 hours and follows a structured arc: grounding the group in customer value, generating candidate metrics, evaluating them against clear criteria, and converging on a single metric with its supporting inputs. The output isn't just a metric—it's a shared mental model of what drives value in your product, which informs roadmap prioritization, team goals, and resource allocation for months to come.
+Set expectations before anyone arrives. The workshop is designed to produce strong candidates for the metric and its inputs. The guide calls it phase one, and John Cutler warns in it that getting the North Star right can take a couple of weeks or months. A group that expects to leave with a final metric will either force a weak answer or leave disappointed.
+
+A North Star metric workshop is also a stakeholder alignment workshop. Amplitude's Ted Clark says in the guide that even when teams do not leave with the North Star defined, everyone leaves much more aligned, "aligned in a way that they didn't even know they were misaligned before." Much of that comes from making beliefs and assumptions visible, which the agenda is built to do.
+
+The output of this skill is a short record: the game the product plays, the strongest candidates for the metric and inputs, what the group eliminated, what information it still needs, and dated follow-up sessions. If you need to define the metric step by step rather than facilitate a group, [Identifying Your North Star Metric](../identifying-your-north-star-metric/SKILL.md) covers the thinking in more detail.
 
 ## How It Works
 
-The workshop operates on a diverge-then-converge model borrowed from design thinking, applied specifically to metric selection. The core insight is that jumping straight to "what should our North Star Metric be?" produces superficial answers anchored to whatever metric people already track. Instead, you first build shared understanding of customer value, then generate options, then evaluate rigorously.
+The agenda moves from shared context to individual ideas to agreement. The guide's eight parts are: an opening discussion on why the group is there; identifying the game the business plays; reviewing what makes a good and bad North Star; an optional abstract exercise; the North Star statement exercise; the structure of the metric and its inputs; a warm-up drafting a North Star for another company's product; and drafting your own North Star and converging ([workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)). Most parts take about fifteen minutes, and the final drafting part gets about thirty.
 
-The conceptual flow has four phases. In the **grounding phase**, you align everyone on what your product does for customers—not what it does technically, but the value exchange. A collaboration tool doesn't "send messages"; it "enables teams to make decisions faster without meetings." This reframing is essential because the North Star Metric should measure delivered customer value, not product activity. In the **diverge phase**, participants brainstorm candidate metrics without judgment. You want quantity here—typically 8-15 candidates. The **evaluate phase** introduces scoring criteria: Does this metric reflect customer value? Can we measure it today? Does it lead revenue (not lag behind it)? Can every team influence it? Finally, the **converge phase** narrows to one metric through structured discussion and dot-voting, then maps 3-5 input metrics that drive it.
+The group is deliberately small. The guide asks for the smallest group that still represents each critical discipline, and lists engineering, finance, design, product management, analytics, sales, marketing and customer success. Cutler warns in the same guide that in a big organization, bringing in more than fifteen or twenty people gets hard and overwhelming, which is why the work is done in smaller groups and rounds. Mix lateral, messy thinkers who generate options with analytical people who push toward measurement.
 
-The reason this works better than top-down metric selection is cognitive: when people participate in evaluating tradeoffs, they internalize the reasoning. An engineer who helped eliminate "daily active users" in favor of "weekly projects completed" understands *why* and can make autonomous decisions aligned with that logic. This is the same principle tested in product manager interview questions about stakeholder alignment—your ability to create shared understanding, not just deliver conclusions.
+The facilitator matters most. The guide asks for at least one unbiased facilitator, ideally with some positional authority, who sets the agenda, leads discussion and guides activities. It recommends that the facilitator work through the exercises beforehand, perhaps with a trusted colleague. Participants need only a baseline understanding of what a North Star Metric is; the guide notes that too much prior familiarity can trip people up.
+
+Drafting is silent first. The guide asks everyone to spend five to ten minutes brainstorming alone with a blank worksheet, then share in pairs, then bring candidates to the group and evaluate them against the checklist. Its reasoning is that open brainstorming is dominated by a few quick, vocal thinkers and that groups build on the first ideas instead of considering different ones. The same alone, pairs, group sequence is the basis of [1-2-4-All](http://www.liberatingstructures.com/1-2-4-all), a Liberating Structures format for engaging everyone at once.
+
+The warm-up lowers the stakes. Drafting a North Star for a familiar product, such as the guide's OpenTable prompt, lets people practice the game, the metric and the inputs without defending their own team's work. When the group then turns to its own product, it already shares a vocabulary.
+
+Convergence closes the session. The guide ends with four questions: which game the business plays, which candidates are strongest, what can be eliminated, and what additional information is needed. Amplitude's [workshop article](https://amplitude.com/blog/behind-scenes-north-star-workshop) adds the follow-up: Ted Clark recommends one or two refinement sessions within a week and a half of the workshop so people do not lose their train of thought.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Define the workshop scope and invite the right stakeholders
+### Step 1: Set the purpose and the sponsor
 
-Decide whether you're defining a North Star Metric from scratch or refining an existing one—this changes the workshop's starting point significantly. Invite 6-10 participants representing product, engineering, design, data/analytics, marketing, and at least one customer-facing role (sales or support). Send a pre-read 3-5 days in advance that explains the North Star Framework concept, includes 2-3 examples from comparable companies, and shares any relevant product data (current metrics, user research highlights, retention curves).
+Write one paragraph on why the organization needs a North Star now, using the guide's opening prompts: how clearly people understand the product strategy and how product work connects to financial results. Confirm a sponsor who will attend the opening and act on the result. Decide the scope, whether one product, one business line or the whole company. A scope that is too broad produces arguments about several North Stars instead of one.
 
-> **Pro tip:** Cap attendance at 10 people. Larger groups slow convergence dramatically. If more stakeholders need input, run a pre-workshop survey to collect their candidate metrics and concerns, then represent those voices in the room.
+### Step 2: Choose the facilitator and the group
 
-### Step 2: Step 2: Open with the customer value mapping exercise (25 minutes)
+Pick an unbiased facilitator with enough authority to move the session along, and have them rehearse the exercises. Invite the smallest group that covers each critical discipline, following the [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf), and include people who talk to customers often. Balance people who generate ideas with people who test them. Tell everyone the session will produce candidates and that the final definition comes later.
 
-Start by asking the group: "What is the core value our product delivers to customers?" Have each person write their answer independently on sticky notes (physical or digital via Miro/FigJam) for 5 minutes. Then cluster the responses on a whiteboard. You'll typically see 3-5 distinct value themes emerge. Discuss and force-rank them: which value is most fundamental? This grounds all subsequent metric discussion in customer outcomes rather than business vanity metrics.
+### Step 3: Prepare materials and data
 
-> **Pro tip:** If the group can't agree on the core customer value, that's a signal you need to resolve this before picking a metric. Don't skip this tension—it's the most important disagreement to surface early.
+Send a short pre-read on what a North Star Metric is and the three games. Pull a quick view of the metrics teams track today, as Amplitude's [workshop article](https://amplitude.com/blog/behind-scenes-north-star-workshop) suggests, and any research on what customers value. Print or set up the statement worksheet, the checklist and a blank North Star worksheet. Prepare a warm-up product the whole group knows.
 
-### Step 3: Step 3: Brainstorm candidate North Star Metrics (20 minutes)
+### Step 4: Open, name the game and set the criteria
 
-With the top customer value theme visible, ask everyone to independently brainstorm metrics that could measure that value being delivered. Set a timer for 8 minutes of silent ideation. Each person should aim for 3-5 candidates. Then go around the room and have each person present their candidates without debate—just clarifying questions. Collect all candidates on the board. You should have 8-15 unique metrics at this point, ranging from obvious choices to creative alternatives.
+Start with the opening discussion, then ask the group to pick a single game: attention, transaction or productivity. Expect this to be the first real disagreement; Ted Clark says in the guide that it often changes the whole focus of the North Star. Review the seven-item checklist and brainstorm a few deliberately terrible North Stars for your product. The anti-examples give the group guardrails for later.
 
-> **Pro tip:** Encourage wild ideas. Someone suggesting 'customer smiles per week' might lead to a useful proxy metric discussion. The diverge phase should feel generative, not judgmental.
+### Step 5: Write the statement and learn the structure
 
-### Step 4: Step 4: Evaluate candidates against scoring criteria (30 minutes)
+Run the statement exercise before any numbers: our path to sustainable growth is a function of our ability to do what, which depends on which inputs. Keep the group on words and add measurement options last. Then explain the metric as a formula of a handful of inputs, and introduce breadth, depth, frequency and efficiency as a common pattern for inputs. Run the warm-up on another company's product to practice.
 
-Introduce 5 evaluation criteria and score each candidate metric on a 1-5 scale: (1) Customer value reflection—does it measure value delivered, not just activity? (2) Measurability—can we track this reliably today or within 30 days? (3) Leading indicator—does improvement in this metric predict future revenue and retention? (4) Cross-functional influence—can engineering, design, marketing, and product all impact it? (5) Simplicity—can you explain it to a new hire in one sentence? Walk through each candidate as a group, discussing scores. This structured evaluation prevents the loudest voice from dominating.
+### Step 6: Draft silently, pair, then share
 
-> **Pro tip:** Have the data/analytics person reality-check measurability in real-time. A beautiful metric you can't actually track is useless. Keep a 'parking lot' for metrics that score well but need instrumentation work.
+Give everyone five to ten minutes alone with the blank worksheet and the checklist on screen. Pair people to refine each other's drafts, then collect candidates on a shared board. Evaluate them against the checklist and look for differences and common threads. Use the guide's template if people are stuck: "I would be more confident that our current product strategy is setting us up for sustainable long-term growth, if I observed an increase in" a behavior, measured a certain way.
 
-### Step 5: Step 5: Converge on the North Star Metric through structured voting (20 minutes)
+### Step 7: Converge and record
 
-After scoring, you'll typically have 2-4 strong candidates. Give each participant 3 dot-votes to place on their preferred metrics (they can stack votes). The top 2 vote-getters become the finalists. For each finalist, run a quick "pre-mortem": What could go wrong if we optimize for this metric? What perverse incentives could it create? After discussing tradeoffs openly, make the final call. If the group is split, the product leader should make the tiebreaker decision—but only after both sides have been heard.
+Answer the guide's four closing questions out loud and write the answers down: the game, the strongest candidates, what is eliminated, and what information is missing. Assign an owner and a date to each missing piece. Capture disagreements rather than smoothing them over, since they point to beliefs that need testing. Photograph or export the board before anyone leaves.
 
-> **Pro tip:** If two metrics are truly neck-and-neck, ask: 'If this metric improved 20% next quarter but nothing else changed, would we feel good about our product direction?' The one that gets the stronger yes is your answer.
+### Step 8: Schedule the follow-up rounds
 
-### Step 6: Step 6: Map 3-5 input metrics that drive the North Star (30 minutes)
-
-With the North Star Metric selected, shift to identifying the levers that move it. Ask: "What specific, measurable behaviors or outcomes directly cause our North Star to improve?" For example, if your NSM is "weekly active projects," inputs might include "new projects created," "collaborators invited per project," "templates used," and "projects reaching 5+ tasks." For each input metric, discuss the causal relationship—not just correlation. Map these visually as a simple tree with the NSM at top and inputs below. Reference the sibling skill on [mapping input metrics](https://tryhamster.com/skills/mapping-input-metrics-to-north-star) for deeper frameworks.
-
-> **Pro tip:** Limit to 3-5 inputs. More than 5 dilutes focus. If the group identifies 8 candidates, force-rank by impact and pick the top 4. You can always revisit the others next quarter.
-
-### Step 7: Step 7: Assign ownership and set the review cadence
-
-For each input metric, assign a clear owner—the person responsible for understanding that metric's movement and proposing actions when it stalls. The North Star Metric itself should be owned by the product leader. Agree on a review cadence: weekly check-ins on input metrics (often in existing team standups), monthly deep-dives on the North Star trend, and a quarterly reassessment of whether the framework still fits. Document everything in a shared artifact—a one-page summary with the NSM, inputs, owners, and review dates.
-
-> **Pro tip:** Ownership doesn't mean sole accountability. It means one person is responsible for watching the metric and raising the flag when something changes. Make this distinction explicit to avoid defensiveness.
-
-### Step 8: Step 8: Close with commitments and distribute the artifact
-
-In the final 10 minutes, go around the room and ask each participant to state one thing they'll do differently next week based on what was decided. This creates personal accountability and tests whether the session produced genuine clarity. Within 24 hours, distribute the workshop artifact (the one-pager with NSM, inputs, owners, and cadence) to all attendees and relevant stakeholders who weren't in the room. Include a brief narrative explaining the key decisions and tradeoffs discussed.
-
-> **Pro tip:** Record the 'tradeoffs discussed' section carefully. When someone challenges the metric choice in 3 months, you can point to the documented reasoning rather than re-litigating the entire debate.
+Book one or two refinement sessions within a week and a half, following Ted Clark's advice in the [workshop article](https://amplitude.com/blog/behind-scenes-north-star-workshop). Use them to pull data, pressure-test candidates, bring in stakeholders who were not in the room, and define the metric and inputs precisely. Send a one-page summary of the workshop to everyone who attended and to the sponsor. Plan to share the result later in a company-wide forum.
 
 ## Best Practices
 
-- Send a pre-read with North Star Framework basics, 2-3 company-relevant examples, and current product data at least 3 days before the workshop. Participants who arrive uninformed slow the group down and force you to spend facilitation time on education instead of decision-making.
-- Use silent ideation before any group discussion. Having each person write independently for 5-8 minutes before sharing prevents anchoring bias, where the first person to speak disproportionately shapes the group's thinking. This is especially critical when senior leaders are in the room.
-- Timebox every exercise ruthlessly and announce time remaining at the halfway point. The biggest facilitation failure in metric workshops is spending 90 minutes on brainstorming and having 15 minutes left for the actual decision. Write the time allocation on the whiteboard so everyone can see it.
-- Separate 'diverge' and 'converge' phases explicitly. Tell the group 'we are now in brainstorm mode—no critiques' and later 'we are now in evaluation mode—be critical.' When these phases blur, you get cautious brainstorming and superficial evaluation.
-- Include at least one customer-facing person (support, sales, or customer success) in the workshop. They catch metrics that look good internally but don't reflect actual customer experience. A support lead once vetoed 'daily active users' by pointing out that their most valuable customers used the product weekly, not daily.
-- Document dissent, not just decisions. If the VP of Engineering strongly preferred a different metric, note that in the workshop artifact along with the reasoning for the final choice. This prevents relitigating decisions and shows you took all perspectives seriously.
+- Keep the first group small and add people in later rounds. The [workshop guide](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf) prefers smaller groups and rounds over one crowded session, and a small group can reach agreement that a large one cannot.
+- Protect the words-first order. If people start debating thresholds, park the question and return to the statement. The guide advises against getting bogged down in the specifics of a definition before the group has a powerful metric concept.
+- Use silent drafting for anything that needs many ideas. It gives introverts and slower thinkers the same airtime as quick talkers and stops the group from anchoring on the first suggestion.
+- Invite functions outside product. Cutler says in the guide not to underestimate what other departments can bring, and finance, sales and customer success often know which behaviors predict renewals.
+- End with owners and dates. A workshop whose open questions have no owners loses its momentum within days, which is why the follow-up sessions go on the calendar before people leave.
+- Treat disagreement as useful output. A clash over the game or the value exchange usually reveals a belief about customers that nobody had said aloud.
 
 ## Common Mistakes
 
-- **Letting the HiPPO (Highest Paid Person's Opinion) dominate the metric selection** — This happens because senior leaders speak first and others anchor to their suggestion. Prevent it by using silent ideation for all brainstorming, having everyone write before anyone speaks. If a senior leader insists on a specific metric before the workshop, ask them to hold their perspective until the evaluation phase and present it alongside other candidates. Frame it as 'your instinct might be right, and this process will either confirm it with group buy-in or surface something even better.'
-- **Choosing a metric that the team can't actually measure today** — Aspirational metrics feel good in workshops but create immediate post-workshop paralysis. Always include a 'Can we measure this within 30 days?' criterion in your evaluation rubric. If the best conceptual metric isn't measurable, identify a proxy metric you can track now and create a 90-day plan to instrument the ideal metric. Document both the target metric and the interim proxy so the team knows this is temporary.
-- **Skipping the customer value grounding exercise and jumping straight to metric brainstorming** — Without the grounding exercise, teams default to internal business metrics (revenue, DAU, sign-ups) rather than customer value metrics. This happens because people reach for what they already track. The value mapping exercise reframes the conversation around outcomes customers care about, which naturally leads to better North Star candidates. Even if it feels slow, the 25 minutes invested here saves 45 minutes of circular metric debates later.
-- **Ending the workshop with a metric but no input metrics, owners, or review cadence** — A North Star Metric without input metrics is a scoreboard without a playbook—you can see if you're winning but have no idea what to do about it. Always allocate at least 30 minutes at the end for input metric mapping and ownership assignment. If you run out of time, schedule a follow-up session within one week specifically for input mapping. Never let more than a week pass between selecting the NSM and defining its inputs, or momentum dies.
-- **Inviting too many people (12+) to the workshop to be 'inclusive'** — Large groups create diffusion of responsibility and make convergence nearly impossible. Cap at 10 participants and use a pre-workshop survey to collect input from others. Share the workshop output widely afterward. If a stakeholder insists on attending, ask them what unique perspective they bring that isn't already represented—often they realize another team member covers their viewpoint.
+- **Expecting a final metric from one session**: The first workshop is phase one. Promise candidates and a plan, and use the follow-up rounds to define the metric precisely.
+- **Inviting everyone who wants to come**: A crowded room drifts into status updates and positioning. Keep the core group small and share the output widely afterwards.
+- **Jumping straight to measurement**: Arguing about data availability in the first hour kills promising ideas. The playbook warns against discarding concepts just because nobody yet knows how to measure them.
+- **A facilitator with a stake in the answer**: If the facilitator's own team would benefit from one candidate, the group will notice. Use a neutral facilitator, or a pair from different teams.
+- **Skipping the follow-up**: Without refinement sessions soon after, the board photo becomes the only record and people drift back to their own metrics. Schedule the follow-up in the closing minutes.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/north-star-framework/METHOD.md) — North Star Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/north-star-framework/METHOD.md): North Star Framework
 
 ## Related Skills
 
-- [Identifying Your Product's North Star Metric](../identifying-your-north-star-metric/SKILL.md)
-- [Mapping Input Metrics That Drive Your North Star](../mapping-input-metrics-to-north-star/SKILL.md)
-- [Building Dashboards to Track Your North Star and Inputs](../building-north-star-metric-dashboards/SKILL.md)
-- [Using the North Star Metric to Prioritize Your Product Roadmap](../using-north-star-for-roadmap-prioritization/SKILL.md)
-- [Iterating and Evolving Your North Star Metric Over Time](../iterating-and-evolving-north-star-metric/SKILL.md)
-- [Aligning Cross-Functional Teams Around a North Star Metric](../aligning-teams-around-north-star-metric/SKILL.md)
+- [Identifying Your North Star Metric: Words Before Numbers](../identifying-your-north-star-metric/SKILL.md)
+- [Mapping Input Metrics From the North Star to the Work](../mapping-input-metrics-to-north-star/SKILL.md)
+- [North Star Metric Cross-Functional Alignment That Sticks](../aligning-teams-around-north-star-metric/SKILL.md)
+- [Iterating the North Star Metric and Its Inputs](../iterating-and-evolving-north-star-metric/SKILL.md)
+
+## Sources
+
+- [Amplitude: How-to Guide, Running Your North Star Workshop](https://info.amplitude.com/rs/138-CDN-550/images/North-Star_how-to-Guide_2024.pdf)
+- [Amplitude: The North Star Playbook](https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf)
+- [Amplitude: Behind the Scenes of a North Star Workshop](https://amplitude.com/blog/behind-scenes-north-star-workshop)
+- [Liberating Structures: 1-2-4-All](http://www.liberatingstructures.com/1-2-4-all)

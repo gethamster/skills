@@ -1,21 +1,37 @@
-# Examples: Conducting Sprint Reviews and Demos
+# Examples: Conducting Sprint Reviews
 
-## Example: E-commerce Team Sprint Review for Checkout Redesign
-
-**Scenario:**
-
-A five-person Scrum team has just completed a two-week sprint focused on redesigning the checkout flow to reduce cart abandonment. The sprint goal was to simplify the checkout from 4 pages to a single-page experience. Stakeholders include the VP of Product, the head of customer support, and two UX researchers.
-
-**Walkthrough:**
-
-The Product Owner opens by restating the sprint goal and noting that 7 of 8 planned stories were completed—the payment method animation was deprioritized mid-sprint when an accessibility issue was discovered. A frontend developer then demos the new single-page checkout by walking through a realistic purchase scenario: adding items to cart, entering shipping information, selecting a payment method, and completing the order. She shows both desktop and mobile views. After the demo, the head of customer support flags that the new address validation is rejecting PO Box entries, which is their second most common support ticket. The team captures this as a new high-priority bug. The UX researchers share preliminary A/B test data from a soft launch showing a 12% reduction in abandonment, but note that users over 55 are struggling with the compressed layout. This sparks a discussion about font sizing and spacing that results in two new backlog items. The Product Owner closes by confirming these items will be considered for next sprint's planning and noting that the payment animation will carry over. The Scrum Master sends a summary to all attendees within 2 hours.
-
-## Example: Internal Platform Team Sprint Review with Limited Stakeholder Availability
+## A checkout redesign reviewed hands-on
 
 **Scenario:**
 
-An internal platform team working on developer tooling has struggled with sprint review attendance—their stakeholders are other engineering teams who view the meeting as low priority. The Scrum Master needs to revamp the format.
+Illustrative scenario: a team of five finishes a two-week Sprint whose Sprint Goal was to let returning customers check out on a single page. Four of the five selected items met the Definition of Done. The fifth, a saved-address feature, is still in testing. The Product Owner invites the support lead, a sales manager and two customers from a beta group.
 
 **Walkthrough:**
 
-Instead of a traditional sit-down meeting, the team switches to a 30-minute 'live lab' format. They set up two demo stations in a common area during lunch: one showing the new CI/CD pipeline configuration UI, another showing the improved logging dashboard. Team members staff each station and give 5-minute walkthroughs to anyone who stops by. They collect feedback on sticky notes organized by theme. For stakeholders who can't attend in person, the team records a 10-minute Loom video of the demos and shares it in Slack with a feedback thread. Over two sprints, feedback volume triples compared to their old format. The Product Owner consolidates all feedback into the backlog during their regular [backlog refinement](https://tryhamster.com/skills/grooming-the-product-backlog) session, tagging each item with its source so the team can follow up.
+The Product Owner opens with the Sprint Goal and says plainly that it was met, and that the saved-address item is not Done and has gone back to the Product Backlog. Instead of clicking through the page themselves, the Developers hand a laptop to one of the beta customers, who tries to buy something with a gift card. The payment step does not accept it. The support lead says gift card questions are common in the support queue.
+
+The group then talks about what has changed: sales mentions that a holiday campaign starts next month. The Product Owner reorders the top of the backlog in the room, moving gift card support and the saved-address item above a reporting feature. The summary sent afterward lists each change and the feedback behind it.
+
+## An internal platform team with busy stakeholders
+
+**Scenario:**
+
+Illustrative scenario: a platform team builds deployment tooling used by other engineering teams. Attendance at its sprint review has dropped to one or two people, and the backlog rarely changes as a result.
+
+**Walkthrough:**
+
+The Scrum Master asks the Product Owner who actually decides priorities for the tooling, and the answer is two engineering managers who never attend. The Product Owner meets each of them, agrees one question per Sprint that they care about, and puts that question in the invitation. The team replaces its slide deck with a shared terminal session where a developer from a customer team runs the new deployment command on a real service.
+
+Within a few Sprints the managers attend because the review answers their question. When one of them asks for rollback support before anything else, the Product Owner moves it up the backlog during the meeting and explains which item moves down.
+
+## A Sprint whose goal was missed
+
+**Scenario:**
+
+Illustrative scenario: a team's Sprint Goal was to publish a new pricing page. A dependency on the billing system slipped, and only the page design and copy met the Definition of Done. The team is tempted to cancel the review.
+
+**Walkthrough:**
+
+The Scrum Master points out that the review is where stakeholders learn what happened and decide what to do next, which matters more when the goal was missed. The team shows the finished design and copy, explains the billing dependency in two minutes, and asks the finance lead what options exist.
+
+The discussion changes the plan: finance agrees to a manual invoicing step for the first customers, which removes the dependency for launch. The Product Owner adds that item to the top of the backlog and splits the automated billing work into a later item. The review ends with a realistic next step that everyone in the room has agreed.

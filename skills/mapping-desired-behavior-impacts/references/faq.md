@@ -1,25 +1,21 @@
 # FAQ: Mapping Desired Behavior Impacts on Actors
 
-## What is the difference between an impact and a deliverable in Impact Mapping?
+## What is the difference between an impact and a deliverable?
 
-An impact describes a behavioral change in a human actor (e.g., 'customers reorder within 30 days'), while a deliverable is a specific output your team produces to cause that behavior change (e.g., 'automated reorder reminder email'). Impacts answer 'what should change?' while deliverables answer 'what should we build?'
+An impact is a change in what an actor does. A deliverable is something the team or organization does to support that change. Gojko Adzic's book sample says plainly that impacts are not product features and that software ideas do not belong at this level. If an impact names a screen, a button or an integration, it is a deliverable in disguise.
 
-## How many impacts should I map per actor?
+## How do I know if an impact is an outcome or an output?
 
-Start with 3-5 impacts per major actor. This is enough to capture the most important behavioral changes without overwhelming the map. You can always add more during later iterations, but starting lean keeps the team focused on the highest-leverage changes.
+Ask whether it describes something the actor does or perceives, or an interaction with your product. Büşra Coşkuner uses repeated "why" questions to move from an interaction, such as clicking a signup button, to the behavior it serves, such as completing a trip. If the impact would be true the moment you ship a feature, it is probably an output.
 
-## How do I know if a behavior impact is specific enough?
+## Should every impact have a number?
 
-Apply two tests: (1) Could you observe or measure this behavior with existing analytics, surveys, or direct observation? (2) Could two team members independently agree on whether the behavior has occurred? If either answer is no, sharpen the impact with concrete actions, timeframes, or thresholds.
+The important ones should have a range once they are chosen for delivery, so the team knows when it has succeeded. Adzic suggests asking for the minimum valuable change and the point where more would be over the top. Early in a vision workshop, it is acceptable to capture impacts without numbers and add measurements later.
 
-## Can one impact belong to multiple actors?
+## Can an impact belong to more than one actor?
 
-Yes, but be cautious. If the same behavioral statement applies to multiple actors, it often means the impact is too generic. Try to specialize it for each actor's context. 'Users share content' might become 'power users share curated collections' and 'new users share their first creation with a friend.'
+The same phrase can appear under different actors, but treat each as its own impact. Mashooq Badar's workshop at Codurance found that behaviors that looked the same across actors could lead to very different features in context. Keeping them separate also makes it clearer whose behavior you are measuring.
 
-## How does mapping behavior impacts improve product manager skills?
+## How many impacts should each actor have?
 
-Mapping behavior impacts strengthens core product manager skills by training you to think in outcomes rather than outputs, articulate clear hypotheses, and prioritize based on behavioral leverage rather than stakeholder loudness. It's a discipline that separates strategic product managers from feature-request processors.
-
-## What if stakeholders keep suggesting features instead of behavior changes during the mapping session?
-
-This is extremely common. Redirect by asking 'What behavior would this feature change?' or 'If we built that, what would the user do differently?' Capture the feature on a separate parking lot list and write the underlying behavior on the Impact Map. Most stakeholders accept this reframe once they see the logic.
+As many as have a plausible link to the goal, then rank them and pick a few. Adzic warns against listing everything an actor might want to achieve. A focused map with a few ranked impacts per focus actor is easier to test and deliver against than a comprehensive one.

@@ -1,33 +1,37 @@
-# Examples: Identifying Actors and Stakeholders in Impact Mapping
+# Examples: Identifying Actors and Stakeholders for an Impact Map
 
-## Example: SaaS Trial Conversion Goal
-
-**Scenario:**
-
-A B2B SaaS product management team has the goal: 'Increase free trial to paid conversion from 8% to 15% within Q3.' The product manager needs to identify which actors' behavior changes will drive this metric.
-
-**Walkthrough:**
-
-The team runs a cross-functional brainstorm with PM, engineering lead, head of sales, and customer success manager. They generate 22 actors including: free-trial users (first 48 hours), free-trial users (days 3-14), technical evaluators, budget decision-makers, competitor users evaluating alternatives, the sales development team, the onboarding support team, and partner channel managers.
-
-After clustering, they consolidate to 12 distinct actors. Scoring on influence and feasibility reveals:
-- **Top tier**: Free-trial users in first 48 hours (high influence — 70% of conversions happen if activation occurs in 48 hours; high feasibility — we control the onboarding flow). Sales development reps (high influence — they currently don't follow up on trial signups; high feasibility — process change, no code needed).
-- **Second tier**: Technical evaluators (high influence but medium feasibility — requires new security documentation). Budget decision-makers (high influence but low feasibility — limited ability to reach them directly).
-
-The team selects 4 actors for the map: first-48-hour trial users, technical evaluators, sales development reps, and the onboarding support team. Budget decision-makers go to the parking lot. The impact map now has focused, actionable branches that feed directly into [behavior impact mapping](https://tryhamster.com/skills/mapping-desired-behavior-impacts).
-
-## Example: Internal Platform Migration Goal
+## A marketplace that forgot its sellers' accountants
 
 **Scenario:**
 
-An internal platform team's goal is: 'Migrate 80% of internal teams from legacy API to new platform API by end of Q2.' The product manager must identify actors beyond the obvious engineering consumers.
+Illustrative scenario: an online marketplace sets a goal of increasing the number of sellers who list products in a new region within the milestone. The first actor list has two entries: sellers and buyers.
 
 **Walkthrough:**
 
-Initial brainstorming surfaces the expected actors: frontend engineering teams, data engineering teams, and mobile teams. But the customer success manager raises a critical insight: the developer relations team creates all internal migration guides, and the engineering managers approve sprint priorities for migration work.
+The facilitator runs through the actor questions one by one. "Who can obstruct it?" brings up the tax advisers many small sellers rely on, who have been telling clients to wait until the regional tax rules are clear. It also brings up the internal compliance team, which must approve each new payout method.
 
-The team also identifies negative actors: teams with legacy API dependencies that would break during migration (they'll actively resist) and the security team that must re-certify new API endpoints.
+Sellers split into two groups: existing sellers expanding into the region and new local sellers. The final focus list has existing sellers expanding into the region, the compliance team and sellers' tax advisers. Buyers are parked for a later milestone, because the goal is about listings, and the region already has buyer demand.
 
-Final prioritized actor list: (1) Engineering managers who allocate sprint capacity for migration, (2) Frontend engineering teams — the largest consumer group, (3) Developer relations team who write migration guides, (4) Security certification team. The 'resisting teams with breaking dependencies' are added as a risk actor with specific mitigation impacts.
+## Narrowing "users" in an internal tool
 
-This example shows how one of the key **product manager roles and responsibilities** — thinking systemically about who influences outcomes — extends well beyond the direct product users.
+**Scenario:**
+
+Illustrative scenario: an operations team wants to reduce the time taken to resolve billing disputes. Its first draft names one actor, "users of the billing tool".
+
+**Walkthrough:**
+
+The group rewrites the actor using Adzic's order of preference. The tool is used by frontline support agents, by a small team of billing specialists who handle escalations, and occasionally by finance managers who approve refunds. Each group behaves differently, and the finance managers have the most influence over how long a dispute stays open.
+
+The team also adds an off-stage actor: the external payment provider, whose dispute window sets a hard deadline. The focus actors become the billing specialists and the finance managers, since changes in how they hand off approvals would affect resolution time most.
+
+## Removing an actor that does not serve the goal
+
+**Scenario:**
+
+Illustrative scenario: a subscription app's goal is to reduce cancellations among customers in their first quarter. A stakeholder insists that investors belong on the map because they care about retention.
+
+**Walkthrough:**
+
+The facilitator asks how a change in investors' behavior would reduce first-quarter cancellations. No one can describe a route, since investors do not interact with customers or the product. The group agrees investors care about the goal but cannot move it, so they stay off this map.
+
+The discussion surfaces two actors that were missing: the customer success team, whose onboarding calls reach some new customers, and the payment provider, whose failed-payment emails trigger some cancellations. Both go on the map. The note explaining why investors were excluded is kept with the map for the next review.

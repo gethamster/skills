@@ -1,21 +1,37 @@
-# Examples: Designing Pain-Focused Interview Guides for Developer Calls
+# Examples: Designing Pain-Focused Interview Guides for Developers
 
-## Example: Interview Guide for Infrastructure/DevOps Pain Discovery
-
-**Scenario:**
-
-You're building a developer tool in the site reliability space. Your TAB includes 30 developers across mid-market SaaS companies. You want to understand infrastructure monitoring and testing pain, including how teams handle crawlability and uptime verification.
-
-**Walkthrough:**
-
-Your guide opens with context: 'Walk me through your on-call rotation — what does a typical incident response look like from alert to resolution?' This surfaces the workflow. Next, friction discovery: 'Tell me about the last false alarm that woke someone up. What happened and how did you determine it was a false positive?' This reveals monitoring gaps. Then workaround excavation: 'I've heard some teams build custom scripts to verify their sites are actually accessible and crawlable after deploys — things like homegrown crawlability testing tools. Does your team do anything like that?' This prompt is neutral but specific enough to trigger detailed responses. One developer reveals they maintain a 200-line bash script that checks 15 critical URLs after every deployment because their monitoring tool once missed a routing change that made half their site invisible to search engines for three days. You follow up: 'Who maintains that script? What happens when it breaks?' The developer admits it's undocumented and maintained by one senior engineer. You've just uncovered a fragile workaround with real organizational risk — exactly the kind of insight that drives product roadmap decisions.
-
-## Example: Adapting a Guide for Different Developer Seniority Levels
+## Scoping the problem statement for a database migration tool
 
 **Scenario:**
 
-Your TAB includes both senior architects and mid-level developers. You need the same guide to work for both, but their perspectives on pain differ significantly.
+Illustrative scenario: a startup is building a tool for schema migrations. The founders' first draft of the problem statement is "making databases easier."
 
 **Walkthrough:**
 
-You create a single guide with tagged variations. For the context opener, seniors get: 'How do you decide which technical investments to prioritize this quarter?' while mid-level developers get: 'Walk me through a feature you shipped recently — what slowed you down most?' Both reach friction discovery, but through different entry points. For workaround questions, seniors respond better to: 'What internal tooling has your team built that you wish the market provided?' while mid-level developers open up with: 'Is there a repetitive task in your week that you've tried to automate but couldn't fully solve?' Both paths converge on the same core insight: what's broken, what's been patched, and what's the real cost. You mark these variations with [SR] and [ML] tags in your guide so interviewers can quickly adapt without losing the structural flow.
+They test the statement on two engineers outside the company. One talks about query performance, the other about hosting costs. The statement is too broad, so the answers wander. The founders try "migration error messages" next and realize it is so narrow that a member could answer in one sentence.
+
+They settle on "safe schema changes." In the pilot calls, the magic wand question scoped to safe schema changes gets people describing rollbacks, locking, and review processes, all within territory the startup could address. The founders freeze the statement and write the other questions around it.
+
+## Removing leading wording from a draft guide
+
+**Scenario:**
+
+Illustrative scenario: a founder's first draft guide for an observability product includes the question "How frustrating is it that your logs and traces live in different tools?"
+
+**Walkthrough:**
+
+A teammate reviews the draft and points out that the question assumes the person is frustrated and assumes logs and traces are separated. The founder rewrites it as "Tell me about the last time you investigated a production incident. What did you look at, and in what order?"
+
+The teammate finds two more issues: a question that names a planned feature, and a follow-up that rephrases the member's words as "so it's slow." The founder removes the feature question and replaces the follow-up with "What happened next?" The final guide has seven questions: the three core questions and four about recent incidents.
+
+## Versioning the guide for the second round
+
+**Scenario:**
+
+Illustrative scenario: a team has finished first calls with its members and synthesized the top pains per persona. The second calls will ask members to react to that ranking.
+
+**Walkthrough:**
+
+The team writes a second version of the guide. It opens by showing the ranked pains for the member's persona and asks whether the ranking matches their experience, what is missing, and which pain they would fix first. It ends with the magic wand question again, scoped to the top-ranked pain, to see whether a narrower frame surfaces anything new.
+
+They label the documents as the first-round and second-round guides and add a field to their call log recording which version each call used. When they later compare answers, they only compare calls that used the same version.

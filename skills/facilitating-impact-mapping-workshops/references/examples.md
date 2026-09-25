@@ -1,35 +1,37 @@
-# Examples: Facilitating Collaborative Impact Mapping Workshops
+# Examples: Facilitating Impact Mapping Workshops
 
-## Example: E-Commerce Platform Reducing Cart Abandonment
-
-**Scenario:**
-
-A mid-stage e-commerce company has a 72% cart abandonment rate. The VP of Product wants to reduce it to 60% within one quarter. The PM organizes an impact mapping workshop with engineering, UX, data analytics, customer support, and the marketing lead.
-
-**Walkthrough:**
-
-**Preparation:** The PM sends a pre-read with the cart abandonment data, three top customer complaints from support tickets, and a one-page Impact Mapping primer. The business goal is stated as: 'Reduce cart abandonment from 72% to 60% by Q3 end.'
-
-**Actors layer:** Silent brainstorming produces: first-time shoppers, returning customers, mobile users, users with saved payment methods, users from paid ad campaigns, and the checkout engineering team (internal actor). The group votes and prioritizes first-time shoppers and mobile users as highest-impact actors.
-
-**Impacts layer:** For first-time shoppers, the group identifies desired behavior changes: 'Complete purchase without creating an account,' 'Trust the site enough to enter payment info,' and 'Understand shipping costs before reaching checkout.' For mobile users: 'Complete checkout in under 2 minutes' and 'Use mobile payment options instead of typing card numbers.'
-
-**Deliverables layer:** The group brainstorms: guest checkout flow, shipping cost calculator on product pages, Apple Pay/Google Pay integration, progress indicator in checkout, trust badges, and a simplified mobile form. Dot voting prioritizes guest checkout and mobile payment integration as highest-confidence, highest-impact pairs.
-
-**Outcome:** The workshop produces a clear map with two prioritized branches. The engineering lead owns a spike on guest checkout complexity. The designer owns mobile payment UX exploration. The PM schedules a validation session in two weeks to review early findings. The entire session takes 2.5 hours and replaces what would have been weeks of back-and-forth alignment.
-
-## Example: B2B SaaS Improving Trial-to-Paid Conversion
+## A vision workshop for a request for proposals
 
 **Scenario:**
 
-A B2B SaaS company's trial-to-paid conversion rate is 8%, below the industry benchmark of 15%. The Head of Product asks the PM to run a cross-functional workshop. This is the PM's first time facilitating an impact mapping session, and they're also preparing for product manager interview questions at another company—so they want to practice articulating their facilitation approach.
+Illustrative scenario: a city transport department plans to hire an agency to rebuild its journey-planning app. The department's draft brief is a list of features copied from other cities' apps.
 
 **Walkthrough:**
 
-**Preparation:** The PM interviews two recent churned trial users and three converted customers to gather qualitative data. They prepare the pre-read with the conversion funnel data and key quotes from interviews. Goal: 'Increase trial-to-paid conversion from 8% to 14% within two quarters.'
+The facilitator chooses the vision format. She drafts a goal, reducing calls to the customer contact center about journeys and fares, and circulates it to the department's key stakeholders as a starting point. In the workshop, the stakeholders sharpen it to calls about disruption and fares, and add a range they would consider worthwhile.
 
-**Workshop flow:** During the actors layer, the sales team identifies 'the internal champion' (the trial user who advocates for purchase) and 'the budget holder' (who approves the purchase but may never use the product) as distinct actors—an insight the PM hadn't considered. This fundamentally shapes the impacts layer: for the internal champion, desired impacts include 'demonstrates measurable value to their manager within the trial period' and 'can self-serve a business case.' For the budget holder: 'receives a clear ROI summary without needing to log in.'
+The group spends the session on actors and impacts: commuters checking disruption before leaving, occasional riders buying the right ticket without calling, and contact center staff pointing callers to self-service. Feature ideas from the original brief go on a parking board. Afterward, the facilitator writes the conclusions into the request for proposals, framed as impacts the agency must achieve, and invites bidders to propose deliverables.
 
-**Conflict moment:** The engineering lead argues for improving onboarding flows, while the sales lead wants automated sales-assist emails. Rather than choosing, the facilitator maps both as parallel deliverable branches under different impact nodes and asks: 'Which assumption is riskier?' The group agrees the onboarding hypothesis is more uncertain and should be tested first.
+## A delivery-focusing workshop with a pre-agreed goal
 
-**Follow-up:** The PM documents the map, shares it company-wide, and references it in the next sprint planning session. When later asked in a product manager interview to 'describe a time you aligned cross-functional stakeholders around a strategy,' they walk through this exact workshop—structure, conflict resolution, and measurable outcome.
+**Scenario:**
+
+Illustrative scenario: an internal platform team serves several product teams, each pushing for its own backlog items. The platform lead wants a way to prioritize among them.
+
+**Walkthrough:**
+
+A week before the workshop, the facilitator holds a short session with the engineering director and the product team leads to agree a single milestone goal: reduce the time product teams spend getting a new service into production. With that settled, the main workshop brings the product team leads and the platform engineers together.
+
+The group maps actors, including product engineers, the security reviewers and the on-call team, and lists impacts for each. Engineers propose high-level deliverables for the top-ranked impacts, and the group captures a metric for each key impact. The map stays on the team's wall, and the platform lead reviews the metrics against it at each planning session.
+
+## Reframing a stalled initiative
+
+**Scenario:**
+
+Illustrative scenario: a data migration project at an insurer has been running for a long time with no clear finish. Different executives describe its purpose differently, and most of the business knowledge sits with one senior analyst.
+
+**Walkthrough:**
+
+Instead of a workshop, the facilitator meets the executives and the analyst in small groups over a few weeks. She draws a separate draft map from each conversation, with goals, actors and impacts, and only high-level deliverables.
+
+She then presents the maps side by side to the executive group. The maps show two competing goals, retiring the old system to cut licence costs and improving claims reporting for regulators, with different actors and impacts. The executives agree to treat the licence cost goal as the priority, with detailed metrics, and the project is re-planned around it.

@@ -1,55 +1,46 @@
 # Examples: Identifying Touchpoints Across CDJ Stages
 
-## Example: B2B SaaS Project Management Tool
+## A furniture brand finds its budget in the wrong stage
 
 **Scenario:**
 
-A mid-market project management SaaS company notices that despite strong top-of-funnel traffic, their conversion rate from free trial to paid has stagnated at 8%. They suspect gaps in the active evaluation and post-purchase phases but don't have a structured view of their touchpoints across buyer journey stages.
+Illustrative scenario: an online furniture brand spends most of its marketing budget on social ads and wants to know whether that matches how customers actually decide.
 
 **Walkthrough:**
 
-The team runs a full touchpoint audit across CDJ phases. They catalog 47 distinct touchpoints and map each to the four phases.
+The team lists touchpoints from the marketing plan, the site, customer service and delivery, then interviews recent buyers about everything they saw before and after buying. Buyers mention several touchpoints no team listed: room photos posted by other customers, a design forum, and delivery staff who assembled the furniture.
 
-**Findings by phase:**
-- Initial consideration: 18 touchpoints (blog SEO, paid social, display ads, podcast sponsorships, PR mentions)—well-invested with a total impact score of 156.
-- Active evaluation: 7 touchpoints (pricing page, one comparison article, G2 profile, a sparse FAQ, two case studies, one demo video)—total impact score of 42.
-- Moment of purchase: 9 touchpoints (free trial flow, pricing page, sales calls, checkout page, annual discount prompt)—total impact score of 68.
-- Post-purchase: 13 touchpoints (onboarding emails, help docs, in-app tooltips, customer success calls, monthly newsletter, NPS survey, community forum)—total impact score of 71.
+Illustrative scenario: part of the scored inventory looks like this, on a simple 1 to 5 scale.
 
-**Key gaps identified:**
-- Active evaluation was a desert. Competitors had 15+ comparison pages, integration directories, and ROI calculators. The team was losing buyers who entered active evaluation and discovered competitors they hadn't initially considered.
-- The G2 profile had only 23 reviews versus competitors' 200+, scoring low on both influence and frequency.
+| Touchpoint | Stage | Driver | Reach | Influence |
+|------------|-------|--------|-------|-----------|
+| Social ads | Initial consideration | Company | 5 | 2 |
+| Customer room photos | Active evaluation | Consumer | 3 | 5 |
+| Fabric samples | Moment of purchase | Company | 2 | 4 |
+| Delivery and assembly | Postpurchase | Partner | 4 | 4 |
 
-**Actions taken:**
-- Built a programmatic SEO comparison hub with 30 "[Product] vs [Competitor]" pages, an integration directory, and a use-case content library targeting active evaluation keywords.
-- Launched a review generation campaign tied to post-purchase NPS surveys, routing promoters to G2.
-- Created an interactive ROI calculator as a high-influence evaluation touchpoint.
+The scores show heavy spending on a high-reach, low-influence touchpoint and no owner for customer room photos, the most influential touchpoint in evaluation. The team assigns an owner to collect and display customer photos, promotes fabric samples earlier in the journey, and reviews the delivery partner's service standards.
 
-Within two quarters, trial-to-paid conversion improved from 8% to 13%, attributable to stronger active evaluation touchpoints that kept the brand in consideration sets through to purchase.
-
-## Example: Direct-to-Consumer Skincare Brand
+## A B2B software vendor adds the unowned touchpoints
 
 **Scenario:**
 
-A DTC skincare brand is spending heavily on Instagram and TikTok ads (initial consideration) but struggling with customer retention. Repeat purchase rate is 22% versus a category average of 35%. They want to understand their touchpoint coverage across all buyer journey stages.
+Illustrative scenario: a B2B software vendor's touchpoint list contains its website, webinars, sales calls and email campaigns. Win rates against one competitor are falling.
 
 **Walkthrough:**
 
-The audit reveals 38 touchpoints with a telling distribution:
+Interviews with buyers who chose the competitor surface touchpoints missing from the list: a practitioner community where the competitor's staff answer questions, a review site where the vendor has few recent reviews, and reference calls with existing customers.
 
-- Initial consideration: 14 touchpoints, impact score 134 (influencer partnerships, social ads, PR features, brand ambassador content).
-- Active evaluation: 6 touchpoints, impact score 48 (product pages, ingredient explainer blog, a few YouTube reviews from micro-influencers, Sephora listing).
-- Moment of purchase: 8 touchpoints, impact score 72 (website checkout, abandoned cart emails, limited-time offers, subscription option, free shipping threshold).
-- Post-purchase: 10 touchpoints, impact score 39 (order confirmation, shipping notification, product insert card, one follow-up email, social media community, subscription renewal email).
+The team adds these to the inventory, tags them as consumer-driven or partner-driven, and notes that none has an owner. It assigns the review site to customer marketing, community participation to the product team, and reference calls to customer success. It adds a question about these touchpoints to its win-loss interviews to track change.
 
-**Critical finding:** Post-purchase touchpoints existed but had very low influence scores. The follow-up email was generic. The product insert card had no QR code or call to action. The subscription renewal email arrived with no personalization. Consumers felt no emotional connection post-purchase, so the loyalty loop never activated.
+## A hotel maps postpurchase touchpoints
 
-**High-influence/low-frequency gap:** Customer success check-in texts scored 4.5 on influence in a small test cohort, but only reached 3% of customers.
+**Scenario:**
 
-**Actions:**
-- Redesigned post-purchase email sequence into a skincare routine education series tied to the specific products purchased.
-- Added a QR code to packaging linking to a personalized routine page and a community invitation.
-- Scaled the SMS check-in program from 3% to 100% of first-time buyers.
-- Created user-generated content loops: customers sharing results on social media became consideration-phase touchpoints for new buyers.
+Illustrative scenario: a city hotel group's touchpoint work has focused on booking. Repeat stays are lower than management expects.
 
-Repeat purchase rate increased from 22% to 31% over three months, validating that the post-purchase buyer journey stages had been the primary gap.
+**Walkthrough:**
+
+The team extends the inventory to the whole stay and after it: check-in, room issues, the checkout experience, the post-stay email and online reviews written by guests. Guest interviews show that how room issues were handled was the most influential touchpoint for whether they would stay again and recommend the hotel.
+
+The team assigns front-desk managers ownership of issue resolution and adds a short follow-up after any reported issue. It also answers online reviews that mention problems. The inventory now covers all four stages and is reviewed each quarter.

@@ -1,15 +1,20 @@
 ---
-name: managing-scrum-boards-in-jira
-description: "This skill teaches you how to set up and manage Jira scrum boards, configure custom workflows, track team velocity, and generate burndown charts to maintain full sprint visibility."
+name: "managing-scrum-boards-in-jira"
+description: "Set up a Jira scrum board, map columns, run sprints and read the burndown and velocity charts, following Atlassian's own documentation."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: scrum
+  method: "scrum"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Managing Scrum Boards in Jira: The Complete Guide
+# Managing Scrum Boards in Jira: Setup, Sprints, Reports
 
-> This skill teaches you how to set up and manage Jira scrum boards, configure custom workflows, track team velocity, and generate burndown charts to maintain full sprint visibility.
+> Set up a Jira scrum board, map columns, run sprints and read the burndown and velocity charts, following Atlassian's own documentation.
 
 ## Before you start
 
@@ -23,139 +28,109 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 45-90 minutes |
-| Outcome | You'll have a fully configured Jira scrum board that gives your team clear sprint visibility, accurate velocity tracking, and actionable burndown data for continuous improvement. |
-| Prerequisites | Basic understanding of Scrum framework (sprints, backlog, ceremonies), Jira Cloud or Data Center account with project admin permissions, Familiarity with user stories and story point estimation |
+| Difficulty | Beginner |
+| Time to Learn | An afternoon to set up, one Sprint to get comfortable |
+| Outcome | Your team has a Jira scrum board whose columns, filters and estimates match how it works, and uses the burndown and velocity charts as inputs to Scrum events. |
+| Prerequisites | A Jira Cloud site, a company-managed software space or permission to create one, a Scrum Team with a Definition of Done |
 | Part of | [Scrum](../../methods/scrum/METHOD.md) |
 
 ## Overview
 
-A Jira scrum board is the operational nerve center for any team practicing [Scrum](https://tryhamster.com/methods/scrum). It translates the abstract framework of sprints, backlogs, and ceremonies into a concrete, interactive workspace where every team member can see what's in progress, what's blocked, and what's done. Without a well-configured board, teams lose visibility, sprint planning becomes guesswork, and retrospectives lack the data they need to drive real improvement.
+A Jira scrum board is Atlassian's tool for holding a team's backlog, running sprints and reporting on them. Atlassian's [Learn scrum with Jira tutorial](https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software) walks through the basic flow: create work items in the backlog, rank them by dragging, create a sprint, drag the agreed items into it, start it, and work from the Active sprints view. Reports such as the Burndown Chart and Velocity Chart are built from the board's data. This skill covers managing scrum in Jira from setup through sprint completion, as Atlassian documents it for Jira Cloud.
 
-Managing a Jira scrum board goes far beyond simply creating a project and dragging cards around. It means designing workflows that mirror how your team actually works, configuring columns and swimlanes so information is instantly scannable, and leveraging Jira's built-in reporting — velocity charts, burndown charts, sprint reports — to make data-driven decisions about capacity and scope. This skill bridges the gap between knowing Scrum theory and executing it with precision in your team's primary tool.
+Jira's terms differ from Scrum's in places. Recent Atlassian documentation calls projects "spaces" and issues "work items." A Jira sprint maps to a Scrum Sprint. The Jira backlog holds the Product Backlog, and the items dragged into a sprint plus any subtasks approximate the Sprint Backlog; the Sprint Goal can be entered when the sprint is started. Some features, such as creating extra boards, differ between company-managed and team-managed spaces, and the steps below follow the company-managed documentation.
 
-Whether you're a Scrum Master setting up a board for a new team, a product owner wanting better backlog visibility, or a developer who wants to understand the mechanics behind the board you use every day, mastering Jira scrum board management will make your sprints more transparent, predictable, and ultimately more productive.
+The board is a way to make the Scrum artifacts transparent, and its settings shape what the reports say. Atlassian's documentation for the [velocity chart](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/) and [burndown chart](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-burndown-chart/) both say the reports are board-specific and based on the board's column mapping: a work item counts as Done only when it is in a status mapped to the right-most column. A board with wrong column mapping produces misleading charts, so configuration comes before reporting.
+
+The [Scrum Guide](https://scrumguides.org/scrum-guide.html) says practices such as burn-downs and burn-ups "do not replace the importance of empiricism." Use the charts to start conversations in the Daily Scrum, Sprint Review and retrospective. For Scrum itself, see the [Scrum method page](../../methods/scrum/METHOD.md).
 
 ## How It Works
 
-Jira scrum boards operate on a pull-based system built around sprints. The backlog serves as a prioritized queue of work items (user stories, bugs, tasks), and during [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints), the team pulls a subset of those items into a time-boxed sprint. The board then visualizes each item's journey through workflow states — typically columns like To Do, In Progress, In Review, and Done.
+A scrum board is defined by a saved filter. When you [create a scrum board](https://support.atlassian.com/jira-software-cloud/docs/create-a-board/) based on one or more existing spaces, Jira builds a pre-configured board containing all the work items in those spaces, using a work item filter written in JQL. Everything the board and its reports show comes from that filter. Atlassian notes that team-managed spaces do not support creating additional boards directly, and that a board can be created from a saved filter instead.
 
-Under the hood, every column on the board maps to one or more workflow statuses. When a team member drags a card from one column to another, Jira transitions the underlying issue through its workflow. This is why workflow configuration matters so much: if your workflow doesn't reflect reality, the board becomes a lie. Teams that skip workflow customization end up with cards stuck in ambiguous states or, worse, moving cards without updating the actual status.
+Columns are mapped to workflow statuses. Atlassian's [column configuration guide](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/) says Jira only considers work items in the right-most column as complete, and that statuses representing completed work should be mapped there, or a sprint may not complete cleanly. Columns can have minimum and maximum constraints; when a maximum is exceeded the column header turns red, and when a minimum is not met it turns yellow. For Scrum teams, Atlassian recommends counting work items excluding subtasks, so the limit applies to stories.
 
-Jira's reporting engine reads these transitions to generate metrics. The burndown chart plots remaining work (in story points or issue count) against the sprint timeline, showing whether the team is on track. The velocity chart aggregates completed story points across sprints, giving the team and product owner a reliable baseline for future [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints) and [estimation](https://tryhamster.com/skills/estimating-work-with-story-points). These reports are only as accurate as the board's configuration and the team's discipline in keeping cards updated.
+Swimlanes and quick filters change what people see without changing the data. [Swimlanes](https://support.atlassian.com/jira-software-cloud/docs/configure-swimlanes/) can be based on queries, stories, assignees, epics or spaces, or turned off. Query-based swimlanes start with an "Expedite" lane for blocker priority and an "Everything Else" lane that catches the rest. [Quick filters](https://support.atlassian.com/jira-software-cloud/docs/configure-quick-filters/) narrow the board, with two defaults: only the viewer's work items, and items updated in the last 24 hours. Atlassian notes that the new board view renames quick filters to custom filters.
+
+The reports read the board's estimation statistic. The velocity chart can use story points, original time estimates or any numeric custom field. For each sprint it shows a gray commitment bar, the total estimate when the sprint began, and a green completed bar, the total completed when it ended, plus an average line. Atlassian says estimates on subtasks are not included in the velocity chart or in the burndown's story points. The burndown chart shows the work remaining in a sprint over time against a guideline, and marks scope changes.
+
+Sprints end through a deliberate step. According to Atlassian's page on how to [complete a sprint](https://support.atlassian.com/jira-software-cloud/docs/complete-a-sprint/), you need to be a Jira administrator or have the Manage Sprints permission, all subtasks must be Done, and any incomplete parent work items are moved to the backlog, a future sprint, or a new sprint. That choice is where Jira meets the Scrum rule that unfinished work returns to the Product Backlog.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Create a Scrum Board Project
+### Step 1: Create the Jira scrum board
 
-In Jira, go to **Projects > Create Project** and select the **Scrum** template. Name your project using a clear convention (e.g., "Mobile App — Sprint Team") and choose a meaningful project key (e.g., MOB). Select the team-managed or company-managed type depending on your organization's governance model.
+Following Atlassian's [create a board](https://support.atlassian.com/jira-software-cloud/docs/create-a-board/) steps, go to all boards, select Create board, and choose Create a Scrum board. Base it on a new software space or on one or more existing spaces; both require the Browse spaces permission. If your team works in a team-managed space that does not allow extra boards, create the board from a saved filter instead. Share the board link with the team once it exists.
 
-Company-managed projects give Jira admins centralized control over workflows and permissions, which is ideal for larger organizations. Team-managed projects let individual teams customize their own boards without admin intervention, which works well for smaller, autonomous teams.
+### Step 2: Check the board filter
 
-Once created, Jira automatically generates a scrum board with a backlog view and an active sprint board. You'll customize both in the following steps.
+Open the board settings and read the filter query. Make sure it includes every work type and status the team works with, and nothing it does not. Atlassian's troubleshooting advice for missing items is to check the filter, the column mapping and whether the backlog is enabled. Keep the filter simple: Atlassian's [complete a sprint](https://support.atlassian.com/jira-software-cloud/docs/complete-a-sprint/) page notes that when a filter is complex, Jira may be unable to determine which spaces it returns, and the sprint may not complete.
 
-> **Pro tip:** If your organization already has a Jira project but it's using a Kanban board, you can create a new Scrum board from the same project by going to Board > Create Board > Scrum Board and selecting the existing project as the source.
+### Step 3: Map columns to the team's workflow
 
-### Step 2: Step 2: Configure Your Workflow to Match Team Reality
+Create columns for the stages work actually passes through, such as To Do, In Progress, In Review and Done, and map each status to one column. Put every status that means the work is finished in the right-most column, as the [column configuration guide](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/) instructs. Align that column with the team's Definition of Done, so "Done" in Jira means Done in Scrum. Add column constraints if the team wants to limit work in progress, counting items without subtasks.
 
-Navigate to **Board Settings > Columns** to see the default column mapping. The default Scrum board typically has three columns: To Do, In Progress, and Done. Most teams need more granularity.
+### Step 4: Configure swimlanes and quick filters
 
-Add columns that reflect your actual process. A common configuration for a development team is: **To Do → In Progress → Code Review → QA → Done**. For each column, map the corresponding Jira workflow statuses. If needed, go to **Project Settings > Workflows** to add custom statuses first.
+Choose a swimlane method that helps the Daily Scrum. Grouping by stories keeps subtasks under their parent, and query-based lanes can separate expedited work. Add quick filters for views the team uses often, such as one per component or one for blocked items, written in JQL. Keep the number small so the board stays readable.
 
-Set column constraints (WIP limits) to prevent bottlenecks. For example, if your team has 5 developers, setting an In Progress limit of 5-7 helps surface overcommitment. While Jira won't enforce hard WIP limits on Scrum boards the way it does for Kanban, the visual indicator flags violations during standups.
+### Step 5: Build and rank the backlog
 
-> **Pro tip:** Keep your workflow under 6-7 columns. Every additional column increases cognitive overhead during daily standups and makes the board harder to scan at a glance.
+Create work items in the backlog and rank them by dragging, as described in Atlassian's [scrum tutorial](https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software). The Product Owner owns the order. Add descriptions and acceptance criteria during refinement, and enter the Developers' estimates in the story points field. Keep the top of the backlog refined and sized ahead of Sprint Planning.
 
-### Step 3: Step 3: Set Up Swimlanes and Quick Filters
+### Step 6: Plan and start the sprint
 
-Swimlanes add horizontal groupings to your board. Go to **Board Settings > Swimlanes** and choose a grouping strategy. The most common options are:
+Create a sprint in the backlog. During Sprint Planning, drag the items the team selects into it, and break them into subtasks if that helps the Developers plan. When you start the sprint, name it, set its duration and dates, and enter the Sprint Goal the team agreed. The team then works from Active sprints, moving items across the columns as they progress.
 
-- **Stories** (default): Groups sub-tasks under their parent story, which is great for seeing progress on individual features.
-- **Epics**: Groups all issues by their parent epic, useful during larger initiatives.
-- **Assignees**: Shows each team member's work in their own lane — helpful for spotting overloaded individuals during standups.
+### Step 7: Read the Jira burndown chart during the sprint
 
-Next, set up Quick Filters under **Board Settings > Quick Filters**. Create JQL-based filters for common views: `type = Bug` for a bugs-only view, `priority = Highest` for critical items, or `labels = blocked` for blocked items. These filters appear as toggle buttons above the board and let team members switch context instantly.
+In the Daily Scrum, look at the [burndown chart](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-burndown-chart/) to see whether remaining work is trending toward the Sprint Goal. Atlassian's tutorial lists patterns worth discussing: a team that finishes early every sprint, one that misses its forecast every sprint, and steep drops that suggest work was not broken down finely enough. If the guideline is missing, the sprint may have been started before any items were added. Treat what the chart shows as a prompt for discussion.
 
-> **Pro tip:** Create a 'Flagged' quick filter using the JQL `flagged = impediment`. This surfaces flagged/blocked items immediately, which is invaluable during daily standups.
+### Step 8: Complete the sprint and check the Jira velocity chart
 
-### Step 4: Step 4: Populate and Prioritize the Backlog
-
-Switch to the **Backlog** view. This is where you and the product owner maintain the prioritized list of work. Create user stories, bugs, and tasks directly in the backlog. Each item should have:
-
-- A clear summary ("As a [user], I want [goal] so that [reason]")
-- Acceptance criteria in the description
-- Story point estimates (added during [estimation sessions](https://tryhamster.com/skills/estimating-work-with-story-points))
-- An epic assignment for higher-level tracking
-- Appropriate labels and components for filtering
-
-Drag items to reorder by priority — the top of the backlog represents the highest-priority work. During [backlog grooming](https://tryhamster.com/skills/grooming-the-product-backlog), the team refines items near the top to ensure they're sprint-ready. Items without estimates or clear acceptance criteria should be flagged and refined before they enter a sprint.
-
-> **Pro tip:** Use Jira's bulk edit feature to add story points, labels, or epic links to multiple issues at once. Select issues with checkboxes, then use the context menu to batch-edit.
-
-### Step 5: Step 5: Plan and Start a Sprint
-
-In the Backlog view, you'll see a section at the top labeled with your next sprint. Drag items from the backlog into this sprint container. Jira will display the total story points being committed, which you should compare against your team's [velocity](https://tryhamster.com/skills/estimating-work-with-story-points) from previous sprints.
-
-Set a sprint name that's meaningful (e.g., "Sprint 14 — Checkout Flow"), a start date, an end date (typically 1-2 weeks), and a sprint goal that summarizes the sprint's primary objective. The sprint goal is critical — it gives the team a shared focus and provides context during [daily standups](https://tryhamster.com/skills/running-daily-standups) and [sprint reviews](https://tryhamster.com/skills/conducting-sprint-reviews).
-
-Click **Start Sprint** to activate it. The board view will now show only the items committed to the active sprint, and the burndown chart begins tracking from this moment.
-
-> **Pro tip:** Never start a sprint without a sprint goal. If you can't articulate what the sprint is trying to achieve in one sentence, the scope likely needs tightening.
-
-### Step 6: Step 6: Monitor Progress with Burndown and Velocity Charts
-
-During the sprint, navigate to **Reports** from the left sidebar. The two most critical reports for Jira scrum board management are:
-
-**Burndown Chart**: Shows remaining work (story points or issue count) plotted against the sprint timeline. The ideal trend line slopes downward from total committed points to zero by sprint end. If your actual line is above the ideal line, the team is behind. If scope was added mid-sprint, you'll see upward spikes — these are valuable data points for retrospectives.
-
-**Velocity Chart**: Displays committed vs. completed story points across the last several sprints. This is your team's most reliable planning input. If you've consistently completed 30-35 points per sprint, committing to 50 next sprint is unrealistic. Share velocity data with the product owner to set expectations during [sprint planning](https://tryhamster.com/skills/planning-and-executing-sprints).
-
-Review the burndown chart daily (ideally during standup) and the velocity chart at the end of each sprint during [retrospectives](https://tryhamster.com/skills/facilitating-sprint-retrospectives).
-
-> **Pro tip:** If your burndown chart is flat for the first few days of every sprint and then drops sharply near the end, your team may be working on large stories that don't get marked done until late. Break stories into smaller slices to get smoother burndown curves.
-
-### Step 7: Step 7: Complete the Sprint and Handle Unfinished Work
-
-When the sprint end date arrives, go to the active sprint board and click **Complete Sprint**. Jira will present a summary showing completed issues and any incomplete items. For each incomplete item, you have three options:
-
-- **Move to the next sprint**: The item carries over and counts against the next sprint's capacity. This is appropriate for items that are partially done.
-- **Move to the backlog**: The item goes back to the backlog for re-prioritization. Use this for items that were de-scoped or are no longer urgent.
-- **Leave in the current sprint**: Rarely used, but keeps the item associated with the closed sprint for reporting purposes.
-
-After completing the sprint, review the Sprint Report under **Reports > Sprint Report**. This report shows the full picture: what was committed, what was completed, what was added mid-sprint, and what was removed. This data is essential input for your [sprint retrospective](https://tryhamster.com/skills/facilitating-sprint-retrospectives).
-
-> **Pro tip:** Track your sprint completion rate (completed points / committed points) over time. A healthy team consistently completes 80-100% of committed work. If you're regularly below 70%, you're overcommitting — use velocity data to right-size your sprints.
+After the Sprint Review, complete the sprint. Make sure subtasks are Done, then choose where incomplete work items go; moving them to the backlog lets the Product Owner reorder them, which matches Scrum. Open the [velocity chart](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/) before the next planning and compare commitment with completed across recent sprints. Use the spread as a forecast range for the next Sprint Planning.
 
 ## Best Practices
 
-- Update card statuses in real time, not in batches at end-of-day. The board is only useful if it reflects current reality — stale boards erode trust and make standups performative.
-- Keep your Jira scrum board columns to 5-7 maximum. Each column should represent a genuinely distinct workflow state where work can accumulate or get blocked. If two columns always have the same cards, merge them.
-- Use epics and labels consistently across the backlog so Quick Filters and swimlanes actually work. Establish naming conventions early and enforce them during backlog grooming sessions.
-- Review velocity trends over at least 3-4 sprints before using them for capacity planning. A single sprint's velocity is noise; the rolling average is the signal.
-- Set Definition of Done criteria at the board level (documented in the sprint description or a pinned Confluence page) so every team member knows what 'Done' means when moving a card to the final column.
-- Archive completed sprints regularly and clean up unused components, labels, and fix versions to prevent Jira from becoming a cluttered graveyard that slows down searches and reporting.
+- Configure columns before trusting reports. Both charts read the right-most column as Done, as [Atlassian's velocity documentation](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/) states, so a wrong mapping silently distorts them.
+- Match Jira's Done to the Definition of Done. A status that means "code merged" when the Definition of Done requires testing and release creates two versions of Done.
+- Estimate parent items. Atlassian notes that subtask estimates are excluded from velocity and from story points in the burndown, so size the story itself.
+- Enter the Sprint Goal when starting the sprint. It keeps the goal visible on the board, where the Developers look every day.
+- Move unfinished work to the backlog by default. Carrying it straight into the next sprint skips the Product Owner's reordering decision that the [Scrum Guide](https://scrumguides.org/scrum-guide.html) calls for.
+- Keep the board lean. A few swimlanes and quick filters that people use beat a board nobody can read.
 
 ## Common Mistakes
 
-- **Creating a Jira scrum board with default columns and never customizing the workflow** — Spend 30 minutes with your team mapping your actual process to board columns before the first sprint. A To Do → In Progress → Done board hides critical workflow stages like code review and QA where work frequently stalls.
-- **Adding scope mid-sprint without tracking it, then blaming the team for not finishing everything** — When scope is added mid-sprint, Jira's burndown chart captures it as an upward spike. Use these spikes in retrospectives to quantify scope creep. If mid-sprint additions are frequent, address the root cause with the product owner rather than absorbing the chaos.
-- **Using issue count instead of story points for burndown charts, leading to misleading progress signals** — Switch your burndown chart to story points (Board Settings > Estimation > Story Points). A sprint with 10 issues might have one 13-point epic and nine 1-point tasks — completing the small tasks first shows 90% progress by count but only 30% by effort.
-- **Treating the Jira board as a project management surveillance tool rather than a team collaboration tool** — The board exists to help the team self-organize and make impediments visible. If team members are anxious about card movements being monitored, the board becomes a source of stress rather than transparency. Focus board reviews on flow and blockers, not individual performance.
-- **Never closing or completing sprints, letting them run indefinitely with accumulating work items** — Complete every sprint on its scheduled end date, even if work is unfinished. Incomplete items move to the next sprint or back to the backlog. Velocity and burndown charts are meaningless without clean sprint boundaries.
+- **Leaving Done-like statuses out of the right-most column**: Items in "Released" or "Closed" columns count as incomplete, which breaks charts and can block sprint completion. Map every finished status to the right-most column.
+- **Adding work after the sprint starts without discussing it**: Atlassian notes that items added after a sprint starts are left out of the velocity chart's commitment bar, so the chart and the plan drift apart. Negotiate changes with the Product Owner so the Sprint Goal stays intact.
+- **Comparing velocity charts across teams**: Each board has its own estimates and filter, so the numbers are not comparable. Use each chart only for its own team's forecasting.
+- **Treating the board as the Scrum**: A well-configured board with no Sprint Goal, review or retrospective is a task tracker. Keep the Scrum events and use the board to support them.
+- **Overloading the board filter**: A filter that spans many spaces and conditions makes items disappear and sprints hard to complete. Keep one board per team with a simple filter.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/scrum/METHOD.md) — Scrum
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/scrum/METHOD.md): Scrum
 
 ## Related Skills
 
+- [Scrum Sprint Planning: Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
+- [Scrum Estimation with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
+- [Backlog Grooming and Product Backlog Refinement](../grooming-the-product-backlog/SKILL.md)
+- [Running the Scrum Daily Standup (Daily Scrum)](../running-daily-standups/SKILL.md)
+- [Conducting Sprint Reviews: Run the Sprint Review Meeting](../conducting-sprint-reviews/SKILL.md)
+- [Facilitating Sprint Retrospectives for Scrum Teams](../facilitating-sprint-retrospectives/SKILL.md)
 - [Defining Scrum Roles and Accountabilities](../defining-scrum-roles-and-accountabilities/SKILL.md)
-- [Facilitating Sprint Retrospectives](../facilitating-sprint-retrospectives/SKILL.md)
-- [Grooming and Refining the Product Backlog](../grooming-the-product-backlog/SKILL.md)
-- [Planning and Executing Sprints](../planning-and-executing-sprints/SKILL.md)
-- [Estimating Work with Story Points and Planning Poker](../estimating-work-with-story-points/SKILL.md)
-- [Running Effective Daily Stand-Up Meetings](../running-daily-standups/SKILL.md)
-- [Conducting Sprint Reviews and Demos](../conducting-sprint-reviews/SKILL.md)
+
+## Sources
+
+- [Atlassian: Learn scrum with Jira](https://www.atlassian.com/agile/tutorials/how-to-do-scrum-with-jira-software)
+- [Atlassian Support: Create a scrum board](https://support.atlassian.com/jira-software-cloud/docs/create-a-board/)
+- [Atlassian Support: Configure columns](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/)
+- [Atlassian Support: Configure swimlanes](https://support.atlassian.com/jira-software-cloud/docs/configure-swimlanes/)
+- [Atlassian Support: Configure quick filters](https://support.atlassian.com/jira-software-cloud/docs/configure-quick-filters/)
+- [Atlassian Support: Burndown chart](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-burndown-chart/)
+- [Atlassian Support: Velocity chart](https://support.atlassian.com/jira-software-cloud/docs/view-and-understand-the-velocity-chart/)
+- [Atlassian Support: Complete a sprint](https://support.atlassian.com/jira-software-cloud/docs/complete-a-sprint/)
+- [The Scrum Guide](https://scrumguides.org/scrum-guide.html)

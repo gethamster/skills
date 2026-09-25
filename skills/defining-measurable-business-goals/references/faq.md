@@ -1,25 +1,21 @@
 # FAQ: Defining Measurable Business Goals for Impact Maps
 
-## How many goals should an impact map have?
+## What makes a good goal for an impact map?
 
-An impact map should have exactly one measurable goal at its root. Multiple goals create competing priorities and prevent the map from functioning as a clear prioritization tool. If you need to address multiple objectives, create separate impact maps for each and allocate team capacity explicitly.
+Gojko Adzic says good goals tend to be SMART, which he spells out as Specific, Measurable, Action-oriented, Realistic and Timely. The goal should describe the business problem to be solved and avoid naming a solution or design constraint. For commercial products, it should have an obvious link to money. It should also cover one milestone, so the team can check it within a horizon people care about.
 
-## What's the difference between a business goal and a product goal in impact mapping?
+## Can a goal be qualitative?
 
-A business goal describes a measurable outcome for the organization (e.g., increase revenue, reduce churn). A product goal describes a product-level metric that serves that outcome (e.g., increase activation rate). For impact maps, use business-level or product-level goals that tie directly to strategic value—never feature-level outputs like 'launch feature X.'
+It can start that way. For vision workshops, the impactmapping.org facilitation guide says metrics are useful but should not be insisted on, and numbers can be researched later. For maps used to focus delivery or reframe a problem, the same guide says metrics matter more. Even a qualitative goal should name how people would notice it had been achieved.
 
-## How does defining measurable goals help build a product manager roadmap?
+## What if stakeholders give several goals?
 
-A measurable goal gives every item on your product manager roadmap a clear 'why.' When the impact map root is specific and quantified, you can evaluate every proposed feature or initiative by asking whether it plausibly moves that metric. This transforms your roadmap from a feature wish list into an outcome-driven plan.
+Pick the one this milestone is for and map it. Adzic's summary on Votito recommends creating a separate map for each goal, then comparing them, which is easier when each goal has an expected range of value. Keep the other goals visible in the milestone brief so their owners know they were set aside deliberately.
 
-## Can I use OKRs as impact map goals?
+## How is this different from setting an OKR objective?
 
-Yes, OKR key results make excellent impact map goals because they are already measurable and time-bound. Use a single key result as the root of your impact map. The objective provides context, but the key result provides the specificity that impact mapping requires.
+An objective and a goal on an impact map do similar jobs, and teams often write one from the other. The difference is what follows. An impact map goal is followed by actors and behavior changes, so it needs to be something that people's behavior can move. If an objective is too broad for that, narrow it to the part your team's actors can influence.
 
-## What if my stakeholders can't agree on a single goal?
+## How often should the goal change?
 
-Facilitate a prioritization discussion using impact and effort. Ask each stakeholder to rank the candidate goals by strategic importance and time-sensitivity. If consensus still isn't possible, escalate to the executive sponsor with a clear recommendation. A delayed decision is better than a vague compromise goal that dilutes the entire impact map.
-
-## How often should I revisit the business goal on my impact map?
-
-Revisit the goal at the start of each planning cycle (typically quarterly) and whenever there's a significant strategic shift. If the metric is clearly trending toward the target ahead of schedule, consider raising it. If external factors have made it unreachable, adjust the target to maintain team motivation and map relevance.
+Revisit it at every milestone review. If the goal has been reached, the map has done its job and a new goal starts a new map. If the business has changed direction, update the goal first and then review which branches of the map still make sense.

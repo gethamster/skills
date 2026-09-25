@@ -1,31 +1,37 @@
-# Examples: Converting 4Ls Insights into Sprint Action Items
+# Examples: Turning 4Ls Retrospective Insights into Action Items
 
-## Example: E-commerce Team Turns Communication Gaps into a Structured Check-In
-
-**Scenario:**
-
-A six-person product team runs their 4Ls Retrospective after a rocky sprint where a key feature shipped late. Their board includes: Liked — 'pair programming session on the payment flow was great'; Learned — 'we didn't realize QA was blocked for two days'; Lacked — 'visibility into who was working on what'; Longed For — 'a quick daily sync beyond standup for blockers.'
-
-**Walkthrough:**
-
-During clustering, the facilitator groups 'QA blocked for two days,' 'visibility into who was working on what,' and 'quick daily sync for blockers' into a theme called 'Real-Time Blocker Visibility.' The 'pair programming' note clusters separately under 'Knowledge Sharing Wins.'
-
-The team dot-votes and 'Real-Time Blocker Visibility' gets 4 out of 6 votes. They draft an action item: 'Marcus will create a #sprint-blockers Slack channel and post a pinned template by Tuesday. Every team member posts blockers there within 30 minutes of encountering one. We'll evaluate adoption at next retro.'
-
-A second action item comes from the positive cluster: 'Priya will schedule two 1-hour pair programming sessions this sprint for the search refactor, and we'll assess if it improved onboarding for the new developer.'
-
-Both items get added to their Jira board with a 'retro-action' label. At the next retrospective, Marcus reports the channel is active and blockers are surfacing faster. Priya's pairing sessions led to a 'Liked' item from the new developer. Both items are marked complete.
-
-## Example: Platform Team Uses Impact-Effort to Break a Tie
+## From a vague theme to a finishable action
 
 **Scenario:**
 
-A platform engineering team's 4Ls board surfaces two equally voted themes after their agile sprint retrospective: 'Flaky CI Pipeline' (Lacked: reliable builds; Longed For: faster feedback loops) and 'Unclear Sprint Goals' (Lacked: clear priorities; Learned: we built the wrong thing twice).
+Illustrative scenario: the top-voted theme is "communication with design", with notes under Lacked about late mockups and under Longed For about earlier reviews.
 
 **Walkthrough:**
 
-The facilitator places both themes on a 2x2 impact-effort matrix. 'Flaky CI Pipeline' scores high impact but also high effort — fixing the pipeline requires infrastructure work spanning multiple sprints. 'Unclear Sprint Goals' scores high impact and low effort — the fix is a process change, not a technical project.
+The first draft action is "improve communication with design", which nobody could check. The facilitator asks for the smallest change that would help. The team settles on "invite the designer to backlog refinement for the next two sessions", owned by the product owner, due before the next retrospective.
 
-The team selects 'Unclear Sprint Goals' as their primary action and creates: 'During next sprint planning, Jordan (Product Owner) will write a one-sentence sprint goal and three acceptance criteria on the board before the team selects stories. The team will reference the sprint goal during daily standup. Definition of done: sprint goal is documented and referenced in at least 3 standups.'
+At the next retrospective, the owner reports the designer attended both sessions and mockups arrived earlier. The team keeps the practice and adds it to its working agreement.
 
-For the CI pipeline, they create a smaller bridging action: 'Alex will spend 2 hours this sprint documenting the top 3 flaky tests and filing tickets. We'll prioritize the fixes in backlog refinement.' This makes progress without overcommitting.
+## A theme outside the team's control
+
+**Scenario:**
+
+Illustrative scenario: a recurring Lacked theme is a shared staging environment that other teams break. The team cannot fix it alone.
+
+**Walkthrough:**
+
+Instead of a team action to "fix staging", the team writes an escalation: the tech lead raises the issue with the platform group by a set date, bringing the Lacked notes as evidence. The escalation goes into the sprint backlog like any other item.
+
+The platform group agrees to a booking system for staging. At the next retrospective, the tech lead reports the outcome and the team watches whether the theme returns.
+
+## Protecting a Liked practice
+
+**Scenario:**
+
+Illustrative scenario: the top-voted theme is in Liked: "short daily demos kept everyone aligned". The team worries the practice will disappear once the sprint pressure eases.
+
+**Walkthrough:**
+
+The team writes an action to protect it: a named team member adds the demo to the team calendar as a recurring slot and notes it in the working agreement. The action is small and finished within a day.
+
+Two sprints later, the demo is still happening, and the team notices that Lacked notes about misalignment have faded.

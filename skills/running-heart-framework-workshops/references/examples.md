@@ -1,35 +1,39 @@
-# Examples: Running HEART Framework Workshops with Cross-Functional Teams
+# Examples: Running HEART Framework Workshops
 
-## Example: Running a HEART Workshop for a SaaS Onboarding Redesign
-
-**Scenario:**
-
-A B2B SaaS company is redesigning its onboarding flow. The PM, lead designer, two frontend engineers, and a data analyst convene for a 2.5-hour HEART workshop. They've scoped to three dimensions: Adoption (are new users completing onboarding?), Task Success (can they perform key actions without help?), and Happiness (do they feel confident after onboarding?).
-
-**Walkthrough:**
-
-The facilitator (PM) opens by sharing that 40% of trial users drop off before completing onboarding. The team runs silent brainstorming on Adoption goals. Clustered goals include: 'New users understand the product's value within the first session' and 'Users complete setup without contacting support.' The team prioritizes the first goal.
-
-For signals, the designer suggests 'users reach the aha-moment screen,' the engineer identifies 'completion of the 5-step setup wizard,' and the analyst proposes 'users who create their first project within 24 hours.' All three are captured.
-
-For metrics, the team defines: 'Percentage of new signups who create a project within 24 hours of account creation (data source: backend event log, current baseline: 28%).' The engineer confirms this event is already instrumented. They set a target of 45% within 3 months.
-
-For Task Success, the team defines 'median time to complete first project creation' and 'percentage of users who complete setup without triggering a help article.' For Happiness, they commit to embedding a 1-question CSAT survey ('How confident do you feel using [product]?') at the end of onboarding, connecting to the sibling skill of measuring user happiness through surveys.
-
-The workshop produces 6 prioritized metrics across 3 dimensions, each with an owner and a target. The follow-up is scheduled for two weeks out to review instrumentation progress.
-
-## Example: Remote HEART Workshop for a Mobile App Feature Team
+## A first workshop for a mobile check-in feature
 
 **Scenario:**
 
-A mobile app team distributed across three time zones needs to align on Engagement and Retention metrics for a new social sharing feature. The team uses Miro for a 2-hour remote workshop with 7 participants.
+Illustrative scenario: a hotel booking app is adding mobile check-in. The product manager has been asked for success metrics before launch and decides to run a HEART workshop with the feature team.
 
 **Walkthrough:**
 
-The facilitator prepares a Miro board with the HEART grid pre-built, using Miro's voting and timer features. Because the team is remote, the facilitator adds an extra 5 minutes of 'gallery walk' time after each silent brainstorming round—participants read all stickies before discussion begins, which substitutes for the natural scanning that happens at physical whiteboards.
+The facilitator sends a one-paragraph scope in advance: guests with a booking for tonight, the new check-in flow, and the decision to expand from a pilot group of hotels to all of them. Five people attend: product, design, two engineers and a researcher.
 
-For Engagement, the team defines the goal: 'Users share content because it enhances their social connections, not because we prompt them.' Signals include: organic shares (not prompted by push notifications), shares that generate return visits from recipients, and repeat sharing behavior within 7 days. The metric becomes: 'Weekly organic share rate per active user, segmented by share channel.'
+During silent writing, the group produces a dozen goals. Clustering shows a split. Engineering wants fewer failed check-ins, while design wants guests to feel confident they are checked in. The group keeps both, as a Task success goal and a Happiness goal, and adds an Adoption goal for eligible guests trying the feature. Engagement and Retention are set aside, with a note that guests check in only once per stay.
 
-For Retention, the goal is: 'Users who discover sharing become more engaged long-term.' The signal is that sharers have higher 30-day retention than non-sharers. The metric: '30-day retention rate for users who shared at least once vs. matched control group.'
+Signals follow. For Task success: check-in completed without calling the front desk, and a failure signal for check-ins that end with a desk visit. For Happiness: a one-question rating after check-in. The researcher takes the metric definitions, an engineer takes the missing desk-visit event, and the follow-up is booked for the next week.
 
-The remote format works because the facilitator is disciplined about timeboxing and uses Miro's built-in voting for prioritization instead of verbal debate. The session produces a clean grid that the data analyst immediately begins translating into a tracking plan.
+## Resolving a goals disagreement between sales and design
+
+**Scenario:**
+
+Illustrative scenario: a B2B analytics product is redesigning its report builder. Sales wants the redesign to show more features in demos. Design wants existing customers to build reports faster.
+
+**Walkthrough:**
+
+The facilitator writes both goals on the board and asks what each would imply for the metrics. The demo goal points to no user behavior the team can measure in the product. The speed goal points to time to build a report and completion of the build flow.
+
+The group agrees that the redesign's primary goal is the design one, recorded under Task success. The sales concern is kept as a separate question for the demo team rather than a HEART goal. Writing the reason down stops the argument from returning at the follow-up, and the sales lead agrees to the table because the discussion was open.
+
+## A remote workshop across time zones
+
+**Scenario:**
+
+Illustrative scenario: a distributed team spread across several time zones needs HEART goals for a new search feature, and there is no single hour when everyone is comfortably online.
+
+**Walkthrough:**
+
+The facilitator splits the workshop. The silent goal writing happens asynchronously in a shared board over one day, with each person adding goals tagged by HEART category. The live session is shortened to clustering, choosing goals and brainstorming signals.
+
+Because goals are already written, the live call spends its time on the disagreements and on signals. The facilitator reads the final table aloud at the end and posts it in the team channel with owners and a follow-up date. People who could not join live comment on the posted table before the follow-up.

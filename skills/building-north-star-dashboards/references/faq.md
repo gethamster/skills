@@ -1,25 +1,21 @@
-# FAQ: Building Dashboards to Track Your North Star and Input Metrics
+# FAQ: Building a North Star Metric Dashboard
 
-## What's the best dashboard tool for tracking a North Star Metric?
+## Should the North Star dashboard be real-time?
 
-There's no single best tool—use what your organization already has. Looker, Tableau, Amplitude, Mixpanel, Metabase, and Mode are all viable. The most important factor is data freshness and company-wide accessibility, not the specific platform. A well-built Metabase dashboard beats a neglected Tableau implementation every time.
+Usually not. The North Star and its inputs are meant to show trends, and most teams make decisions about them weekly. Daily data is useful for owners who want to catch problems early, but real-time charts on the main view tend to create noise and false alarms. Real-time monitoring belongs to operational dashboards for incidents.
 
-## How often should I update my North Star dashboard?
+## Who should own the dashboard?
 
-Aim for daily data refreshes at minimum. If your data pipeline supports it, near-real-time updates are ideal for input metrics that teams act on quickly. The North Star itself is typically reviewed on a weekly cadence, but having fresh underlying data lets teams spot problems early.
+One person, often in analytics or product operations, should own the dashboard as a product: its layout, definitions and data quality. Each metric on it has its own owner who explains its movements. Splitting these roles keeps the dashboard consistent while keeping accountability for each number with the team that can move it.
 
-## How many metrics should be on a North Star dashboard?
+## How often should each level review it?
 
-Limit the primary dashboard to 4–7 metrics total: one North Star Metric plus 3–6 input metrics. Diagnostic breakdowns can appear below the fold, but the core view should be scannable in under 30 seconds. More metrics create noise and dilute focus.
+Owning teams look at their inputs weekly. Leadership reviews the North Star with its inputs on a regular cadence, weekly at Amplitude according to its playbook. The whole company sees progress less often, such as quarterly at an all-hands meeting. The exact cadence matters less than keeping it fixed.
 
-## How do I get non-data teams to actually use the North Star dashboard?
+## What belongs on the dashboard besides the North Star and inputs?
 
-Make it unavoidable. Pin the link in Slack, reference it in every all-hands, include a screenshot in weekly updates, and start every product review meeting by pulling it up. Establishing a weekly reporting cadence—as described in step 6—creates the habit. When teams see leadership using the dashboard, they follow.
+A few health metrics that guard against damage the North Star does not see, such as revenue, margin, support volume or reliability. Add context that helps interpret the numbers: targets, comparisons with a year ago, cohort splits and event annotations. Leave everything else in team drill-downs.
 
-## Should I include revenue metrics on my North Star dashboard?
+## How do we handle a change in a metric's definition?
 
-Only if revenue is one of your defined input metrics or your North Star itself. Avoid adding revenue as a 'just because' metric—it clutters the dashboard and implies that revenue is the primary goal rather than customer value delivery. If needed, create a separate finance dashboard and link to it.
-
-## How does a data analytics product approach differ from a simple reporting dashboard?
-
-A data analytics product approach means treating the dashboard as a product itself—designed for specific users (your teams), solving a specific problem (visibility into what drives your North Star), and iterated on based on feedback. Simple reporting dashboards display data; a data analytics product approach surfaces actionable insights and drives decisions.
+Record the change on the chart with the date and the reason. Where possible, compute the old and new definitions side by side for a period so people can see the gap. Update the definition shown next to the chart and tell the owners before the next review, so nobody mistakes a definition change for a real movement.

@@ -1,25 +1,25 @@
-# FAQ: Recruiting and Curating Your Developer Advisory Board
+# FAQ: Recruiting Developer Advisory Board Members
 
-## How many developers should be on a technical advisory board for a devtools startup?
+## How many developers should I recruit for a TAB?
 
-Aim for 20–50 active members. Below 20, you lack persona diversity and statistical confidence in patterns. Above 50, the logistics of scheduling and synthesis become unwieldy. Start with 25–30 and grow as you refine your process.
+Adam Frankl's written guidance is several people from each persona your product touches. He has never seen a TAB with more than 50 members and says two is not enough. In a later interview he suggests aiming for 50 when you start, because about half the conversations will not produce anything useful. A smaller board still works if it covers every persona, but you will have fewer answers to compare.
 
-## Should I pay developers to join my advisory board?
+## Where do I find candidates?
 
-No, not initially. Payment attracts transactional participants who optimize for the incentive rather than candor. Lead with intellectual respect and influence on the problem space. If you add compensation later, make it a thank-you for engaged members, not a recruitment tool.
+Frankl's favorite platform is LinkedIn, combined with people the founders already know. The best candidates have published something about the problem, because that shows they care and gives you something specific to mention. He also recommends publishing on the problem yourself and reaching out quickly to people who engage with your posts.
 
-## How is a developer advisory board different from a beta testing group?
+## What should the invitation say?
 
-A beta group tests your product and gives usability feedback. An advisory board explores the *problem space* before and alongside product development. Advisory members discuss their workflows, pain points, and unmet needs — not your features. This distinction is core to the Technical Advisory Board (TAB) Framework.
+Keep it to a few sentences: thank the person, praise something specific they wrote or did, say you founded a startup to attack the problem, and ask whether they would consider joining your technical advisory board. Offer a short chat to explain what it involves. Do not describe your product or ask for a demo.
 
-## Where do I find developers to recruit for a technical SEO checklist devtools advisory board?
+## Do I need to pay developer advisory board members?
 
-Source from GitHub repos related to SEO tooling and web performance, TechSEO community Slack/Discord groups, web performance conference attendees, and contributors to open-source projects like Lighthouse, Puppeteer, or crawling frameworks. Prioritize channels where developers demonstrate active expertise.
+Frankl does not pay members or give them equity. His principle is appreciation, not compensation: thank them with stickers, mugs, or t-shirts and with genuine gratitude. He argues that cash makes the relationship feel like a bribe. Developers who have the problem are usually glad to talk about it.
 
-## How do I prevent my advisory board from becoming an echo chamber?
+## What if almost nobody replies?
 
-Enforce persona diversity through a structured matrix, source at least 60% of members from outside your existing network, and design for rotation so fresh perspectives cycle in every 2–4 quarters. Audit board composition quarterly against your persona targets.
+Expect that. Frankl plans for about 50 outreach messages per member who joins, and he treats silence as a filter that leaves you with the people who feel the problem most. If a whole persona stays silent after sustained, personal outreach, consider that the problem may not matter to that role. Also check whether your invitations are specific enough.
 
-## How long does it take to recruit a full developer advisory board?
+## Should I recruit existing customers?
 
-Plan for 2–4 weeks to recruit your initial cohort of 20–30 members. This includes persona mapping (2–3 days), sourcing and longlisting (1 week), outreach and qualification (1–2 weeks), and onboarding (2–3 days). Growing to 50 typically takes another 2–4 weeks of targeted gap-filling.
+Yes, if you have them, alongside prospects and people who have never heard of you. Frankl describes TAB members as potential users and customers. Existing customers bring experience with your product, while outsiders tell you about the problem without that context, so a mix gives you both views.

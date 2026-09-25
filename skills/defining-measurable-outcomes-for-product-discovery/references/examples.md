@@ -1,33 +1,39 @@
-# Examples: Defining Measurable Outcomes for the Top of Your OST
+# Examples: Defining Measurable Outcomes for Product Discovery
 
-## Example: B2B SaaS Growth Team Defining an Activation Outcome
-
-**Scenario:**
-
-A product manager at a B2B SaaS company leads the Growth squad. The company's top-level goal for the year is to increase ARR from $8M to $12M. The Growth squad owns the signup-to-paid conversion journey. The PM needs to define a measurable outcome for the team's Opportunity Solution Tree.
-
-**Walkthrough:**
-
-The PM audits the company strategy and confirms ARR growth is the priority. She maps her team's sphere of influence: they own the trial experience from signup through the first 14 days, but not pricing, sales outreach, or the core product's feature depth.
-
-She identifies that trial-to-paid conversion is the metric most within her team's control and most connected to ARR. She pulls the current data: 12% of trial users convert to paid within 30 days of signup. She defines the metric precisely: '% of users who created a trial account in a given month and converted to a paid plan within 30 calendar days, as measured in the billing system.'
-
-She sets a target: increase trial-to-paid conversion from 12% to 18% by end of Q3. She adds a guardrail: 30-day paid retention must remain above 85%. She validates this with her VP of Product, who agrees this is the right focus and notes it maps directly to the ARR goal.
-
-The outcome 'Increase trial-to-paid conversion from 12% to 18% by Q3 end' goes at the top of her OST. She now has a clear product manager roadmap for discovery: every opportunity she identifies through customer research, every solution her team generates, and every experiment they design will be evaluated against this single measurable outcome.
-
-## Example: Consumer App Team Shifting from a Vanity Metric to a Real Outcome
+## A subscription product translates a revenue goal
 
 **Scenario:**
 
-A product team at a consumer fitness app initially placed 'Increase Monthly Active Users (MAU)' at the top of their OST. After three months of discovery, they realized MAU wasn't moving despite shipping features that seemed promising. The PM needs to redefine the outcome.
+Illustrative scenario: a small team works on a subscription meal-planning app. Leadership asks the team to "grow revenue" this year, and the trio is about to start its first opportunity solution tree.
 
 **Walkthrough:**
 
-The PM investigates and discovers that MAU is inflated by users who open the app once due to push notifications but never complete a workout. The metric doesn't reflect meaningful engagement.
+The trio writes the revenue formula: number of subscribers times average monthly spend times average subscription length. The executive team cares most about subscription length, because many subscribers cancel after their first few months. That makes retention the business outcome.
 
-She works with data to identify a more actionable metric: 'Weekly workout completions per active user.' This metric captures the core value the app provides and correlates strongly with 6-month retention (their lagging business metric). Current baseline: 1.4 workouts per weekly active user.
+Next the trio asks how the product supports retention. Candidates include subscribers cooking at least one planned meal each week, subscribers saving recipes to their plan, and subscribers rating the meals they cooked. The trio drops recipe saving because a subscriber can be happy without ever saving a recipe. It keeps weekly cooking of a planned meal, because that is the moment the subscriber gets value.
 
-She redefines the outcome: 'Increase average weekly workout completions per active user from 1.4 to 2.0 by end of Q2, measured as a 4-week rolling average in Mixpanel.' She sets a guardrail that DAU must not decline below current levels.
+In the negotiation, the product leader agrees and asks for a target. The trio says it can measure planned meals marked as cooked but not meals cooked without marking, so it writes the outcome as directional for now: increase the share of subscribers who cook a planned meal each week. It adds a note to improve the measure during the quarter.
 
-With this new outcome anchoring the tree, the team immediately sees different opportunities. Instead of growth hacks to inflate MAU, they explore opportunities like 'Users struggle to find workouts that match their available time' and 'Users lose motivation when exercising alone.' The entire shape of the Opportunity Solution Tree changes because the outcome changed—demonstrating why this step is so foundational to a sound product manager roadmap.
+## A team replaces a feature metric
+
+**Scenario:**
+
+Illustrative scenario: a team on a project management tool has been told to increase use of its new reporting dashboard. After a quarter, dashboard views are up but nobody can say whether customers are better off.
+
+**Walkthrough:**
+
+The trio applies the happy-customer test. Plenty of satisfied customers never open the dashboard, so dashboard use is a traction metric. The team asks what the dashboard was meant to support, and the answer is managers noticing late projects before the deadline.
+
+The team proposes a new product outcome: more projects that are flagged at risk get a status change before their due date. It links this to renewal, because customers who miss deadlines are more likely to leave. The product leader accepts, and the trio starts a new tree, since the direction of the outcome has changed.
+
+## Two teams share one metric
+
+**Scenario:**
+
+Illustrative scenario: two product teams at a learning platform have both been given "increase weekly active learners." They keep shipping overlapping ideas and cannot tell whose work moved the number.
+
+**Walkthrough:**
+
+The product leader and both trios split the outcome by journey step. One team takes new learners in their first weeks and owns learners completing a first lesson. The other takes established learners and owns returning in a given week after the first month.
+
+Each team now has its own tree, its own opportunities, and a metric it can move without waiting on the other. They keep the shared weekly active learners number as the business outcome both of them support.

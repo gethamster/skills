@@ -1,15 +1,20 @@
 ---
-name: building-heart-dashboards
-description: "This skill teaches you how to create live, structured dashboards that visualize all five HEART Framework dimensions—Happiness, Engagement, Adoption, Retention, and Task Success—so product teams can make data-driven roadmap decisions and run effective stakeholder reviews."
+name: "building-heart-dashboards"
+description: "Build a HEART metrics dashboard that shows a short, prioritized set of UX metrics by category, with baselines and release notes teams review."
 category: "Experience"
 metadata:
   homepage: https://tryhamster.com
-  method: heart-framework
+  method: "heart-framework"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Building HEART Metric Dashboards to Power Your Product Manager Roadmap
+# Building HEART Metric Dashboards for Product Teams
 
-> This skill teaches you how to create live, structured dashboards that visualize all five HEART Framework dimensions—Happiness, Engagement, Adoption, Retention, and Task Success—so product teams can make data-driven roadmap decisions and run effective stakeholder reviews.
+> Build a HEART metrics dashboard that shows a short, prioritized set of UX metrics by category, with baselines and release notes teams review.
 
 ## Before you start
 
@@ -24,177 +29,101 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 | Field | Value |
 |-------|-------|
 | Difficulty | Intermediate |
-| Time to Learn | 2-4 hours |
-| Outcome | You will have a live, shareable dashboard that surfaces all five HEART metrics in real time, enabling your product team to prioritize roadmap items with concrete UX evidence instead of gut instinct. |
-| Prerequisites | Understanding of the HEART Framework's five dimensions, Familiarity with defining Goals, Signals, and Metrics (GSM), Basic experience with a data visualization tool (Looker, Tableau, Google Sheets, or similar), Access to product analytics data (event tracking, survey results, usage logs) |
+| Time to Learn | A day for the first dashboard, less for later ones |
+| Outcome | You can publish a dashboard that shows a few prioritized HEART metrics by category, each traceable to a goal, with baselines, release annotations and a review routine. |
+| Prerequisites | A finished goals, signals and metrics table, access to the underlying logs and survey data, a dashboard or BI tool |
 | Part of | [HEART Framework](../../methods/heart-framework/METHOD.md) |
 
 ## Overview
 
-Most product teams collect user experience data but struggle to surface it in a way that actually influences decisions. A HEART metric dashboard solves this by giving every stakeholder—from engineering leads to executives—a single, live view of how users experience your product across Happiness, Engagement, Adoption, Retention, and Task Success.
+Building HEART metric dashboards is the last step of the Goals-Signals-Metrics process in the [HEART framework](../../methods/heart-framework/METHOD.md). The original CHI paper describes the process as moving from goals to signals and "finally building specific metrics to track on a dashboard," and asks teams to translate signals into metrics "suitable for tracking over time on a dashboard" ([Rodden, Hutchinson and Fu](https://research.google.com/pubs/archive/36299.pdf)). The dashboard is where the agreed metrics become something a team looks at every week.
 
-This skill walks you through the end-to-end process of designing and building that dashboard, from selecting the right metrics (building on the Goals-Signals-Metrics work covered in [Defining Goals, Signals, and Metrics with the HEART Framework](https://tryhamster.com/skills/defining-heart-goals-signals-metrics)) to choosing layout patterns, connecting data sources, and establishing review cadences. The result is a dashboard that becomes the centerpiece of your product manager roadmap conversations.
+A HEART dashboard differs from a general product analytics dashboard in one way: every chart on it answers a goal the team agreed. Traffic, uptime and revenue still matter, but the paper groups those as PULSE metrics and describes them as indirect measures of user experience. A HEART dashboard sits next to them and shows whether the experience is getting better.
 
-Whether you use Looker, Tableau, Amplitude, or even a well-structured Google Sheet, the principles are the same: one panel per HEART dimension, clear thresholds that signal when action is needed, and a design that tells a story stakeholders can absorb in under 60 seconds.
+The main risk is size. Kerry Rodden warns that HEART can generate many metric ideas and that "implementing too many metrics can be counterproductive." Her advice is to prioritize the most important metrics, consider putting secondary metrics on a separate dashboard, and remember that not every HEART category needs to appear ([Rodden](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)). She also warns against starting with organization-wide dashboards. The [Interaction Design Foundation](https://ixdf.org/literature/topics/heart-framework) makes the same point more bluntly: it is not practical to juggle five goals and more than a dozen metrics at once.
+
+The opposite risk is a single number. Chris Chapman argues that a single North Star metric devalues others and leads people to assume everything improves together, and that because HEART's metrics come from different sources and methods, they lower the risk of one misleading signal ([Chapman](https://quantuxblog.com/north-star-a-path-to-being-lost)). A good HEART dashboard sits between the two: a few metrics, from different sources, each with a clear owner and reason.
+
+This skill covers turning a goals, signals and metrics table into a dashboard, laying it out by category, adding the context that makes numbers readable, and setting up the review routine that makes the dashboard worth building.
 
 ## How It Works
 
-The HEART dashboard works by mapping each of the five HEART dimensions to a dedicated visual panel, creating a structured narrative that mirrors how users actually experience your product.
+Start from the table. Each metric on the dashboard should come from a row in the team's [goals, signals and metrics table](../defining-heart-goals-signals-metrics/SKILL.md), with its definition and owner. If a metric has no row, it either needs one or it belongs on a different dashboard. This rule is what keeps the dashboard tied to goals as it grows.
 
-**From Metrics to Panels:** During the GSM process, your team identified specific, quantifiable metrics for each dimension—things like NPS for Happiness, DAU/MAU ratio for Engagement, or first-week activation rate for Adoption. Each metric becomes a chart or KPI card on the dashboard, grouped under its parent dimension.
+Lay it out by HEART category. A top section shows the primary metric for each chosen category, with its current value, its baseline and a short trend. Below, one section per category holds the supporting metrics and breakdowns, such as a cohort retention table or task completion by platform. Categories the team chose to exclude are left off, with a note saying why, so readers do not assume they were forgotten.
 
-**The Signal-to-Action Loop:** The dashboard isn't just for observation. By adding target thresholds (green/yellow/red zones), you create an automated signal system. When Retention drops below your threshold, the dashboard flags it—prompting the team to investigate, diagnose, and potentially reprioritize the product manager roadmap.
+Numbers need context to be read. Show every metric as a rate or per-user value, following the paper's advice that raw counts "need to be normalized" as the user base grows ([CHI paper](https://research.google.com/pubs/archive/36299.pdf)). Plot trends over enough time to show normal variation, mark releases and external events on the charts, and show confidence intervals for survey metrics. A number with no baseline or annotation invites guesswork.
 
-**Layered Detail:** The best HEART dashboards use progressive disclosure. The top-level view shows five KPI cards (one per dimension) with current values and trend arrows. Clicking into any dimension reveals the underlying charts: time series, cohort breakdowns, and segment comparisons. This serves both the executive who needs a 10-second scan and the PM who needs to drill into weekly cohort retention curves.
+Data quality comes first. The paper notes the challenge of filtering automated traffic and making sure important user actions are logged. Build checks that flag sudden drops to zero, duplicated events or a survey that stopped collecting responses, so the team does not debate a movement caused by broken tracking.
 
-**Review Cadence Integration:** The dashboard is designed to be pulled up in recurring rituals—weekly product syncs, monthly stakeholder reviews, quarterly planning. Each review context may emphasize different dimensions, but the single dashboard serves them all.
+The review routine gives the dashboard its value. Decide who looks at it, how often, and what happens when a metric moves. Behavioral metrics can be reviewed weekly; survey metrics often need a longer window to collect enough responses. [Amplitude's HEART guide](https://amplitude.com/blog/heart-framework-software-ux) notes that HEART goals pair well with OKR objectives, which is one way to connect the review to planning. Rodden's advice to iterate applies here too: when a metric proves noisy or misleading, change it and note the change.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Audit Your GSM Definitions
+### Step 1: Confirm the metric list
 
-Before touching any tool, pull up the Goals-Signals-Metrics table your team created during the [HEART GSM process](https://tryhamster.com/skills/defining-heart-goals-signals-metrics). For each of the five dimensions, confirm you have at least one concrete metric with a defined data source.
+Take the goals, signals and metrics table and mark each metric as primary or secondary. Keep one primary metric per chosen category where you can. Move secondary metrics to a separate view, as Rodden [suggests](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice). Check that every metric has a written definition and an owner.
 
-Create a simple audit table:
+### Step 2: Check the data behind each metric
 
-| Dimension | Goal | Signal | Metric | Data Source | Available? |
-|-----------|------|--------|--------|-------------|------------|
-| Happiness | Users feel satisfied | Survey responses | NPS score | Delighted/Typeform | ✅ |
-| Engagement | Users interact regularly | Session frequency | DAU/MAU ratio | Amplitude | ✅ |
+For each metric, confirm the events or survey fields exist, are logged for all platforms, and exclude automated traffic. Compute the metric for recent weeks and compare it with any existing reports. Add simple data quality checks that alert the owner when volumes drop or spike without explanation.
 
-Any row where the data source is missing or the 'Available?' column is ❌ needs to be resolved before you build. Building a dashboard on incomplete data creates blind spots that undermine trust.
+### Step 3: Lay out the dashboard by category
 
-> **Pro tip:** If you haven't completed the GSM process yet, pause here. A dashboard without well-defined metrics is just decoration. Spend 1-2 hours with your team on GSM first.
+Put a summary row at the top with the primary metric for each chosen category, its baseline and a short trend. Add one section per category underneath with supporting metrics and breakdowns. Note which categories were excluded and why. Keep PULSE metrics such as traffic and latency on their existing dashboards, or in a clearly separate section.
 
-### Step 2: Step 2: Choose Your Dashboard Tool and Data Architecture
+### Step 4: Add context to every chart
 
-Select a tool based on your team's existing stack and data maturity. Common options:
+Show rates and per-user values rather than raw counts. Include the baseline period, mark releases and outside events, and show confidence intervals for survey scores. Write a one-line description under each chart saying what the metric measures and which goal it serves.
 
-- **Looker / Looker Studio (Google Data Studio):** Great for teams already on BigQuery. Free tier available for Looker Studio.
-- **Tableau:** Best for complex visualizations and large datasets. Requires a license.
-- **Amplitude / Mixpanel Dashboards:** Ideal if your HEART metrics are primarily behavioral (Engagement, Retention, Task Success) and already tracked in a product analytics tool.
-- **Google Sheets + Supermetrics:** Low-cost option for early-stage teams. Limited but functional.
+### Step 5: Set the review routine
 
-Next, map out how data flows: raw events → aggregation layer → dashboard queries. For most teams this means product analytics events feed into a warehouse (BigQuery, Snowflake, Redshift), and the dashboard queries that warehouse. Survey data (Happiness) often requires a separate connector or a scheduled CSV import.
+Decide who reviews the dashboard and how often, and put it on the calendar. Agree what counts as a meaningful change for each metric, based on its normal variation. Agree what happens next when one moves: who investigates, and how qualitative research is brought in to explain it.
 
-Document this architecture in a one-page diagram. This prevents the most common failure mode: building a beautiful dashboard that breaks silently when a data pipeline changes.
+### Step 6: Walk the team through it
 
-> **Pro tip:** If your team already has a BI tool with established permissions and sharing, use it—even if it's not your personal favorite. Adoption beats aesthetics.
+Present the dashboard to the team and stakeholders once, explaining each section, the excluded categories and the review routine. Ask readers what decisions they expect to make from it, and adjust if a key question has no chart. Share the definitions document alongside the link.
 
-### Step 3: Step 3: Design the Dashboard Layout with the Five-Panel Pattern
+### Step 7: Maintain and prune
 
-Sketch the layout before building anything. The proven pattern for HEART dashboards is:
-
-**Top row:** Five KPI summary cards, one per dimension. Each shows the current value, a trend arrow (vs. last period), and a color indicator (green/yellow/red based on your threshold).
-
-**Below the summary:** Five collapsible or tabbed sections, one per HEART dimension. Each section contains:
-- A time-series chart (line or area) showing the metric over the last 8-12 weeks
-- A segment breakdown (by platform, user cohort, geography, or plan tier)
-- A comparison to the target threshold
-
-**Bottom row (optional):** A correlation view showing how changes in one dimension (e.g., Task Success) relate to changes in another (e.g., Retention). This is advanced but extremely powerful for product manager roadmap prioritization because it reveals which UX improvements have the highest downstream impact.
-
-Sketch this on paper or in Figma first. Share the sketch with at least one stakeholder and one data engineer for feedback before building.
-
-> **Pro tip:** Label each panel with the dimension name AND the specific metric. 'Engagement: DAU/MAU Ratio' is far more useful than just 'Engagement' when someone pulls up the dashboard cold.
-
-### Step 4: Step 4: Build the Summary Row First
-
-Start with the five KPI cards. This is the most viewed part of the dashboard and the section stakeholders will reference in every review.
-
-For each card, configure:
-1. **Current value:** Pull the latest aggregated metric (e.g., this week's NPS, this month's DAU/MAU)
-2. **Comparison period:** Show the delta vs. the previous period (week-over-week or month-over-month, depending on your metric's natural cadence)
-3. **Threshold coloring:** Define three zones. For example, for Retention: green = greater than 80%, yellow = 70-80%, red = less than 70%. These thresholds should come from your GSM definitions or be agreed upon with your team.
-4. **Trend indicator:** A simple arrow (↑ ↓ →) communicates direction at a glance.
-
-Test each card by verifying the number against a manual query or your analytics tool's native report. Discrepancies at this stage erode trust permanently.
-
-> **Pro tip:** Set thresholds conservatively at first. It's better to tighten thresholds over time than to trigger false alarms that train your team to ignore the dashboard.
-
-### Step 5: Step 5: Build the Dimension Detail Panels
-
-For each of the five HEART dimensions, create a detail section with three core visualizations:
-
-**Time-series trend:** Plot 8-12 weeks of data. Use a line chart for single metrics, an area chart if you're stacking segments. Add a horizontal reference line for your target threshold. This chart answers: 'Are we getting better or worse?'
-
-**Segment breakdown:** Choose the most actionable segmentation for each dimension. For Adoption, segment by acquisition channel. For Happiness, segment by user tenure (new vs. returning). For Task Success, segment by feature or flow. Use a bar chart or small multiples. This answers: 'Where is the problem?'
-
-**Annotations:** Add vertical markers for major product releases, experiments, or external events. When Retention dips and you can see it coincided with a pricing change, the dashboard tells a story instead of just showing a number.
-
-Build each panel referencing the detailed metric guidance from [Tracking Engagement and Retention Metrics at Scale](https://tryhamster.com/skills/tracking-engagement-and-retention-metrics) and [Measuring Adoption Rates and Task Success for New Features](https://tryhamster.com/skills/measuring-adoption-and-task-success).
-
-> **Pro tip:** Add a text box or annotation widget at the top of each dimension panel where the responsible PM can leave a brief written interpretation after each review cycle. Data + narrative is far more persuasive than data alone.
-
-### Step 6: Step 6: Configure Alerts and Automated Sharing
-
-A dashboard that nobody looks at is worthless. Set up two mechanisms to drive ongoing engagement:
-
-**Threshold alerts:** Configure email or Slack alerts when any HEART metric crosses from green to yellow, or yellow to red. Most BI tools support this natively. Keep alerts sparse—only fire on genuine threshold crossings, not normal fluctuations.
-
-**Scheduled snapshots:** Set up a weekly automated email or Slack message that sends a screenshot or link to the dashboard summary row. Time it to arrive 1-2 hours before your weekly product sync so the team reviews it with fresh context.
-
-In many teams, this single step—automating the nudge—is what separates dashboards that die after two weeks from dashboards that become indispensable to the product manager roadmap process.
-
-> **Pro tip:** Create a dedicated Slack channel (e.g., #heart-metrics) for alerts and discussion. This keeps metric conversations visible and searchable.
-
-### Step 7: Step 7: Run a Dashboard Walkthrough with Stakeholders
-
-Before declaring the dashboard 'done,' schedule a 30-minute walkthrough with your core stakeholders: product leads, engineering managers, design leads, and at least one executive sponsor.
-
-Structure the session:
-1. **2 minutes:** Explain the HEART Framework briefly (or link to your team's GSM document)
-2. **5 minutes:** Walk through the summary row, explaining each metric and its current status
-3. **10 minutes:** Drill into 1-2 dimensions that have interesting stories (a recent dip, a successful improvement)
-4. **10 minutes:** Collect feedback: Are the metrics the right ones? Are the thresholds reasonable? Is anything confusing?
-5. **3 minutes:** Agree on the review cadence (weekly sync, monthly deep-dive, quarterly planning)
-
-Document the feedback and iterate. The walkthrough isn't a presentation—it's a calibration session that builds shared ownership of the dashboard and ensures it influences the product manager roadmap going forward.
-
-> **Pro tip:** Record the walkthrough and share it in your team wiki. New team members can onboard to the dashboard without scheduling another live session.
-
-### Step 8: Step 8: Establish a Maintenance and Evolution Cadence
-
-Dashboards decay. Data pipelines change, metrics evolve, and new features require new tracking. Schedule a quarterly 'dashboard health check' where you:
-
-- Verify all data sources are still connected and accurate
-- Review whether the current metrics still reflect the team's goals (goals shift as the product matures)
-- Add or retire dimensions as needed (e.g., Adoption may be less relevant for a mature product with stable user growth)
-- Update thresholds based on the last quarter's performance
-- Incorporate new segmentation if your user base has evolved
-
-This maintenance cadence ensures the dashboard remains a living tool rather than a historical artifact. Teams that skip this step find their dashboards become irrelevant within 2-3 quarters, forcing a costly rebuild.
-
-> **Pro tip:** Assign a 'dashboard owner' on the product team. Without clear ownership, maintenance tasks fall through the cracks.
+After each launch or planning cycle, review whether each metric still serves a current goal. Remove or archive metrics nobody used. Version any definition change and annotate the chart where it happened, so trends stay honest.
 
 ## Best Practices
 
-- Keep the summary row visible without scrolling—stakeholders should grasp overall UX health in under 10 seconds, which makes the dashboard effective for both quick check-ins and formal product manager roadmap reviews.
-- Use consistent color coding across all five HEART dimensions (green/yellow/red thresholds) so viewers instantly recognize which areas need attention without reading labels.
-- Include the date range and last-refreshed timestamp prominently on the dashboard. Stale data presented as current is worse than no data at all.
-- Pair every quantitative metric with a qualitative annotation space. The NPS number tells you *what* changed; the PM's written note tells you *why* it changed and what the team is doing about it.
-- Design for your least technical stakeholder. If your VP of Marketing can't interpret the dashboard without explanation, simplify the visualizations until they can.
-- Version your dashboard. When you make significant changes to metrics or layout, save the previous version and document what changed and why. This preserves historical context for retrospectives.
+- Trace every chart to a goal. A metric without a row in the goals table is a sign the dashboard is drifting.
+- Keep the primary view small. Rodden's [guidance](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice) is that a few well-chosen metrics are better than an overwhelming dashboard.
+- Mix sources. Pair survey-based happiness with behavioral metrics, which Chapman notes reduces the risk of a single misleading signal.
+- Normalize by default. Rates and per-user values stop a growing user base from making every chart look better.
+- Annotate releases and events. Most questions in a review are about why a line moved, and annotations answer many of them at a glance.
+- Start with one team. Rodden advises building for a single receptive team before attempting organization-wide dashboards.
 
 ## Common Mistakes
 
-- **Building the dashboard before completing the Goals-Signals-Metrics process** — Always finish the GSM exercise first with your team. Without clear goals and signal definitions, you'll dashboard random metrics that don't connect to user experience or roadmap decisions. Start with the GSM process outlined in the HEART Framework, then build.
-- **Cramming all five dimensions into a single, dense chart or heatmap** — Give each HEART dimension its own dedicated panel. The five dimensions measure fundamentally different aspects of UX, and combining them into one visual creates confusion. The five-panel pattern (summary cards + detail sections) scales far better.
-- **Setting thresholds based on aspirational targets instead of baseline performance** — Start by measuring your current baseline for 4-6 weeks, then set thresholds relative to that baseline. If your current DAU/MAU is 15%, setting a green threshold at 40% means the dashboard is permanently red and the team learns to ignore it.
-- **Building the dashboard and never establishing a review cadence** — Schedule recurring dashboard reviews into existing team rituals (weekly syncs, monthly stakeholder reviews). Automate a weekly Slack/email snapshot. Without a cadence, even well-built dashboards are abandoned within weeks.
-- **Using vanity metrics as proxies for HEART dimensions (e.g., total pageviews for Engagement)** — Each metric must map back to a specific signal that reflects the dimension's goal. Engagement isn't pageviews—it's the depth and frequency of meaningful interaction. Refer back to your GSM table and validate that each dashboard metric genuinely reflects user experience.
+- **Putting every metric on one page**: Readers cannot tell what matters. Pick a primary metric per chosen category and move the rest to a secondary view.
+- **Showing raw totals**: Totals rise with growth and hide changes in experience. Use rates, shares or per-user averages.
+- **Launching without a review routine**: A dashboard nobody reviews on a schedule gets ignored. Book the review and name its owner before publishing.
+- **Reacting to tracking breaks as if they were real**: A logging change can make a metric collapse overnight. Build data quality checks and confirm the data before discussing the product.
+- **Never pruning**: Metrics accumulate as goals change. Remove those that no longer serve a goal, and note the change.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/heart-framework/METHOD.md) — HEART Framework
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/heart-framework/METHOD.md): HEART Framework
 
 ## Related Skills
 
-- [Measuring Adoption Rates and Task Success for New Features](../measuring-adoption-and-task-success/SKILL.md)
-- [Tracking Engagement and Retention Metrics at Scale](../tracking-engagement-and-retention-metrics/SKILL.md)
-- [Measuring User Happiness Through Surveys and Satisfaction Scores](../measuring-user-happiness-surveys/SKILL.md)
-- [Defining Goals, Signals, and Metrics with the HEART Framework](../defining-heart-goals-signals-metrics/SKILL.md)
-- [Running HEART Framework Workshops with Cross-Functional Teams](../running-heart-framework-workshops/SKILL.md)
-- [Presenting HEART Metrics in Product Manager Interviews](../presenting-heart-metrics-in-interviews/SKILL.md)
+- [Defining Goals, Signals, and Metrics for HEART](../defining-heart-goals-signals-metrics/SKILL.md)
+- [Tracking Engagement and Retention Metrics](../tracking-engagement-and-retention-metrics/SKILL.md)
+- [Measuring Adoption and Task Success with HEART](../measuring-adoption-and-task-success/SKILL.md)
+- [Measuring User Happiness Through Satisfaction Surveys](../measuring-user-happiness-surveys/SKILL.md)
+- [Running HEART Framework Workshops](../running-heart-framework-workshops/SKILL.md)
+- [HEART Framework Interview Answers for PM Metrics Questions](../presenting-heart-metrics-in-interviews/SKILL.md)
+
+## Sources
+
+- [Rodden, Hutchinson and Fu: Measuring the User Experience on a Large Scale (CHI 2010, PDF)](https://research.google.com/pubs/archive/36299.pdf)
+- [Kerry Rodden: How to make HEART metrics work in practice](https://quantuxblog.com/how-to-make-heart-metrics-work-in-practice)
+- [Chris Chapman: North Star ... a path to being lost](https://quantuxblog.com/north-star-a-path-to-being-lost)
+- [Interaction Design Foundation: What is the HEART Framework?](https://ixdf.org/literature/topics/heart-framework)
+- [Amplitude: How to Use the HEART Framework to Improve Software UX](https://amplitude.com/blog/heart-framework-software-ux)

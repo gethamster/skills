@@ -1,15 +1,20 @@
 ---
-name: designing-kanban-boards
-description: "This skill teaches you how to structure columns, swimlanes, and card layouts on a kanban board so the board becomes an accurate, real-time map of how work actually flows through your team."
+name: "designing-kanban-boards"
+description: "Kanban board design: structure columns, swimlanes and cards so the board shows how work really flows from commitment to delivery."
 category: "Workflows"
 metadata:
   homepage: https://tryhamster.com
-  method: kanban
+  method: "kanban"
+  datePublished: "2026-06-01"
+  dateModified: "2026-09-25"
+  author:
+    name: "Hamster"
+    url: "https://tryhamster.com"
 ---
 
-# Designing Effective Kanban Boards for Real Workflow Visibility
+# Kanban Board Design: Columns, Swimlanes and Cards
 
-> This skill teaches you how to structure columns, swimlanes, and card layouts on a kanban board so the board becomes an accurate, real-time map of how work actually flows through your team.
+> Kanban board design: structure columns, swimlanes and cards so the board shows how work really flows from commitment to delivery.
 
 ## Before you start
 
@@ -23,153 +28,104 @@ If there is no `.hamster/` directory, every session rebuilds that context from s
 
 | Field | Value |
 |-------|-------|
-| Difficulty | Intermediate |
-| Time to Learn | 2-4 hours for initial design and validation |
-| Outcome | A validated kanban board structure with named columns, defined swimlanes, and a card template that your team can immediately start using to track and pull work. |
-| Prerequisites | Basic familiarity with the Kanban method and its principles of visualizing work and limiting WIP, Access to your team's current process, even if informal or undocumented, At least 5-10 recent work items you can trace from request to completion |
+| Difficulty | Beginner |
+| Time to Learn | A few hours for a first board, refined over several weeks |
+| Outcome | You have a board whose columns, lanes and cards match how your team's work actually moves, with commitment and delivery points marked. |
+| Prerequisites | Access to the people who do the work, a list of current work items, a physical wall or a board tool |
 | Part of | [Kanban](../../methods/kanban/METHOD.md) |
 
 ## Overview
 
-A kanban board is only useful if it tells the truth about how work moves through your team. Most boards fail not because the tool is wrong but because the board layout was designed from a wishful process map instead of the messy reality of actual work. Designing an effective kanban board means translating your team's real workflow, every handoff, wait state, and decision point, into a visual structure that anyone can glance at and immediately understand where things stand. This skill sits at the foundation of the [Kanban](https://tryhamster.com/methods/kanban) method. Without an accurate board, every downstream practice falls apart: [WIP limits](https://tryhamster.com/skills/setting-wip-limits) get set on the wrong columns, [flow metrics](https://tryhamster.com/skills/measuring-kanban-flow-metrics) measure the wrong durations, and [cadences](https://tryhamster.com/skills/running-kanban-cadences) review a fiction. Getting the board right first is what makes the rest of the system trustworthy.
+Kanban board design is the work of turning a team's real workflow into columns, lanes and cards that everyone reads the same way. The board is the visual form of the system. The Kanban Guide calls it the visualization of the Definition of Workflow and says there are "no specific guidelines for how a visualization should look," so the design is yours to fit your context ([The Kanban Guide](https://kanbanguides.org/english/)). What the board must do is make the minimum elements visible: the work items, where work starts and finishes, the states in between, how WIP is controlled, and the policies for moving items. See the [Kanban method page](../../methods/kanban/METHOD.md) for how the board fits the rest of the system.
 
-The artifact you produce is a board specification document. It contains the ordered list of columns with clear definitions of what "in this column" means, the swimlane structure (if any), the card template with required and optional fields, and a set of validation notes from walking real work items through the layout. This document becomes the reference your team uses when onboarding new members or debating whether a column should be split or merged. It is a living artifact, not a one-time deliverable. You will revisit it every few months as the team's process matures.
+Kanban University's guide stresses that the board should model the actual workflow "not a wishful future image" and that "each Kanban system and Kanban board are unique" ([Official Guide to The Kanban Method](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)). A board designed around the process the team wishes it had soon drifts from reality, and people stop updating it. A board that shows the waiting, the handoffs and the rework is uncomfortable at first and useful from then on.
 
-The difference between a board that works and one that collects dust is specificity. A generic "To Do, In Progress, Done" board is a starting point, not a design. Effective boards expose the hidden queues, the approval bottlenecks, and the rework loops that generic boards paper over. When the board reflects reality, the team starts having the right conversations: why are eight cards stuck in "Waiting for Review"? Why do cards in "Development" never move on Fridays? These conversations are the engine of continuous improvement, and they only happen when the board is honest.
+A good design answers three questions at a glance. What is the team working on? Where is work waiting? What should happen next? Kanban board columns answer the first two, swimlanes separate kinds of work that need different treatment, and kanban card design makes each item understandable without opening a document. Everything else, such as colors and tags, should serve one of those questions or be left out.
+
+This skill covers the first design and its early revisions. Pull policies, WIP limits and metrics each have their own skill, but the board has to leave room for all three, so they come up here too.
 
 ## How It Works
 
-A kanban board works by making invisible work visible. The mental model is simple: each column represents a distinct state that a work item occupies, and the transitions between columns represent the actions or decisions that move work forward. The board does not prescribe a process. It reveals the process that already exists. That distinction matters because it determines how you design the board. You are not inventing an ideal workflow. You are observing, naming, and structuring the workflow your team already follows.
+Columns represent states that work items pass through. Kanban University's STATIK approach models the workflow after analyzing demand and capability, and describes the result as a board whose columns show the activities each work item type goes through, sequentially, in parallel or in no particular order. Two kinds of columns matter. Activity columns hold work being done. Queue or buffer columns, such as "Ready for review," hold work that is waiting. Splitting an activity into "doing" and "done" sub-columns shows when finished work is sitting idle before the next stage pulls it.
 
-Columns should map to activity states, not people or teams. A common mistake is to create columns like "Dev" and "QA." These are departments, not states. A work item sitting in "Dev" could mean it is being actively coded, it is waiting for a code review, or it is blocked on a dependency. Lumping all three into one column hides the queue. Instead, name columns after what is happening to the item: "Coding," "Awaiting Review," "In Review." Each column should have a clear entry condition (what must be true for an item to enter) and an exit condition (what must be true for it to leave). When you cannot articulate these conditions, the column is too vague and should be split or renamed.
+The board needs a clear commitment point and delivery point. Kanban University says every kanban system has "at least one clear commitment and delivery point." Items to the left of the commitment point are options the team has not agreed to deliver; items to the right are work in progress. Marking that line on the board keeps the backlog from being counted as work in progress and makes it obvious when an item has been committed.
 
-Swimlanes add a second dimension. Where columns represent stages in the workflow, swimlanes represent categories of work flowing through those same stages. The most common swimlane structures separate work by type (bugs vs. features vs. maintenance), by priority (expedite lane vs. standard), or by team or product area. Swimlanes are powerful because they let you apply different [WIP limits](https://tryhamster.com/skills/setting-wip-limits) and different [policies](https://tryhamster.com/skills/creating-kanban-pull-policies) to different categories of work without maintaining separate boards. But swimlanes also add visual complexity. Every swimlane doubles the number of cells on the board, so add them only when the distinction changes how your team makes pull decisions.
+Swimlanes are horizontal rows that group work. Kanban University notes that lanes are often used for different work types, projects or classes of service to distribute capacity. Kanban swimlanes earn their place when the team treats the lanes differently, for example an expedite lane with its own limit or separate lanes for planned and unplanned work. Lanes for each person tend to encourage individual queues instead of team flow, so use them with care.
 
-Cards are the atomic unit. Each card represents one work item, and its layout determines how much cognitive effort is required to scan the board. The card should surface the information needed to make two decisions: "Is this item blocked?" and "Should I pull this item next?" Typically that means showing the item's title, assignee, age or start date, type indicator, and a blocker flag. Everything else can live in the card's detail view. Overloading the card face with fields makes the board unreadable, which causes the team to stop looking at it.
+Cards carry the information needed to act on an item. A useful card shows a short title, the work item type, the requester, any real deadline, the date the item was committed and a visible blocked marker. Colors or tags can show work type or class of service. Keep the card small enough to read from across the room or at a glance on a screen.
 
-The board structure is not static. As your team's process evolves, the board should evolve with it. A column that once represented a real bottleneck might dissolve as the team improves. A new handoff to a legal review team might require a new waiting column. The [Kanban](https://tryhamster.com/methods/kanban) principle of "improve collaboratively, evolve experimentally" applies directly to board design. Treat your board as a hypothesis about your process. Validate it, learn from it, and revise it.
+Digital tools impose their own constraints. In Jira, board columns are mapped to workflow statuses, and only items in the right-most column are treated as complete, so done-like statuses must map there ([Atlassian, Configure columns](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/)). GitHub Projects can group items into horizontal sections by a field, and dragging a card to another group changes that field ([GitHub Docs, board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)). Know these rules before you design, so the tool does not reshape your workflow by accident.
 
 ## Step-by-Step Guide
 
-### Step 1: Step 1: Map your current workflow from intake to completion
+### Step 1: Map the workflow with the people who do the work
 
-Gather your team, either in person or on a shared whiteboard, and trace the journey of a typical work item from the moment it enters your system to the moment it is considered done. Do not consult a process document or an org chart. " Write each distinct activity or wait state on a sticky note. You will likely end up with 8-15 notes for a typical knowledge-work team.
+Bring together a representative group, as Kanban University recommends for STATIK, and trace a few recent items from request to delivery. Write down each state an item passed through and where it waited. Include rework loops and handoffs to other teams. Keep the language to states of the work, such as "In review," rather than names of people or departments.
 
-Arrange them in rough chronological order, noting where items sometimes loop back (rework) or skip steps. This raw map is your source of truth for column design.
+### Step 2: Group states into columns
 
-> **Pro tip:** Ask people to describe what they actually did, not what they think the process should be. The gap between the two is where your biggest design insights hide.
+Combine states that are always done together and separate those that involve a handoff or a wait. Add queue columns where work commonly waits, such as before review or deployment. Place an options area on the left and a finished column on the right. Aim for the fewest columns that still show where work waits.
 
-### Step 2: Step 2: Identify distinct columns by grouping activity states
+### Step 3: Mark the commitment and delivery points
 
-Review the sticky notes from Step 1 and group them into columns. Each column should represent a state where the work item is being actively transformed or is explicitly waiting. The test for whether two states deserve separate columns is simple: do they have different people responsible, different WIP dynamics, or different policies? If so, split them.
+Draw a clear line where the team commits to delivering an item, usually between the options area and the first active column. Mark where delivery happens, which may be before a final "Done" column if items wait to be released. These points define where cycle time starts and stops, so agree on them explicitly.
 
-If two states always happen back to back with the same person and no queue between them, merge them. " A well-designed board for a software team might have 5-8 columns. A content team might have 4-6. Fewer is better as long as each column is honest.
+### Step 4: Decide whether you need swimlanes
 
-> **Pro tip:** Explicitly separate "doing" states from "waiting" states. A column called 'In Review' hides whether the item is actively being reviewed or sitting in a queue waiting to be picked up. Split it into 'Awaiting Review' and 'In Review' to expose the queue.
+List the kinds of work the team handles and ask whether any need different rules. If urgent work must bypass the queue, add an expedite lane. If planned and unplanned work compete for the same people, lanes can make the balance visible. If no lane would change how the team acts, leave lanes out.
 
-### Step 3: Step 3: Define entry and exit criteria for every column
+### Step 5: Design the card
 
-For each column, write down the specific conditions that must be met for an item to enter and to leave. Entry criteria prevent premature pulls. For example, an item might only enter 'Ready for Development' if it has acceptance criteria, a size estimate, and all dependencies identified. Exit criteria prevent sloppy handoffs.
+Choose the fields every card must show: title, work type, requester, commitment date, deadline if real, and a blocked marker. Pick one visual signal, such as color, for work type or class of service and use it consistently. Test the design by asking a teammate to explain a card they have not seen before.
 
-An item might only leave 'In Review' if at least one reviewer has approved the changes and all comments are resolved. Document these criteria in your board specification document. They do not need to be elaborate, but they must be specific enough that two team members would independently agree on whether a given item meets them. These criteria become your [pull policies](https://tryhamster.com/skills/creating-kanban-pull-policies).
+### Step 6: Leave room for limits and policies
 
-> **Pro tip:** Keep criteria to 2-4 bullet points per column. If you need more than that, the column may be trying to represent two distinct states.
+Reserve space at the top of each column for its WIP limit and a short note of its entry and exit criteria. Put the fuller policy text next to the board. Kanban University recommends placing policies where they are clearly visible, preferably beside the board.
 
-### Step 4: Step 4: Decide on swimlane structure
+### Step 7: Walk real items through the board
 
-Determine whether your team needs swimlanes and, if so, what dimension they represent. , urgent bugs get pulled before features)? Do you need to visualize multiple products or projects on one board? Would splitting by priority help the team make better pull decisions?
+Take the items from Step 1 and move them across the new board. Check that each item has exactly one place to be at every moment and that no state is missing. Fix gaps now, while the board is still a draft.
 
-If you answered yes to any of these, add swimlanes for that dimension. Common structures include a dedicated "Expedite" swimlane at the top with a strict WIP limit of 1, and standard lanes below for features, bugs, and maintenance. If none of these questions resonated, skip swimlanes. A flat board with no swimlanes is simpler to read and easier to maintain.
+### Step 8: Launch and schedule a review
 
-You can always add them later when a real need emerges.
-
-> **Pro tip:** Never use swimlanes to assign work to individuals. Swimlanes assigned to people create implicit ownership and discourage the collaborative pulling behavior that makes Kanban work.
-
-### Step 5: Step 5: Design the card template
-
-Define what information appears on the face of each card when someone scans the board. Start with the minimum set: a short title (5-8 words), a work type indicator (color dot, icon, or tag), the person currently working on it, and a visual age indicator (dots or a date showing when the item entered its current column). Add a blocker flag, a simple red icon or border, that is visible from across the room or at a glance on screen. Resist the urge to add story points, priority numbers, customer names, or sprint labels to the card face.
-
-Each additional field competes for attention and slows scanning. Those details belong in the card's detail view, accessible with one click. Test your card design by printing or mocking up 15-20 cards and arranging them in a column. If you cannot distinguish the important ones in under five seconds, the card is too dense.
-
-> **Pro tip:** Use card color to encode exactly one dimension, usually work type. If color means both work type and priority simultaneously, the encoding becomes unreadable within a week.
-
-### Step 6: Step 6: Set initial column order and board layout
-
-Arrange your columns left to right in the order work flows. Leftmost is the earliest stage (typically a backlog or intake queue) and rightmost is your definition of done. If your workflow has parallel paths, for example, some items go through a design phase while others skip directly to development, you have two options: use a single column with a bypass policy documented in the entry criteria, or create a dedicated swimlane for the alternate path. Parallel columns sitting side by side on the same row confuse readers because the left-to-right flow metaphor breaks.
-
-For physical boards, allocate wall space proportional to how many items typically sit in each column. For digital boards, configure your tool so the board fits on one screen without horizontal scrolling. If you need to scroll to see the whole board, you probably have too many columns.
-
-> **Pro tip:** Place a "Done" column that is always visible at the far right. Teams that archive items immediately lose the motivational signal of seeing completed work and lose the data needed for throughput measurement.
-
-### Step 7: Step 7: Walk real items through the board as validation
-
-Take the three to five work items you traced in Step 1 and walk them through your newly designed board, column by column. For each item, ask: Does it enter each column cleanly, meeting the entry criteria? Does it ever sit between two columns, not quite fitting either? Does it skip columns or loop back?
-
-Does the card template show enough information for someone to decide whether to pull it? Document every awkward moment. If an item does not fit a column, you either have a missing column, a poorly defined column, or a work type that needs its own swimlane. Adjust the board design based on what you find.
-
-This validation step typically triggers 2-3 changes to column definitions and occasionally adds or removes a column entirely.
-
-> **Pro tip:** Include at least one "messy" item that hit a blocker, required rework, or was expedited. These edge cases reveal structural weaknesses that happy-path items will not expose.
-
-### Step 8: Step 8: Document the board specification and share with the team
-
-Create a one-page board specification document. It should contain: a diagram of the board layout with columns and swimlanes labeled, the entry and exit criteria for each column, the card template with required and optional fields, and any initial WIP limits you plan to set (see [setting WIP limits](https://tryhamster.com/skills/setting-wip-limits) for guidance on choosing numbers). Share this document with the full team and anyone who interacts with the board, including stakeholders who check status. " Collect objections and adjust.
-
-The goal is not unanimous enthusiasm but shared understanding. People do not need to love the board. They need to agree it is honest.
-
-> **Pro tip:** Store the board specification somewhere the team can find it in under 30 seconds. A document buried in a wiki hierarchy will be forgotten by week two.
-
-### Step 9: Step 9: Launch the board and schedule a design review
-
-Set up the board in your tool or on your wall. Populate it with all current work items, placing each in the column that matches its current state. Do not start with an empty board and wait for new items. Moving existing work onto the board immediately reveals whether the columns and definitions hold up under real load.
-
-Set a calendar reminder for a board design review in two to four weeks. At that review, walk through questions like: Are any columns consistently empty? Are any columns always overloaded? Are team members confused about which column an item belongs in?
-
-Are there recurring conversations about "where does this go"? Use the answers to refine. The first design is a hypothesis. The second design, after two weeks of real use, is where the board starts to become genuinely useful.
-
-> **Pro tip:** Expect to make changes. The most effective boards are not the ones designed perfectly on day one. They are the ones revised honestly after the first two weeks of real use.
+Put all current work on the board and start using it at the daily meeting. Agree to review the design after a few weeks. Watch for cards that sit in ambiguous places, columns nobody uses and work happening off the board, and change the design to fix them.
 
 ## Best Practices
 
-- Name columns after the activity or wait state, not after the team or person responsible. "Awaiting Legal Review" is a state. "Legal" is a department. Naming after departments hides queues and makes it impossible to see whether work is active or stalled, which defeats the purpose of the board.
-- Keep the total number of columns between 5 and 9 for most teams. Fewer than 5 usually means you are hiding important intermediate states. More than 9 usually means you are modeling sub-steps that could be tracked as checklist items within a card. If the board cannot be read in a single glance, it will be ignored.
-- Make waiting states visually distinct from active states. Use a different column background color, a dotted border, or an indented sub-column. When waiting states look identical to active states, the team cannot tell at a glance whether work is flowing or stuck, and the board loses its primary value as an early-warning system.
-- Design cards for scanning, not reading. " in under three seconds. If someone needs to click into the card to make a pull decision, the card template has too little information. If people stop reading the card because it has too much, the template has too much.
-
-Test with the five-second rule: can you identify the most important card in a column of 8 cards within five seconds?
-- Separate the backlog or intake queue from the first active column with a clear commitment point. The commitment point is the line where the team agrees to complete an item. Items to the left of it are options. Items to the right are commitments. Without this distinction, the team's WIP is effectively unbounded because every idea in the backlog feels like active work.
-- Review and revise the board design on a regular cadence, ideally quarterly or whenever the team's process changes. A board that was accurate six months ago may now hide a new approval step, an automated test phase, or a deprecated handoff. Stale boards breed workarounds, and workarounds breed invisible work.
-- Document the board structure in a lightweight, accessible format. When new team members join, they should be able to read the board specification and understand the flow in under 10 minutes. If it takes longer, the board is either too complex or the documentation is too sparse.
+- Model the real process, delays included. [Kanban University](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf) asks for the actual workflow, not a wishful future image, and a board that hides waiting cannot help reduce it.
+- Name columns after states of work. "Awaiting review" tells people what to do next; a person's name only tells them who to ask.
+- Make queues visible. Adding "ready" or "done" sub-columns shows where finished work waits for the next stage, which is often where most time goes.
+- Keep swimlanes for different treatment. A lane should exist because the team handles its work differently, such as an expedite lane with its own limit.
+- Show the commitment point. Separating options from committed work stops the backlog from inflating WIP and makes cycle time measurable.
+- Treat the design as a draft. The [Kanban Guide](https://kanbanguides.org/english/) expects the Definition of Workflow to change, and the board should change with it.
 
 ## Common Mistakes
 
-- **Designing the board from an idealized process instead of the actual workflow** — This happens when a manager or team lead sketches the board from memory or from a process document rather than tracing real work items. The resulting board has columns that look clean on paper but do not match where work actually accumulates. You can catch this early by asking the team: "When was the last time an item moved cleanly through every column without skipping or looping?" If nobody can name a recent example, the board is aspirational, not descriptive. Go back to Step 1 and trace real items with the people who did the work.
-- **Creating a column for every micro-step in the process** — Teams new to kanban board design sometimes create 12-15 columns to capture every sub-task. This makes the board so wide that it requires scrolling or squinting, which means people stop using it. The signal that you have too many columns is that several columns almost always have zero or one items. Merge those columns and track the sub-steps as a checklist within the card.
-
-A good heuristic: if a column does not have its own distinct WIP limit or pull policy, it probably does not deserve to be a column.
-- **Using swimlanes to assign work to individuals** — This turns the kanban board into a personal task list grid, which undermines collaborative pulling and makes the board unreadable when the team grows beyond 4-5 people. The symptom is that team members only look at their own swimlane and ignore the rest of the board. Individual assignment belongs on the card, not in the board structure. Use swimlanes for work categories (type, priority, product) that change how the team makes pull decisions collectively.
-- **Treating 'In Progress' as a single column** — A monolithic 'In Progress' column hides the most important information on the board: where within the active work process items are actually sitting. Two items can both be 'in progress' while one is being actively coded and the other has been waiting for a dependency for three days. Without visibility into sub-states, the team cannot identify bottlenecks or set meaningful WIP limits. Split 'In Progress' into its constituent activity and wait states.
-
-Even a simple split into 'Doing' and 'Waiting/Blocked' is a significant improvement.
-- **Overloading the card face with too many fields** — Teams often add every available field to the card: priority, story points, customer name, sprint, epic, labels, due date, and more. Within a week, nobody reads the cards because the information density is too high. The symptom is that people click into every card before making a decision, which means the board is not doing its job of enabling at-a-glance understanding. Strip the card face back to 4-5 fields maximum.
-
-Move everything else into the card detail view. Then watch whether people can make pull decisions from the board view alone.
-- **Never revising the board after the initial design** — The first board design is always wrong in at least two ways. Teams that treat the initial design as permanent end up with a board that drifts further from reality each month. The symptom is that team members start ignoring certain columns or using them inconsistently. Schedule a board design review 2-4 weeks after launch and then quarterly thereafter.
-
-During the review, look for columns that are always empty, columns that are always full, and columns where people disagree about what belongs there. Each of these signals a design flaw to fix.
+- **Designing the aspirational process**: A board that shows how work should flow is soon ignored. Start with how it flows today and improve from there.
+- **Too many columns on day one**: Modeling every edge case makes the board hard to read and maintain. Start with the stages where work waits and add detail only when the team needs it.
+- **Mixing options and committed work**: When the backlog sits in the same columns as active work, WIP looks larger than it is and priorities blur. Mark the commitment point clearly.
+- **Lanes for each person**: Personal lanes encourage individuals to guard their own queues instead of helping finish team work. Use lanes for kinds of work and track who is doing what on the card.
+- **Letting the tool dictate the workflow**: Tool defaults such as a fixed three-column board rarely match real work. Configure the tool around the workflow you mapped.
 
 ## References
 
-- [Examples](references/examples.md) — Worked examples and scenarios
-- [FAQ](references/faq.md) — Frequently asked questions
-- [Parent Method](../../methods/kanban/METHOD.md) — Kanban
+- [Examples](references/examples.md): Worked examples and scenarios
+- [FAQ](references/faq.md): Frequently asked questions
+- [Parent Method](../../methods/kanban/METHOD.md): Kanban
 
 ## Related Skills
 
-- [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
-- [Running Kanban Cadences and Feedback Loops](../running-kanban-cadences/SKILL.md)
-- [Setting and Enforcing Work-in-Progress Limits](../setting-wip-limits/SKILL.md)
+- [Setting WIP Limits](../setting-wip-limits/SKILL.md)
+- [Creating Kanban Pull Policies](../creating-kanban-pull-policies/SKILL.md)
 - [Measuring Kanban Flow Metrics](../measuring-kanban-flow-metrics/SKILL.md)
-- [Creating Explicit Pull Policies and Workflow Rules](../creating-kanban-pull-policies/SKILL.md)
-- [Comparing Kanban and Scrum for Your Team](../comparing-kanban-and-scrum/SKILL.md)
-- [Choosing the Right Kanban Tools and Software](../choosing-kanban-tools-and-software/SKILL.md)
+- [Choosing Kanban Software](../choosing-kanban-tools-and-software/SKILL.md)
+- [Managing Projects with Kanban](../managing-projects-with-kanban/SKILL.md)
+- [Running Kanban Cadences](../running-kanban-cadences/SKILL.md)
+- [Comparing Kanban and Scrum](../comparing-kanban-and-scrum/SKILL.md)
+
+## Sources
+
+- [The Kanban Guide](https://kanbanguides.org/english/)
+- [The Official Guide to The Kanban Method (PDF)](https://kanban.university/wp-content/uploads/2023/04/The-Official-Kanban-Guide_A4.pdf)
+- [Atlassian Support: Configure columns](https://support.atlassian.com/jira-software-cloud/docs/configure-columns/)
+- [GitHub Docs: Customizing the board layout](https://docs.github.com/en/issues/planning-and-tracking-with-projects/customizing-views-in-your-project/customizing-the-board-layout)

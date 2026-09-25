@@ -1,25 +1,21 @@
-# FAQ: Running Start Stop Continue as a Team Icebreaker Activity
+# FAQ: Running a Start Stop Continue Icebreaker
 
 ## How long should a start stop continue icebreaker take?
 
-A start stop continue icebreaker should take 5–15 minutes total: 2–3 minutes for individual brainstorming, 5–8 minutes for sharing, and 1–2 minutes for a brief debrief. Keeping it short preserves the lightweight feel and leaves energy for the main session.
+Keep it short, a few minutes of writing and a quick round of sharing. The purpose is to warm the group up and teach the format. If a real issue surfaces, note it and handle it in the main agenda or a later retrospective.
 
-## What are good topics for a start stop continue icebreaker?
+## What topics work well for a new team?
 
-The best topics are specific to your team's shared context but low-stakes — think "our video call habits," "the office kitchen situation," "how we use Slack," or "Monday mornings." Avoid topics that could surface real workplace grievances, and make sure everyone in the room has direct experience with the subject.
+Choose something everyone has experienced and nobody owns personally: meeting habits, chat use, handoffs, or how the first week of a project went. Avoid topics that point at a person, a recent failure, or a decision by someone in the room.
 
-## Can I use a start stop continue icebreaker with remote teams?
+## Should notes be anonymous?
 
-Absolutely. Use a collaborative digital tool like Miro, FigJam, or a shared document with three columns. Pre-populate one example per column so remote participants see the expected format. The share-out works well as a verbal round-robin over video, and the icebreaker is especially valuable for remote teams where informal rapport-building opportunities are scarce.
+For a group with a steep hierarchy or people who have just met, yes. Anonymous notes on a shared board let people practice candor without exposure. As trust grows, the team can move to named notes.
 
-## How is a start stop continue icebreaker different from a full retrospective?
+## Is this the same as a retrospective?
 
-The icebreaker uses a fun, low-stakes topic and takes 5–15 minutes, while a full retrospective addresses real work performance and typically runs 30–60 minutes with deeper discussion, clustering, and action item assignment. The icebreaker is a warm-up that teaches the format; the retrospective is the real application. Learn more about running full sessions in our guide to facilitating Start Stop Continue retrospectives.
+They share a format. The warm-up uses the same three questions on a light topic to teach the format and ease people into giving feedback. A retrospective reviews real work, needs time for facts and causes, and ends with owned actions.
 
-## What group size works best for a start stop continue icebreaker?
+## Can the icebreaker help with team building?
 
-Groups of 4–8 people work best because everyone can share without the round-robin dragging. For larger groups (10–25+), break into table groups of 4–6 and have each group share one highlight item with the full room. This keeps energy high and total time manageable.
-
-## Do I need to do anything with the icebreaker results afterward?
-
-You don't need to formally track icebreaker results, but if the group accidentally generates a genuinely useful idea, capture it and follow through. Quick wins from an icebreaker build trust in the format. The main deliverable is the team's comfort with the Start Stop Continue structure, not the content itself.
+It can help a new team agree on its first norms. The items often translate directly into working agreements, such as sending agendas in advance or recording decisions in one place. Combine it with other activities if the goal is broader relationship building.
