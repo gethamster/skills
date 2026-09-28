@@ -13,7 +13,7 @@ metadata:
 
 # Transformational Leadership: Origins, Four I's and Limits
 
-> Created by **James MacGregor Burns**
+> Created by **James MacGregor Burns** - [https://en.wikipedia.org/wiki/Transformational_leadership](https://en.wikipedia.org/wiki/Transformational_leadership)
 
 ## Overview
 
