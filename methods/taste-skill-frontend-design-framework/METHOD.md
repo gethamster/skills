@@ -4,7 +4,7 @@ category: "Experience"
 description: "Taste Skill explained: Leon Lin's open-source SKILL.md files that steer AI coding agents away from generic, templated UI, and how the design rules work."
 metadata:
   datePublished: "2026-07-07"
-  dateModified: "2026-09-25"
+  dateModified: "2026-09-27"
   author:
     name: "Hamster"
     url: "https://tryhamster.com"
@@ -95,6 +95,39 @@ The list and install names come from the [repository README](https://github.com/
 
 7. **Track upstream and re-baseline**
    The v2 default is marked experimental, and the CHANGELOG says its sections may keep changing until a stable release ([CHANGELOG](https://github.com/Leonxlnx/taste-skill/blob/main/CHANGELOG.md)). Re-run the install to pull updates, then diff them against your local edits instead of overwriting them. If you depend on exact behavior, pin `design-taste-frontend-v1` or vendor your adapted copy. Repeat the baseline comparison after each update so you notice regressions.
+
+## How to Use Taste Skill in Everyday Prompts
+
+Once `design-taste-frontend` is installed, you mostly use Taste Skill by writing a normal UI request. The agent loads the skill when the task matches the description in the file's frontmatter, and you then steer it through the design read and the dials. This section covers the prompting loop after setup. For installation and adaptation, see the steps above.
+
+### How do you trigger the skill?
+
+You trigger it by asking for frontend work the skill is written for, such as a landing page, a portfolio or a redesign. The agent reads the SKILL.md instructions when the request matches the skill's description ([taste-skill SKILL.md](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md)). If you have several design skills installed, or the agent seems to ignore it, name `design-taste-frontend` in the prompt so there is no doubt about which rules apply. A request for a dashboard or data table falls outside the skill's stated scope, so do not expect it to engage well there.
+
+### What should the prompt include?
+
+A good prompt gives the agent the inputs its brief inference already looks for: the page type, a few vibe words, any reference sites, the audience, and hard constraints such as accessibility or regulation. Thin prompts force the agent to guess, and a guessed design read is where generic output creeps back in. A useful prompt shape looks like this:
+
+```text
+Using design-taste-frontend, build a pricing section for a B2B security product.
+Audience: IT leads at mid-size companies. Vibe: calm, precise, trustworthy.
+Reference: our existing homepage. Constraint: must meet WCAG AA contrast.
+Before writing code, state your design read and dial values, then wait for my confirmation.
+```
+
+Asking the agent to wait after the design read is the cheapest review point in the whole loop. You correct direction in one line instead of after a full build.
+
+### How do you adjust a dial for one request?
+
+You adjust a dial by saying so in the conversation, not by editing the skill file. The default skill tells the agent to handle one-off overrides in chat ([taste-skill SKILL.md](https://github.com/Leonxlnx/taste-skill/blob/main/skills/taste-skill/SKILL.md)). Phrase the change in terms of the dial, for example "keep variance as proposed but drop motion intensity for this section", so the agent applies the rules that key off that value, including reduced-motion handling. Reserve file edits for changes that should hold across the whole project.
+
+### How do you tell the skill actually ran?
+
+The clearest sign is that the agent states a one-line design read and dial values before coding and reports its pre-flight checklist at the end. If neither appears, the skill probably did not load, and you should confirm it is visible to the agent before continuing. A second sign is in the output itself: banned patterns such as purple glow gradients, three equal feature cards or placeholder names like "John Doe" should be absent. When they show up anyway, ask the agent which checklist item it skipped rather than fixing the markup by hand, so the gap gets named.
+
+### Is tasteskill the same thing?
+
+Yes, "tasteskill" usually refers to the same project, whose documentation lives on the [Taste Skill docs site](https://www.tasteskill.dev/docs) alongside the [Leonxlnx/taste-skill repository](https://github.com/Leonxlnx/taste-skill). Several unrelated repositories reuse the name, so check the owner before installing.
 
 ## Taste Skill Examples
 
