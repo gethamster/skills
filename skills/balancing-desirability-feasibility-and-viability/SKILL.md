@@ -126,7 +126,7 @@ Write the plan for the concept you are advancing: what it is, which trade-offs w
 ## Related Skills
 
 - [Generating Divergent Ideas](../generating-divergent-ideas/SKILL.md)
-- [Building Rapid Prototypes](../building-rapid-prototypes/SKILL.md)
+- [Building Rapid Prototypes](../building-rapid-prototypes-with-design-thinking/SKILL.md)
 - [Iterating from Evidence](../iterating-from-evidence/SKILL.md)
 - [Synthesizing User Insights](../synthesizing-user-insights/SKILL.md)
 - [Framing Human-Centered Problems](../framing-human-centered-problems/SKILL.md)

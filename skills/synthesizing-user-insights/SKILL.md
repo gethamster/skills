@@ -136,7 +136,7 @@ Rank the insights by how much they shift the team's perspective and how well the
 ## Related Skills
 
 - [Generating Divergent Ideas](../generating-divergent-ideas/SKILL.md)
-- [Building Rapid Prototypes](../building-rapid-prototypes/SKILL.md)
+- [Building Rapid Prototypes](../building-rapid-prototypes-with-design-thinking/SKILL.md)
 - [Balancing Desirability, Feasibility, and Viability](../balancing-desirability-feasibility-and-viability/SKILL.md)
 - [Iterating from Evidence](../iterating-from-evidence/SKILL.md)
 - [Framing Human-Centered Problems](../framing-human-centered-problems/SKILL.md)

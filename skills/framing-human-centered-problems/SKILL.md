@@ -133,7 +133,7 @@ Revise the underlying component rather than the wording, then hand the statement
 ## Related Skills
 
 - [Generating Divergent Ideas](../generating-divergent-ideas/SKILL.md)
-- [Building Rapid Prototypes](../building-rapid-prototypes/SKILL.md)
+- [Building Rapid Prototypes](../building-rapid-prototypes-with-design-thinking/SKILL.md)
 - [Balancing Desirability, Feasibility, and Viability](../balancing-desirability-feasibility-and-viability/SKILL.md)
 - [Iterating from Evidence](../iterating-from-evidence/SKILL.md)
 - [Synthesizing User Insights](../synthesizing-user-insights/SKILL.md)

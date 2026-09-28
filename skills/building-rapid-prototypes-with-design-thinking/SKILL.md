@@ -1,5 +1,5 @@
 ---
-name: "building-rapid-prototypes"
+name: "building-rapid-prototypes-with-design-thinking"
 description: "Turn ideas into rough, cheap artifacts users can see, handle, or act out, then learn from how they use them before investing more."
 category: "Experience"
 metadata:

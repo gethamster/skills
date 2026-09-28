@@ -129,7 +129,7 @@ Agree on the conditions that end iteration, for example a concept that works for
 ## Related Skills
 
 - [Generating Divergent Ideas](../generating-divergent-ideas/SKILL.md)
-- [Building Rapid Prototypes](../building-rapid-prototypes/SKILL.md)
+- [Building Rapid Prototypes](../building-rapid-prototypes-with-design-thinking/SKILL.md)
 - [Balancing Desirability, Feasibility, and Viability](../balancing-desirability-feasibility-and-viability/SKILL.md)
 - [Synthesizing User Insights](../synthesizing-user-insights/SKILL.md)
 - [Framing Human-Centered Problems](../framing-human-centered-problems/SKILL.md)
