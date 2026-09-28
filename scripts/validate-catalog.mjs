@@ -3,8 +3,9 @@
 // frontmatter block declaring one of the six categories and carries both the
 // H1 the catalog table names it from and its `> Created by` attribution line,
 // every skills/<skill>/SKILL.md carries the shared frontmatter contract, names
-// the method it belongs to and repeats that method's category, and every
-// method has at least one skill. Parsed with js-yaml rather than a line regex
+// the method it belongs to and repeats that method's category, opens with the
+// "## Before you start" section CONTRIBUTING.md spells out, and every method
+// has at least one skill. Parsed with js-yaml rather than a line regex
 // so quoted strings, block scalars, and comments survive.
 
 import { existsSync, readdirSync, readFileSync } from "node:fs";
@@ -60,7 +61,81 @@ const experimentalRoot = join(skillsRoot, EXPERIMENTAL);
 
 const SKIP_DIRS = new Set(["node_modules", ".git"]);
 
+// Every curated skill opens with the same "## Before you start" section.
+// CONTRIBUTING.md holds the one copy of its text, in a ```markdown fence, and
+// this reads it from there so the rule and the document cannot drift apart.
+const BEFORE_YOU_START_HEADING = "## Before you start";
+const BEFORE_YOU_START_FENCE_RE = /^```markdown\n(## Before you start\n[\s\S]*?)\n```[ \t]*$/m;
+const contributingPath = join(repoRoot, "CONTRIBUTING.md");
+
 const failures = [];
+
+// Read once. A CONTRIBUTING.md that lost the block fails the run rather than
+// switching the check off.
+function readBeforeYouStart() {
+  if (!existsSync(contributingPath)) {
+    failures.push(`CONTRIBUTING.md is missing, so the "${BEFORE_YOU_START_HEADING}" text cannot be checked`);
+    return null;
+  }
+  const match = BEFORE_YOU_START_FENCE_RE.exec(readFileSync(contributingPath, "utf8").replace(/\r\n/g, "\n"));
+  if (match === null) {
+    failures.push(
+      `CONTRIBUTING.md: no \`\`\`markdown block holding the "${BEFORE_YOU_START_HEADING}" text curated skills are checked against`,
+    );
+    return null;
+  }
+  return match[1].trimEnd();
+}
+const beforeYouStart = readBeforeYouStart();
+
+// The section is the first `## ` heading of the body, after the `# ` title
+// and whatever description sits between them, it runs to the next `## `
+// heading, and its text is CONTRIBUTING.md's exactly. Headings inside fenced
+// code are not headings.
+function checkBeforeYouStart(body, where) {
+  if (beforeYouStart === null) return;
+  const lines = body.replace(/\r\n/g, "\n").split("\n");
+  const headings = [];
+  let fence = null;
+  lines.forEach((line, index) => {
+    const open = /^\s{0,3}(`{3,}|~{3,})/.exec(line);
+    if (open) {
+      if (fence === null) fence = open[1];
+      else if (open[1][0] === fence[0] && open[1].length >= fence.length) fence = null;
+      return;
+    }
+    if (fence === null && /^#{1,2} /.test(line)) headings.push(index);
+  });
+  const sections = headings.filter((index) => lines[index].trimEnd() === BEFORE_YOU_START_HEADING);
+  if (sections.length === 0) {
+    failures.push(`${where}: missing the "${BEFORE_YOU_START_HEADING}" section (see CONTRIBUTING.md)`);
+    return;
+  }
+  if (sections.length > 1) {
+    failures.push(`${where}: "${BEFORE_YOU_START_HEADING}" appears ${sections.length} times`);
+    return;
+  }
+  const [start] = sections;
+  const title = headings.find((index) => lines[index].startsWith("# "));
+  const firstSection = headings.find((index) => lines[index].startsWith("## "));
+  if (
+    title === undefined ||
+    title > start ||
+    firstSection !== start ||
+    lines.slice(0, title).some((line) => line.trim() !== "")
+  ) {
+    failures.push(
+      `${where}: "${BEFORE_YOU_START_HEADING}" must be the first section, directly after the title and description`,
+    );
+    return;
+  }
+  const next = headings.find((index) => index > start && lines[index].startsWith("## "));
+  const text = lines.slice(start, next ?? lines.length).join("\n").trimEnd();
+  if (text !== beforeYouStart) {
+    failures.push(`${where}: "${BEFORE_YOU_START_HEADING}" does not match the text in CONTRIBUTING.md word for word`);
+  }
+}
+
 // skill name -> [paths]. Curated and experimental skills share one namespace:
 // installers flatten both into a single skill directory.
 const skillNames = new Map();
@@ -271,6 +346,8 @@ function validateSkill(filePath, { curated }) {
   if (curated && metadata?.homepage !== "https://tryhamster.com") {
     failures.push(`${relativePath}/SKILL.md: metadata.homepage must be "https://tryhamster.com"`);
   }
+
+  if (curated) checkBeforeYouStart(parsedFile.body, `${relativePath}/SKILL.md`);
 
   checkRelativeLinks(filePath, content);
 }

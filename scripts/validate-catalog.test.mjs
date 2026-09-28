@@ -18,7 +18,11 @@ const workspace = mkdtempSync(join(tmpdir(), "catalog-validator-"));
 
 after(() => rmSync(workspace, { recursive: true, force: true }));
 
-const SKILL_BODY = "\nGuidance.\n";
+// The canonical section, read the way a reader of CONTRIBUTING.md sees it.
+const BEFORE_YOU_START = /```markdown\n(## Before you start\n[\s\S]*?)\n```/.exec(
+  readFileSync(join(repoRoot, "CONTRIBUTING.md"), "utf8"),
+)[1];
+const SKILL_BODY = `\n# Running Experiments\n\n> What it does.\n\n${BEFORE_YOU_START}\n\n## Overview\n\nGuidance.\n`;
 
 function skill(
   name,
@@ -56,6 +60,7 @@ function fixture(build) {
   mkdirSync(join(root, "scripts"), { recursive: true });
   cpSync(join(scriptDir, "validate-catalog.mjs"), join(root, "scripts/validate-catalog.mjs"));
   cpSync(join(scriptDir, "generate-catalog-manifest.mjs"), join(root, "scripts/generate-catalog-manifest.mjs"));
+  cpSync(join(repoRoot, "CONTRIBUTING.md"), join(root, "CONTRIBUTING.md"));
   file(root, "README.md", "# Fixture\n\n<!-- catalog:start -->\n<!-- catalog:end -->\n");
   symlinkSync(join(repoRoot, "node_modules"), join(root, "node_modules"), "dir");
 
@@ -221,7 +226,7 @@ test("malformed frontmatter fails by name rather than being skipped", () => {
 test("a relative link to a path that does not exist is rejected, so renames cannot silently break the tree", () => {
   rejects(
     fixture((r) =>
-      file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { body: "\nSee [it](../gone/SKILL.md).\n" + SKILL_BODY })),
+      file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { body: SKILL_BODY + "\nSee [it](../gone/SKILL.md).\n" })),
     ),
     /running-experiments\/SKILL\.md: link target "\.\.\/gone\/SKILL\.md" does not exist/,
   );
@@ -234,7 +239,7 @@ test("a relative link to a path that does not exist is rejected, so renames cann
   // Sibling links that resolve, and anchors, are fine.
   const { code, output } = validate(
     fixture((r) => {
-      file(r, "skills/naming-things/SKILL.md", skill("naming-things", { body: "\n[a](../running-experiments/SKILL.md#step-1)\n" + SKILL_BODY }));
+      file(r, "skills/naming-things/SKILL.md", skill("naming-things", { body: SKILL_BODY + "\n[a](../running-experiments/SKILL.md#step-1)\n" }));
     }),
   );
   assert.equal(code, 0, output);
@@ -380,6 +385,58 @@ test("a closing body link does not replace metadata.homepage", () => {
       ),
     ),
     /metadata\.homepage must be "https:\/\/tryhamster\.com"/,
+  );
+});
+
+test("every curated skill opens with the Before you start section from CONTRIBUTING.md", () => {
+  const curated = (body) =>
+    fixture((r) => file(r, "skills/running-experiments/SKILL.md", skill("running-experiments", { body })));
+  const head = "\n# Running Experiments\n\n> What it does.\n\n";
+
+  rejects(curated(`${head}## Overview\n\nGuidance.\n`), /running-experiments\/SKILL\.md: missing the "## Before you start" section/);
+  // One word changed is a different text.
+  rejects(
+    curated(`${head}${BEFORE_YOU_START.replace("recommended", "encouraged")}\n\n## Overview\n\nGuidance.\n`),
+    /"## Before you start" does not match the text in CONTRIBUTING\.md word for word/,
+  );
+  // Extra text inside the section is a different text too.
+  rejects(
+    curated(`${head}${BEFORE_YOU_START}\n\nTry Hamster today.\n\n## Overview\n\nGuidance.\n`),
+    /does not match the text in CONTRIBUTING\.md/,
+  );
+  // Right text, wrong place: after the skill's own first section, or above the title.
+  rejects(
+    curated(`${head}## Overview\n\nGuidance.\n\n${BEFORE_YOU_START}\n`),
+    /"## Before you start" must be the first section, directly after the title and description/,
+  );
+  rejects(curated(`\n${BEFORE_YOU_START}\n\n# Running Experiments\n\n## Overview\n`), /must be the first section/);
+  rejects(curated(`${head}${BEFORE_YOU_START}\n\n${BEFORE_YOU_START}\n`), /"## Before you start" appears 2 times/);
+
+  // A title with no description, CRLF endings, and a heading-like line in a
+  // code fence all pass.
+  for (const body of [
+    `\n# Running Experiments\n\n${BEFORE_YOU_START}\n\n## Overview\n\nGuidance.\n`,
+    SKILL_BODY.replace(/\n/g, "\r\n"),
+    `${SKILL_BODY}\n\`\`\`markdown\n## Before you start\n\`\`\`\n`,
+  ]) {
+    const { code, output } = validate(curated(body));
+    assert.equal(code, 0, output);
+  }
+});
+
+test("an experimental skill does not need the Before you start section", () => {
+  const { code, output } = validate(
+    fixture((r) =>
+      file(r, "skills/.experimental/naming-things/SKILL.md", skill("naming-things", { method: null, homepage: null, body: "\nGuidance.\n" })),
+    ),
+  );
+  assert.equal(code, 0, output);
+});
+
+test("a CONTRIBUTING.md without the block fails the run instead of switching the check off", () => {
+  rejects(
+    fixture((r) => file(r, "CONTRIBUTING.md", "# Contributing\n\nNo block here.\n")),
+    /CONTRIBUTING\.md: no ```markdown block holding the "## Before you start" text/,
   );
 });
 
