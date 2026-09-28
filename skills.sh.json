@@ -145,6 +145,7 @@
         "designing-agent-roles-and-scopes",
         "designing-autonomous-agents",
         "designing-human-in-the-loop-agent-workflows",
+        "designing-multi-turn-conversation-context",
         "designing-onboarding-experiment-hypotheses-and-metrics",
         "designing-outcome-based-reward-signals",
         "designing-routing-and-ranking-policies",
@@ -154,6 +155,7 @@
         "disrupting-opponent-ooda-loops",
         "drafting-ai-constitution-principles",
         "enforcing-deterministic-execution-boundaries",
+        "engineering-tool-output-context-flows",
         "establishing-personal-safety-in-teams",
         "estimating-decision-confidence",
         "evaluating-ai-alignment-with-preference-models",
@@ -174,7 +176,9 @@
         "integrating-posthog-experiments-with-webflow-and-marketing-pages",
         "interpreting-bayesian-and-frequentist-experiment-results",
         "launching-agile-release-trains",
+        "layering-instruction-hierarchies-in-prompts",
         "loading-and-splitting-documents",
+        "managing-context-window-token-budgets",
         "managing-lean-portfolio-with-safe",
         "managing-memory-and-conversation-state",
         "managing-shared-task-state",
@@ -183,6 +187,7 @@
         "orchestrating-power-tools-in-gstack-workflows",
         "parallelizing-independent-work-across-sessions",
         "planning-program-increments",
+        "preventing-context-poisoning-and-clashes",
         "prioritizing-with-wsjf",
         "reviewing-and-synthesizing-teammate-outputs",
         "running-ab-tests-in-posthog-experiments-tab",
@@ -200,9 +205,11 @@
         "splitting-features-into-stories",
         "structuring-ai-coding-sessions-with-gstack-phases",
         "structuring-machine-to-machine-decision-outputs",
+        "structuring-retrieval-augmented-context",
         "structuring-shared-agent-state",
         "tailoring-processes-to-team-context",
-        "using-multi-agent-perspectives-for-development"
+        "using-multi-agent-perspectives-for-development",
+        "writing-system-prompts-for-claude"
       ]
     },
     {
