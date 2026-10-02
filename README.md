@@ -107,4 +107,4 @@ Every method opens with a `> Created by` line directly under its title, naming i
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Copyright Hamster Studio. The grant covers Hamster's own write-ups in this repository; the methods they describe stay under the terms of their original authors, named in each method's [attribution](#attribution) line.
+MIT, see [LICENSE](LICENSE). Copyright Wheel Go Fast, Inc. The grant covers Hamster's own write-ups in this repository; the methods they describe stay under the terms of their original authors, named in each method's [attribution](#attribution) line.
